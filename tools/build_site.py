@@ -29,6 +29,22 @@ REACH = {"yes": "yes", "no": "no", "partial": "partial", "unknown": "unknown"}
 JUDGE = {"construction": "truth by construction", "registry": "an official registry", "curated": "a curated database", "dated_future": "the dated future", "closed_world": "a closed world"}
 
 forms = [json.loads(f.read_text()) for f in sorted((ROOT/"forms").glob("*.json"))]
+def corpus_short(text):
+    t = text.lower()
+    for key, label in [("eur-lex","EUR-Lex / Cellar"),("cellar","EUR-Lex / Cellar"),("openalex","OpenAlex"),("openaire","OpenAIRE"),("wikidata","Wikidata"),("faers","FDA FAERS"),
+                       ("pubtator","PubTator3"),("mesh","MeSH history"),("author keyword","PubMed author keywords"),("mots-clés","PubMed author keywords"),("baseline","PubMed baseline 2026-08-18"),
+                       ("funding","PubMed funding table"),("authors table","PubMed authors table"),
+                       ("jats","Europe PMC (272 JATS articles)"),("europe pmc","Europe PMC (272 JATS articles)"),
+                       ("migraine","biomedical PDFs 1957-1987"),("pdfs 1957","biomedical PDFs 1957-1987"),("outside biomedicine","arXiv / PLOS / HAL 2021-2026"),
+                       ("pubmed abstracts","PubMed abstracts pre-1990"),("arginine","PubMed abstracts pre-1990"),("p6","synthetic tier P6 (VERDAL)"),("palier","synthetic tier P6 (VERDAL)")]:
+        if key in t: return label
+    return text[:40]
+def corpora_of(f): 
+    seen = []
+    for s in f["seen"]:
+        c = corpus_short(s["corpus"]); seen.append(c) if c not in seen else None
+    return seen
+
 E = html.escape
 
 def layout(title, body, depth=0, desc=""):
@@ -50,10 +66,10 @@ def is_graph_layer(layer):
     L = set(re.findall(r"[①-⑬]", layer)); return bool(L & GRAPH_LAYERS) and not (L - GRAPH_LAYERS - {"⑩"})
 gcounts = Counter(f["damage"] for f in forms if is_graph_layer(f["layer"]))
 cards = "".join(f"""<a class="card" href="#forms" data-damage="{k}" style="--c:{v[2]}"><span class="n">{counts.get(k,0)}<small> · {gcounts.get(k,0)} in graph layers</small></span><span class="t">{E(v[0])}</span><span class="d">{E(v[1])}</span></a>""" for k,v in DAMAGE.items())
-rows = "".join(f"""<tr data-damage="{f['damage']}" data-class="{f['class']}" data-layer="{E(f['layer'])}" data-text="{E((f['name']+' '+f.get('name_fr','')).lower())}">
+rows = "".join(f"""<tr data-damage="{f['damage']}" data-class="{f['class']}" data-layer="{E(f['layer'])}" data-src="{E(" ".join(corpora_of(f)).lower())}" data-text="{E((f['name']+' '+f.get('name_fr','')+' '+' '.join(corpora_of(f))).lower())}">
 <td><a href="forms/{f['id']}.html">{E(f['name'])}</a><br><span class="fr">{E(f.get('name_fr',''))}</span></td>
 <td><span class="pill" style="--c:{DAMAGE[f['damage']][2]}">{E(DAMAGE[f['damage']][0])}</span></td>
-<td>{E(CLASS[f['class']])}</td><td>{E(f['layer'])}</td><td class="num">{len(f['seen'])}</td><td>{E(REACH[f['repair']['reachable_by_deletion']])}</td></tr>""" for f in forms)
+<td>{E(CLASS[f['class']])}</td><td>{E(f['layer'])}</td><td class="src">{E(" · ".join(corpora_of(f)) or "—")}</td><td>{E(REACH[f['repair']['reachable_by_deletion']])}</td></tr>""" for f in forms)
 index = f"""
 <section class="hero"><p class="eyebrow">A library of observed fault forms in knowledge graphs built from documents</p>
 <h1>Every fault has a form. Every form does one of seven things to the graph.</h1>
@@ -65,7 +81,7 @@ index = f"""
 <select id="fc"><option value="">All classes</option>{''.join(f'<option value="{k}">{E(v)}</option>' for k,v in CLASS.items())}</select>
 <select id="fl"><option value="">All layers</option>{''.join(f'<option value="{E(l)}">{E(l)}</option>' for l in sorted({f["layer"] for f in forms}))}</select>
 <span id="count" class="muted"></span></div>
-<div class="tablewrap"><table id="t"><thead><tr><th>Form</th><th>Damage</th><th>Class</th><th>Layer</th><th>Seen</th><th>Deletion repairs it (classified)</th></tr></thead><tbody>{rows}</tbody></table></div></section>
+<div class="tablewrap"><table id="t"><thead><tr><th>Form</th><th>Damage</th><th>Class</th><th>Layer</th><th>Seen on</th><th>Deletion repairs it (classified)</th></tr></thead><tbody>{rows}</tbody></table></div></section>
 <section id="about" class="about"><h2>What a record says</h2>
 <div class="cols"><div><h3>Seven damages</h3><p>What a fault does to the graph: merge, split, spurious edge, missing, wrong value, wrong label, anachronism. The 113 difficulties observed in August 2026, however different they look, each produce one of these. Verified line by line.</p></div>
 <div><h3>Two counts, always together</h3><p>Each damage card shows two numbers: all forms, and forms whose layer is a graph layer — resolution, schema, coherence, structure — where the phenomenon is itself a graph damage rather than a reading failure felt downstream. Deletion-only repair fully addresses one damage, the spurious edge; the identity damages, merge and split, it never touches.</p></div>
@@ -87,14 +103,14 @@ for f in forms:
     d = DAMAGE[f["damage"]]
     src_name = next(x.name for x in (ROOT/"forms").glob(f"{f['id']}-*.json"))
     (SITE/"forms"/f"{f['id']}.json").write_text(json.dumps(f, ensure_ascii=False, indent=2)+"\n")
-    seen = "".join(f"""<article class="obs"><p class="meta">{E(s['corpus'])} · {E(s['date'])}{(' · '+E(s['observer'])) if s.get('observer') else ''}{(' · '+E(s['organisation'])) if s.get('organisation') else ''}{(' · <a href="../corpora.html#'+E(s['corpus_id'])+'">reproducible list: '+E(CORPUS_NAMES.get(s['corpus_id'], s['corpus_id']).split(' — ')[0])+'</a>') if s.get('corpus_id') else ''}</p>
+    seen = "".join(f"""<article class="obs"><p class="meta"><strong>{E(corpus_short(s['corpus']))}</strong> · {E(s['corpus'])} · {E(s['date'])}{(' · '+E(s['observer'])) if s.get('observer') else ''}{(' · '+E(s['organisation'])) if s.get('organisation') else ''}{(' · <a href="../corpora.html#'+E(s['corpus_id'])+'">reproducible list: '+E(CORPUS_NAMES.get(s['corpus_id'], s['corpus_id']).split(' — ')[0])+'</a>') if s.get('corpus_id') else ''}</p>
 <p>{E(s.get('excerpt_en', s['excerpt']))}</p>{('<details><summary>Original note ('+E(s.get('lang','fr'))+')</summary><p class="fr">'+E(s['excerpt'])+'</p></details>') if s.get('excerpt_en') and s.get('excerpt_en')!=s['excerpt'] else ''}</article>""" for s in f["seen"]) or "<p class='muted'>No observation yet: this form is a hypothesis, not an observation.</p>"
     cases = f["specimens"]["cases"]; cex = f["specimens"]["counter_examples"]
     spec = (f"<p>{len(cases)} case(s), {len(cex)} counter-example(s).</p>" if cases or cex else "<p class='muted'>Specimens not yet transcribed into this record.</p>")
     hist = "".join(f"<li><span class='meta'>{E(h['date'])}</span> {E(h['event'])}{(' — '+E(h['by'])) if h.get('by') else ''}</li>" for h in f["history"])
     prev = f["prevention"]; rep = f["repair"]
     body = f"""<p class="crumb"><a href="../index.html">Fault Atlas</a> › {E(f['id'])}</p>
-<h1>{E(f['name'])}</h1><p class="fr big">{E(f.get('name_fr',''))}</p><p class="found">Found by <strong>{E(f.get("origin",{}).get("organisation","—"))}</strong>{(" — "+E(f["origin"]["campaign"])) if f.get("origin",{}).get("campaign") else ""}{(" · first seen "+E(f["seen"][0]["date"])) if f["seen"] else ""}</p>
+<h1>{E(f['name'])}</h1><p class="fr big">{E(f.get('name_fr',''))}</p><p class="found">Found by <strong>{E(f.get("origin",{}).get("organisation","—"))}</strong>{(" — "+E(f["origin"]["campaign"])) if f.get("origin",{}).get("campaign") else ""}{(" · first seen "+E(f["seen"][0]["date"])) if f["seen"] else ""}</p><p class="found">Seen on: <strong>{E(" · ".join(corpora_of(f)) or "no observation yet")}</strong></p>
 <div class="badges"><span class="pill" style="--c:{d[2]}">{E(d[0])}</span><span class="pill grey">from: {E(f.get("origin",{}).get("organisation","—"))}</span><span class="pill grey">{E(CLASS[f['class']])}</span><span class="pill grey">layer: {E(f['layer'])}</span><span class="pill grey">injection: {E(f.get('injection','—'))}</span><span class="pill warn">{E(f['status'].replace('_',' '))}</span></div>
 <div class="facts"><div><h3>Damage in the graph</h3><p><strong>{E(d[0])}</strong> — {E(d[1])}.</p></div>
 <div><h3>Can code cancel it?</h3><p>{'Yes' if prev['cancellable_by_code'] else 'No'}{('. Refusal clause: '+E(prev['refusal_clause'])) if prev.get('refusal_clause') else ''}{('. '+E(prev['note'])) if prev.get('note') else ''}.</p></div>
@@ -186,7 +202,7 @@ h2{font-size:26px;letter-spacing:-.02em;margin:38px 0 12px;font-weight:600}h3{ma
 .card{display:block;background:var(--bg-elev);border:1px solid var(--line);border-top:3px solid var(--c);border-radius:10px;padding:16px 18px;color:var(--fg);transition:border-color .15s}.card:hover{text-decoration:none;border-color:var(--c);background:#fff}
 .card .n{display:block;font-size:36px;font-weight:600;line-height:1;letter-spacing:-.03em;font-family:var(--mono)}.card .n small{display:block;font-size:12px;font-weight:500;color:var(--muted);font-family:var(--sans);letter-spacing:0;margin-top:4px}.card .t{display:block;font-weight:600;margin-top:8px}.card .d{display:block;font-size:13px;color:var(--muted);margin-top:4px;line-height:1.45}
 .bar{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin:0 0 12px}input,select,textarea{font:inherit;font-size:15px;padding:10px 12px;border:1px solid var(--line-strong);border-radius:8px;background:#fff;color:var(--fg)}.bar input{flex:1;min-width:220px}input:focus,select:focus{outline:2px solid var(--acc-soft);border-color:var(--acc)}
-.tablewrap{overflow-x:auto;border:1px solid var(--line);border-radius:10px;background:#fff}table{border-collapse:collapse;width:100%;min-width:780px}th,td{text-align:left;padding:11px 14px;border-top:1px solid var(--line);vertical-align:top}th{border-top:0;font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);font-weight:600;background:var(--bg-elev)}td.num{text-align:right;font-family:var(--mono);font-size:14px}
+.tablewrap{overflow-x:auto;border:1px solid var(--line);border-radius:10px;background:#fff}table{border-collapse:collapse;width:100%;min-width:780px}th,td{text-align:left;padding:11px 14px;border-top:1px solid var(--line);vertical-align:top}th{border-top:0;font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);font-weight:600;background:var(--bg-elev)}td.num{text-align:right;font-family:var(--mono);font-size:14px}td.src{font-size:13px;color:var(--luxe)}
 .pill{display:inline-block;white-space:nowrap;padding:2px 10px;border-radius:999px;font-size:12.5px;font-weight:600;color:#fff;background:var(--c);letter-spacing:.01em}.pill.grey{background:var(--surface);color:var(--fg);font-weight:500}.pill.warn{background:#fff3c4;color:#6b4c00;font-weight:500}
 .fr{color:var(--muted);font-size:13px;font-family:var(--serif);font-style:italic}.fr.big{font-size:17px;margin-top:-10px}.muted{color:var(--muted)}
 .about{margin-top:56px;border-top:1px solid var(--line);padding-top:32px}.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:24px}.cols p{margin:0;color:var(--luxe);font-size:15px}

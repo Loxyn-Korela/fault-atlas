@@ -7,6 +7,11 @@
 - Validator with house rules; proves itself on seven planted faults.
 - SQLite view builder for Datasette.
 
+## 0.2.3 — 2026-09-09
+- Four forms measured on EUR-Lex / Cellar by the collection session (form-182 to form-185) and the collection's corpus record with its pre-registered bets.
+- Two counts, always together: all layers and graph layers only, on the home cards and in the README.
+- The corpus is visible up front: 'Seen on' under each title, a 'Seen on' column in the list, the corpus name first on each observation; observation links name the reproducible list they point to; three wrongly linked observations unlinked.
+
 ## 0.2.2 — 2026-09-09
 - Second reader's first pass (Coralie Bagnol-Lebon): eight MISSING/MERGE forms had no excerpt — their August observations (wave-1 PDFs, non-biomedical wave) transcribed from the annexes and the journal; three remain without measurement (form-030, form-041, form-164), for the reader to mark contested.
 - Wording: `repair.reachable_by_deletion` is a classification by judgment, not a measurement — said on every record, on every page and in the README.
