@@ -7,6 +7,9 @@
 - Validator with house rules; proves itself on seven planted faults.
 - SQLite view builder for Datasette.
 
+## 0.4.3 — 2026-09-09
+- "How it was found" open by default on the form.
+
 ## 0.4.2 — 2026-09-09
 - No count on the form. "12 of 272" reads as a frequency; a form only says: someone can get this wrong, see it here. The counts stay in the records and the result files, off the page.
 
