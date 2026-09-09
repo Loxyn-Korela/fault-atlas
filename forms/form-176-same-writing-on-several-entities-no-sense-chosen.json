@@ -1,0 +1,51 @@
+{
+  "id": "form-176",
+  "version": 1,
+  "name": "Same writing on several entities, no sense chosen (Wikidata)",
+  "damage": "MERGE",
+  "class": "UNCLASSIFIED",
+  "layer": "⑥ resolution",
+  "injection": "RENAME",
+  "status": "proposed",
+  "seen": [
+    {
+      "corpus": "Wikidata dump 2026-08-31 (121.5 M items), Almageste Wikidata edition, read 2026-09-06, labels and aliases",
+      "document": "ambiguous writings; the Wiktionary 2017c edition counted 113,000 of 997,000",
+      "date": "2026-09-06",
+      "observer": "Claude Voûte (LLM agent), session 8d9c5098, from the night reports of 2026-09-06/09",
+      "excerpt": "06-09-2026 : « quand plusieurs Q portent la même écriture, le script ne choisit pas — il marque ambigu » ; « un objet russe peut être rattaché au mauvais Q par homographie ».",
+      "excerpt_en": "2026-09-06: \"when several Q items carry the same writing, the script does not choose — it flags ambiguous\"; \"a Russian object can be attached to the wrong Q by homography\".",
+      "lang": "fr"
+    }
+  ],
+  "specimens": {
+    "cases": [],
+    "counter_examples": []
+  },
+  "prevention": {
+    "cancellable_by_code": false,
+    "note": "not assessed by the observer; to be classified by the second reader"
+  },
+  "repair": {
+    "reachable_by_deletion": "no",
+    "note": "deletion cannot restore this; judgment, to be measured"
+  },
+  "judgeable_by": [
+    "curated"
+  ],
+  "related": [
+    "form-026"
+  ],
+  "history": [
+    {
+      "date": "2026-09-09",
+      "event": "proposed by the Voûte Claude in 'FORMES-PUBMED-pour-Fault-Atlas (09-09-2026)' part 2 (sha256 51a338add43cd071…), form 35 of 40; effect on a graph: The writing does not identify the entity; any reunion by label merges homographs (or MISSING if one abstains). Prevalence: seen; number of ambiguous writings not counted in these files.",
+      "by": "Claude Voûte (LLM agent), session 8d9c5098, from the night reports of 2026-09-06/09"
+    },
+    {
+      "date": "2026-09-09",
+      "event": "converted to a record; class, prevention and the novel/variant question left to the second reader",
+      "by": "Fault Atlas"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "id": "form-164",
+  "version": 1,
+  "name": "Homonymy in a reference registry (agency identifiers)",
+  "damage": "MERGE",
+  "class": "UNCLASSIFIED",
+  "layer": "⑥ resolution",
+  "injection": "ALTER",
+  "status": "proposed",
+  "seen": [],
+  "specimens": {
+    "cases": [],
+    "counter_examples": []
+  },
+  "prevention": {
+    "cancellable_by_code": false,
+    "note": "not assessed"
+  },
+  "repair": {
+    "reachable_by_deletion": "no",
+    "note": "deletion cannot restore this; judgment, to be measured"
+  },
+  "judgeable_by": [
+    "registry"
+  ],
+  "related": [
+    "form-026"
+  ],
+  "history": [
+    {
+      "date": "2026-09-09",
+      "event": "reported second-hand by the Voûte Claude (form 23 of 23): '52 proven homonymies and about 800 estimated' in the reference data of a US agency — the measurement file is not located; recorded as a hypothesis until the evidence is found (a silent grep is not an absence)",
+      "by": "Claude Voûte (LLM agent), session 8d9c5098, from the Substrat measurement files"
+    }
+  ]
+}

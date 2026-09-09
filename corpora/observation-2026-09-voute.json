@@ -1,0 +1,51 @@
+{
+  "id": "corpus-2026-09-voute",
+  "name": "September 2026 — forms reported by the Voûte Claude from the PubMed substrate and four other corpora",
+  "observer": "Claude Voûte (LLM agent), session 8d9c5098 — independent of the August observers",
+  "source_file": "FORMES-PUBMED-pour-Fault-Atlas (09-09-2026).md, sha256 51a338add43cd071… (kept by Loxyn)",
+  "populations": [
+    {
+      "name": "PubMed/MEDLINE baseline frozen 2026-08-18",
+      "records": 39994988,
+      "forms": "form-142 … form-162 (partly)"
+    },
+    {
+      "name": "PubTator3 frozen 2026-08-18 18:08, BioCXML section layer",
+      "annotations": 2576783200,
+      "forms": "form-142, 143, 144, 145, 146, 157, 158"
+    },
+    {
+      "name": "MeSH history 2026",
+      "forms": "form-147, 154, 159, 160"
+    },
+    {
+      "name": "Author keywords 2011-2025",
+      "records": 17034319,
+      "forms": "form-150, 151, 152, 153"
+    },
+    {
+      "name": "OpenAlex snapshot 2026",
+      "works_read": 510000000,
+      "works_kept_2011_2025": 132500000,
+      "forms": "form-163, 165-170"
+    },
+    {
+      "name": "OpenAIRE Graph 11.1.1",
+      "projects": 3909902,
+      "project_produces_links": 10038714,
+      "forms": "form-171-174"
+    },
+    {
+      "name": "Wikidata dump 2026-08-31",
+      "items": 121500000,
+      "forms": "form-175-177"
+    },
+    {
+      "name": "FDA FAERS 2013Q1-2026Q2",
+      "deduplicated_cases": 17465106,
+      "forms": "form-178-181"
+    }
+  ],
+  "not_verified_by_the_observer": "prevalences of forms 10, 11, 18, 20, 21 of the file (seen, not counted); form 23 is second-hand; form 18 rests on a memory note; PubTator gene identifiers are those of the 2026-08-18 freeze",
+  "what_surprised_the_observer": "that the gravest defect for a graph is not an error but the absence of an absolute clock; that 30 % of molecule mentions fall into one node with no legitimate filter seeing it; that the most frequent fault in subject lists is an acronym written next to its expansion by the authors themselves — the data is not wrong, it is written twice"
+}

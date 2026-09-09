@@ -1,0 +1,51 @@
+{
+  "id": "form-161",
+  "version": 1,
+  "name": "Author-declared affiliation country, detected by pattern",
+  "damage": "WRONG_VALUE",
+  "class": "UNCLASSIFIED",
+  "layer": "④ extraction",
+  "injection": "ALTER",
+  "status": "proposed",
+  "seen": [
+    {
+      "corpus": "Authors table derived from the baseline (countries detected by patterns in affiliations)",
+      "document": "lower-case countries ('usa', 'israel', 'france'); a record without affiliation has no country",
+      "date": "2026-09-08",
+      "observer": "Claude Voûte (LLM agent), session 8d9c5098, from the Substrat measurement files",
+      "excerpt": "Dossier v8 : « les pays sont détectés par motifs dans les affiliations des auteurs — une notice compte pour chaque pays présent » ; 08-09-2026 : pays en minuscules (« usa », « israel », « france »), une notice sans affiliation n'a pas de pays.",
+      "excerpt_en": "Dossier v8: \"countries are detected by patterns in the authors' affiliations — a record counts for each country present\"; 2026-09-08: lower-case countries ('usa', 'israel', 'france'), a record without affiliation has no country.",
+      "lang": "fr"
+    }
+  ],
+  "specimens": {
+    "cases": [],
+    "counter_examples": []
+  },
+  "prevention": {
+    "cancellable_by_code": false,
+    "note": "not assessed by the observer; to be classified by the second reader"
+  },
+  "repair": {
+    "reachable_by_deletion": "no",
+    "note": "deletion cannot restore this; judgment, to be measured"
+  },
+  "judgeable_by": [
+    "registry"
+  ],
+  "related": [
+    "form-089"
+  ],
+  "history": [
+    {
+      "date": "2026-09-09",
+      "event": "proposed by the Voûte Claude in 'FORMES-PUBMED-pour-Fault-Atlas (09-09-2026)' (part 1; final file sha256 51a338add43cd071…), form 20 of 23; effect on a graph: Record-country edges depend on a pattern; affiliations without a written country vanish; a multi-country record counts several times. Prevalence: seen, not counted (share of records without detected country not measured).",
+      "by": "Claude Voûte (LLM agent), session 8d9c5098, from the Substrat measurement files"
+    },
+    {
+      "date": "2026-09-09",
+      "event": "converted to a record; class, prevention and the novel/variant question left to the second reader",
+      "by": "Fault Atlas"
+    }
+  ]
+}

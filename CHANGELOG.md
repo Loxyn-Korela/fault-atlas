@@ -7,6 +7,11 @@
 - Validator with house rules; proves itself on seven planted faults.
 - SQLite view builder for Datasette.
 
+## 0.2.0 — 2026-09-09
+- 40 forms reported by a second, independent observer (the Voûte Claude) from the PubMed substrate (PubTator3, MeSH history, author keywords) and from OpenAlex, OpenAIRE, Wikidata and FAERS: form-142 to form-181, status `proposed`, each with its measurement and date. Form-164 is a hypothesis without observation (measurement not located).
+- `corpora/observation-2026-09-voute.json`: the populations, what the observer could not verify, what surprised him.
+- Damage counts updated in the README (153 forms).
+
 ## 0.1.2 — 2026-09-09
 - Public site generated from the records (`tools/build_site.py` → `site/`): home with the seven damages, filterable list, one page per form with observations (English, original on demand), specimens, history. Loxyn visual identity (Inter, Fraunces, JetBrains Mono, accent #0969da).
 - Datasette kept for data and API under `/data`.

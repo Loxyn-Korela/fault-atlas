@@ -34,20 +34,23 @@ The file is the truth. Software reads it; software never completes it from memor
 
 ## Current content
 
-113 forms from the August 2026 observation campaign (81 real documents, then 272 Europe PMC JATS articles, two independent observers — agreement on the novel/variant boundary: 54 %). 26 catalogue lines were instrument or metric properties, not fault forms: `docs/out-of-scope-2026-08.json`.
+153 forms from two observation campaigns:
+
+- **August 2026** — 113 forms on business documents, old PubMed abstracts and 272 Europe PMC JATS articles, two independent observers (agreement on the novel/variant boundary: 54 %). 26 catalogue lines were instrument or metric properties, not fault forms: `docs/out-of-scope-2026-08.json`.
+- **September 2026** — 40 forms reported by a second, independent observer from the construction of a 40-million-record PubMed substrate (PubTator3, MeSH history, author keywords) and from four other corpora: OpenAlex, OpenAIRE, Wikidata, FAERS. Each carries its measurement file and date.
 
 | damage | forms |
 |---|---|
-| MISSING | 33 |
-| WRONG_VALUE | 17 |
-| SPURIOUS_EDGE | 17 |
-| SPLIT | 14 |
-| MERGE | 10 |
-| WRONG_LABEL | 9 |
-| ANACHRONISM | 5 |
+| MISSING | 44 |
+| WRONG_VALUE | 24 |
+| SPURIOUS_EDGE | 19 |
+| SPLIT | 22 |
+| MERGE | 14 |
+| WRONG_LABEL | 14 |
+| ANACHRONISM | 8 |
 | CORPUS_PARAMETER | 8 |
 
-Every form has `status: migrated_unreviewed`. A second reader validates or contests each one before it becomes `validated`.
+Every August form has `status: migrated_unreviewed` and every September form `status: proposed`. A second reader validates or contests each one before it becomes `validated`. Where a September form overlaps an August one, the `related` field says so; the novel/variant decision is the reader's, not the machine's.
 
 ## Rules
 

@@ -1,0 +1,49 @@
+{
+  "id": "form-169",
+  "version": 1,
+  "name": "Domain assigned from the record's primary topic, not from the keyword",
+  "damage": "WRONG_LABEL",
+  "class": "UNCLASSIFIED",
+  "layer": "⑦ schema",
+  "injection": "ALTER",
+  "status": "proposed",
+  "seen": [
+    {
+      "corpus": "OpenAlex snapshot 2026 (works parquet), read 2026-09-06, primary_topic.domain",
+      "document": "1.55 M records without domain",
+      "date": "2026-09-06",
+      "observer": "Claude Voûte (LLM agent), session 8d9c5098, from the night reports of 2026-09-06/09",
+      "excerpt": "06-09-2026 : « Physical Sciences 51,8 M de notices, Life Sciences 16,5 M — un facteur trois » ; « pour un mot-clé transversal (\"Medicine\", \"Computer science\") ce choix est arbitraire » ; « 1,55 M de notices n'ont pas de domaine du tout ».",
+      "excerpt_en": "2026-09-06: \"Physical Sciences 51.8 M records, Life Sciences 16.5 M — a factor of three\"; \"for a cross-cutting keyword ('Medicine', 'Computer science') this choice is arbitrary\"; \"1.55 M records have no domain at all\".",
+      "lang": "fr"
+    }
+  ],
+  "specimens": {
+    "cases": [],
+    "counter_examples": []
+  },
+  "prevention": {
+    "cancellable_by_code": false,
+    "note": "not assessed by the observer; to be classified by the second reader"
+  },
+  "repair": {
+    "reachable_by_deletion": "partial",
+    "note": "an extra label can be deleted, a missing one cannot be added"
+  },
+  "judgeable_by": [
+    "curated"
+  ],
+  "related": [],
+  "history": [
+    {
+      "date": "2026-09-09",
+      "event": "proposed by the Voûte Claude in 'FORMES-PUBMED-pour-Fault-Atlas (09-09-2026)' part 2 (sha256 51a338add43cd071…), form 28 of 40; effect on a graph: The domain of a subject is that of the majority of its records, not a property of the subject; a cross-cutting keyword is filed at random. Prevalence: 1.55 M records without domain; the rest seen, not counted.",
+      "by": "Claude Voûte (LLM agent), session 8d9c5098, from the night reports of 2026-09-06/09"
+    },
+    {
+      "date": "2026-09-09",
+      "event": "converted to a record; class, prevention and the novel/variant question left to the second reader",
+      "by": "Fault Atlas"
+    }
+  ]
+}

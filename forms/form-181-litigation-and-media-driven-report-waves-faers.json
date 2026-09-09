@@ -1,0 +1,51 @@
+{
+  "id": "form-181",
+  "version": 1,
+  "name": "Litigation- and media-driven report waves (FAERS)",
+  "damage": "SPURIOUS_EDGE",
+  "class": "UNCLASSIFIED",
+  "layer": "⑨ structure",
+  "injection": "INSERT",
+  "status": "proposed",
+  "seen": [
+    {
+      "corpus": "FDA FAERS quarterly files 2013Q1-2026Q2, probe of 2026-09-09, 2019 and 2021",
+      "document": "'avobenzone\\octisalate\\octocrylene × skin burning sensation' 9,269 reports in twelve months (2019); 'ranitidine hydrochloride × prostate cancer' 15,565 (2021)",
+      "date": "2026-09-09",
+      "observer": "Claude Voûte (LLM agent), session 8d9c5098, from the night reports of 2026-09-06/09",
+      "excerpt": "09-09-2026 : « avobenzone\\octisalate\\octocrylene × skin burning sensation 9 269 déclarations en douze mois » (2019) ; « ranitidine hydrochloride × prostate cancer 15 565 » (2021) ; couples de la liste 2021 : 18 sur 20 morts au juge à trois ans. Ce n'est pas une faute de données mais une population.",
+      "excerpt_en": "2026-09-09: \"'avobenzone\\octisalate\\octocrylene × skin burning sensation' 9,269 reports in twelve months\" (2019); \"'ranitidine hydrochloride × prostate cancer' 15,565\" (2021); pairs of the 2021 list: 18 of 20 dead at the three-year judge. Not a data fault but a population.",
+      "lang": "fr"
+    }
+  ],
+  "specimens": {
+    "cases": [],
+    "counter_examples": []
+  },
+  "prevention": {
+    "cancellable_by_code": false,
+    "note": "not assessed by the observer; to be classified by the second reader"
+  },
+  "repair": {
+    "reachable_by_deletion": "yes",
+    "note": "the faulty edge can be deleted"
+  },
+  "judgeable_by": [
+    "dated_future"
+  ],
+  "related": [
+    "form-016"
+  ],
+  "history": [
+    {
+      "date": "2026-09-09",
+      "event": "proposed by the Voûte Claude in 'FORMES-PUBMED-pour-Fault-Atlas (09-09-2026)' part 2 (sha256 51a338add43cd071…), form 40 of 40; effect on a graph: A drug-effect edge becomes massive within months through a campaign, then vanishes; without reading the reporter one cannot tell the medical signal from the campaign. Prevalence: measured on two years: 15 of the 20 places of 2019 and 18 of the 20 of 2021 are waves.",
+      "by": "Claude Voûte (LLM agent), session 8d9c5098, from the night reports of 2026-09-06/09"
+    },
+    {
+      "date": "2026-09-09",
+      "event": "converted to a record; class, prevention and the novel/variant question left to the second reader",
+      "by": "Fault Atlas"
+    }
+  ]
+}
