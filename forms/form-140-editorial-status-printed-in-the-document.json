@@ -1,6 +1,6 @@
 {
   "id": "form-140",
-  "version": 1,
+  "version": 2,
   "legacy_line": 140,
   "name": "Editorial status printed in the document",
   "name_fr": "Statut éditorial imprimé dans le document",
@@ -29,8 +29,8 @@
     "cancellable_by_code": false
   },
   "repair": {
-    "reachable_by_deletion": "yes",
-    "note": "the faulty edge can be deleted"
+    "reachable_by_deletion": "partial",
+    "note": "deleting the anachronistic edge removes a fact that was true within its validity interval; the true repair bounds the validity, it does not delete (reading of Coralie Bagnol-Lebon, 2026-09-09)"
   },
   "judgeable_by": [
     "construction",
@@ -53,6 +53,11 @@
       "date": "2026-09-09",
       "event": "internal tool paths removed from observation notes before publication; wording otherwise unchanged",
       "by": "Fault Atlas"
+    },
+    {
+      "date": "2026-09-09",
+      "event": "repair.reachable_by_deletion changed from yes to partial: a deletion loses the fact's past validity; only a spurious edge is fully repaired by deletion",
+      "by": "Coralie Bagnol-Lebon (second reader), applied by Fault Atlas"
     }
   ]
 }

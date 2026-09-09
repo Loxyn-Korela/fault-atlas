@@ -1,6 +1,6 @@
 {
   "id": "form-039",
-  "version": 1,
+  "version": 2,
   "legacy_line": 39,
   "name": "Successive versions of a document",
   "name_fr": "Versions successives d'un document",
@@ -30,8 +30,8 @@
     "refusal_clause": "handle, or abstain and declare — never guess"
   },
   "repair": {
-    "reachable_by_deletion": "yes",
-    "note": "the faulty edge can be deleted"
+    "reachable_by_deletion": "partial",
+    "note": "deleting the anachronistic edge removes a fact that was true within its validity interval; the true repair bounds the validity, it does not delete (reading of Coralie Bagnol-Lebon, 2026-09-09)"
   },
   "judgeable_by": [
     "construction",
@@ -54,6 +54,11 @@
       "date": "2026-08-08",
       "event": "house filter exists with 5 cases and 2 counter-examples (bench green=True); specimens to be transcribed into this record",
       "by": "Korela For Science"
+    },
+    {
+      "date": "2026-09-09",
+      "event": "repair.reachable_by_deletion changed from yes to partial: a deletion loses the fact's past validity; only a spurious edge is fully repaired by deletion",
+      "by": "Coralie Bagnol-Lebon (second reader), applied by Fault Atlas"
     }
   ]
 }

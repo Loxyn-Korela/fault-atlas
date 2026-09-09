@@ -1,6 +1,6 @@
 {
   "id": "form-147",
-  "version": 1,
+  "version": 2,
   "name": "Retro-indexing of a MeSH descriptor onto older articles",
   "damage": "ANACHRONISM",
   "class": "UNCLASSIFIED",
@@ -27,8 +27,8 @@
     "note": "not assessed by the observer; to be classified by the second reader"
   },
   "repair": {
-    "reachable_by_deletion": "yes",
-    "note": "the faulty edge can be deleted"
+    "reachable_by_deletion": "partial",
+    "note": "deleting the anachronistic edge removes a fact that was true within its validity interval; the true repair bounds the validity, it does not delete (reading of Coralie Bagnol-Lebon, 2026-09-09)"
   },
   "judgeable_by": [
     "dated_future",
@@ -45,6 +45,11 @@
       "date": "2026-09-09",
       "event": "converted to a record; class, prevention and the novel/variant question left to the second reader",
       "by": "Fault Atlas"
+    },
+    {
+      "date": "2026-09-09",
+      "event": "repair.reachable_by_deletion changed from yes to partial: a deletion loses the fact's past validity; only a spurious edge is fully repaired by deletion",
+      "by": "Coralie Bagnol-Lebon (second reader), applied by Fault Atlas"
     }
   ]
 }

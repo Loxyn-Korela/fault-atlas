@@ -56,7 +56,7 @@ EN = {
 134:"Page 1 is not representative",135:"Translated verbatim",136:"Columns of different natures",137:"Three kinds of number in one string",138:"Mnemonic superscript that is not a power",
 139:"Citation with internal locator",140:"Editorial status printed in the document",141:"Multiple abstracts from different registries",
 }
-REACH = {"SPURIOUS_EDGE":"yes","ANACHRONISM":"yes","WRONG_LABEL":"partial","MERGE":"no","SPLIT":"no","MISSING":"no","WRONG_VALUE":"no","CORPUS_PARAMETER":"no"}
+REACH = {"SPURIOUS_EDGE":"yes","ANACHRONISM":"partial","WRONG_LABEL":"partial","MERGE":"no","SPLIT":"no","MISSING":"no","WRONG_VALUE":"no","CORPUS_PARAMETER":"no"}
 REACH_NOTE = {"yes":"the faulty edge can be deleted","partial":"an extra label can be deleted, a missing one cannot be added","no":"deletion cannot restore this; judgment of 2026-09-09, to be measured"}
 JUDGE = {"MERGE":["construction","registry","curated","closed_world"],"SPLIT":["construction","registry","curated","closed_world"],
          "SPURIOUS_EDGE":["construction","curated","closed_world"],"MISSING":["construction","curated","closed_world"],
