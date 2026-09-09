@@ -179,15 +179,25 @@ for f in forms:
 
 
 # ── probes page ──
+def probe_status(f, pr):
+    """found again / measured today / absent / to be shown"""
+    if not pr.get("matches_excerpt"): return "to be shown"
+    if pr.get("result", {}).get("count") == 0: return "absent (0)"
+    obs = [x for x in f["seen"] if x.get("probe") == pr["file"]]
+    if obs and obs[0].get("date") == "2026-09-09" and "probe" in obs[0].get("observer", ""): return "measured today"
+    return "found again"
 prow = ""
 for f in forms:
     for pr in f.get("probes", []):
         r = pr.get("result", {})
         head = f"{r.get('count')}/{r.get('of')}" if r.get("of") is not None else f"{r.get('count')} rows"
-        prow += f"""<tr><td><a href="forms/{E(f['id'])}.html">{E(f['id'])}</a></td><td>{E(f['name'])}</td><td>{E(pr['kind'])}</td><td><a href="{REPO}/blob/main/{E(pr['file'])}">{E(pr['file'].split('/')[-1])}</a></td><td>{E(CORPUS_NAMES.get(pr['corpus_id'], pr['corpus_id']).split(' — ')[0][:48])}</td><td>{E(head)}</td><td>{E(r.get('date',''))}</td><td>{'shown' if pr.get('matches_excerpt') else 'to be shown'}</td></tr>"""
+        prow += f"""<tr><td><a href="forms/{E(f['id'])}.html">{E(f['id'])}</a></td><td>{E(f['name'])}</td><td>{E(pr['kind'])}</td><td><a href="{REPO}/blob/main/{E(pr['file'])}">{E(pr['file'].split('/')[-1])}</a></td><td>{E(CORPUS_NAMES.get(pr['corpus_id'], pr['corpus_id']).split(' — ')[0][:48])}</td><td>{E(head)}</td><td>{E(r.get('date',''))}</td><td>{probe_status(f, pr)}</td></tr>"""
 nprobes = sum(len(f.get("probes", [])) for f in forms)
+from collections import Counter as _C
+st = _C(probe_status(f, pr) for f in forms for pr in f.get("probes", []))
+st_line = " · ".join(f"{v} {k}" for k, v in st.most_common())
 (SITE/"probes.html").write_text(layout("Probes — Fault Atlas", f"""<p class="crumb"><a href="index.html">Fault Atlas</a> › probes</p><h1>Exact probes</h1>
-<p class="lead">{nprobes} probes on {sum(1 for f in forms if f.get('probes'))} forms. A probe is the exact question asked of a corpus, kept verbatim: a Python regex on one document, a SPARQL query on a public endpoint, a shell request with its headers. It repairs nothing and decides nothing; it answers "is this fault here, and where?". Anyone can run it again: <code>python3 tools/run_probe.py &lt;probe&gt; &lt;corpus&gt;</code>. A probe is shown on its form only when it finds again the figure the observation quotes; otherwise the form says "to be shown" and the probe waits here for a second reader.</p>
+<p class="lead">{nprobes} probes on {sum(1 for f in forms if f.get('probes'))} forms: {E(st_line)}. A probe is the exact question asked of a corpus, kept verbatim: a Python regex on one document, a SPARQL query on a public endpoint, a shell request with its headers. It repairs nothing and decides nothing; it answers "is this fault here, and where?". Anyone can run it again: <code>python3 tools/run_probe.py &lt;probe&gt; &lt;corpus&gt;</code>. Status: <strong>found again</strong> = the August probe, re-run, gives exactly the figure the August note quotes; <strong>measured today</strong> = the note was about another corpus, the probe was run on this one and the observation was written from it; <strong>absent (0)</strong> = the probe finds no document here, which is a measurement; <strong>to be shown</strong> = the kept probe gives another figure than the note, nothing is shown until a second reader settles it.</p>
 <div class="tablewrap"><table><thead><tr><th>Form</th><th>Name</th><th>Kind</th><th>Probe</th><th>Corpus</th><th>Result</th><th>Run on</th><th>Status</th></tr></thead><tbody>{prow}</tbody></table></div>"""))
 
 # ── propose page ──
