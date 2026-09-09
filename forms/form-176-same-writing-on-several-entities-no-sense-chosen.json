@@ -2,6 +2,11 @@
   "id": "form-176",
   "version": 1,
   "name": "Same writing on several entities, no sense chosen (Wikidata)",
+  "origin": {
+    "organisation": "Loxyn SAS, Lyon",
+    "campaign": "September 2026 — PubMed substrate and other corpora (Voûte)",
+    "contact": "contact@loxyn.ai"
+  },
   "damage": "MERGE",
   "class": "UNCLASSIFIED",
   "layer": "⑥ resolution",
@@ -15,7 +20,8 @@
       "observer": "Claude Voûte (LLM agent), session 8d9c5098, from the night reports of 2026-09-06/09",
       "excerpt": "06-09-2026 : « quand plusieurs Q portent la même écriture, le script ne choisit pas — il marque ambigu » ; « un objet russe peut être rattaché au mauvais Q par homographie ».",
       "excerpt_en": "2026-09-06: \"when several Q items carry the same writing, the script does not choose — it flags ambiguous\"; \"a Russian object can be attached to the wrong Q by homography\".",
-      "lang": "fr"
+      "lang": "fr",
+      "organisation": "Loxyn SAS, Lyon"
     }
   ],
   "specimens": {

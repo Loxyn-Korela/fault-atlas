@@ -4,6 +4,11 @@
   "legacy_line": 37,
   "name": "Density: documents of no interest",
   "name_fr": "Densité : documents sans intérêt",
+  "origin": {
+    "organisation": "Loxyn SAS, Lyon",
+    "campaign": "August 2026 — observation campaign (Korela For Science)",
+    "contact": "contact@loxyn.ai"
+  },
   "damage": "CORPUS_PARAMETER",
   "class": "SILENT_FALSE",
   "layer": "⑩ retrieval",
@@ -18,7 +23,8 @@
       "observer": "house observer (LLM agent), see report",
       "excerpt": "MESURÉ le 08/08/2026 sur (internal corpus of 272 JATS articles) (272 XML JATS) : sur 11 380 paragraphes de plus de 200 caractères, 2 483 (22 %) ne contiennent AUCUN chiffre — du texte de cadre, pas de résultat. Le corpus réel dilue donc déjà à un cinquième, à l'intérieur même des documents.",
       "lang": "fr",
-      "excerpt_en": "MEASURED on 2026-08-08 on the internal corpus (272 JATS XML): of 11,380 paragraphs longer than 200 characters, 2,483 (22 %) contain NO digit — framing text, not results. The real corpus therefore already dilutes to one fifth, inside the documents themselves."
+      "excerpt_en": "MEASURED on 2026-08-08 on the internal corpus (272 JATS XML): of 11,380 paragraphs longer than 200 characters, 2,483 (22 %) contain NO digit — framing text, not results. The real corpus therefore already dilutes to one fifth, inside the documents themselves.",
+      "organisation": "Loxyn SAS, Lyon"
     }
   ],
   "specimens": {

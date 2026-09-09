@@ -2,6 +2,11 @@
   "id": "form-170",
   "version": 1,
   "name": "Snapshot contains merged, retracted and paratext records (OpenAlex)",
+  "origin": {
+    "organisation": "Loxyn SAS, Lyon",
+    "campaign": "September 2026 — PubMed substrate and other corpora (Voûte)",
+    "contact": "contact@loxyn.ai"
+  },
   "damage": "MERGE",
   "class": "UNCLASSIFIED",
   "layer": "⑨ structure",
@@ -15,7 +20,8 @@
       "observer": "Claude Voûte (LLM agent), session 8d9c5098, from the night reports of 2026-09-06/09",
       "excerpt": "06-09-2026 : « 510 M de notices lues pour ~132 M retenues sur 2011-2025 » ; « le filtre type/paratexte/rétractation seul » retient 51,6 %.",
       "excerpt_en": "2026-09-06: \"510 M records read for ~132 M kept on 2011-2025\"; \"the type/paratext/retraction filter alone\" keeps 51.6 %.",
-      "lang": "fr"
+      "lang": "fr",
+      "organisation": "Loxyn SAS, Lyon"
     }
   ],
   "specimens": {

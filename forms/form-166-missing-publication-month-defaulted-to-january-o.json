@@ -2,6 +2,11 @@
   "id": "form-166",
   "version": 1,
   "name": "Missing publication month defaulted to January (OpenAlex)",
+  "origin": {
+    "organisation": "Loxyn SAS, Lyon",
+    "campaign": "September 2026 — PubMed substrate and other corpora (Voûte)",
+    "contact": "contact@loxyn.ai"
+  },
   "damage": "WRONG_VALUE",
   "class": "UNCLASSIFIED",
   "layer": "⑧ coherence",
@@ -15,7 +20,8 @@
       "observer": "Claude Voûte (LLM agent), session 8d9c5098, from the night reports of 2026-09-06/09",
       "excerpt": "06-09-2026 : « la part de \"janvier\" va de 47,4 % en 2011 à 21,4 % en 2025 — un quart à près de la moitié des notices n'ont pas de mois réel ».",
       "excerpt_en": "2026-09-06: \"the share of 'January' goes from 47.4 % in 2011 to 21.4 % in 2025 — a quarter to nearly half of the records have no real month\".",
-      "lang": "fr"
+      "lang": "fr",
+      "organisation": "Loxyn SAS, Lyon"
     }
   ],
   "specimens": {

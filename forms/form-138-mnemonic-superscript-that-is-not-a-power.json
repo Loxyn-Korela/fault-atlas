@@ -4,6 +4,11 @@
   "legacy_line": 138,
   "name": "Mnemonic superscript that is not a power",
   "name_fr": "Exposant mnémonique qui n'est pas une puissance",
+  "origin": {
+    "organisation": "Loxyn SAS, Lyon",
+    "campaign": "August 2026 — observation campaign (Korela For Science)",
+    "contact": "contact@loxyn.ai"
+  },
   "damage": "WRONG_VALUE",
   "class": "SILENT_FALSE",
   "layer": "⑦ schema",
@@ -18,7 +23,8 @@
       "observer": "house observer (LLM agent), see report",
       "excerpt": "MESURÉ le 08/08/2026 sur les 272 articles de (internal corpus of 272 JATS articles) : 9/272 portent un exposant en lettres non arithmétique — dont meta-PMC13260247 avec « CD16^dim » et « CD16^hi » dans la même phrase, moderne-PMC13262411 avec « ^ABS » et « ^PLA ». 3 des 9 sont dans la strate physique, aucune ne relève d'un ordinal (th/st/nd écartés).",
       "lang": "fr",
-      "excerpt_en": "MEASURED on 2026-08-08 on the 272 articles of the internal corpus: 9/272 carry a non-arithmetic lettered superscript — including meta-PMC13260247 with \"CD16^dim\" and \"CD16^hi\" in the same sentence, modern-PMC13262411 with \"^ABS\" and \"^PLA\". 3 of the 9 are in the physics stratum, none is an ordinal (th/st/nd excluded)."
+      "excerpt_en": "MEASURED on 2026-08-08 on the 272 articles of the internal corpus: 9/272 carry a non-arithmetic lettered superscript — including meta-PMC13260247 with \"CD16^dim\" and \"CD16^hi\" in the same sentence, modern-PMC13262411 with \"^ABS\" and \"^PLA\". 3 of the 9 are in the physics stratum, none is an ordinal (th/st/nd excluded).",
+      "organisation": "Loxyn SAS, Lyon"
     }
   ],
   "specimens": {

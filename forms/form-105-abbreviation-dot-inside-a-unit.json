@@ -4,6 +4,11 @@
   "legacy_line": 105,
   "name": "Abbreviation dot inside a unit",
   "name_fr": "Point abréviatif dans l'unité",
+  "origin": {
+    "organisation": "Loxyn SAS, Lyon",
+    "campaign": "August 2026 — observation campaign (Korela For Science)",
+    "contact": "contact@loxyn.ai"
+  },
   "damage": "WRONG_VALUE",
   "class": "REFUSABLE",
   "layer": "② reading",
@@ -18,7 +23,8 @@
       "observer": "house observer (LLM agent), see report",
       "excerpt": "« c.c. » et « m.g. » relevés dans Br. J. Pharmac. 1971-1976 (vague 1, 08/08/2026)",
       "lang": "fr",
-      "excerpt_en": "\"c.c.\" and \"m.g.\" recorded in Br. J. Pharmac. 1971-1976 (wave 1, 2026-08-08)"
+      "excerpt_en": "\"c.c.\" and \"m.g.\" recorded in Br. J. Pharmac. 1971-1976 (wave 1, 2026-08-08)",
+      "organisation": "Loxyn SAS, Lyon"
     }
   ],
   "specimens": {

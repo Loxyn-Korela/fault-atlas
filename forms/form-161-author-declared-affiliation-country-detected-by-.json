@@ -2,6 +2,11 @@
   "id": "form-161",
   "version": 1,
   "name": "Author-declared affiliation country, detected by pattern",
+  "origin": {
+    "organisation": "Loxyn SAS, Lyon",
+    "campaign": "September 2026 — PubMed substrate and other corpora (Voûte)",
+    "contact": "contact@loxyn.ai"
+  },
   "damage": "WRONG_VALUE",
   "class": "UNCLASSIFIED",
   "layer": "④ extraction",
@@ -15,7 +20,8 @@
       "observer": "Claude Voûte (LLM agent), session 8d9c5098, from the Substrat measurement files",
       "excerpt": "Dossier v8 : « les pays sont détectés par motifs dans les affiliations des auteurs — une notice compte pour chaque pays présent » ; 08-09-2026 : pays en minuscules (« usa », « israel », « france »), une notice sans affiliation n'a pas de pays.",
       "excerpt_en": "Dossier v8: \"countries are detected by patterns in the authors' affiliations — a record counts for each country present\"; 2026-09-08: lower-case countries ('usa', 'israel', 'france'), a record without affiliation has no country.",
-      "lang": "fr"
+      "lang": "fr",
+      "organisation": "Loxyn SAS, Lyon"
     }
   ],
   "specimens": {

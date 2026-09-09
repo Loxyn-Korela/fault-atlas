@@ -4,6 +4,11 @@
   "legacy_line": 110,
   "name": "Pre-registration identifier",
   "name_fr": "Préenregistrement (identifiant de registre)",
+  "origin": {
+    "organisation": "Loxyn SAS, Lyon",
+    "campaign": "August 2026 — observation campaign (Korela For Science)",
+    "contact": "contact@loxyn.ai"
+  },
   "damage": "WRONG_LABEL",
   "class": "DEFEATED",
   "layer": "⑩ retrieval",
@@ -18,7 +23,8 @@
       "observer": "house observer (LLM agent), see report",
       "excerpt": "identifiants de registre en fin de résumé, articles biomédicaux 2024-2026 (vague moderne, 08/08/2026)",
       "lang": "fr",
-      "excerpt_en": "registry identifiers at the end of the abstract, biomedical articles 2024-2026 (modern wave, 2026-08-08)"
+      "excerpt_en": "registry identifiers at the end of the abstract, biomedical articles 2024-2026 (modern wave, 2026-08-08)",
+      "organisation": "Loxyn SAS, Lyon"
     }
   ],
   "specimens": {

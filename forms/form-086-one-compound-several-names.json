@@ -4,6 +4,11 @@
   "legacy_line": 86,
   "name": "One compound, several names",
   "name_fr": "Un composé, plusieurs noms",
+  "origin": {
+    "organisation": "Loxyn SAS, Lyon",
+    "campaign": "August 2026 — observation campaign (Korela For Science)",
+    "contact": "contact@loxyn.ai"
+  },
   "damage": "SPLIT",
   "class": "IRREDUCIBLE",
   "layer": "⑥ resolution",
@@ -18,7 +23,8 @@
       "observer": "house observer (LLM agent), see report",
       "excerpt": "MESURÉ le 08/08/2026 sur les 272 articles XML JATS de (internal corpus of 272 JATS articles) : 224/272 articles (82 %) introduisent au moins une abréviation par glose parenthétique « nom développé (SIGLE) », 2 463 gloses au total, soit 9 par article en moyenne — la parenthèse est le SEUL pont entre le nom long et le sigle. Observé le 08/08/2026 sur Cumings & Hilton, Br. J. Pharmac. 1971 : quatre natures de nom pour une substance, et 5-HT (1976) contre 5HT (1971).",
       "lang": "fr",
-      "excerpt_en": "MEASURED on 2026-08-08 on the 272 JATS XML articles of the internal corpus: 224/272 articles (82 %) introduce at least one abbreviation by parenthetical gloss \"expanded name (ACRONYM)\", 2,463 glosses in total, i.e. 9 per article on average — the parenthesis is the ONLY bridge between the long name and the acronym. Observed on 2026-08-08 on Cumings & Hilton, Br. J. Pharmac. 1971: four kinds of name for one substance, and 5-HT (1976) versus 5HT (1971)."
+      "excerpt_en": "MEASURED on 2026-08-08 on the 272 JATS XML articles of the internal corpus: 224/272 articles (82 %) introduce at least one abbreviation by parenthetical gloss \"expanded name (ACRONYM)\", 2,463 glosses in total, i.e. 9 per article on average — the parenthesis is the ONLY bridge between the long name and the acronym. Observed on 2026-08-08 on Cumings & Hilton, Br. J. Pharmac. 1971: four kinds of name for one substance, and 5-HT (1976) versus 5HT (1971).",
+      "organisation": "Loxyn SAS, Lyon"
     }
   ],
   "specimens": {

@@ -4,6 +4,11 @@
   "legacy_line": 127,
   "name": "Structured object presented as a figure",
   "name_fr": "Objet structuré présenté comme figure",
+  "origin": {
+    "organisation": "Loxyn SAS, Lyon",
+    "campaign": "August 2026 — observation campaign (Korela For Science)",
+    "contact": "contact@loxyn.ai"
+  },
   "damage": "MISSING",
   "class": "IRREDUCIBLE",
   "layer": "② reading",
@@ -18,7 +23,8 @@
       "observer": "house observer (LLM agent), see report",
       "excerpt": "MESURÉ le 08/08/2026 sur (internal corpus of 272 JATS articles) (272 XML JATS) : ZÉRO bloc <code> ou <preformat> sur les 272 articles, et les 5 légendes contenant des accolades sont du LaTeX mathématique, pas des objets structurés. ⇒ L'ABSENCE est la mesure : ce corpus est PMC (biomédical + physique) et la difficulté n'y existe pas. Elle confirme l'annexe 127, observée le 08/08/2026 sur 14 articles 2021-2026 hors biomédecine (arXiv, HAL, Copernicus) : elle n'aurait jamais été trouvée sans changer de discipline.",
       "lang": "fr",
-      "excerpt_en": "MEASURED on 2026-08-08 on the internal corpus (272 JATS XML): ZERO <code> or <preformat> blocks across the 272 articles, and the 5 captions containing braces are mathematical LaTeX, not structured objects. ⇒ The ABSENCE is the measurement: this corpus is PMC (biomedical + physics) and the difficulty does not exist there. It confirms annex 127, observed on 2026-08-08 on 14 articles 2021-2026 outside biomedicine (arXiv, HAL, Copernicus): it would never have been found without changing discipline."
+      "excerpt_en": "MEASURED on 2026-08-08 on the internal corpus (272 JATS XML): ZERO <code> or <preformat> blocks across the 272 articles, and the 5 captions containing braces are mathematical LaTeX, not structured objects. ⇒ The ABSENCE is the measurement: this corpus is PMC (biomedical + physics) and the difficulty does not exist there. It confirms annex 127, observed on 2026-08-08 on 14 articles 2021-2026 outside biomedicine (arXiv, HAL, Copernicus): it would never have been found without changing discipline.",
+      "organisation": "Loxyn SAS, Lyon"
     }
   ],
   "specimens": {

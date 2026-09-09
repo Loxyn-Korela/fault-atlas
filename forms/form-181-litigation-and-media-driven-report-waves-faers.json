@@ -2,6 +2,11 @@
   "id": "form-181",
   "version": 1,
   "name": "Litigation- and media-driven report waves (FAERS)",
+  "origin": {
+    "organisation": "Loxyn SAS, Lyon",
+    "campaign": "September 2026 — PubMed substrate and other corpora (Voûte)",
+    "contact": "contact@loxyn.ai"
+  },
   "damage": "SPURIOUS_EDGE",
   "class": "UNCLASSIFIED",
   "layer": "⑨ structure",
@@ -15,7 +20,8 @@
       "observer": "Claude Voûte (LLM agent), session 8d9c5098, from the night reports of 2026-09-06/09",
       "excerpt": "09-09-2026 : « avobenzone\\octisalate\\octocrylene × skin burning sensation 9 269 déclarations en douze mois » (2019) ; « ranitidine hydrochloride × prostate cancer 15 565 » (2021) ; couples de la liste 2021 : 18 sur 20 morts au juge à trois ans. Ce n'est pas une faute de données mais une population.",
       "excerpt_en": "2026-09-09: \"'avobenzone\\octisalate\\octocrylene × skin burning sensation' 9,269 reports in twelve months\" (2019); \"'ranitidine hydrochloride × prostate cancer' 15,565\" (2021); pairs of the 2021 list: 18 of 20 dead at the three-year judge. Not a data fault but a population.",
-      "lang": "fr"
+      "lang": "fr",
+      "organisation": "Loxyn SAS, Lyon"
     }
   ],
   "specimens": {

@@ -4,6 +4,11 @@
   "legacy_line": 97,
   "name": "The three PDF regimes (native, OCR layer, pure image)",
   "name_fr": "Les trois régimes de PDF (natif · OCR posé · image pure)",
+  "origin": {
+    "organisation": "Loxyn SAS, Lyon",
+    "campaign": "August 2026 — observation campaign (Korela For Science)",
+    "contact": "contact@loxyn.ai"
+  },
   "damage": "MISSING",
   "class": "REFUSABLE",
   "layer": "① pixel + ② reading",

@@ -2,6 +2,11 @@
   "id": "form-169",
   "version": 1,
   "name": "Domain assigned from the record's primary topic, not from the keyword",
+  "origin": {
+    "organisation": "Loxyn SAS, Lyon",
+    "campaign": "September 2026 — PubMed substrate and other corpora (Voûte)",
+    "contact": "contact@loxyn.ai"
+  },
   "damage": "WRONG_LABEL",
   "class": "UNCLASSIFIED",
   "layer": "⑦ schema",
@@ -15,7 +20,8 @@
       "observer": "Claude Voûte (LLM agent), session 8d9c5098, from the night reports of 2026-09-06/09",
       "excerpt": "06-09-2026 : « Physical Sciences 51,8 M de notices, Life Sciences 16,5 M — un facteur trois » ; « pour un mot-clé transversal (\"Medicine\", \"Computer science\") ce choix est arbitraire » ; « 1,55 M de notices n'ont pas de domaine du tout ».",
       "excerpt_en": "2026-09-06: \"Physical Sciences 51.8 M records, Life Sciences 16.5 M — a factor of three\"; \"for a cross-cutting keyword ('Medicine', 'Computer science') this choice is arbitrary\"; \"1.55 M records have no domain at all\".",
-      "lang": "fr"
+      "lang": "fr",
+      "organisation": "Loxyn SAS, Lyon"
     }
   ],
   "specimens": {

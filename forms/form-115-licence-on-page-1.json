@@ -4,6 +4,11 @@
   "legacy_line": 115,
   "name": "Licence on page 1",
   "name_fr": "Licence en page 1",
+  "origin": {
+    "organisation": "Loxyn SAS, Lyon",
+    "campaign": "August 2026 — observation campaign (Korela For Science)",
+    "contact": "contact@loxyn.ai"
+  },
   "damage": "SPURIOUS_EDGE",
   "class": "DEFEATED",
   "layer": "② reading",

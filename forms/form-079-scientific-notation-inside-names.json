@@ -4,6 +4,11 @@
   "legacy_line": 79,
   "name": "Scientific notation inside names",
   "name_fr": "Notation scientifique dans les noms",
+  "origin": {
+    "organisation": "Loxyn SAS, Lyon",
+    "campaign": "August 2026 — observation campaign (Korela For Science)",
+    "contact": "contact@loxyn.ai"
+  },
   "damage": "MERGE",
   "class": "SILENT_FALSE",
   "layer": "⑥ resolution",
@@ -18,7 +23,8 @@
       "observer": "house observer (LLM agent), see report",
       "excerpt": "MESURÉ le 08/08/2026 sur les 272 XML : 64/272 (24 %) portent un nom à lettre grecque (« β-cells »), 38/272 (14 %) une notation exponentielle (« 6 × 10 9 »), 17/272 (6 %) une constante indicée (« Ki67 », « LD 0 ») et 17/272 (6 %) un nom chiffre-tiret-sigle du type « 5-HT ». Seuls 8/272 (3 %) gardent les caractères d'indice/exposant Unicode (₂, ⁻) : ailleurs la notation est déjà APLATIE par le transport, ce qui est la fusion même que la ligne décrit. Observation d'origine 08/08/2026 : Apperley, Humphrey & Levy, Br. J. Pharmac. 1976 (annexe 79).",
       "lang": "fr",
-      "excerpt_en": "MEASURED on 2026-08-08 on the 272 XML files: 64/272 (24 %) carry a name with a Greek letter (\"β-cells\"), 38/272 (14 %) an exponential notation (\"6 × 10 9\"), 17/272 (6 %) a subscripted constant (\"Ki67\", \"LD 0\") and 17/272 (6 %) a digit-hyphen-acronym name of the type \"5-HT\". Only 8/272 (3 %) keep the Unicode subscript/superscript characters (₂, ⁻): elsewhere the notation is already FLATTENED by transport, which is the very merge the line describes. Original observation 2026-08-08: Apperley, Humphrey & Levy, Br. J. Pharmac. 1976 (annex 79)."
+      "excerpt_en": "MEASURED on 2026-08-08 on the 272 XML files: 64/272 (24 %) carry a name with a Greek letter (\"β-cells\"), 38/272 (14 %) an exponential notation (\"6 × 10 9\"), 17/272 (6 %) a subscripted constant (\"Ki67\", \"LD 0\") and 17/272 (6 %) a digit-hyphen-acronym name of the type \"5-HT\". Only 8/272 (3 %) keep the Unicode subscript/superscript characters (₂, ⁻): elsewhere the notation is already FLATTENED by transport, which is the very merge the line describes. Original observation 2026-08-08: Apperley, Humphrey & Levy, Br. J. Pharmac. 1976 (annex 79).",
+      "organisation": "Loxyn SAS, Lyon"
     }
   ],
   "specimens": {

@@ -4,6 +4,11 @@
   "legacy_line": 64,
   "name": "Period typographic conventions",
   "name_fr": "Conventions typographiques d'époque",
+  "origin": {
+    "organisation": "Loxyn SAS, Lyon",
+    "campaign": "August 2026 — observation campaign (Korela For Science)",
+    "contact": "contact@loxyn.ai"
+  },
   "damage": "SPLIT",
   "class": "IRREDUCIBLE",
   "layer": "② reading",
@@ -18,7 +23,8 @@
       "observer": "house observer (LLM agent), see report",
       "excerpt": "MESURÉ le 08/08/2026 sur les 272 XML (PMC récents) : ZÉRO titre en capitales intégrales, mais 70/272 (26 %) portent au moins un intertitre entièrement capitalisé (« ABSTRACT », « KEY WORDS: ») et 30/272 (11 %) un mot de 4 lettres ou plus tout en capitales dans le titre. Le zéro est lui-même la mesure : la convention est DATÉE. L'observation d'origine, 08/08/2026 sur le corpus PubMed ancien (annexe 64), comptait 184 titres en capitales intégrales — « STUDIES ON THE NATURE OF RESISTANCE OF GRAM-NEGATIVE BACILLI TO PENICILLIN ».",
       "lang": "fr",
-      "excerpt_en": "MEASURED on 2026-08-08 on the 272 XML files (recent PMC): ZERO titles in full capitals, but 70/272 (26 %) carry at least one fully capitalised subheading (\"ABSTRACT\", \"KEY WORDS:\") and 30/272 (11 %) a word of 4 letters or more in full capitals in the title. The zero is itself the measurement: the convention is DATED. The original observation, 2026-08-08 on the old PubMed corpus (annex 64), counted 184 titles in full capitals — \"STUDIES ON THE NATURE OF RESISTANCE OF GRAM-NEGATIVE BACILLI TO PENICILLIN\"."
+      "excerpt_en": "MEASURED on 2026-08-08 on the 272 XML files (recent PMC): ZERO titles in full capitals, but 70/272 (26 %) carry at least one fully capitalised subheading (\"ABSTRACT\", \"KEY WORDS:\") and 30/272 (11 %) a word of 4 letters or more in full capitals in the title. The zero is itself the measurement: the convention is DATED. The original observation, 2026-08-08 on the old PubMed corpus (annex 64), counted 184 titles in full capitals — \"STUDIES ON THE NATURE OF RESISTANCE OF GRAM-NEGATIVE BACILLI TO PENICILLIN\".",
+      "organisation": "Loxyn SAS, Lyon"
     }
   ],
   "specimens": {

@@ -4,6 +4,11 @@
   "legacy_line": 96,
   "name": "Methods as entities with a genealogy",
   "name_fr": "Les méthodes sont des entités avec généalogie",
+  "origin": {
+    "organisation": "Loxyn SAS, Lyon",
+    "campaign": "August 2026 — observation campaign (Korela For Science)",
+    "contact": "contact@loxyn.ai"
+  },
   "damage": "SPLIT",
   "class": "SILENT_FALSE",
   "layer": "⑥ resolution",
@@ -18,7 +23,8 @@
       "observer": "house observer (LLM agent), see report",
       "excerpt": "MESURÉ le 08/08/2026 sur les 272 XML (PMC récents) : 6/272 (2 %) nomment une méthode par son auteur (« method of … », « criteria of Guillain-Barré »), 3/272 (1 %) sous la forme canonique « using/according to the method of <Nom> », et 4/272 (1 %) portent une filiation explicite (« adapted from Page », « adapted from MacDougall »). En regard, 55/272 (20 %) portent un « Nom (année) » de citation — soit DIX FOIS PLUS de leurres que de cibles, avec la même forme de surface. Observation d'origine 08/08/2026 : Carpi & Virno, Brit. J. Pharmacol. 1957 (annexe 96).",
       "lang": "fr",
-      "excerpt_en": "MEASURED on 2026-08-08 on the 272 XML files (recent PMC): 6/272 (2 %) name a method by its author (\"method of …\", \"criteria of Guillain-Barré\"), 3/272 (1 %) in the canonical form \"using/according to the method of <Name>\", and 4/272 (1 %) carry an explicit lineage (\"adapted from Page\", \"adapted from MacDougall\"). By contrast, 55/272 (20 %) carry a citation \"Name (year)\" — TEN TIMES MORE decoys than targets, with the same surface form. Original observation 2026-08-08: Carpi & Virno, Brit. J. Pharmacol. 1957 (annex 96)."
+      "excerpt_en": "MEASURED on 2026-08-08 on the 272 XML files (recent PMC): 6/272 (2 %) name a method by its author (\"method of …\", \"criteria of Guillain-Barré\"), 3/272 (1 %) in the canonical form \"using/according to the method of <Name>\", and 4/272 (1 %) carry an explicit lineage (\"adapted from Page\", \"adapted from MacDougall\"). By contrast, 55/272 (20 %) carry a citation \"Name (year)\" — TEN TIMES MORE decoys than targets, with the same surface form. Original observation 2026-08-08: Carpi & Virno, Brit. J. Pharmacol. 1957 (annex 96).",
+      "organisation": "Loxyn SAS, Lyon"
     }
   ],
   "specimens": {

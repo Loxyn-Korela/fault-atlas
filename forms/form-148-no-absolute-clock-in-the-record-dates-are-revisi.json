@@ -2,6 +2,11 @@
   "id": "form-148",
   "version": 1,
   "name": "No absolute clock in the record (dates are revision bounds)",
+  "origin": {
+    "organisation": "Loxyn SAS, Lyon",
+    "campaign": "September 2026 — PubMed substrate and other corpora (Voûte)",
+    "contact": "contact@loxyn.ai"
+  },
   "damage": "WRONG_VALUE",
   "class": "UNCLASSIFIED",
   "layer": "⑧ coherence",
@@ -15,7 +20,8 @@
       "observer": "Claude Voûte (LLM agent), session 8d9c5098, from the Substrat measurement files",
       "excerpt": "21-08-2026 : « le substrat ne porte aucune horloge absolue ; toute mesure temporelle = différence de deux bornes de la même matrice » ; « rupture OLDMEDLINE à 1966, articles pré-1946 re-datés médiane 2010 » ; « borne_attribution == an_revise recopiée — 100,0000 % sur 342 733 118 » ; « DateCompleted min 1965 / 11 222 286 < 2000 ».",
       "excerpt_en": "2026-08-21: \"the substrate carries no absolute clock; every temporal measure = difference of two bounds of the same matrix\"; \"OLDMEDLINE break at 1966, pre-1946 articles re-dated median 2010\"; \"attribution bound == revised year copied — 100.0000 % over 342,733,118\"; \"DateCompleted min 1965 / 11,222,286 < 2000\".",
-      "lang": "fr"
+      "lang": "fr",
+      "organisation": "Loxyn SAS, Lyon"
     }
   ],
   "specimens": {

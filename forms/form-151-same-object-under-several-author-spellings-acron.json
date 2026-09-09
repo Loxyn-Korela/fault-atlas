@@ -2,6 +2,11 @@
   "id": "form-151",
   "version": 1,
   "name": "Same object under several author spellings (acronym, plural, appended acronym)",
+  "origin": {
+    "organisation": "Loxyn SAS, Lyon",
+    "campaign": "September 2026 — PubMed substrate and other corpora (Voûte)",
+    "contact": "contact@loxyn.ai"
+  },
   "damage": "SPLIT",
   "class": "UNCLASSIFIED",
   "layer": "⑥ resolution",
@@ -15,7 +20,8 @@
       "observer": "Claude Voûte (LLM agent), session 8d9c5098, from the Substrat measurement files",
       "excerpt": "08-09-2026 : deux implémentations du même banc, mêmes totaux (85 champions, 3 morts), « 17 noms différents » entre les deux listes de noms (63 contre 64 sujets distincts) — la variabilité vient des graphies ; « tumor microenvironment tme » : le mot-clé porte son propre sigle.",
       "excerpt_en": "2026-09-08: two implementations of the same bench, same totals (85 champions, 3 dead), \"17 different names\" between the two name lists (63 vs 64 distinct subjects) — the variability comes from spellings; \"tumor microenvironment tme\": the keyword carries its own acronym.",
-      "lang": "fr"
+      "lang": "fr",
+      "organisation": "Loxyn SAS, Lyon"
     }
   ],
   "specimens": {

@@ -4,6 +4,11 @@
   "legacy_line": 45,
   "name": "Genuinely scanned pages",
   "name_fr": "Vraies pages scannées",
+  "origin": {
+    "organisation": "Loxyn SAS, Lyon",
+    "campaign": "August 2026 — observation campaign (Korela For Science)",
+    "contact": "contact@loxyn.ai"
+  },
   "damage": "MISSING",
   "class": "SILENT_FALSE",
   "layer": "① pixel",

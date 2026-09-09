@@ -4,6 +4,11 @@
   "legacy_line": 80,
   "name": "Relative quantified relations",
   "name_fr": "Relations quantifiées relatives",
+  "origin": {
+    "organisation": "Loxyn SAS, Lyon",
+    "campaign": "August 2026 — observation campaign (Korela For Science)",
+    "contact": "contact@loxyn.ai"
+  },
   "damage": "WRONG_VALUE",
   "class": "IRREDUCIBLE",
   "layer": "⑦ schema",
@@ -18,7 +23,8 @@
       "observer": "house observer (LLM agent), see report",
       "excerpt": "MESURÉ le 08/08/2026 sur les 272 articles de (internal corpus of 272 JATS articles) : 10/272 articles portent au moins une comparaison de la forme « N fois / N-fold plus (ou moins) X » (ex. bio-PMC12927065 : 3.34, 2.74, 2.62), et 36/272 (13 %) portent un odds/hazard ratio — un fait dont la valeur EST le facteur. L'observation qui fonde la ligne est datée du 08/08/2026 sur Apperley, Humphrey & Levy, Br. J. Pharmac. 1976 : « about 1000 times less potent », « 5-HT about 700 times less potent », « methysergide about 4500 times less potent ».",
       "lang": "fr",
-      "excerpt_en": "MEASURED on 2026-08-08 on the 272 articles of the internal corpus: 10/272 articles carry at least one comparison of the form \"N times / N-fold more (or less) X\" (e.g. bio-PMC12927065: 3.34, 2.74, 2.62), and 36/272 (13 %) carry an odds/hazard ratio — a fact whose value IS the factor. The observation founding the line is dated 2026-08-08 on Apperley, Humphrey & Levy, Br. J. Pharmac. 1976: \"about 1000 times less potent\", \"5-HT about 700 times less potent\", \"methysergide about 4500 times less potent\"."
+      "excerpt_en": "MEASURED on 2026-08-08 on the 272 articles of the internal corpus: 10/272 articles carry at least one comparison of the form \"N times / N-fold more (or less) X\" (e.g. bio-PMC12927065: 3.34, 2.74, 2.62), and 36/272 (13 %) carry an odds/hazard ratio — a fact whose value IS the factor. The observation founding the line is dated 2026-08-08 on Apperley, Humphrey & Levy, Br. J. Pharmac. 1976: \"about 1000 times less potent\", \"5-HT about 700 times less potent\", \"methysergide about 4500 times less potent\".",
+      "organisation": "Loxyn SAS, Lyon"
     }
   ],
   "specimens": {

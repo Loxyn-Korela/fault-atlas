@@ -20,6 +20,7 @@ One JSON file per form, self-contained (`schema/form.schema.json`):
 
 | field | meaning |
 |---|---|
+| `origin` | the organisation and campaign that contributed the form; every observation also names its observer and organisation |
 | `damage` | what it does to the graph — one of seven: `MERGE`, `SPLIT`, `SPURIOUS_EDGE`, `MISSING`, `WRONG_VALUE`, `WRONG_LABEL`, `ANACHRONISM` (or `CORPUS_PARAMETER` when it is not a damage) |
 | `class` | whether deterministic code cancels it (`DEFEATED`, `DEFEATED_IF_XML`), can abstain on it (`REFUSABLE`), cannot see it from inside (`SILENT_FALSE`), or whether it needs meaning (`IRREDUCIBLE`) |
 | `seen` | where it was observed: corpus, document, date, observer, verbatim excerpt |

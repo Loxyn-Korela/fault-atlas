@@ -2,6 +2,11 @@
   "id": "form-154",
   "version": 2,
   "name": "New MeSH label for an old science",
+  "origin": {
+    "organisation": "Loxyn SAS, Lyon",
+    "campaign": "September 2026 — PubMed substrate and other corpora (Voûte)",
+    "contact": "contact@loxyn.ai"
+  },
   "damage": "ANACHRONISM",
   "class": "UNCLASSIFIED",
   "layer": "⑧ coherence",
@@ -15,7 +20,8 @@
       "observer": "Claude Voûte (LLM agent), session 8d9c5098, from the Substrat measurement files",
       "excerpt": "21-08-2026 : « fond mêle chocs et événements de vocabulaire (Heart Disease Risk Factors 1 411 : un mot neuf sur une science ancienne) ».",
       "excerpt_en": "2026-08-21: \"background mixes shocks and vocabulary events (Heart Disease Risk Factors 1,411: a new word on an old science)\".",
-      "lang": "fr"
+      "lang": "fr",
+      "organisation": "Loxyn SAS, Lyon"
     }
   ],
   "specimens": {

@@ -2,6 +2,11 @@
   "id": "form-149",
   "version": 1,
   "name": "Two publication dates per record (print vs electronic)",
+  "origin": {
+    "organisation": "Loxyn SAS, Lyon",
+    "campaign": "September 2026 — PubMed substrate and other corpora (Voûte)",
+    "contact": "contact@loxyn.ai"
+  },
   "damage": "WRONG_VALUE",
   "class": "UNCLASSIFIED",
   "layer": "⑧ coherence",
@@ -15,7 +20,8 @@
       "observer": "Claude Voûte (LLM agent), session 8d9c5098, from the Substrat measurement files",
       "excerpt": "Règle de lecture consignée le 05-09-2026 : « an·12 + (CASE WHEN mois>0 THEN mois WHEN mois_e>0 THEN mois_e ELSE 1 END) » ; année de publication max observée dans la table de travail : 2027 (08-09-2026 : « (2027, 188900) » = 188 900 notices datées 2026, et des notices datées 2027 par avance de parution).",
       "excerpt_en": "Reading rule recorded on 2026-09-05: \"year·12 + (CASE WHEN month>0 THEN month WHEN month_e>0 THEN month_e ELSE 1 END)\"; maximum publication year observed in the working table: 2027 (2026-09-08: \"(2027, 188900)\" = 188,900 records dated 2026, and records dated 2027 by advance publication).",
-      "lang": "fr"
+      "lang": "fr",
+      "organisation": "Loxyn SAS, Lyon"
     }
   ],
   "specimens": {

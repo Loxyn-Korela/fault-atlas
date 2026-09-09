@@ -4,6 +4,11 @@
   "legacy_line": 140,
   "name": "Editorial status printed in the document",
   "name_fr": "Statut éditorial imprimé dans le document",
+  "origin": {
+    "organisation": "Loxyn SAS, Lyon",
+    "campaign": "August 2026 — observation campaign (Korela For Science)",
+    "contact": "contact@loxyn.ai"
+  },
   "damage": "ANACHRONISM",
   "class": "SILENT_FALSE",
   "layer": "④ extraction",
@@ -18,7 +23,8 @@
       "observer": "house observer (LLM agent), see report",
       "excerpt": "MESURÉ le 08/08/2026 sur (internal corpus of 272 JATS articles) (272 XML JATS) : 52/272 articles (19 %) portent en tête une déclaration de statut éditorial — 33 notices de rétractation (article-type=\"retraction\", 12 %), 39 documents avec un <related-article> (version antérieure ou correction, 14 %), 2 déclarant explicitement une version préprint antérieure sur medRxiv. ⚠️ Le « A PREPRINT » d'arXiv, lui, est absent de ce corpus par construction : PMC ne publie que du publié (annexe 140, observée le 08/08/2026 hors PMC).",
       "lang": "fr",
-      "excerpt_en": "MEASURED on 2026-08-08 on the internal corpus (272 JATS XML): 52/272 articles (19 %) carry an editorial-status declaration at the top — 33 retraction notices (article-type=\"retraction\", 12 %), 39 documents with a <related-article> (earlier version or correction, 14 %), 2 explicitly declaring an earlier preprint version on medRxiv. ⚠️ arXiv's \"A PREPRINT\", for its part, is absent from this corpus by construction: PMC publishes only what is published (annex 140, observed on 2026-08-08 outside PMC)."
+      "excerpt_en": "MEASURED on 2026-08-08 on the internal corpus (272 JATS XML): 52/272 articles (19 %) carry an editorial-status declaration at the top — 33 retraction notices (article-type=\"retraction\", 12 %), 39 documents with a <related-article> (earlier version or correction, 14 %), 2 explicitly declaring an earlier preprint version on medRxiv. ⚠️ arXiv's \"A PREPRINT\", for its part, is absent from this corpus by construction: PMC publishes only what is published (annex 140, observed on 2026-08-08 outside PMC).",
+      "organisation": "Loxyn SAS, Lyon"
     }
   ],
   "specimens": {

@@ -2,6 +2,11 @@
   "id": "form-157",
   "version": 1,
   "name": "Annotations for records newer than the frozen snapshot (false recent decline)",
+  "origin": {
+    "organisation": "Loxyn SAS, Lyon",
+    "campaign": "September 2026 — PubMed substrate and other corpora (Voûte)",
+    "contact": "contact@loxyn.ai"
+  },
   "damage": "MISSING",
   "class": "UNCLASSIFIED",
   "layer": "⑨ structure",
@@ -15,7 +20,8 @@
       "observer": "Claude Voûte (LLM agent), session 8d9c5098, from the Substrat measurement files",
       "excerpt": "REJETS-hors-instantane-par-annee.json (19-08-2026) : relations « lignes rejetées 1 238 995 · PMID distincts 278 093 · au-delà de la borne 270 047 » ; entités « lignes rejetées 6 741 580 · PMID distincts 855 858 · au-delà de la borne 843 713 » ; « 97,1 % des PMID rejetés des relations et 98,6 % de ceux des entités sont au-delà de la borne haute de l'instantané ; le reste — 8 046 pour les relations, 12 145 pour les entités — constitue le vrai manque ».",
       "excerpt_en": "REJETS-hors-instantane-par-annee.json (2026-08-19): relations \"rejected lines 1,238,995 · distinct PMIDs 278,093 · beyond the bound 270,047\"; entities \"rejected lines 6,741,580 · distinct PMIDs 855,858 · beyond the bound 843,713\"; \"97.1 % of rejected PMIDs for relations and 98.6 % for entities are beyond the upper bound of the snapshot; the rest — 8,046 for relations, 12,145 for entities — is the true gap\".",
-      "lang": "fr"
+      "lang": "fr",
+      "organisation": "Loxyn SAS, Lyon"
     }
   ],
   "specimens": {

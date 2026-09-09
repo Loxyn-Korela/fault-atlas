@@ -4,6 +4,11 @@
   "legacy_line": 139,
   "name": "Citation with internal locator",
   "name_fr": "Citation avec localisateur interne",
+  "origin": {
+    "organisation": "Loxyn SAS, Lyon",
+    "campaign": "August 2026 — observation campaign (Korela For Science)",
+    "contact": "contact@loxyn.ai"
+  },
   "damage": "MISSING",
   "class": "DEFEATED_IF_XML",
   "layer": "⑤ anchoring",
@@ -18,7 +23,8 @@
       "observer": "house observer (LLM agent), see report",
       "excerpt": "MESURÉ le 08/08/2026 sur 272 articles Europe PMC accès libre 2023-2026 : présent dans 71 (26 %). Concentration : essai 17, meta 16, phys 13. Formes réelles : (Fig. 1 ) | (Fig. 3 ) | (Fig. 1 )",
       "lang": "fr",
-      "excerpt_en": "MEASURED on 2026-08-08 on 272 open-access Europe PMC articles 2023-2026: present in 71 (26 %). Concentration: trial 17, meta 16, phys 13. Real forms: (Fig. 1 ) | (Fig. 3 ) | (Fig. 1 )"
+      "excerpt_en": "MEASURED on 2026-08-08 on 272 open-access Europe PMC articles 2023-2026: present in 71 (26 %). Concentration: trial 17, meta 16, phys 13. Real forms: (Fig. 1 ) | (Fig. 3 ) | (Fig. 1 )",
+      "organisation": "Loxyn SAS, Lyon"
     }
   ],
   "specimens": {

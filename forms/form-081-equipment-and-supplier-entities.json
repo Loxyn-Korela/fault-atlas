@@ -4,6 +4,11 @@
   "legacy_line": 81,
   "name": "Equipment and supplier entities",
   "name_fr": "Entités de matériel et de fournisseurs",
+  "origin": {
+    "organisation": "Loxyn SAS, Lyon",
+    "campaign": "August 2026 — observation campaign (Korela For Science)",
+    "contact": "contact@loxyn.ai"
+  },
   "damage": "WRONG_LABEL",
   "class": "IRREDUCIBLE",
   "layer": "④ extraction",
@@ -18,7 +23,8 @@
       "observer": "house observer (LLM agent), see report",
       "excerpt": "MESURÉ le 08/08/2026 sur (internal corpus of 272 JATS articles) (272 XML JATS) : 57/272 articles (21 %) portent dans le corps au moins une mention de fournisseur entre parenthèses de la forme « (… Ltd/Inc/GmbH/Corp/B.V./AG …) » ; 50/272 (18 %) portent en outre une référence catalogue (cat. no., Cat#, catalogue number).",
       "lang": "fr",
-      "excerpt_en": "MEASURED on 2026-08-08 on the internal corpus (272 JATS XML): 57/272 articles (21 %) carry in the body at least one parenthesised supplier mention of the form \"(… Ltd/Inc/GmbH/Corp/B.V./AG …)\"; 50/272 (18 %) additionally carry a catalogue reference (cat. no., Cat#, catalogue number)."
+      "excerpt_en": "MEASURED on 2026-08-08 on the internal corpus (272 JATS XML): 57/272 articles (21 %) carry in the body at least one parenthesised supplier mention of the form \"(… Ltd/Inc/GmbH/Corp/B.V./AG …)\"; 50/272 (18 %) additionally carry a catalogue reference (cat. no., Cat#, catalogue number).",
+      "organisation": "Loxyn SAS, Lyon"
     }
   ],
   "specimens": {

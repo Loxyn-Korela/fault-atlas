@@ -2,6 +2,11 @@
   "id": "form-171",
   "version": 1,
   "name": "Funded projects without text (OpenAIRE, NIH)",
+  "origin": {
+    "organisation": "Loxyn SAS, Lyon",
+    "campaign": "September 2026 — PubMed substrate and other corpora (Voûte)",
+    "contact": "contact@loxyn.ai"
+  },
   "damage": "MISSING",
   "class": "UNCLASSIFIED",
   "layer": "⑨ structure",
@@ -15,7 +20,8 @@
       "observer": "Claude Voûte (LLM agent), session 8d9c5098, from the night reports of 2026-09-06/09",
       "excerpt": "08-09-2026 : « NIH : 2 343 783 projets · résumé 0 · mots-clés 0 · montant 1 583 418 » ; résumés présents pour UKRI 175 092, Commission européenne 102 580 sur 128 574, ANR 27 260 sur 35 344.",
       "excerpt_en": "2026-09-08: \"NIH: 2,343,783 projects · abstract 0 · keywords 0 · amount 1,583,418\"; abstracts present for UKRI 175,092, European Commission 102,580 of 128,574, ANR 27,260 of 35,344.",
-      "lang": "fr"
+      "lang": "fr",
+      "organisation": "Loxyn SAS, Lyon"
     }
   ],
   "specimens": {

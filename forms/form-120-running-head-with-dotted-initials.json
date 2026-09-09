@@ -4,6 +4,11 @@
   "legacy_line": 120,
   "name": "Running head with dotted initials",
   "name_fr": "Running head à initiales pointées",
+  "origin": {
+    "organisation": "Loxyn SAS, Lyon",
+    "campaign": "August 2026 — observation campaign (Korela For Science)",
+    "contact": "contact@loxyn.ai"
+  },
   "damage": "SPLIT",
   "class": "REFUSABLE",
   "layer": "⑥ resolution",
@@ -18,7 +23,8 @@
       "observer": "house observer (LLM agent), see report",
       "excerpt": "MESURÉ le 08/08/2026 sur 272 articles XML JATS Europe PMC (2023-2026) : présent dans 23/272 (8,5 %). Forme réelle, bio-PMC13162546 — la page 1 donne <given-names>Xianyun</given-names><surname>Shao</surname>, et le running head porte « X. Shao et al. », graphie qui n'apparaît nulle part en page 1. Autres relevés : « Lisbeth Mogensen » / « L. Mogensen » (essai-PMC13169472), « Chloe Puett » / « C. Puett » (essai-PMC13205709).",
       "lang": "fr",
-      "excerpt_en": "MEASURED on 2026-08-08 on 272 Europe PMC JATS XML articles (2023-2026): present in 23/272 (8.5 %). Real form, bio-PMC13162546 — page 1 gives <given-names>Xianyun</given-names><surname>Shao</surname>, and the running head carries \"X. Shao et al.\", a spelling that appears nowhere on page 1. Other records: \"Lisbeth Mogensen\" / \"L. Mogensen\" (trial-PMC13169472), \"Chloe Puett\" / \"C. Puett\" (trial-PMC13205709)."
+      "excerpt_en": "MEASURED on 2026-08-08 on 272 Europe PMC JATS XML articles (2023-2026): present in 23/272 (8.5 %). Real form, bio-PMC13162546 — page 1 gives <given-names>Xianyun</given-names><surname>Shao</surname>, and the running head carries \"X. Shao et al.\", a spelling that appears nowhere on page 1. Other records: \"Lisbeth Mogensen\" / \"L. Mogensen\" (trial-PMC13169472), \"Chloe Puett\" / \"C. Puett\" (trial-PMC13205709).",
+      "organisation": "Loxyn SAS, Lyon"
     }
   ],
   "specimens": {

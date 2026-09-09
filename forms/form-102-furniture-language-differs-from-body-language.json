@@ -4,6 +4,11 @@
   "legacy_line": 102,
   "name": "Furniture language differs from body language",
   "name_fr": "La langue du mobilier n'est pas celle du corps",
+  "origin": {
+    "organisation": "Loxyn SAS, Lyon",
+    "campaign": "August 2026 — observation campaign (Korela For Science)",
+    "contact": "contact@loxyn.ai"
+  },
   "damage": "MISSING",
   "class": "DEFEATED_IF_XML",
   "layer": "② reading",
@@ -18,7 +23,8 @@
       "observer": "house observer (LLM agent), see report",
       "excerpt": "MESURÉ le 08/08/2026 sur 272 articles Europe PMC accès libre 2023-2026 : présent dans 53 (19 %). Concentration : nonEN 51, bio 1, meta 1. Formes réelles : en | fa | de",
       "lang": "fr",
-      "excerpt_en": "MEASURED on 2026-08-08 on 272 open-access Europe PMC articles 2023-2026: present in 53 (19 %). Concentration: nonEN 51, bio 1, meta 1. Real forms: en | fa | de"
+      "excerpt_en": "MEASURED on 2026-08-08 on 272 open-access Europe PMC articles 2023-2026: present in 53 (19 %). Concentration: nonEN 51, bio 1, meta 1. Real forms: en | fa | de",
+      "organisation": "Loxyn SAS, Lyon"
     }
   ],
   "specimens": {

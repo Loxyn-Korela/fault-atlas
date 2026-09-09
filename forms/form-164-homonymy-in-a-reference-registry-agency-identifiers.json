@@ -2,6 +2,11 @@
   "id": "form-164",
   "version": 1,
   "name": "Homonymy in a reference registry (agency identifiers)",
+  "origin": {
+    "organisation": "Loxyn SAS, Lyon",
+    "campaign": "September 2026 — PubMed substrate and other corpora (Voûte)",
+    "contact": "contact@loxyn.ai"
+  },
   "damage": "MERGE",
   "class": "UNCLASSIFIED",
   "layer": "⑥ resolution",

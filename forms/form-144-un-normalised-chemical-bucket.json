@@ -2,6 +2,11 @@
   "id": "form-144",
   "version": 1,
   "name": "Un-normalised chemical bucket",
+  "origin": {
+    "organisation": "Loxyn SAS, Lyon",
+    "campaign": "September 2026 — PubMed substrate and other corpora (Voûte)",
+    "contact": "contact@loxyn.ai"
+  },
   "damage": "MERGE",
   "class": "UNCLASSIFIED",
   "layer": "⑥ resolution",
@@ -15,7 +20,8 @@
       "observer": "Claude Voûte (LLM agent), session 8d9c5098, from the Substrat measurement files",
       "excerpt": "21-08-2026 : « 224 554 246 lignes = 8,71 % du corpus section, 29,62 % des annotations Chemical (758 078 274) — confirmé à l'unité par pointage architecte indépendant (98 s) » ; « le seau franchit tous les filtres légitimes (surface=0, type et id valides) ».",
       "excerpt_en": "2026-08-21: \"224,554,246 lines = 8.71 % of the section corpus, 29.62 % of Chemical annotations (758,078,274) — confirmed to the unit by an independent architect check (98 s)\"; \"the bucket passes every legitimate filter (surface=0, valid type and id)\".",
-      "lang": "fr"
+      "lang": "fr",
+      "organisation": "Loxyn SAS, Lyon"
     }
   ],
   "specimens": {

@@ -2,6 +2,11 @@
   "id": "form-173",
   "version": 1,
   "name": "Empty funder jurisdiction",
+  "origin": {
+    "organisation": "Loxyn SAS, Lyon",
+    "campaign": "September 2026 — PubMed substrate and other corpora (Voûte)",
+    "contact": "contact@loxyn.ai"
+  },
   "damage": "MISSING",
   "class": "UNCLASSIFIED",
   "layer": "④ extraction",
@@ -15,7 +20,8 @@
       "observer": "Claude Voûte (LLM agent), session 8d9c5098, from the night reports of 2026-09-06/09",
       "excerpt": "08-09-2026 : « ('', 21 292 projets, 15 478 avec montant) ».",
       "excerpt_en": "2026-09-08: \"('', 21,292 projects, 15,478 with an amount)\".",
-      "lang": "fr"
+      "lang": "fr",
+      "organisation": "Loxyn SAS, Lyon"
     }
   ],
   "specimens": {

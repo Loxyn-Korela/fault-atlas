@@ -2,6 +2,11 @@
   "id": "form-158",
   "version": 1,
   "name": "Anonymous typed mentions (surface only, no dictionary entry)",
+  "origin": {
+    "organisation": "Loxyn SAS, Lyon",
+    "campaign": "September 2026 — PubMed substrate and other corpora (Voûte)",
+    "contact": "contact@loxyn.ai"
+  },
   "damage": "MISSING",
   "class": "UNCLASSIFIED",
   "layer": "⑥ resolution",
@@ -15,7 +20,8 @@
       "observer": "Claude Voûte (LLM agent), session 8d9c5098, from the Substrat measurement files",
       "excerpt": "21-08-2026 : « 0,85 % des lignes section = mentions de surface TYPÉES hors dico (« anonymes ») » ; « Species 1,94 % anonymes (6× gènes) » ; « 21,8 M anonymes à surface = 1, inclus dans les 126,26 M ».",
       "excerpt_en": "2026-08-21: \"0.85 % of section lines = TYPED surface mentions outside the dictionary ('anonymous')\"; \"Species 1.94 % anonymous (6× genes)\"; \"21.8 M anonymous with surface = 1, included in the 126.26 M\".",
-      "lang": "fr"
+      "lang": "fr",
+      "organisation": "Loxyn SAS, Lyon"
     }
   ],
   "specimens": {

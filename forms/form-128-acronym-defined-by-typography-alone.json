@@ -4,6 +4,11 @@
   "legacy_line": 128,
   "name": "Acronym defined by typography alone",
   "name_fr": "Sigle défini par la typographie seule",
+  "origin": {
+    "organisation": "Loxyn SAS, Lyon",
+    "campaign": "August 2026 — observation campaign (Korela For Science)",
+    "contact": "contact@loxyn.ai"
+  },
   "damage": "SPLIT",
   "class": "SILENT_FALSE",
   "layer": "⑥ resolution",
@@ -18,7 +23,8 @@
       "observer": "house observer (LLM agent), see report",
       "excerpt": "MESURÉ le 08/08/2026 sur 272 articles XML JATS : 214/272 (79 %) emploient au moins un sigle tout-capitales 3 fois ou plus SANS jamais l'introduire par « (SIGLE) » — 1 389 sigles concernés hors liste d'arrêt. La forme en apposition nue est relevée 14 fois : « NADPH, an important antioxidant » (bio-PMC12583535), « LVAD, the flow patterns » (cas-PMC13294096), « AUC, the linear trapezoidal method » (essai-PMC13254492).",
       "lang": "fr",
-      "excerpt_en": "MEASURED on 2026-08-08 on 272 JATS XML articles: 214/272 (79 %) use at least one all-capitals acronym 3 times or more WITHOUT ever introducing it by \"(ACRONYM)\" — 1,389 acronyms concerned outside the stop list. The bare apposition form is recorded 14 times: \"NADPH, an important antioxidant\" (bio-PMC12583535), \"LVAD, the flow patterns\" (case-PMC13294096), \"AUC, the linear trapezoidal method\" (trial-PMC13254492)."
+      "excerpt_en": "MEASURED on 2026-08-08 on 272 JATS XML articles: 214/272 (79 %) use at least one all-capitals acronym 3 times or more WITHOUT ever introducing it by \"(ACRONYM)\" — 1,389 acronyms concerned outside the stop list. The bare apposition form is recorded 14 times: \"NADPH, an important antioxidant\" (bio-PMC12583535), \"LVAD, the flow patterns\" (case-PMC13294096), \"AUC, the linear trapezoidal method\" (trial-PMC13254492).",
+      "organisation": "Loxyn SAS, Lyon"
     }
   ],
   "specimens": {

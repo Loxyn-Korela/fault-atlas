@@ -21,6 +21,7 @@ def next_id():
 
 def observation(a):
     o = {"corpus": a.corpus, "date": a.date, "excerpt": a.excerpt, "lang": a.lang}
+    if getattr(a, "organisation", None): o["organisation"] = a.organisation
     if a.document: o["document"] = a.document
     if a.observer: o["observer"] = a.observer
     return o
@@ -32,13 +33,13 @@ for name in ("new", "seen"):
     p.add_argument("target", help="English name (new) or form id (seen)")
     if name == "new": p.add_argument("--damage", required=True, choices=DAMAGES)
     p.add_argument("--corpus", required=True); p.add_argument("--date", required=True); p.add_argument("--excerpt", required=True)
-    p.add_argument("--document"); p.add_argument("--observer"); p.add_argument("--lang", default="en")
+    p.add_argument("--document"); p.add_argument("--observer"); p.add_argument("--lang", default="en"); p.add_argument("--organisation", required=(name=="new"), help="contributing organisation")
 a = ap.parse_args()
 
 if a.cmd == "new":
     fid = next_id()
     rec = {
-      "id": fid, "version": 1, "name": a.target, "damage": a.damage, "class": "UNCLASSIFIED", "layer": "TODO",
+      "id": fid, "version": 1, "name": a.target, "origin": {"organisation": a.organisation}, "damage": a.damage, "class": "UNCLASSIFIED", "layer": "TODO",
       "injection": "ALTER", "status": "proposed",
       "seen": [observation(a)],
       "specimens": {"cases": [], "counter_examples": []},

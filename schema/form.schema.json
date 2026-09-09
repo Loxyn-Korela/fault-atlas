@@ -17,7 +17,8 @@
     "prevention",
     "repair",
     "judgeable_by",
-    "history"
+    "history",
+    "origin"
   ],
   "additionalProperties": false,
   "properties": {
@@ -151,6 +152,10 @@
           "excerpt_en": {
             "type": "string",
             "description": "English translation of the excerpt when the original is not in English. The original stays the record; the translation is a courtesy."
+          },
+          "organisation": {
+            "type": "string",
+            "description": "Organisation of the observer, when different from the form's origin."
           }
         }
       }
@@ -303,6 +308,27 @@
           "by": {
             "type": "string"
           }
+        }
+      }
+    },
+    "origin": {
+      "type": "object",
+      "required": [
+        "organisation"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "organisation": {
+          "type": "string",
+          "description": "Organisation that contributed the form (e.g. 'Loxyn SAS, Lyon' or 'LIRIS, CNRS/Lyon 1')."
+        },
+        "campaign": {
+          "type": "string",
+          "description": "Observation campaign or project the form comes from."
+        },
+        "contact": {
+          "type": "string",
+          "description": "Public contact of the contributing organisation."
         }
       }
     }

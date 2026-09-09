@@ -4,6 +4,11 @@
   "legacy_line": 17,
   "name": "Diversity of document templates",
   "name_fr": "Diversité des gabarits",
+  "origin": {
+    "organisation": "Loxyn SAS, Lyon",
+    "campaign": "August 2026 — observation campaign (Korela For Science)",
+    "contact": "contact@loxyn.ai"
+  },
   "damage": "MISSING",
   "class": "DEFEATED_IF_XML",
   "layer": "② reading",
@@ -18,7 +23,8 @@
       "observer": "house observer (LLM agent), see report",
       "excerpt": "MESURÉ le 08/08/2026 sur les 272 articles XML JATS d'(internal corpus of 272 JATS articles) (Europe PMC accès libre 2023-2026) : 272/272 déclarent un article-type, et on compte 15 gabarits DISTINCTS. Formes réelles au sommet : research-article 145, case-report 35, retraction 33, review-article 23, editorial 14, letter 9, brief-report 4, book-review 4, systematic-review 3 — et article-type=\"other\", gabarit NON DÉCLARÉ, dans 2 fichiers (bio-PMC12674831.xml, nonEN-PMC13228121.xml). 24 gabarits « translation » supplémentaires n'apparaissent que sur des <sub-article> : ils ne sont PAS le gabarit du fichier.",
       "lang": "fr",
-      "excerpt_en": "MEASURED on 2026-08-08 on the 272 JATS XML articles of the internal corpus (Europe PMC open access 2023-2026): 272/272 declare an article-type, and 15 DISTINCT templates are counted. Real forms at the top: research-article 145, case-report 35, retraction 33, review-article 23, editorial 14, letter 9, brief-report 4, book-review 4, systematic-review 3 — and article-type=\"other\", template NOT DECLARED, in 2 files (bio-PMC12674831.xml, nonEN-PMC13228121.xml). 24 additional \"translation\" templates appear only on <sub-article>: they are NOT the template of the file."
+      "excerpt_en": "MEASURED on 2026-08-08 on the 272 JATS XML articles of the internal corpus (Europe PMC open access 2023-2026): 272/272 declare an article-type, and 15 DISTINCT templates are counted. Real forms at the top: research-article 145, case-report 35, retraction 33, review-article 23, editorial 14, letter 9, brief-report 4, book-review 4, systematic-review 3 — and article-type=\"other\", template NOT DECLARED, in 2 files (bio-PMC12674831.xml, nonEN-PMC13228121.xml). 24 additional \"translation\" templates appear only on <sub-article>: they are NOT the template of the file.",
+      "organisation": "Loxyn SAS, Lyon"
     }
   ],
   "specimens": {

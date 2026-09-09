@@ -77,7 +77,7 @@ function apply(){{const s=q.value.toLowerCase(),d=fd.value,k=fc.value;let n=0;fo
 # ── form pages ──
 for f in forms:
     d = DAMAGE[f["damage"]]
-    seen = "".join(f"""<article class="obs"><p class="meta">{E(s['corpus'])} · {E(s['date'])}{(' · '+E(s['observer'])) if s.get('observer') else ''}</p>
+    seen = "".join(f"""<article class="obs"><p class="meta">{E(s['corpus'])} · {E(s['date'])}{(' · '+E(s['observer'])) if s.get('observer') else ''}{(' · '+E(s['organisation'])) if s.get('organisation') else ''}</p>
 <p>{E(s.get('excerpt_en', s['excerpt']))}</p>{('<details><summary>Original note ('+E(s.get('lang','fr'))+')</summary><p class="fr">'+E(s['excerpt'])+'</p></details>') if s.get('excerpt_en') and s.get('excerpt_en')!=s['excerpt'] else ''}</article>""" for s in f["seen"]) or "<p class='muted'>No observation yet: this form is a hypothesis, not an observation.</p>"
     cases = f["specimens"]["cases"]; cex = f["specimens"]["counter_examples"]
     spec = (f"<p>{len(cases)} case(s), {len(cex)} counter-example(s).</p>" if cases or cex else "<p class='muted'>Specimens not yet transcribed into this record.</p>")
@@ -85,7 +85,7 @@ for f in forms:
     prev = f["prevention"]; rep = f["repair"]
     body = f"""<p class="crumb"><a href="../index.html">Fault Atlas</a> › {E(f['id'])}</p>
 <h1>{E(f['name'])}</h1><p class="fr big">{E(f.get('name_fr',''))}</p>
-<div class="badges"><span class="pill" style="--c:{d[2]}">{E(d[0])}</span><span class="pill grey">{E(CLASS[f['class']])}</span><span class="pill grey">layer: {E(f['layer'])}</span><span class="pill grey">injection: {E(f.get('injection','—'))}</span><span class="pill warn">{E(f['status'].replace('_',' '))}</span></div>
+<div class="badges"><span class="pill" style="--c:{d[2]}">{E(d[0])}</span><span class="pill grey">from: {E(f.get("origin",{}).get("organisation","—"))}</span><span class="pill grey">{E(CLASS[f['class']])}</span><span class="pill grey">layer: {E(f['layer'])}</span><span class="pill grey">injection: {E(f.get('injection','—'))}</span><span class="pill warn">{E(f['status'].replace('_',' '))}</span></div>
 <div class="facts"><div><h3>Damage in the graph</h3><p><strong>{E(d[0])}</strong> — {E(d[1])}.</p></div>
 <div><h3>Can code cancel it?</h3><p>{'Yes' if prev['cancellable_by_code'] else 'No'}{('. Refusal clause: '+E(prev['refusal_clause'])) if prev.get('refusal_clause') else ''}{('. '+E(prev['note'])) if prev.get('note') else ''}.</p></div>
 <div><h3>Can a deletion-only repair restore the truth?</h3><p><strong>{E(REACH[rep['reachable_by_deletion']])}</strong>{(' — '+E(rep['note'])) if rep.get('note') else ''}.</p></div>

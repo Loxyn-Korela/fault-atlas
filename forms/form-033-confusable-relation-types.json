@@ -4,6 +4,11 @@
   "legacy_line": 33,
   "name": "Confusable relation types",
   "name_fr": "Confusabilité des types de relation",
+  "origin": {
+    "organisation": "Loxyn SAS, Lyon",
+    "campaign": "August 2026 — observation campaign (Korela For Science)",
+    "contact": "contact@loxyn.ai"
+  },
   "damage": "WRONG_LABEL",
   "class": "IRREDUCIBLE",
   "layer": "⑦ schema",
@@ -18,7 +23,8 @@
       "observer": "house observer (LLM agent), see report",
       "excerpt": "MESURÉ, relevé au catalogue le 08/08/2026 : F1 82,8 % quand on ignore le type, F1 30,1 % quand on le compte — on relie les bonnes entités et on se trompe de lien trois fois sur quatre. Et vérifié dans le code le même jour : le vocabulaire est annoncé fermé à 26 types, la table des inverses en accepte 31.",
       "lang": "fr",
-      "excerpt_en": "MEASURED, recorded in the catalogue on 2026-08-08: F1 82.8 % when the type is ignored, F1 30.1 % when it is counted — the right entities are linked and the link is wrong three times out of four. And verified in the code the same day: the vocabulary is announced closed at 26 types, the inverse table accepts 31."
+      "excerpt_en": "MEASURED, recorded in the catalogue on 2026-08-08: F1 82.8 % when the type is ignored, F1 30.1 % when it is counted — the right entities are linked and the link is wrong three times out of four. And verified in the code the same day: the vocabulary is announced closed at 26 types, the inverse table accepts 31.",
+      "organisation": "Loxyn SAS, Lyon"
     }
   ],
   "specimens": {

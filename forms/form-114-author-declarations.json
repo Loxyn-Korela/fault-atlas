@@ -4,6 +4,11 @@
   "legacy_line": 114,
   "name": "Author declarations",
   "name_fr": "Déclarations sur les auteurs",
+  "origin": {
+    "organisation": "Loxyn SAS, Lyon",
+    "campaign": "August 2026 — observation campaign (Korela For Science)",
+    "contact": "contact@loxyn.ai"
+  },
   "damage": "SPURIOUS_EDGE",
   "class": "DEFEATED",
   "layer": "④ extraction",
@@ -18,7 +23,8 @@
       "observer": "house observer (LLM agent), see report",
       "excerpt": "MESURÉ le 08/08/2026 sur 272 articles Europe PMC accès libre 2023-2026 (internal corpus of 272 JATS articles) : présent dans 190 articles (69 %) — le défaut le plus répandu de la série. Concentration : cas 34/34, meta 34/34, phys 31/34, bio 30/34, essai 28/34, moderne 15/17, nonEN 17/51, retract 1/34. Formes réelles : titres « Author contributions », « Competing interests », « Data availability », et fn-type COI-statement ×30, financial-disclosure ×12, con ×4 — contre fn-type=\"other\" ×127, qui ne dit rien et fonde la clause de refus.",
       "lang": "fr",
-      "excerpt_en": "MEASURED on 2026-08-08 on 272 open-access Europe PMC articles 2023-2026 (internal corpus): present in 190 articles (69 %) — the most widespread item of the series. Concentration: case 34/34, meta 34/34, phys 31/34, bio 30/34, trial 28/34, modern 15/17, nonEN 17/51, retract 1/34. Real forms: headings \"Author contributions\", \"Competing interests\", \"Data availability\", and fn-type COI-statement ×30, financial-disclosure ×12, con ×4 — against fn-type=\"other\" ×127, which says nothing and founds the refusal clause."
+      "excerpt_en": "MEASURED on 2026-08-08 on 272 open-access Europe PMC articles 2023-2026 (internal corpus): present in 190 articles (69 %) — the most widespread item of the series. Concentration: case 34/34, meta 34/34, phys 31/34, bio 30/34, trial 28/34, modern 15/17, nonEN 17/51, retract 1/34. Real forms: headings \"Author contributions\", \"Competing interests\", \"Data availability\", and fn-type COI-statement ×30, financial-disclosure ×12, con ×4 — against fn-type=\"other\" ×127, which says nothing and founds the refusal clause.",
+      "organisation": "Loxyn SAS, Lyon"
     }
   ],
   "specimens": {

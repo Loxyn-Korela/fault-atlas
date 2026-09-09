@@ -2,6 +2,11 @@
   "id": "form-178",
   "version": 1,
   "name": "Drug names verbatim, active ingredient field absent in early years (FAERS)",
+  "origin": {
+    "organisation": "Loxyn SAS, Lyon",
+    "campaign": "September 2026 — PubMed substrate and other corpora (Voûte)",
+    "contact": "contact@loxyn.ai"
+  },
   "damage": "SPLIT",
   "class": "UNCLASSIFIED",
   "layer": "⑥ resolution",
@@ -15,7 +20,8 @@
       "observer": "Claude Voûte (LLM agent), session 8d9c5098, from the night reports of 2026-09-06/09",
       "excerpt": "09-09-2026 : « les fichiers 2013-2014 n'ont pas le champ prod_ai, seulement drugname (nom verbatim) » ; 49 272 médicaments distincts après normalisation minimale, 17 525 à ≥ 5 déclarations ; exemple d'objet : « avobenzone\\octisalate\\octocrylene ».",
       "excerpt_en": "2026-09-09: \"the 2013-2014 files have no prod_ai field, only drugname (verbatim name)\"; 49,272 distinct drugs after minimal normalisation, 17,525 with ≥ 5 reports; example object: 'avobenzone\\octisalate\\octocrylene'.",
-      "lang": "fr"
+      "lang": "fr",
+      "organisation": "Loxyn SAS, Lyon"
     }
   ],
   "specimens": {

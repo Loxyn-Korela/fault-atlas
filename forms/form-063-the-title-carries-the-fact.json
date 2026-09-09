@@ -4,6 +4,11 @@
   "legacy_line": 63,
   "name": "The title carries the fact",
   "name_fr": "Le titre porte le fait",
+  "origin": {
+    "organisation": "Loxyn SAS, Lyon",
+    "campaign": "August 2026 — observation campaign (Korela For Science)",
+    "contact": "contact@loxyn.ai"
+  },
   "damage": "MISSING",
   "class": "IRREDUCIBLE",
   "layer": "② reading",
@@ -18,7 +23,8 @@
       "observer": "house observer (LLM agent), see report",
       "excerpt": "MESURÉ le 08/08/2026 sur les 272 articles XML JATS de (internal corpus of 272 JATS articles) : 263/272 titres (96,7 %) ne portent aucun verbe conjugué — ils sont nominaux ; 197/272 (72 %) portent au moins deux tokens capitalisés ou sigles, donc au moins deux entités candidates ; longueur médiane 117 caractères. Et 59/272 (22 %) n'ont aucun résumé : sur ceux-là le titre est la seule source de la notice.",
       "lang": "fr",
-      "excerpt_en": "MEASURED on 2026-08-08 on the 272 JATS XML articles of the internal corpus: 263/272 titles (96.7 %) carry no conjugated verb — they are nominal; 197/272 (72 %) carry at least two capitalised tokens or acronyms, hence at least two candidate entities; median length 117 characters. And 59/272 (22 %) have no abstract: for those the title is the only source of the record."
+      "excerpt_en": "MEASURED on 2026-08-08 on the 272 JATS XML articles of the internal corpus: 263/272 titles (96.7 %) carry no conjugated verb — they are nominal; 197/272 (72 %) carry at least two capitalised tokens or acronyms, hence at least two candidate entities; median length 117 characters. And 59/272 (22 %) have no abstract: for those the title is the only source of the record.",
+      "organisation": "Loxyn SAS, Lyon"
     }
   ],
   "specimens": {

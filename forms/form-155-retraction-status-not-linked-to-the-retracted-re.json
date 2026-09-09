@@ -2,6 +2,11 @@
   "id": "form-155",
   "version": 2,
   "name": "Retraction status not linked to the retracted record",
+  "origin": {
+    "organisation": "Loxyn SAS, Lyon",
+    "campaign": "September 2026 — PubMed substrate and other corpora (Voûte)",
+    "contact": "contact@loxyn.ai"
+  },
   "damage": "ANACHRONISM",
   "class": "UNCLASSIFIED",
   "layer": "⑧ coherence",
@@ -15,7 +20,8 @@
       "observer": "Claude Voûte (LLM agent), session 8d9c5098, from the Substrat measurement files",
       "excerpt": "Fichier DISCORDANCE-retractations-1429-notices.json (Substrat, 18-08-2026) : 1 429 notices ; « D016440_sans_lien 696 · D016441_sans_lien 685 · erratum_autoboucle 48 » ; reftypes « RetractionIn 1 038 · aucun 302 · ErratumFor 49 ».",
       "excerpt_en": "File DISCORDANCE-retractations-1429-notices.json (Substrat, 2026-08-18): 1,429 records; \"D016440_without_link 696 · D016441_without_link 685 · erratum_self_loop 48\"; reftypes \"RetractionIn 1,038 · none 302 · ErratumFor 49\".",
-      "lang": "fr"
+      "lang": "fr",
+      "organisation": "Loxyn SAS, Lyon"
     }
   ],
   "specimens": {

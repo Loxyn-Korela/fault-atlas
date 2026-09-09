@@ -2,6 +2,11 @@
   "id": "form-162",
   "version": 1,
   "name": "Funding acknowledgements: identifiers free-form, agencies multi-spelled",
+  "origin": {
+    "organisation": "Loxyn SAS, Lyon",
+    "campaign": "September 2026 — PubMed substrate and other corpora (Voûte)",
+    "contact": "contact@loxyn.ai"
+  },
   "damage": "SPLIT",
   "class": "UNCLASSIFIED",
   "layer": "⑥ resolution",
@@ -15,7 +20,8 @@
       "observer": "Claude Voûte (LLM agent), session 8d9c5098, from the Substrat measurement files",
       "excerpt": "08-09-2026, table financements : « ['MRC', 'Medical Research Council'] » pour une même notice ; « NIA NIH HHS » ; identifiants normalisés « majuscules, sans espaces ni ponctuation » (pré-enregistrement des capitaux, 05-09-2026) ; part des notices financées 24-27 % sur les sujets suivis.",
       "excerpt_en": "2026-09-08, funding table: \"['MRC', 'Medical Research Council']\" on one record; \"NIA NIH HHS\"; identifiers normalised \"upper case, no spaces nor punctuation\" (capital pre-registration, 2026-09-05); share of funded records 24-27 % on the followed subjects.",
-      "lang": "fr"
+      "lang": "fr",
+      "organisation": "Loxyn SAS, Lyon"
     }
   ],
   "specimens": {

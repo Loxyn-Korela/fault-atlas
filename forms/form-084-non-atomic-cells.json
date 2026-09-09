@@ -4,6 +4,11 @@
   "legacy_line": 84,
   "name": "Non-atomic cells",
   "name_fr": "Cellules non atomiques",
+  "origin": {
+    "organisation": "Loxyn SAS, Lyon",
+    "campaign": "August 2026 — observation campaign (Korela For Science)",
+    "contact": "contact@loxyn.ai"
+  },
   "damage": "WRONG_VALUE",
   "class": "SILENT_FALSE",
   "layer": "② reading + ⑤ anchoring",
@@ -18,7 +23,8 @@
       "observer": "house observer (LLM agent), see report",
       "excerpt": "MESURÉ le 08/08/2026 sur (internal corpus of 272 JATS articles) (272 XML JATS) : 180/272 articles (66 %) portent au moins un tableau ; 47 164 cellules lues, dont 4 179 non atomiques (9 %) — 494 tirets seuls, 507 intervalles, 3 178 cellules de six mots ou plus. 144/272 articles (53 %) en portent au moins une.",
       "lang": "fr",
-      "excerpt_en": "MEASURED on 2026-08-08 on the internal corpus (272 JATS XML): 180/272 articles (66 %) carry at least one table; 47,164 cells read, of which 4,179 non-atomic (9 %) — 494 lone dashes, 507 ranges, 3,178 cells of six words or more. 144/272 articles (53 %) carry at least one."
+      "excerpt_en": "MEASURED on 2026-08-08 on the internal corpus (272 JATS XML): 180/272 articles (66 %) carry at least one table; 47,164 cells read, of which 4,179 non-atomic (9 %) — 494 lone dashes, 507 ranges, 3,178 cells of six words or more. 144/272 articles (53 %) carry at least one.",
+      "organisation": "Loxyn SAS, Lyon"
     }
   ],
   "specimens": {

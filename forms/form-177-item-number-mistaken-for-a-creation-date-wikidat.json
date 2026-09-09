@@ -2,6 +2,11 @@
   "id": "form-177",
   "version": 1,
   "name": "Item number mistaken for a creation date (Wikidata)",
+  "origin": {
+    "organisation": "Loxyn SAS, Lyon",
+    "campaign": "September 2026 — PubMed substrate and other corpora (Voûte)",
+    "contact": "contact@loxyn.ai"
+  },
   "damage": "WRONG_VALUE",
   "class": "UNCLASSIFIED",
   "layer": "⑧ coherence",
@@ -15,7 +20,8 @@
       "observer": "Claude Voûte (LLM agent), session 8d9c5098, from the night reports of 2026-09-06/09",
       "excerpt": "06-09-2026 : « qnum n'est qu'un ordre de création : un Q bas veut dire créé tôt dans Wikidata, pas concept ancien ; les imports de masse déplacent des millions de numéros en quelques semaines. Aucune date ne doit être calculée depuis qnum ».",
       "excerpt_en": "2026-09-06: \"qnum is only a creation order: a low Q means created early in Wikidata, not an old concept; mass imports move millions of numbers in a few weeks. No date must ever be computed from qnum\".",
-      "lang": "fr"
+      "lang": "fr",
+      "organisation": "Loxyn SAS, Lyon"
     }
   ],
   "specimens": {

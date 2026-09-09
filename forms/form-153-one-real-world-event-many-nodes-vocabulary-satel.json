@@ -2,6 +2,11 @@
   "id": "form-153",
   "version": 1,
   "name": "One real-world event, many nodes (vocabulary satellites)",
+  "origin": {
+    "organisation": "Loxyn SAS, Lyon",
+    "campaign": "September 2026 — PubMed substrate and other corpora (Voûte)",
+    "contact": "contact@loxyn.ai"
+  },
   "damage": "SPLIT",
   "class": "UNCLASSIFIED",
   "layer": "⑥ resolution",
@@ -15,7 +20,8 @@
       "observer": "Claude Voûte (LLM agent), session 8d9c5098, from the Substrat measurement files",
       "excerpt": "21-08-2026 : « COVID = 9 satellites du même événement (fond à compter en ÉVÉNEMENTS) » ; « témoin = (identifiant, couche) — D000086382 MeSH naît 2019 mais 2697049 PubTator a 115 articles pré-pivot ».",
       "excerpt_en": "2026-08-21: \"COVID = 9 satellites of the same event (background to be counted in EVENTS)\"; \"witness = (identifier, layer) — MeSH D000086382 is born 2019 but PubTator 2697049 has 115 pre-pivot articles\".",
-      "lang": "fr"
+      "lang": "fr",
+      "organisation": "Loxyn SAS, Lyon"
     }
   ],
   "specimens": {

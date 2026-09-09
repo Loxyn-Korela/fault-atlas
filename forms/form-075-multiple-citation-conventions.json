@@ -4,6 +4,11 @@
   "legacy_line": 75,
   "name": "Multiple citation conventions",
   "name_fr": "Conventions de citation multiples",
+  "origin": {
+    "organisation": "Loxyn SAS, Lyon",
+    "campaign": "August 2026 — observation campaign (Korela For Science)",
+    "contact": "contact@loxyn.ai"
+  },
   "damage": "MISSING",
   "class": "REFUSABLE",
   "layer": "④ extraction",
@@ -18,7 +23,8 @@
       "observer": "house observer (LLM agent), see report",
       "excerpt": "MESURÉ le 08/08/2026 sur 272 articles XML JATS Europe PMC (2023-2026) : les deux conventions coexistent bien dans le même fonds — 207/272 en appel numérique (76 %), 13/272 en auteur-année (5 %), 25 sans appel, 0 mélangé dans un même article. La forme DANGEREUSE est mesurée à part : dans 37/272 articles (14 %) un appel numérique colle directement à une lettre — bio-PMC12583535 donne, une fois les balises retirées, « s1 », « e2 », « y4 », « n10 ». Forme auteur-année réelle : nonEN-PMC13228121 — « Bauman, 1999 », « Carvalho, 2022 ».",
       "lang": "fr",
-      "excerpt_en": "MEASURED on 2026-08-08 on 272 Europe PMC JATS XML articles (2023-2026): the two conventions do coexist in the same corpus — 207/272 with numeric calls (76 %), 13/272 author-year (5 %), 25 without calls, 0 mixed within one article. The DANGEROUS form is measured separately: in 37/272 articles (14 %) a numeric call sticks directly to a letter — bio-PMC12583535 gives, once the tags are removed, \"s1\", \"e2\", \"y4\", \"n10\". Real author-year form: nonEN-PMC13228121 — \"Bauman, 1999\", \"Carvalho, 2022\"."
+      "excerpt_en": "MEASURED on 2026-08-08 on 272 Europe PMC JATS XML articles (2023-2026): the two conventions do coexist in the same corpus — 207/272 with numeric calls (76 %), 13/272 author-year (5 %), 25 without calls, 0 mixed within one article. The DANGEROUS form is measured separately: in 37/272 articles (14 %) a numeric call sticks directly to a letter — bio-PMC12583535 gives, once the tags are removed, \"s1\", \"e2\", \"y4\", \"n10\". Real author-year form: nonEN-PMC13228121 — \"Bauman, 1999\", \"Carvalho, 2022\".",
+      "organisation": "Loxyn SAS, Lyon"
     }
   ],
   "specimens": {

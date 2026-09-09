@@ -4,6 +4,11 @@
   "legacy_line": 109,
   "name": "Structured abstract",
   "name_fr": "Résumé structuré",
+  "origin": {
+    "organisation": "Loxyn SAS, Lyon",
+    "campaign": "August 2026 — observation campaign (Korela For Science)",
+    "contact": "contact@loxyn.ai"
+  },
   "damage": "MISSING",
   "class": "DEFEATED_IF_XML",
   "layer": "③ utterance",
@@ -18,7 +23,8 @@
       "observer": "house observer (LLM agent), see report",
       "excerpt": "MESURÉ le 08/08/2026 sur 272 articles XML JATS Europe PMC (2023-2026) : présent dans 106/272 (39 %). Forme réelle, bio-PMC12882215 : le résumé est fait de <sec><title>Background</title>… puis Methods, Results, Conclusions. Absent des articles 1957-1987 : la difficulté est née avec l'édition numérique.",
       "lang": "fr",
-      "excerpt_en": "MEASURED on 2026-08-08 on 272 Europe PMC JATS XML articles (2023-2026): present in 106/272 (39 %). Real form, bio-PMC12882215: the abstract is made of <sec><title>Background</title>… then Methods, Results, Conclusions. Absent from the 1957-1987 articles: the difficulty was born with digital publishing."
+      "excerpt_en": "MEASURED on 2026-08-08 on 272 Europe PMC JATS XML articles (2023-2026): present in 106/272 (39 %). Real form, bio-PMC12882215: the abstract is made of <sec><title>Background</title>… then Methods, Results, Conclusions. Absent from the 1957-1987 articles: the difficulty was born with digital publishing.",
+      "organisation": "Loxyn SAS, Lyon"
     }
   ],
   "specimens": {

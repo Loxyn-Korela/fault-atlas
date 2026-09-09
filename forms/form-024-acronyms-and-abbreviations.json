@@ -4,6 +4,11 @@
   "legacy_line": 24,
   "name": "Acronyms and abbreviations",
   "name_fr": "Sigles et abréviations",
+  "origin": {
+    "organisation": "Loxyn SAS, Lyon",
+    "campaign": "August 2026 — observation campaign (Korela For Science)",
+    "contact": "contact@loxyn.ai"
+  },
   "damage": "MERGE",
   "class": "SILENT_FALSE",
   "layer": "⑥ resolution",
@@ -18,7 +23,8 @@
       "observer": "house observer (LLM agent), see report",
       "excerpt": "MESURÉ le 08/08/2026 sur (internal corpus of 272 JATS articles) (272 XML JATS) : 224/272 articles (82 %) portent au moins une glose « Nom complet (SIGLE) », 2 104 gloses au total, soit 9,4 par article concerné.",
       "lang": "fr",
-      "excerpt_en": "MEASURED on 2026-08-08 on the internal corpus (272 JATS XML): 224/272 articles (82 %) carry at least one gloss \"Full name (ACRONYM)\", 2,104 glosses in total, i.e. 9.4 per affected article."
+      "excerpt_en": "MEASURED on 2026-08-08 on the internal corpus (272 JATS XML): 224/272 articles (82 %) carry at least one gloss \"Full name (ACRONYM)\", 2,104 glosses in total, i.e. 9.4 per affected article.",
+      "organisation": "Loxyn SAS, Lyon"
     }
   ],
   "specimens": {

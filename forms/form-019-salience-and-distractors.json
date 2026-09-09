@@ -4,6 +4,11 @@
   "legacy_line": 19,
   "name": "Salience and distractors",
   "name_fr": "Saillance et distracteurs",
+  "origin": {
+    "organisation": "Loxyn SAS, Lyon",
+    "campaign": "August 2026 — observation campaign (Korela For Science)",
+    "contact": "contact@loxyn.ai"
+  },
   "damage": "SPURIOUS_EDGE",
   "class": "IRREDUCIBLE",
   "layer": "④ extraction",
@@ -18,7 +23,8 @@
       "observer": "house observer (LLM agent), see report",
       "excerpt": "MESURÉ le 08/08/2026 sur (internal corpus of 272 JATS articles) (272 XML JATS) : sur les 75 articles porteurs de mots-clés, 163 des 523 mots-clés (31 %) n'apparaissent au plus qu'UNE fois dans le corps, tandis que le mot-clé le plus cité de chaque article y revient 24 fois (médiane). Un hub, une longue traîne de mentions uniques : c'est exactement la forme que ce module fabrique.",
       "lang": "fr",
-      "excerpt_en": "MEASURED on 2026-08-08 on the internal corpus (272 JATS XML): of the 75 articles carrying keywords, 163 of the 523 keywords (31 %) appear at most ONCE in the body, while the most cited keyword of each article recurs 24 times (median). One hub, a long tail of single mentions: exactly the shape this module fabricates."
+      "excerpt_en": "MEASURED on 2026-08-08 on the internal corpus (272 JATS XML): of the 75 articles carrying keywords, 163 of the 523 keywords (31 %) appear at most ONCE in the body, while the most cited keyword of each article recurs 24 times (median). One hub, a long tail of single mentions: exactly the shape this module fabricates.",
+      "organisation": "Loxyn SAS, Lyon"
     }
   ],
   "specimens": {

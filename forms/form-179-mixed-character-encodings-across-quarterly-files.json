@@ -2,6 +2,11 @@
   "id": "form-179",
   "version": 1,
   "name": "Mixed character encodings across quarterly files (FAERS)",
+  "origin": {
+    "organisation": "Loxyn SAS, Lyon",
+    "campaign": "September 2026 — PubMed substrate and other corpora (Voûte)",
+    "contact": "contact@loxyn.ai"
+  },
   "damage": "WRONG_VALUE",
   "class": "UNCLASSIFIED",
   "layer": "② reading",
@@ -15,7 +20,8 @@
       "observer": "Claude Voûte (LLM agent), session 8d9c5098, from the night reports of 2026-09-06/09",
       "excerpt": "09-09-2026, 01 h 14 : « Invalid Input Error: File is not latin-1 encoded » sur un trimestre après lecture réussie d'autres en latin-1 ; les fichiers mêlent les encodages selon le trimestre.",
       "excerpt_en": "2026-09-09, 01:14: \"Invalid Input Error: File is not latin-1 encoded\" on one quarter after others were read as latin-1; the files mix encodings by quarter.",
-      "lang": "fr"
+      "lang": "fr",
+      "organisation": "Loxyn SAS, Lyon"
     }
   ],
   "specimens": {

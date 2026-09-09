@@ -4,6 +4,11 @@
   "legacy_line": 85,
   "name": "Non-standard decimal separator",
   "name_fr": "Séparateur décimal non standard",
+  "origin": {
+    "organisation": "Loxyn SAS, Lyon",
+    "campaign": "August 2026 — observation campaign (Korela For Science)",
+    "contact": "contact@loxyn.ai"
+  },
   "damage": "WRONG_VALUE",
   "class": "IRREDUCIBLE",
   "layer": "② reading",
@@ -18,7 +23,8 @@
       "observer": "house observer (LLM agent), see report",
       "excerpt": "MESURÉ le 08/08/2026 : les DEUX conventions coexistent dans 16 articles sur 34 (47 %) d'un corpus Europe PMC en accès libre 2024-2026. Formes réelles relevées : « 2,8 » et « 1,3 » côtoyant des décimaux à point dans le même texte. Confirmé par deux observations indépendantes du même jour : un tableau 2026 mêlant les deux, et un article 2023 écrivant « 10,6 % » en résumé français et « 10.6 % » en résumé anglais — MÊME DOCUMENT.",
       "lang": "fr",
-      "excerpt_en": "MEASURED on 2026-08-08: BOTH conventions coexist in 16 articles out of 34 (47 %) of an open-access Europe PMC corpus 2024-2026. Real forms recorded: \"2,8\" and \"1,3\" next to point-decimals in the same text. Confirmed by two independent observations the same day: a 2026 table mixing both, and a 2023 article writing \"10,6 %\" in the French abstract and \"10.6 %\" in the English abstract — SAME DOCUMENT."
+      "excerpt_en": "MEASURED on 2026-08-08: BOTH conventions coexist in 16 articles out of 34 (47 %) of an open-access Europe PMC corpus 2024-2026. Real forms recorded: \"2,8\" and \"1,3\" next to point-decimals in the same text. Confirmed by two independent observations the same day: a 2026 table mixing both, and a 2023 article writing \"10,6 %\" in the French abstract and \"10.6 %\" in the English abstract — SAME DOCUMENT.",
+      "organisation": "Loxyn SAS, Lyon"
     }
   ],
   "specimens": {

@@ -4,6 +4,11 @@
   "legacy_line": 13,
   "name": "Distribution of relation types",
   "name_fr": "Distribution des types de relation",
+  "origin": {
+    "organisation": "Loxyn SAS, Lyon",
+    "campaign": "August 2026 — observation campaign (Korela For Science)",
+    "contact": "contact@loxyn.ai"
+  },
   "damage": "CORPUS_PARAMETER",
   "class": "IRREDUCIBLE",
   "layer": "⑦ schema",
@@ -18,7 +23,8 @@
       "observer": "house observer (LLM agent), see report",
       "excerpt": "MESURÉ sur le palier P6, 1045 relations, relevé au catalogue le 08/08/2026 : 5 types portent 97,3 % des relations, « est fournisseur de » à lui seul 552 soit 52,8 %, et 21 types sur 26 n'ont qu'1 ou 2 occurrences — donc le F1 par type y vaut 0 ou 1 par tirage.",
       "lang": "fr",
-      "excerpt_en": "MEASURED on tier P6, 1,045 relations, recorded in the catalogue on 2026-08-08: 5 types carry 97.3 % of the relations, \"is a supplier of\" alone 552, i.e. 52.8 %, and 21 types out of 26 have only 1 or 2 occurrences — so the per-type F1 is 0 or 1 by chance."
+      "excerpt_en": "MEASURED on tier P6, 1,045 relations, recorded in the catalogue on 2026-08-08: 5 types carry 97.3 % of the relations, \"is a supplier of\" alone 552, i.e. 52.8 %, and 21 types out of 26 have only 1 or 2 occurrences — so the per-type F1 is 0 or 1 by chance.",
+      "organisation": "Loxyn SAS, Lyon"
     }
   ],
   "specimens": {

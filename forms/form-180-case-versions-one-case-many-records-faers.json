@@ -2,6 +2,11 @@
   "id": "form-180",
   "version": 1,
   "name": "Case versions: one case, many records (FAERS)",
+  "origin": {
+    "organisation": "Loxyn SAS, Lyon",
+    "campaign": "September 2026 — PubMed substrate and other corpora (Voûte)",
+    "contact": "contact@loxyn.ai"
+  },
   "damage": "SPLIT",
   "class": "UNCLASSIFIED",
   "layer": "⑨ structure",
@@ -15,7 +20,8 @@
       "observer": "Claude Voûte (LLM agent), session 8d9c5098, from the night reports of 2026-09-06/09",
       "excerpt": "09-09-2026 : 17 465 106 cas dédupliqués (dernière caseversion) sur un total de lignes DEMO bien supérieur (14 567 407 lignes cumulées à fin 2022 pour ~11 M de cas distincts à cette date).",
       "excerpt_en": "2026-09-09: 17,465,106 deduplicated cases (last caseversion) out of a much larger total of DEMO lines (14,567,407 cumulative lines at end 2022 for ~11 M distinct cases at that date).",
-      "lang": "fr"
+      "lang": "fr",
+      "organisation": "Loxyn SAS, Lyon"
     }
   ],
   "specimens": {

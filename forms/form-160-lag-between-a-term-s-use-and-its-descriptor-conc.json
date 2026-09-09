@@ -2,6 +2,11 @@
   "id": "form-160",
   "version": 1,
   "name": "Lag between a term's use and its descriptor (concept exists before its label)",
+  "origin": {
+    "organisation": "Loxyn SAS, Lyon",
+    "campaign": "September 2026 — PubMed substrate and other corpora (Voûte)",
+    "contact": "contact@loxyn.ai"
+  },
   "damage": "MISSING",
   "class": "UNCLASSIFIED",
   "layer": "⑧ coherence",
@@ -15,7 +20,8 @@
       "observer": "Claude Voûte (LLM agent), session 8d9c5098, from the Substrat measurement files",
       "excerpt": "Dossier v8 : « un à sept ans » entre la datation et le descripteur ; « 3,7 ans avant MeSH en médiane » ; « signalement environ un an avant le descripteur officiel ».",
       "excerpt_en": "Dossier v8: \"one to seven years\" between the dating and the descriptor; \"3.7 years before MeSH in median\"; \"signalling about a year before the official descriptor\".",
-      "lang": "fr"
+      "lang": "fr",
+      "organisation": "Loxyn SAS, Lyon"
     }
   ],
   "specimens": {

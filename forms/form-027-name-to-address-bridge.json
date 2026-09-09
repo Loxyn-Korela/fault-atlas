@@ -4,6 +4,11 @@
   "legacy_line": 27,
   "name": "Name-to-address bridge",
   "name_fr": "Pont nom ↔ adresse",
+  "origin": {
+    "organisation": "Loxyn SAS, Lyon",
+    "campaign": "August 2026 — observation campaign (Korela For Science)",
+    "contact": "contact@loxyn.ai"
+  },
   "damage": "SPLIT",
   "class": "IRREDUCIBLE",
   "layer": "⑥ resolution",
@@ -18,7 +23,8 @@
       "observer": "house observer (LLM agent), see report",
       "excerpt": "MESURÉ le 08/08/2026 sur les 272 XML : 54/272 (20 %) portent, DANS LA MÊME balise <aff>, le nom de l'établissement ET son adresse postale (code postal ou numéro de rue) — « Department of Urology, Peking University … 100034 Beijing ». 5/272 (2 %) donnent un numéro de rue explicite (« 140 Huguenot Street », « 654 Cherry Street »), et 60/272 (22 %) un couple code postal + ville. La matière du pont existe ; ce qui manque au corpus fabriqué, c'est sa RÉPARTITION sur plusieurs documents.",
       "lang": "fr",
-      "excerpt_en": "MEASURED on 2026-08-08 on the 272 XML files: 54/272 (20 %) carry, IN THE SAME <aff> tag, the name of the institution AND its postal address (postcode or street number) — \"Department of Urology, Peking University … 100034 Beijing\". 5/272 (2 %) give an explicit street number (\"140 Huguenot Street\", \"654 Cherry Street\"), and 60/272 (22 %) a postcode + city pair. The material for the bridge exists; what the fabricated corpus lacks is its DISTRIBUTION across several documents."
+      "excerpt_en": "MEASURED on 2026-08-08 on the 272 XML files: 54/272 (20 %) carry, IN THE SAME <aff> tag, the name of the institution AND its postal address (postcode or street number) — \"Department of Urology, Peking University … 100034 Beijing\". 5/272 (2 %) give an explicit street number (\"140 Huguenot Street\", \"654 Cherry Street\"), and 60/272 (22 %) a postcode + city pair. The material for the bridge exists; what the fabricated corpus lacks is its DISTRIBUTION across several documents.",
+      "organisation": "Loxyn SAS, Lyon"
     }
   ],
   "specimens": {

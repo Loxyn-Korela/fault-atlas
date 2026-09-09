@@ -2,6 +2,11 @@
   "id": "form-159",
   "version": 1,
   "name": "Indexing source switch (human to automated) inside one field",
+  "origin": {
+    "organisation": "Loxyn SAS, Lyon",
+    "campaign": "September 2026 — PubMed substrate and other corpora (Voûte)",
+    "contact": "contact@loxyn.ai"
+  },
   "damage": "WRONG_LABEL",
   "class": "UNCLASSIFIED",
   "layer": "⑤ anchoring",
@@ -15,7 +20,8 @@
       "observer": "Claude Voûte (LLM agent), session 8d9c5098, from the Substrat measurement files",
       "excerpt": "Mémoire du 21-08-2026 : « bascule MTIX mi-2022 (borne 2021) » ; dossier de preuve v8 : « le juge le plus lent qui soit — la création du descripteur officiel ».",
       "excerpt_en": "Memory note of 2026-08-21: \"MTIX switch mid-2022 (bound 2021)\"; proof dossier v8: \"the slowest judge there is — the creation of the official descriptor\".",
-      "lang": "fr"
+      "lang": "fr",
+      "organisation": "Loxyn SAS, Lyon"
     }
   ],
   "specimens": {

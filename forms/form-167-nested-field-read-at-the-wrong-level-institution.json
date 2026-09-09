@@ -2,6 +2,11 @@
   "id": "form-167",
   "version": 1,
   "name": "Nested field read at the wrong level (institutions under authorships)",
+  "origin": {
+    "organisation": "Loxyn SAS, Lyon",
+    "campaign": "September 2026 — PubMed substrate and other corpora (Voûte)",
+    "contact": "contact@loxyn.ai"
+  },
   "damage": "MISSING",
   "class": "UNCLASSIFIED",
   "layer": "② reading",
@@ -15,7 +20,8 @@
       "observer": "Claude Voûte (LLM agent), session 8d9c5098, from the night reports of 2026-09-06/09",
       "excerpt": "06-09-2026 : « 0 notice sur 1 305 653 a une institution » ; « l'extraction visait un champ `institutions` qui n'existe pas au premier niveau — les institutions sont sous `authorships` ; la colonne a été écrite vide, silencieusement ».",
       "excerpt_en": "2026-09-06: \"0 records out of 1,305,653 have an institution\"; \"the extraction targeted an 'institutions' field that does not exist at the top level — institutions are under 'authorships'; the column was written empty, silently\".",
-      "lang": "fr"
+      "lang": "fr",
+      "organisation": "Loxyn SAS, Lyon"
     }
   ],
   "specimens": {

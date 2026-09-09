@@ -4,6 +4,11 @@
   "legacy_line": 118,
   "name": "Unicode traps in native PDF",
   "name_fr": "Pièges Unicode du PDF natif",
+  "origin": {
+    "organisation": "Loxyn SAS, Lyon",
+    "campaign": "August 2026 — observation campaign (Korela For Science)",
+    "contact": "contact@loxyn.ai"
+  },
   "damage": "SPLIT",
   "class": "DEFEATED",
   "layer": "② reading",
@@ -18,7 +23,8 @@
       "observer": "house observer (LLM agent), see report",
       "excerpt": "1 569 caractères U+200B mesurés dans UN seul PDF d'éditeur, injectés ENTRE les caractères des DOI de la bibliographie (observé le 08/08/2026). Et 8 écritures non latines observées dans la vague « langues » du même jour, où U+200C/U+200D sont PORTEURS DE SENS.",
       "lang": "fr",
-      "excerpt_en": "1,569 U+200B characters measured in ONE single publisher PDF, injected BETWEEN the characters of the DOIs in the bibliography (observed 2026-08-08). And 8 non-Latin scripts observed in the \"languages\" wave the same day, where U+200C/U+200D CARRY MEANING."
+      "excerpt_en": "1,569 U+200B characters measured in ONE single publisher PDF, injected BETWEEN the characters of the DOIs in the bibliography (observed 2026-08-08). And 8 non-Latin scripts observed in the \"languages\" wave the same day, where U+200C/U+200D CARRY MEANING.",
+      "organisation": "Loxyn SAS, Lyon"
     }
   ],
   "specimens": {

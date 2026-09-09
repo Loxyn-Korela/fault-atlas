@@ -4,6 +4,11 @@
   "legacy_line": 44,
   "name": "Several languages in one corpus",
   "name_fr": "Plusieurs langues dans un même fonds",
+  "origin": {
+    "organisation": "Loxyn SAS, Lyon",
+    "campaign": "August 2026 — observation campaign (Korela For Science)",
+    "contact": "contact@loxyn.ai"
+  },
   "damage": "SPLIT",
   "class": "REFUSABLE",
   "layer": "② reading",
@@ -18,7 +23,8 @@
       "observer": "house observer (LLM agent), see report",
       "excerpt": "MESURÉ le 08/08/2026 sur 272 articles Europe PMC accès libre 2023-2026 : présent dans 27 (10 %), TOUS dans la famille nonEN. Formes réelles : <trans-title-group xml:lang=\"en\"> ×26 | xml:lang=\"es\" ×9 | xml:lang=\"pt\" ×3 | <trans-abstract xml:lang=\"en\"> ×8. Exemple nonEN-PMC13143285 : titre PT « Conquistar corpos, domar a selva… » + trans-title EN « Conquering bodies, taming the jungle… »",
       "lang": "fr",
-      "excerpt_en": "MEASURED on 2026-08-08 on 272 open-access Europe PMC articles 2023-2026: present in 27 (10 %), ALL in the nonEN family. Real forms: <trans-title-group xml:lang=\"en\"> ×26 | xml:lang=\"es\" ×9 | xml:lang=\"pt\" ×3 | <trans-abstract xml:lang=\"en\"> ×8. Example nonEN-PMC13143285: PT title \"Conquistar corpos, domar a selva…\" + EN trans-title \"Conquering bodies, taming the jungle…\""
+      "excerpt_en": "MEASURED on 2026-08-08 on 272 open-access Europe PMC articles 2023-2026: present in 27 (10 %), ALL in the nonEN family. Real forms: <trans-title-group xml:lang=\"en\"> ×26 | xml:lang=\"es\" ×9 | xml:lang=\"pt\" ×3 | <trans-abstract xml:lang=\"en\"> ×8. Example nonEN-PMC13143285: PT title \"Conquistar corpos, domar a selva…\" + EN trans-title \"Conquering bodies, taming the jungle…\"",
+      "organisation": "Loxyn SAS, Lyon"
     }
   ],
   "specimens": {

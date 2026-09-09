@@ -4,6 +4,11 @@
   "legacy_line": 88,
   "name": "Collective entity",
   "name_fr": "Entité collective",
+  "origin": {
+    "organisation": "Loxyn SAS, Lyon",
+    "campaign": "August 2026 — observation campaign (Korela For Science)",
+    "contact": "contact@loxyn.ai"
+  },
   "damage": "MERGE",
   "class": "IRREDUCIBLE",
   "layer": "⑥ resolution",
@@ -18,7 +23,8 @@
       "observer": "house observer (LLM agent), see report",
       "excerpt": "MESURÉ le 08/08/2026 sur les 272 XML : 101/272 (37 %) ouvrent sur un effectif suivi d'un nom de groupe (« 127 animals », « 910 participants »), 96/272 (35 %) portent un « n = … », et 87/272 (32 %) associent l'effectif à une dispersion (moyenne, SD, ±). Le sujet collectif est donc la forme MAJORITAIRE ; aucun de nos corpus fabriqués n'en contient un. Observation d'origine 08/08/2026 : Duncker et al., Br. J. Pharmac. 1986 (annexe 88).",
       "lang": "fr",
-      "excerpt_en": "MEASURED on 2026-08-08 on the 272 XML files: 101/272 (37 %) open with a headcount followed by a group noun (\"127 animals\", \"910 participants\"), 96/272 (35 %) carry an \"n = …\", and 87/272 (32 %) associate the headcount with a dispersion (mean, SD, ±). The collective subject is therefore the MAJORITY form; none of our fabricated corpora contains one. Original observation 2026-08-08: Duncker et al., Br. J. Pharmac. 1986 (annex 88)."
+      "excerpt_en": "MEASURED on 2026-08-08 on the 272 XML files: 101/272 (37 %) open with a headcount followed by a group noun (\"127 animals\", \"910 participants\"), 96/272 (35 %) carry an \"n = …\", and 87/272 (32 %) associate the headcount with a dispersion (mean, SD, ±). The collective subject is therefore the MAJORITY form; none of our fabricated corpora contains one. Original observation 2026-08-08: Duncker et al., Br. J. Pharmac. 1986 (annex 88).",
+      "organisation": "Loxyn SAS, Lyon"
     }
   ],
   "specimens": {

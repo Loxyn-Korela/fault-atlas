@@ -2,6 +2,11 @@
   "id": "form-165",
   "version": 1,
   "name": "Closed machine-assigned keyword vocabulary (OpenAlex)",
+  "origin": {
+    "organisation": "Loxyn SAS, Lyon",
+    "campaign": "September 2026 — PubMed substrate and other corpora (Voûte)",
+    "contact": "contact@loxyn.ai"
+  },
   "damage": "MISSING",
   "class": "UNCLASSIFIED",
   "layer": "⑦ schema",
@@ -15,7 +20,8 @@
       "observer": "Claude Voûte (LLM agent), session 8d9c5098, from the night reports of 2026-09-06/09",
       "excerpt": "06-09-2026 : « référentiel de 65 004 entrées, attribué automatiquement, en moyenne 7,9 par notice » ; « 99,14 % du vocabulaire existe déjà en 2011 » ; résultat : « 106 sujets, 6 champions » là où PubMed en donne 85 sur 120.",
       "excerpt_en": "2026-09-06: \"reference list of 65,004 entries, assigned automatically, 7.9 per record on average\"; \"99.14 % of the vocabulary already exists in 2011\"; result: \"106 subjects, 6 champions\" where PubMed gives 85 out of 120.",
-      "lang": "fr"
+      "lang": "fr",
+      "organisation": "Loxyn SAS, Lyon"
     }
   ],
   "specimens": {

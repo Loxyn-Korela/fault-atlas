@@ -4,6 +4,11 @@
   "legacy_line": 26,
   "name": "Strict homonyms",
   "name_fr": "Homonymes stricts",
+  "origin": {
+    "organisation": "Loxyn SAS, Lyon",
+    "campaign": "August 2026 — observation campaign (Korela For Science)",
+    "contact": "contact@loxyn.ai"
+  },
   "damage": "MERGE",
   "class": "IRREDUCIBLE",
   "layer": "⑥ resolution",
@@ -18,7 +23,8 @@
       "observer": "house observer (LLM agent), see report",
       "excerpt": "MESURÉ le 08/08/2026 sur les 272 articles XML JATS de (internal corpus of 272 JATS articles) : 1 215 patronymes sur 9 160 (13,3 %) sont portés par au moins deux prénoms différents — « Wang » par 95, « Li » par 92, « Chen » par 88 ; et 461 noms complets identiques (nom + prénoms) apparaissent dans au moins deux articles aux affiliations DISJOINTES (Zhang W, Li S, Singh S…). Faute vérifiée le 08/08/2026 par ailleurs : le contrôle d'atteignabilité ne regarde pas les assertions `distinct` — un corpus en portant 27 affichait « 0 piège » et passait au vert.",
       "lang": "fr",
-      "excerpt_en": "MEASURED on 2026-08-08 on the 272 JATS XML articles of the internal corpus: 1,215 surnames out of 9,160 (13.3 %) are borne by at least two different given names — \"Wang\" by 95, \"Li\" by 92, \"Chen\" by 88; and 461 identical full names (surname + given names) appear in at least two articles with DISJOINT affiliations (Zhang W, Li S, Singh S…). Fault verified the same day elsewhere: the reachability check does not look at `distinct` assertions — a corpus carrying 27 of them displayed \"0 traps\" and passed green."
+      "excerpt_en": "MEASURED on 2026-08-08 on the 272 JATS XML articles of the internal corpus: 1,215 surnames out of 9,160 (13.3 %) are borne by at least two different given names — \"Wang\" by 95, \"Li\" by 92, \"Chen\" by 88; and 461 identical full names (surname + given names) appear in at least two articles with DISJOINT affiliations (Zhang W, Li S, Singh S…). Fault verified the same day elsewhere: the reachability check does not look at `distinct` assertions — a corpus carrying 27 of them displayed \"0 traps\" and passed green.",
+      "organisation": "Loxyn SAS, Lyon"
     }
   ],
   "specimens": {

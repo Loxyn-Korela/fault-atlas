@@ -2,6 +2,11 @@
   "id": "form-147",
   "version": 2,
   "name": "Retro-indexing of a MeSH descriptor onto older articles",
+  "origin": {
+    "organisation": "Loxyn SAS, Lyon",
+    "campaign": "September 2026 — PubMed substrate and other corpora (Voûte)",
+    "contact": "contact@loxyn.ai"
+  },
   "damage": "ANACHRONISM",
   "class": "UNCLASSIFIED",
   "layer": "⑧ coherence",
@@ -15,7 +20,8 @@
       "observer": "Claude Voûte (LLM agent), session 8d9c5098, from the Substrat measurement files",
       "excerpt": "21-08-2026 : « D000077203 né 2019, articles dès 2006 » ; « 931 notices achevées < 2018 portent le descripteur » ; « campagne NLM 2019 = 21,22 % des bornes » ; « plancher DateRevised 2000 = re-datage total à la bascule XML ».",
       "excerpt_en": "2026-08-21: \"D000077203 born 2019, articles from 2006\"; \"931 records completed < 2018 carry the descriptor\"; \"NLM 2019 campaign = 21.22 % of the bounds\"; \"DateRevised floor 2000 = total re-dating at the XML switch\".",
-      "lang": "fr"
+      "lang": "fr",
+      "organisation": "Loxyn SAS, Lyon"
     }
   ],
   "specimens": {

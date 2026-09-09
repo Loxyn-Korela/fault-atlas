@@ -2,6 +2,11 @@
   "id": "form-156",
   "version": 1,
   "name": "Citation targets outside the snapshot, and identifiers beyond 32 bits",
+  "origin": {
+    "organisation": "Loxyn SAS, Lyon",
+    "campaign": "September 2026 — PubMed substrate and other corpora (Voûte)",
+    "contact": "contact@loxyn.ai"
+  },
   "damage": "MISSING",
   "class": "UNCLASSIFIED",
   "layer": "⑨ structure",
@@ -15,7 +20,8 @@
       "observer": "Claude Voûte (LLM agent), session 8d9c5098, from the Substrat measurement files",
       "excerpt": "CITATIONS.json : « citations 397 591 740 · cibles hors u32 2 · cibles absentes de la baseline 1 635 · corrections sans pmid 145 487 ».",
       "excerpt_en": "CITATIONS.json: \"citations 397,591,740 · targets beyond u32 2 · targets absent from the baseline 1,635 · corrections without pmid 145,487\".",
-      "lang": "fr"
+      "lang": "fr",
+      "organisation": "Loxyn SAS, Lyon"
     }
   ],
   "specimens": {

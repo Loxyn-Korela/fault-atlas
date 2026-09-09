@@ -8,7 +8,7 @@ out = ROOT/"fault-atlas.sqlite"
 if out.exists(): out.unlink()
 db = sqlite3.connect(out)
 db.executescript("""
-create table forms(id text primary key, name text, damage text, class text, injection text, layer text, status text,
+create table forms(id text primary key, name text, damage text, class text, injection text, layer text, status text, organisation text, campaign text,
   cancellable_by_code int, reachable_by_deletion text, judgeable_by text, observations int, observed_absent_in text,
   name_fr text, legacy_line int, version int, record json);
 create table observations(id integer primary key, form_id text references forms(id), form_name text, corpus text, document text, date text, observer text, excerpt_en text, excerpt_original text, lang text);
@@ -16,7 +16,7 @@ create table history(id integer primary key, form_id text references forms(id), 
 """)
 for f in sorted((ROOT/"forms").glob("*.json")):
     r = json.loads(f.read_text())
-    db.execute("insert into forms values(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)", (r["id"], r["name"], r["damage"], r["class"], r.get("injection"), r["layer"], r["status"],
+    db.execute("insert into forms values(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)", (r["id"], r["name"], r["damage"], r["class"], r.get("injection"), r["layer"], r["status"], r.get("origin",{}).get("organisation"), r.get("origin",{}).get("campaign"),
         int(r["prevention"]["cancellable_by_code"]), r["repair"]["reachable_by_deletion"], ", ".join(r["judgeable_by"]), len(r["seen"]), ", ".join(r.get("observed_absent_in", [])),
         r.get("name_fr"), r.get("legacy_line"), r["version"], json.dumps(r, ensure_ascii=False)))
     for s in r["seen"]:

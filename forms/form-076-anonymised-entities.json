@@ -4,6 +4,11 @@
   "legacy_line": 76,
   "name": "Anonymised entities",
   "name_fr": "Entités anonymisées",
+  "origin": {
+    "organisation": "Loxyn SAS, Lyon",
+    "campaign": "August 2026 — observation campaign (Korela For Science)",
+    "contact": "contact@loxyn.ai"
+  },
   "damage": "MERGE",
   "class": "DEFEATED",
   "layer": "⑥ resolution",
@@ -18,7 +23,8 @@
       "observer": "house observer (LLM agent), see report",
       "excerpt": "« Patient 1 » dans un cas clinique portugais de 1986 ET dans un article de 2025 — même surface, entités sans aucun rapport (vagues 1 et 3, 08/08/2026)",
       "lang": "fr",
-      "excerpt_en": "\"Patient 1\" in a Portuguese clinical case of 1986 AND in an article of 2025 — same surface, entirely unrelated entities (waves 1 and 3, 2026-08-08)"
+      "excerpt_en": "\"Patient 1\" in a Portuguese clinical case of 1986 AND in an article of 2025 — same surface, entirely unrelated entities (waves 1 and 3, 2026-08-08)",
+      "organisation": "Loxyn SAS, Lyon"
     }
   ],
   "specimens": {

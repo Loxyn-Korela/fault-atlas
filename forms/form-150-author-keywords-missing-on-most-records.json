@@ -2,6 +2,11 @@
   "id": "form-150",
   "version": 1,
   "name": "Author keywords missing on most records",
+  "origin": {
+    "organisation": "Loxyn SAS, Lyon",
+    "campaign": "September 2026 — PubMed substrate and other corpora (Voûte)",
+    "contact": "contact@loxyn.ai"
+  },
   "damage": "MISSING",
   "class": "UNCLASSIFIED",
   "layer": "⑨ structure",
@@ -15,7 +20,8 @@
       "observer": "Claude Voûte (LLM agent), session 8d9c5098, from the Substrat measurement files",
       "excerpt": "08-09-2026 : couche titres 17 034 319 notices, couche mots-clés d'auteur 10 154 266 notices sur la même population ; 18 777 notices anglaises d'un fichier de 2020 « avec résumé et mots-clés » : mots-clés par notice médiane 5.",
       "excerpt_en": "2026-09-08: titles layer 17,034,319 records, author-keyword layer 10,154,266 records on the same population; 18,777 English records of a 2020 file \"with abstract and keywords\": median 5 keywords per record.",
-      "lang": "fr"
+      "lang": "fr",
+      "organisation": "Loxyn SAS, Lyon"
     }
   ],
   "specimens": {

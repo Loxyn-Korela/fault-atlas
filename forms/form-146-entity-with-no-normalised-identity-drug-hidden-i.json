@@ -2,6 +2,11 @@
   "id": "form-146",
   "version": 1,
   "name": "Entity with no normalised identity (drug hidden in the bucket)",
+  "origin": {
+    "organisation": "Loxyn SAS, Lyon",
+    "campaign": "September 2026 — PubMed substrate and other corpora (Voûte)",
+    "contact": "contact@loxyn.ai"
+  },
   "damage": "SPLIT",
   "class": "UNCLASSIFIED",
   "layer": "⑥ resolution",
@@ -15,7 +20,8 @@
       "observer": "Claude Voûte (LLM agent), session 8d9c5098, from the Substrat measurement files",
       "excerpt": "21-08-2026 : « liraglutide sans identité PubTator — 52 % de ses notices sous la clé `-` id 4306059 » ; « sémaglutide exclu : descripteur 2026 ».",
       "excerpt_en": "2026-08-21: \"liraglutide without PubTator identity — 52 % of its records under key '-' id 4306059\"; \"semaglutide excluded: descriptor 2026\".",
-      "lang": "fr"
+      "lang": "fr",
+      "organisation": "Loxyn SAS, Lyon"
     }
   ],
   "specimens": {

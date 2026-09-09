@@ -2,6 +2,11 @@
   "id": "form-175",
   "version": 1,
   "name": "Article titles stored as entity labels (Wikidata)",
+  "origin": {
+    "organisation": "Loxyn SAS, Lyon",
+    "campaign": "September 2026 — PubMed substrate and other corpora (Voûte)",
+    "contact": "contact@loxyn.ai"
+  },
   "damage": "WRONG_LABEL",
   "class": "UNCLASSIFIED",
   "layer": "⑥ resolution",
@@ -15,7 +20,8 @@
       "observer": "Claude Voûte (LLM agent), session 8d9c5098, from the night reports of 2026-09-06/09",
       "excerpt": "06-09-2026, NUIT A : « les 121,5 M d'éléments contiennent des dizaines de millions d'articles scientifiques dont le label_en est un titre entier. Aucun filtre par type n'a été appliqué ».",
       "excerpt_en": "2026-09-06, night A: \"the 121.5 M items contain tens of millions of scientific articles whose label_en is a full title. No filter by type was applied\".",
-      "lang": "fr"
+      "lang": "fr",
+      "organisation": "Loxyn SAS, Lyon"
     }
   ],
   "specimens": {

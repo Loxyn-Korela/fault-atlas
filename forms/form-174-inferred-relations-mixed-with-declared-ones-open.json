@@ -2,6 +2,11 @@
   "id": "form-174",
   "version": 1,
   "name": "Inferred relations mixed with declared ones (OpenAIRE)",
+  "origin": {
+    "organisation": "Loxyn SAS, Lyon",
+    "campaign": "September 2026 — PubMed substrate and other corpora (Voûte)",
+    "contact": "contact@loxyn.ai"
+  },
   "damage": "SPURIOUS_EDGE",
   "class": "UNCLASSIFIED",
   "layer": "⑤ anchoring",
@@ -15,7 +20,8 @@
       "observer": "Claude Voûte (LLM agent), session 8d9c5098, from the night reports of 2026-09-06/09",
       "excerpt": "08-09-2026 : « Inferred by OpenAIRE 6 721 902 · Harvested 3 308 996 · Linked by user 7 816 ».",
       "excerpt_en": "2026-09-08: \"Inferred by OpenAIRE 6,721,902 · Harvested 3,308,996 · Linked by user 7,816\".",
-      "lang": "fr"
+      "lang": "fr",
+      "organisation": "Loxyn SAS, Lyon"
     }
   ],
   "specimens": {

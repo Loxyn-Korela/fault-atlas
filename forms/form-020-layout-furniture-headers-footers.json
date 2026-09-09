@@ -4,6 +4,11 @@
   "legacy_line": 20,
   "name": "Layout furniture (headers, footers)",
   "name_fr": "Mise en forme et habillage",
+  "origin": {
+    "organisation": "Loxyn SAS, Lyon",
+    "campaign": "August 2026 — observation campaign (Korela For Science)",
+    "contact": "contact@loxyn.ai"
+  },
   "damage": "SPURIOUS_EDGE",
   "class": "DEFEATED_IF_XML",
   "layer": "② reading",
@@ -18,7 +23,8 @@
       "observer": "house observer (LLM agent), see report",
       "excerpt": "MESURÉ le 08/08/2026 sur 272 articles XML JATS Europe PMC (2023-2026) : présent dans 181/272 (66 %). Formes réelles : bio-PMC12674831 porte 154 <tr> et 75 <def-item> ; premier <tr> = « Position Statement on Cardiometabolic Health… » — un intitulé et sa valeur alignés, sans verbe. bio-PMC12583535 : 51 <tr>, premier = « Database Search ».",
       "lang": "fr",
-      "excerpt_en": "MEASURED on 2026-08-08 on 272 Europe PMC JATS XML articles (2023-2026): present in 181/272 (66 %). Real forms: bio-PMC12674831 carries 154 <tr> and 75 <def-item>; first <tr> = \"Position Statement on Cardiometabolic Health…\" — a heading and its value aligned, without a verb. bio-PMC12583535: 51 <tr>, first = \"Database Search\"."
+      "excerpt_en": "MEASURED on 2026-08-08 on 272 Europe PMC JATS XML articles (2023-2026): present in 181/272 (66 %). Real forms: bio-PMC12674831 carries 154 <tr> and 75 <def-item>; first <tr> = \"Position Statement on Cardiometabolic Health…\" — a heading and its value aligned, without a verb. bio-PMC12583535: 51 <tr>, first = \"Database Search\".",
+      "organisation": "Loxyn SAS, Lyon"
     }
   ],
   "specimens": {

@@ -4,6 +4,11 @@
   "legacy_line": 18,
   "name": "Variable length and chunking",
   "name_fr": "Longueur variable et découpe",
+  "origin": {
+    "organisation": "Loxyn SAS, Lyon",
+    "campaign": "August 2026 — observation campaign (Korela For Science)",
+    "contact": "contact@loxyn.ai"
+  },
   "damage": "MISSING",
   "class": "DEFEATED_IF_XML",
   "layer": "② reading",
@@ -18,7 +23,8 @@
       "observer": "house observer (LLM agent), see report",
       "excerpt": "MESURÉ le 08/08/2026 sur 272 articles Europe PMC accès libre 2023-2026 : présent dans 243 (89 %). Concentration : nonEN 51, bio 34, cas 34, essai 34, meta 34, phys 34, moderne 17, retract 5. Formes réelles : bio-PMC12583535 = 48 845 car. → 25 morceaux | 29 documents tiennent en un seul morceau",
       "lang": "fr",
-      "excerpt_en": "MEASURED on 2026-08-08 on 272 open-access Europe PMC articles 2023-2026: present in 243 (89 %). Concentration: nonEN 51, bio 34, case 34, trial 34, meta 34, phys 34, modern 17, retract 5. Real forms: bio-PMC12583535 = 48,845 characters → 25 chunks | 29 documents fit in a single chunk."
+      "excerpt_en": "MEASURED on 2026-08-08 on 272 open-access Europe PMC articles 2023-2026: present in 243 (89 %). Concentration: nonEN 51, bio 34, case 34, trial 34, meta 34, phys 34, modern 17, retract 5. Real forms: bio-PMC12583535 = 48,845 characters → 25 chunks | 29 documents fit in a single chunk.",
+      "organisation": "Loxyn SAS, Lyon"
     }
   ],
   "specimens": {

@@ -2,6 +2,11 @@
   "id": "form-145",
   "version": 1,
   "name": "Two overlapping identifier spaces in one column",
+  "origin": {
+    "organisation": "Loxyn SAS, Lyon",
+    "campaign": "September 2026 — PubMed substrate and other corpora (Voûte)",
+    "contact": "contact@loxyn.ai"
+  },
   "damage": "WRONG_LABEL",
   "class": "UNCLASSIFIED",
   "layer": "⑦ schema",
@@ -15,7 +20,8 @@
       "observer": "Claude Voûte (LLM agent), session 8d9c5098, from the Substrat measurement files",
       "excerpt": "21-08-2026 : « ent.u32 = DEUX espaces d'ids chevauchants, surface.u8 seul discriminant » ; « 104 443 196 lignes surface=1 avec ent dans la plage des entités → 95,25 % de types DISCORDANTS (pièces : lignes Species → entités DNAMutation) ».",
       "excerpt_en": "2026-08-21: \"ent.u32 = TWO overlapping id spaces, surface.u8 the only discriminant\"; \"104,443,196 lines with surface=1 and ent in the entity range → 95.25 % DISCORDANT types (evidence: Species lines → DNAMutation entities)\".",
-      "lang": "fr"
+      "lang": "fr",
+      "organisation": "Loxyn SAS, Lyon"
     }
   ],
   "specimens": {

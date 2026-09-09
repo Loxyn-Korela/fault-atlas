@@ -4,6 +4,11 @@
   "legacy_line": 23,
   "name": "Typos and OCR confusions",
   "name_fr": "Bruit de frappe et confusions d'OCR",
+  "origin": {
+    "organisation": "Loxyn SAS, Lyon",
+    "campaign": "August 2026 — observation campaign (Korela For Science)",
+    "contact": "contact@loxyn.ai"
+  },
   "damage": "SPLIT",
   "class": "SILENT_FALSE",
   "layer": "② reading",
@@ -18,7 +23,8 @@
       "observer": "house observer (LLM agent), see report",
       "excerpt": "MESURÉ le 08/08/2026 : 80 % des documents anciens observés sont des scans OCRisés, où l/1, O/0 et S/5 se confondent.",
       "lang": "fr",
-      "excerpt_en": "MEASURED on 2026-08-08: 80 % of the old documents observed are OCR'd scans, where l/1, O/0 and S/5 are confused."
+      "excerpt_en": "MEASURED on 2026-08-08: 80 % of the old documents observed are OCR'd scans, where l/1, O/0 and S/5 are confused.",
+      "organisation": "Loxyn SAS, Lyon"
     }
   ],
   "specimens": {

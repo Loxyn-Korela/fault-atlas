@@ -4,6 +4,11 @@
   "legacy_line": 70,
   "name": "Bibliographic references",
   "name_fr": "Références bibliographiques",
+  "origin": {
+    "organisation": "Loxyn SAS, Lyon",
+    "campaign": "August 2026 — observation campaign (Korela For Science)",
+    "contact": "contact@loxyn.ai"
+  },
   "damage": "SPURIOUS_EDGE",
   "class": "SILENT_FALSE",
   "layer": "④ extraction",
@@ -18,7 +23,8 @@
       "observer": "house observer (LLM agent), see report",
       "excerpt": "MESURÉ le 08/08/2026 sur 272 articles XML JATS : 251/272 (92 %) portent un bloc de références final — 10 912 références au total, médiane 36 par article, maximum 450 — et 247/272 (91 %) portent des appels de citation dans le corps (17 210 appels).",
       "lang": "fr",
-      "excerpt_en": "MEASURED on 2026-08-08 on 272 JATS XML articles: 251/272 (92 %) carry a final reference block — 10,912 references in total, median 36 per article, maximum 450 — and 247/272 (91 %) carry citation calls in the body (17,210 calls)."
+      "excerpt_en": "MEASURED on 2026-08-08 on 272 JATS XML articles: 251/272 (92 %) carry a final reference block — 10,912 references in total, median 36 per article, maximum 450 — and 247/272 (91 %) carry citation calls in the body (17,210 calls).",
+      "organisation": "Loxyn SAS, Lyon"
     }
   ],
   "specimens": {

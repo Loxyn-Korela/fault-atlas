@@ -4,6 +4,11 @@
   "legacy_line": 93,
   "name": "Content added by digitisation",
   "name_fr": "Contenu ajouté par la numérisation",
+  "origin": {
+    "organisation": "Loxyn SAS, Lyon",
+    "campaign": "August 2026 — observation campaign (Korela For Science)",
+    "contact": "contact@loxyn.ai"
+  },
   "damage": "SPURIOUS_EDGE",
   "class": "SILENT_FALSE",
   "layer": "② reading",
@@ -18,7 +23,8 @@
       "observer": "house observer (LLM agent), see report",
       "excerpt": "MESURÉ le 08/08/2026 sur 272 articles XML JATS : 0/272 portent un tampon de chaîne de numérisation (le seul appariement, « scanned by the bare plate », phys-PMC13257740, est un faux positif). ⇒ la mesure CONFIRME le domaine « ancien seulement » du catalogue. L'observation qui fonde la ligne est celle du 08/08/2026 sur Imaizumi et al., Japanese Circulation Journal 1987 : « NII-Electronic Library Service » en pied de CHAQUE page (annexe 93).",
       "lang": "fr",
-      "excerpt_en": "MEASURED on 2026-08-08 on 272 JATS XML articles: 0/272 carry a digitisation-chain stamp (the only match, \"scanned by the bare plate\", phys-PMC13257740, is a false positive). ⇒ the measurement CONFIRMS the \"old only\" domain of the catalogue. The observation founding the line is the one of 2026-08-08 on Imaizumi et al., Japanese Circulation Journal 1987: \"NII-Electronic Library Service\" at the foot of EVERY page (annex 93)."
+      "excerpt_en": "MEASURED on 2026-08-08 on 272 JATS XML articles: 0/272 carry a digitisation-chain stamp (the only match, \"scanned by the bare plate\", phys-PMC13257740, is a false positive). ⇒ the measurement CONFIRMS the \"old only\" domain of the catalogue. The observation founding the line is the one of 2026-08-08 on Imaizumi et al., Japanese Circulation Journal 1987: \"NII-Electronic Library Service\" at the foot of EVERY page (annex 93).",
+      "organisation": "Loxyn SAS, Lyon"
     }
   ],
   "specimens": {
