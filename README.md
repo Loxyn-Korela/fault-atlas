@@ -70,7 +70,7 @@ datasette fault-atlas.sqlite --immutable fault-atlas.sqlite --metadata datasette
 
 ## Contribute
 
-Propose a form by pull request: one JSON file, the excerpt, the corpus, the date. A second reader reviews. Disagreement is recorded, not erased.
+Met a form on your corpus? [Propose it](https://github.com/Loxyn-Korela/fault-atlas/issues/new?template=propose-form.yml) with its excerpt, corpus and date — no code needed. Or scaffold the record with `tools/new_form.py` and send it by pull request (see `CONTRIBUTING.md`). A second reader reviews. Disagreement is recorded, not erased. Nothing enters unreviewed.
 
 ## Citation and licence
 

@@ -54,7 +54,7 @@ index = f"""
 <section class="hero"><p class="eyebrow">A library of observed fault forms in knowledge graphs built from documents</p>
 <h1>Every fault has a form. Every form does one of seven things to the graph.</h1>
 <p class="lead">{len(forms)} forms observed on real corpora, each with its provenance, the damage it causes, whether code can cancel it, whether a deletion-only repair can restore the truth, and which kind of truth can judge it. A repair that holds on one form of a damage may fail on another form of the same damage: this is the test matrix that says which.</p>
-<p class="cta"><a class="btn" href="#forms">Browse the forms</a> <a class="btn ghost" href="{DATA}">Query the data</a> <a class="btn ghost" href="{REPO}">Read the schema</a></p></section>
+<p class="cta"><a class="btn" href="#forms">Browse the forms</a> <a class="btn ghost" href="{DATA}">Query the data</a> <a class="btn ghost" href="{REPO}/issues/new?template=propose-form.yml">Propose a form</a></p></section>
 <section class="grid" id="damages">{cards}</section>
 <section id="forms"><div class="bar"><input id="q" type="search" placeholder="Search a form…" aria-label="Search">
 <select id="fd"><option value="">All damages</option>{''.join(f'<option value="{k}">{E(v[0])}</option>' for k,v in DAMAGE.items())}</select>
@@ -66,7 +66,7 @@ index = f"""
 <div><h3>Four classes</h3><p>Whether deterministic code cancels the form before it enters the graph, can abstain on it, cannot see it from inside, or whether it needs meaning. Half of what was observed is cancelled by code once; the other half is the real benchmark.</p></div>
 <div><h3>Provenance, not opinion</h3><p>A form enters with a verbatim excerpt from a named corpus, a date, an observer. Cases come with counter-examples. A refuted form stays, marked refuted. Nothing is deleted.</p></div>
 <div><h3>Why it matters</h3><p>Graph repair is evaluated against constraints the graph must satisfy, not against what is true. The atlas is half of an answer key: the map of forms by damage, with the kind of truth that can judge each. The other half, the truth itself, is built on it.</p></div></div>
-<p>Contribute a form by pull request on <a href="{REPO}">GitHub</a>: one JSON file, the excerpt, the corpus, the date. A second reader reviews. Cite: Gracia S., Bagnol-Lebon C., Comtet Y. (2026). <em>Fault Atlas.</em> Loxyn SAS, Lyon. Zenodo. <a href="https://doi.org/{DOI}">doi:{DOI}</a>.</p></section>
+<p>Met a form on your corpus? <a href="{REPO}/issues/new?template=propose-form.yml">Propose it</a> with its excerpt, corpus and date — no code needed — or send the JSON record by pull request. A second reader reviews; a contested form stays recorded as contested; nothing enters unreviewed. Cite: Gracia S., Bagnol-Lebon C., Comtet Y. (2026). <em>Fault Atlas.</em> Loxyn SAS, Lyon. Zenodo. <a href="https://doi.org/{DOI}">doi:{DOI}</a>.</p></section>
 <script>
 const q=document.getElementById('q'),fd=document.getElementById('fd'),fc=document.getElementById('fc'),rows=[...document.querySelectorAll('#t tbody tr')],c=document.getElementById('count');
 function apply(){{const s=q.value.toLowerCase(),d=fd.value,k=fc.value;let n=0;for(const r of rows){{const ok=(!d||r.dataset.damage===d)&&(!k||r.dataset.class===k)&&(!s||r.dataset.text.includes(s));r.hidden=!ok;if(ok)n++;}}c.textContent=n+' of '+rows.length;}}

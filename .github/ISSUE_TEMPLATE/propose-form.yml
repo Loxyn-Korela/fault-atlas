@@ -1,0 +1,50 @@
+name: Propose a fault form
+description: You met a fault form on a corpus. Describe it with its proof; a second reader will review it.
+title: "[form] "
+labels: ["proposed form"]
+body:
+  - type: markdown
+    attributes:
+      value: "A form enters the atlas with a verbatim excerpt from a named corpus, a date and an observer. Without them it is a hypothesis, not an observation. Nothing from a client document or personal data."
+  - type: input
+    id: name
+    attributes: { label: "Short name (English)", placeholder: "e.g. Acronym reused for two different institutions" }
+    validations: { required: true }
+  - type: dropdown
+    id: damage
+    attributes:
+      label: "Damage in the graph"
+      description: "What the form does to the graph."
+      options: ["MERGE — two real things become one node", "SPLIT — one thing becomes several nodes", "SPURIOUS_EDGE — a relation the source never asserted", "MISSING — a node or relation the source asserts and the graph lacks", "WRONG_VALUE — a property, number or date is wrong", "WRONG_LABEL — an entity or relation type is wrong", "ANACHRONISM — a fact outside its validity interval, or a superseded status kept", "I do not know"]
+    validations: { required: true }
+  - type: input
+    id: corpus
+    attributes: { label: "Corpus", description: "Name it so that someone else can open it (public corpus, version or snapshot date).", placeholder: "e.g. EUR-Lex, Cellar snapshot 2026-09-01" }
+    validations: { required: true }
+  - type: input
+    id: document
+    attributes: { label: "Document identifier", placeholder: "e.g. CELEX 32016R0679, PMC13193189, DOI…" }
+  - type: input
+    id: date
+    attributes: { label: "Date of observation (YYYY-MM-DD)" }
+    validations: { required: true }
+  - type: textarea
+    id: excerpt
+    attributes: { label: "Verbatim excerpt", description: "Copy the text as it is, in its language. This is the proof.", render: text }
+    validations: { required: true }
+  - type: textarea
+    id: why
+    attributes: { label: "Why it is a fault form", description: "What a construction or repair system does wrong on it. One paragraph." }
+    validations: { required: true }
+  - type: input
+    id: existing
+    attributes: { label: "Closest existing form, if any", placeholder: "e.g. form-024" }
+  - type: checkboxes
+    id: rules
+    attributes:
+      label: "Rules"
+      options:
+        - label: "The excerpt comes from a public corpus, not from a client document, and contains no personal data."
+          required: true
+        - label: "I understand that a second reader reviews, that a contested form stays recorded as contested, and that my name stays in the form's history."
+          required: true
