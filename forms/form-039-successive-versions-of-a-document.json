@@ -24,7 +24,8 @@
       "excerpt": "MESURÉ le 08/08/2026 sur 272 articles Europe PMC accès libre 2023-2026 : présent dans 39 (14 %). Concentration : retract 33, meta 3, bio 1, essai 1, phys 1. Formes réelles : related-article-type=retracted-article ×45 | retraction-forward ×14 | final-edited-article ×2 | preprint ×1 | <article-version>3</article-version> ×2 | <article-version>Version of Record</article-version> ×1",
       "lang": "fr",
       "excerpt_en": "MEASURED on 2026-08-08 on 272 open-access Europe PMC articles 2023-2026: present in 39 (14 %). Concentration: retract 33, meta 3, bio 1, trial 1, phys 1. Real forms: related-article-type=retracted-article ×45 | retraction-forward ×14 | final-edited-article ×2 | preprint ×1 | <article-version>3</article-version> ×2 | <article-version>Version of Record</article-version> ×1",
-      "organisation": "Loxyn SAS, Lyon"
+      "organisation": "Loxyn SAS, Lyon",
+      "corpus_id": "corpus-europe-pmc-jats-2023-2026"
     }
   ],
   "specimens": {

@@ -24,7 +24,8 @@
       "excerpt": "MESURÉ le 08/08/2026 sur les 272 articles XML JATS d'(internal corpus of 272 JATS articles). Le fonds compte 8 strates : bio 34 · cas 34 · essai 34 · meta 34 · moderne 17 · nonEN 51 · phys 34 · retract 34. Le prélèvement des 100 premiers par ordre de nom donne {bio 34, cas 34, essai 32} et PERD 5 strates sur 8 (meta, moderne, nonEN, phys, retract) ; celui des 200 premiers en perd encore 2 (phys, retract). Les 272 identifiants sont distincts (272/272), donc l'emboîtement à l'octet est vrai — c'est la représentativité qui est fausse.",
       "lang": "fr",
       "excerpt_en": "MEASURED on 2026-08-08 on the 272 JATS XML articles of the internal corpus. The corpus has 8 strata: bio 34 · case 34 · trial 34 · meta 34 · modern 17 · nonEN 51 · phys 34 · retract 34. Taking the first 100 by file name gives {bio 34, case 34, trial 32} and LOSES 5 strata out of 8 (meta, modern, nonEN, phys, retract); the first 200 still lose 2 (phys, retract). The 272 identifiers are distinct (272/272), so byte-level nesting holds — it is representativeness that fails.",
-      "organisation": "Loxyn SAS, Lyon"
+      "organisation": "Loxyn SAS, Lyon",
+      "corpus_id": "corpus-europe-pmc-jats-2023-2026"
     }
   ],
   "specimens": {

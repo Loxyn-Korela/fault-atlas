@@ -21,7 +21,8 @@
       "excerpt": "08-09-2026 : « liens gène-notice par an : 2022 : 7 420 k · 2023 : 6 369 k · 2024 : 1 273 k · 2025 : 1 272 k » ; « gènes cités par an : 2023 : 741 k · 2024 : 79 k » ; alors que le monde annoté toutes entités reste à « 2024 : 1 438 k · 2025 : 1 649 k » notices. TNFSF15 : « 2022 342 · 2023 250 · 2024 51 ».",
       "excerpt_en": "2026-09-08: \"gene-record links per year: 2022: 7,420 k · 2023: 6,369 k · 2024: 1,273 k · 2025: 1,272 k\"; \"genes cited per year: 2023: 741 k · 2024: 79 k\"; while the all-entity annotated world stays at \"2024: 1,438 k · 2025: 1,649 k\" records. TNFSF15: \"2022 342 · 2023 250 · 2024 51\".",
       "lang": "fr",
-      "organisation": "Loxyn SAS, Lyon"
+      "organisation": "Loxyn SAS, Lyon",
+      "corpus_id": "corpus-europe-pmc-jats-2023-2026"
     }
   ],
   "specimens": {

@@ -24,7 +24,8 @@
       "excerpt": "MESURÉ le 08/08/2026 sur 272 articles Europe PMC accès libre 2023-2026 : présent dans 102 (37 %). Concentration : nonEN 24, cas 20, bio 14. Formes réelles : fpage=646 + elocation=38430 | fpage=59 + elocation=e-rbgo200 | fpage=25 + elocation=491",
       "lang": "fr",
       "excerpt_en": "MEASURED on 2026-08-08 on 272 open-access Europe PMC articles 2023-2026: present in 102 (37 %). Concentration: nonEN 24, case 20, bio 14. Real forms: fpage=646 + elocation=38430 | fpage=59 + elocation=e-rbgo200 | fpage=25 + elocation=491",
-      "organisation": "Loxyn SAS, Lyon"
+      "organisation": "Loxyn SAS, Lyon",
+      "corpus_id": "corpus-europe-pmc-jats-2023-2026"
     }
   ],
   "specimens": {

@@ -24,7 +24,8 @@
       "excerpt": "MESURÉ le 08/08/2026 sur les 272 articles de (internal corpus of 272 JATS articles) : dans 39/272 (14 %) un AUTEUR de l'article est aussi auteur d'une référence citée — une seule personne, deux rôles (signataire ici, source citée là) ; ex. bio-PMC12915353 (Azizi F., Golzarand M., Mirmiran P.). Et 51/272 (19 %) portent un contributeur déclaré sous au moins deux rôles distincts.",
       "lang": "fr",
       "excerpt_en": "MEASURED on 2026-08-08 on the 272 articles of the internal corpus: in 39/272 (14 %) an AUTHOR of the article is also an author of a cited reference — one person, two roles (signatory here, cited source there); e.g. bio-PMC12915353 (Azizi F., Golzarand M., Mirmiran P.). And 51/272 (19 %) carry a contributor declared under at least two distinct roles.",
-      "organisation": "Loxyn SAS, Lyon"
+      "organisation": "Loxyn SAS, Lyon",
+      "corpus_id": "corpus-europe-pmc-jats-2023-2026"
     }
   ],
   "specimens": {

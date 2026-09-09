@@ -24,7 +24,8 @@
       "excerpt": "MESURÉ le 08/08/2026 sur les 272 articles XML JATS de (internal corpus of 272 JATS articles) : 0/272 résumés commencent par un numéro de point, et 0/272 portent trois points « 1. … 2. … 3. » ou plus. La forme MODERNE équivalente est le résumé à sections déclarées : 160/272 (59 %) ont un <sec> dans leur <abstract>. ⇒ la mesure DATE la ligne : observée le 08/08/2026 sur Apperley, Humphrey & Levy, Br. J. Pharmac. 1976 (résumé en NEUF points numérotés), absente du fonds moderne.",
       "lang": "fr",
       "excerpt_en": "MEASURED on 2026-08-08 on the 272 JATS XML articles of the internal corpus: 0/272 abstracts start with a point number, and 0/272 carry three points \"1. … 2. … 3.\" or more. The MODERN equivalent form is the abstract with declared sections: 160/272 (59 %) have a <sec> in their <abstract>. ⇒ the measurement DATES the line: observed on 2026-08-08 on Apperley, Humphrey & Levy, Br. J. Pharmac. 1976 (abstract in NINE numbered points), absent from the modern corpus.",
-      "organisation": "Loxyn SAS, Lyon"
+      "organisation": "Loxyn SAS, Lyon",
+      "corpus_id": "corpus-europe-pmc-jats-2023-2026"
     }
   ],
   "specimens": {

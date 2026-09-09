@@ -24,7 +24,8 @@
       "excerpt": "MESURÉ le 08/08/2026 sur 272 articles Europe PMC accès libre 2023-2026 (internal corpus of 272 JATS articles) : 1 753 énoncés chiffrés distincts extraits des résumés, dont 1 749 à UN SEUL témoin (99,8 %). Les 4 seuls énoncés à deux témoins ne sont pas des faits : licence Creative Commons et avis de rétractation. En revanche 60 articles sur 272 (22 %) répètent le MÊME énoncé dans le résumé et dans le corps — deux ancrages pour un seul témoin. Contrôle positif de la sonde : le même article sous deux noms → 2/2 énoncés vus à deux témoins.",
       "lang": "fr",
       "excerpt_en": "MEASURED on 2026-08-08 on 272 open-access Europe PMC articles 2023-2026 (internal corpus): 1,753 distinct numerical statements extracted from the abstracts, of which 1,749 have a SINGLE witness (99.8 %). The only 4 statements with two witnesses are not facts: a Creative Commons licence and a retraction notice. However 60 articles out of 272 (22 %) repeat the SAME statement in the abstract and in the body — two anchors for a single witness. Positive control of the probe: the same article under two names → 2/2 statements seen with two witnesses.",
-      "organisation": "Loxyn SAS, Lyon"
+      "organisation": "Loxyn SAS, Lyon",
+      "corpus_id": "corpus-europe-pmc-jats-2023-2026"
     }
   ],
   "specimens": {

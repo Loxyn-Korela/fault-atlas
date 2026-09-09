@@ -24,7 +24,8 @@
       "excerpt": "MESURÉ le 08/08/2026 sur les 272 articles XML JATS de (internal corpus of 272 JATS articles) : 2 280 renvois de la forme « (N) » dans le corps, répartis sur 140/272 articles (51 %) ; et 2 161 d'entre eux (94,8 %) n'ont AUCUNE amorce devant — ni « Eq. », ni « Fig. », ni « Ref. ». Seuls 117 sont annoncés par « Eq./equation » et 2 par « Ref. ». ⇒ le numéro nu est la règle, l'amorce est l'exception. Ligne repérée le 08/08/2026 sur 14 articles 2021-2026 hors biomédecine (arXiv, PLOS, Copernicus, HAL, Scientific Reports).",
       "lang": "fr",
       "excerpt_en": "MEASURED on 2026-08-08 on the 272 JATS XML articles of the internal corpus: 2,280 references of the form \"(N)\" in the body, spread over 140/272 articles (51 %); and 2,161 of them (94.8 %) have NO lead-in — neither \"Eq.\", nor \"Fig.\", nor \"Ref.\". Only 117 are announced by \"Eq./equation\" and 2 by \"Ref.\". ⇒ the bare number is the rule, the lead-in the exception. Line spotted on 2026-08-08 on 14 articles 2021-2026 outside biomedicine (arXiv, PLOS, Copernicus, HAL, Scientific Reports).",
-      "organisation": "Loxyn SAS, Lyon"
+      "organisation": "Loxyn SAS, Lyon",
+      "corpus_id": "corpus-europe-pmc-jats-2023-2026"
     }
   ],
   "specimens": {

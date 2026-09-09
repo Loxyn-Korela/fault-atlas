@@ -7,6 +7,12 @@
 - Validator with house rules; proves itself on seven planted faults.
 - SQLite view builder for Datasette.
 
+## 0.2.1 — 2026-09-09
+- Reproducibility: the 272 Europe PMC articles of the August observation published by PMC identifier with the harvest queries (`corpora/…-272.json`, page `corpora.html`); observations made on them link to it.
+- `origin` on every form (organisation, campaign, contact); 'Found by' line on each page.
+- Second reader's tool `tools/review.py` and `REVIEWING.md`; ANACHRONISM set to 'partial' after the second reader's remark.
+- Datasette: organisation column and facet.
+
 ## 0.2.0 — 2026-09-09
 - 40 forms reported by a second, independent observer (the Voûte Claude) from the PubMed substrate (PubTator3, MeSH history, author keywords) and from OpenAlex, OpenAIRE, Wikidata and FAERS: form-142 to form-181, status `proposed`, each with its measurement and date. Form-164 is a hypothesis without observation (measurement not located).
 - `corpora/observation-2026-09-voute.json`: the populations, what the observer could not verify, what surprised him.

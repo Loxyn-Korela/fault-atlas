@@ -24,7 +24,8 @@
       "excerpt": "MESURÉ le 08/08/2026 sur 272 articles XML JATS Europe PMC accès libre (internal corpus of 272 JATS articles) : présent dans 209 (77 %). Concentration : essai 34, phys 34, bio 33, meta 33, nonEN 32, cas 27, moderne 14, retract 2. Formes réelles : « C-reactive protein (CRP) » (bio-PMC12674831) · « Diabetes mellitus (DM) » (bio-PMC12590050) · « Risk of Bias (RoB) » (bio-PMC12583535).",
       "lang": "fr",
       "excerpt_en": "MEASURED on 2026-08-08 on 272 open-access Europe PMC JATS XML articles (internal corpus): present in 209 (77 %). Concentration: trial 34, phys 34, bio 33, meta 33, nonEN 32, case 27, modern 14, retract 2. Real forms: \"C-reactive protein (CRP)\" (bio-PMC12674831) · \"Diabetes mellitus (DM)\" (bio-PMC12590050) · \"Risk of Bias (RoB)\" (bio-PMC12583535).",
-      "organisation": "Loxyn SAS, Lyon"
+      "organisation": "Loxyn SAS, Lyon",
+      "corpus_id": "corpus-europe-pmc-jats-2023-2026"
     },
     {
       "corpus": "observation 2026-08 (272 Europe PMC JATS articles)",
@@ -33,7 +34,8 @@
       "excerpt": "MESURÉ le 08/08/2026 : 209/272 articles (77 %) glosent puis abrègent — « C-reactive protein (CRP) » puis « CRP » seul.",
       "lang": "fr",
       "excerpt_en": "MEASURED on 2026-08-08: 209/272 articles (77 %) gloss then abbreviate — \"C-reactive protein (CRP)\" then \"CRP\" alone.",
-      "organisation": "Loxyn SAS, Lyon"
+      "organisation": "Loxyn SAS, Lyon",
+      "corpus_id": "corpus-europe-pmc-jats-2023-2026"
     }
   ],
   "specimens": {

@@ -24,7 +24,8 @@
       "excerpt": "MESURÉ le 08/08/2026 sur les 272 articles de (internal corpus of 272 JATS articles) : 1/272 seulement porte une note de tableau définissant DEUX symboles de seuil (nonEN-PMC13224957). Le chiffre CONFIRME le domaine « ancien seulement » porté par le catalogue — la difficulté est morte dans la science courante et vivante pour qui dépouille des archives. L'observation qui fonde la ligne est datée du 08/08/2026, sur les PDF du corpus migraine (1976-1986) : « + p<0·01, ++ p<0·001, +++ p<0·02 as compared with migraineurs and + p<0·02, ++ p<0·01 as compared with controls ».",
       "lang": "fr",
       "excerpt_en": "MEASURED on 2026-08-08 on the 272 articles of the internal corpus: only 1/272 carries a table note defining TWO threshold symbols (nonEN-PMC13224957). The figure CONFIRMS the \"old only\" domain carried by the catalogue — the difficulty is dead in current science and alive for whoever mines archives. The observation founding the line is dated 2026-08-08, on the PDFs of the migraine corpus (1976-1986): \"+ p<0·01, ++ p<0·001, +++ p<0·02 as compared with migraineurs and + p<0·02, ++ p<0·01 as compared with controls\".",
-      "organisation": "Loxyn SAS, Lyon"
+      "organisation": "Loxyn SAS, Lyon",
+      "corpus_id": "corpus-europe-pmc-jats-2023-2026"
     }
   ],
   "specimens": {

@@ -24,7 +24,8 @@
       "excerpt": "MESURÉ le 08/08/2026 sur (internal corpus of 272 JATS articles) (272 XML JATS) : 36/272 articles (13 %) mentionnent un « forest plot », et 28/272 (10 %) le mentionnent DANS UNE LÉGENDE DE FIGURE — c'est-à-dire que le résultat groupé y est un objet graphique, pas une phrase.",
       "lang": "fr",
       "excerpt_en": "MEASURED on 2026-08-08 on the internal corpus (272 JATS XML): 36/272 articles (13 %) mention a \"forest plot\", and 28/272 (10 %) mention it INSIDE A FIGURE CAPTION — that is, the pooled result is a graphical object there, not a sentence.",
-      "organisation": "Loxyn SAS, Lyon"
+      "organisation": "Loxyn SAS, Lyon",
+      "corpus_id": "corpus-europe-pmc-jats-2023-2026"
     }
   ],
   "specimens": {

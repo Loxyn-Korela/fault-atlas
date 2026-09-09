@@ -37,7 +37,7 @@ def layout(title, body, depth=0, desc=""):
 <title>{E(title)}</title><meta name="description" content="{E(desc or 'Observed fault forms in knowledge graphs built from documents, with provenance, damage and the truth that judges them.')}">
 <link rel="icon" href="{p}favicon.svg" type="image/svg+xml"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fraunces:ital,opsz,wght,SOFT@1,9..144,300,0&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"><link rel="stylesheet" href="{p}style.css"></head><body>
 <header class="top"><a class="brand" href="{p}index.html"><img src="{p}favicon.svg" alt="" width="22" height="22"> Fault Atlas <span class="by">by Loxyn</span></a>
-<nav><a href="{p}index.html#forms">Forms</a><a href="{p}index.html#about">About</a><a href="{DATA}">Data &amp; API</a><a href="{REPO}">GitHub</a><a href="https://doi.org/{DOI}">DOI</a></nav></header>
+<nav><a href="{p}index.html#forms">Forms</a><a href="{p}corpora.html">Corpora</a><a href="{p}index.html#about">About</a><a href="{DATA}">Data &amp; API</a><a href="{REPO}">GitHub</a><a href="https://doi.org/{DOI}">DOI</a></nav></header>
 <main>{body}</main>
 <footer><p><strong>Fault Atlas</strong> v{E(VERSION)} · Loxyn SAS, Lyon · Gracia S., Bagnol-Lebon C., Comtet Y. · records CC BY-SA 4.0, tools Apache 2.0 · <a href="https://doi.org/{DOI}">doi:{DOI}</a> · <a href="{REPO}">source</a> · <a href="mailto:contact@loxyn.ai">contact@loxyn.ai</a></p>
 <p class="muted">Every record is still <code>migrated_unreviewed</code>: classified by one reader, awaiting a second. The JSON file is the record of truth; this site is a view rebuilt at each release.</p></footer>
@@ -77,14 +77,14 @@ function apply(){{const s=q.value.toLowerCase(),d=fd.value,k=fc.value;let n=0;fo
 # ── form pages ──
 for f in forms:
     d = DAMAGE[f["damage"]]
-    seen = "".join(f"""<article class="obs"><p class="meta">{E(s['corpus'])} · {E(s['date'])}{(' · '+E(s['observer'])) if s.get('observer') else ''}{(' · '+E(s['organisation'])) if s.get('organisation') else ''}</p>
+    seen = "".join(f"""<article class="obs"><p class="meta">{E(s['corpus'])} · {E(s['date'])}{(' · '+E(s['observer'])) if s.get('observer') else ''}{(' · '+E(s['organisation'])) if s.get('organisation') else ''}{(' · <a href="../corpora.html#'+E(s['corpus_id'])+'">reproducible corpus</a>') if s.get('corpus_id') else ''}</p>
 <p>{E(s.get('excerpt_en', s['excerpt']))}</p>{('<details><summary>Original note ('+E(s.get('lang','fr'))+')</summary><p class="fr">'+E(s['excerpt'])+'</p></details>') if s.get('excerpt_en') and s.get('excerpt_en')!=s['excerpt'] else ''}</article>""" for s in f["seen"]) or "<p class='muted'>No observation yet: this form is a hypothesis, not an observation.</p>"
     cases = f["specimens"]["cases"]; cex = f["specimens"]["counter_examples"]
     spec = (f"<p>{len(cases)} case(s), {len(cex)} counter-example(s).</p>" if cases or cex else "<p class='muted'>Specimens not yet transcribed into this record.</p>")
     hist = "".join(f"<li><span class='meta'>{E(h['date'])}</span> {E(h['event'])}{(' — '+E(h['by'])) if h.get('by') else ''}</li>" for h in f["history"])
     prev = f["prevention"]; rep = f["repair"]
     body = f"""<p class="crumb"><a href="../index.html">Fault Atlas</a> › {E(f['id'])}</p>
-<h1>{E(f['name'])}</h1><p class="fr big">{E(f.get('name_fr',''))}</p>
+<h1>{E(f['name'])}</h1><p class="fr big">{E(f.get('name_fr',''))}</p><p class="found">Found by <strong>{E(f.get("origin",{}).get("organisation","—"))}</strong>{(" — "+E(f["origin"]["campaign"])) if f.get("origin",{}).get("campaign") else ""}{(" · first seen "+E(f["seen"][0]["date"])) if f["seen"] else ""}</p>
 <div class="badges"><span class="pill" style="--c:{d[2]}">{E(d[0])}</span><span class="pill grey">from: {E(f.get("origin",{}).get("organisation","—"))}</span><span class="pill grey">{E(CLASS[f['class']])}</span><span class="pill grey">layer: {E(f['layer'])}</span><span class="pill grey">injection: {E(f.get('injection','—'))}</span><span class="pill warn">{E(f['status'].replace('_',' '))}</span></div>
 <div class="facts"><div><h3>Damage in the graph</h3><p><strong>{E(d[0])}</strong> — {E(d[1])}.</p></div>
 <div><h3>Can code cancel it?</h3><p>{'Yes' if prev['cancellable_by_code'] else 'No'}{('. Refusal clause: '+E(prev['refusal_clause'])) if prev.get('refusal_clause') else ''}{('. '+E(prev['note'])) if prev.get('note') else ''}.</p></div>
@@ -134,6 +134,27 @@ propose_body = f"""<p class="crumb"><a href="index.html">Fault Atlas</a> › pro
 <script>const u=new URL(location.href);if(u.searchParams.get('sent')){{document.getElementById('sent').hidden=false;document.querySelector('form').hidden=true;}}
 const e=u.searchParams.get('err');if(e){{const b=document.getElementById('err');b.hidden=false;b.textContent=e==='rate'?'Too many proposals from this address in one hour. Try again later.':e==='missing'?'Some required fields are missing or invalid: '+(u.searchParams.get('fields')||''):'The proposal could not be sent. Please try again or use GitHub.';}}</script>"""
 (SITE/"propose.html").write_text(layout("Propose a fault form — Fault Atlas", propose_body))
+
+# ── corpora page ──
+import glob as _g
+corp_items = ""
+for cf in sorted((ROOT/"corpora").glob("*.json")):
+    c = json.loads(cf.read_text())
+    body_c = f"<h2 id=\"{E(c['id'])}\">{E(c['name'])}</h2>"
+    if c.get("source"): body_c += f"<p><strong>Source:</strong> {E(c['source'])}</p>"
+    if c.get("harvested"): body_c += f"<p><strong>Harvested:</strong> {E(c['harvested'])}</p>"
+    if c.get("selection"): body_c += f"<p><strong>Selection:</strong> {E(c['selection'])}</p>"
+    if c.get("queries"): body_c += "<p><strong>Queries:</strong></p><ul>" + "".join(f"<li><code>{E(k)}</code>: <code>{E(v)}</code></li>" for k,v in c["queries"].items()) + "</ul>"
+    if c.get("how_to_reproduce"): body_c += f"<p><strong>How to reproduce:</strong> {E(c['how_to_reproduce'])}</p>"
+    if c.get("by_stratum"): body_c += "<p><strong>By stratum:</strong> " + ", ".join(f"{E(k)} {v}" for k,v in c["by_stratum"].items()) + f" — {c.get('count','')} articles</p>"
+    if c.get("articles"): body_c += f"<details><summary>The {len(c['articles'])} identifiers</summary><p class=\"ids\">" + " ".join(E(a['pmcid']) for a in c['articles']) + "</p></details>"
+    if c.get("populations"): body_c += "<ul>" + "".join(f"<li>{E(pp['name'])}{(' — '+E(pp['note'])) if pp.get('note') else ''}</li>" for pp in c["populations"]) + "</ul>"
+    if c.get("observer_agreement"): body_c += f"<p><strong>Observer agreement:</strong> {E(json.dumps(c['observer_agreement'], ensure_ascii=False))}</p>"
+    if c.get("lesson"): body_c += f"<p><em>{E(c['lesson'])}</em></p>"
+    body_c += f"<p class=\"muted\">Record: <a href=\"{REPO}/blob/main/corpora/{E(cf.name)}\">{E(cf.name)}</a></p>"
+    corp_items += f"<section class=\"corpus\">{body_c}</section>"
+(SITE/"corpora.html").write_text(layout("Corpora — Fault Atlas", f"<p class=\"crumb\"><a href=\"index.html\">Fault Atlas</a> › corpora</p><h1>Observed corpora</h1><p class=\"lead\">Where the forms were seen, with what can be re-downloaded by anyone. An observation on a published list is reproducible; a date matters because sources change.</p>{corp_items}"))
+
 (SITE/"atlas.json").write_text(json.dumps({"version": VERSION, "doi": DOI, "forms": forms}, ensure_ascii=False))
 (SITE/"style.css").write_text("""
 :root{--bg:#ffffff;--bg-elev:#f7f7f9;--surface:#ececf0;--line:rgba(10,10,11,.08);--line-strong:rgba(10,10,11,.16);--fg:#0a0a0b;--muted:rgba(10,10,11,.62);--luxe:rgba(10,10,11,.7);
@@ -159,10 +180,11 @@ h2{font-size:26px;letter-spacing:-.02em;margin:38px 0 12px;font-weight:600}h3{ma
 .pill{display:inline-block;white-space:nowrap;padding:2px 10px;border-radius:999px;font-size:12.5px;font-weight:600;color:#fff;background:var(--c);letter-spacing:.01em}.pill.grey{background:var(--surface);color:var(--fg);font-weight:500}.pill.warn{background:#fff3c4;color:#6b4c00;font-weight:500}
 .fr{color:var(--muted);font-size:13px;font-family:var(--serif);font-style:italic}.fr.big{font-size:17px;margin-top:-10px}.muted{color:var(--muted)}
 .about{margin-top:56px;border-top:1px solid var(--line);padding-top:32px}.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:24px}.cols p{margin:0;color:var(--luxe);font-size:15px}
-.crumb{color:var(--muted);font-size:14px;font-family:var(--mono)}.badges{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 22px}
+.crumb{color:var(--muted);font-size:14px;font-family:var(--mono)}.found{margin:-4px 0 14px;font-size:15px;color:var(--luxe)}.badges{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 22px}
 .facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;background:var(--bg-elev);border:1px solid var(--line);border-radius:10px;padding:18px 20px;margin-bottom:26px}.facts p{margin:0;font-size:15px}
 .note{background:#fff7ed;color:#7c2d12;border:1px solid #fed7aa;border-radius:8px;padding:10px 14px;margin-bottom:22px;font-size:15px}
 .obs{background:#fff;border:1px solid var(--line);border-radius:10px;padding:16px 18px;margin:10px 0}.obs p{margin:0}.meta{color:var(--muted);font-size:13px;margin:0 0 8px;font-family:var(--mono)}details{margin-top:8px}details summary{cursor:pointer;color:var(--muted);font-size:14px}details .fr{display:block;margin-top:8px;font-size:14px}
+.corpus{border-top:1px solid var(--line);padding:18px 0}.ids{font-family:var(--mono);font-size:12px;line-height:1.7;word-break:break-all}
 .hist{padding-left:18px}.hist li{margin:5px 0;font-size:15px}code{background:var(--surface);padding:1px 6px;border-radius:4px;font-size:88%;font-family:var(--mono)}
 .propose{max-width:700px}.propose fieldset{border:1px solid var(--line);border-radius:12px;padding:28px 28px 16px;margin:22px 0 30px;background:#fff}.propose legend{padding:0 10px;font-weight:600;font-size:17px;letter-spacing:-.01em;display:flex;align-items:center;gap:10px}
 .step{display:inline-flex;width:26px;height:26px;border-radius:50%;background:var(--acc);color:#fff;font-size:13px;align-items:center;justify-content:center;font-family:var(--mono)}

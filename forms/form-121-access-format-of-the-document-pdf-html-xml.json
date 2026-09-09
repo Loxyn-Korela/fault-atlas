@@ -24,7 +24,8 @@
       "excerpt": "MESURÉ le 08/08/2026 sur les 272 articles d'(internal corpus of 272 JATS articles) : 272/272 sont du XML JATS INTÉGRAL — body ET sections balisées — dans les 8 strates (nonEN 51, bio/cas/essai/meta/phys/retract 34 chacune, moderne 17). 0/272 en front seul, 0/272 en PDF. Une CONDITION mesurée à 100 % est le résultat attendu d'une collecte qui a choisi ce format ; ce qu'elle dit de neuf, c'est que la branche PDF de ce filtre n'est éprouvée par AUCUN document réel.",
       "lang": "fr",
       "excerpt_en": "MEASURED on 2026-08-08 on the 272 articles of the internal corpus: 272/272 are FULL JATS XML — body AND tagged sections — across the 8 strata (nonEN 51, bio/case/trial/meta/phys/retract 34 each, modern 17). 0/272 front-only, 0/272 PDF. A CONDITION measured at 100 % is the expected result of a collection that chose this format; what it says that is new is that the PDF branch of this filter is tested by NO real document.",
-      "organisation": "Loxyn SAS, Lyon"
+      "organisation": "Loxyn SAS, Lyon",
+      "corpus_id": "corpus-europe-pmc-jats-2023-2026"
     }
   ],
   "specimens": {

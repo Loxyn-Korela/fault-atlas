@@ -24,7 +24,8 @@
       "excerpt": "MESURÉ le 08/08/2026 sur (internal corpus of 272 JATS articles) (272 XML JATS) : 57/272 articles (21 %) portent dans le corps au moins une mention de fournisseur entre parenthèses de la forme « (… Ltd/Inc/GmbH/Corp/B.V./AG …) » ; 50/272 (18 %) portent en outre une référence catalogue (cat. no., Cat#, catalogue number).",
       "lang": "fr",
       "excerpt_en": "MEASURED on 2026-08-08 on the internal corpus (272 JATS XML): 57/272 articles (21 %) carry in the body at least one parenthesised supplier mention of the form \"(… Ltd/Inc/GmbH/Corp/B.V./AG …)\"; 50/272 (18 %) additionally carry a catalogue reference (cat. no., Cat#, catalogue number).",
-      "organisation": "Loxyn SAS, Lyon"
+      "organisation": "Loxyn SAS, Lyon",
+      "corpus_id": "corpus-europe-pmc-jats-2023-2026"
     }
   ],
   "specimens": {

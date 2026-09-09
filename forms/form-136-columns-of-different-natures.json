@@ -24,7 +24,8 @@
       "excerpt": "MESURÉ le 08/08/2026 sur les 272 articles XML JATS de (internal corpus of 272 JATS articles) : 124/272 (45,6 %) portent un bloc « Funding / Competing interests / Acknowledgements » À L'INTÉRIEUR de <body> — donc dans le flux de lecture du corps, pas dans l'appareil de fin ; 202/272 (74 %) en portent un quelque part. Ligne repérée le 08/08/2026 sur 14 articles 2021-2026 hors biomédecine (arXiv, PLOS, Copernicus, HAL, Scientific Reports).",
       "lang": "fr",
       "excerpt_en": "MEASURED on 2026-08-08 on the 272 JATS XML articles of the internal corpus: 124/272 (45.6 %) carry a \"Funding / Competing interests / Acknowledgements\" block INSIDE <body> — hence in the reading flow of the body, not in the end apparatus; 202/272 (74 %) carry one somewhere. Line spotted on 2026-08-08 on 14 articles 2021-2026 outside biomedicine (arXiv, PLOS, Copernicus, HAL, Scientific Reports).",
-      "organisation": "Loxyn SAS, Lyon"
+      "organisation": "Loxyn SAS, Lyon",
+      "corpus_id": "corpus-europe-pmc-jats-2023-2026"
     }
   ],
   "specimens": {

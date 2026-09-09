@@ -1,0 +1,1121 @@
+{
+ "id": "corpus-europe-pmc-jats-2023-2026",
+ "name": "Europe PMC, open access, full text in JATS XML — the 272 articles of the August 2026 observation",
+ "source": "Europe PMC REST API (https://www.ebi.ac.uk/europepmc/webservices/rest/), full-text XML endpoint",
+ "harvested": "2026-08-08",
+ "selection": "eight strata drawn by query on the Europe PMC search API, open access with full text (OPEN_ACCESS:Y AND HAS_FT:Y), 34 per stratum where available; strata: bio, cas (case reports), essai (clinical trials), meta (meta-analyses and systematic reviews), moderne (2024-2026), nonEN (non-English), phys (physics/maths), retract (retraction notices)",
+ "note": "The articles are public and open access; the list lets anyone re-download the same 272 files from Europe PMC by PMC identifier. The XML files themselves are not redistributed here.",
+ "count": 272,
+ "by_stratum": {
+  "bio": 34,
+  "cas": 34,
+  "essai": 34,
+  "meta": 34,
+  "moderne": 17,
+  "nonEN": 51,
+  "phys": 34,
+  "retract": 34
+ },
+ "articles": [
+  {
+   "pmcid": "PMC12583535",
+   "stratum": "bio"
+  },
+  {
+   "pmcid": "PMC12590050",
+   "stratum": "bio"
+  },
+  {
+   "pmcid": "PMC12674831",
+   "stratum": "bio"
+  },
+  {
+   "pmcid": "PMC12857832",
+   "stratum": "bio"
+  },
+  {
+   "pmcid": "PMC12882215",
+   "stratum": "bio"
+  },
+  {
+   "pmcid": "PMC12909487",
+   "stratum": "bio"
+  },
+  {
+   "pmcid": "PMC12915353",
+   "stratum": "bio"
+  },
+  {
+   "pmcid": "PMC12927065",
+   "stratum": "bio"
+  },
+  {
+   "pmcid": "PMC12927975",
+   "stratum": "bio"
+  },
+  {
+   "pmcid": "PMC12953170",
+   "stratum": "bio"
+  },
+  {
+   "pmcid": "PMC12959687",
+   "stratum": "bio"
+  },
+  {
+   "pmcid": "PMC13057049",
+   "stratum": "bio"
+  },
+  {
+   "pmcid": "PMC13088504",
+   "stratum": "bio"
+  },
+  {
+   "pmcid": "PMC13097615",
+   "stratum": "bio"
+  },
+  {
+   "pmcid": "PMC13099299",
+   "stratum": "bio"
+  },
+  {
+   "pmcid": "PMC13103274",
+   "stratum": "bio"
+  },
+  {
+   "pmcid": "PMC13116881",
+   "stratum": "bio"
+  },
+  {
+   "pmcid": "PMC13155703",
+   "stratum": "bio"
+  },
+  {
+   "pmcid": "PMC13162546",
+   "stratum": "bio"
+  },
+  {
+   "pmcid": "PMC13168716",
+   "stratum": "bio"
+  },
+  {
+   "pmcid": "PMC13170838",
+   "stratum": "bio"
+  },
+  {
+   "pmcid": "PMC13181205",
+   "stratum": "bio"
+  },
+  {
+   "pmcid": "PMC13182387",
+   "stratum": "bio"
+  },
+  {
+   "pmcid": "PMC13190511",
+   "stratum": "bio"
+  },
+  {
+   "pmcid": "PMC13203479",
+   "stratum": "bio"
+  },
+  {
+   "pmcid": "PMC13207820",
+   "stratum": "bio"
+  },
+  {
+   "pmcid": "PMC13216383",
+   "stratum": "bio"
+  },
+  {
+   "pmcid": "PMC13218538",
+   "stratum": "bio"
+  },
+  {
+   "pmcid": "PMC13231534",
+   "stratum": "bio"
+  },
+  {
+   "pmcid": "PMC13236932",
+   "stratum": "bio"
+  },
+  {
+   "pmcid": "PMC13251069",
+   "stratum": "bio"
+  },
+  {
+   "pmcid": "PMC13252842",
+   "stratum": "bio"
+  },
+  {
+   "pmcid": "PMC13274935",
+   "stratum": "bio"
+  },
+  {
+   "pmcid": "PMC13289183",
+   "stratum": "bio"
+  },
+  {
+   "pmcid": "PMC13290446",
+   "stratum": "cas"
+  },
+  {
+   "pmcid": "PMC13291543",
+   "stratum": "cas"
+  },
+  {
+   "pmcid": "PMC13291881",
+   "stratum": "cas"
+  },
+  {
+   "pmcid": "PMC13293644",
+   "stratum": "cas"
+  },
+  {
+   "pmcid": "PMC13293645",
+   "stratum": "cas"
+  },
+  {
+   "pmcid": "PMC13293647",
+   "stratum": "cas"
+  },
+  {
+   "pmcid": "PMC13293792",
+   "stratum": "cas"
+  },
+  {
+   "pmcid": "PMC13293799",
+   "stratum": "cas"
+  },
+  {
+   "pmcid": "PMC13293813",
+   "stratum": "cas"
+  },
+  {
+   "pmcid": "PMC13293827",
+   "stratum": "cas"
+  },
+  {
+   "pmcid": "PMC13293834",
+   "stratum": "cas"
+  },
+  {
+   "pmcid": "PMC13293841",
+   "stratum": "cas"
+  },
+  {
+   "pmcid": "PMC13293897",
+   "stratum": "cas"
+  },
+  {
+   "pmcid": "PMC13293901",
+   "stratum": "cas"
+  },
+  {
+   "pmcid": "PMC13293995",
+   "stratum": "cas"
+  },
+  {
+   "pmcid": "PMC13294038",
+   "stratum": "cas"
+  },
+  {
+   "pmcid": "PMC13294089",
+   "stratum": "cas"
+  },
+  {
+   "pmcid": "PMC13294096",
+   "stratum": "cas"
+  },
+  {
+   "pmcid": "PMC13294155",
+   "stratum": "cas"
+  },
+  {
+   "pmcid": "PMC13294182",
+   "stratum": "cas"
+  },
+  {
+   "pmcid": "PMC13294240",
+   "stratum": "cas"
+  },
+  {
+   "pmcid": "PMC13294281",
+   "stratum": "cas"
+  },
+  {
+   "pmcid": "PMC13294340",
+   "stratum": "cas"
+  },
+  {
+   "pmcid": "PMC13294475",
+   "stratum": "cas"
+  },
+  {
+   "pmcid": "PMC13294481",
+   "stratum": "cas"
+  },
+  {
+   "pmcid": "PMC13294629",
+   "stratum": "cas"
+  },
+  {
+   "pmcid": "PMC13294642",
+   "stratum": "cas"
+  },
+  {
+   "pmcid": "PMC13294698",
+   "stratum": "cas"
+  },
+  {
+   "pmcid": "PMC13294702",
+   "stratum": "cas"
+  },
+  {
+   "pmcid": "PMC13294704",
+   "stratum": "cas"
+  },
+  {
+   "pmcid": "PMC13294705",
+   "stratum": "cas"
+  },
+  {
+   "pmcid": "PMC13300565",
+   "stratum": "cas"
+  },
+  {
+   "pmcid": "PMC13300836",
+   "stratum": "cas"
+  },
+  {
+   "pmcid": "PMC13301386",
+   "stratum": "cas"
+  },
+  {
+   "pmcid": "PMC13154027",
+   "stratum": "essai"
+  },
+  {
+   "pmcid": "PMC13169227",
+   "stratum": "essai"
+  },
+  {
+   "pmcid": "PMC13169472",
+   "stratum": "essai"
+  },
+  {
+   "pmcid": "PMC13179527",
+   "stratum": "essai"
+  },
+  {
+   "pmcid": "PMC13191455",
+   "stratum": "essai"
+  },
+  {
+   "pmcid": "PMC13205709",
+   "stratum": "essai"
+  },
+  {
+   "pmcid": "PMC13205731",
+   "stratum": "essai"
+  },
+  {
+   "pmcid": "PMC13205876",
+   "stratum": "essai"
+  },
+  {
+   "pmcid": "PMC13213610",
+   "stratum": "essai"
+  },
+  {
+   "pmcid": "PMC13215628",
+   "stratum": "essai"
+  },
+  {
+   "pmcid": "PMC13238360",
+   "stratum": "essai"
+  },
+  {
+   "pmcid": "PMC13239719",
+   "stratum": "essai"
+  },
+  {
+   "pmcid": "PMC13242068",
+   "stratum": "essai"
+  },
+  {
+   "pmcid": "PMC13242351",
+   "stratum": "essai"
+  },
+  {
+   "pmcid": "PMC13245602",
+   "stratum": "essai"
+  },
+  {
+   "pmcid": "PMC13254492",
+   "stratum": "essai"
+  },
+  {
+   "pmcid": "PMC13263161",
+   "stratum": "essai"
+  },
+  {
+   "pmcid": "PMC13264282",
+   "stratum": "essai"
+  },
+  {
+   "pmcid": "PMC13271868",
+   "stratum": "essai"
+  },
+  {
+   "pmcid": "PMC13276020",
+   "stratum": "essai"
+  },
+  {
+   "pmcid": "PMC13280184",
+   "stratum": "essai"
+  },
+  {
+   "pmcid": "PMC13280799",
+   "stratum": "essai"
+  },
+  {
+   "pmcid": "PMC13281132",
+   "stratum": "essai"
+  },
+  {
+   "pmcid": "PMC13282136",
+   "stratum": "essai"
+  },
+  {
+   "pmcid": "PMC13284529",
+   "stratum": "essai"
+  },
+  {
+   "pmcid": "PMC13290998",
+   "stratum": "essai"
+  },
+  {
+   "pmcid": "PMC13291766",
+   "stratum": "essai"
+  },
+  {
+   "pmcid": "PMC13291922",
+   "stratum": "essai"
+  },
+  {
+   "pmcid": "PMC13293440",
+   "stratum": "essai"
+  },
+  {
+   "pmcid": "PMC13294169",
+   "stratum": "essai"
+  },
+  {
+   "pmcid": "PMC13294787",
+   "stratum": "essai"
+  },
+  {
+   "pmcid": "PMC13294792",
+   "stratum": "essai"
+  },
+  {
+   "pmcid": "PMC13296589",
+   "stratum": "essai"
+  },
+  {
+   "pmcid": "PMC7619126",
+   "stratum": "essai"
+  },
+  {
+   "pmcid": "PMC13071177",
+   "stratum": "meta"
+  },
+  {
+   "pmcid": "PMC13157766",
+   "stratum": "meta"
+  },
+  {
+   "pmcid": "PMC13179150",
+   "stratum": "meta"
+  },
+  {
+   "pmcid": "PMC13221319",
+   "stratum": "meta"
+  },
+  {
+   "pmcid": "PMC13225629",
+   "stratum": "meta"
+  },
+  {
+   "pmcid": "PMC13226718",
+   "stratum": "meta"
+  },
+  {
+   "pmcid": "PMC13229315",
+   "stratum": "meta"
+  },
+  {
+   "pmcid": "PMC13231626",
+   "stratum": "meta"
+  },
+  {
+   "pmcid": "PMC13240427",
+   "stratum": "meta"
+  },
+  {
+   "pmcid": "PMC13241412",
+   "stratum": "meta"
+  },
+  {
+   "pmcid": "PMC13246130",
+   "stratum": "meta"
+  },
+  {
+   "pmcid": "PMC13250259",
+   "stratum": "meta"
+  },
+  {
+   "pmcid": "PMC13253268",
+   "stratum": "meta"
+  },
+  {
+   "pmcid": "PMC13254819",
+   "stratum": "meta"
+  },
+  {
+   "pmcid": "PMC13256077",
+   "stratum": "meta"
+  },
+  {
+   "pmcid": "PMC13260247",
+   "stratum": "meta"
+  },
+  {
+   "pmcid": "PMC13263136",
+   "stratum": "meta"
+  },
+  {
+   "pmcid": "PMC13264275",
+   "stratum": "meta"
+  },
+  {
+   "pmcid": "PMC13264436",
+   "stratum": "meta"
+  },
+  {
+   "pmcid": "PMC13265330",
+   "stratum": "meta"
+  },
+  {
+   "pmcid": "PMC13268477",
+   "stratum": "meta"
+  },
+  {
+   "pmcid": "PMC13268693",
+   "stratum": "meta"
+  },
+  {
+   "pmcid": "PMC13269816",
+   "stratum": "meta"
+  },
+  {
+   "pmcid": "PMC13271776",
+   "stratum": "meta"
+  },
+  {
+   "pmcid": "PMC13280693",
+   "stratum": "meta"
+  },
+  {
+   "pmcid": "PMC13286426",
+   "stratum": "meta"
+  },
+  {
+   "pmcid": "PMC13286481",
+   "stratum": "meta"
+  },
+  {
+   "pmcid": "PMC13287023",
+   "stratum": "meta"
+  },
+  {
+   "pmcid": "PMC13287149",
+   "stratum": "meta"
+  },
+  {
+   "pmcid": "PMC13287277",
+   "stratum": "meta"
+  },
+  {
+   "pmcid": "PMC13288533",
+   "stratum": "meta"
+  },
+  {
+   "pmcid": "PMC13292320",
+   "stratum": "meta"
+  },
+  {
+   "pmcid": "PMC13297335",
+   "stratum": "meta"
+  },
+  {
+   "pmcid": "PMC13305250",
+   "stratum": "meta"
+  },
+  {
+   "pmcid": "PMC12900525",
+   "stratum": "moderne"
+  },
+  {
+   "pmcid": "PMC12967033",
+   "stratum": "moderne"
+  },
+  {
+   "pmcid": "PMC13177175",
+   "stratum": "moderne"
+  },
+  {
+   "pmcid": "PMC13254229",
+   "stratum": "moderne"
+  },
+  {
+   "pmcid": "PMC13262411",
+   "stratum": "moderne"
+  },
+  {
+   "pmcid": "PMC13264966",
+   "stratum": "moderne"
+  },
+  {
+   "pmcid": "PMC13264967",
+   "stratum": "moderne"
+  },
+  {
+   "pmcid": "PMC13267778",
+   "stratum": "moderne"
+  },
+  {
+   "pmcid": "PMC13274555",
+   "stratum": "moderne"
+  },
+  {
+   "pmcid": "PMC13282716",
+   "stratum": "moderne"
+  },
+  {
+   "pmcid": "PMC13282721",
+   "stratum": "moderne"
+  },
+  {
+   "pmcid": "PMC13288728",
+   "stratum": "moderne"
+  },
+  {
+   "pmcid": "PMC13291764",
+   "stratum": "moderne"
+  },
+  {
+   "pmcid": "PMC13292010",
+   "stratum": "moderne"
+  },
+  {
+   "pmcid": "PMC13292400",
+   "stratum": "moderne"
+  },
+  {
+   "pmcid": "PMC13296834",
+   "stratum": "moderne"
+  },
+  {
+   "pmcid": "PMC13296839",
+   "stratum": "moderne"
+  },
+  {
+   "pmcid": "PMC13127809",
+   "stratum": "nonEN"
+  },
+  {
+   "pmcid": "PMC13128172",
+   "stratum": "nonEN"
+  },
+  {
+   "pmcid": "PMC13128184",
+   "stratum": "nonEN"
+  },
+  {
+   "pmcid": "PMC13128185",
+   "stratum": "nonEN"
+  },
+  {
+   "pmcid": "PMC13128186",
+   "stratum": "nonEN"
+  },
+  {
+   "pmcid": "PMC13128206",
+   "stratum": "nonEN"
+  },
+  {
+   "pmcid": "PMC13128210",
+   "stratum": "nonEN"
+  },
+  {
+   "pmcid": "PMC13128212",
+   "stratum": "nonEN"
+  },
+  {
+   "pmcid": "PMC13128213",
+   "stratum": "nonEN"
+  },
+  {
+   "pmcid": "PMC13128215",
+   "stratum": "nonEN"
+  },
+  {
+   "pmcid": "PMC13128216",
+   "stratum": "nonEN"
+  },
+  {
+   "pmcid": "PMC13128218",
+   "stratum": "nonEN"
+  },
+  {
+   "pmcid": "PMC13142163",
+   "stratum": "nonEN"
+  },
+  {
+   "pmcid": "PMC13143285",
+   "stratum": "nonEN"
+  },
+  {
+   "pmcid": "PMC13148856",
+   "stratum": "nonEN"
+  },
+  {
+   "pmcid": "PMC13155791",
+   "stratum": "nonEN"
+  },
+  {
+   "pmcid": "PMC13155792",
+   "stratum": "nonEN"
+  },
+  {
+   "pmcid": "PMC13155793",
+   "stratum": "nonEN"
+  },
+  {
+   "pmcid": "PMC13170112",
+   "stratum": "nonEN"
+  },
+  {
+   "pmcid": "PMC13185728",
+   "stratum": "nonEN"
+  },
+  {
+   "pmcid": "PMC13185730",
+   "stratum": "nonEN"
+  },
+  {
+   "pmcid": "PMC13193188",
+   "stratum": "nonEN"
+  },
+  {
+   "pmcid": "PMC13193189",
+   "stratum": "nonEN"
+  },
+  {
+   "pmcid": "PMC13193190",
+   "stratum": "nonEN"
+  },
+  {
+   "pmcid": "PMC13193191",
+   "stratum": "nonEN"
+  },
+  {
+   "pmcid": "PMC13193194",
+   "stratum": "nonEN"
+  },
+  {
+   "pmcid": "PMC13193195",
+   "stratum": "nonEN"
+  },
+  {
+   "pmcid": "PMC13224953",
+   "stratum": "nonEN"
+  },
+  {
+   "pmcid": "PMC13224954",
+   "stratum": "nonEN"
+  },
+  {
+   "pmcid": "PMC13224955",
+   "stratum": "nonEN"
+  },
+  {
+   "pmcid": "PMC13224957",
+   "stratum": "nonEN"
+  },
+  {
+   "pmcid": "PMC13228121",
+   "stratum": "nonEN"
+  },
+  {
+   "pmcid": "PMC13264032",
+   "stratum": "nonEN"
+  },
+  {
+   "pmcid": "PMC13264058",
+   "stratum": "nonEN"
+  },
+  {
+   "pmcid": "PMC13264162",
+   "stratum": "nonEN"
+  },
+  {
+   "pmcid": "PMC13264178",
+   "stratum": "nonEN"
+  },
+  {
+   "pmcid": "PMC13266121",
+   "stratum": "nonEN"
+  },
+  {
+   "pmcid": "PMC13266122",
+   "stratum": "nonEN"
+  },
+  {
+   "pmcid": "PMC13267754",
+   "stratum": "nonEN"
+  },
+  {
+   "pmcid": "PMC13267755",
+   "stratum": "nonEN"
+  },
+  {
+   "pmcid": "PMC13267756",
+   "stratum": "nonEN"
+  },
+  {
+   "pmcid": "PMC13267757",
+   "stratum": "nonEN"
+  },
+  {
+   "pmcid": "PMC13272499",
+   "stratum": "nonEN"
+  },
+  {
+   "pmcid": "PMC13272511",
+   "stratum": "nonEN"
+  },
+  {
+   "pmcid": "PMC13272517",
+   "stratum": "nonEN"
+  },
+  {
+   "pmcid": "PMC13276738",
+   "stratum": "nonEN"
+  },
+  {
+   "pmcid": "PMC13284468",
+   "stratum": "nonEN"
+  },
+  {
+   "pmcid": "PMC13284469",
+   "stratum": "nonEN"
+  },
+  {
+   "pmcid": "PMC13285344",
+   "stratum": "nonEN"
+  },
+  {
+   "pmcid": "PMC13285635",
+   "stratum": "nonEN"
+  },
+  {
+   "pmcid": "PMC13288443",
+   "stratum": "nonEN"
+  },
+  {
+   "pmcid": "PMC13039343",
+   "stratum": "phys"
+  },
+  {
+   "pmcid": "PMC13082673",
+   "stratum": "phys"
+  },
+  {
+   "pmcid": "PMC13099575",
+   "stratum": "phys"
+  },
+  {
+   "pmcid": "PMC13113438",
+   "stratum": "phys"
+  },
+  {
+   "pmcid": "PMC13133660",
+   "stratum": "phys"
+  },
+  {
+   "pmcid": "PMC13154412",
+   "stratum": "phys"
+  },
+  {
+   "pmcid": "PMC13158258",
+   "stratum": "phys"
+  },
+  {
+   "pmcid": "PMC13171646",
+   "stratum": "phys"
+  },
+  {
+   "pmcid": "PMC13178570",
+   "stratum": "phys"
+  },
+  {
+   "pmcid": "PMC13181085",
+   "stratum": "phys"
+  },
+  {
+   "pmcid": "PMC13193059",
+   "stratum": "phys"
+  },
+  {
+   "pmcid": "PMC13201561",
+   "stratum": "phys"
+  },
+  {
+   "pmcid": "PMC13208799",
+   "stratum": "phys"
+  },
+  {
+   "pmcid": "PMC13210669",
+   "stratum": "phys"
+  },
+  {
+   "pmcid": "PMC13221960",
+   "stratum": "phys"
+  },
+  {
+   "pmcid": "PMC13222844",
+   "stratum": "phys"
+  },
+  {
+   "pmcid": "PMC13234180",
+   "stratum": "phys"
+  },
+  {
+   "pmcid": "PMC13235518",
+   "stratum": "phys"
+  },
+  {
+   "pmcid": "PMC13246409",
+   "stratum": "phys"
+  },
+  {
+   "pmcid": "PMC13252849",
+   "stratum": "phys"
+  },
+  {
+   "pmcid": "PMC13257740",
+   "stratum": "phys"
+  },
+  {
+   "pmcid": "PMC13259435",
+   "stratum": "phys"
+  },
+  {
+   "pmcid": "PMC13259474",
+   "stratum": "phys"
+  },
+  {
+   "pmcid": "PMC13261600",
+   "stratum": "phys"
+  },
+  {
+   "pmcid": "PMC13272752",
+   "stratum": "phys"
+  },
+  {
+   "pmcid": "PMC13275013",
+   "stratum": "phys"
+  },
+  {
+   "pmcid": "PMC13276034",
+   "stratum": "phys"
+  },
+  {
+   "pmcid": "PMC13282397",
+   "stratum": "phys"
+  },
+  {
+   "pmcid": "PMC13285896",
+   "stratum": "phys"
+  },
+  {
+   "pmcid": "PMC13289917",
+   "stratum": "phys"
+  },
+  {
+   "pmcid": "PMC13296606",
+   "stratum": "phys"
+  },
+  {
+   "pmcid": "PMC13297141",
+   "stratum": "phys"
+  },
+  {
+   "pmcid": "PMC13297618",
+   "stratum": "phys"
+  },
+  {
+   "pmcid": "PMC13298103",
+   "stratum": "phys"
+  },
+  {
+   "pmcid": "PMC12920011",
+   "stratum": "retract"
+  },
+  {
+   "pmcid": "PMC12937552",
+   "stratum": "retract"
+  },
+  {
+   "pmcid": "PMC12943135",
+   "stratum": "retract"
+  },
+  {
+   "pmcid": "PMC12945919",
+   "stratum": "retract"
+  },
+  {
+   "pmcid": "PMC12951106",
+   "stratum": "retract"
+  },
+  {
+   "pmcid": "PMC12983062",
+   "stratum": "retract"
+  },
+  {
+   "pmcid": "PMC12983399",
+   "stratum": "retract"
+  },
+  {
+   "pmcid": "PMC12985380",
+   "stratum": "retract"
+  },
+  {
+   "pmcid": "PMC12989678",
+   "stratum": "retract"
+  },
+  {
+   "pmcid": "PMC12990951",
+   "stratum": "retract"
+  },
+  {
+   "pmcid": "PMC13034554",
+   "stratum": "retract"
+  },
+  {
+   "pmcid": "PMC13037014",
+   "stratum": "retract"
+  },
+  {
+   "pmcid": "PMC13064942",
+   "stratum": "retract"
+  },
+  {
+   "pmcid": "PMC13083641",
+   "stratum": "retract"
+  },
+  {
+   "pmcid": "PMC13100932",
+   "stratum": "retract"
+  },
+  {
+   "pmcid": "PMC13184583",
+   "stratum": "retract"
+  },
+  {
+   "pmcid": "PMC13208113",
+   "stratum": "retract"
+  },
+  {
+   "pmcid": "PMC13230493",
+   "stratum": "retract"
+  },
+  {
+   "pmcid": "PMC13244562",
+   "stratum": "retract"
+  },
+  {
+   "pmcid": "PMC13257949",
+   "stratum": "retract"
+  },
+  {
+   "pmcid": "PMC13257951",
+   "stratum": "retract"
+  },
+  {
+   "pmcid": "PMC13289858",
+   "stratum": "retract"
+  },
+  {
+   "pmcid": "PMC13291836",
+   "stratum": "retract"
+  },
+  {
+   "pmcid": "PMC13292036",
+   "stratum": "retract"
+  },
+  {
+   "pmcid": "PMC13292042",
+   "stratum": "retract"
+  },
+  {
+   "pmcid": "PMC13292064",
+   "stratum": "retract"
+  },
+  {
+   "pmcid": "PMC13292106",
+   "stratum": "retract"
+  },
+  {
+   "pmcid": "PMC13292606",
+   "stratum": "retract"
+  },
+  {
+   "pmcid": "PMC13294332",
+   "stratum": "retract"
+  },
+  {
+   "pmcid": "PMC13294796",
+   "stratum": "retract"
+  },
+  {
+   "pmcid": "PMC13295435",
+   "stratum": "retract"
+  },
+  {
+   "pmcid": "PMC13298758",
+   "stratum": "retract"
+  },
+  {
+   "pmcid": "PMC13299186",
+   "stratum": "retract"
+  },
+  {
+   "pmcid": "PMC13306522",
+   "stratum": "retract"
+  }
+ ],
+ "queries": {
+  "base": "OPEN_ACCESS:Y AND HAS_FT:Y AND FIRST_PDATE:[2023-01-01 TO 2026-12-31] (base; stratum filters below appended with AND)",
+  "bio": "(MESH:\"Neoplasms\" OR MESH:\"Cardiovascular Diseases\")",
+  "essai": "PUB_TYPE:\"Randomized Controlled Trial\"",
+  "meta": "PUB_TYPE:\"Meta-Analysis\"",
+  "retract": "(PUB_TYPE:\"Retracted Publication\" OR PUB_TYPE:\"Retraction of Publication\")",
+  "cas": "PUB_TYPE:\"Case Reports\"",
+  "nonEN": "(LANG:\"fre\" OR LANG:\"ger\" OR LANG:\"spa\" OR LANG:\"por\")",
+  "phys": "(\"physics\" OR \"algorithm\" OR \"computational\")",
+  "moderne": "OPEN_ACCESS:Y AND HAS_FT:Y AND FIRST_PDATE:[2024-01-01 TO 2026-12-31]"
+ },
+ "how_to_reproduce": "For each PMC id: GET https://www.ebi.ac.uk/europepmc/webservices/rest/<PMCID>/fullTextXML . Europe PMC may have updated a record since 2026-08-08; a re-download is a new snapshot, to be dated."
+}

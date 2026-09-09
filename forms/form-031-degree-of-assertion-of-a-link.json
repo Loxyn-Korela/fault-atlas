@@ -24,7 +24,8 @@
       "excerpt": "MESURÉ le 08/08/2026 sur (internal corpus of 272 JATS articles) (272 XML JATS) : 233/272 articles (86 %) portent au moins un marqueur de non-affirmation (may · might · could · suggests · appears to · likely · has been proposed) ; 4 518 occurrences au total, soit 19,4 par article concerné.",
       "lang": "fr",
       "excerpt_en": "MEASURED on 2026-08-08 on the internal corpus (272 JATS XML): 233/272 articles (86 %) carry at least one non-assertion marker (may · might · could · suggests · appears to · likely · has been proposed); 4,518 occurrences in total, i.e. 19.4 per affected article.",
-      "organisation": "Loxyn SAS, Lyon"
+      "organisation": "Loxyn SAS, Lyon",
+      "corpus_id": "corpus-europe-pmc-jats-2023-2026"
     }
   ],
   "specimens": {

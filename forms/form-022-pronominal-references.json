@@ -24,7 +24,8 @@
       "excerpt": "MESURÉ le 08/08/2026 sur les 272 articles XML JATS de l'atelier : 212/272 (78 %) ouvrent au moins une phrase par une reprise nue (It/They/These/This), 3 260 occurrences au total ; 49/272 (18 %) portent une reprise lexicale explicite — relevé « In the latter study, the risk of developing T2DM was significantly lower » (bio-PMC12915353).",
       "lang": "fr",
       "excerpt_en": "MEASURED on 2026-08-08 on the 272 JATS XML articles of the workshop: 212/272 (78 %) open at least one sentence with a bare anaphor (It/They/These/This), 3,260 occurrences in total; 49/272 (18 %) carry an explicit lexical anaphor — recorded: \"In the latter study, the risk of developing T2DM was significantly lower\" (bio-PMC12915353).",
-      "organisation": "Loxyn SAS, Lyon"
+      "organisation": "Loxyn SAS, Lyon",
+      "corpus_id": "corpus-europe-pmc-jats-2023-2026"
     }
   ],
   "specimens": {

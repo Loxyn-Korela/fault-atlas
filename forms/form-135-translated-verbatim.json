@@ -24,7 +24,8 @@
       "excerpt": "MESURÉ le 08/08/2026 sur (internal corpus of 272 JATS articles) (272 XML JATS) : 1/272 article (0,4 %) porte un marqueur de traduction, pour 11/272 (4 %) qui portent une citation en bloc <disp-quote> (102 blocs) — la difficulté est QUASI ABSENTE du biomédical, et c'est le résultat : elle a été observée le 08/08 sur 14 articles 2021-2026 HORS biomédecine (arXiv, PLOS, Copernicus, HAL, Scientific Reports). Elle n'aurait jamais été trouvée sans changer de discipline.",
       "lang": "fr",
       "excerpt_en": "MEASURED on 2026-08-08 on the internal corpus (272 JATS XML): 1/272 article (0.4 %) carries a translation marker, against 11/272 (4 %) carrying a block quotation <disp-quote> (102 blocks) — the difficulty is NEARLY ABSENT from biomedicine, and that is the result: it was observed on 2026-08-08 on 14 articles 2021-2026 OUTSIDE biomedicine (arXiv, PLOS, Copernicus, HAL, Scientific Reports). It would never have been found without changing discipline.",
-      "organisation": "Loxyn SAS, Lyon"
+      "organisation": "Loxyn SAS, Lyon",
+      "corpus_id": "corpus-europe-pmc-jats-2023-2026"
     }
   ],
   "specimens": {

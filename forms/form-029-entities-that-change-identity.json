@@ -24,7 +24,8 @@
       "excerpt": "MESURÉ le 08/08/2026 sur (internal corpus of 272 JATS articles) (272 XML JATS) : seulement 6/272 articles (2 %) portent une formule de changement d'identité dans le corps (formerly / renamed / previously known as / merged with / acquired by). ⇒ Le corpus SCIENTIFIQUE ne l'enseigne presque pas ; c'est le fonds d'entreprise qui la porte (annexe 29). Le module l'injecte donc à un taux choisi, pas observé.",
       "lang": "fr",
       "excerpt_en": "MEASURED on 2026-08-08 on the internal corpus (272 JATS XML): only 6/272 articles (2 %) carry an identity-change phrase in the body (formerly / renamed / previously known as / merged with / acquired by). ⇒ The SCIENTIFIC corpus hardly teaches it; corporate archives carry it (annex 29). The module therefore injects it at a chosen rate, not an observed one.",
-      "organisation": "Loxyn SAS, Lyon"
+      "organisation": "Loxyn SAS, Lyon",
+      "corpus_id": "corpus-europe-pmc-jats-2023-2026"
     }
   ],
   "specimens": {

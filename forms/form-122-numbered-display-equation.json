@@ -24,7 +24,8 @@
       "excerpt": "MESURÉ le 08/08/2026 sur 272 articles Europe PMC accès libre 2023-2026 (internal corpus of 272 JATS articles) : présent dans 33 articles (12 %), dont 29 sur 34 du lot physique/maths (85 %) contre 1 sur 34 du lot essais cliniques et 0 sur 34 du lot biomédical — la difficulté n'existe quasiment pas en biomédecine, ce qui explique qu'elle ait manqué au catalogue. Formes réelles : étiquettes « (1) », « (2) » (moderne-PMC13264967) et « 1 », « 2 », « 3 » sans parenthèses (moderne-PMC13262411) — deux conventions dans le même corpus.",
       "lang": "fr",
       "excerpt_en": "MEASURED on 2026-08-08 on 272 open-access Europe PMC articles 2023-2026 (internal corpus): present in 33 articles (12 %), of which 29 of the 34 in the physics/maths batch (85 %) against 1 of 34 in the clinical-trial batch and 0 of 34 in the biomedical batch — the difficulty hardly exists in biomedicine, which explains why it was missing from the catalogue. Real forms: labels \"(1)\", \"(2)\" (modern-PMC13264967) and \"1\", \"2\", \"3\" without parentheses (modern-PMC13262411) — two conventions in the same corpus.",
-      "organisation": "Loxyn SAS, Lyon"
+      "organisation": "Loxyn SAS, Lyon",
+      "corpus_id": "corpus-europe-pmc-jats-2023-2026"
     }
   ],
   "specimens": {

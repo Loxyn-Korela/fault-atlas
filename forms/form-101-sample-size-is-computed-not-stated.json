@@ -24,7 +24,8 @@
       "excerpt": "MESURÉ le 08/08/2026 sur 272 articles Europe PMC accès libre 2023-2026 (internal corpus of 272 JATS articles) : présent dans 25 articles (9 %). Concentration : essai 10/34, meta 7/34, bio 4/34, nonEN 4/51. Formes réelles : bio-PMC12590050 → 910 = 387 + 523 ; bio-PMC12953170 → 27 = 8 + 19 ; et bio-PMC12674831 porte TROIS décompositions concurrentes (105=45+60, 109=33+76, 109=4+105) — c'est ce cas mesuré qui fonde la clause de refus.",
       "lang": "fr",
       "excerpt_en": "MEASURED on 2026-08-08 on 272 open-access Europe PMC articles 2023-2026 (internal corpus): present in 25 articles (9 %). Concentration: trial 10/34, meta 7/34, bio 4/34, nonEN 4/51. Real forms: bio-PMC12590050 → 910 = 387 + 523; bio-PMC12953170 → 27 = 8 + 19; and bio-PMC12674831 carries THREE competing decompositions (105=45+60, 109=33+76, 109=4+105) — this measured case is what founds the refusal clause.",
-      "organisation": "Loxyn SAS, Lyon"
+      "organisation": "Loxyn SAS, Lyon",
+      "corpus_id": "corpus-europe-pmc-jats-2023-2026"
     }
   ],
   "specimens": {

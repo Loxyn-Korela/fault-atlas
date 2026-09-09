@@ -21,7 +21,8 @@
       "excerpt": "09-09-2026 : « les fichiers 2013-2014 n'ont pas le champ prod_ai, seulement drugname (nom verbatim) » ; 49 272 médicaments distincts après normalisation minimale, 17 525 à ≥ 5 déclarations ; exemple d'objet : « avobenzone\\octisalate\\octocrylene ».",
       "excerpt_en": "2026-09-09: \"the 2013-2014 files have no prod_ai field, only drugname (verbatim name)\"; 49,272 distinct drugs after minimal normalisation, 17,525 with ≥ 5 reports; example object: 'avobenzone\\octisalate\\octocrylene'.",
       "lang": "fr",
-      "organisation": "Loxyn SAS, Lyon"
+      "organisation": "Loxyn SAS, Lyon",
+      "corpus_id": "corpus-europe-pmc-jats-2023-2026"
     }
   ],
   "specimens": {

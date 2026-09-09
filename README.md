@@ -51,7 +51,7 @@ The file is the truth. Software reads it; software never completes it from memor
 | ANACHRONISM | 8 |
 | CORPUS_PARAMETER | 8 |
 
-Every August form has `status: migrated_unreviewed` and every September form `status: proposed`. A second reader validates or contests each one before it becomes `validated`. Where a September form overlaps an August one, the `related` field says so; the novel/variant decision is the reader's, not the machine's.
+The 272 Europe PMC articles of the August observation are listed by PMC identifier, with the harvest queries, in `corpora/europe-pmc-jats-2023-2026-272.json`: anyone can re-download them. Every August form has `status: migrated_unreviewed` and every September form `status: proposed`. A second reader validates or contests each one before it becomes `validated`. Where a September form overlaps an August one, the `related` field says so; the novel/variant decision is the reader's, not the machine's.
 
 ## Rules
 
@@ -71,6 +71,10 @@ python3 tools/build_sqlite.py    # fault-atlas.sqlite, a view for Datasette
 python3 tools/build_site.py      # site/ — the public site, static HTML generated from the records
 datasette fault-atlas.sqlite --immutable fault-atlas.sqlite --metadata datasette-metadata.json   # browse locally
 ```
+
+## Review
+
+A second reader records a decision with `tools/review.py` (validated, variant, contested, refuted), dated and signed, in the form's history. See `REVIEWING.md`.
 
 ## Contribute
 

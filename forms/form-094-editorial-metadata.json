@@ -24,7 +24,8 @@
       "excerpt": "MESURÉ le 08/08/2026 sur (internal corpus of 272 JATS articles) (272 XML JATS) : 89/272 articles (33 %) portent un bloc de mots-clés balisé <kwd> ; 98/272 (36 %) une phrase de financement (« was supported by », « funded by », « grant from »), dont 59 (22 %) dans une balise <funding-statement> ou <funding-group> dédiée.",
       "lang": "fr",
       "excerpt_en": "MEASURED on 2026-08-08 on the internal corpus (272 JATS XML): 89/272 articles (33 %) carry a tagged <kwd> keyword block; 98/272 (36 %) a funding sentence (\"was supported by\", \"funded by\", \"grant from\"), of which 59 (22 %) in a dedicated <funding-statement> or <funding-group> tag.",
-      "organisation": "Loxyn SAS, Lyon"
+      "organisation": "Loxyn SAS, Lyon",
+      "corpus_id": "corpus-europe-pmc-jats-2023-2026"
     }
   ],
   "specimens": {

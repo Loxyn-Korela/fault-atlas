@@ -156,6 +156,10 @@
           "organisation": {
             "type": "string",
             "description": "Organisation of the observer, when different from the form's origin."
+          },
+          "corpus_id": {
+            "type": "string",
+            "description": "Identifier of a corpus record in corpora/, when the observation was made on a published, reproducible list."
           }
         }
       }
