@@ -54,7 +54,7 @@ index = f"""
 <section class="hero"><p class="eyebrow">A library of observed fault forms in knowledge graphs built from documents</p>
 <h1>Every fault has a form. Every form does one of seven things to the graph.</h1>
 <p class="lead">{len(forms)} forms observed on real corpora, each with its provenance, the damage it causes, whether code can cancel it, whether a deletion-only repair can restore the truth, and which kind of truth can judge it. A repair that holds on one form of a damage may fail on another form of the same damage: this is the test matrix that says which.</p>
-<p class="cta"><a class="btn" href="#forms">Browse the forms</a> <a class="btn ghost" href="{DATA}">Query the data</a> <a class="btn ghost" href="{REPO}/issues/new?template=propose-form.yml">Propose a form</a></p></section>
+<p class="cta"><a class="btn" href="#forms">Browse the forms</a> <a class="btn ghost" href="{DATA}">Query the data</a> <a class="btn ghost" href="propose.html">Propose a form</a></p></section>
 <section class="grid" id="damages">{cards}</section>
 <section id="forms"><div class="bar"><input id="q" type="search" placeholder="Search a form…" aria-label="Search">
 <select id="fd"><option value="">All damages</option>{''.join(f'<option value="{k}">{E(v[0])}</option>' for k,v in DAMAGE.items())}</select>
@@ -66,7 +66,7 @@ index = f"""
 <div><h3>Four classes</h3><p>Whether deterministic code cancels the form before it enters the graph, can abstain on it, cannot see it from inside, or whether it needs meaning. Half of what was observed is cancelled by code once; the other half is the real benchmark.</p></div>
 <div><h3>Provenance, not opinion</h3><p>A form enters with a verbatim excerpt from a named corpus, a date, an observer. Cases come with counter-examples. A refuted form stays, marked refuted. Nothing is deleted.</p></div>
 <div><h3>Why it matters</h3><p>Graph repair is evaluated against constraints the graph must satisfy, not against what is true. The atlas is half of an answer key: the map of forms by damage, with the kind of truth that can judge each. The other half, the truth itself, is built on it.</p></div></div>
-<p>Met a form on your corpus? <a href="{REPO}/issues/new?template=propose-form.yml">Propose it</a> with its excerpt, corpus and date — no code needed — or send the JSON record by pull request. A second reader reviews; a contested form stays recorded as contested; nothing enters unreviewed. Cite: Gracia S., Bagnol-Lebon C., Comtet Y. (2026). <em>Fault Atlas.</em> Loxyn SAS, Lyon. Zenodo. <a href="https://doi.org/{DOI}">doi:{DOI}</a>.</p></section>
+<p>Met a form on your corpus? <a href="propose.html">Propose it</a> with its excerpt, corpus and date — no code, no account. Or, if you prefer, open an issue or a pull request on GitHub. A second reader reviews; a contested form stays recorded as contested; nothing enters unreviewed. Cite: Gracia S., Bagnol-Lebon C., Comtet Y. (2026). <em>Fault Atlas.</em> Loxyn SAS, Lyon. Zenodo. <a href="https://doi.org/{DOI}">doi:{DOI}</a>.</p></section>
 <script>
 const q=document.getElementById('q'),fd=document.getElementById('fd'),fc=document.getElementById('fc'),rows=[...document.querySelectorAll('#t tbody tr')],c=document.getElementById('count');
 function apply(){{const s=q.value.toLowerCase(),d=fd.value,k=fc.value;let n=0;for(const r of rows){{const ok=(!d||r.dataset.damage===d)&&(!k||r.dataset.class===k)&&(!s||r.dataset.text.includes(s));r.hidden=!ok;if(ok)n++;}}c.textContent=n+' of '+rows.length;}}
@@ -96,6 +96,34 @@ for f in forms:
 <h2>History</h2><ul class="hist">{hist}</ul>
 <p class="muted">Record: <a href="../atlas.json">atlas.json</a> · <a href="{REPO}/blob/main/forms/">source file on GitHub</a> · <a href="{DATA}/forms/{E(f['id'])}">row in the data explorer</a></p>"""
     (SITE/"forms"/f"{f['id']}.html").write_text(layout(f"{f['name']} — Fault Atlas", body, depth=1, desc=f"{f['name']}: {d[0].lower()} — {d[1]}."))
+
+
+# ── propose page ──
+opts = "".join(f'<option value="{k}">{E(v[0])} — {E(v[1])}</option>' for k,v in DAMAGE.items() if k!="CORPUS_PARAMETER") + '<option value="UNKNOWN">I do not know</option>'
+propose_body = f"""<p class="crumb"><a href="index.html">Fault Atlas</a> › propose</p>
+<h1>Propose a fault form</h1>
+<p class="lead">You met a fault form on a corpus. Describe it with its proof. A second reader reviews it; you are told what was decided, and your name stays in the form's history. Nothing enters unreviewed.</p>
+<div id="sent" class="note ok" hidden>Thank you. Your proposal is received and will be reviewed. You will get an answer at the address you gave.</div>
+<div id="err" class="note" hidden></div>
+<form class="propose" method="post" action="/propose">
+<input type="text" name="website" tabindex="-1" autocomplete="off" class="hp" aria-hidden="true">
+<label>Short name (English) <input name="name" required maxlength="120" placeholder="e.g. Acronym reused for two different institutions"></label>
+<label>What it does to the graph <select name="damage" required>{opts}</select></label>
+<label>Corpus <input name="corpus" required maxlength="200" placeholder="Name it so that someone else can open it — e.g. EUR-Lex, Cellar snapshot 2026-09-01"></label>
+<label>Document identifier <input name="document" maxlength="200" placeholder="CELEX number, PMC id, DOI…"></label>
+<label>Date of observation <input name="date" type="date" required></label>
+<label>Verbatim excerpt <textarea name="excerpt" required rows="5" maxlength="4000" placeholder="Copy the text as it is, in its language. This is the proof."></textarea></label>
+<label>Why it is a fault form <textarea name="why" required rows="4" maxlength="3000" placeholder="What a construction or repair system does wrong on it. One paragraph."></textarea></label>
+<label>Closest existing form, if any <input name="existing" maxlength="40" placeholder="e.g. form-024"></label>
+<label>Your name and affiliation <input name="who" maxlength="200"></label>
+<label>Your e-mail <input name="email" type="email" required maxlength="200"></label>
+<label class="check"><input type="checkbox" name="rule_public" value="yes" required> The excerpt comes from a public corpus, not from a client document, and contains no personal data.</label>
+<label class="check"><input type="checkbox" name="rule_review" value="yes" required> I understand that a second reader reviews, that a contested form stays recorded as contested, and that my name stays in the form's history.</label>
+<p><button class="btn" type="submit">Send the proposal</button> <span class="muted">or <a href="{REPO}/issues/new?template=propose-form.yml">open an issue on GitHub</a></span></p>
+</form>
+<script>const u=new URL(location.href);if(u.searchParams.get('sent')){{document.getElementById('sent').hidden=false;document.querySelector('form').hidden=true;}}
+const e=u.searchParams.get('err');if(e){{const b=document.getElementById('err');b.hidden=false;b.textContent=e==='rate'?'Too many proposals from this address in one hour. Try again later.':e==='missing'?'Some required fields are missing or invalid: '+(u.searchParams.get('fields')||''):'The proposal could not be sent. Please try again or use GitHub.';}}</script>"""
+(SITE/"propose.html").write_text(layout("Propose a fault form — Fault Atlas", propose_body))
 
 (SITE/"atlas.json").write_text(json.dumps({"version": VERSION, "doi": DOI, "forms": forms}, ensure_ascii=False))
 (SITE/"style.css").write_text("""
@@ -127,6 +155,7 @@ h2{font-size:26px;letter-spacing:-.02em;margin:38px 0 12px;font-weight:600}h3{ma
 .note{background:#fff7ed;color:#7c2d12;border:1px solid #fed7aa;border-radius:8px;padding:10px 14px;margin-bottom:22px;font-size:15px}
 .obs{background:#fff;border:1px solid var(--line);border-radius:10px;padding:16px 18px;margin:10px 0}.obs p{margin:0}.meta{color:var(--muted);font-size:13px;margin:0 0 8px;font-family:var(--mono)}details{margin-top:8px}details summary{cursor:pointer;color:var(--muted);font-size:14px}details .fr{display:block;margin-top:8px;font-size:14px}
 .hist{padding-left:18px}.hist li{margin:5px 0;font-size:15px}code{background:var(--surface);padding:1px 6px;border-radius:4px;font-size:88%;font-family:var(--mono)}
+.propose label{display:block;margin:14px 0;font-weight:600;font-size:14px}.propose input:not([type=checkbox]),.propose select,.propose textarea{display:block;width:100%;margin-top:6px;font-weight:400}.propose textarea{resize:vertical}.propose .check{font-weight:400;display:flex;justify-content:flex-start;align-items:flex-start;gap:10px;text-align:left;margin:10px 0}.propose .check input{width:auto;flex:0 0 auto;margin:5px 0 0}.propose .check input{margin-top:5px}.hp{position:absolute;left:-9999px}.note.ok{background:#ecfdf5;color:#065f46;border-color:#a7f3d0}
 footer{border-top:1px solid var(--line);padding:24px 5vw 40px;font-size:14px;color:var(--muted);background:var(--bg-elev)}footer p{max-width:1120px;margin:6px auto}
 """)
 print(f"site: {len(forms)} form pages + index, v{VERSION}")
