@@ -1,0 +1,51 @@
+{
+  "id": "form-070",
+  "version": 1,
+  "legacy_line": 70,
+  "name": "Bibliographic references",
+  "name_fr": "Références bibliographiques",
+  "damage": "SPURIOUS_EDGE",
+  "class": "SILENT_FALSE",
+  "layer": "④ extraction",
+  "injection": "MOVE",
+  "legacy_severity": "G2",
+  "legacy_mechanism": "M4",
+  "status": "migrated_unreviewed",
+  "seen": [
+    {
+      "corpus": "observation 2026-08 (272 Europe PMC JATS articles)",
+      "date": "2026-08-08",
+      "observer": "house observer (LLM agent), see report",
+      "excerpt": "MESURÉ le 08/08/2026 sur 272 articles XML JATS : 251/272 (92 %) portent un bloc de références final — 10 912 références au total, médiane 36 par article, maximum 450 — et 247/272 (91 %) portent des appels de citation dans le corps (17 210 appels).",
+      "lang": "fr"
+    }
+  ],
+  "specimens": {
+    "cases": [],
+    "counter_examples": []
+  },
+  "prevention": {
+    "cancellable_by_code": false
+  },
+  "repair": {
+    "reachable_by_deletion": "yes",
+    "note": "the faulty edge can be deleted"
+  },
+  "judgeable_by": [
+    "construction",
+    "curated",
+    "closed_world"
+  ],
+  "history": [
+    {
+      "date": "2026-08-09",
+      "event": "catalogue line 70 — GOLDEN: irréductible ou faux silencieux",
+      "by": "Korela For Science"
+    },
+    {
+      "date": "2026-09-09",
+      "event": "migrated; classified damage=SPURIOUS_EDGE injection=MOVE (judgment, unreviewed by a second reader)",
+      "by": "Fault Atlas migration"
+    }
+  ]
+}

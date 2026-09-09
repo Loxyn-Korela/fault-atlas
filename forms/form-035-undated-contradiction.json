@@ -1,0 +1,52 @@
+{
+  "id": "form-035",
+  "version": 1,
+  "legacy_line": 35,
+  "name": "Undated contradiction",
+  "name_fr": "Contradiction sans date",
+  "damage": "WRONG_VALUE",
+  "class": "IRREDUCIBLE",
+  "layer": "⑧ cohérence",
+  "injection": "ALTER",
+  "legacy_severity": "G2",
+  "legacy_mechanism": "M5",
+  "status": "migrated_unreviewed",
+  "seen": [
+    {
+      "corpus": "observation 2026-08 (272 Europe PMC JATS articles)",
+      "date": "2026-08-08",
+      "observer": "house observer (LLM agent), see report",
+      "excerpt": "MESURÉ le 08/08/2026 sur les 272 articles de atelier-filtres/corpus : 15 049 des 16 411 paragraphes de corps (92 %) ne contiennent AUCUNE année. L'affirmation non datée est donc la norme, pas l'exception — et deux affirmations non datées ne peuvent pas être départagées par la date. (Sonde : comptage des <p> du <body> portant un jeton d'année 19xx/20xx.)",
+      "lang": "fr"
+    }
+  ],
+  "specimens": {
+    "cases": [],
+    "counter_examples": []
+  },
+  "prevention": {
+    "cancellable_by_code": false
+  },
+  "repair": {
+    "reachable_by_deletion": "no",
+    "note": "deletion cannot restore this; judgment of 2026-09-09, to be measured"
+  },
+  "judgeable_by": [
+    "construction",
+    "registry",
+    "dated_future",
+    "closed_world"
+  ],
+  "history": [
+    {
+      "date": "2026-08-09",
+      "event": "catalogue line 35 — GOLDEN: irréductible ou faux silencieux",
+      "by": "Korela For Science"
+    },
+    {
+      "date": "2026-09-09",
+      "event": "migrated; classified damage=WRONG_VALUE injection=ALTER (judgment, unreviewed by a second reader)",
+      "by": "Fault Atlas migration"
+    }
+  ]
+}

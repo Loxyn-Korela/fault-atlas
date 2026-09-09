@@ -1,0 +1,57 @@
+{
+  "id": "form-075",
+  "version": 1,
+  "legacy_line": 75,
+  "name": "Multiple citation conventions",
+  "name_fr": "Conventions de citation multiples",
+  "damage": "MISSING",
+  "class": "REFUSABLE",
+  "layer": "④ extraction",
+  "injection": "FORMAT",
+  "legacy_severity": "G3",
+  "legacy_mechanism": "M4",
+  "status": "migrated_unreviewed",
+  "seen": [
+    {
+      "corpus": "observation 2026-08 (Europe PMC JATS 2023-2026 and PubMed abstracts)",
+      "date": "2026-08-08",
+      "observer": "house observer (LLM agent), see report",
+      "excerpt": "MESURÉ le 08/08/2026 sur 272 articles XML JATS Europe PMC (2023-2026) : les deux conventions coexistent bien dans le même fonds — 207/272 en appel numérique (76 %), 13/272 en auteur-année (5 %), 25 sans appel, 0 mélangé dans un même article. La forme DANGEREUSE est mesurée à part : dans 37/272 articles (14 %) un appel numérique colle directement à une lettre — bio-PMC12583535 donne, une fois les balises retirées, « s1 », « e2 », « y4 », « n10 ». Forme auteur-année réelle : nonEN-PMC13228121 — « Bauman, 1999 », « Carvalho, 2022 ».",
+      "lang": "fr"
+    }
+  ],
+  "specimens": {
+    "cases": [],
+    "counter_examples": []
+  },
+  "prevention": {
+    "cancellable_by_code": true,
+    "refusal_clause": "handle, or abstain and declare — never guess"
+  },
+  "repair": {
+    "reachable_by_deletion": "no",
+    "note": "deletion cannot restore this; judgment of 2026-09-09, to be measured"
+  },
+  "judgeable_by": [
+    "construction",
+    "curated",
+    "closed_world"
+  ],
+  "history": [
+    {
+      "date": "2026-08-09",
+      "event": "catalogue line 75 — VAINCU: filtre écrit et vert au banc",
+      "by": "Korela For Science"
+    },
+    {
+      "date": "2026-09-09",
+      "event": "migrated; classified damage=MISSING injection=FORMAT (judgment, unreviewed by a second reader)",
+      "by": "Fault Atlas migration"
+    },
+    {
+      "date": "2026-08-08",
+      "event": "house filter exists with 4 cases and 1 counter-examples (bench green=True); specimens to be transcribed into this record",
+      "by": "Korela For Science"
+    }
+  ]
+}

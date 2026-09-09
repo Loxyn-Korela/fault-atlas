@@ -1,0 +1,51 @@
+{
+  "id": "form-125",
+  "version": 1,
+  "legacy_line": 125,
+  "name": "Numbered theorem whose body is the claim",
+  "name_fr": "Théorème numéroté dont le corps est l'affirmation",
+  "damage": "MISSING",
+  "class": "IRREDUCIBLE",
+  "layer": "③ énonciation",
+  "injection": "MOVE",
+  "legacy_severity": "G3",
+  "legacy_mechanism": "M8",
+  "status": "migrated_unreviewed",
+  "seen": [
+    {
+      "corpus": "observation 2026-08 (272 Europe PMC JATS articles)",
+      "date": "2026-08-08",
+      "observer": "house observer (LLM agent), see report",
+      "excerpt": "MESURÉ le 08/08/2026 sur les 272 articles de atelier-filtres/corpus : 2/272 en tout, et les DEUX dans la strate physique (2/34, soit 6 %) — phys-PMC13099575 (« Theorem 1. For a SINDy-class model with a library of functions… », puis Theorem 2) et phys-PMC13113438 (Theorem 1 à 3). ZÉRO dans les six strates biomédicales du corpus. Le comptage confirme l'annexe : la ligne est hors-biomédicale, elle n'aurait jamais été vue sans changer de discipline.",
+      "lang": "fr"
+    }
+  ],
+  "specimens": {
+    "cases": [],
+    "counter_examples": []
+  },
+  "prevention": {
+    "cancellable_by_code": false
+  },
+  "repair": {
+    "reachable_by_deletion": "no",
+    "note": "deletion cannot restore this; judgment of 2026-09-09, to be measured"
+  },
+  "judgeable_by": [
+    "construction",
+    "curated",
+    "closed_world"
+  ],
+  "history": [
+    {
+      "date": "2026-08-09",
+      "event": "catalogue line 125 — GOLDEN: irréductible ou faux silencieux",
+      "by": "Korela For Science"
+    },
+    {
+      "date": "2026-09-09",
+      "event": "migrated; classified damage=MISSING injection=MOVE (judgment, unreviewed by a second reader)",
+      "by": "Fault Atlas migration"
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "id": "form-141",
+  "version": 1,
+  "legacy_line": 141,
+  "name": "Multiple abstracts from different registries",
+  "name_fr": "Résumés multiples de registres différents",
+  "damage": "MISSING",
+  "class": "DEFEATED_IF_XML",
+  "layer": "③ énonciation",
+  "injection": "DUPLICATE",
+  "legacy_severity": "G3",
+  "legacy_mechanism": "M8",
+  "status": "migrated_unreviewed",
+  "seen": [
+    {
+      "corpus": "observation 2026-08 (Europe PMC JATS 2023-2026 and PubMed abstracts)",
+      "date": "2026-08-08",
+      "observer": "house observer (LLM agent), see report",
+      "excerpt": "MESURÉ le 08/08/2026 sur 272 articles Europe PMC accès libre 2023-2026 : présent dans 57 (20 %). Concentration : essai 17, nonEN 12, meta 9. Formes réelles : <abstract> | <abstract id=«puh270198-abs-0001« abstract-type= | <abstract>",
+      "lang": "fr"
+    }
+  ],
+  "specimens": {
+    "cases": [],
+    "counter_examples": []
+  },
+  "prevention": {
+    "cancellable_by_code": true,
+    "note": "cancelled only when the source is structured (XML/HTML); not on composed PDF"
+  },
+  "repair": {
+    "reachable_by_deletion": "no",
+    "note": "deletion cannot restore this; judgment of 2026-09-09, to be measured"
+  },
+  "judgeable_by": [
+    "construction",
+    "curated",
+    "closed_world"
+  ],
+  "history": [
+    {
+      "date": "2026-08-09",
+      "event": "catalogue line 141 — VAINCU: filtre écrit et vert au banc",
+      "by": "Korela For Science"
+    },
+    {
+      "date": "2026-09-09",
+      "event": "migrated; classified damage=MISSING injection=DUPLICATE (judgment, unreviewed by a second reader)",
+      "by": "Fault Atlas migration"
+    },
+    {
+      "date": "2026-08-08",
+      "event": "house filter exists with 3 cases and 1 counter-examples (bench green=True); specimens to be transcribed into this record",
+      "by": "Korela For Science"
+    }
+  ]
+}

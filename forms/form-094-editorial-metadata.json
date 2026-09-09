@@ -1,0 +1,51 @@
+{
+  "id": "form-094",
+  "version": 1,
+  "legacy_line": 94,
+  "name": "Editorial metadata",
+  "name_fr": "Métadonnées éditoriales",
+  "damage": "SPURIOUS_EDGE",
+  "class": "SILENT_FALSE",
+  "layer": "④ extraction",
+  "injection": "INSERT",
+  "legacy_severity": "G4",
+  "legacy_mechanism": "",
+  "status": "migrated_unreviewed",
+  "seen": [
+    {
+      "corpus": "observation 2026-08 (272 Europe PMC JATS articles)",
+      "date": "2026-08-08",
+      "observer": "house observer (LLM agent), see report",
+      "excerpt": "MESURÉ le 08/08/2026 sur atelier-filtres/corpus (272 XML JATS) : 89/272 articles (33 %) portent un bloc de mots-clés balisé <kwd> ; 98/272 (36 %) une phrase de financement (« was supported by », « funded by », « grant from »), dont 59 (22 %) dans une balise <funding-statement> ou <funding-group> dédiée.",
+      "lang": "fr"
+    }
+  ],
+  "specimens": {
+    "cases": [],
+    "counter_examples": []
+  },
+  "prevention": {
+    "cancellable_by_code": false
+  },
+  "repair": {
+    "reachable_by_deletion": "yes",
+    "note": "the faulty edge can be deleted"
+  },
+  "judgeable_by": [
+    "construction",
+    "curated",
+    "closed_world"
+  ],
+  "history": [
+    {
+      "date": "2026-08-09",
+      "event": "catalogue line 94 — GOLDEN: irréductible ou faux silencieux",
+      "by": "Korela For Science"
+    },
+    {
+      "date": "2026-09-09",
+      "event": "migrated; classified damage=SPURIOUS_EDGE injection=INSERT (judgment, unreviewed by a second reader)",
+      "by": "Fault Atlas migration"
+    }
+  ]
+}

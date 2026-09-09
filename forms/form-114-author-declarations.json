@@ -1,0 +1,56 @@
+{
+  "id": "form-114",
+  "version": 1,
+  "legacy_line": 114,
+  "name": "Author declarations",
+  "name_fr": "Déclarations sur les auteurs",
+  "damage": "SPURIOUS_EDGE",
+  "class": "DEFEATED",
+  "layer": "④ extraction",
+  "injection": "INSERT",
+  "legacy_severity": "G4",
+  "legacy_mechanism": "",
+  "status": "migrated_unreviewed",
+  "seen": [
+    {
+      "corpus": "observation 2026-08 (Europe PMC JATS 2023-2026 and PubMed abstracts)",
+      "date": "2026-08-08",
+      "observer": "house observer (LLM agent), see report",
+      "excerpt": "MESURÉ le 08/08/2026 sur 272 articles Europe PMC accès libre 2023-2026 (atelier-filtres/sondes-serie-B.py) : présent dans 190 articles (69 %) — le défaut le plus répandu de la série. Concentration : cas 34/34, meta 34/34, phys 31/34, bio 30/34, essai 28/34, moderne 15/17, nonEN 17/51, retract 1/34. Formes réelles : titres « Author contributions », « Competing interests », « Data availability », et fn-type COI-statement ×30, financial-disclosure ×12, con ×4 — contre fn-type=\"other\" ×127, qui ne dit rien et fonde la clause de refus.",
+      "lang": "fr"
+    }
+  ],
+  "specimens": {
+    "cases": [],
+    "counter_examples": []
+  },
+  "prevention": {
+    "cancellable_by_code": true
+  },
+  "repair": {
+    "reachable_by_deletion": "yes",
+    "note": "the faulty edge can be deleted"
+  },
+  "judgeable_by": [
+    "construction",
+    "curated",
+    "closed_world"
+  ],
+  "history": [
+    {
+      "date": "2026-08-09",
+      "event": "catalogue line 114 — VAINCU: filtre écrit et vert au banc",
+      "by": "Korela For Science"
+    },
+    {
+      "date": "2026-09-09",
+      "event": "migrated; classified damage=SPURIOUS_EDGE injection=INSERT (judgment, unreviewed by a second reader)",
+      "by": "Fault Atlas migration"
+    },
+    {
+      "date": "2026-08-08",
+      "event": "house filter exists with 5 cases and 1 counter-examples (bench green=True); specimens to be transcribed into this record",
+      "by": "Korela For Science"
+    }
+  ]
+}

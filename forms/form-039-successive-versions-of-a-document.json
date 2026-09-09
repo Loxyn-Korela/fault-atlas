@@ -1,0 +1,58 @@
+{
+  "id": "form-039",
+  "version": 1,
+  "legacy_line": 39,
+  "name": "Successive versions of a document",
+  "name_fr": "Versions successives d'un document",
+  "damage": "ANACHRONISM",
+  "class": "REFUSABLE",
+  "layer": "⑧ cohérence",
+  "injection": "DUPLICATE",
+  "legacy_severity": "G2",
+  "legacy_mechanism": "M5",
+  "status": "migrated_unreviewed",
+  "seen": [
+    {
+      "corpus": "observation 2026-08 (Europe PMC JATS 2023-2026 and PubMed abstracts)",
+      "date": "2026-08-08",
+      "observer": "house observer (LLM agent), see report",
+      "excerpt": "MESURÉ le 08/08/2026 sur 272 articles Europe PMC accès libre 2023-2026 : présent dans 39 (14 %). Concentration : retract 33, meta 3, bio 1, essai 1, phys 1. Formes réelles : related-article-type=retracted-article ×45 | retraction-forward ×14 | final-edited-article ×2 | preprint ×1 | <article-version>3</article-version> ×2 | <article-version>Version of Record</article-version> ×1",
+      "lang": "fr"
+    }
+  ],
+  "specimens": {
+    "cases": [],
+    "counter_examples": []
+  },
+  "prevention": {
+    "cancellable_by_code": true,
+    "refusal_clause": "handle, or abstain and declare — never guess"
+  },
+  "repair": {
+    "reachable_by_deletion": "yes",
+    "note": "the faulty edge can be deleted"
+  },
+  "judgeable_by": [
+    "construction",
+    "registry",
+    "dated_future",
+    "closed_world"
+  ],
+  "history": [
+    {
+      "date": "2026-08-09",
+      "event": "catalogue line 39 — VAINCU: filtre écrit et vert au banc",
+      "by": "Korela For Science"
+    },
+    {
+      "date": "2026-09-09",
+      "event": "migrated; classified damage=ANACHRONISM injection=DUPLICATE (judgment, unreviewed by a second reader)",
+      "by": "Fault Atlas migration"
+    },
+    {
+      "date": "2026-08-08",
+      "event": "house filter exists with 5 cases and 2 counter-examples (bench green=True); specimens to be transcribed into this record",
+      "by": "Korela For Science"
+    }
+  ]
+}

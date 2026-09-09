@@ -1,0 +1,57 @@
+{
+  "id": "form-043",
+  "version": 1,
+  "legacy_line": 43,
+  "name": "Tables with multi-level headers",
+  "name_fr": "Tableaux à en-têtes multiples",
+  "damage": "SPURIOUS_EDGE",
+  "class": "DEFEATED_IF_XML",
+  "layer": "② lecture",
+  "injection": "FORMAT",
+  "legacy_severity": "G2",
+  "legacy_mechanism": "M8",
+  "status": "migrated_unreviewed",
+  "seen": [
+    {
+      "corpus": "observation 2026-08 (Europe PMC JATS 2023-2026 and PubMed abstracts)",
+      "date": "2026-08-08",
+      "observer": "house observer (LLM agent), see report",
+      "excerpt": "MESURÉ le 08/08/2026 sur les 272 articles XML JATS d'atelier-filtres/corpus/ : présent dans 73 (26 %). Concentration : essai 21, nonEN 12, meta 11, bio 10, phys 10. Formes réelles : nonEN-PMC13193189.xml porte 36 <th> à colspan/rowspan ≥2 ; essai-PMC13205731.xml en porte 27 ; bio-PMC12857832.xml a 4 <thead> sur 5 qui comptent plus d'une ligne <tr>. PASSAGE RÉEL du filtre (08/08/2026) : sur les 670 <table> du corpus il en classe 151 « en-têtes multiples », 469 « en-tête simple », et s'ABSTIENT sur 50 sans <thead>. Au niveau du document : 71/272, contre 73 pour la sonde — l'écart de 2 vient de <th> à colspan situés HORS <thead>, que le filtre refuse de prendre pour un en-tête.",
+      "lang": "fr"
+    }
+  ],
+  "specimens": {
+    "cases": [],
+    "counter_examples": []
+  },
+  "prevention": {
+    "cancellable_by_code": true,
+    "note": "cancelled only when the source is structured (XML/HTML); not on composed PDF"
+  },
+  "repair": {
+    "reachable_by_deletion": "yes",
+    "note": "the faulty edge can be deleted"
+  },
+  "judgeable_by": [
+    "construction",
+    "curated",
+    "closed_world"
+  ],
+  "history": [
+    {
+      "date": "2026-08-09",
+      "event": "catalogue line 43 — VAINCU: filtre écrit et vert au banc",
+      "by": "Korela For Science"
+    },
+    {
+      "date": "2026-09-09",
+      "event": "migrated; classified damage=SPURIOUS_EDGE injection=FORMAT (judgment, unreviewed by a second reader)",
+      "by": "Fault Atlas migration"
+    },
+    {
+      "date": "2026-08-08",
+      "event": "house filter exists with 5 cases and 1 counter-examples (bench green=True); specimens to be transcribed into this record",
+      "by": "Korela For Science"
+    }
+  ]
+}

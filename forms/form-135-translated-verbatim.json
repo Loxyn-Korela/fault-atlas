@@ -1,0 +1,52 @@
+{
+  "id": "form-135",
+  "version": 1,
+  "legacy_line": 135,
+  "name": "Translated verbatim",
+  "name_fr": "Verbatim traduit",
+  "damage": "WRONG_VALUE",
+  "class": "SILENT_FALSE",
+  "layer": "⑤ ancrage",
+  "injection": "TRANSLATE",
+  "legacy_severity": "G2",
+  "legacy_mechanism": "M9",
+  "status": "migrated_unreviewed",
+  "seen": [
+    {
+      "corpus": "observation 2026-08 (272 Europe PMC JATS articles)",
+      "date": "2026-08-08",
+      "observer": "house observer (LLM agent), see report",
+      "excerpt": "MESURÉ le 08/08/2026 sur atelier-filtres/corpus (272 XML JATS) : 1/272 article (0,4 %) porte un marqueur de traduction, pour 11/272 (4 %) qui portent une citation en bloc <disp-quote> (102 blocs) — la difficulté est QUASI ABSENTE du biomédical, et c'est le résultat : elle a été observée le 08/08 sur 14 articles 2021-2026 HORS biomédecine (arXiv, PLOS, Copernicus, HAL, Scientific Reports). Elle n'aurait jamais été trouvée sans changer de discipline.",
+      "lang": "fr"
+    }
+  ],
+  "specimens": {
+    "cases": [],
+    "counter_examples": []
+  },
+  "prevention": {
+    "cancellable_by_code": false
+  },
+  "repair": {
+    "reachable_by_deletion": "no",
+    "note": "deletion cannot restore this; judgment of 2026-09-09, to be measured"
+  },
+  "judgeable_by": [
+    "construction",
+    "registry",
+    "dated_future",
+    "closed_world"
+  ],
+  "history": [
+    {
+      "date": "2026-08-09",
+      "event": "catalogue line 135 — GOLDEN: irréductible ou faux silencieux",
+      "by": "Korela For Science"
+    },
+    {
+      "date": "2026-09-09",
+      "event": "migrated; classified damage=WRONG_VALUE injection=TRANSLATE (judgment, unreviewed by a second reader)",
+      "by": "Fault Atlas migration"
+    }
+  ]
+}

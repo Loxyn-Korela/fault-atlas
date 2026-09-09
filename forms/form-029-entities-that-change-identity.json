@@ -1,0 +1,52 @@
+{
+  "id": "form-029",
+  "version": 1,
+  "legacy_line": 29,
+  "name": "Entities that change identity",
+  "name_fr": "Entités qui changent d'identité",
+  "damage": "SPLIT",
+  "class": "IRREDUCIBLE",
+  "layer": "⑥ résolution",
+  "injection": "RENAME",
+  "legacy_severity": "G1",
+  "legacy_mechanism": "M5",
+  "status": "migrated_unreviewed",
+  "seen": [
+    {
+      "corpus": "observation 2026-08 (272 Europe PMC JATS articles)",
+      "date": "2026-08-08",
+      "observer": "house observer (LLM agent), see report",
+      "excerpt": "MESURÉ le 08/08/2026 sur atelier-filtres/corpus (272 XML JATS) : seulement 6/272 articles (2 %) portent une formule de changement d'identité dans le corps (formerly / renamed / previously known as / merged with / acquired by). ⇒ Le corpus SCIENTIFIQUE ne l'enseigne presque pas ; c'est le fonds d'entreprise qui la porte (annexe 29). Le module l'injecte donc à un taux choisi, pas observé.",
+      "lang": "fr"
+    }
+  ],
+  "specimens": {
+    "cases": [],
+    "counter_examples": []
+  },
+  "prevention": {
+    "cancellable_by_code": false
+  },
+  "repair": {
+    "reachable_by_deletion": "no",
+    "note": "deletion cannot restore this; judgment of 2026-09-09, to be measured"
+  },
+  "judgeable_by": [
+    "construction",
+    "registry",
+    "curated",
+    "closed_world"
+  ],
+  "history": [
+    {
+      "date": "2026-08-09",
+      "event": "catalogue line 29 — GOLDEN: irréductible ou faux silencieux",
+      "by": "Korela For Science"
+    },
+    {
+      "date": "2026-09-09",
+      "event": "migrated; classified damage=SPLIT injection=RENAME (judgment, unreviewed by a second reader)",
+      "by": "Fault Atlas migration"
+    }
+  ]
+}

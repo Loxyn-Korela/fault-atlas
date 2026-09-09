@@ -1,0 +1,58 @@
+{
+  "id": "form-087",
+  "version": 1,
+  "legacy_line": 87,
+  "name": "Mixed units and conventions",
+  "name_fr": "Unités et conventions mixtes",
+  "damage": "WRONG_VALUE",
+  "class": "REFUSABLE",
+  "layer": "④ extraction",
+  "injection": "ALTER",
+  "legacy_severity": "G2",
+  "legacy_mechanism": "M3",
+  "status": "migrated_unreviewed",
+  "seen": [
+    {
+      "corpus": "observation 2026-08 (Europe PMC JATS 2023-2026 and PubMed abstracts)",
+      "date": "2026-08-08",
+      "observer": "house observer (LLM agent), see report",
+      "excerpt": "MESURÉ le 08/08/2026 sur les 272 articles XML JATS d'atelier-filtres/corpus/ : au moins TROIS familles de mesure distinctes dans le seul corps de l'article pour 62 documents (22 %). Concentration : essai 17, cas 16, moderne 9, bio 8. Formes réelles relevées : bio-PMC12583535.xml → masse ×22, pourcent ×12, molaire ×3, durée ×2 ; bio-PMC12674831.xml → pourcent ×141, masse ×92, durée ×12, volume ×2. Formes d'écriture citées au catalogue (Cumings & Hilton, Br. J. Pharmac. 1971) : « 37° C », « −20° C », « 1,500 r.p.m. », « 0·9 % w/v », « 4 ml », « 5 × 10⁻⁸ mol », « 2,5 mg », « 30-60 min », « 2 hours ».",
+      "lang": "fr"
+    }
+  ],
+  "specimens": {
+    "cases": [],
+    "counter_examples": []
+  },
+  "prevention": {
+    "cancellable_by_code": true,
+    "refusal_clause": "handle, or abstain and declare — never guess"
+  },
+  "repair": {
+    "reachable_by_deletion": "no",
+    "note": "deletion cannot restore this; judgment of 2026-09-09, to be measured"
+  },
+  "judgeable_by": [
+    "construction",
+    "registry",
+    "dated_future",
+    "closed_world"
+  ],
+  "history": [
+    {
+      "date": "2026-08-09",
+      "event": "catalogue line 87 — VAINCU: filtre écrit et vert au banc",
+      "by": "Korela For Science"
+    },
+    {
+      "date": "2026-09-09",
+      "event": "migrated; classified damage=WRONG_VALUE injection=ALTER (judgment, unreviewed by a second reader)",
+      "by": "Fault Atlas migration"
+    },
+    {
+      "date": "2026-08-08",
+      "event": "house filter exists with 7 cases and 1 counter-examples (bench green=True); specimens to be transcribed into this record",
+      "by": "Korela For Science"
+    }
+  ]
+}

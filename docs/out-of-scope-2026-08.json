@@ -1,0 +1,132 @@
+[
+  {
+    "legacy_line": 1,
+    "name_fr": "Graine de tirage",
+    "reason": "instrument, metric or discovery property — not a fault form"
+  },
+  {
+    "legacy_line": 2,
+    "name_fr": "Emboîtement des échantillons",
+    "reason": "instrument, metric or discovery property — not a fault form"
+  },
+  {
+    "legacy_line": 3,
+    "name_fr": "Pureté d'ablation",
+    "reason": "instrument, metric or discovery property — not a fault form"
+  },
+  {
+    "legacy_line": 4,
+    "name_fr": "Monotonie du corrigé",
+    "reason": "instrument, metric or discovery property — not a fault form"
+  },
+  {
+    "legacy_line": 5,
+    "name_fr": "Schéma donné ou deviné",
+    "reason": "instrument, metric or discovery property — not a fault form"
+  },
+  {
+    "legacy_line": 6,
+    "name_fr": "Table des inverses donnée ou non",
+    "reason": "instrument, metric or discovery property — not a fault form"
+  },
+  {
+    "legacy_line": 7,
+    "name_fr": "Exhaustivité déclarée du corrigé",
+    "reason": "instrument, metric or discovery property — not a fault form"
+  },
+  {
+    "legacy_line": 8,
+    "name_fr": "Ancrage du fait dans le texte",
+    "reason": "instrument, metric or discovery property — not a fault form"
+  },
+  {
+    "legacy_line": 9,
+    "name_fr": "Faits hors barème",
+    "reason": "instrument, metric or discovery property — not a fault form"
+  },
+  {
+    "legacy_line": 10,
+    "name_fr": "Date d'interrogation du corrigé",
+    "reason": "instrument, metric or discovery property — not a fault form"
+  },
+  {
+    "legacy_line": 11,
+    "name_fr": "Plafond humain",
+    "reason": "instrument, metric or discovery property — not a fault form"
+  },
+  {
+    "legacy_line": 47,
+    "name_fr": "Jeu de questions",
+    "reason": "instrument, metric or discovery property — not a fault form"
+  },
+  {
+    "legacy_line": 48,
+    "name_fr": "Droits d'accès différenciés",
+    "reason": "instrument, metric or discovery property — not a fault form"
+  },
+  {
+    "legacy_line": 49,
+    "name_fr": "Devinabilité sans lecture",
+    "reason": "instrument, metric or discovery property — not a fault form"
+  },
+  {
+    "legacy_line": 50,
+    "name_fr": "Pont par intermédiaire (Swanson)",
+    "reason": "instrument, metric or discovery property — not a fault form"
+  },
+  {
+    "legacy_line": 51,
+    "name_fr": "Prédiction par la forme du graphe",
+    "reason": "instrument, metric or discovery property — not a fault form"
+  },
+  {
+    "legacy_line": 52,
+    "name_fr": "Analogie structurelle",
+    "reason": "instrument, metric or discovery property — not a fault form"
+  },
+  {
+    "legacy_line": 53,
+    "name_fr": "Anomalie dans un motif",
+    "reason": "instrument, metric or discovery property — not a fault form"
+  },
+  {
+    "legacy_line": 54,
+    "name_fr": "Contradiction entre sources comme signal",
+    "reason": "instrument, metric or discovery property — not a fault form"
+  },
+  {
+    "legacy_line": 55,
+    "name_fr": "Conjonction rare",
+    "reason": "instrument, metric or discovery property — not a fault form"
+  },
+  {
+    "legacy_line": 56,
+    "name_fr": "Le silence (ce dont personne ne parle)",
+    "reason": "instrument, metric or discovery property — not a fault form"
+  },
+  {
+    "legacy_line": 57,
+    "name_fr": "Coupe temporelle — le corrigé des hypothèses",
+    "reason": "instrument, metric or discovery property — not a fault form"
+  },
+  {
+    "legacy_line": 58,
+    "name_fr": "Lignes de base de découverte",
+    "reason": "instrument, metric or discovery property — not a fault form"
+  },
+  {
+    "legacy_line": 59,
+    "name_fr": "Dénominateur du rappel",
+    "reason": "instrument, metric or discovery property — not a fault form"
+  },
+  {
+    "legacy_line": 60,
+    "name_fr": "Niveaux de confirmation",
+    "reason": "instrument, metric or discovery property — not a fault form"
+  },
+  {
+    "legacy_line": 61,
+    "name_fr": "Critères de qualité d'une hypothèse — nouveauté × utilité × plausibilité",
+    "reason": "instrument, metric or discovery property — not a fault form"
+  }
+]

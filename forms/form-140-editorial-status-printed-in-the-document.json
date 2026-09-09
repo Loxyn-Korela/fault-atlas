@@ -1,0 +1,52 @@
+{
+  "id": "form-140",
+  "version": 1,
+  "legacy_line": 140,
+  "name": "Editorial status printed in the document",
+  "name_fr": "Statut éditorial imprimé dans le document",
+  "damage": "ANACHRONISM",
+  "class": "SILENT_FALSE",
+  "layer": "④ extraction",
+  "injection": "ALTER",
+  "legacy_severity": "G2",
+  "legacy_mechanism": "M6",
+  "status": "migrated_unreviewed",
+  "seen": [
+    {
+      "corpus": "observation 2026-08 (272 Europe PMC JATS articles)",
+      "date": "2026-08-08",
+      "observer": "house observer (LLM agent), see report",
+      "excerpt": "MESURÉ le 08/08/2026 sur atelier-filtres/corpus (272 XML JATS) : 52/272 articles (19 %) portent en tête une déclaration de statut éditorial — 33 notices de rétractation (article-type=\"retraction\", 12 %), 39 documents avec un <related-article> (version antérieure ou correction, 14 %), 2 déclarant explicitement une version préprint antérieure sur medRxiv. ⚠️ Le « A PREPRINT » d'arXiv, lui, est absent de ce corpus par construction : PMC ne publie que du publié (annexe 140, observée le 08/08/2026 hors PMC).",
+      "lang": "fr"
+    }
+  ],
+  "specimens": {
+    "cases": [],
+    "counter_examples": []
+  },
+  "prevention": {
+    "cancellable_by_code": false
+  },
+  "repair": {
+    "reachable_by_deletion": "yes",
+    "note": "the faulty edge can be deleted"
+  },
+  "judgeable_by": [
+    "construction",
+    "registry",
+    "dated_future",
+    "closed_world"
+  ],
+  "history": [
+    {
+      "date": "2026-08-09",
+      "event": "catalogue line 140 — GOLDEN: irréductible ou faux silencieux",
+      "by": "Korela For Science"
+    },
+    {
+      "date": "2026-09-09",
+      "event": "migrated; classified damage=ANACHRONISM injection=ALTER (judgment, unreviewed by a second reader)",
+      "by": "Fault Atlas migration"
+    }
+  ]
+}

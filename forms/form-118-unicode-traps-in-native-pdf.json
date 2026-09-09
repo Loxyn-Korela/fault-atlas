@@ -1,0 +1,57 @@
+{
+  "id": "form-118",
+  "version": 1,
+  "legacy_line": 118,
+  "name": "Unicode traps in native PDF",
+  "name_fr": "Pièges Unicode du PDF natif",
+  "damage": "SPLIT",
+  "class": "DEFEATED",
+  "layer": "② lecture",
+  "injection": "NOISE",
+  "legacy_severity": "G1",
+  "legacy_mechanism": "M10",
+  "status": "migrated_unreviewed",
+  "seen": [
+    {
+      "corpus": "observation 2026-08 (Europe PMC JATS 2023-2026 and PubMed abstracts)",
+      "date": "2026-08-08",
+      "observer": "house observer (LLM agent), see report",
+      "excerpt": "1 569 caractères U+200B mesurés dans UN seul PDF d'éditeur, injectés ENTRE les caractères des DOI de la bibliographie (observé le 08/08/2026). Et 8 écritures non latines observées dans la vague « langues » du même jour, où U+200C/U+200D sont PORTEURS DE SENS.",
+      "lang": "fr"
+    }
+  ],
+  "specimens": {
+    "cases": [],
+    "counter_examples": []
+  },
+  "prevention": {
+    "cancellable_by_code": true
+  },
+  "repair": {
+    "reachable_by_deletion": "no",
+    "note": "deletion cannot restore this; judgment of 2026-09-09, to be measured"
+  },
+  "judgeable_by": [
+    "construction",
+    "registry",
+    "curated",
+    "closed_world"
+  ],
+  "history": [
+    {
+      "date": "2026-08-09",
+      "event": "catalogue line 118 — VAINCU: filtre écrit et vert au banc",
+      "by": "Korela For Science"
+    },
+    {
+      "date": "2026-09-09",
+      "event": "migrated; classified damage=SPLIT injection=NOISE (judgment, unreviewed by a second reader)",
+      "by": "Fault Atlas migration"
+    },
+    {
+      "date": "2026-08-08",
+      "event": "house filter exists with 7 cases and 5 counter-examples (bench green=True); specimens to be transcribed into this record",
+      "by": "Korela For Science"
+    }
+  ]
+}

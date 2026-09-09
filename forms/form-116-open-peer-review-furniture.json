@@ -1,0 +1,51 @@
+{
+  "id": "form-116",
+  "version": 1,
+  "legacy_line": 116,
+  "name": "Open peer-review furniture",
+  "name_fr": "Mobilier de relecture ouverte",
+  "damage": "SPURIOUS_EDGE",
+  "class": "SILENT_FALSE",
+  "layer": "④ extraction",
+  "injection": "INSERT",
+  "legacy_severity": "G4",
+  "legacy_mechanism": "",
+  "status": "migrated_unreviewed",
+  "seen": [
+    {
+      "corpus": "observation 2026-08 (272 Europe PMC JATS articles)",
+      "date": "2026-08-08",
+      "observer": "house observer (LLM agent), see report",
+      "excerpt": "MESURÉ le 08/08/2026 sur atelier-filtres/corpus (272 XML JATS) : 5/272 articles (2 %) portent un mobilier de relecture ouverte nommé (peer review file, reviewer report, editor's evaluation, eLife assessment) et 6/272 (2 %) un <sub-article article-type=\"...review...\" > ; le mobilier voisin de déclarations sur les auteurs est lui à 203/272 (75 %). Observée le 08/08 sur 15 articles 2023-2026 (VERDICT ancien contre moderne, N10) — absente du corpus 1957-1987.",
+      "lang": "fr"
+    }
+  ],
+  "specimens": {
+    "cases": [],
+    "counter_examples": []
+  },
+  "prevention": {
+    "cancellable_by_code": false
+  },
+  "repair": {
+    "reachable_by_deletion": "yes",
+    "note": "the faulty edge can be deleted"
+  },
+  "judgeable_by": [
+    "construction",
+    "curated",
+    "closed_world"
+  ],
+  "history": [
+    {
+      "date": "2026-08-09",
+      "event": "catalogue line 116 — GOLDEN: irréductible ou faux silencieux",
+      "by": "Korela For Science"
+    },
+    {
+      "date": "2026-09-09",
+      "event": "migrated; classified damage=SPURIOUS_EDGE injection=INSERT (judgment, unreviewed by a second reader)",
+      "by": "Fault Atlas migration"
+    }
+  ]
+}

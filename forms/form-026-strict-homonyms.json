@@ -1,0 +1,52 @@
+{
+  "id": "form-026",
+  "version": 1,
+  "legacy_line": 26,
+  "name": "Strict homonyms",
+  "name_fr": "Homonymes stricts",
+  "damage": "MERGE",
+  "class": "IRREDUCIBLE",
+  "layer": "⑥ résolution",
+  "injection": "RENAME",
+  "legacy_severity": "G1",
+  "legacy_mechanism": "M2",
+  "status": "migrated_unreviewed",
+  "seen": [
+    {
+      "corpus": "observation 2026-08 (272 Europe PMC JATS articles)",
+      "date": "2026-08-08",
+      "observer": "house observer (LLM agent), see report",
+      "excerpt": "MESURÉ le 08/08/2026 sur les 272 articles XML JATS de atelier-filtres/corpus : 1 215 patronymes sur 9 160 (13,3 %) sont portés par au moins deux prénoms différents — « Wang » par 95, « Li » par 92, « Chen » par 88 ; et 461 noms complets identiques (nom + prénoms) apparaissent dans au moins deux articles aux affiliations DISJOINTES (Zhang W, Li S, Singh S…). Faute vérifiée le 08/08/2026 par ailleurs : le contrôle d'atteignabilité ne regarde pas les assertions `distinct` — un corpus en portant 27 affichait « 0 piège » et passait au vert.",
+      "lang": "fr"
+    }
+  ],
+  "specimens": {
+    "cases": [],
+    "counter_examples": []
+  },
+  "prevention": {
+    "cancellable_by_code": false
+  },
+  "repair": {
+    "reachable_by_deletion": "no",
+    "note": "deletion cannot restore this; judgment of 2026-09-09, to be measured"
+  },
+  "judgeable_by": [
+    "construction",
+    "registry",
+    "curated",
+    "closed_world"
+  ],
+  "history": [
+    {
+      "date": "2026-08-09",
+      "event": "catalogue line 26 — GOLDEN: irréductible ou faux silencieux",
+      "by": "Korela For Science"
+    },
+    {
+      "date": "2026-09-09",
+      "event": "migrated; classified damage=MERGE injection=RENAME (judgment, unreviewed by a second reader)",
+      "by": "Fault Atlas migration"
+    }
+  ]
+}

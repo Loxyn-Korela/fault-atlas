@@ -1,0 +1,52 @@
+{
+  "id": "form-088",
+  "version": 1,
+  "legacy_line": 88,
+  "name": "Collective entity",
+  "name_fr": "Entité collective",
+  "damage": "MERGE",
+  "class": "IRREDUCIBLE",
+  "layer": "⑥ résolution",
+  "injection": "RENAME",
+  "legacy_severity": "G1",
+  "legacy_mechanism": "M2",
+  "status": "migrated_unreviewed",
+  "seen": [
+    {
+      "corpus": "observation 2026-08 (272 Europe PMC JATS articles)",
+      "date": "2026-08-08",
+      "observer": "house observer (LLM agent), see report",
+      "excerpt": "MESURÉ le 08/08/2026 sur les 272 XML : 101/272 (37 %) ouvrent sur un effectif suivi d'un nom de groupe (« 127 animals », « 910 participants »), 96/272 (35 %) portent un « n = … », et 87/272 (32 %) associent l'effectif à une dispersion (moyenne, SD, ±). Le sujet collectif est donc la forme MAJORITAIRE ; aucun de nos corpus fabriqués n'en contient un. Observation d'origine 08/08/2026 : Duncker et al., Br. J. Pharmac. 1986 (annexe 88).",
+      "lang": "fr"
+    }
+  ],
+  "specimens": {
+    "cases": [],
+    "counter_examples": []
+  },
+  "prevention": {
+    "cancellable_by_code": false
+  },
+  "repair": {
+    "reachable_by_deletion": "no",
+    "note": "deletion cannot restore this; judgment of 2026-09-09, to be measured"
+  },
+  "judgeable_by": [
+    "construction",
+    "registry",
+    "curated",
+    "closed_world"
+  ],
+  "history": [
+    {
+      "date": "2026-08-09",
+      "event": "catalogue line 88 — GOLDEN: irréductible ou faux silencieux",
+      "by": "Korela For Science"
+    },
+    {
+      "date": "2026-09-09",
+      "event": "migrated; classified damage=MERGE injection=RENAME (judgment, unreviewed by a second reader)",
+      "by": "Fault Atlas migration"
+    }
+  ]
+}

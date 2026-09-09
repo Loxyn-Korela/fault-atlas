@@ -1,0 +1,57 @@
+{
+  "id": "form-085",
+  "version": 1,
+  "legacy_line": 85,
+  "name": "Non-standard decimal separator",
+  "name_fr": "Séparateur décimal non standard",
+  "damage": "WRONG_VALUE",
+  "class": "IRREDUCIBLE",
+  "layer": "② lecture",
+  "injection": "ALTER",
+  "legacy_severity": "G2",
+  "legacy_mechanism": "M3",
+  "status": "migrated_unreviewed",
+  "seen": [
+    {
+      "corpus": "observation 2026-08 (Europe PMC JATS 2023-2026 and PubMed abstracts)",
+      "date": "2026-08-08",
+      "observer": "house observer (LLM agent), see report",
+      "excerpt": "MESURÉ le 08/08/2026 : les DEUX conventions coexistent dans 16 articles sur 34 (47 %) d'un corpus Europe PMC en accès libre 2024-2026. Formes réelles relevées : « 2,8 » et « 1,3 » côtoyant des décimaux à point dans le même texte. Confirmé par deux observations indépendantes du même jour : un tableau 2026 mêlant les deux, et un article 2023 écrivant « 10,6 % » en résumé français et « 10.6 % » en résumé anglais — MÊME DOCUMENT.",
+      "lang": "fr"
+    }
+  ],
+  "specimens": {
+    "cases": [],
+    "counter_examples": []
+  },
+  "prevention": {
+    "cancellable_by_code": false
+  },
+  "repair": {
+    "reachable_by_deletion": "no",
+    "note": "deletion cannot restore this; judgment of 2026-09-09, to be measured"
+  },
+  "judgeable_by": [
+    "construction",
+    "registry",
+    "dated_future",
+    "closed_world"
+  ],
+  "history": [
+    {
+      "date": "2026-08-09",
+      "event": "catalogue line 85 — VAINCU: filtre écrit et vert au banc",
+      "by": "Korela For Science"
+    },
+    {
+      "date": "2026-09-09",
+      "event": "migrated; classified damage=WRONG_VALUE injection=ALTER (judgment, unreviewed by a second reader)",
+      "by": "Fault Atlas migration"
+    },
+    {
+      "date": "2026-08-08",
+      "event": "house filter exists with 5 cases and 3 counter-examples (bench green=True); specimens to be transcribed into this record",
+      "by": "Korela For Science"
+    }
+  ]
+}

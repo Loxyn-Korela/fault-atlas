@@ -1,0 +1,2 @@
+- Records (`forms/`, `corpora/`, `schema/`, `docs/`, `README.md`): **CC BY-SA 4.0** — `LICENSES/CC-BY-SA-4.0.txt`
+- Tools (`tools/`): **Apache License 2.0** — `LICENSES/Apache-2.0.txt`

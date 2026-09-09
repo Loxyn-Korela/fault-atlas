@@ -1,0 +1,53 @@
+{
+  "id": "form-012",
+  "version": 1,
+  "legacy_line": 12,
+  "name": "Corpus volume",
+  "name_fr": "Volume du corpus",
+  "damage": "CORPUS_PARAMETER",
+  "class": "REFUSABLE",
+  "layer": "⑨ structure",
+  "injection": "PARAMETER",
+  "legacy_severity": "G4",
+  "legacy_mechanism": "",
+  "status": "migrated_unreviewed",
+  "seen": [
+    {
+      "corpus": "observation 2026-08 (Europe PMC JATS 2023-2026 and PubMed abstracts)",
+      "date": "2026-08-08",
+      "observer": "house observer (LLM agent), see report",
+      "excerpt": "MESURÉ le 08/08/2026 sur les 272 articles XML JATS d'atelier-filtres/corpus/ (sondes-lignes-12-132.py). Le fonds compte 8 strates : bio 34 · cas 34 · essai 34 · meta 34 · moderne 17 · nonEN 51 · phys 34 · retract 34. Le prélèvement des 100 premiers par ordre de nom donne {bio 34, cas 34, essai 32} et PERD 5 strates sur 8 (meta, moderne, nonEN, phys, retract) ; celui des 200 premiers en perd encore 2 (phys, retract). Les 272 identifiants sont distincts (272/272), donc l'emboîtement à l'octet est vrai — c'est la représentativité qui est fausse.",
+      "lang": "fr"
+    }
+  ],
+  "specimens": {
+    "cases": [],
+    "counter_examples": []
+  },
+  "prevention": {
+    "cancellable_by_code": true,
+    "refusal_clause": "handle, or abstain and declare — never guess"
+  },
+  "repair": {
+    "reachable_by_deletion": "no",
+    "note": "deletion cannot restore this; judgment of 2026-09-09, to be measured"
+  },
+  "judgeable_by": [],
+  "history": [
+    {
+      "date": "2026-08-09",
+      "event": "catalogue line 12 — VAINCU: filtre écrit et vert au banc",
+      "by": "Korela For Science"
+    },
+    {
+      "date": "2026-09-09",
+      "event": "migrated; classified damage=CORPUS_PARAMETER injection=PARAMETER (judgment, unreviewed by a second reader)",
+      "by": "Fault Atlas migration"
+    },
+    {
+      "date": "2026-08-08",
+      "event": "house filter exists with 5 cases and 1 counter-examples (bench green=True); specimens to be transcribed into this record",
+      "by": "Korela For Science"
+    }
+  ]
+}

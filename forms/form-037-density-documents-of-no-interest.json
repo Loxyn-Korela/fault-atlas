@@ -1,0 +1,47 @@
+{
+  "id": "form-037",
+  "version": 1,
+  "legacy_line": 37,
+  "name": "Density: documents of no interest",
+  "name_fr": "Densité : documents sans intérêt",
+  "damage": "CORPUS_PARAMETER",
+  "class": "SILENT_FALSE",
+  "layer": "⑩ récupération",
+  "injection": "INSERT",
+  "legacy_severity": "G4",
+  "legacy_mechanism": "",
+  "status": "migrated_unreviewed",
+  "seen": [
+    {
+      "corpus": "observation 2026-08 (272 Europe PMC JATS articles)",
+      "date": "2026-08-08",
+      "observer": "house observer (LLM agent), see report",
+      "excerpt": "MESURÉ le 08/08/2026 sur atelier-filtres/corpus (272 XML JATS) : sur 11 380 paragraphes de plus de 200 caractères, 2 483 (22 %) ne contiennent AUCUN chiffre — du texte de cadre, pas de résultat. Le corpus réel dilue donc déjà à un cinquième, à l'intérieur même des documents.",
+      "lang": "fr"
+    }
+  ],
+  "specimens": {
+    "cases": [],
+    "counter_examples": []
+  },
+  "prevention": {
+    "cancellable_by_code": false
+  },
+  "repair": {
+    "reachable_by_deletion": "no",
+    "note": "deletion cannot restore this; judgment of 2026-09-09, to be measured"
+  },
+  "judgeable_by": [],
+  "history": [
+    {
+      "date": "2026-08-09",
+      "event": "catalogue line 37 — GOLDEN: irréductible ou faux silencieux",
+      "by": "Korela For Science"
+    },
+    {
+      "date": "2026-09-09",
+      "event": "migrated; classified damage=CORPUS_PARAMETER injection=INSERT (judgment, unreviewed by a second reader)",
+      "by": "Fault Atlas migration"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+title: "Fault Atlas: observed fault forms in knowledge graphs built from documents"
+message: "If you use the Fault Atlas, please cite it."
+type: dataset
+authors:
+  - family-names: Gracia
+    given-names: Sébastien
+    affiliation: Loxyn SAS, Lyon, France
+  - family-names: Bagnol-Lebon
+    given-names: Coralie
+    affiliation: Loxyn SAS, Lyon, France
+  - family-names: Comtet
+    given-names: Yoline
+    affiliation: Loxyn SAS, Lyon, France
+version: 0.1.0-draft
+date-released: 2026-09-09
+license: CC-BY-SA-4.0
+repository-code: https://github.com/Loxyn-Korela/fault-atlas
+url: https://faultatlas.loxyn.ai
+keywords: [knowledge graph, entity resolution, graph repair, benchmark, ground truth, property graph]

@@ -1,0 +1,50 @@
+{
+  "id": "form-033",
+  "version": 1,
+  "legacy_line": 33,
+  "name": "Confusable relation types",
+  "name_fr": "Confusabilité des types de relation",
+  "damage": "WRONG_LABEL",
+  "class": "IRREDUCIBLE",
+  "layer": "⑦ schéma",
+  "injection": "RENAME",
+  "legacy_severity": "G2",
+  "legacy_mechanism": "M12",
+  "status": "migrated_unreviewed",
+  "seen": [
+    {
+      "corpus": "observation 2026-08 (272 Europe PMC JATS articles)",
+      "date": "2026-08-08",
+      "observer": "house observer (LLM agent), see report",
+      "excerpt": "MESURÉ, relevé au catalogue le 08/08/2026 : F1 82,8 % quand on ignore le type, F1 30,1 % quand on le compte — on relie les bonnes entités et on se trompe de lien trois fois sur quatre. Et vérifié dans le code le même jour : le vocabulaire est annoncé fermé à 26 types, la table des inverses en accepte 31.",
+      "lang": "fr"
+    }
+  ],
+  "specimens": {
+    "cases": [],
+    "counter_examples": []
+  },
+  "prevention": {
+    "cancellable_by_code": false
+  },
+  "repair": {
+    "reachable_by_deletion": "partial",
+    "note": "an extra label can be deleted, a missing one cannot be added"
+  },
+  "judgeable_by": [
+    "construction",
+    "curated"
+  ],
+  "history": [
+    {
+      "date": "2026-08-09",
+      "event": "catalogue line 33 — GOLDEN: irréductible ou faux silencieux",
+      "by": "Korela For Science"
+    },
+    {
+      "date": "2026-09-09",
+      "event": "migrated; classified damage=WRONG_LABEL injection=RENAME (judgment, unreviewed by a second reader)",
+      "by": "Fault Atlas migration"
+    }
+  ]
+}
