@@ -1,6 +1,6 @@
 {
   "id": "form-092",
-  "version": 1,
+  "version": 2,
   "legacy_line": 92,
   "name": "Drop cap",
   "name_fr": "Lettrine",
@@ -16,7 +16,18 @@
   "legacy_severity": "G3",
   "legacy_mechanism": "M8",
   "status": "migrated_unreviewed",
-  "seen": [],
+  "seen": [
+    {
+      "corpus": "Biomedical PDFs 1957-1987 (migraine corpus), first observation wave",
+      "document": "Imaizumi et al., Japanese Circulation Journal 1987 (PDF 591 KB), eleventh PDF opened",
+      "date": "2026-08-08",
+      "observer": "house observer (LLM agent), first wave of August 2026, biomedical PDFs 1957-1987 (migraine corpus)",
+      "excerpt": "Observé le 08/08 — Imaizumi et al., *Japanese Circulation Journal* 1987. Le premier mot de l'article commence par une lettrine : « **V** ARIANT angina is caused by coronary artery vasospasm. » À l'extraction, la lettrine est un objet graphique séparé : le texte devient « V ARIANT ». Le mot cassé est le premier de l'article, et le nom de la maladie étudiée.",
+      "excerpt_en": "Observed on 2026-08-08 — Imaizumi et al., *Japanese Circulation Journal* 1987. The first word of the article starts with a drop cap: \"**V** ARIANT angina is caused by coronary artery vasospasm.\" At extraction the drop cap is a separate graphic object: the text becomes \"V ARIANT\". The broken word is the first of the article, and the name of the disease studied.",
+      "lang": "fr",
+      "organisation": "Loxyn SAS, Lyon"
+    }
+  ],
   "specimens": {
     "cases": [],
     "counter_examples": []
@@ -27,7 +38,7 @@
   },
   "repair": {
     "reachable_by_deletion": "no",
-    "note": "deletion cannot restore this; judgment of 2026-09-09, to be measured"
+    "note": "deletion cannot restore this; classified by judgment on 2026-09-09, not measured — the EUR-Lex loop will measure it"
   },
   "judgeable_by": [
     "construction",
@@ -44,6 +55,11 @@
       "date": "2026-09-09",
       "event": "migrated; classified damage=MISSING injection=NOISE (judgment, unreviewed by a second reader)",
       "by": "Fault Atlas migration"
+    },
+    {
+      "date": "2026-09-09",
+      "event": "observation transcribed from the August annex and the wave-1 journal, after the second reader noted the record had no excerpt",
+      "by": "Fault Atlas"
     }
   ],
   "observed_absent_in": [

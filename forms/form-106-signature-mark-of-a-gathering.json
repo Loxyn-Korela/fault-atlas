@@ -1,6 +1,6 @@
 {
   "id": "form-106",
-  "version": 1,
+  "version": 2,
   "legacy_line": 106,
   "name": "Signature mark of a gathering",
   "name_fr": "Signature de cahier",
@@ -16,7 +16,18 @@
   "legacy_severity": "G3",
   "legacy_mechanism": "M8",
   "status": "migrated_unreviewed",
-  "seen": [],
+  "seen": [
+    {
+      "corpus": "Biomedical PDFs 1957-1987 (migraine corpus), first observation wave",
+      "document": "a PDF of the migraine corpus (folio 149), observed by a delegated observer, proof quoted",
+      "date": "2026-08-08",
+      "observer": "house observer (LLM agent), first wave of August 2026, biomedical PDFs 1957-1987 (migraine corpus)",
+      "excerpt": "Observé le 08/08 par un observateur délégué, sur les PDF du corpus migraine : « un 4 seul, en bas à gauche sous la dernière ligne d'un tableau, alors que le folio de la page est 149 en haut à droite ». Un repère de pliage des cahiers, vestige du façonnage du livre : un chiffre nu, sans contexte, rattaché par proximité à la dernière valeur du tableau au-dessus.",
+      "excerpt_en": "Observed on 2026-08-08 by a delegated observer, on the PDFs of the migraine corpus: \"a lone 4, bottom left under the last row of a table, while the page folio is 149 top right\". A gathering signature from the bookbinder, a vestige of the printing: a bare digit, without context, attached by proximity to the last value of the table above.",
+      "lang": "fr",
+      "organisation": "Loxyn SAS, Lyon"
+    }
+  ],
   "specimens": {
     "cases": [],
     "counter_examples": []
@@ -27,7 +38,7 @@
   },
   "repair": {
     "reachable_by_deletion": "no",
-    "note": "deletion cannot restore this; judgment of 2026-09-09, to be measured"
+    "note": "deletion cannot restore this; classified by judgment on 2026-09-09, not measured — the EUR-Lex loop will measure it"
   },
   "judgeable_by": [
     "construction",
@@ -44,6 +55,11 @@
       "date": "2026-09-09",
       "event": "migrated; classified damage=MISSING injection=NOISE (judgment, unreviewed by a second reader)",
       "by": "Fault Atlas migration"
+    },
+    {
+      "date": "2026-09-09",
+      "event": "observation transcribed from the August annex and the wave-1 journal, after the second reader noted the record had no excerpt",
+      "by": "Fault Atlas"
     }
   ],
   "observed_absent_in": [

@@ -22,11 +22,12 @@ One JSON file per form, self-contained (`schema/form.schema.json`):
 |---|---|
 | `origin` | the organisation and campaign that contributed the form; every observation also names its observer and organisation |
 | `damage` | what it does to the graph — one of seven: `MERGE`, `SPLIT`, `SPURIOUS_EDGE`, `MISSING`, `WRONG_VALUE`, `WRONG_LABEL`, `ANACHRONISM` (or `CORPUS_PARAMETER` when it is not a damage) |
+| `layer` | where the form bites in the stack (pixel, reading, utterance, extraction, anchoring, resolution, schema, coherence, structure); the damage says what happens to the graph, the layer says where it starts |
 | `class` | whether deterministic code cancels it (`DEFEATED`, `DEFEATED_IF_XML`), can abstain on it (`REFUSABLE`), cannot see it from inside (`SILENT_FALSE`), or whether it needs meaning (`IRREDUCIBLE`) |
 | `seen` | where it was observed: corpus, document, date, observer, verbatim excerpt |
 | `specimens` | fabricated test cases **and counter-examples** — what a remedy must not touch |
 | `prevention` | whether it can be cancelled before entering the graph, and the refusal clause |
-| `repair` | whether a deletion-only repair can restore the truth |
+| `repair` | whether a deletion-only repair can restore the truth — **classified by judgment, not measured**, until a bench measures it |
 | `judgeable_by` | which kind of truth can judge it: by construction, an official registry, a curated database, the dated future, a closed world |
 | `injection` | how a controlled corpus can fabricate it — nine text operations, or `IMAGE` when vision is required |
 | `history` | every event, dated; nothing is ever deleted |
@@ -83,6 +84,8 @@ Met a form on your corpus? [Propose it](https://github.com/Loxyn-Korela/fault-at
 ## Citation and licence
 
 Records and documentation: CC BY-SA 4.0. Tools: Apache 2.0. See `CITATION.cff`.
+
+**One way to say the count**: 153 forms — 113 migrated from the August catalogue (`migrated_unreviewed`) and 40 proposed by a second observer in September (`proposed`). Validated: 0, until the second reader's decisions are recorded.
 
 Cite as: Gracia S., Bagnol-Lebon C., Comtet Y. (2026). *Fault Atlas: observed fault forms in knowledge graphs built from documents.* Loxyn SAS, Lyon. Zenodo. https://doi.org/10.5281/zenodo.22674547 — this concept DOI always resolves to the latest version; each release has its own DOI on Zenodo.
 

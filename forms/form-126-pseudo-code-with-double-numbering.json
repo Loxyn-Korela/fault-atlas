@@ -1,6 +1,6 @@
 {
   "id": "form-126",
-  "version": 1,
+  "version": 2,
   "legacy_line": 126,
   "name": "Pseudo-code with double numbering",
   "name_fr": "Pseudo-code à double numérotation",
@@ -16,7 +16,18 @@
   "legacy_severity": "G3",
   "legacy_mechanism": "M8",
   "status": "migrated_unreviewed",
-  "seen": [],
+  "seen": [
+    {
+      "corpus": "14 articles 2021-2026 outside biomedicine (arXiv, PLOS, Copernicus, HAL, Scientific Reports), 'rare genres' wave",
+      "document": "document identifiers not kept by the observer (lesson of 2026-08-08: 81 documents observed, no specimen archived)",
+      "date": "2026-08-08",
+      "observer": "house observer (LLM agent), 'rare genres' wave of August 2026",
+      "excerpt": "Observé le 08/08 sur 14 articles de 2021-2026 hors biomédecine — physique, maths, informatique, économie, linguistique — sur arXiv, PLOS, Copernicus, HAL, Scientific Reports : chaque ligne du pseudo-code porte DEUX compteurs décalés d'un cran, celui du composeur et celui de l'algorithme. Aucune ligne du catalogue ne la couvrait ; elle n'aurait jamais été trouvée sans changer de discipline. Mesurée ensuite ABSENTE des 272 articles JATS : 11 blocs « Algorithm N », aucune double numérotation.",
+      "excerpt_en": "Observed on 2026-08-08 on 14 articles 2021-2026 outside biomedicine — physics, maths, computer science, economics, linguistics — on arXiv, PLOS, Copernicus, HAL, Scientific Reports: each pseudo-code line carries TWO counters offset by one, the typesetter's and the algorithm's. No catalogue line covered it; it would never have been found without changing discipline. Then measured ABSENT from the 272 JATS articles: 11 'Algorithm N' blocks, no double numbering.",
+      "lang": "fr",
+      "organisation": "Loxyn SAS, Lyon"
+    }
+  ],
   "specimens": {
     "cases": [],
     "counter_examples": []
@@ -27,7 +38,7 @@
   },
   "repair": {
     "reachable_by_deletion": "no",
-    "note": "deletion cannot restore this; judgment of 2026-09-09, to be measured"
+    "note": "deletion cannot restore this; classified by judgment on 2026-09-09, not measured — the EUR-Lex loop will measure it"
   },
   "judgeable_by": [
     "construction",
@@ -44,6 +55,11 @@
       "date": "2026-09-09",
       "event": "migrated; classified damage=MISSING injection=FORMAT (judgment, unreviewed by a second reader)",
       "by": "Fault Atlas migration"
+    },
+    {
+      "date": "2026-09-09",
+      "event": "observation transcribed from the August annex and the wave-1 journal, after the second reader noted the record had no excerpt",
+      "by": "Fault Atlas"
     }
   ],
   "observed_absent_in": [

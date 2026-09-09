@@ -34,7 +34,7 @@
   },
   "repair": {
     "reachable_by_deletion": "no",
-    "note": "deletion cannot restore this; judgment, to be measured"
+    "note": "deletion cannot restore this; classified by judgment, not measured — the EUR-Lex loop will measure it"
   },
   "judgeable_by": [
     "dated_future"

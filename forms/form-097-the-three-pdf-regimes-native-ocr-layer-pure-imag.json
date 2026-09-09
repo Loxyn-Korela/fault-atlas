@@ -1,6 +1,6 @@
 {
   "id": "form-097",
-  "version": 1,
+  "version": 2,
   "legacy_line": 97,
   "name": "The three PDF regimes (native, OCR layer, pure image)",
   "name_fr": "Les trois régimes de PDF (natif · OCR posé · image pure)",
@@ -16,7 +16,18 @@
   "legacy_severity": "G3",
   "legacy_mechanism": "M7",
   "status": "migrated_unreviewed",
-  "seen": [],
+  "seen": [
+    {
+      "corpus": "Biomedical PDFs 1957-1987 (migraine corpus, 45 PDFs), first observation wave",
+      "document": "the 45 PDFs of the migraine corpus",
+      "date": "2026-08-08",
+      "observer": "house observer (LLM agent), first wave of August 2026, biomedical PDFs 1957-1987 (migraine corpus)",
+      "excerpt": "Mesuré le 08/08 sur les 45 PDF du corpus migraine : natif numérique (plusieurs polices déclarées) 8/45, 17 % · scan + couche OCR (une seule police, beaucoup de texte) 36/45, 80 % · image pure (aucun opérateur de texte) 1/45, 2 %. Ligne née d'un doute déclaré par un observateur : « aucun des six n'a été testé pour savoir s'il porte une couche de texte ». Le doute se lève par une mesure de trente secondes : compter les polices déclarées et les opérateurs de texte.",
+      "excerpt_en": "Measured on 2026-08-08 on the 45 PDFs of the migraine corpus: native digital (several declared fonts) 8/45, 17 % · scan + OCR layer (a single font, much text) 36/45, 80 % · pure image (no text operator) 1/45, 2 %. Line born from a doubt declared by an observer: \"none of the six was tested for a text layer\". The doubt is lifted by a thirty-second measurement: count declared fonts and text operators.",
+      "lang": "fr",
+      "organisation": "Loxyn SAS, Lyon"
+    }
+  ],
   "specimens": {
     "cases": [],
     "counter_examples": []
@@ -27,7 +38,7 @@
   },
   "repair": {
     "reachable_by_deletion": "no",
-    "note": "deletion cannot restore this; judgment of 2026-09-09, to be measured"
+    "note": "deletion cannot restore this; classified by judgment on 2026-09-09, not measured — the EUR-Lex loop will measure it"
   },
   "judgeable_by": [
     "construction",
@@ -44,6 +55,11 @@
       "date": "2026-09-09",
       "event": "migrated; classified damage=MISSING injection=IMAGE (judgment, unreviewed by a second reader)",
       "by": "Fault Atlas migration"
+    },
+    {
+      "date": "2026-09-09",
+      "event": "observation transcribed from the August annex and the wave-1 journal, after the second reader noted the record had no excerpt",
+      "by": "Fault Atlas"
     }
   ],
   "observed_absent_in": [

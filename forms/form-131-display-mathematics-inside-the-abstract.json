@@ -1,6 +1,6 @@
 {
   "id": "form-131",
-  "version": 1,
+  "version": 2,
   "legacy_line": 131,
   "name": "Display mathematics inside the abstract",
   "name_fr": "Le résumé contient des mathématiques en display",
@@ -16,7 +16,18 @@
   "legacy_severity": "G3",
   "legacy_mechanism": "M8",
   "status": "migrated_unreviewed",
-  "seen": [],
+  "seen": [
+    {
+      "corpus": "14 articles 2021-2026 outside biomedicine (arXiv, PLOS, Copernicus, HAL, Scientific Reports), 'rare genres' wave",
+      "document": "document identifiers not kept by the observer (lesson of 2026-08-08: 81 documents observed, no specimen archived)",
+      "date": "2026-08-08",
+      "observer": "house observer (LLM agent), 'rare genres' wave of August 2026",
+      "excerpt": "Observé le 08/08 sur 14 articles de 2021-2026 hors biomédecine : le résumé s'interrompt sur une inégalité pleine largeur ; le résumé cesse d'être du texte. Jamais observé en biomédical. Mesuré ensuite sur les 272 JATS : 6 articles ont une formule EN LIGNE dans le résumé, tous en physique — ce n'est pas la même ligne.",
+      "excerpt_en": "Observed on 2026-08-08 on 14 articles 2021-2026 outside biomedicine: the abstract breaks off on a full-width inequality; the abstract stops being text. Never observed in biomedicine. Then measured on the 272 JATS: 6 articles have an INLINE formula in the abstract, all in physics — not the same line.",
+      "lang": "fr",
+      "organisation": "Loxyn SAS, Lyon"
+    }
+  ],
   "specimens": {
     "cases": [],
     "counter_examples": []
@@ -27,7 +38,7 @@
   },
   "repair": {
     "reachable_by_deletion": "no",
-    "note": "deletion cannot restore this; judgment of 2026-09-09, to be measured"
+    "note": "deletion cannot restore this; classified by judgment on 2026-09-09, not measured — the EUR-Lex loop will measure it"
   },
   "judgeable_by": [
     "construction",
@@ -44,6 +55,11 @@
       "date": "2026-09-09",
       "event": "migrated; classified damage=MISSING injection=FORMAT (judgment, unreviewed by a second reader)",
       "by": "Fault Atlas migration"
+    },
+    {
+      "date": "2026-09-09",
+      "event": "observation transcribed from the August annex and the wave-1 journal, after the second reader noted the record had no excerpt",
+      "by": "Fault Atlas"
     }
   ],
   "observed_absent_in": [

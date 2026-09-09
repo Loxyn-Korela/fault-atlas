@@ -7,6 +7,13 @@
 - Validator with house rules; proves itself on seven planted faults.
 - SQLite view builder for Datasette.
 
+## 0.2.2 — 2026-09-09
+- Second reader's first pass (Coralie Bagnol-Lebon): eight MISSING/MERGE forms had no excerpt — their August observations (wave-1 PDFs, non-biomedical wave) transcribed from the annexes and the journal; three remain without measurement (form-030, form-041, form-164), for the reader to mark contested.
+- Wording: `repair.reachable_by_deletion` is a classification by judgment, not a measurement — said on every record, on every page and in the README.
+- Each record also served as JSON on the site (`forms/<id>.json`); exact source-file link on GitHub.
+- Layer filter on the list; 'Layers' explained: the damage says what happens to the graph, the layer says where it starts.
+- One way to say the count: 153 = 113 migrated + 40 proposed; validated 0.
+
 ## 0.2.1 — 2026-09-09
 - Reproducibility: the 272 Europe PMC articles of the August observation published by PMC identifier with the harvest queries (`corpora/…-272.json`, page `corpora.html`); observations made on them link to it.
 - `origin` on every form (organisation, campaign, contact); 'Found by' line on each page.

@@ -1,6 +1,6 @@
 {
   "id": "form-082",
-  "version": 1,
+  "version": 2,
   "legacy_line": 82,
   "name": "Landscape-oriented table",
   "name_fr": "Tableau en orientation paysage",
@@ -16,7 +16,18 @@
   "legacy_severity": "G3",
   "legacy_mechanism": "M7",
   "status": "migrated_unreviewed",
-  "seen": [],
+  "seen": [
+    {
+      "corpus": "Biomedical PDFs 1957-1987 (migraine corpus), first observation wave",
+      "document": "Slater, Benign recurrent vertigo, J. Neurol. Neurosurg. Psychiatry 1979 (PDF 565 KB), sixth PDF opened",
+      "date": "2026-08-08",
+      "observer": "house observer (LLM agent), first wave of August 2026, biomedical PDFs 1957-1987 (migraine corpus)",
+      "excerpt": "Observé le 08/08 — Slater, *Benign recurrent vertigo*, J. Neurol. Neurosurg. Psychiatry 1979. Le tableau occupe une page entière, tourné à 90 degrés. Dix-sept colonnes, une ligne par patient. L'ordre du texte extrait n'a plus aucun rapport avec l'ordre de lecture ; le tableau pivoté contient la totalité des sept cas de l'étude.",
+      "excerpt_en": "Observed on 2026-08-08 — Slater, *Benign recurrent vertigo*, J. Neurol. Neurosurg. Psychiatry 1979. The table fills a whole page, rotated 90 degrees. Seventeen columns, one row per patient. The order of the extracted text no longer bears any relation to the reading order; the rotated table holds all seven cases of the study.",
+      "lang": "fr",
+      "organisation": "Loxyn SAS, Lyon"
+    }
+  ],
   "specimens": {
     "cases": [],
     "counter_examples": []
@@ -27,7 +38,7 @@
   },
   "repair": {
     "reachable_by_deletion": "no",
-    "note": "deletion cannot restore this; judgment of 2026-09-09, to be measured"
+    "note": "deletion cannot restore this; classified by judgment on 2026-09-09, not measured — the EUR-Lex loop will measure it"
   },
   "judgeable_by": [
     "construction",
@@ -44,6 +55,11 @@
       "date": "2026-09-09",
       "event": "migrated; classified damage=MISSING injection=IMAGE (judgment, unreviewed by a second reader)",
       "by": "Fault Atlas migration"
+    },
+    {
+      "date": "2026-09-09",
+      "event": "observation transcribed from the August annex and the wave-1 journal, after the second reader noted the record had no excerpt",
+      "by": "Fault Atlas"
     }
   ],
   "observed_absent_in": [

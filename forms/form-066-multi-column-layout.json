@@ -1,6 +1,6 @@
 {
   "id": "form-066",
-  "version": 1,
+  "version": 2,
   "legacy_line": 66,
   "name": "Multi-column layout",
   "name_fr": "Mise en page multi-colonnes",
@@ -16,7 +16,18 @@
   "legacy_severity": "G2",
   "legacy_mechanism": "M8",
   "status": "migrated_unreviewed",
-  "seen": [],
+  "seen": [
+    {
+      "corpus": "Biomedical PDFs 1957-1987 (migraine corpus), first observation wave",
+      "document": "Hachinski et al., Cerebral Hemodynamics in Migraine, Canadian Journal of Neurological Sciences, 1977 (PDF 3.3 MB)",
+      "date": "2026-08-08",
+      "observer": "house observer (LLM agent), first wave of August 2026, biomedical PDFs 1957-1987 (migraine corpus)",
+      "excerpt": "Observé le 08/08 sur un article COMPLET — *Cerebral Hemodynamics in Migraine*, Hachinski et al., Canadian Journal of Neurological Sciences, 1977 (PDF 3,3 Mo). Le texte n'est pas une colonne : il en compte deux ou trois. La première page en a trois — résumé anglais, résumé français, corps de l'article. Une lecture en travers des colonnes produit un texte grammaticalement correct et sémantiquement faux.",
+      "excerpt_en": "Observed on 2026-08-08 on a COMPLETE article — *Cerebral Hemodynamics in Migraine*, Hachinski et al., Canadian Journal of Neurological Sciences, 1977 (PDF 3.3 MB). The text is not one column: it has two or three. The first page has three — English abstract, French abstract, body. Reading across the columns yields text that is grammatically correct and semantically false.",
+      "lang": "fr",
+      "organisation": "Loxyn SAS, Lyon"
+    }
+  ],
   "specimens": {
     "cases": [],
     "counter_examples": []
@@ -27,7 +38,7 @@
   },
   "repair": {
     "reachable_by_deletion": "no",
-    "note": "deletion cannot restore this; judgment of 2026-09-09, to be measured"
+    "note": "deletion cannot restore this; classified by judgment on 2026-09-09, not measured — the EUR-Lex loop will measure it"
   },
   "judgeable_by": [
     "construction",
@@ -44,6 +55,11 @@
       "date": "2026-09-09",
       "event": "migrated; classified damage=MISSING injection=FORMAT (judgment, unreviewed by a second reader)",
       "by": "Fault Atlas migration"
+    },
+    {
+      "date": "2026-09-09",
+      "event": "observation transcribed from the August annex and the wave-1 journal, after the second reader noted the record had no excerpt",
+      "by": "Fault Atlas"
     }
   ],
   "observed_absent_in": [

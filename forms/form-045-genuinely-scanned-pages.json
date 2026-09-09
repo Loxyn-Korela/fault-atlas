@@ -1,6 +1,6 @@
 {
   "id": "form-045",
-  "version": 1,
+  "version": 2,
   "legacy_line": 45,
   "name": "Genuinely scanned pages",
   "name_fr": "Vraies pages scannées",
@@ -16,7 +16,18 @@
   "legacy_severity": "G3",
   "legacy_mechanism": "M7",
   "status": "migrated_unreviewed",
-  "seen": [],
+  "seen": [
+    {
+      "corpus": "Biomedical PDFs 1957-1987 (migraine corpus, 45 PDFs), first observation wave",
+      "document": "Malcolm 1973, The avian egg and the retina (published conference, 2.9 MB, scanned PDF); régime measured on the 45 PDFs",
+      "date": "2026-08-08",
+      "observer": "house observer (LLM agent), first wave of August 2026, biomedical PDFs 1957-1987 (migraine corpus)",
+      "excerpt": "Malcolm 1973, *The avian egg and the retina* (2,9 Mo) — conférence publiée, PDF SCANNÉ. Mesuré le 08/08 sur les 45 PDF du corpus migraine : natif numérique 8/45 (17 %) · scan + couche OCR 36/45 (80 %) · image pure 1/45 (2 %). Vu à l'œil : « IN 1948, WHIII I was working » pour « WHILE I ».",
+      "excerpt_en": "Malcolm 1973, *The avian egg and the retina* (2.9 MB) — published conference, SCANNED PDF. Measured on 2026-08-08 on the 45 PDFs of the migraine corpus: native digital 8/45 (17 %) · scan + OCR layer 36/45 (80 %) · pure image 1/45 (2 %). Seen by eye: \"IN 1948, WHIII I was working\" for \"WHILE I\".",
+      "lang": "fr",
+      "organisation": "Loxyn SAS, Lyon"
+    }
+  ],
   "specimens": {
     "cases": [],
     "counter_examples": []
@@ -26,7 +37,7 @@
   },
   "repair": {
     "reachable_by_deletion": "no",
-    "note": "deletion cannot restore this; judgment of 2026-09-09, to be measured"
+    "note": "deletion cannot restore this; classified by judgment on 2026-09-09, not measured — the EUR-Lex loop will measure it"
   },
   "judgeable_by": [
     "construction",
@@ -43,6 +54,11 @@
       "date": "2026-09-09",
       "event": "migrated; classified damage=MISSING injection=IMAGE (judgment, unreviewed by a second reader)",
       "by": "Fault Atlas migration"
+    },
+    {
+      "date": "2026-09-09",
+      "event": "observation transcribed from the August annex and the wave-1 journal, after the second reader noted the record had no excerpt",
+      "by": "Fault Atlas"
     }
   ]
 }
