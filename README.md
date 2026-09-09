@@ -1,5 +1,7 @@
 # Fault Atlas
 
+[![DOI](https://zenodo.org/badge/1362563154.svg)](https://doi.org/10.5281/zenodo.22674547)
+
 **A catalogue of observed fault forms in knowledge graphs built from documents — each with its provenance, the damage it causes in the graph, and the kind of truth that can judge it.**
 
 Maintained by [Loxyn](https://loxyn.ai) (Korela), Lyon, France. Contact: contact@loxyn.ai.
@@ -71,7 +73,9 @@ Propose a form by pull request: one JSON file, the excerpt, the corpus, the date
 
 ## Citation and licence
 
-Records and documentation: CC BY-SA 4.0. Tools: Apache 2.0. See `CITATION.cff`. A DOI will be minted on Zenodo at the first public release.
+Records and documentation: CC BY-SA 4.0. Tools: Apache 2.0. See `CITATION.cff`.
+
+Cite as: Gracia S., Bagnol-Lebon C., Comtet Y. (2026). *Fault Atlas: observed fault forms in knowledge graphs built from documents.* Loxyn SAS, Lyon. Zenodo. https://doi.org/10.5281/zenodo.22674547 — this concept DOI always resolves to the latest version; each release has its own DOI on Zenodo.
 
 ## Team
 
