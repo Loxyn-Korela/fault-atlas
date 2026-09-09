@@ -9,7 +9,7 @@ from run_probe import load
 
 bad = 0; n = 0
 for f in sorted((ROOT / "probes").rglob("*")):
-    if f.is_dir() or f.name == "README.md":
+    if f.is_dir() or f.name == "README.md" or "results" in f.parts:
         continue
     n += 1
     text = f.read_text(encoding="utf-8")
