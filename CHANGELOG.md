@@ -7,6 +7,9 @@
 - Validator with house rules; proves itself on seven planted faults.
 - SQLite view builder for Datasette.
 
+## 0.3.8 — 2026-09-09
+- No probes page either. The form is the only place: the fault, where it was seen, the documents it was found in (clickable), and, folded, how it was found (code, corpus, date). Wording on the form shortened to "Found in N/272 · checked <date>".
+
 ## 0.3.7 — 2026-09-09
 - Probes page: four statuses instead of two — found again (43), measured today (12), absent (11), to be shown (12) — so that a zero or an observation written today from the probe is not called "shown".
 

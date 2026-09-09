@@ -55,7 +55,7 @@ def layout(title, body, depth=0, desc=""):
 <title>{E(title)}</title><meta name="description" content="{E(desc or 'Observed fault forms in knowledge graphs built from documents, with provenance, damage and the truth that judges them.')}">
 <link rel="icon" href="{p}favicon.svg" type="image/svg+xml"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fraunces:ital,opsz,wght,SOFT@1,9..144,300,0&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"><link rel="stylesheet" href="{p}style.css"></head><body>
 <header class="top"><a class="brand" href="{p}index.html"><img src="{p}favicon.svg" alt="" width="22" height="22"> Fault Atlas <span class="by">by Loxyn</span></a>
-<nav><a href="{p}index.html#forms">Forms</a><a href="{p}probes.html">Probes</a><a href="{p}index.html#about">About</a><a href="{DATA}">Data &amp; API</a><a href="{REPO}">GitHub</a><a href="https://doi.org/{DOI}">DOI</a></nav></header>
+<nav><a href="{p}index.html#forms">Forms</a><a href="{p}index.html#about">About</a><a href="{DATA}">Data &amp; API</a><a href="{REPO}">GitHub</a><a href="https://doi.org/{DOI}">DOI</a></nav></header>
 <main>{body}</main>
 <footer><p><strong>Fault Atlas</strong> v{E(VERSION)} · built {BUILT} · Loxyn SAS, Lyon · Gracia S., Bagnol-Lebon C., Comtet Y. · records CC BY-SA 4.0, tools Apache 2.0 · <a href="https://doi.org/{DOI}">doi:{DOI}</a> · <a href="{REPO}">source</a> · <a href="mailto:contact@loxyn.ai">contact@loxyn.ai</a></p>
 <p class="muted">Every record is still <code>migrated_unreviewed</code>: classified by one reader, awaiting a second. The JSON file is the record of truth; this site is a view rebuilt at each release.</p></footer>
@@ -141,19 +141,18 @@ for f in forms:
         first, rest = carriers[:12], carriers[12:]
         docs = ""
         if carriers:
-            docs = f"<h4>See it in the documents</h4><ol class='docs'>" + "".join(li(n, e) for n, e in first) + "</ol>"
+            docs = f"<ol class='docs'>" + "".join(li(n, e) for n, e in first) + "</ol>"
             if rest:
                 docs += f"<details><summary>the other {len(rest)} documents</summary><ol class='docs' start='13'>" + "".join(li(n, e) for n, e in rest) + "</ol></details>"
             if r.get("carriers_file"):
                 docs += f"<p class='meta'>Full list with evidence: <a href='{REPO}/blob/main/{E(r['carriers_file'])}'>{E(r['carriers_file'].split('/')[-1])}</a></p>"
         elif r.get("count") == 0:
-            docs = "<p class='meta'>No document carries it in this corpus: the probe ran on every document and found nothing. That is the measurement.</p>"
+            docs = "<p class='meta'>Not found in any of these documents: the check ran on every one. That is the measurement.</p>"
         strata = (" · by stratum: " + ", ".join(f"{E(k)} {v}" for k, v in r["strata"].items())) if r.get("strata") else ""
-        verdict = "the re-run figure is the excerpt's figure" if pr.get("matches_excerpt") else "the re-run figure differs from the excerpt's figure — both kept"
-        return f"""<div class="probe"><p class="probe-head"><strong>How to find it again: {E(head)}</strong> · {E(pr['kind'])} probe, run {E(r.get('date','?'))} · {E(verdict)}</p>
+        return f"""<div class="probe"><p class="probe-head"><strong>Found in {E(head)}</strong> · checked {E(r.get('date','?'))}</p>
 {docs}
 {('<p class="note">'+E(pr['note'])+'</p>') if pr.get('note') else ''}
-<details class="code"><summary>The exact probe (code) · <code>{E(pr['file'].split('/')[-1])}</code>{strata}</summary>
+<details class="code"><summary>How it was found: the code, the corpus, the date{strata}</summary>
 <p class="meta">Run: <code>{E(pr.get('run',''))}</code> · <a href="{REPO}/blob/main/{E(pr['file'])}">{E(pr['file'])}</a>{(' · written '+E(pr['written'])) if pr.get('written') else ''}{(' · '+E(r['by'])) if r.get('by') else ''}</p>
 <p class="meta">Searched in: {E(CORPUS_NAMES.get(pr['corpus_id'], pr['corpus_id']).split(' — ')[0])}{(', read on '+E(CORPUS_REC[pr['corpus_id']]['harvested'])) if CORPUS_REC.get(pr['corpus_id'],{}).get('harvested') else ''} · identifiers, sha256 as read and licences: <a href="{REPO}/blob/main/corpora/{E(CORPUS_FILE[pr['corpus_id']])}">record</a>{(' · frozen copy: '+E(CORPUS_REC[pr['corpus_id']]['frozen_copy']['status'])) if CORPUS_REC.get(pr['corpus_id'],{}).get('frozen_copy') else ''}</p>
 <pre><code>{E(code)}</code></pre></details></div>"""
@@ -178,27 +177,8 @@ for f in forms:
     (SITE/"forms"/f"{f['id']}.html").write_text(layout(f"{f['name']} — Fault Atlas", body, depth=1, desc=f"{f['name']}: {d[0].lower()} — {d[1]}."))
 
 
-# ── probes page ──
-def probe_status(f, pr):
-    """found again / measured today / absent / to be shown"""
-    if not pr.get("matches_excerpt"): return "to be shown"
-    if pr.get("result", {}).get("count") == 0: return "absent (0)"
-    obs = [x for x in f["seen"] if x.get("probe") == pr["file"]]
-    if obs and obs[0].get("date") == "2026-09-09" and "probe" in obs[0].get("observer", ""): return "measured today"
-    return "found again"
-prow = ""
-for f in forms:
-    for pr in f.get("probes", []):
-        r = pr.get("result", {})
-        head = f"{r.get('count')}/{r.get('of')}" if r.get("of") is not None else f"{r.get('count')} rows"
-        prow += f"""<tr><td><a href="forms/{E(f['id'])}.html">{E(f['id'])}</a></td><td>{E(f['name'])}</td><td>{E(pr['kind'])}</td><td><a href="{REPO}/blob/main/{E(pr['file'])}">{E(pr['file'].split('/')[-1])}</a></td><td>{E(CORPUS_NAMES.get(pr['corpus_id'], pr['corpus_id']).split(' — ')[0][:48])}</td><td>{E(head)}</td><td>{E(r.get('date',''))}</td><td>{probe_status(f, pr)}</td></tr>"""
-nprobes = sum(len(f.get("probes", [])) for f in forms)
-from collections import Counter as _C
-st = _C(probe_status(f, pr) for f in forms for pr in f.get("probes", []))
-st_line = " · ".join(f"{v} {k}" for k, v in st.most_common())
-(SITE/"probes.html").write_text(layout("Probes — Fault Atlas", f"""<p class="crumb"><a href="index.html">Fault Atlas</a> › probes</p><h1>Exact probes</h1>
-<p class="lead">{nprobes} probes on {sum(1 for f in forms if f.get('probes'))} forms: {E(st_line)}. A probe is the exact question asked of a corpus, kept verbatim: a Python regex on one document, a SPARQL query on a public endpoint, a shell request with its headers. It repairs nothing and decides nothing; it answers "is this fault here, and where?". Anyone can run it again: <code>python3 tools/run_probe.py &lt;probe&gt; &lt;corpus&gt;</code>. Status: <strong>found again</strong> = the August probe, re-run, gives exactly the figure the August note quotes; <strong>measured today</strong> = the note was about another corpus, the probe was run on this one and the observation was written from it; <strong>absent (0)</strong> = the probe finds no document here, which is a measurement; <strong>to be shown</strong> = the kept probe gives another figure than the note, nothing is shown until a second reader settles it.</p>
-<div class="tablewrap"><table><thead><tr><th>Form</th><th>Name</th><th>Kind</th><th>Probe</th><th>Corpus</th><th>Result</th><th>Run on</th><th>Status</th></tr></thead><tbody>{prow}</tbody></table></div>"""))
+# ── probes: no page. Each form shows its own documents and, folded, how they were found. ──
+if (SITE/"probes.html").exists(): (SITE/"probes.html").unlink()
 
 # ── propose page ──
 dmg_cards = "".join(f"""<label class="dcard" style="--c:{v[2]}"><input type="radio" name="damage" value="{k}" required><span class="dt">{E(v[0])}</span><span class="dd">{E(v[1])}</span></label>""" for k,v in DAMAGE.items() if k!="CORPUS_PARAMETER") + """<label class="dcard" style="--c:#57534e"><input type="radio" name="damage" value="UNKNOWN"><span class="dt">I don't know</span><span class="dd">the reviewer will classify it</span></label>"""
