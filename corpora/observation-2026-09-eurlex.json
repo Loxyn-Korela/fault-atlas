@@ -1,0 +1,33 @@
+{
+  "id": "corpus-2026-09-eurlex",
+  "name": "September 2026 — EUR-Lex / Cellar collection for the Answer Key (lot A relations graph, lot 0 official dump, lot B texts of repealed acts)",
+  "observer": "Alexandrie (LLM agent, collection session), architect: the Answer Key Claude; independent of the August observers and of the Voûte",
+  "populations": [
+    {
+      "name": "Cellar SPARQL, lot A: the three official relations",
+      "relations": 489223,
+      "resources": 265172,
+      "note": "frozen 2026-09-09 as raw N-Triples, 134 pages, zero duplicates; counts equal to the pre-flight of the same day"
+    },
+    {
+      "name": "Publications Office data dump 2026-09-06 (legal acts in force, sector 3)",
+      "works": 58686,
+      "with_en_text": 30047,
+      "with_fr_text": 29892,
+      "note": "a complete metadata dump and a half text dump"
+    },
+    {
+      "name": "Cellar REST, lot B: texts of repealed acts absent from the dump",
+      "acts_targeted": 16117,
+      "note": "in progress on 2026-09-09; formats served are exclusive by era"
+    }
+  ],
+  "pre_registered_bets": {
+    "1 counts within 1 % of pre-flight": "held, gap 0 %",
+    "2 at least 100 repeals/amends with absent target": "LOST — 21 (4 + 17); 88 with based_on; the registry is more complete than the architect supposed",
+    "3 at least 90 % of repealed acts with EN and FR text": "pending",
+    "4 total under 120 GB": "pending"
+  },
+  "external_control": "EUR-Lex statistics page saved from a browser on 2026-09-09 (CSV, 2026 only): R 706 vs 711 (+0.7 %), L 15 vs 15, D 863 vs 833 (−3.5 %); other years without external control, declared",
+  "lesson": "a bet that falls is published as fallen; a collector's own bug, caught by its non-regression test before publication, prevented a false form ('Cellar serves no text for recent acts')"
+}

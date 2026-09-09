@@ -1,0 +1,57 @@
+{
+  "id": "form-185",
+  "version": 1,
+  "name": "Text format served depends on the act's age (404 in one format, 200 in another)",
+  "origin": {
+    "organisation": "Loxyn SAS, Lyon",
+    "campaign": "September 2026 — EUR-Lex collection for the Answer Key (Alexandrie)",
+    "contact": "contact@loxyn.ai"
+  },
+  "damage": "MISSING",
+  "class": "REFUSABLE",
+  "layer": "② reading",
+  "injection": "FORMAT",
+  "status": "proposed",
+  "seen": [
+    {
+      "corpus": "Cellar REST API, lot B (texts of repealed acts absent from the dump), 2026-09-09",
+      "document": "acts of 2026 answer 404 in text/html and 200 in application/xhtml+xml; acts of 1985 the reverse; 141 entries wrongly classified before the fix, set aside in index.jsonl.errone-141-formats-incomplets",
+      "date": "2026-09-09",
+      "observer": "Alexandrie (LLM agent, collection session), from the EUR-Lex collection manifest",
+      "organisation": "Loxyn SAS, Lyon",
+      "excerpt": "Mesuré au lot B, 09-09-2026 : les formats servis par Cellar sont exclusifs selon l'âge de l'acte — l'acte de 2026 rend 404 en text/html et 200 en application/xhtml+xml, l'acte de 1985 l'inverse. Une liste de formats qui omettait xhtml+xml a classé 141 actes récents « sans texte » avant correction ; ces 141 entrées sont mises de côté, pas supprimées, et un test de non-régression passe sur les quatre cas (119 Ko et 127 Ko pour 2026, 5 Ko et 6 Ko pour 1985). Un repli « */* » classait aussi la notice RDF comme « image seule » : statut distinct ajouté, « aucun format textuel servi ». Sans ce garde-fou, le résultat publié aurait été « Cellar ne sert aucun texte pour les actes récents » — un faux.",
+      "excerpt_en": "Measured in lot B, 2026-09-09: the formats served by Cellar are exclusive by the act's age — a 2026 act answers 404 in text/html and 200 in application/xhtml+xml, a 1985 act the reverse. A format list that omitted xhtml+xml classified 141 recent acts as 'no text' before the fix; those 141 entries are set aside, not deleted, and a non-regression test passes on the four cases (119 KB and 127 KB for 2026, 5 KB and 6 KB for 1985). A '*/*' fallback also classified the RDF notice as 'image only': a distinct status was added, 'no textual format served'. Without this guard, the published result would have been 'Cellar serves no text for recent acts' — a false one.",
+      "lang": "fr"
+    }
+  ],
+  "specimens": {
+    "cases": [],
+    "counter_examples": []
+  },
+  "prevention": {
+    "cancellable_by_code": true,
+    "refusal_clause": "try each textual format in turn and record the MIME type actually served; a non-textual answer is recorded as such, never as an absence of the act"
+  },
+  "repair": {
+    "reachable_by_deletion": "no",
+    "note": "deletion cannot restore this; classified by judgment, not measured — the EUR-Lex loop will measure it"
+  },
+  "judgeable_by": [
+    "registry"
+  ],
+  "related": [
+    "form-121"
+  ],
+  "history": [
+    {
+      "date": "2026-09-09",
+      "event": "proposed from the EUR-Lex collection reports of 2026-09-09; effect on a graph: A collector that asks for one format misses whole generations of acts and reports a false absence of text; the graph built from it lacks every act of one era. Prevalence: measured on 141 entries and 4 test cases; share by era to be measured at the end of lot B.",
+      "by": "Alexandrie (LLM agent, collection session), from the EUR-Lex collection manifest"
+    },
+    {
+      "date": "2026-09-09",
+      "event": "converted to a record; class set from the collector's own refusal clause where one exists; to be reviewed by a second reader",
+      "by": "Fault Atlas"
+    }
+  ]
+}

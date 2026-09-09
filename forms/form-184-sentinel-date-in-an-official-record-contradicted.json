@@ -1,0 +1,59 @@
+{
+  "id": "form-184",
+  "version": 1,
+  "name": "Sentinel date in an official record, contradicted by the identifier's own year",
+  "origin": {
+    "organisation": "Loxyn SAS, Lyon",
+    "campaign": "September 2026 — EUR-Lex collection for the Answer Key (Alexandrie)",
+    "contact": "contact@loxyn.ai"
+  },
+  "damage": "WRONG_VALUE",
+  "class": "REFUSABLE",
+  "layer": "⑧ coherence",
+  "injection": "ALTER",
+  "status": "proposed",
+  "seen": [
+    {
+      "corpus": "EUR-Lex / Cellar, lot A — the official relations graph frozen 2026-09-09 (abroge 14,411 · modifie 64,290 · se fonde sur 410,522; 489,223 triples)",
+      "document": "7 works with work_date_document = 1003-03-03, acts of 1966-1997; e.g. CELEX 51966FC0402 → year 1966 readable in the identifier",
+      "date": "2026-09-09",
+      "observer": "Alexandrie (LLM agent, collection session), from the EUR-Lex collection manifest",
+      "organisation": "Loxyn SAS, Lyon",
+      "excerpt": "Mesuré sur le lot A, 09-09-2026 : 7 œuvres portent toutes work_date_document = 1003-03-03, pour des actes de 1966 à 1997 — une sentinelle. L'année réelle reste lisible dans le CELEX du même enregistrement (51966FC0402 → 1966) : deux champs du même acte se contredisent, et l'un corrige l'autre. Mise en garde : 16 931 désaccords entre l'année du CELEX et la date de document ont été mesurés, et ce ne sont PAS 16 931 fautes — 12 689 ont un écart d'un an (signature contre publication), 739 des 749 gros écarts sont en secteur 1 où la date est celle de la version consolidée. La faute certaine se limite aux 7. Ne jamais citer le 16 931 seul.",
+      "excerpt_en": "Measured on lot A, 2026-09-09: 7 works all carry work_date_document = 1003-03-03, for acts of 1966 to 1997 — a sentinel. The real year stays readable in the CELEX of the same record (51966FC0402 → 1966): two fields of the same act contradict each other, and one corrects the other. Caution: 16,931 disagreements between the CELEX year and the document date were measured, and they are NOT 16,931 faults — 12,689 differ by one year (signature vs publication), 739 of the 749 large gaps are in sector 1 where the date is that of the consolidated version. The certain fault is limited to the 7. Never cite 16,931 alone.",
+      "lang": "fr"
+    }
+  ],
+  "specimens": {
+    "cases": [],
+    "counter_examples": []
+  },
+  "prevention": {
+    "cancellable_by_code": true,
+    "refusal_clause": "a date before the institution's existence is refused; when the identifier carries the year, it prevails and the correction is logged"
+  },
+  "repair": {
+    "reachable_by_deletion": "no",
+    "note": "deletion cannot restore this; classified by judgment, not measured — the EUR-Lex loop will measure it"
+  },
+  "judgeable_by": [
+    "registry",
+    "closed_world"
+  ],
+  "related": [
+    "form-149",
+    "form-160"
+  ],
+  "history": [
+    {
+      "date": "2026-09-09",
+      "event": "proposed from the EUR-Lex collection reports of 2026-09-09; effect on a graph: A placeholder date taken for a true date puts seven acts in the eleventh century; the fault is detectable without any external source, and its repair is verifiable from the record itself. Prevalence: measured: 7 certain faults; 16,931 disagreements of which most are not faults.",
+      "by": "Alexandrie (LLM agent, collection session), from the EUR-Lex collection manifest"
+    },
+    {
+      "date": "2026-09-09",
+      "event": "converted to a record; class set from the collector's own refusal clause where one exists; to be reviewed by a second reader",
+      "by": "Fault Atlas"
+    }
+  ]
+}

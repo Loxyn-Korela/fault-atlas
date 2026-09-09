@@ -1,0 +1,58 @@
+{
+  "id": "form-183",
+  "version": 1,
+  "name": "Half of the in-force acts have no structured text in the official dump",
+  "origin": {
+    "organisation": "Loxyn SAS, Lyon",
+    "campaign": "September 2026 — EUR-Lex collection for the Answer Key (Alexandrie)",
+    "contact": "contact@loxyn.ai"
+  },
+  "damage": "MISSING",
+  "class": "SILENT_FALSE",
+  "layer": "② reading",
+  "injection": "DELETE",
+  "status": "proposed",
+  "seen": [
+    {
+      "corpus": "EUR-Lex data dump of the Publications Office, 2026-09-06 (LEG_MTD 58,686 works; LEG_EN_FMX 123,983 files; LEG_FR_FMX 121,500 files), inventoried 2026-09-09",
+      "document": "27,792 of 58,686 works without any Formex file; 22,293 .tif files on the EN side",
+      "date": "2026-09-09",
+      "observer": "Alexandrie (LLM agent, collection session), from the EUR-Lex collection manifest",
+      "organisation": "Loxyn SAS, Lyon",
+      "excerpt": "Inventaire du dump du 06-09-2026, mesuré le 09-09-2026 en lecture de flux : 58 686 œuvres au MTD, 30 047 avec un texte Formex EN, 29 892 avec un texte FR ; 27 792 œuvres (47 %) sans aucun Formex — côté EN, 22 293 fichiers .tif, des actes anciens scannés jamais passés en XML. Un dump de métadonnées complet et un dump de textes à moitié.",
+      "excerpt_en": "Inventory of the 2026-09-06 dump, measured 2026-09-09 by streaming the archives: 58,686 works in the MTD, 30,047 with an EN Formex text, 29,892 with FR; 27,792 works (47 %) without any Formex — on the EN side, 22,293 .tif files, old scanned acts never converted to XML. A complete metadata dump and a half text dump.",
+      "lang": "fr"
+    }
+  ],
+  "specimens": {
+    "cases": [],
+    "counter_examples": []
+  },
+  "prevention": {
+    "cancellable_by_code": false,
+    "note": "a missing text cannot be produced by code; it can be declared"
+  },
+  "repair": {
+    "reachable_by_deletion": "no",
+    "note": "deletion cannot restore this; classified by judgment, not measured — the EUR-Lex loop will measure it"
+  },
+  "judgeable_by": [
+    "registry"
+  ],
+  "related": [
+    "form-045",
+    "form-097"
+  ],
+  "history": [
+    {
+      "date": "2026-09-09",
+      "event": "proposed from the EUR-Lex collection reports of 2026-09-09; effect on a graph: A graph built from the dump's texts covers half of the acts in force and silently lacks the other half; the metadata says an act exists, no text says what it contains. Same family as scanned pages, observed here on an official registry. Prevalence: measured: 27,792 / 58,686 (47 %).",
+      "by": "Alexandrie (LLM agent, collection session), from the EUR-Lex collection manifest"
+    },
+    {
+      "date": "2026-09-09",
+      "event": "converted to a record; class set from the collector's own refusal clause where one exists; to be reviewed by a second reader",
+      "by": "Fault Atlas"
+    }
+  ]
+}
