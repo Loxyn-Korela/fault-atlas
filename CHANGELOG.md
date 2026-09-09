@@ -8,7 +8,7 @@
 - SQLite view builder for Datasette.
 
 ## 0.3.7 — 2026-09-09
-- Probes page: four statuses instead of two — found again (42), measured today (13), absent (11), to be shown (12) — so that a zero or an observation written today from the probe is not called "shown".
+- Probes page: four statuses instead of two — found again (43), measured today (12), absent (11), to be shown (12) — so that a zero or an observation written today from the probe is not called "shown".
 
 ## 0.3.6 — 2026-09-09
 - No corpus page any more (third reader: "it only confuses; they will have the link from the fault's own page"). Each shown probe links every carrier document directly, and its folded block says where it was searched, the read date, and points to the record with identifiers, sha256 as read and licences.
