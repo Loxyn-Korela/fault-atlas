@@ -7,6 +7,9 @@
 - Validator with house rules; proves itself on seven planted faults.
 - SQLite view builder for Datasette.
 
+## 0.4.2 — 2026-09-09
+- No count on the form. "12 of 272" reads as a frequency; a form only says: someone can get this wrong, see it here. The counts stay in the records and the result files, off the page.
+
 ## 0.4.1 — 2026-09-09
 - A database of faults, not of files (third reader): each form shows at most three examples — a document you can open, the evidence found in it, in one parenthesis how many of the checked documents carry it — and, folded, how it was found. The full carrier lists stay in the repository, off the site. "Measured absent" is no longer presented as a proof. Two states on the list: example shown (54) / no example yet (103).
 

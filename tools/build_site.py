@@ -150,9 +150,8 @@ for f in forms:
             ev = (" — <span class='ev'>" + E(" | ".join(map(str, e)))[:260] + "</span>") if e else ""
             return f"<li>{doc_link(n, pr['corpus_id'])}{ev}</li>"
         docs = "<ol class='docs'>" + "".join(li(n, e) for n, e in carriers[:3]) + "</ol>"
-        prevalence = f" (found in {r.get('count')} of the {r.get('of')} documents checked)" if r.get("of") else f" ({r.get('count')} found)"
         strata = (" · by stratum: " + ", ".join(f"{E(k)} {v}" for k, v in r["strata"].items())) if r.get("strata") else ""
-        return f"""<div class="probe"><p class="probe-head"><strong>Example{'s' if len(carriers) > 1 else ''}</strong>{E(prevalence)}</p>
+        return f"""<div class="probe"><p class="probe-head"><strong>See it here</strong></p>
 {docs}
 <details class="code"><summary>How it was found: the query, the corpus, the date</summary>
 <p class="meta">Run: <code>{E(pr.get('run',''))}</code> · <a href="{REPO}/blob/main/{E(pr['file'])}">{E(pr['file'])}</a>{(' · written '+E(pr['written'])) if pr.get('written') else ''}{(' · '+E(r['by'])) if r.get('by') else ''}</p>
