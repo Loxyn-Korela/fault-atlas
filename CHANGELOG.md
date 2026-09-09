@@ -7,6 +7,9 @@
 - Validator with house rules; proves itself on seven planted faults.
 - SQLite view builder for Datasette.
 
+## 0.3.9 — 2026-09-09
+- Frozen copy of the 272-article corpus deposited on Zenodo (draft, doi:10.5281/zenodo.22680055): 267 files as read on 2026-08-08 plus the manifest. Each form's folded "how it was found" block links it.
+
 ## 0.3.8 — 2026-09-09
 - No probes page either. The form is the only place: the fault, where it was seen, the documents it was found in (clickable), and, folded, how it was found (code, corpus, date). Wording on the form shortened to "Found in N/272 · checked <date>".
 
