@@ -1,0 +1,18 @@
+# Fault Atlas probe — form-182: legal basis encoded as an empty CELEX URI.
+# Endpoint: https://publications.europa.eu/webapi/rdf/sparql  (public, no key)
+# Population: the whole Cellar graph as served on the day of the run.
+# Written 2026-09-09 from the lot A observation (Alexandrie, frozen N-Triples);
+# re-run live 2026-09-09 by the Fault Atlas maintainer: 43 acts, same list.
+#
+#   curl -G https://publications.europa.eu/webapi/rdf/sparql \
+#        -H 'Accept: text/csv' --data-urlencode query@probes/2026-09/form-182-empty-celex-uri.sparql
+#
+# Expected: 43 rows. Widening the predicate (second query, commented) shows the same
+# empty URI as object of 14 predicates, 8,164 triples in all — form-182 in lot A is
+# the tip of it.
+PREFIX cdm: <http://publications.europa.eu/ontology/cdm#>
+SELECT ?act WHERE {
+  ?act cdm:resource_legal_based_on_resource_legal <http://publications.europa.eu/resource/celex/> .
+} ORDER BY ?act
+# --- wider count, run separately:
+# SELECT ?p (COUNT(*) AS ?n) WHERE { ?s ?p <http://publications.europa.eu/resource/celex/> . } GROUP BY ?p

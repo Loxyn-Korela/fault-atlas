@@ -21,7 +21,17 @@
       "organisation": "Loxyn SAS, Lyon",
       "excerpt": "Mesuré depuis le brut, lot A gelé le 09-09-2026 : l'URI « http://publications.europa.eu/resource/celex/ », un CELEX vide, apparaît 43 fois, toutes dans « se fonde sur », toutes en position objet, portées par 43 sujets distincts — un acte, une occurrence. Aucune dans « abroge » ni « modifie ». Anomalie du registre officiel, pas de la collecte.",
       "excerpt_en": "Measured from the raw data, lot A frozen 2026-09-09: the URI \"http://publications.europa.eu/resource/celex/\", an empty CELEX, appears 43 times, all in 'based_on', all in object position, carried by 43 distinct subjects — one act, one occurrence. None in 'repeals' nor 'amends'. An anomaly of the official registry, not of the collection.",
-      "lang": "fr"
+      "lang": "fr",
+      "probe": "probes/2026-09/form-182-empty-celex-uri.sparql"
+    },
+    {
+      "corpus": "Cellar SPARQL endpoint, whole graph as served live on 2026-09-09",
+      "date": "2026-09-09",
+      "observer": "Fault Atlas maintainer (Loxyn), live on the public endpoint",
+      "organisation": "Loxyn SAS, Lyon",
+      "lang": "en",
+      "probe": "probes/2026-09/form-182-empty-celex-uri.sparql",
+      "excerpt": "The empty CELEX URI <http://publications.europa.eu/resource/celex/> is the object of 8,164 triples under 14 predicates in the whole graph, not only of the 43 'based on' triples of lot A: annotatedTarget 7,507; act_consolidated_consolidates_resource_legal 324; work_is_logical_successor_of_work 225; resource_legal_based_on_resource_legal 43; case-law_referred_to_for_preliminary_ruling_case-law 19; work_cites_work 14; case-law_national_based_on_resource_legal 10; and seven others under 6. Same form, wider reach; the 43 of lot A are the part that sits in the three official relations."
     }
   ],
   "specimens": {
@@ -53,6 +63,33 @@
       "date": "2026-09-09",
       "event": "converted to a record; class set from the collector's own refusal clause where one exists; to be reviewed by a second reader",
       "by": "Fault Atlas"
+    },
+    {
+      "date": "2026-09-09",
+      "event": "exact probe attached and re-run: probes/2026-09/form-182-empty-celex-uri.sparql",
+      "by": "Fault Atlas maintainer"
+    },
+    {
+      "date": "2026-09-09",
+      "event": "second observation: the same empty URI counted over the whole graph, live (8,164 triples, 14 predicates)",
+      "by": "Fault Atlas maintainer"
+    }
+  ],
+  "probes": [
+    {
+      "file": "probes/2026-09/form-182-empty-celex-uri.sparql",
+      "kind": "sparql",
+      "corpus_id": "corpus-2026-09-eurlex",
+      "written": "2026-09-09",
+      "run": "curl -G https://publications.europa.eu/webapi/rdf/sparql -H 'Accept: text/csv' --data-urlencode query@probes/2026-09/form-182-empty-celex-uri.sparql",
+      "result": {
+        "date": "2026-09-09",
+        "count": 43,
+        "of": null,
+        "by": "Fault Atlas maintainer (Loxyn), live on the public endpoint"
+      },
+      "matches_excerpt": true,
+      "note": "Re-run live: 43 acts, the same list as the frozen lot A."
     }
   ]
 }

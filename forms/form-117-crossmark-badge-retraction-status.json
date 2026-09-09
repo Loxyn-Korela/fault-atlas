@@ -25,6 +25,16 @@
       "lang": "fr",
       "excerpt_en": "Crossmark badge recorded on 2025-2026 articles; and a document of the \"rare genres\" wave in which a cited article HAD BEEN RETRACTED (observed 2026-08-08)",
       "organisation": "Loxyn SAS, Lyon"
+    },
+    {
+      "corpus": "observation 2026-08 (272 Europe PMC JATS articles)",
+      "date": "2026-09-09",
+      "observer": "house probe (regex, no model), written 2026-08-08, re-run by the Fault Atlas maintainer",
+      "organisation": "Loxyn SAS, Lyon",
+      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+      "lang": "en",
+      "probe": "probes/2026-08/line-117.py",
+      "excerpt": "Probe re-run on the 272 JATS files: 35/272 carriers (retract 33, moderne 1, nonEN 1). Examples — moderne-PMC13296839.xml: retraction of · nonEN-PMC13193195.xml: retraction of · retract-PMC12920011.xml: <related-article xmlns:xlink=\"http://www.w3.org/1999/xlink\" related-article-type=\"retracted-article\" id=\"RA1\" vol=\"32\" p"
     }
   ],
   "specimens": {
@@ -64,6 +74,53 @@
       "date": "2026-09-09",
       "event": "repair.reachable_by_deletion changed from yes to partial: a deletion loses the fact's past validity; only a spurious edge is fully repaired by deletion",
       "by": "Coralie Bagnol-Lebon (second reader), applied by Fault Atlas"
+    },
+    {
+      "date": "2026-09-09",
+      "event": "second observation added from the exact probe on the 272 files: probes/2026-08/line-117.py, 35/272",
+      "by": "Fault Atlas maintainer"
+    }
+  ],
+  "probes": [
+    {
+      "file": "probes/2026-08/line-117.py",
+      "kind": "python",
+      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+      "written": "2026-08-08",
+      "run": "python3 tools/run_probe.py probes/2026-08/line-117.py <dir with the 272 .xml>",
+      "result": {
+        "date": "2026-09-09",
+        "count": 35,
+        "of": 272,
+        "strata": {
+          "retract": 33,
+          "moderne": 1,
+          "nonEN": 1
+        },
+        "examples": [
+          [
+            "moderne-PMC13296839.xml",
+            [
+              "retraction of"
+            ]
+          ],
+          [
+            "nonEN-PMC13193195.xml",
+            [
+              "retraction of"
+            ]
+          ],
+          [
+            "retract-PMC12920011.xml",
+            [
+              "<related-article xmlns:xlink=\"http://www.w3.org/1999/xlink\" related-article-type=\"retracted-article\" id=\"RA1\" vol=\"32\" page=\"757\" ext-link-type=\"doi\" xlink:href=\"10.3892/ijo.32.4.757\">",
+              "<related-article xmlns:xlink=\"http://www.w3.org/1999/xlink\" related-article-type=\"retracted-article\" vol=\"32\" page=\"757\" ext-link-type=\"doi\" xlink:href=\"10.3892/ijo.32.4.757\">"
+            ]
+          ]
+        ],
+        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files"
+      },
+      "matches_excerpt": true
     }
   ]
 }

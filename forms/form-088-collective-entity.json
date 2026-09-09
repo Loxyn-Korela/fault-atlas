@@ -25,7 +25,8 @@
       "lang": "fr",
       "excerpt_en": "MEASURED on 2026-08-08 on the 272 XML files: 101/272 (37 %) open with a headcount followed by a group noun (\"127 animals\", \"910 participants\"), 96/272 (35 %) carry an \"n = …\", and 87/272 (32 %) associate the headcount with a dispersion (mean, SD, ±). The collective subject is therefore the MAJORITY form; none of our fabricated corpora contains one. Original observation 2026-08-08: Duncker et al., Br. J. Pharmac. 1986 (annex 88).",
       "organisation": "Loxyn SAS, Lyon",
-      "corpus_id": "corpus-europe-pmc-jats-2023-2026"
+      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+      "probe": "probes/2026-08/line-088.py"
     }
   ],
   "specimens": {
@@ -55,6 +56,60 @@
       "date": "2026-09-09",
       "event": "migrated; classified damage=MERGE injection=RENAME (judgment, unreviewed by a second reader)",
       "by": "Fault Atlas migration"
+    },
+    {
+      "date": "2026-09-09",
+      "event": "exact probe attached to the 272-file observation: probes/2026-08/line-088.py, re-run 71/272 (excerpt figure differs, both kept)",
+      "by": "Fault Atlas maintainer"
+    }
+  ],
+  "probes": [
+    {
+      "file": "probes/2026-08/line-088.py",
+      "kind": "python",
+      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+      "written": "2026-08-08",
+      "run": "python3 tools/run_probe.py probes/2026-08/line-088.py <dir with the 272 .xml>",
+      "result": {
+        "date": "2026-09-09",
+        "count": 71,
+        "of": 272,
+        "strata": {
+          "meta": 26,
+          "essai": 14,
+          "bio": 11,
+          "nonEN": 11,
+          "phys": 3,
+          "retract": 3,
+          "cas": 2,
+          "moderne": 1
+        },
+        "examples": [
+          [
+            "bio-PMC12674831.xml",
+            [
+              "American Diabetes Association",
+              "American Diabetes Association Professional Practice Committee",
+              "Associação Brasileira para o Estudo da Obesidade e da Síndrome Metabólica"
+            ]
+          ],
+          [
+            "bio-PMC12882215.xml",
+            [
+              "Cochrane Collaboration"
+            ]
+          ],
+          [
+            "bio-PMC12909487.xml",
+            [
+              "Institute TJB"
+            ]
+          ]
+        ],
+        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files"
+      },
+      "matches_excerpt": false,
+      "note": "The figure quoted in the excerpt was counted on 2026-08-08 by a finer, hand-run measurement whose code was not kept; this probe is the one that was kept, and its figure is the one that can be re-run. Both stand, dated."
     }
   ]
 }

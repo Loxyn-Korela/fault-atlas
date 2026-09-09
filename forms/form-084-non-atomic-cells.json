@@ -25,7 +25,8 @@
       "lang": "fr",
       "excerpt_en": "MEASURED on 2026-08-08 on the internal corpus (272 JATS XML): 180/272 articles (66 %) carry at least one table; 47,164 cells read, of which 4,179 non-atomic (9 %) — 494 lone dashes, 507 ranges, 3,178 cells of six words or more. 144/272 articles (53 %) carry at least one.",
       "organisation": "Loxyn SAS, Lyon",
-      "corpus_id": "corpus-europe-pmc-jats-2023-2026"
+      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+      "probe": "probes/2026-08/line-084.py"
     }
   ],
   "specimens": {
@@ -60,6 +61,62 @@
       "date": "2026-09-09",
       "event": "internal tool paths removed from observation notes before publication; wording otherwise unchanged",
       "by": "Fault Atlas"
+    },
+    {
+      "date": "2026-09-09",
+      "event": "exact probe attached to the 272-file observation: probes/2026-08/line-084.py, re-run 70/272 (excerpt figure differs, both kept)",
+      "by": "Fault Atlas maintainer"
+    }
+  ],
+  "probes": [
+    {
+      "file": "probes/2026-08/line-084.py",
+      "kind": "python",
+      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+      "written": "2026-08-08",
+      "run": "python3 tools/run_probe.py probes/2026-08/line-084.py <dir with the 272 .xml>",
+      "result": {
+        "date": "2026-09-09",
+        "count": 70,
+        "of": 272,
+        "strata": {
+          "essai": 25,
+          "nonEN": 13,
+          "bio": 10,
+          "meta": 9,
+          "phys": 6,
+          "moderne": 5,
+          "cas": 2
+        },
+        "examples": [
+          [
+            "bio-PMC12583535.xml",
+            [
+              "151.8 ± 2.7",
+              "147.7 ± 5.0",
+              "9.0 ± 2.7"
+            ]
+          ],
+          [
+            "bio-PMC12857832.xml",
+            [
+              "66.00±9.00",
+              "63.00±11.00",
+              "61.00±11.28"
+            ]
+          ],
+          [
+            "bio-PMC12915353.xml",
+            [
+              "2241 (18 - 74 y)",
+              "2139 (20 - 70 y)"
+            ]
+          ]
+        ],
+        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files"
+      },
+      "matches_excerpt": false,
+      "note": "The figure quoted in the excerpt was counted on 2026-08-08 by a finer, hand-run measurement whose code was not kept; this probe is the one that was kept, and its figure is the one that can be re-run. Both stand, dated."
     }
   ]
 }

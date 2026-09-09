@@ -21,7 +21,8 @@
       "organisation": "Loxyn SAS, Lyon",
       "excerpt": "Mesuré au lot B, 09-09-2026 : les formats servis par Cellar sont exclusifs selon l'âge de l'acte — l'acte de 2026 rend 404 en text/html et 200 en application/xhtml+xml, l'acte de 1985 l'inverse. Une liste de formats qui omettait xhtml+xml a classé 141 actes récents « sans texte » avant correction ; ces 141 entrées sont mises de côté, pas supprimées, et un test de non-régression passe sur les quatre cas (119 Ko et 127 Ko pour 2026, 5 Ko et 6 Ko pour 1985). Un repli « */* » classait aussi la notice RDF comme « image seule » : statut distinct ajouté, « aucun format textuel servi ». Sans ce garde-fou, le résultat publié aurait été « Cellar ne sert aucun texte pour les actes récents » — un faux.",
       "excerpt_en": "Measured in lot B, 2026-09-09: the formats served by Cellar are exclusive by the act's age — a 2026 act answers 404 in text/html and 200 in application/xhtml+xml, a 1985 act the reverse. A format list that omitted xhtml+xml classified 141 recent acts as 'no text' before the fix; those 141 entries are set aside, not deleted, and a non-regression test passes on the four cases (119 KB and 127 KB for 2026, 5 KB and 6 KB for 1985). A '*/*' fallback also classified the RDF notice as 'image only': a distinct status was added, 'no textual format served'. Without this guard, the published result would have been 'Cellar serves no text for recent acts' — a false one.",
-      "lang": "fr"
+      "lang": "fr",
+      "probe": "probes/2026-09/form-185-format-by-era.sh"
     }
   ],
   "specimens": {
@@ -52,6 +53,28 @@
       "date": "2026-09-09",
       "event": "converted to a record; class set from the collector's own refusal clause where one exists; to be reviewed by a second reader",
       "by": "Fault Atlas"
+    },
+    {
+      "date": "2026-09-09",
+      "event": "exact probe attached and re-run: probes/2026-09/form-185-format-by-era.sh",
+      "by": "Fault Atlas maintainer"
+    }
+  ],
+  "probes": [
+    {
+      "file": "probes/2026-09/form-185-format-by-era.sh",
+      "kind": "http",
+      "corpus_id": "corpus-2026-09-eurlex",
+      "written": "2026-09-09",
+      "run": "sh probes/2026-09/form-185-format-by-era.sh",
+      "result": {
+        "date": "2026-09-09",
+        "count": 2,
+        "of": 3,
+        "by": "Fault Atlas maintainer (Loxyn), live on the public endpoint"
+      },
+      "matches_excerpt": true,
+      "note": "Re-run live on three acts: 2026 act served in xhtml+xml only, 1985 act in text/html only, 1968 act in no text format at all."
     }
   ]
 }

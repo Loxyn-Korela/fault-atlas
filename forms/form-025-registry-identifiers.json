@@ -25,7 +25,8 @@
       "lang": "fr",
       "excerpt_en": "MEASURED on 2026-08-08 on 272 open-access Europe PMC articles 2023-2026 (internal corpus): present in 31 articles (11 %). Concentration: phys 10/34, meta 9/34, bio 6/34, modern 4/17, trial 2/34. Registries actually met: ROR ×60, GRID ×52, ISNI ×49, Ringgold ×3, plus 22 FUNDER identifiers (doi/FundRef/CrossRef), which do NOT designate the organisation. Real forms: ROR:https://ror.org/02z1vqm45 | GRID:grid.411472.5 | ISNI:0000 0004 1764 1621",
       "organisation": "Loxyn SAS, Lyon",
-      "corpus_id": "corpus-europe-pmc-jats-2023-2026"
+      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+      "probe": "probes/2026-08/line-025.py"
     }
   ],
   "specimens": {
@@ -66,6 +67,58 @@
       "date": "2026-09-09",
       "event": "internal tool paths removed from observation notes before publication; wording otherwise unchanged",
       "by": "Fault Atlas"
+    },
+    {
+      "date": "2026-09-09",
+      "event": "exact probe attached to the 272-file observation: probes/2026-08/line-025.py, re-run 31/272",
+      "by": "Fault Atlas maintainer"
+    }
+  ],
+  "probes": [
+    {
+      "file": "probes/2026-08/line-025.py",
+      "kind": "python",
+      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+      "written": "2026-08-08",
+      "run": "python3 tools/run_probe.py probes/2026-08/line-025.py <dir with the 272 .xml>",
+      "result": {
+        "date": "2026-09-09",
+        "count": 31,
+        "of": 272,
+        "strata": {
+          "phys": 10,
+          "meta": 9,
+          "bio": 6,
+          "moderne": 4,
+          "essai": 2
+        },
+        "examples": [
+          [
+            "bio-PMC12583535.xml",
+            [
+              "ROR:https://ror.org/02z1vqm45",
+              "GRID:grid.411472.5",
+              "ISNI:0000 0004 1764 1621"
+            ]
+          ],
+          [
+            "bio-PMC12882215.xml",
+            [
+              "ROR:https://ror.org/01p455v08",
+              "GRID:grid.13394.3c",
+              "ISNI:0000 0004 1799 3993"
+            ]
+          ],
+          [
+            "bio-PMC13103274.xml",
+            [
+              "doi:10.13039/501100004697"
+            ]
+          ]
+        ],
+        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files"
+      },
+      "matches_excerpt": true
     }
   ]
 }

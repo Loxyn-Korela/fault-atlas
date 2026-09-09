@@ -25,7 +25,8 @@
       "lang": "fr",
       "excerpt_en": "MEASURED on 2026-08-08 on 272 open-access Europe PMC articles 2023-2026 (internal corpus): present in 38 articles (13 %), of which 23 of the 34 in the physics/maths batch. Real forms, naive reading versus assembled reading: bio-PMC13252842 → 274 bytes, \"M H F N\" instead of \"MHFN\"; trial-PMC13263161 → \"V ˙\" instead of \"V˙\"; trial-PMC13238360 → 1,032 bytes, \"PV t = PV bl × 1 + Hct bl Hct t −\" instead of \"PVt=PVbl×1+HctblHctt−11−Hctbl\" — and the naive version is moreover TRUNCATED.",
       "organisation": "Loxyn SAS, Lyon",
-      "corpus_id": "corpus-europe-pmc-jats-2023-2026"
+      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+      "probe": "probes/2026-08/line-133.py"
     }
   ],
   "specimens": {
@@ -65,6 +66,61 @@
       "date": "2026-09-09",
       "event": "internal tool paths removed from observation notes before publication; wording otherwise unchanged",
       "by": "Fault Atlas"
+    },
+    {
+      "date": "2026-09-09",
+      "event": "exact probe attached to the 272-file observation: probes/2026-08/line-133.py, re-run 38/272",
+      "by": "Fault Atlas maintainer"
+    }
+  ],
+  "probes": [
+    {
+      "file": "probes/2026-08/line-133.py",
+      "kind": "python",
+      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+      "written": "2026-08-08",
+      "run": "python3 tools/run_probe.py probes/2026-08/line-133.py <dir with the 272 .xml>",
+      "result": {
+        "date": "2026-09-09",
+        "count": 38,
+        "of": 272,
+        "strata": {
+          "phys": 23,
+          "essai": 5,
+          "meta": 5,
+          "moderne": 3,
+          "bio": 1,
+          "nonEN": 1
+        },
+        "examples": [
+          [
+            "bio-PMC13252842.xml",
+            [
+              "274o : naïf 'M H F N' ≠ assemblé 'MHFN'",
+              "274o : naïf 'M H F W' ≠ assemblé 'MHFW'",
+              "274o : naïf 'F H F N' ≠ assemblé 'FHFN'"
+            ]
+          ],
+          [
+            "essai-PMC13238360.xml",
+            [
+              "1032o : naïf 'PV t = PV bl × 1 + Hct bl Hct t − ' ≠ assemblé 'PVt=PVbl×1+HctblHctt−11−Hctbl'",
+              "549o : naïf 'BV bl = a × h 3 + b × w + c' ≠ assemblé 'BVbl=a×h3+b×w+c'",
+              "465o : naïf 'PPV = BV bl × 1 − Hct' ≠ assemblé 'PPV=BVbl×1−Hct'"
+            ]
+          ],
+          [
+            "essai-PMC13263161.xml",
+            [
+              "238o : naïf 'V ˙' ≠ assemblé 'V˙'",
+              "238o : naïf 'V ˙' ≠ assemblé 'V˙'",
+              "238o : naïf 'V ˙' ≠ assemblé 'V˙'"
+            ]
+          ]
+        ],
+        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files"
+      },
+      "matches_excerpt": true
     }
   ]
 }

@@ -25,7 +25,8 @@
       "lang": "fr",
       "excerpt_en": "MEASURED on 2026-08-08 on 272 open-access Europe PMC JATS XML articles (internal corpus): citation CUT by the clickable zone in 21 articles (7.7 %) — trial 15, meta 4, modern 2; counter-form (the link carries the WHOLE citation) in 16 others. Real forms: \"Steinmetz et al. <xref>2023</xref>\" (trial-PMC13169472) · \"Victora et al. <xref>2008</xref>\" (trial-PMC13205709) · \"UNICEF. WHO. World_Bank. <xref>2025</xref>\" (trial-PMC13205731). ⚠️ The direction described in the annex — link on the name, year outside — is at 0/272: searched under 3 patterns, never found.",
       "organisation": "Loxyn SAS, Lyon",
-      "corpus_id": "corpus-europe-pmc-jats-2023-2026"
+      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+      "probe": "probes/2026-08/line-132.py"
     }
   ],
   "specimens": {
@@ -65,6 +66,113 @@
       "date": "2026-09-09",
       "event": "internal tool paths removed from observation notes before publication; wording otherwise unchanged",
       "by": "Fault Atlas"
+    },
+    {
+      "date": "2026-09-09",
+      "event": "exact probe attached to the 272-file observation: probes/2026-08/line-132.py, re-run 21/272",
+      "by": "Fault Atlas maintainer"
+    },
+    {
+      "date": "2026-09-09",
+      "event": "exact probe attached (counter-form): probes/2026-08/line-132-counterform.py, re-run 16/272",
+      "by": "Fault Atlas maintainer"
+    }
+  ],
+  "probes": [
+    {
+      "file": "probes/2026-08/line-132.py",
+      "kind": "python",
+      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+      "written": "2026-08-08",
+      "run": "python3 tools/run_probe.py probes/2026-08/line-132.py <dir with the 272 .xml>",
+      "result": {
+        "date": "2026-09-09",
+        "count": 21,
+        "of": 272,
+        "strata": {
+          "essai": 15,
+          "meta": 4,
+          "moderne": 2
+        },
+        "examples": [
+          [
+            "essai-PMC13169472.xml",
+            [
+              "« Steinmetz et al. » DEHORS + <xref>2023</xref>",
+              "« World Health Organization » DEHORS + <xref>2023</xref>",
+              "« Kittelson et al. » DEHORS + <xref>2020</xref>"
+            ]
+          ],
+          [
+            "essai-PMC13205709.xml",
+            [
+              "« Victora et al. » DEHORS + <xref>2008</xref>",
+              "« FAO et al. » DEHORS + <xref>2025</xref>",
+              "« Black et al. » DEHORS + <xref>2008</xref>"
+            ]
+          ],
+          [
+            "essai-PMC13205731.xml",
+            [
+              "« UNICEF. WHO. World_Bank. » DEHORS + <xref>2025</xref>",
+              "« Haseeb and Ali » DEHORS + <xref>2026</xref>",
+              "« WHO » DEHORS + <xref>2020</xref>"
+            ]
+          ]
+        ],
+        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files"
+      },
+      "matches_excerpt": true
+    },
+    {
+      "file": "probes/2026-08/line-132-counterform.py",
+      "kind": "python",
+      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+      "written": "2026-08-08",
+      "run": "python3 tools/run_probe.py probes/2026-08/line-132-counterform.py <dir with the 272 .xml>",
+      "result": {
+        "date": "2026-09-09",
+        "count": 16,
+        "of": 272,
+        "strata": {
+          "cas": 4,
+          "meta": 3,
+          "phys": 3,
+          "essai": 2,
+          "moderne": 2,
+          "nonEN": 1,
+          "retract": 1
+        },
+        "examples": [
+          [
+            "cas-PMC13291543.xml",
+            [
+              "<xref>Cui et al., 2018</xref>",
+              "<xref>Stochholm et al., 2006</xref>",
+              "<xref>Fuchs et al., 2019</xref>"
+            ]
+          ],
+          [
+            "cas-PMC13293799.xml",
+            [
+              "<xref>McCarthy et al., 2018</xref>",
+              "<xref>Maniwa et al., 2018</xref>",
+              "<xref>McCarthy et al., 2019</xref>"
+            ]
+          ],
+          [
+            "cas-PMC13294340.xml",
+            [
+              "<xref>Reddy et al., 2006</xref>",
+              "<xref>Boyko et al., 2018</xref>",
+              "<xref>Mervis and Phillips, 2019</xref>"
+            ]
+          ]
+        ],
+        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files"
+      },
+      "matches_excerpt": true,
+      "note": "Counter-form of line 132: the clickable span carries the WHOLE citation, year included. 16/272, as quoted in the excerpt."
     }
   ]
 }

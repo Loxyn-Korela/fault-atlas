@@ -25,6 +25,16 @@
       "lang": "fr",
       "excerpt_en": "registry identifiers at the end of the abstract, biomedical articles 2024-2026 (modern wave, 2026-08-08)",
       "organisation": "Loxyn SAS, Lyon"
+    },
+    {
+      "corpus": "observation 2026-08 (272 Europe PMC JATS articles)",
+      "date": "2026-09-09",
+      "observer": "house probe (regex, no model), written 2026-08-08, re-run by the Fault Atlas maintainer",
+      "organisation": "Loxyn SAS, Lyon",
+      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+      "lang": "en",
+      "probe": "probes/2026-08/line-110.py",
+      "excerpt": "Probe re-run on the 272 JATS files: 19/272 carriers (essai 15, bio 1, cas 1, meta 1, nonEN 1). Examples — bio-PMC13162546.xml: NCT06048588 · cas-PMC13293792.xml: NCT06326190 | NCT06955169 · essai-PMC13169227.xml: NCT03506789"
     }
   ],
   "specimens": {
@@ -57,6 +67,55 @@
       "date": "2026-08-08",
       "event": "house filter exists with 3 cases and 1 counter-examples (bench green=True); specimens to be transcribed into this record",
       "by": "Korela For Science"
+    },
+    {
+      "date": "2026-09-09",
+      "event": "second observation added from the exact probe on the 272 files: probes/2026-08/line-110.py, 19/272",
+      "by": "Fault Atlas maintainer"
+    }
+  ],
+  "probes": [
+    {
+      "file": "probes/2026-08/line-110.py",
+      "kind": "python",
+      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+      "written": "2026-08-08",
+      "run": "python3 tools/run_probe.py probes/2026-08/line-110.py <dir with the 272 .xml>",
+      "result": {
+        "date": "2026-09-09",
+        "count": 19,
+        "of": 272,
+        "strata": {
+          "essai": 15,
+          "bio": 1,
+          "cas": 1,
+          "meta": 1,
+          "nonEN": 1
+        },
+        "examples": [
+          [
+            "bio-PMC13162546.xml",
+            [
+              "NCT06048588"
+            ]
+          ],
+          [
+            "cas-PMC13293792.xml",
+            [
+              "NCT06326190",
+              "NCT06955169"
+            ]
+          ],
+          [
+            "essai-PMC13169227.xml",
+            [
+              "NCT03506789"
+            ]
+          ]
+        ],
+        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files"
+      },
+      "matches_excerpt": true
     }
   ]
 }

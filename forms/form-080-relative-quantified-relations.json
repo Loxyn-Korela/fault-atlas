@@ -25,7 +25,8 @@
       "lang": "fr",
       "excerpt_en": "MEASURED on 2026-08-08 on the 272 articles of the internal corpus: 10/272 articles carry at least one comparison of the form \"N times / N-fold more (or less) X\" (e.g. bio-PMC12927065: 3.34, 2.74, 2.62), and 36/272 (13 %) carry an odds/hazard ratio — a fact whose value IS the factor. The observation founding the line is dated 2026-08-08 on Apperley, Humphrey & Levy, Br. J. Pharmac. 1976: \"about 1000 times less potent\", \"5-HT about 700 times less potent\", \"methysergide about 4500 times less potent\".",
       "organisation": "Loxyn SAS, Lyon",
-      "corpus_id": "corpus-europe-pmc-jats-2023-2026"
+      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+      "probe": "probes/2026-08/line-080.py"
     }
   ],
   "specimens": {
@@ -60,6 +61,60 @@
       "date": "2026-09-09",
       "event": "internal tool paths removed from observation notes before publication; wording otherwise unchanged",
       "by": "Fault Atlas"
+    },
+    {
+      "date": "2026-09-09",
+      "event": "exact probe attached to the 272-file observation: probes/2026-08/line-080.py, re-run 33/272 (excerpt figure differs, both kept)",
+      "by": "Fault Atlas maintainer"
+    }
+  ],
+  "probes": [
+    {
+      "file": "probes/2026-08/line-080.py",
+      "kind": "python",
+      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+      "written": "2026-08-08",
+      "run": "python3 tools/run_probe.py probes/2026-08/line-080.py <dir with the 272 .xml>",
+      "result": {
+        "date": "2026-09-09",
+        "count": 33,
+        "of": 272,
+        "strata": {
+          "bio": 9,
+          "meta": 7,
+          "phys": 6,
+          "cas": 3,
+          "essai": 3,
+          "moderne": 3,
+          "nonEN": 2
+        },
+        "examples": [
+          [
+            "bio-PMC12674831.xml",
+            [
+              "2.4-fold",
+              "2.5-fold",
+              "increased by 40"
+            ]
+          ],
+          [
+            "bio-PMC12857832.xml",
+            [
+              "1.2-fold",
+              "1.3-fold"
+            ]
+          ],
+          [
+            "bio-PMC12882215.xml",
+            [
+              "increased by 7"
+            ]
+          ]
+        ],
+        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files"
+      },
+      "matches_excerpt": false,
+      "note": "The figure quoted in the excerpt was counted on 2026-08-08 by a finer, hand-run measurement whose code was not kept; this probe is the one that was kept, and its figure is the one that can be re-run. Both stand, dated."
     }
   ]
 }

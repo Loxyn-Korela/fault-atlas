@@ -16,7 +16,18 @@
   "legacy_severity": "G1",
   "legacy_mechanism": "M1",
   "status": "migrated_unreviewed",
-  "seen": [],
+  "seen": [
+    {
+      "corpus": "observation 2026-08 (272 Europe PMC JATS articles)",
+      "date": "2026-09-09",
+      "observer": "house probe (regex, no model), written 2026-08-08, re-run by the Fault Atlas maintainer",
+      "organisation": "Loxyn SAS, Lyon",
+      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+      "lang": "en",
+      "probe": "probes/2026-08/line-042.py",
+      "excerpt": "Probe re-run on the 272 JATS files: 1/272 carriers (nonEN 1). Examples — nonEN-PMC13224954.xml: lettre-detachee:given-names:Martinho Braga Batista e"
+    }
+  ],
   "specimens": {
     "cases": [],
     "counter_examples": []
@@ -45,9 +56,41 @@
       "date": "2026-09-09",
       "event": "migrated; classified damage=SPLIT injection=NOISE (judgment, unreviewed by a second reader)",
       "by": "Fault Atlas migration"
+    },
+    {
+      "date": "2026-09-09",
+      "event": "second observation added from the exact probe on the 272 files: probes/2026-08/line-042.py, 1/272",
+      "by": "Fault Atlas maintainer"
     }
   ],
   "observed_absent_in": [
     "Europe PMC JATS 2023-2026 (272 articles, measured 2026-08-08)"
+  ],
+  "probes": [
+    {
+      "file": "probes/2026-08/line-042.py",
+      "kind": "python",
+      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+      "written": "2026-08-08",
+      "run": "python3 tools/run_probe.py probes/2026-08/line-042.py <dir with the 272 .xml>",
+      "result": {
+        "date": "2026-09-09",
+        "count": 1,
+        "of": 272,
+        "strata": {
+          "nonEN": 1
+        },
+        "examples": [
+          [
+            "nonEN-PMC13224954.xml",
+            [
+              "lettre-detachee:given-names:Martinho Braga Batista e"
+            ]
+          ]
+        ],
+        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files"
+      },
+      "matches_excerpt": true
+    }
   ]
 }

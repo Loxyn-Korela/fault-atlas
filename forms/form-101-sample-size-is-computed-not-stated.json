@@ -25,7 +25,8 @@
       "lang": "fr",
       "excerpt_en": "MEASURED on 2026-08-08 on 272 open-access Europe PMC articles 2023-2026 (internal corpus): present in 25 articles (9 %). Concentration: trial 10/34, meta 7/34, bio 4/34, nonEN 4/51. Real forms: bio-PMC12590050 → 910 = 387 + 523; bio-PMC12953170 → 27 = 8 + 19; and bio-PMC12674831 carries THREE competing decompositions (105=45+60, 109=33+76, 109=4+105) — this measured case is what founds the refusal clause.",
       "organisation": "Loxyn SAS, Lyon",
-      "corpus_id": "corpus-europe-pmc-jats-2023-2026"
+      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+      "probe": "probes/2026-08/line-101.py"
     }
   ],
   "specimens": {
@@ -65,6 +66,57 @@
       "date": "2026-09-09",
       "event": "internal tool paths removed from observation notes before publication; wording otherwise unchanged",
       "by": "Fault Atlas"
+    },
+    {
+      "date": "2026-09-09",
+      "event": "exact probe attached to the 272-file observation: probes/2026-08/line-101.py, re-run 25/272",
+      "by": "Fault Atlas maintainer"
+    }
+  ],
+  "probes": [
+    {
+      "file": "probes/2026-08/line-101.py",
+      "kind": "python",
+      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+      "written": "2026-08-08",
+      "run": "python3 tools/run_probe.py probes/2026-08/line-101.py <dir with the 272 .xml>",
+      "result": {
+        "date": "2026-09-09",
+        "count": 25,
+        "of": 272,
+        "strata": {
+          "essai": 10,
+          "meta": 7,
+          "bio": 4,
+          "nonEN": 4
+        },
+        "examples": [
+          [
+            "bio-PMC12590050.xml",
+            [
+              "910=387+523"
+            ]
+          ],
+          [
+            "bio-PMC12674831.xml",
+            [
+              "105=45+60",
+              "109=33+76",
+              "109=4+105"
+            ]
+          ],
+          [
+            "bio-PMC12953170.xml",
+            [
+              "27=8+19",
+              "28=13+15",
+              "39=8+31"
+            ]
+          ]
+        ],
+        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files"
+      },
+      "matches_excerpt": true
     }
   ]
 }

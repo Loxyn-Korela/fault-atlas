@@ -24,7 +24,8 @@ One JSON file per form, self-contained (`schema/form.schema.json`):
 | `damage` | what it does to the graph — one of seven: `MERGE`, `SPLIT`, `SPURIOUS_EDGE`, `MISSING`, `WRONG_VALUE`, `WRONG_LABEL`, `ANACHRONISM` (or `CORPUS_PARAMETER` when it is not a damage) |
 | `layer` | where the form bites in the stack (pixel, reading, utterance, extraction, anchoring, resolution, schema, coherence, structure); the damage says what happens to the graph, the layer says where it starts |
 | `class` | whether deterministic code cancels it (`DEFEATED`, `DEFEATED_IF_XML`), can abstain on it (`REFUSABLE`), cannot see it from inside (`SILENT_FALSE`), or whether it needs meaning (`IRREDUCIBLE`) |
-| `seen` | where it was observed: corpus, document, date, observer, verbatim excerpt |
+| `seen` | where it was observed: corpus, document, date, observer, verbatim excerpt — and, when it was kept, the exact `probe` that produced the figures |
+| `probes` | the exact question asked of the corpus, verbatim and re-runnable: a Python regex on one document, a SPARQL query on a public endpoint, a shell request with its headers; with the dated re-run figure and whether it is the figure the excerpt quotes |
 | `specimens` | fabricated test cases **and counter-examples** — what a remedy must not touch |
 | `prevention` | whether it can be cancelled before entering the graph, and the refusal clause |
 | `repair` | whether a deletion-only repair can restore the truth — **classified by judgment, not measured**, until a bench measures it |
@@ -74,8 +75,15 @@ python3 tools/validate.py        # every record against the schema and the house
 python3 tools/test_validate.py   # the validator proves itself on seven planted faults
 python3 tools/build_sqlite.py    # fault-atlas.sqlite, a view for Datasette
 python3 tools/build_site.py      # site/ — the public site, static HTML generated from the records
+python3 tools/test_probes.py     # every probe loads, declares one question, runs without crashing
+python3 tools/run_probe.py probes/2026-08/line-036.py <dir with the 272 .xml>   # re-ask one question of one corpus
+python3 tools/rerun_probes.py <dir with the 272 .xml>                          # re-run all document probes, write the dated results back
 datasette fault-atlas.sqlite --immutable fault-atlas.sqlite --metadata datasette-metadata.json   # browse locally
 ```
+
+## Probes: re-finding what was seen
+
+An observation says what was found and where; a probe says how to find it again. `probes/2026-08/` holds the 66 regex probes written during the August 2026 campaign on the 272 Europe PMC articles, one file per catalogue line, extracted verbatim from the campaign's scripts; `probes/2026-09/` holds the SPARQL queries, the shell request and the dump inventory of the EUR-Lex forms. Each probe file carries its question, the command to run it and the answer it gave on the date it was run. Re-runs are dated measurements: when a re-run figure differs from the figure the excerpt quotes, both are kept and the difference is said on the form (`matches_excerpt: false`), never adjusted. See `probes/README.md`.
 
 ## Review
 

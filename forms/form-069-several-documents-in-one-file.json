@@ -25,7 +25,8 @@
       "lang": "fr",
       "excerpt_en": "MEASURED on 2026-08-08 on the 272 JATS XML articles of the internal corpus: present in 30 (11 %). Concentration: nonEN 24, bio 3, meta 2, phys 1. Real forms, by <sub-article> article-type: translation 24, associated-data 9, aggregated-review-documents 6, author-comment 3, editor-report 3. Example: bio-PMC13252842.xml carries 5 <sub-article> (aggregated-review-documents, associated-data, author-comment, editor-report) in a single file.",
       "organisation": "Loxyn SAS, Lyon",
-      "corpus_id": "corpus-europe-pmc-jats-2023-2026"
+      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+      "probe": "probes/2026-08/line-069.py"
     }
   ],
   "specimens": {
@@ -66,6 +67,56 @@
       "date": "2026-09-09",
       "event": "internal tool paths removed from observation notes before publication; wording otherwise unchanged",
       "by": "Fault Atlas"
+    },
+    {
+      "date": "2026-09-09",
+      "event": "exact probe attached to the 272-file observation: probes/2026-08/line-069.py, re-run 30/272",
+      "by": "Fault Atlas maintainer"
+    }
+  ],
+  "probes": [
+    {
+      "file": "probes/2026-08/line-069.py",
+      "kind": "python",
+      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+      "written": "2026-08-08",
+      "run": "python3 tools/run_probe.py probes/2026-08/line-069.py <dir with the 272 .xml>",
+      "result": {
+        "date": "2026-09-09",
+        "count": 30,
+        "of": 272,
+        "strata": {
+          "nonEN": 24,
+          "bio": 3,
+          "meta": 2,
+          "phys": 1
+        },
+        "examples": [
+          [
+            "bio-PMC13182387.xml",
+            [
+              "sub-article ×2 response ×0",
+              "types=aggregated-review-documents,associated-data"
+            ]
+          ],
+          [
+            "bio-PMC13252842.xml",
+            [
+              "sub-article ×5 response ×0",
+              "types=aggregated-review-documents,associated-data,author-comment,editor-report"
+            ]
+          ],
+          [
+            "bio-PMC13289183.xml",
+            [
+              "sub-article ×2 response ×0",
+              "types=aggregated-review-documents,associated-data"
+            ]
+          ]
+        ],
+        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files"
+      },
+      "matches_excerpt": true
     }
   ]
 }

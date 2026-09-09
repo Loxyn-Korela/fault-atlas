@@ -25,7 +25,8 @@
       "lang": "fr",
       "excerpt_en": "MEASURED on 2026-08-08 on the 272 XML files: 64/272 (24 %) carry a name with a Greek letter (\"β-cells\"), 38/272 (14 %) an exponential notation (\"6 × 10 9\"), 17/272 (6 %) a subscripted constant (\"Ki67\", \"LD 0\") and 17/272 (6 %) a digit-hyphen-acronym name of the type \"5-HT\". Only 8/272 (3 %) keep the Unicode subscript/superscript characters (₂, ⁻): elsewhere the notation is already FLATTENED by transport, which is the very merge the line describes. Original observation 2026-08-08: Apperley, Humphrey & Levy, Br. J. Pharmac. 1976 (annex 79).",
       "organisation": "Loxyn SAS, Lyon",
-      "corpus_id": "corpus-europe-pmc-jats-2023-2026"
+      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+      "probe": "probes/2026-08/line-079.py"
     }
   ],
   "specimens": {
@@ -55,6 +56,61 @@
       "date": "2026-09-09",
       "event": "migrated; classified damage=MERGE injection=NOISE (judgment, unreviewed by a second reader)",
       "by": "Fault Atlas migration"
+    },
+    {
+      "date": "2026-09-09",
+      "event": "exact probe attached to the 272-file observation: probes/2026-08/line-079.py, re-run 163/272 (excerpt figure differs, both kept)",
+      "by": "Fault Atlas maintainer"
+    }
+  ],
+  "probes": [
+    {
+      "file": "probes/2026-08/line-079.py",
+      "kind": "python",
+      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+      "written": "2026-08-08",
+      "run": "python3 tools/run_probe.py probes/2026-08/line-079.py <dir with the 272 .xml>",
+      "result": {
+        "date": "2026-09-09",
+        "count": 163,
+        "of": 272,
+        "strata": {
+          "nonEN": 35,
+          "bio": 26,
+          "phys": 26,
+          "meta": 24,
+          "essai": 23,
+          "cas": 14,
+          "moderne": 10,
+          "retract": 5
+        },
+        "examples": [
+          [
+            "bio-PMC12674831.xml",
+            [
+              "F2-",
+              "M14-",
+              "S0026-"
+            ]
+          ],
+          [
+            "bio-PMC12857832.xml",
+            [
+              "S1-",
+              "S5-"
+            ]
+          ],
+          [
+            "bio-PMC12882215.xml",
+            [
+              "S2542-"
+            ]
+          ]
+        ],
+        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files"
+      },
+      "matches_excerpt": false,
+      "note": "The figure quoted in the excerpt was counted on 2026-08-08 by a finer, hand-run measurement whose code was not kept; this probe is the one that was kept, and its figure is the one that can be re-run. Both stand, dated."
     }
   ]
 }

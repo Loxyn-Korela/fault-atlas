@@ -13,11 +13,15 @@ faults = {
   "validated without observation": lambda r: (r.update(status="validated"), r.update(seen=[])),
   "cases without counter-example, validated": lambda r: (r.update(status="validated", observer_agreement="2/2"), r["specimens"].update(cases=[{"input":1,"expected":2}], counter_examples=[])),
   "bad id pattern": lambda r: r.update(id="form-85"),
+  "probe file that does not exist": lambda r: r.update(probes=[{"file":"probes/2026-08/line-999.py","kind":"python","corpus_id":"corpus-europe-pmc-jats-2023-2026"}]),
+  "observation citing an unlisted probe": lambda r: r["seen"][0].update(probe="probes/2026-08/line-036.py"),
+  "probe on an unknown corpus": lambda r: r.update(probes=[{"file":"probes/2026-08/line-085.py","kind":"python","corpus_id":"corpus-nowhere"}]),
 }
 caught = 0
 with tempfile.TemporaryDirectory() as d:
     tmp = Path(d); shutil.copytree(ROOT/"schema", tmp/"schema"); (tmp/"forms").mkdir(); (tmp/"tools").mkdir()
     shutil.copy(ROOT/"tools"/"validate.py", tmp/"tools"/"validate.py")
+    shutil.copytree(ROOT/"corpora", tmp/"corpora"); shutil.copytree(ROOT/"probes", tmp/"probes")
     for name, mutate in faults.items():
         r = json.loads(json.dumps(base)); mutate(r)
         for f in (tmp/"forms").glob("*"): f.unlink()

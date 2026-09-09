@@ -25,7 +25,8 @@
       "lang": "fr",
       "excerpt_en": "MEASURED on 2026-08-08 on the 272 JATS XML articles of the internal corpus: 224/272 articles (82 %) introduce at least one abbreviation by parenthetical gloss \"expanded name (ACRONYM)\", 2,463 glosses in total, i.e. 9 per article on average — the parenthesis is the ONLY bridge between the long name and the acronym. Observed on 2026-08-08 on Cumings & Hilton, Br. J. Pharmac. 1971: four kinds of name for one substance, and 5-HT (1976) versus 5HT (1971).",
       "organisation": "Loxyn SAS, Lyon",
-      "corpus_id": "corpus-europe-pmc-jats-2023-2026"
+      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+      "probe": "probes/2026-08/line-086.py"
     }
   ],
   "specimens": {
@@ -60,6 +61,56 @@
       "date": "2026-09-09",
       "event": "internal tool paths removed from observation notes before publication; wording otherwise unchanged",
       "by": "Fault Atlas"
+    },
+    {
+      "date": "2026-09-09",
+      "event": "exact probe attached to the 272-file observation: probes/2026-08/line-086.py, re-run 20/272 (excerpt figure differs, both kept)",
+      "by": "Fault Atlas maintainer"
+    }
+  ],
+  "probes": [
+    {
+      "file": "probes/2026-08/line-086.py",
+      "kind": "python",
+      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+      "written": "2026-08-08",
+      "run": "python3 tools/run_probe.py probes/2026-08/line-086.py <dir with the 272 .xml>",
+      "result": {
+        "date": "2026-09-09",
+        "count": 20,
+        "of": 272,
+        "strata": {
+          "meta": 7,
+          "bio": 4,
+          "essai": 4,
+          "moderne": 2,
+          "phys": 2,
+          "nonEN": 1
+        },
+        "examples": [
+          [
+            "bio-PMC13162546.xml",
+            [
+              "factor-15 (GDF15)"
+            ]
+          ],
+          [
+            "bio-PMC13190511.xml",
+            [
+              "Revision (ICD-10)"
+            ]
+          ],
+          [
+            "bio-PMC13207820.xml",
+            [
+              "antigen-125 (CA-125)"
+            ]
+          ]
+        ],
+        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files"
+      },
+      "matches_excerpt": false,
+      "note": "The figure quoted in the excerpt was counted on 2026-08-08 by a finer, hand-run measurement whose code was not kept; this probe is the one that was kept, and its figure is the one that can be re-run. Both stand, dated."
     }
   ]
 }

@@ -21,7 +21,8 @@
       "organisation": "Loxyn SAS, Lyon",
       "excerpt": "Inventaire du dump du 06-09-2026, mesuré le 09-09-2026 en lecture de flux : 58 686 œuvres au MTD, 30 047 avec un texte Formex EN, 29 892 avec un texte FR ; 27 792 œuvres (47 %) sans aucun Formex — côté EN, 22 293 fichiers .tif, des actes anciens scannés jamais passés en XML. Un dump de métadonnées complet et un dump de textes à moitié.",
       "excerpt_en": "Inventory of the 2026-09-06 dump, measured 2026-09-09 by streaming the archives: 58,686 works in the MTD, 30,047 with an EN Formex text, 29,892 with FR; 27,792 works (47 %) without any Formex — on the EN side, 22,293 .tif files, old scanned acts never converted to XML. A complete metadata dump and a half text dump.",
-      "lang": "fr"
+      "lang": "fr",
+      "probe": "probes/2026-09/form-183-dump-coverage.py"
     }
   ],
   "specimens": {
@@ -53,6 +54,28 @@
       "date": "2026-09-09",
       "event": "converted to a record; class set from the collector's own refusal clause where one exists; to be reviewed by a second reader",
       "by": "Fault Atlas"
+    },
+    {
+      "date": "2026-09-09",
+      "event": "exact probe attached and re-run: probes/2026-09/form-183-dump-coverage.py",
+      "by": "Fault Atlas maintainer"
+    }
+  ],
+  "probes": [
+    {
+      "file": "probes/2026-09/form-183-dump-coverage.py",
+      "kind": "python",
+      "corpus_id": "corpus-2026-09-eurlex",
+      "written": "2026-09-09",
+      "run": "python3 probes/2026-09/form-183-dump-coverage.py <dir holding the three dump .zip>",
+      "result": {
+        "date": "2026-09-09",
+        "count": 27792,
+        "of": 58686,
+        "by": "Fault Atlas maintainer (Loxyn), on the SSD copy of the dump"
+      },
+      "matches_excerpt": true,
+      "note": "Re-run on the 2026-09-06 archives (stream read, nothing extracted): 58,686 works; 30,047 with EN Formex; 29,892 with FR; 27,792 without any (47 %); 22,293 .tif in the EN archive. Same figures."
     }
   ]
 }

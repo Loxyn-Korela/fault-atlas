@@ -22,10 +22,10 @@
           ]
         },
         "observations": {
-          "description": "Where each form was seen: corpus, date, observer, the verbatim note (original language) and its English translation.",
+          "description": "Where each form was seen: corpus (and its reproducible record when there is one), date, observer, the verbatim note (original language), its English translation, and the exact probe that produced the figures when one was kept.",
           "facets": [
             "form_name",
-            "corpus",
+            "corpus_id",
             "date"
           ]
         },
@@ -34,6 +34,14 @@
           "facets": [
             "form_name",
             "date"
+          ]
+        },
+        "probes": {
+          "description": "The exact question asked of a corpus, kept verbatim (code column): a Python regex on one document, a SPARQL query on a public endpoint, a shell request. result_count/result_of is the re-run figure on result_date; matches_excerpt says whether that figure is the one quoted in the observation (0 = differs, both kept).",
+          "facets": [
+            "kind",
+            "corpus_id",
+            "matches_excerpt"
           ]
         }
       }

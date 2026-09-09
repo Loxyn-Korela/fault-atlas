@@ -25,7 +25,8 @@
       "lang": "fr",
       "excerpt_en": "MEASURED on 2026-08-08 on 272 open-access Europe PMC JATS XML articles (internal corpus): AMBIGUOUS numeric date present in 4 articles (1.5 %) — modern 2, case 1, trial 1; NON-ambiguous numeric date (day > 12) in 3 others. Real forms: \"report dated 05/03/2026\" (case-PMC13291881) · \"date of registration: 11.7.2011\" (trial-PMC13254492) · \"(accessed 10/3/2023)\" (modern-PMC13264966) · \"06/06/2022\", \"09/07/2019\", \"07/06/2018\" in a table column (modern-PMC13274555).",
       "organisation": "Loxyn SAS, Lyon",
-      "corpus_id": "corpus-europe-pmc-jats-2023-2026"
+      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+      "probe": "probes/2026-08/line-077.py"
     }
   ],
   "specimens": {
@@ -66,6 +67,52 @@
       "date": "2026-09-09",
       "event": "internal tool paths removed from observation notes before publication; wording otherwise unchanged",
       "by": "Fault Atlas"
+    },
+    {
+      "date": "2026-09-09",
+      "event": "exact probe attached to the 272-file observation: probes/2026-08/line-077.py, re-run 4/272",
+      "by": "Fault Atlas maintainer"
+    }
+  ],
+  "probes": [
+    {
+      "file": "probes/2026-08/line-077.py",
+      "kind": "python",
+      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+      "written": "2026-08-08",
+      "run": "python3 tools/run_probe.py probes/2026-08/line-077.py <dir with the 272 .xml>",
+      "result": {
+        "date": "2026-09-09",
+        "count": 4,
+        "of": 272,
+        "strata": {
+          "moderne": 2,
+          "cas": 1,
+          "essai": 1
+        },
+        "examples": [
+          [
+            "cas-PMC13291881.xml",
+            [
+              "05/03/2026"
+            ]
+          ],
+          [
+            "essai-PMC13254492.xml",
+            [
+              "11.7.2011"
+            ]
+          ],
+          [
+            "moderne-PMC13264966.xml",
+            [
+              "10/3/2023"
+            ]
+          ]
+        ],
+        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files"
+      },
+      "matches_excerpt": true
     }
   ]
 }

@@ -25,7 +25,8 @@
       "lang": "fr",
       "excerpt_en": "MEASURED on 2026-08-08 on 272 open-access Europe PMC articles 2023-2026: present in 111 (40 %). Concentration: nonEN 28, meta 16, case 14. Real forms: accepted | collection | collection",
       "organisation": "Loxyn SAS, Lyon",
-      "corpus_id": "corpus-europe-pmc-jats-2023-2026"
+      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+      "probe": "probes/2026-08/line-071.py"
     }
   ],
   "specimens": {
@@ -61,6 +62,62 @@
       "date": "2026-08-08",
       "event": "house filter exists with 3 cases and 1 counter-examples (bench green=True); specimens to be transcribed into this record",
       "by": "Korela For Science"
+    },
+    {
+      "date": "2026-09-09",
+      "event": "exact probe attached to the 272-file observation: probes/2026-08/line-071.py, re-run 111/272",
+      "by": "Fault Atlas maintainer"
+    }
+  ],
+  "probes": [
+    {
+      "file": "probes/2026-08/line-071.py",
+      "kind": "python",
+      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+      "written": "2026-08-08",
+      "run": "python3 tools/run_probe.py probes/2026-08/line-071.py <dir with the 272 .xml>",
+      "result": {
+        "date": "2026-09-09",
+        "count": 111,
+        "of": 272,
+        "strata": {
+          "nonEN": 28,
+          "meta": 16,
+          "cas": 14,
+          "bio": 13,
+          "retract": 13,
+          "essai": 11,
+          "phys": 11,
+          "moderne": 5
+        },
+        "examples": [
+          [
+            "bio-PMC12583535.xml",
+            [
+              "accepted",
+              "collection",
+              "epub"
+            ]
+          ],
+          [
+            "bio-PMC12674831.xml",
+            [
+              "collection",
+              "epub"
+            ]
+          ],
+          [
+            "bio-PMC12857832.xml",
+            [
+              "accepted",
+              "epub",
+              "ppub"
+            ]
+          ]
+        ],
+        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files"
+      },
+      "matches_excerpt": true
     }
   ]
 }

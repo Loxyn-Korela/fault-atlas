@@ -160,6 +160,10 @@
           "corpus_id": {
             "type": "string",
             "description": "Identifier of a corpus record in corpora/, when the observation was made on a published, reproducible list."
+          },
+          "probe": {
+            "type": "string",
+            "description": "Path, in this repository, of the exact probe that produced the figures of this observation (see the form's probes list). One observation, one probe."
           }
         }
       }
@@ -333,6 +337,98 @@
         "contact": {
           "type": "string",
           "description": "Public contact of the contributing organisation."
+        }
+      }
+    },
+    "probes": {
+      "type": "array",
+      "description": "The exact questions asked of a corpus, kept verbatim so that anyone can ask them again: a Python regex probe, a SPARQL query, a shell request. A probe repairs nothing and decides nothing; it answers 'is this fault here, and where?'.",
+      "items": {
+        "type": "object",
+        "required": [
+          "file",
+          "kind",
+          "corpus_id"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "file": {
+            "type": "string",
+            "description": "Path in this repository (probes/...). The file is the record; it carries its own header, endpoint and expected answer."
+          },
+          "kind": {
+            "type": "string",
+            "enum": [
+              "python",
+              "sparql",
+              "http",
+              "manual"
+            ]
+          },
+          "corpus_id": {
+            "type": "string",
+            "description": "Corpus record in corpora/ the probe was run on."
+          },
+          "written": {
+            "type": "string",
+            "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"
+          },
+          "run": {
+            "type": "string",
+            "description": "The command, verbatim."
+          },
+          "result": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "date",
+              "count",
+              "of"
+            ],
+            "properties": {
+              "date": {
+                "type": "string",
+                "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"
+              },
+              "count": {
+                "type": "integer",
+                "minimum": 0,
+                "description": "Carrier documents (document probe) or hits (corpus probe, SPARQL rows)."
+              },
+              "of": {
+                "type": [
+                  "integer",
+                  "null"
+                ],
+                "description": "Population size; null when the probe is a live query on a moving registry."
+              },
+              "strata": {
+                "type": "object",
+                "additionalProperties": {
+                  "type": "integer"
+                }
+              },
+              "examples": {
+                "type": "array",
+                "items": {
+                  "type": "array",
+                  "items": {},
+                  "minItems": 1,
+                  "maxItems": 2
+                }
+              },
+              "by": {
+                "type": "string"
+              }
+            }
+          },
+          "matches_excerpt": {
+            "type": "boolean",
+            "description": "True when the re-run figure is the figure quoted in the observation's excerpt. False is published as false."
+          },
+          "note": {
+            "type": "string"
+          }
         }
       }
     }

@@ -21,7 +21,17 @@
       "organisation": "Loxyn SAS, Lyon",
       "excerpt": "Mesuré sur le lot A, 09-09-2026 : 7 œuvres portent toutes work_date_document = 1003-03-03, pour des actes de 1966 à 1997 — une sentinelle. L'année réelle reste lisible dans le CELEX du même enregistrement (51966FC0402 → 1966) : deux champs du même acte se contredisent, et l'un corrige l'autre. Mise en garde : 16 931 désaccords entre l'année du CELEX et la date de document ont été mesurés, et ce ne sont PAS 16 931 fautes — 12 689 ont un écart d'un an (signature contre publication), 739 des 749 gros écarts sont en secteur 1 où la date est celle de la version consolidée. La faute certaine se limite aux 7. Ne jamais citer le 16 931 seul.",
       "excerpt_en": "Measured on lot A, 2026-09-09: 7 works all carry work_date_document = 1003-03-03, for acts of 1966 to 1997 — a sentinel. The real year stays readable in the CELEX of the same record (51966FC0402 → 1966): two fields of the same act contradict each other, and one corrects the other. Caution: 16,931 disagreements between the CELEX year and the document date were measured, and they are NOT 16,931 faults — 12,689 differ by one year (signature vs publication), 739 of the 749 large gaps are in sector 1 where the date is that of the consolidated version. The certain fault is limited to the 7. Never cite 16,931 alone.",
-      "lang": "fr"
+      "lang": "fr",
+      "probe": "probes/2026-09/form-184-sentinel-date.sparql"
+    },
+    {
+      "corpus": "Cellar SPARQL endpoint, whole graph as served live on 2026-09-09",
+      "date": "2026-09-09",
+      "observer": "Fault Atlas maintainer (Loxyn), live on the public endpoint",
+      "organisation": "Loxyn SAS, Lyon",
+      "lang": "en",
+      "probe": "probes/2026-09/form-184-sentinel-date.sparql",
+      "excerpt": "351 works carry work_date_document = 1003-03-03 in the whole graph; 80 of them have a CELEX, and most of those are corrigenda (CELEX ending in R(01), R(02)) of the 1990s and 2000s, plus the seven preparatory acts of lot A (51966FC0402 … 51997EC0936) and 31968R5759. The sentinel is a registry-wide convention, not seven isolated slips; the CELEX year contradicts it every time."
     }
   ],
   "specimens": {
@@ -54,6 +64,33 @@
       "date": "2026-09-09",
       "event": "converted to a record; class set from the collector's own refusal clause where one exists; to be reviewed by a second reader",
       "by": "Fault Atlas"
+    },
+    {
+      "date": "2026-09-09",
+      "event": "exact probe attached and re-run: probes/2026-09/form-184-sentinel-date.sparql",
+      "by": "Fault Atlas maintainer"
+    },
+    {
+      "date": "2026-09-09",
+      "event": "second observation: the sentinel counted over the whole graph, live (351 works, 80 with CELEX)",
+      "by": "Fault Atlas maintainer"
+    }
+  ],
+  "probes": [
+    {
+      "file": "probes/2026-09/form-184-sentinel-date.sparql",
+      "kind": "sparql",
+      "corpus_id": "corpus-2026-09-eurlex",
+      "written": "2026-09-09",
+      "run": "curl -G https://publications.europa.eu/webapi/rdf/sparql -H 'Accept: text/csv' --data-urlencode query@probes/2026-09/form-184-sentinel-date.sparql",
+      "result": {
+        "date": "2026-09-09",
+        "count": 7,
+        "of": null,
+        "by": "Fault Atlas maintainer (Loxyn), live on the public endpoint"
+      },
+      "matches_excerpt": true,
+      "note": "Re-run live, restricted to works taking part in repeals/amends/based_on: 7, the same seven CELEX."
     }
   ]
 }

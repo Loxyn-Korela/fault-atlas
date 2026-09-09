@@ -26,6 +26,16 @@
       "excerpt_en": "Observed on 2026-08-08 on 14 articles 2021-2026 outside biomedicine — physics, maths, computer science, economics, linguistics — on arXiv, PLOS, Copernicus, HAL, Scientific Reports: each pseudo-code line carries TWO counters offset by one, the typesetter's and the algorithm's. No catalogue line covered it; it would never have been found without changing discipline. Then measured ABSENT from the 272 JATS articles: 11 'Algorithm N' blocks, no double numbering.",
       "lang": "fr",
       "organisation": "Loxyn SAS, Lyon"
+    },
+    {
+      "corpus": "observation 2026-08 (272 Europe PMC JATS articles)",
+      "date": "2026-09-09",
+      "observer": "house probe (regex, no model), written 2026-08-08, re-run by the Fault Atlas maintainer",
+      "organisation": "Loxyn SAS, Lyon",
+      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+      "lang": "en",
+      "probe": "probes/2026-08/line-126.py",
+      "excerpt": "Probe re-run on the 272 JATS files: 17/272 carriers (phys 16, meta 1). Examples — meta-PMC13226718.xml: Algorithm N ×1 | mots-clés pseudo-code ×0 | <preformat|code> ×0 · phys-PMC13099575.xml: Algorithm N ×1 | mots-clés pseudo-code ×5 | <preformat|code> ×0 · phys-PMC13113438.xml: Algorithm N ×3 | mots-clés pseudo-code ×1 | <preformat|code> ×0"
     }
   ],
   "specimens": {
@@ -60,9 +70,60 @@
       "date": "2026-09-09",
       "event": "observation transcribed from the August annex and the wave-1 journal, after the second reader noted the record had no excerpt",
       "by": "Fault Atlas"
+    },
+    {
+      "date": "2026-09-09",
+      "event": "second observation added from the exact probe on the 272 files: probes/2026-08/line-126.py, 17/272",
+      "by": "Fault Atlas maintainer"
     }
   ],
   "observed_absent_in": [
     "Europe PMC JATS 2023-2026 (272 articles, measured 2026-08-08)"
+  ],
+  "probes": [
+    {
+      "file": "probes/2026-08/line-126.py",
+      "kind": "python",
+      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+      "written": "2026-08-08",
+      "run": "python3 tools/run_probe.py probes/2026-08/line-126.py <dir with the 272 .xml>",
+      "result": {
+        "date": "2026-09-09",
+        "count": 17,
+        "of": 272,
+        "strata": {
+          "phys": 16,
+          "meta": 1
+        },
+        "examples": [
+          [
+            "meta-PMC13226718.xml",
+            [
+              "Algorithm N ×1",
+              "mots-clés pseudo-code ×0",
+              "<preformat|code> ×0"
+            ]
+          ],
+          [
+            "phys-PMC13099575.xml",
+            [
+              "Algorithm N ×1",
+              "mots-clés pseudo-code ×5",
+              "<preformat|code> ×0"
+            ]
+          ],
+          [
+            "phys-PMC13113438.xml",
+            [
+              "Algorithm N ×3",
+              "mots-clés pseudo-code ×1",
+              "<preformat|code> ×0"
+            ]
+          ]
+        ],
+        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files"
+      },
+      "matches_excerpt": true
+    }
   ]
 }

@@ -25,6 +25,16 @@
       "lang": "fr",
       "excerpt_en": "\"Patient 1\" in a Portuguese clinical case of 1986 AND in an article of 2025 — same surface, entirely unrelated entities (waves 1 and 3, 2026-08-08)",
       "organisation": "Loxyn SAS, Lyon"
+    },
+    {
+      "corpus": "observation 2026-08 (272 Europe PMC JATS articles)",
+      "date": "2026-09-09",
+      "observer": "house probe (regex, no model), written 2026-08-08, re-run by the Fault Atlas maintainer",
+      "organisation": "Loxyn SAS, Lyon",
+      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+      "lang": "en",
+      "probe": "probes/2026-08/line-076.py",
+      "excerpt": "Probe re-run on the 272 JATS files: 18/272 carriers (cas 6, phys 4, meta 3, bio 2, essai 2, nonEN 1). Examples — bio-PMC12583535.xml: subjects  28 · bio-PMC13057049.xml: patients 18 · cas-PMC13290446.xml: Case 1 | Case 2 | Cases 1"
     }
   ],
   "specimens": {
@@ -59,6 +69,57 @@
       "date": "2026-08-08",
       "event": "house filter exists with 3 cases and 1 counter-examples (bench green=True); specimens to be transcribed into this record",
       "by": "Korela For Science"
+    },
+    {
+      "date": "2026-09-09",
+      "event": "second observation added from the exact probe on the 272 files: probes/2026-08/line-076.py, 18/272",
+      "by": "Fault Atlas maintainer"
+    }
+  ],
+  "probes": [
+    {
+      "file": "probes/2026-08/line-076.py",
+      "kind": "python",
+      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+      "written": "2026-08-08",
+      "run": "python3 tools/run_probe.py probes/2026-08/line-076.py <dir with the 272 .xml>",
+      "result": {
+        "date": "2026-09-09",
+        "count": 18,
+        "of": 272,
+        "strata": {
+          "cas": 6,
+          "phys": 4,
+          "meta": 3,
+          "bio": 2,
+          "essai": 2,
+          "nonEN": 1
+        },
+        "examples": [
+          [
+            "bio-PMC12583535.xml",
+            [
+              "subjects  28"
+            ]
+          ],
+          [
+            "bio-PMC13057049.xml",
+            [
+              "patients 18"
+            ]
+          ],
+          [
+            "cas-PMC13290446.xml",
+            [
+              "Case 1",
+              "Case 2",
+              "Cases 1"
+            ]
+          ]
+        ],
+        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files"
+      },
+      "matches_excerpt": true
     }
   ]
 }

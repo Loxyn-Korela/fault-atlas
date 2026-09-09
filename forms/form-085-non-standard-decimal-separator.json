@@ -25,6 +25,16 @@
       "lang": "fr",
       "excerpt_en": "MEASURED on 2026-08-08: BOTH conventions coexist in 16 articles out of 34 (47 %) of an open-access Europe PMC corpus 2024-2026. Real forms recorded: \"2,8\" and \"1,3\" next to point-decimals in the same text. Confirmed by two independent observations the same day: a 2026 table mixing both, and a 2023 article writing \"10,6 %\" in the French abstract and \"10.6 %\" in the English abstract — SAME DOCUMENT.",
       "organisation": "Loxyn SAS, Lyon"
+    },
+    {
+      "corpus": "observation 2026-08 (272 Europe PMC JATS articles)",
+      "date": "2026-09-09",
+      "observer": "house probe (regex, no model), written 2026-08-08, re-run by the Fault Atlas maintainer",
+      "organisation": "Loxyn SAS, Lyon",
+      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+      "lang": "en",
+      "probe": "probes/2026-08/line-085.py",
+      "excerpt": "Probe re-run on the 272 JATS files: 54/272 carriers (nonEN 28, phys 10, moderne 6, bio 4, meta 3, essai 2, cas 1). Examples — bio-PMC12674831.xml: virgule: ['11,5', '14,1', '22,7'] | point: ['4.0', '1.1', '1.1'] · bio-PMC12915353.xml: virgule: ['20,0', '44,1', '87,1'] | point: ['4.0', '4.0', '4.0'] · bio-PMC12953170.xml: virgule: ['34,9'] | point: ['63.5', '3.3', '63.5']"
     }
   ],
   "specimens": {
@@ -59,6 +69,59 @@
       "date": "2026-08-08",
       "event": "house filter exists with 5 cases and 3 counter-examples (bench green=True); specimens to be transcribed into this record",
       "by": "Korela For Science"
+    },
+    {
+      "date": "2026-09-09",
+      "event": "second observation added from the exact probe on the 272 files: probes/2026-08/line-085.py, 54/272",
+      "by": "Fault Atlas maintainer"
+    }
+  ],
+  "probes": [
+    {
+      "file": "probes/2026-08/line-085.py",
+      "kind": "python",
+      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+      "written": "2026-08-08",
+      "run": "python3 tools/run_probe.py probes/2026-08/line-085.py <dir with the 272 .xml>",
+      "result": {
+        "date": "2026-09-09",
+        "count": 54,
+        "of": 272,
+        "strata": {
+          "nonEN": 28,
+          "phys": 10,
+          "moderne": 6,
+          "bio": 4,
+          "meta": 3,
+          "essai": 2,
+          "cas": 1
+        },
+        "examples": [
+          [
+            "bio-PMC12674831.xml",
+            [
+              "virgule: ['11,5', '14,1', '22,7']",
+              "point: ['4.0', '1.1', '1.1']"
+            ]
+          ],
+          [
+            "bio-PMC12915353.xml",
+            [
+              "virgule: ['20,0', '44,1', '87,1']",
+              "point: ['4.0', '4.0', '4.0']"
+            ]
+          ],
+          [
+            "bio-PMC12953170.xml",
+            [
+              "virgule: ['34,9']",
+              "point: ['63.5', '3.3', '63.5']"
+            ]
+          ]
+        ],
+        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files"
+      },
+      "matches_excerpt": true
     }
   ]
 }

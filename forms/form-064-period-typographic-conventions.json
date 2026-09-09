@@ -18,6 +18,17 @@
   "status": "migrated_unreviewed",
   "seen": [
     {
+      "corpus": "PubMed abstracts on arginine, before 1990 (3,642 records, harvested 2026-07-29)",
+      "date": "2026-08-08",
+      "observer": "house observer (LLM agent), see report (Korela For Science, document 04 and annex 64)",
+      "organisation": "Loxyn SAS, Lyon",
+      "corpus_id": "corpus-pubmed-arginine-pre1990-3642",
+      "lang": "fr",
+      "probe": "probes/2026-08/line-064-arginine-titles.py",
+      "excerpt": "184 titres en majuscules intégrales dans un seul corpus — « STUDIES ON THE NATURE OF RESISTANCE OF GRAM-NEGATIVE BACILLI TO PENICILLIN ». Convention d'époque, qui casse toute reconnaissance d'entité sensible à la casse. Ce n'est pas du bruit (23) : c'est une norme d'époque, régulière et systématique. Un bruit se corrige par tolérance ; une convention se reconnaît. L'étendue temporelle est énorme : 1917 à 1989 dans un seul corpus.",
+      "excerpt_en": "184 titles in full capitals in a single corpus — \"STUDIES ON THE NATURE OF RESISTANCE OF GRAM-NEGATIVE BACILLI TO PENICILLIN\". A convention of the period, which breaks any case-sensitive entity recognition. It is not noise (23): it is a period norm, regular and systematic. Noise is corrected by tolerance; a convention is recognised. The time span is huge: 1917 to 1989 in a single corpus."
+    },
+    {
       "corpus": "observation 2026-08 (272 Europe PMC JATS articles)",
       "date": "2026-08-08",
       "observer": "house observer (LLM agent), see report",
@@ -25,7 +36,8 @@
       "lang": "fr",
       "excerpt_en": "MEASURED on 2026-08-08 on the 272 XML files (recent PMC): ZERO titles in full capitals, but 70/272 (26 %) carry at least one fully capitalised subheading (\"ABSTRACT\", \"KEY WORDS:\") and 30/272 (11 %) a word of 4 letters or more in full capitals in the title. The zero is itself the measurement: the convention is DATED. The original observation, 2026-08-08 on the old PubMed corpus (annex 64), counted 184 titles in full capitals — \"STUDIES ON THE NATURE OF RESISTANCE OF GRAM-NEGATIVE BACILLI TO PENICILLIN\".",
       "organisation": "Loxyn SAS, Lyon",
-      "corpus_id": "corpus-europe-pmc-jats-2023-2026"
+      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+      "probe": "probes/2026-08/line-064-jats-headings.py"
     }
   ],
   "specimens": {
@@ -55,6 +67,64 @@
       "date": "2026-09-09",
       "event": "migrated; classified damage=SPLIT injection=FORMAT (judgment, unreviewed by a second reader)",
       "by": "Fault Atlas migration"
+    },
+    {
+      "date": "2026-09-09",
+      "event": "origin observation restored on its own corpus (PubMed arginine before 1990, 3,642 PMIDs published); the 272-file check kept as a second, absence observation; exact probes attached to both",
+      "by": "Fault Atlas maintainer"
+    }
+  ],
+  "probes": [
+    {
+      "file": "probes/2026-08/line-064-arginine-titles.py",
+      "kind": "python",
+      "corpus_id": "corpus-pubmed-arginine-pre1990-3642",
+      "written": "2026-09-09",
+      "run": "python3 tools/run_probe.py probes/2026-08/line-064-arginine-titles.py <corpus .md file>",
+      "result": {
+        "date": "2026-09-09",
+        "count": 234,
+        "of": 3642,
+        "strata": {
+          "1940s": 1,
+          "1960s": 232,
+          "1980s": 1
+        },
+        "examples": [
+          [
+            "PMID 19871516 (1946)",
+            [
+              "STUDIES ON THE NATURE OF RESISTANCE OF GRAM-NEGATIVE BACILLI TO PENICILLIN : ANTAGONISTIC AND ENHANCING EFFECTS OF AMINO ACIDS."
+            ]
+          ],
+          [
+            "PMID 14042998 (1963)",
+            [
+              "STRUCTURAL REQUIREMENTS FOR THE ACTION OF NEUROHYPOPHYSEAL HORMONES UPON THE ISOLATED AMPHIBIAN URINARY BLADDER."
+            ]
+          ]
+        ],
+        "by": "Fault Atlas maintainer (Loxyn), on the corpus file of 2026-07-29"
+      },
+      "matches_excerpt": false,
+      "note": "The August note says 184; the rule it used was not written down. This probe (title carries no lower-case letter) gives 234, almost all from the 1960s. The probe's figure is the one to cite; the excerpt keeps its own."
+    },
+    {
+      "file": "probes/2026-08/line-064-jats-headings.py",
+      "kind": "python",
+      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+      "written": "2026-09-09",
+      "run": "python3 tools/run_probe.py probes/2026-08/line-064-jats-headings.py <dir with the 272 .xml>",
+      "result": {
+        "date": "2026-09-09",
+        "count": 0,
+        "of": 272,
+        "strata": {},
+        "examples": [],
+        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files"
+      },
+      "matches_excerpt": true,
+      "note": "The zero is reproduced: no article title in full capitals among the 272. The excerpt's secondary counts (70/272 headings, 30/272 words) came from a rule not kept; this probe's rules give 36 and 36 (see its header). Stated, not adjusted."
     }
   ]
 }

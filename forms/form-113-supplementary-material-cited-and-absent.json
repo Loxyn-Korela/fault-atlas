@@ -25,7 +25,8 @@
       "lang": "fr",
       "excerpt_en": "MEASURED on 2026-08-08 on 272 open-access Europe PMC JATS XML articles (internal corpus): NAMED supplementary object cited WITHOUT any attached file in 1 article (0.4 %) — meta-PMC13271776, which calls \"Supplementary Fig. S1\", \"Supplementary Fig. S2\", \"Supplementary Fig. S3\" without a single <supplementary-material> or <media>; cited AND attached in 81 (30 %): bio 18, case 4, trial 14, meta 31, modern 9, phys 5. ⚠️ LOW prevalence, stated as such: 1/272. The two earlier versions of the probe gave 115 then 21 carriers, all noise — it is the measurement that was corrected, not the figure that was chosen.",
       "organisation": "Loxyn SAS, Lyon",
-      "corpus_id": "corpus-europe-pmc-jats-2023-2026"
+      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+      "probe": "probes/2026-08/line-113.py"
     }
   ],
   "specimens": {
@@ -65,6 +66,40 @@
       "date": "2026-09-09",
       "event": "internal tool paths removed from observation notes before publication; wording otherwise unchanged",
       "by": "Fault Atlas"
+    },
+    {
+      "date": "2026-09-09",
+      "event": "exact probe attached to the 272-file observation: probes/2026-08/line-113.py, re-run 1/272",
+      "by": "Fault Atlas maintainer"
+    }
+  ],
+  "probes": [
+    {
+      "file": "probes/2026-08/line-113.py",
+      "kind": "python",
+      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+      "written": "2026-08-08",
+      "run": "python3 tools/run_probe.py probes/2026-08/line-113.py <dir with the 272 .xml>",
+      "result": {
+        "date": "2026-09-09",
+        "count": 1,
+        "of": 272,
+        "strata": {
+          "meta": 1
+        },
+        "examples": [
+          [
+            "meta-PMC13271776.xml",
+            [
+              "Supplementary Fig. S1",
+              "Supplementary Fig. S2",
+              "Supplementary Fig. S3"
+            ]
+          ]
+        ],
+        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files"
+      },
+      "matches_excerpt": true
     }
   ]
 }

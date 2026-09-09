@@ -25,6 +25,16 @@
       "lang": "fr",
       "excerpt_en": "1,569 U+200B characters measured in ONE single publisher PDF, injected BETWEEN the characters of the DOIs in the bibliography (observed 2026-08-08). And 8 non-Latin scripts observed in the \"languages\" wave the same day, where U+200C/U+200D CARRY MEANING.",
       "organisation": "Loxyn SAS, Lyon"
+    },
+    {
+      "corpus": "observation 2026-08 (272 Europe PMC JATS articles)",
+      "date": "2026-09-09",
+      "observer": "house probe (regex, no model), written 2026-08-08, re-run by the Fault Atlas maintainer",
+      "organisation": "Loxyn SAS, Lyon",
+      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+      "lang": "en",
+      "probe": "probes/2026-08/line-118.py",
+      "excerpt": "Probe re-run on the 272 JATS files: 9/272 carriers (nonEN 5, meta 2, phys 2). Examples — meta-PMC13157766.xml: '\\xad' ×4 · meta-PMC13260247.xml: '\\u200b' ×1 · nonEN-PMC13193188.xml: '\\u200b' ×2"
     }
   ],
   "specimens": {
@@ -59,6 +69,52 @@
       "date": "2026-08-08",
       "event": "house filter exists with 7 cases and 5 counter-examples (bench green=True); specimens to be transcribed into this record",
       "by": "Korela For Science"
+    },
+    {
+      "date": "2026-09-09",
+      "event": "second observation added from the exact probe on the 272 files: probes/2026-08/line-118.py, 9/272",
+      "by": "Fault Atlas maintainer"
+    }
+  ],
+  "probes": [
+    {
+      "file": "probes/2026-08/line-118.py",
+      "kind": "python",
+      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+      "written": "2026-08-08",
+      "run": "python3 tools/run_probe.py probes/2026-08/line-118.py <dir with the 272 .xml>",
+      "result": {
+        "date": "2026-09-09",
+        "count": 9,
+        "of": 272,
+        "strata": {
+          "nonEN": 5,
+          "meta": 2,
+          "phys": 2
+        },
+        "examples": [
+          [
+            "meta-PMC13157766.xml",
+            [
+              "'\\xad' ×4"
+            ]
+          ],
+          [
+            "meta-PMC13260247.xml",
+            [
+              "'\\u200b' ×1"
+            ]
+          ],
+          [
+            "nonEN-PMC13193188.xml",
+            [
+              "'\\u200b' ×2"
+            ]
+          ]
+        ],
+        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files"
+      },
+      "matches_excerpt": true
     }
   ]
 }

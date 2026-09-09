@@ -7,6 +7,14 @@
 - Validator with house rules; proves itself on seven planted faults.
 - SQLite view builder for Datasette.
 
+## 0.3.0 — 2026-09-09
+- The exact probe on each observation (third reader's request: "which corpus and which exact query finds the problem, not something general"). `probes/2026-08/`: the 66 regex probes of the August campaign, one file per catalogue line, extracted verbatim and re-run on the same 272 files today; `probes/2026-09/`: the two SPARQL queries, the shell request and the dump inventory of the EUR-Lex forms, all re-run live today and reproducing the collector's figures. Schema: `probes[]` on the form, `probe` on the observation.
+- Re-run figures published as measured: 38 of 66 August probes give exactly the figure quoted in the excerpt; 28 do not (finer hand-run counts whose code was not kept) and say so on the form. Zero counts attached under "measured absent in" (17 forms).
+- form-064 corrected: its origin observation is restored on its own corpus, the 3,642 PubMed abstracts on arginine before 1990, now published by PMID (`corpora/pubmed-arginine-pre1990-3642.json`) with a probe (234 titles in full capitals; the August note said 184 with a rule not kept). The 272-file check stays as a second, absence observation.
+- form-182 and form-184 widened by live queries on the whole Cellar graph: the empty CELEX URI is the object of 8,164 triples under 14 predicates; the sentinel date 1003-03-03 sits on 351 works, 80 with a CELEX.
+- Tools: `run_probe.py`, `rerun_probes.py`, `test_probes.py`; validator checks that every cited probe exists, sits in the form's list and names a known corpus (three more planted faults, 10/10 caught).
+- Site: "Exact probe" block under each observation with the code, the command, the re-run figure and whether it matches; `probes.html`; Datasette table `probes`; build date in the footer.
+
 ## 0.2.3 — 2026-09-09
 - Four forms measured on EUR-Lex / Cellar by the collection session (form-182 to form-185) and the collection's corpus record with its pre-registered bets.
 - Two counts, always together: all layers and graph layers only, on the home cards and in the README.

@@ -25,7 +25,8 @@
       "lang": "fr",
       "excerpt_en": "MEASURED on 2026-08-08 on 272 Europe PMC JATS XML articles (2023-2026): the two conventions do coexist in the same corpus — 207/272 with numeric calls (76 %), 13/272 author-year (5 %), 25 without calls, 0 mixed within one article. The DANGEROUS form is measured separately: in 37/272 articles (14 %) a numeric call sticks directly to a letter — bio-PMC12583535 gives, once the tags are removed, \"s1\", \"e2\", \"y4\", \"n10\". Real author-year form: nonEN-PMC13228121 — \"Bauman, 1999\", \"Carvalho, 2022\".",
       "organisation": "Loxyn SAS, Lyon",
-      "corpus_id": "corpus-europe-pmc-jats-2023-2026"
+      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+      "probe": "probes/2026-08/line-075.py"
     }
   ],
   "specimens": {
@@ -60,6 +61,57 @@
       "date": "2026-08-08",
       "event": "house filter exists with 4 cases and 1 counter-examples (bench green=True); specimens to be transcribed into this record",
       "by": "Korela For Science"
+    },
+    {
+      "date": "2026-09-09",
+      "event": "exact probe attached to the 272-file observation: probes/2026-08/line-075.py, re-run 13/272",
+      "by": "Fault Atlas maintainer"
+    }
+  ],
+  "probes": [
+    {
+      "file": "probes/2026-08/line-075.py",
+      "kind": "python",
+      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+      "written": "2026-08-08",
+      "run": "python3 tools/run_probe.py probes/2026-08/line-075.py <dir with the 272 .xml>",
+      "result": {
+        "date": "2026-09-09",
+        "count": 13,
+        "of": 272,
+        "strata": {
+          "meta": 4,
+          "bio": 3,
+          "phys": 3,
+          "nonEN": 2,
+          "moderne": 1
+        },
+        "examples": [
+          [
+            "bio-PMC12927065.xml",
+            [
+              "numérique×18",
+              "exposant×11"
+            ]
+          ],
+          [
+            "bio-PMC13097615.xml",
+            [
+              "auteur-année×14",
+              "exposant×7"
+            ]
+          ],
+          [
+            "bio-PMC13252842.xml",
+            [
+              "numérique×3",
+              "exposant×5"
+            ]
+          ]
+        ],
+        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files"
+      },
+      "matches_excerpt": true
     }
   ]
 }

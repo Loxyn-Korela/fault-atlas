@@ -25,7 +25,8 @@
       "lang": "fr",
       "excerpt_en": "MEASURED on 2026-08-08 on 272 open-access Europe PMC articles 2023-2026 (internal corpus): present in 190 articles (69 %) — the most widespread item of the series. Concentration: case 34/34, meta 34/34, phys 31/34, bio 30/34, trial 28/34, modern 15/17, nonEN 17/51, retract 1/34. Real forms: headings \"Author contributions\", \"Competing interests\", \"Data availability\", and fn-type COI-statement ×30, financial-disclosure ×12, con ×4 — against fn-type=\"other\" ×127, which says nothing and founds the refusal clause.",
       "organisation": "Loxyn SAS, Lyon",
-      "corpus_id": "corpus-europe-pmc-jats-2023-2026"
+      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+      "probe": "probes/2026-08/line-114.py"
     }
   ],
   "specimens": {
@@ -64,6 +65,61 @@
       "date": "2026-09-09",
       "event": "internal tool paths removed from observation notes before publication; wording otherwise unchanged",
       "by": "Fault Atlas"
+    },
+    {
+      "date": "2026-09-09",
+      "event": "exact probe attached to the 272-file observation: probes/2026-08/line-114.py, re-run 190/272",
+      "by": "Fault Atlas maintainer"
+    }
+  ],
+  "probes": [
+    {
+      "file": "probes/2026-08/line-114.py",
+      "kind": "python",
+      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+      "written": "2026-08-08",
+      "run": "python3 tools/run_probe.py probes/2026-08/line-114.py <dir with the 272 .xml>",
+      "result": {
+        "date": "2026-09-09",
+        "count": 190,
+        "of": 272,
+        "strata": {
+          "cas": 34,
+          "meta": 34,
+          "phys": 31,
+          "bio": 30,
+          "essai": 28,
+          "nonEN": 17,
+          "moderne": 15,
+          "retract": 1
+        },
+        "examples": [
+          [
+            "bio-PMC12583535.xml",
+            [
+              "Author contributions",
+              "Competing interests",
+              "Data availability"
+            ]
+          ],
+          [
+            "bio-PMC12590050.xml",
+            [
+              "Author Contributions"
+            ]
+          ],
+          [
+            "bio-PMC12857832.xml",
+            [
+              "Author contributions",
+              "Conflicts of interest",
+              "Data availability"
+            ]
+          ]
+        ],
+        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files"
+      },
+      "matches_excerpt": true
     }
   ]
 }

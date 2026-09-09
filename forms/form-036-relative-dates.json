@@ -25,7 +25,8 @@
       "lang": "fr",
       "excerpt_en": "MEASURED on 2026-08-08 on the 272 JATS XML articles of the internal corpus: present in 64 (23 %), article body only (front/back removed). Concentration: case 20, trial 16, bio 11, modern 5. Most frequent real forms: \"the past decade\" ×5, \"the last decade\" ×4, \"the past year\" ×4, \"the previous year\" ×3, \"last week\" ×3, \"1 year after\" ×3, \"two years after\" ×2, \"3 years after\" ×2, \"the next decade\" ×2. REAL RUN of the filter on these 272 documents (2026-08-08): it resolves at least one expression in 9 documents (\"the previous year\" ×3, \"ten years ago\", \"4 years ago\", \"1 year ago\", \"three years ago\", \"last year\") and ABSTAINS on the other 54 — spans, unknown anchors, granularity below the year. This run is what surfaced \"000 years ago\", truncated from \"10,000 years ago\": without a guard-rail the filter returned 2024 − 0 = 2024, a FABRICATED date. Hence the refusal beyond 150 years.",
       "organisation": "Loxyn SAS, Lyon",
-      "corpus_id": "corpus-europe-pmc-jats-2023-2026"
+      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+      "probe": "probes/2026-08/line-036.py"
     }
   ],
   "specimens": {
@@ -66,6 +67,59 @@
       "date": "2026-09-09",
       "event": "internal tool paths removed from observation notes before publication; wording otherwise unchanged",
       "by": "Fault Atlas"
+    },
+    {
+      "date": "2026-09-09",
+      "event": "exact probe attached to the 272-file observation: probes/2026-08/line-036.py, re-run 64/272",
+      "by": "Fault Atlas maintainer"
+    }
+  ],
+  "probes": [
+    {
+      "file": "probes/2026-08/line-036.py",
+      "kind": "python",
+      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+      "written": "2026-08-08",
+      "run": "python3 tools/run_probe.py probes/2026-08/line-036.py <dir with the 272 .xml>",
+      "result": {
+        "date": "2026-09-09",
+        "count": 64,
+        "of": 272,
+        "strata": {
+          "cas": 20,
+          "essai": 16,
+          "bio": 11,
+          "moderne": 5,
+          "meta": 4,
+          "nonEN": 4,
+          "phys": 3,
+          "retract": 1
+        },
+        "examples": [
+          [
+            "bio-PMC12590050.xml",
+            [
+              "at present"
+            ]
+          ],
+          [
+            "bio-PMC12674831.xml",
+            [
+              "1 year after",
+              "10 years later",
+              "3 years after"
+            ]
+          ],
+          [
+            "bio-PMC12927065.xml",
+            [
+              "the next decade"
+            ]
+          ]
+        ],
+        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files"
+      },
+      "matches_excerpt": true
     }
   ]
 }

@@ -25,7 +25,8 @@
       "lang": "fr",
       "excerpt_en": "MEASURED on 2026-08-08 on the internal corpus (272 JATS XML): 215/272 articles (79 %) carry at least one figure — 1,059 figures in total — and 138/272 (51 %) contain at least one reference of the form \"(Fig. N)\" in the body; 1,791 <xref ref-type=\"fig\"> references for 1,059 figures, i.e. 1.7 references per figure. The text points to the image far more often than it restates it.",
       "organisation": "Loxyn SAS, Lyon",
-      "corpus_id": "corpus-europe-pmc-jats-2023-2026"
+      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+      "probe": "probes/2026-08/line-068.py"
     }
   ],
   "specimens": {
@@ -59,6 +60,63 @@
       "date": "2026-09-09",
       "event": "internal tool paths removed from observation notes before publication; wording otherwise unchanged",
       "by": "Fault Atlas"
+    },
+    {
+      "date": "2026-09-09",
+      "event": "exact probe attached to the 272-file observation: probes/2026-08/line-068.py, re-run 198/272 (excerpt figure differs, both kept)",
+      "by": "Fault Atlas maintainer"
+    }
+  ],
+  "probes": [
+    {
+      "file": "probes/2026-08/line-068.py",
+      "kind": "python",
+      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+      "written": "2026-08-08",
+      "run": "python3 tools/run_probe.py probes/2026-08/line-068.py <dir with the 272 .xml>",
+      "result": {
+        "date": "2026-09-09",
+        "count": 198,
+        "of": 272,
+        "strata": {
+          "meta": 34,
+          "phys": 34,
+          "essai": 33,
+          "cas": 32,
+          "bio": 28,
+          "nonEN": 23,
+          "moderne": 14
+        },
+        "examples": [
+          [
+            "bio-PMC12583535.xml",
+            [
+              "41598_2025_22302_Fig1_HTML.jpg",
+              "41598_2025_22302_Fig2_HTML.jpg",
+              "41598_2025_22302_Fig3_HTML.jpg"
+            ]
+          ],
+          [
+            "bio-PMC12590050.xml",
+            [
+              "cureus-0017-00000093945-i01.jpg",
+              "cureus-0017-00000093945-i01.gif",
+              "cureus-0017-00000093945-i02.jpg"
+            ]
+          ],
+          [
+            "bio-PMC12674831.xml",
+            [
+              "1806-9339-rbgo-47-e-rbgo200-gf01.jpg",
+              "1806-9339-rbgo-47-e-rbgo200-gf02.jpg",
+              "1806-9339-rbgo-47-e-rbgo200-gf03.jpg"
+            ]
+          ]
+        ],
+        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files"
+      },
+      "matches_excerpt": false,
+      "note": "The figure quoted in the excerpt was counted on 2026-08-08 by a finer, hand-run measurement whose code was not kept; this probe is the one that was kept, and its figure is the one that can be re-run. Both stand, dated."
     }
   ]
 }

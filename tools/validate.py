@@ -11,8 +11,12 @@ FORMS = sorted((ROOT/"forms").glob("*.json"))
 def check_builtin(obj, sch, path="$"):
     errs = []
     t = sch.get("type")
-    if t and not isinstance(obj, {"object":dict,"array":list,"string":str,"integer":int,"boolean":bool}[t]) or (t=="integer" and isinstance(obj,bool)):
-        return [f"{path}: expected {t}"]
+    TYPES = {"object":dict,"array":list,"string":str,"integer":int,"boolean":bool,"null":type(None)}
+    if t:
+        allowed = t if isinstance(t, list) else [t]
+        ok = any(isinstance(obj, TYPES[a]) and not (a=="integer" and isinstance(obj,bool)) for a in allowed)
+        if not ok:
+            return [f"{path}: expected {t}"]
     if "enum" in sch and obj not in sch["enum"]: errs.append(f"{path}: {obj!r} not in {sch['enum']}")
     if "pattern" in sch and isinstance(obj,str) and not re.search(sch["pattern"], obj): errs.append(f"{path}: {obj!r} does not match {sch['pattern']}")
     if "minLength" in sch and isinstance(obj,str) and len(obj) < sch["minLength"]: errs.append(f"{path}: too short")
@@ -38,8 +42,15 @@ def house_rules(rec):
         if rec["specimens"]["cases"] and not rec["specimens"]["counter_examples"]: errs.append("cases without a counter-example cannot be tested")
         if not rec.get("observer_agreement"): errs.append("validated form must state observer agreement")
     if rec["damage"] == "CORPUS_PARAMETER" and rec["repair"]["reachable_by_deletion"] != "no": errs.append("a corpus parameter is not repairable")
+    corpora = {json.loads(c.read_text())["id"] for c in (ROOT/"corpora").glob("*.json")}
+    probe_files = [p["file"] for p in rec.get("probes", [])]
+    for p in rec.get("probes", []):
+        if not (ROOT/p["file"]).is_file(): errs.append(f"probe file missing: {p['file']}")
+        if p["corpus_id"] not in corpora: errs.append(f"probe on an unknown corpus: {p['corpus_id']}")
     for s in rec["seen"]:
         if not s["excerpt"].strip(): errs.append("empty excerpt")
+        if s.get("corpus_id") and s["corpus_id"] not in corpora: errs.append(f"unknown corpus_id: {s['corpus_id']}")
+        if s.get("probe") and s["probe"] not in probe_files: errs.append(f"observation cites a probe not listed in probes[]: {s['probe']}")
     return errs
 
 try:

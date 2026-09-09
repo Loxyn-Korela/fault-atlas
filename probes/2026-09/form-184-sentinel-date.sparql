@@ -1,0 +1,23 @@
+# Fault Atlas probe — form-184: sentinel date 1003-03-03 in cdm:work_date_document.
+# Endpoint: https://publications.europa.eu/webapi/rdf/sparql  (public, no key)
+# Written 2026-09-09 from the lot A observation (7 works among the 265,172 resources
+# of the three relations repeals/amends/based_on); re-run live 2026-09-09:
+#   whole Cellar: 351 works carry the sentinel, 80 of them have a CELEX;
+#   restricted to works that take part in one of the three relations: 7, the same
+#   seven CELEX as lot A (51966FC0402, 51984PC0606, 51988EC1677, 51993EC1858,
+#   51995EC1429, 51995EC1591, 51997EC0936).
+#
+#   curl -G https://publications.europa.eu/webapi/rdf/sparql \
+#        -H 'Accept: text/csv' --data-urlencode query@probes/2026-09/form-184-sentinel-date.sparql
+PREFIX cdm: <http://publications.europa.eu/ontology/cdm#>
+SELECT ?work ?celex WHERE {
+  ?work cdm:work_date_document ?date .
+  FILTER(STR(?date) = "1003-03-03")
+  ?work cdm:resource_legal_id_celex ?celex .
+  { ?work cdm:resource_legal_repeals_resource_legal ?x } UNION { ?x cdm:resource_legal_repeals_resource_legal ?work }
+  UNION { ?work cdm:resource_legal_amends_resource_legal ?x } UNION { ?x cdm:resource_legal_amends_resource_legal ?work }
+  UNION { ?work cdm:resource_legal_based_on_resource_legal ?x } UNION { ?x cdm:resource_legal_based_on_resource_legal ?work }
+} GROUP BY ?work ?celex ORDER BY ?celex
+# --- whole-Cellar counts, run separately:
+# SELECT (COUNT(DISTINCT ?work) AS ?n) WHERE { ?work cdm:work_date_document ?d . FILTER(STR(?d) = "1003-03-03") }
+# SELECT ?work ?celex WHERE { ?work cdm:work_date_document ?d . FILTER(STR(?d) = "1003-03-03") ?work cdm:resource_legal_id_celex ?celex } ORDER BY ?celex

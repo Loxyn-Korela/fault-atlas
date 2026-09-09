@@ -25,6 +25,16 @@
       "lang": "fr",
       "excerpt_en": "Truncated or miscopied ORCIDs in the author blocks of modern articles (non-bio wave, 2026-08-08)",
       "organisation": "Loxyn SAS, Lyon"
+    },
+    {
+      "corpus": "observation 2026-08 (272 Europe PMC JATS articles)",
+      "date": "2026-09-09",
+      "observer": "house probe (regex, no model), written 2026-08-08, re-run by the Fault Atlas maintainer",
+      "organisation": "Loxyn SAS, Lyon",
+      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+      "lang": "en",
+      "probe": "probes/2026-08/line-108.py",
+      "excerpt": "Probe re-run on the 272 JATS files: 64/272 carriers (nonEN 18, meta 12, bio 11, essai 10, retract 4, cas 3, moderne 3, phys 3). Examples — bio-PMC12674831.xml: 0000-0001-5686-7058 | 0000-0001-6501-1139 | 0000-0001-7084-037X · bio-PMC12909487.xml: 0000-0002-7093-6221 | 0009-0005-0906-8866 | 0009-0009-2615-8045 · bio-PMC12915353.xml: 0000-0001-8441-5200 | 0000-0002-6470-2517 | 0000-0003-2391-4924"
     }
   ],
   "specimens": {
@@ -59,6 +69,63 @@
       "date": "2026-08-08",
       "event": "house filter exists with 4 cases and 1 counter-examples (bench green=True); specimens to be transcribed into this record",
       "by": "Korela For Science"
+    },
+    {
+      "date": "2026-09-09",
+      "event": "second observation added from the exact probe on the 272 files: probes/2026-08/line-108.py, 64/272",
+      "by": "Fault Atlas maintainer"
+    }
+  ],
+  "probes": [
+    {
+      "file": "probes/2026-08/line-108.py",
+      "kind": "python",
+      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+      "written": "2026-08-08",
+      "run": "python3 tools/run_probe.py probes/2026-08/line-108.py <dir with the 272 .xml>",
+      "result": {
+        "date": "2026-09-09",
+        "count": 64,
+        "of": 272,
+        "strata": {
+          "nonEN": 18,
+          "meta": 12,
+          "bio": 11,
+          "essai": 10,
+          "retract": 4,
+          "cas": 3,
+          "moderne": 3,
+          "phys": 3
+        },
+        "examples": [
+          [
+            "bio-PMC12674831.xml",
+            [
+              "0000-0001-5686-7058",
+              "0000-0001-6501-1139",
+              "0000-0001-7084-037X"
+            ]
+          ],
+          [
+            "bio-PMC12909487.xml",
+            [
+              "0000-0002-7093-6221",
+              "0009-0005-0906-8866",
+              "0009-0009-2615-8045"
+            ]
+          ],
+          [
+            "bio-PMC12915353.xml",
+            [
+              "0000-0001-8441-5200",
+              "0000-0002-6470-2517",
+              "0000-0003-2391-4924"
+            ]
+          ]
+        ],
+        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files"
+      },
+      "matches_excerpt": true
     }
   ]
 }

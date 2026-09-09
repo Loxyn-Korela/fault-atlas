@@ -25,7 +25,8 @@
       "lang": "fr",
       "excerpt_en": "MEASURED on 2026-08-08 on 272 open-access Europe PMC articles 2023-2026: present in 39 (14 %). Concentration: retract 33, meta 3, bio 1, trial 1, phys 1. Real forms: related-article-type=retracted-article ×45 | retraction-forward ×14 | final-edited-article ×2 | preprint ×1 | <article-version>3</article-version> ×2 | <article-version>Version of Record</article-version> ×1",
       "organisation": "Loxyn SAS, Lyon",
-      "corpus_id": "corpus-europe-pmc-jats-2023-2026"
+      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+      "probe": "probes/2026-08/line-039.py"
     }
   ],
   "specimens": {
@@ -66,6 +67,54 @@
       "date": "2026-09-09",
       "event": "repair.reachable_by_deletion changed from yes to partial: a deletion loses the fact's past validity; only a spurious edge is fully repaired by deletion",
       "by": "Coralie Bagnol-Lebon (second reader), applied by Fault Atlas"
+    },
+    {
+      "date": "2026-09-09",
+      "event": "exact probe attached to the 272-file observation: probes/2026-08/line-039.py, re-run 39/272",
+      "by": "Fault Atlas maintainer"
+    }
+  ],
+  "probes": [
+    {
+      "file": "probes/2026-08/line-039.py",
+      "kind": "python",
+      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+      "written": "2026-08-08",
+      "run": "python3 tools/run_probe.py probes/2026-08/line-039.py <dir with the 272 .xml>",
+      "result": {
+        "date": "2026-09-09",
+        "count": 39,
+        "of": 272,
+        "strata": {
+          "retract": 33,
+          "meta": 3,
+          "bio": 1,
+          "essai": 1,
+          "phys": 1
+        },
+        "examples": [
+          [
+            "bio-PMC13162546.xml",
+            [
+              "version=Version of Record"
+            ]
+          ],
+          [
+            "essai-PMC7619126.xml",
+            [
+              "final-edited-article"
+            ]
+          ],
+          [
+            "meta-PMC13246130.xml",
+            [
+              "version=3"
+            ]
+          ]
+        ],
+        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files"
+      },
+      "matches_excerpt": true
     }
   ]
 }
