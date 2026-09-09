@@ -16,7 +16,7 @@
       "corpus": "observation 2026-08 (Europe PMC JATS 2023-2026 and PubMed abstracts)",
       "date": "2026-08-08",
       "observer": "house observer (LLM agent), see report",
-      "excerpt": "MESURÉ le 08/08/2026 sur les 272 articles XML JATS d'atelier-filtres/corpus/ : présent dans 73 (26 %). Concentration : essai 21, nonEN 12, meta 11, bio 10, phys 10. Formes réelles : nonEN-PMC13193189.xml porte 36 <th> à colspan/rowspan ≥2 ; essai-PMC13205731.xml en porte 27 ; bio-PMC12857832.xml a 4 <thead> sur 5 qui comptent plus d'une ligne <tr>. PASSAGE RÉEL du filtre (08/08/2026) : sur les 670 <table> du corpus il en classe 151 « en-têtes multiples », 469 « en-tête simple », et s'ABSTIENT sur 50 sans <thead>. Au niveau du document : 71/272, contre 73 pour la sonde — l'écart de 2 vient de <th> à colspan situés HORS <thead>, que le filtre refuse de prendre pour un en-tête.",
+      "excerpt": "MESURÉ le 08/08/2026 sur les 272 articles XML JATS d'(internal corpus of 272 JATS articles) : présent dans 73 (26 %). Concentration : essai 21, nonEN 12, meta 11, bio 10, phys 10. Formes réelles : nonEN-PMC13193189.xml porte 36 <th> à colspan/rowspan ≥2 ; essai-PMC13205731.xml en porte 27 ; bio-PMC12857832.xml a 4 <thead> sur 5 qui comptent plus d'une ligne <tr>. PASSAGE RÉEL du filtre (08/08/2026) : sur les 670 <table> du corpus il en classe 151 « en-têtes multiples », 469 « en-tête simple », et s'ABSTIENT sur 50 sans <thead>. Au niveau du document : 71/272, contre 73 pour la sonde — l'écart de 2 vient de <th> à colspan situés HORS <thead>, que le filtre refuse de prendre pour un en-tête.",
       "lang": "fr"
     }
   ],
@@ -52,6 +52,11 @@
       "date": "2026-08-08",
       "event": "house filter exists with 5 cases and 1 counter-examples (bench green=True); specimens to be transcribed into this record",
       "by": "Korela For Science"
+    },
+    {
+      "date": "2026-09-09",
+      "event": "internal tool paths removed from observation notes before publication; wording otherwise unchanged",
+      "by": "Fault Atlas"
     }
   ]
 }

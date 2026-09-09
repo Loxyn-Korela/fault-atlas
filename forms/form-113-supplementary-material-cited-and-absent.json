@@ -16,7 +16,7 @@
       "corpus": "observation 2026-08 (Europe PMC JATS 2023-2026 and PubMed abstracts)",
       "date": "2026-08-08",
       "observer": "house observer (LLM agent), see report",
-      "excerpt": "MESURÉ le 08/08/2026 sur 272 articles XML JATS Europe PMC accès libre (atelier-filtres/corpus, sonde sondes-lignes-12-132.py) : objet supplémentaire NOMMÉ cité SANS aucun fichier attaché dans 1 article (0,4 %) — meta-PMC13271776, qui appelle « Supplementary Fig. S1 », « Supplementary Fig. S2 », « Supplementary Fig. S3 » sans un seul <supplementary-material> ni <media> ; cité ET attaché dans 81 (30 %) : bio 18, cas 4, essai 14, meta 31, moderne 9, phys 5. ⚠️ Prévalence FAIBLE, dite telle quelle : 1/272. Les deux versions antérieures de la sonde donnaient 115 puis 21 porteurs, tous du bruit — c'est la mesure qui a été corrigée, pas le chiffre choisi.",
+      "excerpt": "MESURÉ le 08/08/2026 sur 272 articles XML JATS Europe PMC accès libre (internal corpus of 272 JATS articles) sonde sondes-lignes-12-132.py) : objet supplémentaire NOMMÉ cité SANS aucun fichier attaché dans 1 article (0,4 %) — meta-PMC13271776, qui appelle « Supplementary Fig. S1 », « Supplementary Fig. S2 », « Supplementary Fig. S3 » sans un seul <supplementary-material> ni <media> ; cité ET attaché dans 81 (30 %) : bio 18, cas 4, essai 14, meta 31, moderne 9, phys 5. ⚠️ Prévalence FAIBLE, dite telle quelle : 1/272. Les deux versions antérieures de la sonde donnaient 115 puis 21 porteurs, tous du bruit — c'est la mesure qui a été corrigée, pas le chiffre choisi.",
       "lang": "fr"
     }
   ],
@@ -52,6 +52,11 @@
       "date": "2026-08-08",
       "event": "house filter exists with 4 cases and 2 counter-examples (bench green=True); specimens to be transcribed into this record",
       "by": "Korela For Science"
+    },
+    {
+      "date": "2026-09-09",
+      "event": "internal tool paths removed from observation notes before publication; wording otherwise unchanged",
+      "by": "Fault Atlas"
     }
   ]
 }

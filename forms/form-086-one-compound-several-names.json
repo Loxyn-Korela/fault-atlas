@@ -16,7 +16,7 @@
       "corpus": "observation 2026-08 (272 Europe PMC JATS articles)",
       "date": "2026-08-08",
       "observer": "house observer (LLM agent), see report",
-      "excerpt": "MESURÉ le 08/08/2026 sur les 272 articles XML JATS de atelier-filtres/corpus : 224/272 articles (82 %) introduisent au moins une abréviation par glose parenthétique « nom développé (SIGLE) », 2 463 gloses au total, soit 9 par article en moyenne — la parenthèse est le SEUL pont entre le nom long et le sigle. Observé le 08/08/2026 sur Cumings & Hilton, Br. J. Pharmac. 1971 : quatre natures de nom pour une substance, et 5-HT (1976) contre 5HT (1971).",
+      "excerpt": "MESURÉ le 08/08/2026 sur les 272 articles XML JATS de (internal corpus of 272 JATS articles) : 224/272 articles (82 %) introduisent au moins une abréviation par glose parenthétique « nom développé (SIGLE) », 2 463 gloses au total, soit 9 par article en moyenne — la parenthèse est le SEUL pont entre le nom long et le sigle. Observé le 08/08/2026 sur Cumings & Hilton, Br. J. Pharmac. 1971 : quatre natures de nom pour une substance, et 5-HT (1976) contre 5HT (1971).",
       "lang": "fr"
     }
   ],
@@ -47,6 +47,11 @@
       "date": "2026-09-09",
       "event": "migrated; classified damage=SPLIT injection=RENAME (judgment, unreviewed by a second reader)",
       "by": "Fault Atlas migration"
+    },
+    {
+      "date": "2026-09-09",
+      "event": "internal tool paths removed from observation notes before publication; wording otherwise unchanged",
+      "by": "Fault Atlas"
     }
   ]
 }

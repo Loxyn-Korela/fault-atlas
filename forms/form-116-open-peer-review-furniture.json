@@ -16,7 +16,7 @@
       "corpus": "observation 2026-08 (272 Europe PMC JATS articles)",
       "date": "2026-08-08",
       "observer": "house observer (LLM agent), see report",
-      "excerpt": "MESURÉ le 08/08/2026 sur atelier-filtres/corpus (272 XML JATS) : 5/272 articles (2 %) portent un mobilier de relecture ouverte nommé (peer review file, reviewer report, editor's evaluation, eLife assessment) et 6/272 (2 %) un <sub-article article-type=\"...review...\" > ; le mobilier voisin de déclarations sur les auteurs est lui à 203/272 (75 %). Observée le 08/08 sur 15 articles 2023-2026 (VERDICT ancien contre moderne, N10) — absente du corpus 1957-1987.",
+      "excerpt": "MESURÉ le 08/08/2026 sur (internal corpus of 272 JATS articles) (272 XML JATS) : 5/272 articles (2 %) portent un mobilier de relecture ouverte nommé (peer review file, reviewer report, editor's evaluation, eLife assessment) et 6/272 (2 %) un <sub-article article-type=\"...review...\" > ; le mobilier voisin de déclarations sur les auteurs est lui à 203/272 (75 %). Observée le 08/08 sur 15 articles 2023-2026 (VERDICT ancien contre moderne, N10) — absente du corpus 1957-1987.",
       "lang": "fr"
     }
   ],
@@ -46,6 +46,11 @@
       "date": "2026-09-09",
       "event": "migrated; classified damage=SPURIOUS_EDGE injection=INSERT (judgment, unreviewed by a second reader)",
       "by": "Fault Atlas migration"
+    },
+    {
+      "date": "2026-09-09",
+      "event": "internal tool paths removed from observation notes before publication; wording otherwise unchanged",
+      "by": "Fault Atlas"
     }
   ]
 }

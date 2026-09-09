@@ -16,7 +16,7 @@
       "corpus": "observation 2026-08 (272 Europe PMC JATS articles)",
       "date": "2026-08-08",
       "observer": "house observer (LLM agent), see report",
-      "excerpt": "MESURÉ le 08/08/2026 sur atelier-filtres/corpus (272 XML JATS) : 215/272 articles (79 %) portent au moins une figure — 1 059 figures au total — et 138/272 (51 %) contiennent au moins un renvoi de la forme « (Fig. N) » dans le corps ; 1 791 renvois <xref ref-type=\"fig\"> pour 1 059 figures, soit 1,7 renvoi par figure. Le texte pointe l'image bien plus souvent qu'il ne la redit.",
+      "excerpt": "MESURÉ le 08/08/2026 sur (internal corpus of 272 JATS articles) (272 XML JATS) : 215/272 articles (79 %) portent au moins une figure — 1 059 figures au total — et 138/272 (51 %) contiennent au moins un renvoi de la forme « (Fig. N) » dans le corps ; 1 791 renvois <xref ref-type=\"fig\"> pour 1 059 figures, soit 1,7 renvoi par figure. Le texte pointe l'image bien plus souvent qu'il ne la redit.",
       "lang": "fr"
     }
   ],
@@ -46,6 +46,11 @@
       "date": "2026-09-09",
       "event": "migrated; classified damage=MISSING injection=IMAGE (judgment, unreviewed by a second reader)",
       "by": "Fault Atlas migration"
+    },
+    {
+      "date": "2026-09-09",
+      "event": "internal tool paths removed from observation notes before publication; wording otherwise unchanged",
+      "by": "Fault Atlas"
     }
   ]
 }

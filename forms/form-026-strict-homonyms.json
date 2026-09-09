@@ -16,7 +16,7 @@
       "corpus": "observation 2026-08 (272 Europe PMC JATS articles)",
       "date": "2026-08-08",
       "observer": "house observer (LLM agent), see report",
-      "excerpt": "MESURÉ le 08/08/2026 sur les 272 articles XML JATS de atelier-filtres/corpus : 1 215 patronymes sur 9 160 (13,3 %) sont portés par au moins deux prénoms différents — « Wang » par 95, « Li » par 92, « Chen » par 88 ; et 461 noms complets identiques (nom + prénoms) apparaissent dans au moins deux articles aux affiliations DISJOINTES (Zhang W, Li S, Singh S…). Faute vérifiée le 08/08/2026 par ailleurs : le contrôle d'atteignabilité ne regarde pas les assertions `distinct` — un corpus en portant 27 affichait « 0 piège » et passait au vert.",
+      "excerpt": "MESURÉ le 08/08/2026 sur les 272 articles XML JATS de (internal corpus of 272 JATS articles) : 1 215 patronymes sur 9 160 (13,3 %) sont portés par au moins deux prénoms différents — « Wang » par 95, « Li » par 92, « Chen » par 88 ; et 461 noms complets identiques (nom + prénoms) apparaissent dans au moins deux articles aux affiliations DISJOINTES (Zhang W, Li S, Singh S…). Faute vérifiée le 08/08/2026 par ailleurs : le contrôle d'atteignabilité ne regarde pas les assertions `distinct` — un corpus en portant 27 affichait « 0 piège » et passait au vert.",
       "lang": "fr"
     }
   ],
@@ -47,6 +47,11 @@
       "date": "2026-09-09",
       "event": "migrated; classified damage=MERGE injection=RENAME (judgment, unreviewed by a second reader)",
       "by": "Fault Atlas migration"
+    },
+    {
+      "date": "2026-09-09",
+      "event": "internal tool paths removed from observation notes before publication; wording otherwise unchanged",
+      "by": "Fault Atlas"
     }
   ]
 }

@@ -16,7 +16,7 @@
       "corpus": "observation 2026-08 (Europe PMC JATS 2023-2026 and PubMed abstracts)",
       "date": "2026-08-08",
       "observer": "house observer (LLM agent), see report",
-      "excerpt": "MESURÉ le 08/08/2026 sur 272 articles Europe PMC accès libre 2023-2026 (atelier-filtres/sondes-serie-B.py) : présent dans 31 articles (11 %). Concentration : phys 10/34, meta 9/34, bio 6/34, moderne 4/17, essai 2/34. Registres réellement rencontrés : ROR ×60, GRID ×52, ISNI ×49, Ringgold ×3, plus 22 identifiants de FINANCEUR (doi/FundRef/CrossRef), qui ne désignent PAS l'organisation. Formes réelles : ROR:https://ror.org/02z1vqm45 | GRID:grid.411472.5 | ISNI:0000 0004 1764 1621",
+      "excerpt": "MESURÉ le 08/08/2026 sur 272 articles Europe PMC accès libre 2023-2026 (internal corpus of 272 JATS articles) : présent dans 31 articles (11 %). Concentration : phys 10/34, meta 9/34, bio 6/34, moderne 4/17, essai 2/34. Registres réellement rencontrés : ROR ×60, GRID ×52, ISNI ×49, Ringgold ×3, plus 22 identifiants de FINANCEUR (doi/FundRef/CrossRef), qui ne désignent PAS l'organisation. Formes réelles : ROR:https://ror.org/02z1vqm45 | GRID:grid.411472.5 | ISNI:0000 0004 1764 1621",
       "lang": "fr"
     }
   ],
@@ -53,6 +53,11 @@
       "date": "2026-08-08",
       "event": "house filter exists with 5 cases and 1 counter-examples (bench green=True); specimens to be transcribed into this record",
       "by": "Korela For Science"
+    },
+    {
+      "date": "2026-09-09",
+      "event": "internal tool paths removed from observation notes before publication; wording otherwise unchanged",
+      "by": "Fault Atlas"
     }
   ]
 }

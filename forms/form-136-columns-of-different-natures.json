@@ -16,7 +16,7 @@
       "corpus": "observation 2026-08 (272 Europe PMC JATS articles)",
       "date": "2026-08-08",
       "observer": "house observer (LLM agent), see report",
-      "excerpt": "MESURÉ le 08/08/2026 sur les 272 articles XML JATS de atelier-filtres/corpus : 124/272 (45,6 %) portent un bloc « Funding / Competing interests / Acknowledgements » À L'INTÉRIEUR de <body> — donc dans le flux de lecture du corps, pas dans l'appareil de fin ; 202/272 (74 %) en portent un quelque part. Ligne repérée le 08/08/2026 sur 14 articles 2021-2026 hors biomédecine (arXiv, PLOS, Copernicus, HAL, Scientific Reports).",
+      "excerpt": "MESURÉ le 08/08/2026 sur les 272 articles XML JATS de (internal corpus of 272 JATS articles) : 124/272 (45,6 %) portent un bloc « Funding / Competing interests / Acknowledgements » À L'INTÉRIEUR de <body> — donc dans le flux de lecture du corps, pas dans l'appareil de fin ; 202/272 (74 %) en portent un quelque part. Ligne repérée le 08/08/2026 sur 14 articles 2021-2026 hors biomédecine (arXiv, PLOS, Copernicus, HAL, Scientific Reports).",
       "lang": "fr"
     }
   ],
@@ -46,6 +46,11 @@
       "date": "2026-09-09",
       "event": "migrated; classified damage=SPURIOUS_EDGE injection=FORMAT (judgment, unreviewed by a second reader)",
       "by": "Fault Atlas migration"
+    },
+    {
+      "date": "2026-09-09",
+      "event": "internal tool paths removed from observation notes before publication; wording otherwise unchanged",
+      "by": "Fault Atlas"
     }
   ]
 }

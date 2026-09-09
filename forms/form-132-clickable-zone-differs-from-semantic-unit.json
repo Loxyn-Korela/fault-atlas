@@ -16,7 +16,7 @@
       "corpus": "observation 2026-08 (Europe PMC JATS 2023-2026 and PubMed abstracts)",
       "date": "2026-08-08",
       "observer": "house observer (LLM agent), see report",
-      "excerpt": "MESURÉ le 08/08/2026 sur 272 articles XML JATS Europe PMC accès libre (atelier-filtres/corpus, sonde sondes-lignes-12-132.py) : citation COUPÉE par la zone cliquable dans 21 articles (7,7 %) — essai 15, meta 4, moderne 2 ; contre-forme (le lien porte la citation ENTIÈRE) dans 16 autres. Formes réelles : « Steinmetz et al. <xref>2023</xref> » (essai-PMC13169472) · « Victora et al. <xref>2008</xref> » (essai-PMC13205709) · « UNICEF. WHO. World_Bank. <xref>2025</xref> » (essai-PMC13205731). ⚠️ Le sens décrit dans l'annexe — lien sur le nom, année dehors — est à 0/272 : cherché sous 3 motifs, jamais trouvé.",
+      "excerpt": "MESURÉ le 08/08/2026 sur 272 articles XML JATS Europe PMC accès libre (internal corpus of 272 JATS articles) sonde sondes-lignes-12-132.py) : citation COUPÉE par la zone cliquable dans 21 articles (7,7 %) — essai 15, meta 4, moderne 2 ; contre-forme (le lien porte la citation ENTIÈRE) dans 16 autres. Formes réelles : « Steinmetz et al. <xref>2023</xref> » (essai-PMC13169472) · « Victora et al. <xref>2008</xref> » (essai-PMC13205709) · « UNICEF. WHO. World_Bank. <xref>2025</xref> » (essai-PMC13205731). ⚠️ Le sens décrit dans l'annexe — lien sur le nom, année dehors — est à 0/272 : cherché sous 3 motifs, jamais trouvé.",
       "lang": "fr"
     }
   ],
@@ -52,6 +52,11 @@
       "date": "2026-08-08",
       "event": "house filter exists with 5 cases and 3 counter-examples (bench green=True); specimens to be transcribed into this record",
       "by": "Korela For Science"
+    },
+    {
+      "date": "2026-09-09",
+      "event": "internal tool paths removed from observation notes before publication; wording otherwise unchanged",
+      "by": "Fault Atlas"
     }
   ]
 }

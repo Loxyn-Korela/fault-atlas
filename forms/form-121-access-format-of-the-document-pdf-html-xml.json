@@ -16,7 +16,7 @@
       "corpus": "observation 2026-08 (Europe PMC JATS 2023-2026 and PubMed abstracts)",
       "date": "2026-08-08",
       "observer": "house observer (LLM agent), see report",
-      "excerpt": "MESURÉ le 08/08/2026 sur les 272 articles d'atelier-filtres/corpus (sonde sondes-lignes-12-132.py) : 272/272 sont du XML JATS INTÉGRAL — body ET sections balisées — dans les 8 strates (nonEN 51, bio/cas/essai/meta/phys/retract 34 chacune, moderne 17). 0/272 en front seul, 0/272 en PDF. Une CONDITION mesurée à 100 % est le résultat attendu d'une collecte qui a choisi ce format ; ce qu'elle dit de neuf, c'est que la branche PDF de ce filtre n'est éprouvée par AUCUN document réel.",
+      "excerpt": "MESURÉ le 08/08/2026 sur les 272 articles d'(internal corpus of 272 JATS articles) (sonde sondes-lignes-12-132.py) : 272/272 sont du XML JATS INTÉGRAL — body ET sections balisées — dans les 8 strates (nonEN 51, bio/cas/essai/meta/phys/retract 34 chacune, moderne 17). 0/272 en front seul, 0/272 en PDF. Une CONDITION mesurée à 100 % est le résultat attendu d'une collecte qui a choisi ce format ; ce qu'elle dit de neuf, c'est que la branche PDF de ce filtre n'est éprouvée par AUCUN document réel.",
       "lang": "fr"
     }
   ],
@@ -48,6 +48,11 @@
       "date": "2026-08-08",
       "event": "house filter exists with 5 cases and 2 counter-examples (bench green=True); specimens to be transcribed into this record",
       "by": "Korela For Science"
+    },
+    {
+      "date": "2026-09-09",
+      "event": "internal tool paths removed from observation notes before publication; wording otherwise unchanged",
+      "by": "Fault Atlas"
     }
   ]
 }

@@ -16,7 +16,7 @@
       "corpus": "observation 2026-08 (Europe PMC JATS 2023-2026 and PubMed abstracts)",
       "date": "2026-08-08",
       "observer": "house observer (LLM agent), see report",
-      "excerpt": "MESURÉ le 08/08/2026 sur les 272 articles XML JATS d'atelier-filtres/corpus/ (Europe PMC accès libre 2023-2026) : 272/272 déclarent un article-type, et on compte 15 gabarits DISTINCTS. Formes réelles au sommet : research-article 145, case-report 35, retraction 33, review-article 23, editorial 14, letter 9, brief-report 4, book-review 4, systematic-review 3 — et article-type=\"other\", gabarit NON DÉCLARÉ, dans 2 fichiers (bio-PMC12674831.xml, nonEN-PMC13228121.xml). 24 gabarits « translation » supplémentaires n'apparaissent que sur des <sub-article> : ils ne sont PAS le gabarit du fichier.",
+      "excerpt": "MESURÉ le 08/08/2026 sur les 272 articles XML JATS d'(internal corpus of 272 JATS articles) (Europe PMC accès libre 2023-2026) : 272/272 déclarent un article-type, et on compte 15 gabarits DISTINCTS. Formes réelles au sommet : research-article 145, case-report 35, retraction 33, review-article 23, editorial 14, letter 9, brief-report 4, book-review 4, systematic-review 3 — et article-type=\"other\", gabarit NON DÉCLARÉ, dans 2 fichiers (bio-PMC12674831.xml, nonEN-PMC13228121.xml). 24 gabarits « translation » supplémentaires n'apparaissent que sur des <sub-article> : ils ne sont PAS le gabarit du fichier.",
       "lang": "fr"
     }
   ],
@@ -52,6 +52,11 @@
       "date": "2026-08-08",
       "event": "house filter exists with 5 cases and 1 counter-examples (bench green=True); specimens to be transcribed into this record",
       "by": "Korela For Science"
+    },
+    {
+      "date": "2026-09-09",
+      "event": "internal tool paths removed from observation notes before publication; wording otherwise unchanged",
+      "by": "Fault Atlas"
     }
   ]
 }

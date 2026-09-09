@@ -16,7 +16,7 @@
       "corpus": "observation 2026-08 (Europe PMC JATS 2023-2026 and PubMed abstracts)",
       "date": "2026-08-08",
       "observer": "house observer (LLM agent), see report",
-      "excerpt": "MESURÉ le 08/08/2026 sur 272 articles XML JATS Europe PMC accès libre (atelier-filtres/corpus, sonde sondes-lignes-12-132.py) : présent dans 209 (77 %). Concentration : essai 34, phys 34, bio 33, meta 33, nonEN 32, cas 27, moderne 14, retract 2. Formes réelles : « C-reactive protein (CRP) » (bio-PMC12674831) · « Diabetes mellitus (DM) » (bio-PMC12590050) · « Risk of Bias (RoB) » (bio-PMC12583535).",
+      "excerpt": "MESURÉ le 08/08/2026 sur 272 articles XML JATS Europe PMC accès libre (internal corpus of 272 JATS articles) sonde sondes-lignes-12-132.py) : présent dans 209 (77 %). Concentration : essai 34, phys 34, bio 33, meta 33, nonEN 32, cas 27, moderne 14, retract 2. Formes réelles : « C-reactive protein (CRP) » (bio-PMC12674831) · « Diabetes mellitus (DM) » (bio-PMC12590050) · « Risk of Bias (RoB) » (bio-PMC12583535).",
       "lang": "fr"
     },
     {
@@ -60,6 +60,11 @@
       "date": "2026-08-08",
       "event": "house filter exists with 5 cases and 2 counter-examples (bench green=True); specimens to be transcribed into this record",
       "by": "Korela For Science"
+    },
+    {
+      "date": "2026-09-09",
+      "event": "internal tool paths removed from observation notes before publication; wording otherwise unchanged",
+      "by": "Fault Atlas"
     }
   ]
 }

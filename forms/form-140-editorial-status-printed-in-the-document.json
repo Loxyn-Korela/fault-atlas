@@ -16,7 +16,7 @@
       "corpus": "observation 2026-08 (272 Europe PMC JATS articles)",
       "date": "2026-08-08",
       "observer": "house observer (LLM agent), see report",
-      "excerpt": "MESURÉ le 08/08/2026 sur atelier-filtres/corpus (272 XML JATS) : 52/272 articles (19 %) portent en tête une déclaration de statut éditorial — 33 notices de rétractation (article-type=\"retraction\", 12 %), 39 documents avec un <related-article> (version antérieure ou correction, 14 %), 2 déclarant explicitement une version préprint antérieure sur medRxiv. ⚠️ Le « A PREPRINT » d'arXiv, lui, est absent de ce corpus par construction : PMC ne publie que du publié (annexe 140, observée le 08/08/2026 hors PMC).",
+      "excerpt": "MESURÉ le 08/08/2026 sur (internal corpus of 272 JATS articles) (272 XML JATS) : 52/272 articles (19 %) portent en tête une déclaration de statut éditorial — 33 notices de rétractation (article-type=\"retraction\", 12 %), 39 documents avec un <related-article> (version antérieure ou correction, 14 %), 2 déclarant explicitement une version préprint antérieure sur medRxiv. ⚠️ Le « A PREPRINT » d'arXiv, lui, est absent de ce corpus par construction : PMC ne publie que du publié (annexe 140, observée le 08/08/2026 hors PMC).",
       "lang": "fr"
     }
   ],
@@ -47,6 +47,11 @@
       "date": "2026-09-09",
       "event": "migrated; classified damage=ANACHRONISM injection=ALTER (judgment, unreviewed by a second reader)",
       "by": "Fault Atlas migration"
+    },
+    {
+      "date": "2026-09-09",
+      "event": "internal tool paths removed from observation notes before publication; wording otherwise unchanged",
+      "by": "Fault Atlas"
     }
   ]
 }

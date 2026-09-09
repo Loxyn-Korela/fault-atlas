@@ -16,7 +16,7 @@
       "corpus": "observation 2026-08 (272 Europe PMC JATS articles)",
       "date": "2026-08-08",
       "observer": "house observer (LLM agent), see report",
-      "excerpt": "MESURÉ le 08/08/2026 sur les 272 articles de atelier-filtres/corpus : 9/272 portent un exposant en lettres non arithmétique — dont meta-PMC13260247 avec « CD16^dim » et « CD16^hi » dans la même phrase, moderne-PMC13262411 avec « ^ABS » et « ^PLA ». 3 des 9 sont dans la strate physique, aucune ne relève d'un ordinal (th/st/nd écartés).",
+      "excerpt": "MESURÉ le 08/08/2026 sur les 272 articles de (internal corpus of 272 JATS articles) : 9/272 portent un exposant en lettres non arithmétique — dont meta-PMC13260247 avec « CD16^dim » et « CD16^hi » dans la même phrase, moderne-PMC13262411 avec « ^ABS » et « ^PLA ». 3 des 9 sont dans la strate physique, aucune ne relève d'un ordinal (th/st/nd écartés).",
       "lang": "fr"
     }
   ],
@@ -47,6 +47,11 @@
       "date": "2026-09-09",
       "event": "migrated; classified damage=WRONG_VALUE injection=ALTER (judgment, unreviewed by a second reader)",
       "by": "Fault Atlas migration"
+    },
+    {
+      "date": "2026-09-09",
+      "event": "internal tool paths removed from observation notes before publication; wording otherwise unchanged",
+      "by": "Fault Atlas"
     }
   ]
 }

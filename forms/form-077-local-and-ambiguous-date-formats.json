@@ -16,7 +16,7 @@
       "corpus": "observation 2026-08 (Europe PMC JATS 2023-2026 and PubMed abstracts)",
       "date": "2026-08-08",
       "observer": "house observer (LLM agent), see report",
-      "excerpt": "MESURÉ le 08/08/2026 sur 272 articles XML JATS Europe PMC accès libre (atelier-filtres/corpus, sonde sondes-lignes-12-132.py) : date numérique AMBIGUË présente dans 4 articles (1,5 %) — moderne 2, cas 1, essai 1 ; date numérique NON ambiguë (jour > 12) dans 3 autres. Formes réelles : « report dated 05/03/2026 » (cas-PMC13291881) · « date of registration: 11.7.2011 » (essai-PMC13254492) · « (accessed 10/3/2023) » (moderne-PMC13264966) · « 06/06/2022 », « 09/07/2019 », « 07/06/2018 » en colonne de tableau (moderne-PMC13274555).",
+      "excerpt": "MESURÉ le 08/08/2026 sur 272 articles XML JATS Europe PMC accès libre (internal corpus of 272 JATS articles) sonde sondes-lignes-12-132.py) : date numérique AMBIGUË présente dans 4 articles (1,5 %) — moderne 2, cas 1, essai 1 ; date numérique NON ambiguë (jour > 12) dans 3 autres. Formes réelles : « report dated 05/03/2026 » (cas-PMC13291881) · « date of registration: 11.7.2011 » (essai-PMC13254492) · « (accessed 10/3/2023) » (moderne-PMC13264966) · « 06/06/2022 », « 09/07/2019 », « 07/06/2018 » en colonne de tableau (moderne-PMC13274555).",
       "lang": "fr"
     }
   ],
@@ -53,6 +53,11 @@
       "date": "2026-08-08",
       "event": "house filter exists with 6 cases and 3 counter-examples (bench green=True); specimens to be transcribed into this record",
       "by": "Korela For Science"
+    },
+    {
+      "date": "2026-09-09",
+      "event": "internal tool paths removed from observation notes before publication; wording otherwise unchanged",
+      "by": "Fault Atlas"
     }
   ]
 }

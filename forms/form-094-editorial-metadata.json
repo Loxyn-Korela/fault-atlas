@@ -16,7 +16,7 @@
       "corpus": "observation 2026-08 (272 Europe PMC JATS articles)",
       "date": "2026-08-08",
       "observer": "house observer (LLM agent), see report",
-      "excerpt": "MESURÉ le 08/08/2026 sur atelier-filtres/corpus (272 XML JATS) : 89/272 articles (33 %) portent un bloc de mots-clés balisé <kwd> ; 98/272 (36 %) une phrase de financement (« was supported by », « funded by », « grant from »), dont 59 (22 %) dans une balise <funding-statement> ou <funding-group> dédiée.",
+      "excerpt": "MESURÉ le 08/08/2026 sur (internal corpus of 272 JATS articles) (272 XML JATS) : 89/272 articles (33 %) portent un bloc de mots-clés balisé <kwd> ; 98/272 (36 %) une phrase de financement (« was supported by », « funded by », « grant from »), dont 59 (22 %) dans une balise <funding-statement> ou <funding-group> dédiée.",
       "lang": "fr"
     }
   ],
@@ -46,6 +46,11 @@
       "date": "2026-09-09",
       "event": "migrated; classified damage=SPURIOUS_EDGE injection=INSERT (judgment, unreviewed by a second reader)",
       "by": "Fault Atlas migration"
+    },
+    {
+      "date": "2026-09-09",
+      "event": "internal tool paths removed from observation notes before publication; wording otherwise unchanged",
+      "by": "Fault Atlas"
     }
   ]
 }

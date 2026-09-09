@@ -16,7 +16,7 @@
       "corpus": "observation 2026-08 (272 Europe PMC JATS articles)",
       "date": "2026-08-08",
       "observer": "house observer (LLM agent), see report",
-      "excerpt": "MESURÉ le 08/08/2026 sur les 272 articles XML JATS de atelier-filtres/corpus : 263/272 titres (96,7 %) ne portent aucun verbe conjugué — ils sont nominaux ; 197/272 (72 %) portent au moins deux tokens capitalisés ou sigles, donc au moins deux entités candidates ; longueur médiane 117 caractères. Et 59/272 (22 %) n'ont aucun résumé : sur ceux-là le titre est la seule source de la notice.",
+      "excerpt": "MESURÉ le 08/08/2026 sur les 272 articles XML JATS de (internal corpus of 272 JATS articles) : 263/272 titres (96,7 %) ne portent aucun verbe conjugué — ils sont nominaux ; 197/272 (72 %) portent au moins deux tokens capitalisés ou sigles, donc au moins deux entités candidates ; longueur médiane 117 caractères. Et 59/272 (22 %) n'ont aucun résumé : sur ceux-là le titre est la seule source de la notice.",
       "lang": "fr"
     }
   ],
@@ -46,6 +46,11 @@
       "date": "2026-09-09",
       "event": "migrated; classified damage=MISSING injection=MOVE (judgment, unreviewed by a second reader)",
       "by": "Fault Atlas migration"
+    },
+    {
+      "date": "2026-09-09",
+      "event": "internal tool paths removed from observation notes before publication; wording otherwise unchanged",
+      "by": "Fault Atlas"
     }
   ]
 }

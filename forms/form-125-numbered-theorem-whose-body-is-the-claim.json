@@ -16,7 +16,7 @@
       "corpus": "observation 2026-08 (272 Europe PMC JATS articles)",
       "date": "2026-08-08",
       "observer": "house observer (LLM agent), see report",
-      "excerpt": "MESURÉ le 08/08/2026 sur les 272 articles de atelier-filtres/corpus : 2/272 en tout, et les DEUX dans la strate physique (2/34, soit 6 %) — phys-PMC13099575 (« Theorem 1. For a SINDy-class model with a library of functions… », puis Theorem 2) et phys-PMC13113438 (Theorem 1 à 3). ZÉRO dans les six strates biomédicales du corpus. Le comptage confirme l'annexe : la ligne est hors-biomédicale, elle n'aurait jamais été vue sans changer de discipline.",
+      "excerpt": "MESURÉ le 08/08/2026 sur les 272 articles de (internal corpus of 272 JATS articles) : 2/272 en tout, et les DEUX dans la strate physique (2/34, soit 6 %) — phys-PMC13099575 (« Theorem 1. For a SINDy-class model with a library of functions… », puis Theorem 2) et phys-PMC13113438 (Theorem 1 à 3). ZÉRO dans les six strates biomédicales du corpus. Le comptage confirme l'annexe : la ligne est hors-biomédicale, elle n'aurait jamais été vue sans changer de discipline.",
       "lang": "fr"
     }
   ],
@@ -46,6 +46,11 @@
       "date": "2026-09-09",
       "event": "migrated; classified damage=MISSING injection=MOVE (judgment, unreviewed by a second reader)",
       "by": "Fault Atlas migration"
+    },
+    {
+      "date": "2026-09-09",
+      "event": "internal tool paths removed from observation notes before publication; wording otherwise unchanged",
+      "by": "Fault Atlas"
     }
   ]
 }

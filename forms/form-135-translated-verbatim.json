@@ -16,7 +16,7 @@
       "corpus": "observation 2026-08 (272 Europe PMC JATS articles)",
       "date": "2026-08-08",
       "observer": "house observer (LLM agent), see report",
-      "excerpt": "MESURÉ le 08/08/2026 sur atelier-filtres/corpus (272 XML JATS) : 1/272 article (0,4 %) porte un marqueur de traduction, pour 11/272 (4 %) qui portent une citation en bloc <disp-quote> (102 blocs) — la difficulté est QUASI ABSENTE du biomédical, et c'est le résultat : elle a été observée le 08/08 sur 14 articles 2021-2026 HORS biomédecine (arXiv, PLOS, Copernicus, HAL, Scientific Reports). Elle n'aurait jamais été trouvée sans changer de discipline.",
+      "excerpt": "MESURÉ le 08/08/2026 sur (internal corpus of 272 JATS articles) (272 XML JATS) : 1/272 article (0,4 %) porte un marqueur de traduction, pour 11/272 (4 %) qui portent une citation en bloc <disp-quote> (102 blocs) — la difficulté est QUASI ABSENTE du biomédical, et c'est le résultat : elle a été observée le 08/08 sur 14 articles 2021-2026 HORS biomédecine (arXiv, PLOS, Copernicus, HAL, Scientific Reports). Elle n'aurait jamais été trouvée sans changer de discipline.",
       "lang": "fr"
     }
   ],
@@ -47,6 +47,11 @@
       "date": "2026-09-09",
       "event": "migrated; classified damage=WRONG_VALUE injection=TRANSLATE (judgment, unreviewed by a second reader)",
       "by": "Fault Atlas migration"
+    },
+    {
+      "date": "2026-09-09",
+      "event": "internal tool paths removed from observation notes before publication; wording otherwise unchanged",
+      "by": "Fault Atlas"
     }
   ]
 }

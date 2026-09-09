@@ -16,7 +16,7 @@
       "corpus": "observation 2026-08 (272 Europe PMC JATS articles)",
       "date": "2026-08-08",
       "observer": "house observer (LLM agent), see report",
-      "excerpt": "MESURÉ le 08/08/2026 sur atelier-filtres/corpus (272 XML JATS) : 63/272 articles (23 %) portent au moins une étiquette de panneau « (A) » dans une légende de figure, et 44/272 (16 %) en portent au moins DEUX dans la même légende — c'est-à-dire un couplage texte↔figure par lettre, pas une simple numérotation.",
+      "excerpt": "MESURÉ le 08/08/2026 sur (internal corpus of 272 JATS articles) (272 XML JATS) : 63/272 articles (23 %) portent au moins une étiquette de panneau « (A) » dans une légende de figure, et 44/272 (16 %) en portent au moins DEUX dans la même légende — c'est-à-dire un couplage texte↔figure par lettre, pas une simple numérotation.",
       "lang": "fr"
     }
   ],
@@ -46,6 +46,11 @@
       "date": "2026-09-09",
       "event": "migrated; classified damage=MISSING injection=MOVE (judgment, unreviewed by a second reader)",
       "by": "Fault Atlas migration"
+    },
+    {
+      "date": "2026-09-09",
+      "event": "internal tool paths removed from observation notes before publication; wording otherwise unchanged",
+      "by": "Fault Atlas"
     }
   ]
 }

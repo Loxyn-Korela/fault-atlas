@@ -16,7 +16,7 @@
       "corpus": "observation 2026-08 (272 Europe PMC JATS articles)",
       "date": "2026-08-08",
       "observer": "house observer (LLM agent), see report",
-      "excerpt": "MESURÉ le 08/08/2026 sur les 272 articles XML JATS de atelier-filtres/corpus : 0/272 résumés commencent par un numéro de point, et 0/272 portent trois points « 1. … 2. … 3. » ou plus. La forme MODERNE équivalente est le résumé à sections déclarées : 160/272 (59 %) ont un <sec> dans leur <abstract>. ⇒ la mesure DATE la ligne : observée le 08/08/2026 sur Apperley, Humphrey & Levy, Br. J. Pharmac. 1976 (résumé en NEUF points numérotés), absente du fonds moderne.",
+      "excerpt": "MESURÉ le 08/08/2026 sur les 272 articles XML JATS de (internal corpus of 272 JATS articles) : 0/272 résumés commencent par un numéro de point, et 0/272 portent trois points « 1. … 2. … 3. » ou plus. La forme MODERNE équivalente est le résumé à sections déclarées : 160/272 (59 %) ont un <sec> dans leur <abstract>. ⇒ la mesure DATE la ligne : observée le 08/08/2026 sur Apperley, Humphrey & Levy, Br. J. Pharmac. 1976 (résumé en NEUF points numérotés), absente du fonds moderne.",
       "lang": "fr"
     }
   ],
@@ -46,6 +46,11 @@
       "date": "2026-09-09",
       "event": "migrated; classified damage=MISSING injection=FORMAT (judgment, unreviewed by a second reader)",
       "by": "Fault Atlas migration"
+    },
+    {
+      "date": "2026-09-09",
+      "event": "internal tool paths removed from observation notes before publication; wording otherwise unchanged",
+      "by": "Fault Atlas"
     }
   ]
 }

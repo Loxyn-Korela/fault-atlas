@@ -16,7 +16,7 @@
       "corpus": "observation 2026-08 (Europe PMC JATS 2023-2026 and PubMed abstracts)",
       "date": "2026-08-08",
       "observer": "house observer (LLM agent), see report",
-      "excerpt": "MESURÉ le 08/08/2026 sur 272 articles Europe PMC accès libre 2023-2026 (atelier-filtres/sondes-serie-B.py) : présent dans 33 articles (12 %), dont 29 sur 34 du lot physique/maths (85 %) contre 1 sur 34 du lot essais cliniques et 0 sur 34 du lot biomédical — la difficulté n'existe quasiment pas en biomédecine, ce qui explique qu'elle ait manqué au catalogue. Formes réelles : étiquettes « (1) », « (2) » (moderne-PMC13264967) et « 1 », « 2 », « 3 » sans parenthèses (moderne-PMC13262411) — deux conventions dans le même corpus.",
+      "excerpt": "MESURÉ le 08/08/2026 sur 272 articles Europe PMC accès libre 2023-2026 (internal corpus of 272 JATS articles) : présent dans 33 articles (12 %), dont 29 sur 34 du lot physique/maths (85 %) contre 1 sur 34 du lot essais cliniques et 0 sur 34 du lot biomédical — la difficulté n'existe quasiment pas en biomédecine, ce qui explique qu'elle ait manqué au catalogue. Formes réelles : étiquettes « (1) », « (2) » (moderne-PMC13264967) et « 1 », « 2 », « 3 » sans parenthèses (moderne-PMC13262411) — deux conventions dans le même corpus.",
       "lang": "fr"
     }
   ],
@@ -52,6 +52,11 @@
       "date": "2026-08-08",
       "event": "house filter exists with 4 cases and 1 counter-examples (bench green=True); specimens to be transcribed into this record",
       "by": "Korela For Science"
+    },
+    {
+      "date": "2026-09-09",
+      "event": "internal tool paths removed from observation notes before publication; wording otherwise unchanged",
+      "by": "Fault Atlas"
     }
   ]
 }

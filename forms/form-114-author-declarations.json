@@ -16,7 +16,7 @@
       "corpus": "observation 2026-08 (Europe PMC JATS 2023-2026 and PubMed abstracts)",
       "date": "2026-08-08",
       "observer": "house observer (LLM agent), see report",
-      "excerpt": "MESURÉ le 08/08/2026 sur 272 articles Europe PMC accès libre 2023-2026 (atelier-filtres/sondes-serie-B.py) : présent dans 190 articles (69 %) — le défaut le plus répandu de la série. Concentration : cas 34/34, meta 34/34, phys 31/34, bio 30/34, essai 28/34, moderne 15/17, nonEN 17/51, retract 1/34. Formes réelles : titres « Author contributions », « Competing interests », « Data availability », et fn-type COI-statement ×30, financial-disclosure ×12, con ×4 — contre fn-type=\"other\" ×127, qui ne dit rien et fonde la clause de refus.",
+      "excerpt": "MESURÉ le 08/08/2026 sur 272 articles Europe PMC accès libre 2023-2026 (internal corpus of 272 JATS articles) : présent dans 190 articles (69 %) — le défaut le plus répandu de la série. Concentration : cas 34/34, meta 34/34, phys 31/34, bio 30/34, essai 28/34, moderne 15/17, nonEN 17/51, retract 1/34. Formes réelles : titres « Author contributions », « Competing interests », « Data availability », et fn-type COI-statement ×30, financial-disclosure ×12, con ×4 — contre fn-type=\"other\" ×127, qui ne dit rien et fonde la clause de refus.",
       "lang": "fr"
     }
   ],
@@ -51,6 +51,11 @@
       "date": "2026-08-08",
       "event": "house filter exists with 5 cases and 1 counter-examples (bench green=True); specimens to be transcribed into this record",
       "by": "Korela For Science"
+    },
+    {
+      "date": "2026-09-09",
+      "event": "internal tool paths removed from observation notes before publication; wording otherwise unchanged",
+      "by": "Fault Atlas"
     }
   ]
 }

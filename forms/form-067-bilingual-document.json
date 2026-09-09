@@ -16,7 +16,7 @@
       "corpus": "observation 2026-08 (Europe PMC JATS 2023-2026 and PubMed abstracts)",
       "date": "2026-08-08",
       "observer": "house observer (LLM agent), see report",
-      "excerpt": "MESURÉ le 08/08/2026 sur 272 articles Europe PMC accès libre 2023-2026 (atelier-filtres/sondes-serie-B.py) : présent dans 27 articles (10 %), TOUS dans le lot non anglophone — 27 sur 51, soit 53 % de ce lot, et 0 % des sept autres. Formes réelles : nonEN-PMC13185728 porte pt→en (title), pt→es (title), pt→en (abstract) — un article portugais dont le titre est répété en anglais ET en espagnol, et le résumé en anglais.",
+      "excerpt": "MESURÉ le 08/08/2026 sur 272 articles Europe PMC accès libre 2023-2026 (internal corpus of 272 JATS articles) : présent dans 27 articles (10 %), TOUS dans le lot non anglophone — 27 sur 51, soit 53 % de ce lot, et 0 % des sept autres. Formes réelles : nonEN-PMC13185728 porte pt→en (title), pt→es (title), pt→en (abstract) — un article portugais dont le titre est répété en anglais ET en espagnol, et le résumé en anglais.",
       "lang": "fr"
     }
   ],
@@ -53,6 +53,11 @@
       "date": "2026-08-08",
       "event": "house filter exists with 4 cases and 2 counter-examples (bench green=True); specimens to be transcribed into this record",
       "by": "Korela For Science"
+    },
+    {
+      "date": "2026-09-09",
+      "event": "internal tool paths removed from observation notes before publication; wording otherwise unchanged",
+      "by": "Fault Atlas"
     }
   ]
 }

@@ -16,7 +16,7 @@
       "corpus": "observation 2026-08 (272 Europe PMC JATS articles)",
       "date": "2026-08-08",
       "observer": "house observer (LLM agent), see report",
-      "excerpt": "MESURÉ le 08/08/2026 sur les 272 articles de atelier-filtres/corpus : 15 049 des 16 411 paragraphes de corps (92 %) ne contiennent AUCUNE année. L'affirmation non datée est donc la norme, pas l'exception — et deux affirmations non datées ne peuvent pas être départagées par la date. (Sonde : comptage des <p> du <body> portant un jeton d'année 19xx/20xx.)",
+      "excerpt": "MESURÉ le 08/08/2026 sur les 272 articles de (internal corpus of 272 JATS articles) : 15 049 des 16 411 paragraphes de corps (92 %) ne contiennent AUCUNE année. L'affirmation non datée est donc la norme, pas l'exception — et deux affirmations non datées ne peuvent pas être départagées par la date. (Sonde : comptage des <p> du <body> portant un jeton d'année 19xx/20xx.)",
       "lang": "fr"
     }
   ],
@@ -47,6 +47,11 @@
       "date": "2026-09-09",
       "event": "migrated; classified damage=WRONG_VALUE injection=ALTER (judgment, unreviewed by a second reader)",
       "by": "Fault Atlas migration"
+    },
+    {
+      "date": "2026-09-09",
+      "event": "internal tool paths removed from observation notes before publication; wording otherwise unchanged",
+      "by": "Fault Atlas"
     }
   ]
 }

@@ -16,7 +16,7 @@
       "corpus": "observation 2026-08 (Europe PMC JATS 2023-2026 and PubMed abstracts)",
       "date": "2026-08-08",
       "observer": "house observer (LLM agent), see report",
-      "excerpt": "MESURÉ le 08/08/2026 sur les 272 articles XML JATS d'atelier-filtres/corpus/ : présent dans 30 (11 %). Concentration : nonEN 24, bio 3, meta 2, phys 1. Formes réelles, par article-type de <sub-article> : translation 24, associated-data 9, aggregated-review-documents 6, author-comment 3, editor-report 3. Exemple : bio-PMC13252842.xml porte 5 <sub-article> (aggregated-review-documents, associated-data, author-comment, editor-report) dans un seul fichier.",
+      "excerpt": "MESURÉ le 08/08/2026 sur les 272 articles XML JATS d'(internal corpus of 272 JATS articles) : présent dans 30 (11 %). Concentration : nonEN 24, bio 3, meta 2, phys 1. Formes réelles, par article-type de <sub-article> : translation 24, associated-data 9, aggregated-review-documents 6, author-comment 3, editor-report 3. Exemple : bio-PMC13252842.xml porte 5 <sub-article> (aggregated-review-documents, associated-data, author-comment, editor-report) dans un seul fichier.",
       "lang": "fr"
     }
   ],
@@ -53,6 +53,11 @@
       "date": "2026-08-08",
       "event": "house filter exists with 6 cases and 1 counter-examples (bench green=True); specimens to be transcribed into this record",
       "by": "Korela For Science"
+    },
+    {
+      "date": "2026-09-09",
+      "event": "internal tool paths removed from observation notes before publication; wording otherwise unchanged",
+      "by": "Fault Atlas"
     }
   ]
 }

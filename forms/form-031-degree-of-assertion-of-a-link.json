@@ -16,7 +16,7 @@
       "corpus": "observation 2026-08 (272 Europe PMC JATS articles)",
       "date": "2026-08-08",
       "observer": "house observer (LLM agent), see report",
-      "excerpt": "MESURÉ le 08/08/2026 sur atelier-filtres/corpus (272 XML JATS) : 233/272 articles (86 %) portent au moins un marqueur de non-affirmation (may · might · could · suggests · appears to · likely · has been proposed) ; 4 518 occurrences au total, soit 19,4 par article concerné.",
+      "excerpt": "MESURÉ le 08/08/2026 sur (internal corpus of 272 JATS articles) (272 XML JATS) : 233/272 articles (86 %) portent au moins un marqueur de non-affirmation (may · might · could · suggests · appears to · likely · has been proposed) ; 4 518 occurrences au total, soit 19,4 par article concerné.",
       "lang": "fr"
     }
   ],
@@ -46,6 +46,11 @@
       "date": "2026-09-09",
       "event": "migrated; classified damage=SPURIOUS_EDGE injection=ALTER (judgment, unreviewed by a second reader)",
       "by": "Fault Atlas migration"
+    },
+    {
+      "date": "2026-09-09",
+      "event": "internal tool paths removed from observation notes before publication; wording otherwise unchanged",
+      "by": "Fault Atlas"
     }
   ]
 }
