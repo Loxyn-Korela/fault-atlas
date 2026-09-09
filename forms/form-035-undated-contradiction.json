@@ -6,7 +6,7 @@
   "name_fr": "Contradiction sans date",
   "damage": "WRONG_VALUE",
   "class": "IRREDUCIBLE",
-  "layer": "⑧ cohérence",
+  "layer": "⑧ coherence",
   "injection": "ALTER",
   "legacy_severity": "G2",
   "legacy_mechanism": "M5",
@@ -17,7 +17,8 @@
       "date": "2026-08-08",
       "observer": "house observer (LLM agent), see report",
       "excerpt": "MESURÉ le 08/08/2026 sur les 272 articles de (internal corpus of 272 JATS articles) : 15 049 des 16 411 paragraphes de corps (92 %) ne contiennent AUCUNE année. L'affirmation non datée est donc la norme, pas l'exception — et deux affirmations non datées ne peuvent pas être départagées par la date. (Sonde : comptage des <p> du <body> portant un jeton d'année 19xx/20xx.)",
-      "lang": "fr"
+      "lang": "fr",
+      "excerpt_en": "MEASURED on 2026-08-08 on the 272 articles of the internal corpus: 15,049 of the 16,411 body paragraphs (92 %) contain NO year. The undated statement is therefore the norm, not the exception — and two undated statements cannot be separated by date. (Probe: count of <p> in <body> carrying a 19xx/20xx year token.)"
     }
   ],
   "specimens": {
@@ -40,7 +41,7 @@
   "history": [
     {
       "date": "2026-08-09",
-      "event": "catalogue line 35 — GOLDEN: irréductible ou faux silencieux",
+      "event": "catalogue line 35 — GOLDEN (kept for the benchmark): irreducible or silent false",
       "by": "Korela For Science"
     },
     {

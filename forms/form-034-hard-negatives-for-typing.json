@@ -17,7 +17,8 @@
       "date": "2026-08-08",
       "observer": "house observer (LLM agent), see report",
       "excerpt": "MESURÉ le 08/08/2026 sur les 272 XML : 19/272 (7 %) portent DEUX formulations de types voisins pour le même fait de financement — « funded by » ET « supported by » dans le même article ; 100/272 (37 %) emploient au moins un terme de relation contractuelle confusable (collaboration, contrat, prestataire, fournisseur). Le corpus réel offre donc le vocabulaire du piège ; aucun de nos corpus fabriqués ne le pose.",
-      "lang": "fr"
+      "lang": "fr",
+      "excerpt_en": "MEASURED on 2026-08-08 on the 272 XML files: 19/272 (7 %) carry TWO neighbouring-type formulations for the same funding fact — \"funded by\" AND \"supported by\" in the same article; 100/272 (37 %) use at least one confusable contractual relation term (collaboration, contract, provider, supplier). The real corpus thus offers the vocabulary of the trap; none of our fabricated corpora sets it."
     }
   ],
   "specimens": {
@@ -38,7 +39,7 @@
   "history": [
     {
       "date": "2026-08-09",
-      "event": "catalogue line 34 — GOLDEN: irréductible ou faux silencieux",
+      "event": "catalogue line 34 — GOLDEN (kept for the benchmark): irreducible or silent false",
       "by": "Korela For Science"
     },
     {

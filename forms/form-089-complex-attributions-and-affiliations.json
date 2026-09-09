@@ -17,7 +17,8 @@
       "date": "2026-08-08",
       "observer": "house observer (LLM agent), see report",
       "excerpt": "MESURÉ le 08/08/2026 sur les 272 articles de (internal corpus of 272 JATS articles) : 106/272 (39 %) déclarent au moins deux <aff> ET au moins un auteur rattaché à deux affiliations par renvoi de note — bio-PMC12674831 en porte 57 affiliations pour 11 auteurs multi-affiliés, bio-PMC12882215 en a 4 pour 4 auteurs. Le lien auteur→institution passe par le symbole, jamais par une phrase. L'observation qui fonde la ligne est datée du 08/08/2026 sur Duncker et al., Br. J. Pharmac. 1986.",
-      "lang": "fr"
+      "lang": "fr",
+      "excerpt_en": "MEASURED on 2026-08-08 on the 272 articles of the internal corpus: 106/272 (39 %) declare at least two <aff> AND at least one author attached to two affiliations by footnote reference — bio-PMC12674831 carries 57 affiliations for 11 multi-affiliated authors, bio-PMC12882215 has 4 for 4 authors. The author→institution link goes through the symbol, never through a sentence. The observation founding the line is dated 2026-08-08 on Duncker et al., Br. J. Pharmac. 1986."
     }
   ],
   "specimens": {
@@ -39,7 +40,7 @@
   "history": [
     {
       "date": "2026-08-09",
-      "event": "catalogue line 89 — GOLDEN: irréductible ou faux silencieux",
+      "event": "catalogue line 89 — GOLDEN (kept for the benchmark): irreducible or silent false",
       "by": "Korela For Science"
     },
     {

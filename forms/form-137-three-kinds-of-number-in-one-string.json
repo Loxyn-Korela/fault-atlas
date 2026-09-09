@@ -17,7 +17,8 @@
       "date": "2026-08-08",
       "observer": "house observer (LLM agent), see report",
       "excerpt": "MESURÉ le 08/08/2026 sur les 272 XML : 48/272 (18 %) portent un indice chimique balisé <sub>, 2/272 (1 %) un appel de citation multiple en <sup> (« <sup>73, », « <sup>2– »), et 74/272 (27 %) contiennent déjà, EN TEXTE PLAT, un mot terminé par un chiffre collé à un nombre décimal (« i6.2 », « iid3.1 »). Un seul article (1/272) montre la collision complète en texte plat (« S3.38-58 ») : en JATS le balisage sépare encore les trois natures — LA COLLISION NAÎT AU RENDU, et c'est le rendu qu'on donne au lecteur. Observation d'origine 08/08/2026, 14 articles 2021-2026 hors biomédecine (annexe 137).",
-      "lang": "fr"
+      "lang": "fr",
+      "excerpt_en": "MEASURED on 2026-08-08 on the 272 XML files: 48/272 (18 %) carry a tagged <sub> chemical index, 2/272 (1 %) a multiple citation call in <sup> (\"<sup>73,\", \"<sup>2–\"), and 74/272 (27 %) already contain, IN FLAT TEXT, a word ending in a digit glued to a decimal number (\"i6.2\", \"iid3.1\"). A single article (1/272) shows the full collision in flat text (\"S3.38-58\"): in JATS the markup still separates the three kinds — THE COLLISION IS BORN AT RENDERING, and rendering is what the reader is given. Original observation 2026-08-08, 14 articles 2021-2026 outside biomedicine (annex 137)."
     }
   ],
   "specimens": {
@@ -40,7 +41,7 @@
   "history": [
     {
       "date": "2026-08-09",
-      "event": "catalogue line 137 — GOLDEN: irréductible ou faux silencieux",
+      "event": "catalogue line 137 — GOLDEN (kept for the benchmark): irreducible or silent false",
       "by": "Korela For Science"
     },
     {

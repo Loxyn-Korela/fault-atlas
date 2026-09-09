@@ -6,7 +6,7 @@
   "name_fr": "Citation avec localisateur interne",
   "damage": "MISSING",
   "class": "DEFEATED_IF_XML",
-  "layer": "⑤ ancrage",
+  "layer": "⑤ anchoring",
   "injection": "FORMAT",
   "legacy_severity": "G3",
   "legacy_mechanism": "M4",
@@ -17,7 +17,8 @@
       "date": "2026-08-08",
       "observer": "house observer (LLM agent), see report",
       "excerpt": "MESURÉ le 08/08/2026 sur 272 articles Europe PMC accès libre 2023-2026 : présent dans 71 (26 %). Concentration : essai 17, meta 16, phys 13. Formes réelles : (Fig. 1 ) | (Fig. 3 ) | (Fig. 1 )",
-      "lang": "fr"
+      "lang": "fr",
+      "excerpt_en": "MEASURED on 2026-08-08 on 272 open-access Europe PMC articles 2023-2026: present in 71 (26 %). Concentration: trial 17, meta 16, phys 13. Real forms: (Fig. 1 ) | (Fig. 3 ) | (Fig. 1 )"
     }
   ],
   "specimens": {
@@ -40,7 +41,7 @@
   "history": [
     {
       "date": "2026-08-09",
-      "event": "catalogue line 139 — VAINCU: filtre écrit et vert au banc",
+      "event": "catalogue line 139 — DEFEATED (cancelled by code): filter written and green on the bench",
       "by": "Korela For Science"
     },
     {

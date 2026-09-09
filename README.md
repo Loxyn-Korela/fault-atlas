@@ -62,7 +62,7 @@ Every form has `status: migrated_unreviewed`. A second reader validates or conte
 python3 tools/validate.py        # every record against the schema and the house rules
 python3 tools/test_validate.py   # the validator proves itself on seven planted faults
 python3 tools/build_sqlite.py    # fault-atlas.sqlite, a view for Datasette
-datasette fault-atlas.sqlite     # browse locally
+datasette fault-atlas.sqlite --immutable fault-atlas.sqlite --metadata datasette-metadata.json   # browse locally
 ```
 
 ## Contribute

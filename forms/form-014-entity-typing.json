@@ -6,7 +6,7 @@
   "name_fr": "Typage des entités",
   "damage": "WRONG_LABEL",
   "class": "IRREDUCIBLE",
-  "layer": "⑦ schéma",
+  "layer": "⑦ schema",
   "injection": "DESIGN",
   "legacy_severity": "G2",
   "legacy_mechanism": "M12",
@@ -17,7 +17,8 @@
       "date": "2026-08-08",
       "observer": "house observer (LLM agent), see report",
       "excerpt": "MESURÉ le 08/08/2026 sur les 272 XML de (internal corpus of 272 JATS articles) : 63/272 (23 %) font voisiner une organisation balisée <institution> et une étude/cohorte NOMMÉE (« the Fremantle Diabetes Study », « the Brazilian Longitudinal Study ») — deux types confusables dans la même phrase. Seuls 9/272 (3 %) portent l'apposition qui tranche (« , a multicenter … »). Rappel du palier P6 (annexe 14) : 920/925 entités sont Organization ou Person — le typage n'est aujourd'hui AUCUNE difficulté.",
-      "lang": "fr"
+      "lang": "fr",
+      "excerpt_en": "MEASURED on 2026-08-08 on the 272 XML files of the internal corpus: 63/272 (23 %) place a tagged <institution> organisation next to a NAMED study/cohort (\"the Fremantle Diabetes Study\", \"the Brazilian Longitudinal Study\") — two confusable types in the same sentence. Only 9/272 (3 %) carry the apposition that settles it (\", a multicenter …\"). Reminder from tier P6 (annex 14): 920/925 entities are Organization or Person — typing is currently NO difficulty at all."
     }
   ],
   "specimens": {
@@ -38,7 +39,7 @@
   "history": [
     {
       "date": "2026-08-09",
-      "event": "catalogue line 14 — GOLDEN: irréductible ou faux silencieux",
+      "event": "catalogue line 14 — GOLDEN (kept for the benchmark): irreducible or silent false",
       "by": "Korela For Science"
     },
     {

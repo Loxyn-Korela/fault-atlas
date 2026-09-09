@@ -6,3 +6,9 @@
 - Classification by damage and injection done line by line on 2026-09-09 (`docs/VERIFICATION-2026-09-09.md`); judgment, not measurement.
 - Validator with house rules; proves itself on seven planted faults.
 - SQLite view builder for Datasette.
+
+## 0.1.1 — 2026-09-09
+- Every observation note carries an English translation (`excerpt_en`); the original French note stays the record.
+- Layer labels and history events in English.
+- Internal script names removed from observation notes.
+- Datasette view: `observations` and `history` now carry the form name and a foreign key to `forms`; `datasette-metadata.json` added (label column, facets, descriptions).

@@ -6,7 +6,7 @@
   "name_fr": "Entités anonymisées",
   "damage": "MERGE",
   "class": "DEFEATED",
-  "layer": "⑥ résolution",
+  "layer": "⑥ resolution",
   "injection": "RENAME",
   "legacy_severity": "G1",
   "legacy_mechanism": "M2",
@@ -17,7 +17,8 @@
       "date": "2026-08-08",
       "observer": "house observer (LLM agent), see report",
       "excerpt": "« Patient 1 » dans un cas clinique portugais de 1986 ET dans un article de 2025 — même surface, entités sans aucun rapport (vagues 1 et 3, 08/08/2026)",
-      "lang": "fr"
+      "lang": "fr",
+      "excerpt_en": "\"Patient 1\" in a Portuguese clinical case of 1986 AND in an article of 2025 — same surface, entirely unrelated entities (waves 1 and 3, 2026-08-08)"
     }
   ],
   "specimens": {
@@ -40,7 +41,7 @@
   "history": [
     {
       "date": "2026-08-09",
-      "event": "catalogue line 76 — VAINCU: filtre écrit et vert au banc",
+      "event": "catalogue line 76 — DEFEATED (cancelled by code): filter written and green on the bench",
       "by": "Korela For Science"
     },
     {

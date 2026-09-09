@@ -17,7 +17,8 @@
       "date": "2026-08-08",
       "observer": "house observer (LLM agent), see report",
       "excerpt": "MESURÉ le 08/08/2026 sur (internal corpus of 272 JATS articles) (272 XML JATS) : 57/272 articles (21 %) portent dans le corps au moins une mention de fournisseur entre parenthèses de la forme « (… Ltd/Inc/GmbH/Corp/B.V./AG …) » ; 50/272 (18 %) portent en outre une référence catalogue (cat. no., Cat#, catalogue number).",
-      "lang": "fr"
+      "lang": "fr",
+      "excerpt_en": "MEASURED on 2026-08-08 on the internal corpus (272 JATS XML): 57/272 articles (21 %) carry in the body at least one parenthesised supplier mention of the form \"(… Ltd/Inc/GmbH/Corp/B.V./AG …)\"; 50/272 (18 %) additionally carry a catalogue reference (cat. no., Cat#, catalogue number)."
     }
   ],
   "specimens": {
@@ -38,7 +39,7 @@
   "history": [
     {
       "date": "2026-08-09",
-      "event": "catalogue line 81 — GOLDEN: irréductible ou faux silencieux",
+      "event": "catalogue line 81 — GOLDEN (kept for the benchmark): irreducible or silent false",
       "by": "Korela For Science"
     },
     {

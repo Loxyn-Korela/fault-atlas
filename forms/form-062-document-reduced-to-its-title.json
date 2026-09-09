@@ -6,7 +6,7 @@
   "name_fr": "Document réduit à son titre",
   "damage": "MISSING",
   "class": "IRREDUCIBLE",
-  "layer": "② lecture",
+  "layer": "② reading",
   "injection": "DELETE",
   "legacy_severity": "G3",
   "legacy_mechanism": "M11",
@@ -17,7 +17,8 @@
       "date": "2026-08-08",
       "observer": "house observer (LLM agent), see report",
       "excerpt": "COMPTÉ le 08/08/2026 sur un corpus PubMed réel (annexe 62) : 731 articles sur 3 642 — 20 % du corpus arginine — n'ont aucun corps de texte ; 321 sur 866 — 37 % — sur un second corpus du même dossier. Conséquence mesurée le 31/07 : le juge exige une phrase-preuve, qui sur ces documents ne peut exister.",
-      "lang": "fr"
+      "lang": "fr",
+      "excerpt_en": "COUNTED on 2026-08-08 on a real PubMed corpus (annex 62): 731 articles out of 3,642 — 20 % of the arginine corpus — have no body text at all; 321 out of 866 — 37 % — on a second corpus of the same folder. Consequence measured on 2026-07-31: the judge requires an evidence sentence, which on these documents cannot exist."
     }
   ],
   "specimens": {
@@ -39,7 +40,7 @@
   "history": [
     {
       "date": "2026-08-09",
-      "event": "catalogue line 62 — GOLDEN: irréductible ou faux silencieux",
+      "event": "catalogue line 62 — GOLDEN (kept for the benchmark): irreducible or silent false",
       "by": "Korela For Science"
     },
     {

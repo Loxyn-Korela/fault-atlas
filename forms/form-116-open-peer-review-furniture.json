@@ -17,7 +17,8 @@
       "date": "2026-08-08",
       "observer": "house observer (LLM agent), see report",
       "excerpt": "MESURÉ le 08/08/2026 sur (internal corpus of 272 JATS articles) (272 XML JATS) : 5/272 articles (2 %) portent un mobilier de relecture ouverte nommé (peer review file, reviewer report, editor's evaluation, eLife assessment) et 6/272 (2 %) un <sub-article article-type=\"...review...\" > ; le mobilier voisin de déclarations sur les auteurs est lui à 203/272 (75 %). Observée le 08/08 sur 15 articles 2023-2026 (VERDICT ancien contre moderne, N10) — absente du corpus 1957-1987.",
-      "lang": "fr"
+      "lang": "fr",
+      "excerpt_en": "MEASURED on 2026-08-08 on the internal corpus (272 JATS XML): 5/272 articles (2 %) carry named open peer-review furniture (peer review file, reviewer report, editor's evaluation, eLife assessment) and 6/272 (2 %) a <sub-article article-type=\"...review...\">; the neighbouring furniture of author declarations is at 203/272 (75 %). Observed on 2026-08-08 on 15 articles 2023-2026 (VERDICT old versus modern, N10) — absent from the 1957-1987 corpus."
     }
   ],
   "specimens": {
@@ -39,7 +40,7 @@
   "history": [
     {
       "date": "2026-08-09",
-      "event": "catalogue line 116 — GOLDEN: irréductible ou faux silencieux",
+      "event": "catalogue line 116 — GOLDEN (kept for the benchmark): irreducible or silent false",
       "by": "Korela For Science"
     },
     {

@@ -4,91 +4,307 @@
   "title": "Fault Atlas — form record",
   "description": "One observed form of fault in a knowledge graph built from documents. The file is the record of truth: it must be readable and judgeable without any software.",
   "type": "object",
-  "required": ["id", "version", "name", "damage", "class", "layer", "status", "seen", "specimens", "prevention", "repair", "judgeable_by", "history"],
+  "required": [
+    "id",
+    "version",
+    "name",
+    "damage",
+    "class",
+    "layer",
+    "status",
+    "seen",
+    "specimens",
+    "prevention",
+    "repair",
+    "judgeable_by",
+    "history"
+  ],
   "additionalProperties": false,
   "properties": {
-    "id": { "type": "string", "pattern": "^form-[0-9]{3}[a-z]?$", "description": "Stable identifier. Never reused." },
-    "version": { "type": "integer", "minimum": 1 },
-    "legacy_line": { "type": "integer", "description": "Line number in the catalogue of 2026-08-09 (korela.db), for traceability." },
-    "name": { "type": "string", "minLength": 3 },
-    "name_fr": { "type": "string", "description": "Original French name, verbatim from the source catalogue." },
+    "id": {
+      "type": "string",
+      "pattern": "^form-[0-9]{3}[a-z]?$",
+      "description": "Stable identifier. Never reused."
+    },
+    "version": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "legacy_line": {
+      "type": "integer",
+      "description": "Line number in the catalogue of 2026-08-09 (korela.db), for traceability."
+    },
+    "name": {
+      "type": "string",
+      "minLength": 3
+    },
+    "name_fr": {
+      "type": "string",
+      "description": "Original French name, verbatim from the source catalogue."
+    },
     "damage": {
       "type": "string",
-      "enum": ["MERGE", "SPLIT", "SPURIOUS_EDGE", "MISSING", "WRONG_VALUE", "WRONG_LABEL", "ANACHRONISM", "CORPUS_PARAMETER"],
+      "enum": [
+        "MERGE",
+        "SPLIT",
+        "SPURIOUS_EDGE",
+        "MISSING",
+        "WRONG_VALUE",
+        "WRONG_LABEL",
+        "ANACHRONISM",
+        "CORPUS_PARAMETER"
+      ],
       "description": "What the form does to the graph. MERGE: two real things become one node. SPLIT: one thing becomes several nodes. SPURIOUS_EDGE: a relation that the source never asserted. MISSING: a node or relation that the source asserts and the graph lacks. WRONG_VALUE: a property, number or date is wrong. WRONG_LABEL: an entity or relation type is wrong. ANACHRONISM: a fact is placed outside its validity interval, or a superseded status is kept. CORPUS_PARAMETER: not a damage; a property of the corpus composition."
     },
     "class": {
       "type": "string",
-      "enum": ["DEFEATED", "DEFEATED_IF_XML", "REFUSABLE", "SILENT_FALSE", "IRREDUCIBLE", "UNCLASSIFIED"],
+      "enum": [
+        "DEFEATED",
+        "DEFEATED_IF_XML",
+        "REFUSABLE",
+        "SILENT_FALSE",
+        "IRREDUCIBLE",
+        "UNCLASSIFIED"
+      ],
       "description": "DEFEATED: cancelled by deterministic code, no judgement of meaning, with a test. DEFEATED_IF_XML: cancelled when the source is structured (JATS/XML), not on composed PDF. REFUSABLE: code can either handle it or explicitly abstain; never produces a false. SILENT_FALSE: the error yields a plausible result that code cannot detect from inside. IRREDUCIBLE: requires meaning; no code cancels it."
     },
-    "layer": { "type": "string", "description": "Layer of the product stack where the form bites (korela_base 00b numbering kept as text)." },
+    "layer": {
+      "type": "string",
+      "description": "Layer of the product stack where the form bites (korela_base 00b numbering kept as text)."
+    },
     "injection": {
       "type": "string",
-      "enum": ["RENAME", "DUPLICATE", "DELETE", "ALTER", "NOISE", "MOVE", "INSERT", "FORMAT", "TRANSLATE", "IMAGE", "DESIGN", "CONSTRAINT", "PARAMETER"],
+      "enum": [
+        "RENAME",
+        "DUPLICATE",
+        "DELETE",
+        "ALTER",
+        "NOISE",
+        "MOVE",
+        "INSERT",
+        "FORMAT",
+        "TRANSLATE",
+        "IMAGE",
+        "DESIGN",
+        "CONSTRAINT",
+        "PARAMETER"
+      ],
       "description": "How the form is fabricated into a document for a controlled corpus. IMAGE requires rendering and vision, not text injection. DESIGN: decided in the truth (world specification), not injected. CONSTRAINT: a schema rule."
     },
-    "legacy_severity": { "type": "string", "description": "G1..G4 of the 2026-08 catalogue. House vocabulary, kept for traceability only; not a measure." },
-    "legacy_mechanism": { "type": "string", "description": "M1..M12 remedy family of the 2026-08 catalogue. Traceability only." },
-    "status": { "type": "string", "enum": ["proposed", "validated", "refuted", "migrated_unreviewed"] },
-    "observed_absent_in": { "type": "array", "items": { "type": "string" }, "description": "Corpora where the form was searched for and measured absent (a result, not a gap)." },
+    "legacy_severity": {
+      "type": "string",
+      "description": "G1..G4 of the 2026-08 catalogue. House vocabulary, kept for traceability only; not a measure."
+    },
+    "legacy_mechanism": {
+      "type": "string",
+      "description": "M1..M12 remedy family of the 2026-08 catalogue. Traceability only."
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "proposed",
+        "validated",
+        "refuted",
+        "migrated_unreviewed"
+      ]
+    },
+    "observed_absent_in": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Corpora where the form was searched for and measured absent (a result, not a gap)."
+    },
     "seen": {
       "type": "array",
       "description": "Where the form was observed. Empty array = no specimen yet; the form is then a hypothesis, not an observation.",
       "items": {
         "type": "object",
-        "required": ["corpus", "date", "excerpt"],
+        "required": [
+          "corpus",
+          "date",
+          "excerpt"
+        ],
         "additionalProperties": false,
         "properties": {
-          "corpus": { "type": "string" },
-          "document": { "type": "string" },
-          "date": { "type": "string", "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$" },
-          "observer": { "type": "string" },
-          "excerpt": { "type": "string", "minLength": 1, "description": "Verbatim, in the source language." },
-          "lang": { "type": "string" }
+          "corpus": {
+            "type": "string"
+          },
+          "document": {
+            "type": "string"
+          },
+          "date": {
+            "type": "string",
+            "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"
+          },
+          "observer": {
+            "type": "string"
+          },
+          "excerpt": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Verbatim, in the source language."
+          },
+          "lang": {
+            "type": "string"
+          },
+          "excerpt_en": {
+            "type": "string",
+            "description": "English translation of the excerpt when the original is not in English. The original stays the record; the translation is a courtesy."
+          }
         }
       }
     },
     "specimens": {
       "type": "object",
-      "required": ["cases", "counter_examples"],
+      "required": [
+        "cases",
+        "counter_examples"
+      ],
       "additionalProperties": false,
       "properties": {
-        "cases": { "type": "array", "items": { "type": "object", "required": ["input", "expected"], "properties": { "input": {}, "expected": {}, "note": { "type": "string" } } } },
-        "counter_examples": { "type": "array", "items": { "type": "object", "required": ["input", "expected"], "properties": { "input": {}, "expected": {}, "note": { "type": "string" } } }, "description": "What a remedy must NOT touch. A form with cases and no counter-example cannot be tested." }
+        "cases": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "input",
+              "expected"
+            ],
+            "properties": {
+              "input": {},
+              "expected": {},
+              "note": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "counter_examples": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "input",
+              "expected"
+            ],
+            "properties": {
+              "input": {},
+              "expected": {},
+              "note": {
+                "type": "string"
+              }
+            }
+          },
+          "description": "What a remedy must NOT touch. A form with cases and no counter-example cannot be tested."
+        }
       }
     },
     "prevention": {
       "type": "object",
-      "required": ["cancellable_by_code"],
+      "required": [
+        "cancellable_by_code"
+      ],
       "additionalProperties": false,
       "properties": {
-        "cancellable_by_code": { "type": "boolean" },
-        "refusal_clause": { "type": "string", "description": "When the code cannot conclude, what it returns instead of guessing." },
-        "needs": { "type": "array", "items": { "type": "string" }, "description": "External registries or identifiers required (Crossref, ORCID, trial registries...)." },
-        "note": { "type": "string" }
+        "cancellable_by_code": {
+          "type": "boolean"
+        },
+        "refusal_clause": {
+          "type": "string",
+          "description": "When the code cannot conclude, what it returns instead of guessing."
+        },
+        "needs": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "External registries or identifiers required (Crossref, ORCID, trial registries...)."
+        },
+        "note": {
+          "type": "string"
+        }
       }
     },
     "construction": {
       "type": "object",
       "additionalProperties": false,
       "properties": {
-        "guard_effect": { "type": "string", "description": "Measured effect of the guard that holds this form, by outcome only. Never the mechanism." },
-        "source": { "type": "string" }
+        "guard_effect": {
+          "type": "string",
+          "description": "Measured effect of the guard that holds this form, by outcome only. Never the mechanism."
+        },
+        "source": {
+          "type": "string"
+        }
       }
     },
     "repair": {
       "type": "object",
-      "required": ["reachable_by_deletion"],
+      "required": [
+        "reachable_by_deletion"
+      ],
       "additionalProperties": false,
       "properties": {
-        "reachable_by_deletion": { "type": "string", "enum": ["yes", "no", "partial", "unknown"], "description": "Can a deletion-only repair (nodes, edges, labels) restore the truth for this form?" },
-        "note": { "type": "string" }
+        "reachable_by_deletion": {
+          "type": "string",
+          "enum": [
+            "yes",
+            "no",
+            "partial",
+            "unknown"
+          ],
+          "description": "Can a deletion-only repair (nodes, edges, labels) restore the truth for this form?"
+        },
+        "note": {
+          "type": "string"
+        }
       }
     },
-    "judgeable_by": { "type": "array", "items": { "type": "string", "enum": ["construction", "registry", "curated", "dated_future", "closed_world"] }, "description": "Which kind of truth can judge this form. Empty = no known truth judges it yet." },
-    "observer_agreement": { "type": "string" },
-    "related": { "type": "array", "items": { "type": "string" } },
-    "history": { "type": "array", "minItems": 1, "items": { "type": "object", "required": ["date", "event"], "properties": { "date": { "type": "string" }, "event": { "type": "string" }, "by": { "type": "string" } } } }
+    "judgeable_by": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "construction",
+          "registry",
+          "curated",
+          "dated_future",
+          "closed_world"
+        ]
+      },
+      "description": "Which kind of truth can judge this form. Empty = no known truth judges it yet."
+    },
+    "observer_agreement": {
+      "type": "string"
+    },
+    "related": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "history": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "date",
+          "event"
+        ],
+        "properties": {
+          "date": {
+            "type": "string"
+          },
+          "event": {
+            "type": "string"
+          },
+          "by": {
+            "type": "string"
+          }
+        }
+      }
+    }
   }
 }

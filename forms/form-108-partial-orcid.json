@@ -6,7 +6,7 @@
   "name_fr": "ORCID partiel",
   "damage": "SPLIT",
   "class": "DEFEATED",
-  "layer": "⑥ résolution",
+  "layer": "⑥ resolution",
   "injection": "ALTER",
   "legacy_severity": "G1",
   "legacy_mechanism": "M1",
@@ -17,7 +17,8 @@
       "date": "2026-08-08",
       "observer": "house observer (LLM agent), see report",
       "excerpt": "ORCID tronqués ou mal recopiés dans les blocs auteurs d'articles modernes (vague hors-bio, 08/08/2026)",
-      "lang": "fr"
+      "lang": "fr",
+      "excerpt_en": "Truncated or miscopied ORCIDs in the author blocks of modern articles (non-bio wave, 2026-08-08)"
     }
   ],
   "specimens": {
@@ -40,7 +41,7 @@
   "history": [
     {
       "date": "2026-08-09",
-      "event": "catalogue line 108 — VAINCU: filtre écrit et vert au banc",
+      "event": "catalogue line 108 — DEFEATED (cancelled by code): filter written and green on the bench",
       "by": "Korela For Science"
     },
     {

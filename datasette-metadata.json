@@ -1,0 +1,27 @@
+{
+  "title": "Fault Atlas",
+  "description": "Observed fault forms in knowledge graphs built from documents — each with its provenance, the damage it causes in the graph, and the kind of truth that can judge it. Loxyn (Korela), Lyon.",
+  "license": "CC BY-SA 4.0 (records) · Apache 2.0 (tools)",
+  "license_url": "https://github.com/Loxyn-Korela/fault-atlas/blob/main/LICENSE.md",
+  "source": "Loxyn-Korela/fault-atlas",
+  "source_url": "https://github.com/Loxyn-Korela/fault-atlas",
+  "databases": {
+    "fault-atlas": {
+      "tables": {
+        "forms": {
+          "label_column": "name",
+          "description": "One row per observed fault form. `damage` is what it does to the graph; `class` says whether code can cancel it; `record` is the full JSON file.",
+          "facets": ["damage", "class", "injection", "layer", "status", "reachable_by_deletion"]
+        },
+        "observations": {
+          "description": "Where each form was seen: corpus, date, observer, the verbatim note (original language) and its English translation.",
+          "facets": ["form_name", "corpus", "date"]
+        },
+        "history": {
+          "description": "Every dated event of every form. Nothing is deleted.",
+          "facets": ["form_name", "date"]
+        }
+      }
+    }
+  }
+}

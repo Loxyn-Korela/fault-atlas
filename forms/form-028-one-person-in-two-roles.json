@@ -6,7 +6,7 @@
   "name_fr": "Une personne dans deux rôles",
   "damage": "MERGE",
   "class": "IRREDUCIBLE",
-  "layer": "⑥ résolution",
+  "layer": "⑥ resolution",
   "injection": "DESIGN",
   "legacy_severity": "G1",
   "legacy_mechanism": "M2",
@@ -17,7 +17,8 @@
       "date": "2026-08-08",
       "observer": "house observer (LLM agent), see report",
       "excerpt": "MESURÉ le 08/08/2026 sur les 272 articles de (internal corpus of 272 JATS articles) : dans 39/272 (14 %) un AUTEUR de l'article est aussi auteur d'une référence citée — une seule personne, deux rôles (signataire ici, source citée là) ; ex. bio-PMC12915353 (Azizi F., Golzarand M., Mirmiran P.). Et 51/272 (19 %) portent un contributeur déclaré sous au moins deux rôles distincts.",
-      "lang": "fr"
+      "lang": "fr",
+      "excerpt_en": "MEASURED on 2026-08-08 on the 272 articles of the internal corpus: in 39/272 (14 %) an AUTHOR of the article is also an author of a cited reference — one person, two roles (signatory here, cited source there); e.g. bio-PMC12915353 (Azizi F., Golzarand M., Mirmiran P.). And 51/272 (19 %) carry a contributor declared under at least two distinct roles."
     }
   ],
   "specimens": {
@@ -40,7 +41,7 @@
   "history": [
     {
       "date": "2026-08-09",
-      "event": "catalogue line 28 — GOLDEN: irréductible ou faux silencieux",
+      "event": "catalogue line 28 — GOLDEN (kept for the benchmark): irreducible or silent false",
       "by": "Korela For Science"
     },
     {

@@ -6,7 +6,7 @@
   "name_fr": "Point abréviatif dans l'unité",
   "damage": "WRONG_VALUE",
   "class": "REFUSABLE",
-  "layer": "② lecture",
+  "layer": "② reading",
   "injection": "ALTER",
   "legacy_severity": "G2",
   "legacy_mechanism": "M3",
@@ -17,7 +17,8 @@
       "date": "2026-08-08",
       "observer": "house observer (LLM agent), see report",
       "excerpt": "« c.c. » et « m.g. » relevés dans Br. J. Pharmac. 1971-1976 (vague 1, 08/08/2026)",
-      "lang": "fr"
+      "lang": "fr",
+      "excerpt_en": "\"c.c.\" and \"m.g.\" recorded in Br. J. Pharmac. 1971-1976 (wave 1, 2026-08-08)"
     }
   ],
   "specimens": {
@@ -41,7 +42,7 @@
   "history": [
     {
       "date": "2026-08-09",
-      "event": "catalogue line 105 — VAINCU: filtre écrit et vert au banc",
+      "event": "catalogue line 105 — DEFEATED (cancelled by code): filter written and green on the bench",
       "by": "Korela For Science"
     },
     {

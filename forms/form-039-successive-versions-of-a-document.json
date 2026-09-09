@@ -6,7 +6,7 @@
   "name_fr": "Versions successives d'un document",
   "damage": "ANACHRONISM",
   "class": "REFUSABLE",
-  "layer": "⑧ cohérence",
+  "layer": "⑧ coherence",
   "injection": "DUPLICATE",
   "legacy_severity": "G2",
   "legacy_mechanism": "M5",
@@ -17,7 +17,8 @@
       "date": "2026-08-08",
       "observer": "house observer (LLM agent), see report",
       "excerpt": "MESURÉ le 08/08/2026 sur 272 articles Europe PMC accès libre 2023-2026 : présent dans 39 (14 %). Concentration : retract 33, meta 3, bio 1, essai 1, phys 1. Formes réelles : related-article-type=retracted-article ×45 | retraction-forward ×14 | final-edited-article ×2 | preprint ×1 | <article-version>3</article-version> ×2 | <article-version>Version of Record</article-version> ×1",
-      "lang": "fr"
+      "lang": "fr",
+      "excerpt_en": "MEASURED on 2026-08-08 on 272 open-access Europe PMC articles 2023-2026: present in 39 (14 %). Concentration: retract 33, meta 3, bio 1, trial 1, phys 1. Real forms: related-article-type=retracted-article ×45 | retraction-forward ×14 | final-edited-article ×2 | preprint ×1 | <article-version>3</article-version> ×2 | <article-version>Version of Record</article-version> ×1"
     }
   ],
   "specimens": {
@@ -41,7 +42,7 @@
   "history": [
     {
       "date": "2026-08-09",
-      "event": "catalogue line 39 — VAINCU: filtre écrit et vert au banc",
+      "event": "catalogue line 39 — DEFEATED (cancelled by code): filter written and green on the bench",
       "by": "Korela For Science"
     },
     {

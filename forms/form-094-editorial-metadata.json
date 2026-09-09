@@ -17,7 +17,8 @@
       "date": "2026-08-08",
       "observer": "house observer (LLM agent), see report",
       "excerpt": "MESURÉ le 08/08/2026 sur (internal corpus of 272 JATS articles) (272 XML JATS) : 89/272 articles (33 %) portent un bloc de mots-clés balisé <kwd> ; 98/272 (36 %) une phrase de financement (« was supported by », « funded by », « grant from »), dont 59 (22 %) dans une balise <funding-statement> ou <funding-group> dédiée.",
-      "lang": "fr"
+      "lang": "fr",
+      "excerpt_en": "MEASURED on 2026-08-08 on the internal corpus (272 JATS XML): 89/272 articles (33 %) carry a tagged <kwd> keyword block; 98/272 (36 %) a funding sentence (\"was supported by\", \"funded by\", \"grant from\"), of which 59 (22 %) in a dedicated <funding-statement> or <funding-group> tag."
     }
   ],
   "specimens": {
@@ -39,7 +40,7 @@
   "history": [
     {
       "date": "2026-08-09",
-      "event": "catalogue line 94 — GOLDEN: irréductible ou faux silencieux",
+      "event": "catalogue line 94 — GOLDEN (kept for the benchmark): irreducible or silent false",
       "by": "Korela For Science"
     },
     {

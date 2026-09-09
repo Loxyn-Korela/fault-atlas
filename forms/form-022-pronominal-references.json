@@ -6,7 +6,7 @@
   "name_fr": "Reprises pronominales",
   "damage": "MERGE",
   "class": "IRREDUCIBLE",
-  "layer": "③ énonciation",
+  "layer": "③ utterance",
   "injection": "RENAME",
   "legacy_severity": "G1",
   "legacy_mechanism": "M2",
@@ -17,7 +17,8 @@
       "date": "2026-08-08",
       "observer": "house observer (LLM agent), see report",
       "excerpt": "MESURÉ le 08/08/2026 sur les 272 articles XML JATS de l'atelier : 212/272 (78 %) ouvrent au moins une phrase par une reprise nue (It/They/These/This), 3 260 occurrences au total ; 49/272 (18 %) portent une reprise lexicale explicite — relevé « In the latter study, the risk of developing T2DM was significantly lower » (bio-PMC12915353).",
-      "lang": "fr"
+      "lang": "fr",
+      "excerpt_en": "MEASURED on 2026-08-08 on the 272 JATS XML articles of the workshop: 212/272 (78 %) open at least one sentence with a bare anaphor (It/They/These/This), 3,260 occurrences in total; 49/272 (18 %) carry an explicit lexical anaphor — recorded: \"In the latter study, the risk of developing T2DM was significantly lower\" (bio-PMC12915353)."
     }
   ],
   "specimens": {
@@ -40,7 +41,7 @@
   "history": [
     {
       "date": "2026-08-09",
-      "event": "catalogue line 22 — GOLDEN: irréductible ou faux silencieux",
+      "event": "catalogue line 22 — GOLDEN (kept for the benchmark): irreducible or silent false",
       "by": "Korela For Science"
     },
     {

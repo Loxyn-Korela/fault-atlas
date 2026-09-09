@@ -6,7 +6,7 @@
   "name_fr": "Valeurs avec incertitude quantifiée",
   "damage": "WRONG_VALUE",
   "class": "IRREDUCIBLE",
-  "layer": "④ + ⑦ schéma",
+  "layer": "④ extraction + ⑦ schema",
   "injection": "ALTER",
   "legacy_severity": "G2",
   "legacy_mechanism": "M3",
@@ -17,7 +17,8 @@
       "date": "2026-08-08",
       "observer": "house observer (LLM agent), see report",
       "excerpt": "MESURÉ le 08/08/2026 sur 272 articles Europe PMC accès libre 2023-2026 : présent dans 69 (25 %). Concentration : essai 20, meta 17, bio 15. Formes réelles : 0.08 ± | 0.094 ± | 0.63 (95% CI",
-      "lang": "fr"
+      "lang": "fr",
+      "excerpt_en": "MEASURED on 2026-08-08 on 272 open-access Europe PMC articles 2023-2026: present in 69 (25 %). Concentration: trial 20, meta 17, bio 15. Real forms: 0.08 ± | 0.094 ± | 0.63 (95% CI"
     }
   ],
   "specimens": {
@@ -40,7 +41,7 @@
   "history": [
     {
       "date": "2026-08-09",
-      "event": "catalogue line 73 — VAINCU: filtre écrit et vert au banc",
+      "event": "catalogue line 73 — DEFEATED (cancelled by code): filter written and green on the bench",
       "by": "Korela For Science"
     },
     {

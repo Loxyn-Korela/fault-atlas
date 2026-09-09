@@ -6,7 +6,7 @@
   "name_fr": "Contenu ajouté par la numérisation",
   "damage": "SPURIOUS_EDGE",
   "class": "SILENT_FALSE",
-  "layer": "② lecture",
+  "layer": "② reading",
   "injection": "INSERT",
   "legacy_severity": "G2",
   "legacy_mechanism": "M10",
@@ -17,7 +17,8 @@
       "date": "2026-08-08",
       "observer": "house observer (LLM agent), see report",
       "excerpt": "MESURÉ le 08/08/2026 sur 272 articles XML JATS : 0/272 portent un tampon de chaîne de numérisation (le seul appariement, « scanned by the bare plate », phys-PMC13257740, est un faux positif). ⇒ la mesure CONFIRME le domaine « ancien seulement » du catalogue. L'observation qui fonde la ligne est celle du 08/08/2026 sur Imaizumi et al., Japanese Circulation Journal 1987 : « NII-Electronic Library Service » en pied de CHAQUE page (annexe 93).",
-      "lang": "fr"
+      "lang": "fr",
+      "excerpt_en": "MEASURED on 2026-08-08 on 272 JATS XML articles: 0/272 carry a digitisation-chain stamp (the only match, \"scanned by the bare plate\", phys-PMC13257740, is a false positive). ⇒ the measurement CONFIRMS the \"old only\" domain of the catalogue. The observation founding the line is the one of 2026-08-08 on Imaizumi et al., Japanese Circulation Journal 1987: \"NII-Electronic Library Service\" at the foot of EVERY page (annex 93)."
     }
   ],
   "specimens": {
@@ -39,7 +40,7 @@
   "history": [
     {
       "date": "2026-08-09",
-      "event": "catalogue line 93 — GOLDEN: irréductible ou faux silencieux",
+      "event": "catalogue line 93 — GOLDEN (kept for the benchmark): irreducible or silent false",
       "by": "Korela For Science"
     },
     {

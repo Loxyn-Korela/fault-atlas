@@ -6,7 +6,7 @@
   "name_fr": "Le tableau porte ses propres définitions",
   "damage": "MISSING",
   "class": "IRREDUCIBLE",
-  "layer": "⑥ résolution",
+  "layer": "⑥ resolution",
   "injection": "MOVE",
   "legacy_severity": "G3",
   "legacy_mechanism": "M8",
@@ -17,7 +17,8 @@
       "date": "2026-08-08",
       "observer": "house observer (LLM agent), see report",
       "excerpt": "MESURÉ le 08/08/2026 sur 272 articles XML JATS : 180/272 (66 %) portent au moins un tableau, 128/272 (47 %) un pied de tableau, et 47/272 (17 %) y définissent leurs sigles — relevé « ST: title screening; SR: abstract screening; LC: full-text review; SF: studies finally included » (bio-PMC12909487) et « LC, drug loading content; EE, encapsulation efficiency » (bio-PMC12583535). 351 pieds de tableau au total.",
-      "lang": "fr"
+      "lang": "fr",
+      "excerpt_en": "MEASURED on 2026-08-08 on 272 JATS XML articles: 180/272 (66 %) carry at least one table, 128/272 (47 %) a table footer, and 47/272 (17 %) define their acronyms there — recorded \"ST: title screening; SR: abstract screening; LC: full-text review; SF: studies finally included\" (bio-PMC12909487) and \"LC, drug loading content; EE, encapsulation efficiency\" (bio-PMC12583535). 351 table footers in total."
     }
   ],
   "specimens": {
@@ -39,7 +40,7 @@
   "history": [
     {
       "date": "2026-08-09",
-      "event": "catalogue line 83 — GOLDEN: irréductible ou faux silencieux",
+      "event": "catalogue line 83 — GOLDEN (kept for the benchmark): irreducible or silent false",
       "by": "Korela For Science"
     },
     {

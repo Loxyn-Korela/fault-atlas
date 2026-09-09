@@ -6,7 +6,7 @@
   "name_fr": "Graphies multiples d'une entité",
   "damage": "SPLIT",
   "class": "REFUSABLE",
-  "layer": "⑥ résolution",
+  "layer": "⑥ resolution",
   "injection": "RENAME",
   "legacy_severity": "G1",
   "legacy_mechanism": "M1",
@@ -16,15 +16,17 @@
       "corpus": "observation 2026-08 (Europe PMC JATS 2023-2026 and PubMed abstracts)",
       "date": "2026-08-08",
       "observer": "house observer (LLM agent), see report",
-      "excerpt": "MESURÉ le 08/08/2026 sur 272 articles XML JATS Europe PMC accès libre (internal corpus of 272 JATS articles) sonde sondes-lignes-12-132.py) : présent dans 209 (77 %). Concentration : essai 34, phys 34, bio 33, meta 33, nonEN 32, cas 27, moderne 14, retract 2. Formes réelles : « C-reactive protein (CRP) » (bio-PMC12674831) · « Diabetes mellitus (DM) » (bio-PMC12590050) · « Risk of Bias (RoB) » (bio-PMC12583535).",
-      "lang": "fr"
+      "excerpt": "MESURÉ le 08/08/2026 sur 272 articles XML JATS Europe PMC accès libre (internal corpus of 272 JATS articles) : présent dans 209 (77 %). Concentration : essai 34, phys 34, bio 33, meta 33, nonEN 32, cas 27, moderne 14, retract 2. Formes réelles : « C-reactive protein (CRP) » (bio-PMC12674831) · « Diabetes mellitus (DM) » (bio-PMC12590050) · « Risk of Bias (RoB) » (bio-PMC12583535).",
+      "lang": "fr",
+      "excerpt_en": "MEASURED on 2026-08-08 on 272 open-access Europe PMC JATS XML articles (internal corpus): present in 209 (77 %). Concentration: trial 34, phys 34, bio 33, meta 33, nonEN 32, case 27, modern 14, retract 2. Real forms: \"C-reactive protein (CRP)\" (bio-PMC12674831) · \"Diabetes mellitus (DM)\" (bio-PMC12590050) · \"Risk of Bias (RoB)\" (bio-PMC12583535)."
     },
     {
       "corpus": "observation 2026-08 (272 Europe PMC JATS articles)",
       "date": "2026-08-08",
       "observer": "house observer (LLM agent), see report",
       "excerpt": "MESURÉ le 08/08/2026 : 209/272 articles (77 %) glosent puis abrègent — « C-reactive protein (CRP) » puis « CRP » seul.",
-      "lang": "fr"
+      "lang": "fr",
+      "excerpt_en": "MEASURED on 2026-08-08: 209/272 articles (77 %) gloss then abbreviate — \"C-reactive protein (CRP)\" then \"CRP\" alone."
     }
   ],
   "specimens": {
@@ -48,7 +50,7 @@
   "history": [
     {
       "date": "2026-08-09",
-      "event": "catalogue line 21 — VAINCU: filtre écrit et vert au banc",
+      "event": "catalogue line 21 — DEFEATED (cancelled by code): filter written and green on the bench",
       "by": "Korela For Science"
     },
     {

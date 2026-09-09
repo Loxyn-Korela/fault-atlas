@@ -6,7 +6,7 @@
   "name_fr": "Tableaux à en-têtes multiples",
   "damage": "SPURIOUS_EDGE",
   "class": "DEFEATED_IF_XML",
-  "layer": "② lecture",
+  "layer": "② reading",
   "injection": "FORMAT",
   "legacy_severity": "G2",
   "legacy_mechanism": "M8",
@@ -17,7 +17,8 @@
       "date": "2026-08-08",
       "observer": "house observer (LLM agent), see report",
       "excerpt": "MESURÉ le 08/08/2026 sur les 272 articles XML JATS d'(internal corpus of 272 JATS articles) : présent dans 73 (26 %). Concentration : essai 21, nonEN 12, meta 11, bio 10, phys 10. Formes réelles : nonEN-PMC13193189.xml porte 36 <th> à colspan/rowspan ≥2 ; essai-PMC13205731.xml en porte 27 ; bio-PMC12857832.xml a 4 <thead> sur 5 qui comptent plus d'une ligne <tr>. PASSAGE RÉEL du filtre (08/08/2026) : sur les 670 <table> du corpus il en classe 151 « en-têtes multiples », 469 « en-tête simple », et s'ABSTIENT sur 50 sans <thead>. Au niveau du document : 71/272, contre 73 pour la sonde — l'écart de 2 vient de <th> à colspan situés HORS <thead>, que le filtre refuse de prendre pour un en-tête.",
-      "lang": "fr"
+      "lang": "fr",
+      "excerpt_en": "MEASURED on 2026-08-08 on the 272 JATS XML articles of the internal corpus: present in 73 (26 %). Concentration: trial 21, nonEN 12, meta 11, bio 10, phys 10. Real forms: nonEN-PMC13193189.xml carries 36 <th> with colspan/rowspan ≥2; trial-PMC13205731.xml carries 27; bio-PMC12857832.xml has 4 <thead> out of 5 with more than one <tr> row. REAL RUN of the filter (2026-08-08): of the 670 <table> in the corpus it classifies 151 as \"multi-level headers\", 469 as \"single header\", and ABSTAINS on 50 without <thead>. At document level: 71/272, against 73 for the probe — the difference of 2 comes from colspan <th> located OUTSIDE <thead>, which the filter refuses to take as a header."
     }
   ],
   "specimens": {
@@ -40,7 +41,7 @@
   "history": [
     {
       "date": "2026-08-09",
-      "event": "catalogue line 43 — VAINCU: filtre écrit et vert au banc",
+      "event": "catalogue line 43 — DEFEATED (cancelled by code): filter written and green on the bench",
       "by": "Korela For Science"
     },
     {

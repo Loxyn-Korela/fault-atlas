@@ -6,7 +6,7 @@
   "name_fr": "Le type d'étude qualifie tous ses faits",
   "damage": "WRONG_LABEL",
   "class": "IRREDUCIBLE",
-  "layer": "⑦ schéma",
+  "layer": "⑦ schema",
   "injection": "ALTER",
   "legacy_severity": "G2",
   "legacy_mechanism": "M12",
@@ -17,7 +17,8 @@
       "date": "2026-08-08",
       "observer": "house observer (LLM agent), see report",
       "excerpt": "MESURÉ le 08/08/2026 sur les 272 articles XML JATS de (internal corpus of 272 JATS articles) : 90/272 résumés (33 %) nomment explicitement leur dispositif (randomized, double-blind, placebo-controlled, retrospective, cohort, case-control, cross-sectional, meta-analysis, in vitro/in vivo) — une seule ligne qui qualifie tout l'article. Observé aussi le 08/08/2026 sur Gomersall & Stuart, J. Neurol. Neurosurg. Psychiatry 1973 : « a double-blind controlled clinical trial of crossover design was conducted in 26 volunteers ».",
-      "lang": "fr"
+      "lang": "fr",
+      "excerpt_en": "MEASURED on 2026-08-08 on the 272 JATS XML articles of the internal corpus: 90/272 abstracts (33 %) explicitly name their design (randomized, double-blind, placebo-controlled, retrospective, cohort, case-control, cross-sectional, meta-analysis, in vitro/in vivo) — a single line that qualifies the whole article. Also observed on 2026-08-08 on Gomersall & Stuart, J. Neurol. Neurosurg. Psychiatry 1973: \"a double-blind controlled clinical trial of crossover design was conducted in 26 volunteers\"."
     }
   ],
   "specimens": {
@@ -38,7 +39,7 @@
   "history": [
     {
       "date": "2026-08-09",
-      "event": "catalogue line 95 — GOLDEN: irréductible ou faux silencieux",
+      "event": "catalogue line 95 — GOLDEN (kept for the benchmark): irreducible or silent false",
       "by": "Korela For Science"
     },
     {

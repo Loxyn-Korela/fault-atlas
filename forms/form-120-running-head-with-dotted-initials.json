@@ -6,7 +6,7 @@
   "name_fr": "Running head à initiales pointées",
   "damage": "SPLIT",
   "class": "REFUSABLE",
-  "layer": "⑥ résolution",
+  "layer": "⑥ resolution",
   "injection": "RENAME",
   "legacy_severity": "G1",
   "legacy_mechanism": "M1",
@@ -17,7 +17,8 @@
       "date": "2026-08-08",
       "observer": "house observer (LLM agent), see report",
       "excerpt": "MESURÉ le 08/08/2026 sur 272 articles XML JATS Europe PMC (2023-2026) : présent dans 23/272 (8,5 %). Forme réelle, bio-PMC13162546 — la page 1 donne <given-names>Xianyun</given-names><surname>Shao</surname>, et le running head porte « X. Shao et al. », graphie qui n'apparaît nulle part en page 1. Autres relevés : « Lisbeth Mogensen » / « L. Mogensen » (essai-PMC13169472), « Chloe Puett » / « C. Puett » (essai-PMC13205709).",
-      "lang": "fr"
+      "lang": "fr",
+      "excerpt_en": "MEASURED on 2026-08-08 on 272 Europe PMC JATS XML articles (2023-2026): present in 23/272 (8.5 %). Real form, bio-PMC13162546 — page 1 gives <given-names>Xianyun</given-names><surname>Shao</surname>, and the running head carries \"X. Shao et al.\", a spelling that appears nowhere on page 1. Other records: \"Lisbeth Mogensen\" / \"L. Mogensen\" (trial-PMC13169472), \"Chloe Puett\" / \"C. Puett\" (trial-PMC13205709)."
     }
   ],
   "specimens": {
@@ -41,7 +42,7 @@
   "history": [
     {
       "date": "2026-08-09",
-      "event": "catalogue line 120 — VAINCU: filtre écrit et vert au banc",
+      "event": "catalogue line 120 — DEFEATED (cancelled by code): filter written and green on the bench",
       "by": "Korela For Science"
     },
     {

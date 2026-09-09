@@ -6,7 +6,7 @@
   "name_fr": "Chronologie relative dense",
   "damage": "ANACHRONISM",
   "class": "REFUSABLE",
-  "layer": "⑧ cohérence",
+  "layer": "⑧ coherence",
   "injection": "ALTER",
   "legacy_severity": "G2",
   "legacy_mechanism": "M5",
@@ -17,7 +17,8 @@
       "date": "2026-08-08",
       "observer": "house observer (LLM agent), see report",
       "excerpt": "MESURÉ le 08/08/2026 sur 272 articles Europe PMC accès libre 2023-2026 : présent dans 3 (1,1 %), TOUS dans la famille cas (récits cliniques) — exactement là où l'annexe l'attendait. Formes réelles : cas-PMC13301386 = 16 repères relatifs / 0 date absolue (« Nine days after », « One day later », « The following day », « Three days after ») ; cas-PMC13294281 = 12 / 3 (« 3 weeks later », « On day 2 ») ; cas-PMC13293901 = 11 / 6 (« Since the onset »). Distribution du corpus : 140 documents à 0 repère, 45 à 1, décrochage net après 7.",
-      "lang": "fr"
+      "lang": "fr",
+      "excerpt_en": "MEASURED on 2026-08-08 on 272 open-access Europe PMC articles 2023-2026: present in 3 (1.1 %), ALL in the case family (clinical narratives) — exactly where the annex expected it. Real forms: case-PMC13301386 = 16 relative markers / 0 absolute dates (\"Nine days after\", \"One day later\", \"The following day\", \"Three days after\"); case-PMC13294281 = 12 / 3 (\"3 weeks later\", \"On day 2\"); case-PMC13293901 = 11 / 6 (\"Since the onset\"). Corpus distribution: 140 documents with 0 markers, 45 with 1, a clear drop after 7."
     }
   ],
   "specimens": {
@@ -41,7 +42,7 @@
   "history": [
     {
       "date": "2026-08-09",
-      "event": "catalogue line 91 — VAINCU: filtre écrit et vert au banc",
+      "event": "catalogue line 91 — DEFEATED (cancelled by code): filter written and green on the bench",
       "by": "Korela For Science"
     },
     {

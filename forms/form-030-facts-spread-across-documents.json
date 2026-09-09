@@ -6,7 +6,7 @@
   "name_fr": "Faits répartis entre documents",
   "damage": "MISSING",
   "class": "IRREDUCIBLE",
-  "layer": "⑩ récupération",
+  "layer": "⑩ retrieval",
   "injection": "MOVE",
   "legacy_severity": "G3",
   "legacy_mechanism": "M11",
@@ -31,7 +31,7 @@
   "history": [
     {
       "date": "2026-08-09",
-      "event": "catalogue line 30 — GOLDEN: irréductible ou faux silencieux",
+      "event": "catalogue line 30 — GOLDEN (kept for the benchmark): irreducible or silent false",
       "by": "Korela For Science"
     },
     {

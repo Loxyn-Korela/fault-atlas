@@ -6,7 +6,7 @@
   "name_fr": "Identifiants de registre",
   "damage": "MERGE",
   "class": "DEFEATED",
-  "layer": "⑥ résolution",
+  "layer": "⑥ resolution",
   "injection": "ALTER",
   "legacy_severity": "G3",
   "legacy_mechanism": "M2",
@@ -17,7 +17,8 @@
       "date": "2026-08-08",
       "observer": "house observer (LLM agent), see report",
       "excerpt": "MESURÉ le 08/08/2026 sur 272 articles Europe PMC accès libre 2023-2026 (internal corpus of 272 JATS articles) : présent dans 31 articles (11 %). Concentration : phys 10/34, meta 9/34, bio 6/34, moderne 4/17, essai 2/34. Registres réellement rencontrés : ROR ×60, GRID ×52, ISNI ×49, Ringgold ×3, plus 22 identifiants de FINANCEUR (doi/FundRef/CrossRef), qui ne désignent PAS l'organisation. Formes réelles : ROR:https://ror.org/02z1vqm45 | GRID:grid.411472.5 | ISNI:0000 0004 1764 1621",
-      "lang": "fr"
+      "lang": "fr",
+      "excerpt_en": "MEASURED on 2026-08-08 on 272 open-access Europe PMC articles 2023-2026 (internal corpus): present in 31 articles (11 %). Concentration: phys 10/34, meta 9/34, bio 6/34, modern 4/17, trial 2/34. Registries actually met: ROR ×60, GRID ×52, ISNI ×49, Ringgold ×3, plus 22 FUNDER identifiers (doi/FundRef/CrossRef), which do NOT designate the organisation. Real forms: ROR:https://ror.org/02z1vqm45 | GRID:grid.411472.5 | ISNI:0000 0004 1764 1621"
     }
   ],
   "specimens": {
@@ -41,7 +42,7 @@
   "history": [
     {
       "date": "2026-08-09",
-      "event": "catalogue line 25 — VAINCU: filtre écrit et vert au banc",
+      "event": "catalogue line 25 — DEFEATED (cancelled by code): filter written and green on the bench",
       "by": "Korela For Science"
     },
     {

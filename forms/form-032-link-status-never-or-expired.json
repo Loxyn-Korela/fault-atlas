@@ -6,7 +6,7 @@
   "name_fr": "Statut du lien : jamais ou révolu",
   "damage": "ANACHRONISM",
   "class": "IRREDUCIBLE",
-  "layer": "⑧ cohérence",
+  "layer": "⑧ coherence",
   "injection": "ALTER",
   "legacy_severity": "G2",
   "legacy_mechanism": "M5",
@@ -17,7 +17,8 @@
       "date": "2026-08-08",
       "observer": "house observer (LLM agent), see report",
       "excerpt": "MESURÉ le 08/08/2026 : 39/272 articles (14 %) portent une version successive ou une rétractation — un lien affirmé puis annulé.",
-      "lang": "fr"
+      "lang": "fr",
+      "excerpt_en": "MEASURED on 2026-08-08: 39/272 articles (14 %) carry a successive version or a retraction — a link asserted then cancelled."
     }
   ],
   "specimens": {
@@ -40,7 +41,7 @@
   "history": [
     {
       "date": "2026-08-09",
-      "event": "catalogue line 32 — GOLDEN: irréductible ou faux silencieux",
+      "event": "catalogue line 32 — GOLDEN (kept for the benchmark): irreducible or silent false",
       "by": "Korela For Science"
     },
     {

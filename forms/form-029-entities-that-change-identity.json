@@ -6,7 +6,7 @@
   "name_fr": "Entités qui changent d'identité",
   "damage": "SPLIT",
   "class": "IRREDUCIBLE",
-  "layer": "⑥ résolution",
+  "layer": "⑥ resolution",
   "injection": "RENAME",
   "legacy_severity": "G1",
   "legacy_mechanism": "M5",
@@ -17,7 +17,8 @@
       "date": "2026-08-08",
       "observer": "house observer (LLM agent), see report",
       "excerpt": "MESURÉ le 08/08/2026 sur (internal corpus of 272 JATS articles) (272 XML JATS) : seulement 6/272 articles (2 %) portent une formule de changement d'identité dans le corps (formerly / renamed / previously known as / merged with / acquired by). ⇒ Le corpus SCIENTIFIQUE ne l'enseigne presque pas ; c'est le fonds d'entreprise qui la porte (annexe 29). Le module l'injecte donc à un taux choisi, pas observé.",
-      "lang": "fr"
+      "lang": "fr",
+      "excerpt_en": "MEASURED on 2026-08-08 on the internal corpus (272 JATS XML): only 6/272 articles (2 %) carry an identity-change phrase in the body (formerly / renamed / previously known as / merged with / acquired by). ⇒ The SCIENTIFIC corpus hardly teaches it; corporate archives carry it (annex 29). The module therefore injects it at a chosen rate, not an observed one."
     }
   ],
   "specimens": {
@@ -40,7 +41,7 @@
   "history": [
     {
       "date": "2026-08-09",
-      "event": "catalogue line 29 — GOLDEN: irréductible ou faux silencieux",
+      "event": "catalogue line 29 — GOLDEN (kept for the benchmark): irreducible or silent false",
       "by": "Korela For Science"
     },
     {

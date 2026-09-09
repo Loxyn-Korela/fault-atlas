@@ -6,7 +6,7 @@
   "name_fr": "Exposant mnémonique qui n'est pas une puissance",
   "damage": "WRONG_VALUE",
   "class": "SILENT_FALSE",
-  "layer": "⑦ schéma",
+  "layer": "⑦ schema",
   "injection": "ALTER",
   "legacy_severity": "G2",
   "legacy_mechanism": "M12",
@@ -17,7 +17,8 @@
       "date": "2026-08-08",
       "observer": "house observer (LLM agent), see report",
       "excerpt": "MESURÉ le 08/08/2026 sur les 272 articles de (internal corpus of 272 JATS articles) : 9/272 portent un exposant en lettres non arithmétique — dont meta-PMC13260247 avec « CD16^dim » et « CD16^hi » dans la même phrase, moderne-PMC13262411 avec « ^ABS » et « ^PLA ». 3 des 9 sont dans la strate physique, aucune ne relève d'un ordinal (th/st/nd écartés).",
-      "lang": "fr"
+      "lang": "fr",
+      "excerpt_en": "MEASURED on 2026-08-08 on the 272 articles of the internal corpus: 9/272 carry a non-arithmetic lettered superscript — including meta-PMC13260247 with \"CD16^dim\" and \"CD16^hi\" in the same sentence, modern-PMC13262411 with \"^ABS\" and \"^PLA\". 3 of the 9 are in the physics stratum, none is an ordinal (th/st/nd excluded)."
     }
   ],
   "specimens": {
@@ -40,7 +41,7 @@
   "history": [
     {
       "date": "2026-08-09",
-      "event": "catalogue line 138 — GOLDEN: irréductible ou faux silencieux",
+      "event": "catalogue line 138 — GOLDEN (kept for the benchmark): irreducible or silent false",
       "by": "Korela For Science"
     },
     {

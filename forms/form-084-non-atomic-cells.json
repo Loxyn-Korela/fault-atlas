@@ -6,7 +6,7 @@
   "name_fr": "Cellules non atomiques",
   "damage": "WRONG_VALUE",
   "class": "SILENT_FALSE",
-  "layer": "② lecture + ⑤ ancrage",
+  "layer": "② reading + ⑤ anchoring",
   "injection": "ALTER",
   "legacy_severity": "G2",
   "legacy_mechanism": "M3",
@@ -17,7 +17,8 @@
       "date": "2026-08-08",
       "observer": "house observer (LLM agent), see report",
       "excerpt": "MESURÉ le 08/08/2026 sur (internal corpus of 272 JATS articles) (272 XML JATS) : 180/272 articles (66 %) portent au moins un tableau ; 47 164 cellules lues, dont 4 179 non atomiques (9 %) — 494 tirets seuls, 507 intervalles, 3 178 cellules de six mots ou plus. 144/272 articles (53 %) en portent au moins une.",
-      "lang": "fr"
+      "lang": "fr",
+      "excerpt_en": "MEASURED on 2026-08-08 on the internal corpus (272 JATS XML): 180/272 articles (66 %) carry at least one table; 47,164 cells read, of which 4,179 non-atomic (9 %) — 494 lone dashes, 507 ranges, 3,178 cells of six words or more. 144/272 articles (53 %) carry at least one."
     }
   ],
   "specimens": {
@@ -40,7 +41,7 @@
   "history": [
     {
       "date": "2026-08-09",
-      "event": "catalogue line 84 — GOLDEN: irréductible ou faux silencieux",
+      "event": "catalogue line 84 — GOLDEN (kept for the benchmark): irreducible or silent false",
       "by": "Korela For Science"
     },
     {

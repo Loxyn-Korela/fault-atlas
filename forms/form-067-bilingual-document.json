@@ -6,7 +6,7 @@
   "name_fr": "Document bilingue",
   "damage": "SPLIT",
   "class": "REFUSABLE",
-  "layer": "② lecture",
+  "layer": "② reading",
   "injection": "TRANSLATE",
   "legacy_severity": "G1",
   "legacy_mechanism": "M9",
@@ -17,7 +17,8 @@
       "date": "2026-08-08",
       "observer": "house observer (LLM agent), see report",
       "excerpt": "MESURÉ le 08/08/2026 sur 272 articles Europe PMC accès libre 2023-2026 (internal corpus of 272 JATS articles) : présent dans 27 articles (10 %), TOUS dans le lot non anglophone — 27 sur 51, soit 53 % de ce lot, et 0 % des sept autres. Formes réelles : nonEN-PMC13185728 porte pt→en (title), pt→es (title), pt→en (abstract) — un article portugais dont le titre est répété en anglais ET en espagnol, et le résumé en anglais.",
-      "lang": "fr"
+      "lang": "fr",
+      "excerpt_en": "MEASURED on 2026-08-08 on 272 open-access Europe PMC articles 2023-2026 (internal corpus): present in 27 articles (10 %), ALL in the non-English batch — 27 out of 51, i.e. 53 % of that batch, and 0 % of the seven others. Real forms: nonEN-PMC13185728 carries pt→en (title), pt→es (title), pt→en (abstract) — a Portuguese article whose title is repeated in English AND Spanish, and the abstract in English."
     }
   ],
   "specimens": {
@@ -41,7 +42,7 @@
   "history": [
     {
       "date": "2026-08-09",
-      "event": "catalogue line 67 — VAINCU: filtre écrit et vert au banc",
+      "event": "catalogue line 67 — DEFEATED (cancelled by code): filter written and green on the bench",
       "by": "Korela For Science"
     },
     {

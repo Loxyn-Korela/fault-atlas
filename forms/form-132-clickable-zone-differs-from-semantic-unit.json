@@ -6,7 +6,7 @@
   "name_fr": "Zone cliquable ≠ unité sémantique",
   "damage": "MISSING",
   "class": "DEFEATED_IF_XML",
-  "layer": "⑤ ancrage",
+  "layer": "⑤ anchoring",
   "injection": "FORMAT",
   "legacy_severity": "G3",
   "legacy_mechanism": "M4",
@@ -16,8 +16,9 @@
       "corpus": "observation 2026-08 (Europe PMC JATS 2023-2026 and PubMed abstracts)",
       "date": "2026-08-08",
       "observer": "house observer (LLM agent), see report",
-      "excerpt": "MESURÉ le 08/08/2026 sur 272 articles XML JATS Europe PMC accès libre (internal corpus of 272 JATS articles) sonde sondes-lignes-12-132.py) : citation COUPÉE par la zone cliquable dans 21 articles (7,7 %) — essai 15, meta 4, moderne 2 ; contre-forme (le lien porte la citation ENTIÈRE) dans 16 autres. Formes réelles : « Steinmetz et al. <xref>2023</xref> » (essai-PMC13169472) · « Victora et al. <xref>2008</xref> » (essai-PMC13205709) · « UNICEF. WHO. World_Bank. <xref>2025</xref> » (essai-PMC13205731). ⚠️ Le sens décrit dans l'annexe — lien sur le nom, année dehors — est à 0/272 : cherché sous 3 motifs, jamais trouvé.",
-      "lang": "fr"
+      "excerpt": "MESURÉ le 08/08/2026 sur 272 articles XML JATS Europe PMC accès libre (internal corpus of 272 JATS articles) : citation COUPÉE par la zone cliquable dans 21 articles (7,7 %) — essai 15, meta 4, moderne 2 ; contre-forme (le lien porte la citation ENTIÈRE) dans 16 autres. Formes réelles : « Steinmetz et al. <xref>2023</xref> » (essai-PMC13169472) · « Victora et al. <xref>2008</xref> » (essai-PMC13205709) · « UNICEF. WHO. World_Bank. <xref>2025</xref> » (essai-PMC13205731). ⚠️ Le sens décrit dans l'annexe — lien sur le nom, année dehors — est à 0/272 : cherché sous 3 motifs, jamais trouvé.",
+      "lang": "fr",
+      "excerpt_en": "MEASURED on 2026-08-08 on 272 open-access Europe PMC JATS XML articles (internal corpus): citation CUT by the clickable zone in 21 articles (7.7 %) — trial 15, meta 4, modern 2; counter-form (the link carries the WHOLE citation) in 16 others. Real forms: \"Steinmetz et al. <xref>2023</xref>\" (trial-PMC13169472) · \"Victora et al. <xref>2008</xref>\" (trial-PMC13205709) · \"UNICEF. WHO. World_Bank. <xref>2025</xref>\" (trial-PMC13205731). ⚠️ The direction described in the annex — link on the name, year outside — is at 0/272: searched under 3 patterns, never found."
     }
   ],
   "specimens": {
@@ -40,7 +41,7 @@
   "history": [
     {
       "date": "2026-08-09",
-      "event": "catalogue line 132 — VAINCU: filtre écrit et vert au banc",
+      "event": "catalogue line 132 — DEFEATED (cancelled by code): filter written and green on the bench",
       "by": "Korela For Science"
     },
     {

@@ -6,7 +6,7 @@
   "name_fr": "Matériel supplémentaire cité et absent",
   "damage": "MISSING",
   "class": "REFUSABLE",
-  "layer": "⑩ récupération",
+  "layer": "⑩ retrieval",
   "injection": "DELETE",
   "legacy_severity": "G3",
   "legacy_mechanism": "M11",
@@ -16,8 +16,9 @@
       "corpus": "observation 2026-08 (Europe PMC JATS 2023-2026 and PubMed abstracts)",
       "date": "2026-08-08",
       "observer": "house observer (LLM agent), see report",
-      "excerpt": "MESURÉ le 08/08/2026 sur 272 articles XML JATS Europe PMC accès libre (internal corpus of 272 JATS articles) sonde sondes-lignes-12-132.py) : objet supplémentaire NOMMÉ cité SANS aucun fichier attaché dans 1 article (0,4 %) — meta-PMC13271776, qui appelle « Supplementary Fig. S1 », « Supplementary Fig. S2 », « Supplementary Fig. S3 » sans un seul <supplementary-material> ni <media> ; cité ET attaché dans 81 (30 %) : bio 18, cas 4, essai 14, meta 31, moderne 9, phys 5. ⚠️ Prévalence FAIBLE, dite telle quelle : 1/272. Les deux versions antérieures de la sonde donnaient 115 puis 21 porteurs, tous du bruit — c'est la mesure qui a été corrigée, pas le chiffre choisi.",
-      "lang": "fr"
+      "excerpt": "MESURÉ le 08/08/2026 sur 272 articles XML JATS Europe PMC accès libre (internal corpus of 272 JATS articles) : objet supplémentaire NOMMÉ cité SANS aucun fichier attaché dans 1 article (0,4 %) — meta-PMC13271776, qui appelle « Supplementary Fig. S1 », « Supplementary Fig. S2 », « Supplementary Fig. S3 » sans un seul <supplementary-material> ni <media> ; cité ET attaché dans 81 (30 %) : bio 18, cas 4, essai 14, meta 31, moderne 9, phys 5. ⚠️ Prévalence FAIBLE, dite telle quelle : 1/272. Les deux versions antérieures de la sonde donnaient 115 puis 21 porteurs, tous du bruit — c'est la mesure qui a été corrigée, pas le chiffre choisi.",
+      "lang": "fr",
+      "excerpt_en": "MEASURED on 2026-08-08 on 272 open-access Europe PMC JATS XML articles (internal corpus): NAMED supplementary object cited WITHOUT any attached file in 1 article (0.4 %) — meta-PMC13271776, which calls \"Supplementary Fig. S1\", \"Supplementary Fig. S2\", \"Supplementary Fig. S3\" without a single <supplementary-material> or <media>; cited AND attached in 81 (30 %): bio 18, case 4, trial 14, meta 31, modern 9, phys 5. ⚠️ LOW prevalence, stated as such: 1/272. The two earlier versions of the probe gave 115 then 21 carriers, all noise — it is the measurement that was corrected, not the figure that was chosen."
     }
   ],
   "specimens": {
@@ -40,7 +41,7 @@
   "history": [
     {
       "date": "2026-08-09",
-      "event": "catalogue line 113 — VAINCU: filtre écrit et vert au banc",
+      "event": "catalogue line 113 — DEFEATED (cancelled by code): filter written and green on the bench",
       "by": "Korela For Science"
     },
     {

@@ -6,7 +6,7 @@
   "name_fr": "Badge Crossmark",
   "damage": "ANACHRONISM",
   "class": "DEFEATED",
-  "layer": "② lecture",
+  "layer": "② reading",
   "injection": "ALTER",
   "legacy_severity": "G2",
   "legacy_mechanism": "M6",
@@ -17,7 +17,8 @@
       "date": "2026-08-08",
       "observer": "house observer (LLM agent), see report",
       "excerpt": "badge Crossmark relevé sur des articles 2025-2026 ; et un document de la vague « genres rares » dont un article cité AVAIT ÉTÉ ANNULÉ (observé le 08/08/2026)",
-      "lang": "fr"
+      "lang": "fr",
+      "excerpt_en": "Crossmark badge recorded on 2025-2026 articles; and a document of the \"rare genres\" wave in which a cited article HAD BEEN RETRACTED (observed 2026-08-08)"
     }
   ],
   "specimens": {
@@ -40,7 +41,7 @@
   "history": [
     {
       "date": "2026-08-09",
-      "event": "catalogue line 117 — VAINCU: filtre écrit et vert au banc",
+      "event": "catalogue line 117 — DEFEATED (cancelled by code): filter written and green on the bench",
       "by": "Korela For Science"
     },
     {

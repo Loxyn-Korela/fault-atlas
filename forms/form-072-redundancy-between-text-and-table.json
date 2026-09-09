@@ -6,7 +6,7 @@
   "name_fr": "Redondance entre le texte et le tableau",
   "damage": "CORPUS_PARAMETER",
   "class": "REFUSABLE",
-  "layer": "⑤ ancrage",
+  "layer": "⑤ anchoring",
   "injection": "DUPLICATE",
   "legacy_severity": "G4",
   "legacy_mechanism": "M9",
@@ -17,7 +17,8 @@
       "date": "2026-08-08",
       "observer": "house observer (LLM agent), see report",
       "excerpt": "MESURÉ le 08/08/2026 sur 272 articles Europe PMC accès libre 2023-2026 : présent dans 95 (35 %), 144 abstentions (documents sans tableau chiffré). Concentration : essai 24, phys 18, nonEN 15, meta 14, bio 11, cas 7, moderne 6. Formes réelles vérifiées à la main : bio-PMC12915353 texte « a 10.6-year CVD risk » ↔ ligne de tableau « 2863 (≥ 19 y) | 10.6 » ; essai-PMC13154027 texte « median [IQR] age, 58.5 [52.0-64.0] years » ↔ tableau de base ; essai-PMC13169472 « (p = 0.004) » ↔ tableau. Sans le seuil de 3 chiffres : 107/272, dont des « 0.3 » coïncidents",
-      "lang": "fr"
+      "lang": "fr",
+      "excerpt_en": "MEASURED on 2026-08-08 on 272 open-access Europe PMC articles 2023-2026: present in 95 (35 %), 144 abstentions (documents without a numerical table). Concentration: trial 24, phys 18, nonEN 15, meta 14, bio 11, case 7, modern 6. Real forms checked by hand: bio-PMC12915353 text \"a 10.6-year CVD risk\" ↔ table row \"2863 (≥ 19 y) | 10.6\"; trial-PMC13154027 text \"median [IQR] age, 58.5 [52.0-64.0] years\" ↔ baseline table; trial-PMC13169472 \"(p = 0.004)\" ↔ table. Without the 3-digit threshold: 107/272, including coincidental \"0.3\"s."
     }
   ],
   "specimens": {
@@ -36,7 +37,7 @@
   "history": [
     {
       "date": "2026-08-09",
-      "event": "catalogue line 72 — VAINCU: filtre écrit et vert au banc",
+      "event": "catalogue line 72 — DEFEATED (cancelled by code): filter written and green on the bench",
       "by": "Korela For Science"
     },
     {

@@ -6,7 +6,7 @@
   "name_fr": "Le format html fragmente le texte",
   "damage": "MISSING",
   "class": "DEFEATED_IF_XML",
-  "layer": "② lecture",
+  "layer": "② reading",
   "injection": "FORMAT",
   "legacy_severity": "G2",
   "legacy_mechanism": "M8",
@@ -17,7 +17,8 @@
       "date": "2026-08-08",
       "observer": "house observer (LLM agent), see report",
       "excerpt": "MESURÉ le 08/08/2026 sur 272 articles Europe PMC accès libre 2023-2026 (internal corpus of 272 JATS articles) : présent dans 38 articles (13 %), dont 23 sur 34 du lot physique/maths. Formes réelles, lecture naïve contre lecture assemblée : bio-PMC13252842 → 274 octets, « M H F N » au lieu de « MHFN » ; essai-PMC13263161 → « V ˙ » au lieu de « V˙ » ; essai-PMC13238360 → 1 032 octets, « PV t = PV bl × 1 + Hct bl Hct t − » au lieu de « PVt=PVbl×1+HctblHctt−11−Hctbl » — et la version naïve est en plus TRONQUÉE.",
-      "lang": "fr"
+      "lang": "fr",
+      "excerpt_en": "MEASURED on 2026-08-08 on 272 open-access Europe PMC articles 2023-2026 (internal corpus): present in 38 articles (13 %), of which 23 of the 34 in the physics/maths batch. Real forms, naive reading versus assembled reading: bio-PMC13252842 → 274 bytes, \"M H F N\" instead of \"MHFN\"; trial-PMC13263161 → \"V ˙\" instead of \"V˙\"; trial-PMC13238360 → 1,032 bytes, \"PV t = PV bl × 1 + Hct bl Hct t −\" instead of \"PVt=PVbl×1+HctblHctt−11−Hctbl\" — and the naive version is moreover TRUNCATED."
     }
   ],
   "specimens": {
@@ -40,7 +41,7 @@
   "history": [
     {
       "date": "2026-08-09",
-      "event": "catalogue line 133 — VAINCU: filtre écrit et vert au banc",
+      "event": "catalogue line 133 — DEFEATED (cancelled by code): filter written and green on the bench",
       "by": "Korela For Science"
     },
     {

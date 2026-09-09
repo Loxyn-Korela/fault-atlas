@@ -6,7 +6,7 @@
   "name_fr": "Le fait est dans la figure",
   "damage": "MISSING",
   "class": "IRREDUCIBLE",
-  "layer": "① pixel + ⑤ ancrage",
+  "layer": "① pixel + ⑤ anchoring",
   "injection": "IMAGE",
   "legacy_severity": "G3",
   "legacy_mechanism": "M7",
@@ -17,7 +17,8 @@
       "date": "2026-08-08",
       "observer": "house observer (LLM agent), see report",
       "excerpt": "MESURÉ le 08/08/2026 sur (internal corpus of 272 JATS articles) (272 XML JATS) : 215/272 articles (79 %) portent au moins une figure — 1 059 figures au total — et 138/272 (51 %) contiennent au moins un renvoi de la forme « (Fig. N) » dans le corps ; 1 791 renvois <xref ref-type=\"fig\"> pour 1 059 figures, soit 1,7 renvoi par figure. Le texte pointe l'image bien plus souvent qu'il ne la redit.",
-      "lang": "fr"
+      "lang": "fr",
+      "excerpt_en": "MEASURED on 2026-08-08 on the internal corpus (272 JATS XML): 215/272 articles (79 %) carry at least one figure — 1,059 figures in total — and 138/272 (51 %) contain at least one reference of the form \"(Fig. N)\" in the body; 1,791 <xref ref-type=\"fig\"> references for 1,059 figures, i.e. 1.7 references per figure. The text points to the image far more often than it restates it."
     }
   ],
   "specimens": {
@@ -39,7 +40,7 @@
   "history": [
     {
       "date": "2026-08-09",
-      "event": "catalogue line 68 — GOLDEN: irréductible ou faux silencieux",
+      "event": "catalogue line 68 — GOLDEN (kept for the benchmark): irreducible or silent false",
       "by": "Korela For Science"
     },
     {

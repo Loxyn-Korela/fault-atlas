@@ -6,7 +6,7 @@
   "name_fr": "Marqueur de significativité à double sens",
   "damage": "WRONG_LABEL",
   "class": "IRREDUCIBLE",
-  "layer": "⑦ schéma",
+  "layer": "⑦ schema",
   "injection": "ALTER",
   "legacy_severity": "G2",
   "legacy_mechanism": "M12",
@@ -17,7 +17,8 @@
       "date": "2026-08-08",
       "observer": "house observer (LLM agent), see report",
       "excerpt": "MESURÉ le 08/08/2026 sur les 272 articles de (internal corpus of 272 JATS articles) : 1/272 seulement porte une note de tableau définissant DEUX symboles de seuil (nonEN-PMC13224957). Le chiffre CONFIRME le domaine « ancien seulement » porté par le catalogue — la difficulté est morte dans la science courante et vivante pour qui dépouille des archives. L'observation qui fonde la ligne est datée du 08/08/2026, sur les PDF du corpus migraine (1976-1986) : « + p<0·01, ++ p<0·001, +++ p<0·02 as compared with migraineurs and + p<0·02, ++ p<0·01 as compared with controls ».",
-      "lang": "fr"
+      "lang": "fr",
+      "excerpt_en": "MEASURED on 2026-08-08 on the 272 articles of the internal corpus: only 1/272 carries a table note defining TWO threshold symbols (nonEN-PMC13224957). The figure CONFIRMS the \"old only\" domain carried by the catalogue — the difficulty is dead in current science and alive for whoever mines archives. The observation founding the line is dated 2026-08-08, on the PDFs of the migraine corpus (1976-1986): \"+ p<0·01, ++ p<0·001, +++ p<0·02 as compared with migraineurs and + p<0·02, ++ p<0·01 as compared with controls\"."
     }
   ],
   "specimens": {
@@ -38,7 +39,7 @@
   "history": [
     {
       "date": "2026-08-09",
-      "event": "catalogue line 103 — GOLDEN: irréductible ou faux silencieux",
+      "event": "catalogue line 103 — GOLDEN (kept for the benchmark): irreducible or silent false",
       "by": "Korela For Science"
     },
     {

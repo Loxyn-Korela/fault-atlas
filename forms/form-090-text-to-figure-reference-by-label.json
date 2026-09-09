@@ -6,7 +6,7 @@
   "name_fr": "Renvoi texte ↔ figure par étiquette",
   "damage": "MISSING",
   "class": "IRREDUCIBLE",
-  "layer": "⑤ ancrage",
+  "layer": "⑤ anchoring",
   "injection": "MOVE",
   "legacy_severity": "G3",
   "legacy_mechanism": "M7",
@@ -17,7 +17,8 @@
       "date": "2026-08-08",
       "observer": "house observer (LLM agent), see report",
       "excerpt": "MESURÉ le 08/08/2026 sur (internal corpus of 272 JATS articles) (272 XML JATS) : 63/272 articles (23 %) portent au moins une étiquette de panneau « (A) » dans une légende de figure, et 44/272 (16 %) en portent au moins DEUX dans la même légende — c'est-à-dire un couplage texte↔figure par lettre, pas une simple numérotation.",
-      "lang": "fr"
+      "lang": "fr",
+      "excerpt_en": "MEASURED on 2026-08-08 on the internal corpus (272 JATS XML): 63/272 articles (23 %) carry at least one panel label \"(A)\" in a figure caption, and 44/272 (16 %) carry at least TWO in the same caption — that is, a text↔figure coupling by letter, not a simple numbering."
     }
   ],
   "specimens": {
@@ -39,7 +40,7 @@
   "history": [
     {
       "date": "2026-08-09",
-      "event": "catalogue line 90 — GOLDEN: irréductible ou faux silencieux",
+      "event": "catalogue line 90 — GOLDEN (kept for the benchmark): irreducible or silent false",
       "by": "Korela For Science"
     },
     {

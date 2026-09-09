@@ -6,7 +6,7 @@
   "name_fr": "Noms abîmés par le scan",
   "damage": "SPLIT",
   "class": "REFUSABLE",
-  "layer": "⑥ résolution",
+  "layer": "⑥ resolution",
   "injection": "NOISE",
   "legacy_severity": "G1",
   "legacy_mechanism": "M1",
@@ -33,7 +33,7 @@
   "history": [
     {
       "date": "2026-08-09",
-      "event": "catalogue line 42 — ACCEPTE: mesuré ABSENT du fonds XML moderne",
+      "event": "catalogue line 42 — ACCEPTED (measured absent from the modern XML corpus): measured ABSENT from the modern XML corpus",
       "by": "Korela For Science"
     },
     {

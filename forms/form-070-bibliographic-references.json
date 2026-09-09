@@ -17,7 +17,8 @@
       "date": "2026-08-08",
       "observer": "house observer (LLM agent), see report",
       "excerpt": "MESURÉ le 08/08/2026 sur 272 articles XML JATS : 251/272 (92 %) portent un bloc de références final — 10 912 références au total, médiane 36 par article, maximum 450 — et 247/272 (91 %) portent des appels de citation dans le corps (17 210 appels).",
-      "lang": "fr"
+      "lang": "fr",
+      "excerpt_en": "MEASURED on 2026-08-08 on 272 JATS XML articles: 251/272 (92 %) carry a final reference block — 10,912 references in total, median 36 per article, maximum 450 — and 247/272 (91 %) carry citation calls in the body (17,210 calls)."
     }
   ],
   "specimens": {
@@ -39,7 +40,7 @@
   "history": [
     {
       "date": "2026-08-09",
-      "event": "catalogue line 70 — GOLDEN: irréductible ou faux silencieux",
+      "event": "catalogue line 70 — GOLDEN (kept for the benchmark): irreducible or silent false",
       "by": "Korela For Science"
     },
     {

@@ -6,7 +6,7 @@
   "name_fr": "Contraintes de schéma",
   "damage": "WRONG_LABEL",
   "class": "IRREDUCIBLE",
-  "layer": "⑦ schéma",
+  "layer": "⑦ schema",
   "injection": "CONSTRAINT",
   "legacy_severity": "G2",
   "legacy_mechanism": "M12",
@@ -30,7 +30,7 @@
   "history": [
     {
       "date": "2026-08-09",
-      "event": "catalogue line 15 — GOLDEN: irréductible ou faux silencieux",
+      "event": "catalogue line 15 — GOLDEN (kept for the benchmark): irreducible or silent false",
       "by": "Korela For Science"
     },
     {

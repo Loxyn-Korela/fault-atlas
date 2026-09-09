@@ -6,7 +6,7 @@
   "name_fr": "Absence totale d'appareil",
   "damage": "MISSING",
   "class": "DEFEATED_IF_XML",
-  "layer": "② lecture",
+  "layer": "② reading",
   "injection": "FORMAT",
   "legacy_severity": "G3",
   "legacy_mechanism": "M8",
@@ -17,7 +17,8 @@
       "date": "2026-08-08",
       "observer": "house observer (LLM agent), see report",
       "excerpt": "MESURÉ le 08/08/2026 sur les 272 articles XML JATS d'(internal corpus of 272 JATS articles) : présent dans 25 (9 %) — aucun <abstract>, aucun <kwd>, aucun titre de section dans <body>. Concentration nette : retract 22, nonEN 3 (ex. nonEN-PMC13170112.xml, nonEN-PMC13224953.xml, nonEN-PMC13285344.xml). Un avis de rétractation est un corps de prose nu. Forme voisine citée au catalogue : de Salles, « CEREBRAL VASOSPASM » — titre, auteurs, puis prose continue, pour tout appareil « Department of Physiology, Medical College of Virginia ».",
-      "lang": "fr"
+      "lang": "fr",
+      "excerpt_en": "MEASURED on 2026-08-08 on the 272 JATS XML articles of the internal corpus: present in 25 (9 %) — no <abstract>, no <kwd>, no section title in <body>. Sharp concentration: retract 22, nonEN 3 (e.g. nonEN-PMC13170112.xml, nonEN-PMC13224953.xml, nonEN-PMC13285344.xml). A retraction notice is a bare body of prose. Neighbouring form quoted in the catalogue: de Salles, \"CEREBRAL VASOSPASM\" — title, authors, then continuous prose, with \"Department of Physiology, Medical College of Virginia\" as the whole apparatus."
     }
   ],
   "specimens": {
@@ -40,7 +41,7 @@
   "history": [
     {
       "date": "2026-08-09",
-      "event": "catalogue line 104 — VAINCU: filtre écrit et vert au banc",
+      "event": "catalogue line 104 — DEFEATED (cancelled by code): filter written and green on the bench",
       "by": "Korela For Science"
     },
     {

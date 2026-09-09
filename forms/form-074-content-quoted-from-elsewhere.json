@@ -6,7 +6,7 @@
   "name_fr": "Contenu repris d'ailleurs",
   "damage": "SPURIOUS_EDGE",
   "class": "IRREDUCIBLE",
-  "layer": "⑤ ancrage",
+  "layer": "⑤ anchoring",
   "injection": "INSERT",
   "legacy_severity": "G2",
   "legacy_mechanism": "M4",
@@ -17,7 +17,8 @@
       "date": "2026-08-08",
       "observer": "house observer (LLM agent), see report",
       "excerpt": "MESURÉ le 08/08/2026 sur (internal corpus of 272 JATS articles) (272 XML JATS) : 13/272 articles (5 %) portent un signal explicite de reprise — « reproduced with permission », « adapted from », « reprinted from » ; 22/272 (8 %) avec les formes larges. Observé en clair le 08/08 sous une figure du corpus migraine : « (Reproduced by permission of the British Journal of Clinical Pharmacology.) »",
-      "lang": "fr"
+      "lang": "fr",
+      "excerpt_en": "MEASURED on 2026-08-08 on the internal corpus (272 JATS XML): 13/272 articles (5 %) carry an explicit reuse signal — \"reproduced with permission\", \"adapted from\", \"reprinted from\"; 22/272 (8 %) with the broad forms. Observed in the open on 2026-08-08 under a figure of the migraine corpus: \"(Reproduced by permission of the British Journal of Clinical Pharmacology.)\""
     }
   ],
   "specimens": {
@@ -39,7 +40,7 @@
   "history": [
     {
       "date": "2026-08-09",
-      "event": "catalogue line 74 — GOLDEN: irréductible ou faux silencieux",
+      "event": "catalogue line 74 — GOLDEN (kept for the benchmark): irreducible or silent false",
       "by": "Korela For Science"
     },
     {

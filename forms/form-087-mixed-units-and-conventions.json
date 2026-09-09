@@ -17,7 +17,8 @@
       "date": "2026-08-08",
       "observer": "house observer (LLM agent), see report",
       "excerpt": "MESURÉ le 08/08/2026 sur les 272 articles XML JATS d'(internal corpus of 272 JATS articles) : au moins TROIS familles de mesure distinctes dans le seul corps de l'article pour 62 documents (22 %). Concentration : essai 17, cas 16, moderne 9, bio 8. Formes réelles relevées : bio-PMC12583535.xml → masse ×22, pourcent ×12, molaire ×3, durée ×2 ; bio-PMC12674831.xml → pourcent ×141, masse ×92, durée ×12, volume ×2. Formes d'écriture citées au catalogue (Cumings & Hilton, Br. J. Pharmac. 1971) : « 37° C », « −20° C », « 1,500 r.p.m. », « 0·9 % w/v », « 4 ml », « 5 × 10⁻⁸ mol », « 2,5 mg », « 30-60 min », « 2 hours ».",
-      "lang": "fr"
+      "lang": "fr",
+      "excerpt_en": "MEASURED on 2026-08-08 on the 272 JATS XML articles of the internal corpus: at least THREE distinct measurement families in the article body alone for 62 documents (22 %). Concentration: trial 17, case 16, modern 9, bio 8. Real forms recorded: bio-PMC12583535.xml → mass ×22, percent ×12, molar ×3, duration ×2; bio-PMC12674831.xml → percent ×141, mass ×92, duration ×12, volume ×2. Written forms quoted in the catalogue (Cumings & Hilton, Br. J. Pharmac. 1971): \"37° C\", \"−20° C\", \"1,500 r.p.m.\", \"0·9 % w/v\", \"4 ml\", \"5 × 10⁻⁸ mol\", \"2,5 mg\", \"30-60 min\", \"2 hours\"."
     }
   ],
   "specimens": {
@@ -41,7 +42,7 @@
   "history": [
     {
       "date": "2026-08-09",
-      "event": "catalogue line 87 — VAINCU: filtre écrit et vert au banc",
+      "event": "catalogue line 87 — DEFEATED (cancelled by code): filter written and green on the bench",
       "by": "Korela For Science"
     },
     {

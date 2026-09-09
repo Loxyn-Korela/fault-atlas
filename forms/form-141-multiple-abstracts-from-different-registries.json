@@ -6,7 +6,7 @@
   "name_fr": "Résumés multiples de registres différents",
   "damage": "MISSING",
   "class": "DEFEATED_IF_XML",
-  "layer": "③ énonciation",
+  "layer": "③ utterance",
   "injection": "DUPLICATE",
   "legacy_severity": "G3",
   "legacy_mechanism": "M8",
@@ -17,7 +17,8 @@
       "date": "2026-08-08",
       "observer": "house observer (LLM agent), see report",
       "excerpt": "MESURÉ le 08/08/2026 sur 272 articles Europe PMC accès libre 2023-2026 : présent dans 57 (20 %). Concentration : essai 17, nonEN 12, meta 9. Formes réelles : <abstract> | <abstract id=«puh270198-abs-0001« abstract-type= | <abstract>",
-      "lang": "fr"
+      "lang": "fr",
+      "excerpt_en": "MEASURED on 2026-08-08 on 272 open-access Europe PMC articles 2023-2026: present in 57 (20 %). Concentration: trial 17, nonEN 12, meta 9. Real forms: <abstract> | <abstract id=«puh270198-abs-0001« abstract-type= | <abstract>"
     }
   ],
   "specimens": {
@@ -40,7 +41,7 @@
   "history": [
     {
       "date": "2026-08-09",
-      "event": "catalogue line 141 — VAINCU: filtre écrit et vert au banc",
+      "event": "catalogue line 141 — DEFEATED (cancelled by code): filter written and green on the bench",
       "by": "Korela For Science"
     },
     {

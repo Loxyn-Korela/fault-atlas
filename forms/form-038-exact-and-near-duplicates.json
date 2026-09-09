@@ -17,7 +17,8 @@
       "date": "2026-08-08",
       "observer": "house observer (LLM agent), see report",
       "excerpt": "deux copies du même article comptées comme deux témoins indépendants — faux double accord (analyse de gravité, 08/08/2026)",
-      "lang": "fr"
+      "lang": "fr",
+      "excerpt_en": "two copies of the same article counted as two independent witnesses — a false double agreement (severity analysis, 2026-08-08)"
     }
   ],
   "specimens": {
@@ -39,7 +40,7 @@
   "history": [
     {
       "date": "2026-08-09",
-      "event": "catalogue line 38 — VAINCU: filtre écrit et vert au banc",
+      "event": "catalogue line 38 — DEFEATED (cancelled by code): filter written and green on the bench",
       "by": "Korela For Science"
     },
     {

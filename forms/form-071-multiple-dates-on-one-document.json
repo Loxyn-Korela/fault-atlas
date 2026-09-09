@@ -6,7 +6,7 @@
   "name_fr": "Dates multiples d'un même document",
   "damage": "WRONG_VALUE",
   "class": "REFUSABLE",
-  "layer": "⑧ cohérence",
+  "layer": "⑧ coherence",
   "injection": "ALTER",
   "legacy_severity": "G2",
   "legacy_mechanism": "M5",
@@ -17,7 +17,8 @@
       "date": "2026-08-08",
       "observer": "house observer (LLM agent), see report",
       "excerpt": "MESURÉ le 08/08/2026 sur 272 articles Europe PMC accès libre 2023-2026 : présent dans 111 (40 %). Concentration : nonEN 28, meta 16, cas 14. Formes réelles : accepted | collection | collection",
-      "lang": "fr"
+      "lang": "fr",
+      "excerpt_en": "MEASURED on 2026-08-08 on 272 open-access Europe PMC articles 2023-2026: present in 111 (40 %). Concentration: nonEN 28, meta 16, case 14. Real forms: accepted | collection | collection"
     }
   ],
   "specimens": {
@@ -41,7 +42,7 @@
   "history": [
     {
       "date": "2026-08-09",
-      "event": "catalogue line 71 — VAINCU: filtre écrit et vert au banc",
+      "event": "catalogue line 71 — DEFEATED (cancelled by code): filter written and green on the bench",
       "by": "Korela For Science"
     },
     {

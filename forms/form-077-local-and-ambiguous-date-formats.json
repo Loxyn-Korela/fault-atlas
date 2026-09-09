@@ -6,7 +6,7 @@
   "name_fr": "Formats de date locaux et ambigus",
   "damage": "WRONG_VALUE",
   "class": "REFUSABLE",
-  "layer": "⑧ cohérence",
+  "layer": "⑧ coherence",
   "injection": "ALTER",
   "legacy_severity": "G2",
   "legacy_mechanism": "M5",
@@ -16,8 +16,9 @@
       "corpus": "observation 2026-08 (Europe PMC JATS 2023-2026 and PubMed abstracts)",
       "date": "2026-08-08",
       "observer": "house observer (LLM agent), see report",
-      "excerpt": "MESURÉ le 08/08/2026 sur 272 articles XML JATS Europe PMC accès libre (internal corpus of 272 JATS articles) sonde sondes-lignes-12-132.py) : date numérique AMBIGUË présente dans 4 articles (1,5 %) — moderne 2, cas 1, essai 1 ; date numérique NON ambiguë (jour > 12) dans 3 autres. Formes réelles : « report dated 05/03/2026 » (cas-PMC13291881) · « date of registration: 11.7.2011 » (essai-PMC13254492) · « (accessed 10/3/2023) » (moderne-PMC13264966) · « 06/06/2022 », « 09/07/2019 », « 07/06/2018 » en colonne de tableau (moderne-PMC13274555).",
-      "lang": "fr"
+      "excerpt": "MESURÉ le 08/08/2026 sur 272 articles XML JATS Europe PMC accès libre (internal corpus of 272 JATS articles) : date numérique AMBIGUË présente dans 4 articles (1,5 %) — moderne 2, cas 1, essai 1 ; date numérique NON ambiguë (jour > 12) dans 3 autres. Formes réelles : « report dated 05/03/2026 » (cas-PMC13291881) · « date of registration: 11.7.2011 » (essai-PMC13254492) · « (accessed 10/3/2023) » (moderne-PMC13264966) · « 06/06/2022 », « 09/07/2019 », « 07/06/2018 » en colonne de tableau (moderne-PMC13274555).",
+      "lang": "fr",
+      "excerpt_en": "MEASURED on 2026-08-08 on 272 open-access Europe PMC JATS XML articles (internal corpus): AMBIGUOUS numeric date present in 4 articles (1.5 %) — modern 2, case 1, trial 1; NON-ambiguous numeric date (day > 12) in 3 others. Real forms: \"report dated 05/03/2026\" (case-PMC13291881) · \"date of registration: 11.7.2011\" (trial-PMC13254492) · \"(accessed 10/3/2023)\" (modern-PMC13264966) · \"06/06/2022\", \"09/07/2019\", \"07/06/2018\" in a table column (modern-PMC13274555)."
     }
   ],
   "specimens": {
@@ -41,7 +42,7 @@
   "history": [
     {
       "date": "2026-08-09",
-      "event": "catalogue line 77 — VAINCU: filtre écrit et vert au banc",
+      "event": "catalogue line 77 — DEFEATED (cancelled by code): filter written and green on the bench",
       "by": "Korela For Science"
     },
     {

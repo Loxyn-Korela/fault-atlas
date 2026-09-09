@@ -6,7 +6,7 @@
   "name_fr": "Pont nom ↔ adresse",
   "damage": "SPLIT",
   "class": "IRREDUCIBLE",
-  "layer": "⑥ résolution",
+  "layer": "⑥ resolution",
   "injection": "RENAME",
   "legacy_severity": "G1",
   "legacy_mechanism": "M2",
@@ -17,7 +17,8 @@
       "date": "2026-08-08",
       "observer": "house observer (LLM agent), see report",
       "excerpt": "MESURÉ le 08/08/2026 sur les 272 XML : 54/272 (20 %) portent, DANS LA MÊME balise <aff>, le nom de l'établissement ET son adresse postale (code postal ou numéro de rue) — « Department of Urology, Peking University … 100034 Beijing ». 5/272 (2 %) donnent un numéro de rue explicite (« 140 Huguenot Street », « 654 Cherry Street »), et 60/272 (22 %) un couple code postal + ville. La matière du pont existe ; ce qui manque au corpus fabriqué, c'est sa RÉPARTITION sur plusieurs documents.",
-      "lang": "fr"
+      "lang": "fr",
+      "excerpt_en": "MEASURED on 2026-08-08 on the 272 XML files: 54/272 (20 %) carry, IN THE SAME <aff> tag, the name of the institution AND its postal address (postcode or street number) — \"Department of Urology, Peking University … 100034 Beijing\". 5/272 (2 %) give an explicit street number (\"140 Huguenot Street\", \"654 Cherry Street\"), and 60/272 (22 %) a postcode + city pair. The material for the bridge exists; what the fabricated corpus lacks is its DISTRIBUTION across several documents."
     }
   ],
   "specimens": {
@@ -40,7 +41,7 @@
   "history": [
     {
       "date": "2026-08-09",
-      "event": "catalogue line 27 — GOLDEN: irréductible ou faux silencieux",
+      "event": "catalogue line 27 — GOLDEN (kept for the benchmark): irreducible or silent false",
       "by": "Korela For Science"
     },
     {

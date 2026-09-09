@@ -6,7 +6,7 @@
   "name_fr": "Licence en page 1",
   "damage": "SPURIOUS_EDGE",
   "class": "DEFEATED",
-  "layer": "② lecture",
+  "layer": "② reading",
   "injection": "INSERT",
   "legacy_severity": "G4",
   "legacy_mechanism": "",
@@ -31,7 +31,7 @@
   "history": [
     {
       "date": "2026-08-09",
-      "event": "catalogue line 115 — ACCEPTE: mesuré ABSENT du fonds XML moderne",
+      "event": "catalogue line 115 — ACCEPTED (measured absent from the modern XML corpus): measured ABSENT from the modern XML corpus",
       "by": "Korela For Science"
     },
     {

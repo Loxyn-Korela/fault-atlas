@@ -6,7 +6,7 @@
   "name_fr": "Sigles et abréviations",
   "damage": "MERGE",
   "class": "SILENT_FALSE",
-  "layer": "⑥ résolution",
+  "layer": "⑥ resolution",
   "injection": "RENAME",
   "legacy_severity": "G1",
   "legacy_mechanism": "M1",
@@ -17,7 +17,8 @@
       "date": "2026-08-08",
       "observer": "house observer (LLM agent), see report",
       "excerpt": "MESURÉ le 08/08/2026 sur (internal corpus of 272 JATS articles) (272 XML JATS) : 224/272 articles (82 %) portent au moins une glose « Nom complet (SIGLE) », 2 104 gloses au total, soit 9,4 par article concerné.",
-      "lang": "fr"
+      "lang": "fr",
+      "excerpt_en": "MEASURED on 2026-08-08 on the internal corpus (272 JATS XML): 224/272 articles (82 %) carry at least one gloss \"Full name (ACRONYM)\", 2,104 glosses in total, i.e. 9.4 per affected article."
     }
   ],
   "specimens": {
@@ -40,7 +41,7 @@
   "history": [
     {
       "date": "2026-08-09",
-      "event": "catalogue line 24 — GOLDEN: irréductible ou faux silencieux",
+      "event": "catalogue line 24 — GOLDEN (kept for the benchmark): irreducible or silent false",
       "by": "Korela For Science"
     },
     {

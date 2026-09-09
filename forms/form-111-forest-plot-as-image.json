@@ -6,7 +6,7 @@
   "name_fr": "Forest plot en image",
   "damage": "WRONG_VALUE",
   "class": "IRREDUCIBLE",
-  "layer": "① pixel + ⑤ ancrage",
+  "layer": "① pixel + ⑤ anchoring",
   "injection": "IMAGE",
   "legacy_severity": "G2",
   "legacy_mechanism": "M7",
@@ -17,7 +17,8 @@
       "date": "2026-08-08",
       "observer": "house observer (LLM agent), see report",
       "excerpt": "MESURÉ le 08/08/2026 sur (internal corpus of 272 JATS articles) (272 XML JATS) : 36/272 articles (13 %) mentionnent un « forest plot », et 28/272 (10 %) le mentionnent DANS UNE LÉGENDE DE FIGURE — c'est-à-dire que le résultat groupé y est un objet graphique, pas une phrase.",
-      "lang": "fr"
+      "lang": "fr",
+      "excerpt_en": "MEASURED on 2026-08-08 on the internal corpus (272 JATS XML): 36/272 articles (13 %) mention a \"forest plot\", and 28/272 (10 %) mention it INSIDE A FIGURE CAPTION — that is, the pooled result is a graphical object there, not a sentence."
     }
   ],
   "specimens": {
@@ -40,7 +41,7 @@
   "history": [
     {
       "date": "2026-08-09",
-      "event": "catalogue line 111 — GOLDEN: irréductible ou faux silencieux",
+      "event": "catalogue line 111 — GOLDEN (kept for the benchmark): irreducible or silent false",
       "by": "Korela For Science"
     },
     {

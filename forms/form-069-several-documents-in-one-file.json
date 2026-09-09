@@ -17,7 +17,8 @@
       "date": "2026-08-08",
       "observer": "house observer (LLM agent), see report",
       "excerpt": "MESURÉ le 08/08/2026 sur les 272 articles XML JATS d'(internal corpus of 272 JATS articles) : présent dans 30 (11 %). Concentration : nonEN 24, bio 3, meta 2, phys 1. Formes réelles, par article-type de <sub-article> : translation 24, associated-data 9, aggregated-review-documents 6, author-comment 3, editor-report 3. Exemple : bio-PMC13252842.xml porte 5 <sub-article> (aggregated-review-documents, associated-data, author-comment, editor-report) dans un seul fichier.",
-      "lang": "fr"
+      "lang": "fr",
+      "excerpt_en": "MEASURED on 2026-08-08 on the 272 JATS XML articles of the internal corpus: present in 30 (11 %). Concentration: nonEN 24, bio 3, meta 2, phys 1. Real forms, by <sub-article> article-type: translation 24, associated-data 9, aggregated-review-documents 6, author-comment 3, editor-report 3. Example: bio-PMC13252842.xml carries 5 <sub-article> (aggregated-review-documents, associated-data, author-comment, editor-report) in a single file."
     }
   ],
   "specimens": {
@@ -41,7 +42,7 @@
   "history": [
     {
       "date": "2026-08-09",
-      "event": "catalogue line 69 — VAINCU: filtre écrit et vert au banc",
+      "event": "catalogue line 69 — DEFEATED (cancelled by code): filter written and green on the bench",
       "by": "Korela For Science"
     },
     {
