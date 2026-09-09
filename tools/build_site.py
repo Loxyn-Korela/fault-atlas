@@ -55,7 +55,7 @@ def layout(title, body, depth=0, desc=""):
 <title>{E(title)}</title><meta name="description" content="{E(desc or 'Observed fault forms in knowledge graphs built from documents, with provenance, damage and the truth that judges them.')}">
 <link rel="icon" href="{p}favicon.svg" type="image/svg+xml"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fraunces:ital,opsz,wght,SOFT@1,9..144,300,0&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"><link rel="stylesheet" href="{p}style.css"></head><body>
 <header class="top"><a class="brand" href="{p}index.html"><img src="{p}favicon.svg" alt="" width="22" height="22"> Fault Atlas <span class="by">by Loxyn</span></a>
-<nav><a href="{p}index.html#forms">Forms</a><a href="{p}corpora.html">Corpora</a><a href="{p}probes.html">Probes</a><a href="{p}index.html#about">About</a><a href="{DATA}">Data &amp; API</a><a href="{REPO}">GitHub</a><a href="https://doi.org/{DOI}">DOI</a></nav></header>
+<nav><a href="{p}index.html#forms">Forms</a><a href="{p}probes.html">Probes</a><a href="{p}index.html#about">About</a><a href="{DATA}">Data &amp; API</a><a href="{REPO}">GitHub</a><a href="https://doi.org/{DOI}">DOI</a></nav></header>
 <main>{body}</main>
 <footer><p><strong>Fault Atlas</strong> v{E(VERSION)} · built {BUILT} · Loxyn SAS, Lyon · Gracia S., Bagnol-Lebon C., Comtet Y. · records CC BY-SA 4.0, tools Apache 2.0 · <a href="https://doi.org/{DOI}">doi:{DOI}</a> · <a href="{REPO}">source</a> · <a href="mailto:contact@loxyn.ai">contact@loxyn.ai</a></p>
 <p class="muted">Every record is still <code>migrated_unreviewed</code>: classified by one reader, awaiting a second. The JSON file is the record of truth; this site is a view rebuilt at each release.</p></footer>
@@ -98,6 +98,8 @@ function apply(){{const s=q.value.toLowerCase(),d=fd.value,k=fc.value,l=fl.value
 [q,fd,fc,fl].forEach(e=>e.addEventListener('input',apply));document.querySelectorAll('.card').forEach(a=>a.addEventListener('click',()=>{{fd.value=a.dataset.damage;apply();}}));apply();
 </script>"""
 CORPUS_NAMES = {json.loads(cf.read_text())["id"]: json.loads(cf.read_text())["name"] for cf in (ROOT/"corpora").glob("*.json")}
+CORPUS_REC = {json.loads(cf.read_text())["id"]: json.loads(cf.read_text()) for cf in (ROOT/"corpora").glob("*.json")}
+CORPUS_FILE = {json.loads(cf.read_text())["id"]: cf.name for cf in (ROOT/"corpora").glob("*.json")}
 (SITE/"index.html").write_text(layout("Fault Atlas", index))
 
 # ── form pages ──
@@ -152,7 +154,8 @@ for f in forms:
 {docs}
 {('<p class="note">'+E(pr['note'])+'</p>') if pr.get('note') else ''}
 <details class="code"><summary>The exact probe (code) · <code>{E(pr['file'].split('/')[-1])}</code>{strata}</summary>
-<p class="meta">Run: <code>{E(pr.get('run',''))}</code> · <a href="{REPO}/blob/main/{E(pr['file'])}">{E(pr['file'])}</a> · the population searched (the denominator): <a href="../corpora/{E(pr['corpus_id'])}.html">{E(CORPUS_NAMES.get(pr['corpus_id'], pr['corpus_id']).split(' — ')[0])}</a>{(' · written '+E(pr['written'])) if pr.get('written') else ''}{(' · '+E(r['by'])) if r.get('by') else ''}</p>
+<p class="meta">Run: <code>{E(pr.get('run',''))}</code> · <a href="{REPO}/blob/main/{E(pr['file'])}">{E(pr['file'])}</a>{(' · written '+E(pr['written'])) if pr.get('written') else ''}{(' · '+E(r['by'])) if r.get('by') else ''}</p>
+<p class="meta">Searched in: {E(CORPUS_NAMES.get(pr['corpus_id'], pr['corpus_id']).split(' — ')[0])}{(', read on '+E(CORPUS_REC[pr['corpus_id']]['harvested'])) if CORPUS_REC.get(pr['corpus_id'],{}).get('harvested') else ''} · identifiers, sha256 as read and licences: <a href="{REPO}/blob/main/corpora/{E(CORPUS_FILE[pr['corpus_id']])}">record</a>{(' · frozen copy: '+E(CORPUS_REC[pr['corpus_id']]['frozen_copy']['status'])) if CORPUS_REC.get(pr['corpus_id'],{}).get('frozen_copy') else ''}</p>
 <pre><code>{E(code)}</code></pre></details></div>"""
     seen = "".join(f"""<article class="obs"><p class="meta"><strong>{E(corpus_short(s['corpus']))}</strong> · {E(s['corpus'])} · {E(s['date'])}{(' · '+E(s['observer'])) if s.get('observer') else ''}{(' · '+E(s['organisation'])) if s.get('organisation') else ''}</p>
 <p>{E(s.get('excerpt_en', s['excerpt']))}</p>{('<details><summary>Original note ('+E(s.get('lang','fr'))+')</summary><p class="fr">'+E(s['excerpt'])+'</p></details>') if s.get('excerpt_en') and s.get('excerpt_en')!=s['excerpt'] else ''}{probe_block(s.get('probe')) if s.get('probe') else ('<p class="noprobe">To be shown: this figure was counted in August 2026 and the code was not kept. It stays as a dated claim until a probe finds it again or a bench tests it.</p>' if s.get('corpus_id') else '')}</article>""" for s in f["seen"]) or "<p class='muted'>No observation yet: this form is a hypothesis, not an observation.</p>"
@@ -181,7 +184,7 @@ for f in forms:
     for pr in f.get("probes", []):
         r = pr.get("result", {})
         head = f"{r.get('count')}/{r.get('of')}" if r.get("of") is not None else f"{r.get('count')} rows"
-        prow += f"""<tr><td><a href="forms/{E(f['id'])}.html">{E(f['id'])}</a></td><td>{E(f['name'])}</td><td>{E(pr['kind'])}</td><td><a href="{REPO}/blob/main/{E(pr['file'])}">{E(pr['file'].split('/')[-1])}</a></td><td><a href="corpora/{E(pr['corpus_id'])}.html">{E(CORPUS_NAMES.get(pr['corpus_id'], pr['corpus_id']).split(' — ')[0][:48])}</a></td><td>{E(head)}</td><td>{E(r.get('date',''))}</td><td>{'shown' if pr.get('matches_excerpt') else 'to be shown'}</td></tr>"""
+        prow += f"""<tr><td><a href="forms/{E(f['id'])}.html">{E(f['id'])}</a></td><td>{E(f['name'])}</td><td>{E(pr['kind'])}</td><td><a href="{REPO}/blob/main/{E(pr['file'])}">{E(pr['file'].split('/')[-1])}</a></td><td>{E(CORPUS_NAMES.get(pr['corpus_id'], pr['corpus_id']).split(' — ')[0][:48])}</td><td>{E(head)}</td><td>{E(r.get('date',''))}</td><td>{'shown' if pr.get('matches_excerpt') else 'to be shown'}</td></tr>"""
 nprobes = sum(len(f.get("probes", [])) for f in forms)
 (SITE/"probes.html").write_text(layout("Probes — Fault Atlas", f"""<p class="crumb"><a href="index.html">Fault Atlas</a> › probes</p><h1>Exact probes</h1>
 <p class="lead">{nprobes} probes on {sum(1 for f in forms if f.get('probes'))} forms. A probe is the exact question asked of a corpus, kept verbatim: a Python regex on one document, a SPARQL query on a public endpoint, a shell request with its headers. It repairs nothing and decides nothing; it answers "is this fault here, and where?". Anyone can run it again: <code>python3 tools/run_probe.py &lt;probe&gt; &lt;corpus&gt;</code>. A probe is shown on its form only when it finds again the figure the observation quotes; otherwise the form says "to be shown" and the probe waits here for a second reader.</p>
@@ -224,48 +227,10 @@ propose_body = f"""<p class="crumb"><a href="index.html">Fault Atlas</a> › pro
 const e=u.searchParams.get('err');if(e){{const b=document.getElementById('err');b.hidden=false;b.textContent=e==='rate'?'Too many proposals from this address in one hour. Try again later.':e==='missing'?'Some required fields are missing or invalid: '+(u.searchParams.get('fields')||''):'The proposal could not be sent. Please try again or use GitHub.';}}</script>"""
 (SITE/"propose.html").write_text(layout("Propose a fault form — Fault Atlas", propose_body))
 
-# ── corpora: one page per corpus, plus an index ──
-(SITE/"corpora").mkdir(exist_ok=True)
-corp_index = ""
-for cf in sorted((ROOT/"corpora").glob("*.json")):
-    c = json.loads(cf.read_text())
-    cid = c["id"]
-    # forms on this corpus: with a probe / without
-    with_probe, without = [], []
-    for f in forms:
-        pf = {pr["file"]: pr for pr in f.get("probes", []) if pr["corpus_id"] == cid}
-        obs = [x for x in f["seen"] if x.get("corpus_id") == cid]
-        absent = any(pr for pr in pf.values() if pr["file"] not in {x.get("probe") for x in f["seen"]})
-        shown = [pr for pr in pf.values() if pr.get("matches_excerpt")]
-        if shown:
-            for pr in shown:
-                r = pr.get("result", {})
-                with_probe.append((f, pr, f"{r.get('count')}/{r.get('of')}" if r.get("of") is not None else f"{r.get('count')} rows"))
-        elif obs:
-            without.append(f)
-    body_c = f"<p class=\"crumb\"><a href=\"../index.html\">Fault Atlas</a> › <a href=\"../corpora.html\">corpora</a> › {E(cid)}</p><h1>{E(c['name'])}</h1>"
-    body_c += "<p class=\"lead\">This page says <strong>which documents</strong> the corpus holds and <strong>how they were chosen</strong>. It does not find any fault: the exact probe that finds a fault sits on each form, listed at the bottom of this page.</p>"
-    if c.get("source"): body_c += f"<p><strong>Source:</strong> {E(c['source'])}</p>"
-    if c.get("harvested"): body_c += f"<p><strong>Harvested:</strong> {E(c['harvested'])}</p>"
-    if c.get("selection"): body_c += f"<p><strong>How the documents were chosen:</strong> {E(c['selection'])}</p>"
-    if c.get("queries"): body_c += "<h2>Selection queries</h2><p class=\"muted\">These queries chose the articles on Europe PMC, one per stratum. They are not the queries that find the faults.</p><ul>" + "".join(f"<li><code>{E(k)}</code>: <code>{E(v)}</code></li>" for k,v in c["queries"].items()) + "</ul>"
-    if c.get("by_stratum"): body_c += "<p><strong>By stratum:</strong> " + ", ".join(f"{E(k)} {v}" for k,v in c["by_stratum"].items()) + f" — {c.get('count','')} articles</p>"
-    if c.get("by_decade"): body_c += "<p><strong>By decade:</strong> " + ", ".join(f"{E(k)}s {v}" for k,v in c["by_decade"].items()) + f" — {c.get('count','')} records, {c.get('without_abstract','')} without abstract</p>"
-    if c.get("note"): body_c += f"<p>{E(c['note'])}</p>"
-    if c.get("populations"): body_c += "<h2>Populations</h2><ul>" + "".join(f"<li>{E(pp['name'])}{(' — '+E(pp['note'])) if pp.get('note') else ''}</li>" for pp in c["populations"]) + "</ul>"
-    if c.get("how_to_reproduce"): body_c += f"<h2>How to get the same documents</h2><p>{E(c['how_to_reproduce'])}</p>"
-    if c.get("articles"): body_c += f"<details><summary>The {len(c['articles'])} identifiers</summary><p class=\"ids\">" + " ".join(E(a.get('pmcid') or a.get('pmid') or '') for a in c['articles']) + "</p></details>"
-    if c.get("observer_agreement"): body_c += f"<p><strong>Observer agreement:</strong> {E(json.dumps(c['observer_agreement'], ensure_ascii=False))}</p>"
-    if c.get("lesson"): body_c += f"<p><em>{E(c['lesson'])}</em></p>"
-    if with_probe:
-        body_c += f"<h2>Forms found on this corpus, with the exact probe that finds them ({len(with_probe)})</h2><div class=\"tablewrap\"><table><thead><tr><th>Form</th><th>Name</th><th>Probe</th><th>Result</th></tr></thead><tbody>" + "".join(f"<tr><td><a href=\"../forms/{E(f['id'])}.html\">{E(f['id'])}</a></td><td>{E(f['name'])}</td><td><a href=\"{REPO}/blob/main/{E(pr['file'])}\">{E(pr['file'].split('/')[-1])}</a></td><td>{E(res)}</td></tr>" for f, pr, res in with_probe) + "</tbody></table></div>"
-    if without:
-        body_c += f"<h2>Forms measured on this corpus, to be shown ({len(without)})</h2><p class=\"muted\">Their figure is a dated claim not yet found again by a kept probe.</p><p>" + " · ".join(f"<a href=\"../forms/{E(f['id'])}.html\">{E(f['id'])}</a>" for f in without) + "</p>"
-    body_c += f"<p class=\"muted\">Record: <a href=\"{REPO}/blob/main/corpora/{E(cf.name)}\">{E(cf.name)}</a></p>"
-    (SITE/"corpora"/f"{cid}.html").write_text(layout(f"{c['name'].split(' — ')[0]} — Fault Atlas", body_c, depth=1))
-    n_obs = sum(1 for f in forms for x in f["seen"] if x.get("corpus_id") == cid)
-    corp_index += f"<section class=\"corpus\"><h2><a href=\"corpora/{E(cid)}.html\">{E(c['name'])}</a></h2><p>{E(c.get('selection', c.get('note', ''))[:260])}{'…' if len(c.get('selection', c.get('note', '')))>260 else ''}</p><p class=\"meta\">{n_obs} observation(s) · {len(with_probe)} exact probe(s){(' · '+str(len(without))+' to be shown') if without else ''}{(' · harvested '+E(c['harvested'])) if c.get('harvested') else ''}</p></section>"
-(SITE/"corpora.html").write_text(layout("Corpora — Fault Atlas", f"<p class=\"crumb\"><a href=\"index.html\">Fault Atlas</a> › corpora</p><h1>Observed corpora</h1><p class=\"lead\">One page per corpus: which documents it holds, how they were chosen, how to get them again. A corpus page never finds a fault; the exact probe that does sits on each form.</p>{corp_index}"))
+# ── corpora: no page. The records in corpora/ stay the data; each form links the documents itself. ──
+import shutil as _sh
+if (SITE/"corpora").exists(): _sh.rmtree(SITE/"corpora")
+if (SITE/"corpora.html").exists(): (SITE/"corpora.html").unlink()
 
 (SITE/"atlas.json").write_text(json.dumps({"version": VERSION, "doi": DOI, "forms": forms}, ensure_ascii=False))
 (SITE/"style.css").write_text("""
@@ -288,7 +253,7 @@ h2{font-size:26px;letter-spacing:-.02em;margin:38px 0 12px;font-weight:600}h3{ma
 .card{display:block;background:var(--bg-elev);border:1px solid var(--line);border-top:3px solid var(--c);border-radius:10px;padding:16px 18px;color:var(--fg);transition:border-color .15s}.card:hover{text-decoration:none;border-color:var(--c);background:#fff}
 .card .n{display:block;font-size:36px;font-weight:600;line-height:1;letter-spacing:-.03em;font-family:var(--mono)}.card .n small{display:block;font-size:12px;font-weight:500;color:var(--muted);font-family:var(--sans);letter-spacing:0;margin-top:4px}.card .t{display:block;font-weight:600;margin-top:8px}.card .d{display:block;font-size:13px;color:var(--muted);margin-top:4px;line-height:1.45}
 .bar{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin:0 0 12px}input,select,textarea{font:inherit;font-size:15px;padding:10px 12px;border:1px solid var(--line-strong);border-radius:8px;background:#fff;color:var(--fg)}.bar input{flex:1;min-width:220px}input:focus,select:focus{outline:2px solid var(--acc-soft);border-color:var(--acc)}
-.tablewrap{overflow-x:auto;border:1px solid var(--line);border-radius:10px;background:#fff}table{border-collapse:collapse;width:100%;min-width:780px}th,td{text-align:left;padding:11px 14px;border-top:1px solid var(--line);vertical-align:top}th{border-top:0;font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);font-weight:600;background:var(--bg-elev)}td.num{text-align:right;font-family:var(--mono);font-size:14px}td.src{font-size:13px;color:var(--luxe)}
+.tablewrap{overflow-x:auto;border:1px solid var(--line);border-radius:10px;background:#fff}table{border-collapse:collapse;width:100%;min-width:780px}th,td{text-align:left;padding:11px 14px;border-top:1px solid var(--line);vertical-align:top}th{border-top:0;font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);font-weight:600;background:var(--bg-elev)}td.num{text-align:right;font-family:var(--mono);font-size:14px}td.src{font-size:13px;color:var(--luxe)}table.kv th{width:190px;text-transform:none;letter-spacing:0;font-size:14px;color:var(--ink);background:transparent;border-top:1px solid var(--line)}table.kv td code{font-size:12.5px;white-space:normal;word-break:break-all}td.mono{font-family:var(--mono);font-size:12px}
 .pill{display:inline-block;white-space:nowrap;padding:2px 10px;border-radius:999px;font-size:12.5px;font-weight:600;color:#fff;background:var(--c);letter-spacing:.01em}.pill.grey{background:var(--surface);color:var(--fg);font-weight:500}.pill.warn{background:#fff3c4;color:#6b4c00;font-weight:500}
 .fr{color:var(--muted);font-size:13px;font-family:var(--serif);font-style:italic}.fr.big{font-size:17px;margin-top:-10px}.muted{color:var(--muted)}
 .about{margin-top:56px;border-top:1px solid var(--line);padding-top:32px}.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:24px}.cols p{margin:0;color:var(--luxe);font-size:15px}

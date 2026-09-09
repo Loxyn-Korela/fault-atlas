@@ -7,6 +7,10 @@
 - Validator with house rules; proves itself on seven planted faults.
 - SQLite view builder for Datasette.
 
+## 0.3.6 — 2026-09-09
+- No corpus page any more (third reader: "it only confuses; they will have the link from the fault's own page"). Each shown probe links every carrier document directly, and its folded block says where it was searched, the read date, and points to the record with identifiers, sha256 as read and licences.
+- The 272-article record now carries the sha256 of each file as read on 2026-08-08 and the licence found inside the file (175 CC BY 4.0, 45 CC BY-NC-ND 4.0, 18 CC BY-NC 4.0, …); a frozen archive of the 267 files under a named Creative Commons licence is prepared for a Zenodo deposit (5 not redistributed: 2 under a publisher licence, 3 saying only "Creative Commons").
+
 ## 0.3.5 — 2026-09-09
 - Rule set by the third reader, applied everywhere: a fault is described; its August measurement is cited as a dated claim; documents are shown only when a kept probe finds that very figure again; otherwise the form says "to be shown" and nothing else. No substitute probe with another figure, no "both kept". form-014's substitute probe (2/272 by a different rule) withdrawn. 66 probes shown, 12 waiting for a second reader, 30 August figures without a kept probe.
 
