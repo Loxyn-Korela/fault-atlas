@@ -69,17 +69,11 @@ def is_graph_layer(layer):
 gcounts = Counter(f["damage"] for f in forms if is_graph_layer(f["layer"]))
 cards = "".join(f"""<a class="card" href="#forms" data-damage="{k}" style="--c:{v[2]}"><span class="n">{counts.get(k,0)}<small> · {gcounts.get(k,0)} in graph layers</small></span><span class="t">{E(v[0])}</span><span class="d">{E(v[1])}</span></a>""" for k,v in DAMAGE.items())
 def proof_of(f):
-    """(key, label): what the form can show today."""
-    prs = f.get("probes", [])
-    shown = [pr for pr in prs if pr.get("matches_excerpt") and pr.get("result", {}).get("count", 0) > 0]
-    if shown:
-        n = max(pr["result"]["count"] for pr in shown); of = shown[0]["result"].get("of")
-        return "docs", f"{n} document{'s' if n > 1 else ''}" + (f" of {of}" if of else "")
-    if any(pr.get("matches_excerpt") and pr.get("result", {}).get("count") == 0 for pr in prs): return "absent", "measured absent"
-    if prs or any(x.get("corpus_id") for x in f["seen"]): return "pending", "to be shown"
-    if f["seen"]: return "cited", "observation cited"
-    return "none", "no observation"
-PROOF_LABEL = {"docs": "documents shown", "absent": "measured absent", "pending": "to be shown", "cited": "observation cited, not shown", "none": "no observation"}
+    """example / none: does the form show at least one document where the fault sits?"""
+    for pr in f.get("probes", []):
+        if pr.get("matches_excerpt") and pr.get("result", {}).get("count", 0) > 0:
+            return "docs", "example shown"
+    return "none", "no example yet"
 rows = "".join(f"""<tr data-damage="{f['damage']}" data-class="{f['class']}" data-layer="{E(f['layer'])}" data-proof="{proof_of(f)[0]}" data-src="{E(" ".join(corpora_of(f)).lower())}" data-text="{E((f['name']+' '+f.get('name_fr','')+' '+' '.join(corpora_of(f))).lower())}">
 <td><a href="forms/{f['id']}.html">{E(f['name'])}</a><br><span class="fr">{E(f.get('name_fr',''))}</span></td>
 <td><span class="pill" style="--c:{DAMAGE[f['damage']][2]}">{E(DAMAGE[f['damage']][0])}</span></td>
@@ -89,16 +83,16 @@ proof_counts = _PC(proof_of(f)[0] for f in forms)
 index = f"""
 <section class="hero"><p class="eyebrow">A library of observed fault forms in knowledge graphs built from documents</p>
 <h1>Every fault has a form. Every form does one of seven things to the graph.</h1>
-<p class="lead">{len(forms)} forms observed on real corpora — {proof_counts['docs']} of them show the documents where the fault sits, {proof_counts['absent']} are measured absent on the corpus checked, {proof_counts['pending']} quote a figure still to be shown, {proof_counts['cited']} cite an observation without a listed corpus, {proof_counts['none']} have no observation yet. Each with its provenance, each with its provenance, the damage it causes, whether code can cancel it, whether a deletion-only repair can restore the truth, and which kind of truth can judge it. A repair that holds on one form of a damage may fail on another form of the same damage: this is the test matrix that says which.</p>
+<p class="lead">{len(forms)} forms of fault observed on real corpora; {proof_counts['docs']} of them come with a reproducible example — a document you can open, the query that found it, the frozen copy — and {proof_counts['none']} do not yet. A form says what the fault does to the graph, whether code can cancel it, whether a deletion-only repair can restore the truth, and which kind of truth can judge it.</p>
 <p class="cta"><a class="btn" href="#forms">Browse the forms</a> <a class="btn ghost" href="{DATA}">Query the data</a> <a class="btn ghost" href="propose.html">Propose a form</a></p></section>
 <section class="grid" id="damages">{cards}</section>
 <section id="forms"><div class="bar"><input id="q" type="search" placeholder="Search a form…" aria-label="Search">
 <select id="fd"><option value="">All damages</option>{''.join(f'<option value="{k}">{E(v[0])}</option>' for k,v in DAMAGE.items())}</select>
 <select id="fc"><option value="">All classes</option>{''.join(f'<option value="{k}">{E(v)}</option>' for k,v in CLASS.items())}</select>
 <select id="fl"><option value="">All layers</option>{''.join(f'<option value="{E(l)}">{E(l)}</option>' for l in sorted({f["layer"] for f in forms}))}</select>
-<label class="chk"><input type="checkbox" id="fp"> Only forms with documents shown ({proof_counts['docs']})</label>
+<label class="chk"><input type="checkbox" id="fp"> Only forms with an example ({proof_counts['docs']})</label>
 <span id="count" class="muted"></span></div>
-<div class="tablewrap"><table id="t"><thead><tr><th>Form</th><th>Damage</th><th>Class</th><th>Layer</th><th>Seen on</th><th>Proof</th><th>Deletion repairs it (classified)</th></tr></thead><tbody>{rows}</tbody></table></div></section>
+<div class="tablewrap"><table id="t"><thead><tr><th>Form</th><th>Damage</th><th>Class</th><th>Layer</th><th>Seen on</th><th>Example</th><th>Deletion repairs it (classified)</th></tr></thead><tbody>{rows}</tbody></table></div></section>
 <section id="about" class="about"><h2>What a record says</h2>
 <div class="cols"><div><h3>Seven damages</h3><p>What a fault does to the graph: merge, split, spurious edge, missing, wrong value, wrong label, anachronism. The 113 difficulties observed in August 2026, however different they look, each produce one of these. Verified line by line.</p></div>
 <div><h3>Two counts, always together</h3><p>Each damage card shows two numbers: all forms, and forms whose layer is a graph layer — resolution, schema, coherence, structure — where the phenomenon is itself a graph damage rather than a reading failure felt downstream. Deletion-only repair fully addresses one damage, the spurious edge; the identity damages, merge and split, it never touches.</p></div>
@@ -142,7 +136,7 @@ for f in forms:
         if not pr: return ""
         r = pr.get("result", {})
         if not pr.get("matches_excerpt"):
-            return """<p class="noprobe">To be shown: the figure in this note has not yet been reproduced by a kept probe. It stays as a dated claim until a probe finds it again or a bench tests it.</p>"""
+            return """<p class="noprobe">No reproducible example yet for this note.</p>"""
         head = f"{r.get('count')}/{r.get('of')} documents" if r.get("of") is not None else f"{r.get('count')} results"
         code = (ROOT/pr["file"]).read_text(encoding="utf-8") if (ROOT/pr["file"]).is_file() else ""
         carriers = []
@@ -150,29 +144,22 @@ for f in forms:
             carriers = [(c["document"], c.get("evidence", [])) for c in json.loads((ROOT/r["carriers_file"]).read_text())["carriers"]]
         elif r.get("examples"):
             carriers = [(n, e) for n, e in r["examples"]]
+        if not carriers:
+            return ""
         def li(n, e):
             ev = (" — <span class='ev'>" + E(" | ".join(map(str, e)))[:260] + "</span>") if e else ""
             return f"<li>{doc_link(n, pr['corpus_id'])}{ev}</li>"
-        first, rest = carriers[:12], carriers[12:]
-        docs = ""
-        if carriers:
-            docs = f"<ol class='docs'>" + "".join(li(n, e) for n, e in first) + "</ol>"
-            if rest:
-                docs += f"<details><summary>the other {len(rest)} documents</summary><ol class='docs' start='13'>" + "".join(li(n, e) for n, e in rest) + "</ol></details>"
-            if r.get("carriers_file"):
-                docs += f"<p class='meta'>Full list with evidence: <a href='{REPO}/blob/main/{E(r['carriers_file'])}'>{E(r['carriers_file'].split('/')[-1])}</a></p>"
-        elif r.get("count") == 0:
-            docs = "<p class='meta'>Not found in any of these documents: the check ran on every one. That is the measurement.</p>"
+        docs = "<ol class='docs'>" + "".join(li(n, e) for n, e in carriers[:3]) + "</ol>"
+        prevalence = f" (found in {r.get('count')} of the {r.get('of')} documents checked)" if r.get("of") else f" ({r.get('count')} found)"
         strata = (" · by stratum: " + ", ".join(f"{E(k)} {v}" for k, v in r["strata"].items())) if r.get("strata") else ""
-        return f"""<div class="probe"><p class="probe-head"><strong>Found in {E(head)}</strong> · checked {E(r.get('date','?'))}</p>
+        return f"""<div class="probe"><p class="probe-head"><strong>Example{'s' if len(carriers) > 1 else ''}</strong>{E(prevalence)}</p>
 {docs}
-{('<p class="note">'+E(pr['note'])+'</p>') if pr.get('note') else ''}
-<details class="code"><summary>How it was found: the code, the corpus, the date{strata}</summary>
+<details class="code"><summary>How it was found: the query, the corpus, the date</summary>
 <p class="meta">Run: <code>{E(pr.get('run',''))}</code> · <a href="{REPO}/blob/main/{E(pr['file'])}">{E(pr['file'])}</a>{(' · written '+E(pr['written'])) if pr.get('written') else ''}{(' · '+E(r['by'])) if r.get('by') else ''}</p>
 <p class="meta">Searched in: {E(CORPUS_NAMES.get(pr['corpus_id'], pr['corpus_id']).split(' — ')[0])}{(', read on '+E(CORPUS_REC[pr['corpus_id']]['harvested'])) if CORPUS_REC.get(pr['corpus_id'],{}).get('harvested') else ''} · identifiers, sha256 as read and licences: <a href="{REPO}/blob/main/corpora/{E(CORPUS_FILE[pr['corpus_id']])}">record</a>{(' · frozen copy of the files as read: <a href="'+E(CORPUS_REC[pr['corpus_id']]['frozen_copy']['url'])+'">doi:'+E(CORPUS_REC[pr['corpus_id']]['frozen_copy']['doi'])+'</a>') if CORPUS_REC.get(pr['corpus_id'],{}).get('frozen_copy',{}).get('doi') else ''}</p>
 <pre><code>{E(code)}</code></pre></details></div>"""
     seen = "".join(f"""<article class="obs"><p class="meta"><strong>{E(corpus_short(s['corpus']))}</strong> · {E(s['corpus'])} · {E(s['date'])}{(' · '+E(s['observer'])) if s.get('observer') else ''}{(' · '+E(s['organisation'])) if s.get('organisation') else ''}</p>
-<p>{E(s.get('excerpt_en', s['excerpt']))}</p>{('<details><summary>Original note ('+E(s.get('lang','fr'))+')</summary><p class="fr">'+E(s['excerpt'])+'</p></details>') if s.get('excerpt_en') and s.get('excerpt_en')!=s['excerpt'] else ''}{probe_block(s.get('probe')) if s.get('probe') else ('<p class="noprobe">To be shown: this figure was counted in August 2026 and the code was not kept. It stays as a dated claim until a probe finds it again or a bench tests it.</p>' if s.get('corpus_id') else '')}</article>""" for s in f["seen"]) or "<p class='muted'>No observation yet: this form is a hypothesis, not an observation.</p>"
+<p>{E(s.get('excerpt_en', s['excerpt']))}</p>{('<details><summary>Original note ('+E(s.get('lang','fr'))+')</summary><p class="fr">'+E(s['excerpt'])+'</p></details>') if s.get('excerpt_en') and s.get('excerpt_en')!=s['excerpt'] else ''}{probe_block(s.get('probe')) if s.get('probe') else ('<p class="noprobe">No reproducible example yet for this note.</p>' if s.get('corpus_id') else '')}</article>""" for s in f["seen"]) or "<p class='muted'>No observation yet: this form is a hypothesis, not an observation.</p>"
     cases = f["specimens"]["cases"]; cex = f["specimens"]["counter_examples"]
     spec = (f"<p>{len(cases)} case(s), {len(cex)} counter-example(s).</p>" if cases or cex else "<p class='muted'>Specimens not yet transcribed into this record.</p>")
     hist = "".join(f"<li><span class='meta'>{E(h['date'])}</span> {E(h['event'])}{(' — '+E(h['by'])) if h.get('by') else ''}</li>" for h in f["history"])
@@ -184,7 +171,7 @@ for f in forms:
 <div><h3>Can code cancel it?</h3><p>{'Yes' if prev['cancellable_by_code'] else 'No'}{('. Refusal clause: '+E(prev['refusal_clause'])) if prev.get('refusal_clause') else ''}{('. '+E(prev['note'])) if prev.get('note') else ''}.</p></div>
 <div><h3>Can a deletion-only repair restore the truth? <span class="opt">classified, not measured</span></h3><p><strong>{E(REACH[rep['reachable_by_deletion']])}</strong>{(' — '+E(rep['note'])) if rep.get('note') else ''}.</p></div>
 <div><h3>Which truth can judge it</h3><p>{', '.join(E(JUDGE[j]) for j in f['judgeable_by']) or '<span class="muted">none known yet</span>'}.</p></div></div>
-{('<div class="note">Measured absent in: '+E('; '.join(f['observed_absent_in']))+' — an absence is a result, not a gap.'+''.join(probe_block(pr['file']) for pr in f.get('probes', []) if pr['file'] not in {x.get('probe') for x in f['seen']})+'</div>') if f.get('observed_absent_in') else ''.join(probe_block(pr['file']) for pr in f.get('probes', []) if pr['file'] not in {x.get('probe') for x in f['seen']})}
+{('<p class="muted small">Searched and not found in: '+E('; '.join(f['observed_absent_in']))+'.</p>') if f.get('observed_absent_in') else ''}
 <h2>Where it was seen</h2>{seen}
 <h2>Specimens</h2>{spec}
 <h2>History</h2><ul class="hist">{hist}</ul>
@@ -258,7 +245,7 @@ h2{font-size:26px;letter-spacing:-.02em;margin:38px 0 12px;font-weight:600}h3{ma
 .card{display:block;background:var(--bg-elev);border:1px solid var(--line);border-top:3px solid var(--c);border-radius:10px;padding:16px 18px;color:var(--fg);transition:border-color .15s}.card:hover{text-decoration:none;border-color:var(--c);background:#fff}
 .card .n{display:block;font-size:36px;font-weight:600;line-height:1;letter-spacing:-.03em;font-family:var(--mono)}.card .n small{display:block;font-size:12px;font-weight:500;color:var(--muted);font-family:var(--sans);letter-spacing:0;margin-top:4px}.card .t{display:block;font-weight:600;margin-top:8px}.card .d{display:block;font-size:13px;color:var(--muted);margin-top:4px;line-height:1.45}
 .bar{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin:0 0 12px}input,select,textarea{font:inherit;font-size:15px;padding:10px 12px;border:1px solid var(--line-strong);border-radius:8px;background:#fff;color:var(--fg)}.bar input{flex:1;min-width:220px}input:focus,select:focus{outline:2px solid var(--acc-soft);border-color:var(--acc)}
-.tablewrap{overflow-x:auto;border:1px solid var(--line);border-radius:10px;background:#fff}table{border-collapse:collapse;width:100%;min-width:780px}th,td{text-align:left;padding:11px 14px;border-top:1px solid var(--line);vertical-align:top}th{border-top:0;font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);font-weight:600;background:var(--bg-elev)}td.num{text-align:right;font-family:var(--mono);font-size:14px}td.src{font-size:13px;color:var(--luxe)}td.proof{font-size:13px;white-space:nowrap}td.p-docs{color:#166534;font-weight:600}td.p-absent{color:var(--muted)}td.p-pending,td.p-cited{color:#92400e}td.p-none{color:var(--muted)}label.chk{display:inline-flex;align-items:center;gap:6px;font-size:14px;color:var(--ink)}label.chk input{width:auto;min-width:0;flex:none}table.kv th{width:190px;text-transform:none;letter-spacing:0;font-size:14px;color:var(--ink);background:transparent;border-top:1px solid var(--line)}table.kv td code{font-size:12.5px;white-space:normal;word-break:break-all}td.mono{font-family:var(--mono);font-size:12px}
+.tablewrap{overflow-x:auto;border:1px solid var(--line);border-radius:10px;background:#fff}table{border-collapse:collapse;width:100%;min-width:780px}th,td{text-align:left;padding:11px 14px;border-top:1px solid var(--line);vertical-align:top}th{border-top:0;font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);font-weight:600;background:var(--bg-elev)}td.num{text-align:right;font-family:var(--mono);font-size:14px}td.src{font-size:13px;color:var(--luxe)}td.proof{font-size:13px;white-space:nowrap}td.p-docs{color:#166534;font-weight:600}td.p-none{color:var(--muted)}label.chk{display:inline-flex;align-items:center;gap:6px;font-size:14px;color:var(--ink)}label.chk input{width:auto;min-width:0;flex:none}table.kv th{width:190px;text-transform:none;letter-spacing:0;font-size:14px;color:var(--ink);background:transparent;border-top:1px solid var(--line)}table.kv td code{font-size:12.5px;white-space:normal;word-break:break-all}td.mono{font-family:var(--mono);font-size:12px}
 .pill{display:inline-block;white-space:nowrap;padding:2px 10px;border-radius:999px;font-size:12.5px;font-weight:600;color:#fff;background:var(--c);letter-spacing:.01em}.pill.grey{background:var(--surface);color:var(--fg);font-weight:500}.pill.warn{background:#fff3c4;color:#6b4c00;font-weight:500}
 .fr{color:var(--muted);font-size:13px;font-family:var(--serif);font-style:italic}.fr.big{font-size:17px;margin-top:-10px}.muted{color:var(--muted)}
 .about{margin-top:56px;border-top:1px solid var(--line);padding-top:32px}.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:24px}.cols p{margin:0;color:var(--luxe);font-size:15px}

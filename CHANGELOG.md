@@ -7,6 +7,9 @@
 - Validator with house rules; proves itself on seven planted faults.
 - SQLite view builder for Datasette.
 
+## 0.4.1 — 2026-09-09
+- A database of faults, not of files (third reader): each form shows at most three examples — a document you can open, the evidence found in it, in one parenthesis how many of the checked documents carry it — and, folded, how it was found. The full carrier lists stay in the repository, off the site. "Measured absent" is no longer presented as a proof. Two states on the list: example shown (54) / no example yet (103).
+
 ## 0.4.0 — 2026-09-09
 - Proof column on the list and a one-click filter "only forms with documents shown": 54 forms show the documents where the fault sits, 11 are measured absent, 41 quote a figure still to be shown, 45 cite an observation without a listed corpus, 6 have no observation. The lead line says the same five counts.
 - Frozen corpus published on Zenodo: doi:10.5281/zenodo.22680055.
