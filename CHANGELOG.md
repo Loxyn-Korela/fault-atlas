@@ -7,6 +7,10 @@
 - Validator with house rules; proves itself on seven planted faults.
 - SQLite view builder for Datasette.
 
+## 0.4.0 — 2026-09-09
+- Proof column on the list and a one-click filter "only forms with documents shown": 54 forms show the documents where the fault sits, 11 are measured absent, 41 quote a figure still to be shown, 45 cite an observation without a listed corpus, 6 have no observation. The lead line says the same five counts.
+- Frozen corpus published on Zenodo: doi:10.5281/zenodo.22680055.
+
 ## 0.3.9 — 2026-09-09
 - Frozen copy of the 272-article corpus deposited on Zenodo (draft, doi:10.5281/zenodo.22680055): 267 files as read on 2026-08-08 plus the manifest. Each form's folded "how it was found" block links it.
 

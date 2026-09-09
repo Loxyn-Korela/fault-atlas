@@ -1936,7 +1936,7 @@
  "how_to_reproduce": "For each PMC id: GET https://www.ebi.ac.uk/europepmc/webservices/rest/<PMCID>/fullTextXML . Europe PMC may have updated a record since 2026-08-08; a re-download is a new snapshot, to be dated.",
  "download": "https://www.ebi.ac.uk/europepmc/webservices/rest/<PMCID>/fullTextXML (the JATS XML, exactly what the probes read) · human view: https://europepmc.org/article/PMC/<PMCID>",
  "frozen_copy": {
-  "status": "Zenodo deposit 10.5281/zenodo.22680055 (267 files under a named Creative Commons licence, with this manifest, 6.5 MB), draft on 2026-09-09, to be published by the depositor",
+  "status": "Zenodo 10.5281/zenodo.22680055, published 2026-09-09: 267 files as read on 2026-08-08, under a named Creative Commons licence, with this manifest (6.5 MB)",
   "not_redistributed": [
    "PMC13294787",
    "PMC13294792",
