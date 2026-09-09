@@ -7,6 +7,11 @@
 - Validator with house rules; proves itself on seven planted faults.
 - SQLite view builder for Datasette.
 
+## 0.3.1 — 2026-09-09
+- Third reader's confusion resolved: the corpus page and the probe are two different things, and the site now says so. One page per corpus (`corpora/<id>.html`): which documents, how they were chosen (the selection queries, labelled as such: they choose the articles, they do not find the faults), how to get them again, then the forms found on it with their exact probe, then the forms measured on it whose count has no kept probe. The old single anchored page is gone.
+- Each observation on a corpus without a kept probe now says it: "No exact probe kept for this figure; the corpus is reproducible, the count is not yet." 31 such observations remain on the 272 articles, listed on the corpus page.
+- Six more probes: lines 22, 70, 83, 93, 128 rewritten from the campaign's inline script, and 135 written today (11/272 block quotations, 1/272 translation marker, exactly the excerpt's figures). 22, 70, 83, 135 reproduce the quoted figures; 93 and 128 do not and say so.
+
 ## 0.3.0 — 2026-09-09
 - The exact probe on each observation (third reader's request: "which corpus and which exact query finds the problem, not something general"). `probes/2026-08/`: the 66 regex probes of the August campaign, one file per catalogue line, extracted verbatim and re-run on the same 272 files today; `probes/2026-09/`: the two SPARQL queries, the shell request and the dump inventory of the EUR-Lex forms, all re-run live today and reproducing the collector's figures. Schema: `probes[]` on the form, `probe` on the observation.
 - Re-run figures published as measured: 38 of 66 August probes give exactly the figure quoted in the excerpt; 28 do not (finer hand-run counts whose code was not kept) and say so on the form. Zero counts attached under "measured absent in" (9 forms).

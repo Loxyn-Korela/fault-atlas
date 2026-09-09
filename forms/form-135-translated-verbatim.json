@@ -25,7 +25,8 @@
       "lang": "fr",
       "excerpt_en": "MEASURED on 2026-08-08 on the internal corpus (272 JATS XML): 1/272 article (0.4 %) carries a translation marker, against 11/272 (4 %) carrying a block quotation <disp-quote> (102 blocks) — the difficulty is NEARLY ABSENT from biomedicine, and that is the result: it was observed on 2026-08-08 on 14 articles 2021-2026 OUTSIDE biomedicine (arXiv, PLOS, Copernicus, HAL, Scientific Reports). It would never have been found without changing discipline.",
       "organisation": "Loxyn SAS, Lyon",
-      "corpus_id": "corpus-europe-pmc-jats-2023-2026"
+      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+      "probe": "probes/2026-08/line-135.py"
     }
   ],
   "specimens": {
@@ -60,6 +61,54 @@
       "date": "2026-09-09",
       "event": "internal tool paths removed from observation notes before publication; wording otherwise unchanged",
       "by": "Fault Atlas"
+    },
+    {
+      "date": "2026-09-09",
+      "event": "exact probe attached to the 272-file observation: probes/2026-08/line-135.py (rewritten from the campaign's inline script), re-run 11/272",
+      "by": "Fault Atlas maintainer"
+    }
+  ],
+  "probes": [
+    {
+      "file": "probes/2026-08/line-135.py",
+      "kind": "python",
+      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+      "written": "2026-08-08",
+      "run": "python3 tools/run_probe.py probes/2026-08/line-135.py <dir with the 272 .xml>",
+      "result": {
+        "date": "2026-09-09",
+        "count": 11,
+        "of": 272,
+        "strata": {
+          "essai": 4,
+          "phys": 4,
+          "bio": 1,
+          "meta": 1,
+          "moderne": 1
+        },
+        "examples": [
+          [
+            "bio-PMC13182387.xml",
+            [
+              "disp-quote x4"
+            ]
+          ],
+          [
+            "essai-PMC13205709.xml",
+            [
+              "disp-quote x12"
+            ]
+          ],
+          [
+            "essai-PMC13280184.xml",
+            [
+              "disp-quote x15"
+            ]
+          ]
+        ],
+        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files"
+      },
+      "matches_excerpt": true
     }
   ]
 }
