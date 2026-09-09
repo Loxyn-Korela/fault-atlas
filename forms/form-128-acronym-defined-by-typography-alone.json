@@ -104,9 +104,70 @@
               "never glossed: ACE, AMGEN, AND, ART, BAYER, BRA",
               "bare apposition: Brazil, CRP, CVR, IR"
             ]
+          ],
+          [
+            "bio-PMC12857832.xml",
+            [
+              "never glossed: AND, COVID, CVD, FEV1, FVC, II",
+              "bare apposition: POP"
+            ]
+          ],
+          [
+            "bio-PMC12882215.xml",
+            [
+              "never glossed: AND, APOE, HR, PR, PRISMA, RCT",
+              "bare apposition: NDVI, RCT"
+            ]
+          ],
+          [
+            "bio-PMC12909487.xml",
+            [
+              "never glossed: AED, AND, CAD, CPR, LC, OR"
+            ]
+          ],
+          [
+            "bio-PMC12915353.xml",
+            [
+              "never glossed: ABS, AND, BMI, CI, CVD, DBP"
+            ]
+          ],
+          [
+            "bio-PMC12927065.xml",
+            [
+              "never glossed: AA, AND, AOR, BMC, BMJ, CI",
+              "bare apposition: Second"
+            ]
+          ],
+          [
+            "bio-PMC12927975.xml",
+            [
+              "never glossed: AND, CT, IBM, OR, PRISMA, WHO",
+              "bare apposition: DRC"
+            ]
+          ],
+          [
+            "bio-PMC12953170.xml",
+            [
+              "never glossed: AG, AI, AK, AS, ASA, ASW",
+              "bare apposition: Also"
+            ]
+          ],
+          [
+            "bio-PMC12959687.xml",
+            [
+              "never glossed: AB, ABS, AND, AT, BL, BMC"
+            ]
+          ],
+          [
+            "bio-PMC13057049.xml",
+            [
+              "never glossed: AA, ABS, AG, AI, AM, AND",
+              "bare apposition: Africa, First, Hence"
+            ]
           ]
         ],
-        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files"
+        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files",
+        "carriers_file": "probes/results/line-128.json"
       },
       "matches_excerpt": false,
       "note": "The excerpt's 214/272 used a stricter rule (three uses or more, stop list) that was not kept in code; this probe gives 240. Both kept."

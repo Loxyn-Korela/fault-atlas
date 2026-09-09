@@ -67,7 +67,8 @@
         "of": 272,
         "strata": {},
         "examples": [],
-        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files"
+        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files",
+        "carriers_file": "probes/results/line-129.json"
       },
       "matches_excerpt": true,
       "note": "Measured absent: the probe finds no carrier among the 272 files. An absence is a result, dated."

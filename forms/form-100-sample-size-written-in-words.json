@@ -108,9 +108,68 @@
             [
               "three"
             ]
+          ],
+          [
+            "bio-PMC12915353.xml",
+            [
+              "Two",
+              "one"
+            ]
+          ],
+          [
+            "bio-PMC12927065.xml",
+            [
+              "four"
+            ]
+          ],
+          [
+            "bio-PMC12953170.xml",
+            [
+              "Eight",
+              "Five"
+            ]
+          ],
+          [
+            "bio-PMC13057049.xml",
+            [
+              "four"
+            ]
+          ],
+          [
+            "bio-PMC13116881.xml",
+            [
+              "One",
+              "seven"
+            ]
+          ],
+          [
+            "bio-PMC13170838.xml",
+            [
+              "Eight"
+            ]
+          ],
+          [
+            "bio-PMC13182387.xml",
+            [
+              "One"
+            ]
+          ],
+          [
+            "bio-PMC13190511.xml",
+            [
+              "five"
+            ]
+          ],
+          [
+            "bio-PMC13207820.xml",
+            [
+              "one",
+              "two"
+            ]
           ]
         ],
-        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files"
+        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files",
+        "carriers_file": "probes/results/line-100.json"
       },
       "matches_excerpt": true
     }

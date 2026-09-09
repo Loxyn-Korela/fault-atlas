@@ -1,0 +1,1095 @@
+{
+ "probe": "probes/2026-08/line-020.py",
+ "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+ "date": "2026-09-09",
+ "count": 181,
+ "of": 272,
+ "carriers": [
+  {
+   "document": "bio-PMC12583535.xml",
+   "evidence": [
+    "tr×51 def-item×0 |  Database Search "
+   ]
+  },
+  {
+   "document": "bio-PMC12590050.xml",
+   "evidence": [
+    "tr×33 def-item×0 |  Study Functions "
+   ]
+  },
+  {
+   "document": "bio-PMC12674831.xml",
+   "evidence": [
+    "tr×154 def-item×75 |  Position Statement on Cardiometabolic Health Across the Wom"
+   ]
+  },
+  {
+   "document": "bio-PMC12857832.xml",
+   "evidence": [
+    "tr×117 def-item×0 |  Row Keyword Query Result "
+   ]
+  },
+  {
+   "document": "bio-PMC12882215.xml",
+   "evidence": [
+    "tr×65 def-item×7 |  Database Search strategy Search "
+   ]
+  },
+  {
+   "document": "bio-PMC12909487.xml",
+   "evidence": [
+    "tr×17 def-item×0 |  Database Number of records ST SR LC SF Search strategy "
+   ]
+  },
+  {
+   "document": "bio-PMC12915353.xml",
+   "evidence": [
+    "tr×18 def-item×0 |  Electronic Databases Search Strategy Records "
+   ]
+  },
+  {
+   "document": "bio-PMC12927065.xml",
+   "evidence": [
+    "tr×76 def-item×0 |  S.no Author YP Country N(P%) Study Design Sampling Techniqu"
+   ]
+  },
+  {
+   "document": "bio-PMC12927975.xml",
+   "evidence": [
+    "tr×11 def-item×0 |  No. References Country Type of study Medical field, AI appl"
+   ]
+  },
+  {
+   "document": "bio-PMC12953170.xml",
+   "evidence": [
+    "tr×26 def-item×0 |  Comorbidities % n "
+   ]
+  },
+  {
+   "document": "bio-PMC12959687.xml",
+   "evidence": [
+    "tr×86 def-item×0 |  1 Prevalence OR Epidemiology OR Surveillance "
+   ]
+  },
+  {
+   "document": "bio-PMC13057049.xml",
+   "evidence": [
+    "tr×90 def-item×14 |  Inclusion Exclusion "
+   ]
+  },
+  {
+   "document": "bio-PMC13088504.xml",
+   "evidence": [
+    "tr×84 def-item×6 |  Parameter n (%) or value "
+   ]
+  },
+  {
+   "document": "bio-PMC13097615.xml",
+   "evidence": [
+    "tr×86 def-item×0 |  Inclusion Exclusion "
+   ]
+  },
+  {
+   "document": "bio-PMC13099299.xml",
+   "evidence": [
+    "tr×100 def-item×0 |  PubMed search strategy steps "
+   ]
+  },
+  {
+   "document": "bio-PMC13103274.xml",
+   "evidence": [
+    "tr×137 def-item×0 |  Keywords "
+   ]
+  },
+  {
+   "document": "bio-PMC13116881.xml",
+   "evidence": [
+    "tr×28 def-item×0 |  Author Design HS+ GLP-1 RA (* Controls) Outcomes Medication"
+   ]
+  },
+  {
+   "document": "bio-PMC13155703.xml",
+   "evidence": [
+    "tr×24 def-item×0 |  Database Search string Studies "
+   ]
+  },
+  {
+   "document": "bio-PMC13162546.xml",
+   "evidence": [
+    "tr×47 def-item×0 |  Engineered bacterial carriers Conventional carriers "
+   ]
+  },
+  {
+   "document": "bio-PMC13168716.xml",
+   "evidence": [
+    "tr×33 def-item×0 |  Database Search strategy syntax "
+   ]
+  },
+  {
+   "document": "bio-PMC13170838.xml",
+   "evidence": [
+    "tr×12 def-item×22 |  (“Cardiovascular risk factors”[tiab] OR “Cardiovascular ris"
+   ]
+  },
+  {
+   "document": "bio-PMC13181205.xml",
+   "evidence": [
+    "tr×69 def-item×0 |  Keyword Synonyms and variations (including common abbreviat"
+   ]
+  },
+  {
+   "document": "bio-PMC13182387.xml",
+   "evidence": [
+    "tr×40 def-item×0 |  I-CVI score (0–1) "
+   ]
+  },
+  {
+   "document": "bio-PMC13190511.xml",
+   "evidence": [
+    "tr×146 def-item×0 |  Parameter WoSCC PubMed "
+   ]
+  },
+  {
+   "document": "bio-PMC13203479.xml",
+   "evidence": [
+    "tr×137 def-item×0 |  Ref. Study Design Country Mega-Event, Year Sample Populatio"
+   ]
+  },
+  {
+   "document": "bio-PMC13207820.xml",
+   "evidence": [
+    "tr×105 def-item×0 |  Characteristics Group 1 Group 2 p "
+   ]
+  },
+  {
+   "document": "bio-PMC13216383.xml",
+   "evidence": [
+    "tr×65 def-item×16 |  Search domains Search string PubMed Search string CINAHL "
+   ]
+  },
+  {
+   "document": "bio-PMC13218538.xml",
+   "evidence": [
+    "tr×41 def-item×0 |  Number of participants (%) ANOVA "
+   ]
+  },
+  {
+   "document": "bio-PMC13231534.xml",
+   "evidence": [
+    "tr×6 def-item×8 |  # Query Results retrieved "
+   ]
+  },
+  {
+   "document": "bio-PMC13236932.xml",
+   "evidence": [
+    "tr×30 def-item×0 |  Dimensions Characteristics Definitions in this study "
+   ]
+  },
+  {
+   "document": "bio-PMC13251069.xml",
+   "evidence": [
+    "tr×11 def-item×8 |  Step Retrieval term "
+   ]
+  },
+  {
+   "document": "bio-PMC13252842.xml",
+   "evidence": [
+    "tr×13 def-item×0 |  Total Age EF (%) QRS duration (ms) "
+   ]
+  },
+  {
+   "document": "bio-PMC13274935.xml",
+   "evidence": [
+    "tr×87 def-item×0 |  Abbreviations, Acronyms &amp; Symbols "
+   ]
+  },
+  {
+   "document": "bio-PMC13289183.xml",
+   "evidence": [
+    "tr×18 def-item×0 |  # MeSH "
+   ]
+  },
+  {
+   "document": "cas-PMC13291543.xml",
+   "evidence": [
+    "tr×71 def-item×0 |  IDs Total reads Autosomes coverage Chr X coverage SRY cover"
+   ]
+  },
+  {
+   "document": "cas-PMC13291881.xml",
+   "evidence": [
+    "tr×35 def-item×0 |  Parameter Result Reference Range "
+   ]
+  },
+  {
+   "document": "cas-PMC13293644.xml",
+   "evidence": [
+    "tr×4 def-item×0 |  Parameter Reference range Patient 1 Interpretation Patient "
+   ]
+  },
+  {
+   "document": "cas-PMC13293645.xml",
+   "evidence": [
+    "tr×24 def-item×0 |  Measurement Normal Reference Baseline Post-Treatment (1 Wee"
+   ]
+  },
+  {
+   "document": "cas-PMC13293647.xml",
+   "evidence": [
+    "tr×14 def-item×0 |  Variables POD0 POD1 POD2 POD3 POD4 POD5 "
+   ]
+  },
+  {
+   "document": "cas-PMC13293792.xml",
+   "evidence": [
+    "tr×22 def-item×0 |  Systemic therapy Study title Patients (n) Outcome "
+   ]
+  },
+  {
+   "document": "cas-PMC13293813.xml",
+   "evidence": [
+    "tr×12 def-item×0 |  Case Age Sex Affected area Trigger Chronic wound duration B"
+   ]
+  },
+  {
+   "document": "cas-PMC13293827.xml",
+   "evidence": [
+    "tr×15 def-item×0 |  Year of publication Age (years) Sex Synchronous/metachronou"
+   ]
+  },
+  {
+   "document": "cas-PMC13293841.xml",
+   "evidence": [
+    "tr×23 def-item×0 |  Case Time point Event "
+   ]
+  },
+  {
+   "document": "cas-PMC13293901.xml",
+   "evidence": [
+    "tr×27 def-item×0 |  Marker Result Marker Result "
+   ]
+  },
+  {
+   "document": "cas-PMC13293995.xml",
+   "evidence": [
+    "tr×9 def-item×0 |  Author Age/sex Past history Presentation LAP LDH Dermatopat"
+   ]
+  },
+  {
+   "document": "cas-PMC13294038.xml",
+   "evidence": [
+    "tr×23 def-item×0 |  Treatment stage K + (3.5-5.0 mmol/L) Cl - (96–106 mmol/L) C"
+   ]
+  },
+  {
+   "document": "cas-PMC13294155.xml",
+   "evidence": [
+    "tr×52 def-item×65 |  Parameter At presentation 1 week 4 weeks 3 months 6 months "
+   ]
+  },
+  {
+   "document": "cas-PMC13294240.xml",
+   "evidence": [
+    "tr×13 def-item×0 |  Hospital day/date (2025) Clinical status &amp; key findings"
+   ]
+  },
+  {
+   "document": "cas-PMC13294281.xml",
+   "evidence": [
+    "tr×8 def-item×0 |  Diagnostic criteria 1 2 3 4 "
+   ]
+  },
+  {
+   "document": "cas-PMC13294340.xml",
+   "evidence": [
+    "tr×8 def-item×0 |  Date Session "
+   ]
+  },
+  {
+   "document": "cas-PMC13294481.xml",
+   "evidence": [
+    "tr×15 def-item×0 |  Investigation/Sample Finding Unit of measurement Reference "
+   ]
+  },
+  {
+   "document": "cas-PMC13294642.xml",
+   "evidence": [
+    "tr×24 def-item×0 |  Test Result Reference Range "
+   ]
+  },
+  {
+   "document": "cas-PMC13294704.xml",
+   "evidence": [
+    "tr×23 def-item×0 |  Parameter Patient value Reference range/normal value "
+   ]
+  },
+  {
+   "document": "cas-PMC13300565.xml",
+   "evidence": [
+    "tr×24 def-item×0 |  Feature Finding "
+   ]
+  },
+  {
+   "document": "cas-PMC13300836.xml",
+   "evidence": [
+    "tr×9 def-item×0 |  Parameter Result Reference range "
+   ]
+  },
+  {
+   "document": "essai-PMC13154027.xml",
+   "evidence": [
+    "tr×70 def-item×0 |  Characteristic Participants, No. (%) "
+   ]
+  },
+  {
+   "document": "essai-PMC13169227.xml",
+   "evidence": [
+    "tr×67 def-item×0 |  Placebo ( N = 17) Dexamethasone ( N = 46) Total ( N = 63) p"
+   ]
+  },
+  {
+   "document": "essai-PMC13169472.xml",
+   "evidence": [
+    "tr×32 def-item×0 |  Characteristics Low frequency group ( n = 39) High frequenc"
+   ]
+  },
+  {
+   "document": "essai-PMC13205709.xml",
+   "evidence": [
+    "tr×46 def-item×0 |  Data source # Interviews/# FGDs Topics covered "
+   ]
+  },
+  {
+   "document": "essai-PMC13205731.xml",
+   "evidence": [
+    "tr×75 def-item×17 |  Characteristics Control Intervention Combined "
+   ]
+  },
+  {
+   "document": "essai-PMC13205876.xml",
+   "evidence": [
+    "tr×42 def-item×8 |  IFA MMN Maternal SQ‐LNS Child SQ‐LNS "
+   ]
+  },
+  {
+   "document": "essai-PMC13213610.xml",
+   "evidence": [
+    "tr×23 def-item×0 |  Patient characteristic Total (n = 983) Phase "
+   ]
+  },
+  {
+   "document": "essai-PMC13215628.xml",
+   "evidence": [
+    "tr×6 def-item×2 |  Variable Fixed incentive, mean (SD) Lottery incentive, mean"
+   ]
+  },
+  {
+   "document": "essai-PMC13238360.xml",
+   "evidence": [
+    "tr×26 def-item×0 |  Female 41 (64) "
+   ]
+  },
+  {
+   "document": "essai-PMC13239719.xml",
+   "evidence": [
+    "tr×21 def-item×0 |  Mean (μg·ml −1 ) SD Caffeine*genotype p ‐value Effect size "
+   ]
+  },
+  {
+   "document": "essai-PMC13242068.xml",
+   "evidence": [
+    "tr×15 def-item×0 |  Baseline 24 h 48 h p intra Baseline p inter "
+   ]
+  },
+  {
+   "document": "essai-PMC13242351.xml",
+   "evidence": [
+    "tr×21 def-item×0 |  Measure Control ( n = 14) ITB ( n = 14) IHG ( n = 14) "
+   ]
+  },
+  {
+   "document": "essai-PMC13245602.xml",
+   "evidence": [
+    "tr×77 def-item×0 |  Less strong working alliance Strong working alliance P ‐val"
+   ]
+  },
+  {
+   "document": "essai-PMC13254492.xml",
+   "evidence": [
+    "tr×22 def-item×0 |  Variable Placebo Celecoxib p Etoricoxib p Geometric mean ra"
+   ]
+  },
+  {
+   "document": "essai-PMC13263161.xml",
+   "evidence": [
+    "tr×40 def-item×40 |  Group HIMT ISCT "
+   ]
+  },
+  {
+   "document": "essai-PMC13264282.xml",
+   "evidence": [
+    "tr×114 def-item×0 |  n = 31 "
+   ]
+  },
+  {
+   "document": "essai-PMC13271868.xml",
+   "evidence": [
+    "tr×5 def-item×0 |  Variable Intervention (IG) Control (CG) Between group compa"
+   ]
+  },
+  {
+   "document": "essai-PMC13276020.xml",
+   "evidence": [
+    "tr×5 def-item×0 |  Age (years) 38 ± 11 (18–53) "
+   ]
+  },
+  {
+   "document": "essai-PMC13280184.xml",
+   "evidence": [
+    "tr×56 def-item×0 |  Demographics Intervention group ( n = 51) Control group ( n"
+   ]
+  },
+  {
+   "document": "essai-PMC13280799.xml",
+   "evidence": [
+    "tr×40 def-item×0 |  Cluster Intervention Arm School Participants (n) Age Distri"
+   ]
+  },
+  {
+   "document": "essai-PMC13281132.xml",
+   "evidence": [
+    "tr×71 def-item×0 |  Exenatide n = 444 Placebo n = 434 "
+   ]
+  },
+  {
+   "document": "essai-PMC13282136.xml",
+   "evidence": [
+    "tr×33 def-item×0 |  SIT group (SIT G ) Control group (CON) ANOVA "
+   ]
+  },
+  {
+   "document": "essai-PMC13284529.xml",
+   "evidence": [
+    "tr×18 def-item×0 |  Normal air CO 2 Inhalation * time F(1,29) "
+   ]
+  },
+  {
+   "document": "essai-PMC13290998.xml",
+   "evidence": [
+    "tr×99 def-item×0 |  Relaxing acupressure Sham acupressure "
+   ]
+  },
+  {
+   "document": "essai-PMC13291766.xml",
+   "evidence": [
+    "tr×86 def-item×12 |  p ‐values "
+   ]
+  },
+  {
+   "document": "essai-PMC13291922.xml",
+   "evidence": [
+    "tr×117 def-item×0 |  All participants ( n = 30) Experimental group ( n = 15) Con"
+   ]
+  },
+  {
+   "document": "essai-PMC13293440.xml",
+   "evidence": [
+    "tr×80 def-item×0 |  Characteristics Control group (n = 91) Intervention group ("
+   ]
+  },
+  {
+   "document": "essai-PMC13294169.xml",
+   "evidence": [
+    "tr×21 def-item×0 |  No Question "
+   ]
+  },
+  {
+   "document": "essai-PMC13294787.xml",
+   "evidence": [
+    "tr×93 def-item×0 |  N JADE only N JADE-PRISM "
+   ]
+  },
+  {
+   "document": "essai-PMC13294792.xml",
+   "evidence": [
+    "tr×65 def-item×0 |  Characteristic Data "
+   ]
+  },
+  {
+   "document": "essai-PMC13296589.xml",
+   "evidence": [
+    "tr×113 def-item×0 |  TIDieR item Description for COMBAT‐ICU "
+   ]
+  },
+  {
+   "document": "meta-PMC13071177.xml",
+   "evidence": [
+    "tr×43 def-item×0 |  Overall Controls Suicide decedents p "
+   ]
+  },
+  {
+   "document": "meta-PMC13179150.xml",
+   "evidence": [
+    "tr×75 def-item×0 |  Study SWB OCB k r ρ Note "
+   ]
+  },
+  {
+   "document": "meta-PMC13221319.xml",
+   "evidence": [
+    "tr×22 def-item×0 |  Author (Year) Country Study Design n Prior treatment Surgic"
+   ]
+  },
+  {
+   "document": "meta-PMC13225629.xml",
+   "evidence": [
+    "tr×20 def-item×32 |  Author (year) Country of the referral center(s) Study desig"
+   ]
+  },
+  {
+   "document": "meta-PMC13226718.xml",
+   "evidence": [
+    "tr×29 def-item×0 |  Lead variant CHR POS Putative gene EA NEA Multi-ancestry me"
+   ]
+  },
+  {
+   "document": "meta-PMC13229315.xml",
+   "evidence": [
+    "tr×53 def-item×15 |  Study Year Country Study design Population risk level Numbe"
+   ]
+  },
+  {
+   "document": "meta-PMC13231626.xml",
+   "evidence": [
+    "tr×9 def-item×2 |  Operationalization of RD (Independent variable) Operational"
+   ]
+  },
+  {
+   "document": "meta-PMC13240427.xml",
+   "evidence": [
+    "tr×50 def-item×0 |  Author Year Country Study design Transgender Cisgender Refe"
+   ]
+  },
+  {
+   "document": "meta-PMC13241412.xml",
+   "evidence": [
+    "tr×52 def-item×0 |  Study ID Center Study design Study period Intervention and "
+   ]
+  },
+  {
+   "document": "meta-PMC13246130.xml",
+   "evidence": [
+    "tr×86 def-item×22 |  First author Year of publication Time set Study design Mean"
+   ]
+  },
+  {
+   "document": "meta-PMC13253268.xml",
+   "evidence": [
+    "tr×4 def-item×0 |  Intervention Control Green Indoor "
+   ]
+  },
+  {
+   "document": "meta-PMC13254819.xml",
+   "evidence": [
+    "tr×90 def-item×0 |  Parameter NHW Hispanic Total p‐ value "
+   ]
+  },
+  {
+   "document": "meta-PMC13256077.xml",
+   "evidence": [
+    "tr×10 def-item×0 |  Study, year Type of study n Population Female, % Mean follo"
+   ]
+  },
+  {
+   "document": "meta-PMC13260247.xml",
+   "evidence": [
+    "tr×30 def-item×0 |  CHR SNP BP A1 A2 P -value (pSSNS) P -value (IgAN) P -value "
+   ]
+  },
+  {
+   "document": "meta-PMC13264275.xml",
+   "evidence": [
+    "tr×24 def-item×14 |  ID Study Groups Subgroup N DD index Task type PA measuremen"
+   ]
+  },
+  {
+   "document": "meta-PMC13264436.xml",
+   "evidence": [
+    "tr×19 def-item×0 |  Inclusion Exclusion "
+   ]
+  },
+  {
+   "document": "meta-PMC13268477.xml",
+   "evidence": [
+    "tr×63 def-item×16 |  Assessment indicators ① ② ③ ④ ⑤ ⑥ ⑦ ⑧ ⑨ ⑩ ⑪ ⑫ ⑬ ⑭ ⑮ "
+   ]
+  },
+  {
+   "document": "meta-PMC13268693.xml",
+   "evidence": [
+    "tr×13 def-item×0 |  Indication CKD DM HFpEF HFrEF HTN Obesity Vasc. disease Oth"
+   ]
+  },
+  {
+   "document": "meta-PMC13269816.xml",
+   "evidence": [
+    "tr×151 def-item×0 |  Phenotype Data source Sample size Reference "
+   ]
+  },
+  {
+   "document": "meta-PMC13271776.xml",
+   "evidence": [
+    "tr×0 def-item×18 | "
+   ]
+  },
+  {
+   "document": "meta-PMC13280693.xml",
+   "evidence": [
+    "tr×5 def-item×0 |  Cohort Measurement Nfemales (cases/controls) Nmales (cases/"
+   ]
+  },
+  {
+   "document": "meta-PMC13286426.xml",
+   "evidence": [
+    "tr×5 def-item×18 |  Category Diseases "
+   ]
+  },
+  {
+   "document": "meta-PMC13286481.xml",
+   "evidence": [
+    "tr×25 def-item×8 |  Disease terms “Ulcerative Colitis” "
+   ]
+  },
+  {
+   "document": "meta-PMC13287023.xml",
+   "evidence": [
+    "tr×27 def-item×0 |  # Accession Type Platform Country HC CD UC "
+   ]
+  },
+  {
+   "document": "meta-PMC13287149.xml",
+   "evidence": [
+    "tr×57 def-item×30 |  loci Locus boundary(GRCH37) Lead SNP for trait pairs CHR:BP"
+   ]
+  },
+  {
+   "document": "meta-PMC13287277.xml",
+   "evidence": [
+    "tr×76 def-item×0 |  NHGRI Family NCR "
+   ]
+  },
+  {
+   "document": "meta-PMC13288533.xml",
+   "evidence": [
+    "tr×36 def-item×0 |  Author Year Country Data source Study type Endometriosis di"
+   ]
+  },
+  {
+   "document": "meta-PMC13297335.xml",
+   "evidence": [
+    "tr×16 def-item×0 |  Gene Expression in GBM Literature Review "
+   ]
+  },
+  {
+   "document": "moderne-PMC12900525.xml",
+   "evidence": [
+    "tr×125 def-item×0 |  Parameter Formula "
+   ]
+  },
+  {
+   "document": "moderne-PMC12967033.xml",
+   "evidence": [
+    "tr×27 def-item×0 |  Trial 1 Trial 2 "
+   ]
+  },
+  {
+   "document": "moderne-PMC13177175.xml",
+   "evidence": [
+    "tr×52 def-item×0 |  Variables LTA (n = 45) NSVT (n = 29) No Arrhythmia (n = 53)"
+   ]
+  },
+  {
+   "document": "moderne-PMC13254229.xml",
+   "evidence": [
+    "tr×63 def-item×0 |  Characteristics N (%) "
+   ]
+  },
+  {
+   "document": "moderne-PMC13264966.xml",
+   "evidence": [
+    "tr×16 def-item×0 |  Analyte Intensity Analyte Intensity "
+   ]
+  },
+  {
+   "document": "moderne-PMC13267778.xml",
+   "evidence": [
+    "tr×7 def-item×0 |  Signal Sequence Total charge "
+   ]
+  },
+  {
+   "document": "moderne-PMC13274555.xml",
+   "evidence": [
+    "tr×29 def-item×0 |  Species Date Location Latitude Longitude Sampling method Sk"
+   ]
+  },
+  {
+   "document": "moderne-PMC13282721.xml",
+   "evidence": [
+    "tr×112 def-item×8 |  EHD paralog Plasma membrane protein Model References "
+   ]
+  },
+  {
+   "document": "moderne-PMC13291764.xml",
+   "evidence": [
+    "tr×85 def-item×0 |  Overall, N = 1440 Prokinetic use a "
+   ]
+  },
+  {
+   "document": "moderne-PMC13292400.xml",
+   "evidence": [
+    "tr×16 def-item×0 |  Solution A Solution B "
+   ]
+  },
+  {
+   "document": "moderne-PMC13296834.xml",
+   "evidence": [
+    "tr×69 def-item×0 |  Survey section Content description "
+   ]
+  },
+  {
+   "document": "nonEN-PMC13128206.xml",
+   "evidence": [
+    "tr×66 def-item×0 |  Após a inserção da cânula: – Eliminar todo o ar do circuito"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13128213.xml",
+   "evidence": [
+    "tr×18 def-item×0 |  DOENÇA VARIANTE GENÉTICA DIFERENÇAS EM RELAÇÃO AO DD "
+   ]
+  },
+  {
+   "document": "nonEN-PMC13128216.xml",
+   "evidence": [
+    "tr×42 def-item×0 |  Variável Geral Hipercalemia Sem hipercalemia "
+   ]
+  },
+  {
+   "document": "nonEN-PMC13142163.xml",
+   "evidence": [
+    "tr×100 def-item×0 |  Suspected ASD, ruled out "
+   ]
+  },
+  {
+   "document": "nonEN-PMC13148856.xml",
+   "evidence": [
+    "tr×50 def-item×0 |  Variável Valor "
+   ]
+  },
+  {
+   "document": "nonEN-PMC13185730.xml",
+   "evidence": [
+    "tr×87 def-item×0 |  Variável Onda 1 (2009-2010) Onda 2 (2013-2014) Onda 3 (2017"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13193188.xml",
+   "evidence": [
+    "tr×172 def-item×0 |  Child Version Parent Version Teacher Version "
+   ]
+  },
+  {
+   "document": "nonEN-PMC13193189.xml",
+   "evidence": [
+    "tr×88 def-item×0 |  Variable Total sample (n=40) Females (n=20) Males (n=20) "
+   ]
+  },
+  {
+   "document": "nonEN-PMC13193190.xml",
+   "evidence": [
+    "tr×88 def-item×0 |  MEASURES MINIMUM MAXIMUM MEAN SD P-Value "
+   ]
+  },
+  {
+   "document": "nonEN-PMC13193191.xml",
+   "evidence": [
+    "tr×54 def-item×0 |  Variables % "
+   ]
+  },
+  {
+   "document": "nonEN-PMC13193194.xml",
+   "evidence": [
+    "tr×16 def-item×0 |  Groups TD ASD LD ANOVA "
+   ]
+  },
+  {
+   "document": "nonEN-PMC13193195.xml",
+   "evidence": [
+    "tr×303 def-item×0 |  No. Original Item Judges’ Responses Researchers’ Update Fin"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13224955.xml",
+   "evidence": [
+    "tr×65 def-item×0 |  Variáveis Total Norte Nordeste Centro-oeste Sudeste Sul Val"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13224957.xml",
+   "evidence": [
+    "tr×72 def-item×0 |  Variáveis Total [n = 2.338] Taxa de mortalidade (por 1.000 "
+   ]
+  },
+  {
+   "document": "nonEN-PMC13264058.xml",
+   "evidence": [
+    "tr×75 def-item×0 |  Base de datos Cadena de búsqueda "
+   ]
+  },
+  {
+   "document": "nonEN-PMC13264178.xml",
+   "evidence": [
+    "tr×22 def-item×0 |  (A) Altas por enfermedad cardiovascular (n = 1.996) "
+   ]
+  },
+  {
+   "document": "nonEN-PMC13267754.xml",
+   "evidence": [
+    "tr×15 def-item×0 |  Subregión "
+   ]
+  },
+  {
+   "document": "nonEN-PMC13267755.xml",
+   "evidence": [
+    "tr×70 def-item×0 |  Componente Variables "
+   ]
+  },
+  {
+   "document": "nonEN-PMC13267756.xml",
+   "evidence": [
+    "tr×51 def-item×0 |  Variável N (%) / Média [DP] "
+   ]
+  },
+  {
+   "document": "nonEN-PMC13267757.xml",
+   "evidence": [
+    "tr×35 def-item×0 |  Referencia País (año de recopilación de datos) Diseño Servi"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13272511.xml",
+   "evidence": [
+    "tr×132 def-item×0 |  Población total (n = 22.072) Población con sintomatología d"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13272517.xml",
+   "evidence": [
+    "tr×37 def-item×0 |  Modelo Variable dependiente Predictor (unidad) Compensador "
+   ]
+  },
+  {
+   "document": "nonEN-PMC13284469.xml",
+   "evidence": [
+    "tr×28 def-item×0 |  A. Características sociodemográficas y de cuidado "
+   ]
+  },
+  {
+   "document": "nonEN-PMC13285635.xml",
+   "evidence": [
+    "tr×52 def-item×0 |  Subtipo tumoral Fármaco Clase Vía Posología habitual Indica"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13288443.xml",
+   "evidence": [
+    "tr×28 def-item×0 |  Evaluation Protocol Slope p-value "
+   ]
+  },
+  {
+   "document": "phys-PMC13039343.xml",
+   "evidence": [
+    "tr×26 def-item×0 |  Domain name Number of layers Topmost layer model Basin "
+   ]
+  },
+  {
+   "document": "phys-PMC13082673.xml",
+   "evidence": [
+    "tr×30 def-item×0 |  Study Modality Category DT scope/Purpose Digital twin matur"
+   ]
+  },
+  {
+   "document": "phys-PMC13099575.xml",
+   "evidence": [
+    "tr×9 def-item×0 |  Models Params Training time T = [ 0 , 100 ] T = [ 100 , 200"
+   ]
+  },
+  {
+   "document": "phys-PMC13113438.xml",
+   "evidence": [
+    "tr×50 def-item×0 |  Algorithm 1 . Distributed equilibrium solving for the event"
+   ]
+  },
+  {
+   "document": "phys-PMC13133660.xml",
+   "evidence": [
+    "tr×12 def-item×6 |  Data : Read experimental data 𝒟 = { x i , v i } k = 1 N Ini"
+   ]
+  },
+  {
+   "document": "phys-PMC13158258.xml",
+   "evidence": [
+    "tr×50 def-item×0 |  #coeffs #weights #epochs MSE loss MSE IGANets #iter MSE C-I"
+   ]
+  },
+  {
+   "document": "phys-PMC13171646.xml",
+   "evidence": [
+    "tr×84 def-item×3 |  Participant Role Expertise "
+   ]
+  },
+  {
+   "document": "phys-PMC13181085.xml",
+   "evidence": [
+    "tr×38 def-item×18 |  n "
+   ]
+  },
+  {
+   "document": "phys-PMC13193059.xml",
+   "evidence": [
+    "tr×33 def-item×0 |  Probability distribution function (PDF) Parameter Value Low"
+   ]
+  },
+  {
+   "document": "phys-PMC13201561.xml",
+   "evidence": [
+    "tr×60 def-item×50 |  Feature White-Box (e.g. Pure GAM) Gray-Box (Proposed) (e.g."
+   ]
+  },
+  {
+   "document": "phys-PMC13208799.xml",
+   "evidence": [
+    "tr×26 def-item×0 |  Year Proposer Performance "
+   ]
+  },
+  {
+   "document": "phys-PMC13210669.xml",
+   "evidence": [
+    "tr×70 def-item×0 |  Algorithm 1: MGDA-PIAE Training Procedure "
+   ]
+  },
+  {
+   "document": "phys-PMC13222844.xml",
+   "evidence": [
+    "tr×17 def-item×0 |  Hidden layer 2 × 128 "
+   ]
+  },
+  {
+   "document": "phys-PMC13234180.xml",
+   "evidence": [
+    "tr×84 def-item×13 |  Building Type Parameter Baseline Optimized Change (%) "
+   ]
+  },
+  {
+   "document": "phys-PMC13246409.xml",
+   "evidence": [
+    "tr×20 def-item×0 |  Link ( i ) d i (offset/mm) a i (length/mm) α i (twist/rad) "
+   ]
+  },
+  {
+   "document": "phys-PMC13252849.xml",
+   "evidence": [
+    "tr×21 def-item×0 |  Methods Case1 Case2 Case3 "
+   ]
+  },
+  {
+   "document": "phys-PMC13257740.xml",
+   "evidence": [
+    "tr×30 def-item×0 |  y = x Analytical Solution dx = 0.04 dx = 0.02 dx = 0.01 "
+   ]
+  },
+  {
+   "document": "phys-PMC13259435.xml",
+   "evidence": [
+    "tr×51 def-item×0 |  Category Wingspan Fuselage Length Fuselage Height "
+   ]
+  },
+  {
+   "document": "phys-PMC13259474.xml",
+   "evidence": [
+    "tr×35 def-item×0 |  Architectural Criterion Gazebo (DART) Webots (ODE) Coppelia"
+   ]
+  },
+  {
+   "document": "phys-PMC13261600.xml",
+   "evidence": [
+    "tr×54 def-item×0 |  Parameter Trend Syngas Components "
+   ]
+  },
+  {
+   "document": "phys-PMC13272752.xml",
+   "evidence": [
+    "tr×63 def-item×0 |  Parameter category Parameter Range "
+   ]
+  },
+  {
+   "document": "phys-PMC13275013.xml",
+   "evidence": [
+    "tr×11 def-item×0 |  Data: Governing PDE, network architecture N ( ⋅ ; θ ) , tot"
+   ]
+  },
+  {
+   "document": "phys-PMC13276034.xml",
+   "evidence": [
+    "tr×60 def-item×0 |  Variable Mean Std dev Min Q1 Median Q3 Max "
+   ]
+  },
+  {
+   "document": "phys-PMC13282397.xml",
+   "evidence": [
+    "tr×24 def-item×11 |  Spin ( J ) Metric Seed 42 Seed 123 Seed 456 Seed 789 Seed 1"
+   ]
+  },
+  {
+   "document": "phys-PMC13285896.xml",
+   "evidence": [
+    "tr×8 def-item×0 |  Passing rates (%) "
+   ]
+  },
+  {
+   "document": "phys-PMC13289917.xml",
+   "evidence": [
+    "tr×26 def-item×0 |  Scheme N q = 50 N q = 100 N q = 200 Comp. Time (s per eval."
+   ]
+  },
+  {
+   "document": "phys-PMC13296606.xml",
+   "evidence": [
+    "tr×338 def-item×0 |  Algorithm 1 GCRA "
+   ]
+  },
+  {
+   "document": "phys-PMC13297141.xml",
+   "evidence": [
+    "tr×25 def-item×0 |  Algorithm 1: C-SSA Elite Guiding Set Construction Algorithm"
+   ]
+  },
+  {
+   "document": "phys-PMC13297618.xml",
+   "evidence": [
+    "tr×303 def-item×0 |  Algorithm 1: Blackcap Optimization Algorithm (BCOA) "
+   ]
+  },
+  {
+   "document": "phys-PMC13298103.xml",
+   "evidence": [
+    "tr×20 def-item×0 |  System N τ a e a p Yield Time "
+   ]
+  },
+  {
+   "document": "retract-PMC13083641.xml",
+   "evidence": [
+    "tr×3 def-item×0 |  Drug name Mechanistic rationale High-priority indications I"
+   ]
+  }
+ ]
+}

@@ -81,7 +81,8 @@
         "of": 272,
         "strata": {},
         "examples": [],
-        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files"
+        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files",
+        "carriers_file": "probes/results/line-040.json"
       },
       "matches_excerpt": true
     }

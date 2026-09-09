@@ -1,0 +1,249 @@
+{
+ "probe": "probes/2026-08/line-025.py",
+ "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+ "date": "2026-09-09",
+ "count": 31,
+ "of": 272,
+ "carriers": [
+  {
+   "document": "bio-PMC12583535.xml",
+   "evidence": [
+    "ROR:https://ror.org/02z1vqm45",
+    "GRID:grid.411472.5",
+    "ISNI:0000 0004 1764 1621",
+    "ROR:https://ror.org/02v51f717"
+   ]
+  },
+  {
+   "document": "bio-PMC12882215.xml",
+   "evidence": [
+    "ROR:https://ror.org/01p455v08",
+    "GRID:grid.13394.3c",
+    "ISNI:0000 0004 1799 3993",
+    "ROR:https://ror.org/00f1zfq44"
+   ]
+  },
+  {
+   "document": "bio-PMC13103274.xml",
+   "evidence": [
+    "doi:10.13039/501100004697"
+   ]
+  },
+  {
+   "document": "bio-PMC13162546.xml",
+   "evidence": [
+    "open-funder-registry:10.13039/501100021171"
+   ]
+  },
+  {
+   "document": "bio-PMC13216383.xml",
+   "evidence": [
+    "ROR:https://ror.org/05wg1m734",
+    "GRID:grid.10417.33",
+    "ISNI:0000 0004 0444 9382",
+    "ROR:https://ror.org/05wg1m734"
+   ]
+  },
+  {
+   "document": "bio-PMC13251069.xml",
+   "evidence": [
+    "ROR:https://ror.org/03kkjyb15",
+    "GRID:grid.440601.7",
+    "ISNI:0000 0004 1798 0578",
+    "ROR:https://ror.org/00g5b0g93"
+   ]
+  },
+  {
+   "document": "essai-PMC13280184.xml",
+   "evidence": [
+    "doi:10.13039/501100009287"
+   ]
+  },
+  {
+   "document": "essai-PMC13290998.xml",
+   "evidence": [
+    "ROR:https://ror.org/00jmfr291",
+    "GRID:grid.214458.e",
+    "ISNI:0000 0004 1936 7347",
+    "ROR:https://ror.org/00jmfr291"
+   ]
+  },
+  {
+   "document": "meta-PMC13071177.xml",
+   "evidence": [
+    "doi:10.13039/501100020963",
+    "doi:10.13039/501100001691",
+    "doi:10.13039/100009619",
+    "doi:10.13039/501100008667"
+   ]
+  },
+  {
+   "document": "meta-PMC13231626.xml",
+   "evidence": [
+    "ROR:https://ror.org/02778hg05",
+    "GRID:grid.12391.38",
+    "ISNI:0000 0001 2289 1527"
+   ]
+  },
+  {
+   "document": "meta-PMC13241412.xml",
+   "evidence": [
+    "ROR:https://ror.org/00cb9w016",
+    "GRID:grid.7269.a",
+    "ISNI:0000 0004 0621 1570",
+    "ROR:https://ror.org/02fyj2e56"
+   ]
+  },
+  {
+   "document": "meta-PMC13269816.xml",
+   "evidence": [
+    "CrossRef:https://doi.org/10.13039/501100003725",
+    "CrossRef:https://doi.org/10.13039/501100003645"
+   ]
+  },
+  {
+   "document": "meta-PMC13271776.xml",
+   "evidence": [
+    "DOI:10.13039/501100000024",
+    "DOI:10.13039/100012589",
+    "DOI:10.13039/100007867"
+   ]
+  },
+  {
+   "document": "meta-PMC13280693.xml",
+   "evidence": [
+    "ror:https://ror.org/00rqy9422",
+    "doi:https://doi.org/10.13039/501100000925",
+    "doi:https://doi.org/10.13039/501100000925",
+    "doi:https://doi.org/10.13039/501100000925"
+   ]
+  },
+  {
+   "document": "meta-PMC13287277.xml",
+   "evidence": [
+    "ROR:https://ror.org/00baak391",
+    "GRID:grid.280128.1",
+    "ISNI:0000 0001 2233 9230",
+    "ROR:https://ror.org/04xeg9z08"
+   ]
+  },
+  {
+   "document": "meta-PMC13297335.xml",
+   "evidence": [
+    "ROR:https://ror.org/02201aj62",
+    "ROR:https://ror.org/045p44t13"
+   ]
+  },
+  {
+   "document": "meta-PMC13305250.xml",
+   "evidence": [
+    "Ringgold:477298",
+    "Ringgold:477298"
+   ]
+  },
+  {
+   "document": "moderne-PMC13264967.xml",
+   "evidence": [
+    "doi:10.13039/501100000038"
+   ]
+  },
+  {
+   "document": "moderne-PMC13282721.xml",
+   "evidence": [
+    "doi:10.13039/100000057"
+   ]
+  },
+  {
+   "document": "moderne-PMC13288728.xml",
+   "evidence": [
+    "doi:10.13039/501100000781",
+    "doi:10.13039/501100001659"
+   ]
+  },
+  {
+   "document": "moderne-PMC13296839.xml",
+   "evidence": [
+    "doi:10.13039/100000002"
+   ]
+  },
+  {
+   "document": "phys-PMC13082673.xml",
+   "evidence": [
+    "FundRef:http://dx.doi.org/10.13039/501100001711"
+   ]
+  },
+  {
+   "document": "phys-PMC13158258.xml",
+   "evidence": [
+    "ROR:https://ror.org/02e2c7k09",
+    "GRID:grid.5292.c",
+    "ISNI:0000 0001 2097 4740",
+    "ROR:https://ror.org/04d836q62"
+   ]
+  },
+  {
+   "document": "phys-PMC13178570.xml",
+   "evidence": [
+    "FundRef:http://dx.doi.org/10.13039/100018693",
+    "FundRef:http://dx.doi.org/10.13039/100018693",
+    "FundRef:http://dx.doi.org/10.13039/100031478",
+    "FundRef:http://dx.doi.org/10.13039/501100002347"
+   ]
+  },
+  {
+   "document": "phys-PMC13201561.xml",
+   "evidence": [
+    "ROR:https://ror.org/00cb9w016",
+    "GRID:grid.7269.a",
+    "ISNI:0000 0004 0621 1570",
+    "ROR:https://ror.org/05fnp1145"
+   ]
+  },
+  {
+   "document": "phys-PMC13210669.xml",
+   "evidence": [
+    "ROR:https://ror.org/01h0zpd94",
+    "ROR:https://ror.org/00e4hrk88"
+   ]
+  },
+  {
+   "document": "phys-PMC13234180.xml",
+   "evidence": [
+    "ROR:https://ror.org/03jm8py90",
+    "GRID:grid.496089.a",
+    "ISNI:0000 0004 5313 1389"
+   ]
+  },
+  {
+   "document": "phys-PMC13261600.xml",
+   "evidence": [
+    "Ringgold:12579",
+    "doi:10.13039/501100001809"
+   ]
+  },
+  {
+   "document": "phys-PMC13272752.xml",
+   "evidence": [
+    "ROR:https://ror.org/0034me914",
+    "GRID:grid.412431.1",
+    "ISNI:0000 0004 0444 045X",
+    "ROR:https://ror.org/03127q162"
+   ]
+  },
+  {
+   "document": "phys-PMC13276034.xml",
+   "evidence": [
+    "ROR:https://ror.org/00cb9w016",
+    "GRID:grid.7269.a",
+    "ISNI:0000 0004 0621 1570",
+    "ROR:https://ror.org/00pft3n23"
+   ]
+  },
+  {
+   "document": "phys-PMC13296606.xml",
+   "evidence": [
+    "ROR:https://ror.org/046ft6c74"
+   ]
+  }
+ ]
+}

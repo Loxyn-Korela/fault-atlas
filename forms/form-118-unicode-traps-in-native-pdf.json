@@ -110,9 +110,46 @@
             [
               "'\\u200b' ×2"
             ]
+          ],
+          [
+            "nonEN-PMC13193189.xml",
+            [
+              "'\\u200b' ×20"
+            ]
+          ],
+          [
+            "nonEN-PMC13193190.xml",
+            [
+              "'\\u200b' ×18"
+            ]
+          ],
+          [
+            "nonEN-PMC13193191.xml",
+            [
+              "'\\u200b' ×4"
+            ]
+          ],
+          [
+            "nonEN-PMC13193195.xml",
+            [
+              "'\\u200b' ×10"
+            ]
+          ],
+          [
+            "phys-PMC13193059.xml",
+            [
+              "'\\u200b' ×6"
+            ]
+          ],
+          [
+            "phys-PMC13272752.xml",
+            [
+              "'\\u200b' ×41"
+            ]
           ]
         ],
-        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files"
+        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files",
+        "carriers_file": "probes/results/line-118.json"
       },
       "matches_excerpt": true
     }

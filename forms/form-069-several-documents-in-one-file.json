@@ -112,9 +112,73 @@
               "sub-article ×2 response ×0",
               "types=aggregated-review-documents,associated-data"
             ]
+          ],
+          [
+            "meta-PMC13157766.xml",
+            [
+              "sub-article ×2 response ×0",
+              "types=aggregated-review-documents,associated-data"
+            ]
+          ],
+          [
+            "meta-PMC13229315.xml",
+            [
+              "sub-article ×8 response ×0",
+              "types=aggregated-review-documents,associated-data,author-comment,editor-report"
+            ]
+          ],
+          [
+            "nonEN-PMC13127809.xml",
+            [
+              "sub-article ×1 response ×0",
+              "types=translation"
+            ]
+          ],
+          [
+            "nonEN-PMC13128172.xml",
+            [
+              "sub-article ×1 response ×0",
+              "types=translation"
+            ]
+          ],
+          [
+            "nonEN-PMC13128184.xml",
+            [
+              "sub-article ×1 response ×0",
+              "types=translation"
+            ]
+          ],
+          [
+            "nonEN-PMC13128185.xml",
+            [
+              "sub-article ×1 response ×0",
+              "types=translation"
+            ]
+          ],
+          [
+            "nonEN-PMC13128186.xml",
+            [
+              "sub-article ×1 response ×0",
+              "types=translation"
+            ]
+          ],
+          [
+            "nonEN-PMC13128206.xml",
+            [
+              "sub-article ×2 response ×0",
+              "types=associated-data,translation"
+            ]
+          ],
+          [
+            "nonEN-PMC13128210.xml",
+            [
+              "sub-article ×1 response ×0",
+              "types=translation"
+            ]
           ]
         ],
-        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files"
+        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files",
+        "carriers_file": "probes/results/line-069.json"
       },
       "matches_excerpt": true
     }

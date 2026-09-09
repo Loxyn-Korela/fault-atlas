@@ -97,16 +97,14 @@
             "bio-PMC12583535.xml",
             [
               "ROR:https://ror.org/02z1vqm45",
-              "GRID:grid.411472.5",
-              "ISNI:0000 0004 1764 1621"
+              "GRID:grid.411472.5"
             ]
           ],
           [
             "bio-PMC12882215.xml",
             [
               "ROR:https://ror.org/01p455v08",
-              "GRID:grid.13394.3c",
-              "ISNI:0000 0004 1799 3993"
+              "GRID:grid.13394.3c"
             ]
           ],
           [
@@ -114,9 +112,71 @@
             [
               "doi:10.13039/501100004697"
             ]
+          ],
+          [
+            "bio-PMC13162546.xml",
+            [
+              "open-funder-registry:10.13039/501100021171"
+            ]
+          ],
+          [
+            "bio-PMC13216383.xml",
+            [
+              "ROR:https://ror.org/05wg1m734",
+              "GRID:grid.10417.33"
+            ]
+          ],
+          [
+            "bio-PMC13251069.xml",
+            [
+              "ROR:https://ror.org/03kkjyb15",
+              "GRID:grid.440601.7"
+            ]
+          ],
+          [
+            "essai-PMC13280184.xml",
+            [
+              "doi:10.13039/501100009287"
+            ]
+          ],
+          [
+            "essai-PMC13290998.xml",
+            [
+              "ROR:https://ror.org/00jmfr291",
+              "GRID:grid.214458.e"
+            ]
+          ],
+          [
+            "meta-PMC13071177.xml",
+            [
+              "doi:10.13039/501100020963",
+              "doi:10.13039/501100001691"
+            ]
+          ],
+          [
+            "meta-PMC13231626.xml",
+            [
+              "ROR:https://ror.org/02778hg05",
+              "GRID:grid.12391.38"
+            ]
+          ],
+          [
+            "meta-PMC13241412.xml",
+            [
+              "ROR:https://ror.org/00cb9w016",
+              "GRID:grid.7269.a"
+            ]
+          ],
+          [
+            "meta-PMC13269816.xml",
+            [
+              "CrossRef:https://doi.org/10.13039/501100003725",
+              "CrossRef:https://doi.org/10.13039/501100003645"
+            ]
           ]
         ],
-        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files"
+        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files",
+        "carriers_file": "probes/results/line-025.json"
       },
       "matches_excerpt": true
     }

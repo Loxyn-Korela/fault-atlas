@@ -102,9 +102,68 @@
               "trans-title ×4",
               "trans-abstract ×2"
             ]
+          ],
+          [
+            "nonEN-PMC13185730.xml",
+            [
+              "trans-title ×4",
+              "trans-abstract ×2"
+            ]
+          ],
+          [
+            "nonEN-PMC13224953.xml",
+            [
+              "trans-title ×4"
+            ]
+          ],
+          [
+            "nonEN-PMC13224954.xml",
+            [
+              "trans-title ×4"
+            ]
+          ],
+          [
+            "nonEN-PMC13224955.xml",
+            [
+              "trans-title ×4",
+              "trans-abstract ×2"
+            ]
+          ],
+          [
+            "nonEN-PMC13224957.xml",
+            [
+              "trans-title ×4",
+              "trans-abstract ×2"
+            ]
+          ],
+          [
+            "nonEN-PMC13228121.xml",
+            [
+              "trans-title ×2",
+              "trans-abstract ×1"
+            ]
+          ],
+          [
+            "nonEN-PMC13264032.xml",
+            [
+              "trans-title ×2"
+            ]
+          ],
+          [
+            "nonEN-PMC13264058.xml",
+            [
+              "trans-abstract ×1"
+            ]
+          ],
+          [
+            "nonEN-PMC13264162.xml",
+            [
+              "trans-title ×2"
+            ]
           ]
         ],
-        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files"
+        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files",
+        "carriers_file": "probes/results/line-044.json"
       },
       "matches_excerpt": true
     }

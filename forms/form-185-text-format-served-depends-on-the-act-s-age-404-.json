@@ -71,7 +71,28 @@
         "date": "2026-09-09",
         "count": 2,
         "of": 3,
-        "by": "Fault Atlas maintainer (Loxyn), live on the public endpoint"
+        "by": "Fault Atlas maintainer (Loxyn), live on the public endpoint",
+        "examples": [
+          [
+            "32026D1970",
+            [
+              "2026 act: application/xhtml+xml 200 · text/html 404 · Formex 404"
+            ]
+          ],
+          [
+            "31985L0374",
+            [
+              "1985 act: application/xhtml+xml 404 · text/html 200 · Formex 404"
+            ]
+          ],
+          [
+            "31968R5759",
+            [
+              "1968 act: 404 in all three text formats"
+            ]
+          ]
+        ],
+        "carriers_file": "probes/results/form-185-format-by-era.json"
       },
       "matches_excerpt": true,
       "note": "Re-run live on three acts: 2026 act served in xhtml+xml only, 1985 act in text/html only, 1968 act in no text format at all."

@@ -1,0 +1,45 @@
+{
+ "probe": "probes/2026-08/line-140.py",
+ "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+ "date": "2026-09-09",
+ "count": 6,
+ "of": 272,
+ "carriers": [
+  {
+   "document": "bio-PMC13162546.xml",
+   "evidence": [
+    "Accepted Manuscript"
+   ]
+  },
+  {
+   "document": "bio-PMC13252842.xml",
+   "evidence": [
+    "accepted manuscript"
+   ]
+  },
+  {
+   "document": "essai-PMC7619126.xml",
+   "evidence": [
+    "Accepted Manuscript"
+   ]
+  },
+  {
+   "document": "meta-PMC13288533.xml",
+   "evidence": [
+    "Accepted Manuscript"
+   ]
+  },
+  {
+   "document": "phys-PMC13154412.xml",
+   "evidence": [
+    "not peer reviewed"
+   ]
+  },
+  {
+   "document": "phys-PMC13158258.xml",
+   "evidence": [
+    "accepted manuscript"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,526 @@
+{
+ "probe": "probes/2026-08/line-139.py",
+ "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+ "date": "2026-09-09",
+ "count": 71,
+ "of": 272,
+ "carriers": [
+  {
+   "document": "bio-PMC12583535.xml",
+   "evidence": [
+    "(Fig.  1 )",
+    "(Fig.  3 )",
+    "(Fig.  4 )",
+    "(Fig.  5 )"
+   ]
+  },
+  {
+   "document": "bio-PMC12882215.xml",
+   "evidence": [
+    "(Fig.  1 )",
+    "(Fig.  3 )",
+    "(Fig.  4 )",
+    "(Table  2 )"
+   ]
+  },
+  {
+   "document": "bio-PMC12909487.xml",
+   "evidence": [
+    "(see  Table 2 )"
+   ]
+  },
+  {
+   "document": "bio-PMC12927975.xml",
+   "evidence": [
+    "(Table  1 )"
+   ]
+  },
+  {
+   "document": "bio-PMC13057049.xml",
+   "evidence": [
+    "(see Table  2 )"
+   ]
+  },
+  {
+   "document": "bio-PMC13088504.xml",
+   "evidence": [
+    "(Table  1 )",
+    "(Table  3 )",
+    "(Table  4 )"
+   ]
+  },
+  {
+   "document": "bio-PMC13097615.xml",
+   "evidence": [
+    "(Table  1 )"
+   ]
+  },
+  {
+   "document": "bio-PMC13103274.xml",
+   "evidence": [
+    "(Table  3 )",
+    "(Table  4 )",
+    "(Table  5 )"
+   ]
+  },
+  {
+   "document": "bio-PMC13170838.xml",
+   "evidence": [
+    "(see  Table 2 )"
+   ]
+  },
+  {
+   "document": "bio-PMC13181205.xml",
+   "evidence": [
+    "(Table  1 )"
+   ]
+  },
+  {
+   "document": "bio-PMC13182387.xml",
+   "evidence": [
+    "(see  table 2 )",
+    "(see  table 3 )"
+   ]
+  },
+  {
+   "document": "bio-PMC13216383.xml",
+   "evidence": [
+    "(Fig.  1 )",
+    "(Table  2 )",
+    "(Table  3 )"
+   ]
+  },
+  {
+   "document": "cas-PMC13293644.xml",
+   "evidence": [
+    "(Table  1 )"
+   ]
+  },
+  {
+   "document": "cas-PMC13293645.xml",
+   "evidence": [
+    "(Table  1 )",
+    "(Table  2 )",
+    "(Table  3 )",
+    "(Table  4 )"
+   ]
+  },
+  {
+   "document": "cas-PMC13293647.xml",
+   "evidence": [
+    "(Table  1 )"
+   ]
+  },
+  {
+   "document": "cas-PMC13294642.xml",
+   "evidence": [
+    "(Table  1 )"
+   ]
+  },
+  {
+   "document": "cas-PMC13300565.xml",
+   "evidence": [
+    "(Table  1 )"
+   ]
+  },
+  {
+   "document": "cas-PMC13300836.xml",
+   "evidence": [
+    "(Table  1 )"
+   ]
+  },
+  {
+   "document": "essai-PMC13169227.xml",
+   "evidence": [
+    "(Table  1 )",
+    "(Table  2 )"
+   ]
+  },
+  {
+   "document": "essai-PMC13205709.xml",
+   "evidence": [
+    "(Table  1 )",
+    "(Table  2 )",
+    "(Table  3 )",
+    "(Table  4 )"
+   ]
+  },
+  {
+   "document": "essai-PMC13205876.xml",
+   "evidence": [
+    "(Table  1 )"
+   ]
+  },
+  {
+   "document": "essai-PMC13238360.xml",
+   "evidence": [
+    "(Table  2 )",
+    "(Table  3 )"
+   ]
+  },
+  {
+   "document": "essai-PMC13239719.xml",
+   "evidence": [
+    "(Table  2 )"
+   ]
+  },
+  {
+   "document": "essai-PMC13242068.xml",
+   "evidence": [
+    "(Table  1 )",
+    "(Table  2 )",
+    "(Table  3 )"
+   ]
+  },
+  {
+   "document": "essai-PMC13242351.xml",
+   "evidence": [
+    "(Table  2 )"
+   ]
+  },
+  {
+   "document": "essai-PMC13245602.xml",
+   "evidence": [
+    "(pp. 159–170)"
+   ]
+  },
+  {
+   "document": "essai-PMC13254492.xml",
+   "evidence": [
+    "(Table  1 )",
+    "(Table  2 )"
+   ]
+  },
+  {
+   "document": "essai-PMC13263161.xml",
+   "evidence": [
+    "(Table  1 )",
+    "(Table  3 )",
+    "(Table  4 )"
+   ]
+  },
+  {
+   "document": "essai-PMC13280184.xml",
+   "evidence": [
+    "(Table  2 )"
+   ]
+  },
+  {
+   "document": "essai-PMC13282136.xml",
+   "evidence": [
+    "(Table  1 )"
+   ]
+  },
+  {
+   "document": "essai-PMC13290998.xml",
+   "evidence": [
+    "(Table  1 )",
+    "(Table  3 )"
+   ]
+  },
+  {
+   "document": "essai-PMC13291766.xml",
+   "evidence": [
+    "(Table  2 )",
+    "(Table  3 )"
+   ]
+  },
+  {
+   "document": "essai-PMC13291922.xml",
+   "evidence": [
+    "(Table  1 )",
+    "(Table  2 )",
+    "(Table  3 )",
+    "(Table  4 )"
+   ]
+  },
+  {
+   "document": "essai-PMC13294169.xml",
+   "evidence": [
+    "(see Fig.  1 )"
+   ]
+  },
+  {
+   "document": "essai-PMC13296589.xml",
+   "evidence": [
+    "(Table  1 )",
+    "(Table  2 )",
+    "(Table  3 )"
+   ]
+  },
+  {
+   "document": "meta-PMC13071177.xml",
+   "evidence": [
+    "(Table  1 )",
+    "(Table  2 )",
+    "(Table  3 )"
+   ]
+  },
+  {
+   "document": "meta-PMC13179150.xml",
+   "evidence": [
+    "(p. 394)",
+    "(pp. 106–123)",
+    "(pp. 305–327)",
+    "(pp. 66–85)"
+   ]
+  },
+  {
+   "document": "meta-PMC13221319.xml",
+   "evidence": [
+    "(Fig.  1 )",
+    "(Table  1 )"
+   ]
+  },
+  {
+   "document": "meta-PMC13226718.xml",
+   "evidence": [
+    "(Fig.  1 )",
+    "(Fig.  2 )",
+    "(Fig.  3 )",
+    "(Fig.  4 )"
+   ]
+  },
+  {
+   "document": "meta-PMC13231626.xml",
+   "evidence": [
+    "(see Fig.  1 )"
+   ]
+  },
+  {
+   "document": "meta-PMC13240427.xml",
+   "evidence": [
+    "(Table  2 )",
+    "(Table  3 )",
+    "(Table  4 )"
+   ]
+  },
+  {
+   "document": "meta-PMC13241412.xml",
+   "evidence": [
+    "(Fig.  1 )",
+    "(Fig.  2 )",
+    "(Fig.  3 )",
+    "(Fig.  4 )"
+   ]
+  },
+  {
+   "document": "meta-PMC13246130.xml",
+   "evidence": [
+    "(Fig.  1 )",
+    "(Fig.  2 )",
+    "(Fig.  4 )",
+    "(Table  1 )"
+   ]
+  },
+  {
+   "document": "meta-PMC13254819.xml",
+   "evidence": [
+    "(Table  1 )",
+    "(Table  2 )",
+    "(Table  3 )",
+    "(Table  4 )"
+   ]
+  },
+  {
+   "document": "meta-PMC13263136.xml",
+   "evidence": [
+    "(Fig.  1 )"
+   ]
+  },
+  {
+   "document": "meta-PMC13264275.xml",
+   "evidence": [
+    "(See  Fig. 3 )"
+   ]
+  },
+  {
+   "document": "meta-PMC13286426.xml",
+   "evidence": [
+    "(Fig.  1 )",
+    "(Fig.  5 )"
+   ]
+  },
+  {
+   "document": "meta-PMC13286481.xml",
+   "evidence": [
+    "(Fig.  1 )"
+   ]
+  },
+  {
+   "document": "meta-PMC13287149.xml",
+   "evidence": [
+    "(Fig.  2 A)",
+    "(Fig.  2 B)",
+    "(Fig.  2 C)",
+    "(Fig.  3 A)"
+   ]
+  },
+  {
+   "document": "meta-PMC13287277.xml",
+   "evidence": [
+    "(Fig.  1 )",
+    "(Fig.  2 )",
+    "(Table  1 )",
+    "(Table  3 , Figure S2)"
+   ]
+  },
+  {
+   "document": "meta-PMC13292320.xml",
+   "evidence": [
+    "(Fig.  1 A)",
+    "(Fig.  1 B)"
+   ]
+  },
+  {
+   "document": "moderne-PMC13264966.xml",
+   "evidence": [
+    "(Table  1 )"
+   ]
+  },
+  {
+   "document": "moderne-PMC13274555.xml",
+   "evidence": [
+    "(Table  1 )"
+   ]
+  },
+  {
+   "document": "moderne-PMC13282721.xml",
+   "evidence": [
+    "(Table  1 )",
+    "(Table  2 )",
+    "(see Table  1 )"
+   ]
+  },
+  {
+   "document": "moderne-PMC13291764.xml",
+   "evidence": [
+    "(Table  1 )",
+    "(Table  2 )",
+    "(Table  3 )",
+    "(Table  4 )"
+   ]
+  },
+  {
+   "document": "moderne-PMC13292400.xml",
+   "evidence": [
+    "(Table  1 )",
+    "(Table  2 )",
+    "(Table  3 )"
+   ]
+  },
+  {
+   "document": "moderne-PMC13296834.xml",
+   "evidence": [
+    "(Table  2 )",
+    "(Table  3 )",
+    "(Table  4 )"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13224954.xml",
+   "evidence": [
+    "(p. 144)",
+    "(p. 145)",
+    "(p. 213)",
+    "(p. 66)"
+   ]
+  },
+  {
+   "document": "phys-PMC13039343.xml",
+   "evidence": [
+    "(Fig.  6 )",
+    "(Table  7 )"
+   ]
+  },
+  {
+   "document": "phys-PMC13082673.xml",
+   "evidence": [
+    "(Fig.  2 )"
+   ]
+  },
+  {
+   "document": "phys-PMC13099575.xml",
+   "evidence": [
+    "(Page 17)",
+    "(Page 25)"
+   ]
+  },
+  {
+   "document": "phys-PMC13158258.xml",
+   "evidence": [
+    "(Fig.  4 )"
+   ]
+  },
+  {
+   "document": "phys-PMC13171646.xml",
+   "evidence": [
+    "(see Fig.  2 )"
+   ]
+  },
+  {
+   "document": "phys-PMC13178570.xml",
+   "evidence": [
+    "(see  Fig. 2 )"
+   ]
+  },
+  {
+   "document": "phys-PMC13201561.xml",
+   "evidence": [
+    "(Fig. \n 9  a)",
+    "(Fig. \n 9  b)",
+    "(Fig. \n 9  c)",
+    "(Fig.  4 )"
+   ]
+  },
+  {
+   "document": "phys-PMC13221960.xml",
+   "evidence": [
+    "(Fig.  1b )",
+    "(Fig.  2a )"
+   ]
+  },
+  {
+   "document": "phys-PMC13275013.xml",
+   "evidence": [
+    "(Fig.  3 a–c)",
+    "(Fig.  3 f)",
+    "(Fig.  4 a and b)",
+    "(Fig.  5 a–c)"
+   ]
+  },
+  {
+   "document": "phys-PMC13276034.xml",
+   "evidence": [
+    "(Fig.  1 )",
+    "(Fig.  2 )",
+    "(Fig.  3 )",
+    "(Fig.  4 )"
+   ]
+  },
+  {
+   "document": "phys-PMC13282397.xml",
+   "evidence": [
+    "(Fig.  7 d)",
+    "(Fig.  7 e)",
+    "(Fig.  7 f)",
+    "(Fig.  8 d)"
+   ]
+  },
+  {
+   "document": "phys-PMC13289917.xml",
+   "evidence": [
+    "(see  Table 1 )",
+    "(see  Table 3 )",
+    "(see  Table 4 )",
+    "(see  Table 5 )"
+   ]
+  },
+  {
+   "document": "phys-PMC13297141.xml",
+   "evidence": [
+    "(see  Table 1 )"
+   ]
+  }
+ ]
+}

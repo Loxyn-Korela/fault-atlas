@@ -42,14 +42,16 @@ def run_document_probe(ns, corpus_dir):
     strata = collections.Counter(n.split("-")[0] for n, _ in carriers)
     return {"line": line, "title": title, "of": len(files), "carriers": len(carriers),
             "strata": dict(strata.most_common()),
-            "examples": [[n, e[:3]] for n, e in carriers[:3]]}
+            "examples": [[n, e[:3]] for n, e in carriers[:3]],
+            "all": [[n, e[:4]] for n, e in carriers]}
 
 
 def run_corpus_probe(ns, corpus_file):
     text = pathlib.Path(corpus_file).read_text(encoding="utf-8", errors="replace")
     hits = ns["probe"](text)
     return {"line": ns.get("LINE"), "title": ns.get("TITLE", ""), "of": ns.get("population", lambda t: None)(text),
-            "carriers": len(hits), "strata": {}, "examples": [[str(h), []] for h in hits[:3]]}
+            "carriers": len(hits), "strata": {}, "examples": [[str(h), []] for h in hits[:3]],
+            "all": [[str(h), []] for h in hits]}
 
 
 def main():
@@ -66,6 +68,7 @@ def main():
     if "--json" in sys.argv:
         print(json.dumps(res, ensure_ascii=False, indent=1))
         return
+    res.pop("all", None)
     print(f"{res['probe']} — {res['title']}")
     print(f"  carriers: {res['carriers']}/{res['of']}   ({res['date']})")
     if res["strata"]:

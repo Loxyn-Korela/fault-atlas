@@ -92,20 +92,76 @@
             "bio-PMC12674831.xml",
             [
               "BMI: body mass index.",
-              "BMI: body mass index; IOM: Institute of Medicine.",
-              "DM: diabetes mellitus; GD: gestational diabetes; HbA1c: glyc"
+              "BMI: body mass index; IOM: Institute of Medicine."
             ]
           ],
           [
             "bio-PMC12857832.xml",
             [
               "POP: postoperative pneumonia; nPOP: non-postoperative pneumo",
-              "ADC: adenocarcinoma; BMI: body mass index; COPD: chronic obs",
-              "urs, etc. BMI: body mass index; CHD: chronic heart disease; COPD: chro"
+              "ADC: adenocarcinoma; BMI: body mass index; COPD: chronic obs"
+            ]
+          ],
+          [
+            "bio-PMC12909487.xml",
+            [
+              "ST: title screening; SR: abstract screening; LC: full-text r"
+            ]
+          ],
+          [
+            "bio-PMC12927065.xml",
+            [
+              "CI: Confidence interval; DF: degree of freedom."
+            ]
+          ],
+          [
+            "bio-PMC13099299.xml",
+            [
+              "PC: Prospective cohort; RC: Retrospective cohort; PAF: Parox"
+            ]
+          ],
+          [
+            "bio-PMC13116881.xml",
+            [
+              "ds ratio, AMI: acute myocardial infarction, BDI: Beck’s Depression Ind"
+            ]
+          ],
+          [
+            "bio-PMC13162546.xml",
+            [
+              "EPR: Enhanced permeability and retention.",
+              "ADCC: antibody-dependent cell-mediated cytotoxicity; CDC: co"
+            ]
+          ],
+          [
+            "bio-PMC13203479.xml",
+            [
+              "vailable, ED: emergency departments.",
+              "or less, PNC: Particle number concentration, CO: carbon monoxide, PAH"
+            ]
+          ],
+          [
+            "bio-PMC13207820.xml",
+            [
+              "analysis. BMI: body mass index; CA-125: cancer antigen 125.",
+              "ariables. BMI: body mass index; CA-125: cancer antigen 125; U/mL: unit"
+            ]
+          ],
+          [
+            "bio-PMC13218538.xml",
+            [
+              "entheses. TC: Total cholesterol; LDL - C: Low-density lipoprotein chol"
+            ]
+          ],
+          [
+            "essai-PMC13205709.xml",
+            [
+              "eviation: FGD: focus group discussion."
             ]
           ]
         ],
-        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files"
+        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files",
+        "carriers_file": "probes/results/line-083.json"
       },
       "matches_excerpt": true
     }

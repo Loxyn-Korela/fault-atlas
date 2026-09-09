@@ -101,20 +101,79 @@
             "bio-PMC12674831.xml",
             [
               "105=45+60",
-              "109=33+76",
-              "109=4+105"
+              "109=33+76"
             ]
           ],
           [
             "bio-PMC12953170.xml",
             [
               "27=8+19",
-              "28=13+15",
-              "39=8+31"
+              "28=13+15"
+            ]
+          ],
+          [
+            "bio-PMC13088504.xml",
+            [
+              "10=2+8",
+              "115=16+99"
+            ]
+          ],
+          [
+            "essai-PMC13154027.xml",
+            [
+              "16=3+13",
+              "21=8+13"
+            ]
+          ],
+          [
+            "essai-PMC13169227.xml",
+            [
+              "63=17+46"
+            ]
+          ],
+          [
+            "essai-PMC13191455.xml",
+            [
+              "17=3+14",
+              "30=14+16"
+            ]
+          ],
+          [
+            "essai-PMC13205709.xml",
+            [
+              "10=2+8",
+              "10=4+6"
+            ]
+          ],
+          [
+            "essai-PMC13205731.xml",
+            [
+              "253=3+250",
+              "5=2+3"
+            ]
+          ],
+          [
+            "essai-PMC13213610.xml",
+            [
+              "1089=534+555",
+              "125=56+69"
+            ]
+          ],
+          [
+            "essai-PMC13239719.xml",
+            [
+              "38=14+24"
+            ]
+          ],
+          [
+            "essai-PMC13264282.xml",
+            [
+              "41=14+27"
             ]
           ]
         ],
-        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files"
+        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files",
+        "carriers_file": "probes/results/line-101.json"
       },
       "matches_excerpt": true
     }

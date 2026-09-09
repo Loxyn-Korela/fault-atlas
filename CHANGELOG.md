@@ -7,6 +7,10 @@
 - Validator with house rules; proves itself on seven planted faults.
 - SQLite view builder for Datasette.
 
+## 0.3.3 — 2026-09-09
+- "How to find it again" on each observation, third reader's demand ("we don't care about the corpus, we want the document where the fault is"): every probe now keeps the full list of carrier documents with the evidence found in each (`probes/results/<probe>.json`), and the form shows them first, each document clickable (Europe PMC article and the JATS XML the probe read; PubMed by PMID; Cellar URI or CELEX on EUR-Lex), the code last. 79 probes, 76 result files.
+- Observations without a kept probe now say "cannot be shown yet" instead of pointing at the corpus.
+
 ## 0.3.2 — 2026-09-09
 - form-014 (third reader: "I have a link but where do I see the fault with my own eyes?"): a probe written from the excerpt's own definition, taken literally (organisation and named study in one sentence), finds 2/272 and shows the two sentences. The August 63/272 cannot be recovered (looser rules give 30 or 59) and is flagged on the form. The literal, visible figure is the one to cite.
 

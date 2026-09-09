@@ -108,9 +108,73 @@
               "<abstract id=\"Abs1\">",
               "<abstract id=\"Abs2\" abstract-type=\"Key Points\">"
             ]
+          ],
+          [
+            "bio-PMC13252842.xml",
+            [
+              "<abstract id=\"abstract1\">",
+              "<abstract id=\"abstract2\" abstract-type=\"summary\">"
+            ]
+          ],
+          [
+            "essai-PMC13154027.xml",
+            [
+              "<abstract id=\"abstract1\" abstract-type=\"key-points\">",
+              "<abstract id=\"abstract2\" abstract-type=\"teaser\">"
+            ]
+          ],
+          [
+            "essai-PMC13191455.xml",
+            [
+              "<abstract abstract-type=\"key-points\">",
+              "<abstract abstract-type=\"teaser\" specific-use=\"electronic\">"
+            ]
+          ],
+          [
+            "essai-PMC13205709.xml",
+            [
+              "<abstract>",
+              "<abstract abstract-type=\"graphical\">"
+            ]
+          ],
+          [
+            "essai-PMC13205731.xml",
+            [
+              "<abstract id=\"abstract1\">",
+              "<abstract id=\"abstract2\" abstract-type=\"highlights\">"
+            ]
+          ],
+          [
+            "essai-PMC13205876.xml",
+            [
+              "<abstract id=\"abstract1\">",
+              "<abstract id=\"abstract2\" abstract-type=\"highlights\">"
+            ]
+          ],
+          [
+            "essai-PMC13213610.xml",
+            [
+              "<abstract id=\"abstract1\" abstract-type=\"key-points\">",
+              "<abstract id=\"abstract2\">"
+            ]
+          ],
+          [
+            "essai-PMC13239719.xml",
+            [
+              "<abstract>",
+              "<abstract abstract-type=\"highlights\">"
+            ]
+          ],
+          [
+            "essai-PMC13242351.xml",
+            [
+              "<abstract>",
+              "<abstract abstract-type=\"highlights\">"
+            ]
           ]
         ],
-        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files"
+        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files",
+        "carriers_file": "probes/results/line-141.json"
       },
       "matches_excerpt": true
     }

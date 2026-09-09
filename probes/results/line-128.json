@@ -1,0 +1,1589 @@
+{
+ "probe": "probes/2026-08/line-128.py",
+ "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+ "date": "2026-09-09",
+ "count": 240,
+ "of": 272,
+ "carriers": [
+  {
+   "document": "bio-PMC12583535.xml",
+   "evidence": [
+    "never glossed: ABS, AL, AND, ATP, ATST, BALB",
+    "bare apposition: CoA, NADPH"
+   ]
+  },
+  {
+   "document": "bio-PMC12590050.xml",
+   "evidence": [
+    "never glossed: AH, AND, AS, BMI, CA, CAD"
+   ]
+  },
+  {
+   "document": "bio-PMC12674831.xml",
+   "evidence": [
+    "never glossed: ACE, AMGEN, AND, ART, BAYER, BRA",
+    "bare apposition: Brazil, CRP, CVR, IR"
+   ]
+  },
+  {
+   "document": "bio-PMC12857832.xml",
+   "evidence": [
+    "never glossed: AND, COVID, CVD, FEV1, FVC, II",
+    "bare apposition: POP"
+   ]
+  },
+  {
+   "document": "bio-PMC12882215.xml",
+   "evidence": [
+    "never glossed: AND, APOE, HR, PR, PRISMA, RCT",
+    "bare apposition: NDVI, RCT"
+   ]
+  },
+  {
+   "document": "bio-PMC12909487.xml",
+   "evidence": [
+    "never glossed: AED, AND, CAD, CPR, LC, OR"
+   ]
+  },
+  {
+   "document": "bio-PMC12915353.xml",
+   "evidence": [
+    "never glossed: ABS, AND, BMI, CI, CVD, DBP"
+   ]
+  },
+  {
+   "document": "bio-PMC12927065.xml",
+   "evidence": [
+    "never glossed: AA, AND, AOR, BMC, BMJ, CI",
+    "bare apposition: Second"
+   ]
+  },
+  {
+   "document": "bio-PMC12927975.xml",
+   "evidence": [
+    "never glossed: AND, CT, IBM, OR, PRISMA, WHO",
+    "bare apposition: DRC"
+   ]
+  },
+  {
+   "document": "bio-PMC12953170.xml",
+   "evidence": [
+    "never glossed: AG, AI, AK, AS, ASA, ASW",
+    "bare apposition: Also"
+   ]
+  },
+  {
+   "document": "bio-PMC12959687.xml",
+   "evidence": [
+    "never glossed: AB, ABS, AND, AT, BL, BMC"
+   ]
+  },
+  {
+   "document": "bio-PMC13057049.xml",
+   "evidence": [
+    "never glossed: AA, ABS, AG, AI, AM, AND",
+    "bare apposition: Africa, First, Hence"
+   ]
+  },
+  {
+   "document": "bio-PMC13088504.xml",
+   "evidence": [
+    "never glossed: CI, EG, II, III, RT, SD"
+   ]
+  },
+  {
+   "document": "bio-PMC13097615.xml",
+   "evidence": [
+    "never glossed: AND, BMC, BSF, DA, DNA, EMTREE"
+   ]
+  },
+  {
+   "document": "bio-PMC13099299.xml",
+   "evidence": [
+    "never glossed: AB, AND, BA, BM, CBA, CI",
+    "bare apposition: BMI"
+   ]
+  },
+  {
+   "document": "bio-PMC13103274.xml",
+   "evidence": [
+    "never glossed: ASAT, AUC, FIGURE, HP, ICG, ML",
+    "bare apposition: X9"
+   ]
+  },
+  {
+   "document": "bio-PMC13116881.xml",
+   "evidence": [
+    "never glossed: AMI, AND, BMI, BP, CI, CRP"
+   ]
+  },
+  {
+   "document": "bio-PMC13155703.xml",
+   "evidence": [
+    "never glossed: AND, DM, ECG, HR, LEVF, LL",
+    "bare apposition: DFU, Hence"
+   ]
+  },
+  {
+   "document": "bio-PMC13162546.xml",
+   "evidence": [
+    "never glossed: ADCC, ADP, AZ7379, BH4, CD44, CDC",
+    "bare apposition: AuNPs, CD47, CVD, MI"
+   ]
+  },
+  {
+   "document": "bio-PMC13168716.xml",
+   "evidence": [
+    "never glossed: ABS, AND, COPD, FHMPM, IR, IRIS",
+    "bare apposition: Third"
+   ]
+  },
+  {
+   "document": "bio-PMC13170838.xml",
+   "evidence": [
+    "never glossed: AE, AK, AKM, AL, AN, AND",
+    "bare apposition: AKM, First, Thus"
+   ]
+  },
+  {
+   "document": "bio-PMC13181205.xml",
+   "evidence": [
+    "never glossed: AND, CABG, CHD, CI, CV, FIGURE",
+    "bare apposition: DHA"
+   ]
+  },
+  {
+   "document": "bio-PMC13182387.xml",
+   "evidence": [
+    "never glossed: AHM, AM, AND, BJGPO, BMC, BMJ",
+    "bare apposition: First, Fourth, Second, So"
+   ]
+  },
+  {
+   "document": "bio-PMC13190511.xml",
+   "evidence": [
+    "never glossed: AI, BMC, BMJ, COVID, DA, HQA",
+    "bare apposition: First, PubMed, Qigong, Thus"
+   ]
+  },
+  {
+   "document": "bio-PMC13203479.xml",
+   "evidence": [
+    "never glossed: ABS, AMR, AN, AND, ANOVA, AOC",
+    "bare apposition: OHdG"
+   ]
+  },
+  {
+   "document": "bio-PMC13207820.xml",
+   "evidence": [
+    "never glossed: CA, IBM, IQR"
+   ]
+  },
+  {
+   "document": "bio-PMC13216383.xml",
+   "evidence": [
+    "never glossed: AB, AND, CF, CHD, CHF, CINAHL"
+   ]
+  },
+  {
+   "document": "bio-PMC13218538.xml",
+   "evidence": [
+    "never glossed: AIDS, AND, ANOVA, ATP, BMI, BMJ"
+   ]
+  },
+  {
+   "document": "bio-PMC13231534.xml",
+   "evidence": [
+    "never glossed: AI, AL, AND, CM, CVD, DJ",
+    "bare apposition: First, Second, Third"
+   ]
+  },
+  {
+   "document": "bio-PMC13236932.xml",
+   "evidence": [
+    "never glossed: CINAHL, DHT, PI, PRISMA, QSR, SPIDER",
+    "bare apposition: First, Fourth, Second"
+   ]
+  },
+  {
+   "document": "bio-PMC13251069.xml",
+   "evidence": [
+    "never glossed: AND, CI, OFI, OR",
+    "bare apposition: First, Second"
+   ]
+  },
+  {
+   "document": "bio-PMC13252842.xml",
+   "evidence": [
+    "never glossed: AJ, ANOVA, AWC, BMJ, CA, CC",
+    "bare apposition: First, ISCTs, Second, Third"
+   ]
+  },
+  {
+   "document": "bio-PMC13274935.xml",
+   "evidence": [
+    "never glossed: ABS, AND, BMJ, BORG, CG, CI",
+    "bare apposition: LL, Lastly, Thus"
+   ]
+  },
+  {
+   "document": "bio-PMC13289183.xml",
+   "evidence": [
+    "never glossed: BMJ, DECIDE, IA",
+    "bare apposition: Then"
+   ]
+  },
+  {
+   "document": "cas-PMC13290446.xml",
+   "evidence": [
+    "never glossed: HR, IB, II, KCNQ1, LQT1, LQT2",
+    "bare apposition: First"
+   ]
+  },
+  {
+   "document": "cas-PMC13291543.xml",
+   "evidence": [
+    "never glossed: AI, ALT, APOC1, APOE, AST, ASXL2"
+   ]
+  },
+  {
+   "document": "cas-PMC13291881.xml",
+   "evidence": [
+    "never glossed: ALT, AST, GFR, GGT, HMIMV, IU",
+    "bare apposition: FGF23"
+   ]
+  },
+  {
+   "document": "cas-PMC13293644.xml",
+   "evidence": [
+    "never glossed: IU, MA, OMIM"
+   ]
+  },
+  {
+   "document": "cas-PMC13293645.xml",
+   "evidence": [
+    "never glossed: EMG, FABER, NCS, SLR"
+   ]
+  },
+  {
+   "document": "cas-PMC13293647.xml",
+   "evidence": [
+    "never glossed: A3, CO, CRISPR, CV, DM, DNA",
+    "bare apposition: First"
+   ]
+  },
+  {
+   "document": "cas-PMC13293792.xml",
+   "evidence": [
+    "never glossed: BID, CDKN2A, CNS, CT, FDA, II",
+    "bare apposition: First"
+   ]
+  },
+  {
+   "document": "cas-PMC13293799.xml",
+   "evidence": [
+    "never glossed: AF, AHA, AI, AJCR, CT, DOAC",
+    "bare apposition: LVT"
+   ]
+  },
+  {
+   "document": "cas-PMC13293813.xml",
+   "evidence": [
+    "never glossed: EGFR, NOTCH, PD, TP53",
+    "bare apposition: SCC"
+   ]
+  },
+  {
+   "document": "cas-PMC13293827.xml",
+   "evidence": [
+    "never glossed: CK19, CK20, CK5, CK7, DP, FP",
+    "bare apposition: Cancer"
+   ]
+  },
+  {
+   "document": "cas-PMC13293834.xml",
+   "evidence": [
+    "never glossed: CFU, CRP, FIGURE, PLT, SMX, SMZ"
+   ]
+  },
+  {
+   "document": "cas-PMC13293841.xml",
+   "evidence": [
+    "never glossed: ACR, AR, BI, CD68, CK, EMA",
+    "bare apposition: CNB, Fifth, First, Fourth"
+   ]
+  },
+  {
+   "document": "cas-PMC13293897.xml",
+   "evidence": [
+    "never glossed: CT, III",
+    "bare apposition: Also, IMPA"
+   ]
+  },
+  {
+   "document": "cas-PMC13293901.xml",
+   "evidence": [
+    "never glossed: CAPEOX, CT, DNA, MRI, PCR, QD",
+    "bare apposition: Fourth, Second, Third"
+   ]
+  },
+  {
+   "document": "cas-PMC13293995.xml",
+   "evidence": [
+    "never glossed: AI, BCL, BCL6, CD10, CD20, CD21"
+   ]
+  },
+  {
+   "document": "cas-PMC13294038.xml",
+   "evidence": [
+    "never glossed: AI, AKI, BE, CO, CP, CTLA",
+    "bare apposition: Thus"
+   ]
+  },
+  {
+   "document": "cas-PMC13294089.xml",
+   "evidence": [
+    "never glossed: AI, AZ, KA"
+   ]
+  },
+  {
+   "document": "cas-PMC13294096.xml",
+   "evidence": [
+    "never glossed: CTA, HIT, LVAD, PF4, RPM",
+    "bare apposition: LVAD"
+   ]
+  },
+  {
+   "document": "cas-PMC13294155.xml",
+   "evidence": [
+    "never glossed: ACR, AD, ALP, ALT, AMP, AR",
+    "bare apposition: STING, Second"
+   ]
+  },
+  {
+   "document": "cas-PMC13294182.xml",
+   "evidence": [
+    "never glossed: ALL, CD19, DNA, IV, OCT, TRAC",
+    "bare apposition: TIAN"
+   ]
+  },
+  {
+   "document": "cas-PMC13294240.xml",
+   "evidence": [
+    "never glossed: AI, COVID, DSM, GH, HJ, IRB",
+    "bare apposition: First"
+   ]
+  },
+  {
+   "document": "cas-PMC13294281.xml",
+   "evidence": [
+    "never glossed: GBS, NCS"
+   ]
+  },
+  {
+   "document": "cas-PMC13294340.xml",
+   "evidence": [
+    "never glossed: AI, FIGURE, P2Y12, WON",
+    "bare apposition: First, Thus"
+   ]
+  },
+  {
+   "document": "cas-PMC13294475.xml",
+   "evidence": [
+    "never glossed: AI, FLAIR, JAMA, Q10, T2"
+   ]
+  },
+  {
+   "document": "cas-PMC13294481.xml",
+   "evidence": [
+    "never glossed: CNS, CT, CYP, CYP3A4, IV, MRI",
+    "bare apposition: Second, Third"
+   ]
+  },
+  {
+   "document": "cas-PMC13294629.xml",
+   "evidence": [
+    "never glossed: CT, LA, MA, MRI, PRAME"
+   ]
+  },
+  {
+   "document": "cas-PMC13294642.xml",
+   "evidence": [
+    "never glossed: CD20, CD3, CD45, CD5, CD68, HIV"
+   ]
+  },
+  {
+   "document": "cas-PMC13294698.xml",
+   "evidence": [
+    "never glossed: AI, BMC, CIA, CT, JOA, L3",
+    "bare apposition: L4, UBE"
+   ]
+  },
+  {
+   "document": "cas-PMC13294702.xml",
+   "evidence": [
+    "never glossed: CA, CT, G12D, IB, KRAS, PET"
+   ]
+  },
+  {
+   "document": "cas-PMC13294704.xml",
+   "evidence": [
+    "never glossed: ADR, CA, CD8, DK, IU"
+   ]
+  },
+  {
+   "document": "cas-PMC13294705.xml",
+   "evidence": [
+    "never glossed: C4, CT"
+   ]
+  },
+  {
+   "document": "cas-PMC13300565.xml",
+   "evidence": [
+    "never glossed: II, IIB, III, N0, T2"
+   ]
+  },
+  {
+   "document": "cas-PMC13301386.xml",
+   "evidence": [
+    "never glossed: ICU, VAC"
+   ]
+  },
+  {
+   "document": "essai-PMC13154027.xml",
+   "evidence": [
+    "never glossed: AIS, CI, CR, FAS, HADS, JA",
+    "bare apposition: Japan"
+   ]
+  },
+  {
+   "document": "essai-PMC13169227.xml",
+   "evidence": [
+    "never glossed: AKM, ARG1, BC, BMC, C1QA, CCL5",
+    "bare apposition: POD1"
+   ]
+  },
+  {
+   "document": "essai-PMC13169472.xml",
+   "evidence": [
+    "never glossed: CST, FIGURE, IBM, KOOS, MWT, QOL",
+    "bare apposition: TKA, Thus"
+   ]
+  },
+  {
+   "document": "essai-PMC13179527.xml",
+   "evidence": [
+    "never glossed: CB, CB2, FIGURE, QQ, SE",
+    "bare apposition: IOP, Second, Thus"
+   ]
+  },
+  {
+   "document": "essai-PMC13191455.xml",
+   "evidence": [
+    "never glossed: BDI, CI, II, IL, RCT, RD"
+   ]
+  },
+  {
+   "document": "essai-PMC13205709.xml",
+   "evidence": [
+    "never glossed: AOA, CT, LNS, MAM, NS, S1"
+   ]
+  },
+  {
+   "document": "essai-PMC13205731.xml",
+   "evidence": [
+    "never glossed: BMC, CI, ICC, ID, ISRCTN, MOHD",
+    "bare apposition: CHW, MUAC"
+   ]
+  },
+  {
+   "document": "essai-PMC13205876.xml",
+   "evidence": [
+    "never glossed: DYAD, LNS, S1, SQ",
+    "bare apposition: Accra"
+   ]
+  },
+  {
+   "document": "essai-PMC13213610.xml",
+   "evidence": [
+    "never glossed: AJ, CI, EQ, ICD, JP, SI"
+   ]
+  },
+  {
+   "document": "essai-PMC13215628.xml",
+   "evidence": [
+    "never glossed: US"
+   ]
+  },
+  {
+   "document": "essai-PMC13238360.xml",
+   "evidence": [
+    "never glossed: BV, CI, CVP, FIGURE, HR, LOA",
+    "bare apposition: Also"
+   ]
+  },
+  {
+   "document": "essai-PMC13239719.xml",
+   "evidence": [
+    "never glossed: AA, AC, CAF, CC, CT, CYP1A2"
+   ]
+  },
+  {
+   "document": "essai-PMC13242068.xml",
+   "evidence": [
+    "never glossed: ANOVA, EVUS5, FIGURE, G1, MS, PT"
+   ]
+  },
+  {
+   "document": "essai-PMC13242351.xml",
+   "evidence": [
+    "never glossed: CR, FIGURE, HR, IPAQ, MET, MVC",
+    "bare apposition: BP, Thus, Yet"
+   ]
+  },
+  {
+   "document": "essai-PMC13245602.xml",
+   "evidence": [
+    "never glossed: ICC, SD, SE, STEP, TABLE",
+    "bare apposition: Second"
+   ]
+  },
+  {
+   "document": "essai-PMC13254492.xml",
+   "evidence": [
+    "never glossed: AUC, AUEC, CA, CL, COX, CV",
+    "bare apposition: AUC"
+   ]
+  },
+  {
+   "document": "essai-PMC13263161.xml",
+   "evidence": [
+    "never glossed: AMP, AMPK, AT, CI, CL, DEXA"
+   ]
+  },
+  {
+   "document": "essai-PMC13264282.xml",
+   "evidence": [
+    "never glossed: AB, CBT, GAD, II, III, IV",
+    "bare apposition: Also"
+   ]
+  },
+  {
+   "document": "essai-PMC13271868.xml",
+   "evidence": [
+    "never glossed: BAND, CI, EC, EEGLAB, EO, FIGURE",
+    "bare apposition: Hz, Still"
+   ]
+  },
+  {
+   "document": "essai-PMC13276020.xml",
+   "evidence": [
+    "never glossed: CNS, FIGURE, FTY720, IL, MAX, PA",
+    "bare apposition: Also, First, Second, Third"
+   ]
+  },
+  {
+   "document": "essai-PMC13280184.xml",
+   "evidence": [
+    "never glossed: COVID, IBM, III, MH, NSLHD, RJ",
+    "bare apposition: Fourth, Rather"
+   ]
+  },
+  {
+   "document": "essai-PMC13280799.xml",
+   "evidence": [
+    "never glossed: FGD, MAXQDA, PI, UN, UNICEF, USAID",
+    "bare apposition: Hence, MMS"
+   ]
+  },
+  {
+   "document": "essai-PMC13281132.xml",
+   "evidence": [
+    "never glossed: CCS, FEV, FIGURE, GLI, GLP, ICD",
+    "bare apposition: Thus"
+   ]
+  },
+  {
+   "document": "essai-PMC13282136.xml",
+   "evidence": [
+    "never glossed: ANOVA, BL, BV, CO, FIGURE, JSC",
+    "bare apposition: PO, SIT, Then, Thus"
+   ]
+  },
+  {
+   "document": "essai-PMC13284529.xml",
+   "evidence": [
+    "never glossed: ANOVA, BMC, CO, FIGURE, HR, MRI"
+   ]
+  },
+  {
+   "document": "essai-PMC13290998.xml",
+   "evidence": [
+    "never glossed: AYA, CI",
+    "bare apposition: First"
+   ]
+  },
+  {
+   "document": "essai-PMC13291766.xml",
+   "evidence": [
+    "never glossed: BKC, CR, EX, IBM, IL, LSMH"
+   ]
+  },
+  {
+   "document": "essai-PMC13291922.xml",
+   "evidence": [
+    "never glossed: CI, CMSA, ICC, M1, S3S, SD",
+    "bare apposition: Then"
+   ]
+  },
+  {
+   "document": "essai-PMC13293440.xml",
+   "evidence": [
+    "never glossed: ACEI, ARB, GLP, LDL, SPSS",
+    "bare apposition: First, Second"
+   ]
+  },
+  {
+   "document": "essai-PMC13294169.xml",
+   "evidence": [
+    "never glossed: DLBCL, HG, HL, JL, NA, ZM",
+    "bare apposition: Second"
+   ]
+  },
+  {
+   "document": "essai-PMC13294787.xml",
+   "evidence": [
+    "never glossed: AOY, BMI, BMJ, BP, BR, CI",
+    "bare apposition: T2D, YOD"
+   ]
+  },
+  {
+   "document": "essai-PMC13294792.xml",
+   "evidence": [
+    "never glossed: AS, BM, CC, CI, CV, DPP",
+    "bare apposition: MODY, Thus"
+   ]
+  },
+  {
+   "document": "essai-PMC13296589.xml",
+   "evidence": [
+    "never glossed: BMJ, CCT, CI, CIRB, COMBAT, CTT",
+    "bare apposition: First, ICU, Second"
+   ]
+  },
+  {
+   "document": "essai-PMC7619126.xml",
+   "evidence": [
+    "never glossed: AHEAD, AM, BY, CC, EW, HCW"
+   ]
+  },
+  {
+   "document": "meta-PMC13071177.xml",
+   "evidence": [
+    "never glossed: CI, CTL, DNA, EZR, FIGURE, HT"
+   ]
+  },
+  {
+   "document": "meta-PMC13157766.xml",
+   "evidence": [
+    "never glossed: AAC, AND, BMJ, CI, JA, JAMA"
+   ]
+  },
+  {
+   "document": "meta-PMC13179150.xml",
+   "evidence": [
+    "never glossed: APA, CH, CMA, CR, ESM, FIGURE",
+    "bare apposition: Indeed, Lastly"
+   ]
+  },
+  {
+   "document": "meta-PMC13221319.xml",
+   "evidence": [
+    "never glossed: AND, AT, CG, CI, CL, CS"
+   ]
+  },
+  {
+   "document": "meta-PMC13225629.xml",
+   "evidence": [
+    "never glossed: AND, BSEP, BSEP1, BSEP2, BSEP3, CI",
+    "bare apposition: Indeed, Third"
+   ]
+  },
+  {
+   "document": "meta-PMC13226718.xml",
+   "evidence": [
+    "never glossed: ABCB11, ABCC8, AGEN, BMC, CAST, CDKAL1",
+    "bare apposition: GDM"
+   ]
+  },
+  {
+   "document": "meta-PMC13229315.xml",
+   "evidence": [
+    "never glossed: AL, AND, AP, B4, BJOG, BM"
+   ]
+  },
+  {
+   "document": "meta-PMC13231626.xml",
+   "evidence": [
+    "never glossed: CI, CMQ, DES, SD, SE",
+    "bare apposition: Here, RD"
+   ]
+  },
+  {
+   "document": "meta-PMC13240427.xml",
+   "evidence": [
+    "never glossed: CI, FIGURE, JAMA, LGBTQ, PMCID, PMID"
+   ]
+  },
+  {
+   "document": "meta-PMC13241412.xml",
+   "evidence": [
+    "never glossed: CI, ID, MSCC, NS, PMSCC, RCT"
+   ]
+  },
+  {
+   "document": "meta-PMC13246130.xml",
+   "evidence": [
+    "never glossed: AKIN, AUC, CI, ESUR, GBDT, KDIGO",
+    "bare apposition: Also, First, Third"
+   ]
+  },
+  {
+   "document": "meta-PMC13250259.xml",
+   "evidence": [
+    "never glossed: BMI, CAB, DAVID, FIGURE, GMD, GMV"
+   ]
+  },
+  {
+   "document": "meta-PMC13253268.xml",
+   "evidence": [
+    "never glossed: AI, BMC, CH, DK, FB, JL"
+   ]
+  },
+  {
+   "document": "meta-PMC13254819.xml",
+   "evidence": [
+    "never glossed: AA, ADRC, AM, APOE, AW, BM",
+    "bare apposition: Indeed, NACC"
+   ]
+  },
+  {
+   "document": "meta-PMC13256077.xml",
+   "evidence": [
+    "never glossed: AAD, CI, III, LGE, NA, VA",
+    "bare apposition: SCD"
+   ]
+  },
+  {
+   "document": "meta-PMC13260247.xml",
+   "evidence": [
+    "never glossed: A1, A2, BP, CAS, CD16, CD28",
+    "bare apposition: SNP, Third"
+   ]
+  },
+  {
+   "document": "meta-PMC13263136.xml",
+   "evidence": [
+    "never glossed: AB, ABCA1, ABCA7, AC, ACE, AD"
+   ]
+  },
+  {
+   "document": "meta-PMC13264275.xml",
+   "evidence": [
+    "never glossed: AB, AG, AL, BA, CB, CE",
+    "bare apposition: Second"
+   ]
+  },
+  {
+   "document": "meta-PMC13264436.xml",
+   "evidence": [
+    "never glossed: AB, BMJ, BRAF, BSC, CA, ECOG",
+    "bare apposition: PFS, RCTs"
+   ]
+  },
+  {
+   "document": "meta-PMC13265330.xml",
+   "evidence": [
+    "never glossed: ABO, ACTA2, ACTB, ACTIN, ALT, ATAC",
+    "bare apposition: V2"
+   ]
+  },
+  {
+   "document": "meta-PMC13268477.xml",
+   "evidence": [
+    "never glossed: AND, BCLC, BMC, BY, CA, CX"
+   ]
+  },
+  {
+   "document": "meta-PMC13268693.xml",
+   "evidence": [
+    "never glossed: DM, DPP, GLP, HTN, RA, RCT",
+    "bare apposition: ARNIs, Fourth, RCTs, Third"
+   ]
+  },
+  {
+   "document": "meta-PMC13269816.xml",
+   "evidence": [
+    "never glossed: F4, GCKD, KEGG, MICROS, SHIP, SNP",
+    "bare apposition: CagA, Cohort, GroEL, SNPs"
+   ]
+  },
+  {
+   "document": "meta-PMC13271776.xml",
+   "evidence": [
+    "never glossed: A2, AKNA, AT, CC, CHEK2, CI"
+   ]
+  },
+  {
+   "document": "meta-PMC13280693.xml",
+   "evidence": [
+    "never glossed: AGDS, DSM, FDR, FUMA, GAD, MAGMA",
+    "bare apposition: Second, Thus"
+   ]
+  },
+  {
+   "document": "meta-PMC13286426.xml",
+   "evidence": [
+    "never glossed: BMC, CA, CI, DNA, GD, GWAS",
+    "bare apposition: Second"
+   ]
+  },
+  {
+   "document": "meta-PMC13286481.xml",
+   "evidence": [
+    "never glossed: AE, BMI, CI, CRP, OASIS, RCT"
+   ]
+  },
+  {
+   "document": "meta-PMC13287023.xml",
+   "evidence": [
+    "never glossed: AA, AGR2, AI, AJ, AM, AND",
+    "bare apposition: Runx2, UC"
+   ]
+  },
+  {
+   "document": "meta-PMC13287149.xml",
+   "evidence": [
+    "never glossed: A1, A2, AA, ACAD10, AD, AG",
+    "bare apposition: Second, Thus"
+   ]
+  },
+  {
+   "document": "meta-PMC13287277.xml",
+   "evidence": [
+    "never glossed: A1, A2, BP, CDSN, CHR, DLL3",
+    "bare apposition: ADHD, Cohort, Second"
+   ]
+  },
+  {
+   "document": "meta-PMC13288533.xml",
+   "evidence": [
+    "never glossed: AF, AOG, BMI, BMJ, CI, CIR"
+   ]
+  },
+  {
+   "document": "meta-PMC13292320.xml",
+   "evidence": [
+    "never glossed: ABCD, APOE, CI, HI, ID, IO"
+   ]
+  },
+  {
+   "document": "meta-PMC13297335.xml",
+   "evidence": [
+    "never glossed: A172, AS1, AXL, CO, CREB, DMEM"
+   ]
+  },
+  {
+   "document": "meta-PMC13305250.xml",
+   "evidence": [
+    "never glossed: HDL, ICD, LDL, SD",
+    "bare apposition: First, Second, Sixth"
+   ]
+  },
+  {
+   "document": "moderne-PMC12900525.xml",
+   "evidence": [
+    "never glossed: A1, A10, A2, A3, A4, A5"
+   ]
+  },
+  {
+   "document": "moderne-PMC12967033.xml",
+   "evidence": [
+    "never glossed: AOAC, BCS, ME, MP, NASEM, NFTA",
+    "bare apposition: Also, Indeed"
+   ]
+  },
+  {
+   "document": "moderne-PMC13177175.xml",
+   "evidence": [
+    "never glossed: ACC, ACEI, AHA, ARB, ASA, ATP",
+    "bare apposition: Indeed, VAs"
+   ]
+  },
+  {
+   "document": "moderne-PMC13254229.xml",
+   "evidence": [
+    "never glossed: AIDS, BMC, BMJ, CA, HIV, NHS"
+   ]
+  },
+  {
+   "document": "moderne-PMC13262411.xml",
+   "evidence": [
+    "never glossed: AB, ACD7BE, COMSOL, DIC, DOI, LDV",
+    "bare apposition: First, Here, Then"
+   ]
+  },
+  {
+   "document": "moderne-PMC13264966.xml",
+   "evidence": [
+    "never glossed: CA, DC, FIGURE, GC, HESI, LC",
+    "bare apposition: Below, HESI, Here, Indeed"
+   ]
+  },
+  {
+   "document": "moderne-PMC13264967.xml",
+   "evidence": [
+    "never glossed: CFC, CO, ECD, FIGURE, GE, MIMS",
+    "bare apposition: ASW, First, Then, Thus"
+   ]
+  },
+  {
+   "document": "moderne-PMC13267778.xml",
+   "evidence": [
+    "never glossed: ACS, ANOVA, CE, CMJ, DOI, EF",
+    "bare apposition: GpG, Thus, Yet"
+   ]
+  },
+  {
+   "document": "moderne-PMC13274555.xml",
+   "evidence": [
+    "never glossed: ANOVA, E145, E166, FIGURE, IUCN, LSD"
+   ]
+  },
+  {
+   "document": "moderne-PMC13282716.xml",
+   "evidence": [
+    "never glossed: AP2, CO, E14, EGFP, FIGURE, GAK"
+   ]
+  },
+  {
+   "document": "moderne-PMC13282721.xml",
+   "evidence": [
+    "never glossed: ALX, AMPA, AP, ARP2, ATP, CD3",
+    "bare apposition: Cx43, EE, EHD2, MUSCLE"
+   ]
+  },
+  {
+   "document": "moderne-PMC13288728.xml",
+   "evidence": [
+    "never glossed: AG, DNA, HMP, M27, MP, MQ",
+    "bare apposition: Again, FIDVC, HMP, HMPs"
+   ]
+  },
+  {
+   "document": "moderne-PMC13291764.xml",
+   "evidence": [
+    "never glossed: ED, EMN, GI, HF, IHD, MD"
+   ]
+  },
+  {
+   "document": "moderne-PMC13292400.xml",
+   "evidence": [
+    "never glossed: AF, AF488, AF546, ASARM, COD, COM"
+   ]
+  },
+  {
+   "document": "moderne-PMC13296834.xml",
+   "evidence": [
+    "never glossed: BMC, FIGURE, GP, H23, PPD, S1"
+   ]
+  },
+  {
+   "document": "moderne-PMC13296839.xml",
+   "evidence": [
+    "never glossed: ACSL1, APOE, APOE3, APOE4, ATP, C57BL",
+    "bare apposition: P2RY12, Third"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13127809.xml",
+   "evidence": [
+    "never glossed: CT, PET"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13128172.xml",
+   "evidence": [
+    "never glossed: AC, ACT, ASE, CARDIA, DR, DX"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13128184.xml",
+   "evidence": [
+    "never glossed: AFC, AJ, CE, CG, CJ, CY"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13128185.xml",
+   "evidence": [
+    "never glossed: AA, AM, CE, CF, CG, DM",
+    "bare apposition: Assim"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13128186.xml",
+   "evidence": [
+    "never glossed: MYBPC3, MYH7"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13128206.xml",
+   "evidence": [
+    "never glossed: AJ, AP, AS, ASAIO, ASC, BK",
+    "bare apposition: ECPR"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13128210.xml",
+   "evidence": [
+    "never glossed: AA, BL, BMC, BR, CA, CFM"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13128212.xml",
+   "evidence": [
+    "never glossed: ECMO, EH, IH, PCR, VA"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13128213.xml",
+   "evidence": [
+    "never glossed: AC, AF1Q, ALT, AM, AO, AR",
+    "bare apposition: VUS"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13128215.xml",
+   "evidence": [
+    "never glossed: AA, ABC, ACS, EB, ED, EF"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13128216.xml",
+   "evidence": [
+    "never glossed: CID, I50, IIQ"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13128218.xml",
+   "evidence": [
+    "never glossed: CAD, CRI, HDL, II, MHR, RADS"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13142163.xml",
+   "evidence": [
+    "never glossed: ABFW, AM, CAPES, CC, CHAT, DA"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13148856.xml",
+   "evidence": [
+    "never glossed: AUC, IC, IIQ, MOLLI, T1"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13155791.xml",
+   "evidence": [
+    "never glossed: AD, AR, BF, DW, EA, EH"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13155792.xml",
+   "evidence": [
+    "never glossed: ALC",
+    "bare apposition: ICI"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13155793.xml",
+   "evidence": [
+    "never glossed: AC, AJ, AO, CRT, DT, EMS",
+    "bare apposition: PCREH"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13185728.xml",
+   "evidence": [
+    "never glossed: CID, DSM",
+    "bare apposition: Ainda, TEA"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13185730.xml",
+   "evidence": [
+    "never glossed: AF, AM, BMC, CASP, CC, CR"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13193188.xml",
+   "evidence": [
+    "never glossed: AAA, ABA, ANOVA, ASHA, AUD, BSA",
+    "bare apposition: G1, G2, Thus"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13193189.xml",
+   "evidence": [
+    "never glossed: SD",
+    "bare apposition: Hence, Thus"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13193190.xml",
+   "evidence": [
+    "never glossed: ANOVA, CSL, MEAN, SD",
+    "bare apposition: First, Then"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13193191.xml",
+   "evidence": [
+    "never glossed: AM, BD, BNG, CD, CEFAC, RS"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13193194.xml",
+   "evidence": [
+    "never glossed: ANOVA, CARS, COVID, DSM, IDADI",
+    "bare apposition: ASD, Thus"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13193195.xml",
+   "evidence": [
+    "never glossed: HUOL, ISPOR, UFRN",
+    "bare apposition: First, Then, Thus"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13224954.xml",
+   "evidence": [
+    "never glossed: CAPES, MC"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13224955.xml",
+   "evidence": [
+    "never glossed: CCL11, CCL2, CCL3, CCL4, CCL5, CSF"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13224957.xml",
+   "evidence": [
+    "never glossed: AK, AL, BB, CAPES, COPID, DC",
+    "bare apposition: HbA1c"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13228121.xml",
+   "evidence": [
+    "never glossed: BD, KEHL, S0104, SOUZA, XX",
+    "bare apposition: Brasil"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13264058.xml",
+   "evidence": [
+    "never glossed: ABS, AI, AND, GPT, KEY, OR"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13264162.xml",
+   "evidence": [
+    "never glossed: AP, PREFIS"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13264178.xml",
+   "evidence": [
+    "never glossed: I20, I21, I22, I24, I25, IA"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13266121.xml",
+   "evidence": [
+    "never glossed: IA"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13267754.xml",
+   "evidence": [
+    "never glossed: ARCD, ARLD, DIU, FIGURA, MP, NS"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13267755.xml",
+   "evidence": [
+    "never glossed: AF, AI, AL, AM, BLT, BM"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13267756.xml",
+   "evidence": [
+    "never glossed: AAS, AC, ACCORD, AE, AK, AL"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13267757.xml",
+   "evidence": [
+    "never glossed: D1, D2, D3, D4, PRISMA"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13272499.xml",
+   "evidence": [
+    "never glossed: IA"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13272511.xml",
+   "evidence": [
+    "never glossed: COVID, DE, IBM, IC, OR, PHQ"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13272517.xml",
+   "evidence": [
+    "never glossed: BJGP, BJGPO, BMC, BMJ, COVID, G12"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13276738.xml",
+   "evidence": [
+    "never glossed: INCO, NECPAL"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13284468.xml",
+   "evidence": [
+    "never glossed: ATDOM, COVID, IDIAP, MACA"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13284469.xml",
+   "evidence": [
+    "never glossed: IA"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13285635.xml",
+   "evidence": [
+    "never glossed: ADC, AKT, BRCA, CDK4, CSD, CYP3A"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13288443.xml",
+   "evidence": [
+    "never glossed: ACE",
+    "bare apposition: ROT, Thus"
+   ]
+  },
+  {
+   "document": "phys-PMC13039343.xml",
+   "evidence": [
+    "never glossed: AQA, AQG, AQK, AQU, AQV, D0",
+    "bare apposition: AQU, DS2, DS3"
+   ]
+  },
+  {
+   "document": "phys-PMC13082673.xml",
+   "evidence": [
+    "never glossed: AFOV, CIT, CNN, DL, FOV, FP"
+   ]
+  },
+  {
+   "document": "phys-PMC13099575.xml",
+   "evidence": [
+    "never glossed: AE, CVF, GRU, IEEE, LSTM, LT",
+    "bare apposition: SHRED, Second, Then"
+   ]
+  },
+  {
+   "document": "phys-PMC13113438.xml",
+   "evidence": [
+    "never glossed: AA, ACCESS, AI, APF, GWO, IEEE",
+    "bare apposition: First, Here, MPC, Thus"
+   ]
+  },
+  {
+   "document": "phys-PMC13133660.xml",
+   "evidence": [
+    "never glossed: AF, AG, AIAA, C1, C2, DL",
+    "bare apposition: BMA, Namely, Now, UQ"
+   ]
+  },
+  {
+   "document": "phys-PMC13154412.xml",
+   "evidence": [
+    "never glossed: BD2020, DP, DPA1, DQ, DR, DRB5"
+   ]
+  },
+  {
+   "document": "phys-PMC13158258.xml",
+   "evidence": [
+    "never glossed: BC, CP, FEM, PDE",
+    "bare apposition: BC, CPs, First, Here"
+   ]
+  },
+  {
+   "document": "phys-PMC13171646.xml",
+   "evidence": [
+    "never glossed: A1, ACM, CB, E1, E2, EPJ",
+    "bare apposition: E2"
+   ]
+  },
+  {
+   "document": "phys-PMC13178570.xml",
+   "evidence": [
+    "never glossed: DNA, NC",
+    "bare apposition: Last, Text, Thus"
+   ]
+  },
+  {
+   "document": "phys-PMC13181085.xml",
+   "evidence": [
+    "never glossed: FO",
+    "bare apposition: Thus"
+   ]
+  },
+  {
+   "document": "phys-PMC13193059.xml",
+   "evidence": [
+    "never glossed: ABK, CDF, COV, EJNMMI, HCC, ICRU",
+    "bare apposition: RE"
+   ]
+  },
+  {
+   "document": "phys-PMC13201561.xml",
+   "evidence": [
+    "never glossed: CI, GP, GPU",
+    "bare apposition: First, Glycol, Next, Second"
+   ]
+  },
+  {
+   "document": "phys-PMC13208799.xml",
+   "evidence": [
+    "never glossed: ASTM, AZ31, AZ61, AZ80, AZ81, AZ91"
+   ]
+  },
+  {
+   "document": "phys-PMC13210669.xml",
+   "evidence": [
+    "never glossed: F1, FN, FP, FWC, FWE, OR",
+    "bare apposition: PIAE"
+   ]
+  },
+  {
+   "document": "phys-PMC13221960.xml",
+   "evidence": [
+    "never glossed: CPU, DJ, MP, ORSA, S3A, S3C",
+    "bare apposition: HD, QAOA"
+   ]
+  },
+  {
+   "document": "phys-PMC13222844.xml",
+   "evidence": [
+    "never glossed: AI, ASME, BERT, FIGURE, FNN, IEEE",
+    "bare apposition: PAM, Then"
+   ]
+  },
+  {
+   "document": "phys-PMC13234180.xml",
+   "evidence": [
+    "never glossed: API, ASHRAE, EUI, FC, GAN, GB",
+    "bare apposition: Third"
+   ]
+  },
+  {
+   "document": "phys-PMC13235518.xml",
+   "evidence": [
+    "never glossed: BED, CVXPY, IEEE, MICP, MMC, MOSEK",
+    "bare apposition: Second, Then"
+   ]
+  },
+  {
+   "document": "phys-PMC13246409.xml",
+   "evidence": [
+    "never glossed: ANSYS, ARM101, CDC, CNN, FIGURE, HVAC",
+    "bare apposition: SSIM"
+   ]
+  },
+  {
+   "document": "phys-PMC13252849.xml",
+   "evidence": [
+    "never glossed: AB, AMP, BL, CX, DMS, ESM",
+    "bare apposition: First, HMSO"
+   ]
+  },
+  {
+   "document": "phys-PMC13257740.xml",
+   "evidence": [
+    "never glossed: ES, FSI, GPU, MDPI, S0734",
+    "bare apposition: FEM, SPH"
+   ]
+  },
+  {
+   "document": "phys-PMC13259435.xml",
+   "evidence": [
+    "never glossed: A319, A320, A321, A330, A350, B737",
+    "bare apposition: PGDBF"
+   ]
+  },
+  {
+   "document": "phys-PMC13259474.xml",
+   "evidence": [
+    "never glossed: API, CA, CAD, CPU, GB, GPU",
+    "bare apposition: First, Fourth, Next, Second"
+   ]
+  },
+  {
+   "document": "phys-PMC13261600.xml",
+   "evidence": [
+    "never glossed: ANN, CH, CO, KKT, RMSE, SVM",
+    "bare apposition: First, Second"
+   ]
+  },
+  {
+   "document": "phys-PMC13272752.xml",
+   "evidence": [
+    "never glossed: ADE, AI, ANN, APO, AR, CR",
+    "bare apposition: Lastly, Rather, SiC, Thus"
+   ]
+  },
+  {
+   "document": "phys-PMC13275013.xml",
+   "evidence": [
+    "never glossed: AE, GE, L2, PDE, PDF, PINN",
+    "bare apposition: Thus"
+   ]
+  },
+  {
+   "document": "phys-PMC13276034.xml",
+   "evidence": [
+    "never glossed: HD",
+    "bare apposition: Indeed, LSTM, Thus"
+   ]
+  },
+  {
+   "document": "phys-PMC13282397.xml",
+   "evidence": [
+    "never glossed: IEEE, MAE, NN",
+    "bare apposition: XGB"
+   ]
+  },
+  {
+   "document": "phys-PMC13285896.xml",
+   "evidence": [
+    "never glossed: CT, DWO, EJ, FIGURE, FLASH, JF",
+    "bare apposition: Still"
+   ]
+  },
+  {
+   "document": "phys-PMC13289917.xml",
+   "evidence": [
+    "never glossed: BC, GE, GPU, IC, L1, PDE"
+   ]
+  },
+  {
+   "document": "phys-PMC13296606.xml",
+   "evidence": [
+    "never glossed: CGCRA, GB, GCR, GCRS",
+    "bare apposition: CGCRA, GCRA"
+   ]
+  },
+  {
+   "document": "phys-PMC13297141.xml",
+   "evidence": [
+    "never glossed: A2C, ACCESS, CMA, DQN, GPU, IEEE",
+    "bare apposition: A2C, AI, China, Qk"
+   ]
+  },
+  {
+   "document": "phys-PMC13297618.xml",
+   "evidence": [
+    "never glossed: ACCESS, AL, DMOEA, F1, F10, F11",
+    "bare apposition: Also, BCOA, First"
+   ]
+  },
+  {
+   "document": "phys-PMC13298103.xml",
+   "evidence": [
+    "never glossed: A1, A2, CPU, GB, MDPI, PT",
+    "bare apposition: Indeed"
+   ]
+  },
+  {
+   "document": "retract-PMC12983062.xml",
+   "evidence": [
+    "never glossed: LSDV"
+   ]
+  },
+  {
+   "document": "retract-PMC13083641.xml",
+   "evidence": [
+    "never glossed: AE, ECMO, FIX, LMWH, LVAD, RC",
+    "bare apposition: First, Second"
+   ]
+  },
+  {
+   "document": "retract-PMC13100932.xml",
+   "evidence": [
+    "never glossed: MDPI"
+   ]
+  },
+  {
+   "document": "retract-PMC13184583.xml",
+   "evidence": [
+    "never glossed: IP"
+   ]
+  },
+  {
+   "document": "retract-PMC13257949.xml",
+   "evidence": [
+    "never glossed: CAXII, T47D"
+   ]
+  },
+  {
+   "document": "retract-PMC13257951.xml",
+   "evidence": [
+    "never glossed: DOI, GM4, GM5, GM6, IP"
+   ]
+  },
+  {
+   "document": "retract-PMC13291836.xml",
+   "evidence": [
+    "never glossed: OTT"
+   ]
+  },
+  {
+   "document": "retract-PMC13292106.xml",
+   "evidence": [
+    "never glossed: GST1, GSTP1"
+   ]
+  },
+  {
+   "document": "retract-PMC13298758.xml",
+   "evidence": [
+    "never glossed: D10, D5, D7, D8, GAPDH, GATA4",
+    "bare apposition: S1B"
+   ]
+  },
+  {
+   "document": "retract-PMC13306522.xml",
+   "evidence": [
+    "never glossed: DNA"
+   ]
+  }
+ ]
+}

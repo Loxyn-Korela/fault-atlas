@@ -99,28 +99,89 @@
             "bio-PMC12583535.xml",
             [
               "masse×22",
-              "pourcent×12",
-              "molaire×3"
+              "pourcent×12"
             ]
           ],
           [
             "bio-PMC12590050.xml",
             [
               "pourcent×18",
-              "masse×4",
-              "molaire×3"
+              "masse×4"
             ]
           ],
           [
             "bio-PMC12674831.xml",
             [
               "pourcent×141",
-              "masse×92",
-              "duree×12"
+              "masse×92"
+            ]
+          ],
+          [
+            "bio-PMC12953170.xml",
+            [
+              "pourcent×45",
+              "duree×9"
+            ]
+          ],
+          [
+            "bio-PMC13099299.xml",
+            [
+              "pourcent×44",
+              "masse×5"
+            ]
+          ],
+          [
+            "bio-PMC13116881.xml",
+            [
+              "pourcent×36",
+              "masse×7"
+            ]
+          ],
+          [
+            "bio-PMC13203479.xml",
+            [
+              "pourcent×76",
+              "masse×20"
+            ]
+          ],
+          [
+            "bio-PMC13252842.xml",
+            [
+              "pourcent×8",
+              "duree×3"
+            ]
+          ],
+          [
+            "cas-PMC13290446.xml",
+            [
+              "masse×9",
+              "pourcent×8"
+            ]
+          ],
+          [
+            "cas-PMC13291881.xml",
+            [
+              "masse×15",
+              "molaire×11"
+            ]
+          ],
+          [
+            "cas-PMC13293647.xml",
+            [
+              "masse×28",
+              "pourcent×16"
+            ]
+          ],
+          [
+            "cas-PMC13293792.xml",
+            [
+              "pourcent×46",
+              "masse×23"
             ]
           ]
         ],
-        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files"
+        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files",
+        "carriers_file": "probes/results/line-087.json"
       },
       "matches_excerpt": true
     }

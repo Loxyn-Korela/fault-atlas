@@ -1,0 +1,51 @@
+{
+ "probe": "probes/2026-09/form-184-sentinel-date.sparql",
+ "corpus_id": "corpus-2026-09-eurlex",
+ "date": "2026-09-09",
+ "count": 7,
+ "of": null,
+ "carriers": [
+  {
+   "document": "51966FC0402",
+   "evidence": [
+    "work_date_document = 1003-03-03 · http://publications.europa.eu/resource/cellar/7ec5cf48-1eb6-42a2-95e1-94b0c278003b"
+   ]
+  },
+  {
+   "document": "51984PC0606",
+   "evidence": [
+    "work_date_document = 1003-03-03 · http://publications.europa.eu/resource/cellar/45cd24a2-d3e8-4e2f-aea6-24125ed1b763"
+   ]
+  },
+  {
+   "document": "51988EC1677",
+   "evidence": [
+    "work_date_document = 1003-03-03 · http://publications.europa.eu/resource/cellar/3eec9c70-0f34-4c06-b194-d97ae264bb2c"
+   ]
+  },
+  {
+   "document": "51993EC1858",
+   "evidence": [
+    "work_date_document = 1003-03-03 · http://publications.europa.eu/resource/cellar/18d2d3dc-0cf8-46c0-9526-6da3e4cf5c13"
+   ]
+  },
+  {
+   "document": "51995EC1429",
+   "evidence": [
+    "work_date_document = 1003-03-03 · http://publications.europa.eu/resource/cellar/41459999-dc4f-4534-8d37-5822489a7f42"
+   ]
+  },
+  {
+   "document": "51995EC1591",
+   "evidence": [
+    "work_date_document = 1003-03-03 · http://publications.europa.eu/resource/cellar/f67bbafc-f51f-4245-918a-94340319ca25"
+   ]
+  },
+  {
+   "document": "51997EC0936",
+   "evidence": [
+    "work_date_document = 1003-03-03 · http://publications.europa.eu/resource/cellar/05cf144d-77fa-4062-822e-2f5be443a291"
+   ]
+  }
+ ]
+}

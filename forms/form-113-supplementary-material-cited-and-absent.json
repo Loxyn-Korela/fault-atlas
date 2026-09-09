@@ -92,12 +92,12 @@
             "meta-PMC13271776.xml",
             [
               "Supplementary Fig. S1",
-              "Supplementary Fig. S2",
-              "Supplementary Fig. S3"
+              "Supplementary Fig. S2"
             ]
           ]
         ],
-        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files"
+        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files",
+        "carriers_file": "probes/results/line-113.json"
       },
       "matches_excerpt": true
     }

@@ -1,0 +1,27 @@
+{
+ "probe": "probes/2026-08/line-091.py",
+ "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+ "date": "2026-09-09",
+ "count": 3,
+ "of": 272,
+ "carriers": [
+  {
+   "document": "cas-PMC13293901.xml",
+   "evidence": [
+    "11 repères relatifs / 6 dates absolues : ['At Month 3', 'Prior to admission', 'Since the onset', 'Ten days after']"
+   ]
+  },
+  {
+   "document": "cas-PMC13294281.xml",
+   "evidence": [
+    "12 repères relatifs / 3 dates absolues : ['2 days from', '3 weeks later', 'Four weeks after', 'On day 2']"
+   ]
+  },
+  {
+   "document": "cas-PMC13301386.xml",
+   "evidence": [
+    "16 repères relatifs / 0 dates absolues : ['Nine days after', 'One day later', 'The following day', 'Three days after']"
+   ]
+  }
+ ]
+}

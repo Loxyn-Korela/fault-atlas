@@ -1,0 +1,35 @@
+{
+ "probe": "probes/2026-08/line-077.py",
+ "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+ "date": "2026-09-09",
+ "count": 4,
+ "of": 272,
+ "carriers": [
+  {
+   "document": "cas-PMC13291881.xml",
+   "evidence": [
+    "05/03/2026"
+   ]
+  },
+  {
+   "document": "essai-PMC13254492.xml",
+   "evidence": [
+    "11.7.2011"
+   ]
+  },
+  {
+   "document": "moderne-PMC13264966.xml",
+   "evidence": [
+    "10/3/2023"
+   ]
+  },
+  {
+   "document": "moderne-PMC13274555.xml",
+   "evidence": [
+    "06/06/2022",
+    "07/06/2018",
+    "09/07/2019"
+   ]
+  }
+ ]
+}

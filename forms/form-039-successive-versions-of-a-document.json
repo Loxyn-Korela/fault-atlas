@@ -110,9 +110,66 @@
             [
               "version=3"
             ]
+          ],
+          [
+            "meta-PMC13263136.xml",
+            [
+              "preprint"
+            ]
+          ],
+          [
+            "meta-PMC13286481.xml",
+            [
+              "version=3"
+            ]
+          ],
+          [
+            "phys-PMC13133660.xml",
+            [
+              "final-edited-article"
+            ]
+          ],
+          [
+            "retract-PMC12920011.xml",
+            [
+              "retracted-article"
+            ]
+          ],
+          [
+            "retract-PMC12937552.xml",
+            [
+              "retracted-article"
+            ]
+          ],
+          [
+            "retract-PMC12943135.xml",
+            [
+              "retracted-article",
+              "retraction-forward"
+            ]
+          ],
+          [
+            "retract-PMC12945919.xml",
+            [
+              "retracted-article"
+            ]
+          ],
+          [
+            "retract-PMC12951106.xml",
+            [
+              "retracted-article",
+              "retraction-forward"
+            ]
+          ],
+          [
+            "retract-PMC12983062.xml",
+            [
+              "retracted-article"
+            ]
           ]
         ],
-        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files"
+        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files",
+        "carriers_file": "probes/results/line-039.json"
       },
       "matches_excerpt": true
     }

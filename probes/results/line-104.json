@@ -1,0 +1,159 @@
+{
+ "probe": "probes/2026-08/line-104.py",
+ "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+ "date": "2026-09-09",
+ "count": 25,
+ "of": 272,
+ "carriers": [
+  {
+   "document": "nonEN-PMC13170112.xml",
+   "evidence": [
+    "manque: résumé, mots-clés, titre de section"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13224953.xml",
+   "evidence": [
+    "manque: résumé, mots-clés, titre de section"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13285344.xml",
+   "evidence": [
+    "manque: résumé, mots-clés, titre de section"
+   ]
+  },
+  {
+   "document": "retract-PMC12920011.xml",
+   "evidence": [
+    "manque: résumé, mots-clés, titre de section"
+   ]
+  },
+  {
+   "document": "retract-PMC12937552.xml",
+   "evidence": [
+    "manque: résumé, mots-clés, titre de section"
+   ]
+  },
+  {
+   "document": "retract-PMC12943135.xml",
+   "evidence": [
+    "manque: résumé, mots-clés, titre de section"
+   ]
+  },
+  {
+   "document": "retract-PMC12945919.xml",
+   "evidence": [
+    "manque: résumé, mots-clés, titre de section"
+   ]
+  },
+  {
+   "document": "retract-PMC12983399.xml",
+   "evidence": [
+    "manque: résumé, mots-clés, titre de section"
+   ]
+  },
+  {
+   "document": "retract-PMC12985380.xml",
+   "evidence": [
+    "manque: résumé, mots-clés, titre de section"
+   ]
+  },
+  {
+   "document": "retract-PMC12989678.xml",
+   "evidence": [
+    "manque: résumé, mots-clés, titre de section"
+   ]
+  },
+  {
+   "document": "retract-PMC12990951.xml",
+   "evidence": [
+    "manque: résumé, mots-clés, titre de section"
+   ]
+  },
+  {
+   "document": "retract-PMC13034554.xml",
+   "evidence": [
+    "manque: résumé, mots-clés, titre de section"
+   ]
+  },
+  {
+   "document": "retract-PMC13064942.xml",
+   "evidence": [
+    "manque: résumé, mots-clés, titre de section"
+   ]
+  },
+  {
+   "document": "retract-PMC13184583.xml",
+   "evidence": [
+    "manque: résumé, mots-clés, titre de section"
+   ]
+  },
+  {
+   "document": "retract-PMC13230493.xml",
+   "evidence": [
+    "manque: résumé, mots-clés, titre de section"
+   ]
+  },
+  {
+   "document": "retract-PMC13244562.xml",
+   "evidence": [
+    "manque: résumé, mots-clés, titre de section"
+   ]
+  },
+  {
+   "document": "retract-PMC13257951.xml",
+   "evidence": [
+    "manque: résumé, mots-clés, titre de section"
+   ]
+  },
+  {
+   "document": "retract-PMC13291836.xml",
+   "evidence": [
+    "manque: résumé, mots-clés, titre de section"
+   ]
+  },
+  {
+   "document": "retract-PMC13292036.xml",
+   "evidence": [
+    "manque: résumé, mots-clés, titre de section"
+   ]
+  },
+  {
+   "document": "retract-PMC13292042.xml",
+   "evidence": [
+    "manque: résumé, mots-clés, titre de section"
+   ]
+  },
+  {
+   "document": "retract-PMC13292064.xml",
+   "evidence": [
+    "manque: résumé, mots-clés, titre de section"
+   ]
+  },
+  {
+   "document": "retract-PMC13292606.xml",
+   "evidence": [
+    "manque: résumé, mots-clés, titre de section"
+   ]
+  },
+  {
+   "document": "retract-PMC13294796.xml",
+   "evidence": [
+    "manque: résumé, mots-clés, titre de section"
+   ]
+  },
+  {
+   "document": "retract-PMC13295435.xml",
+   "evidence": [
+    "manque: résumé, mots-clés, titre de section"
+   ]
+  },
+  {
+   "document": "retract-PMC13299186.xml",
+   "evidence": [
+    "manque: résumé, mots-clés, titre de section"
+   ]
+  }
+ ]
+}

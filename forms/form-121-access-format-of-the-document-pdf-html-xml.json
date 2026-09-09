@@ -108,9 +108,64 @@
             [
               "XML JATS intégral (body + sections)"
             ]
+          ],
+          [
+            "bio-PMC12857832.xml",
+            [
+              "XML JATS intégral (body + sections)"
+            ]
+          ],
+          [
+            "bio-PMC12882215.xml",
+            [
+              "XML JATS intégral (body + sections)"
+            ]
+          ],
+          [
+            "bio-PMC12909487.xml",
+            [
+              "XML JATS intégral (body + sections)"
+            ]
+          ],
+          [
+            "bio-PMC12915353.xml",
+            [
+              "XML JATS intégral (body + sections)"
+            ]
+          ],
+          [
+            "bio-PMC12927065.xml",
+            [
+              "XML JATS intégral (body + sections)"
+            ]
+          ],
+          [
+            "bio-PMC12927975.xml",
+            [
+              "XML JATS intégral (body + sections)"
+            ]
+          ],
+          [
+            "bio-PMC12953170.xml",
+            [
+              "XML JATS intégral (body + sections)"
+            ]
+          ],
+          [
+            "bio-PMC12959687.xml",
+            [
+              "XML JATS intégral (body + sections)"
+            ]
+          ],
+          [
+            "bio-PMC13057049.xml",
+            [
+              "XML JATS intégral (body + sections)"
+            ]
           ]
         ],
-        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files"
+        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files",
+        "carriers_file": "probes/results/line-121.json"
       },
       "matches_excerpt": true
     }

@@ -1,0 +1,1484 @@
+{
+ "probe": "probes/2026-08/line-114.py",
+ "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+ "date": "2026-09-09",
+ "count": 190,
+ "of": 272,
+ "carriers": [
+  {
+   "document": "bio-PMC12583535.xml",
+   "evidence": [
+    "Author contributions",
+    "Competing interests",
+    "Data availability"
+   ]
+  },
+  {
+   "document": "bio-PMC12590050.xml",
+   "evidence": [
+    "Author Contributions"
+   ]
+  },
+  {
+   "document": "bio-PMC12857832.xml",
+   "evidence": [
+    "Author contributions",
+    "Conflicts of interest",
+    "Data availability"
+   ]
+  },
+  {
+   "document": "bio-PMC12882215.xml",
+   "evidence": [
+    "Authors’ contributions",
+    "Competing interests",
+    "Data availability"
+   ]
+  },
+  {
+   "document": "bio-PMC12909487.xml",
+   "evidence": [
+    "Author contributions",
+    "Conceptualization",
+    "Conflict of interest",
+    "Data availability statement"
+   ]
+  },
+  {
+   "document": "bio-PMC12927065.xml",
+   "evidence": [
+    "CRediT authorship contribution statement",
+    "Conflicts of interest",
+    "Data Availability Statement",
+    "Data availability"
+   ]
+  },
+  {
+   "document": "bio-PMC12927975.xml",
+   "evidence": [
+    "Author Contributions",
+    "Conflicts of Interest",
+    "Data Availability Statement"
+   ]
+  },
+  {
+   "document": "bio-PMC12953170.xml",
+   "evidence": [
+    "Author Contributions",
+    "Conflict of Interest",
+    "Data Availability Statement"
+   ]
+  },
+  {
+   "document": "bio-PMC12959687.xml",
+   "evidence": [
+    "Data Availability",
+    "Data Availability Statement"
+   ]
+  },
+  {
+   "document": "bio-PMC13057049.xml",
+   "evidence": [
+    "Authors’ Contributions",
+    "Competing Interests",
+    "Data Availability",
+    "Data Availability Statement"
+   ]
+  },
+  {
+   "document": "bio-PMC13088504.xml",
+   "evidence": [
+    "Authors’ contributions",
+    "Competing interests",
+    "Data Availability Statement",
+    "Data availability"
+   ]
+  },
+  {
+   "document": "bio-PMC13097615.xml",
+   "evidence": [
+    "Author Contributions",
+    "Conflicts of Interest",
+    "Data Availability Statement"
+   ]
+  },
+  {
+   "document": "bio-PMC13099299.xml",
+   "evidence": [
+    "Author contributions",
+    "Conflict of interest",
+    "Data Availability Statement",
+    "Data availability statement"
+   ]
+  },
+  {
+   "document": "bio-PMC13103274.xml",
+   "evidence": [
+    "Author Contributions",
+    "Conflicts of Interest",
+    "Data Availability Statement"
+   ]
+  },
+  {
+   "document": "bio-PMC13116881.xml",
+   "evidence": [
+    "Author Contributions",
+    "Conflicts of Interest",
+    "Data Availability Statement"
+   ]
+  },
+  {
+   "document": "bio-PMC13155703.xml",
+   "evidence": [
+    "Author Contributions",
+    "COI-statement"
+   ]
+  },
+  {
+   "document": "bio-PMC13162546.xml",
+   "evidence": [
+    "Conceptualization",
+    "Data availability statement",
+    "Data curation",
+    "Formal analysis"
+   ]
+  },
+  {
+   "document": "bio-PMC13170838.xml",
+   "evidence": [
+    "Data Availability",
+    "Data Availability Statement"
+   ]
+  },
+  {
+   "document": "bio-PMC13181205.xml",
+   "evidence": [
+    "Author Contributions",
+    "Conflicts of Interest",
+    "Data Availability Statement"
+   ]
+  },
+  {
+   "document": "bio-PMC13182387.xml",
+   "evidence": [
+    "Data Availability Statement",
+    "Data availability statement"
+   ]
+  },
+  {
+   "document": "bio-PMC13190511.xml",
+   "evidence": [
+    "Author contributions",
+    "Conflict of interest",
+    "Data Availability Statement",
+    "Data availability statement"
+   ]
+  },
+  {
+   "document": "bio-PMC13203479.xml",
+   "evidence": [
+    "Author Contributions",
+    "Conflicts of Interest",
+    "Data Availability Statement"
+   ]
+  },
+  {
+   "document": "bio-PMC13207820.xml",
+   "evidence": [
+    "Author Contributions",
+    "Conceptualization",
+    "Conflicts of Interest",
+    "Data Availability Statement"
+   ]
+  },
+  {
+   "document": "bio-PMC13216383.xml",
+   "evidence": [
+    "Author Contributions",
+    "Competing Interests",
+    "Data Availability"
+   ]
+  },
+  {
+   "document": "bio-PMC13218538.xml",
+   "evidence": [
+    "Data Availability",
+    "Data Availability Statement"
+   ]
+  },
+  {
+   "document": "bio-PMC13231534.xml",
+   "evidence": [
+    "Authors’ contributions",
+    "Competing interests",
+    "Data Availability Statement",
+    "Data availability"
+   ]
+  },
+  {
+   "document": "bio-PMC13236932.xml",
+   "evidence": [
+    "Author contributions",
+    "Conflict of interest",
+    "Data curation",
+    "Formal analysis"
+   ]
+  },
+  {
+   "document": "bio-PMC13251069.xml",
+   "evidence": [
+    "Authors’ contributions",
+    "Competing interests",
+    "Data availability"
+   ]
+  },
+  {
+   "document": "bio-PMC13252842.xml",
+   "evidence": [
+    "Data Availability",
+    "Data Availability Statement"
+   ]
+  },
+  {
+   "document": "bio-PMC13274935.xml",
+   "evidence": [
+    "Data Availability",
+    "Data Availability Statement"
+   ]
+  },
+  {
+   "document": "cas-PMC13290446.xml",
+   "evidence": [
+    "Author contributions",
+    "Conceptualization",
+    "Conflict of interest",
+    "Data availability statement"
+   ]
+  },
+  {
+   "document": "cas-PMC13291543.xml",
+   "evidence": [
+    "Author contributions",
+    "Conflict of interest",
+    "Data Availability Statement",
+    "Data availability statement"
+   ]
+  },
+  {
+   "document": "cas-PMC13291881.xml",
+   "evidence": [
+    "Author Contributions",
+    "COI-statement"
+   ]
+  },
+  {
+   "document": "cas-PMC13293644.xml",
+   "evidence": [
+    "Author Contributions"
+   ]
+  },
+  {
+   "document": "cas-PMC13293645.xml",
+   "evidence": [
+    "Author Contributions",
+    "COI-statement"
+   ]
+  },
+  {
+   "document": "cas-PMC13293647.xml",
+   "evidence": [
+    "Author Contributions"
+   ]
+  },
+  {
+   "document": "cas-PMC13293792.xml",
+   "evidence": [
+    "Author contributions",
+    "Conceptualization",
+    "Conflict of interest",
+    "Data availability statement"
+   ]
+  },
+  {
+   "document": "cas-PMC13293799.xml",
+   "evidence": [
+    "Author contributions",
+    "Conflict of interest",
+    "Data Availability Statement",
+    "Data availability statement"
+   ]
+  },
+  {
+   "document": "cas-PMC13293813.xml",
+   "evidence": [
+    "Author contributions",
+    "Conceptualization",
+    "Conflict of interest",
+    "Data availability statement"
+   ]
+  },
+  {
+   "document": "cas-PMC13293827.xml",
+   "evidence": [
+    "Author contributions",
+    "Conceptualization",
+    "Conflict of interest",
+    "Data availability statement"
+   ]
+  },
+  {
+   "document": "cas-PMC13293834.xml",
+   "evidence": [
+    "Author contributions",
+    "Conceptualization",
+    "Conflict of interest",
+    "Data availability statement"
+   ]
+  },
+  {
+   "document": "cas-PMC13293841.xml",
+   "evidence": [
+    "Author contributions",
+    "Conceptualization",
+    "Conflict of interest",
+    "Data availability statement"
+   ]
+  },
+  {
+   "document": "cas-PMC13293897.xml",
+   "evidence": [
+    "Author contributions",
+    "Conceptualization",
+    "Conflict of interest",
+    "Data availability statement"
+   ]
+  },
+  {
+   "document": "cas-PMC13293901.xml",
+   "evidence": [
+    "Author contributions",
+    "Conceptualization",
+    "Conflict of interest",
+    "Data availability statement"
+   ]
+  },
+  {
+   "document": "cas-PMC13293995.xml",
+   "evidence": [
+    "Author contributions",
+    "Conflict of interest",
+    "Data Availability Statement",
+    "Data availability statement"
+   ]
+  },
+  {
+   "document": "cas-PMC13294038.xml",
+   "evidence": [
+    "Author contributions",
+    "Conflict of interest",
+    "Data Availability Statement",
+    "Data availability statement"
+   ]
+  },
+  {
+   "document": "cas-PMC13294089.xml",
+   "evidence": [
+    "Author contributions",
+    "Conflict of interest",
+    "Data Availability Statement",
+    "Data availability statement"
+   ]
+  },
+  {
+   "document": "cas-PMC13294096.xml",
+   "evidence": [
+    "Author contributions",
+    "Conflict of interest",
+    "Data availability statement",
+    "Funding acquisition"
+   ]
+  },
+  {
+   "document": "cas-PMC13294155.xml",
+   "evidence": [
+    "Author contributions",
+    "Conceptualization",
+    "Conflict of interest",
+    "Data availability statement"
+   ]
+  },
+  {
+   "document": "cas-PMC13294182.xml",
+   "evidence": [
+    "Author contributions",
+    "Conceptualization",
+    "Conflict of interest",
+    "Data availability statement"
+   ]
+  },
+  {
+   "document": "cas-PMC13294240.xml",
+   "evidence": [
+    "Author contributions",
+    "Conflict of interest",
+    "Data Availability Statement",
+    "Data availability statement"
+   ]
+  },
+  {
+   "document": "cas-PMC13294281.xml",
+   "evidence": [
+    "Author contributions",
+    "Conceptualization",
+    "Conflict of interest",
+    "Data availability statement"
+   ]
+  },
+  {
+   "document": "cas-PMC13294340.xml",
+   "evidence": [
+    "Author contributions",
+    "Conflict of interest",
+    "Data Availability Statement",
+    "Data availability statement"
+   ]
+  },
+  {
+   "document": "cas-PMC13294475.xml",
+   "evidence": [
+    "Author contributions",
+    "Conflict of interest",
+    "Data Availability Statement",
+    "Data availability statement"
+   ]
+  },
+  {
+   "document": "cas-PMC13294481.xml",
+   "evidence": [
+    "Author Contributions",
+    "COI-statement"
+   ]
+  },
+  {
+   "document": "cas-PMC13294629.xml",
+   "evidence": [
+    "Author Contributions"
+   ]
+  },
+  {
+   "document": "cas-PMC13294642.xml",
+   "evidence": [
+    "Author Contributions"
+   ]
+  },
+  {
+   "document": "cas-PMC13294698.xml",
+   "evidence": [
+    "Author contributions",
+    "Conflict of interest",
+    "Data Availability Statement",
+    "Data availability statement"
+   ]
+  },
+  {
+   "document": "cas-PMC13294702.xml",
+   "evidence": [
+    "Author Contributions",
+    "COI-statement"
+   ]
+  },
+  {
+   "document": "cas-PMC13294704.xml",
+   "evidence": [
+    "Author Contributions"
+   ]
+  },
+  {
+   "document": "cas-PMC13294705.xml",
+   "evidence": [
+    "Author Contributions",
+    "COI-statement"
+   ]
+  },
+  {
+   "document": "cas-PMC13300565.xml",
+   "evidence": [
+    "Author Contributions",
+    "COI-statement"
+   ]
+  },
+  {
+   "document": "cas-PMC13300836.xml",
+   "evidence": [
+    "Author Contributions",
+    "COI-statement"
+   ]
+  },
+  {
+   "document": "cas-PMC13301386.xml",
+   "evidence": [
+    "Author Contributions",
+    "COI-statement"
+   ]
+  },
+  {
+   "document": "essai-PMC13169227.xml",
+   "evidence": [
+    "Author Contributions",
+    "Conflicts of Interest",
+    "Data Availability Statement"
+   ]
+  },
+  {
+   "document": "essai-PMC13169472.xml",
+   "evidence": [
+    "Conflicts of Interest",
+    "Data Availability Statement"
+   ]
+  },
+  {
+   "document": "essai-PMC13179527.xml",
+   "evidence": [
+    "Author Contributions",
+    "Conflicts of Interest",
+    "Data Availability Statement"
+   ]
+  },
+  {
+   "document": "essai-PMC13205709.xml",
+   "evidence": [
+    "Author Contributions",
+    "Conflicts of Interest",
+    "Data Availability Statement"
+   ]
+  },
+  {
+   "document": "essai-PMC13205731.xml",
+   "evidence": [
+    "Author Contributions",
+    "Conflicts of Interest",
+    "Data Availability Statement"
+   ]
+  },
+  {
+   "document": "essai-PMC13205876.xml",
+   "evidence": [
+    "Author Contributions",
+    "Conflicts of Interest",
+    "Data Availability Statement"
+   ]
+  },
+  {
+   "document": "essai-PMC13215628.xml",
+   "evidence": [
+    "COI-statement",
+    "financial-disclosure"
+   ]
+  },
+  {
+   "document": "essai-PMC13238360.xml",
+   "evidence": [
+    "Author Contributions",
+    "Conflicts of Interest",
+    "Data Availability Statement"
+   ]
+  },
+  {
+   "document": "essai-PMC13239719.xml",
+   "evidence": [
+    "Author Contributions",
+    "Conflicts of Interest",
+    "Data Availability Statement"
+   ]
+  },
+  {
+   "document": "essai-PMC13242068.xml",
+   "evidence": [
+    "Conflicts of Interest",
+    "Data Availability Statement"
+   ]
+  },
+  {
+   "document": "essai-PMC13242351.xml",
+   "evidence": [
+    "Author Contributions",
+    "Conflicts of Interest",
+    "Data Availability Statement"
+   ]
+  },
+  {
+   "document": "essai-PMC13254492.xml",
+   "evidence": [
+    "Conflicts of Interest",
+    "Data Availability Statement"
+   ]
+  },
+  {
+   "document": "essai-PMC13263161.xml",
+   "evidence": [
+    "Conflicts of Interest",
+    "Data Availability Statement"
+   ]
+  },
+  {
+   "document": "essai-PMC13264282.xml",
+   "evidence": [
+    "Author Contributions",
+    "Conflicts of Interest"
+   ]
+  },
+  {
+   "document": "essai-PMC13271868.xml",
+   "evidence": [
+    "Author Contributions",
+    "Conflicts of Interest",
+    "Data Availability Statement"
+   ]
+  },
+  {
+   "document": "essai-PMC13276020.xml",
+   "evidence": [
+    "Author Contributions",
+    "Conflicts of Interest"
+   ]
+  },
+  {
+   "document": "essai-PMC13280184.xml",
+   "evidence": [
+    "Conflicts of Interest",
+    "Data Availability Statement"
+   ]
+  },
+  {
+   "document": "essai-PMC13280799.xml",
+   "evidence": [
+    "Author Contributions",
+    "Conflicts of Interest",
+    "Data Availability Statement"
+   ]
+  },
+  {
+   "document": "essai-PMC13281132.xml",
+   "evidence": [
+    "Author Contributions",
+    "Conflicts of Interest",
+    "Data Availability Statement"
+   ]
+  },
+  {
+   "document": "essai-PMC13282136.xml",
+   "evidence": [
+    "Author Contributions",
+    "Conflicts of Interest",
+    "Data Availability Statement"
+   ]
+  },
+  {
+   "document": "essai-PMC13284529.xml",
+   "evidence": [
+    "Author Contributions",
+    "Conflicts of Interest",
+    "Data Availability Statement"
+   ]
+  },
+  {
+   "document": "essai-PMC13290998.xml",
+   "evidence": [
+    "Author contribution",
+    "Competing interests",
+    "Data availability"
+   ]
+  },
+  {
+   "document": "essai-PMC13291766.xml",
+   "evidence": [
+    "AUTHOR CONTRIBUTIONS",
+    "DATA AVAILABILITY STATEMENT"
+   ]
+  },
+  {
+   "document": "essai-PMC13291922.xml",
+   "evidence": [
+    "Author Contributions",
+    "Conflicts of Interest",
+    "Data Availability Statement"
+   ]
+  },
+  {
+   "document": "essai-PMC13293440.xml",
+   "evidence": [
+    "COI-statement",
+    "Data Availability"
+   ]
+  },
+  {
+   "document": "essai-PMC13294169.xml",
+   "evidence": [
+    "Author contribution",
+    "Conflict of interest",
+    "Data Availability Statement",
+    "Data availability"
+   ]
+  },
+  {
+   "document": "essai-PMC13296589.xml",
+   "evidence": [
+    "Conflicts of Interest",
+    "Data Availability Statement"
+   ]
+  },
+  {
+   "document": "essai-PMC7619126.xml",
+   "evidence": [
+    "Authors contributions",
+    "Competing interests",
+    "Data Availability Statement",
+    "Data availability"
+   ]
+  },
+  {
+   "document": "meta-PMC13071177.xml",
+   "evidence": [
+    "Author Contributions",
+    "Conflicts of Interest",
+    "Data Availability Statement"
+   ]
+  },
+  {
+   "document": "meta-PMC13157766.xml",
+   "evidence": [
+    "Data Availability Statement",
+    "Data availability statement"
+   ]
+  },
+  {
+   "document": "meta-PMC13179150.xml",
+   "evidence": [
+    "DATA AVAILABILITY STATEMENT",
+    "Data Availability Statement"
+   ]
+  },
+  {
+   "document": "meta-PMC13221319.xml",
+   "evidence": [
+    "Author contributions",
+    "Competing interests",
+    "Data Availability Statement",
+    "Data availability"
+   ]
+  },
+  {
+   "document": "meta-PMC13225629.xml",
+   "evidence": [
+    "COI-statement",
+    "Data Availability"
+   ]
+  },
+  {
+   "document": "meta-PMC13226718.xml",
+   "evidence": [
+    "Author contributions",
+    "Competing interests",
+    "Data Availability Statement",
+    "Data availability"
+   ]
+  },
+  {
+   "document": "meta-PMC13229315.xml",
+   "evidence": [
+    "Data Availability",
+    "Data Availability Statement"
+   ]
+  },
+  {
+   "document": "meta-PMC13231626.xml",
+   "evidence": [
+    "Authors’ contributions",
+    "Competing interests",
+    "Data availability"
+   ]
+  },
+  {
+   "document": "meta-PMC13240427.xml",
+   "evidence": [
+    "Author Contributions",
+    "Conflicts of Interest",
+    "Data Availability Statement"
+   ]
+  },
+  {
+   "document": "meta-PMC13241412.xml",
+   "evidence": [
+    "Author Contributions",
+    "Competing interests",
+    "Data Availability"
+   ]
+  },
+  {
+   "document": "meta-PMC13246130.xml",
+   "evidence": [
+    "Author contributions",
+    "COI-statement"
+   ]
+  },
+  {
+   "document": "meta-PMC13250259.xml",
+   "evidence": [
+    "Author Contributions",
+    "Conflicts of Interest",
+    "Data Availability Statement"
+   ]
+  },
+  {
+   "document": "meta-PMC13253268.xml",
+   "evidence": [
+    "Author contributions",
+    "Conflict of interest",
+    "Data Availability Statement",
+    "Data availability statement"
+   ]
+  },
+  {
+   "document": "meta-PMC13254819.xml",
+   "evidence": [
+    "AUTHOR CONTRIBUTIONS"
+   ]
+  },
+  {
+   "document": "meta-PMC13256077.xml",
+   "evidence": [
+    "COI-statement",
+    "Data availability"
+   ]
+  },
+  {
+   "document": "meta-PMC13260247.xml",
+   "evidence": [
+    "Author contributions",
+    "Conceptualization",
+    "Conflict of interest",
+    "Data availability statement"
+   ]
+  },
+  {
+   "document": "meta-PMC13263136.xml",
+   "evidence": [
+    "Author contributions",
+    "Competing interests",
+    "Data Availability Statement",
+    "Data availability"
+   ]
+  },
+  {
+   "document": "meta-PMC13264275.xml",
+   "evidence": [
+    "Author Contributions",
+    "Competing Interests",
+    "Data Availability",
+    "Data Availability Statement"
+   ]
+  },
+  {
+   "document": "meta-PMC13264436.xml",
+   "evidence": [
+    "Author contributions",
+    "Conflicts of interest",
+    "Data Availability Statement",
+    "Data availability"
+   ]
+  },
+  {
+   "document": "meta-PMC13265330.xml",
+   "evidence": [
+    "Author contributions",
+    "Conflict of interest",
+    "Data availability statement",
+    "Data curation"
+   ]
+  },
+  {
+   "document": "meta-PMC13268477.xml",
+   "evidence": [
+    "Author contributions"
+   ]
+  },
+  {
+   "document": "meta-PMC13268693.xml",
+   "evidence": [
+    "Data Availability"
+   ]
+  },
+  {
+   "document": "meta-PMC13269816.xml",
+   "evidence": [
+    "COI-statement",
+    "con"
+   ]
+  },
+  {
+   "document": "meta-PMC13271776.xml",
+   "evidence": [
+    "Data availability"
+   ]
+  },
+  {
+   "document": "meta-PMC13280693.xml",
+   "evidence": [
+    "Competing interests"
+   ]
+  },
+  {
+   "document": "meta-PMC13286426.xml",
+   "evidence": [
+    "Author contributions"
+   ]
+  },
+  {
+   "document": "meta-PMC13286481.xml",
+   "evidence": [
+    "Author contributions"
+   ]
+  },
+  {
+   "document": "meta-PMC13287023.xml",
+   "evidence": [
+    "Author contributions",
+    "Conflict of interest",
+    "Data Availability Statement",
+    "Data availability statement"
+   ]
+  },
+  {
+   "document": "meta-PMC13287149.xml",
+   "evidence": [
+    "Author contributions",
+    "Conflict of interests",
+    "Data Availability Statement"
+   ]
+  },
+  {
+   "document": "meta-PMC13287277.xml",
+   "evidence": [
+    "Author contributions",
+    "Conflict of interest",
+    "Data availability"
+   ]
+  },
+  {
+   "document": "meta-PMC13288533.xml",
+   "evidence": [
+    "Data Availability Statement",
+    "Data availability"
+   ]
+  },
+  {
+   "document": "meta-PMC13292320.xml",
+   "evidence": [
+    "Author contributions",
+    "Competing interests",
+    "Data Availability Statement",
+    "Data availability"
+   ]
+  },
+  {
+   "document": "meta-PMC13297335.xml",
+   "evidence": [
+    "Author Contributions",
+    "Conceptualization",
+    "Conflicts of Interest",
+    "Data Availability Statement"
+   ]
+  },
+  {
+   "document": "meta-PMC13305250.xml",
+   "evidence": [
+    "COI-statement",
+    "con",
+    "financial-disclosure"
+   ]
+  },
+  {
+   "document": "moderne-PMC12900525.xml",
+   "evidence": [
+    "Authors' contributions",
+    "Conflict of interest"
+   ]
+  },
+  {
+   "document": "moderne-PMC13254229.xml",
+   "evidence": [
+    "AUTHOR CONTRIBUTIONS",
+    "DATA AVAILABILITY STATEMENT",
+    "Data Availability Statement"
+   ]
+  },
+  {
+   "document": "moderne-PMC13262411.xml",
+   "evidence": [
+    "Author contributions",
+    "Conflicts of interest",
+    "Data Availability Statement",
+    "Data availability"
+   ]
+  },
+  {
+   "document": "moderne-PMC13264966.xml",
+   "evidence": [
+    "Author Contributions",
+    "Data Availability Statement"
+   ]
+  },
+  {
+   "document": "moderne-PMC13264967.xml",
+   "evidence": [
+    "Author Contributions",
+    "Data Availability Statement",
+    "Declaration of Interests"
+   ]
+  },
+  {
+   "document": "moderne-PMC13267778.xml",
+   "evidence": [
+    "Conflicts of interest",
+    "Data Availability Statement",
+    "Data availability"
+   ]
+  },
+  {
+   "document": "moderne-PMC13274555.xml",
+   "evidence": [
+    "Author Contributions",
+    "Data Availability Statement"
+   ]
+  },
+  {
+   "document": "moderne-PMC13282716.xml",
+   "evidence": [
+    "Author Contributions",
+    "Conflicts of Interest",
+    "Data Availability Statement"
+   ]
+  },
+  {
+   "document": "moderne-PMC13282721.xml",
+   "evidence": [
+    "Conflicts of Interest",
+    "Data Availability Statement"
+   ]
+  },
+  {
+   "document": "moderne-PMC13288728.xml",
+   "evidence": [
+    "Author contributions",
+    "Conflicts of interest",
+    "Data availability"
+   ]
+  },
+  {
+   "document": "moderne-PMC13291764.xml",
+   "evidence": [
+    "Author Contributions",
+    "Conflicts of Interest",
+    "Data Availability Statement"
+   ]
+  },
+  {
+   "document": "moderne-PMC13292010.xml",
+   "evidence": [
+    "Author Contributions",
+    "Data Availability Statement"
+   ]
+  },
+  {
+   "document": "moderne-PMC13292400.xml",
+   "evidence": [
+    "Author Contributions",
+    "Conflicts of Interest",
+    "Data Availability Statement"
+   ]
+  },
+  {
+   "document": "moderne-PMC13296834.xml",
+   "evidence": [
+    "Conflicts of Interest",
+    "Data Availability Statement"
+   ]
+  },
+  {
+   "document": "moderne-PMC13296839.xml",
+   "evidence": [
+    "Author Contributions",
+    "Conflicts of Interest",
+    "Data Availability Statement"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13128206.xml",
+   "evidence": [
+    "Data Availability Statement"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13128213.xml",
+   "evidence": [
+    "Data Availability Statement"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13128216.xml",
+   "evidence": [
+    "COI-statement"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13148856.xml",
+   "evidence": [
+    "Data Availability Statement",
+    "financial-disclosure"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13155791.xml",
+   "evidence": [
+    "Data Availability Statement"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13185730.xml",
+   "evidence": [
+    "Data Availability Statement"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13193189.xml",
+   "evidence": [
+    "COI-statement"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13193190.xml",
+   "evidence": [
+    "COI-statement",
+    "financial-disclosure"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13193194.xml",
+   "evidence": [
+    "COI-statement",
+    "financial-disclosure"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13193195.xml",
+   "evidence": [
+    "COI-statement",
+    "financial-disclosure"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13224957.xml",
+   "evidence": [
+    "Data Availability Statement"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13228121.xml",
+   "evidence": [
+    "Data Availability Statement"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13267754.xml",
+   "evidence": [
+    "COI-statement",
+    "con"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13267755.xml",
+   "evidence": [
+    "Data Availability Statement"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13267756.xml",
+   "evidence": [
+    "Data Availability Statement"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13267757.xml",
+   "evidence": [
+    "COI-statement",
+    "con"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13288443.xml",
+   "evidence": [
+    "COI-statement",
+    "financial-disclosure"
+   ]
+  },
+  {
+   "document": "phys-PMC13039343.xml",
+   "evidence": [
+    "Author contributions",
+    "Competing interests",
+    "Data Availability Statement",
+    "Data availability"
+   ]
+  },
+  {
+   "document": "phys-PMC13099575.xml",
+   "evidence": [
+    "Author contributions",
+    "Competing interests",
+    "Data Availability Statement"
+   ]
+  },
+  {
+   "document": "phys-PMC13113438.xml",
+   "evidence": [
+    "Author Contributions",
+    "Conflicts of Interest",
+    "Data Availability Statement"
+   ]
+  },
+  {
+   "document": "phys-PMC13133660.xml",
+   "evidence": [
+    "CRediT authorship contribution statement",
+    "Data Availability Statement",
+    "Data availability",
+    "Declaration of competing interest"
+   ]
+  },
+  {
+   "document": "phys-PMC13154412.xml",
+   "evidence": [
+    "Conflicts of interest",
+    "Data Availability Statement",
+    "Data availability"
+   ]
+  },
+  {
+   "document": "phys-PMC13158258.xml",
+   "evidence": [
+    "Author contributions",
+    "Conflicts of Interest",
+    "Data availability"
+   ]
+  },
+  {
+   "document": "phys-PMC13171646.xml",
+   "evidence": [
+    "Author contributions",
+    "Competing interests",
+    "Data Availability Statement",
+    "Data availability"
+   ]
+  },
+  {
+   "document": "phys-PMC13178570.xml",
+   "evidence": [
+    "Conceptualization",
+    "Data curation",
+    "Formal analysis",
+    "Funding acquisition"
+   ]
+  },
+  {
+   "document": "phys-PMC13181085.xml",
+   "evidence": [
+    "Author contributions",
+    "Competing interests",
+    "Data Availability Statement",
+    "Data availability"
+   ]
+  },
+  {
+   "document": "phys-PMC13193059.xml",
+   "evidence": [
+    "Data Availability Statement",
+    "Data availability statement"
+   ]
+  },
+  {
+   "document": "phys-PMC13201561.xml",
+   "evidence": [
+    "Author contributions",
+    "Competing interests",
+    "Data availability"
+   ]
+  },
+  {
+   "document": "phys-PMC13208799.xml",
+   "evidence": [
+    "Author Contributions",
+    "Conflicts of Interest",
+    "Data Availability Statement"
+   ]
+  },
+  {
+   "document": "phys-PMC13210669.xml",
+   "evidence": [
+    "Author Contributions",
+    "Conceptualization",
+    "Conflicts of Interest",
+    "Data Availability Statement"
+   ]
+  },
+  {
+   "document": "phys-PMC13221960.xml",
+   "evidence": [
+    "AUTHOR CONTRIBUTIONS"
+   ]
+  },
+  {
+   "document": "phys-PMC13222844.xml",
+   "evidence": [
+    "Author contributions",
+    "Conflict of interest",
+    "Data Availability Statement",
+    "Data availability statement"
+   ]
+  },
+  {
+   "document": "phys-PMC13234180.xml",
+   "evidence": [
+    "Author contributions",
+    "Competing interests",
+    "Data availability"
+   ]
+  },
+  {
+   "document": "phys-PMC13235518.xml",
+   "evidence": [
+    "CRediT authorship contribution statement",
+    "Declaration of competing interest"
+   ]
+  },
+  {
+   "document": "phys-PMC13246409.xml",
+   "evidence": [
+    "Author contributions",
+    "Conceptualization",
+    "Conflict of interest",
+    "Data availability statement"
+   ]
+  },
+  {
+   "document": "phys-PMC13252849.xml",
+   "evidence": [
+    "Data Availability",
+    "Data Availability Statement"
+   ]
+  },
+  {
+   "document": "phys-PMC13257740.xml",
+   "evidence": [
+    "Author Contributions",
+    "Conflicts of Interest",
+    "Data Availability Statement"
+   ]
+  },
+  {
+   "document": "phys-PMC13259435.xml",
+   "evidence": [
+    "Author Contributions",
+    "Conflicts of Interest",
+    "Data Availability Statement"
+   ]
+  },
+  {
+   "document": "phys-PMC13259474.xml",
+   "evidence": [
+    "Author Contributions",
+    "Conflicts of Interest",
+    "Data Availability Statement"
+   ]
+  },
+  {
+   "document": "phys-PMC13272752.xml",
+   "evidence": [
+    "Author contributions",
+    "Competing interests",
+    "Data availability"
+   ]
+  },
+  {
+   "document": "phys-PMC13275013.xml",
+   "evidence": [
+    "Author Contributions",
+    "Competing Interest",
+    "Data Availability",
+    "Data Availability Statement"
+   ]
+  },
+  {
+   "document": "phys-PMC13276034.xml",
+   "evidence": [
+    "Author contributions",
+    "Competing interests",
+    "Data availability"
+   ]
+  },
+  {
+   "document": "phys-PMC13282397.xml",
+   "evidence": [
+    "Author contributions",
+    "Competing interests",
+    "Data Availability Statement",
+    "Data availability"
+   ]
+  },
+  {
+   "document": "phys-PMC13289917.xml",
+   "evidence": [
+    "Data Availability",
+    "Data Availability Statement"
+   ]
+  },
+  {
+   "document": "phys-PMC13296606.xml",
+   "evidence": [
+    "Author Contributions",
+    "Conceptualization",
+    "Conflicts of Interest",
+    "Data Availability Statement"
+   ]
+  },
+  {
+   "document": "phys-PMC13297141.xml",
+   "evidence": [
+    "Author Contributions",
+    "Conflicts of Interest",
+    "Data Availability Statement"
+   ]
+  },
+  {
+   "document": "phys-PMC13297618.xml",
+   "evidence": [
+    "Author Contributions",
+    "Conflicts of Interest",
+    "Data Availability Statement"
+   ]
+  },
+  {
+   "document": "phys-PMC13298103.xml",
+   "evidence": [
+    "Author Contributions",
+    "Conflicts of Interest",
+    "Data Availability Statement"
+   ]
+  },
+  {
+   "document": "retract-PMC12983399.xml",
+   "evidence": [
+    "Writing – original draft"
+   ]
+  }
+ ]
+}

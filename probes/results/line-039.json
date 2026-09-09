@@ -1,0 +1,253 @@
+{
+ "probe": "probes/2026-08/line-039.py",
+ "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+ "date": "2026-09-09",
+ "count": 39,
+ "of": 272,
+ "carriers": [
+  {
+   "document": "bio-PMC13162546.xml",
+   "evidence": [
+    "version=Version of Record"
+   ]
+  },
+  {
+   "document": "essai-PMC7619126.xml",
+   "evidence": [
+    "final-edited-article"
+   ]
+  },
+  {
+   "document": "meta-PMC13246130.xml",
+   "evidence": [
+    "version=3"
+   ]
+  },
+  {
+   "document": "meta-PMC13263136.xml",
+   "evidence": [
+    "preprint"
+   ]
+  },
+  {
+   "document": "meta-PMC13286481.xml",
+   "evidence": [
+    "version=3"
+   ]
+  },
+  {
+   "document": "phys-PMC13133660.xml",
+   "evidence": [
+    "final-edited-article"
+   ]
+  },
+  {
+   "document": "retract-PMC12920011.xml",
+   "evidence": [
+    "retracted-article"
+   ]
+  },
+  {
+   "document": "retract-PMC12937552.xml",
+   "evidence": [
+    "retracted-article"
+   ]
+  },
+  {
+   "document": "retract-PMC12943135.xml",
+   "evidence": [
+    "retracted-article",
+    "retraction-forward"
+   ]
+  },
+  {
+   "document": "retract-PMC12945919.xml",
+   "evidence": [
+    "retracted-article"
+   ]
+  },
+  {
+   "document": "retract-PMC12951106.xml",
+   "evidence": [
+    "retracted-article",
+    "retraction-forward"
+   ]
+  },
+  {
+   "document": "retract-PMC12983062.xml",
+   "evidence": [
+    "retracted-article"
+   ]
+  },
+  {
+   "document": "retract-PMC12983399.xml",
+   "evidence": [
+    "retracted-article"
+   ]
+  },
+  {
+   "document": "retract-PMC12985380.xml",
+   "evidence": [
+    "retracted-article"
+   ]
+  },
+  {
+   "document": "retract-PMC12989678.xml",
+   "evidence": [
+    "retracted-article"
+   ]
+  },
+  {
+   "document": "retract-PMC12990951.xml",
+   "evidence": [
+    "retracted-article"
+   ]
+  },
+  {
+   "document": "retract-PMC13034554.xml",
+   "evidence": [
+    "retracted-article"
+   ]
+  },
+  {
+   "document": "retract-PMC13037014.xml",
+   "evidence": [
+    "retracted-article"
+   ]
+  },
+  {
+   "document": "retract-PMC13064942.xml",
+   "evidence": [
+    "retracted-article"
+   ]
+  },
+  {
+   "document": "retract-PMC13100932.xml",
+   "evidence": [
+    "retracted-article",
+    "retraction-forward"
+   ]
+  },
+  {
+   "document": "retract-PMC13184583.xml",
+   "evidence": [
+    "retracted-article"
+   ]
+  },
+  {
+   "document": "retract-PMC13208113.xml",
+   "evidence": [
+    "retracted-article",
+    "retraction-forward"
+   ]
+  },
+  {
+   "document": "retract-PMC13230493.xml",
+   "evidence": [
+    "retracted-article"
+   ]
+  },
+  {
+   "document": "retract-PMC13244562.xml",
+   "evidence": [
+    "retracted-article"
+   ]
+  },
+  {
+   "document": "retract-PMC13257949.xml",
+   "evidence": [
+    "retracted-article"
+   ]
+  },
+  {
+   "document": "retract-PMC13257951.xml",
+   "evidence": [
+    "retracted-article"
+   ]
+  },
+  {
+   "document": "retract-PMC13289858.xml",
+   "evidence": [
+    "retracted-article",
+    "retraction-forward"
+   ]
+  },
+  {
+   "document": "retract-PMC13291836.xml",
+   "evidence": [
+    "retracted-article"
+   ]
+  },
+  {
+   "document": "retract-PMC13292036.xml",
+   "evidence": [
+    "retracted-article"
+   ]
+  },
+  {
+   "document": "retract-PMC13292042.xml",
+   "evidence": [
+    "retracted-article"
+   ]
+  },
+  {
+   "document": "retract-PMC13292064.xml",
+   "evidence": [
+    "retracted-article"
+   ]
+  },
+  {
+   "document": "retract-PMC13292106.xml",
+   "evidence": [
+    "retracted-article",
+    "retraction-forward"
+   ]
+  },
+  {
+   "document": "retract-PMC13292606.xml",
+   "evidence": [
+    "retracted-article",
+    "retraction-forward"
+   ]
+  },
+  {
+   "document": "retract-PMC13294332.xml",
+   "evidence": [
+    "retracted-article"
+   ]
+  },
+  {
+   "document": "retract-PMC13294796.xml",
+   "evidence": [
+    "retracted-article"
+   ]
+  },
+  {
+   "document": "retract-PMC13295435.xml",
+   "evidence": [
+    "retracted-article",
+    "retraction-forward"
+   ]
+  },
+  {
+   "document": "retract-PMC13298758.xml",
+   "evidence": [
+    "retracted-article",
+    "retraction-forward"
+   ]
+  },
+  {
+   "document": "retract-PMC13299186.xml",
+   "evidence": [
+    "retracted-article"
+   ]
+  },
+  {
+   "document": "retract-PMC13306522.xml",
+   "evidence": [
+    "retracted-article",
+    "retraction-forward"
+   ]
+  }
+ ]
+}

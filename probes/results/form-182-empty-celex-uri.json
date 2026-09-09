@@ -1,0 +1,267 @@
+{
+ "probe": "probes/2026-09/form-182-empty-celex-uri.sparql",
+ "corpus_id": "corpus-2026-09-eurlex",
+ "date": "2026-09-09",
+ "count": 43,
+ "of": null,
+ "carriers": [
+  {
+   "document": "http://publications.europa.eu/resource/cellar/08e4b419-7be2-4f4c-b7eb-458a1e9f3dc4",
+   "evidence": [
+    "based on <http://publications.europa.eu/resource/celex/> (empty CELEX)"
+   ]
+  },
+  {
+   "document": "http://publications.europa.eu/resource/cellar/0d0064af-b91a-4fe6-a0b7-fa5d11adb253",
+   "evidence": [
+    "based on <http://publications.europa.eu/resource/celex/> (empty CELEX)"
+   ]
+  },
+  {
+   "document": "http://publications.europa.eu/resource/cellar/0f258fe0-09a8-4a8b-9148-4961f405998d",
+   "evidence": [
+    "based on <http://publications.europa.eu/resource/celex/> (empty CELEX)"
+   ]
+  },
+  {
+   "document": "http://publications.europa.eu/resource/cellar/1301aef1-442f-40ec-9eb8-84516cba2407",
+   "evidence": [
+    "based on <http://publications.europa.eu/resource/celex/> (empty CELEX)"
+   ]
+  },
+  {
+   "document": "http://publications.europa.eu/resource/cellar/174671f5-d58d-413e-90af-75f837e87b75",
+   "evidence": [
+    "based on <http://publications.europa.eu/resource/celex/> (empty CELEX)"
+   ]
+  },
+  {
+   "document": "http://publications.europa.eu/resource/cellar/1b0b8701-d0c9-42e3-b898-75dc4c782419",
+   "evidence": [
+    "based on <http://publications.europa.eu/resource/celex/> (empty CELEX)"
+   ]
+  },
+  {
+   "document": "http://publications.europa.eu/resource/cellar/1d4b7178-1506-4067-816d-e08b742517cf",
+   "evidence": [
+    "based on <http://publications.europa.eu/resource/celex/> (empty CELEX)"
+   ]
+  },
+  {
+   "document": "http://publications.europa.eu/resource/cellar/1e64a3d7-6708-48fa-9378-36aa9a0c7a1e",
+   "evidence": [
+    "based on <http://publications.europa.eu/resource/celex/> (empty CELEX)"
+   ]
+  },
+  {
+   "document": "http://publications.europa.eu/resource/cellar/2d0c56f3-167c-4284-9c69-6bdee6d8ebc2",
+   "evidence": [
+    "based on <http://publications.europa.eu/resource/celex/> (empty CELEX)"
+   ]
+  },
+  {
+   "document": "http://publications.europa.eu/resource/cellar/2df55aaa-bbd7-4033-8c38-2fe47e4bf3b3",
+   "evidence": [
+    "based on <http://publications.europa.eu/resource/celex/> (empty CELEX)"
+   ]
+  },
+  {
+   "document": "http://publications.europa.eu/resource/cellar/2ff10552-bdb0-4d43-ba79-73cd4d6ab7d4",
+   "evidence": [
+    "based on <http://publications.europa.eu/resource/celex/> (empty CELEX)"
+   ]
+  },
+  {
+   "document": "http://publications.europa.eu/resource/cellar/35e1ff9f-b36c-4cce-9020-750c2d70e3e0",
+   "evidence": [
+    "based on <http://publications.europa.eu/resource/celex/> (empty CELEX)"
+   ]
+  },
+  {
+   "document": "http://publications.europa.eu/resource/cellar/38ce8413-d8a5-4a6e-8e0f-fc42f4e5b51f",
+   "evidence": [
+    "based on <http://publications.europa.eu/resource/celex/> (empty CELEX)"
+   ]
+  },
+  {
+   "document": "http://publications.europa.eu/resource/cellar/40d1be74-8d1c-4d73-8fc9-455f1a6e8cda",
+   "evidence": [
+    "based on <http://publications.europa.eu/resource/celex/> (empty CELEX)"
+   ]
+  },
+  {
+   "document": "http://publications.europa.eu/resource/cellar/4c10caf4-d6a8-4834-a4c4-421f23c93339",
+   "evidence": [
+    "based on <http://publications.europa.eu/resource/celex/> (empty CELEX)"
+   ]
+  },
+  {
+   "document": "http://publications.europa.eu/resource/cellar/4d2703dc-4f71-497d-a7bf-1b41cf1a17a7",
+   "evidence": [
+    "based on <http://publications.europa.eu/resource/celex/> (empty CELEX)"
+   ]
+  },
+  {
+   "document": "http://publications.europa.eu/resource/cellar/516d8a20-e8a2-4f59-95d6-256a68cc977e",
+   "evidence": [
+    "based on <http://publications.europa.eu/resource/celex/> (empty CELEX)"
+   ]
+  },
+  {
+   "document": "http://publications.europa.eu/resource/cellar/5397e07a-7f0f-4f42-a22b-76191b15c3d7",
+   "evidence": [
+    "based on <http://publications.europa.eu/resource/celex/> (empty CELEX)"
+   ]
+  },
+  {
+   "document": "http://publications.europa.eu/resource/cellar/658a0ddf-13dd-4cd1-8697-6252fc66e2b1",
+   "evidence": [
+    "based on <http://publications.europa.eu/resource/celex/> (empty CELEX)"
+   ]
+  },
+  {
+   "document": "http://publications.europa.eu/resource/cellar/66c889d6-3fa0-4802-a110-272b643a05af",
+   "evidence": [
+    "based on <http://publications.europa.eu/resource/celex/> (empty CELEX)"
+   ]
+  },
+  {
+   "document": "http://publications.europa.eu/resource/cellar/6858252c-1807-47dd-8b39-2e1dbea47699",
+   "evidence": [
+    "based on <http://publications.europa.eu/resource/celex/> (empty CELEX)"
+   ]
+  },
+  {
+   "document": "http://publications.europa.eu/resource/cellar/764a7f85-6c10-4e64-b7cb-445b16644703",
+   "evidence": [
+    "based on <http://publications.europa.eu/resource/celex/> (empty CELEX)"
+   ]
+  },
+  {
+   "document": "http://publications.europa.eu/resource/cellar/77b7501a-e60f-4479-96e8-4c783159d6e4",
+   "evidence": [
+    "based on <http://publications.europa.eu/resource/celex/> (empty CELEX)"
+   ]
+  },
+  {
+   "document": "http://publications.europa.eu/resource/cellar/7ccd8f86-dfde-4df4-aa6d-7fc138351670",
+   "evidence": [
+    "based on <http://publications.europa.eu/resource/celex/> (empty CELEX)"
+   ]
+  },
+  {
+   "document": "http://publications.europa.eu/resource/cellar/80732f70-6993-4a0e-b25c-41c1adb72a06",
+   "evidence": [
+    "based on <http://publications.europa.eu/resource/celex/> (empty CELEX)"
+   ]
+  },
+  {
+   "document": "http://publications.europa.eu/resource/cellar/83a7eba2-08b3-424f-9404-f35d7810d849",
+   "evidence": [
+    "based on <http://publications.europa.eu/resource/celex/> (empty CELEX)"
+   ]
+  },
+  {
+   "document": "http://publications.europa.eu/resource/cellar/8c0c782e-2b73-4419-af0e-42629e0d3235",
+   "evidence": [
+    "based on <http://publications.europa.eu/resource/celex/> (empty CELEX)"
+   ]
+  },
+  {
+   "document": "http://publications.europa.eu/resource/cellar/8ef2048f-c237-4870-9be0-133faa8c173f",
+   "evidence": [
+    "based on <http://publications.europa.eu/resource/celex/> (empty CELEX)"
+   ]
+  },
+  {
+   "document": "http://publications.europa.eu/resource/cellar/9ba64c1e-d7d3-477a-8a2a-79f10cf87b71",
+   "evidence": [
+    "based on <http://publications.europa.eu/resource/celex/> (empty CELEX)"
+   ]
+  },
+  {
+   "document": "http://publications.europa.eu/resource/cellar/aaa95c14-fdd5-4e96-adc3-c2e0b1240745",
+   "evidence": [
+    "based on <http://publications.europa.eu/resource/celex/> (empty CELEX)"
+   ]
+  },
+  {
+   "document": "http://publications.europa.eu/resource/cellar/ac8b5a08-2372-40dd-91f6-658e587c5fba",
+   "evidence": [
+    "based on <http://publications.europa.eu/resource/celex/> (empty CELEX)"
+   ]
+  },
+  {
+   "document": "http://publications.europa.eu/resource/cellar/ae360716-b188-4680-9ae1-731a405ca9af",
+   "evidence": [
+    "based on <http://publications.europa.eu/resource/celex/> (empty CELEX)"
+   ]
+  },
+  {
+   "document": "http://publications.europa.eu/resource/cellar/bc3b1cbd-877d-406e-bef8-7f455d756355",
+   "evidence": [
+    "based on <http://publications.europa.eu/resource/celex/> (empty CELEX)"
+   ]
+  },
+  {
+   "document": "http://publications.europa.eu/resource/cellar/bd5f7d4a-f992-4647-a04a-3cd0f4d5fcb1",
+   "evidence": [
+    "based on <http://publications.europa.eu/resource/celex/> (empty CELEX)"
+   ]
+  },
+  {
+   "document": "http://publications.europa.eu/resource/cellar/bd7c1611-3dd9-438e-9fc0-6d1061b5ef5a",
+   "evidence": [
+    "based on <http://publications.europa.eu/resource/celex/> (empty CELEX)"
+   ]
+  },
+  {
+   "document": "http://publications.europa.eu/resource/cellar/ce6550da-076e-4cf5-91e6-c5d79d908357",
+   "evidence": [
+    "based on <http://publications.europa.eu/resource/celex/> (empty CELEX)"
+   ]
+  },
+  {
+   "document": "http://publications.europa.eu/resource/cellar/d0053077-e60e-40c4-bff0-ba494da3c32f",
+   "evidence": [
+    "based on <http://publications.europa.eu/resource/celex/> (empty CELEX)"
+   ]
+  },
+  {
+   "document": "http://publications.europa.eu/resource/cellar/dc7306eb-472d-47d8-9f9a-8887a72fde2c",
+   "evidence": [
+    "based on <http://publications.europa.eu/resource/celex/> (empty CELEX)"
+   ]
+  },
+  {
+   "document": "http://publications.europa.eu/resource/cellar/df4ffdb8-a318-4f0d-863c-b0f8c429c1e5",
+   "evidence": [
+    "based on <http://publications.europa.eu/resource/celex/> (empty CELEX)"
+   ]
+  },
+  {
+   "document": "http://publications.europa.eu/resource/cellar/e7145caf-6591-4ad2-88ef-3052afcdae44",
+   "evidence": [
+    "based on <http://publications.europa.eu/resource/celex/> (empty CELEX)"
+   ]
+  },
+  {
+   "document": "http://publications.europa.eu/resource/cellar/e9931790-428c-4215-82cb-0acec73ccaa6",
+   "evidence": [
+    "based on <http://publications.europa.eu/resource/celex/> (empty CELEX)"
+   ]
+  },
+  {
+   "document": "http://publications.europa.eu/resource/cellar/f4c64f9b-03e1-4b52-82db-9ec67cb9c8f7",
+   "evidence": [
+    "based on <http://publications.europa.eu/resource/celex/> (empty CELEX)"
+   ]
+  },
+  {
+   "document": "http://publications.europa.eu/resource/cellar/fb76dbb4-4477-4d5a-a5f4-b77454cc5c20",
+   "evidence": [
+    "based on <http://publications.europa.eu/resource/celex/> (empty CELEX)"
+   ]
+  }
+ ]
+}

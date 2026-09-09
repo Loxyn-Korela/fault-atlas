@@ -99,28 +99,89 @@
             "essai-PMC13169472.xml",
             [
               "« Steinmetz et al. » DEHORS + <xref>2023</xref>",
-              "« World Health Organization » DEHORS + <xref>2023</xref>",
-              "« Kittelson et al. » DEHORS + <xref>2020</xref>"
+              "« World Health Organization » DEHORS + <xref>2023</xref>"
             ]
           ],
           [
             "essai-PMC13205709.xml",
             [
               "« Victora et al. » DEHORS + <xref>2008</xref>",
-              "« FAO et al. » DEHORS + <xref>2025</xref>",
-              "« Black et al. » DEHORS + <xref>2008</xref>"
+              "« FAO et al. » DEHORS + <xref>2025</xref>"
             ]
           ],
           [
             "essai-PMC13205731.xml",
             [
               "« UNICEF. WHO. World_Bank. » DEHORS + <xref>2025</xref>",
-              "« Haseeb and Ali » DEHORS + <xref>2026</xref>",
-              "« WHO » DEHORS + <xref>2020</xref>"
+              "« Haseeb and Ali » DEHORS + <xref>2026</xref>"
+            ]
+          ],
+          [
+            "essai-PMC13205876.xml",
+            [
+              "« Cusick and Georgieff » DEHORS + <xref>2022</xref>",
+              "« Prado and Dewey » DEHORS + <xref>2014</xref>"
+            ]
+          ],
+          [
+            "essai-PMC13239719.xml",
+            [
+              "« Grgic et al. » DEHORS + <xref>2018</xref>",
+              "« Southward et al. » DEHORS + <xref>2018</xref>"
+            ]
+          ],
+          [
+            "essai-PMC13242068.xml",
+            [
+              "« Bonfim et al. » DEHORS + <xref>2010</xref>",
+              "« Carvalho et al. » DEHORS + <xref>2021</xref>"
+            ]
+          ],
+          [
+            "essai-PMC13242351.xml",
+            [
+              "« Zhou et al. » DEHORS + <xref>2021</xref>",
+              "« Abbafati et al. » DEHORS + <xref>2020</xref>"
+            ]
+          ],
+          [
+            "essai-PMC13263161.xml",
+            [
+              "« Warburton and Bredin » DEHORS + <xref>2017</xref>",
+              "« Penedo and Dahn » DEHORS + <xref>2005</xref>"
+            ]
+          ],
+          [
+            "essai-PMC13264282.xml",
+            [
+              "« Asmundson and Katz » DEHORS + <xref>2009</xref>",
+              "« Bair et al. » DEHORS + <xref>2003</xref>"
+            ]
+          ],
+          [
+            "essai-PMC13271868.xml",
+            [
+              "« Sherrington et al. » DEHORS + <xref>2017</xref>",
+              "« Donath et al. » DEHORS + <xref>2017</xref>"
+            ]
+          ],
+          [
+            "essai-PMC13276020.xml",
+            [
+              "« Zhu et al. » DEHORS + <xref>2025</xref>",
+              "« Busse et al. » DEHORS + <xref>2018</xref>"
+            ]
+          ],
+          [
+            "essai-PMC13280799.xml",
+            [
+              "« Canavan and Fawzi » DEHORS + <xref>2019</xref>",
+              "« Cooke et al. » DEHORS + <xref>2017</xref>"
             ]
           ]
         ],
-        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files"
+        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files",
+        "carriers_file": "probes/results/line-132.json"
       },
       "matches_excerpt": true
     },
@@ -148,28 +209,89 @@
             "cas-PMC13291543.xml",
             [
               "<xref>Cui et al., 2018</xref>",
-              "<xref>Stochholm et al., 2006</xref>",
-              "<xref>Fuchs et al., 2019</xref>"
+              "<xref>Stochholm et al., 2006</xref>"
             ]
           ],
           [
             "cas-PMC13293799.xml",
             [
               "<xref>McCarthy et al., 2018</xref>",
-              "<xref>Maniwa et al., 2018</xref>",
-              "<xref>McCarthy et al., 2019</xref>"
+              "<xref>Maniwa et al., 2018</xref>"
             ]
           ],
           [
             "cas-PMC13294340.xml",
             [
               "<xref>Reddy et al., 2006</xref>",
-              "<xref>Boyko et al., 2018</xref>",
-              "<xref>Mervis and Phillips, 2019</xref>"
+              "<xref>Boyko et al., 2018</xref>"
+            ]
+          ],
+          [
+            "cas-PMC13294475.xml",
+            [
+              "<xref>Gorman et al., 2016</xref>",
+              "<xref>Gorman et al., 2016</xref>"
+            ]
+          ],
+          [
+            "essai-PMC13245602.xml",
+            [
+              "<xref>1979</xref>",
+              "<xref>2016</xref>"
+            ]
+          ],
+          [
+            "essai-PMC13291766.xml",
+            [
+              "<xref>2018</xref>",
+              "<xref>2020</xref>"
+            ]
+          ],
+          [
+            "meta-PMC13179150.xml",
+            [
+              "<xref>2000</xref>",
+              "<xref>1995</xref>"
+            ]
+          ],
+          [
+            "meta-PMC13264275.xml",
+            [
+              "<xref>Hallal et al., 2006</xref>",
+              "<xref>Moore et al., 2012</xref>"
+            ]
+          ],
+          [
+            "meta-PMC13280693.xml",
+            [
+              "<xref>2022</xref>",
+              "<xref>2017</xref>"
+            ]
+          ],
+          [
+            "moderne-PMC12967033.xml",
+            [
+              "<xref>Stewart et al. 2005</xref>",
+              "<xref>Tilman et al. 2002</xref>"
+            ]
+          ],
+          [
+            "moderne-PMC13254229.xml",
+            [
+              "<xref>2021</xref>",
+              "<xref>2015</xref>"
+            ]
+          ],
+          [
+            "nonEN-PMC13228121.xml",
+            [
+              "<xref>Bauman, 1999</xref>",
+              "<xref>Carvalho, 2022</xref>"
             ]
           ]
         ],
-        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files"
+        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files",
+        "carriers_file": "probes/results/line-132-counterform.json"
       },
       "matches_excerpt": true,
       "note": "Counter-form of line 132: the clickable span carries the WHOLE citation, year included. 16/272, as quoted in the excerpt."

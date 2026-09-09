@@ -85,7 +85,7 @@
           [
             "essai-PMC13280184.xml",
             [
-              "organisation «NSW Health» + study «Preventative Research Support Program» — Funding This study was supported by the Preventative Research Support Program, NSW Health and Northern Sydney Local Health District, Populat"
+              "organisation «Northern Sydney Local Health District, Population Health Promotion team» + study «Preventative Research Support Program» — Funding This study was supported by the Preventative Research Support Program, NSW Health and Northern Sydney Local Health District, Populat"
             ]
           ],
           [
@@ -95,7 +95,8 @@
             ]
           ]
         ],
-        "by": "Fault Atlas maintainer (Loxyn), on the same 272 files"
+        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files",
+        "carriers_file": "probes/results/line-014.json"
       },
       "matches_excerpt": false,
       "note": "The excerpt's 63/272 and 9/272 were counted in August by code that was not saved and cannot be recovered (looser rules give 30 or 59, never 63). This probe applies the excerpt's own definition literally, same sentence, and finds 2 documents, shown with their sentences. The literal, visible figure is the one to cite; the excerpt keeps its own, flagged."

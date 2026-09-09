@@ -104,9 +104,64 @@
             [
               "marqueurs de page ×1"
             ]
+          ],
+          [
+            "bio-PMC12927975.xml",
+            [
+              "marqueurs de page ×1"
+            ]
+          ],
+          [
+            "bio-PMC12953170.xml",
+            [
+              "marqueurs de page ×1"
+            ]
+          ],
+          [
+            "bio-PMC12959687.xml",
+            [
+              "marqueurs de page ×1"
+            ]
+          ],
+          [
+            "bio-PMC13057049.xml",
+            [
+              "marqueurs de page ×1"
+            ]
+          ],
+          [
+            "bio-PMC13088504.xml",
+            [
+              "marqueurs de page ×1"
+            ]
+          ],
+          [
+            "bio-PMC13097615.xml",
+            [
+              "marqueurs de page ×1"
+            ]
+          ],
+          [
+            "bio-PMC13099299.xml",
+            [
+              "marqueurs de page ×1"
+            ]
+          ],
+          [
+            "bio-PMC13103274.xml",
+            [
+              "marqueurs de page ×1"
+            ]
+          ],
+          [
+            "bio-PMC13116881.xml",
+            [
+              "marqueurs de page ×1"
+            ]
           ]
         ],
-        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files"
+        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files",
+        "carriers_file": "probes/results/line-134.json"
       },
       "matches_excerpt": true
     }

@@ -87,7 +87,52 @@
         "date": "2026-09-09",
         "count": 7,
         "of": null,
-        "by": "Fault Atlas maintainer (Loxyn), live on the public endpoint"
+        "by": "Fault Atlas maintainer (Loxyn), live on the public endpoint",
+        "examples": [
+          [
+            "51966FC0402",
+            [
+              "work_date_document = 1003-03-03 · http://publications.europa.eu/resource/cellar/7ec5cf48-1eb6-42a2-95e1-94b0c278003b"
+            ]
+          ],
+          [
+            "51984PC0606",
+            [
+              "work_date_document = 1003-03-03 · http://publications.europa.eu/resource/cellar/45cd24a2-d3e8-4e2f-aea6-24125ed1b763"
+            ]
+          ],
+          [
+            "51988EC1677",
+            [
+              "work_date_document = 1003-03-03 · http://publications.europa.eu/resource/cellar/3eec9c70-0f34-4c06-b194-d97ae264bb2c"
+            ]
+          ],
+          [
+            "51993EC1858",
+            [
+              "work_date_document = 1003-03-03 · http://publications.europa.eu/resource/cellar/18d2d3dc-0cf8-46c0-9526-6da3e4cf5c13"
+            ]
+          ],
+          [
+            "51995EC1429",
+            [
+              "work_date_document = 1003-03-03 · http://publications.europa.eu/resource/cellar/41459999-dc4f-4534-8d37-5822489a7f42"
+            ]
+          ],
+          [
+            "51995EC1591",
+            [
+              "work_date_document = 1003-03-03 · http://publications.europa.eu/resource/cellar/f67bbafc-f51f-4245-918a-94340319ca25"
+            ]
+          ],
+          [
+            "51997EC0936",
+            [
+              "work_date_document = 1003-03-03 · http://publications.europa.eu/resource/cellar/05cf144d-77fa-4062-822e-2f5be443a291"
+            ]
+          ]
+        ],
+        "carriers_file": "probes/results/form-184-sentinel-date.json"
       },
       "matches_excerpt": true,
       "note": "Re-run live, restricted to works taking part in repeals/amends/based_on: 7, the same seven CELEX."

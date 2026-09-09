@@ -107,9 +107,73 @@
               "numérique×3",
               "exposant×5"
             ]
+          ],
+          [
+            "meta-PMC13246130.xml",
+            [
+              "numérique×56",
+              "exposant×51"
+            ]
+          ],
+          [
+            "meta-PMC13268477.xml",
+            [
+              "numérique×36",
+              "exposant×13"
+            ]
+          ],
+          [
+            "meta-PMC13286426.xml",
+            [
+              "numérique×47",
+              "exposant×5"
+            ]
+          ],
+          [
+            "meta-PMC13286481.xml",
+            [
+              "numérique×21",
+              "exposant×14"
+            ]
+          ],
+          [
+            "moderne-PMC13274555.xml",
+            [
+              "auteur-année×3",
+              "exposant×99"
+            ]
+          ],
+          [
+            "nonEN-PMC13264178.xml",
+            [
+              "numérique×12",
+              "exposant×7"
+            ]
+          ],
+          [
+            "nonEN-PMC13267756.xml",
+            [
+              "numérique×15",
+              "exposant×7"
+            ]
+          ],
+          [
+            "phys-PMC13099575.xml",
+            [
+              "auteur-année×4",
+              "numérique×11"
+            ]
+          ],
+          [
+            "phys-PMC13133660.xml",
+            [
+              "numérique×58",
+              "exposant×6"
+            ]
           ]
         ],
-        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files"
+        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files",
+        "carriers_file": "probes/results/line-075.json"
       },
       "matches_excerpt": true
     }

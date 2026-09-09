@@ -108,9 +108,28 @@
             [
               "Accepted Manuscript"
             ]
+          ],
+          [
+            "meta-PMC13288533.xml",
+            [
+              "Accepted Manuscript"
+            ]
+          ],
+          [
+            "phys-PMC13154412.xml",
+            [
+              "not peer reviewed"
+            ]
+          ],
+          [
+            "phys-PMC13158258.xml",
+            [
+              "accepted manuscript"
+            ]
           ]
         ],
-        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files"
+        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files",
+        "carriers_file": "probes/results/line-140.json"
       },
       "matches_excerpt": false,
       "note": "The figure quoted in the excerpt was counted on 2026-08-08 by a finer, hand-run measurement whose code was not kept; this probe is the one that was kept, and its figure is the one that can be re-run. Both stand, dated."

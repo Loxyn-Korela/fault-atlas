@@ -1,0 +1,135 @@
+{
+ "probe": "probes/2026-08/line-132-counterform.py",
+ "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+ "date": "2026-09-09",
+ "count": 16,
+ "of": 272,
+ "carriers": [
+  {
+   "document": "cas-PMC13291543.xml",
+   "evidence": [
+    "<xref>Cui et al., 2018</xref>",
+    "<xref>Stochholm et al., 2006</xref>",
+    "<xref>Fuchs et al., 2019</xref>"
+   ]
+  },
+  {
+   "document": "cas-PMC13293799.xml",
+   "evidence": [
+    "<xref>McCarthy et al., 2018</xref>",
+    "<xref>Maniwa et al., 2018</xref>",
+    "<xref>McCarthy et al., 2019</xref>"
+   ]
+  },
+  {
+   "document": "cas-PMC13294340.xml",
+   "evidence": [
+    "<xref>Reddy et al., 2006</xref>",
+    "<xref>Boyko et al., 2018</xref>",
+    "<xref>Mervis and Phillips, 2019</xref>"
+   ]
+  },
+  {
+   "document": "cas-PMC13294475.xml",
+   "evidence": [
+    "<xref>Gorman et al., 2016</xref>",
+    "<xref>Gorman et al., 2016</xref>",
+    "<xref>Lancaster and Graham, 2023</xref>"
+   ]
+  },
+  {
+   "document": "essai-PMC13245602.xml",
+   "evidence": [
+    "<xref>1979</xref>",
+    "<xref>2016</xref>",
+    "<xref>2007</xref>"
+   ]
+  },
+  {
+   "document": "essai-PMC13291766.xml",
+   "evidence": [
+    "<xref>2018</xref>",
+    "<xref>2020</xref>",
+    "<xref>2012</xref>"
+   ]
+  },
+  {
+   "document": "meta-PMC13179150.xml",
+   "evidence": [
+    "<xref>2000</xref>",
+    "<xref>1995</xref>",
+    "<xref>2000</xref>"
+   ]
+  },
+  {
+   "document": "meta-PMC13264275.xml",
+   "evidence": [
+    "<xref>Hallal et al., 2006</xref>",
+    "<xref>Moore et al., 2012</xref>",
+    "<xref>Arem et al., 2015</xref>"
+   ]
+  },
+  {
+   "document": "meta-PMC13280693.xml",
+   "evidence": [
+    "<xref>2022</xref>",
+    "<xref>2017</xref>",
+    "<xref>2009</xref>"
+   ]
+  },
+  {
+   "document": "moderne-PMC12967033.xml",
+   "evidence": [
+    "<xref>Stewart et al. 2005</xref>",
+    "<xref>Tilman et al. 2002</xref>",
+    "<xref>USDA 2022</xref>"
+   ]
+  },
+  {
+   "document": "moderne-PMC13254229.xml",
+   "evidence": [
+    "<xref>2021</xref>",
+    "<xref>2015</xref>",
+    "<xref>2017</xref>"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13228121.xml",
+   "evidence": [
+    "<xref>Bauman, 1999</xref>",
+    "<xref>Carvalho, 2022</xref>",
+    "<xref>Cleminson, 2014</xref>"
+   ]
+  },
+  {
+   "document": "phys-PMC13154412.xml",
+   "evidence": [
+    "<xref>Traherne 2008</xref>",
+    "<xref>Paola Cruz-Tapias and Anaya 2013</xref>",
+    "<xref>Jurtz and Olsen 2018</xref>"
+   ]
+  },
+  {
+   "document": "phys-PMC13222844.xml",
+   "evidence": [
+    "<xref>Bommasani et al., 2021</xref>",
+    "<xref>Devlin et al., 2019</xref>",
+    "<xref>Achiam et al., 2023</xref>"
+   ]
+  },
+  {
+   "document": "phys-PMC13246409.xml",
+   "evidence": [
+    "<xref>Morawska and Milton, 2020</xref>",
+    "<xref>Duguid, 1946</xref>",
+    "<xref>Bourouiba et al., 2014</xref>"
+   ]
+  },
+  {
+   "document": "retract-PMC12945919.xml",
+   "evidence": [
+    "<xref>2023</xref>"
+   ]
+  }
+ ]
+}

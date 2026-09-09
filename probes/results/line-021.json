@@ -1,0 +1,1715 @@
+{
+ "probe": "probes/2026-08/line-021.py",
+ "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+ "date": "2026-09-09",
+ "count": 209,
+ "of": 272,
+ "carriers": [
+  {
+   "document": "bio-PMC12583535.xml",
+   "evidence": [
+    "Risk of Bias (RoB)",
+    "confidence intervals (CI)",
+    "fatty acid oxidation (FAO)",
+    "fatty acid synthesis (FAS)"
+   ]
+  },
+  {
+   "document": "bio-PMC12590050.xml",
+   "evidence": [
+    "Diabetes mellitus (DM)",
+    "Thyroid hormone (TH)",
+    "Thyroid-stimulating hormone (TSH)",
+    "Thyroxine (T4)"
+   ]
+  },
+  {
+   "document": "bio-PMC12674831.xml",
+   "evidence": [
+    "C-reactive protein (CRP)",
+    "acute myocardial infarction (AMI)",
+    "angiotensin-converting-enzyme inhibitors (ACEI)",
+    "blood pressure (BP)"
+   ]
+  },
+  {
+   "document": "bio-PMC12857832.xml",
+   "evidence": [
+    "Lung cancer (LC)",
+    "body mass index (BMI)",
+    "chronic obstructive pulmonary disease (COPD)",
+    "congestive heart disease (CHD)"
+   ]
+  },
+  {
+   "document": "bio-PMC12882215.xml",
+   "evidence": [
+    "Alzheimer’s disease (AD)",
+    "Normalized Difference Vegetation Index (NDVI)",
+    "confidence intervals (CI)",
+    "normalized difference vegetation index (NDVI)"
+   ]
+  },
+  {
+   "document": "bio-PMC12909487.xml",
+   "evidence": [
+    "Joanna Briggs Institute (JBI)",
+    "Sudden cardiac death (SCD)",
+    "sudden cardiac death (SCD)"
+   ]
+  },
+  {
+   "document": "bio-PMC12915353.xml",
+   "evidence": [
+    "blood pressure (BP)",
+    "coronary heart disease (CHD)",
+    "fasting serum glucose (FSG)",
+    "hazard ratio (HR)"
+   ]
+  },
+  {
+   "document": "bio-PMC12927065.xml",
+   "evidence": [
+    "Newcastle-Ottawa Scale (NOS)",
+    "non-communicable disease (NCD)"
+   ]
+  },
+  {
+   "document": "bio-PMC12927975.xml",
+   "evidence": [
+    "Artificial intelligence (AI)",
+    "convolutional neural networks (CNN)"
+   ]
+  },
+  {
+   "document": "bio-PMC12953170.xml",
+   "evidence": [
+    "Botulinum toxin A (BTA)",
+    "European Hernia Society (EHS)",
+    "Numerical rating scale (NRS)",
+    "Transversus abdominis release (TAR)"
+   ]
+  },
+  {
+   "document": "bio-PMC12959687.xml",
+   "evidence": [
+    "Joanna Briggs Institute (JBI)"
+   ]
+  },
+  {
+   "document": "bio-PMC13057049.xml",
+   "evidence": [
+    "Acute coronary syndrome (ACS)",
+    "Joanna Briggs Institute (JBI)",
+    "New York Heart Association (NYHA)",
+    "Sub-Saharan Africa (SSA)"
+   ]
+  },
+  {
+   "document": "bio-PMC13088504.xml",
+   "evidence": [
+    "Benign prostatic hyperplasia (BPH)",
+    "Chronic obstructive pulmonary disease (COPD)",
+    "Diabetes mellitus (DM)",
+    "European Hernia Society (EHS)"
+   ]
+  },
+  {
+   "document": "bio-PMC13097615.xml",
+   "evidence": [
+    "Joanna Briggs Institute (JBI)",
+    "Partial Least Squares (PLS)"
+   ]
+  },
+  {
+   "document": "bio-PMC13099299.xml",
+   "evidence": [
+    "Atrial fibrillation (AF)",
+    "European heart rhythm association (EHRA)",
+    "Newcastle-Ottawa Scale (NOS)",
+    "Pulmonary vein isolation (PVI)"
+   ]
+  },
+  {
+   "document": "bio-PMC13103274.xml",
+   "evidence": [
+    "Artificial intelligence (AI)",
+    "body mass index (BMI)",
+    "chronic obstructive pulmonary disease (COPD)",
+    "coronary artery bypass grafting (CABG)"
+   ]
+  },
+  {
+   "document": "bio-PMC13116881.xml",
+   "evidence": [
+    "Beck’s Depression Inventory (BDI)",
+    "Dermatologic Life Quality Index (DLQI)",
+    "Hidradenitis suppurativa (HS)",
+    "Major Adverse Cardiovascular Events (MACE)"
+   ]
+  },
+  {
+   "document": "bio-PMC13155703.xml",
+   "evidence": [
+    "American Heart Association (AHA)",
+    "Diabetic foot ulcer (DFU)",
+    "Population-Exposure-Outcome (PEO)",
+    "confidence interval (CI)"
+   ]
+  },
+  {
+   "document": "bio-PMC13162546.xml",
+   "evidence": [
+    "artificial intelligence (AI)",
+    "collagen-binding domain (CBD)",
+    "familial hypercholesterolemia (FH)",
+    "heart failure (HF)"
+   ]
+  },
+  {
+   "document": "bio-PMC13168716.xml",
+   "evidence": [
+    "Joanna Briggs Institute (JBI)",
+    "World Health Organization (WHO)",
+    "non-communicable disease (NCD)"
+   ]
+  },
+  {
+   "document": "bio-PMC13170838.xml",
+   "evidence": [
+    "Clinical decision support (CDS)",
+    "Health Service Executive (HSE)",
+    "National Health Service (NHS)",
+    "Provider education (PE)"
+   ]
+  },
+  {
+   "document": "bio-PMC13181205.xml",
+   "evidence": [
+    "Atrial fibrillation (AF)",
+    "Major adverse cardiovascular events (MACE)",
+    "atrial fibrillation (AF)",
+    "coronary artery disease (CAD)"
+   ]
+  },
+  {
+   "document": "bio-PMC13182387.xml",
+   "evidence": [
+    "chronic heart failure (CHF)",
+    "chronic obstructive pulmonary disease (COPD)"
+   ]
+  },
+  {
+   "document": "bio-PMC13190511.xml",
+   "evidence": [
+    "Multiple Country Publications (MCP)",
+    "Single Country Publications (SCP)",
+    "Topic Search (TS)",
+    "Traditional Chinese Medicine (TCM)"
+   ]
+  },
+  {
+   "document": "bio-PMC13203479.xml",
+   "evidence": [
+    "Air Quality Index (AQI)",
+    "Black carbon (BC)",
+    "C-reactive protein (CRP)",
+    "Effective Public Health Practice Project (EPHPP)"
+   ]
+  },
+  {
+   "document": "bio-PMC13207820.xml",
+   "evidence": [
+    "body mass index (BMI)"
+   ]
+  },
+  {
+   "document": "bio-PMC13216383.xml",
+   "evidence": [
+    "Sit to Stand (STS)",
+    "Wearable cardioverter defibrillator (WCD)",
+    "global positioning system (GPS)",
+    "system usability scale (SUS)"
+   ]
+  },
+  {
+   "document": "bio-PMC13218538.xml",
+   "evidence": [
+    "American Diabetes Association (ADA)",
+    "sub-Saharan Africa (SSA)",
+    "total cholesterol (TC)"
+   ]
+  },
+  {
+   "document": "bio-PMC13231534.xml",
+   "evidence": [
+    "left ventricular dysfunction (LVD)",
+    "left ventricular ejection fraction (LVEF)",
+    "randomized controlled trial (RCT)"
+   ]
+  },
+  {
+   "document": "bio-PMC13236932.xml",
+   "evidence": [
+    "Joanna Briggs Institute (JBI)",
+    "congenital heart disease (CHD)"
+   ]
+  },
+  {
+   "document": "bio-PMC13252842.xml",
+   "evidence": [
+    "Computational Geometry Algorithm Library (CGAL)",
+    "European Medicines Agency (EMA)",
+    "cardiac arrhythmia research package (CARP)",
+    "cardiovascular magnetic resonance (CMR)"
+   ]
+  },
+  {
+   "document": "bio-PMC13274935.xml",
+   "evidence": [
+    "cardiac rehabilitation (CR)",
+    "heart rate (HR)",
+    "intensive care units (ICU)"
+   ]
+  },
+  {
+   "document": "bio-PMC13289183.xml",
+   "evidence": [
+    "Artificial intelligence (AI)",
+    "machine learning (ML)"
+   ]
+  },
+  {
+   "document": "cas-PMC13291543.xml",
+   "evidence": [
+    "C-reactive protein (CRP)",
+    "Cytometric Bead Array (CBA)",
+    "Turner Syndrome (TS)",
+    "Turner syndrome (TS)"
+   ]
+  },
+  {
+   "document": "cas-PMC13291881.xml",
+   "evidence": [
+    "Cutaneous Skeletal Hypophosphatemia Syndrome (CSHS)",
+    "Tumor-induced osteomalacia (TIO)",
+    "vitamin D-dependent rickets (VDDR)"
+   ]
+  },
+  {
+   "document": "cas-PMC13293645.xml",
+   "evidence": [
+    "Physical therapy (PT)",
+    "Visual Analog Scale (VAS)",
+    "biceps femoris (BF)",
+    "physical therapy (PT)"
+   ]
+  },
+  {
+   "document": "cas-PMC13293647.xml",
+   "evidence": [
+    "atrial fibrillation (AF)",
+    "cytosine-thymine-guanine (CTG)",
+    "forced vital capacity (FVC)",
+    "intensive care unit (ICU)"
+   ]
+  },
+  {
+   "document": "cas-PMC13293792.xml",
+   "evidence": [
+    "loss of heterozygosity (LOH)",
+    "magnetic resonance imaging (MRI)",
+    "peptide receptor radionuclide therapy (PRRT)",
+    "positron emission tomography (PET)"
+   ]
+  },
+  {
+   "document": "cas-PMC13293799.xml",
+   "evidence": [
+    "Dual pathway inhibition (DPI)",
+    "Left ventricular thrombus (LVT)",
+    "acute ischemic stroke (AIS)",
+    "acute myocardial infarction (AMI)"
+   ]
+  },
+  {
+   "document": "cas-PMC13293813.xml",
+   "evidence": [
+    "Magnetic resonance imaging (MRI)",
+    "computed tomography (CT)",
+    "magnetic resonance imaging (MRI)",
+    "squamous cell carcinoma (SCC)"
+   ]
+  },
+  {
+   "document": "cas-PMC13293827.xml",
+   "evidence": [
+    "clinical target volume (CTV)",
+    "computed tomography (CT)",
+    "disease-free interval (DFI)",
+    "esophageal squamous cell carcinoma (ESCC)"
+   ]
+  },
+  {
+   "document": "cas-PMC13293834.xml",
+   "evidence": [
+    "computed tomography (CT)",
+    "therapeutic drug monitoring (TDM)"
+   ]
+  },
+  {
+   "document": "cas-PMC13293841.xml",
+   "evidence": [
+    "Granular cell tumor (GCT)",
+    "core needle biopsy (CNB)",
+    "region-of-interest (ROI)",
+    "sentinel lymph node biopsy (SLNB)"
+   ]
+  },
+  {
+   "document": "cas-PMC13293897.xml",
+   "evidence": [
+    "C-reactive protein (CRP)",
+    "Photon-counting computed tomography (PCCT)",
+    "magnetic resonance imaging (MRI)",
+    "power Doppler (PD)"
+   ]
+  },
+  {
+   "document": "cas-PMC13293901.xml",
+   "evidence": [
+    "formalin-fixed paraffin-embedded (FFPE)"
+   ]
+  },
+  {
+   "document": "cas-PMC13293995.xml",
+   "evidence": [
+    "Epstein-Barr virus (EBV)",
+    "T-follicular helper (TFH)",
+    "complete response (CR)",
+    "extractable nuclear antigen (ENA)"
+   ]
+  },
+  {
+   "document": "cas-PMC13294038.xml",
+   "evidence": [
+    "Anion gap (AG)",
+    "Renal tubular acidosis (RTA)",
+    "acute interstitial nephritis (AIN)"
+   ]
+  },
+  {
+   "document": "cas-PMC13294089.xml",
+   "evidence": [
+    "smooth muscle actin (SMA)"
+   ]
+  },
+  {
+   "document": "cas-PMC13294096.xml",
+   "evidence": [
+    "International normalized ratio (INR)",
+    "intensive care unit (ICU)"
+   ]
+  },
+  {
+   "document": "cas-PMC13294155.xml",
+   "evidence": [
+    "C-reactive protein (CRP)",
+    "acute kidney injury (AKI)",
+    "anti-mitochondrial antibody (AMA)",
+    "anti-smooth muscle antibody (ASMA)"
+   ]
+  },
+  {
+   "document": "cas-PMC13294182.xml",
+   "evidence": [
+    "Chimeric antigen receptor (CAR)",
+    "Fluorescein angiogram (FA)",
+    "Light-adapted (LA)",
+    "Limit of detection (LOD)"
+   ]
+  },
+  {
+   "document": "cas-PMC13294240.xml",
+   "evidence": [
+    "Computed tomography (CT)",
+    "Dissociative Experiences Scale (DES)",
+    "Dissociative Identity Disorder (DID)",
+    "Magnetic resonance imaging (MRI)"
+   ]
+  },
+  {
+   "document": "cas-PMC13294281.xml",
+   "evidence": [
+    "Computed tomography (CT)",
+    "magnetic resonance imaging (MRI)"
+   ]
+  },
+  {
+   "document": "cas-PMC13294340.xml",
+   "evidence": [
+    "platelet-rich plasma (PRP)"
+   ]
+  },
+  {
+   "document": "cas-PMC13294475.xml",
+   "evidence": [
+    "Optical coherence tomography (OCT)",
+    "magnetic resonance imaging (MRI)",
+    "retinal nerve fiber layer (RNFL)"
+   ]
+  },
+  {
+   "document": "cas-PMC13294629.xml",
+   "evidence": [
+    "gene expression profiling (GEP)"
+   ]
+  },
+  {
+   "document": "cas-PMC13294642.xml",
+   "evidence": [
+    "Fasting blood glucose (FBG)",
+    "Packed cell volume (PCV)",
+    "World Health Organization (WHO)",
+    "cell-mediated immunity (CMI)"
+   ]
+  },
+  {
+   "document": "cas-PMC13294698.xml",
+   "evidence": [
+    "Lumbar spinal stenosis (LSS)",
+    "Oswestry Disability Index (ODI)",
+    "percutaneous transforaminal endoscopic discectomy (PTED)",
+    "unilateral biportal endoscopy (UBE)"
+   ]
+  },
+  {
+   "document": "cas-PMC13294704.xml",
+   "evidence": [
+    "World Health Organization (WHO)",
+    "fixed drug eruption (FDE)",
+    "lymphocyte transformation testing (LTT)"
+   ]
+  },
+  {
+   "document": "cas-PMC13301386.xml",
+   "evidence": [
+    "Negative pressure wound therapy (NPWT)",
+    "international normalized ratio (INR)",
+    "prothrombin time (PT)"
+   ]
+  },
+  {
+   "document": "essai-PMC13154027.xml",
+   "evidence": [
+    "Cognitive behavioral therapy (CBT)",
+    "Least-square (LS)",
+    "Tinnitus Functional Index (TFI)",
+    "Tinnitus Handicap Inventory (THI)"
+   ]
+  },
+  {
+   "document": "essai-PMC13169227.xml",
+   "evidence": [
+    "Differentially Expressed (DE)",
+    "Quality control (QC)",
+    "differentially expressed (DE)",
+    "natural killer (NK)"
+   ]
+  },
+  {
+   "document": "essai-PMC13169472.xml",
+   "evidence": [
+    "Body mass index (BMI)",
+    "High Frequency (HF)",
+    "Low Frequency (LF)",
+    "Numeric Rating Scale (NRS)"
+   ]
+  },
+  {
+   "document": "essai-PMC13179527.xml",
+   "evidence": [
+    "confidence interval (CI)",
+    "estimated marginal mean (EMM)",
+    "standard deviation (SD)"
+   ]
+  },
+  {
+   "document": "essai-PMC13191455.xml",
+   "evidence": [
+    "C-reactive protein (CRP)",
+    "minimal clinically important difference (MCID)"
+   ]
+  },
+  {
+   "document": "essai-PMC13205709.xml",
+   "evidence": [
+    "Focus Groups Discussions (FGD)",
+    "Standard of care (SOC)",
+    "United States dollars (USD)",
+    "food assistance (FA)"
+   ]
+  },
+  {
+   "document": "essai-PMC13205731.xml",
+   "evidence": [
+    "Integrated Community Case Management (ICCM)",
+    "Outpatient Treatment Programme (OTP)",
+    "Severe Acute Malnutrition (SAM)",
+    "Targeted Supplementary Feeding Programme (TSFP)"
+   ]
+  },
+  {
+   "document": "essai-PMC13205876.xml",
+   "evidence": [
+    "Hair cortisol concentration (HCC)",
+    "Household Food Insecurity Access Scale (HFIAS)",
+    "Pubertal Development Scale (PDS)",
+    "Stress Physiology Investigative Team (SPIT)"
+   ]
+  },
+  {
+   "document": "essai-PMC13213610.xml",
+   "evidence": [
+    "general practitioner (GP)",
+    "randomized clinical trial (RCT)"
+   ]
+  },
+  {
+   "document": "essai-PMC13215628.xml",
+   "evidence": [
+    "intention-to-treat (ITT)"
+   ]
+  },
+  {
+   "document": "essai-PMC13238360.xml",
+   "evidence": [
+    "Standard deviation (SD)",
+    "human serum albumin (HSA)",
+    "plasma volume (PV)",
+    "predicted plasma volume (PPV)"
+   ]
+  },
+  {
+   "document": "essai-PMC13239719.xml",
+   "evidence": [
+    "standard deviation (SD)"
+   ]
+  },
+  {
+   "document": "essai-PMC13242068.xml",
+   "evidence": [
+    "Group (G0)",
+    "delayed onset muscle soreness (DOMS)",
+    "right lower limb (RLL)",
+    "visual analog scale (VAS)"
+   ]
+  },
+  {
+   "document": "essai-PMC13242351.xml",
+   "evidence": [
+    "Isometric resistance training (IRT)",
+    "ambulatory arterial stiffness index (AASI)",
+    "average real variability (ARV)",
+    "blood pressure (BP)"
+   ]
+  },
+  {
+   "document": "essai-PMC13245602.xml",
+   "evidence": [
+    "body mass index (BMI)"
+   ]
+  },
+  {
+   "document": "essai-PMC13254492.xml",
+   "evidence": [
+    "Cold pain threshold (CPT)",
+    "Digit symbol substitution test (DSST)",
+    "cold pain threshold (CPT)",
+    "confidence interval (CI)"
+   ]
+  },
+  {
+   "document": "essai-PMC13263161.xml",
+   "evidence": [
+    "Heart rate (HR)",
+    "body mass index (BMI)",
+    "bone mineral content (BMC)",
+    "fat mass (FM)"
+   ]
+  },
+  {
+   "document": "essai-PMC13264282.xml",
+   "evidence": [
+    "Symptom Catastrophizing Scale (SCS)"
+   ]
+  },
+  {
+   "document": "essai-PMC13271868.xml",
+   "evidence": [
+    "Somatosensory evoked potentials (SEP)",
+    "control group (CG)",
+    "intervention group (IG)",
+    "somatosensory evoked potentials (SEP)"
+   ]
+  },
+  {
+   "document": "essai-PMC13276020.xml",
+   "evidence": [
+    "adverse event (AE)",
+    "confidence interval (CI)",
+    "minimal erythema dose (MED)"
+   ]
+  },
+  {
+   "document": "essai-PMC13280184.xml",
+   "evidence": [
+    "Local Health District (LHD)",
+    "New South Wales (NSW)"
+   ]
+  },
+  {
+   "document": "essai-PMC13280799.xml",
+   "evidence": [
+    "Every Girl Can (EGC)",
+    "multiple micronutrient supplementation (MMS)",
+    "social ecological model (SEM)"
+   ]
+  },
+  {
+   "document": "essai-PMC13281132.xml",
+   "evidence": [
+    "New York Heart Association (NYHA)",
+    "chronic obstructive pulmonary disease (COPD)",
+    "confidence interval (CI)",
+    "forced vital capacity (FVC)"
+   ]
+  },
+  {
+   "document": "essai-PMC13282136.xml",
+   "evidence": [
+    "constant work rate (CWR)",
+    "maximal metabolic steady state (MMSS)",
+    "peak power output (PPO)",
+    "peripheral nerve stimulation (PNS)"
+   ]
+  },
+  {
+   "document": "essai-PMC13284529.xml",
+   "evidence": [
+    "Spatial Span Backwards (SSB)",
+    "Spatial Span Forwards (SSF)",
+    "Spatial span backwards (SSB)",
+    "Spatial span forwards (SSF)"
+   ]
+  },
+  {
+   "document": "essai-PMC13290998.xml",
+   "evidence": [
+    "Area deprivation index (ADI)",
+    "Patient-Reported Outcomes Measurement Information System (PROMIS)",
+    "cancer-related fatigue (CRF)",
+    "full information maximum likelihood (FIML)"
+   ]
+  },
+  {
+   "document": "essai-PMC13291766.xml",
+   "evidence": [
+    "Executive function (EF)",
+    "Felt Arousal Scale (FAS)",
+    "Heart rate (HR)",
+    "electrical muscle stimulation (EMS)"
+   ]
+  },
+  {
+   "document": "essai-PMC13291922.xml",
+   "evidence": [
+    "Digit Span Test (DST)",
+    "correct response rate (CRR)",
+    "resting motor threshold (RMT)"
+   ]
+  },
+  {
+   "document": "essai-PMC13293440.xml",
+   "evidence": [
+    "body mass index (BMI)"
+   ]
+  },
+  {
+   "document": "essai-PMC13294169.xml",
+   "evidence": [
+    "Cancer-related cognitive impairment (CRCI)",
+    "Human Rights Ethics Committees (HREC)",
+    "randomised controlled trial (RCT)"
+   ]
+  },
+  {
+   "document": "essai-PMC13294787.xml",
+   "evidence": [
+    "Joint Asia Diabetes Evaluation (JADE)",
+    "chronic kidney disease (CKD)",
+    "odds ratio (OR)",
+    "relative risk reduction (RRR)"
+   ]
+  },
+  {
+   "document": "essai-PMC13294792.xml",
+   "evidence": [
+    "continuous glucose monitoring (CGM)"
+   ]
+  },
+  {
+   "document": "essai-PMC13296589.xml",
+   "evidence": [
+    "Intensive Care Unit (ICU)",
+    "Short Physical Performance Battery (SPPB)",
+    "intensive care unit (ICU)",
+    "randomised controlled trial (RCT)"
+   ]
+  },
+  {
+   "document": "essai-PMC7619126.xml",
+   "evidence": [
+    "Acute febrile illness (AFI)",
+    "C-reactive protein (CRP)",
+    "Provincial Health Department (PHD)"
+   ]
+  },
+  {
+   "document": "meta-PMC13071177.xml",
+   "evidence": [
+    "polymerase chain reactions (PCR)"
+   ]
+  },
+  {
+   "document": "meta-PMC13157766.xml",
+   "evidence": [
+    "Community-acquired pneumonia (CAP)"
+   ]
+  },
+  {
+   "document": "meta-PMC13179150.xml",
+   "evidence": [
+    "Conservation of Resources (COR)",
+    "Socioemotional Selectivity Theory (SST)",
+    "confidence interval (CI)",
+    "life satisfaction (LS)"
+   ]
+  },
+  {
+   "document": "meta-PMC13221319.xml",
+   "evidence": [
+    "House-Brackmann (HB)",
+    "Newcastle-Ottawa Scale (NOS)",
+    "Vestibular schwannomas (VS)",
+    "gross total resection (GTR)"
+   ]
+  },
+  {
+   "document": "meta-PMC13225629.xml",
+   "evidence": [
+    "Human Genome Variation Society (HGVS)",
+    "Liver transplantation (LT)",
+    "Progressive familial intrahepatic cholestasis (PFIC)"
+   ]
+  },
+  {
+   "document": "meta-PMC13226718.xml",
+   "evidence": [
+    "Gestational diabetes mellitus (GDM)",
+    "body mass index (BMI)",
+    "confidence intervals (CI)",
+    "false discovery rate (FDR)"
+   ]
+  },
+  {
+   "document": "meta-PMC13229315.xml",
+   "evidence": [
+    "Human Research Ethics Committee (HREC)",
+    "Preterm prelabour rupture of membranes (PPROM)",
+    "body mass index (BMI)",
+    "individual participant data (IPD)"
+   ]
+  },
+  {
+   "document": "meta-PMC13231626.xml",
+   "evidence": [
+    "relative deprivation (RD)"
+   ]
+  },
+  {
+   "document": "meta-PMC13241412.xml",
+   "evidence": [
+    "Endoscopic submucosal dissection (ESD)",
+    "Fibrin glue (FG)",
+    "endoscopic submucosal dissection (ESD)",
+    "fibrin glue (FG)"
+   ]
+  },
+  {
+   "document": "meta-PMC13246130.xml",
+   "evidence": [
+    "Artificial intelligence (AI)",
+    "Contrast-induced nephropathy (CIN)",
+    "Naïve Bayes (NB)",
+    "acute kidney injury (AKI)"
+   ]
+  },
+  {
+   "document": "meta-PMC13250259.xml",
+   "evidence": [
+    "Gene Ontology (GO)",
+    "Open Science Framework (OSF)",
+    "partial least squares (PLS)"
+   ]
+  },
+  {
+   "document": "meta-PMC13253268.xml",
+   "evidence": [
+    "confidence intervals (CI)",
+    "network meta-analysis (NMA)",
+    "standard mean differences (SMD)",
+    "standardized mean difference (SMD)"
+   ]
+  },
+  {
+   "document": "meta-PMC13254819.xml",
+   "evidence": [
+    "Alzheimer's (A4)",
+    "Alzheimer's Disease Neuroimaging Initiative (ADNI)",
+    "Alzheimer's Therapeutic Research Institute (ATRI)",
+    "Alzheimer's disease (AD)"
+   ]
+  },
+  {
+   "document": "meta-PMC13256077.xml",
+   "evidence": [
+    "Mitral valve prolapse (MVP)",
+    "implantable cardioverter-defibrillator (ICD)",
+    "left ventricular (LV)",
+    "mitral annular disjunction (MAD)"
+   ]
+  },
+  {
+   "document": "meta-PMC13260247.xml",
+   "evidence": [
+    "genome-wide association studies (GWAS)",
+    "genome-wide association study (GWAS)",
+    "idiopathic nephrotic syndrome (INS)",
+    "natural killer (NK)"
+   ]
+  },
+  {
+   "document": "meta-PMC13263136.xml",
+   "evidence": [
+    "Alzheimer Disease European Sequencing (ADES)",
+    "Alzheimer’s Disease Sequencing Project (ADSP)",
+    "Framingham Heart Study (FHS)",
+    "Psychiatric Genomics Consortium (PGC)"
+   ]
+  },
+  {
+   "document": "meta-PMC13264275.xml",
+   "evidence": [
+    "Monetary Choice Questionnaire (MCQ)",
+    "Physical activity (PA)",
+    "delayed discounting (DD)"
+   ]
+  },
+  {
+   "document": "meta-PMC13264436.xml",
+   "evidence": [
+    "Colorectal Cancer Canada (CCC)",
+    "Fixed-effect (FE)",
+    "confidence interval (CI)",
+    "overall survival (OS)"
+   ]
+  },
+  {
+   "document": "meta-PMC13265330.xml",
+   "evidence": [
+    "Ankylosing spondylitis (AS)",
+    "Million Veteran Program (MVP)",
+    "genome-wide association studies (GWAS)",
+    "major histocompatibility complex (MHC)"
+   ]
+  },
+  {
+   "document": "meta-PMC13268477.xml",
+   "evidence": [
+    "confidence interval (CI)",
+    "disease control rate (DCR)",
+    "hazard ratios (HR)",
+    "hepatic arterial infusion chemotherapy (HAIC)"
+   ]
+  },
+  {
+   "document": "meta-PMC13268693.xml",
+   "evidence": [
+    "Atrial fibrillation (AF)",
+    "absolute risk reduction (ARR)",
+    "angiotensin receptor blocker (ARB)",
+    "angiotensin receptor-neprilysin inhibitor (ARNI)"
+   ]
+  },
+  {
+   "document": "meta-PMC13269816.xml",
+   "evidence": [
+    "Atherosclerosis Risk in Communities (ARIC)",
+    "Cardiovascular Health Study (CHS)",
+    "Erasmus Rucphen Family (ERF)",
+    "Framingham Heart Study (FHS)"
+   ]
+  },
+  {
+   "document": "meta-PMC13271776.xml",
+   "evidence": [
+    "Combined Annotation Dependent Depletion (CADD)",
+    "Genome-wide association studies (GWAS)",
+    "coronary artery disease (CAD)",
+    "genome-wide association studies (GWAS)"
+   ]
+  },
+  {
+   "document": "meta-PMC13280693.xml",
+   "evidence": [
+    "All of Us (AoU)",
+    "Gene Ontology (GO)",
+    "attention deficit hyperactivity disorder (ADHD)",
+    "body mass index (BMI)"
+   ]
+  },
+  {
+   "document": "meta-PMC13286426.xml",
+   "evidence": [
+    "Crohn disease (CD)",
+    "Mendelian randomization (MR)",
+    "false discovery rate (FDR)",
+    "inverse-variance weighting (IVW)"
+   ]
+  },
+  {
+   "document": "meta-PMC13286481.xml",
+   "evidence": [
+    "Ulcerative colitis (UC)",
+    "odds ratio (OR)"
+   ]
+  },
+  {
+   "document": "meta-PMC13287023.xml",
+   "evidence": [
+    "Crohn’s disease (CD)",
+    "Gene Expression Omnibus (GEO)",
+    "Gene Set Enrichment Analysis (GSEA)",
+    "Healthy Control (HC)"
+   ]
+  },
+  {
+   "document": "meta-PMC13287149.xml",
+   "evidence": [
+    "Autoimmune thyroid disease (ATD)",
+    "Celiac disease (CD)",
+    "Gene Ontology (GO)",
+    "Genome-wide association studies (GWAS)"
+   ]
+  },
+  {
+   "document": "meta-PMC13287277.xml",
+   "evidence": [
+    "Family-based association test (FBAT)",
+    "Hardy-Weinberg equilibrium (HWE)",
+    "Identity-by-descent (IBD)",
+    "Neurobehavioral Clinical Research (NCR)"
+   ]
+  },
+  {
+   "document": "meta-PMC13288533.xml",
+   "evidence": [
+    "bilateral salpingo-oophorectomy (BSO)",
+    "coronary artery disease (CAD)",
+    "hazard ratios (HR)",
+    "heart failure (HF)"
+   ]
+  },
+  {
+   "document": "meta-PMC13292320.xml",
+   "evidence": [
+    "Alzheimer’s disease (AD)",
+    "Web of Science (WOS)"
+   ]
+  },
+  {
+   "document": "meta-PMC13297335.xml",
+   "evidence": [
+    "Principal component analysis (PCA)",
+    "false discovery rate (FDR)",
+    "multiplicity of infection (MOI)"
+   ]
+  },
+  {
+   "document": "meta-PMC13305250.xml",
+   "evidence": [
+    "Mendelian randomization (MR)",
+    "United Kingdom Biobank (UKB)",
+    "adjusted odds ratio (AOR)",
+    "body mass index (BMI)"
+   ]
+  },
+  {
+   "document": "moderne-PMC12967033.xml",
+   "evidence": [
+    "acid detergent fiber (ADF)",
+    "crude protein (CP)",
+    "dry matter (DM)",
+    "dry matter intake (DMI)"
+   ]
+  },
+  {
+   "document": "moderne-PMC13177175.xml",
+   "evidence": [
+    "Akaike Information Criterion (AIC)",
+    "Life-Threatening Arrhythmias (LTA)",
+    "Non-Sustained Ventricular Tachycardia (NSVT)",
+    "late gadolinium enhancement (LGE)"
+   ]
+  },
+  {
+   "document": "moderne-PMC13254229.xml",
+   "evidence": [
+    "Theoretical Domains Framework (TDF)"
+   ]
+  },
+  {
+   "document": "moderne-PMC13262411.xml",
+   "evidence": [
+    "Dynamic mechanical analysis (DMA)",
+    "acrylonitrile butadiene styrene (ABS)",
+    "differential scanning calorimetry (DSC)",
+    "dynamic mechanical analysis (DMA)"
+   ]
+  },
+  {
+   "document": "moderne-PMC13264966.xml",
+   "evidence": [
+    "Atmospheric Pressure Ionization (API)",
+    "Atmospheric pressure chemical ionization (APCI)"
+   ]
+  },
+  {
+   "document": "moderne-PMC13264967.xml",
+   "evidence": [
+    "Air Saturated Water (ASW)",
+    "gas chromatography (GC)",
+    "valve (V4)"
+   ]
+  },
+  {
+   "document": "moderne-PMC13267778.xml",
+   "evidence": [
+    "multiple sclerosis (MS)",
+    "myelin oligodendrocyte glycoprotein (MOG)",
+    "replica exchange molecular dynamics (REMD)",
+    "supplementary information (SI)"
+   ]
+  },
+  {
+   "document": "moderne-PMC13282716.xml",
+   "evidence": [
+    "numerical aperture (NA)",
+    "structured illumination microscopy (SIM)",
+    "total internal reflection fluorescence (TIRF)"
+   ]
+  },
+  {
+   "document": "moderne-PMC13282721.xml",
+   "evidence": [
+    "Chinese Hamster Ovary (CHO)",
+    "Eps15 homology (EH)",
+    "Human Immunodeficiency Virus (HIV)",
+    "Nerve Growth Factor (NGF)"
+   ]
+  },
+  {
+   "document": "moderne-PMC13288728.xml",
+   "evidence": [
+    "digital volume correlation (DVC)",
+    "fast iterative digital volume correlation (FIDVC)",
+    "finite element method (FEM)",
+    "linear elasticity theory (LET)"
+   ]
+  },
+  {
+   "document": "moderne-PMC13291764.xml",
+   "evidence": [
+    "confidence interval (CI)",
+    "hazard ratios (HR)",
+    "intensive care unit (ICU)",
+    "serious adverse event (SAE)"
+   ]
+  },
+  {
+   "document": "moderne-PMC13292400.xml",
+   "evidence": [
+    "Root mean square deviation (RMSD)",
+    "cementum attachment protein (CAP)",
+    "mass spectra (MS)",
+    "molecular dynamics (MD)"
+   ]
+  },
+  {
+   "document": "moderne-PMC13296834.xml",
+   "evidence": [
+    "New Zealand (NZ)",
+    "neonatal adaptation syndrome (NAS)",
+    "spontaneous abortion (SA)"
+   ]
+  },
+  {
+   "document": "moderne-PMC13296839.xml",
+   "evidence": [
+    "Alzheimer's Disease (AD)",
+    "green fluorescent protein (GFP)",
+    "lipid droplet (LD)",
+    "lipid droplet associated microglia (LDAM)"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13127809.xml",
+   "evidence": [
+    "disfunção ventricular esquerda (DVE)"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13128184.xml",
+   "evidence": [
+    "ressonância magnética cardíaca (RMC)"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13128185.xml",
+   "evidence": [
+    "ressonância magnética cardíaca (RMC)"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13128206.xml",
+   "evidence": [
+    "ECMO Cardio-Pulmonary Resuscitation (ECPR)",
+    "Extracorporeal Life Support Organization (ELSO)",
+    "suporte circulatório mecânico (SCM)"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13128210.xml",
+   "evidence": [
+    "Global Heart Hub (GHH)"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13128213.xml",
+   "evidence": [
+    "Lysosomal Storage Diseases (LSD)",
+    "Wolff-Parkinson-White (WPW)",
+    "cardioversor-desfibrilador implantável (CDI)",
+    "de Danon (DD)"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13128215.xml",
+   "evidence": [
+    "cardiopatia congênita (CC)"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13128216.xml",
+   "evidence": [
+    "doença renal crônica (DRC)",
+    "insuficiência cardíaca (IC)"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13128218.xml",
+   "evidence": [
+    "doença arterial coronariana (DAC)"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13142163.xml",
+   "evidence": [
+    "Autism Spectrum Disorder (ASD)",
+    "Eye Contact (EC)",
+    "Joint Attention (JA)",
+    "communicative modality (CM)"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13148856.xml",
+   "evidence": [
+    "fibrose miocárdica (FM)",
+    "realce tardio (RT)",
+    "ressonância magnética cardíaca (RMC)",
+    "ventrículo esquerdo (VE)"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13155791.xml",
+   "evidence": [
+    "frequência cardíaca (FC)"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13155793.xml",
+   "evidence": [
+    "International Liaison Committee on Resuscitation (ILCOR)",
+    "morte súbita cardíaca (MSC)",
+    "randomização mendeliana (RM)"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13185728.xml",
+   "evidence": [
+    "atendimento educacional especializado (AEE)"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13193188.xml",
+   "evidence": [
+    "Central Auditory Nervous System (CANS)",
+    "Central Auditory Processing (CAP)",
+    "Central Auditory Processing Disorder (CAPD)",
+    "Masking Level Difference (MLD)"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13193189.xml",
+   "evidence": [
+    "Forensic speaker comparison (FSC)"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13193190.xml",
+   "evidence": [
+    "auditory-perceptual evaluation (APE)",
+    "vocal folds (VF)"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13193191.xml",
+   "evidence": [
+    "Speech-Language-Hearing (SLH)"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13193194.xml",
+   "evidence": [
+    "Autism Spectrum Disorder (ASD)",
+    "Language Disorder (LD)",
+    "Research Ethics Committee (REC)",
+    "Social Interaction (SI)"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13193195.xml",
+   "evidence": [
+    "Oropharyngeal dysphagia (OD)",
+    "content validity coefficient (CVC)",
+    "content validity index (CVI)",
+    "speech-language-hearing (SLH)"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13224957.xml",
+   "evidence": [
+    "hipertensão arterial sistêmica (HAS)"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13264058.xml",
+   "evidence": [
+    "Atención Primaria (AP)",
+    "Web of Science (WoS)",
+    "inteligencia artificial (IA)",
+    "tema principal (TP)"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13264178.xml",
+   "evidence": [
+    "diabetes mellitus (DM)"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13266121.xml",
+   "evidence": [
+    "dirección por objetivos (DPO)"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13266122.xml",
+   "evidence": [
+    "Video Interaction Project (VIP)"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13267754.xml",
+   "evidence": [
+    "métodos anticonceptivos modernos (MAM)",
+    "planificación familiar (PF)"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13267755.xml",
+   "evidence": [
+    "alimentos complementarios comerciales (ACC)",
+    "inteligencia artificial (IA)"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13267756.xml",
+   "evidence": [
+    "desvios padrão (DP)",
+    "glycemia risk index (GRI)",
+    "inteligência artificial (IA)"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13272517.xml",
+   "evidence": [
+    "atención primaria (AP)",
+    "tarjetas sanitarias individuales (TSI)"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13284469.xml",
+   "evidence": [
+    "fallo cardiaco (FC)"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13285635.xml",
+   "evidence": [
+    "atención primaria (AP)",
+    "enfermedad pulmonar intersticial (EPI)",
+    "interacciones farmacológicas (IF)"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13288443.xml",
+   "evidence": [
+    "Alzheimer's Disease (AD)",
+    "Boston Naming Test (BNT)",
+    "Posterior Cortical Atrophy (PCA)",
+    "Reality Orientation Therapy (ROT)"
+   ]
+  },
+  {
+   "document": "phys-PMC13039343.xml",
+   "evidence": [
+    "Normalized cross correlation (NCC)",
+    "Physics based simulations (PBS)",
+    "Random Forest (RF)",
+    "artificial intelligence (AI)"
+   ]
+  },
+  {
+   "document": "phys-PMC13082673.xml",
+   "evidence": [
+    "Monte Carlo (MC)",
+    "artificial intelligence (AI)",
+    "central processing unit (CPU)",
+    "computed tomography (CT)"
+   ]
+  },
+  {
+   "document": "phys-PMC13099575.xml",
+   "evidence": [
+    "Recurrent Neural Network (RNN)",
+    "machine learning (ML)"
+   ]
+  },
+  {
+   "document": "phys-PMC13113438.xml",
+   "evidence": [
+    "Constant Acceleration (CA)",
+    "Event-Triggered Mechanism (ETM)",
+    "Latin Hypercube Sampling (LHS)",
+    "Model Predictive Control (MPC)"
+   ]
+  },
+  {
+   "document": "phys-PMC13133660.xml",
+   "evidence": [
+    "Bayesian model averaging (BMA)",
+    "Hamiltonian Monte Carlo (HMC)",
+    "Monte Carlo (MC)",
+    "Stochastic weight averaging Gaussian (SWAG)"
+   ]
+  },
+  {
+   "document": "phys-PMC13154412.xml",
+   "evidence": [
+    "Monte Carlo Simulated Annealing (MCSA)",
+    "Pearson correlation coefficient (PCC)",
+    "convolutional neural network (CNN)",
+    "human leukocyte antigen (HLA)"
+   ]
+  },
+  {
+   "document": "phys-PMC13158258.xml",
+   "evidence": [
+    "algorithmic differentiation (AD)",
+    "boundary-value problem (BVP)",
+    "computer-aided design (CAD)",
+    "digital twin prototype (DTP)"
+   ]
+  },
+  {
+   "document": "phys-PMC13171646.xml",
+   "evidence": [
+    "Computational thinking (CT)",
+    "Quantum computing (QC)"
+   ]
+  },
+  {
+   "document": "phys-PMC13178570.xml",
+   "evidence": [
+    "imaginary quantum annealing (IQA)",
+    "imaginary time evolution (ITE)",
+    "matrix product state (MPS)",
+    "quantum annealing (QA)"
+   ]
+  },
+  {
+   "document": "phys-PMC13181085.xml",
+   "evidence": [
+    "Archimedes Optimization Algorithm (AOA)",
+    "Artificial Neural Network (ANN)",
+    "Firefly Algorithm (FA)",
+    "Legendre Artificial Neural Network (LANN)"
+   ]
+  },
+  {
+   "document": "phys-PMC13193059.xml",
+   "evidence": [
+    "Kolmogorov-Smirnov (KS)",
+    "Probability distribution function (PDF)",
+    "dose voxel kernel (DVK)",
+    "dose-point kernel (DPK)"
+   ]
+  },
+  {
+   "document": "phys-PMC13201561.xml",
+   "evidence": [
+    "Akaike Information Criterion (AIC)",
+    "Artificial Neural Networks (ANN)",
+    "Bayesian Information Criterion (BIC)",
+    "Computational Fluid Dynamics (CFD)"
+   ]
+  },
+  {
+   "document": "phys-PMC13208799.xml",
+   "evidence": [
+    "Artificial Neural Network (ANN)",
+    "Cellular Automata (CA)",
+    "Cellular Automaton (CA)",
+    "Cellular automata (CA)"
+   ]
+  },
+  {
+   "document": "phys-PMC13210669.xml",
+   "evidence": [
+    "Mean Squared Error (MSE)",
+    "Multi-Gradient Descent Algorithm (MGDA)",
+    "Multiple Gradient Descent Algorithm (MGDA)",
+    "Principal Component Analysis (PCA)"
+   ]
+  },
+  {
+   "document": "phys-PMC13221960.xml",
+   "evidence": [
+    "Hamming distance (HD)",
+    "Time-to-solution (TTS)",
+    "field-programmable gate array (FPGA)",
+    "noisy intermediate-scale quantum (NISQ)"
+   ]
+  },
+  {
+   "document": "phys-PMC13222844.xml",
+   "evidence": [
+    "European Control Conference (ECC)",
+    "full fine-tuning (FFT)",
+    "partial fine-tuning (PFT)",
+    "physics-informed hybrid model (PIHM)"
+   ]
+  },
+  {
+   "document": "phys-PMC13234180.xml",
+   "evidence": [
+    "Input Data Files (IDF)",
+    "mean absolute percentage error (MAPE)",
+    "support vector regression (SVR)"
+   ]
+  },
+  {
+   "document": "phys-PMC13235518.xml",
+   "evidence": [
+    "convex-concave procedure (CCP)",
+    "linear-quadratic (LQ)",
+    "mixed-integer program (MIP)",
+    "model predictive control (MPC)"
+   ]
+  },
+  {
+   "document": "phys-PMC13246409.xml",
+   "evidence": [
+    "Center of Mass (CoM)",
+    "Computational Fluid Dynamics (CFD)",
+    "Courant-Friedrichs-Lewy (CFL)",
+    "Discrete Phase Model (DPM)"
+   ]
+  },
+  {
+   "document": "phys-PMC13252849.xml",
+   "evidence": [
+    "Conserved Domain Database (CDD)",
+    "Genetic Algorithm (GA)",
+    "Heuristic multi-site optimization (HMSO)",
+    "Monte Carlo Tree Search (MCTS)"
+   ]
+  },
+  {
+   "document": "phys-PMC13257740.xml",
+   "evidence": [
+    "Discrete Element Method (DEM)",
+    "Hot Optimal Transportation Meshfree (HOTM)",
+    "Laser Powder Bed Fusion (LPBF)",
+    "Smoothed Particle Hydrodynamics (SPH)"
+   ]
+  },
+  {
+   "document": "phys-PMC13259435.xml",
+   "evidence": [
+    "Gaussian mixture models (GMM)",
+    "high-resolution range profile (HRRP)",
+    "mean squared error (MSE)",
+    "support vector machines (SVM)"
+   ]
+  },
+  {
+   "document": "phys-PMC13259474.xml",
+   "evidence": [
+    "Bounding Volume Hierarchies (BVH)",
+    "Differential-Algebraic Equation (DAE)",
+    "International Conference on Rehabilitation Robotics (ICORR)",
+    "Inverse kinematics (IK)"
+   ]
+  },
+  {
+   "document": "phys-PMC13261600.xml",
+   "evidence": [
+    "computational fluid dynamics (CFD)",
+    "equivalence ratio (ER)",
+    "machine learning (ML)",
+    "partial dependence analysis (PDA)"
+   ]
+  },
+  {
+   "document": "phys-PMC13272752.xml",
+   "evidence": [
+    "Differential Evolution (DE)",
+    "Direct Laser Deposition (DLD)",
+    "Fourier Neural Operator (FNO)",
+    "Mechanistic Physics-Embedded Neural Operator (MPeNO)"
+   ]
+  },
+  {
+   "document": "phys-PMC13275013.xml",
+   "evidence": [
+    "automatic differentiation (AD)",
+    "convolutional neural network (CNN)",
+    "finite element method (FEM)",
+    "implicit neural representation (INR)"
+   ]
+  },
+  {
+   "document": "phys-PMC13276034.xml",
+   "evidence": [
+    "Artificial intelligence (AI)",
+    "Correlation Coefficient (CC)",
+    "Gated Recurrent Unit (GRU)",
+    "Gated Recurrent Units (GRU)"
+   ]
+  },
+  {
+   "document": "phys-PMC13282397.xml",
+   "evidence": [
+    "Extra Trees (ET)",
+    "Machine learning (ML)",
+    "Mean Squared Error (MSE)"
+   ]
+  },
+  {
+   "document": "phys-PMC13285896.xml",
+   "evidence": [
+    "Integrated depth dose (IDD)",
+    "Monte Carlo (MC)",
+    "Very High Energy Electron (VHEE)",
+    "macro Monte Carlo (MMC)"
+   ]
+  },
+  {
+   "document": "phys-PMC13289917.xml",
+   "evidence": [
+    "mean squared errors (MSE)"
+   ]
+  },
+  {
+   "document": "phys-PMC13296606.xml",
+   "evidence": [
+    "Newton-Raphson-based optimization (NRBO)",
+    "elk herd optimization (EHO)",
+    "greater cane rat algorithm (GCRA)",
+    "horned lizard optimization algorithm (HLOA)"
+   ]
+  },
+  {
+   "document": "phys-PMC13297141.xml",
+   "evidence": [
+    "Adaptive Large Neighborhood Search (ALNS)",
+    "Agricultural Cold Chain Logistics (ACCL)",
+    "All-Pairs Shortest Path (APSP)",
+    "All-Pairs Shortest Paths (APSP)"
+   ]
+  },
+  {
+   "document": "phys-PMC13297618.xml",
+   "evidence": [
+    "Chef-Based Optimization Algorithm (CBOA)",
+    "Critical Difference (CD)",
+    "Election Algorithm (EA)",
+    "Genetic Algorithm (GA)"
+   ]
+  },
+  {
+   "document": "phys-PMC13298103.xml",
+   "evidence": [
+    "Hamiltonian Monte Carlo (HMC)",
+    "Markov Chain Monte Carlo (MCMC)",
+    "Monte Carlo (MC)",
+    "Sequential Monte Carlo (SMC)"
+   ]
+  },
+  {
+   "document": "retract-PMC13083641.xml",
+   "evidence": [
+    "atrial fibrillation (AF)"
+   ]
+  },
+  {
+   "document": "retract-PMC13292106.xml",
+   "evidence": [
+    "Reactive Oxygen Species (ROS)"
+   ]
+  }
+ ]
+}

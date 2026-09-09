@@ -1,0 +1,198 @@
+{
+ "probe": "probes/2026-08/line-132.py",
+ "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+ "date": "2026-09-09",
+ "count": 21,
+ "of": 272,
+ "carriers": [
+  {
+   "document": "essai-PMC13169472.xml",
+   "evidence": [
+    "« Steinmetz et al. » DEHORS + <xref>2023</xref>",
+    "« World Health Organization » DEHORS + <xref>2023</xref>",
+    "« Kittelson et al. » DEHORS + <xref>2020</xref>",
+    "« Danish Kneealloplasty Register » DEHORS + <xref>2024</xref>"
+   ]
+  },
+  {
+   "document": "essai-PMC13205709.xml",
+   "evidence": [
+    "« Victora et al. » DEHORS + <xref>2008</xref>",
+    "« FAO et al. » DEHORS + <xref>2025</xref>",
+    "« Black et al. » DEHORS + <xref>2008</xref>",
+    "« Bhutta et al. » DEHORS + <xref>2008</xref>"
+   ]
+  },
+  {
+   "document": "essai-PMC13205731.xml",
+   "evidence": [
+    "« UNICEF. WHO. World_Bank. » DEHORS + <xref>2025</xref>",
+    "« Haseeb and Ali » DEHORS + <xref>2026</xref>",
+    "« WHO » DEHORS + <xref>2020</xref>",
+    "« Bita » DEHORS + <xref>2025</xref>"
+   ]
+  },
+  {
+   "document": "essai-PMC13205876.xml",
+   "evidence": [
+    "« Cusick and Georgieff » DEHORS + <xref>2022</xref>",
+    "« Prado and Dewey » DEHORS + <xref>2014</xref>",
+    "« Cusick and Georgieff » DEHORS + <xref>2022</xref>",
+    "« Fuglestad et al. » DEHORS + <xref>2008</xref>"
+   ]
+  },
+  {
+   "document": "essai-PMC13239719.xml",
+   "evidence": [
+    "« Grgic et al. » DEHORS + <xref>2018</xref>",
+    "« Southward et al. » DEHORS + <xref>2018</xref>",
+    "« Ágoston et al. » DEHORS + <xref>2018</xref>",
+    "« Barcelos et al. » DEHORS + <xref>2020</xref>"
+   ]
+  },
+  {
+   "document": "essai-PMC13242068.xml",
+   "evidence": [
+    "« Bonfim et al. » DEHORS + <xref>2010</xref>",
+    "« Carvalho et al. » DEHORS + <xref>2021</xref>",
+    "« Costa et al. » DEHORS + <xref>2022</xref>",
+    "« Wang et al. » DEHORS + <xref>2021</xref>"
+   ]
+  },
+  {
+   "document": "essai-PMC13242351.xml",
+   "evidence": [
+    "« Zhou et al. » DEHORS + <xref>2021</xref>",
+    "« Abbafati et al. » DEHORS + <xref>2020</xref>",
+    "« Abbafati et al. » DEHORS + <xref>2020</xref>",
+    "« Webb and Werring » DEHORS + <xref>2022</xref>"
+   ]
+  },
+  {
+   "document": "essai-PMC13263161.xml",
+   "evidence": [
+    "« Warburton and Bredin » DEHORS + <xref>2017</xref>",
+    "« Penedo and Dahn » DEHORS + <xref>2005</xref>",
+    "« Sports Medicine » DEHORS + <xref>2025</xref>",
+    "« Ekkekakis et al. » DEHORS + <xref>2008</xref>"
+   ]
+  },
+  {
+   "document": "essai-PMC13264282.xml",
+   "evidence": [
+    "« Asmundson and Katz » DEHORS + <xref>2009</xref>",
+    "« Bair et al. » DEHORS + <xref>2003</xref>",
+    "« De La Rosa et al. » DEHORS + <xref>2024</xref>",
+    "« Gerdle et al. » DEHORS + <xref>2019</xref>"
+   ]
+  },
+  {
+   "document": "essai-PMC13271868.xml",
+   "evidence": [
+    "« Sherrington et al. » DEHORS + <xref>2017</xref>",
+    "« Donath et al. » DEHORS + <xref>2017</xref>",
+    "« Giboin et al. » DEHORS + <xref>2018</xref>",
+    "« Muehlbauer et al. » DEHORS + <xref>2021</xref>"
+   ]
+  },
+  {
+   "document": "essai-PMC13276020.xml",
+   "evidence": [
+    "« Zhu et al. » DEHORS + <xref>2025</xref>",
+    "« Busse et al. » DEHORS + <xref>2018</xref>",
+    "« Cohen et al. » DEHORS + <xref>2021</xref>",
+    "« Squillace et al. » DEHORS + <xref>2020</xref>"
+   ]
+  },
+  {
+   "document": "essai-PMC13280799.xml",
+   "evidence": [
+    "« Canavan and Fawzi » DEHORS + <xref>2019</xref>",
+    "« Cooke et al. » DEHORS + <xref>2017</xref>",
+    "« Best et al. » DEHORS + <xref>2010</xref>",
+    "« World Health Organization » DEHORS + <xref>2018</xref>"
+   ]
+  },
+  {
+   "document": "essai-PMC13282136.xml",
+   "evidence": [
+    "« Faria et al. » DEHORS + <xref>2005</xref>",
+    "« Takaishi et al. » DEHORS + <xref>1996</xref>",
+    "« Rich and Cafarelli » DEHORS + <xref>2000</xref>",
+    "« Cormie et al. » DEHORS + <xref>2011</xref>"
+   ]
+  },
+  {
+   "document": "essai-PMC13284529.xml",
+   "evidence": [
+    "« Arnett » DEHORS + <xref>2013</xref>",
+    "« Wiegner et al. » DEHORS + <xref>2015</xref>",
+    "« Walker et al. » DEHORS + <xref>2021</xref>",
+    "« Granot and Ferber » DEHORS + <xref>2005</xref>"
+   ]
+  },
+  {
+   "document": "essai-PMC13291922.xml",
+   "evidence": [
+    "« Plummer et al. » DEHORS + <xref>2013</xref>",
+    "« Gilmore et al. » DEHORS + <xref>2021</xref>",
+    "« Gilmore et al. » DEHORS + <xref>2021</xref>",
+    "« McCulloch et al. » DEHORS + <xref>2010</xref>"
+   ]
+  },
+  {
+   "document": "meta-PMC13240427.xml",
+   "evidence": [
+    "« Kirakosian et al. » DEHORS + <xref>2023</xref>",
+    "« Austin et al. » DEHORS + <xref>2022</xref>",
+    "« Feeney et al. » DEHORS + <xref>2020</xref>",
+    "« McArthur et al. » DEHORS + <xref>2025</xref>"
+   ]
+  },
+  {
+   "document": "meta-PMC13250259.xml",
+   "evidence": [
+    "« Tang et al. » DEHORS + <xref>2021</xref>",
+    "« Qu et al. » DEHORS + <xref>2020</xref>",
+    "« Fang et al. » DEHORS + <xref>2026</xref>",
+    "« Livingston et al. » DEHORS + <xref>2024</xref>"
+   ]
+  },
+  {
+   "document": "meta-PMC13287149.xml",
+   "evidence": [
+    "« Yel » DEHORS + <xref>2010</xref>",
+    "« Vosughimotlagh et al. » DEHORS + <xref>2023</xref>",
+    "« Karaca et al. » DEHORS + <xref>2018</xref>",
+    "« Schäffer et al. » DEHORS + <xref>2006</xref>"
+   ]
+  },
+  {
+   "document": "meta-PMC13287277.xml",
+   "evidence": [
+    "« Faraone and Larsson » DEHORS + <xref>2019</xref>",
+    "« Demontis et al. » DEHORS + <xref>2019</xref>",
+    "« Lange et al. » DEHORS + <xref>2008</xref>",
+    "« Ogdie et al. » DEHORS + <xref>2004</xref>"
+   ]
+  },
+  {
+   "document": "moderne-PMC13296834.xml",
+   "evidence": [
+    "« Jahan et al. » DEHORS + <xref>2021</xref>",
+    "« RANZCOG » DEHORS + <xref>2018</xref>",
+    "« Desaunay et al. » DEHORS + <xref>2023</xref>",
+    "« Grigoriadis et al. » DEHORS + <xref>2013</xref>"
+   ]
+  },
+  {
+   "document": "moderne-PMC13296839.xml",
+   "evidence": [
+    "« Jones et al. » DEHORS + <xref>2010</xref>",
+    "« Kunkle et al. » DEHORS + <xref>2019</xref>",
+    "« Strittmatter et al. » DEHORS + <xref>1993</xref>",
+    "« Husain et al. » DEHORS + <xref>2021</xref>"
+   ]
+  }
+ ]
+}

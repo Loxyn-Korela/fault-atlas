@@ -105,9 +105,73 @@
               "en",
               "pt"
             ]
+          ],
+          [
+            "nonEN-PMC13128172.xml",
+            [
+              "en",
+              "pt"
+            ]
+          ],
+          [
+            "nonEN-PMC13128184.xml",
+            [
+              "en",
+              "pt"
+            ]
+          ],
+          [
+            "nonEN-PMC13128185.xml",
+            [
+              "en",
+              "pt"
+            ]
+          ],
+          [
+            "nonEN-PMC13128186.xml",
+            [
+              "en",
+              "pt"
+            ]
+          ],
+          [
+            "nonEN-PMC13128206.xml",
+            [
+              "en",
+              "pt"
+            ]
+          ],
+          [
+            "nonEN-PMC13128210.xml",
+            [
+              "en",
+              "pt"
+            ]
+          ],
+          [
+            "nonEN-PMC13128212.xml",
+            [
+              "en",
+              "pt"
+            ]
+          ],
+          [
+            "nonEN-PMC13128213.xml",
+            [
+              "en",
+              "pt"
+            ]
+          ],
+          [
+            "nonEN-PMC13128215.xml",
+            [
+              "en",
+              "pt"
+            ]
           ]
         ],
-        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files"
+        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files",
+        "carriers_file": "probes/results/line-102.json"
       },
       "matches_excerpt": true
     }

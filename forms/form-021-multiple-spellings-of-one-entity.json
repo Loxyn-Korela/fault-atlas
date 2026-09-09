@@ -110,28 +110,88 @@
             "bio-PMC12583535.xml",
             [
               "Risk of Bias (RoB)",
-              "confidence intervals (CI)",
-              "fatty acid oxidation (FAO)"
+              "confidence intervals (CI)"
             ]
           ],
           [
             "bio-PMC12590050.xml",
             [
               "Diabetes mellitus (DM)",
-              "Thyroid hormone (TH)",
-              "Thyroid-stimulating hormone (TSH)"
+              "Thyroid hormone (TH)"
             ]
           ],
           [
             "bio-PMC12674831.xml",
             [
               "C-reactive protein (CRP)",
-              "acute myocardial infarction (AMI)",
-              "angiotensin-converting-enzyme inhibitors (ACEI)"
+              "acute myocardial infarction (AMI)"
+            ]
+          ],
+          [
+            "bio-PMC12857832.xml",
+            [
+              "Lung cancer (LC)",
+              "body mass index (BMI)"
+            ]
+          ],
+          [
+            "bio-PMC12882215.xml",
+            [
+              "Alzheimer’s disease (AD)",
+              "Normalized Difference Vegetation Index (NDVI)"
+            ]
+          ],
+          [
+            "bio-PMC12909487.xml",
+            [
+              "Joanna Briggs Institute (JBI)",
+              "Sudden cardiac death (SCD)"
+            ]
+          ],
+          [
+            "bio-PMC12915353.xml",
+            [
+              "blood pressure (BP)",
+              "coronary heart disease (CHD)"
+            ]
+          ],
+          [
+            "bio-PMC12927065.xml",
+            [
+              "Newcastle-Ottawa Scale (NOS)",
+              "non-communicable disease (NCD)"
+            ]
+          ],
+          [
+            "bio-PMC12927975.xml",
+            [
+              "Artificial intelligence (AI)",
+              "convolutional neural networks (CNN)"
+            ]
+          ],
+          [
+            "bio-PMC12953170.xml",
+            [
+              "Botulinum toxin A (BTA)",
+              "European Hernia Society (EHS)"
+            ]
+          ],
+          [
+            "bio-PMC12959687.xml",
+            [
+              "Joanna Briggs Institute (JBI)"
+            ]
+          ],
+          [
+            "bio-PMC13057049.xml",
+            [
+              "Acute coronary syndrome (ACS)",
+              "Joanna Briggs Institute (JBI)"
             ]
           ]
         ],
-        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files"
+        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files",
+        "carriers_file": "probes/results/line-021.json"
       },
       "matches_excerpt": true
     }

@@ -95,8 +95,7 @@
             "bio-PMC12583535.xml",
             [
               "accepted",
-              "collection",
-              "epub"
+              "collection"
             ]
           ],
           [
@@ -110,12 +109,75 @@
             "bio-PMC12857832.xml",
             [
               "accepted",
-              "epub",
-              "ppub"
+              "epub"
+            ]
+          ],
+          [
+            "bio-PMC12882215.xml",
+            [
+              "accepted",
+              "collection"
+            ]
+          ],
+          [
+            "bio-PMC12909487.xml",
+            [
+              "accepted",
+              "received"
+            ]
+          ],
+          [
+            "bio-PMC12915353.xml",
+            [
+              "accepted",
+              "collection"
+            ]
+          ],
+          [
+            "bio-PMC12927975.xml",
+            [
+              "accepted",
+              "collection"
+            ]
+          ],
+          [
+            "bio-PMC13103274.xml",
+            [
+              "accepted",
+              "collection"
+            ]
+          ],
+          [
+            "bio-PMC13181205.xml",
+            [
+              "accepted",
+              "collection"
+            ]
+          ],
+          [
+            "bio-PMC13207820.xml",
+            [
+              "accepted",
+              "collection"
+            ]
+          ],
+          [
+            "bio-PMC13216383.xml",
+            [
+              "accepted",
+              "collection"
+            ]
+          ],
+          [
+            "bio-PMC13236932.xml",
+            [
+              "accepted",
+              "received"
             ]
           ]
         ],
-        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files"
+        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files",
+        "carriers_file": "probes/results/line-071.json"
       },
       "matches_excerpt": true
     }

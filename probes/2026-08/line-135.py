@@ -7,7 +7,7 @@ It repairs nothing and decides nothing. Returns a list of excerpts, empty if abs
 
 Run on the reproducible corpus (see corpora/europe-pmc-jats-2023-2026-272.json):
     python3 tools/run_probe.py probes/2026-08/line-135.py <dir with the 272 .xml>
-Result (re-run 2026-09-09): 11/272 carry a block quotation (102 blocks); 1/272 carries a translation marker (phys-PMC13234180, "our translation"). Same figures as the excerpt. A carrier here is a document with a block quotation.
+Result (re-run 2026-09-09): 11/272 carry a block quotation (102 blocks); 1/272 carries a translation marker (phys-PMC13234180, "our translation"). Same figures as the excerpt. A carrier here is a document with a block quotation or a translation marker (11 + 1 = 12).
 """
 import re, collections
 
@@ -28,9 +28,7 @@ TRAD = re.compile(r'(?i)\b(translated (?:by|from)|our translation|translation (?
 @sonde(135, "verbatim quotation, possibly translated")
 def d135(x):
     n = len(re.findall(r'<disp-quote\b', x))
-    if not n:
-        return []
-    out = [f"disp-quote x{n}"]
     m = TRAD.findall(txt(x))
+    out = [f"disp-quote x{n}"] if n else []
     if m: out.append("translation marker: " + ", ".join(sorted(set(m))))
     return out

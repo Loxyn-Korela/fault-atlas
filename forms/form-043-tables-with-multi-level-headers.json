@@ -114,9 +114,73 @@
               "th colspan/rowspan ×23",
               "thead à >1 ligne ×2/4"
             ]
+          ],
+          [
+            "bio-PMC12927065.xml",
+            [
+              "th colspan/rowspan ×4",
+              "thead à >1 ligne ×1/4"
+            ]
+          ],
+          [
+            "bio-PMC12953170.xml",
+            [
+              "th colspan/rowspan ×1",
+              "thead à >1 ligne ×0/2"
+            ]
+          ],
+          [
+            "bio-PMC13097615.xml",
+            [
+              "th colspan/rowspan ×1",
+              "thead à >1 ligne ×0/3"
+            ]
+          ],
+          [
+            "bio-PMC13099299.xml",
+            [
+              "th colspan/rowspan ×12",
+              "thead à >1 ligne ×2/7"
+            ]
+          ],
+          [
+            "bio-PMC13182387.xml",
+            [
+              "th colspan/rowspan ×1",
+              "thead à >1 ligne ×0/3"
+            ]
+          ],
+          [
+            "bio-PMC13218538.xml",
+            [
+              "th colspan/rowspan ×3",
+              "thead à >1 ligne ×2/2"
+            ]
+          ],
+          [
+            "bio-PMC13274935.xml",
+            [
+              "th colspan/rowspan ×1",
+              "thead à >1 ligne ×0/3"
+            ]
+          ],
+          [
+            "cas-PMC13291543.xml",
+            [
+              "th colspan/rowspan ×2",
+              "thead à >1 ligne ×0/4"
+            ]
+          ],
+          [
+            "cas-PMC13293792.xml",
+            [
+              "th colspan/rowspan ×2",
+              "thead à >1 ligne ×0/2"
+            ]
           ]
         ],
-        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files"
+        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files",
+        "carriers_file": "probes/results/line-043.json"
       },
       "matches_excerpt": true
     }

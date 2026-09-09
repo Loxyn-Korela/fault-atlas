@@ -1,0 +1,295 @@
+{
+ "probe": "probes/2026-08/line-133.py",
+ "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+ "date": "2026-09-09",
+ "count": 38,
+ "of": 272,
+ "carriers": [
+  {
+   "document": "bio-PMC13252842.xml",
+   "evidence": [
+    "274o : naïf 'M H F N' ≠ assemblé 'MHFN'",
+    "274o : naïf 'M H F W' ≠ assemblé 'MHFW'",
+    "274o : naïf 'F H F N' ≠ assemblé 'FHFN'"
+   ]
+  },
+  {
+   "document": "essai-PMC13238360.xml",
+   "evidence": [
+    "1032o : naïf 'PV t = PV bl × 1 + Hct bl Hct t − ' ≠ assemblé 'PVt=PVbl×1+HctblHctt−11−Hctbl'",
+    "549o : naïf 'BV bl = a × h 3 + b × w + c' ≠ assemblé 'BVbl=a×h3+b×w+c'",
+    "465o : naïf 'PPV = BV bl × 1 − Hct' ≠ assemblé 'PPV=BVbl×1−Hct'"
+   ]
+  },
+  {
+   "document": "essai-PMC13263161.xml",
+   "evidence": [
+    "238o : naïf 'V ˙' ≠ assemblé 'V˙'",
+    "238o : naïf 'V ˙' ≠ assemblé 'V˙'",
+    "238o : naïf 'V ˙' ≠ assemblé 'V˙'"
+   ]
+  },
+  {
+   "document": "essai-PMC13282136.xml",
+   "evidence": [
+    "238o : naïf 'V ˙' ≠ assemblé 'V˙'",
+    "238o : naïf 'V ˙' ≠ assemblé 'V˙'",
+    "238o : naïf 'V ˙' ≠ assemblé 'V˙'"
+   ]
+  },
+  {
+   "document": "essai-PMC13284529.xml",
+   "evidence": [
+    "2142o : naïf 'P r o c e s s i n g E f f i c i e ' ≠ assemblé 'ProcessingEfficiency=(WMPerformace'"
+   ]
+  },
+  {
+   "document": "essai-PMC13291922.xml",
+   "evidence": [
+    "488o : naïf 'CRR = number of correct responses ' ≠ assemblé '=÷'"
+   ]
+  },
+  {
+   "document": "meta-PMC13179150.xml",
+   "evidence": [
+    "283o : naïf 'ρ &gt; 39' ≠ assemblé 'ρ&gt;39'",
+    "283o : naïf 'ρ &lt; 39' ≠ assemblé 'ρ&lt;39'",
+    "283o : naïf 'ρ &gt; 39' ≠ assemblé 'ρ&gt;39'"
+   ]
+  },
+  {
+   "document": "meta-PMC13263136.xml",
+   "evidence": [
+    "822o : naïf 'PGS = n ∑ i = 1 n log OR i × ∑ i =' ≠ assemblé '=n∑i=1nlogi×∑i=1nlogi×di'"
+   ]
+  },
+  {
+   "document": "meta-PMC13264275.xml",
+   "evidence": [
+    "233o : naïf 'X ¯' ≠ assemblé 'X¯'"
+   ]
+  },
+  {
+   "document": "meta-PMC13264436.xml",
+   "evidence": [
+    "232o : naïf 'I 2' ≠ assemblé 'I2'",
+    "232o : naïf 'I 2' ≠ assemblé 'I2'",
+    "232o : naïf 'I 2' ≠ assemblé 'I2'"
+   ]
+  },
+  {
+   "document": "meta-PMC13286426.xml",
+   "evidence": [
+    "999o : naïf 'F = R 2 × ( N − 1 − K ) / [ ( 1 − ' ≠ assemblé 'F=R2×(N−1−K)/[(1−R2)×K],'"
+   ]
+  },
+  {
+   "document": "moderne-PMC12967033.xml",
+   "evidence": [
+    "650o : naïf 'Y ij = μ + Trt i + e ij ,' ≠ assemblé '=μ++,'"
+   ]
+  },
+  {
+   "document": "moderne-PMC13264967.xml",
+   "evidence": [
+    "650o : naïf 'p i norm . = 1 − exp − t T i' ≠ assemblé 'pinorm.=1−exp−tTi'",
+    "646o : naïf 'C i = C mes P mes P ini' ≠ assemblé 'Ci=CmesPmesPini'"
+   ]
+  },
+  {
+   "document": "moderne-PMC13296839.xml",
+   "evidence": [
+    "923o : naïf 'Branching Index = Σ Intersections ' ≠ assemblé '=Σn–n−1×n'"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13148856.xml",
+   "evidence": [
+    "1398o : naïf 'VEC = ( 1 − hematócrito ) × ( 1 / ' ≠ assemblé '=(1−)×(1/1)−(1/1)(1/1)−(1/1)'",
+    "1425o : naïf 'ECV = ( 1 − hematocrit ) X ( 1 / T' ≠ assemblé '=(1−)(1/1)−(1/1)(1/1)−(1/1)'"
+   ]
+  },
+  {
+   "document": "phys-PMC13099575.xml",
+   "evidence": [
+    "186o : naïf 'D + 1' ≠ assemblé 'D+1'",
+    "259o : naïf 'Θ ( · )' ≠ assemblé 'Θ(·)'",
+    "1089o : naïf 'z ( t ) = [ z 1 ( t ) , z 2 ( t ) ' ≠ assemblé 'z(t)=[z1(t),z2(t),...,zd(t)]⊤∈d'"
+   ]
+  },
+  {
+   "document": "phys-PMC13113438.xml",
+   "evidence": [
+    "194o : naïf 'L 1' ≠ assemblé 'L1'",
+    "661o : naïf 'A i = { R i , m i , v max i , a ma' ≠ assemblé 'Ai={Ri,mi,vmaxi,amaxi}'",
+    "194o : naïf 'R i' ≠ assemblé 'Ri'"
+   ]
+  },
+  {
+   "document": "phys-PMC13133660.xml",
+   "evidence": [
+    "1784o : naïf '∂ v ∂ t = ℱ 𝒦 v x - ; λ 𝒦 , λ 𝒱 , ' ≠ assemblé '∂v∂t=ℱ𝒦vx-;λ𝒦,λ𝒱,𝒱vx-;λ𝒦,λ𝒱,\\xa0x-∈Ωp'",
+    "1043o : naïf 'ℬ 𝒞 v ( x - ) ; λ 𝒦 , λ 𝒱 = 0 , x ' ≠ assemblé 'ℬ𝒞v(x-);λ𝒦,λ𝒱=0,\\xa0x-∈∂Ωp,t'",
+    "1054o : naïf 'ℐ 𝒞 v x - ; λ 𝒦 , λ 𝒱 = 0 , x - ∈ ' ≠ assemblé 'ℐ𝒞vx-;λ𝒦,λ𝒱=0,\\xa0x-∈Ωp,t=0'"
+   ]
+  },
+  {
+   "document": "phys-PMC13154412.xml",
+   "evidence": [
+    "908o : naïf 'C i = ∑ a = 1 20 f i a ln ( f i a ' ≠ assemblé 'Ci=∑a=120fialn(fia/qa)'",
+    "256o : naïf 'f i a' ≠ assemblé 'fia'",
+    "232o : naïf 'q a' ≠ assemblé 'qa'"
+   ]
+  },
+  {
+   "document": "phys-PMC13178570.xml",
+   "evidence": [
+    "310o : naïf 'S = [ A ∣ R ]' ≠ assemblé 'S=[A∣R]'",
+    "566o : naïf 'A = α i , i ∈ [ 1 , … , d ]' ≠ assemblé 'A=αi,i∈[1,…,d]'",
+    "189o : naïf 'A ∗' ≠ assemblé 'A∗'"
+   ]
+  },
+  {
+   "document": "phys-PMC13193059.xml",
+   "evidence": [
+    "216o : naïf 'C dia' ≠ assemblé 'Cdia'",
+    "217o : naïf 'C dist' ≠ assemblé 'Cdist'",
+    "216o : naïf 'C pop' ≠ assemblé 'Cpop'"
+   ]
+  },
+  {
+   "document": "phys-PMC13208799.xml",
+   "evidence": [
+    "1179o : naïf 'H = − J ∑ ⟨ i , j ⟩ δ ( q i , q j ' ≠ assemblé 'H=−J∑⟨i,\\u2009j⟩\\u2009δ(qi,qj)+∑k\\u2009Ek(qk)'",
+    "1057o : naïf 'P ( Δ E ) = { 1 Δ E ≤ 0 e x p ( − ' ≠ assemblé 'P(ΔE)={1ΔE≤0exp(−ΔEKT)ΔE&gt;0'",
+    "893o : naïf 'E = ∑ edges γ ij L ij + ∑ vertices' ≠ assemblé 'E=∑edges\\xa0γijLij+∑vertices\\xa0ακ2'"
+   ]
+  },
+  {
+   "document": "phys-PMC13210669.xml",
+   "evidence": [
+    "1127o : naïf 'min θ ∈ Θ [ L recon ( θ ) , L phys' ≠ assemblé 'minθ∈Θ[Lrecon(θ),\\xa0Lphys(θ)]T'",
+    "2225o : naïf '∀ i ∈ recon , phys : L i w ′ ≤ L i' ≠ assemblé '∀i\\xa0∈\\xa0recon,phys:Liw′\\xa0≤\\xa0Li(w″)\\xa0and\\xa0'",
+    "236o : naïf 'g *' ≠ assemblé 'g*'"
+   ]
+  },
+  {
+   "document": "phys-PMC13222844.xml",
+   "evidence": [
+    "216o : naïf 'π 0.5' ≠ assemblé 'π0.5'",
+    "494o : naïf 'd W i n = d W out ,' ≠ assemblé 'dWin=dWout,'",
+    "706o : naïf 'd W i n = P d V , d W out = − F d ' ≠ assemblé 'dWin=PdV,dWout=−FdL,'"
+   ]
+  },
+  {
+   "document": "phys-PMC13235518.xml",
+   "evidence": [
+    "213o : naïf 'd t' ≠ assemblé 'dt'",
+    "315o : naïf 'd t = 0' ≠ assemblé 'dt=0'",
+    "363o : naïf 'X ∈ { P , I , H }' ≠ assemblé 'X∈{P,I,H}'"
+   ]
+  },
+  {
+   "document": "phys-PMC13246409.xml",
+   "evidence": [
+    "314o : naïf '( ε mass )' ≠ assemblé '(ε)'",
+    "831o : naïf '∂ ∂ t ρ m + ∇ ⋅ ρ m v ⃗ m = 0' ≠ assemblé '∂∂tρm+∇⋅ρmv⃗m=0'",
+    "290o : naïf 'v ⃗ m' ≠ assemblé 'v⃗m'"
+   ]
+  },
+  {
+   "document": "phys-PMC13252849.xml",
+   "evidence": [
+    "738o : naïf 'UCB ( S i ) = V ― i + c log N n i' ≠ assemblé '(Si)=V―i+clogNni'",
+    "265o : naïf 'V ― i' ≠ assemblé 'V―i'",
+    "521o : naïf 'X * = arg max X ∈ 𝒳 f ( X )' ≠ assemblé 'X*=maxX∈𝒳f(X)'"
+   ]
+  },
+  {
+   "document": "phys-PMC13257740.xml",
+   "evidence": [
+    "613o : naïf 'ρ s u ¨ i s = σ i j , j + b s i ,' ≠ assemblé 'ρsu¨is=σij,j+bsi,'",
+    "646o : naïf 'ρ s c s T ˙ s = k s T , i i s + Q ' ≠ assemblé 'ρscsT˙s=ksT,iis+Q,'",
+    "273o : naïf 'u ¨ i s' ≠ assemblé 'u¨is'"
+   ]
+  },
+  {
+   "document": "phys-PMC13259435.xml",
+   "evidence": [
+    "284o : naïf 'x ∈ R L' ≠ assemblé 'x∈RL'",
+    "323o : naïf 'F d ∈ R d' ≠ assemblé 'Fd∈Rd'",
+    "263o : naïf '[ B , 1 , L ]' ≠ assemblé '[B,1,L]'"
+   ]
+  },
+  {
+   "document": "phys-PMC13259474.xml",
+   "evidence": [
+    "194o : naïf 'ℝ 3' ≠ assemblé 'ℝ3'",
+    "305o : naïf 'g : ℝ 3 → ℝ 3' ≠ assemblé 'g:ℝ3→ℝ3'",
+    "290o : naïf 'g x = R x + p' ≠ assemblé 'gx=Rx+p'"
+   ]
+  },
+  {
+   "document": "phys-PMC13261600.xml",
+   "evidence": [
+    "912o : naïf 'x i = [ x i , 1 , x i , 2 , ... , ' ≠ assemblé 'xi=[xi,1,xi,2,...,xi,n]T∈Rn'",
+    "1155o : naïf 'y i = [ y i , 1 , y i , 2 , y i , ' ≠ assemblé 'yi=[yi,1,yi,2,yi,3,yi,4,yi,5]T∈Rn'",
+    "1073o : naïf 'u i = f ( x i ) = β f ( w x i + b ' ≠ assemblé 'ui=f(xi)=βf(wxi+b),i=1,...,N'"
+   ]
+  },
+  {
+   "document": "phys-PMC13275013.xml",
+   "evidence": [
+    "258o : naïf 'K ( x )' ≠ assemblé 'K(x)'",
+    "296o : naïf 'Ω ⊂ R d' ≠ assemblé 'Ω⊂Rd'",
+    "190o : naïf 'd λ' ≠ assemblé 'dλ'"
+   ]
+  },
+  {
+   "document": "phys-PMC13285896.xml",
+   "evidence": [
+    "365o : naïf 'ε = 1 T σ 2' ≠ assemblé 'ε=1Tσ2'"
+   ]
+  },
+  {
+   "document": "phys-PMC13289917.xml",
+   "evidence": [
+    "238o : naïf 'α ( t )' ≠ assemblé 'α(t)'",
+    "238o : naïf 'α ( t )' ≠ assemblé 'α(t)'",
+    "238o : naïf 'α ( t )' ≠ assemblé 'α(t)'"
+   ]
+  },
+  {
+   "document": "phys-PMC13296606.xml",
+   "evidence": [
+    "251o : naïf 'ℝ n × d' ≠ assemblé 'ℝn×d'",
+    "287o : naïf 'X ∈ ℝ n × d' ≠ assemblé 'X∈ℝn×d'",
+    "251o : naïf 'x i , j' ≠ assemblé 'xi,j'"
+   ]
+  },
+  {
+   "document": "phys-PMC13297141.xml",
+   "evidence": [
+    "1384o : naïf 'T i j ( t ) = d i j v i j ∏ δ k ∈ ' ≠ assemblé 'Tij(t)=dijvij∏δk∈Ω(1−I(t,δk)(1−αk)'",
+    "1011o : naïf 'θ p ( t ) = θ 0 exp ( − ∫ 0 t λ p ' ≠ assemblé 'θp(t)=θ0exp(−∫0tλpη(temp(τ))dτ)'",
+    "891o : naïf 'C l o s s = ∑ i ∈ C μ i q i ( 1 − ' ≠ assemblé 'Closs=∑i∈Cμiqi(1−θp(ti))'"
+   ]
+  },
+  {
+   "document": "phys-PMC13297618.xml",
+   "evidence": [
+    "628o : naïf 'X = ( x 1 , x 2 , … , x D )' ≠ assemblé 'X=(x1,x2,…,xD)'",
+    "943o : naïf 'X i t = ( x i 1 t , x i 2 t , … , ' ≠ assemblé 'Xit=(xi1t,xi2t,…,xiDt)'",
+    "299o : naïf 'i = 1 , 2 , … , N' ≠ assemblé 'i=1,2,…,N'"
+   ]
+  },
+  {
+   "document": "phys-PMC13298103.xml",
+   "evidence": [
+    "191o : naïf '3 × 3' ≠ assemblé '3×3'",
+    "191o : naïf '3 × 4' ≠ assemblé '3×4'",
+    "191o : naïf '4 × 4' ≠ assemblé '4×4'"
+   ]
+  }
+ ]
+}

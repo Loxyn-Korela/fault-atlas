@@ -97,28 +97,83 @@
             "bio-PMC13252842.xml",
             [
               "274o : naïf 'M H F N' ≠ assemblé 'MHFN'",
-              "274o : naïf 'M H F W' ≠ assemblé 'MHFW'",
-              "274o : naïf 'F H F N' ≠ assemblé 'FHFN'"
+              "274o : naïf 'M H F W' ≠ assemblé 'MHFW'"
             ]
           ],
           [
             "essai-PMC13238360.xml",
             [
               "1032o : naïf 'PV t = PV bl × 1 + Hct bl Hct t − ' ≠ assemblé 'PVt=PVbl×1+HctblHctt−11−Hctbl'",
-              "549o : naïf 'BV bl = a × h 3 + b × w + c' ≠ assemblé 'BVbl=a×h3+b×w+c'",
-              "465o : naïf 'PPV = BV bl × 1 − Hct' ≠ assemblé 'PPV=BVbl×1−Hct'"
+              "549o : naïf 'BV bl = a × h 3 + b × w + c' ≠ assemblé 'BVbl=a×h3+b×w+c'"
             ]
           ],
           [
             "essai-PMC13263161.xml",
             [
               "238o : naïf 'V ˙' ≠ assemblé 'V˙'",
+              "238o : naïf 'V ˙' ≠ assemblé 'V˙'"
+            ]
+          ],
+          [
+            "essai-PMC13282136.xml",
+            [
               "238o : naïf 'V ˙' ≠ assemblé 'V˙'",
               "238o : naïf 'V ˙' ≠ assemblé 'V˙'"
             ]
+          ],
+          [
+            "essai-PMC13284529.xml",
+            [
+              "2142o : naïf 'P r o c e s s i n g E f f i c i e ' ≠ assemblé 'ProcessingEfficiency=(WMPerformace'"
+            ]
+          ],
+          [
+            "essai-PMC13291922.xml",
+            [
+              "488o : naïf 'CRR = number of correct responses ' ≠ assemblé '=÷'"
+            ]
+          ],
+          [
+            "meta-PMC13179150.xml",
+            [
+              "283o : naïf 'ρ &gt; 39' ≠ assemblé 'ρ&gt;39'",
+              "283o : naïf 'ρ &lt; 39' ≠ assemblé 'ρ&lt;39'"
+            ]
+          ],
+          [
+            "meta-PMC13263136.xml",
+            [
+              "822o : naïf 'PGS = n ∑ i = 1 n log OR i × ∑ i =' ≠ assemblé '=n∑i=1nlogi×∑i=1nlogi×di'"
+            ]
+          ],
+          [
+            "meta-PMC13264275.xml",
+            [
+              "233o : naïf 'X ¯' ≠ assemblé 'X¯'"
+            ]
+          ],
+          [
+            "meta-PMC13264436.xml",
+            [
+              "232o : naïf 'I 2' ≠ assemblé 'I2'",
+              "232o : naïf 'I 2' ≠ assemblé 'I2'"
+            ]
+          ],
+          [
+            "meta-PMC13286426.xml",
+            [
+              "999o : naïf 'F = R 2 × ( N − 1 − K ) / [ ( 1 − ' ≠ assemblé 'F=R2×(N−1−K)/[(1−R2)×K],'"
+            ]
+          ],
+          [
+            "moderne-PMC12967033.xml",
+            [
+              "650o : naïf 'Y ij = μ + Trt i + e ij ,' ≠ assemblé '=μ++,'"
+            ]
           ]
         ],
-        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files"
+        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files",
+        "carriers_file": "probes/results/line-133.json"
       },
       "matches_excerpt": true
     }

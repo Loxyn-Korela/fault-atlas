@@ -1,0 +1,100 @@
+{
+ "probe": "probes/2026-08/line-075.py",
+ "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+ "date": "2026-09-09",
+ "count": 13,
+ "of": 272,
+ "carriers": [
+  {
+   "document": "bio-PMC12927065.xml",
+   "evidence": [
+    "numérique×18",
+    "exposant×11"
+   ]
+  },
+  {
+   "document": "bio-PMC13097615.xml",
+   "evidence": [
+    "auteur-année×14",
+    "exposant×7"
+   ]
+  },
+  {
+   "document": "bio-PMC13252842.xml",
+   "evidence": [
+    "numérique×3",
+    "exposant×5"
+   ]
+  },
+  {
+   "document": "meta-PMC13246130.xml",
+   "evidence": [
+    "numérique×56",
+    "exposant×51"
+   ]
+  },
+  {
+   "document": "meta-PMC13268477.xml",
+   "evidence": [
+    "numérique×36",
+    "exposant×13"
+   ]
+  },
+  {
+   "document": "meta-PMC13286426.xml",
+   "evidence": [
+    "numérique×47",
+    "exposant×5"
+   ]
+  },
+  {
+   "document": "meta-PMC13286481.xml",
+   "evidence": [
+    "numérique×21",
+    "exposant×14"
+   ]
+  },
+  {
+   "document": "moderne-PMC13274555.xml",
+   "evidence": [
+    "auteur-année×3",
+    "exposant×99"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13264178.xml",
+   "evidence": [
+    "numérique×12",
+    "exposant×7"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13267756.xml",
+   "evidence": [
+    "numérique×15",
+    "exposant×7"
+   ]
+  },
+  {
+   "document": "phys-PMC13099575.xml",
+   "evidence": [
+    "auteur-année×4",
+    "numérique×11"
+   ]
+  },
+  {
+   "document": "phys-PMC13133660.xml",
+   "evidence": [
+    "numérique×58",
+    "exposant×6"
+   ]
+  },
+  {
+   "document": "phys-PMC13178570.xml",
+   "evidence": [
+    "auteur-année×5",
+    "exposant×19"
+   ]
+  }
+ ]
+}

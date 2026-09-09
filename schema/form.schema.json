@@ -415,10 +415,15 @@
                   "items": {},
                   "minItems": 1,
                   "maxItems": 2
-                }
+                },
+                "description": "Up to twelve carrier documents with their evidence; the full list is in carriers_file."
               },
               "by": {
                 "type": "string"
+              },
+              "carriers_file": {
+                "type": "string",
+                "description": "File in probes/results/ listing every carrier document with the evidence found in it, so that the fault can be seen document by document."
               }
             }
           },

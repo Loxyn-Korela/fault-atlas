@@ -1,0 +1,15 @@
+{
+ "probe": "probes/2026-08/line-042.py",
+ "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+ "date": "2026-09-09",
+ "count": 1,
+ "of": 272,
+ "carriers": [
+  {
+   "document": "nonEN-PMC13224954.xml",
+   "evidence": [
+    "lettre-detachee:given-names:Martinho Braga Batista e"
+   ]
+  }
+ ]
+}

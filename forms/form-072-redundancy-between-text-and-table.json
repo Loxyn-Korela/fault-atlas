@@ -102,9 +102,64 @@
             [
               "10 valeurs communes : ['1.88', '2.62', '2.74', '2.88', '22.2']"
             ]
+          ],
+          [
+            "bio-PMC13057049.xml",
+            [
+              "6 valeurs communes : ['1.53', '28.4', '37.1', '49.6', '50.8']"
+            ]
+          ],
+          [
+            "bio-PMC13088504.xml",
+            [
+              "5 valeurs communes : ['0.450', '26.34', '26.42', '27.20', '60.05']"
+            ]
+          ],
+          [
+            "bio-PMC13099299.xml",
+            [
+              "12 valeurs communes : ['0.021', '0.03', '0.033', '0.436', '1.04']"
+            ]
+          ],
+          [
+            "bio-PMC13155703.xml",
+            [
+              "7 valeurs communes : ['0.369', '0.549', '0.743', '2.57', '8.67']"
+            ]
+          ],
+          [
+            "bio-PMC13181205.xml",
+            [
+              "3 valeurs communes : ['0.187', '0.396', '17.7']"
+            ]
+          ],
+          [
+            "bio-PMC13190511.xml",
+            [
+              "9 valeurs communes : ['1,069', '1,623', '1,730', '1,748', '16.9']"
+            ]
+          ],
+          [
+            "bio-PMC13207820.xml",
+            [
+              "3 valeurs communes : ['0.005', '0.029', '27.1']"
+            ]
+          ],
+          [
+            "bio-PMC13252842.xml",
+            [
+              "1 valeurs communes : ['53.4']"
+            ]
+          ],
+          [
+            "cas-PMC13291543.xml",
+            [
+              "2 valeurs communes : ['1.38', '48.4']"
+            ]
           ]
         ],
-        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files"
+        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files",
+        "carriers_file": "probes/results/line-072.json"
       },
       "matches_excerpt": true
     }

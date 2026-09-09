@@ -1,0 +1,205 @@
+{
+ "probe": "probes/2026-08/line-067.py",
+ "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+ "date": "2026-09-09",
+ "count": 27,
+ "of": 272,
+ "carriers": [
+  {
+   "document": "nonEN-PMC13143285.xml",
+   "evidence": [
+    "pt→en (title)",
+    "pt→es (title)"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13170112.xml",
+   "evidence": [
+    "pt→en (title)",
+    "pt→es (title)"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13185728.xml",
+   "evidence": [
+    "pt→en (title)",
+    "pt→es (title)",
+    "pt→en (abstract)",
+    "pt→es (abstract)"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13185730.xml",
+   "evidence": [
+    "pt→en (title)",
+    "pt→es (title)",
+    "pt→en (abstract)",
+    "pt→es (abstract)"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13224953.xml",
+   "evidence": [
+    "pt→en (title)",
+    "pt→es (title)"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13224954.xml",
+   "evidence": [
+    "pt→en (title)",
+    "pt→es (title)"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13224955.xml",
+   "evidence": [
+    "pt→en (title)",
+    "pt→es (title)",
+    "pt→en (abstract)",
+    "pt→es (abstract)"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13224957.xml",
+   "evidence": [
+    "pt→en (title)",
+    "pt→es (title)",
+    "pt→en (abstract)",
+    "pt→es (abstract)"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13228121.xml",
+   "evidence": [
+    "pt→en (title)",
+    "pt→en (abstract)"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13264032.xml",
+   "evidence": [
+    "es→en (title)"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13264058.xml",
+   "evidence": [
+    "es→en (abstract)"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13264162.xml",
+   "evidence": [
+    "es→en (title)"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13264178.xml",
+   "evidence": [
+    "es→en (title)",
+    "es→en (abstract)"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13266121.xml",
+   "evidence": [
+    "es→en (title)"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13266122.xml",
+   "evidence": [
+    "es→en (title)"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13267754.xml",
+   "evidence": [
+    "es→en (title)",
+    "es→pt (title)",
+    "es→en (abstract)",
+    "es→pt (abstract)"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13267755.xml",
+   "evidence": [
+    "es→en (title)",
+    "es→pt (title)",
+    "es→en (abstract)",
+    "es→pt (abstract)"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13267756.xml",
+   "evidence": [
+    "pt→en (title)",
+    "pt→es (title)",
+    "pt→en (abstract)",
+    "pt→es (abstract)"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13267757.xml",
+   "evidence": [
+    "es→en (title)",
+    "es→pt (title)",
+    "es→en (abstract)",
+    "es→pt (abstract)"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13272499.xml",
+   "evidence": [
+    "es→en (title)"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13272511.xml",
+   "evidence": [
+    "es→en (title)",
+    "es→en (abstract)"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13272517.xml",
+   "evidence": [
+    "es→en (title)",
+    "es→en (abstract)"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13276738.xml",
+   "evidence": [
+    "es→en (title)"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13284468.xml",
+   "evidence": [
+    "es→en (title)",
+    "es→en (abstract)"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13284469.xml",
+   "evidence": [
+    "es→en (title)"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13285344.xml",
+   "evidence": [
+    "es→en (title)"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13285635.xml",
+   "evidence": [
+    "es→en (title)",
+    "es→en (abstract)"
+   ]
+  }
+ ]
+}

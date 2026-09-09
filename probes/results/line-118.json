@@ -1,0 +1,63 @@
+{
+ "probe": "probes/2026-08/line-118.py",
+ "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+ "date": "2026-09-09",
+ "count": 9,
+ "of": 272,
+ "carriers": [
+  {
+   "document": "meta-PMC13157766.xml",
+   "evidence": [
+    "'\\xad' ×4"
+   ]
+  },
+  {
+   "document": "meta-PMC13260247.xml",
+   "evidence": [
+    "'\\u200b' ×1"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13193188.xml",
+   "evidence": [
+    "'\\u200b' ×2"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13193189.xml",
+   "evidence": [
+    "'\\u200b' ×20"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13193190.xml",
+   "evidence": [
+    "'\\u200b' ×18"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13193191.xml",
+   "evidence": [
+    "'\\u200b' ×4"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13193195.xml",
+   "evidence": [
+    "'\\u200b' ×10"
+   ]
+  },
+  {
+   "document": "phys-PMC13193059.xml",
+   "evidence": [
+    "'\\u200b' ×6"
+   ]
+  },
+  {
+   "document": "phys-PMC13272752.xml",
+   "evidence": [
+    "'\\u200b' ×41"
+   ]
+  }
+ ]
+}

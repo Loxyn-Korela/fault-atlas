@@ -100,9 +100,64 @@
             [
               "provided by the U"
             ]
+          ],
+          [
+            "cas-PMC13293799.xml",
+            [
+              "provided by the D"
+            ]
+          ],
+          [
+            "essai-PMC13238360.xml",
+            [
+              "provided by the S"
+            ]
+          ],
+          [
+            "essai-PMC13281132.xml",
+            [
+              "provided by The B"
+            ]
+          ],
+          [
+            "essai-PMC13290998.xml",
+            [
+              "provided by the U"
+            ]
+          ],
+          [
+            "essai-PMC13291766.xml",
+            [
+              "provided by the G"
+            ]
+          ],
+          [
+            "meta-PMC13226718.xml",
+            [
+              "provided by the o"
+            ]
+          ],
+          [
+            "meta-PMC13241412.xml",
+            [
+              "provided by the I"
+            ]
+          ],
+          [
+            "meta-PMC13260247.xml",
+            [
+              "provided by the p"
+            ]
+          ],
+          [
+            "meta-PMC13287149.xml",
+            [
+              "provided by the o"
+            ]
           ]
         ],
-        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files"
+        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files",
+        "carriers_file": "probes/results/line-093.json"
       },
       "matches_excerpt": false,
       "note": "The regex matches 25 documents; the excerpt's 0/272 is a human reading of those matches (publisher lines and one physics sentence, not digitisation stamps). Raw matches and reviewed zero both kept."

@@ -86,7 +86,82 @@
         "date": "2026-09-09",
         "count": 43,
         "of": null,
-        "by": "Fault Atlas maintainer (Loxyn), live on the public endpoint"
+        "by": "Fault Atlas maintainer (Loxyn), live on the public endpoint",
+        "examples": [
+          [
+            "http://publications.europa.eu/resource/cellar/08e4b419-7be2-4f4c-b7eb-458a1e9f3dc4",
+            [
+              "based on <http://publications.europa.eu/resource/celex/> (empty CELEX)"
+            ]
+          ],
+          [
+            "http://publications.europa.eu/resource/cellar/0d0064af-b91a-4fe6-a0b7-fa5d11adb253",
+            [
+              "based on <http://publications.europa.eu/resource/celex/> (empty CELEX)"
+            ]
+          ],
+          [
+            "http://publications.europa.eu/resource/cellar/0f258fe0-09a8-4a8b-9148-4961f405998d",
+            [
+              "based on <http://publications.europa.eu/resource/celex/> (empty CELEX)"
+            ]
+          ],
+          [
+            "http://publications.europa.eu/resource/cellar/1301aef1-442f-40ec-9eb8-84516cba2407",
+            [
+              "based on <http://publications.europa.eu/resource/celex/> (empty CELEX)"
+            ]
+          ],
+          [
+            "http://publications.europa.eu/resource/cellar/174671f5-d58d-413e-90af-75f837e87b75",
+            [
+              "based on <http://publications.europa.eu/resource/celex/> (empty CELEX)"
+            ]
+          ],
+          [
+            "http://publications.europa.eu/resource/cellar/1b0b8701-d0c9-42e3-b898-75dc4c782419",
+            [
+              "based on <http://publications.europa.eu/resource/celex/> (empty CELEX)"
+            ]
+          ],
+          [
+            "http://publications.europa.eu/resource/cellar/1d4b7178-1506-4067-816d-e08b742517cf",
+            [
+              "based on <http://publications.europa.eu/resource/celex/> (empty CELEX)"
+            ]
+          ],
+          [
+            "http://publications.europa.eu/resource/cellar/1e64a3d7-6708-48fa-9378-36aa9a0c7a1e",
+            [
+              "based on <http://publications.europa.eu/resource/celex/> (empty CELEX)"
+            ]
+          ],
+          [
+            "http://publications.europa.eu/resource/cellar/2d0c56f3-167c-4284-9c69-6bdee6d8ebc2",
+            [
+              "based on <http://publications.europa.eu/resource/celex/> (empty CELEX)"
+            ]
+          ],
+          [
+            "http://publications.europa.eu/resource/cellar/2df55aaa-bbd7-4033-8c38-2fe47e4bf3b3",
+            [
+              "based on <http://publications.europa.eu/resource/celex/> (empty CELEX)"
+            ]
+          ],
+          [
+            "http://publications.europa.eu/resource/cellar/2ff10552-bdb0-4d43-ba79-73cd4d6ab7d4",
+            [
+              "based on <http://publications.europa.eu/resource/celex/> (empty CELEX)"
+            ]
+          ],
+          [
+            "http://publications.europa.eu/resource/cellar/35e1ff9f-b36c-4cce-9020-750c2d70e3e0",
+            [
+              "based on <http://publications.europa.eu/resource/celex/> (empty CELEX)"
+            ]
+          ]
+        ],
+        "carriers_file": "probes/results/form-182-empty-celex-uri.json"
       },
       "matches_excerpt": true,
       "note": "Re-run live: 43 acts, the same list as the frozen lot A."

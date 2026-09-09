@@ -1,0 +1,219 @@
+{
+ "probe": "probes/2026-08/line-069.py",
+ "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+ "date": "2026-09-09",
+ "count": 30,
+ "of": 272,
+ "carriers": [
+  {
+   "document": "bio-PMC13182387.xml",
+   "evidence": [
+    "sub-article ×2 response ×0",
+    "types=aggregated-review-documents,associated-data"
+   ]
+  },
+  {
+   "document": "bio-PMC13252842.xml",
+   "evidence": [
+    "sub-article ×5 response ×0",
+    "types=aggregated-review-documents,associated-data,author-comment,editor-report"
+   ]
+  },
+  {
+   "document": "bio-PMC13289183.xml",
+   "evidence": [
+    "sub-article ×2 response ×0",
+    "types=aggregated-review-documents,associated-data"
+   ]
+  },
+  {
+   "document": "meta-PMC13157766.xml",
+   "evidence": [
+    "sub-article ×2 response ×0",
+    "types=aggregated-review-documents,associated-data"
+   ]
+  },
+  {
+   "document": "meta-PMC13229315.xml",
+   "evidence": [
+    "sub-article ×8 response ×0",
+    "types=aggregated-review-documents,associated-data,author-comment,editor-report"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13127809.xml",
+   "evidence": [
+    "sub-article ×1 response ×0",
+    "types=translation"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13128172.xml",
+   "evidence": [
+    "sub-article ×1 response ×0",
+    "types=translation"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13128184.xml",
+   "evidence": [
+    "sub-article ×1 response ×0",
+    "types=translation"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13128185.xml",
+   "evidence": [
+    "sub-article ×1 response ×0",
+    "types=translation"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13128186.xml",
+   "evidence": [
+    "sub-article ×1 response ×0",
+    "types=translation"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13128206.xml",
+   "evidence": [
+    "sub-article ×2 response ×0",
+    "types=associated-data,translation"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13128210.xml",
+   "evidence": [
+    "sub-article ×1 response ×0",
+    "types=translation"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13128212.xml",
+   "evidence": [
+    "sub-article ×1 response ×0",
+    "types=translation"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13128213.xml",
+   "evidence": [
+    "sub-article ×2 response ×0",
+    "types=associated-data,translation"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13128215.xml",
+   "evidence": [
+    "sub-article ×1 response ×0",
+    "types=translation"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13128216.xml",
+   "evidence": [
+    "sub-article ×1 response ×0",
+    "types=translation"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13128218.xml",
+   "evidence": [
+    "sub-article ×1 response ×0",
+    "types=translation"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13142163.xml",
+   "evidence": [
+    "sub-article ×1 response ×0",
+    "types=translation"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13148856.xml",
+   "evidence": [
+    "sub-article ×1 response ×0",
+    "types=translation"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13155791.xml",
+   "evidence": [
+    "sub-article ×2 response ×0",
+    "types=associated-data,translation"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13155792.xml",
+   "evidence": [
+    "sub-article ×1 response ×0",
+    "types=translation"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13155793.xml",
+   "evidence": [
+    "sub-article ×1 response ×0",
+    "types=translation"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13193188.xml",
+   "evidence": [
+    "sub-article ×1 response ×0",
+    "types=translation"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13193189.xml",
+   "evidence": [
+    "sub-article ×1 response ×0",
+    "types=translation"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13193190.xml",
+   "evidence": [
+    "sub-article ×1 response ×0",
+    "types=translation"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13193191.xml",
+   "evidence": [
+    "sub-article ×1 response ×0",
+    "types=translation"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13193194.xml",
+   "evidence": [
+    "sub-article ×1 response ×0",
+    "types=translation"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13193195.xml",
+   "evidence": [
+    "sub-article ×1 response ×0",
+    "types=translation"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13288443.xml",
+   "evidence": [
+    "sub-article ×1 response ×0",
+    "types=translation"
+   ]
+  },
+  {
+   "document": "phys-PMC13252849.xml",
+   "evidence": [
+    "sub-article ×9 response ×0",
+    "types=aggregated-review-documents,associated-data,author-comment,editor-report"
+   ]
+  }
+ ]
+}

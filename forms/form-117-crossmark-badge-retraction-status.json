@@ -116,9 +116,68 @@
               "<related-article xmlns:xlink=\"http://www.w3.org/1999/xlink\" related-article-type=\"retracted-article\" id=\"RA1\" vol=\"32\" page=\"757\" ext-link-type=\"doi\" xlink:href=\"10.3892/ijo.32.4.757\">",
               "<related-article xmlns:xlink=\"http://www.w3.org/1999/xlink\" related-article-type=\"retracted-article\" vol=\"32\" page=\"757\" ext-link-type=\"doi\" xlink:href=\"10.3892/ijo.32.4.757\">"
             ]
+          ],
+          [
+            "retract-PMC12937552.xml",
+            [
+              "<related-article related-article-type=\"retracted-article\">"
+            ]
+          ],
+          [
+            "retract-PMC12943135.xml",
+            [
+              "<related-article xmlns:xlink=\"http://www.w3.org/1999/xlink\" related-article-type=\"retracted-article\" xml:lang=\"en\" xlink:title=\"research-article\" vol=\"60\" elocation-id=\"1055\" journal-id=\"Medicina (Kaunas)\" journal-id-type=\"nlm-ta\" ext-link-type=\"pmc\" xlink:href=\"PMC11279236\">",
+              "retraction of"
+            ]
+          ],
+          [
+            "retract-PMC12945919.xml",
+            [
+              "<related-article xmlns:xlink=\"http://www.w3.org/1999/xlink\" related-article-type=\"retracted-article\" xml:lang=\"en\" xlink:title=\"research-article\" journal-id=\"Skin Res Technol\" journal-id-type=\"nlm-ta\" ext-link-type=\"pmc\" xlink:href=\"PMC10387586\">"
+            ]
+          ],
+          [
+            "retract-PMC12951106.xml",
+            [
+              "<related-article xmlns:xlink=\"http://www.w3.org/1999/xlink\" related-article-type=\"retracted-article\" xml:lang=\"en\" xlink:title=\"research-article\" journal-id=\"Cancer Med\" journal-id-type=\"nlm-ta\" ext-link-type=\"pmc\" xlink:href=\"PMC6718591\">"
+            ]
+          ],
+          [
+            "retract-PMC12983062.xml",
+            [
+              "<related-article related-article-type=\"retracted-article\">"
+            ]
+          ],
+          [
+            "retract-PMC12983399.xml",
+            [
+              "<related-article xmlns:xlink=\"http://www.w3.org/1999/xlink\" related-article-type=\"retracted-article\" xml:lang=\"en\" xlink:title=\"review-article\" journal-id=\"Front Immunol\" journal-id-type=\"nlm-ta\" ext-link-type=\"pmc\" xlink:href=\"PMC12325065\">"
+            ]
+          ],
+          [
+            "retract-PMC12985380.xml",
+            [
+              "<related-article related-article-type=\"retracted-article\">",
+              "This article has been retracted"
+            ]
+          ],
+          [
+            "retract-PMC12989678.xml",
+            [
+              "<related-article xmlns:xlink=\"http://www.w3.org/1999/xlink\" related-article-type=\"retracted-article\" xml:lang=\"en\" xlink:title=\"research-article\" vol=\"10\" page=\"604\" journal-id=\"Gut Liver\" journal-id-type=\"nlm-ta\" ext-link-type=\"pmc\" xlink:href=\"PMC4933422\">",
+              "this article has been retracted"
+            ]
+          ],
+          [
+            "retract-PMC12990951.xml",
+            [
+              "<related-article related-article-type=\"retracted-article\">",
+              "This article has been retracted"
+            ]
           ]
         ],
-        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files"
+        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files",
+        "carriers_file": "probes/results/line-117.json"
       },
       "matches_excerpt": true
     }

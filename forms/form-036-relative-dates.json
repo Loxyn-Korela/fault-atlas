@@ -106,8 +106,7 @@
             "bio-PMC12674831.xml",
             [
               "1 year after",
-              "10 years later",
-              "3 years after"
+              "10 years later"
             ]
           ],
           [
@@ -115,9 +114,68 @@
             [
               "the next decade"
             ]
+          ],
+          [
+            "bio-PMC12953170.xml",
+            [
+              "4 weeks after",
+              "6 weeks before"
+            ]
+          ],
+          [
+            "bio-PMC13103274.xml",
+            [
+              "Nowadays",
+              "Today"
+            ]
+          ],
+          [
+            "bio-PMC13162546.xml",
+            [
+              "At present",
+              "Nowadays"
+            ]
+          ],
+          [
+            "bio-PMC13168716.xml",
+            [
+              "the coming decade"
+            ]
+          ],
+          [
+            "bio-PMC13182387.xml",
+            [
+              "the past month"
+            ]
+          ],
+          [
+            "bio-PMC13190511.xml",
+            [
+              "the last decade"
+            ]
+          ],
+          [
+            "bio-PMC13231534.xml",
+            [
+              "20 years after",
+              "five years after"
+            ]
+          ],
+          [
+            "bio-PMC13236932.xml",
+            [
+              "the past year"
+            ]
+          ],
+          [
+            "cas-PMC13290446.xml",
+            [
+              "3 weeks after"
+            ]
           ]
         ],
-        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files"
+        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files",
+        "carriers_file": "probes/results/line-036.json"
       },
       "matches_excerpt": true
     }

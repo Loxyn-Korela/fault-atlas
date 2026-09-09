@@ -77,11 +77,11 @@
       "run": "python3 tools/run_probe.py probes/2026-08/line-135.py <dir with the 272 .xml>",
       "result": {
         "date": "2026-09-09",
-        "count": 11,
+        "count": 12,
         "of": 272,
         "strata": {
+          "phys": 5,
           "essai": 4,
-          "phys": 4,
           "bio": 1,
           "meta": 1,
           "moderne": 1
@@ -104,11 +104,67 @@
             [
               "disp-quote x15"
             ]
+          ],
+          [
+            "essai-PMC13280799.xml",
+            [
+              "disp-quote x10"
+            ]
+          ],
+          [
+            "essai-PMC13294169.xml",
+            [
+              "disp-quote x18"
+            ]
+          ],
+          [
+            "meta-PMC13179150.xml",
+            [
+              "disp-quote x7"
+            ]
+          ],
+          [
+            "moderne-PMC13254229.xml",
+            [
+              "disp-quote x24"
+            ]
+          ],
+          [
+            "phys-PMC13099575.xml",
+            [
+              "disp-quote x2"
+            ]
+          ],
+          [
+            "phys-PMC13113438.xml",
+            [
+              "disp-quote x7"
+            ]
+          ],
+          [
+            "phys-PMC13222844.xml",
+            [
+              "disp-quote x2"
+            ]
+          ],
+          [
+            "phys-PMC13234180.xml",
+            [
+              "translation marker: our translation"
+            ]
+          ],
+          [
+            "phys-PMC13235518.xml",
+            [
+              "disp-quote x1"
+            ]
           ]
         ],
-        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files"
+        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files",
+        "carriers_file": "probes/results/line-135.json"
       },
-      "matches_excerpt": true
+      "matches_excerpt": true,
+      "note": "12 carriers = 11 documents with a block quotation + 1 with a translation marker (PMC13234180, \"our translation\"), the two figures the excerpt quotes."
     }
   ]
 }

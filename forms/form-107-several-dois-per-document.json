@@ -90,16 +90,14 @@
             "bio-PMC13252842.xml",
             [
               "10.1371/journal.pcbi.1014325",
-              "10.1371/journal.pcbi.1014325.r001",
-              "10.1371/journal.pcbi.1014325.r002"
+              "10.1371/journal.pcbi.1014325.r001"
             ]
           ],
           [
             "meta-PMC13229315.xml",
             [
               "10.1371/journal.pmed.1004653",
-              "10.1371/journal.pmed.1004653.r001",
-              "10.1371/journal.pmed.1004653.r002"
+              "10.1371/journal.pmed.1004653.r001"
             ]
           ],
           [
@@ -108,9 +106,73 @@
               "10.36660/abc.20260107",
               "10.36660/abc.20260107i"
             ]
+          ],
+          [
+            "nonEN-PMC13128172.xml",
+            [
+              "10.36660/abc.20260155",
+              "10.36660/abc.20260155i"
+            ]
+          ],
+          [
+            "nonEN-PMC13128184.xml",
+            [
+              "10.36660/abc.20260119",
+              "10.36660/abc.20260119i"
+            ]
+          ],
+          [
+            "nonEN-PMC13128185.xml",
+            [
+              "10.36660/abc.20260140",
+              "10.36660/abc.20260140i"
+            ]
+          ],
+          [
+            "nonEN-PMC13128186.xml",
+            [
+              "10.36660/abc.20260157",
+              "10.36660/abc.20260157i"
+            ]
+          ],
+          [
+            "nonEN-PMC13128206.xml",
+            [
+              "10.36660/abc.20240820",
+              "10.36660/abc.20240820i"
+            ]
+          ],
+          [
+            "nonEN-PMC13128210.xml",
+            [
+              "10.36660/abc.20260110",
+              "10.36660/abc.20260110i"
+            ]
+          ],
+          [
+            "nonEN-PMC13128212.xml",
+            [
+              "10.36660/abc.20260240",
+              "10.36660/abc.20260240i"
+            ]
+          ],
+          [
+            "nonEN-PMC13128213.xml",
+            [
+              "10.36660/abc.20250186",
+              "10.36660/abc.20250186i"
+            ]
+          ],
+          [
+            "nonEN-PMC13128215.xml",
+            [
+              "10.36660/abc.20260163",
+              "10.36660/abc.20260163i"
+            ]
           ]
         ],
-        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files"
+        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files",
+        "carriers_file": "probes/results/line-107.json"
       },
       "matches_excerpt": true
     }

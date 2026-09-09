@@ -93,28 +93,89 @@
             "bio-PMC12882215.xml",
             [
               "Background",
-              "Methods",
-              "Results"
+              "Methods"
             ]
           ],
           [
             "bio-PMC12909487.xml",
             [
               "Background",
-              "Objective",
-              "Methods"
+              "Objective"
             ]
           ],
           [
             "bio-PMC12915353.xml",
             [
               "Background",
-              "Objectives",
+              "Objectives"
+            ]
+          ],
+          [
+            "bio-PMC12927065.xml",
+            [
+              "Introduction",
               "Methods"
+            ]
+          ],
+          [
+            "bio-PMC12927975.xml",
+            [
+              "Introduction",
+              "Methodology"
+            ]
+          ],
+          [
+            "bio-PMC12953170.xml",
+            [
+              "Background",
+              "Methods"
+            ]
+          ],
+          [
+            "bio-PMC13057049.xml",
+            [
+              "Background",
+              "Method"
+            ]
+          ],
+          [
+            "bio-PMC13088504.xml",
+            [
+              "Background",
+              "Patients and Methods"
+            ]
+          ],
+          [
+            "bio-PMC13097615.xml",
+            [
+              "Background and Aims",
+              "Methods"
+            ]
+          ],
+          [
+            "bio-PMC13099299.xml",
+            [
+              "Aims",
+              "Methods"
+            ]
+          ],
+          [
+            "bio-PMC13103274.xml",
+            [
+              "Background and Aim",
+              "Method"
+            ]
+          ],
+          [
+            "bio-PMC13162546.xml",
+            [
+              "Background",
+              "Discussion"
             ]
           ]
         ],
-        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files"
+        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files",
+        "carriers_file": "probes/results/line-109.json"
       },
       "matches_excerpt": true
     }

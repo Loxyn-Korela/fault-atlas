@@ -107,9 +107,64 @@
             [
               "tr×154 def-item×75 |  Position Statement on Cardiometabolic Health Across the Wom"
             ]
+          ],
+          [
+            "bio-PMC12857832.xml",
+            [
+              "tr×117 def-item×0 |  Row Keyword Query Result "
+            ]
+          ],
+          [
+            "bio-PMC12882215.xml",
+            [
+              "tr×65 def-item×7 |  Database Search strategy Search "
+            ]
+          ],
+          [
+            "bio-PMC12909487.xml",
+            [
+              "tr×17 def-item×0 |  Database Number of records ST SR LC SF Search strategy "
+            ]
+          ],
+          [
+            "bio-PMC12915353.xml",
+            [
+              "tr×18 def-item×0 |  Electronic Databases Search Strategy Records "
+            ]
+          ],
+          [
+            "bio-PMC12927065.xml",
+            [
+              "tr×76 def-item×0 |  S.no Author YP Country N(P%) Study Design Sampling Techniqu"
+            ]
+          ],
+          [
+            "bio-PMC12927975.xml",
+            [
+              "tr×11 def-item×0 |  No. References Country Type of study Medical field, AI appl"
+            ]
+          ],
+          [
+            "bio-PMC12953170.xml",
+            [
+              "tr×26 def-item×0 |  Comorbidities % n "
+            ]
+          ],
+          [
+            "bio-PMC12959687.xml",
+            [
+              "tr×86 def-item×0 |  1 Prevalence OR Epidemiology OR Surveillance "
+            ]
+          ],
+          [
+            "bio-PMC13057049.xml",
+            [
+              "tr×90 def-item×14 |  Inclusion Exclusion "
+            ]
           ]
         ],
-        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files"
+        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files",
+        "carriers_file": "probes/results/line-020.json"
       },
       "matches_excerpt": true
     }

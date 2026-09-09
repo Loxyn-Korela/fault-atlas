@@ -89,8 +89,7 @@
             "bio-PMC12674831.xml",
             [
               "F2-",
-              "M14-",
-              "S0026-"
+              "M14-"
             ]
           ],
           [
@@ -105,9 +104,69 @@
             [
               "S2542-"
             ]
+          ],
+          [
+            "bio-PMC12915353.xml",
+            [
+              "S0140-"
+            ]
+          ],
+          [
+            "bio-PMC12927065.xml",
+            [
+              "S0140-",
+              "S2214-"
+            ]
+          ],
+          [
+            "bio-PMC12927975.xml",
+            [
+              "S2589-"
+            ]
+          ],
+          [
+            "bio-PMC12953170.xml",
+            [
+              "M1-",
+              "M2-"
+            ]
+          ],
+          [
+            "bio-PMC12959687.xml",
+            [
+              "S2468-",
+              "S2666-"
+            ]
+          ],
+          [
+            "bio-PMC13057049.xml",
+            [
+              "S12889-",
+              "S2214-"
+            ]
+          ],
+          [
+            "bio-PMC13088504.xml",
+            [
+              "S0140-"
+            ]
+          ],
+          [
+            "bio-PMC13097615.xml",
+            [
+              "M18-",
+              "S1-"
+            ]
+          ],
+          [
+            "bio-PMC13099299.xml",
+            [
+              "S0735-"
+            ]
           ]
         ],
-        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files"
+        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files",
+        "carriers_file": "probes/results/line-079.json"
       },
       "matches_excerpt": false,
       "note": "The figure quoted in the excerpt was counted on 2026-08-08 by a finer, hand-run measurement whose code was not kept; this probe is the one that was kept, and its figure is the one that can be re-run. Both stand, dated."

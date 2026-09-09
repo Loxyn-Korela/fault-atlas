@@ -1,0 +1,21 @@
+{
+ "probe": "probes/2026-08/line-066.py",
+ "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+ "date": "2026-09-09",
+ "count": 2,
+ "of": 272,
+ "carriers": [
+  {
+   "document": "cas-PMC13293792.xml",
+   "evidence": [
+    "three columns"
+   ]
+  },
+  {
+   "document": "meta-PMC13229315.xml",
+   "evidence": [
+    "two columns"
+   ]
+  }
+ ]
+}

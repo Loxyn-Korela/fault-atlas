@@ -93,8 +93,7 @@
             "bio-PMC12674831.xml",
             [
               "2.4-fold",
-              "2.5-fold",
-              "increased by 40"
+              "2.5-fold"
             ]
           ],
           [
@@ -109,9 +108,66 @@
             [
               "increased by 7"
             ]
+          ],
+          [
+            "bio-PMC12927065.xml",
+            [
+              "2.62 times higher",
+              "2.74 times higher"
+            ]
+          ],
+          [
+            "bio-PMC13057049.xml",
+            [
+              "increased by 50"
+            ]
+          ],
+          [
+            "bio-PMC13099299.xml",
+            [
+              "increased by 9"
+            ]
+          ],
+          [
+            "bio-PMC13203479.xml",
+            [
+              "1.3 times higher"
+            ]
+          ],
+          [
+            "bio-PMC13231534.xml",
+            [
+              "18.5-fold",
+              "3.6-fold"
+            ]
+          ],
+          [
+            "bio-PMC13252842.xml",
+            [
+              "6-fold"
+            ]
+          ],
+          [
+            "cas-PMC13293792.xml",
+            [
+              "3-fold"
+            ]
+          ],
+          [
+            "cas-PMC13293799.xml",
+            [
+              "5.5-fold"
+            ]
+          ],
+          [
+            "cas-PMC13294629.xml",
+            [
+              "6.28 times higher"
+            ]
           ]
         ],
-        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files"
+        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files",
+        "carriers_file": "probes/results/line-080.json"
       },
       "matches_excerpt": false,
       "note": "The figure quoted in the excerpt was counted on 2026-08-08 by a finer, hand-run measurement whose code was not kept; this probe is the one that was kept, and its figure is the one that can be re-run. Both stand, dated."

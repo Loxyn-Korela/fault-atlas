@@ -1,0 +1,27 @@
+{
+ "probe": "probes/2026-09/form-185-format-by-era.sh",
+ "corpus_id": "corpus-2026-09-eurlex",
+ "date": "2026-09-09",
+ "count": 2,
+ "of": 3,
+ "carriers": [
+  {
+   "document": "32026D1970",
+   "evidence": [
+    "2026 act: application/xhtml+xml 200 · text/html 404 · Formex 404"
+   ]
+  },
+  {
+   "document": "31985L0374",
+   "evidence": [
+    "1985 act: application/xhtml+xml 404 · text/html 200 · Formex 404"
+   ]
+  },
+  {
+   "document": "31968R5759",
+   "evidence": [
+    "1968 act: 404 in all three text formats"
+   ]
+  }
+ ]
+}

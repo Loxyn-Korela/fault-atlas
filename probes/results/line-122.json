@@ -1,0 +1,294 @@
+{
+ "probe": "probes/2026-08/line-122.py",
+ "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+ "date": "2026-09-09",
+ "count": 33,
+ "of": 272,
+ "carriers": [
+  {
+   "document": "essai-PMC13282136.xml",
+   "evidence": [
+    "(1)"
+   ]
+  },
+  {
+   "document": "moderne-PMC13262411.xml",
+   "evidence": [
+    "1",
+    "2",
+    "3"
+   ]
+  },
+  {
+   "document": "moderne-PMC13264967.xml",
+   "evidence": [
+    "(1)",
+    "(2)"
+   ]
+  },
+  {
+   "document": "moderne-PMC13288728.xml",
+   "evidence": [
+    "1",
+    "2",
+    "3",
+    "4"
+   ]
+  },
+  {
+   "document": "phys-PMC13039343.xml",
+   "evidence": [
+    "1",
+    "2",
+    "3",
+    "4"
+   ]
+  },
+  {
+   "document": "phys-PMC13099575.xml",
+   "evidence": [
+    "[1]",
+    "[2]",
+    "[3]",
+    "[4]"
+   ]
+  },
+  {
+   "document": "phys-PMC13113438.xml",
+   "evidence": [
+    "(1)",
+    "(2)",
+    "(3)",
+    "(4)"
+   ]
+  },
+  {
+   "document": "phys-PMC13133660.xml",
+   "evidence": [
+    "(1a)",
+    "(1b)",
+    "(1c)",
+    "(2)"
+   ]
+  },
+  {
+   "document": "phys-PMC13154412.xml",
+   "evidence": [
+    "(1)",
+    "(2)",
+    "(3)",
+    "(4)"
+   ]
+  },
+  {
+   "document": "phys-PMC13158258.xml",
+   "evidence": [
+    "1",
+    "2",
+    "3",
+    "4"
+   ]
+  },
+  {
+   "document": "phys-PMC13178570.xml",
+   "evidence": [
+    "(1)",
+    "(2)",
+    "(3)",
+    "(4)"
+   ]
+  },
+  {
+   "document": "phys-PMC13181085.xml",
+   "evidence": [
+    "1",
+    "2",
+    "3",
+    "4"
+   ]
+  },
+  {
+   "document": "phys-PMC13201561.xml",
+   "evidence": [
+    "1",
+    "2",
+    "3",
+    "4"
+   ]
+  },
+  {
+   "document": "phys-PMC13210669.xml",
+   "evidence": [
+    "(1)",
+    "(2)",
+    "(3)",
+    "(4)"
+   ]
+  },
+  {
+   "document": "phys-PMC13221960.xml",
+   "evidence": [
+    "(1)"
+   ]
+  },
+  {
+   "document": "phys-PMC13222844.xml",
+   "evidence": [
+    "(1)",
+    "(2)",
+    "(3)",
+    "(4)"
+   ]
+  },
+  {
+   "document": "phys-PMC13234180.xml",
+   "evidence": [
+    "1a",
+    "1b",
+    "1c",
+    "1d"
+   ]
+  },
+  {
+   "document": "phys-PMC13235518.xml",
+   "evidence": [
+    "(1)",
+    "(2)",
+    "(3)",
+    "(4)"
+   ]
+  },
+  {
+   "document": "phys-PMC13246409.xml",
+   "evidence": [
+    "(1)",
+    "(2)",
+    "(3)",
+    "(4)"
+   ]
+  },
+  {
+   "document": "phys-PMC13252849.xml",
+   "evidence": [
+    "(1)",
+    "(2)",
+    "(3)",
+    "(4)"
+   ]
+  },
+  {
+   "document": "phys-PMC13257740.xml",
+   "evidence": [
+    "(1)",
+    "(2)",
+    "(3)",
+    "(4)"
+   ]
+  },
+  {
+   "document": "phys-PMC13259435.xml",
+   "evidence": [
+    "(1)",
+    "(2)",
+    "(3)",
+    "(4)"
+   ]
+  },
+  {
+   "document": "phys-PMC13259474.xml",
+   "evidence": [
+    "(1)",
+    "(2)",
+    "(3)",
+    "(4)"
+   ]
+  },
+  {
+   "document": "phys-PMC13261600.xml",
+   "evidence": [
+    "1",
+    "2",
+    "3",
+    "4"
+   ]
+  },
+  {
+   "document": "phys-PMC13272752.xml",
+   "evidence": [
+    "1",
+    "2",
+    "3",
+    "4"
+   ]
+  },
+  {
+   "document": "phys-PMC13275013.xml",
+   "evidence": [
+    "(1)",
+    "(2)",
+    "(3)",
+    "(4)"
+   ]
+  },
+  {
+   "document": "phys-PMC13276034.xml",
+   "evidence": [
+    "1",
+    "2",
+    "3",
+    "4"
+   ]
+  },
+  {
+   "document": "phys-PMC13282397.xml",
+   "evidence": [
+    "1",
+    "2",
+    "3",
+    "4"
+   ]
+  },
+  {
+   "document": "phys-PMC13285896.xml",
+   "evidence": [
+    "(1)"
+   ]
+  },
+  {
+   "document": "phys-PMC13296606.xml",
+   "evidence": [
+    "(1)",
+    "(2)",
+    "(3)",
+    "(4)"
+   ]
+  },
+  {
+   "document": "phys-PMC13297141.xml",
+   "evidence": [
+    "(1)",
+    "(2)",
+    "(3)",
+    "(4)"
+   ]
+  },
+  {
+   "document": "phys-PMC13297618.xml",
+   "evidence": [
+    "(1)",
+    "(2)",
+    "(3)",
+    "(4)"
+   ]
+  },
+  {
+   "document": "phys-PMC13298103.xml",
+   "evidence": [
+    "(1)",
+    "(2)",
+    "(3)",
+    "(4)"
+   ]
+  }
+ ]
+}

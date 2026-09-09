@@ -1,0 +1,204 @@
+{
+ "probe": "probes/2026-08/line-107.py",
+ "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+ "date": "2026-09-09",
+ "count": 27,
+ "of": 272,
+ "carriers": [
+  {
+   "document": "bio-PMC13252842.xml",
+   "evidence": [
+    "10.1371/journal.pcbi.1014325",
+    "10.1371/journal.pcbi.1014325.r001",
+    "10.1371/journal.pcbi.1014325.r002",
+    "10.1371/journal.pcbi.1014325.r003"
+   ]
+  },
+  {
+   "document": "meta-PMC13229315.xml",
+   "evidence": [
+    "10.1371/journal.pmed.1004653",
+    "10.1371/journal.pmed.1004653.r001",
+    "10.1371/journal.pmed.1004653.r002",
+    "10.1371/journal.pmed.1004653.r003"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13127809.xml",
+   "evidence": [
+    "10.36660/abc.20260107",
+    "10.36660/abc.20260107i"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13128172.xml",
+   "evidence": [
+    "10.36660/abc.20260155",
+    "10.36660/abc.20260155i"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13128184.xml",
+   "evidence": [
+    "10.36660/abc.20260119",
+    "10.36660/abc.20260119i"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13128185.xml",
+   "evidence": [
+    "10.36660/abc.20260140",
+    "10.36660/abc.20260140i"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13128186.xml",
+   "evidence": [
+    "10.36660/abc.20260157",
+    "10.36660/abc.20260157i"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13128206.xml",
+   "evidence": [
+    "10.36660/abc.20240820",
+    "10.36660/abc.20240820i"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13128210.xml",
+   "evidence": [
+    "10.36660/abc.20260110",
+    "10.36660/abc.20260110i"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13128212.xml",
+   "evidence": [
+    "10.36660/abc.20260240",
+    "10.36660/abc.20260240i"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13128213.xml",
+   "evidence": [
+    "10.36660/abc.20250186",
+    "10.36660/abc.20250186i"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13128215.xml",
+   "evidence": [
+    "10.36660/abc.20260163",
+    "10.36660/abc.20260163i"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13128216.xml",
+   "evidence": [
+    "10.36660/abc.20250394",
+    "10.36660/abc.20250394i"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13128218.xml",
+   "evidence": [
+    "10.36660/abc.20250691",
+    "10.36660/abc.20250691i"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13142163.xml",
+   "evidence": [
+    "10.1590/2317-1782/e20250083en",
+    "10.1590/2317-1782/e20250083pt"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13148856.xml",
+   "evidence": [
+    "10.36660/abc.20250203",
+    "10.36660/abc.20250203i"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13155791.xml",
+   "evidence": [
+    "10.36660/abc.20250886",
+    "10.36660/abc.20250886i"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13155792.xml",
+   "evidence": [
+    "10.36660/abc.20250867",
+    "10.36660/abc.20250867i"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13155793.xml",
+   "evidence": [
+    "10.36660/abc.20260238",
+    "10.36660/abc.20260238i"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13193188.xml",
+   "evidence": [
+    "10.1590/2317-1782/e20250121en",
+    "10.1590/2317-1782/e20250121pt"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13193189.xml",
+   "evidence": [
+    "10.1590/2317-1782/e20250251en",
+    "10.1590/2317-1782/e20250251pt"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13193190.xml",
+   "evidence": [
+    "10.1590/2317-1782/e20250325en",
+    "10.1590/2317-1782/e20250325pt"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13193191.xml",
+   "evidence": [
+    "10.1590/2317-1782/e20250038en",
+    "10.1590/2317-1782/e20250038pt"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13193194.xml",
+   "evidence": [
+    "10.1590/2317-1782/e20250212en",
+    "10.1590/2317-1782/e20250212pt"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13193195.xml",
+   "evidence": [
+    "10.1590/2317-1782/e20250153en",
+    "10.1590/2317-1782/e20250153pt"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13288443.xml",
+   "evidence": [
+    "10.1590/2317-1782/e20250126en",
+    "10.1590/2317-1782/e20250126pt"
+   ]
+  },
+  {
+   "document": "phys-PMC13252849.xml",
+   "evidence": [
+    "10.1371/journal.pcbi.1014365",
+    "10.1371/journal.pcbi.1014365.r001",
+    "10.1371/journal.pcbi.1014365.r002",
+    "10.1371/journal.pcbi.1014365.r003"
+   ]
+  }
+ ]
+}

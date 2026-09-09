@@ -106,9 +106,73 @@
               "permissions=True license=True",
               "dans le corps: non"
             ]
+          ],
+          [
+            "bio-PMC12857832.xml",
+            [
+              "permissions=True license=True",
+              "dans le corps: non"
+            ]
+          ],
+          [
+            "bio-PMC12882215.xml",
+            [
+              "permissions=True license=True",
+              "dans le corps: non"
+            ]
+          ],
+          [
+            "bio-PMC12909487.xml",
+            [
+              "permissions=True license=True",
+              "dans le corps: non"
+            ]
+          ],
+          [
+            "bio-PMC12915353.xml",
+            [
+              "permissions=True license=True",
+              "dans le corps: non"
+            ]
+          ],
+          [
+            "bio-PMC12927065.xml",
+            [
+              "permissions=True license=True",
+              "dans le corps: non"
+            ]
+          ],
+          [
+            "bio-PMC12927975.xml",
+            [
+              "permissions=True license=True",
+              "dans le corps: non"
+            ]
+          ],
+          [
+            "bio-PMC12953170.xml",
+            [
+              "permissions=True license=True",
+              "dans le corps: non"
+            ]
+          ],
+          [
+            "bio-PMC12959687.xml",
+            [
+              "permissions=True license=True",
+              "dans le corps: non"
+            ]
+          ],
+          [
+            "bio-PMC13057049.xml",
+            [
+              "permissions=True license=True",
+              "dans le corps: non"
+            ]
           ]
         ],
-        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files"
+        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files",
+        "carriers_file": "probes/results/line-115.json"
       },
       "matches_excerpt": true
     }

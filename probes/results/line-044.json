@@ -1,0 +1,185 @@
+{
+ "probe": "probes/2026-08/line-044.py",
+ "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+ "date": "2026-09-09",
+ "count": 27,
+ "of": 272,
+ "carriers": [
+  {
+   "document": "nonEN-PMC13143285.xml",
+   "evidence": [
+    "trans-title ×4"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13170112.xml",
+   "evidence": [
+    "trans-title ×4"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13185728.xml",
+   "evidence": [
+    "trans-title ×4",
+    "trans-abstract ×2"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13185730.xml",
+   "evidence": [
+    "trans-title ×4",
+    "trans-abstract ×2"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13224953.xml",
+   "evidence": [
+    "trans-title ×4"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13224954.xml",
+   "evidence": [
+    "trans-title ×4"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13224955.xml",
+   "evidence": [
+    "trans-title ×4",
+    "trans-abstract ×2"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13224957.xml",
+   "evidence": [
+    "trans-title ×4",
+    "trans-abstract ×2"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13228121.xml",
+   "evidence": [
+    "trans-title ×2",
+    "trans-abstract ×1"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13264032.xml",
+   "evidence": [
+    "trans-title ×2"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13264058.xml",
+   "evidence": [
+    "trans-abstract ×1"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13264162.xml",
+   "evidence": [
+    "trans-title ×2"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13264178.xml",
+   "evidence": [
+    "trans-title ×2",
+    "trans-abstract ×1"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13266121.xml",
+   "evidence": [
+    "trans-title ×2"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13266122.xml",
+   "evidence": [
+    "trans-title ×2"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13267754.xml",
+   "evidence": [
+    "trans-title ×4",
+    "trans-abstract ×2"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13267755.xml",
+   "evidence": [
+    "trans-title ×4",
+    "trans-abstract ×2"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13267756.xml",
+   "evidence": [
+    "trans-title ×4",
+    "trans-abstract ×2"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13267757.xml",
+   "evidence": [
+    "trans-title ×4",
+    "trans-abstract ×2"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13272499.xml",
+   "evidence": [
+    "trans-title ×2"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13272511.xml",
+   "evidence": [
+    "trans-title ×2",
+    "trans-abstract ×1"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13272517.xml",
+   "evidence": [
+    "trans-title ×2",
+    "trans-abstract ×1"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13276738.xml",
+   "evidence": [
+    "trans-title ×2"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13284468.xml",
+   "evidence": [
+    "trans-title ×2",
+    "trans-abstract ×1"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13284469.xml",
+   "evidence": [
+    "trans-title ×2"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13285344.xml",
+   "evidence": [
+    "trans-title ×2"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13285635.xml",
+   "evidence": [
+    "trans-title ×2",
+    "trans-abstract ×1"
+   ]
+  }
+ ]
+}

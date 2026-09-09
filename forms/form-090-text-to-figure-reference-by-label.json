@@ -92,28 +92,84 @@
             "bio-PMC12583535.xml",
             [
               "1",
-              "2",
-              "3"
+              "2"
             ]
           ],
           [
             "bio-PMC12590050.xml",
             [
               "1",
-              "2",
-              "3"
+              "2"
             ]
           ],
           [
             "bio-PMC12674831.xml",
             [
               "1.3",
-              "Figure 1.1",
-              "Figure 1.4"
+              "Figure 1.1"
+            ]
+          ],
+          [
+            "bio-PMC12857832.xml",
+            [
+              "Figure 1",
+              "Figure 2"
+            ]
+          ],
+          [
+            "bio-PMC12882215.xml",
+            [
+              "1",
+              "2"
+            ]
+          ],
+          [
+            "bio-PMC12909487.xml",
+            [
+              "Figure 1"
+            ]
+          ],
+          [
+            "bio-PMC12915353.xml",
+            [
+              "Figure 1"
+            ]
+          ],
+          [
+            "bio-PMC12927065.xml",
+            [
+              "Fig. 1",
+              "Fig. 2"
+            ]
+          ],
+          [
+            "bio-PMC12927975.xml",
+            [
+              "1"
+            ]
+          ],
+          [
+            "bio-PMC12953170.xml",
+            [
+              "Figure 1"
+            ]
+          ],
+          [
+            "bio-PMC12959687.xml",
+            [
+              "Fig 1"
+            ]
+          ],
+          [
+            "bio-PMC13057049.xml",
+            [
+              "1",
+              "2"
             ]
           ]
         ],
-        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files"
+        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files",
+        "carriers_file": "probes/results/line-090.json"
       },
       "matches_excerpt": false,
       "note": "The figure quoted in the excerpt was counted on 2026-08-08 by a finer, hand-run measurement whose code was not kept; this probe is the one that was kept, and its figure is the one that can be re-run. Both stand, dated."

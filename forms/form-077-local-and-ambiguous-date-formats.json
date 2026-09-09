@@ -108,9 +108,17 @@
             [
               "10/3/2023"
             ]
+          ],
+          [
+            "moderne-PMC13274555.xml",
+            [
+              "06/06/2022",
+              "07/06/2018"
+            ]
           ]
         ],
-        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files"
+        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files",
+        "carriers_file": "probes/results/line-077.json"
       },
       "matches_excerpt": true
     }

@@ -1,0 +1,227 @@
+{
+ "probe": "probes/2026-08/line-117.py",
+ "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+ "date": "2026-09-09",
+ "count": 35,
+ "of": 272,
+ "carriers": [
+  {
+   "document": "moderne-PMC13296839.xml",
+   "evidence": [
+    "retraction of"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13193195.xml",
+   "evidence": [
+    "retraction of"
+   ]
+  },
+  {
+   "document": "retract-PMC12920011.xml",
+   "evidence": [
+    "<related-article xmlns:xlink=\"http://www.w3.org/1999/xlink\" related-article-type=\"retracted-article\" id=\"RA1\" vol=\"32\" page=\"757\" ext-link-type=\"doi\" xlink:href=\"10.3892/ijo.32.4.757\">",
+    "<related-article xmlns:xlink=\"http://www.w3.org/1999/xlink\" related-article-type=\"retracted-article\" vol=\"32\" page=\"757\" ext-link-type=\"doi\" xlink:href=\"10.3892/ijo.32.4.757\">"
+   ]
+  },
+  {
+   "document": "retract-PMC12937552.xml",
+   "evidence": [
+    "<related-article related-article-type=\"retracted-article\">"
+   ]
+  },
+  {
+   "document": "retract-PMC12943135.xml",
+   "evidence": [
+    "<related-article xmlns:xlink=\"http://www.w3.org/1999/xlink\" related-article-type=\"retracted-article\" xml:lang=\"en\" xlink:title=\"research-article\" vol=\"60\" elocation-id=\"1055\" journal-id=\"Medicina (Kaunas)\" journal-id-type=\"nlm-ta\" ext-link-type=\"pmc\" xlink:href=\"PMC11279236\">",
+    "retraction of"
+   ]
+  },
+  {
+   "document": "retract-PMC12945919.xml",
+   "evidence": [
+    "<related-article xmlns:xlink=\"http://www.w3.org/1999/xlink\" related-article-type=\"retracted-article\" xml:lang=\"en\" xlink:title=\"research-article\" journal-id=\"Skin Res Technol\" journal-id-type=\"nlm-ta\" ext-link-type=\"pmc\" xlink:href=\"PMC10387586\">"
+   ]
+  },
+  {
+   "document": "retract-PMC12951106.xml",
+   "evidence": [
+    "<related-article xmlns:xlink=\"http://www.w3.org/1999/xlink\" related-article-type=\"retracted-article\" xml:lang=\"en\" xlink:title=\"research-article\" journal-id=\"Cancer Med\" journal-id-type=\"nlm-ta\" ext-link-type=\"pmc\" xlink:href=\"PMC6718591\">"
+   ]
+  },
+  {
+   "document": "retract-PMC12983062.xml",
+   "evidence": [
+    "<related-article related-article-type=\"retracted-article\">"
+   ]
+  },
+  {
+   "document": "retract-PMC12983399.xml",
+   "evidence": [
+    "<related-article xmlns:xlink=\"http://www.w3.org/1999/xlink\" related-article-type=\"retracted-article\" xml:lang=\"en\" xlink:title=\"review-article\" journal-id=\"Front Immunol\" journal-id-type=\"nlm-ta\" ext-link-type=\"pmc\" xlink:href=\"PMC12325065\">"
+   ]
+  },
+  {
+   "document": "retract-PMC12985380.xml",
+   "evidence": [
+    "<related-article related-article-type=\"retracted-article\">",
+    "This article has been retracted"
+   ]
+  },
+  {
+   "document": "retract-PMC12989678.xml",
+   "evidence": [
+    "<related-article xmlns:xlink=\"http://www.w3.org/1999/xlink\" related-article-type=\"retracted-article\" xml:lang=\"en\" xlink:title=\"research-article\" vol=\"10\" page=\"604\" journal-id=\"Gut Liver\" journal-id-type=\"nlm-ta\" ext-link-type=\"pmc\" xlink:href=\"PMC4933422\">",
+    "this article has been retracted"
+   ]
+  },
+  {
+   "document": "retract-PMC12990951.xml",
+   "evidence": [
+    "<related-article related-article-type=\"retracted-article\">",
+    "This article has been retracted"
+   ]
+  },
+  {
+   "document": "retract-PMC13034554.xml",
+   "evidence": [
+    "<related-article related-article-type=\"retracted-article\">"
+   ]
+  },
+  {
+   "document": "retract-PMC13037014.xml",
+   "evidence": [
+    "<related-article related-article-type=\"retracted-article\">"
+   ]
+  },
+  {
+   "document": "retract-PMC13064942.xml",
+   "evidence": [
+    "<related-article xmlns:xlink=\"http://www.w3.org/1999/xlink\" related-article-type=\"retracted-article\" id=\"RA1\" xml:lang=\"en\" xlink:title=\"research-article\" vol=\"7\" page=\"70699\" journal-id=\"Oncotarget\" journal-id-type=\"nlm-ta\" ext-link-type=\"pmc\" xlink:href=\"PMC5342584\">",
+    "<related-article xmlns:xlink=\"http://www.w3.org/1999/xlink\" related-article-type=\"retracted-article\" xml:lang=\"en\" xlink:title=\"research-article\" vol=\"7\" page=\"70699\" journal-id=\"Oncotarget\" journal-id-type=\"nlm-ta\" ext-link-type=\"pmc\" xlink:href=\"PMC5342584\">",
+    "This article has been retracted"
+   ]
+  },
+  {
+   "document": "retract-PMC13100932.xml",
+   "evidence": [
+    "<related-article related-article-type=\"retracted-article\">"
+   ]
+  },
+  {
+   "document": "retract-PMC13184583.xml",
+   "evidence": [
+    "<related-article xmlns:xlink=\"http://www.w3.org/1999/xlink\" related-article-type=\"retracted-article\" id=\"RA1\" vol=\"18\" page=\"447\" ext-link-type=\"doi\" xlink:href=\"10.3892/or.18.2.447\">",
+    "<related-article xmlns:xlink=\"http://www.w3.org/1999/xlink\" related-article-type=\"retracted-article\" vol=\"18\" page=\"447\" ext-link-type=\"doi\" xlink:href=\"10.3892/or.18.2.447\">"
+   ]
+  },
+  {
+   "document": "retract-PMC13208113.xml",
+   "evidence": [
+    "<related-article related-article-type=\"retracted-article\">"
+   ]
+  },
+  {
+   "document": "retract-PMC13230493.xml",
+   "evidence": [
+    "<related-article related-article-type=\"retracted-article\">"
+   ]
+  },
+  {
+   "document": "retract-PMC13244562.xml",
+   "evidence": [
+    "<related-article xmlns:xlink=\"http://www.w3.org/1999/xlink\" related-article-type=\"retracted-article\" xml:lang=\"en\" xlink:title=\"research-article\" journal-id=\"Gastroenterol Res Pract\" journal-id-type=\"nlm-ta\" ext-link-type=\"pmc\" xlink:href=\"PMC3483697\">"
+   ]
+  },
+  {
+   "document": "retract-PMC13257949.xml",
+   "evidence": [
+    "<related-article xmlns:xlink=\"http://www.w3.org/1999/xlink\" related-article-type=\"retracted-article\" journal-id=\"Biochem J\" journal-id-type=\"nlm-ta\" ext-link-type=\"pubmed\" xlink:href=\"31072911\">"
+   ]
+  },
+  {
+   "document": "retract-PMC13257951.xml",
+   "evidence": [
+    "<related-article related-article-type=\"retracted-article\">"
+   ]
+  },
+  {
+   "document": "retract-PMC13289858.xml",
+   "evidence": [
+    "<related-article related-article-type=\"retracted-article\">"
+   ]
+  },
+  {
+   "document": "retract-PMC13291836.xml",
+   "evidence": [
+    "<related-article xmlns:xlink=\"http://www.w3.org/1999/xlink\" related-article-type=\"retracted-article\" xml:lang=\"en\" xlink:title=\"research-article\" journal-id=\"Onco Targets Ther\" journal-id-type=\"nlm-ta\" ext-link-type=\"pmc\" xlink:href=\"PMC7567570\">"
+   ]
+  },
+  {
+   "document": "retract-PMC13292036.xml",
+   "evidence": [
+    "<related-article xmlns:xlink=\"http://www.w3.org/1999/xlink\" related-article-type=\"retracted-article\" xml:lang=\"en\" xlink:title=\"research-article\" vol=\"25\" page=\"177\" journal-id=\"Oncol Res\" journal-id-type=\"nlm-ta\" ext-link-type=\"pmc\" xlink:href=\"PMC7840695\">"
+   ]
+  },
+  {
+   "document": "retract-PMC13292042.xml",
+   "evidence": [
+    "<related-article related-article-type=\"retracted-article\">"
+   ]
+  },
+  {
+   "document": "retract-PMC13292064.xml",
+   "evidence": [
+    "<related-article related-article-type=\"retracted-article\">"
+   ]
+  },
+  {
+   "document": "retract-PMC13292106.xml",
+   "evidence": [
+    "<related-article related-article-type=\"retracted-article\">"
+   ]
+  },
+  {
+   "document": "retract-PMC13292606.xml",
+   "evidence": [
+    "<related-article xmlns:xlink=\"http://www.w3.org/1999/xlink\" related-article-type=\"retracted-article\" xml:lang=\"en\" xlink:title=\"research-article\" vol=\"20\" elocation-id=\"1439\" journal-id=\"Int J Mol Sci\" journal-id-type=\"nlm-ta\" ext-link-type=\"pmc\" xlink:href=\"PMC6471417\">"
+   ]
+  },
+  {
+   "document": "retract-PMC13294332.xml",
+   "evidence": [
+    "<related-article related-article-type=\"retracted-article\">"
+   ]
+  },
+  {
+   "document": "retract-PMC13294796.xml",
+   "evidence": [
+    "<related-article related-article-type=\"retracted-article\">"
+   ]
+  },
+  {
+   "document": "retract-PMC13295435.xml",
+   "evidence": [
+    "<related-article xmlns:xlink=\"http://www.w3.org/1999/xlink\" related-article-type=\"retracted-article\" xml:lang=\"en\" xlink:title=\"research-article\" vol=\"14\" elocation-id=\"386\" journal-id=\"Pharmaceuticals (Basel)\" journal-id-type=\"nlm-ta\" ext-link-type=\"pmc\" xlink:href=\"PMC8142973\">"
+   ]
+  },
+  {
+   "document": "retract-PMC13298758.xml",
+   "evidence": [
+    "<related-article related-article-type=\"retracted-article\">"
+   ]
+  },
+  {
+   "document": "retract-PMC13299186.xml",
+   "evidence": [
+    "<related-article related-article-type=\"retracted-article\">"
+   ]
+  },
+  {
+   "document": "retract-PMC13306522.xml",
+   "evidence": [
+    "<related-article related-article-type=\"retracted-article\">"
+   ]
+  }
+ ]
+}

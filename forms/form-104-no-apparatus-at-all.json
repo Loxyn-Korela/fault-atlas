@@ -106,9 +106,64 @@
             [
               "manque: résumé, mots-clés, titre de section"
             ]
+          ],
+          [
+            "retract-PMC12920011.xml",
+            [
+              "manque: résumé, mots-clés, titre de section"
+            ]
+          ],
+          [
+            "retract-PMC12937552.xml",
+            [
+              "manque: résumé, mots-clés, titre de section"
+            ]
+          ],
+          [
+            "retract-PMC12943135.xml",
+            [
+              "manque: résumé, mots-clés, titre de section"
+            ]
+          ],
+          [
+            "retract-PMC12945919.xml",
+            [
+              "manque: résumé, mots-clés, titre de section"
+            ]
+          ],
+          [
+            "retract-PMC12983399.xml",
+            [
+              "manque: résumé, mots-clés, titre de section"
+            ]
+          ],
+          [
+            "retract-PMC12985380.xml",
+            [
+              "manque: résumé, mots-clés, titre de section"
+            ]
+          ],
+          [
+            "retract-PMC12989678.xml",
+            [
+              "manque: résumé, mots-clés, titre de section"
+            ]
+          ],
+          [
+            "retract-PMC12990951.xml",
+            [
+              "manque: résumé, mots-clés, titre de section"
+            ]
+          ],
+          [
+            "retract-PMC13034554.xml",
+            [
+              "manque: résumé, mots-clés, titre de section"
+            ]
           ]
         ],
-        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files"
+        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files",
+        "carriers_file": "probes/results/line-104.json"
       },
       "matches_excerpt": true
     }

@@ -104,9 +104,73 @@
               "ref x450",
               "xref bibr x765"
             ]
+          ],
+          [
+            "bio-PMC12857832.xml",
+            [
+              "ref x41",
+              "xref bibr x58"
+            ]
+          ],
+          [
+            "bio-PMC12882215.xml",
+            [
+              "ref x98",
+              "xref bibr x229"
+            ]
+          ],
+          [
+            "bio-PMC12909487.xml",
+            [
+              "ref x27",
+              "xref bibr x74"
+            ]
+          ],
+          [
+            "bio-PMC12915353.xml",
+            [
+              "ref x57",
+              "xref bibr x132"
+            ]
+          ],
+          [
+            "bio-PMC12927065.xml",
+            [
+              "ref x52",
+              "xref bibr x55"
+            ]
+          ],
+          [
+            "bio-PMC12927975.xml",
+            [
+              "ref x33",
+              "xref bibr x72"
+            ]
+          ],
+          [
+            "bio-PMC12953170.xml",
+            [
+              "ref x35",
+              "xref bibr x53"
+            ]
+          ],
+          [
+            "bio-PMC12959687.xml",
+            [
+              "ref x47",
+              "xref bibr x56"
+            ]
+          ],
+          [
+            "bio-PMC13057049.xml",
+            [
+              "ref x70",
+              "xref bibr x289"
+            ]
           ]
         ],
-        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files"
+        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files",
+        "carriers_file": "probes/results/line-070.json"
       },
       "matches_excerpt": true
     }

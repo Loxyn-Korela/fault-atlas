@@ -1,0 +1,499 @@
+{
+ "probe": "probes/2026-08/line-088.py",
+ "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+ "date": "2026-09-09",
+ "count": 71,
+ "of": 272,
+ "carriers": [
+  {
+   "document": "bio-PMC12674831.xml",
+   "evidence": [
+    "American Diabetes Association",
+    "American Diabetes Association Professional Practice Committee",
+    "Associação Brasileira para o Estudo da Obesidade e da Síndrome Metabólica",
+    "BELLA study group"
+   ]
+  },
+  {
+   "document": "bio-PMC12882215.xml",
+   "evidence": [
+    "Cochrane Collaboration"
+   ]
+  },
+  {
+   "document": "bio-PMC12909487.xml",
+   "evidence": [
+    "Institute TJB"
+   ]
+  },
+  {
+   "document": "bio-PMC12915353.xml",
+   "evidence": [
+    "G. B. D. Causes of Death Collaborators",
+    "G. B. D. Diabetes Collaborators"
+   ]
+  },
+  {
+   "document": "bio-PMC12927975.xml",
+   "evidence": [
+    "World Health Organization"
+   ]
+  },
+  {
+   "document": "bio-PMC13088504.xml",
+   "evidence": [
+    "Hernia Trialists Collaboration"
+   ]
+  },
+  {
+   "document": "bio-PMC13162546.xml",
+   "evidence": [
+    "Beijing Inno Medicine Co"
+   ]
+  },
+  {
+   "document": "bio-PMC13181205.xml",
+   "evidence": [
+    "ASCEND Study Collaborative Group",
+    "Cochrane Collaboration"
+   ]
+  },
+  {
+   "document": "bio-PMC13216383.xml",
+   "evidence": [
+    "[Anonymous]"
+   ]
+  },
+  {
+   "document": "bio-PMC13236932.xml",
+   "evidence": [
+    "Organization WH"
+   ]
+  },
+  {
+   "document": "bio-PMC13274935.xml",
+   "evidence": [
+    "The Cochrane Collaboration"
+   ]
+  },
+  {
+   "document": "cas-PMC13293792.xml",
+   "evidence": [
+    "American Brain Tumor Consortium",
+    "National Comprehensive Cancer Network"
+   ]
+  },
+  {
+   "document": "cas-PMC13294155.xml",
+   "evidence": [
+    "Genome Reference Consortium"
+   ]
+  },
+  {
+   "document": "essai-PMC13169472.xml",
+   "evidence": [
+    "Danish Kneealloplasty Register",
+    "The Ohio State University",
+    "University Orthopedics &amp; Adult Reconstruction Division",
+    "World Health Organization"
+   ]
+  },
+  {
+   "document": "essai-PMC13191455.xml",
+   "evidence": [
+    "MRC ImmunoPsychiatry Consortium"
+   ]
+  },
+  {
+   "document": "essai-PMC13205709.xml",
+   "evidence": [
+    "Child Undernutrition Study Group",
+    "Global Panel",
+    "Governo de Angola, Unicef, World Vision, &amp; Technical Rapid Response Team"
+   ]
+  },
+  {
+   "document": "essai-PMC13205876.xml",
+   "evidence": [
+    "Principal Investigators"
+   ]
+  },
+  {
+   "document": "essai-PMC13213610.xml",
+   "evidence": [
+    "NeTKoH Consortium"
+   ]
+  },
+  {
+   "document": "essai-PMC13238360.xml",
+   "evidence": [
+    "et al"
+   ]
+  },
+  {
+   "document": "essai-PMC13239719.xml",
+   "evidence": [
+    "World Health Organisation"
+   ]
+  },
+  {
+   "document": "essai-PMC13254492.xml",
+   "evidence": [
+    "Clinical Pharmacogenetics Implementation Consortium"
+   ]
+  },
+  {
+   "document": "essai-PMC13280184.xml",
+   "evidence": [
+    "Australian Bureau of Statistics",
+    "Australian Institute of Health and Welfare",
+    "NSW HEALTH"
+   ]
+  },
+  {
+   "document": "essai-PMC13280799.xml",
+   "evidence": [
+    "Mothers Healthy Babies Consortium"
+   ]
+  },
+  {
+   "document": "essai-PMC13291766.xml",
+   "evidence": [
+    "American College of Sports Medicine"
+   ]
+  },
+  {
+   "document": "essai-PMC13293440.xml",
+   "evidence": [
+    "Chinese Diabetes Society",
+    "Diabetes Professional Committee of Chinese Aging Well Association",
+    "Heart Protection Study Collaborative Group"
+   ]
+  },
+  {
+   "document": "essai-PMC13294787.xml",
+   "evidence": [
+    "JADE Collaborative Study Group",
+    "SURE Study Group"
+   ]
+  },
+  {
+   "document": "essai-PMC13294792.xml",
+   "evidence": [
+    "Kidney Disease Epidemiology Collaboration",
+    "REG OUTCOME Investigators"
+   ]
+  },
+  {
+   "document": "meta-PMC13071177.xml",
+   "evidence": [
+    "Cochrane",
+    "Ministry of Health Law",
+    "World Health Organization"
+   ]
+  },
+  {
+   "document": "meta-PMC13157766.xml",
+   "evidence": [
+    "Catchup Study Group",
+    "Sparfloxacin European Study Group"
+   ]
+  },
+  {
+   "document": "meta-PMC13225629.xml",
+   "evidence": [
+    "PRISMA Group",
+    "R Core Team"
+   ]
+  },
+  {
+   "document": "meta-PMC13226718.xml",
+   "evidence": [
+    "Estonian Biobank Research Team",
+    "Genes &amp; Health Research Team",
+    "Genome Reference Consortium",
+    "Genomes Project Consortium"
+   ]
+  },
+  {
+   "document": "meta-PMC13229315.xml",
+   "evidence": [
+    "Coast Applied Research Collaboration"
+   ]
+  },
+  {
+   "document": "meta-PMC13241412.xml",
+   "evidence": [
+    "CJ GKL",
+    "IReL Consortium"
+   ]
+  },
+  {
+   "document": "meta-PMC13246130.xml",
+   "evidence": [
+    "QUADAS-2 Group",
+    "and the PRISMA-DTA Group"
+   ]
+  },
+  {
+   "document": "meta-PMC13254819.xml",
+   "evidence": [
+    "Clinical Trial Consortium",
+    "the Alzheimer's Disease Neuroimaging Initiative",
+    "the Health and Aging Brain Study (HABS‐HD) Study Team"
+   ]
+  },
+  {
+   "document": "meta-PMC13256077.xml",
+   "evidence": [
+    "PRISMA Group"
+   ]
+  },
+  {
+   "document": "meta-PMC13260247.xml",
+   "evidence": [
+    "Midwest Pediatric Nephrology Consortium"
+   ]
+  },
+  {
+   "document": "meta-PMC13263136.xml",
+   "evidence": [
+    "ADGC",
+    "Bonn",
+    "CHARGE",
+    "Care Consortium"
+   ]
+  },
+  {
+   "document": "meta-PMC13264436.xml",
+   "evidence": [
+    "CONCUR Investigators",
+    "CORRECT Study Group",
+    "Cancer Statistics Working Group",
+    "RECOURSE Study Group"
+   ]
+  },
+  {
+   "document": "meta-PMC13265330.xml",
+   "evidence": [
+    "1000 Genomes Project Consortium",
+    "Ankylosing Spondylitis Consortium",
+    "GTEx Consortium",
+    "Genomes Project Consortium"
+   ]
+  },
+  {
+   "document": "meta-PMC13268477.xml",
+   "evidence": [
+    "CHANCE Investigators"
+   ]
+  },
+  {
+   "document": "meta-PMC13268693.xml",
+   "evidence": [
+    "R Core Team"
+   ]
+  },
+  {
+   "document": "meta-PMC13269816.xml",
+   "evidence": [
+    "CHARGE Consortium",
+    "International Agency for Research on Cancer",
+    "Nightingale Health for Research",
+    "R Core Team"
+   ]
+  },
+  {
+   "document": "meta-PMC13271776.xml",
+   "evidence": [
+    "EPoS Consortium",
+    "GTEx Consortium",
+    "GTEx Consortium. Human genomics"
+   ]
+  },
+  {
+   "document": "meta-PMC13280693.xml",
+   "evidence": [
+    "All of Us Research Program Staff",
+    "American Psychiatric Association",
+    "Psychiatric Genomics Consortium",
+    "QSkin Study"
+   ]
+  },
+  {
+   "document": "meta-PMC13286426.xml",
+   "evidence": [
+    "Bowel Disease Genetics Consortium",
+    "Pancreatic Cancer Cohort Consortium"
+   ]
+  },
+  {
+   "document": "meta-PMC13286481.xml",
+   "evidence": [
+    "The Cochrane Collaboration"
+   ]
+  },
+  {
+   "document": "meta-PMC13287023.xml",
+   "evidence": [
+    "ProteomeXchange Consortium"
+   ]
+  },
+  {
+   "document": "meta-PMC13287149.xml",
+   "evidence": [
+    "International IBD Genetics Consortium",
+    "Schizophrenia Working Group",
+    "The GTEx Consortium"
+   ]
+  },
+  {
+   "document": "meta-PMC13287277.xml",
+   "evidence": [
+    "Adhd Working Group",
+    "America International Consortium",
+    "Autism Spectrum Disorder Working Group",
+    "Broad Consortium"
+   ]
+  },
+  {
+   "document": "meta-PMC13292320.xml",
+   "evidence": [
+    "Disease Meta Analysis Consortium",
+    "Japanese Genetic Study Consortium"
+   ]
+  },
+  {
+   "document": "meta-PMC13297335.xml",
+   "evidence": [
+    "Ovarian Cancer Association Consortium",
+    "R Core Team"
+   ]
+  },
+  {
+   "document": "meta-PMC13305250.xml",
+   "evidence": [
+    "Global Lipids Genetics Consortium",
+    "Sequencing Consortium"
+   ]
+  },
+  {
+   "document": "moderne-PMC13292010.xml",
+   "evidence": [
+    "Interprofessional Collaboration"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13128206.xml",
+   "evidence": [
+    "Minnesota Resuscitation Consortium"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13128212.xml",
+   "evidence": [
+    "Extracorporeal Life Support Organization"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13185728.xml",
+   "evidence": [
+    "American Psychiatric Association",
+    "Brasil",
+    "Children's Hospital of Philadelphia",
+    "GBD 2021 Autism Spectrum Disorders Collaborators"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13193194.xml",
+   "evidence": [
+    "American Psychiatric Association"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13224955.xml",
+   "evidence": [
+    "Instituto Brasileio de Geografia e Estatística",
+    "Ministério da Saúde",
+    "National Institute on Alcohol Abuse and Alcoholism"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13264178.xml",
+   "evidence": [
+    "Vic Hospital Consortium"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13267754.xml",
+   "evidence": [
+    "Organización Panamericana de la Salud.",
+    "Organización Panamericana de la Salud/EIH.",
+    "Pan American Health Organization.",
+    "UNFPA."
+   ]
+  },
+  {
+   "document": "nonEN-PMC13267757.xml",
+   "evidence": [
+    "JBI Manual for Evidence Synthesis.",
+    "Organización Mundial de la Salud."
+   ]
+  },
+  {
+   "document": "nonEN-PMC13272511.xml",
+   "evidence": [
+    "Confederación Salud Mental España",
+    "Ministerio de Sanidad"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13284469.xml",
+   "evidence": [
+    "Grupo Investigador RECOLFACA"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13288443.xml",
+   "evidence": [
+    "Google"
+   ]
+  },
+  {
+   "document": "phys-PMC13082673.xml",
+   "evidence": [
+    "SPIRIT-AI and CONSORT-AI Working Group"
+   ]
+  },
+  {
+   "document": "phys-PMC13234180.xml",
+   "evidence": [
+    "ASHRAE"
+   ]
+  },
+  {
+   "document": "phys-PMC13252849.xml",
+   "evidence": [
+    "UniProt Consortium"
+   ]
+  },
+  {
+   "document": "retract-PMC12983062.xml",
+   "evidence": [
+    "Frontiers Editorial Office"
+   ]
+  },
+  {
+   "document": "retract-PMC12983399.xml",
+   "evidence": [
+    "Frontiers Editorial Office"
+   ]
+  },
+  {
+   "document": "retract-PMC12989678.xml",
+   "evidence": [
+    "The Gut and Liver Editors"
+   ]
+  }
+ ]
+}

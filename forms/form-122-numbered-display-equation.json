@@ -100,8 +100,7 @@
             "moderne-PMC13262411.xml",
             [
               "1",
-              "2",
-              "3"
+              "2"
             ]
           ],
           [
@@ -110,9 +109,73 @@
               "(1)",
               "(2)"
             ]
+          ],
+          [
+            "moderne-PMC13288728.xml",
+            [
+              "1",
+              "2"
+            ]
+          ],
+          [
+            "phys-PMC13039343.xml",
+            [
+              "1",
+              "2"
+            ]
+          ],
+          [
+            "phys-PMC13099575.xml",
+            [
+              "[1]",
+              "[2]"
+            ]
+          ],
+          [
+            "phys-PMC13113438.xml",
+            [
+              "(1)",
+              "(2)"
+            ]
+          ],
+          [
+            "phys-PMC13133660.xml",
+            [
+              "(1a)",
+              "(1b)"
+            ]
+          ],
+          [
+            "phys-PMC13154412.xml",
+            [
+              "(1)",
+              "(2)"
+            ]
+          ],
+          [
+            "phys-PMC13158258.xml",
+            [
+              "1",
+              "2"
+            ]
+          ],
+          [
+            "phys-PMC13178570.xml",
+            [
+              "(1)",
+              "(2)"
+            ]
+          ],
+          [
+            "phys-PMC13181085.xml",
+            [
+              "1",
+              "2"
+            ]
           ]
         ],
-        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files"
+        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files",
+        "carriers_file": "probes/results/line-122.json"
       },
       "matches_excerpt": true
     }

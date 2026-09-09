@@ -107,9 +107,64 @@
             [
               "279776 car. → 140 morceaux"
             ]
+          ],
+          [
+            "bio-PMC12857832.xml",
+            [
+              "36119 car. → 19 morceaux"
+            ]
+          ],
+          [
+            "bio-PMC12882215.xml",
+            [
+              "65638 car. → 33 morceaux"
+            ]
+          ],
+          [
+            "bio-PMC12909487.xml",
+            [
+              "28872 car. → 15 morceaux"
+            ]
+          ],
+          [
+            "bio-PMC12915353.xml",
+            [
+              "30729 car. → 16 morceaux"
+            ]
+          ],
+          [
+            "bio-PMC12927065.xml",
+            [
+              "46838 car. → 24 morceaux"
+            ]
+          ],
+          [
+            "bio-PMC12927975.xml",
+            [
+              "18517 car. → 10 morceaux"
+            ]
+          ],
+          [
+            "bio-PMC12953170.xml",
+            [
+              "29139 car. → 15 morceaux"
+            ]
+          ],
+          [
+            "bio-PMC12959687.xml",
+            [
+              "31561 car. → 16 morceaux"
+            ]
+          ],
+          [
+            "bio-PMC13057049.xml",
+            [
+              "78344 car. → 40 morceaux"
+            ]
           ]
         ],
-        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files"
+        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files",
+        "carriers_file": "probes/results/line-018.json"
       },
       "matches_excerpt": true
     }

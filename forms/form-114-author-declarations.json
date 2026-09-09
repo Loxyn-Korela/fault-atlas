@@ -98,8 +98,7 @@
             "bio-PMC12583535.xml",
             [
               "Author contributions",
-              "Competing interests",
-              "Data availability"
+              "Competing interests"
             ]
           ],
           [
@@ -112,12 +111,75 @@
             "bio-PMC12857832.xml",
             [
               "Author contributions",
-              "Conflicts of interest",
-              "Data availability"
+              "Conflicts of interest"
+            ]
+          ],
+          [
+            "bio-PMC12882215.xml",
+            [
+              "Authors’ contributions",
+              "Competing interests"
+            ]
+          ],
+          [
+            "bio-PMC12909487.xml",
+            [
+              "Author contributions",
+              "Conceptualization"
+            ]
+          ],
+          [
+            "bio-PMC12927065.xml",
+            [
+              "CRediT authorship contribution statement",
+              "Conflicts of interest"
+            ]
+          ],
+          [
+            "bio-PMC12927975.xml",
+            [
+              "Author Contributions",
+              "Conflicts of Interest"
+            ]
+          ],
+          [
+            "bio-PMC12953170.xml",
+            [
+              "Author Contributions",
+              "Conflict of Interest"
+            ]
+          ],
+          [
+            "bio-PMC12959687.xml",
+            [
+              "Data Availability",
+              "Data Availability Statement"
+            ]
+          ],
+          [
+            "bio-PMC13057049.xml",
+            [
+              "Authors’ Contributions",
+              "Competing Interests"
+            ]
+          ],
+          [
+            "bio-PMC13088504.xml",
+            [
+              "Authors’ contributions",
+              "Competing interests"
+            ]
+          ],
+          [
+            "bio-PMC13097615.xml",
+            [
+              "Author Contributions",
+              "Conflicts of Interest"
             ]
           ]
         ],
-        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files"
+        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files",
+        "carriers_file": "probes/results/line-114.json"
       },
       "matches_excerpt": true
     }

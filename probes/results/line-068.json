@@ -1,0 +1,1691 @@
+{
+ "probe": "probes/2026-08/line-068.py",
+ "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+ "date": "2026-09-09",
+ "count": 198,
+ "of": 272,
+ "carriers": [
+  {
+   "document": "bio-PMC12583535.xml",
+   "evidence": [
+    "41598_2025_22302_Fig1_HTML.jpg",
+    "41598_2025_22302_Fig2_HTML.jpg",
+    "41598_2025_22302_Fig3_HTML.jpg",
+    "41598_2025_22302_Fig4_HTML.jpg"
+   ]
+  },
+  {
+   "document": "bio-PMC12590050.xml",
+   "evidence": [
+    "cureus-0017-00000093945-i01.jpg",
+    "cureus-0017-00000093945-i01.gif",
+    "cureus-0017-00000093945-i02.jpg",
+    "cureus-0017-00000093945-i02.gif"
+   ]
+  },
+  {
+   "document": "bio-PMC12674831.xml",
+   "evidence": [
+    "1806-9339-rbgo-47-e-rbgo200-gf01.jpg",
+    "1806-9339-rbgo-47-e-rbgo200-gf02.jpg",
+    "1806-9339-rbgo-47-e-rbgo200-gf03.jpg",
+    "1806-9339-rbgo-47-e-rbgo200-gf04.jpg"
+   ]
+  },
+  {
+   "document": "bio-PMC12857832.xml",
+   "evidence": [
+    "LI-43-67-g001.jpg",
+    "LI-43-67-g002.jpg",
+    "LI-43-67-g003.jpg",
+    "LI-43-67-g004.jpg"
+   ]
+  },
+  {
+   "document": "bio-PMC12882215.xml",
+   "evidence": [
+    "12889_2025_26137_Fig1_HTML.jpg",
+    "12889_2025_26137_Fig2_HTML.jpg",
+    "12889_2025_26137_Fig3_HTML.jpg",
+    "12889_2025_26137_Fig4_HTML.jpg"
+   ]
+  },
+  {
+   "document": "bio-PMC12909487.xml",
+   "evidence": [
+    "fpubh-14-1770168-g001.jpg"
+   ]
+  },
+  {
+   "document": "bio-PMC12915353.xml",
+   "evidence": [
+    "ijem-23-4-167232-i001.jpg"
+   ]
+  },
+  {
+   "document": "bio-PMC12927065.xml",
+   "evidence": [
+    "gr1.jpg",
+    "gr1.gif",
+    "gr2.jpg",
+    "gr2.gif"
+   ]
+  },
+  {
+   "document": "bio-PMC12927975.xml",
+   "evidence": [
+    "PUH2-5-e70198-g001.jpg",
+    "PUH2-5-e70198-g002.jpg"
+   ]
+  },
+  {
+   "document": "bio-PMC12953170.xml",
+   "evidence": [
+    "jaws-05-15899-g001.jpg",
+    "jaws-05-15899-g001.gif"
+   ]
+  },
+  {
+   "document": "bio-PMC12959687.xml",
+   "evidence": [
+    "pone.0343166.g001.jpg",
+    "pone.0343166.g001.gif"
+   ]
+  },
+  {
+   "document": "bio-PMC13057049.xml",
+   "evidence": [
+    "44197_2026_542_Fig1_HTML.jpg",
+    "44197_2026_542_Fig1_HTML.gif",
+    "44197_2026_542_Fig2_HTML.jpg",
+    "44197_2026_542_Fig2_HTML.gif"
+   ]
+  },
+  {
+   "document": "bio-PMC13099299.xml",
+   "evidence": [
+    "fcvm-13-1434751-g001.jpg",
+    "fcvm-13-1434751-g001.gif",
+    "fcvm-13-1434751-g002.jpg",
+    "fcvm-13-1434751-g002.gif"
+   ]
+  },
+  {
+   "document": "bio-PMC13103274.xml",
+   "evidence": [
+    "HSR2-9-e72391-g004.jpg",
+    "HSR2-9-e72391-g001.jpg",
+    "HSR2-9-e72391-g002.jpg",
+    "HSR2-9-e72391-g003.jpg"
+   ]
+  },
+  {
+   "document": "bio-PMC13116881.xml",
+   "evidence": [
+    "jcm-15-02909-g001.jpg",
+    "jcm-15-02909-g001.gif",
+    "jcm-15-02909-g002.jpg",
+    "jcm-15-02909-g002.gif"
+   ]
+  },
+  {
+   "document": "bio-PMC13155703.xml",
+   "evidence": [
+    "cureus-0018-00000106672-i01.jpg",
+    "cureus-0018-00000106672-i02.jpg",
+    "cureus-0018-00000106672-i03.jpg",
+    "cureus-0018-00000106672-i04.jpg"
+   ]
+  },
+  {
+   "document": "bio-PMC13162546.xml",
+   "evidence": [
+    "IANN_A_2667553_UF0001_C.jpg",
+    "IANN_A_2667553_F0001_C.jpg",
+    "IANN_A_2667553_F0002_C.jpg",
+    "IANN_A_2667553_F0003_C.jpg"
+   ]
+  },
+  {
+   "document": "bio-PMC13168716.xml",
+   "evidence": [
+    "10.1177_22799036261441333-fig1.jpg",
+    "10.1177_22799036261441333-fig1.gif"
+   ]
+  },
+  {
+   "document": "bio-PMC13170838.xml",
+   "evidence": [
+    "pone.0349303.g001.jpg",
+    "pone.0349303.g001.gif"
+   ]
+  },
+  {
+   "document": "bio-PMC13181205.xml",
+   "evidence": [
+    "PRP2-14-e70265-g002.jpg",
+    "PRP2-14-e70265-g004.jpg",
+    "PRP2-14-e70265-g003.jpg",
+    "PRP2-14-e70265-g006.jpg"
+   ]
+  },
+  {
+   "document": "bio-PMC13182387.xml",
+   "evidence": [
+    "bmjopen-16-5-g001.jpg",
+    "bmjopen-16-5-g001.gif",
+    "bmjopen-16-5-g002.jpg",
+    "bmjopen-16-5-g002.gif"
+   ]
+  },
+  {
+   "document": "bio-PMC13190511.xml",
+   "evidence": [
+    "fmed-13-1707980-g0001.jpg",
+    "fmed-13-1707980-g0001.gif",
+    "fmed-13-1707980-g0002.jpg",
+    "fmed-13-1707980-g0002.gif"
+   ]
+  },
+  {
+   "document": "bio-PMC13203479.xml",
+   "evidence": [
+    "antioxidants-15-00627-g001.jpg",
+    "antioxidants-15-00627-g001.gif",
+    "antioxidants-15-00627-g002.jpg",
+    "antioxidants-15-00627-g002.gif"
+   ]
+  },
+  {
+   "document": "bio-PMC13207820.xml",
+   "evidence": [
+    "jcm-15-03889-g001.jpg",
+    "jcm-15-03889-g002.jpg",
+    "jcm-15-03889-g003.jpg",
+    "jcm-15-03889-g004.jpg"
+   ]
+  },
+  {
+   "document": "bio-PMC13216383.xml",
+   "evidence": [
+    "40798_2026_1029_Fig1_HTML.jpg"
+   ]
+  },
+  {
+   "document": "bio-PMC13218538.xml",
+   "evidence": [
+    "pone.0350185.g001.jpg",
+    "pone.0350185.g001.gif",
+    "pone.0350185.g002.jpg",
+    "pone.0350185.g002.gif"
+   ]
+  },
+  {
+   "document": "bio-PMC13252842.xml",
+   "evidence": [
+    "pcbi.1014325.g001.jpg",
+    "pcbi.1014325.g001.gif",
+    "pcbi.1014325.g002.jpg",
+    "pcbi.1014325.g002.gif"
+   ]
+  },
+  {
+   "document": "bio-PMC13274935.xml",
+   "evidence": [
+    "bjcvs-41-03-e20240437-g01.jpg",
+    "bjcvs-41-03-e20240437-g01.gif",
+    "bjcvs-41-03-e20240437-g02.jpg",
+    "bjcvs-41-03-e20240437-g02.gif"
+   ]
+  },
+  {
+   "document": "cas-PMC13290446.xml",
+   "evidence": [
+    "fped-14-1823685-g001.jpg",
+    "fped-14-1823685-g002.jpg"
+   ]
+  },
+  {
+   "document": "cas-PMC13291881.xml",
+   "evidence": [
+    "cureus-0018-00000109583-i01.jpg",
+    "cureus-0018-00000109583-i02.jpg",
+    "cureus-0018-00000109583-i03.jpg",
+    "cureus-0018-00000109583-i04.jpg"
+   ]
+  },
+  {
+   "document": "cas-PMC13293644.xml",
+   "evidence": [
+    "cureus-0018-00000109629-i01.jpg",
+    "cureus-0018-00000109629-i01.gif",
+    "cureus-0018-00000109629-i02.jpg",
+    "cureus-0018-00000109629-i02.gif"
+   ]
+  },
+  {
+   "document": "cas-PMC13293645.xml",
+   "evidence": [
+    "cureus-0018-00000109641-i01.jpg",
+    "cureus-0018-00000109641-i02.jpg"
+   ]
+  },
+  {
+   "document": "cas-PMC13293647.xml",
+   "evidence": [
+    "cureus-0018-00000109598-i01.jpg",
+    "cureus-0018-00000109598-i01.gif",
+    "cureus-0018-00000109598-i02.jpg",
+    "cureus-0018-00000109598-i02.gif"
+   ]
+  },
+  {
+   "document": "cas-PMC13293792.xml",
+   "evidence": [
+    "fonc-16-1820428-g001.jpg",
+    "fonc-16-1820428-g002.jpg"
+   ]
+  },
+  {
+   "document": "cas-PMC13293799.xml",
+   "evidence": [
+    "fphar-17-1829968-g001.jpg",
+    "fphar-17-1829968-g001.gif",
+    "fphar-17-1829968-g002.jpg",
+    "fphar-17-1829968-g002.gif"
+   ]
+  },
+  {
+   "document": "cas-PMC13293813.xml",
+   "evidence": [
+    "fmed-13-1838998-g001.jpg",
+    "fmed-13-1838998-g002.jpg",
+    "fmed-13-1838998-g003.jpg",
+    "fmed-13-1838998-g004.jpg"
+   ]
+  },
+  {
+   "document": "cas-PMC13293827.xml",
+   "evidence": [
+    "fonc-16-1837759-g001.jpg",
+    "fonc-16-1837759-g002.jpg",
+    "fonc-16-1837759-g003.jpg",
+    "fonc-16-1837759-g004.jpg"
+   ]
+  },
+  {
+   "document": "cas-PMC13293834.xml",
+   "evidence": [
+    "fmed-13-1839868-g001.jpg",
+    "fmed-13-1839868-g002.jpg",
+    "fmed-13-1839868-g003.jpg"
+   ]
+  },
+  {
+   "document": "cas-PMC13293841.xml",
+   "evidence": [
+    "fonc-16-1888898-g001.jpg",
+    "fonc-16-1888898-g002.jpg"
+   ]
+  },
+  {
+   "document": "cas-PMC13293897.xml",
+   "evidence": [
+    "fvets-13-1841051-g001.jpg",
+    "fvets-13-1841051-g002.jpg",
+    "fvets-13-1841051-g003.jpg"
+   ]
+  },
+  {
+   "document": "cas-PMC13293901.xml",
+   "evidence": [
+    "fonc-16-1819975-g001.jpg",
+    "fonc-16-1819975-g002.jpg",
+    "fonc-16-1819975-g003.jpg"
+   ]
+  },
+  {
+   "document": "cas-PMC13293995.xml",
+   "evidence": [
+    "pore-32-1612446-g001.jpg",
+    "pore-32-1612446-g001.gif",
+    "pore-32-1612446-g002.jpg",
+    "pore-32-1612446-g002.gif"
+   ]
+  },
+  {
+   "document": "cas-PMC13294038.xml",
+   "evidence": [
+    "fimmu-17-1848498-g001.jpg",
+    "fimmu-17-1848498-g001.gif",
+    "fimmu-17-1848498-g002.jpg",
+    "fimmu-17-1848498-g002.gif"
+   ]
+  },
+  {
+   "document": "cas-PMC13294089.xml",
+   "evidence": [
+    "frph-08-1810693-g001.jpg",
+    "frph-08-1810693-g001.gif",
+    "frph-08-1810693-g002.jpg",
+    "frph-08-1810693-g002.gif"
+   ]
+  },
+  {
+   "document": "cas-PMC13294096.xml",
+   "evidence": [
+    "fcvm-13-1820316-g001.jpg"
+   ]
+  },
+  {
+   "document": "cas-PMC13294155.xml",
+   "evidence": [
+    "fimmu-17-1801755-g001.jpg",
+    "fimmu-17-1801755-g002.jpg"
+   ]
+  },
+  {
+   "document": "cas-PMC13294182.xml",
+   "evidence": [
+    "fimmu-17-1854882-g001.jpg",
+    "fimmu-17-1854882-g002.jpg",
+    "fimmu-17-1854882-g003.jpg",
+    "fimmu-17-1854882-g004.jpg"
+   ]
+  },
+  {
+   "document": "cas-PMC13294281.xml",
+   "evidence": [
+    "fpain-07-1839656-g001.jpg",
+    "fpain-07-1839656-g002.jpg",
+    "fpain-07-1839656-g003.jpg"
+   ]
+  },
+  {
+   "document": "cas-PMC13294340.xml",
+   "evidence": [
+    "fbioe-14-1843937-g001.jpg",
+    "fbioe-14-1843937-g001.gif",
+    "fbioe-14-1843937-g002.jpg",
+    "fbioe-14-1843937-g002.gif"
+   ]
+  },
+  {
+   "document": "cas-PMC13294475.xml",
+   "evidence": [
+    "fnhum-20-1828023-g001.jpg",
+    "fnhum-20-1828023-g001.gif",
+    "fnhum-20-1828023-g002.jpg",
+    "fnhum-20-1828023-g002.gif"
+   ]
+  },
+  {
+   "document": "cas-PMC13294481.xml",
+   "evidence": [
+    "cureus-0018-00000109647-i01.jpg",
+    "cureus-0018-00000109647-i02.jpg",
+    "cureus-0018-00000109647-i03.jpg",
+    "cureus-0018-00000109647-i04.jpg"
+   ]
+  },
+  {
+   "document": "cas-PMC13294629.xml",
+   "evidence": [
+    "cureus-0018-00000109650-i01.jpg",
+    "cureus-0018-00000109650-i01.gif"
+   ]
+  },
+  {
+   "document": "cas-PMC13294642.xml",
+   "evidence": [
+    "cureus-0018-00000109659-i01.jpg",
+    "cureus-0018-00000109659-i01.gif",
+    "cureus-0018-00000109659-i02.jpg",
+    "cureus-0018-00000109659-i02.gif"
+   ]
+  },
+  {
+   "document": "cas-PMC13294698.xml",
+   "evidence": [
+    "fsurg-13-1859210-g001.jpg",
+    "fsurg-13-1859210-g001.gif",
+    "fsurg-13-1859210-g002.jpg",
+    "fsurg-13-1859210-g002.gif"
+   ]
+  },
+  {
+   "document": "cas-PMC13294702.xml",
+   "evidence": [
+    "cureus-0018-00000109660-i01.jpg"
+   ]
+  },
+  {
+   "document": "cas-PMC13294704.xml",
+   "evidence": [
+    "cureus-0018-00000109661-i01.jpg",
+    "cureus-0018-00000109661-i01.gif",
+    "cureus-0018-00000109661-i02.jpg",
+    "cureus-0018-00000109661-i02.gif"
+   ]
+  },
+  {
+   "document": "cas-PMC13294705.xml",
+   "evidence": [
+    "cureus-0018-00000109662-i01.jpg",
+    "cureus-0018-00000109662-i02.jpg"
+   ]
+  },
+  {
+   "document": "cas-PMC13300565.xml",
+   "evidence": [
+    "cureus-0018-00000109698-i01.jpg",
+    "cureus-0018-00000109698-i02.jpg"
+   ]
+  },
+  {
+   "document": "cas-PMC13300836.xml",
+   "evidence": [
+    "cureus-0018-00000109700-i01.jpg",
+    "cureus-0018-00000109700-i02.jpg",
+    "cureus-0018-00000109700-i03.jpg",
+    "cureus-0018-00000109700-i04.jpg"
+   ]
+  },
+  {
+   "document": "cas-PMC13301386.xml",
+   "evidence": [
+    "cureus-0018-00000109703-i01.jpg",
+    "cureus-0018-00000109703-i02.jpg",
+    "cureus-0018-00000109703-i03.jpg",
+    "cureus-0018-00000109703-i04.jpg"
+   ]
+  },
+  {
+   "document": "essai-PMC13154027.xml",
+   "evidence": [
+    "jamaotolaryngolheadnecksurg-e260858-g001.jpg",
+    "jamaotolaryngolheadnecksurg-e260858-g001.gif",
+    "jamaotolaryngolheadnecksurg-e260858-g002.jpg",
+    "jamaotolaryngolheadnecksurg-e260858-g002.gif"
+   ]
+  },
+  {
+   "document": "essai-PMC13169227.xml",
+   "evidence": [
+    "AAS-70-0-g002.jpg",
+    "AAS-70-0-g002.gif",
+    "AAS-70-0-g003.jpg",
+    "AAS-70-0-g003.gif"
+   ]
+  },
+  {
+   "document": "essai-PMC13169472.xml",
+   "evidence": [
+    "PRI-31-e70228-g001.jpg",
+    "PRI-31-e70228-g002.jpg"
+   ]
+  },
+  {
+   "document": "essai-PMC13179527.xml",
+   "evidence": [
+    "VOP-29-0-g001.jpg",
+    "VOP-29-0-g001.gif",
+    "VOP-29-0-g002.jpg",
+    "VOP-29-0-g002.gif"
+   ]
+  },
+  {
+   "document": "essai-PMC13191455.xml",
+   "evidence": [
+    "jamapsychiatry-e261053-g001.jpg",
+    "jamapsychiatry-e261053-g002.jpg",
+    "jamapsychiatry-e261053-g003.jpg"
+   ]
+  },
+  {
+   "document": "essai-PMC13205709.xml",
+   "evidence": [
+    "MCN-22-e70199-g002.jpg",
+    "MCN-22-e70199-g001.jpg"
+   ]
+  },
+  {
+   "document": "essai-PMC13205731.xml",
+   "evidence": [
+    "MCN-22-e70203-g002.jpg",
+    "MCN-22-e70203-g002.gif",
+    "MCN-22-e70203-g001.jpg",
+    "MCN-22-e70203-g001.gif"
+   ]
+  },
+  {
+   "document": "essai-PMC13205876.xml",
+   "evidence": [
+    "MCN-22-e70197-g001.jpg",
+    "MCN-22-e70197-g001.gif",
+    "MCN-22-e70197-g002.jpg",
+    "MCN-22-e70197-g002.gif"
+   ]
+  },
+  {
+   "document": "essai-PMC13213610.xml",
+   "evidence": [
+    "jamaneurol-e261493-g001.jpg",
+    "jamaneurol-e261493-g001.gif",
+    "jamaneurol-e261493-g002.jpg",
+    "jamaneurol-e261493-g002.gif"
+   ]
+  },
+  {
+   "document": "essai-PMC13215628.xml",
+   "evidence": [
+    "formative-v10-e86189-g001.jpg"
+   ]
+  },
+  {
+   "document": "essai-PMC13238360.xml",
+   "evidence": [
+    "AAS-70-0-g002.jpg",
+    "AAS-70-0-g001.jpg",
+    "AAS-70-0-g003.jpg"
+   ]
+  },
+  {
+   "document": "essai-PMC13239719.xml",
+   "evidence": [
+    "EJSC-26-e70203-g004.jpg",
+    "EJSC-26-e70203-g002.jpg",
+    "EJSC-26-e70203-g003.jpg",
+    "EJSC-26-e70203-g001.jpg"
+   ]
+  },
+  {
+   "document": "essai-PMC13242068.xml",
+   "evidence": [
+    "PRI-31-e70246-g001.jpg",
+    "PRI-31-e70246-g001.gif",
+    "PRI-31-e70246-g005.jpg",
+    "PRI-31-e70246-g005.gif"
+   ]
+  },
+  {
+   "document": "essai-PMC13242351.xml",
+   "evidence": [
+    "EJSC-26-e70202-g001.jpg",
+    "EJSC-26-e70202-g002.jpg",
+    "EJSC-26-e70202-g003.jpg"
+   ]
+  },
+  {
+   "document": "essai-PMC13254492.xml",
+   "evidence": [
+    "BCPT-139-0-g003.jpg",
+    "BCPT-139-0-g003.gif",
+    "BCPT-139-0-g001.jpg",
+    "BCPT-139-0-g001.gif"
+   ]
+  },
+  {
+   "document": "essai-PMC13263161.xml",
+   "evidence": [
+    "EJSC-26-e70199-g002.jpg",
+    "EJSC-26-e70199-g002.gif",
+    "EJSC-26-e70199-g001.jpg",
+    "EJSC-26-e70199-g001.gif"
+   ]
+  },
+  {
+   "document": "essai-PMC13264282.xml",
+   "evidence": [
+    "EJP-30-0-g001.jpg",
+    "EJP-30-0-g001.gif"
+   ]
+  },
+  {
+   "document": "essai-PMC13271868.xml",
+   "evidence": [
+    "EJSC-26-e70205-g003.jpg",
+    "EJSC-26-e70205-g003.gif",
+    "EJSC-26-e70205-g004.jpg",
+    "EJSC-26-e70205-g004.gif"
+   ]
+  },
+  {
+   "document": "essai-PMC13276020.xml",
+   "evidence": [
+    "EJP-30-0-g001.jpg",
+    "EJP-30-0-g001.gif",
+    "EJP-30-0-g004.jpg",
+    "EJP-30-0-g004.gif"
+   ]
+  },
+  {
+   "document": "essai-PMC13280184.xml",
+   "evidence": [
+    "HPJA-37-0-g001.jpg"
+   ]
+  },
+  {
+   "document": "essai-PMC13280799.xml",
+   "evidence": [
+    "MCN-22-e70211-g001.jpg",
+    "MCN-22-e70211-g001.gif"
+   ]
+  },
+  {
+   "document": "essai-PMC13281132.xml",
+   "evidence": [
+    "AAS-70-0-g001.jpg",
+    "AAS-70-0-g001.gif",
+    "AAS-70-0-g002.jpg",
+    "AAS-70-0-g002.gif"
+   ]
+  },
+  {
+   "document": "essai-PMC13282136.xml",
+   "evidence": [
+    "EJSC-26-e70089-g002.jpg",
+    "EJSC-26-e70089-g002.gif",
+    "EJSC-26-e70089-g004.jpg",
+    "EJSC-26-e70089-g004.gif"
+   ]
+  },
+  {
+   "document": "essai-PMC13284529.xml",
+   "evidence": [
+    "HUP-41-e70051-g002.jpg",
+    "HUP-41-e70051-g001.jpg",
+    "HUP-41-e70051-g001.gif",
+    "HUP-41-e70051-g005.jpg"
+   ]
+  },
+  {
+   "document": "essai-PMC13290998.xml",
+   "evidence": [
+    "520_2026_10917_Fig1_HTML.jpg",
+    "520_2026_10917_Fig2_HTML.jpg"
+   ]
+  },
+  {
+   "document": "essai-PMC13291766.xml",
+   "evidence": [
+    "CPF-46-0-g002.jpg",
+    "CPF-46-0-g001.jpg"
+   ]
+  },
+  {
+   "document": "essai-PMC13291922.xml",
+   "evidence": [
+    "PRI-31-e70259-g001.jpg",
+    "PRI-31-e70259-g001.gif"
+   ]
+  },
+  {
+   "document": "essai-PMC13293440.xml",
+   "evidence": [
+    "pone.0350895.t001.jpg",
+    "pone.0350895.g001.jpg",
+    "pone.0350895.t002.jpg",
+    "pone.0350895.t003.jpg"
+   ]
+  },
+  {
+   "document": "essai-PMC13294169.xml",
+   "evidence": [
+    "520_2026_10928_Fig1_HTML.jpg",
+    "520_2026_10928_Fig1_HTML.gif"
+   ]
+  },
+  {
+   "document": "essai-PMC13294787.xml",
+   "evidence": [
+    "dc260114fGA.jpg",
+    "dc260114fGA.gif",
+    "dc260114f1.jpg",
+    "dc260114f1.gif"
+   ]
+  },
+  {
+   "document": "essai-PMC13294792.xml",
+   "evidence": [
+    "dc252572fGA.jpg",
+    "dc252572fGA.gif",
+    "dc252572f1.jpg",
+    "dc252572f1.gif"
+   ]
+  },
+  {
+   "document": "essai-PMC13296589.xml",
+   "evidence": [
+    "NICC-31-0-g001.jpg",
+    "NICC-31-0-g001.gif",
+    "NICC-31-0-g002.jpg",
+    "NICC-31-0-g002.gif"
+   ]
+  },
+  {
+   "document": "essai-PMC7619126.xml",
+   "evidence": [
+    "EMS213695-f001.jpg",
+    "EMS213695-f001.gif"
+   ]
+  },
+  {
+   "document": "meta-PMC13071177.xml",
+   "evidence": [
+    "NPR2-46-e70120-g001.jpg",
+    "NPR2-46-e70120-g003.jpg",
+    "NPR2-46-e70120-g002.jpg"
+   ]
+  },
+  {
+   "document": "meta-PMC13157766.xml",
+   "evidence": [
+    "bmjopen-16-5-g001.jpg",
+    "bmjopen-16-5-g001.gif",
+    "bmjopen-16-5-g002.jpg",
+    "bmjopen-16-5-g002.gif"
+   ]
+  },
+  {
+   "document": "meta-PMC13179150.xml",
+   "evidence": [
+    "APHW-18-0-g002.jpg",
+    "APHW-18-0-g002.gif",
+    "APHW-18-0-g001.jpg",
+    "APHW-18-0-g001.gif"
+   ]
+  },
+  {
+   "document": "meta-PMC13221319.xml",
+   "evidence": [
+    "11060_2026_5629_Fig1_HTML.jpg",
+    "11060_2026_5629_Fig1_HTML.gif",
+    "11060_2026_5629_Fig2_HTML.jpg",
+    "11060_2026_5629_Fig2_HTML.gif"
+   ]
+  },
+  {
+   "document": "meta-PMC13225629.xml",
+   "evidence": [
+    "pone.0350508.g001.jpg",
+    "pone.0350508.t001.jpg",
+    "pone.0350508.g002.jpg",
+    "pone.0350508.g003.jpg"
+   ]
+  },
+  {
+   "document": "meta-PMC13226718.xml",
+   "evidence": [
+    "41467_2026_73509_Fig1_HTML.jpg",
+    "41467_2026_73509_Fig1_HTML.gif",
+    "41467_2026_73509_Fig2_HTML.jpg",
+    "41467_2026_73509_Fig2_HTML.gif"
+   ]
+  },
+  {
+   "document": "meta-PMC13229315.xml",
+   "evidence": [
+    "pmed.1004653.g001.jpg",
+    "pmed.1004653.g001.gif",
+    "pmed.1004653.g002.jpg",
+    "pmed.1004653.g002.gif"
+   ]
+  },
+  {
+   "document": "meta-PMC13231626.xml",
+   "evidence": [
+    "40359_2026_4835_Fig1_HTML.jpg",
+    "40359_2026_4835_Fig2_HTML.jpg",
+    "40359_2026_4835_Fig3_HTML.jpg",
+    "40359_2026_4835_Fig4_HTML.jpg"
+   ]
+  },
+  {
+   "document": "meta-PMC13240427.xml",
+   "evidence": [
+    "MPR-35-e70077-g004.jpg",
+    "MPR-35-e70077-g004.gif",
+    "MPR-35-e70077-g001.jpg",
+    "MPR-35-e70077-g001.gif"
+   ]
+  },
+  {
+   "document": "meta-PMC13241412.xml",
+   "evidence": [
+    "12029_2026_1502_Fig1_HTML.jpg",
+    "12029_2026_1502_Fig2_HTML.jpg",
+    "12029_2026_1502_Fig3_HTML.jpg",
+    "12029_2026_1502_Fig4_HTML.jpg"
+   ]
+  },
+  {
+   "document": "meta-PMC13246130.xml",
+   "evidence": [
+    "medi-105-e48988-g001.jpg",
+    "medi-105-e48988-g002.jpg",
+    "medi-105-e48988-g003.jpg",
+    "medi-105-e48988-g004.jpg"
+   ]
+  },
+  {
+   "document": "meta-PMC13250259.xml",
+   "evidence": [
+    "HBM-47-e70563-g002.jpg",
+    "HBM-47-e70563-g001.jpg",
+    "HBM-47-e70563-g001.gif",
+    "HBM-47-e70563-g005.jpg"
+   ]
+  },
+  {
+   "document": "meta-PMC13253268.xml",
+   "evidence": [
+    "fpubh-14-1831073-g001.jpg",
+    "fpubh-14-1831073-g001.gif",
+    "fpubh-14-1831073-g002.jpg",
+    "fpubh-14-1831073-g002.gif"
+   ]
+  },
+  {
+   "document": "meta-PMC13254819.xml",
+   "evidence": [
+    "ALZ-22-e71586-g002.jpg",
+    "ALZ-22-e71586-g002.gif",
+    "ALZ-22-e71586-g001.jpg",
+    "ALZ-22-e71586-g001.gif"
+   ]
+  },
+  {
+   "document": "meta-PMC13256077.xml",
+   "evidence": [
+    "euag101_ga.jpg",
+    "euag101f1.jpg",
+    "euag101f2.jpg",
+    "euag101f3.jpg"
+   ]
+  },
+  {
+   "document": "meta-PMC13260247.xml",
+   "evidence": [
+    "fimmu-17-1806680-g001.jpg",
+    "fimmu-17-1806680-g002.jpg",
+    "fimmu-17-1806680-g003.jpg",
+    "fimmu-17-1806680-g004.jpg"
+   ]
+  },
+  {
+   "document": "meta-PMC13263136.xml",
+   "evidence": [
+    "41588_2026_2583_Fig1_HTML.jpg",
+    "41588_2026_2583_Fig1_HTML.gif",
+    "41588_2026_2583_Fig2_HTML.jpg",
+    "41588_2026_2583_Fig2_HTML.gif"
+   ]
+  },
+  {
+   "document": "meta-PMC13264275.xml",
+   "evidence": [
+    "peerj-14-21343-g001.jpg",
+    "peerj-14-21343-g001.gif",
+    "peerj-14-21343-g002.jpg",
+    "peerj-14-21343-g002.gif"
+   ]
+  },
+  {
+   "document": "meta-PMC13264436.xml",
+   "evidence": [
+    "oyag175f1.jpg",
+    "oyag175f1.gif",
+    "oyag175f2.jpg",
+    "oyag175f2.gif"
+   ]
+  },
+  {
+   "document": "meta-PMC13265330.xml",
+   "evidence": [
+    "fimmu-17-1859310-g001.jpg",
+    "fimmu-17-1859310-g002.jpg",
+    "fimmu-17-1859310-g003.jpg",
+    "fimmu-17-1859310-g004.jpg"
+   ]
+  },
+  {
+   "document": "meta-PMC13268477.xml",
+   "evidence": [
+    "medi-105-e49221-g001.jpg",
+    "medi-105-e49221-g001.gif",
+    "medi-105-e49221-g002.jpg",
+    "medi-105-e49221-g002.gif"
+   ]
+  },
+  {
+   "document": "meta-PMC13268693.xml",
+   "evidence": [
+    "ehag021_sga.jpg",
+    "ehag021f1.jpg",
+    "ehag021f2.jpg",
+    "ehag021f3.jpg"
+   ]
+  },
+  {
+   "document": "meta-PMC13269816.xml",
+   "evidence": [
+    "jkms-41-e13-abf001.jpg",
+    "jkms-41-e13-i001.jpg",
+    "jkms-41-e13-g001.jpg",
+    "jkms-41-e13-g002.jpg"
+   ]
+  },
+  {
+   "document": "meta-PMC13271776.xml",
+   "evidence": [
+    "dgag043f1.jpg",
+    "dgag043f2.jpg",
+    "dgag043f3.jpg",
+    "dgag043f4.jpg"
+   ]
+  },
+  {
+   "document": "meta-PMC13280693.xml",
+   "evidence": [
+    "S0033291726104760_tab1.jpg",
+    "S0033291726104760_fig1.jpg",
+    "S0033291726104760_fig2.jpg",
+    "S0033291726104760_fig3.jpg"
+   ]
+  },
+  {
+   "document": "meta-PMC13286426.xml",
+   "evidence": [
+    "medi-105-e49417-g001.jpg",
+    "medi-105-e49417-g001.gif",
+    "medi-105-e49417-g002.jpg",
+    "medi-105-e49417-g002.gif"
+   ]
+  },
+  {
+   "document": "meta-PMC13286481.xml",
+   "evidence": [
+    "medi-105-e49370-g001.jpg",
+    "medi-105-e49370-g002.jpg",
+    "medi-105-e49370-g003.jpg",
+    "medi-105-e49370-g004.jpg"
+   ]
+  },
+  {
+   "document": "meta-PMC13287023.xml",
+   "evidence": [
+    "fimmu-17-1813019-g001.jpg",
+    "fimmu-17-1813019-g001.gif",
+    "fimmu-17-1813019-g002.jpg",
+    "fimmu-17-1813019-g002.gif"
+   ]
+  },
+  {
+   "document": "meta-PMC13287149.xml",
+   "evidence": [
+    "439_2026_2850_Fig1_HTML.jpg",
+    "439_2026_2850_Fig1_HTML.gif",
+    "439_2026_2850_Fig2_HTML.jpg",
+    "439_2026_2850_Fig2_HTML.gif"
+   ]
+  },
+  {
+   "document": "meta-PMC13287277.xml",
+   "evidence": [
+    "439_2026_2840_Fig1_HTML.jpg",
+    "439_2026_2840_Fig2_HTML.jpg",
+    "439_2026_2840_Fig3_HTML.jpg"
+   ]
+  },
+  {
+   "document": "meta-PMC13288533.xml",
+   "evidence": [
+    "IANN_A_2534083_F0001_C.jpg",
+    "IANN_A_2534083_F0001_C.gif",
+    "IANN_A_2534083_F0002_C.jpg",
+    "IANN_A_2534083_F0002_C.gif"
+   ]
+  },
+  {
+   "document": "meta-PMC13292320.xml",
+   "evidence": [
+    "13024_2026_963_Fig1_HTML.jpg",
+    "13024_2026_963_Fig1_HTML.gif"
+   ]
+  },
+  {
+   "document": "meta-PMC13297335.xml",
+   "evidence": [
+    "cells-15-01088-g001.jpg",
+    "cells-15-01088-g002.jpg",
+    "cells-15-01088-g003.jpg",
+    "cells-15-01088-g004.jpg"
+   ]
+  },
+  {
+   "document": "meta-PMC13305250.xml",
+   "evidence": [
+    "10.1177_03000605261461948-fig1.jpg",
+    "10.1177_03000605261461948-fig2.jpg",
+    "10.1177_03000605261461948-fig3.jpg",
+    "10.1177_03000605261461948-fig4.jpg"
+   ]
+  },
+  {
+   "document": "moderne-PMC13177175.xml",
+   "evidence": [
+    "ajc-30-5-297_f001.jpg",
+    "ajc-30-5-297_f001.gif",
+    "ajc-30-5-297_f002.jpg",
+    "ajc-30-5-297_f002.gif"
+   ]
+  },
+  {
+   "document": "moderne-PMC13254229.xml",
+   "evidence": [
+    "BJHP-31-0-g001.jpg",
+    "BJHP-31-0-g001.gif"
+   ]
+  },
+  {
+   "document": "moderne-PMC13262411.xml",
+   "evidence": [
+    "d6mh00395h-ga.jpg",
+    "d6mh00395h-f1.jpg",
+    "d6mh00395h-f1.gif",
+    "d6mh00395h-f2.jpg"
+   ]
+  },
+  {
+   "document": "moderne-PMC13264966.xml",
+   "evidence": [
+    "RCM-40-e70110-g006.jpg",
+    "RCM-40-e70110-g006.gif",
+    "RCM-40-e70110-g004.jpg",
+    "RCM-40-e70110-g004.gif"
+   ]
+  },
+  {
+   "document": "moderne-PMC13264967.xml",
+   "evidence": [
+    "RCM-40-e70118-g006.jpg",
+    "RCM-40-e70118-g002.jpg",
+    "RCM-40-e70118-g001.jpg",
+    "RCM-40-e70118-g005.jpg"
+   ]
+  },
+  {
+   "document": "moderne-PMC13267778.xml",
+   "evidence": [
+    "d6nh00215c-ga.jpg",
+    "d6nh00215c-u1.jpg",
+    "d6nh00215c-u2.jpg",
+    "d6nh00215c-u3.jpg"
+   ]
+  },
+  {
+   "document": "moderne-PMC13274555.xml",
+   "evidence": [
+    "RCM-40-e70123-g001.jpg",
+    "RCM-40-e70123-g001.gif",
+    "RCM-40-e70123-g002.jpg",
+    "RCM-40-e70123-g002.gif"
+   ]
+  },
+  {
+   "document": "moderne-PMC13282716.xml",
+   "evidence": [
+    "TRA-27-e70038-g005.jpg",
+    "TRA-27-e70038-g004.jpg",
+    "TRA-27-e70038-g004.gif",
+    "TRA-27-e70038-g001.jpg"
+   ]
+  },
+  {
+   "document": "moderne-PMC13282721.xml",
+   "evidence": [
+    "TRA-27-e70039-g005.jpg",
+    "TRA-27-e70039-g004.jpg",
+    "TRA-27-e70039-g003.jpg",
+    "TRA-27-e70039-g002.jpg"
+   ]
+  },
+  {
+   "document": "moderne-PMC13288728.xml",
+   "evidence": [
+    "d6sm00242k-ga.jpg",
+    "d6sm00242k-f1.jpg",
+    "d6sm00242k-t1.jpg",
+    "d6sm00242k-t2.jpg"
+   ]
+  },
+  {
+   "document": "moderne-PMC13291764.xml",
+   "evidence": [
+    "AAS-70-0-g001.jpg",
+    "AAS-70-0-g001.gif"
+   ]
+  },
+  {
+   "document": "moderne-PMC13292400.xml",
+   "evidence": [
+    "PSC-32-e70112-g005.jpg",
+    "PSC-32-e70112-g003.jpg",
+    "PSC-32-e70112-g003.gif",
+    "PSC-32-e70112-g001.jpg"
+   ]
+  },
+  {
+   "document": "moderne-PMC13296834.xml",
+   "evidence": [
+    "APPY-18-e70029-g002.jpg",
+    "APPY-18-e70029-g002.gif",
+    "APPY-18-e70029-g001.jpg",
+    "APPY-18-e70029-g001.gif"
+   ]
+  },
+  {
+   "document": "moderne-PMC13296839.xml",
+   "evidence": [
+    "GLIA-74-0-g005.jpg",
+    "GLIA-74-0-g001.jpg",
+    "GLIA-74-0-g003.jpg",
+    "GLIA-74-0-g002.jpg"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13127809.xml",
+   "evidence": [
+    "0066-782X-abc-123-1-e20260107-gf01.jpg",
+    "0066-782X-abc-123-1-e20260107-gf02.jpg",
+    "0066-782X-abc-123-1-e20260107-gf01-en.jpg",
+    "0066-782X-abc-123-1-e20260107-gf02-en.jpg"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13128172.xml",
+   "evidence": [
+    "0066-782x-abc-123-2-e20260155-gf01.jpg",
+    "0066-782x-abc-123-2-e20260155-gf01.gif",
+    "0066-782x-abc-123-2-e20260155-gf01-en.jpg",
+    "0066-782x-abc-123-2-e20260155-gf01-en.gif"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13128206.xml",
+   "evidence": [
+    "0066-782X-abc-123-3-e20240820-gf02.jpg",
+    "0066-782X-abc-123-3-e20240820-gf02.gif",
+    "0066-782X-abc-123-3-e20240820-gf01.jpg",
+    "0066-782X-abc-123-3-e20240820-gf01.gif"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13128213.xml",
+   "evidence": [
+    "0066-782X-abc-123-3-e20250186-gf02.jpg",
+    "0066-782X-abc-123-3-e20250186-gf02.gif",
+    "0066-782X-abc-123-3-e20250186-gf01.jpg",
+    "0066-782X-abc-123-3-e20250186-gf01.gif"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13128216.xml",
+   "evidence": [
+    "0066-782x-abc-123-3-e20250394-gf01.jpg",
+    "0066-782x-abc-123-3-e20250394-gf02.jpg",
+    "0066-782x-abc-123-3-e20250394-gf03.jpg",
+    "0066-782x-abc-123-3-e20250394-gf01-en.jpg"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13148856.xml",
+   "evidence": [
+    "0066-782X-abc-123-2-e20250203-gf01.jpg",
+    "0066-782X-abc-123-2-e20250203-gf02.jpg",
+    "0066-782X-abc-123-2-e20250203-gf03.jpg",
+    "0066-782X-abc-123-2-e20250203-gf04.jpg"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13155791.xml",
+   "evidence": [
+    "0066-782x-abc-123-3-e20250886-gf01.jpg",
+    "0066-782x-abc-123-3-e20250886-gf01.gif",
+    "0066-782x-abc-123-3-e20250886-gf01-en.jpg",
+    "0066-782x-abc-123-3-e20250886-gf01-en.gif"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13193190.xml",
+   "evidence": [
+    "codas-38-3-e20250325-g01-en.jpg",
+    "codas-38-3-e20250325-g01.jpg"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13193191.xml",
+   "evidence": [
+    "codas-38-3-e20250038-g01-en.jpg",
+    "codas-38-3-e20250038-g01-en.gif",
+    "codas-38-3-e20250038-g01.jpg",
+    "codas-38-3-e20250038-g01.gif"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13193194.xml",
+   "evidence": [
+    "codas-38-3-e20250212-g01-en.jpg",
+    "codas-38-3-e20250212-g02-en.jpg",
+    "codas-38-3-e20250212-g01.jpg",
+    "codas-38-3-e20250212-g02.jpg"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13224955.xml",
+   "evidence": [
+    "1678-4464-csp-42-PT172124-gf1.jpg"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13224957.xml",
+   "evidence": [
+    "1678-4464-csp-42-PT163525-gf1.jpg",
+    "1678-4464-csp-42-PT163525-gf1.gif",
+    "1678-4464-csp-42-PT163525-gf2.jpg",
+    "1678-4464-csp-42-PT163525-gf2.gif"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13228121.xml",
+   "evidence": [
+    "0104-5970-hcsm-33-e2026014-gf01.jpg",
+    "0104-5970-hcsm-33-e2026014-gf01.gif"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13264058.xml",
+   "evidence": [
+    "gr1.jpg",
+    "gr2.jpg",
+    "gr3.jpg"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13264178.xml",
+   "evidence": [
+    "fx1.jpg",
+    "gr1.jpg",
+    "gr2.jpg",
+    "gr3.jpg"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13267754.xml",
+   "evidence": [
+    "rpsp-50-e57-Figure1.jpg",
+    "rpsp-50-e57-Figure2.jpg",
+    "rpsp-50-e57-Figure3.jpg",
+    "rpsp-50-e57-Figure4.jpg"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13267755.xml",
+   "evidence": [
+    "rpsp-50-e53-Figure1.jpg",
+    "rpsp-50-e53-Figure1.gif"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13267756.xml",
+   "evidence": [
+    "rpsp-50-e52-Figure1.jpg",
+    "rpsp-50-e52-Figure1.gif",
+    "rpsp-50-e52-Figure2.jpg",
+    "rpsp-50-e52-Figure2.gif"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13267757.xml",
+   "evidence": [
+    "rpsp-50-e55-Figure1.jpg"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13272511.xml",
+   "evidence": [
+    "gr1.jpg"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13272517.xml",
+   "evidence": [
+    "gr1.jpg",
+    "gr1.gif",
+    "gr2.jpg",
+    "gr2.gif"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13284468.xml",
+   "evidence": [
+    "fx1.jpg",
+    "fx1.gif"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13288443.xml",
+   "evidence": [
+    "codas-38-3-e20250126-g01-en.jpg",
+    "codas-38-3-e20250126-g01.jpg"
+   ]
+  },
+  {
+   "document": "phys-PMC13039343.xml",
+   "evidence": [
+    "41598_2026_45377_Fig1_HTML.jpg",
+    "41598_2026_45377_Fig1_HTML.gif",
+    "d33e457.gif",
+    "d33e490.gif"
+   ]
+  },
+  {
+   "document": "phys-PMC13082673.xml",
+   "evidence": [
+    "csbj.0046.toc.jpg",
+    "csbj.0046.fig.001.jpg",
+    "csbj.0046.fig.002.jpg",
+    "csbj.0046.fig.003.jpg"
+   ]
+  },
+  {
+   "document": "phys-PMC13099575.xml",
+   "evidence": [
+    "pnas.2508144123fig01.jpg",
+    "pnas.2508144123fig01.gif",
+    "pnas.2508144123fig02.jpg",
+    "pnas.2508144123fig02.gif"
+   ]
+  },
+  {
+   "document": "phys-PMC13113438.xml",
+   "evidence": [
+    "biomimetics-11-00286-g001.jpg",
+    "biomimetics-11-00286-g001.gif",
+    "biomimetics-11-00286-g002.jpg",
+    "biomimetics-11-00286-g002.gif"
+   ]
+  },
+  {
+   "document": "phys-PMC13133660.xml",
+   "evidence": [
+    "nihms-2165147-f0001.jpg",
+    "nihms-2165147-f0001.gif",
+    "nihms-2165147-f0002.jpg",
+    "nihms-2165147-f0002.gif"
+   ]
+  },
+  {
+   "document": "phys-PMC13154412.xml",
+   "evidence": [
+    "vbag090f1.jpg",
+    "vbag090f1.gif",
+    "vbag090f2.jpg",
+    "vbag090f2.gif"
+   ]
+  },
+  {
+   "document": "phys-PMC13158258.xml",
+   "evidence": [
+    "366_2026_2312_Fig1_HTML.jpg",
+    "366_2026_2312_Figa_HTML.jpg",
+    "366_2026_2312_Fig2_HTML.jpg",
+    "366_2026_2312_Fig3_HTML.jpg"
+   ]
+  },
+  {
+   "document": "phys-PMC13171646.xml",
+   "evidence": [
+    "40507_2026_502_Fig1_HTML.jpg",
+    "40507_2026_502_Fig1_HTML.gif",
+    "40507_2026_502_Fig2_HTML.jpg",
+    "40507_2026_502_Fig2_HTML.gif"
+   ]
+  },
+  {
+   "document": "phys-PMC13178570.xml",
+   "evidence": [
+    "sciadv.aec2736-f1.jpg",
+    "sciadv.aec2736-f2.jpg",
+    "sciadv.aec2736-f3.jpg",
+    "sciadv.aec2736-f4.jpg"
+   ]
+  },
+  {
+   "document": "phys-PMC13181085.xml",
+   "evidence": [
+    "d33e686.gif",
+    "d33e731.gif",
+    "d33e747.gif",
+    "d33e784.gif"
+   ]
+  },
+  {
+   "document": "phys-PMC13193059.xml",
+   "evidence": [
+    "bpexae5972f1_lr.jpg",
+    "bpexae5972f1_lr.gif",
+    "bpexae5972f2_lr.jpg",
+    "bpexae5972f2_lr.gif"
+   ]
+  },
+  {
+   "document": "phys-PMC13201561.xml",
+   "evidence": [
+    "41598_2026_52822_Fig1_HTML.jpg",
+    "41598_2026_52822_Figa_HTML.jpg",
+    "41598_2026_52822_Fig2_HTML.jpg",
+    "41598_2026_52822_Fig3_HTML.jpg"
+   ]
+  },
+  {
+   "document": "phys-PMC13208799.xml",
+   "evidence": [
+    "materials-19-02072-g001.jpg",
+    "materials-19-02072-g001.gif",
+    "materials-19-02072-g002.jpg",
+    "materials-19-02072-g002.gif"
+   ]
+  },
+  {
+   "document": "phys-PMC13210669.xml",
+   "evidence": [
+    "sensors-26-03025-g001.jpg",
+    "sensors-26-03025-g002.jpg",
+    "sensors-26-03025-g003.jpg",
+    "sensors-26-03025-g004.jpg"
+   ]
+  },
+  {
+   "document": "phys-PMC13221960.xml",
+   "evidence": [
+    "TM0003.gif",
+    "nwag124fig1.jpg",
+    "nwag124fig1.gif",
+    "nwag124fig2.jpg"
+   ]
+  },
+  {
+   "document": "phys-PMC13222844.xml",
+   "evidence": [
+    "frobt-13-1769141-g001.jpg",
+    "frobt-13-1769141-g001.gif",
+    "frobt-13-1769141-g002.jpg",
+    "frobt-13-1769141-g002.gif"
+   ]
+  },
+  {
+   "document": "phys-PMC13234180.xml",
+   "evidence": [
+    "41598_2026_48460_Fig1_HTML.jpg",
+    "41598_2026_48460_Fig2_HTML.jpg",
+    "41598_2026_48460_Figa_HTML.jpg",
+    "41598_2026_48460_Fig3_HTML.jpg"
+   ]
+  },
+  {
+   "document": "phys-PMC13235518.xml",
+   "evidence": [
+    "ga1.jpg",
+    "ga1.gif",
+    "gr1a.jpg",
+    "gr1a.gif"
+   ]
+  },
+  {
+   "document": "phys-PMC13246409.xml",
+   "evidence": [
+    "frobt-13-1846010-g001.jpg",
+    "frobt-13-1846010-g002.jpg",
+    "frobt-13-1846010-g003.jpg",
+    "frobt-13-1846010-g004.jpg"
+   ]
+  },
+  {
+   "document": "phys-PMC13252849.xml",
+   "evidence": [
+    "pcbi.1014365.g001.jpg",
+    "pcbi.1014365.g001.gif",
+    "pcbi.1014365.g002.jpg",
+    "pcbi.1014365.g002.gif"
+   ]
+  },
+  {
+   "document": "phys-PMC13257740.xml",
+   "evidence": [
+    "materials-19-02264-g001.jpg",
+    "materials-19-02264-g001.gif",
+    "materials-19-02264-g002.jpg",
+    "materials-19-02264-g002.gif"
+   ]
+  },
+  {
+   "document": "phys-PMC13259435.xml",
+   "evidence": [
+    "sensors-26-03608-g001.jpg",
+    "sensors-26-03608-g001.gif",
+    "sensors-26-03608-g002.jpg",
+    "sensors-26-03608-g002.gif"
+   ]
+  },
+  {
+   "document": "phys-PMC13259474.xml",
+   "evidence": [
+    "sensors-26-03308-g001.jpg",
+    "sensors-26-03308-g001.gif",
+    "sensors-26-03308-g002.jpg",
+    "sensors-26-03308-g002.gif"
+   ]
+  },
+  {
+   "document": "phys-PMC13261600.xml",
+   "evidence": [
+    "ao6c00953_0009.jpg",
+    "ao6c00953_0007.jpg",
+    "ao6c00953_m001.jpg",
+    "ao6c00953_m002.jpg"
+   ]
+  },
+  {
+   "document": "phys-PMC13272752.xml",
+   "evidence": [
+    "41598_2026_49745_Fig1_HTML.jpg",
+    "41598_2026_49745_Fig2_HTML.jpg",
+    "41598_2026_49745_Figa_HTML.jpg",
+    "41598_2026_49745_Figb_HTML.jpg"
+   ]
+  },
+  {
+   "document": "phys-PMC13275013.xml",
+   "evidence": [
+    "pgag195f1.jpg",
+    "pgag195f1.gif",
+    "pgag195f2.jpg",
+    "pgag195f2.gif"
+   ]
+  },
+  {
+   "document": "phys-PMC13276034.xml",
+   "evidence": [
+    "41598_2026_57547_Fig1_HTML.jpg",
+    "41598_2026_57547_Fig2_HTML.jpg",
+    "41598_2026_57547_Fig3_HTML.jpg",
+    "41598_2026_57547_Fig4_HTML.jpg"
+   ]
+  },
+  {
+   "document": "phys-PMC13282397.xml",
+   "evidence": [
+    "d33e438.gif",
+    "d33e458.gif",
+    "d33e478.gif",
+    "d33e525.gif"
+   ]
+  },
+  {
+   "document": "phys-PMC13285896.xml",
+   "evidence": [
+    "MP-53-0-g001.jpg",
+    "MP-53-0-g001.gif",
+    "MP-53-0-g003.jpg",
+    "MP-53-0-g003.gif"
+   ]
+  },
+  {
+   "document": "phys-PMC13289917.xml",
+   "evidence": [
+    "pone.0352016.g001.jpg",
+    "pone.0352016.g001.gif",
+    "pone.0352016.g002.jpg",
+    "pone.0352016.g002.gif"
+   ]
+  },
+  {
+   "document": "phys-PMC13296606.xml",
+   "evidence": [
+    "biomimetics-11-00413-g001.jpg",
+    "biomimetics-11-00413-g002.jpg",
+    "biomimetics-11-00413-g003a.jpg",
+    "biomimetics-11-00413-g003b.jpg"
+   ]
+  },
+  {
+   "document": "phys-PMC13297141.xml",
+   "evidence": [
+    "biomimetics-11-00380-g001.jpg",
+    "biomimetics-11-00380-g001.gif",
+    "biomimetics-11-00380-g002.jpg",
+    "biomimetics-11-00380-g002.gif"
+   ]
+  },
+  {
+   "document": "phys-PMC13297618.xml",
+   "evidence": [
+    "biomimetics-11-00419-g001.jpg",
+    "biomimetics-11-00419-g001.gif",
+    "biomimetics-11-00419-g002.jpg",
+    "biomimetics-11-00419-g002.gif"
+   ]
+  },
+  {
+   "document": "phys-PMC13298103.xml",
+   "evidence": [
+    "entropy-28-00614-g001.jpg",
+    "entropy-28-00614-g001.gif",
+    "entropy-28-00614-g002.jpg",
+    "entropy-28-00614-g002.gif"
+   ]
+  }
+ ]
+}

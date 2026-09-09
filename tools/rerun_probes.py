@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Re-run every Python document probe declared in the forms on a corpus directory,
-and write the dated result back into each form's `probes[].result`.
+and write the dated result back into each form's `probes[].result`; the full list of
+carrier documents with their evidence goes to probes/results/<probe>.json (`carriers_file`).
 
     python3 tools/rerun_probes.py <dir with the .xml files> [--corpus corpus-europe-pmc-jats-2023-2026] [--by "name"]
 
@@ -40,8 +41,13 @@ def main():
                 continue
             res = run_document_probe(ns, corpus_dir)
             old = pr.get("result", {}).get("count")
+            cf = pathlib.Path("probes/results") / (pathlib.Path(pr["file"]).stem + ".json")
+            (ROOT / cf).parent.mkdir(parents=True, exist_ok=True)
+            (ROOT / cf).write_text(json.dumps({"probe": pr["file"], "corpus_id": corpus_id, "date": today, "count": res["carriers"], "of": res["of"],
+                                               "carriers": [{"document": n, "evidence": e} for n, e in res["all"]]}, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
             pr["result"] = {"date": today, "count": res["carriers"], "of": res["of"],
-                            "strata": res["strata"], "examples": res["examples"], "by": by}
+                            "strata": res["strata"], "examples": [[n, e[:2]] for n, e in res["all"][:12]], "by": by,
+                            "carriers_file": str(cf)}
             print(f"{rec['id']}  {pr['file']}  {old} -> {res['carriers']}/{res['of']}")
             touched = True
         if touched:

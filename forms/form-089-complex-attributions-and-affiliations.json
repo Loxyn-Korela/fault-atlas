@@ -106,9 +106,64 @@
             [
               "7 auteurs · 4 affiliations"
             ]
+          ],
+          [
+            "bio-PMC12909487.xml",
+            [
+              "6 auteurs · 4 affiliations"
+            ]
+          ],
+          [
+            "bio-PMC12927065.xml",
+            [
+              "23 auteurs · 18 affiliations"
+            ]
+          ],
+          [
+            "bio-PMC12927975.xml",
+            [
+              "8 auteurs · 4 affiliations"
+            ]
+          ],
+          [
+            "bio-PMC12959687.xml",
+            [
+              "8 auteurs · 6 affiliations"
+            ]
+          ],
+          [
+            "bio-PMC13097615.xml",
+            [
+              "9 auteurs · 7 affiliations"
+            ]
+          ],
+          [
+            "bio-PMC13099299.xml",
+            [
+              "13 auteurs · 4 affiliations"
+            ]
+          ],
+          [
+            "bio-PMC13155703.xml",
+            [
+              "18 auteurs · 6 affiliations"
+            ]
+          ],
+          [
+            "bio-PMC13162546.xml",
+            [
+              "11 auteurs · 5 affiliations"
+            ]
+          ],
+          [
+            "bio-PMC13168716.xml",
+            [
+              "8 auteurs · 5 affiliations"
+            ]
           ]
         ],
-        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files"
+        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files",
+        "carriers_file": "probes/results/line-089.json"
       },
       "matches_excerpt": false,
       "note": "The figure quoted in the excerpt was counted on 2026-08-08 by a finer, hand-run measurement whose code was not kept; this probe is the one that was kept, and its figure is the one that can be re-run. Both stand, dated."

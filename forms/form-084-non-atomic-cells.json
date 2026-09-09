@@ -93,16 +93,14 @@
             "bio-PMC12583535.xml",
             [
               "151.8 ± 2.7",
-              "147.7 ± 5.0",
-              "9.0 ± 2.7"
+              "147.7 ± 5.0"
             ]
           ],
           [
             "bio-PMC12857832.xml",
             [
               "66.00±9.00",
-              "63.00±11.00",
-              "61.00±11.28"
+              "63.00±11.00"
             ]
           ],
           [
@@ -111,9 +109,73 @@
               "2241 (18 - 74 y)",
               "2139 (20 - 70 y)"
             ]
+          ],
+          [
+            "bio-PMC12927065.xml",
+            [
+              "326 (28.2%)",
+              "191 (29.8%)"
+            ]
+          ],
+          [
+            "bio-PMC13088504.xml",
+            [
+              "60.05 ± 13.15",
+              "278 (88.5%)"
+            ]
+          ],
+          [
+            "bio-PMC13099299.xml",
+            [
+              "69.1 ± 10.5",
+              "540 (56.9)"
+            ]
+          ],
+          [
+            "bio-PMC13155703.xml",
+            [
+              "\n1.71 (1.27–2.29)\n",
+              "\n1.19 (1.08–1.32)\n"
+            ]
+          ],
+          [
+            "bio-PMC13207820.xml",
+            [
+              "37.5 (8.25)",
+              "31 (8.50)"
+            ]
+          ],
+          [
+            "bio-PMC13218538.xml",
+            [
+              "17.90 (4.02-36.50)",
+              "32.08 (32.41-62.79)"
+            ]
+          ],
+          [
+            "bio-PMC13252842.xml",
+            [
+              "53.4 ± 12",
+              "53.8 ± 13.8"
+            ]
+          ],
+          [
+            "cas-PMC13293792.xml",
+            [
+              "36 (28 Grade 2, 8 Grade 3)",
+              "42 (10 Grade 1, 20 Grade 2, 12 Grade 3) "
+            ]
+          ],
+          [
+            "cas-PMC13293901.xml",
+            [
+              "71 / F",
+              "49 / M"
+            ]
           ]
         ],
-        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files"
+        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files",
+        "carriers_file": "probes/results/line-084.json"
       },
       "matches_excerpt": false,
       "note": "The figure quoted in the excerpt was counted on 2026-08-08 by a finer, hand-run measurement whose code was not kept; this probe is the one that was kept, and its figure is the one that can be re-run. Both stand, dated."

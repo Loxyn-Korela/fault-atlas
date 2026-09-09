@@ -1,0 +1,145 @@
+{
+ "probe": "probes/2026-08/line-126.py",
+ "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+ "date": "2026-09-09",
+ "count": 17,
+ "of": 272,
+ "carriers": [
+  {
+   "document": "meta-PMC13226718.xml",
+   "evidence": [
+    "Algorithm N ×1",
+    "mots-clés pseudo-code ×0",
+    "<preformat|code> ×0"
+   ]
+  },
+  {
+   "document": "phys-PMC13099575.xml",
+   "evidence": [
+    "Algorithm N ×1",
+    "mots-clés pseudo-code ×5",
+    "<preformat|code> ×0"
+   ]
+  },
+  {
+   "document": "phys-PMC13113438.xml",
+   "evidence": [
+    "Algorithm N ×3",
+    "mots-clés pseudo-code ×1",
+    "<preformat|code> ×0"
+   ]
+  },
+  {
+   "document": "phys-PMC13133660.xml",
+   "evidence": [
+    "Algorithm N ×6",
+    "mots-clés pseudo-code ×2",
+    "<preformat|code> ×0"
+   ]
+  },
+  {
+   "document": "phys-PMC13201561.xml",
+   "evidence": [
+    "Algorithm N ×2",
+    "mots-clés pseudo-code ×6",
+    "<preformat|code> ×0"
+   ]
+  },
+  {
+   "document": "phys-PMC13210669.xml",
+   "evidence": [
+    "Algorithm N ×2",
+    "mots-clés pseudo-code ×7",
+    "<preformat|code> ×0"
+   ]
+  },
+  {
+   "document": "phys-PMC13222844.xml",
+   "evidence": [
+    "Algorithm N ×16",
+    "mots-clés pseudo-code ×8",
+    "<preformat|code> ×0"
+   ]
+  },
+  {
+   "document": "phys-PMC13234180.xml",
+   "evidence": [
+    "Algorithm N ×2",
+    "mots-clés pseudo-code ×7",
+    "<preformat|code> ×0"
+   ]
+  },
+  {
+   "document": "phys-PMC13235518.xml",
+   "evidence": [
+    "Algorithm N ×6",
+    "mots-clés pseudo-code ×1",
+    "<preformat|code> ×0"
+   ]
+  },
+  {
+   "document": "phys-PMC13252849.xml",
+   "evidence": [
+    "Algorithm N ×6",
+    "mots-clés pseudo-code ×62",
+    "<preformat|code> ×0"
+   ]
+  },
+  {
+   "document": "phys-PMC13261600.xml",
+   "evidence": [
+    "Algorithm N ×2",
+    "mots-clés pseudo-code ×6",
+    "<preformat|code> ×0"
+   ]
+  },
+  {
+   "document": "phys-PMC13272752.xml",
+   "evidence": [
+    "Algorithm N ×4",
+    "mots-clés pseudo-code ×3",
+    "<preformat|code> ×0"
+   ]
+  },
+  {
+   "document": "phys-PMC13275013.xml",
+   "evidence": [
+    "Algorithm N ×3",
+    "mots-clés pseudo-code ×2",
+    "<preformat|code> ×0"
+   ]
+  },
+  {
+   "document": "phys-PMC13296606.xml",
+   "evidence": [
+    "Algorithm N ×4",
+    "mots-clés pseudo-code ×8",
+    "<preformat|code> ×0"
+   ]
+  },
+  {
+   "document": "phys-PMC13297141.xml",
+   "evidence": [
+    "Algorithm N ×2",
+    "mots-clés pseudo-code ×8",
+    "<preformat|code> ×0"
+   ]
+  },
+  {
+   "document": "phys-PMC13297618.xml",
+   "evidence": [
+    "Algorithm N ×2",
+    "mots-clés pseudo-code ×16",
+    "<preformat|code> ×0"
+   ]
+  },
+  {
+   "document": "phys-PMC13298103.xml",
+   "evidence": [
+    "Algorithm N ×1",
+    "mots-clés pseudo-code ×5",
+    "<preformat|code> ×0"
+   ]
+  }
+ ]
+}

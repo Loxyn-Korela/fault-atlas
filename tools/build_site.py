@@ -106,22 +106,54 @@ for f in forms:
     src_name = next(x.name for x in (ROOT/"forms").glob(f"{f['id']}-*.json"))
     (SITE/"forms"/f"{f['id']}.json").write_text(json.dumps(f, ensure_ascii=False, indent=2)+"\n")
     probes_by_file = {pr["file"]: pr for pr in f.get("probes", [])}
+    def doc_link(doc, corpus_id):
+        """A clickable link to the very document, per corpus."""
+        import re as _re
+        m = _re.search(r'(PMC\d+)', doc)
+        if corpus_id == "corpus-europe-pmc-jats-2023-2026" and m:
+            return f'<a href="https://europepmc.org/article/PMC/{m.group(1)}">{E(m.group(1))}</a> <a class="xml" href="https://www.ebi.ac.uk/europepmc/webservices/rest/{m.group(1)}/fullTextXML" title="the JATS XML the probe read">xml</a>'
+        m = _re.search(r'PMID (\d+)', doc)
+        if m:
+            return f'<a href="https://pubmed.ncbi.nlm.nih.gov/{m.group(1)}/">PMID {m.group(1)}</a>'
+        if doc.startswith("http://publications.europa.eu/resource/cellar/"):
+            return f'<a href="{E(doc)}">{E(doc.rsplit("/",1)[-1])}</a>'
+        if _re.fullmatch(r'[0-9]\d{4}[A-Z]{1,2}\d{4}(\(\d\d\))?(R\(\d\d\))?', doc):
+            return f'<a href="https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:{E(doc)}">CELEX {E(doc)}</a>'
+        return E(doc)
     def probe_block(file):
         pr = probes_by_file.get(file)
         if not pr: return ""
         r = pr.get("result", {})
-        head = f"{r.get('count')}/{r.get('of')}" if r.get("of") is not None else f"{r.get('count')} rows"
+        head = f"{r.get('count')}/{r.get('of')} documents" if r.get("of") is not None else f"{r.get('count')} results"
         code = (ROOT/pr["file"]).read_text(encoding="utf-8") if (ROOT/pr["file"]).is_file() else ""
+        carriers = []
+        if r.get("carriers_file") and (ROOT/r["carriers_file"]).is_file():
+            carriers = [(c["document"], c.get("evidence", [])) for c in json.loads((ROOT/r["carriers_file"]).read_text())["carriers"]]
+        elif r.get("examples"):
+            carriers = [(n, e) for n, e in r["examples"]]
+        def li(n, e):
+            ev = (" — <span class='ev'>" + E(" | ".join(map(str, e)))[:260] + "</span>") if e else ""
+            return f"<li>{doc_link(n, pr['corpus_id'])}{ev}</li>"
+        first, rest = carriers[:12], carriers[12:]
+        docs = ""
+        if carriers:
+            docs = f"<h4>See it in the documents</h4><ol class='docs'>" + "".join(li(n, e) for n, e in first) + "</ol>"
+            if rest:
+                docs += f"<details><summary>the other {len(rest)} documents</summary><ol class='docs' start='13'>" + "".join(li(n, e) for n, e in rest) + "</ol></details>"
+            if r.get("carriers_file"):
+                docs += f"<p class='meta'>Full list with evidence: <a href='{REPO}/blob/main/{E(r['carriers_file'])}'>{E(r['carriers_file'].split('/')[-1])}</a></p>"
+        elif r.get("count") == 0:
+            docs = "<p class='meta'>No document carries it in this corpus: the probe ran on every document and found nothing. That is the measurement.</p>"
         strata = (" · by stratum: " + ", ".join(f"{E(k)} {v}" for k, v in r["strata"].items())) if r.get("strata") else ""
-        ex = ("<ul class='ex'>" + "".join(f"<li><code>{E(str(n))}</code> {E(' | '.join(map(str, e)))[:220]}</li>" for n, e in r.get("examples", [])[:3]) + "</ul>") if r.get("examples") else ""
-        verdict = "re-run figure is the excerpt's figure" if pr.get("matches_excerpt") else "re-run figure differs from the excerpt's figure — both kept"
-        return f"""<details class="probe"><summary>Exact probe · {E(pr['kind'])} · <strong>{E(head)}</strong> on {E(r.get('date','?'))} · {E(verdict)}</summary>
-<p class="meta">Corpus: <a href="../corpora/{E(pr['corpus_id'])}.html">{E(CORPUS_NAMES.get(pr['corpus_id'], pr['corpus_id']).split(' — ')[0])}</a>{strata}{(' · written '+E(pr['written'])) if pr.get('written') else ''}{(' · '+E(r['by'])) if r.get('by') else ''}</p>
+        verdict = "the re-run figure is the excerpt's figure" if pr.get("matches_excerpt") else "the re-run figure differs from the excerpt's figure — both kept"
+        return f"""<div class="probe"><p class="probe-head"><strong>How to find it again: {E(head)}</strong> · {E(pr['kind'])} probe, run {E(r.get('date','?'))} · {E(verdict)}</p>
+{docs}
 {('<p class="note">'+E(pr['note'])+'</p>') if pr.get('note') else ''}
-<p class="meta">Run: <code>{E(pr.get('run',''))}</code> · <a href="{REPO}/blob/main/{E(pr['file'])}">{E(pr['file'])}</a></p>{ex}
-<pre><code>{E(code)}</code></pre></details>"""
-    seen = "".join(f"""<article class="obs"><p class="meta"><strong>{E(corpus_short(s['corpus']))}</strong> · {E(s['corpus'])} · {E(s['date'])}{(' · '+E(s['observer'])) if s.get('observer') else ''}{(' · '+E(s['organisation'])) if s.get('organisation') else ''}{(' · <a href="../corpora/'+E(s['corpus_id'])+'.html">corpus page: which documents, how chosen</a>') if s.get('corpus_id') else ''}</p>
-<p>{E(s.get('excerpt_en', s['excerpt']))}</p>{('<details><summary>Original note ('+E(s.get('lang','fr'))+')</summary><p class="fr">'+E(s['excerpt'])+'</p></details>') if s.get('excerpt_en') and s.get('excerpt_en')!=s['excerpt'] else ''}{probe_block(s.get('probe')) if s.get('probe') else ('<p class="noprobe">No exact probe kept for this figure: it was counted in August 2026 by code that was not saved. The corpus is reproducible (link above); the count is not yet.</p>' if s.get('corpus_id') else '')}</article>""" for s in f["seen"]) or "<p class='muted'>No observation yet: this form is a hypothesis, not an observation.</p>"
+<details class="code"><summary>The exact probe (code) · <code>{E(pr['file'].split('/')[-1])}</code>{strata}</summary>
+<p class="meta">Run: <code>{E(pr.get('run',''))}</code> · <a href="{REPO}/blob/main/{E(pr['file'])}">{E(pr['file'])}</a> · corpus: <a href="../corpora/{E(pr['corpus_id'])}.html">{E(CORPUS_NAMES.get(pr['corpus_id'], pr['corpus_id']).split(' — ')[0])}</a>{(' · written '+E(pr['written'])) if pr.get('written') else ''}{(' · '+E(r['by'])) if r.get('by') else ''}</p>
+<pre><code>{E(code)}</code></pre></details></div>"""
+    seen = "".join(f"""<article class="obs"><p class="meta"><strong>{E(corpus_short(s['corpus']))}</strong> · {E(s['corpus'])} · {E(s['date'])}{(' · '+E(s['observer'])) if s.get('observer') else ''}{(' · '+E(s['organisation'])) if s.get('organisation') else ''}{(' · <a href="../corpora/'+E(s['corpus_id'])+'.html">corpus: which documents, how chosen</a>') if s.get('corpus_id') else ''}</p>
+<p>{E(s.get('excerpt_en', s['excerpt']))}</p>{('<details><summary>Original note ('+E(s.get('lang','fr'))+')</summary><p class="fr">'+E(s['excerpt'])+'</p></details>') if s.get('excerpt_en') and s.get('excerpt_en')!=s['excerpt'] else ''}{probe_block(s.get('probe')) if s.get('probe') else ('<p class="noprobe">Cannot be shown yet: this figure was counted in August 2026 by code that was not saved, so no document can be pointed at. A probe is still to write for it.</p>' if s.get('corpus_id') else '')}</article>""" for s in f["seen"]) or "<p class='muted'>No observation yet: this form is a hypothesis, not an observation.</p>"
     cases = f["specimens"]["cases"]; cex = f["specimens"]["counter_examples"]
     spec = (f"<p>{len(cases)} case(s), {len(cex)} counter-example(s).</p>" if cases or cex else "<p class='muted'>Specimens not yet transcribed into this record.</p>")
     hist = "".join(f"<li><span class='meta'>{E(h['date'])}</span> {E(h['event'])}{(' — '+E(h['by'])) if h.get('by') else ''}</li>" for h in f["history"])
@@ -261,7 +293,7 @@ h2{font-size:26px;letter-spacing:-.02em;margin:38px 0 12px;font-weight:600}h3{ma
 .facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;background:var(--bg-elev);border:1px solid var(--line);border-radius:10px;padding:18px 20px;margin-bottom:26px}.facts p{margin:0;font-size:15px}
 .note{background:#fff7ed;color:#7c2d12;border:1px solid #fed7aa;border-radius:8px;padding:10px 14px;margin-bottom:22px;font-size:15px}
 .obs{background:#fff;border:1px solid var(--line);border-radius:10px;padding:16px 18px;margin:10px 0}.obs p{margin:0}.meta{color:var(--muted);font-size:13px;margin:0 0 8px;font-family:var(--mono)}details{margin-top:8px}details summary{cursor:pointer;color:var(--muted);font-size:14px}details .fr{display:block;margin-top:8px;font-size:14px}
-details.probe{margin-top:10px;border-top:1px dashed var(--line);padding-top:8px}details.probe summary{color:var(--ink)}details.probe pre{margin:10px 0 0;padding:12px 14px;background:var(--bg-elev);border:1px solid var(--line);border-radius:8px;overflow-x:auto;font-size:12.5px;line-height:1.45;max-height:520px}details.probe .ex{margin:6px 0 0 18px;font-size:13px}details.probe .note{margin:8px 0}.noprobe{margin-top:10px!important;border-top:1px dashed var(--line);padding-top:8px;font-size:13.5px;color:var(--muted)}
+.probe{margin-top:12px;border-top:1px dashed var(--line);padding-top:10px}.probe .probe-head{margin:0 0 6px;font-size:14px}.probe h4{margin:10px 0 4px;font-size:14px}.probe ol.docs{margin:0 0 6px 22px;padding:0;font-size:13.5px;line-height:1.5}.probe ol.docs li{margin:2px 0}.probe .ev{color:var(--muted)}.probe a.xml{font-family:var(--mono);font-size:11px;color:var(--muted);margin-left:2px}.probe details.code{margin-top:8px}.probe details.code summary{color:var(--muted);font-size:13.5px}.probe pre{margin:10px 0 0;padding:12px 14px;background:var(--bg-elev);border:1px solid var(--line);border-radius:8px;overflow-x:auto;font-size:12.5px;line-height:1.45;max-height:520px}.probe .note{margin:8px 0}.noprobe{margin-top:10px!important;border-top:1px dashed var(--line);padding-top:8px;font-size:13.5px;color:var(--muted)}
 .corpus{border-top:1px solid var(--line);padding:18px 0}.corpus h2{scroll-margin-top:80px}.ids{font-family:var(--mono);font-size:12px;line-height:1.7;word-break:break-all}
 .hist{padding-left:18px}.hist li{margin:5px 0;font-size:15px}code{background:var(--surface);padding:1px 6px;border-radius:4px;font-size:88%;font-family:var(--mono)}
 .propose{max-width:700px}.propose fieldset{border:1px solid var(--line);border-radius:12px;padding:28px 28px 16px;margin:22px 0 30px;background:#fff}.propose legend{padding:0 10px;font-weight:600;font-size:17px;letter-spacing:-.01em;display:flex;align-items:center;gap:10px}

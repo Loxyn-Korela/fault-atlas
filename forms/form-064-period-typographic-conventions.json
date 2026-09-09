@@ -92,19 +92,56 @@
         },
         "examples": [
           [
-            "PMID 19871516 (1946)",
-            [
-              "STUDIES ON THE NATURE OF RESISTANCE OF GRAM-NEGATIVE BACILLI TO PENICILLIN : ANTAGONISTIC AND ENHANCING EFFECTS OF AMINO ACIDS."
-            ]
+            "PMID 19871516 (1946): STUDIES ON THE NATURE OF RESISTANCE OF GRAM-NEGATIVE BACILLI TO PENICILLIN : ANTAGONISTIC AND ENHANCING EFFECTS OF AMINO ACIDS.",
+            []
           ],
           [
-            "PMID 14042998 (1963)",
-            [
-              "STRUCTURAL REQUIREMENTS FOR THE ACTION OF NEUROHYPOPHYSEAL HORMONES UPON THE ISOLATED AMPHIBIAN URINARY BLADDER."
-            ]
+            "PMID 14042998 (1963): STRUCTURAL REQUIREMENTS FOR THE ACTION OF NEUROHYPOPHYSEAL HORMONES UPON THE ISOLATED AMPHIBIAN URINARY BLADDER.",
+            []
+          ],
+          [
+            "PMID 14044950 (1963): FOOD-POISONING POTENTIAL OF THE ENTEROCOCCI.",
+            []
+          ],
+          [
+            "PMID 14044958 (1963): EFFECTS OF CERTAIN AMINO ACIDS ON ANTHRANILATE PRODUCTION IN NEUROSPORA CRASSA.",
+            []
+          ],
+          [
+            "PMID 14047936 (1963): EFFECT OF 3,4-DEHYDRO-DL-PROLINE ON GROWTH AND PROTEIN SYNTHESIS.",
+            []
+          ],
+          [
+            "PMID 14048149 (1963): [VARIOUS ASPECTS OF AMINO ACID METABOLISM IN PLANTS].",
+            []
+          ],
+          [
+            "PMID 14048732 (1963): [RESEARCH ON THE NUTRITION OF ERWINIA CAROTOVORA].",
+            []
+          ],
+          [
+            "PMID 14051729 (1963): UREA CYCLE ENZYMATIC ABNORMALITIES IN PATIENTS IN ENDOGENOUS HEPATIC COMA.",
+            []
+          ],
+          [
+            "PMID 14051820 (1963): EFFECT OF TETRACYCLINES ON THE INTRACELLULAR AMINO ACIDS OF MOLDS.",
+            []
+          ],
+          [
+            "PMID 14058941 (1963): ARGININE METABOLISM IN PLEUROPNEUMONIA-LIKE ORGANISMS ISOLATED FROM MAMMALIAN CELL CULTURE.",
+            []
+          ],
+          [
+            "PMID 14059882 (1963): AMINO ACID FORMATION FROM GLUCOSE IN THE ISOLATED ADRENOCORTICAL AND THYROID TISSUE OF THE RABBIT.",
+            []
+          ],
+          [
+            "PMID 14061730 (1963): A STUDY OF ORNITHINE, CITRULLINE AND ARGININE SYNTHESIS IN GROWING CHICKS.",
+            []
           ]
         ],
-        "by": "Fault Atlas maintainer (Loxyn), on the corpus file of 2026-07-29"
+        "by": "Fault Atlas maintainer (Loxyn), on the corpus file of 2026-07-29",
+        "carriers_file": "probes/results/line-064-arginine-titles.json"
       },
       "matches_excerpt": false,
       "note": "The August note says 184; the rule it used was not written down. This probe (title carries no lower-case letter) gives 234, almost all from the 1960s. The probe's figure is the one to cite; the excerpt keeps its own."
@@ -121,7 +158,8 @@
         "of": 272,
         "strata": {},
         "examples": [],
-        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files"
+        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files",
+        "carriers_file": "probes/results/line-064-jats-headings.json"
       },
       "matches_excerpt": true,
       "note": "The zero is reproduced: no article title in full capitals among the 272. The excerpt's secondary counts (70/272 headings, 30/272 words) came from a rule not kept; this probe's rules give 36 and 36 (see its header). Stated, not adjusted."

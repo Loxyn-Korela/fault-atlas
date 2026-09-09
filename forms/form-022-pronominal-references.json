@@ -103,9 +103,67 @@
               "pronoun-subject x66",
               "lexical reprise: this group"
             ]
+          ],
+          [
+            "bio-PMC12857832.xml",
+            [
+              "pronoun-subject x6",
+              "lexical reprise: this group"
+            ]
+          ],
+          [
+            "bio-PMC12882215.xml",
+            [
+              "pronoun-subject x16"
+            ]
+          ],
+          [
+            "bio-PMC12909487.xml",
+            [
+              "pronoun-subject x19",
+              "lexical reprise: this group"
+            ]
+          ],
+          [
+            "bio-PMC12915353.xml",
+            [
+              "pronoun-subject x13",
+              "lexical reprise: the latter"
+            ]
+          ],
+          [
+            "bio-PMC12927065.xml",
+            [
+              "pronoun-subject x12"
+            ]
+          ],
+          [
+            "bio-PMC12927975.xml",
+            [
+              "pronoun-subject x6"
+            ]
+          ],
+          [
+            "bio-PMC12953170.xml",
+            [
+              "pronoun-subject x6"
+            ]
+          ],
+          [
+            "bio-PMC12959687.xml",
+            [
+              "pronoun-subject x5"
+            ]
+          ],
+          [
+            "bio-PMC13057049.xml",
+            [
+              "pronoun-subject x65"
+            ]
           ]
         ],
-        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files"
+        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files",
+        "carriers_file": "probes/results/line-022.json"
       },
       "matches_excerpt": true
     }

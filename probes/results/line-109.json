@@ -1,0 +1,949 @@
+{
+ "probe": "probes/2026-08/line-109.py",
+ "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+ "date": "2026-09-09",
+ "count": 106,
+ "of": 272,
+ "carriers": [
+  {
+   "document": "bio-PMC12882215.xml",
+   "evidence": [
+    "Background",
+    "Methods",
+    "Results",
+    "Conclusions"
+   ]
+  },
+  {
+   "document": "bio-PMC12909487.xml",
+   "evidence": [
+    "Background",
+    "Objective",
+    "Methods",
+    "Results"
+   ]
+  },
+  {
+   "document": "bio-PMC12915353.xml",
+   "evidence": [
+    "Background",
+    "Objectives",
+    "Methods",
+    "Results"
+   ]
+  },
+  {
+   "document": "bio-PMC12927065.xml",
+   "evidence": [
+    "Introduction",
+    "Methods",
+    "Results",
+    "Conclusion"
+   ]
+  },
+  {
+   "document": "bio-PMC12927975.xml",
+   "evidence": [
+    "Introduction",
+    "Methodology",
+    "Results",
+    "Conclusion"
+   ]
+  },
+  {
+   "document": "bio-PMC12953170.xml",
+   "evidence": [
+    "Background",
+    "Methods",
+    "Results",
+    "Conclusion"
+   ]
+  },
+  {
+   "document": "bio-PMC13057049.xml",
+   "evidence": [
+    "Background",
+    "Method",
+    "Results",
+    "Conclusion"
+   ]
+  },
+  {
+   "document": "bio-PMC13088504.xml",
+   "evidence": [
+    "Background",
+    "Patients and Methods",
+    "Results",
+    "Conclusion"
+   ]
+  },
+  {
+   "document": "bio-PMC13097615.xml",
+   "evidence": [
+    "Background and Aims",
+    "Methods",
+    "Results",
+    "Conclusion"
+   ]
+  },
+  {
+   "document": "bio-PMC13099299.xml",
+   "evidence": [
+    "Aims",
+    "Methods",
+    "Results",
+    "Conclusion"
+   ]
+  },
+  {
+   "document": "bio-PMC13103274.xml",
+   "evidence": [
+    "Background and Aim",
+    "Method",
+    "Result",
+    "Conclusion"
+   ]
+  },
+  {
+   "document": "bio-PMC13162546.xml",
+   "evidence": [
+    "Background",
+    "Discussion",
+    "Conclusions"
+   ]
+  },
+  {
+   "document": "bio-PMC13168716.xml",
+   "evidence": [
+    "Background:",
+    "Objective:",
+    "Methods:",
+    "Expected outcomes:"
+   ]
+  },
+  {
+   "document": "bio-PMC13170838.xml",
+   "evidence": [
+    "Background",
+    "Methods",
+    "Results",
+    "Conclusion"
+   ]
+  },
+  {
+   "document": "bio-PMC13182387.xml",
+   "evidence": [
+    "Abstract",
+    "Objectives",
+    "Design and setting",
+    "Participants"
+   ]
+  },
+  {
+   "document": "bio-PMC13190511.xml",
+   "evidence": [
+    "Objectives",
+    "Methods",
+    "Results",
+    "Conclusion"
+   ]
+  },
+  {
+   "document": "bio-PMC13216383.xml",
+   "evidence": [
+    "Background",
+    "Methods",
+    "Results",
+    "Conclusions"
+   ]
+  },
+  {
+   "document": "bio-PMC13218538.xml",
+   "evidence": [
+    "Background",
+    "Methods",
+    "Results",
+    "Conclusion"
+   ]
+  },
+  {
+   "document": "bio-PMC13231534.xml",
+   "evidence": [
+    "Background",
+    "Methods",
+    "Discussion",
+    "Systematic review registration"
+   ]
+  },
+  {
+   "document": "bio-PMC13236932.xml",
+   "evidence": [
+    "Introduction",
+    "Methods"
+   ]
+  },
+  {
+   "document": "bio-PMC13251069.xml",
+   "evidence": [
+    "Background",
+    "Methods",
+    "Results",
+    "Conclusion"
+   ]
+  },
+  {
+   "document": "bio-PMC13274935.xml",
+   "evidence": [
+    "Introduction",
+    "Methods",
+    "Results",
+    "Conclusion"
+   ]
+  },
+  {
+   "document": "bio-PMC13289183.xml",
+   "evidence": [
+    "Introduction",
+    "Objective",
+    "Methods and analysis",
+    "Ethics and dissemination"
+   ]
+  },
+  {
+   "document": "cas-PMC13293799.xml",
+   "evidence": [
+    "Background",
+    "Case summary",
+    "Conclusion"
+   ]
+  },
+  {
+   "document": "cas-PMC13293813.xml",
+   "evidence": [
+    "Purpose",
+    "Methods",
+    "Results",
+    "Conclusion"
+   ]
+  },
+  {
+   "document": "cas-PMC13293897.xml",
+   "evidence": [
+    "Introduction",
+    "Methods",
+    "Results",
+    "Discussion"
+   ]
+  },
+  {
+   "document": "cas-PMC13293901.xml",
+   "evidence": [
+    "Background",
+    "Case presentation",
+    "Conclusion"
+   ]
+  },
+  {
+   "document": "cas-PMC13294089.xml",
+   "evidence": [
+    "Background",
+    "Case presentation",
+    "Discussion",
+    "Conclusion"
+   ]
+  },
+  {
+   "document": "cas-PMC13294240.xml",
+   "evidence": [
+    "Background",
+    "Case presentation",
+    "Discussion",
+    "Conclusion"
+   ]
+  },
+  {
+   "document": "cas-PMC13294281.xml",
+   "evidence": [
+    "Background",
+    "Case presentation",
+    "Conclusion"
+   ]
+  },
+  {
+   "document": "cas-PMC13294340.xml",
+   "evidence": [
+    "Introduction",
+    "Objective",
+    "Case Report",
+    "Conclusion"
+   ]
+  },
+  {
+   "document": "cas-PMC13294698.xml",
+   "evidence": [
+    "Background",
+    "Case presentation",
+    "Conclusion"
+   ]
+  },
+  {
+   "document": "essai-PMC13154027.xml",
+   "evidence": [
+    "Question",
+    "Findings",
+    "Meaning"
+   ]
+  },
+  {
+   "document": "essai-PMC13169227.xml",
+   "evidence": [
+    "Background",
+    "Methods",
+    "Results",
+    "Conclusions"
+   ]
+  },
+  {
+   "document": "essai-PMC13169472.xml",
+   "evidence": [
+    "Background and Purpose",
+    "Methods",
+    "Results",
+    "Discussion"
+   ]
+  },
+  {
+   "document": "essai-PMC13179527.xml",
+   "evidence": [
+    "Objective",
+    "Animal Studied",
+    "Procedure",
+    "Results"
+   ]
+  },
+  {
+   "document": "essai-PMC13191455.xml",
+   "evidence": [
+    "Question",
+    "Findings",
+    "Meaning"
+   ]
+  },
+  {
+   "document": "essai-PMC13213610.xml",
+   "evidence": [
+    "Question",
+    "Findings",
+    "Meaning"
+   ]
+  },
+  {
+   "document": "essai-PMC13242068.xml",
+   "evidence": [
+    "Background and Purpose",
+    "Objectives",
+    "Methods",
+    "Results"
+   ]
+  },
+  {
+   "document": "essai-PMC13264282.xml",
+   "evidence": [
+    "Background",
+    "Methods",
+    "Results",
+    "Conclusion"
+   ]
+  },
+  {
+   "document": "essai-PMC13276020.xml",
+   "evidence": [
+    "Introduction",
+    "Methods",
+    "Results",
+    "Conclusion"
+   ]
+  },
+  {
+   "document": "essai-PMC13280184.xml",
+   "evidence": [
+    "Issue Addressed",
+    "Method",
+    "Results",
+    "Conclusions"
+   ]
+  },
+  {
+   "document": "essai-PMC13281132.xml",
+   "evidence": [
+    "Background",
+    "Aim",
+    "Methods",
+    "Results"
+   ]
+  },
+  {
+   "document": "essai-PMC13284529.xml",
+   "evidence": [
+    "Objective",
+    "Methods",
+    "Results",
+    "Conclusions"
+   ]
+  },
+  {
+   "document": "essai-PMC13290998.xml",
+   "evidence": [
+    "Purpose",
+    "Methods",
+    "Results",
+    "Conclusions"
+   ]
+  },
+  {
+   "document": "essai-PMC13291766.xml",
+   "evidence": [
+    "Objectives",
+    "Design",
+    "Methods",
+    "Results"
+   ]
+  },
+  {
+   "document": "essai-PMC13291922.xml",
+   "evidence": [
+    "Objective",
+    "Methods",
+    "Results",
+    "Discussion"
+   ]
+  },
+  {
+   "document": "essai-PMC13293440.xml",
+   "evidence": [
+    "Purpose",
+    "Patients and methods",
+    "Results",
+    "Conclusion"
+   ]
+  },
+  {
+   "document": "essai-PMC13294169.xml",
+   "evidence": [
+    "Background",
+    "Methods",
+    "Results",
+    "Conclusions"
+   ]
+  },
+  {
+   "document": "essai-PMC13294787.xml",
+   "evidence": [
+    "OBJECTIVE",
+    "RESEARCH DESIGN AND METHODS",
+    "RESULTS",
+    "CONCLUSIONS"
+   ]
+  },
+  {
+   "document": "essai-PMC13294792.xml",
+   "evidence": [
+    "OBJECTIVE",
+    "RESEARCH DESIGN AND METHODS",
+    "RESULTS",
+    "CONCLUSIONS"
+   ]
+  },
+  {
+   "document": "essai-PMC13296589.xml",
+   "evidence": [
+    "Background",
+    "Aim",
+    "Study Design",
+    "Results"
+   ]
+  },
+  {
+   "document": "meta-PMC13071177.xml",
+   "evidence": [
+    "Introduction",
+    "Methods",
+    "Results",
+    "Conclusion"
+   ]
+  },
+  {
+   "document": "meta-PMC13157766.xml",
+   "evidence": [
+    "Abstract",
+    "Objectives",
+    "Design",
+    "Data sources"
+   ]
+  },
+  {
+   "document": "meta-PMC13221319.xml",
+   "evidence": [
+    "Background",
+    "Methods",
+    "Results",
+    "Conclusions"
+   ]
+  },
+  {
+   "document": "meta-PMC13225629.xml",
+   "evidence": [
+    "Background",
+    "Methods",
+    "Results",
+    "Conclusions"
+   ]
+  },
+  {
+   "document": "meta-PMC13229315.xml",
+   "evidence": [
+    "Background",
+    "Methods and findings",
+    "Conclusion"
+   ]
+  },
+  {
+   "document": "meta-PMC13231626.xml",
+   "evidence": [
+    "Background",
+    "Methods",
+    "Results",
+    "Conclusions"
+   ]
+  },
+  {
+   "document": "meta-PMC13240427.xml",
+   "evidence": [
+    "Background",
+    "Methods",
+    "Results",
+    "Conclusion"
+   ]
+  },
+  {
+   "document": "meta-PMC13241412.xml",
+   "evidence": [
+    "Background",
+    "Methods",
+    "Results",
+    "Conclusion"
+   ]
+  },
+  {
+   "document": "meta-PMC13246130.xml",
+   "evidence": [
+    "Background:",
+    "Methods:",
+    "Results:",
+    "Conclusion:"
+   ]
+  },
+  {
+   "document": "meta-PMC13253268.xml",
+   "evidence": [
+    "Background",
+    "Methods",
+    "Results",
+    "Conclusion"
+   ]
+  },
+  {
+   "document": "meta-PMC13254819.xml",
+   "evidence": [
+    "INTRODUCTION",
+    "METHODS",
+    "RESULTS",
+    "DISCUSSION"
+   ]
+  },
+  {
+   "document": "meta-PMC13256077.xml",
+   "evidence": [
+    "Aims",
+    "Methods and results",
+    "Conclusion"
+   ]
+  },
+  {
+   "document": "meta-PMC13260247.xml",
+   "evidence": [
+    "Introduction",
+    "Methods",
+    "Results",
+    "Discussion"
+   ]
+  },
+  {
+   "document": "meta-PMC13264275.xml",
+   "evidence": [
+    "Background",
+    "Methods",
+    "Results",
+    "Conclusions"
+   ]
+  },
+  {
+   "document": "meta-PMC13264436.xml",
+   "evidence": [
+    "Background",
+    "Materials and methods",
+    "Results",
+    "Conclusion"
+   ]
+  },
+  {
+   "document": "meta-PMC13265330.xml",
+   "evidence": [
+    "Background",
+    "Methods",
+    "Results",
+    "Conclusions"
+   ]
+  },
+  {
+   "document": "meta-PMC13268477.xml",
+   "evidence": [
+    "Background:",
+    "Methods:",
+    "Results:",
+    "Conclusion:"
+   ]
+  },
+  {
+   "document": "meta-PMC13268693.xml",
+   "evidence": [
+    "Background and Aims",
+    "Methods",
+    "Results",
+    "Conclusions"
+   ]
+  },
+  {
+   "document": "meta-PMC13269816.xml",
+   "evidence": [
+    "Background",
+    "Methods",
+    "Results",
+    "Conclusion"
+   ]
+  },
+  {
+   "document": "meta-PMC13271776.xml",
+   "evidence": [
+    "Context",
+    "Objective",
+    "Methods",
+    "Results"
+   ]
+  },
+  {
+   "document": "meta-PMC13280693.xml",
+   "evidence": [
+    "Background",
+    "Methods",
+    "Results",
+    "Conclusions"
+   ]
+  },
+  {
+   "document": "meta-PMC13286481.xml",
+   "evidence": [
+    "Background:",
+    "Methods:",
+    "Results:",
+    "Conclusion:"
+   ]
+  },
+  {
+   "document": "meta-PMC13287023.xml",
+   "evidence": [
+    "Introduction",
+    "Methods",
+    "Results",
+    "Discussion"
+   ]
+  },
+  {
+   "document": "meta-PMC13288533.xml",
+   "evidence": [
+    "Objectives",
+    "Methods",
+    "Results",
+    "Conclusions"
+   ]
+  },
+  {
+   "document": "meta-PMC13305250.xml",
+   "evidence": [
+    "Objective",
+    "Methods",
+    "Results",
+    "Conclusions"
+   ]
+  },
+  {
+   "document": "moderne-PMC12900525.xml",
+   "evidence": [
+    "Introduction:",
+    "Materials and Methods:",
+    "Results:",
+    "Conclusion:"
+   ]
+  },
+  {
+   "document": "moderne-PMC13177175.xml",
+   "evidence": [
+    "Background:",
+    "Methods:",
+    "Results:",
+    "Conclusion:"
+   ]
+  },
+  {
+   "document": "moderne-PMC13254229.xml",
+   "evidence": [
+    "Objectives",
+    "Design",
+    "Methods",
+    "Results"
+   ]
+  },
+  {
+   "document": "moderne-PMC13264966.xml",
+   "evidence": [
+    "Rationale",
+    "Methods",
+    "Results",
+    "Conclusion"
+   ]
+  },
+  {
+   "document": "moderne-PMC13264967.xml",
+   "evidence": [
+    "Rationale",
+    "Methods",
+    "Results",
+    "Conclusions"
+   ]
+  },
+  {
+   "document": "moderne-PMC13274555.xml",
+   "evidence": [
+    "Rationale",
+    "Methods",
+    "Results",
+    "Conclusions"
+   ]
+  },
+  {
+   "document": "moderne-PMC13291764.xml",
+   "evidence": [
+    "Background",
+    "Methods",
+    "Results",
+    "Conclusions"
+   ]
+  },
+  {
+   "document": "moderne-PMC13296834.xml",
+   "evidence": [
+    "Purpose",
+    "Methods",
+    "Results",
+    "Conclusions"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13128206.xml",
+   "evidence": [
+    "Fundamento:",
+    "Objetivo:",
+    "Métodos:",
+    "Resultados:"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13142163.xml",
+   "evidence": [
+    "Purpose",
+    "Methods",
+    "Results",
+    "Conclusion"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13148856.xml",
+   "evidence": [
+    "Fundamento:",
+    "Objetivos:",
+    "Métodos:",
+    "Resultados:"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13193188.xml",
+   "evidence": [
+    "Purpose",
+    "Methods",
+    "Results",
+    "Conclusion"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13193189.xml",
+   "evidence": [
+    "Purpose",
+    "Methods",
+    "Results",
+    "Conclusion"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13193190.xml",
+   "evidence": [
+    "Purpose",
+    "Methods",
+    "Results",
+    "Conclusion"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13193191.xml",
+   "evidence": [
+    "Purpose",
+    "Methods",
+    "Results",
+    "Conclusion"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13193194.xml",
+   "evidence": [
+    "Purpose",
+    "Methods",
+    "Results",
+    "Conclusion"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13193195.xml",
+   "evidence": [
+    "Purpose",
+    "Methods",
+    "Results",
+    "Conclusion"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13264058.xml",
+   "evidence": [
+    "Objetivo",
+    "Diseño",
+    "Fuentes de datos",
+    "Selección de estudios"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13264178.xml",
+   "evidence": [
+    "Objetivo",
+    "Diseño",
+    "Emplazamiento",
+    "Participantes"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13267754.xml",
+   "evidence": [
+    "Objetivo.",
+    "Métodos.",
+    "Resultados.",
+    "Conclusiones."
+   ]
+  },
+  {
+   "document": "nonEN-PMC13267755.xml",
+   "evidence": [
+    "Objetivo.",
+    "Métodos.",
+    "Resultados.",
+    "Conclusiones."
+   ]
+  },
+  {
+   "document": "nonEN-PMC13267756.xml",
+   "evidence": [
+    "Objetivos:",
+    "Métodos:",
+    "Resultados:",
+    "Conclusão:"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13267757.xml",
+   "evidence": [
+    "Objetivo.",
+    "Método.",
+    "Resultados.",
+    "Conclusión."
+   ]
+  },
+  {
+   "document": "nonEN-PMC13272511.xml",
+   "evidence": [
+    "Objetivo",
+    "Diseño",
+    "Emplazamiento",
+    "Participantes"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13272517.xml",
+   "evidence": [
+    "Objetivo",
+    "Diseño",
+    "Emplazamiento",
+    "Participantes"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13284468.xml",
+   "evidence": [
+    "Objetivo",
+    "Diseño",
+    "Emplazamiento",
+    "Participantes"
+   ]
+  },
+  {
+   "document": "phys-PMC13235518.xml",
+   "evidence": [
+    "Background and Purpose:",
+    "Materials and Methods:",
+    "Results:",
+    "Conclusions:"
+   ]
+  },
+  {
+   "document": "phys-PMC13257740.xml",
+   "evidence": [
+    "Highlights",
+    "Abstract"
+   ]
+  },
+  {
+   "document": "phys-PMC13285896.xml",
+   "evidence": [
+    "Background",
+    "Purpose",
+    "Methods",
+    "Results"
+   ]
+  }
+ ]
+}

@@ -100,28 +100,89 @@
             "meta-PMC13226718.xml",
             [
               "Algorithm N ×1",
-              "mots-clés pseudo-code ×0",
-              "<preformat|code> ×0"
+              "mots-clés pseudo-code ×0"
             ]
           ],
           [
             "phys-PMC13099575.xml",
             [
               "Algorithm N ×1",
-              "mots-clés pseudo-code ×5",
-              "<preformat|code> ×0"
+              "mots-clés pseudo-code ×5"
             ]
           ],
           [
             "phys-PMC13113438.xml",
             [
               "Algorithm N ×3",
-              "mots-clés pseudo-code ×1",
-              "<preformat|code> ×0"
+              "mots-clés pseudo-code ×1"
+            ]
+          ],
+          [
+            "phys-PMC13133660.xml",
+            [
+              "Algorithm N ×6",
+              "mots-clés pseudo-code ×2"
+            ]
+          ],
+          [
+            "phys-PMC13201561.xml",
+            [
+              "Algorithm N ×2",
+              "mots-clés pseudo-code ×6"
+            ]
+          ],
+          [
+            "phys-PMC13210669.xml",
+            [
+              "Algorithm N ×2",
+              "mots-clés pseudo-code ×7"
+            ]
+          ],
+          [
+            "phys-PMC13222844.xml",
+            [
+              "Algorithm N ×16",
+              "mots-clés pseudo-code ×8"
+            ]
+          ],
+          [
+            "phys-PMC13234180.xml",
+            [
+              "Algorithm N ×2",
+              "mots-clés pseudo-code ×7"
+            ]
+          ],
+          [
+            "phys-PMC13235518.xml",
+            [
+              "Algorithm N ×6",
+              "mots-clés pseudo-code ×1"
+            ]
+          ],
+          [
+            "phys-PMC13252849.xml",
+            [
+              "Algorithm N ×6",
+              "mots-clés pseudo-code ×62"
+            ]
+          ],
+          [
+            "phys-PMC13261600.xml",
+            [
+              "Algorithm N ×2",
+              "mots-clés pseudo-code ×6"
+            ]
+          ],
+          [
+            "phys-PMC13272752.xml",
+            [
+              "Algorithm N ×4",
+              "mots-clés pseudo-code ×3"
             ]
           ]
         ],
-        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files"
+        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files",
+        "carriers_file": "probes/results/line-126.json"
       },
       "matches_excerpt": true
     }

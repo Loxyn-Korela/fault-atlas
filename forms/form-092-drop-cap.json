@@ -119,9 +119,67 @@
             [
               "('A', 'TDMPS')"
             ]
+          ],
+          [
+            "bio-PMC13236932.xml",
+            [
+              "('A', 'CVD')"
+            ]
+          ],
+          [
+            "bio-PMC13252842.xml",
+            [
+              "('A', 'QRS')"
+            ]
+          ],
+          [
+            "cas-PMC13291543.xml",
+            [
+              "('L', 'ALT')",
+              "('L', 'GGT')"
+            ]
+          ],
+          [
+            "cas-PMC13291881.xml",
+            [
+              "('L', 'ALT')",
+              "('L', 'AST')"
+            ]
+          ],
+          [
+            "cas-PMC13293792.xml",
+            [
+              "('A', 'DOTATATE')"
+            ]
+          ],
+          [
+            "cas-PMC13294155.xml",
+            [
+              "('E', 'STING')",
+              "('I', 'IFN')"
+            ]
+          ],
+          [
+            "cas-PMC13294702.xml",
+            [
+              "('A', 'PET')"
+            ]
+          ],
+          [
+            "cas-PMC13294704.xml",
+            [
+              "('F', 'ABPA')"
+            ]
+          ],
+          [
+            "cas-PMC13294705.xml",
+            [
+              "('R', 'ICA')"
+            ]
           ]
         ],
-        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files"
+        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files",
+        "carriers_file": "probes/results/line-092.json"
       },
       "matches_excerpt": true
     }

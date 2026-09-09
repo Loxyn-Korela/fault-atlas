@@ -112,12 +112,71 @@
             "cas-PMC13290446.xml",
             [
               "Case 1",
-              "Case 2",
-              "Cases 1"
+              "Case 2"
+            ]
+          ],
+          [
+            "cas-PMC13293644.xml",
+            [
+              "Case 1",
+              "Case 2"
+            ]
+          ],
+          [
+            "cas-PMC13293813.xml",
+            [
+              "Case 1",
+              "Case 2"
+            ]
+          ],
+          [
+            "cas-PMC13293827.xml",
+            [
+              "case  62"
+            ]
+          ],
+          [
+            "cas-PMC13293841.xml",
+            [
+              "Case 1",
+              "Case 2"
+            ]
+          ],
+          [
+            "cas-PMC13293995.xml",
+            [
+              "case  53"
+            ]
+          ],
+          [
+            "essai-PMC13280799.xml",
+            [
+              "Participant 1",
+              "Participant 10"
+            ]
+          ],
+          [
+            "essai-PMC13281132.xml",
+            [
+              "Cases\n10"
+            ]
+          ],
+          [
+            "meta-PMC13225629.xml",
+            [
+              "patients  1",
+              "patients  22"
+            ]
+          ],
+          [
+            "meta-PMC13263136.xml",
+            [
+              "cases  14"
             ]
           ]
         ],
-        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files"
+        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files",
+        "carriers_file": "probes/results/line-076.json"
       },
       "matches_excerpt": true
     }

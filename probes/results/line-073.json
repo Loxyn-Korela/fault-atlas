@@ -1,0 +1,584 @@
+{
+ "probe": "probes/2026-08/line-073.py",
+ "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+ "date": "2026-09-09",
+ "count": 69,
+ "of": 272,
+ "carriers": [
+  {
+   "document": "bio-PMC12583535.xml",
+   "evidence": [
+    "0.08 ±",
+    "0.094 ±",
+    "0.11 ±",
+    "0.13 ±"
+   ]
+  },
+  {
+   "document": "bio-PMC12590050.xml",
+   "evidence": [
+    "0.63 (95% CI",
+    "0.74 (95% CI",
+    "3.15 (95% CI",
+    "44.0 ±"
+   ]
+  },
+  {
+   "document": "bio-PMC12674831.xml",
+   "evidence": [
+    "0.79 (95%CI",
+    "0.84 (95%CI",
+    "56±",
+    "62 ±"
+   ]
+  },
+  {
+   "document": "bio-PMC12857832.xml",
+   "evidence": [
+    "56.00±",
+    "56.74±",
+    "57.33±",
+    "57.80±"
+   ]
+  },
+  {
+   "document": "bio-PMC12882215.xml",
+   "evidence": [
+    "0.62 (95% CI"
+   ]
+  },
+  {
+   "document": "bio-PMC13088504.xml",
+   "evidence": [
+    "52.48 ±",
+    "60.05 ±",
+    "62.30 ±",
+    "62.34 ±"
+   ]
+  },
+  {
+   "document": "bio-PMC13099299.xml",
+   "evidence": [
+    "54.5 ±",
+    "54 ±",
+    "55.1 ±",
+    "55.9 ±"
+   ]
+  },
+  {
+   "document": "bio-PMC13103274.xml",
+   "evidence": [
+    "11.88 ±",
+    "55.27 ±",
+    "6.7 ±",
+    "9.5 ±"
+   ]
+  },
+  {
+   "document": "bio-PMC13116881.xml",
+   "evidence": [
+    "0.69 (95% CI",
+    "0.73 (95% CI",
+    "1.1 ±",
+    "2.6 ±"
+   ]
+  },
+  {
+   "document": "bio-PMC13155703.xml",
+   "evidence": [
+    "43.2 ±",
+    "55.84 ±",
+    "55.9 ±",
+    "57.0 ±"
+   ]
+  },
+  {
+   "document": "bio-PMC13181205.xml",
+   "evidence": [
+    "0.042 ±",
+    "0.198 (95% CI",
+    "0.198 ±"
+   ]
+  },
+  {
+   "document": "bio-PMC13203479.xml",
+   "evidence": [
+    "0.05 ±",
+    "0.06 ±",
+    "0.07 ±",
+    "0.48 ±"
+   ]
+  },
+  {
+   "document": "bio-PMC13216383.xml",
+   "evidence": [
+    "85.6 (95% CI"
+   ]
+  },
+  {
+   "document": "bio-PMC13252842.xml",
+   "evidence": [
+    "0.153 ±",
+    "103 ±",
+    "144.7 ±",
+    "163.8 ±"
+   ]
+  },
+  {
+   "document": "bio-PMC13274935.xml",
+   "evidence": [
+    "181 ±",
+    "2.5 ±",
+    "2.9 ±",
+    "208 ±"
+   ]
+  },
+  {
+   "document": "essai-PMC13154027.xml",
+   "evidence": [
+    "16.8 (95% CI",
+    "20.4 (95% CI",
+    "3.6 (95% CI"
+   ]
+  },
+  {
+   "document": "essai-PMC13179527.xml",
+   "evidence": [
+    "19 ±",
+    "513 ±"
+   ]
+  },
+  {
+   "document": "essai-PMC13191455.xml",
+   "evidence": [
+    "0.12 (95% CI",
+    "0.42 (95% CI",
+    "0.81 (95% CI",
+    "0.87 (95% CI"
+   ]
+  },
+  {
+   "document": "essai-PMC13205731.xml",
+   "evidence": [
+    "2.55 (95% CI"
+   ]
+  },
+  {
+   "document": "essai-PMC13213610.xml",
+   "evidence": [
+    "0.58 (95% CI"
+   ]
+  },
+  {
+   "document": "essai-PMC13238360.xml",
+   "evidence": [
+    "46.9 ±",
+    "47.1 ±",
+    "47.2 ±",
+    "47.3 ±"
+   ]
+  },
+  {
+   "document": "essai-PMC13239719.xml",
+   "evidence": [
+    "0.04 ±",
+    "0.13 ±",
+    "0.20 ±",
+    "0.26 ±"
+   ]
+  },
+  {
+   "document": "essai-PMC13242068.xml",
+   "evidence": [
+    "174 ±",
+    "176.8 ±",
+    "25.7 ±",
+    "258.9 ±"
+   ]
+  },
+  {
+   "document": "essai-PMC13242351.xml",
+   "evidence": [
+    "0.071 ±",
+    "0.2 ±",
+    "0.36 ±",
+    "0.3 ±"
+   ]
+  },
+  {
+   "document": "essai-PMC13254492.xml",
+   "evidence": [
+    "21.9 ±"
+   ]
+  },
+  {
+   "document": "essai-PMC13263161.xml",
+   "evidence": [
+    "0.61 ±",
+    "0.64 ±",
+    "0.72 ±",
+    "0.78 ±"
+   ]
+  },
+  {
+   "document": "essai-PMC13271868.xml",
+   "evidence": [
+    "0.3 ±",
+    "0.4 ±",
+    "0.8 ±",
+    "0.9 ±"
+   ]
+  },
+  {
+   "document": "essai-PMC13276020.xml",
+   "evidence": [
+    "14.7 ±",
+    "149.8 ±",
+    "15.0 ±",
+    "178 ±"
+   ]
+  },
+  {
+   "document": "essai-PMC13281132.xml",
+   "evidence": [
+    "1.6 (95% CI"
+   ]
+  },
+  {
+   "document": "essai-PMC13282136.xml",
+   "evidence": [
+    "0.011 ±",
+    "0.012 ±",
+    "0.015 ±",
+    "0.016 ±"
+   ]
+  },
+  {
+   "document": "essai-PMC13291766.xml",
+   "evidence": [
+    "0.5 ±",
+    "1.0 ±",
+    "11459 ±",
+    "11642 ±"
+   ]
+  },
+  {
+   "document": "essai-PMC13291922.xml",
+   "evidence": [
+    "0.14 ±",
+    "0.15 ±",
+    "0.16 ±",
+    "0.18 ±"
+   ]
+  },
+  {
+   "document": "essai-PMC13293440.xml",
+   "evidence": [
+    "102.15 ±",
+    "104.60 ±",
+    "105.17 ±",
+    "106.00 ±"
+   ]
+  },
+  {
+   "document": "essai-PMC13294787.xml",
+   "evidence": [
+    "1.2 ±",
+    "100.4 ±",
+    "102.9 ±",
+    "129.0 ±"
+   ]
+  },
+  {
+   "document": "essai-PMC13296589.xml",
+   "evidence": [
+    "63.90 ±",
+    "65.12 ±",
+    "65.44 ±",
+    "69.17 ±"
+   ]
+  },
+  {
+   "document": "meta-PMC13071177.xml",
+   "evidence": [
+    "50.1 ±",
+    "50.4 ±",
+    "53.5 ±"
+   ]
+  },
+  {
+   "document": "meta-PMC13157766.xml",
+   "evidence": [
+    "0.66 (95% CI",
+    "0.73 (95% CI",
+    "0.76 (95% CI",
+    "0.80 (95% CI"
+   ]
+  },
+  {
+   "document": "meta-PMC13221319.xml",
+   "evidence": [
+    "0.02 (95% CI",
+    "0.03 (95% CI",
+    "0.04 (95% CI",
+    "0.06 (95% CI"
+   ]
+  },
+  {
+   "document": "meta-PMC13225629.xml",
+   "evidence": [
+    "2.69 (95% CI",
+    "2.79 (95% CI"
+   ]
+  },
+  {
+   "document": "meta-PMC13226718.xml",
+   "evidence": [
+    "0.014 ±",
+    "0.053 ±",
+    "0.056 ±",
+    "0.075 ±"
+   ]
+  },
+  {
+   "document": "meta-PMC13229315.xml",
+   "evidence": [
+    "0.82 (95% CI",
+    "0.92 (95% CI",
+    "39 ±",
+    "40 ±"
+   ]
+  },
+  {
+   "document": "meta-PMC13240427.xml",
+   "evidence": [
+    "1.25 (95% CI",
+    "2.55 (95% CI"
+   ]
+  },
+  {
+   "document": "meta-PMC13241412.xml",
+   "evidence": [
+    "55.47 ±",
+    "75.5 ±"
+   ]
+  },
+  {
+   "document": "meta-PMC13246130.xml",
+   "evidence": [
+    "0.11 (95% CI",
+    "0.60 (95% CI",
+    "0.64 (95% CI",
+    "0.67 (95% CI"
+   ]
+  },
+  {
+   "document": "meta-PMC13254819.xml",
+   "evidence": [
+    "2.54 (95% CI",
+    "4.27 (95% CI"
+   ]
+  },
+  {
+   "document": "meta-PMC13256077.xml",
+   "evidence": [
+    "4.9 ±",
+    "41.8 ±"
+   ]
+  },
+  {
+   "document": "meta-PMC13264436.xml",
+   "evidence": [
+    "0.38 (95% CI",
+    "0.4 (95% CI",
+    "0.40 (95% CI",
+    "0.61 (95% CI"
+   ]
+  },
+  {
+   "document": "meta-PMC13268477.xml",
+   "evidence": [
+    "0.46 (95% CI",
+    "0.53 (95% CI",
+    "1.69 (95% CI",
+    "2.12 (95% CI"
+   ]
+  },
+  {
+   "document": "meta-PMC13286481.xml",
+   "evidence": [
+    "2.56 (95% CI",
+    "24.65 ±",
+    "25.53 ±",
+    "3.09 (95% CI"
+   ]
+  },
+  {
+   "document": "meta-PMC13287023.xml",
+   "evidence": [
+    "9 ±"
+   ]
+  },
+  {
+   "document": "meta-PMC13288533.xml",
+   "evidence": [
+    "34.4 ±",
+    "34.7 ±",
+    "36.4 ±",
+    "37.4 ±"
+   ]
+  },
+  {
+   "document": "meta-PMC13292320.xml",
+   "evidence": [
+    "10.22 (95% CI",
+    "11.71 (95% CI",
+    "12.42 (95% CI",
+    "12.54 (95% CI"
+   ]
+  },
+  {
+   "document": "moderne-PMC12967033.xml",
+   "evidence": [
+    "0.15 ±",
+    "0.21 ±",
+    "0.23 ±",
+    "0.25 ±"
+   ]
+  },
+  {
+   "document": "moderne-PMC13177175.xml",
+   "evidence": [
+    "0.177 ±",
+    "0.187 ±",
+    "0.190 ±",
+    "0.192 ±"
+   ]
+  },
+  {
+   "document": "moderne-PMC13264966.xml",
+   "evidence": [
+    "1.5 ±"
+   ]
+  },
+  {
+   "document": "moderne-PMC13264967.xml",
+   "evidence": [
+    "103.6 ±",
+    "12.5 ±",
+    "2.06 ±",
+    "310.3 ±"
+   ]
+  },
+  {
+   "document": "moderne-PMC13274555.xml",
+   "evidence": [
+    "16.7 ±",
+    "16.8 ±",
+    "16.9 ±",
+    "163 ±"
+   ]
+  },
+  {
+   "document": "moderne-PMC13292400.xml",
+   "evidence": [
+    "12.1 ±",
+    "16.7 ±",
+    "184.8 ±",
+    "19.1 ±"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13128216.xml",
+   "evidence": [
+    "66,6±",
+    "66.6±",
+    "70,3±",
+    "70.3±"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13148856.xml",
+   "evidence": [
+    "0.167 (95% CI",
+    "1,08 ±",
+    "1,3 ±",
+    "1.08 ±"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13264178.xml",
+   "evidence": [
+    "0.488 (95% CI",
+    "1.053 (95% CI",
+    "1.080 (95% CI"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13267755.xml",
+   "evidence": [
+    "10,3 ±",
+    "12,2 ±"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13267756.xml",
+   "evidence": [
+    "52,6 ±",
+    "52.6 ±",
+    "59,0 ±",
+    "59,2 ±"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13272511.xml",
+   "evidence": [
+    "0,14 ±",
+    "0,24 ±",
+    "0,27 ±",
+    "0,56 ±"
+   ]
+  },
+  {
+   "document": "phys-PMC13099575.xml",
+   "evidence": [
+    "0.57     ±"
+   ]
+  },
+  {
+   "document": "phys-PMC13193059.xml",
+   "evidence": [
+    "1.6964 ±",
+    "101 ±",
+    "120 ±",
+    "1518 ±"
+   ]
+  },
+  {
+   "document": "phys-PMC13210669.xml",
+   "evidence": [
+    "0.05 ±",
+    "0.95 ±",
+    "10, ±",
+    "9, ±"
+   ]
+  },
+  {
+   "document": "phys-PMC13259435.xml",
+   "evidence": [
+    "2.41 ±",
+    "2.48 ±",
+    "2.79 ±",
+    "2.96 ±"
+   ]
+  },
+  {
+   "document": "phys-PMC13272752.xml",
+   "evidence": [
+    "0.981 ±",
+    "6.4 ±",
+    "8.5 ±"
+   ]
+  }
+ ]
+}

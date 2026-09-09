@@ -89,8 +89,7 @@
             "bio-PMC12674831.xml",
             [
               "American Diabetes Association",
-              "American Diabetes Association Professional Practice Committee",
-              "Associação Brasileira para o Estudo da Obesidade e da Síndrome Metabólica"
+              "American Diabetes Association Professional Practice Committee"
             ]
           ],
           [
@@ -104,9 +103,67 @@
             [
               "Institute TJB"
             ]
+          ],
+          [
+            "bio-PMC12915353.xml",
+            [
+              "G. B. D. Causes of Death Collaborators",
+              "G. B. D. Diabetes Collaborators"
+            ]
+          ],
+          [
+            "bio-PMC12927975.xml",
+            [
+              "World Health Organization"
+            ]
+          ],
+          [
+            "bio-PMC13088504.xml",
+            [
+              "Hernia Trialists Collaboration"
+            ]
+          ],
+          [
+            "bio-PMC13162546.xml",
+            [
+              "Beijing Inno Medicine Co"
+            ]
+          ],
+          [
+            "bio-PMC13181205.xml",
+            [
+              "ASCEND Study Collaborative Group",
+              "Cochrane Collaboration"
+            ]
+          ],
+          [
+            "bio-PMC13216383.xml",
+            [
+              "[Anonymous]"
+            ]
+          ],
+          [
+            "bio-PMC13236932.xml",
+            [
+              "Organization WH"
+            ]
+          ],
+          [
+            "bio-PMC13274935.xml",
+            [
+              "The Cochrane Collaboration"
+            ]
+          ],
+          [
+            "cas-PMC13293792.xml",
+            [
+              "American Brain Tumor Consortium",
+              "National Comprehensive Cancer Network"
+            ]
           ]
         ],
-        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files"
+        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files",
+        "carriers_file": "probes/results/line-088.json"
       },
       "matches_excerpt": false,
       "note": "The figure quoted in the excerpt was counted on 2026-08-08 by a finer, hand-run measurement whose code was not kept; this probe is the one that was kept, and its figure is the one that can be re-run. Both stand, dated."

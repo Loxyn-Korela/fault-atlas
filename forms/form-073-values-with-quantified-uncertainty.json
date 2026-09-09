@@ -92,28 +92,88 @@
             "bio-PMC12583535.xml",
             [
               "0.08 ±",
-              "0.094 ±",
-              "0.11 ±"
+              "0.094 ±"
             ]
           ],
           [
             "bio-PMC12590050.xml",
             [
               "0.63 (95% CI",
-              "0.74 (95% CI",
-              "3.15 (95% CI"
+              "0.74 (95% CI"
             ]
           ],
           [
             "bio-PMC12674831.xml",
             [
               "0.79 (95%CI",
-              "0.84 (95%CI",
-              "56±"
+              "0.84 (95%CI"
+            ]
+          ],
+          [
+            "bio-PMC12857832.xml",
+            [
+              "56.00±",
+              "56.74±"
+            ]
+          ],
+          [
+            "bio-PMC12882215.xml",
+            [
+              "0.62 (95% CI"
+            ]
+          ],
+          [
+            "bio-PMC13088504.xml",
+            [
+              "52.48 ±",
+              "60.05 ±"
+            ]
+          ],
+          [
+            "bio-PMC13099299.xml",
+            [
+              "54.5 ±",
+              "54 ±"
+            ]
+          ],
+          [
+            "bio-PMC13103274.xml",
+            [
+              "11.88 ±",
+              "55.27 ±"
+            ]
+          ],
+          [
+            "bio-PMC13116881.xml",
+            [
+              "0.69 (95% CI",
+              "0.73 (95% CI"
+            ]
+          ],
+          [
+            "bio-PMC13155703.xml",
+            [
+              "43.2 ±",
+              "55.84 ±"
+            ]
+          ],
+          [
+            "bio-PMC13181205.xml",
+            [
+              "0.042 ±",
+              "0.198 (95% CI"
+            ]
+          ],
+          [
+            "bio-PMC13203479.xml",
+            [
+              "0.05 ±",
+              "0.06 ±"
             ]
           ]
         ],
-        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files"
+        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files",
+        "carriers_file": "probes/results/line-073.json"
       },
       "matches_excerpt": true
     }

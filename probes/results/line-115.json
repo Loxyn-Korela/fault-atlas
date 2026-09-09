@@ -1,0 +1,1913 @@
+{
+ "probe": "probes/2026-08/line-115.py",
+ "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+ "date": "2026-09-09",
+ "count": 272,
+ "of": 272,
+ "carriers": [
+  {
+   "document": "bio-PMC12583535.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "bio-PMC12590050.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "bio-PMC12674831.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "bio-PMC12857832.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "bio-PMC12882215.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "bio-PMC12909487.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "bio-PMC12915353.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "bio-PMC12927065.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "bio-PMC12927975.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "bio-PMC12953170.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "bio-PMC12959687.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "bio-PMC13057049.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "bio-PMC13088504.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "bio-PMC13097615.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "bio-PMC13099299.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "bio-PMC13103274.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "bio-PMC13116881.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "bio-PMC13155703.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "bio-PMC13162546.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "bio-PMC13168716.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "bio-PMC13170838.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "bio-PMC13181205.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "bio-PMC13182387.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "bio-PMC13190511.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "bio-PMC13203479.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "bio-PMC13207820.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "bio-PMC13216383.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "bio-PMC13218538.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "bio-PMC13231534.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "bio-PMC13236932.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "bio-PMC13251069.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "bio-PMC13252842.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "bio-PMC13274935.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "bio-PMC13289183.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "cas-PMC13290446.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "cas-PMC13291543.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "cas-PMC13291881.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "cas-PMC13293644.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "cas-PMC13293645.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "cas-PMC13293647.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "cas-PMC13293792.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "cas-PMC13293799.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "cas-PMC13293813.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "cas-PMC13293827.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "cas-PMC13293834.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "cas-PMC13293841.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "cas-PMC13293897.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "cas-PMC13293901.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "cas-PMC13293995.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "cas-PMC13294038.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "cas-PMC13294089.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "cas-PMC13294096.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "cas-PMC13294155.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "cas-PMC13294182.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "cas-PMC13294240.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "cas-PMC13294281.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "cas-PMC13294340.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "cas-PMC13294475.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "cas-PMC13294481.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "cas-PMC13294629.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "cas-PMC13294642.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "cas-PMC13294698.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "cas-PMC13294702.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "cas-PMC13294704.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "cas-PMC13294705.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "cas-PMC13300565.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "cas-PMC13300836.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "cas-PMC13301386.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "essai-PMC13154027.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "essai-PMC13169227.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "essai-PMC13169472.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "essai-PMC13179527.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "essai-PMC13191455.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "essai-PMC13205709.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "essai-PMC13205731.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "essai-PMC13205876.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "essai-PMC13213610.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "essai-PMC13215628.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "essai-PMC13238360.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "essai-PMC13239719.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "essai-PMC13242068.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "essai-PMC13242351.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "essai-PMC13245602.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "essai-PMC13254492.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "essai-PMC13263161.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "essai-PMC13264282.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "essai-PMC13271868.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "essai-PMC13276020.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "essai-PMC13280184.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "essai-PMC13280799.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "essai-PMC13281132.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "essai-PMC13282136.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "essai-PMC13284529.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "essai-PMC13290998.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "essai-PMC13291766.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "essai-PMC13291922.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "essai-PMC13293440.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "essai-PMC13294169.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "essai-PMC13294787.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "essai-PMC13294792.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "essai-PMC13296589.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "essai-PMC7619126.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "meta-PMC13071177.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "meta-PMC13157766.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "meta-PMC13179150.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "meta-PMC13221319.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "meta-PMC13225629.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "meta-PMC13226718.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "meta-PMC13229315.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: ['https://creativecommons.org', 'licensed under']"
+   ]
+  },
+  {
+   "document": "meta-PMC13231626.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "meta-PMC13240427.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: ['creative commons']"
+   ]
+  },
+  {
+   "document": "meta-PMC13241412.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "meta-PMC13246130.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "meta-PMC13250259.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "meta-PMC13253268.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "meta-PMC13254819.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "meta-PMC13256077.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "meta-PMC13260247.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "meta-PMC13263136.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "meta-PMC13264275.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "meta-PMC13264436.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "meta-PMC13265330.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "meta-PMC13268477.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "meta-PMC13268693.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "meta-PMC13269816.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "meta-PMC13271776.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "meta-PMC13280693.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "meta-PMC13286426.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "meta-PMC13286481.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "meta-PMC13287023.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "meta-PMC13287149.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "meta-PMC13287277.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "meta-PMC13288533.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "meta-PMC13292320.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "meta-PMC13297335.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "meta-PMC13305250.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "moderne-PMC12900525.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "moderne-PMC12967033.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "moderne-PMC13177175.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "moderne-PMC13254229.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "moderne-PMC13262411.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "moderne-PMC13264966.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "moderne-PMC13264967.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "moderne-PMC13267778.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "moderne-PMC13274555.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "moderne-PMC13282716.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "moderne-PMC13282721.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "moderne-PMC13288728.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "moderne-PMC13291764.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "moderne-PMC13292010.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "moderne-PMC13292400.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "moderne-PMC13296834.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "moderne-PMC13296839.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13127809.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13128172.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13128184.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13128185.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13128186.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13128206.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13128210.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13128212.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13128213.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13128215.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13128216.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13128218.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13142163.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13143285.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13148856.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13155791.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13155792.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13155793.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13170112.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13185728.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13185730.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13193188.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13193189.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13193190.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13193191.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13193194.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13193195.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13224953.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13224954.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13224955.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13224957.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13228121.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13264032.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13264058.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13264162.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13264178.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13266121.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13266122.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13267754.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13267755.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13267756.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13267757.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13272499.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13272511.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13272517.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13276738.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13284468.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13284469.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13285344.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13285635.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13288443.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "phys-PMC13039343.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "phys-PMC13082673.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "phys-PMC13099575.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "phys-PMC13113438.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "phys-PMC13133660.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "phys-PMC13154412.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "phys-PMC13158258.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "phys-PMC13171646.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: ['creative commons']"
+   ]
+  },
+  {
+   "document": "phys-PMC13178570.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "phys-PMC13181085.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "phys-PMC13193059.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "phys-PMC13201561.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "phys-PMC13208799.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "phys-PMC13210669.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "phys-PMC13221960.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "phys-PMC13222844.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "phys-PMC13234180.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "phys-PMC13235518.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "phys-PMC13246409.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "phys-PMC13252849.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "phys-PMC13257740.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "phys-PMC13259435.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "phys-PMC13259474.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "phys-PMC13261600.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "phys-PMC13272752.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "phys-PMC13275013.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "phys-PMC13276034.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "phys-PMC13282397.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "phys-PMC13285896.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "phys-PMC13289917.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "phys-PMC13296606.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "phys-PMC13297141.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "phys-PMC13297618.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "phys-PMC13298103.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "retract-PMC12920011.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "retract-PMC12937552.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "retract-PMC12943135.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "retract-PMC12945919.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "retract-PMC12951106.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "retract-PMC12983062.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "retract-PMC12983399.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "retract-PMC12985380.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "retract-PMC12989678.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "retract-PMC12990951.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "retract-PMC13034554.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "retract-PMC13037014.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "retract-PMC13064942.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "retract-PMC13083641.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "retract-PMC13100932.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "retract-PMC13184583.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "retract-PMC13208113.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "retract-PMC13230493.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "retract-PMC13244562.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "retract-PMC13257949.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "retract-PMC13257951.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "retract-PMC13289858.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "retract-PMC13291836.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "retract-PMC13292036.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "retract-PMC13292042.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "retract-PMC13292064.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "retract-PMC13292106.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "retract-PMC13292606.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "retract-PMC13294332.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "retract-PMC13294796.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "retract-PMC13295435.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "retract-PMC13298758.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "retract-PMC13299186.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  },
+  {
+   "document": "retract-PMC13306522.xml",
+   "evidence": [
+    "permissions=True license=True",
+    "dans le corps: non"
+   ]
+  }
+ ]
+}

@@ -92,28 +92,87 @@
             "bio-PMC12583535.xml",
             [
               "41598_2025_22302_Fig1_HTML.jpg",
-              "41598_2025_22302_Fig2_HTML.jpg",
-              "41598_2025_22302_Fig3_HTML.jpg"
+              "41598_2025_22302_Fig2_HTML.jpg"
             ]
           ],
           [
             "bio-PMC12590050.xml",
             [
               "cureus-0017-00000093945-i01.jpg",
-              "cureus-0017-00000093945-i01.gif",
-              "cureus-0017-00000093945-i02.jpg"
+              "cureus-0017-00000093945-i01.gif"
             ]
           ],
           [
             "bio-PMC12674831.xml",
             [
               "1806-9339-rbgo-47-e-rbgo200-gf01.jpg",
-              "1806-9339-rbgo-47-e-rbgo200-gf02.jpg",
-              "1806-9339-rbgo-47-e-rbgo200-gf03.jpg"
+              "1806-9339-rbgo-47-e-rbgo200-gf02.jpg"
+            ]
+          ],
+          [
+            "bio-PMC12857832.xml",
+            [
+              "LI-43-67-g001.jpg",
+              "LI-43-67-g002.jpg"
+            ]
+          ],
+          [
+            "bio-PMC12882215.xml",
+            [
+              "12889_2025_26137_Fig1_HTML.jpg",
+              "12889_2025_26137_Fig2_HTML.jpg"
+            ]
+          ],
+          [
+            "bio-PMC12909487.xml",
+            [
+              "fpubh-14-1770168-g001.jpg"
+            ]
+          ],
+          [
+            "bio-PMC12915353.xml",
+            [
+              "ijem-23-4-167232-i001.jpg"
+            ]
+          ],
+          [
+            "bio-PMC12927065.xml",
+            [
+              "gr1.jpg",
+              "gr1.gif"
+            ]
+          ],
+          [
+            "bio-PMC12927975.xml",
+            [
+              "PUH2-5-e70198-g001.jpg",
+              "PUH2-5-e70198-g002.jpg"
+            ]
+          ],
+          [
+            "bio-PMC12953170.xml",
+            [
+              "jaws-05-15899-g001.jpg",
+              "jaws-05-15899-g001.gif"
+            ]
+          ],
+          [
+            "bio-PMC12959687.xml",
+            [
+              "pone.0343166.g001.jpg",
+              "pone.0343166.g001.gif"
+            ]
+          ],
+          [
+            "bio-PMC13057049.xml",
+            [
+              "44197_2026_542_Fig1_HTML.jpg",
+              "44197_2026_542_Fig1_HTML.gif"
             ]
           ]
         ],
-        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files"
+        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files",
+        "carriers_file": "probes/results/line-068.json"
       },
       "matches_excerpt": false,
       "note": "The figure quoted in the excerpt was counted on 2026-08-08 by a finer, hand-run measurement whose code was not kept; this probe is the one that was kept, and its figure is the one that can be re-run. Both stand, dated."

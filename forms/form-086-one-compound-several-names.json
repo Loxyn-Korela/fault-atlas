@@ -105,9 +105,65 @@
             [
               "antigen-125 (CA-125)"
             ]
+          ],
+          [
+            "bio-PMC13252842.xml",
+            [
+              "Institute (TUR-004367)"
+            ]
+          ],
+          [
+            "essai-PMC13169227.xml",
+            [
+              "types (LM22)"
+            ]
+          ],
+          [
+            "essai-PMC13191455.xml",
+            [
+              "Revision (ICD-10)"
+            ]
+          ],
+          [
+            "essai-PMC13205876.xml",
+            [
+              "Foundation (OPP49817)",
+              "mill (MM400)"
+            ]
+          ],
+          [
+            "essai-PMC13213610.xml",
+            [
+              "Revision (ICD-10)"
+            ]
+          ],
+          [
+            "meta-PMC13157766.xml",
+            [
+              "loracarbef (LY163892)"
+            ]
+          ],
+          [
+            "meta-PMC13226718.xml",
+            [
+              "Trust (WT220390)"
+            ]
+          ],
+          [
+            "meta-PMC13254819.xml",
+            [
+              "grant (AG067418)"
+            ]
+          ],
+          [
+            "meta-PMC13264436.xml",
+            [
+              "tipiracil (TAS-102)"
+            ]
           ]
         ],
-        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files"
+        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files",
+        "carriers_file": "probes/results/line-086.json"
       },
       "matches_excerpt": false,
       "note": "The figure quoted in the excerpt was counted on 2026-08-08 by a finer, hand-run measurement whose code was not kept; this probe is the one that was kept, and its figure is the one that can be re-run. Both stand, dated."

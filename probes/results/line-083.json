@@ -1,0 +1,356 @@
+{
+ "probe": "probes/2026-08/line-083.py",
+ "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+ "date": "2026-09-09",
+ "count": 47,
+ "of": 272,
+ "carriers": [
+  {
+   "document": "bio-PMC12583535.xml",
+   "evidence": [
+    "cles; PEG-EV : poly ethylene glycol-coated extracellular vesicles; MOF"
+   ]
+  },
+  {
+   "document": "bio-PMC12674831.xml",
+   "evidence": [
+    "BMI: body mass index.",
+    "BMI: body mass index; IOM: Institute of Medicine.",
+    "DM: diabetes mellitus; GD: gestational diabetes; HbA1c: glyc",
+    "t al. 338 ACE: angiotensin-converting enzyme; Ang 1-7: angiotensin 1-7"
+   ]
+  },
+  {
+   "document": "bio-PMC12857832.xml",
+   "evidence": [
+    "POP: postoperative pneumonia; nPOP: non-postoperative pneumo",
+    "ADC: adenocarcinoma; BMI: body mass index; COPD: chronic obs",
+    "urs, etc. BMI: body mass index; CHD: chronic heart disease; COPD: chro",
+    "BMI: body mass index; COPD: chronic obstructive pulmonary di"
+   ]
+  },
+  {
+   "document": "bio-PMC12909487.xml",
+   "evidence": [
+    "ST: title screening; SR: abstract screening; LC: full-text r"
+   ]
+  },
+  {
+   "document": "bio-PMC12927065.xml",
+   "evidence": [
+    "CI: Confidence interval; DF: degree of freedom."
+   ]
+  },
+  {
+   "document": "bio-PMC13099299.xml",
+   "evidence": [
+    "PC: Prospective cohort; RC: Retrospective cohort; PAF: Parox"
+   ]
+  },
+  {
+   "document": "bio-PMC13116881.xml",
+   "evidence": [
+    "ds ratio, AMI: acute myocardial infarction, BDI: Beck’s Depression Ind"
+   ]
+  },
+  {
+   "document": "bio-PMC13162546.xml",
+   "evidence": [
+    "EPR: Enhanced permeability and retention.",
+    "ADCC: antibody-dependent cell-mediated cytotoxicity; CDC: co",
+    "STSMLKAC, VEGF: Vascular endothelial growth factor CHP: Cardiac homing"
+   ]
+  },
+  {
+   "document": "bio-PMC13203479.xml",
+   "evidence": [
+    "vailable, ED: emergency departments.",
+    "or less, PNC: Particle number concentration, CO: carbon monoxide, PAH",
+    "or less, CO: carbon monoxide, SO 2 : Sulphur dioxide, BC: Black carbo"
+   ]
+  },
+  {
+   "document": "bio-PMC13207820.xml",
+   "evidence": [
+    "analysis. BMI: body mass index; CA-125: cancer antigen 125.",
+    "ariables. BMI: body mass index; CA-125: cancer antigen 125; U/mL: unit",
+    "ity only. BMI: body mass index; CA-125: cancer antigen 125."
+   ]
+  },
+  {
+   "document": "bio-PMC13218538.xml",
+   "evidence": [
+    "entheses. TC: Total cholesterol; LDL - C: Low-density lipoprotein chol"
+   ]
+  },
+  {
+   "document": "essai-PMC13205709.xml",
+   "evidence": [
+    "eviation: FGD: focus group discussion."
+   ]
+  },
+  {
+   "document": "essai-PMC13205876.xml",
+   "evidence": [
+    "ions: Non‐LNS = Iron &amp; folic acid + multiple micronutrient groups,"
+   ]
+  },
+  {
+   "document": "essai-PMC13245602.xml",
+   "evidence": [
+    "outcome. SE = standard error."
+   ]
+  },
+  {
+   "document": "essai-PMC13264282.xml",
+   "evidence": [
+    "ance, 10. SCS = 10. Symptom catastrophizing. Global improvement = Part"
+   ]
+  },
+  {
+   "document": "essai-PMC13284529.xml",
+   "evidence": [
+    "ssment‐7; HR = Heart Rate; sBP = Systolic blood pressure; STAI‐S = Sta",
+    "eviation: RSME = Rating Scale for Mental Effort (0–100). a Test score"
+   ]
+  },
+  {
+   "document": "essai-PMC13291922.xml",
+   "evidence": [
+    "eviation: CMSA: Chedoke‐McMaster Stroke Assessment. a p values for bet",
+    "viations: CI: confidence interval; S3S: serial‐3‐subtraction; VF: verb",
+    "eviation: CRR: correct response rate (correct responses per second). a",
+    "viations: ABC: Activities‐specific Balance Confidence; Mini‐BESTest: M"
+   ]
+  },
+  {
+   "document": "meta-PMC13071177.xml",
+   "evidence": [
+    "genotype, SS = 2, SL = 1, and LL = 0. For sex, female = 1 and male = 0"
+   ]
+  },
+  {
+   "document": "meta-PMC13179150.xml",
+   "evidence": [
+    "Note : SWB = Subjective Well‐Being; OCB = Organizational Citizenshi",
+    "ions; 95% CI = 95% Confidence Interval; 80% CR = 80% Credibility Inter",
+    "ions; 95% CI = 95% Confidence Interval; 80% CR = 80% Credibility Inter",
+    "ions; 95% CI = 95% Confidence Interval; 80% CR = 80% Credibility Inter"
+   ]
+  },
+  {
+   "document": "meta-PMC13221319.xml",
+   "evidence": [
+    "viations: NA = not available; RS = retrosigmoid; ML= middle fossa; TL",
+    "viations: GTR = gross total resection; NA = not available"
+   ]
+  },
+  {
+   "document": "meta-PMC13225629.xml",
+   "evidence": [
+    "viations: HGVS: Human Genome Variation Society; LT: liver transplantat"
+   ]
+  },
+  {
+   "document": "meta-PMC13241412.xml",
+   "evidence": [
+    "gulation, ESD : endoscopic submucosal dissection, RCT randomized contr"
+   ]
+  },
+  {
+   "document": "meta-PMC13246130.xml",
+   "evidence": [
+    "AKI = acute kidney injury, AKIN = acute kidney injury networ",
+    "AKIN = acute kidney injury network, AUC = area under the cur",
+    "DNN = deep neural networks, DT = decision trees, GBM = gradi"
+   ]
+  },
+  {
+   "document": "meta-PMC13268477.xml",
+   "evidence": [
+    "onafenib, DCR = disease control rate, F = female, HAIC = hepaticarteri",
+    "CI = confidence interval, HAIC = hepatic arterial infusion c",
+    "CI = confidence interval, HAIC = hepatic arterial infusion c"
+   ]
+  },
+  {
+   "document": "meta-PMC13269816.xml",
+   "evidence": [
+    "MR = Mendelian randomization, CagA = cytotoxin-associated ge",
+    "d gene A, OMP = outer membrane protein, UREA = urease, VacA = vacuolat",
+    "OMP = outer membrane protein, UREA = urease, VacA = vacuolat"
+   ]
+  },
+  {
+   "document": "meta-PMC13286481.xml",
+   "evidence": [
+    "RCT = randomized controlled trial, S1PR = sphingosine-1-phos",
+    "IS trial. UC = ulcerative colitis.",
+    "BMI = body mass index, CRP = C-reactive protein, SD = standa",
+    "AE = adverse effects, CI = confidence interval, GRADE = Grad"
+   ]
+  },
+  {
+   "document": "meta-PMC13288533.xml",
+   "evidence": [
+    "NHIRD: National Health Insurance Research Database; ICES: In",
+    "MI: Myocardial infarction; AF: Atrial fibrillation; HF: Hear"
+   ]
+  },
+  {
+   "document": "moderne-PMC12900525.xml",
+   "evidence": [
+    "CLX: 2% chlorhexidine gel, Hypo: 2.5% sodium hypochlorite, B",
+    "CLX: 2% chlorhexidine gel, Hypo: 2.5% sodium hypochlorite, B",
+    "CLX: 2% chlorhexidine gel, Hypo: 2.5% sodium hypochlorite, B",
+    "CLX: 2% chlorhexidine gel, HYPO: 2.5% sodium hypochlorite, B"
+   ]
+  },
+  {
+   "document": "moderne-PMC12967033.xml",
+   "evidence": [
+    "a DM: Dry matter, NDF: Neutral detergent fiber, ADF: Acid dete"
+   ]
+  },
+  {
+   "document": "moderne-PMC13291764.xml",
+   "evidence": [
+    "se in SMS‐ICU: an illness severity score ranging from 0 to 42 points w"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13128206.xml",
+   "evidence": [
+    "ECMO: oxigenação por membrana extracorpórea; PAM: pressão ar",
+    "DPOC: doença pulmonar obstrutiva crônica; IIQ: intervalo int",
+    "MAP: mean arterial pressure; RPM: revolutions per minute; VA",
+    "COPD: chronic obstructive pulmonary disease; IQR: interquart"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13128216.xml",
+   "evidence": [
+    "quadrado. UTI: unidade de terapia intensiva; IIQ: intervalo interquart",
+    "este-t. * BRL: reais brasileiros.",
+    "are test. HK: hyperkalemia; ICU: intensive care unit; IQR: interquarti",
+    "t-test. * BRL: Brazilian reais."
+   ]
+  },
+  {
+   "document": "nonEN-PMC13142163.xml",
+   "evidence": [
+    "Caption: ASD = Autism Spectrum Disorder; M = Male; F = Female; CM = C",
+    "Caption: ASD = Autism Spectrum Disorder; M = Male; F = Female; CM = C",
+    "ption: JA/EC = Joint Attention and Eye Contact",
+    "ption: JA/EC = Joint Attention and Eye Contact"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13148856.xml",
+   "evidence": [
+    "o normal. FVC: fração de volume de colágeno; RT: realce tardio; VEC: v",
+    "FVC: fração de volume de colágeno; RT: realce tardio; VEC: v",
+    "AUC: área sob a curva característica de operação do receptor",
+    "AUC: área sob a curva ROC; IC: intervalo de confiança."
+   ]
+  },
+  {
+   "document": "nonEN-PMC13185730.xml",
+   "evidence": [
+    "OR: odds ratio ; IC95%: intervalo de 95% de confiança. Nota:"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13193189.xml",
+   "evidence": [
+    "Caption: SD = standard deviation",
+    "Caption: SD = standard deviation",
+    "Caption: SD = standard deviation",
+    "Legenda: DP = desvio padrão"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13193190.xml",
+   "evidence": [
+    "of water; SD: standard deviation; dyn s/cm: dyne second/centimeter; l/",
+    "of water; SD: standard deviation; dyn s/cm: dyne second/centimeter; l/",
+    "de água; DP: desvio padrão; dyne/centímetro; l/s: litros por segundo;"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13193194.xml",
+   "evidence": [
+    "Caption: TD = typical development; ASD = autism spectrum disorder; LD",
+    "Legenda: DT = desenvolvimento típico; TEA = transtorno do espectro au"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13193195.xml",
+   "evidence": [
+    "Caption: CVI = content validity index; CVC = content validity coeffic",
+    "Legenda: IVC = Índice de Validação de Conteúdo; CVC = Coeficiente de"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13224957.xml",
+   "evidence": [
+    "HAS: hipertensão arterial sistêmica; DP: desvio padrão. Nota",
+    "DP: desvio padrão. Nota: %: considerando os parâmetros amost",
+    "HAS: hipertensão arterial sistêmica; HR: hazard ratio ; IC95"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13264178.xml",
+   "evidence": [
+    "de Yates. ECV: enfermedad cardiovascular."
+   ]
+  },
+  {
+   "document": "nonEN-PMC13267756.xml",
+   "evidence": [
+    "SOC: senso de coerência; QVRS: qualidade de vida relacionada",
+    "iberdade; CFI: índice de ajuste comparativo; TLI: índice de Tucker-Lew",
+    "SOC: senso de coerência; QVRS: qualidade de vida relacionada"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13272511.xml",
+   "evidence": [
+    "absoluto; DE: desviación estándar.",
+    "la tabla. OR: Odds Ratio (razón de momios); IC: intervalo de confianza"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13272517.xml",
+   "evidence": [
+    "ructural. AP: atención primaria; IC 95%: intervalo de confianza del 95",
+    "AP: atención primaria; DE: desviación estándar; RIQ: rango i",
+    "nuscrito. SP: seguridad del paciente; TSI: tarjeta sanitaria individua"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13284469.xml",
+   "evidence": [
+    "RIC: rango intercuartílico; IC 95%: intervalo de confianza d"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13285635.xml",
+   "evidence": [
+    "de 2026. ADC: conjugado anticuerpo-fármaco (antibody-drug conjugate)",
+    "AP: atención primaria; ECG: electrocardiograma; EPI: enferme",
+    "astásico; CSD: cuadrante superior derecho; PFH: pruebas de la función",
+    "AP: atención primaria; EAP: equipos de atención primaria; GA"
+   ]
+  },
+  {
+   "document": "phys-PMC13171646.xml",
+   "evidence": [
+    "NI = number of instances of metaphor use pertaining to model",
+    "NI = number of instances of metaphor use pertaining to model",
+    "NI = number of instances of metaphor use pertaining to model",
+    "NI = number of instances of metaphor use pertaining to model"
+   ]
+  }
+ ]
+}
