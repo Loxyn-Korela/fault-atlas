@@ -15,7 +15,7 @@ Rules:
 
 - **The file is the record.** Its header says the question, the command, the population and the answer it gave, dated. The form's `probes[]` entry repeats the figure and points to the file; the observation's `probe` field points to the same file.
 - **A re-run is a new measurement, dated.** `tools/rerun_probes.py` writes it back into `probes[].result`; the excerpt keeps its own figure.
-- **A difference is published, not adjusted.** When the August note quoted a figure counted by a finer, hand-run rule whose code was not kept, the probe that *was* kept is published with its own figure and `matches_excerpt: false`. On 2026-09-09: 38 of the 66 August probes reproduce the quoted figure exactly; 28 do not, and each says so on its form.
+- **A probe is shown only when it finds the quoted figure again.** When the kept probe gives another figure than the note (`matches_excerpt: false`), the form says "to be shown" and nothing else; the probe waits here for a second reader to settle which rule the note used. No substitute probe with another figure is ever attached to a form.
 - **Zero is a result.** A probe that finds no carrier on a corpus is attached under *measured absent in*, with the same file and the same date.
 - **No model, no key, stdlib only** for the Python probes. The corpora themselves are not redistributed; their identifier lists are.
 

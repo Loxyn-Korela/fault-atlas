@@ -124,6 +124,8 @@ for f in forms:
         pr = probes_by_file.get(file)
         if not pr: return ""
         r = pr.get("result", {})
+        if not pr.get("matches_excerpt"):
+            return """<p class="noprobe">To be shown: the figure in this note has not yet been reproduced by a kept probe. It stays as a dated claim until a probe finds it again or a bench tests it.</p>"""
         head = f"{r.get('count')}/{r.get('of')} documents" if r.get("of") is not None else f"{r.get('count')} results"
         code = (ROOT/pr["file"]).read_text(encoding="utf-8") if (ROOT/pr["file"]).is_file() else ""
         carriers = []
@@ -137,7 +139,7 @@ for f in forms:
         first, rest = carriers[:12], carriers[12:]
         docs = ""
         if carriers:
-            docs = f"<h4>See the trap in the documents (what a graph would fall on; whether a graph does fall is what a bench measures)</h4><ol class='docs'>" + "".join(li(n, e) for n, e in first) + "</ol>"
+            docs = f"<h4>See it in the documents</h4><ol class='docs'>" + "".join(li(n, e) for n, e in first) + "</ol>"
             if rest:
                 docs += f"<details><summary>the other {len(rest)} documents</summary><ol class='docs' start='13'>" + "".join(li(n, e) for n, e in rest) + "</ol></details>"
             if r.get("carriers_file"):
@@ -153,7 +155,7 @@ for f in forms:
 <p class="meta">Run: <code>{E(pr.get('run',''))}</code> · <a href="{REPO}/blob/main/{E(pr['file'])}">{E(pr['file'])}</a> · the population searched (the denominator): <a href="../corpora/{E(pr['corpus_id'])}.html">{E(CORPUS_NAMES.get(pr['corpus_id'], pr['corpus_id']).split(' — ')[0])}</a>{(' · written '+E(pr['written'])) if pr.get('written') else ''}{(' · '+E(r['by'])) if r.get('by') else ''}</p>
 <pre><code>{E(code)}</code></pre></details></div>"""
     seen = "".join(f"""<article class="obs"><p class="meta"><strong>{E(corpus_short(s['corpus']))}</strong> · {E(s['corpus'])} · {E(s['date'])}{(' · '+E(s['observer'])) if s.get('observer') else ''}{(' · '+E(s['organisation'])) if s.get('organisation') else ''}</p>
-<p>{E(s.get('excerpt_en', s['excerpt']))}</p>{('<details><summary>Original note ('+E(s.get('lang','fr'))+')</summary><p class="fr">'+E(s['excerpt'])+'</p></details>') if s.get('excerpt_en') and s.get('excerpt_en')!=s['excerpt'] else ''}{probe_block(s.get('probe')) if s.get('probe') else ('<p class="noprobe">Cannot be shown yet: this figure was counted in August 2026 by code that was not saved, so no document can be pointed at. A probe is still to write for it. (The population searched is described on the <a href="../corpora/'+E(s['corpus_id'])+'.html">corpus page</a>; that page holds no fault.)</p>' if s.get('corpus_id') else '')}</article>""" for s in f["seen"]) or "<p class='muted'>No observation yet: this form is a hypothesis, not an observation.</p>"
+<p>{E(s.get('excerpt_en', s['excerpt']))}</p>{('<details><summary>Original note ('+E(s.get('lang','fr'))+')</summary><p class="fr">'+E(s['excerpt'])+'</p></details>') if s.get('excerpt_en') and s.get('excerpt_en')!=s['excerpt'] else ''}{probe_block(s.get('probe')) if s.get('probe') else ('<p class="noprobe">To be shown: this figure was counted in August 2026 and the code was not kept. It stays as a dated claim until a probe finds it again or a bench tests it.</p>' if s.get('corpus_id') else '')}</article>""" for s in f["seen"]) or "<p class='muted'>No observation yet: this form is a hypothesis, not an observation.</p>"
     cases = f["specimens"]["cases"]; cex = f["specimens"]["counter_examples"]
     spec = (f"<p>{len(cases)} case(s), {len(cex)} counter-example(s).</p>" if cases or cex else "<p class='muted'>Specimens not yet transcribed into this record.</p>")
     hist = "".join(f"<li><span class='meta'>{E(h['date'])}</span> {E(h['event'])}{(' — '+E(h['by'])) if h.get('by') else ''}</li>" for h in f["history"])
@@ -179,11 +181,11 @@ for f in forms:
     for pr in f.get("probes", []):
         r = pr.get("result", {})
         head = f"{r.get('count')}/{r.get('of')}" if r.get("of") is not None else f"{r.get('count')} rows"
-        prow += f"""<tr><td><a href="forms/{E(f['id'])}.html">{E(f['id'])}</a></td><td>{E(f['name'])}</td><td>{E(pr['kind'])}</td><td><a href="{REPO}/blob/main/{E(pr['file'])}">{E(pr['file'].split('/')[-1])}</a></td><td><a href="corpora/{E(pr['corpus_id'])}.html">{E(CORPUS_NAMES.get(pr['corpus_id'], pr['corpus_id']).split(' — ')[0][:48])}</a></td><td>{E(head)}</td><td>{E(r.get('date',''))}</td><td>{'yes' if pr.get('matches_excerpt') else 'no'}</td></tr>"""
+        prow += f"""<tr><td><a href="forms/{E(f['id'])}.html">{E(f['id'])}</a></td><td>{E(f['name'])}</td><td>{E(pr['kind'])}</td><td><a href="{REPO}/blob/main/{E(pr['file'])}">{E(pr['file'].split('/')[-1])}</a></td><td><a href="corpora/{E(pr['corpus_id'])}.html">{E(CORPUS_NAMES.get(pr['corpus_id'], pr['corpus_id']).split(' — ')[0][:48])}</a></td><td>{E(head)}</td><td>{E(r.get('date',''))}</td><td>{'shown' if pr.get('matches_excerpt') else 'to be shown'}</td></tr>"""
 nprobes = sum(len(f.get("probes", [])) for f in forms)
 (SITE/"probes.html").write_text(layout("Probes — Fault Atlas", f"""<p class="crumb"><a href="index.html">Fault Atlas</a> › probes</p><h1>Exact probes</h1>
-<p class="lead">{nprobes} probes on {sum(1 for f in forms if f.get('probes'))} forms. A probe is the exact question asked of a corpus, kept verbatim: a Python regex on one document, a SPARQL query on a public endpoint, a shell request with its headers. It repairs nothing and decides nothing; it answers "is this fault here, and where?". Anyone can run it again: <code>python3 tools/run_probe.py &lt;probe&gt; &lt;corpus&gt;</code>. The last column says whether the re-run figure is the one quoted in the observation; when it is not, both figures are kept and the difference is stated on the form.</p>
-<div class="tablewrap"><table><thead><tr><th>Form</th><th>Name</th><th>Kind</th><th>Probe</th><th>Corpus</th><th>Result</th><th>Run on</th><th>Matches excerpt</th></tr></thead><tbody>{prow}</tbody></table></div>"""))
+<p class="lead">{nprobes} probes on {sum(1 for f in forms if f.get('probes'))} forms. A probe is the exact question asked of a corpus, kept verbatim: a Python regex on one document, a SPARQL query on a public endpoint, a shell request with its headers. It repairs nothing and decides nothing; it answers "is this fault here, and where?". Anyone can run it again: <code>python3 tools/run_probe.py &lt;probe&gt; &lt;corpus&gt;</code>. A probe is shown on its form only when it finds again the figure the observation quotes; otherwise the form says "to be shown" and the probe waits here for a second reader.</p>
+<div class="tablewrap"><table><thead><tr><th>Form</th><th>Name</th><th>Kind</th><th>Probe</th><th>Corpus</th><th>Result</th><th>Run on</th><th>Status</th></tr></thead><tbody>{prow}</tbody></table></div>"""))
 
 # ── propose page ──
 dmg_cards = "".join(f"""<label class="dcard" style="--c:{v[2]}"><input type="radio" name="damage" value="{k}" required><span class="dt">{E(v[0])}</span><span class="dd">{E(v[1])}</span></label>""" for k,v in DAMAGE.items() if k!="CORPUS_PARAMETER") + """<label class="dcard" style="--c:#57534e"><input type="radio" name="damage" value="UNKNOWN"><span class="dt">I don't know</span><span class="dd">the reviewer will classify it</span></label>"""
@@ -234,8 +236,9 @@ for cf in sorted((ROOT/"corpora").glob("*.json")):
         pf = {pr["file"]: pr for pr in f.get("probes", []) if pr["corpus_id"] == cid}
         obs = [x for x in f["seen"] if x.get("corpus_id") == cid]
         absent = any(pr for pr in pf.values() if pr["file"] not in {x.get("probe") for x in f["seen"]})
-        if any(x.get("probe") in pf for x in obs) or absent:
-            for pr in pf.values():
+        shown = [pr for pr in pf.values() if pr.get("matches_excerpt")]
+        if shown:
+            for pr in shown:
                 r = pr.get("result", {})
                 with_probe.append((f, pr, f"{r.get('count')}/{r.get('of')}" if r.get("of") is not None else f"{r.get('count')} rows"))
         elif obs:
@@ -257,11 +260,11 @@ for cf in sorted((ROOT/"corpora").glob("*.json")):
     if with_probe:
         body_c += f"<h2>Forms found on this corpus, with the exact probe that finds them ({len(with_probe)})</h2><div class=\"tablewrap\"><table><thead><tr><th>Form</th><th>Name</th><th>Probe</th><th>Result</th></tr></thead><tbody>" + "".join(f"<tr><td><a href=\"../forms/{E(f['id'])}.html\">{E(f['id'])}</a></td><td>{E(f['name'])}</td><td><a href=\"{REPO}/blob/main/{E(pr['file'])}\">{E(pr['file'].split('/')[-1])}</a></td><td>{E(res)}</td></tr>" for f, pr, res in with_probe) + "</tbody></table></div>"
     if without:
-        body_c += f"<h2>Forms measured on this corpus without a kept probe ({len(without)})</h2><p class=\"muted\">The figure in their observation was counted in August 2026 by code that was not saved. The corpus is reproducible; the count is not yet. Each is a probe still to write.</p><p>" + " · ".join(f"<a href=\"../forms/{E(f['id'])}.html\">{E(f['id'])}</a>" for f in without) + "</p>"
+        body_c += f"<h2>Forms measured on this corpus, to be shown ({len(without)})</h2><p class=\"muted\">Their figure is a dated claim not yet found again by a kept probe.</p><p>" + " · ".join(f"<a href=\"../forms/{E(f['id'])}.html\">{E(f['id'])}</a>" for f in without) + "</p>"
     body_c += f"<p class=\"muted\">Record: <a href=\"{REPO}/blob/main/corpora/{E(cf.name)}\">{E(cf.name)}</a></p>"
     (SITE/"corpora"/f"{cid}.html").write_text(layout(f"{c['name'].split(' — ')[0]} — Fault Atlas", body_c, depth=1))
     n_obs = sum(1 for f in forms for x in f["seen"] if x.get("corpus_id") == cid)
-    corp_index += f"<section class=\"corpus\"><h2><a href=\"corpora/{E(cid)}.html\">{E(c['name'])}</a></h2><p>{E(c.get('selection', c.get('note', ''))[:260])}{'…' if len(c.get('selection', c.get('note', '')))>260 else ''}</p><p class=\"meta\">{n_obs} observation(s) · {len(with_probe)} exact probe(s){(' · '+str(len(without))+' figure(s) without a kept probe') if without else ''}{(' · harvested '+E(c['harvested'])) if c.get('harvested') else ''}</p></section>"
+    corp_index += f"<section class=\"corpus\"><h2><a href=\"corpora/{E(cid)}.html\">{E(c['name'])}</a></h2><p>{E(c.get('selection', c.get('note', ''))[:260])}{'…' if len(c.get('selection', c.get('note', '')))>260 else ''}</p><p class=\"meta\">{n_obs} observation(s) · {len(with_probe)} exact probe(s){(' · '+str(len(without))+' to be shown') if without else ''}{(' · harvested '+E(c['harvested'])) if c.get('harvested') else ''}</p></section>"
 (SITE/"corpora.html").write_text(layout("Corpora — Fault Atlas", f"<p class=\"crumb\"><a href=\"index.html\">Fault Atlas</a> › corpora</p><h1>Observed corpora</h1><p class=\"lead\">One page per corpus: which documents it holds, how they were chosen, how to get them again. A corpus page never finds a fault; the exact probe that does sits on each form.</p>{corp_index}"))
 
 (SITE/"atlas.json").write_text(json.dumps({"version": VERSION, "doi": DOI, "forms": forms}, ensure_ascii=False))

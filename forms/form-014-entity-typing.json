@@ -25,8 +25,7 @@
       "lang": "fr",
       "excerpt_en": "MEASURED on 2026-08-08 on the 272 XML files of the internal corpus: 63/272 (23 %) place a tagged <institution> organisation next to a NAMED study/cohort (\"the Fremantle Diabetes Study\", \"the Brazilian Longitudinal Study\") — two confusable types in the same sentence. Only 9/272 (3 %) carry the apposition that settles it (\", a multicenter …\"). Reminder from tier P6 (annex 14): 920/925 entities are Organization or Person — typing is currently NO difficulty at all.",
       "organisation": "Loxyn SAS, Lyon",
-      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
-      "probe": "probes/2026-08/line-014.py"
+      "corpus_id": "corpus-europe-pmc-jats-2023-2026"
     }
   ],
   "specimens": {
@@ -64,42 +63,11 @@
       "date": "2026-09-09",
       "event": "exact probe written from the excerpt's literal definition: probes/2026-08/line-014.py, 2/272 shown with sentences; the August 63/272 is not recoverable and is flagged",
       "by": "Fault Atlas maintainer"
-    }
-  ],
-  "probes": [
+    },
     {
-      "file": "probes/2026-08/line-014.py",
-      "kind": "python",
-      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
-      "written": "2026-09-09",
-      "run": "python3 tools/run_probe.py probes/2026-08/line-014.py <dir with the 272 .xml>",
-      "result": {
-        "date": "2026-09-09",
-        "count": 2,
-        "of": 272,
-        "strata": {
-          "essai": 1,
-          "moderne": 1
-        },
-        "examples": [
-          [
-            "essai-PMC13280184.xml",
-            [
-              "organisation «Northern Sydney Local Health District, Population Health Promotion team» + study «Preventative Research Support Program» — Funding This study was supported by the Preventative Research Support Program, NSW Health and Northern Sydney Local Health District, Populat"
-            ]
-          ],
-          [
-            "moderne-PMC13282721.xml",
-            [
-              "organisation «National Institute of General Medical Sciences» + study «NIH Cancer Biology Training Program» — Funding This work was supported by National Institute of General Medical Sciences (Grant R35GM144102) and the NIH Cancer Biology Training Pr"
-            ]
-          ]
-        ],
-        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files",
-        "carriers_file": "probes/results/line-014.json"
-      },
-      "matches_excerpt": false,
-      "note": "The excerpt's 63/272 and 9/272 were counted in August by code that was not saved and cannot be recovered (looser rules give 30 or 59, never 63). This probe applies the excerpt's own definition literally, same sentence, and finds 2 documents, shown with their sentences. The literal, visible figure is the one to cite; the excerpt keeps its own, flagged."
+      "date": "2026-09-09",
+      "event": "substitute probe withdrawn (it applied a different rule and found 2/272; the August 63/272 stays as the dated claim, to be shown when re-measured)",
+      "by": "Fault Atlas maintainer"
     }
   ]
 }

@@ -7,6 +7,9 @@
 - Validator with house rules; proves itself on seven planted faults.
 - SQLite view builder for Datasette.
 
+## 0.3.5 — 2026-09-09
+- Rule set by the third reader, applied everywhere: a fault is described; its August measurement is cited as a dated claim; documents are shown only when a kept probe finds that very figure again; otherwise the form says "to be shown" and nothing else. No substitute probe with another figure, no "both kept". form-014's substitute probe (2/272 by a different rule) withdrawn. 66 probes shown, 12 waiting for a second reader, 30 August figures without a kept probe.
+
 ## 0.3.4 — 2026-09-09
 - The corpus link is gone from the observation line: it read as "see the fault here" and it is only the denominator. It stays inside the folded code block, named as such ("the population searched"). The document list is titled "See the trap in the documents": what a graph would fall on; whether a graph does fall is what a bench measures, not what the Atlas shows.
 
