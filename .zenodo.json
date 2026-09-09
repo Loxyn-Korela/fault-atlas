@@ -3,7 +3,9 @@
   "upload_type": "dataset",
   "license": "CC-BY-SA-4.0",
   "creators": [
-    {"name": "Gracia, Sébastien", "affiliation": "Loxyn SAS, Lyon, France"}
+    {"name": "Gracia, Sébastien", "affiliation": "Loxyn SAS, Lyon, France"},
+    {"name": "Bagnol-Lebon, Coralie", "affiliation": "Loxyn SAS, Lyon, France"},
+    {"name": "Comtet, Yoline", "affiliation": "Loxyn SAS, Lyon, France"}
   ],
   "keywords": ["knowledge graph", "entity resolution", "graph repair", "benchmark", "ground truth", "property graph"],
   "description": "A catalogue of observed fault forms in knowledge graphs built from documents, each with its provenance, the damage it causes in the graph (merge, split, spurious edge, missing, wrong value, wrong label, anachronism), whether deterministic code can cancel it, whether a deletion-only repair can restore the truth, and which kind of truth can judge it."
