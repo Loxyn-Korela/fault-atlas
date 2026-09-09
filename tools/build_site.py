@@ -99,32 +99,41 @@ for f in forms:
 
 
 # ── propose page ──
-opts = "".join(f'<option value="{k}">{E(v[0])} — {E(v[1])}</option>' for k,v in DAMAGE.items() if k!="CORPUS_PARAMETER") + '<option value="UNKNOWN">I do not know</option>'
+dmg_cards = "".join(f"""<label class="dcard" style="--c:{v[2]}"><input type="radio" name="damage" value="{k}" required><span class="dt">{E(v[0])}</span><span class="dd">{E(v[1])}</span></label>""" for k,v in DAMAGE.items() if k!="CORPUS_PARAMETER") + """<label class="dcard" style="--c:#57534e"><input type="radio" name="damage" value="UNKNOWN"><span class="dt">I don't know</span><span class="dd">the reviewer will classify it</span></label>"""
 propose_body = f"""<p class="crumb"><a href="index.html">Fault Atlas</a> › propose</p>
 <h1>Propose a fault form</h1>
-<p class="lead">You met a fault form on a corpus. Describe it with its proof. A second reader reviews it; you are told what was decided, and your name stays in the form's history. Nothing enters unreviewed.</p>
+<p class="lead">You met a fault on a corpus that a graph would get wrong. Tell us what it is and show us the proof. A second reader reviews it, you get an answer by e-mail, and your name stays in the form's history.</p>
 <div id="sent" class="note ok" hidden>Thank you. Your proposal is received and will be reviewed. You will get an answer at the address you gave.</div>
 <div id="err" class="note" hidden></div>
 <form class="propose" method="post" action="/propose">
 <input type="text" name="website" tabindex="-1" autocomplete="off" class="hp" aria-hidden="true">
-<label>Short name (English) <input name="name" required maxlength="120" placeholder="e.g. Acronym reused for two different institutions"></label>
-<label>What it does to the graph <select name="damage" required>{opts}</select></label>
-<label>Corpus <input name="corpus" required maxlength="200" placeholder="Name it so that someone else can open it — e.g. EUR-Lex, Cellar snapshot 2026-09-01"></label>
-<label>Document identifier <input name="document" maxlength="200" placeholder="CELEX number, PMC id, DOI…"></label>
-<label>Date of observation <input name="date" type="date" required></label>
-<label>Verbatim excerpt <textarea name="excerpt" required rows="5" maxlength="4000" placeholder="Copy the text as it is, in its language. This is the proof."></textarea></label>
-<label>Why it is a fault form <textarea name="why" required rows="4" maxlength="3000" placeholder="What a construction or repair system does wrong on it. One paragraph."></textarea></label>
-<label>Closest existing form, if any <input name="existing" maxlength="40" placeholder="e.g. form-024"></label>
-<label>Your name and affiliation <input name="who" maxlength="200"></label>
-<label>Your e-mail <input name="email" type="email" required maxlength="200"></label>
-<label class="check"><input type="checkbox" name="rule_public" value="yes" required> The excerpt comes from a public corpus, not from a client document, and contains no personal data.</label>
-<label class="check"><input type="checkbox" name="rule_review" value="yes" required> I understand that a second reader reviews, that a contested form stays recorded as contested, and that my name stays in the form's history.</label>
-<p><button class="btn" type="submit">Send the proposal</button> <span class="muted">or <a href="{REPO}/issues/new?template=propose-form.yml">open an issue on GitHub</a></span></p>
+
+<fieldset><legend><span class="step">1</span> The fault</legend>
+<div class="field"><label for="f-name">Give it a short name</label><input id="f-name" name="name" required maxlength="120" placeholder="Acronym reused for two different institutions"><p class="help">In English, like a title. The reviewer may rename it.</p></div>
+<div class="field"><span class="lbl">What does it do to a graph?</span><div class="dgrid">{dmg_cards}</div></div>
+<div class="field"><label for="f-why">Why is it a fault?</label><textarea id="f-why" name="why" required rows="3" maxlength="3000" placeholder="What a construction or repair system gets wrong on it, in a few sentences."></textarea></div>
+</fieldset>
+
+<fieldset><legend><span class="step">2</span> The proof</legend>
+<div class="row"><div class="field"><label for="f-corpus">Corpus</label><input id="f-corpus" name="corpus" required maxlength="200" placeholder="EUR-Lex, Cellar snapshot 2026-09-01"><p class="help">Name it so that someone else can open it: source, version or date.</p></div>
+<div class="field"><label for="f-doc">Document identifier <span class="opt">optional</span></label><input id="f-doc" name="document" maxlength="200" placeholder="CELEX number, PMC id, DOI…"></div></div>
+<div class="row"><div class="field"><label for="f-date">When did you see it?</label><input id="f-date" name="date" type="date" required></div>
+<div class="field"><label for="f-existing">Closest existing form <span class="opt">optional</span></label><input id="f-existing" name="existing" maxlength="40" placeholder="form-024"><p class="help">If you found one in the <a href="index.html#forms">list</a>.</p></div></div>
+<div class="field"><label for="f-excerpt">Verbatim excerpt</label><textarea id="f-excerpt" name="excerpt" required rows="5" maxlength="4000" placeholder="Paste the text exactly as it appears, in its own language."></textarea><p class="help">This is the proof. Without it, a proposal is a hypothesis, not an observation.</p></div>
+</fieldset>
+
+<fieldset><legend><span class="step">3</span> You</legend>
+<div class="row"><div class="field"><label for="f-who">Name and affiliation <span class="opt">optional</span></label><input id="f-who" name="who" maxlength="200" placeholder="Jane Doe, LIRIS"></div>
+<div class="field"><label for="f-email">E-mail</label><input id="f-email" name="email" type="email" required maxlength="200" placeholder="you@lab.org"><p class="help">Only to answer you. Not published.</p></div></div>
+<label class="check"><input type="checkbox" name="rule_public" value="yes" required><span>The excerpt comes from a public corpus, not from a client document, and contains no personal data.</span></label>
+<label class="check"><input type="checkbox" name="rule_review" value="yes" required><span>I understand that a second reader reviews, that a contested form stays recorded as contested, and that my name stays in the form's history.</span></label>
+</fieldset>
+
+<p class="actions"><button class="btn" type="submit">Send the proposal</button> <span class="muted">or <a href="{REPO}/issues/new?template=propose-form.yml">open an issue on GitHub</a></span></p>
 </form>
 <script>const u=new URL(location.href);if(u.searchParams.get('sent')){{document.getElementById('sent').hidden=false;document.querySelector('form').hidden=true;}}
 const e=u.searchParams.get('err');if(e){{const b=document.getElementById('err');b.hidden=false;b.textContent=e==='rate'?'Too many proposals from this address in one hour. Try again later.':e==='missing'?'Some required fields are missing or invalid: '+(u.searchParams.get('fields')||''):'The proposal could not be sent. Please try again or use GitHub.';}}</script>"""
 (SITE/"propose.html").write_text(layout("Propose a fault form — Fault Atlas", propose_body))
-
 (SITE/"atlas.json").write_text(json.dumps({"version": VERSION, "doi": DOI, "forms": forms}, ensure_ascii=False))
 (SITE/"style.css").write_text("""
 :root{--bg:#ffffff;--bg-elev:#f7f7f9;--surface:#ececf0;--line:rgba(10,10,11,.08);--line-strong:rgba(10,10,11,.16);--fg:#0a0a0b;--muted:rgba(10,10,11,.62);--luxe:rgba(10,10,11,.7);
@@ -145,7 +154,7 @@ h2{font-size:26px;letter-spacing:-.02em;margin:38px 0 12px;font-weight:600}h3{ma
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin:30px 0 40px}
 .card{display:block;background:var(--bg-elev);border:1px solid var(--line);border-top:3px solid var(--c);border-radius:10px;padding:16px 18px;color:var(--fg);transition:border-color .15s}.card:hover{text-decoration:none;border-color:var(--c);background:#fff}
 .card .n{display:block;font-size:36px;font-weight:600;line-height:1;letter-spacing:-.03em;font-family:var(--mono)}.card .t{display:block;font-weight:600;margin-top:8px}.card .d{display:block;font-size:13px;color:var(--muted);margin-top:4px;line-height:1.45}
-.bar{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin:0 0 12px}input,select{font:inherit;font-size:15px;padding:9px 12px;border:1px solid var(--line-strong);border-radius:8px;background:#fff;color:var(--fg)}input{flex:1;min-width:220px}input:focus,select:focus{outline:2px solid var(--acc-soft);border-color:var(--acc)}
+.bar{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin:0 0 12px}input,select,textarea{font:inherit;font-size:15px;padding:10px 12px;border:1px solid var(--line-strong);border-radius:8px;background:#fff;color:var(--fg)}.bar input{flex:1;min-width:220px}input:focus,select:focus{outline:2px solid var(--acc-soft);border-color:var(--acc)}
 .tablewrap{overflow-x:auto;border:1px solid var(--line);border-radius:10px;background:#fff}table{border-collapse:collapse;width:100%;min-width:780px}th,td{text-align:left;padding:11px 14px;border-top:1px solid var(--line);vertical-align:top}th{border-top:0;font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);font-weight:600;background:var(--bg-elev)}td.num{text-align:right;font-family:var(--mono);font-size:14px}
 .pill{display:inline-block;white-space:nowrap;padding:2px 10px;border-radius:999px;font-size:12.5px;font-weight:600;color:#fff;background:var(--c);letter-spacing:.01em}.pill.grey{background:var(--surface);color:var(--fg);font-weight:500}.pill.warn{background:#fff3c4;color:#6b4c00;font-weight:500}
 .fr{color:var(--muted);font-size:13px;font-family:var(--serif);font-style:italic}.fr.big{font-size:17px;margin-top:-10px}.muted{color:var(--muted)}
@@ -155,7 +164,14 @@ h2{font-size:26px;letter-spacing:-.02em;margin:38px 0 12px;font-weight:600}h3{ma
 .note{background:#fff7ed;color:#7c2d12;border:1px solid #fed7aa;border-radius:8px;padding:10px 14px;margin-bottom:22px;font-size:15px}
 .obs{background:#fff;border:1px solid var(--line);border-radius:10px;padding:16px 18px;margin:10px 0}.obs p{margin:0}.meta{color:var(--muted);font-size:13px;margin:0 0 8px;font-family:var(--mono)}details{margin-top:8px}details summary{cursor:pointer;color:var(--muted);font-size:14px}details .fr{display:block;margin-top:8px;font-size:14px}
 .hist{padding-left:18px}.hist li{margin:5px 0;font-size:15px}code{background:var(--surface);padding:1px 6px;border-radius:4px;font-size:88%;font-family:var(--mono)}
-.propose label{display:block;margin:14px 0;font-weight:600;font-size:14px}.propose input:not([type=checkbox]),.propose select,.propose textarea{display:block;width:100%;margin-top:6px;font-weight:400}.propose textarea{resize:vertical}.propose .check{font-weight:400;display:flex;justify-content:flex-start;align-items:flex-start;gap:10px;text-align:left;margin:10px 0}.propose .check input{width:auto;flex:0 0 auto;margin:5px 0 0}.propose .check input{margin-top:5px}.hp{position:absolute;left:-9999px}.note.ok{background:#ecfdf5;color:#065f46;border-color:#a7f3d0}
+.propose{max-width:820px}.propose fieldset{border:1px solid var(--line);border-radius:12px;padding:22px 24px 8px;margin:26px 0;background:#fff}.propose legend{padding:0 8px;font-weight:600;font-size:17px;letter-spacing:-.01em;display:flex;align-items:center;gap:10px}
+.step{display:inline-flex;width:26px;height:26px;border-radius:50%;background:var(--acc);color:#fff;font-size:13px;align-items:center;justify-content:center;font-family:var(--mono)}
+.field{margin:0 0 18px}.field label,.field .lbl{display:block;font-weight:600;font-size:14px;margin-bottom:6px}.opt{font-weight:400;color:var(--muted);font-size:13px;margin-left:4px}
+.field input,.field select,.field textarea{display:block;width:100%}.field textarea{resize:vertical;line-height:1.5}.help{margin:6px 0 0;font-size:13px;color:var(--muted)}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:18px}@media(max-width:640px){.row{grid-template-columns:1fr}}
+.dgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px}.dcard{position:relative;display:block;border:1px solid var(--line-strong);border-left:4px solid var(--c);border-radius:10px;padding:10px 12px 10px 14px;cursor:pointer;background:#fff}.dcard input{position:absolute;opacity:0;width:0;height:0}.dcard:has(input:checked){border-color:var(--c);box-shadow:0 0 0 3px var(--acc-soft);background:var(--bg-elev)}.dcard .dt{display:block;font-weight:600;font-size:14px}.dcard .dd{display:block;font-size:12.5px;color:var(--muted);margin-top:2px;line-height:1.35}
+.check{display:flex;gap:12px;align-items:flex-start;margin:0 0 14px;font-size:14px;line-height:1.5;cursor:pointer}.check input{width:18px;height:18px;margin:2px 0 0;flex:0 0 auto}
+.actions{margin-top:8px}.hp{position:absolute;left:-9999px}.note.ok{background:#ecfdf5;color:#065f46;border-color:#a7f3d0}
 footer{border-top:1px solid var(--line);padding:24px 5vw 40px;font-size:14px;color:var(--muted);background:var(--bg-elev)}footer p{max-width:1120px;margin:6px auto}
 """)
 print(f"site: {len(forms)} form pages + index, v{VERSION}")
