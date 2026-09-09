@@ -137,7 +137,7 @@ for f in forms:
         first, rest = carriers[:12], carriers[12:]
         docs = ""
         if carriers:
-            docs = f"<h4>See it in the documents</h4><ol class='docs'>" + "".join(li(n, e) for n, e in first) + "</ol>"
+            docs = f"<h4>See the trap in the documents (what a graph would fall on; whether a graph does fall is what a bench measures)</h4><ol class='docs'>" + "".join(li(n, e) for n, e in first) + "</ol>"
             if rest:
                 docs += f"<details><summary>the other {len(rest)} documents</summary><ol class='docs' start='13'>" + "".join(li(n, e) for n, e in rest) + "</ol></details>"
             if r.get("carriers_file"):
@@ -150,10 +150,10 @@ for f in forms:
 {docs}
 {('<p class="note">'+E(pr['note'])+'</p>') if pr.get('note') else ''}
 <details class="code"><summary>The exact probe (code) · <code>{E(pr['file'].split('/')[-1])}</code>{strata}</summary>
-<p class="meta">Run: <code>{E(pr.get('run',''))}</code> · <a href="{REPO}/blob/main/{E(pr['file'])}">{E(pr['file'])}</a> · corpus: <a href="../corpora/{E(pr['corpus_id'])}.html">{E(CORPUS_NAMES.get(pr['corpus_id'], pr['corpus_id']).split(' — ')[0])}</a>{(' · written '+E(pr['written'])) if pr.get('written') else ''}{(' · '+E(r['by'])) if r.get('by') else ''}</p>
+<p class="meta">Run: <code>{E(pr.get('run',''))}</code> · <a href="{REPO}/blob/main/{E(pr['file'])}">{E(pr['file'])}</a> · the population searched (the denominator): <a href="../corpora/{E(pr['corpus_id'])}.html">{E(CORPUS_NAMES.get(pr['corpus_id'], pr['corpus_id']).split(' — ')[0])}</a>{(' · written '+E(pr['written'])) if pr.get('written') else ''}{(' · '+E(r['by'])) if r.get('by') else ''}</p>
 <pre><code>{E(code)}</code></pre></details></div>"""
-    seen = "".join(f"""<article class="obs"><p class="meta"><strong>{E(corpus_short(s['corpus']))}</strong> · {E(s['corpus'])} · {E(s['date'])}{(' · '+E(s['observer'])) if s.get('observer') else ''}{(' · '+E(s['organisation'])) if s.get('organisation') else ''}{(' · <a href="../corpora/'+E(s['corpus_id'])+'.html">corpus: which documents, how chosen</a>') if s.get('corpus_id') else ''}</p>
-<p>{E(s.get('excerpt_en', s['excerpt']))}</p>{('<details><summary>Original note ('+E(s.get('lang','fr'))+')</summary><p class="fr">'+E(s['excerpt'])+'</p></details>') if s.get('excerpt_en') and s.get('excerpt_en')!=s['excerpt'] else ''}{probe_block(s.get('probe')) if s.get('probe') else ('<p class="noprobe">Cannot be shown yet: this figure was counted in August 2026 by code that was not saved, so no document can be pointed at. A probe is still to write for it.</p>' if s.get('corpus_id') else '')}</article>""" for s in f["seen"]) or "<p class='muted'>No observation yet: this form is a hypothesis, not an observation.</p>"
+    seen = "".join(f"""<article class="obs"><p class="meta"><strong>{E(corpus_short(s['corpus']))}</strong> · {E(s['corpus'])} · {E(s['date'])}{(' · '+E(s['observer'])) if s.get('observer') else ''}{(' · '+E(s['organisation'])) if s.get('organisation') else ''}</p>
+<p>{E(s.get('excerpt_en', s['excerpt']))}</p>{('<details><summary>Original note ('+E(s.get('lang','fr'))+')</summary><p class="fr">'+E(s['excerpt'])+'</p></details>') if s.get('excerpt_en') and s.get('excerpt_en')!=s['excerpt'] else ''}{probe_block(s.get('probe')) if s.get('probe') else ('<p class="noprobe">Cannot be shown yet: this figure was counted in August 2026 by code that was not saved, so no document can be pointed at. A probe is still to write for it. (The population searched is described on the <a href="../corpora/'+E(s['corpus_id'])+'.html">corpus page</a>; that page holds no fault.)</p>' if s.get('corpus_id') else '')}</article>""" for s in f["seen"]) or "<p class='muted'>No observation yet: this form is a hypothesis, not an observation.</p>"
     cases = f["specimens"]["cases"]; cex = f["specimens"]["counter_examples"]
     spec = (f"<p>{len(cases)} case(s), {len(cex)} counter-example(s).</p>" if cases or cex else "<p class='muted'>Specimens not yet transcribed into this record.</p>")
     hist = "".join(f"<li><span class='meta'>{E(h['date'])}</span> {E(h['event'])}{(' — '+E(h['by'])) if h.get('by') else ''}</li>" for h in f["history"])

@@ -7,6 +7,9 @@
 - Validator with house rules; proves itself on seven planted faults.
 - SQLite view builder for Datasette.
 
+## 0.3.4 — 2026-09-09
+- The corpus link is gone from the observation line: it read as "see the fault here" and it is only the denominator. It stays inside the folded code block, named as such ("the population searched"). The document list is titled "See the trap in the documents": what a graph would fall on; whether a graph does fall is what a bench measures, not what the Atlas shows.
+
 ## 0.3.3 — 2026-09-09
 - "How to find it again" on each observation, third reader's demand ("we don't care about the corpus, we want the document where the fault is"): every probe now keeps the full list of carrier documents with the evidence found in each (`probes/results/<probe>.json`), and the form shows them first, each document clickable (Europe PMC article and the JATS XML the probe read; PubMed by PMID; Cellar URI or CELEX on EUR-Lex), the code last. 79 probes, 76 result files.
 - Observations without a kept probe now say "cannot be shown yet" instead of pointing at the corpus.
