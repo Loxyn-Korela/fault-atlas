@@ -7,6 +7,10 @@
 - Validator with house rules; proves itself on seven planted faults.
 - SQLite view builder for Datasette.
 
+## 0.1.2 — 2026-09-09
+- Public site generated from the records (`tools/build_site.py` → `site/`): home with the seven damages, filterable list, one page per form with observations (English, original on demand), specimens, history. Loxyn visual identity (Inter, Fraunces, JetBrains Mono, accent #0969da).
+- Datasette kept for data and API under `/data`.
+
 ## 0.1.1 — 2026-09-09
 - Every observation note carries an English translation (`excerpt_en`); the original French note stays the record.
 - Layer labels and history events in English.
