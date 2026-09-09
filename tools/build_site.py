@@ -79,6 +79,7 @@ const q=document.getElementById('q'),fd=document.getElementById('fd'),fc=documen
 function apply(){{const s=q.value.toLowerCase(),d=fd.value,k=fc.value,l=fl.value;let n=0;for(const r of rows){{const ok=(!d||r.dataset.damage===d)&&(!k||r.dataset.class===k)&&(!l||r.dataset.layer===l)&&(!s||r.dataset.text.includes(s));r.hidden=!ok;if(ok)n++;}}c.textContent=n+' of '+rows.length;}}
 [q,fd,fc,fl].forEach(e=>e.addEventListener('input',apply));document.querySelectorAll('.card').forEach(a=>a.addEventListener('click',()=>{{fd.value=a.dataset.damage;apply();}}));apply();
 </script>"""
+CORPUS_NAMES = {json.loads(cf.read_text())["id"]: json.loads(cf.read_text())["name"] for cf in (ROOT/"corpora").glob("*.json")}
 (SITE/"index.html").write_text(layout("Fault Atlas", index))
 
 # ── form pages ──
@@ -86,7 +87,7 @@ for f in forms:
     d = DAMAGE[f["damage"]]
     src_name = next(x.name for x in (ROOT/"forms").glob(f"{f['id']}-*.json"))
     (SITE/"forms"/f"{f['id']}.json").write_text(json.dumps(f, ensure_ascii=False, indent=2)+"\n")
-    seen = "".join(f"""<article class="obs"><p class="meta">{E(s['corpus'])} · {E(s['date'])}{(' · '+E(s['observer'])) if s.get('observer') else ''}{(' · '+E(s['organisation'])) if s.get('organisation') else ''}{(' · <a href="../corpora.html#'+E(s['corpus_id'])+'">reproducible corpus</a>') if s.get('corpus_id') else ''}</p>
+    seen = "".join(f"""<article class="obs"><p class="meta">{E(s['corpus'])} · {E(s['date'])}{(' · '+E(s['observer'])) if s.get('observer') else ''}{(' · '+E(s['organisation'])) if s.get('organisation') else ''}{(' · <a href="../corpora.html#'+E(s['corpus_id'])+'">reproducible list: '+E(CORPUS_NAMES.get(s['corpus_id'], s['corpus_id']).split(' — ')[0])+'</a>') if s.get('corpus_id') else ''}</p>
 <p>{E(s.get('excerpt_en', s['excerpt']))}</p>{('<details><summary>Original note ('+E(s.get('lang','fr'))+')</summary><p class="fr">'+E(s['excerpt'])+'</p></details>') if s.get('excerpt_en') and s.get('excerpt_en')!=s['excerpt'] else ''}</article>""" for s in f["seen"]) or "<p class='muted'>No observation yet: this form is a hypothesis, not an observation.</p>"
     cases = f["specimens"]["cases"]; cex = f["specimens"]["counter_examples"]
     spec = (f"<p>{len(cases)} case(s), {len(cex)} counter-example(s).</p>" if cases or cex else "<p class='muted'>Specimens not yet transcribed into this record.</p>")
@@ -193,7 +194,7 @@ h2{font-size:26px;letter-spacing:-.02em;margin:38px 0 12px;font-weight:600}h3{ma
 .facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;background:var(--bg-elev);border:1px solid var(--line);border-radius:10px;padding:18px 20px;margin-bottom:26px}.facts p{margin:0;font-size:15px}
 .note{background:#fff7ed;color:#7c2d12;border:1px solid #fed7aa;border-radius:8px;padding:10px 14px;margin-bottom:22px;font-size:15px}
 .obs{background:#fff;border:1px solid var(--line);border-radius:10px;padding:16px 18px;margin:10px 0}.obs p{margin:0}.meta{color:var(--muted);font-size:13px;margin:0 0 8px;font-family:var(--mono)}details{margin-top:8px}details summary{cursor:pointer;color:var(--muted);font-size:14px}details .fr{display:block;margin-top:8px;font-size:14px}
-.corpus{border-top:1px solid var(--line);padding:18px 0}.ids{font-family:var(--mono);font-size:12px;line-height:1.7;word-break:break-all}
+.corpus{border-top:1px solid var(--line);padding:18px 0}.corpus h2{scroll-margin-top:80px}.ids{font-family:var(--mono);font-size:12px;line-height:1.7;word-break:break-all}
 .hist{padding-left:18px}.hist li{margin:5px 0;font-size:15px}code{background:var(--surface);padding:1px 6px;border-radius:4px;font-size:88%;font-family:var(--mono)}
 .propose{max-width:700px}.propose fieldset{border:1px solid var(--line);border-radius:12px;padding:28px 28px 16px;margin:22px 0 30px;background:#fff}.propose legend{padding:0 10px;font-weight:600;font-size:17px;letter-spacing:-.01em;display:flex;align-items:center;gap:10px}
 .step{display:inline-flex;width:26px;height:26px;border-radius:50%;background:var(--acc);color:#fff;font-size:13px;align-items:center;justify-content:center;font-family:var(--mono)}
