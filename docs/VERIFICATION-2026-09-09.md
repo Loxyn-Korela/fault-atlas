@@ -1,6 +1,6 @@
 # VÉRIFICATION — les 113 difficultés observées contre les opérateurs du banc (09-09-2026)
 
-Source : `Coffre-local/Korela For Science/korela.db` (catalogue du 9 août, 139 lignes dont 26 hors sujet). Classement fait ligne par ligne, à la main, par Claude Fable 5.1 (Banc à vérité connue). Deux colonnes : le DÉGÂT que la difficulté produit dans le graphe, et l'OPÉRATION qui l'injecte dans un document.
+Source : le catalogue interne du 9 août 2026 (`korela.db`, 139 lignes dont 26 hors sujet), non publié. Classement fait ligne par ligne, à la main, par Claude Fable 5.1 (Banc à vérité connue). Deux colonnes : le DÉGÂT que la difficulté produit dans le graphe, et l'OPÉRATION qui l'injecte dans un document.
 
 Dégâts : FUS fusion à tort · ECL éclatement · A+ arête en trop · A- arête ou nœud manquant · VAL valeur ou date fausse · ETQ type ou étiquette faux · ANA anachronisme ou statut périmé · PARAM composition du corpus (pas un dégât).
 

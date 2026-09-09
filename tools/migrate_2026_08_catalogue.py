@@ -5,7 +5,7 @@ Classification by damage and injection was done line by line on 2026-09-09 (see 
 import json, re, sqlite3, sys, unicodedata
 from pathlib import Path
 
-DB = Path(sys.argv[1]) if len(sys.argv) > 1 else Path.home()/"Coffre-local/Korela For Science/korela.db"
+DB = Path(sys.argv[1]) if len(sys.argv) > 1 else Path("korela.db")  # path to the internal catalogue, passed on the command line
 OUT = Path(__file__).resolve().parent.parent/"forms"
 OUT.mkdir(exist_ok=True)
 

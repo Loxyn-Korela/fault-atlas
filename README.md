@@ -75,4 +75,6 @@ Records and documentation: CC BY-SA 4.0. Tools: Apache 2.0. See `CITATION.cff`. 
 
 ## Team
 
-Loxyn SAS, Lyon — Sébastien Gracia (technical direction, author of the instrument), Coralie Bagnol-Lebon (evaluation doctrine), Yoline Comtet (presidency). Contact: contact@loxyn.ai.
+Loxyn SAS, Lyon. Author of the instrument: Sébastien Gracia (technical direction). Contact: contact@loxyn.ai.
+
+Authorship of the atlas beyond the author of the instrument is a decision of the co-founders, recorded in `CITATION.cff` when taken.
