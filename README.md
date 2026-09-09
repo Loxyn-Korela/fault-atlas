@@ -4,7 +4,7 @@
 
 Maintained by [Loxyn](https://loxyn.ai) (Korela), Lyon, France. Contact: contact@loxyn.ai.
 
-> Status: private draft, migrated on 2026-09-09 from an internal catalogue observed in August 2026. Not yet reviewed by a second reader. Not yet public.
+> Status: version 0.1.0, public since 2026-09-09. Migrated from an internal catalogue observed in August 2026; every form is still `migrated_unreviewed` until a second reader validates it.
 
 ## Why
 
