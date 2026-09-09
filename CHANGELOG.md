@@ -7,6 +7,9 @@
 - Validator with house rules; proves itself on seven planted faults.
 - SQLite view builder for Datasette.
 
+## 0.4.4 — 2026-09-09
+- Independent review (a second model, reading form-017 as a researcher) found examples that did not show the fault. Seven probe-based observations withdrawn (042, 066, 092, 108, 115, 126, 134: the probe described the document or contradicted the August verdict). Probes 017 and 076 narrowed to return only true instances (template not declared: 2; anonymised labels: 8). One example per form, not three. No example on corpus-parameter forms. History sorted by date; unsupported "bench green" wording removed; corpus label without a count. 45 forms with a reproducible example, 112 without.
+
 ## 0.4.3 — 2026-09-09
 - "How it was found" open by default on the form.
 

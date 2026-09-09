@@ -44,6 +44,11 @@
   "judgeable_by": [],
   "history": [
     {
+      "date": "2026-08-08",
+      "event": "the internal catalogue records a house filter with 5 cases and 3 counter-example(s); not published in this record",
+      "by": "Korela For Science"
+    },
+    {
       "date": "2026-08-09",
       "event": "catalogue line 72 — DEFEATED (cancelled by code): filter written and green on the bench",
       "by": "Korela For Science"
@@ -52,11 +57,6 @@
       "date": "2026-09-09",
       "event": "migrated; classified damage=CORPUS_PARAMETER injection=DUPLICATE (judgment, unreviewed by a second reader)",
       "by": "Fault Atlas migration"
-    },
-    {
-      "date": "2026-08-08",
-      "event": "house filter exists with 5 cases and 3 counter-examples (bench green=True); specimens to be transcribed into this record",
-      "by": "Korela For Science"
     },
     {
       "date": "2026-09-09",

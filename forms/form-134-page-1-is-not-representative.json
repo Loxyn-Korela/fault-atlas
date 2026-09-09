@@ -16,18 +16,7 @@
   "legacy_severity": "G2",
   "legacy_mechanism": "M4",
   "status": "migrated_unreviewed",
-  "seen": [
-    {
-      "corpus": "observation 2026-08 (272 Europe PMC JATS articles)",
-      "date": "2026-09-09",
-      "observer": "house probe (regex, no model), written 2026-08-08, re-run by the Fault Atlas maintainer",
-      "organisation": "Loxyn SAS, Lyon",
-      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
-      "lang": "en",
-      "probe": "probes/2026-08/line-134.py",
-      "excerpt": "Probe re-run on the 272 JATS files: 196/272 carriers (essai 31, cas 26, meta 26, retract 26, bio 25, phys 25, nonEN 23, moderne 14). Examples — bio-PMC12590050.xml: marqueurs de page ×1 · bio-PMC12909487.xml: marqueurs de page ×1 · bio-PMC12927065.xml: marqueurs de page ×1"
-    }
-  ],
+  "seen": [],
   "specimens": {
     "cases": [],
     "counter_examples": []
@@ -58,112 +47,11 @@
     },
     {
       "date": "2026-09-09",
-      "event": "second observation added from the exact probe on the 272 files: probes/2026-08/line-134.py, 196/272",
+      "event": "probe-based observation withdrawn after independent review: probe counts page markers; the August verdict is absent (0 page markers)",
       "by": "Fault Atlas maintainer"
     }
   ],
   "observed_absent_in": [
     "Europe PMC JATS 2023-2026 (272 articles, measured 2026-08-08)"
-  ],
-  "probes": [
-    {
-      "file": "probes/2026-08/line-134.py",
-      "kind": "python",
-      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
-      "written": "2026-08-08",
-      "run": "python3 tools/run_probe.py probes/2026-08/line-134.py <dir with the 272 .xml>",
-      "result": {
-        "date": "2026-09-09",
-        "count": 196,
-        "of": 272,
-        "strata": {
-          "essai": 31,
-          "cas": 26,
-          "meta": 26,
-          "retract": 26,
-          "bio": 25,
-          "phys": 25,
-          "nonEN": 23,
-          "moderne": 14
-        },
-        "examples": [
-          [
-            "bio-PMC12590050.xml",
-            [
-              "marqueurs de page ×1"
-            ]
-          ],
-          [
-            "bio-PMC12909487.xml",
-            [
-              "marqueurs de page ×1"
-            ]
-          ],
-          [
-            "bio-PMC12927065.xml",
-            [
-              "marqueurs de page ×1"
-            ]
-          ],
-          [
-            "bio-PMC12927975.xml",
-            [
-              "marqueurs de page ×1"
-            ]
-          ],
-          [
-            "bio-PMC12953170.xml",
-            [
-              "marqueurs de page ×1"
-            ]
-          ],
-          [
-            "bio-PMC12959687.xml",
-            [
-              "marqueurs de page ×1"
-            ]
-          ],
-          [
-            "bio-PMC13057049.xml",
-            [
-              "marqueurs de page ×1"
-            ]
-          ],
-          [
-            "bio-PMC13088504.xml",
-            [
-              "marqueurs de page ×1"
-            ]
-          ],
-          [
-            "bio-PMC13097615.xml",
-            [
-              "marqueurs de page ×1"
-            ]
-          ],
-          [
-            "bio-PMC13099299.xml",
-            [
-              "marqueurs de page ×1"
-            ]
-          ],
-          [
-            "bio-PMC13103274.xml",
-            [
-              "marqueurs de page ×1"
-            ]
-          ],
-          [
-            "bio-PMC13116881.xml",
-            [
-              "marqueurs de page ×1"
-            ]
-          ]
-        ],
-        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files",
-        "carriers_file": "probes/results/line-134.json"
-      },
-      "matches_excerpt": true
-    }
   ]
 }

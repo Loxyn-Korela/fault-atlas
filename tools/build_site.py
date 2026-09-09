@@ -36,7 +36,7 @@ def corpus_short(text):
     for key, label in [("eur-lex","EUR-Lex / Cellar"),("cellar","EUR-Lex / Cellar"),("openalex","OpenAlex"),("openaire","OpenAIRE"),("wikidata","Wikidata"),("faers","FDA FAERS"),
                        ("pubtator","PubTator3"),("mesh","MeSH history"),("author keyword","PubMed author keywords"),("mots-clés","PubMed author keywords"),("baseline","PubMed baseline 2026-08-18"),
                        ("funding","PubMed funding table"),("authors table","PubMed authors table"),
-                       ("jats","Europe PMC (272 JATS articles)"),("europe pmc","Europe PMC (272 JATS articles)"),
+                       ("jats","Europe PMC (JATS, 2023-2026)"),("europe pmc","Europe PMC (JATS, 2023-2026)"),
                        ("migraine","biomedical PDFs 1957-1987"),("pdfs 1957","biomedical PDFs 1957-1987"),("outside biomedicine","arXiv / PLOS / HAL 2021-2026"),
                        ("pubmed abstracts","PubMed abstracts pre-1990"),("arginine","PubMed abstracts pre-1990"),("p6","synthetic tier P6 (VERDAL)"),("palier","synthetic tier P6 (VERDAL)")]:
         if key in t: return label
@@ -71,7 +71,7 @@ cards = "".join(f"""<a class="card" href="#forms" data-damage="{k}" style="--c:{
 def proof_of(f):
     """example / none: does the form show at least one document where the fault sits?"""
     for pr in f.get("probes", []):
-        if pr.get("matches_excerpt") and pr.get("result", {}).get("count", 0) > 0:
+        if pr.get("matches_excerpt") and pr.get("result", {}).get("count", 0) > 0 and f["damage"] != "CORPUS_PARAMETER":
             return "docs", "example shown"
     return "none", "no example yet"
 rows = "".join(f"""<tr data-damage="{f['damage']}" data-class="{f['class']}" data-layer="{E(f['layer'])}" data-proof="{proof_of(f)[0]}" data-src="{E(" ".join(corpora_of(f)).lower())}" data-text="{E((f['name']+' '+f.get('name_fr','')+' '+' '.join(corpora_of(f))).lower())}">
@@ -133,7 +133,7 @@ for f in forms:
         return E(doc)
     def probe_block(file):
         pr = probes_by_file.get(file)
-        if not pr: return ""
+        if not pr or f["damage"] == "CORPUS_PARAMETER": return ""
         r = pr.get("result", {})
         if not pr.get("matches_excerpt"):
             return """<p class="noprobe">No reproducible example yet for this note.</p>"""
@@ -149,7 +149,7 @@ for f in forms:
         def li(n, e):
             ev = (" — <span class='ev'>" + E(" | ".join(map(str, e)))[:260] + "</span>") if e else ""
             return f"<li>{doc_link(n, pr['corpus_id'])}{ev}</li>"
-        docs = "<ol class='docs'>" + "".join(li(n, e) for n, e in carriers[:3]) + "</ol>"
+        docs = "<ul class='docs'>" + "".join(li(n, e) for n, e in carriers[:1]) + "</ul>"
         strata = (" · by stratum: " + ", ".join(f"{E(k)} {v}" for k, v in r["strata"].items())) if r.get("strata") else ""
         return f"""<div class="probe"><p class="probe-head"><strong>See it here</strong></p>
 {docs}
@@ -252,7 +252,7 @@ h2{font-size:26px;letter-spacing:-.02em;margin:38px 0 12px;font-weight:600}h3{ma
 .facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;background:var(--bg-elev);border:1px solid var(--line);border-radius:10px;padding:18px 20px;margin-bottom:26px}.facts p{margin:0;font-size:15px}
 .note{background:#fff7ed;color:#7c2d12;border:1px solid #fed7aa;border-radius:8px;padding:10px 14px;margin-bottom:22px;font-size:15px}
 .obs{background:#fff;border:1px solid var(--line);border-radius:10px;padding:16px 18px;margin:10px 0}.obs p{margin:0}.meta{color:var(--muted);font-size:13px;margin:0 0 8px;font-family:var(--mono)}details{margin-top:8px}details summary{cursor:pointer;color:var(--muted);font-size:14px}details .fr{display:block;margin-top:8px;font-size:14px}
-.probe{margin-top:12px;border-top:1px dashed var(--line);padding-top:10px}.probe .probe-head{margin:0 0 6px;font-size:14px}.probe h4{margin:10px 0 4px;font-size:14px}.probe ol.docs{margin:0 0 6px 22px;padding:0;font-size:13.5px;line-height:1.5}.probe ol.docs li{margin:2px 0}.probe .ev{color:var(--muted)}.probe a.xml{font-family:var(--mono);font-size:11px;color:var(--muted);margin-left:2px}.probe details.code{margin-top:8px}.probe details.code summary{color:var(--muted);font-size:13.5px}.probe pre{margin:10px 0 0;padding:12px 14px;background:var(--bg-elev);border:1px solid var(--line);border-radius:8px;overflow-x:auto;font-size:12.5px;line-height:1.45;max-height:520px}.probe .note{margin:8px 0}.noprobe{margin-top:10px!important;border-top:1px dashed var(--line);padding-top:8px;font-size:13.5px;color:var(--muted)}
+.probe{margin-top:12px;border-top:1px dashed var(--line);padding-top:10px}.probe .probe-head{margin:0 0 6px;font-size:14px}.probe h4{margin:10px 0 4px;font-size:14px}.probe ul.docs{margin:0 0 6px 0;padding:0;list-style:none;font-size:14px;line-height:1.5}.probe ul.docs li{margin:2px 0}.probe .ev{color:var(--muted)}.probe a.xml{font-family:var(--mono);font-size:11px;color:var(--muted);margin-left:2px}.probe details.code{margin-top:8px}.probe details.code summary{color:var(--muted);font-size:13.5px}.probe pre{margin:10px 0 0;padding:12px 14px;background:var(--bg-elev);border:1px solid var(--line);border-radius:8px;overflow-x:auto;font-size:12.5px;line-height:1.45;max-height:520px}.probe .note{margin:8px 0}.noprobe{margin-top:10px!important;border-top:1px dashed var(--line);padding-top:8px;font-size:13.5px;color:var(--muted)}
 .corpus{border-top:1px solid var(--line);padding:18px 0}.corpus h2{scroll-margin-top:80px}.ids{font-family:var(--mono);font-size:12px;line-height:1.7;word-break:break-all}
 .hist{padding-left:18px}.hist li{margin:5px 0;font-size:15px}code{background:var(--surface);padding:1px 6px;border-radius:4px;font-size:88%;font-family:var(--mono)}
 .propose{max-width:700px}.propose fieldset{border:1px solid var(--line);border-radius:12px;padding:28px 28px 16px;margin:22px 0 30px;background:#fff}.propose legend{padding:0 10px;font-weight:600;font-size:17px;letter-spacing:-.01em;display:flex;align-items:center;gap:10px}

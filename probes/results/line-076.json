@@ -2,28 +2,14 @@
  "probe": "probes/2026-08/line-076.py",
  "corpus_id": "corpus-europe-pmc-jats-2023-2026",
  "date": "2026-09-09",
- "count": 18,
+ "count": 8,
  "of": 272,
  "carriers": [
-  {
-   "document": "bio-PMC12583535.xml",
-   "evidence": [
-    "subjects  28"
-   ]
-  },
-  {
-   "document": "bio-PMC13057049.xml",
-   "evidence": [
-    "patients 18"
-   ]
-  },
   {
    "document": "cas-PMC13290446.xml",
    "evidence": [
     "Case 1",
-    "Case 2",
-    "Cases 1",
-    "case 1"
+    "Case 2"
    ]
   },
   {
@@ -45,23 +31,10 @@
    ]
   },
   {
-   "document": "cas-PMC13293827.xml",
-   "evidence": [
-    "case  62"
-   ]
-  },
-  {
    "document": "cas-PMC13293841.xml",
    "evidence": [
     "Case 1",
-    "Case 2",
-    "case 1"
-   ]
-  },
-  {
-   "document": "cas-PMC13293995.xml",
-   "evidence": [
-    "case  53"
+    "Case 2"
    ]
   },
   {
@@ -74,39 +47,6 @@
    ]
   },
   {
-   "document": "essai-PMC13281132.xml",
-   "evidence": [
-    "Cases\n10"
-   ]
-  },
-  {
-   "document": "meta-PMC13225629.xml",
-   "evidence": [
-    "patients  1",
-    "patients  22",
-    "patients  3",
-    "patients  41"
-   ]
-  },
-  {
-   "document": "meta-PMC13263136.xml",
-   "evidence": [
-    "cases  14"
-   ]
-  },
-  {
-   "document": "meta-PMC13264436.xml",
-   "evidence": [
-    "case 12"
-   ]
-  },
-  {
-   "document": "nonEN-PMC13128184.xml",
-   "evidence": [
-    "cases   8"
-   ]
-  },
-  {
    "document": "phys-PMC13133660.xml",
    "evidence": [
     "Case 1",
@@ -116,19 +56,10 @@
    ]
   },
   {
-   "document": "phys-PMC13171646.xml",
-   "evidence": [
-    "participant 4",
-    "participant 7"
-   ]
-  },
-  {
    "document": "phys-PMC13181085.xml",
    "evidence": [
     "Case 1",
-    "Case 2",
-    "case 1",
-    "case 2"
+    "Case 2"
    ]
   },
   {

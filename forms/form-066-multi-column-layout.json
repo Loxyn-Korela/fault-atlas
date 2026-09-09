@@ -26,16 +26,6 @@
       "excerpt_en": "Observed on 2026-08-08 on a COMPLETE article — *Cerebral Hemodynamics in Migraine*, Hachinski et al., Canadian Journal of Neurological Sciences, 1977 (PDF 3.3 MB). The text is not one column: it has two or three. The first page has three — English abstract, French abstract, body. Reading across the columns yields text that is grammatically correct and semantically false.",
       "lang": "fr",
       "organisation": "Loxyn SAS, Lyon"
-    },
-    {
-      "corpus": "observation 2026-08 (272 Europe PMC JATS articles)",
-      "date": "2026-09-09",
-      "observer": "house probe (regex, no model), written 2026-08-08, re-run by the Fault Atlas maintainer",
-      "organisation": "Loxyn SAS, Lyon",
-      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
-      "lang": "en",
-      "probe": "probes/2026-08/line-066.py",
-      "excerpt": "Probe re-run on the 272 JATS files: 2/272 carriers (cas 1, meta 1). Examples — cas-PMC13293792.xml: three columns · meta-PMC13229315.xml: two columns"
     }
   ],
   "specimens": {
@@ -73,46 +63,11 @@
     },
     {
       "date": "2026-09-09",
-      "event": "second observation added from the exact probe on the 272 files: probes/2026-08/line-066.py, 2/272",
+      "event": "probe-based observation withdrawn after independent review: the probe reads a column hint in JATS XML; the August observation is a PDF layout, not reproducible in XML",
       "by": "Fault Atlas maintainer"
     }
   ],
   "observed_absent_in": [
     "Europe PMC JATS 2023-2026 (272 articles, measured 2026-08-08)"
-  ],
-  "probes": [
-    {
-      "file": "probes/2026-08/line-066.py",
-      "kind": "python",
-      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
-      "written": "2026-08-08",
-      "run": "python3 tools/run_probe.py probes/2026-08/line-066.py <dir with the 272 .xml>",
-      "result": {
-        "date": "2026-09-09",
-        "count": 2,
-        "of": 272,
-        "strata": {
-          "cas": 1,
-          "meta": 1
-        },
-        "examples": [
-          [
-            "cas-PMC13293792.xml",
-            [
-              "three columns"
-            ]
-          ],
-          [
-            "meta-PMC13229315.xml",
-            [
-              "two columns"
-            ]
-          ]
-        ],
-        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files",
-        "carriers_file": "probes/results/line-066.json"
-      },
-      "matches_excerpt": true
-    }
   ]
 }

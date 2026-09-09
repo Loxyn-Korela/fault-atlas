@@ -16,18 +16,7 @@
   "legacy_severity": "G4",
   "legacy_mechanism": "",
   "status": "migrated_unreviewed",
-  "seen": [
-    {
-      "corpus": "observation 2026-08 (272 Europe PMC JATS articles)",
-      "date": "2026-09-09",
-      "observer": "house probe (regex, no model), written 2026-08-08, re-run by the Fault Atlas maintainer",
-      "organisation": "Loxyn SAS, Lyon",
-      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
-      "lang": "en",
-      "probe": "probes/2026-08/line-115.py",
-      "excerpt": "Probe re-run on the 272 JATS files: 272/272 carriers (nonEN 51, bio 34, cas 34, essai 34, meta 34, phys 34, retract 34, moderne 17). Examples — bio-PMC12583535.xml: permissions=True license=True | dans le corps: non · bio-PMC12590050.xml: permissions=True license=True | dans le corps: non · bio-PMC12674831.xml: permissions=True license=True | dans le corps: non"
-    }
-  ],
+  "seen": [],
   "specimens": {
     "cases": [],
     "counter_examples": []
@@ -57,124 +46,11 @@
     },
     {
       "date": "2026-09-09",
-      "event": "second observation added from the exact probe on the 272 files: probes/2026-08/line-115.py, 272/272",
+      "event": "probe-based observation withdrawn after independent review: probe reports where the licence sits (permissions block, 272/272); the August verdict is that the fault is absent from JATS",
       "by": "Fault Atlas maintainer"
     }
   ],
   "observed_absent_in": [
     "Europe PMC JATS 2023-2026 (272 articles, measured 2026-08-08)"
-  ],
-  "probes": [
-    {
-      "file": "probes/2026-08/line-115.py",
-      "kind": "python",
-      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
-      "written": "2026-08-08",
-      "run": "python3 tools/run_probe.py probes/2026-08/line-115.py <dir with the 272 .xml>",
-      "result": {
-        "date": "2026-09-09",
-        "count": 272,
-        "of": 272,
-        "strata": {
-          "nonEN": 51,
-          "bio": 34,
-          "cas": 34,
-          "essai": 34,
-          "meta": 34,
-          "phys": 34,
-          "retract": 34,
-          "moderne": 17
-        },
-        "examples": [
-          [
-            "bio-PMC12583535.xml",
-            [
-              "permissions=True license=True",
-              "dans le corps: non"
-            ]
-          ],
-          [
-            "bio-PMC12590050.xml",
-            [
-              "permissions=True license=True",
-              "dans le corps: non"
-            ]
-          ],
-          [
-            "bio-PMC12674831.xml",
-            [
-              "permissions=True license=True",
-              "dans le corps: non"
-            ]
-          ],
-          [
-            "bio-PMC12857832.xml",
-            [
-              "permissions=True license=True",
-              "dans le corps: non"
-            ]
-          ],
-          [
-            "bio-PMC12882215.xml",
-            [
-              "permissions=True license=True",
-              "dans le corps: non"
-            ]
-          ],
-          [
-            "bio-PMC12909487.xml",
-            [
-              "permissions=True license=True",
-              "dans le corps: non"
-            ]
-          ],
-          [
-            "bio-PMC12915353.xml",
-            [
-              "permissions=True license=True",
-              "dans le corps: non"
-            ]
-          ],
-          [
-            "bio-PMC12927065.xml",
-            [
-              "permissions=True license=True",
-              "dans le corps: non"
-            ]
-          ],
-          [
-            "bio-PMC12927975.xml",
-            [
-              "permissions=True license=True",
-              "dans le corps: non"
-            ]
-          ],
-          [
-            "bio-PMC12953170.xml",
-            [
-              "permissions=True license=True",
-              "dans le corps: non"
-            ]
-          ],
-          [
-            "bio-PMC12959687.xml",
-            [
-              "permissions=True license=True",
-              "dans le corps: non"
-            ]
-          ],
-          [
-            "bio-PMC13057049.xml",
-            [
-              "permissions=True license=True",
-              "dans le corps: non"
-            ]
-          ]
-        ],
-        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files",
-        "carriers_file": "probes/results/line-115.json"
-      },
-      "matches_excerpt": true
-    }
   ]
 }
