@@ -1,0 +1,82 @@
+{
+  "id": "form-186",
+  "version": 1,
+  "name": "Official register asserts a relation the act's text never states (implicit repeal by expiry and replacement)",
+  "name_fr": "Relation officielle sans phrase dans le texte (abrogation implicite par expiration et remplacement)",
+  "origin": {
+    "organisation": "Loxyn SAS, Lyon",
+    "campaign": "September 2026 — human audit of the EUR-Lex truth (audit-200)",
+    "contact": "contact@loxyn.ai"
+  },
+  "damage": "MISSING",
+  "class": "SILENT_FALSE",
+  "layer": "⑧ coherence",
+  "injection": "DELETE",
+  "status": "proposed",
+  "seen": [
+    {
+      "corpus": "EUR-Lex / Cellar, lot A — the official relations graph frozen 2026-09-09; text of the acts on EUR-Lex",
+      "date": "2026-09-10",
+      "observer": "Sébastien Gracia (human auditor, audit-200, fact f-477411), no model",
+      "organisation": "Loxyn SAS, Lyon",
+      "corpus_id": "corpus-2026-09-eurlex",
+      "lang": "fr",
+      "document": "31999R0718 (A) → 31995R2819 (B)",
+      "probe": "probes/2026-09/form-186-registry-relation-not-in-text.py",
+      "excerpt": "Cellar dit que le règlement (CE) n° 718/1999 abroge le règlement (CE) n° 2819/95. Le texte de 718/1999 ne cite jamais 2819/95. Il dit : « le règlement (CEE) no 1101/89 a instauré un régime d'assainissement structurel … qu'il prend fin le 28 avril 1999 » ; et 2819/95 est le règlement qui modifiait 1101/89. Le nouveau règlement remplace un régime qui expire ; il n'abroge rien en toutes lettres. Le registre déduit, le texte ne dit pas. Un graphe construit depuis les textes ne trouvera jamais cette arête ; un graphe construit depuis le registre la porte sans phrase.",
+      "excerpt_en": "Cellar says Regulation (EC) No 718/1999 repeals Regulation (EC) No 2819/95. The text of 718/1999 never names 2819/95. It says: \"Regulation (EEC) No 1101/89 introduced a structural improvement scheme … which expires on 28 April 1999\"; 2819/95 is the regulation that amended 1101/89. The new regulation replaces a scheme that expires; it repeals nothing in so many words. The register infers, the text does not state. A graph built from the texts will never find this edge; a graph built from the register carries it without a sentence."
+    }
+  ],
+  "probes": [
+    {
+      "file": "probes/2026-09/form-186-registry-relation-not-in-text.py",
+      "kind": "python",
+      "corpus_id": "corpus-2026-09-eurlex",
+      "written": "2026-09-10",
+      "run": "python3 probes/2026-09/form-186-registry-relation-not-in-text.py 31999R0718 31995R2819",
+      "result": {
+        "date": "2026-09-10",
+        "count": 1,
+        "of": null,
+        "examples": [
+          [
+            "31999R0718",
+            [
+              "register: repeals 31995R2819 = True · text of A: '2819/95' 0 occurrence, '1995/2819' 0 occurrence · text says: « … qu'il prend fin le 28 avril 1999 »"
+            ]
+          ]
+        ],
+        "by": "Fault Atlas maintainer (Loxyn), live on EUR-Lex and the Cellar endpoint"
+      },
+      "matches_excerpt": true,
+      "note": "One document, three checks, all live: the register asserts, the text search finds nothing, the text states an expiry instead. How many such edges the register holds is what the audit of the truth will count."
+    }
+  ],
+  "specimens": {
+    "cases": [],
+    "counter_examples": []
+  },
+  "prevention": {
+    "cancellable_by_code": false,
+    "note": "no sentence to find: the relation exists only as a registry inference; code that reads the text cannot see it, code that reads the register cannot tell it from a stated repeal"
+  },
+  "repair": {
+    "reachable_by_deletion": "no",
+    "note": "nothing to delete: the edge is legally sound and textually absent; classified by judgment, not measured"
+  },
+  "judgeable_by": [
+    "registry",
+    "closed_world"
+  ],
+  "related": [
+    "form-182",
+    "form-184"
+  ],
+  "history": [
+    {
+      "date": "2026-09-10",
+      "event": "found by a human auditor of the EUR-Lex truth (fact f-477411 of audit-200): the register says 'repeals', the text says 'expires on 28 April 1999'; probe written and run live the same day",
+      "by": "Fault Atlas maintainer"
+    }
+  ]
+}
