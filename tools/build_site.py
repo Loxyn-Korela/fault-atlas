@@ -72,6 +72,12 @@ def upstream(f):
     return bool(L) and L <= {"①", "②"}
 gcounts = Counter(f["damage"] for f in forms if not upstream(f))
 cards = "".join(f"""<a class="card" href="#forms" data-damage="{k}" style="--c:{v[2]}"><span class="n">{counts.get(k,0)}<small> · {gcounts.get(k,0)} reach the graph</small></span><span class="t">{E(v[0])}</span><span class="d">{E(v[1])}</span></a>""" for k,v in DAMAGE.items())
+def last_date(f):
+    """The most recent observation date; a form without observation sorts last."""
+    d = sorted((x["date"] for x in f["seen"] if x.get("date")), reverse=True)
+    return d[0] if d else ""
+
+
 def proof_of(f):
     """example / none: does the form show at least one document where the fault sits?"""
     for pr in f.get("probes", []):
@@ -81,13 +87,13 @@ def proof_of(f):
 rows = "".join(f"""<tr data-damage="{f['damage']}" data-class="{f['class']}" data-layer="{E(f['layer'])}" data-reach="{'no' if upstream(f) else 'yes'}" data-proof="{proof_of(f)[0]}" data-src="{E(" ".join(corpora_of(f)).lower())}" data-text="{E((f['name']+' '+f.get('name_fr','')+' '+' '.join(corpora_of(f))).lower())}">
 <td><a href="forms/{f['id']}.html">{E(f['name'])}</a><br><span class="fr">{E(f.get('name_fr',''))}</span></td>
 <td><span class="pill" style="--c:{DAMAGE[f['damage']][2]}">{E(DAMAGE[f['damage']][0])}</span></td>
-<td>{E(CLASS[f['class']])}</td><td>{E(f['layer'])}</td><td class="src">{E(" · ".join(corpora_of(f)) or "—")}</td><td class="proof p-{proof_of(f)[0]}">{E(proof_of(f)[1])}</td><td>{E(REACH[f['repair']['reachable_by_deletion']])}</td></tr>""" for f in forms)
+<td class="date">{E(last_date(f) or '—')}</td><td>{E(CLASS[f['class']])}</td><td>{E(f['layer'])}</td><td class="src">{E(" · ".join(corpora_of(f)) or "—")}</td><td class="proof p-{proof_of(f)[0]}">{E(proof_of(f)[1])}</td><td>{E(REACH[f['repair']['reachable_by_deletion']])}</td></tr>""" for f in forms)
 from collections import Counter as _PC
 proof_counts = _PC(proof_of(f)[0] for f in forms)
 index = f"""
 <section class="hero"><p class="eyebrow">A library of observed fault forms in knowledge graphs built from documents</p>
 <h1>Every fault has a form. Every form does one of seven things to the graph.</h1>
-<p class="lead">{len(forms)} forms of fault observed on real corpora; {proof_counts['docs']} of them come with a reproducible example — a document you can open, the query that found it, the frozen copy — and {proof_counts['none']} do not yet. A form says what the fault does to the graph, whether code can cancel it, whether a deletion-only repair can restore the truth, and which kind of truth can judge it.</p>
+<p class="lead">{len(forms)} forms of fault observed on real corpora, most recent first — click any column to sort; {proof_counts['docs']} of them come with a reproducible example — a document you can open, the query that found it, the frozen copy — and {proof_counts['none']} do not yet. A form says what the fault does to the graph, whether code can cancel it, whether a deletion-only repair can restore the truth, and which kind of truth can judge it.</p>
 <p class="cta"><a class="btn" href="#forms">Browse the forms</a> <a class="btn ghost" href="{DATA}">Query the data</a> <a class="btn ghost" href="propose.html">Propose a form</a></p></section>
 <section class="grid" id="damages">{cards}</section>
 <section id="forms"><div class="bar"><input id="q" type="search" placeholder="Search a form…" aria-label="Search">
@@ -96,7 +102,7 @@ index = f"""
 <select id="fl"><option value="">All layers</option>{''.join(f'<option value="{E(l)}">{E(l)}</option>' for l in sorted({f["layer"] for f in forms}))}</select>
 <label class="chk"><input type="checkbox" id="fp"> Only forms with an example ({proof_counts['docs']})</label>
 <span id="count" class="muted"></span></div>
-<div class="tablewrap"><table id="t"><thead><tr><th>Form</th><th>Damage</th><th>Class</th><th>Layer</th><th>Seen on</th><th>Example</th><th>Deletion repairs it (classified)</th></tr></thead><tbody>{rows}</tbody></table></div></section>
+<div class="tablewrap"><table id="t"><thead><tr><th data-sort="text">Form</th><th data-sort="text">Damage</th><th data-sort="text" class="sorted-desc">Date</th><th data-sort="text">Class</th><th data-sort="text">Layer</th><th data-sort="text">Corpus</th><th data-sort="text">Example</th><th data-sort="text">Deletion repairs it (classified)</th></tr></thead><tbody>{rows}</tbody></table></div></section>
 <section id="about" class="about"><h2>What a record says</h2>
 <div class="cols"><div><h3>Seven damages</h3><p>What a fault does to the graph: merge, split, spurious edge, missing, wrong value, wrong label, anachronism. The 113 difficulties observed in August 2026, however different they look, each produce one of these. Verified line by line.</p></div>
 <div><h3>Two counts, always together</h3><p>Each damage card shows two numbers: all forms, and forms that reach the graph. A form whose layer is pixel or reading — columns, drop caps, scanned pages — sits upstream and never reaches a repairer; every other layer does. No damage count is cited without its layer. Deletion-only repair fully addresses one damage, the spurious edge; the identity damages, merge and split, it never touches.</p></div>
@@ -108,6 +114,20 @@ index = f"""
 <script>
 const q=document.getElementById('q'),fd=document.getElementById('fd'),fc=document.getElementById('fc'),fl=document.getElementById('fl'),fp=document.getElementById('fp'),rows=[...document.querySelectorAll('#t tbody tr')],c=document.getElementById('count');
 function apply(){{const s=q.value.toLowerCase(),d=fd.value,k=fc.value,l=fl.value,pf=fp.checked;let n=0;for(const r of rows){{const ok=(!d||r.dataset.damage===d)&&(!k||r.dataset.class===k)&&(!l||r.dataset.layer===l)&&(!pf||r.dataset.proof==='docs')&&(!s||r.dataset.text.includes(s));r.hidden=!ok;if(ok)n++;}}c.textContent=n+' of '+rows.length;}}
+const tb=document.querySelector('#t tbody'),ths=[...document.querySelectorAll('#t th')];
+let sortCol=2,sortDir=-1;
+function key(r,i){{const c=r.children[i];return (c.dataset.k||c.textContent).trim().toLowerCase();}}
+function sortBy(i,dir){{
+  const rs=[...tb.querySelectorAll('tr')];
+  rs.sort((a,b)=>{{const x=key(a,i),y=key(b,i);
+    if(x===y||x==='—'&&y==='—') return key(a,0).localeCompare(key(b,0));
+    if(x==='—'||x==='') return 1; if(y==='—'||y==='') return -1;
+    return x<y?-dir:dir;}});
+  rs.forEach(r=>tb.appendChild(r));
+  ths.forEach((t,j)=>{{t.classList.remove('sorted-asc','sorted-desc');if(j===i)t.classList.add(dir>0?'sorted-asc':'sorted-desc');}});
+  sortCol=i;sortDir=dir;}}
+ths.forEach((t,i)=>t.addEventListener('click',()=>sortBy(i,i===sortCol?-sortDir:(i===2?-1:1))));
+sortBy(2,-1);
 [q,fd,fc,fl,fp].forEach(e=>e.addEventListener('input',apply));document.querySelectorAll('.card').forEach(a=>a.addEventListener('click',()=>{{fd.value=a.dataset.damage;apply();}}));apply();
 </script>"""
 CORPUS_NAMES = {json.loads(cf.read_text())["id"]: json.loads(cf.read_text())["name"] for cf in (ROOT/"corpora").glob("*.json")}
@@ -248,7 +268,10 @@ h2{font-size:26px;letter-spacing:-.02em;margin:38px 0 12px;font-weight:600}h3{ma
 .card{display:block;background:var(--bg-elev);border:1px solid var(--line);border-top:3px solid var(--c);border-radius:10px;padding:16px 18px;color:var(--fg);transition:border-color .15s}.card:hover{text-decoration:none;border-color:var(--c);background:#fff}
 .card .n{display:block;font-size:36px;font-weight:600;line-height:1;letter-spacing:-.03em;font-family:var(--mono)}.card .n small{display:block;font-size:12px;font-weight:500;color:var(--muted);font-family:var(--sans);letter-spacing:0;margin-top:4px}.card .t{display:block;font-weight:600;margin-top:8px}.card .d{display:block;font-size:13px;color:var(--muted);margin-top:4px;line-height:1.45}
 .bar{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin:0 0 12px}input,select,textarea{font:inherit;font-size:15px;padding:10px 12px;border:1px solid var(--line-strong);border-radius:8px;background:#fff;color:var(--fg)}.bar input{flex:1;min-width:220px}input:focus,select:focus{outline:2px solid var(--acc-soft);border-color:var(--acc)}
-.tablewrap{overflow-x:auto;border:1px solid var(--line);border-radius:10px;background:#fff}table{border-collapse:collapse;width:100%;min-width:780px}th,td{text-align:left;padding:11px 14px;border-top:1px solid var(--line);vertical-align:top}th{border-top:0;font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);font-weight:600;background:var(--bg-elev)}td.num{text-align:right;font-family:var(--mono);font-size:14px}td.src{font-size:13px;color:var(--luxe)}td.proof{font-size:13px;white-space:nowrap}td.p-docs{color:#166534;font-weight:600}td.p-none{color:var(--muted)}label.chk{display:inline-flex;align-items:center;gap:6px;font-size:14px;color:var(--ink)}label.chk input{width:auto;min-width:0;flex:none}table.kv th{width:190px;text-transform:none;letter-spacing:0;font-size:14px;color:var(--ink);background:transparent;border-top:1px solid var(--line)}table.kv td code{font-size:12.5px;white-space:normal;word-break:break-all}td.mono{font-family:var(--mono);font-size:12px}
+.tablewrap{overflow-x:auto;border:1px solid var(--line);border-radius:10px;background:#fff}table{border-collapse:collapse;width:100%;min-width:780px}th,td{text-align:left;padding:11px 14px;border-top:1px solid var(--line);vertical-align:top}th{border-top:0;font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);font-weight:600;background:var(--bg-elev)}td.num{text-align:right;font-family:var(--mono);font-size:14px}td.src{font-size:13px;color:var(--luxe)}td.date{font-family:var(--mono);font-size:12.5px;white-space:nowrap;color:var(--muted)}
+#t th{cursor:pointer;user-select:none;position:relative}#t th:hover{color:var(--ink)}
+#t th.sorted-asc::after{content:" ▲";font-size:9px}#t th.sorted-desc::after{content:" ▼";font-size:9px}
+td.proof{font-size:13px;white-space:nowrap}td.p-docs{color:#166534;font-weight:600}td.p-none{color:var(--muted)}label.chk{display:inline-flex;align-items:center;gap:6px;font-size:14px;color:var(--ink)}label.chk input{width:auto;min-width:0;flex:none}table.kv th{width:190px;text-transform:none;letter-spacing:0;font-size:14px;color:var(--ink);background:transparent;border-top:1px solid var(--line)}table.kv td code{font-size:12.5px;white-space:normal;word-break:break-all}td.mono{font-family:var(--mono);font-size:12px}
 .pill{display:inline-block;white-space:nowrap;padding:2px 10px;border-radius:999px;font-size:12.5px;font-weight:600;color:#fff;background:var(--c);letter-spacing:.01em}.pill.grey{background:var(--surface);color:var(--fg);font-weight:500}.pill.warn{background:#fff3c4;color:#6b4c00;font-weight:500}
 .fr{color:var(--muted);font-size:13px;font-family:var(--serif);font-style:italic}.fr.big{font-size:17px;margin-top:-10px}.muted{color:var(--muted)}
 .about{margin-top:56px;border-top:1px solid var(--line);padding-top:32px}.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:24px}.cols p{margin:0;color:var(--luxe);font-size:15px}
