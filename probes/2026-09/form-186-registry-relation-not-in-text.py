@@ -8,7 +8,8 @@ Two checks, both reproducible, no model:
      says instead that the earlier regime expires on a date and that A replaces it.
 
 Run:
-    python3 probes/2026-09/form-186-registry-relation-not-in-text.py 31999R0718 31995R2819
+    python3 probes/2026-09/form-186-registry-relation-not-in-text.py 31999R0718 31995R2819            # repeals
+    python3 probes/2026-09/form-186-registry-relation-not-in-text.py 52023AR2189 12016E307 based_on   # legal basis
 
 Result 2026-09-10 (found by a human auditor of the truth, fact f-477411 of audit-200):
   register: repeals = yes ; text of A (FR): "2819/95" 0 occurrence, "1995/2819" 0 occurrence ;
@@ -19,9 +20,12 @@ import sys, re, json, html, urllib.request, urllib.parse
 UA = {"User-Agent": "Mozilla/5.0 (fault-atlas probe)"}
 
 
-def register_says(a, b):
+PRED = {"repeals": "resource_legal_repeals_resource_legal", "amends": "resource_legal_amends_resource_legal", "based_on": "resource_legal_based_on_resource_legal"}
+
+
+def register_says(a, b, rel="repeals"):
     q = f"""PREFIX cdm: <http://publications.europa.eu/ontology/cdm#>
-ASK {{ ?x cdm:resource_legal_id_celex "{a}"^^<http://www.w3.org/2001/XMLSchema#string> ; cdm:resource_legal_repeals_resource_legal ?y .
+ASK {{ ?x cdm:resource_legal_id_celex "{a}"^^<http://www.w3.org/2001/XMLSchema#string> ; cdm:{PRED[rel]} ?y .
        ?y cdm:resource_legal_id_celex "{b}"^^<http://www.w3.org/2001/XMLSchema#string> . }}"""
     url = "https://publications.europa.eu/webapi/rdf/sparql?" + urllib.parse.urlencode({"query": q})
     r = urllib.request.Request(url, headers={"Accept": "application/sparql-results+json", **UA})
@@ -35,15 +39,18 @@ def text_of(celex, lang="FR"):
 
 
 def keys(celex):
-    m = re.match(r"^\d(\d{4})[A-Z]{1,2}(\d{3,4})", celex); year, num = m.group(1), int(m.group(2))
+    m = re.match(r"^(\d)(\d{4})[A-Z]{1,2}(\d{3,4})", celex); sector, year, num = m.group(1), m.group(2), int(m.group(3))
+    if sector == "1":                                     # treaty article
+        return [f"article {num}", f"art. {num}"]
     return [f"{num}/{year}", f"{year}/{num}", f"{num}/{year[2:]}", f"{year[2:]}/{num}"]
 
 
 if __name__ == "__main__":
     a, b = sys.argv[1], sys.argv[2]
-    print("register says A repeals B:", register_says(a, b))
+    rel = sys.argv[3] if len(sys.argv) > 3 else "repeals"
+    print(f"register says A {rel} B:", register_says(a, b, rel))
     t = text_of(a)
     for k in keys(b):
         print(f"text of A, occurrences of {k!r}:", len(re.findall(r"(?<!\d)" + re.escape(k) + r"(?!\d)", t)))
-    m = re.search(r"[^.]{0,160}prend fin[^.]{0,160}", t)
+    m = re.search(r"[^.]{0,160}(?:prend fin|de sa propre initiative|own[- ]initiative)[^.]{0,160}", t, re.I)
     print("what the text says instead:", m.group(0).strip() if m else "(not found)")
