@@ -94,6 +94,7 @@ index = f"""
 <section class="hero"><p class="eyebrow">A library of observed fault forms in knowledge graphs built from documents</p>
 <h1>Every fault has a form. Every form does one of seven things to the graph.</h1>
 <p class="lead">{len(forms)} forms of fault observed on real corpora, most recent first — click any column to sort; {proof_counts['docs']} of them come with a reproducible example — a document you can open, the query that found it, the frozen copy — and {proof_counts['none']} do not yet. A form says what the fault does to the graph, whether code can cancel it, whether a deletion-only repair can restore the truth, and which kind of truth can judge it.</p>
+<p class="lead small">Read the count as a shelf, not as a measurement. Two readers given the same six articles on 2026-08-08, working without contact, found nine novelties and eleven, seven of them shared: 54&nbsp;% agreement, and two phenomena both had seen were filed by one as a new form and by the other as a variant of an existing one. The boundary between new and variant is not objective, so the number of forms is not a quantity. What is: the list of phenomena, each with its proof.</p>
 <p class="cta"><a class="btn" href="#forms">Browse the forms</a> <a class="btn ghost" href="{DATA}">Query the data</a> <a class="btn ghost" href="propose.html">Propose a form</a></p></section>
 <section class="grid" id="damages">{cards}</section>
 <section id="forms"><div class="bar"><input id="q" type="search" placeholder="Search a form…" aria-label="Search">
@@ -264,7 +265,7 @@ main{max-width:1120px;margin:0 auto;padding:28px 5vw 72px}
 .eyebrow{font-family:var(--serif);font-style:italic;font-weight:300;font-size:.98rem;color:var(--luxe);letter-spacing:.02em;display:inline-flex;align-items:center;gap:12px;margin:0 0 18px}.eyebrow::before{content:"";width:28px;height:1px;background:var(--acc);opacity:.65}
 h1{font-size:clamp(30px,4.6vw,50px);line-height:1.08;margin:0 0 18px;letter-spacing:-.025em;max-width:22ch;font-weight:600}
 h2{font-size:26px;letter-spacing:-.02em;margin:38px 0 12px;font-weight:600}h3{margin:0 0 6px;font-size:15px;letter-spacing:-.01em;font-weight:600}
-.lead{font-size:18px;max-width:72ch;color:var(--luxe)}.cta{margin:22px 0 0}
+.lead{font-size:18px;max-width:72ch;color:var(--luxe)}.lead.small{font-size:15px;margin-top:14px;opacity:.85}.cta{margin:22px 0 0}
 .btn{display:inline-block;padding:10px 18px;border-radius:8px;background:var(--acc);color:#fff;font-weight:600;margin:0 8px 8px 0;font-size:15px}.btn:hover{background:var(--acc-deep);color:#fff;text-decoration:none}.btn.ghost{background:transparent;color:var(--acc);border:1px solid var(--line-strong)}.btn.ghost:hover{background:var(--acc-soft)}
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin:30px 0 40px}
 .card{display:block;background:var(--bg-elev);border:1px solid var(--line);border-top:3px solid var(--c);border-radius:10px;padding:16px 18px;color:var(--fg);transition:border-color .15s}.card:hover{text-decoration:none;border-color:var(--c);background:#fff}

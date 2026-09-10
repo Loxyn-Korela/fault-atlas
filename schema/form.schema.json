@@ -475,6 +475,10 @@
         "aggravated_by_the_modern": {
           "type": "boolean",
           "description": "Crosses both eras and is worse now than it was."
+        },
+        "discipline_reserve": {
+          "type": "string",
+          "description": "The era is not the only axis. When the form was only ever measured inside one discipline, name it here: a form that is biomedical before it is modern will make a corpus that resembles PubMed if it is taken as a generic property of the modern document. Measured on 2026-08-08: 14 articles of physics, mathematics, computer science, economics and linguistics carried zero structured abstract, zero pre-registration and zero ethics declaration."
         }
       }
     }

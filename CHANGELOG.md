@@ -7,6 +7,10 @@
 - Validator with house rules; proves itself on seven planted faults.
 - SQLite view builder for Datasette.
 
+## 0.6.3 — 2026-09-10
+- **The count is a shelf, not a measurement**, and the site now says so where the count appears. Two readers, the same six articles, 2026-08-08, no contact: nine novelties and eleven, seven shared — 54 % agreement, and two phenomena both had seen were filed by one as a new form and by the other as a variant. The boundary between new and variant is not objective, so the number of forms is not a quantity; the list of phenomena with their proof is.
+- **The era is not the only axis.** Four forms said "born with the modern era" where the measurement of the same day says biomedical before modern: on 14 articles of physics, mathematics, computer science, economics and linguistics, zero structured abstract, zero pre-registration, zero ethics declaration. Structured abstract, pre-registration identifier, forest plot as image and open peer-review furniture now carry that reserve, so a corpus built from them measures a form and not a discipline.
+
 ## 0.6.2 — 2026-09-10
 - An era that was never measured is now **said** instead of left blank. The confrontation of 2026-08-08 examined forty-three catalogue lines; forty forms carry a measured era, and the other 122 now read *"Era not measured. Nothing here says it is alive today, and nothing says it is dead."* The index gains a filter for exactly those, so the gap can be worked through rather than guessed at.
 

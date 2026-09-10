@@ -59,6 +59,15 @@ The file is the truth. Software reads it; software never completes it from memor
 
 The 272 Europe PMC articles of the August observation are listed by PMC identifier in `corpora/europe-pmc-jats-2023-2026-272.json`, with the selection queries, the sha256 of each file as read on 2026-08-08 and the licence found in it; a frozen copy of the 267 redistributable files is prepared for Zenodo. There is no corpus page and no probes page on the site: each form links the documents where the fault sits and, folded, the code that found them and the record behind them. Every August form has `status: migrated_unreviewed` and every September form `status: proposed`. A second reader validates or contests each one before it becomes `validated`. Where a September form overlaps an August one, the `related` field says so; the novel/variant decision is the reader's, not the machine's.
 
+## The count is a shelf, not a measurement
+
+Two readers were given the same six articles on 2026-08-08 and worked without contact. One found
+nine novelties, the other eleven, seven of them shared: **54 % agreement**. Two phenomena both had
+seen were filed by one as a new form and by the other as a variant of an existing one. The boundary
+between new and variant is not objective, so **the number of forms is not a quantity**. What is: the
+list of phenomena, each with its proof. Nothing here says the catalogue is complete; it is complete
+for the populations observed, and changing population makes the curve start again at full height.
+
 ## Eras
 
 A form has a period of validity, and a bench that ignores it measures the wrong thing. Measured on
