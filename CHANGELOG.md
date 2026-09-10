@@ -7,6 +7,9 @@
 - Validator with house rules; proves itself on seven planted faults.
 - SQLite view builder for Datasette.
 
+## 0.7.1 — 2026-09-10
+- **The index table no longer scrolls sideways.** The column "Deletion repairs it (classified)" is gone: it repeated the damage column exactly, one value per damage, which is what 0.7.0 established. Class labels are shortened in the table and stay in full on the form page, the corpus cell carries its full text as a tooltip, and the seven columns are laid out on a fixed grid that sums to the width of the page.
+
 ## 0.7.0 — 2026-09-10
 - **A published sentence was false and is corrected.** 121 forms said their repairability was "classified by judgment on 2026-09-09, not measured". It was not judged form by form: the migration script wrote it from a lookup table on the damage class, `REACH[damage]`. Eight values copied 162 times. The field carried no information the damage did not already carry, and every form now says so.
 - **The per-form judgment was never lost, only unused.** The internal catalogue of 2026-08-09 (`korela.db`, table `parametre`) is intact, and its `mode_echec` column is a second axis, judged line by line, that **varies inside a damage class** where repairability does not: the twenty spurious-edge forms span three failure modes, the merges span two. Recovered onto 113 forms as `failure_mode`: PROP identity and it propagates (21) · FAUX a false fact (41) · MANQ a gap (39) · MES a property of the corpus (12). The 49 forms added in September do not carry it yet, and the site says so.
