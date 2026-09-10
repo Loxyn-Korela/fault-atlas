@@ -1,0 +1,459 @@
+{
+ "probe": "probes/2026-09-recovered/line-019.py",
+ "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+ "date": "2026-09-10",
+ "count": 75,
+ "of": 272,
+ "carriers": [
+  {
+   "document": "bio-PMC12583535.xml",
+   "evidence": [
+    "2/7 keywords appear at most once in the body, e.g. Keywords  Lipid metabolism"
+   ]
+  },
+  {
+   "document": "bio-PMC12857832.xml",
+   "evidence": [
+    "1/5 keywords appear at most once in the body, e.g. KEY WORDS:  Clinical predictors"
+   ]
+  },
+  {
+   "document": "bio-PMC12882215.xml",
+   "evidence": [
+    "2/3 keywords appear at most once in the body, e.g. Keywords  Green space exposure"
+   ]
+  },
+  {
+   "document": "bio-PMC12909487.xml",
+   "evidence": [
+    "1/5 keywords appear at most once in the body, e.g. sudden cardiac arrest"
+   ]
+  },
+  {
+   "document": "bio-PMC12915353.xml",
+   "evidence": [
+    "1/5 keywords appear at most once in the body, e.g. Cardiometabolic Risk Factors"
+   ]
+  },
+  {
+   "document": "bio-PMC13155703.xml",
+   "evidence": [
+    "4/6 keywords appear at most once in the body, e.g. b-type natriuretic peptide (bnp)"
+   ]
+  },
+  {
+   "document": "bio-PMC13162546.xml",
+   "evidence": [
+    "2/6 keywords appear at most once in the body, e.g. Keywords  Administration routes"
+   ]
+  },
+  {
+   "document": "bio-PMC13207820.xml",
+   "evidence": [
+    "1/4 keywords appear at most once in the body, e.g. gynecologic surgical procedures"
+   ]
+  },
+  {
+   "document": "bio-PMC13216383.xml",
+   "evidence": [
+    "2/5 keywords appear at most once in the body, e.g. Keywords  Functional capacity"
+   ]
+  },
+  {
+   "document": "bio-PMC13236932.xml",
+   "evidence": [
+    "1/5 keywords appear at most once in the body, e.g. cardiovascular diseases"
+   ]
+  },
+  {
+   "document": "bio-PMC13251069.xml",
+   "evidence": [
+    "2/6 keywords appear at most once in the body, e.g. Keywords  Frailty"
+   ]
+  },
+  {
+   "document": "cas-PMC13290446.xml",
+   "evidence": [
+    "3/8 keywords appear at most once in the body, e.g. anti-arrhythmia agents"
+   ]
+  },
+  {
+   "document": "cas-PMC13291881.xml",
+   "evidence": [
+    "2/7 keywords appear at most once in the body, e.g. pediatrics"
+   ]
+  },
+  {
+   "document": "cas-PMC13293645.xml",
+   "evidence": [
+    "4/7 keywords appear at most once in the body, e.g. degenerative joint disease"
+   ]
+  },
+  {
+   "document": "cas-PMC13293792.xml",
+   "evidence": [
+    "3/5 keywords appear at most once in the body, e.g. 177Lu-DOTATATE"
+   ]
+  },
+  {
+   "document": "cas-PMC13293813.xml",
+   "evidence": [
+    "1/5 keywords appear at most once in the body, e.g. chronic trauma"
+   ]
+  },
+  {
+   "document": "cas-PMC13293827.xml",
+   "evidence": [
+    "3/5 keywords appear at most once in the body, e.g. case report"
+   ]
+  },
+  {
+   "document": "cas-PMC13293834.xml",
+   "evidence": [
+    "1/5 keywords appear at most once in the body, e.g. antimicrobial agents"
+   ]
+  },
+  {
+   "document": "cas-PMC13293841.xml",
+   "evidence": [
+    "2/8 keywords appear at most once in the body, e.g. breast neoplasm"
+   ]
+  },
+  {
+   "document": "cas-PMC13293897.xml",
+   "evidence": [
+    "2/6 keywords appear at most once in the body, e.g. immune-mediated polyarthritis"
+   ]
+  },
+  {
+   "document": "cas-PMC13293901.xml",
+   "evidence": [
+    "2/5 keywords appear at most once in the body, e.g. literature review"
+   ]
+  },
+  {
+   "document": "cas-PMC13294096.xml",
+   "evidence": [
+    "3/5 keywords appear at most once in the body, e.g. heparin-induced thrombocytopenia"
+   ]
+  },
+  {
+   "document": "cas-PMC13294155.xml",
+   "evidence": [
+    "3/7 keywords appear at most once in the body, e.g. autosomal dominant"
+   ]
+  },
+  {
+   "document": "cas-PMC13294182.xml",
+   "evidence": [
+    "7/8 keywords appear at most once in the body, e.g. CAR-T cell therapy"
+   ]
+  },
+  {
+   "document": "cas-PMC13294281.xml",
+   "evidence": [
+    "2/7 keywords appear at most once in the body, e.g. case report"
+   ]
+  },
+  {
+   "document": "cas-PMC13294481.xml",
+   "evidence": [
+    "1/5 keywords appear at most once in the body, e.g. cannabis edible"
+   ]
+  },
+  {
+   "document": "cas-PMC13294702.xml",
+   "evidence": [
+    "6/8 keywords appear at most once in the body, e.g. early-stage cancer"
+   ]
+  },
+  {
+   "document": "cas-PMC13294705.xml",
+   "evidence": [
+    "1/5 keywords appear at most once in the body, e.g. superficial cervical plexus block"
+   ]
+  },
+  {
+   "document": "cas-PMC13300565.xml",
+   "evidence": [
+    "1/5 keywords appear at most once in the body, e.g. tumor invasion depth"
+   ]
+  },
+  {
+   "document": "cas-PMC13301386.xml",
+   "evidence": [
+    "3/10 keywords appear at most once in the body, e.g. cervicofacial infection"
+   ]
+  },
+  {
+   "document": "essai-PMC13205709.xml",
+   "evidence": [
+    "1/5 keywords appear at most once in the body, e.g. societal costs"
+   ]
+  },
+  {
+   "document": "essai-PMC13215628.xml",
+   "evidence": [
+    "4/6 keywords appear at most once in the body, e.g. Keywords  nudge"
+   ]
+  },
+  {
+   "document": "essai-PMC13239719.xml",
+   "evidence": [
+    "3/5 keywords appear at most once in the body, e.g. genetics"
+   ]
+  },
+  {
+   "document": "essai-PMC13290998.xml",
+   "evidence": [
+    "2/6 keywords appear at most once in the body, e.g. Keywords  Adolescent"
+   ]
+  },
+  {
+   "document": "essai-PMC13291766.xml",
+   "evidence": [
+    "1/5 keywords appear at most once in the body, e.g. muscle contraction"
+   ]
+  },
+  {
+   "document": "meta-PMC13231626.xml",
+   "evidence": [
+    "1/5 keywords appear at most once in the body, e.g. Keywords  Anger"
+   ]
+  },
+  {
+   "document": "meta-PMC13241412.xml",
+   "evidence": [
+    "2/4 keywords appear at most once in the body, e.g. Keywords  Fibrin glue"
+   ]
+  },
+  {
+   "document": "meta-PMC13246130.xml",
+   "evidence": [
+    "1/6 keywords appear at most once in the body, e.g. clinical utility"
+   ]
+  },
+  {
+   "document": "meta-PMC13256077.xml",
+   "evidence": [
+    "3/8 keywords appear at most once in the body, e.g. Arrhythmic mitral valve prolapse"
+   ]
+  },
+  {
+   "document": "meta-PMC13260247.xml",
+   "evidence": [
+    "1/5 keywords appear at most once in the body, e.g. genome-wide association studies"
+   ]
+  },
+  {
+   "document": "meta-PMC13269816.xml",
+   "evidence": [
+    "1/3 keywords appear at most once in the body, e.g. Helicobacter pylori"
+   ]
+  },
+  {
+   "document": "meta-PMC13271776.xml",
+   "evidence": [
+    "5/6 keywords appear at most once in the body, e.g. metabolic dysfunction-associated steatotic liver disease"
+   ]
+  },
+  {
+   "document": "meta-PMC13280693.xml",
+   "evidence": [
+    "4/6 keywords appear at most once in the body, e.g. Keywords  anxiety"
+   ]
+  },
+  {
+   "document": "meta-PMC13297335.xml",
+   "evidence": [
+    "6/7 keywords appear at most once in the body, e.g. high grade glioma"
+   ]
+  },
+  {
+   "document": "meta-PMC13305250.xml",
+   "evidence": [
+    "2/6 keywords appear at most once in the body, e.g. Mendelian randomization analysis"
+   ]
+  },
+  {
+   "document": "moderne-PMC13264967.xml",
+   "evidence": [
+    "2/4 keywords appear at most once in the body, e.g. dissolved noble gases"
+   ]
+  },
+  {
+   "document": "moderne-PMC13282721.xml",
+   "evidence": [
+    "1/10 keywords appear at most once in the body, e.g. membrane remodelling"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13127809.xml",
+   "evidence": [
+    "5/7 keywords appear at most once in the body, e.g. Palavras-chave  Oncologia"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13128186.xml",
+   "evidence": [
+    "8/8 keywords appear at most once in the body, e.g. Palavras-chave  Variantes Genéticas"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13128212.xml",
+   "evidence": [
+    "5/6 keywords appear at most once in the body, e.g. Palavras-chave  Reanimação Cardiopulmonar"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13128216.xml",
+   "evidence": [
+    "7/8 keywords appear at most once in the body, e.g. Palavras-chave  Insuficiência Cardíaca"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13128218.xml",
+   "evidence": [
+    "10/10 keywords appear at most once in the body, e.g. Palavras-chave  Aterosclerose"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13148856.xml",
+   "evidence": [
+    "7/10 keywords appear at most once in the body, e.g. Palavras-chave:  Valvopatia Aórtica"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13155792.xml",
+   "evidence": [
+    "8/10 keywords appear at most once in the body, e.g. Palavras-chave  Inibidores de Checkpoint Imunológico"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13185728.xml",
+   "evidence": [
+    "7/9 keywords appear at most once in the body, e.g. Palavras-chave:  Transtorno do Espectro Autista"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13193189.xml",
+   "evidence": [
+    "10/10 keywords appear at most once in the body, e.g. Keywords:   Voice"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13193190.xml",
+   "evidence": [
+    "6/9 keywords appear at most once in the body, e.g. Keywords:   Acoustics"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13193194.xml",
+   "evidence": [
+    "7/10 keywords appear at most once in the body, e.g. Keywords:   Language"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13193195.xml",
+   "evidence": [
+    "8/10 keywords appear at most once in the body, e.g. Keywords:   Swallowing"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13224955.xml",
+   "evidence": [
+    "8/12 keywords appear at most once in the body, e.g. Palavras-chave:  Imunossenescência"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13264058.xml",
+   "evidence": [
+    "3/8 keywords appear at most once in the body, e.g. Palabras clave  Inteligencia artificial"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13264178.xml",
+   "evidence": [
+    "5/8 keywords appear at most once in the body, e.g. Palabras clave  Ácido úrico"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13267754.xml",
+   "evidence": [
+    "15/18 keywords appear at most once in the body, e.g. Palabras clave  Planificación familiar"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13267757.xml",
+   "evidence": [
+    "13/15 keywords appear at most once in the body, e.g. Palabras clave  Servicio de atención domiciliaria"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13272511.xml",
+   "evidence": [
+    "8/10 keywords appear at most once in the body, e.g. Palabras clave  Depresión"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13285635.xml",
+   "evidence": [
+    "7/12 keywords appear at most once in the body, e.g. Palabras clave  Asistencia integral"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13288443.xml",
+   "evidence": [
+    "9/10 keywords appear at most once in the body, e.g. Keywords:   Dementia"
+   ]
+  },
+  {
+   "document": "phys-PMC13158258.xml",
+   "evidence": [
+    "3/4 keywords appear at most once in the body, e.g. Keywords  Physics-informed machine learning"
+   ]
+  },
+  {
+   "document": "phys-PMC13201561.xml",
+   "evidence": [
+    "4/8 keywords appear at most once in the body, e.g. Keywords  Nanofluid thermal conductivity"
+   ]
+  },
+  {
+   "document": "phys-PMC13234180.xml",
+   "evidence": [
+    "5/8 keywords appear at most once in the body, e.g. Keywords  Generative adversarial network"
+   ]
+  },
+  {
+   "document": "phys-PMC13246409.xml",
+   "evidence": [
+    "3/7 keywords appear at most once in the body, e.g. robotics twin system"
+   ]
+  },
+  {
+   "document": "phys-PMC13272752.xml",
+   "evidence": [
+    "7/10 keywords appear at most once in the body, e.g. Keywords  Ti-6Al-4V MMC"
+   ]
+  },
+  {
+   "document": "phys-PMC13276034.xml",
+   "evidence": [
+    "8/11 keywords appear at most once in the body, e.g. Keywords  Artificial intelligence (AI)"
+   ]
+  },
+  {
+   "document": "phys-PMC13296606.xml",
+   "evidence": [
+    "1/5 keywords appear at most once in the body, e.g. greater cane rat algorithm"
+   ]
+  },
+  {
+   "document": "retract-PMC13257949.xml",
+   "evidence": [
+    "6/6 keywords appear at most once in the body, e.g. breast cancers"
+   ]
+  }
+ ]
+}

@@ -26,6 +26,15 @@
       "excerpt_en": "MEASURED on 2026-08-08 on the 272 articles of the internal corpus: 9/272 carry a non-arithmetic lettered superscript — including meta-PMC13260247 with \"CD16^dim\" and \"CD16^hi\" in the same sentence, modern-PMC13262411 with \"^ABS\" and \"^PLA\". 3 of the 9 are in the physics stratum, none is an ordinal (th/st/nd excluded).",
       "organisation": "Loxyn SAS, Lyon",
       "corpus_id": "corpus-europe-pmc-jats-2023-2026"
+    },
+    {
+      "corpus": "Europe PMC JATS 2023-2026 (272 articles, the declared corpus)",
+      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+      "date": "2026-09-10",
+      "observer": "Fault Atlas maintainer (Loxyn), by probe, no model",
+      "excerpt": "MEASURED on 2026-09-10 by probes/2026-09-recovered/line-138.py, whose definition is in its docstring: 1/272 articles carry it, where the observation of 2026-08-08 counted 9 under a definition we could not recover. First carrier: essai-PMC13242351.xml — 2 lettered superscripts, e.g. PA^Mod",
+      "lang": "en",
+      "probe": "probes/2026-09-recovered/line-138.py"
     }
   ],
   "specimens": {
@@ -66,5 +75,34 @@
     "value": "FAUX",
     "means": "a false fact: a value, a type or a link the source never asserted",
     "source": "the internal catalogue of 2026-08-09 (korela.db, table parametre), line 138; it is not derived from the damage and varies inside a damage class"
-  }
+  },
+  "probes": [
+    {
+      "file": "probes/2026-09-recovered/line-138.py",
+      "kind": "python",
+      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+      "written": "2026-09-10",
+      "run": "python3 tools/run_probe.py probes/2026-09-recovered/line-138.py <dir with the 272 .xml>",
+      "result": {
+        "date": "2026-09-10",
+        "count": 1,
+        "of": 272,
+        "strata": {
+          "essai": 1
+        },
+        "examples": [
+          [
+            "essai-PMC13242351.xml",
+            [
+              "2 lettered superscripts, e.g. PA^Mod"
+            ]
+          ]
+        ],
+        "by": "Fault Atlas maintainer (Loxyn), on the declared corpus",
+        "carriers_file": "probes/results/form-138-mnemonic-superscript-that-is-not-a-power.json"
+      },
+      "matches_excerpt": true,
+      "note": "reproduces the figure of the September reading it is attached to, 1/272. It does NOT reproduce the August figure of 9, whose definition we could not recover; that observation is left exactly as it stands, above, with no example under it."
+    }
+  ]
 }

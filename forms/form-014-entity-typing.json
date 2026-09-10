@@ -26,6 +26,15 @@
       "excerpt_en": "MEASURED on 2026-08-08 on the 272 XML files of the internal corpus: 63/272 (23 %) place a tagged <institution> organisation next to a NAMED study/cohort (\"the Fremantle Diabetes Study\", \"the Brazilian Longitudinal Study\") — two confusable types in the same sentence. Only 9/272 (3 %) carry the apposition that settles it (\", a multicenter …\"). Reminder from tier P6 (annex 14): 920/925 entities are Organization or Person — typing is currently NO difficulty at all.",
       "organisation": "Loxyn SAS, Lyon",
       "corpus_id": "corpus-europe-pmc-jats-2023-2026"
+    },
+    {
+      "corpus": "Europe PMC JATS 2023-2026 (272 articles, the declared corpus)",
+      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+      "date": "2026-09-10",
+      "observer": "Fault Atlas maintainer (Loxyn), by probe, no model",
+      "excerpt": "MEASURED on 2026-09-10 by probes/2026-09-recovered/line-014.py, whose definition is in its docstring: 14/272 articles carry it, where the observation of 2026-08-08 counted 63 under a definition we could not recover. First carrier: bio-PMC12674831.xml — institution tagged, and 17 named studies in the body, e.g. Brazilian Longitudinal Study",
+      "lang": "en",
+      "probe": "probes/2026-09-recovered/line-014.py"
     }
   ],
   "specimens": {
@@ -74,5 +83,50 @@
     "value": "FAUX",
     "means": "a false fact: a value, a type or a link the source never asserted",
     "source": "the internal catalogue of 2026-08-09 (korela.db, table parametre), line 14; it is not derived from the damage and varies inside a damage class"
-  }
+  },
+  "probes": [
+    {
+      "file": "probes/2026-09-recovered/line-014.py",
+      "kind": "python",
+      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+      "written": "2026-09-10",
+      "run": "python3 tools/run_probe.py probes/2026-09-recovered/line-014.py <dir with the 272 .xml>",
+      "result": {
+        "date": "2026-09-10",
+        "count": 14,
+        "of": 272,
+        "strata": {
+          "essai": 5,
+          "meta": 4,
+          "bio": 3,
+          "cas": 1,
+          "phys": 1
+        },
+        "examples": [
+          [
+            "bio-PMC12674831.xml",
+            [
+              "institution tagged, and 17 named studies in the body, e.g. Brazilian Longitudinal Study"
+            ]
+          ],
+          [
+            "bio-PMC12882215.xml",
+            [
+              "institution tagged, and 2 named studies in the body, e.g. Cardiovascular Health Study"
+            ]
+          ],
+          [
+            "bio-PMC13216383.xml",
+            [
+              "institution tagged, and 3 named studies in the body, e.g. OR PT Clinical Trial"
+            ]
+          ]
+        ],
+        "by": "Fault Atlas maintainer (Loxyn), on the declared corpus",
+        "carriers_file": "probes/results/form-014-entity-typing.json"
+      },
+      "matches_excerpt": true,
+      "note": "reproduces the figure of the September reading it is attached to, 14/272. It does NOT reproduce the August figure of 63, whose definition we could not recover; that observation is left exactly as it stands, above, with no example under it."
+    }
+  ]
 }

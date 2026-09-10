@@ -1,0 +1,891 @@
+{
+ "probe": "probes/2026-09-recovered/line-032.py",
+ "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+ "date": "2026-09-10",
+ "count": 139,
+ "of": 272,
+ "carriers": [
+  {
+   "document": "bio-PMC12583535.xml",
+   "evidence": [
+    "version=1"
+   ]
+  },
+  {
+   "document": "bio-PMC12674831.xml",
+   "evidence": [
+    "version=1"
+   ]
+  },
+  {
+   "document": "bio-PMC12857832.xml",
+   "evidence": [
+    "version=1"
+   ]
+  },
+  {
+   "document": "bio-PMC12882215.xml",
+   "evidence": [
+    "version=1"
+   ]
+  },
+  {
+   "document": "bio-PMC12909487.xml",
+   "evidence": [
+    "version=1"
+   ]
+  },
+  {
+   "document": "bio-PMC12915353.xml",
+   "evidence": [
+    "version=1"
+   ]
+  },
+  {
+   "document": "bio-PMC12927975.xml",
+   "evidence": [
+    "version=1"
+   ]
+  },
+  {
+   "document": "bio-PMC13103274.xml",
+   "evidence": [
+    "version=1"
+   ]
+  },
+  {
+   "document": "bio-PMC13155703.xml",
+   "evidence": [
+    "version=1"
+   ]
+  },
+  {
+   "document": "bio-PMC13162546.xml",
+   "evidence": [
+    "version=1",
+    "version=Version of Record"
+   ]
+  },
+  {
+   "document": "bio-PMC13181205.xml",
+   "evidence": [
+    "version=1"
+   ]
+  },
+  {
+   "document": "bio-PMC13207820.xml",
+   "evidence": [
+    "version=1"
+   ]
+  },
+  {
+   "document": "bio-PMC13216383.xml",
+   "evidence": [
+    "version=1"
+   ]
+  },
+  {
+   "document": "bio-PMC13236932.xml",
+   "evidence": [
+    "version=1"
+   ]
+  },
+  {
+   "document": "bio-PMC13251069.xml",
+   "evidence": [
+    "version=1"
+   ]
+  },
+  {
+   "document": "cas-PMC13290446.xml",
+   "evidence": [
+    "version=1"
+   ]
+  },
+  {
+   "document": "cas-PMC13291881.xml",
+   "evidence": [
+    "version=1"
+   ]
+  },
+  {
+   "document": "cas-PMC13293645.xml",
+   "evidence": [
+    "version=1"
+   ]
+  },
+  {
+   "document": "cas-PMC13293792.xml",
+   "evidence": [
+    "version=1"
+   ]
+  },
+  {
+   "document": "cas-PMC13293813.xml",
+   "evidence": [
+    "version=1"
+   ]
+  },
+  {
+   "document": "cas-PMC13293827.xml",
+   "evidence": [
+    "version=1"
+   ]
+  },
+  {
+   "document": "cas-PMC13293834.xml",
+   "evidence": [
+    "version=1"
+   ]
+  },
+  {
+   "document": "cas-PMC13293841.xml",
+   "evidence": [
+    "version=1"
+   ]
+  },
+  {
+   "document": "cas-PMC13293897.xml",
+   "evidence": [
+    "version=1"
+   ]
+  },
+  {
+   "document": "cas-PMC13293901.xml",
+   "evidence": [
+    "version=1"
+   ]
+  },
+  {
+   "document": "cas-PMC13294096.xml",
+   "evidence": [
+    "version=1"
+   ]
+  },
+  {
+   "document": "cas-PMC13294155.xml",
+   "evidence": [
+    "version=1"
+   ]
+  },
+  {
+   "document": "cas-PMC13294182.xml",
+   "evidence": [
+    "version=1"
+   ]
+  },
+  {
+   "document": "cas-PMC13294281.xml",
+   "evidence": [
+    "version=1"
+   ]
+  },
+  {
+   "document": "cas-PMC13294481.xml",
+   "evidence": [
+    "version=1"
+   ]
+  },
+  {
+   "document": "cas-PMC13294702.xml",
+   "evidence": [
+    "version=1"
+   ]
+  },
+  {
+   "document": "cas-PMC13294705.xml",
+   "evidence": [
+    "version=1"
+   ]
+  },
+  {
+   "document": "cas-PMC13300565.xml",
+   "evidence": [
+    "version=1"
+   ]
+  },
+  {
+   "document": "cas-PMC13300836.xml",
+   "evidence": [
+    "version=1"
+   ]
+  },
+  {
+   "document": "cas-PMC13301386.xml",
+   "evidence": [
+    "version=1"
+   ]
+  },
+  {
+   "document": "essai-PMC13169472.xml",
+   "evidence": [
+    "version=1"
+   ]
+  },
+  {
+   "document": "essai-PMC13191455.xml",
+   "evidence": [
+    "version=1"
+   ]
+  },
+  {
+   "document": "essai-PMC13205709.xml",
+   "evidence": [
+    "version=1"
+   ]
+  },
+  {
+   "document": "essai-PMC13215628.xml",
+   "evidence": [
+    "version=1"
+   ]
+  },
+  {
+   "document": "essai-PMC13238360.xml",
+   "evidence": [
+    "version=1"
+   ]
+  },
+  {
+   "document": "essai-PMC13239719.xml",
+   "evidence": [
+    "version=1"
+   ]
+  },
+  {
+   "document": "essai-PMC13242351.xml",
+   "evidence": [
+    "version=1"
+   ]
+  },
+  {
+   "document": "essai-PMC13280184.xml",
+   "evidence": [
+    "version=1"
+   ]
+  },
+  {
+   "document": "essai-PMC13290998.xml",
+   "evidence": [
+    "version=1"
+   ]
+  },
+  {
+   "document": "essai-PMC13291766.xml",
+   "evidence": [
+    "version=1"
+   ]
+  },
+  {
+   "document": "essai-PMC13293440.xml",
+   "evidence": [
+    "version=1"
+   ]
+  },
+  {
+   "document": "meta-PMC13071177.xml",
+   "evidence": [
+    "version=1"
+   ]
+  },
+  {
+   "document": "meta-PMC13225629.xml",
+   "evidence": [
+    "version=1"
+   ]
+  },
+  {
+   "document": "meta-PMC13231626.xml",
+   "evidence": [
+    "version=1"
+   ]
+  },
+  {
+   "document": "meta-PMC13241412.xml",
+   "evidence": [
+    "version=1"
+   ]
+  },
+  {
+   "document": "meta-PMC13246130.xml",
+   "evidence": [
+    "version=1",
+    "version=3"
+   ]
+  },
+  {
+   "document": "meta-PMC13256077.xml",
+   "evidence": [
+    "version=1"
+   ]
+  },
+  {
+   "document": "meta-PMC13260247.xml",
+   "evidence": [
+    "version=1"
+   ]
+  },
+  {
+   "document": "meta-PMC13265330.xml",
+   "evidence": [
+    "version=1"
+   ]
+  },
+  {
+   "document": "meta-PMC13268693.xml",
+   "evidence": [
+    "version=1"
+   ]
+  },
+  {
+   "document": "meta-PMC13269816.xml",
+   "evidence": [
+    "version=1"
+   ]
+  },
+  {
+   "document": "meta-PMC13271776.xml",
+   "evidence": [
+    "version=1"
+   ]
+  },
+  {
+   "document": "meta-PMC13280693.xml",
+   "evidence": [
+    "version=1"
+   ]
+  },
+  {
+   "document": "meta-PMC13286481.xml",
+   "evidence": [
+    "version=1",
+    "version=3"
+   ]
+  },
+  {
+   "document": "meta-PMC13287277.xml",
+   "evidence": [
+    "version=1"
+   ]
+  },
+  {
+   "document": "meta-PMC13297335.xml",
+   "evidence": [
+    "version=1"
+   ]
+  },
+  {
+   "document": "meta-PMC13305250.xml",
+   "evidence": [
+    "version=1"
+   ]
+  },
+  {
+   "document": "moderne-PMC13264967.xml",
+   "evidence": [
+    "version=1"
+   ]
+  },
+  {
+   "document": "moderne-PMC13282721.xml",
+   "evidence": [
+    "version=1"
+   ]
+  },
+  {
+   "document": "moderne-PMC13288728.xml",
+   "evidence": [
+    "version=1"
+   ]
+  },
+  {
+   "document": "moderne-PMC13292010.xml",
+   "evidence": [
+    "version=1"
+   ]
+  },
+  {
+   "document": "moderne-PMC13296839.xml",
+   "evidence": [
+    "version=1"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13127809.xml",
+   "evidence": [
+    "version=1"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13128186.xml",
+   "evidence": [
+    "version=1"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13128212.xml",
+   "evidence": [
+    "version=1"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13128216.xml",
+   "evidence": [
+    "version=1"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13128218.xml",
+   "evidence": [
+    "version=1"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13148856.xml",
+   "evidence": [
+    "version=1"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13155792.xml",
+   "evidence": [
+    "version=1"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13170112.xml",
+   "evidence": [
+    "version=1"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13185728.xml",
+   "evidence": [
+    "version=1"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13193189.xml",
+   "evidence": [
+    "version=1"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13193190.xml",
+   "evidence": [
+    "version=1"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13193194.xml",
+   "evidence": [
+    "version=1"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13193195.xml",
+   "evidence": [
+    "version=1"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13224953.xml",
+   "evidence": [
+    "version=1"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13224955.xml",
+   "evidence": [
+    "version=1"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13264032.xml",
+   "evidence": [
+    "version=1"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13264058.xml",
+   "evidence": [
+    "version=1"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13264178.xml",
+   "evidence": [
+    "version=1"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13266121.xml",
+   "evidence": [
+    "version=1"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13266122.xml",
+   "evidence": [
+    "version=1"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13267754.xml",
+   "evidence": [
+    "version=1"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13267757.xml",
+   "evidence": [
+    "version=1"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13272511.xml",
+   "evidence": [
+    "version=1"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13276738.xml",
+   "evidence": [
+    "version=1"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13284469.xml",
+   "evidence": [
+    "version=1"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13285344.xml",
+   "evidence": [
+    "version=1"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13285635.xml",
+   "evidence": [
+    "version=1"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13288443.xml",
+   "evidence": [
+    "version=1"
+   ]
+  },
+  {
+   "document": "phys-PMC13082673.xml",
+   "evidence": [
+    "version=1"
+   ]
+  },
+  {
+   "document": "phys-PMC13158258.xml",
+   "evidence": [
+    "version=1"
+   ]
+  },
+  {
+   "document": "phys-PMC13178570.xml",
+   "evidence": [
+    "version=1"
+   ]
+  },
+  {
+   "document": "phys-PMC13201561.xml",
+   "evidence": [
+    "version=1"
+   ]
+  },
+  {
+   "document": "phys-PMC13210669.xml",
+   "evidence": [
+    "version=1"
+   ]
+  },
+  {
+   "document": "phys-PMC13234180.xml",
+   "evidence": [
+    "version=1"
+   ]
+  },
+  {
+   "document": "phys-PMC13246409.xml",
+   "evidence": [
+    "version=1"
+   ]
+  },
+  {
+   "document": "phys-PMC13261600.xml",
+   "evidence": [
+    "version=1"
+   ]
+  },
+  {
+   "document": "phys-PMC13272752.xml",
+   "evidence": [
+    "version=1"
+   ]
+  },
+  {
+   "document": "phys-PMC13276034.xml",
+   "evidence": [
+    "version=1"
+   ]
+  },
+  {
+   "document": "phys-PMC13296606.xml",
+   "evidence": [
+    "version=1"
+   ]
+  },
+  {
+   "document": "retract-PMC12920011.xml",
+   "evidence": [
+    "retraction in the title",
+    "version=1",
+    "related-article says retracted or corrected"
+   ]
+  },
+  {
+   "document": "retract-PMC12937552.xml",
+   "evidence": [
+    "retraction in the title",
+    "related-article says retracted or corrected"
+   ]
+  },
+  {
+   "document": "retract-PMC12943135.xml",
+   "evidence": [
+    "retraction in the title",
+    "version=1",
+    "related-article says retracted or corrected"
+   ]
+  },
+  {
+   "document": "retract-PMC12945919.xml",
+   "evidence": [
+    "retraction in the title",
+    "version=1",
+    "related-article says retracted or corrected"
+   ]
+  },
+  {
+   "document": "retract-PMC12951106.xml",
+   "evidence": [
+    "version=1",
+    "related-article says retracted or corrected"
+   ]
+  },
+  {
+   "document": "retract-PMC12983062.xml",
+   "evidence": [
+    "retraction in the title",
+    "related-article says retracted or corrected"
+   ]
+  },
+  {
+   "document": "retract-PMC12983399.xml",
+   "evidence": [
+    "retraction in the title",
+    "version=1",
+    "related-article says retracted or corrected"
+   ]
+  },
+  {
+   "document": "retract-PMC12985380.xml",
+   "evidence": [
+    "retraction in the title",
+    "related-article says retracted or corrected"
+   ]
+  },
+  {
+   "document": "retract-PMC12989678.xml",
+   "evidence": [
+    "retraction in the title",
+    "version=1",
+    "related-article says retracted or corrected"
+   ]
+  },
+  {
+   "document": "retract-PMC12990951.xml",
+   "evidence": [
+    "retraction in the title",
+    "related-article says retracted or corrected"
+   ]
+  },
+  {
+   "document": "retract-PMC13034554.xml",
+   "evidence": [
+    "retraction in the title",
+    "related-article says retracted or corrected"
+   ]
+  },
+  {
+   "document": "retract-PMC13037014.xml",
+   "evidence": [
+    "retraction in the title",
+    "related-article says retracted or corrected"
+   ]
+  },
+  {
+   "document": "retract-PMC13064942.xml",
+   "evidence": [
+    "retraction in the title",
+    "version=1",
+    "related-article says retracted or corrected"
+   ]
+  },
+  {
+   "document": "retract-PMC13100932.xml",
+   "evidence": [
+    "retraction in the title",
+    "related-article says retracted or corrected"
+   ]
+  },
+  {
+   "document": "retract-PMC13184583.xml",
+   "evidence": [
+    "retraction in the title",
+    "version=1",
+    "related-article says retracted or corrected"
+   ]
+  },
+  {
+   "document": "retract-PMC13208113.xml",
+   "evidence": [
+    "retraction in the title",
+    "related-article says retracted or corrected"
+   ]
+  },
+  {
+   "document": "retract-PMC13230493.xml",
+   "evidence": [
+    "retraction in the title",
+    "related-article says retracted or corrected"
+   ]
+  },
+  {
+   "document": "retract-PMC13244562.xml",
+   "evidence": [
+    "retraction in the title",
+    "version=1",
+    "related-article says retracted or corrected"
+   ]
+  },
+  {
+   "document": "retract-PMC13257949.xml",
+   "evidence": [
+    "retraction in the title",
+    "version=1",
+    "related-article says retracted or corrected"
+   ]
+  },
+  {
+   "document": "retract-PMC13257951.xml",
+   "evidence": [
+    "retraction in the title",
+    "related-article says retracted or corrected"
+   ]
+  },
+  {
+   "document": "retract-PMC13289858.xml",
+   "evidence": [
+    "retraction in the title",
+    "related-article says retracted or corrected"
+   ]
+  },
+  {
+   "document": "retract-PMC13291836.xml",
+   "evidence": [
+    "version=1",
+    "related-article says retracted or corrected"
+   ]
+  },
+  {
+   "document": "retract-PMC13292036.xml",
+   "evidence": [
+    "retraction in the title",
+    "version=1",
+    "related-article says retracted or corrected"
+   ]
+  },
+  {
+   "document": "retract-PMC13292042.xml",
+   "evidence": [
+    "retraction in the title",
+    "related-article says retracted or corrected"
+   ]
+  },
+  {
+   "document": "retract-PMC13292064.xml",
+   "evidence": [
+    "retraction in the title",
+    "related-article says retracted or corrected"
+   ]
+  },
+  {
+   "document": "retract-PMC13292106.xml",
+   "evidence": [
+    "retraction in the title",
+    "related-article says retracted or corrected"
+   ]
+  },
+  {
+   "document": "retract-PMC13292606.xml",
+   "evidence": [
+    "retraction in the title",
+    "version=1",
+    "related-article says retracted or corrected"
+   ]
+  },
+  {
+   "document": "retract-PMC13294332.xml",
+   "evidence": [
+    "retraction in the title",
+    "related-article says retracted or corrected"
+   ]
+  },
+  {
+   "document": "retract-PMC13294796.xml",
+   "evidence": [
+    "retraction in the title",
+    "related-article says retracted or corrected"
+   ]
+  },
+  {
+   "document": "retract-PMC13295435.xml",
+   "evidence": [
+    "retraction in the title",
+    "version=1",
+    "related-article says retracted or corrected"
+   ]
+  },
+  {
+   "document": "retract-PMC13298758.xml",
+   "evidence": [
+    "retraction in the title",
+    "related-article says retracted or corrected"
+   ]
+  },
+  {
+   "document": "retract-PMC13299186.xml",
+   "evidence": [
+    "retraction in the title",
+    "related-article says retracted or corrected"
+   ]
+  },
+  {
+   "document": "retract-PMC13306522.xml",
+   "evidence": [
+    "retraction in the title",
+    "related-article says retracted or corrected"
+   ]
+  }
+ ]
+}

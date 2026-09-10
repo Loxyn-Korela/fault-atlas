@@ -74,5 +74,27 @@
     "value": "MANQ",
     "means": "a gap: the graph is incomplete where the reading did not reach, not wrong",
     "source": "the internal catalogue of 2026-08-09 (korela.db, table parametre), line 78; it is not derived from the damage and varies inside a damage class"
-  }
+  },
+  "probes": [
+    {
+      "file": "probes/2026-09-recovered/line-078.py",
+      "kind": "python",
+      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+      "written": "2026-09-10",
+      "run": "python3 tools/run_probe.py probes/2026-09-recovered/line-078.py <dir with the 272 .xml>",
+      "result": {
+        "date": "2026-09-10",
+        "count": 0,
+        "of": 272,
+        "strata": {},
+        "examples": [],
+        "by": "Fault Atlas maintainer (Loxyn), on the declared corpus"
+      },
+      "matches_excerpt": true,
+      "note": "confirms the absence the August observation states: 0 of 272, by an exact probe. An absence is a measurement, not a missing example."
+    }
+  ],
+  "observed_absent_in": [
+    "Europe PMC JATS 2023-2026 (272 articles): 0/272 by the exact probe probes/2026-09-recovered/line-078.py, written and run 2026-09-10 — an abstract written as numbered points"
+  ]
 }

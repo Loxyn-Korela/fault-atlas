@@ -1,0 +1,1575 @@
+{
+ "probe": "probes/2026-09-recovered/line-035.py",
+ "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+ "date": "2026-09-10",
+ "count": 261,
+ "of": 272,
+ "carriers": [
+  {
+   "document": "bio-PMC12583535.xml",
+   "evidence": [
+    "42/43 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "bio-PMC12590050.xml",
+   "evidence": [
+    "58/62 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "bio-PMC12674831.xml",
+   "evidence": [
+    "455/469 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "bio-PMC12857832.xml",
+   "evidence": [
+    "71/76 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "bio-PMC12882215.xml",
+   "evidence": [
+    "125/133 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "bio-PMC12909487.xml",
+   "evidence": [
+    "55/56 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "bio-PMC12915353.xml",
+   "evidence": [
+    "29/32 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "bio-PMC12927065.xml",
+   "evidence": [
+    "65/68 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "bio-PMC12927975.xml",
+   "evidence": [
+    "28/31 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "bio-PMC12953170.xml",
+   "evidence": [
+    "37/46 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "bio-PMC12959687.xml",
+   "evidence": [
+    "29/31 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "bio-PMC13057049.xml",
+   "evidence": [
+    "122/125 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "bio-PMC13088504.xml",
+   "evidence": [
+    "39/43 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "bio-PMC13097615.xml",
+   "evidence": [
+    "94/98 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "bio-PMC13099299.xml",
+   "evidence": [
+    "66/69 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "bio-PMC13103274.xml",
+   "evidence": [
+    "139/145 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "bio-PMC13116881.xml",
+   "evidence": [
+    "70/73 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "bio-PMC13155703.xml",
+   "evidence": [
+    "72/84 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "bio-PMC13162546.xml",
+   "evidence": [
+    "66/67 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "bio-PMC13168716.xml",
+   "evidence": [
+    "60/63 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "bio-PMC13170838.xml",
+   "evidence": [
+    "86/91 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "bio-PMC13181205.xml",
+   "evidence": [
+    "66/81 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "bio-PMC13182387.xml",
+   "evidence": [
+    "63/74 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "bio-PMC13190511.xml",
+   "evidence": [
+    "66/80 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "bio-PMC13203479.xml",
+   "evidence": [
+    "44/59 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "bio-PMC13207820.xml",
+   "evidence": [
+    "22/23 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "bio-PMC13216383.xml",
+   "evidence": [
+    "78/80 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "bio-PMC13218538.xml",
+   "evidence": [
+    "55/61 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "bio-PMC13231534.xml",
+   "evidence": [
+    "45/49 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "bio-PMC13236932.xml",
+   "evidence": [
+    "26/32 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "bio-PMC13251069.xml",
+   "evidence": [
+    "41/43 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "bio-PMC13252842.xml",
+   "evidence": [
+    "96/98 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "bio-PMC13274935.xml",
+   "evidence": [
+    "49/50 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "bio-PMC13289183.xml",
+   "evidence": [
+    "30/35 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "cas-PMC13290446.xml",
+   "evidence": [
+    "17/17 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "cas-PMC13291543.xml",
+   "evidence": [
+    "44/52 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "cas-PMC13291881.xml",
+   "evidence": [
+    "60/62 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "cas-PMC13293644.xml",
+   "evidence": [
+    "31/31 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "cas-PMC13293645.xml",
+   "evidence": [
+    "27/27 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "cas-PMC13293647.xml",
+   "evidence": [
+    "41/41 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "cas-PMC13293792.xml",
+   "evidence": [
+    "21/21 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "cas-PMC13293799.xml",
+   "evidence": [
+    "30/43 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "cas-PMC13293813.xml",
+   "evidence": [
+    "62/62 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "cas-PMC13293827.xml",
+   "evidence": [
+    "15/23 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "cas-PMC13293834.xml",
+   "evidence": [
+    "27/35 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "cas-PMC13293841.xml",
+   "evidence": [
+    "32/35 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "cas-PMC13293897.xml",
+   "evidence": [
+    "18/18 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "cas-PMC13293901.xml",
+   "evidence": [
+    "21/21 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "cas-PMC13293995.xml",
+   "evidence": [
+    "22/24 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "cas-PMC13294038.xml",
+   "evidence": [
+    "46/53 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "cas-PMC13294089.xml",
+   "evidence": [
+    "34/35 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "cas-PMC13294096.xml",
+   "evidence": [
+    "8/10 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "cas-PMC13294155.xml",
+   "evidence": [
+    "43/53 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "cas-PMC13294182.xml",
+   "evidence": [
+    "13/13 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "cas-PMC13294240.xml",
+   "evidence": [
+    "71/72 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "cas-PMC13294281.xml",
+   "evidence": [
+    "21/24 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "cas-PMC13294340.xml",
+   "evidence": [
+    "15/23 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "cas-PMC13294475.xml",
+   "evidence": [
+    "23/33 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "cas-PMC13294481.xml",
+   "evidence": [
+    "49/49 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "cas-PMC13294629.xml",
+   "evidence": [
+    "23/24 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "cas-PMC13294642.xml",
+   "evidence": [
+    "45/49 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "cas-PMC13294698.xml",
+   "evidence": [
+    "42/44 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "cas-PMC13294702.xml",
+   "evidence": [
+    "17/17 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "cas-PMC13294704.xml",
+   "evidence": [
+    "51/51 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "cas-PMC13294705.xml",
+   "evidence": [
+    "21/22 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "cas-PMC13300565.xml",
+   "evidence": [
+    "33/33 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "cas-PMC13300836.xml",
+   "evidence": [
+    "26/26 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "cas-PMC13301386.xml",
+   "evidence": [
+    "34/34 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "essai-PMC13154027.xml",
+   "evidence": [
+    "48/56 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "essai-PMC13169227.xml",
+   "evidence": [
+    "54/56 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "essai-PMC13169472.xml",
+   "evidence": [
+    "44/57 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "essai-PMC13179527.xml",
+   "evidence": [
+    "35/35 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "essai-PMC13191455.xml",
+   "evidence": [
+    "24/26 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "essai-PMC13205709.xml",
+   "evidence": [
+    "48/70 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "essai-PMC13205731.xml",
+   "evidence": [
+    "95/116 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "essai-PMC13205876.xml",
+   "evidence": [
+    "37/55 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "essai-PMC13213610.xml",
+   "evidence": [
+    "61/65 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "essai-PMC13215628.xml",
+   "evidence": [
+    "10/12 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "essai-PMC13238360.xml",
+   "evidence": [
+    "51/52 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "essai-PMC13239719.xml",
+   "evidence": [
+    "44/58 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "essai-PMC13242068.xml",
+   "evidence": [
+    "42/57 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "essai-PMC13242351.xml",
+   "evidence": [
+    "29/49 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "essai-PMC13245602.xml",
+   "evidence": [
+    "68/95 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "essai-PMC13254492.xml",
+   "evidence": [
+    "40/41 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "essai-PMC13263161.xml",
+   "evidence": [
+    "75/97 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "essai-PMC13264282.xml",
+   "evidence": [
+    "63/92 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "essai-PMC13271868.xml",
+   "evidence": [
+    "27/39 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "essai-PMC13276020.xml",
+   "evidence": [
+    "37/56 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "essai-PMC13280184.xml",
+   "evidence": [
+    "55/61 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "essai-PMC13280799.xml",
+   "evidence": [
+    "65/89 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "essai-PMC13281132.xml",
+   "evidence": [
+    "47/50 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "essai-PMC13282136.xml",
+   "evidence": [
+    "80/120 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "essai-PMC13284529.xml",
+   "evidence": [
+    "26/43 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "essai-PMC13290998.xml",
+   "evidence": [
+    "28/30 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "essai-PMC13291766.xml",
+   "evidence": [
+    "48/73 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "essai-PMC13291922.xml",
+   "evidence": [
+    "54/76 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "essai-PMC13293440.xml",
+   "evidence": [
+    "39/42 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "essai-PMC13294169.xml",
+   "evidence": [
+    "86/88 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "essai-PMC13294787.xml",
+   "evidence": [
+    "61/64 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "essai-PMC13294792.xml",
+   "evidence": [
+    "52/59 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "essai-PMC13296589.xml",
+   "evidence": [
+    "78/81 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "essai-PMC7619126.xml",
+   "evidence": [
+    "39/42 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "meta-PMC13071177.xml",
+   "evidence": [
+    "50/51 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "meta-PMC13157766.xml",
+   "evidence": [
+    "42/49 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "meta-PMC13179150.xml",
+   "evidence": [
+    "143/194 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "meta-PMC13221319.xml",
+   "evidence": [
+    "77/85 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "meta-PMC13225629.xml",
+   "evidence": [
+    "58/60 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "meta-PMC13226718.xml",
+   "evidence": [
+    "107/111 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "meta-PMC13229315.xml",
+   "evidence": [
+    "95/103 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "meta-PMC13231626.xml",
+   "evidence": [
+    "84/85 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "meta-PMC13240427.xml",
+   "evidence": [
+    "52/66 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "meta-PMC13241412.xml",
+   "evidence": [
+    "39/42 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "meta-PMC13246130.xml",
+   "evidence": [
+    "80/81 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "meta-PMC13250259.xml",
+   "evidence": [
+    "46/60 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "meta-PMC13253268.xml",
+   "evidence": [
+    "64/67 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "meta-PMC13254819.xml",
+   "evidence": [
+    "62/65 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "meta-PMC13256077.xml",
+   "evidence": [
+    "25/26 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "meta-PMC13260247.xml",
+   "evidence": [
+    "62/63 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "meta-PMC13263136.xml",
+   "evidence": [
+    "74/75 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "meta-PMC13264275.xml",
+   "evidence": [
+    "42/59 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "meta-PMC13264436.xml",
+   "evidence": [
+    "146/154 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "meta-PMC13265330.xml",
+   "evidence": [
+    "56/57 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "meta-PMC13268477.xml",
+   "evidence": [
+    "84/89 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "meta-PMC13268693.xml",
+   "evidence": [
+    "52/55 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "meta-PMC13269816.xml",
+   "evidence": [
+    "31/33 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "meta-PMC13271776.xml",
+   "evidence": [
+    "33/35 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "meta-PMC13280693.xml",
+   "evidence": [
+    "29/52 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "meta-PMC13286426.xml",
+   "evidence": [
+    "58/61 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "meta-PMC13286481.xml",
+   "evidence": [
+    "54/56 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "meta-PMC13287023.xml",
+   "evidence": [
+    "76/78 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "meta-PMC13287149.xml",
+   "evidence": [
+    "75/99 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "meta-PMC13288533.xml",
+   "evidence": [
+    "41/47 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "meta-PMC13292320.xml",
+   "evidence": [
+    "30/33 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "meta-PMC13297335.xml",
+   "evidence": [
+    "46/52 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "meta-PMC13305250.xml",
+   "evidence": [
+    "26/28 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "moderne-PMC12900525.xml",
+   "evidence": [
+    "57/59 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "moderne-PMC13177175.xml",
+   "evidence": [
+    "70/75 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "moderne-PMC13254229.xml",
+   "evidence": [
+    "55/71 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "moderne-PMC13262411.xml",
+   "evidence": [
+    "82/83 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "moderne-PMC13264966.xml",
+   "evidence": [
+    "60/60 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "moderne-PMC13264967.xml",
+   "evidence": [
+    "37/39 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "moderne-PMC13267778.xml",
+   "evidence": [
+    "30/31 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "moderne-PMC13274555.xml",
+   "evidence": [
+    "34/40 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "moderne-PMC13282716.xml",
+   "evidence": [
+    "58/58 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "moderne-PMC13282721.xml",
+   "evidence": [
+    "114/114 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "moderne-PMC13288728.xml",
+   "evidence": [
+    "67/69 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "moderne-PMC13291764.xml",
+   "evidence": [
+    "147/154 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "moderne-PMC13292010.xml",
+   "evidence": [
+    "6/6 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "moderne-PMC13292400.xml",
+   "evidence": [
+    "66/68 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "moderne-PMC13296834.xml",
+   "evidence": [
+    "83/108 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13127809.xml",
+   "evidence": [
+    "21/21 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13128172.xml",
+   "evidence": [
+    "11/11 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13128184.xml",
+   "evidence": [
+    "6/6 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13128185.xml",
+   "evidence": [
+    "9/9 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13128186.xml",
+   "evidence": [
+    "8/8 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13128206.xml",
+   "evidence": [
+    "62/67 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13128210.xml",
+   "evidence": [
+    "18/20 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13128212.xml",
+   "evidence": [
+    "11/11 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13128213.xml",
+   "evidence": [
+    "56/58 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13128215.xml",
+   "evidence": [
+    "7/7 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13128216.xml",
+   "evidence": [
+    "13/16 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13128218.xml",
+   "evidence": [
+    "9/9 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13142163.xml",
+   "evidence": [
+    "74/75 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13143285.xml",
+   "evidence": [
+    "11/12 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13148856.xml",
+   "evidence": [
+    "47/51 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13155791.xml",
+   "evidence": [
+    "36/36 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13155792.xml",
+   "evidence": [
+    "6/6 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13155793.xml",
+   "evidence": [
+    "13/13 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13170112.xml",
+   "evidence": [
+    "11/11 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13185728.xml",
+   "evidence": [
+    "36/41 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13185730.xml",
+   "evidence": [
+    "41/51 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13193188.xml",
+   "evidence": [
+    "71/71 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13193189.xml",
+   "evidence": [
+    "61/63 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13193190.xml",
+   "evidence": [
+    "58/58 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13193191.xml",
+   "evidence": [
+    "37/40 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13193194.xml",
+   "evidence": [
+    "58/59 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13193195.xml",
+   "evidence": [
+    "69/73 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13224953.xml",
+   "evidence": [
+    "12/12 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13224954.xml",
+   "evidence": [
+    "13/15 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13224955.xml",
+   "evidence": [
+    "34/39 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13224957.xml",
+   "evidence": [
+    "46/54 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13264032.xml",
+   "evidence": [
+    "12/12 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13264058.xml",
+   "evidence": [
+    "45/47 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13264162.xml",
+   "evidence": [
+    "5/9 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13264178.xml",
+   "evidence": [
+    "34/38 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13266121.xml",
+   "evidence": [
+    "9/9 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13266122.xml",
+   "evidence": [
+    "13/13 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13267754.xml",
+   "evidence": [
+    "61/65 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13267755.xml",
+   "evidence": [
+    "518/524 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13267756.xml",
+   "evidence": [
+    "178/180 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13267757.xml",
+   "evidence": [
+    "636/669 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13272499.xml",
+   "evidence": [
+    "12/12 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13272511.xml",
+   "evidence": [
+    "33/36 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13272517.xml",
+   "evidence": [
+    "38/60 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13276738.xml",
+   "evidence": [
+    "11/11 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13284468.xml",
+   "evidence": [
+    "23/31 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13284469.xml",
+   "evidence": [
+    "13/16 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13285344.xml",
+   "evidence": [
+    "5/5 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13285635.xml",
+   "evidence": [
+    "42/43 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13288443.xml",
+   "evidence": [
+    "39/44 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "phys-PMC13039343.xml",
+   "evidence": [
+    "87/98 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "phys-PMC13082673.xml",
+   "evidence": [
+    "76/76 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "phys-PMC13099575.xml",
+   "evidence": [
+    "90/92 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "phys-PMC13113438.xml",
+   "evidence": [
+    "246/247 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "phys-PMC13133660.xml",
+   "evidence": [
+    "133/134 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "phys-PMC13154412.xml",
+   "evidence": [
+    "47/63 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "phys-PMC13158258.xml",
+   "evidence": [
+    "88/89 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "phys-PMC13171646.xml",
+   "evidence": [
+    "104/104 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "phys-PMC13178570.xml",
+   "evidence": [
+    "90/91 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "phys-PMC13181085.xml",
+   "evidence": [
+    "98/98 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "phys-PMC13193059.xml",
+   "evidence": [
+    "60/62 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "phys-PMC13201561.xml",
+   "evidence": [
+    "126/127 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "phys-PMC13208799.xml",
+   "evidence": [
+    "143/157 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "phys-PMC13210669.xml",
+   "evidence": [
+    "131/134 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "phys-PMC13221960.xml",
+   "evidence": [
+    "62/63 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "phys-PMC13222844.xml",
+   "evidence": [
+    "97/109 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "phys-PMC13234180.xml",
+   "evidence": [
+    "99/101 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "phys-PMC13235518.xml",
+   "evidence": [
+    "67/68 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "phys-PMC13246409.xml",
+   "evidence": [
+    "136/145 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "phys-PMC13252849.xml",
+   "evidence": [
+    "134/134 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "phys-PMC13257740.xml",
+   "evidence": [
+    "148/149 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "phys-PMC13259435.xml",
+   "evidence": [
+    "106/106 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "phys-PMC13259474.xml",
+   "evidence": [
+    "190/190 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "phys-PMC13261600.xml",
+   "evidence": [
+    "92/93 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "phys-PMC13272752.xml",
+   "evidence": [
+    "106/107 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "phys-PMC13275013.xml",
+   "evidence": [
+    "120/121 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "phys-PMC13276034.xml",
+   "evidence": [
+    "137/137 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "phys-PMC13282397.xml",
+   "evidence": [
+    "98/98 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "phys-PMC13285896.xml",
+   "evidence": [
+    "54/57 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "phys-PMC13289917.xml",
+   "evidence": [
+    "79/79 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "phys-PMC13296606.xml",
+   "evidence": [
+    "126/126 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "phys-PMC13297141.xml",
+   "evidence": [
+    "162/166 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "phys-PMC13297618.xml",
+   "evidence": [
+    "243/244 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "phys-PMC13298103.xml",
+   "evidence": [
+    "93/96 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "retract-PMC12937552.xml",
+   "evidence": [
+    "6/8 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "retract-PMC12943135.xml",
+   "evidence": [
+    "6/6 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "retract-PMC12983062.xml",
+   "evidence": [
+    "4/4 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "retract-PMC12983399.xml",
+   "evidence": [
+    "2/3 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "retract-PMC12985380.xml",
+   "evidence": [
+    "5/5 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "retract-PMC12989678.xml",
+   "evidence": [
+    "3/4 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "retract-PMC12990951.xml",
+   "evidence": [
+    "1/1 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "retract-PMC13034554.xml",
+   "evidence": [
+    "2/3 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "retract-PMC13037014.xml",
+   "evidence": [
+    "4/5 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "retract-PMC13083641.xml",
+   "evidence": [
+    "16/17 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "retract-PMC13100932.xml",
+   "evidence": [
+    "6/6 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "retract-PMC13208113.xml",
+   "evidence": [
+    "2/2 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "retract-PMC13244562.xml",
+   "evidence": [
+    "5/7 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "retract-PMC13257951.xml",
+   "evidence": [
+    "13/15 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "retract-PMC13289858.xml",
+   "evidence": [
+    "2/2 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "retract-PMC13291836.xml",
+   "evidence": [
+    "8/11 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "retract-PMC13292036.xml",
+   "evidence": [
+    "5/6 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "retract-PMC13292042.xml",
+   "evidence": [
+    "5/6 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "retract-PMC13292064.xml",
+   "evidence": [
+    "5/6 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "retract-PMC13292106.xml",
+   "evidence": [
+    "9/11 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "retract-PMC13292606.xml",
+   "evidence": [
+    "6/6 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "retract-PMC13294332.xml",
+   "evidence": [
+    "5/6 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "retract-PMC13294796.xml",
+   "evidence": [
+    "2/3 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "retract-PMC13295435.xml",
+   "evidence": [
+    "5/5 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "retract-PMC13298758.xml",
+   "evidence": [
+    "19/19 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "retract-PMC13299186.xml",
+   "evidence": [
+    "2/3 body paragraphs with no year"
+   ]
+  },
+  {
+   "document": "retract-PMC13306522.xml",
+   "evidence": [
+    "4/6 body paragraphs with no year"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,969 @@
+{
+ "probe": "probes/2026-09-recovered/line-024.py",
+ "date": "2026-09-10",
+ "count": 160,
+ "of": 272,
+ "carriers": [
+  {
+   "document": "bio-PMC12583535.xml",
+   "evidence": [
+    "3 glosses, e.g. HMG-CoA reductase (HMGCR)"
+   ]
+  },
+  {
+   "document": "bio-PMC12590050.xml",
+   "evidence": [
+    "5 glosses, e.g. Thyroid hormone (TH)"
+   ]
+  },
+  {
+   "document": "bio-PMC12674831.xml",
+   "evidence": [
+    "4 glosses, e.g. Metabolism Study (SBEM)"
+   ]
+  },
+  {
+   "document": "bio-PMC12857832.xml",
+   "evidence": [
+    "2 glosses, e.g. Lung cancer (LC)"
+   ]
+  },
+  {
+   "document": "bio-PMC12909487.xml",
+   "evidence": [
+    "1 glosses, e.g. Sudden cardiac death (SCD)"
+   ]
+  },
+  {
+   "document": "bio-PMC12915353.xml",
+   "evidence": [
+    "1 glosses, e.g. Mediterranean-DASH intervention for neurodegenerative delay (MIND)"
+   ]
+  },
+  {
+   "document": "bio-PMC12927065.xml",
+   "evidence": [
+    "6 glosses, e.g. Saharan Africa (SSA)"
+   ]
+  },
+  {
+   "document": "bio-PMC12927975.xml",
+   "evidence": [
+    "1 glosses, e.g. Artificial intelligence (AI)"
+   ]
+  },
+  {
+   "document": "bio-PMC12953170.xml",
+   "evidence": [
+    "4 glosses, e.g. Botulinum toxin A (BTA)"
+   ]
+  },
+  {
+   "document": "bio-PMC13057049.xml",
+   "evidence": [
+    "2 glosses, e.g. Sub-Saharan Africa (SSA)"
+   ]
+  },
+  {
+   "document": "bio-PMC13088504.xml",
+   "evidence": [
+    "7 glosses, e.g. Cardiovascular disease (CVD)"
+   ]
+  },
+  {
+   "document": "bio-PMC13097615.xml",
+   "evidence": [
+    "1 glosses, e.g. Data reduction methods (DRM)"
+   ]
+  },
+  {
+   "document": "bio-PMC13099299.xml",
+   "evidence": [
+    "5 glosses, e.g. Atrial fibrillation (AF)"
+   ]
+  },
+  {
+   "document": "bio-PMC13103274.xml",
+   "evidence": [
+    "1 glosses, e.g. Artificial intelligence (AI)"
+   ]
+  },
+  {
+   "document": "bio-PMC13116881.xml",
+   "evidence": [
+    "1 glosses, e.g. Hidradenitis suppurativa (HS)"
+   ]
+  },
+  {
+   "document": "bio-PMC13155703.xml",
+   "evidence": [
+    "3 glosses, e.g. Diabetic foot ulcer (DFU)"
+   ]
+  },
+  {
+   "document": "bio-PMC13170838.xml",
+   "evidence": [
+    "4 glosses, e.g. Severe mental illness (SMI)"
+   ]
+  },
+  {
+   "document": "bio-PMC13181205.xml",
+   "evidence": [
+    "5 glosses, e.g. Cardiovascular diseases (CVD)"
+   ]
+  },
+  {
+   "document": "bio-PMC13182387.xml",
+   "evidence": [
+    "2 glosses, e.g. CVD or a recurrent cardiovascular (CV)"
+   ]
+  },
+  {
+   "document": "bio-PMC13190511.xml",
+   "evidence": [
+    "1 glosses, e.g. Topic Search (TS)"
+   ]
+  },
+  {
+   "document": "bio-PMC13203479.xml",
+   "evidence": [
+    "10 glosses, e.g. Carbon Monoxide (CO)"
+   ]
+  },
+  {
+   "document": "bio-PMC13216383.xml",
+   "evidence": [
+    "2 glosses, e.g. Sit to Stand (STS)"
+   ]
+  },
+  {
+   "document": "bio-PMC13218538.xml",
+   "evidence": [
+    "3 glosses, e.g. Saharan Africa (SSA)"
+   ]
+  },
+  {
+   "document": "bio-PMC13236932.xml",
+   "evidence": [
+    "2 glosses, e.g. Cardiovascular disease (CVD)"
+   ]
+  },
+  {
+   "document": "bio-PMC13252842.xml",
+   "evidence": [
+    "1 glosses, e.g. UK biobank (UKBB)"
+   ]
+  },
+  {
+   "document": "bio-PMC13289183.xml",
+   "evidence": [
+    "1 glosses, e.g. Artificial intelligence (AI)"
+   ]
+  },
+  {
+   "document": "cas-PMC13291543.xml",
+   "evidence": [
+    "10 glosses, e.g. Turner Syndrome (TS)"
+   ]
+  },
+  {
+   "document": "cas-PMC13291881.xml",
+   "evidence": [
+    "4 glosses, e.g. Tumor-induced osteomalacia (TIO)"
+   ]
+  },
+  {
+   "document": "cas-PMC13293645.xml",
+   "evidence": [
+    "2 glosses, e.g. Introduction  Osteoarthritis (OA)"
+   ]
+  },
+  {
+   "document": "cas-PMC13293647.xml",
+   "evidence": [
+    "1 glosses, e.g. Cardiopulmonary bypass (CPB)"
+   ]
+  },
+  {
+   "document": "cas-PMC13293799.xml",
+   "evidence": [
+    "7 glosses, e.g. Left ventricular thrombus (LVT)"
+   ]
+  },
+  {
+   "document": "cas-PMC13293813.xml",
+   "evidence": [
+    "1 glosses, e.g. Magnetic resonance imaging (MRI)"
+   ]
+  },
+  {
+   "document": "cas-PMC13293827.xml",
+   "evidence": [
+    "1 glosses, e.g. Clinical Oncology (CSCO)"
+   ]
+  },
+  {
+   "document": "cas-PMC13293834.xml",
+   "evidence": [
+    "1 glosses, e.g. Chest computed tomography (CT)"
+   ]
+  },
+  {
+   "document": "cas-PMC13293841.xml",
+   "evidence": [
+    "2 glosses, e.g. Granular cell tumor (GCT)"
+   ]
+  },
+  {
+   "document": "cas-PMC13293897.xml",
+   "evidence": [
+    "4 glosses, e.g. Immune-mediated polyarthropathies (IMPA)"
+   ]
+  },
+  {
+   "document": "cas-PMC13293901.xml",
+   "evidence": [
+    "3 glosses, e.g. Digital rectal examination (DRE)"
+   ]
+  },
+  {
+   "document": "cas-PMC13293995.xml",
+   "evidence": [
+    "3 glosses, e.g. T-follicular helper (TFH)"
+   ]
+  },
+  {
+   "document": "cas-PMC13294038.xml",
+   "evidence": [
+    "3 glosses, e.g. Renal tubular acidosis (RTA)"
+   ]
+  },
+  {
+   "document": "cas-PMC13294096.xml",
+   "evidence": [
+    "1 glosses, e.g. International normalized ratio (INR)"
+   ]
+  },
+  {
+   "document": "cas-PMC13294155.xml",
+   "evidence": [
+    "2 glosses, e.g. Stimulator of interferon genes (STING)"
+   ]
+  },
+  {
+   "document": "cas-PMC13294182.xml",
+   "evidence": [
+    "6 glosses, e.g. Chimeric antigen receptor (CAR)"
+   ]
+  },
+  {
+   "document": "cas-PMC13294240.xml",
+   "evidence": [
+    "5 glosses, e.g. Computed tomography (CT)"
+   ]
+  },
+  {
+   "document": "cas-PMC13294281.xml",
+   "evidence": [
+    "2 glosses, e.g. Computed tomography (CT)"
+   ]
+  },
+  {
+   "document": "cas-PMC13294475.xml",
+   "evidence": [
+    "3 glosses, e.g. Optical coherence tomography (OCT)"
+   ]
+  },
+  {
+   "document": "cas-PMC13294642.xml",
+   "evidence": [
+    "7 glosses, e.g. Packed cell volume (PCV)"
+   ]
+  },
+  {
+   "document": "cas-PMC13294698.xml",
+   "evidence": [
+    "2 glosses, e.g. Lumbar spinal stenosis (LSS)"
+   ]
+  },
+  {
+   "document": "cas-PMC13294702.xml",
+   "evidence": [
+    "1 glosses, e.g. Pancreatic ductal adenocarcinoma (PDAC)"
+   ]
+  },
+  {
+   "document": "cas-PMC13294704.xml",
+   "evidence": [
+    "2 glosses, e.g. Stevens-Johnson Syndrome (SJS)"
+   ]
+  },
+  {
+   "document": "cas-PMC13294705.xml",
+   "evidence": [
+    "1 glosses, e.g. Carotid endarterectomy (CEA)"
+   ]
+  },
+  {
+   "document": "cas-PMC13301386.xml",
+   "evidence": [
+    "1 glosses, e.g. Negative pressure wound therapy (NPWT)"
+   ]
+  },
+  {
+   "document": "essai-PMC13154027.xml",
+   "evidence": [
+    "1 glosses, e.g. Cognitive behavioral therapy (CBT)"
+   ]
+  },
+  {
+   "document": "essai-PMC13169227.xml",
+   "evidence": [
+    "2 glosses, e.g. Quality control (QC)"
+   ]
+  },
+  {
+   "document": "essai-PMC13169472.xml",
+   "evidence": [
+    "3 glosses, e.g. High Frequency (HF)"
+   ]
+  },
+  {
+   "document": "essai-PMC13179527.xml",
+   "evidence": [
+    "2 glosses, e.g. Schirmer tear test I (STT)"
+   ]
+  },
+  {
+   "document": "essai-PMC13191455.xml",
+   "evidence": [
+    "1 glosses, e.g. C-reactive protein (CRP)"
+   ]
+  },
+  {
+   "document": "essai-PMC13205709.xml",
+   "evidence": [
+    "5 glosses, e.g. Development Agents (ADECOS)"
+   ]
+  },
+  {
+   "document": "essai-PMC13205876.xml",
+   "evidence": [
+    "2 glosses, e.g. Hair cortisol concentration (HCC)"
+   ]
+  },
+  {
+   "document": "essai-PMC13238360.xml",
+   "evidence": [
+    "2 glosses, e.g. Standard deviation (SD)"
+   ]
+  },
+  {
+   "document": "essai-PMC13242351.xml",
+   "evidence": [
+    "1 glosses, e.g. Isometric resistance training (IRT)"
+   ]
+  },
+  {
+   "document": "essai-PMC13254492.xml",
+   "evidence": [
+    "3 glosses, e.g. Digit symbol substitution test (DSST)"
+   ]
+  },
+  {
+   "document": "essai-PMC13263161.xml",
+   "evidence": [
+    "2 glosses, e.g. Heart rate (HR)"
+   ]
+  },
+  {
+   "document": "essai-PMC13264282.xml",
+   "evidence": [
+    "2 glosses, e.g. Catastrophizing Scale (SCS)"
+   ]
+  },
+  {
+   "document": "essai-PMC13271868.xml",
+   "evidence": [
+    "3 glosses, e.g. Somatosensory evoked potentials (SEP)"
+   ]
+  },
+  {
+   "document": "essai-PMC13276020.xml",
+   "evidence": [
+    "1 glosses, e.g. Biomedisch Onderzoek (BEBO)"
+   ]
+  },
+  {
+   "document": "essai-PMC13281132.xml",
+   "evidence": [
+    "1 glosses, e.g. Cardiopulmonary bypass (CPB)"
+   ]
+  },
+  {
+   "document": "essai-PMC13282136.xml",
+   "evidence": [
+    "5 glosses, e.g. Electromyography Signal (EMG)"
+   ]
+  },
+  {
+   "document": "essai-PMC13284529.xml",
+   "evidence": [
+    "8 glosses, e.g. SD  \n M (ME)"
+   ]
+  },
+  {
+   "document": "essai-PMC13290998.xml",
+   "evidence": [
+    "1 glosses, e.g. Area deprivation index (ADI)"
+   ]
+  },
+  {
+   "document": "essai-PMC13291766.xml",
+   "evidence": [
+    "2 glosses, e.g. Executive function (EF)"
+   ]
+  },
+  {
+   "document": "essai-PMC13293440.xml",
+   "evidence": [
+    "1 glosses, e.g. An Intention-to-Treat (ITT)"
+   ]
+  },
+  {
+   "document": "essai-PMC13294169.xml",
+   "evidence": [
+    "1 glosses, e.g. Cancer-related cognitive impairment (CRCI)"
+   ]
+  },
+  {
+   "document": "essai-PMC13294792.xml",
+   "evidence": [
+    "1 glosses, e.g. Maturity-onset diabetes of the young (MODY)"
+   ]
+  },
+  {
+   "document": "essai-PMC13296589.xml",
+   "evidence": [
+    "1 glosses, e.g. Household income (HKD)"
+   ]
+  },
+  {
+   "document": "essai-PMC7619126.xml",
+   "evidence": [
+    "2 glosses, e.g. Acute febrile illness (AFI)"
+   ]
+  },
+  {
+   "document": "meta-PMC13157766.xml",
+   "evidence": [
+    "1 glosses, e.g. Community-acquired pneumonia (CAP)"
+   ]
+  },
+  {
+   "document": "meta-PMC13179150.xml",
+   "evidence": [
+    "2 glosses, e.g. Conservation of Resources (COR)"
+   ]
+  },
+  {
+   "document": "meta-PMC13221319.xml",
+   "evidence": [
+    "5 glosses, e.g. Vestibular schwannomas (VS)"
+   ]
+  },
+  {
+   "document": "meta-PMC13225629.xml",
+   "evidence": [
+    "2 glosses, e.g. Progressive familial intrahepatic cholestasis (PFIC)"
+   ]
+  },
+  {
+   "document": "meta-PMC13226718.xml",
+   "evidence": [
+    "4 glosses, e.g. Gestational diabetes mellitus (GDM)"
+   ]
+  },
+  {
+   "document": "meta-PMC13229315.xml",
+   "evidence": [
+    "2 glosses, e.g. Spontaneous preterm birth (SPTB)"
+   ]
+  },
+  {
+   "document": "meta-PMC13240427.xml",
+   "evidence": [
+    "1 glosses, e.g. Transgender and gender diverse (TGD)"
+   ]
+  },
+  {
+   "document": "meta-PMC13241412.xml",
+   "evidence": [
+    "2 glosses, e.g. Endoscopic submucosal dissection (ESD)"
+   ]
+  },
+  {
+   "document": "meta-PMC13246130.xml",
+   "evidence": [
+    "3 glosses, e.g. Contrast-induced nephropathy (CIN)"
+   ]
+  },
+  {
+   "document": "meta-PMC13250259.xml",
+   "evidence": [
+    "5 glosses, e.g. Gene Ontology (GO)"
+   ]
+  },
+  {
+   "document": "meta-PMC13253268.xml",
+   "evidence": [
+    "1 glosses, e.g. Institute of Health (ISS)"
+   ]
+  },
+  {
+   "document": "meta-PMC13254819.xml",
+   "evidence": [
+    "2 glosses, e.g. Clinical diagnoses of cognitively normal (CN)"
+   ]
+  },
+  {
+   "document": "meta-PMC13256077.xml",
+   "evidence": [
+    "2 glosses, e.g. Mitral valve prolapse (MVP)"
+   ]
+  },
+  {
+   "document": "meta-PMC13260247.xml",
+   "evidence": [
+    "1 glosses, e.g. Fc Receptor-like (FCRL)"
+   ]
+  },
+  {
+   "document": "meta-PMC13263136.xml",
+   "evidence": [
+    "1 glosses, e.g. UK Biobank (UKBB)"
+   ]
+  },
+  {
+   "document": "meta-PMC13264275.xml",
+   "evidence": [
+    "1 glosses, e.g. Physical activity (PA)"
+   ]
+  },
+  {
+   "document": "meta-PMC13264436.xml",
+   "evidence": [
+    "2 glosses, e.g. Colorectal cancer (CRC)"
+   ]
+  },
+  {
+   "document": "meta-PMC13265330.xml",
+   "evidence": [
+    "2 glosses, e.g. Ankylosing spondylitis (AS)"
+   ]
+  },
+  {
+   "document": "meta-PMC13268477.xml",
+   "evidence": [
+    "2 glosses, e.g. Hepatocellular carcinoma (HCC)"
+   ]
+  },
+  {
+   "document": "meta-PMC13268693.xml",
+   "evidence": [
+    "1 glosses, e.g. Atrial fibrillation (AF)"
+   ]
+  },
+  {
+   "document": "meta-PMC13269816.xml",
+   "evidence": [
+    "5 glosses, e.g. Mendelian randomization (MR)"
+   ]
+  },
+  {
+   "document": "meta-PMC13271776.xml",
+   "evidence": [
+    "2 glosses, e.g. UK Biobank (UKB)"
+   ]
+  },
+  {
+   "document": "meta-PMC13280693.xml",
+   "evidence": [
+    "3 glosses, e.g. UK Biobank (UKB)"
+   ]
+  },
+  {
+   "document": "meta-PMC13286426.xml",
+   "evidence": [
+    "3 glosses, e.g. Crohn disease (CD)"
+   ]
+  },
+  {
+   "document": "meta-PMC13286481.xml",
+   "evidence": [
+    "1 glosses, e.g. Ulcerative colitis (UC)"
+   ]
+  },
+  {
+   "document": "meta-PMC13287023.xml",
+   "evidence": [
+    "5 glosses, e.g. Inflammatory bowel disease (IBD)"
+   ]
+  },
+  {
+   "document": "meta-PMC13287149.xml",
+   "evidence": [
+    "12 glosses, e.g. Genome-wide association studies (GWAS)"
+   ]
+  },
+  {
+   "document": "meta-PMC13287277.xml",
+   "evidence": [
+    "4 glosses, e.g. Principal component analysis (PCA)"
+   ]
+  },
+  {
+   "document": "meta-PMC13288533.xml",
+   "evidence": [
+    "1 glosses, e.g. Cardiovascular disease (CVD)"
+   ]
+  },
+  {
+   "document": "meta-PMC13292320.xml",
+   "evidence": [
+    "2 glosses, e.g. Web of Science (WOS)"
+   ]
+  },
+  {
+   "document": "meta-PMC13297335.xml",
+   "evidence": [
+    "4 glosses, e.g. Glioblastoma multiforme (GBM)"
+   ]
+  },
+  {
+   "document": "meta-PMC13305250.xml",
+   "evidence": [
+    "2 glosses, e.g. Mendelian randomization (MR)"
+   ]
+  },
+  {
+   "document": "moderne-PMC12900525.xml",
+   "evidence": [
+    "1 glosses, e.g. University of Fortaleza (UNIFOR)"
+   ]
+  },
+  {
+   "document": "moderne-PMC13177175.xml",
+   "evidence": [
+    "7 glosses, e.g. Life-Threatening Arrhythmias (LTA)"
+   ]
+  },
+  {
+   "document": "moderne-PMC13262411.xml",
+   "evidence": [
+    "1 glosses, e.g. Dynamic mechanical analysis (DMA)"
+   ]
+  },
+  {
+   "document": "moderne-PMC13264966.xml",
+   "evidence": [
+    "1 glosses, e.g. Atmospheric pressure chemical ionization (APCI)"
+   ]
+  },
+  {
+   "document": "moderne-PMC13274555.xml",
+   "evidence": [
+    "1 glosses, e.g. Ayukawa and Wada (AW)"
+   ]
+  },
+  {
+   "document": "moderne-PMC13282721.xml",
+   "evidence": [
+    "2 glosses, e.g. Biedl syndrome (BBS)"
+   ]
+  },
+  {
+   "document": "moderne-PMC13288728.xml",
+   "evidence": [
+    "1 glosses, e.g. Fourier transform traction cytometry (FTTC)"
+   ]
+  },
+  {
+   "document": "moderne-PMC13291764.xml",
+   "evidence": [
+    "3 glosses, e.g. Intensive Care (CRIC)"
+   ]
+  },
+  {
+   "document": "moderne-PMC13292400.xml",
+   "evidence": [
+    "3 glosses, e.g. Root mean square deviation (RMSD)"
+   ]
+  },
+  {
+   "document": "moderne-PMC13296834.xml",
+   "evidence": [
+    "1 glosses, e.g. New Zealand (NZ)"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13128210.xml",
+   "evidence": [
+    "1 glosses, e.g. Lado pela Vida (LAL)"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13128213.xml",
+   "evidence": [
+    "2 glosses, e.g. Society of Cardiology (SIC)"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13142163.xml",
+   "evidence": [
+    "4 glosses, e.g. Control and Prevention (CDC)"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13193188.xml",
+   "evidence": [
+    "4 glosses, e.g. Hearing Screening (SHS)"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13193189.xml",
+   "evidence": [
+    "1 glosses, e.g. Forensic speaker comparison (FSC)"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13193190.xml",
+   "evidence": [
+    "1 glosses, e.g. Speech-Language-Hearing Association (ASHA)"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13193191.xml",
+   "evidence": [
+    "5 glosses, e.g. INTRODUCTION  Speech-Language-Hearing (SLH)"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13193194.xml",
+   "evidence": [
+    "15 glosses, e.g. Language Disorder (LD)"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13193195.xml",
+   "evidence": [
+    "1 glosses, e.g. Oropharyngeal dysphagia (OD)"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13224954.xml",
+   "evidence": [
+    "1 glosses, e.g. Sistema Prisional (PNAISP)"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13224955.xml",
+   "evidence": [
+    "1 glosses, e.g. Natural Killers (NK)"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13267756.xml",
+   "evidence": [
+    "1 glosses, e.g. Tucker-Lewis Index (TLI)"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13272511.xml",
+   "evidence": [
+    "1 glosses, e.g. Salud por Entrevista (EHIS)"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13285635.xml",
+   "evidence": [
+    "1 glosses, e.g. Europea de Medicamentos (EMA)"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13288443.xml",
+   "evidence": [
+    "1 glosses, e.g. Corticobasal Syndrome (CBS)"
+   ]
+  },
+  {
+   "document": "phys-PMC13039343.xml",
+   "evidence": [
+    "3 glosses, e.g. Physics based simulations (PBS)"
+   ]
+  },
+  {
+   "document": "phys-PMC13082673.xml",
+   "evidence": [
+    "2 glosses, e.g. Monte Carlo (MC)"
+   ]
+  },
+  {
+   "document": "phys-PMC13113438.xml",
+   "evidence": [
+    "18 glosses, e.g. Search Algorithm (SSA)"
+   ]
+  },
+  {
+   "document": "phys-PMC13133660.xml",
+   "evidence": [
+    "5 glosses, e.g. Bayesian model averaging (BMA)"
+   ]
+  },
+  {
+   "document": "phys-PMC13154412.xml",
+   "evidence": [
+    "3 glosses, e.g. Multi-Head Self-Attention (MHSA)"
+   ]
+  },
+  {
+   "document": "phys-PMC13171646.xml",
+   "evidence": [
+    "3 glosses, e.g. Quantum computing (QC)"
+   ]
+  },
+  {
+   "document": "phys-PMC13181085.xml",
+   "evidence": [
+    "3 glosses, e.g. Firefly Algorithm (FA)"
+   ]
+  },
+  {
+   "document": "phys-PMC13193059.xml",
+   "evidence": [
+    "2 glosses, e.g. Introduction  Radioembolization (RE)"
+   ]
+  },
+  {
+   "document": "phys-PMC13201561.xml",
+   "evidence": [
+    "10 glosses, e.g. Linear Regression (LR)"
+   ]
+  },
+  {
+   "document": "phys-PMC13208799.xml",
+   "evidence": [
+    "15 glosses, e.g. Monte Carlo (MC)"
+   ]
+  },
+  {
+   "document": "phys-PMC13210669.xml",
+   "evidence": [
+    "2 glosses, e.g. Physics-Informed Autoencoder (PIAE)"
+   ]
+  },
+  {
+   "document": "phys-PMC13221960.xml",
+   "evidence": [
+    "3 glosses, e.g. Controlled       -phase (CZ)"
+   ]
+  },
+  {
+   "document": "phys-PMC13234180.xml",
+   "evidence": [
+    "1 glosses, e.g. Wasserstein GAN (WGAN)"
+   ]
+  },
+  {
+   "document": "phys-PMC13246409.xml",
+   "evidence": [
+    "7 glosses, e.g. User-Defined Function (UDF)"
+   ]
+  },
+  {
+   "document": "phys-PMC13252849.xml",
+   "evidence": [
+    "3 glosses, e.g. Genetic Algorithm (GA)"
+   ]
+  },
+  {
+   "document": "phys-PMC13259435.xml",
+   "evidence": [
+    "3 glosses, e.g. Radar automatic target recognition (RATR)"
+   ]
+  },
+  {
+   "document": "phys-PMC13259474.xml",
+   "evidence": [
+    "3 glosses, e.g. Differential-Algebraic Equation (DAE)"
+   ]
+  },
+  {
+   "document": "phys-PMC13261600.xml",
+   "evidence": [
+    "1 glosses, e.g. PCD and partial dependence analysis (PDA)"
+   ]
+  },
+  {
+   "document": "phys-PMC13272752.xml",
+   "evidence": [
+    "2 glosses, e.g. Laser Deposition (DLD)"
+   ]
+  },
+  {
+   "document": "phys-PMC13275013.xml",
+   "evidence": [
+    "1 glosses, e.g. Coefficient of variation (CV)"
+   ]
+  },
+  {
+   "document": "phys-PMC13276034.xml",
+   "evidence": [
+    "26 glosses, e.g. Water temperature (WT)"
+   ]
+  },
+  {
+   "document": "phys-PMC13282397.xml",
+   "evidence": [
+    "2 glosses, e.g. Machine learning (ML)"
+   ]
+  },
+  {
+   "document": "phys-PMC13285896.xml",
+   "evidence": [
+    "3 glosses, e.g. Monte Carlo (MC)"
+   ]
+  },
+  {
+   "document": "phys-PMC13296606.xml",
+   "evidence": [
+    "1 glosses, e.g. Newton-Raphson-based optimization (NRBO)"
+   ]
+  },
+  {
+   "document": "phys-PMC13297141.xml",
+   "evidence": [
+    "9 glosses, e.g. Genetic Algorithm (GA)"
+   ]
+  },
+  {
+   "document": "phys-PMC13297618.xml",
+   "evidence": [
+    "21 glosses, e.g. Genetic Algorithm (GA)"
+   ]
+  },
+  {
+   "document": "phys-PMC13298103.xml",
+   "evidence": [
+    "2 glosses, e.g. Monte Carlo (MC)"
+   ]
+  },
+  {
+   "document": "retract-PMC13292106.xml",
+   "evidence": [
+    "1 glosses, e.g. Glioblastoma Multiforme (GBM)"
+   ]
+  }
+ ],
+ "corpus_id": "corpus-europe-pmc-jats-2023-2026"
+}

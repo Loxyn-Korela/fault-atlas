@@ -1,0 +1,1137 @@
+{
+ "probe": "probes/2026-09-recovered/line-063.py",
+ "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+ "date": "2026-09-10",
+ "count": 188,
+ "of": 272,
+ "carriers": [
+  {
+   "document": "bio-PMC12590050.xml",
+   "evidence": [
+    "11 capitalised tokens in the title: ['Interplay', 'Between', 'Thyroid', 'Disorders']"
+   ]
+  },
+  {
+   "document": "bio-PMC12674831.xml",
+   "evidence": [
+    "8 capitalised tokens in the title: ['Position', 'Statement', 'Cardiometabolic', 'Health']"
+   ]
+  },
+  {
+   "document": "bio-PMC12915353.xml",
+   "evidence": [
+    "14 capitalised tokens in the title: ['Plant-Based', 'Diets', 'Cardiometabolic', 'Diseases']"
+   ]
+  },
+  {
+   "document": "bio-PMC12927065.xml",
+   "evidence": [
+    "2 capitalised tokens in the title: ['Systematic', 'Africa']"
+   ]
+  },
+  {
+   "document": "bio-PMC12927975.xml",
+   "evidence": [
+    "9 capitalised tokens in the title: ['Challenges', 'Artificial', 'Intelligence', 'Medical']"
+   ]
+  },
+  {
+   "document": "bio-PMC12953170.xml",
+   "evidence": [
+    "13 capitalised tokens in the title: ['Patient', 'Experience', 'Surgical', 'Outcomes']"
+   ]
+  },
+  {
+   "document": "bio-PMC12959687.xml",
+   "evidence": [
+    "3 capitalised tokens in the title: ['Multimorbidity', 'Brazilian', 'Protocol']"
+   ]
+  },
+  {
+   "document": "bio-PMC13057049.xml",
+   "evidence": [
+    "11 capitalised tokens in the title: ['Prevalence', 'Risk', 'Factors', 'Readmission']"
+   ]
+  },
+  {
+   "document": "bio-PMC13097615.xml",
+   "evidence": [
+    "14 capitalised tokens in the title: ['Biological', 'Signatures', 'Inflammation', 'Biomarkers']"
+   ]
+  },
+  {
+   "document": "bio-PMC13099299.xml",
+   "evidence": [
+    "2 capitalised tokens in the title: ['BMI', 'AF']"
+   ]
+  },
+  {
+   "document": "bio-PMC13103274.xml",
+   "evidence": [
+    "19 capitalised tokens in the title: ['Predicting', 'Factors', 'Affecting', 'Postoperative']"
+   ]
+  },
+  {
+   "document": "bio-PMC13116881.xml",
+   "evidence": [
+    "8 capitalised tokens in the title: ['Effects', 'GLP-', 'Agonists', 'Patients']"
+   ]
+  },
+  {
+   "document": "bio-PMC13155703.xml",
+   "evidence": [
+    "16 capitalised tokens in the title: ['Diabetic', 'Foot', 'Ulcer', 'Independent']"
+   ]
+  },
+  {
+   "document": "bio-PMC13168716.xml",
+   "evidence": [
+    "3 capitalised tokens in the title: ['Global', 'NCDs', 'Protocol']"
+   ]
+  },
+  {
+   "document": "bio-PMC13181205.xml",
+   "evidence": [
+    "10 capitalised tokens in the title: ['Meta', 'Analysis', 'DHA', 'EPA']"
+   ]
+  },
+  {
+   "document": "bio-PMC13182387.xml",
+   "evidence": [
+    "6 capitalised tokens in the title: ['Capturing', 'Assessment', 'Burden', 'Chronic']"
+   ]
+  },
+  {
+   "document": "bio-PMC13190511.xml",
+   "evidence": [
+    "2 capitalised tokens in the title: ['Global', 'Qigong']"
+   ]
+  },
+  {
+   "document": "bio-PMC13203479.xml",
+   "evidence": [
+    "7 capitalised tokens in the title: ['Mega-Events', 'Air', 'Pollution', 'Health']"
+   ]
+  },
+  {
+   "document": "bio-PMC13207820.xml",
+   "evidence": [
+    "9 capitalised tokens in the title: ['Uncommon', 'Presentations', 'Endometriosis', 'Clinicopathological']"
+   ]
+  },
+  {
+   "document": "bio-PMC13216383.xml",
+   "evidence": [
+    "7 capitalised tokens in the title: ['Unsupervised', 'Functional', 'Capacity', 'Testing']"
+   ]
+  },
+  {
+   "document": "bio-PMC13218538.xml",
+   "evidence": [
+    "2 capitalised tokens in the title: ['Burden', 'Ghanaians']"
+   ]
+  },
+  {
+   "document": "bio-PMC13274935.xml",
+   "evidence": [
+    "15 capitalised tokens in the title: ['Effects', 'Cycle', 'Ergometer', 'Exercise']"
+   ]
+  },
+  {
+   "document": "cas-PMC13290446.xml",
+   "evidence": [
+    "4 capitalised tokens in the title: ['Case', 'Report', 'Nadolol', 'QT']"
+   ]
+  },
+  {
+   "document": "cas-PMC13291543.xml",
+   "evidence": [
+    "3 capitalised tokens in the title: ['Case', 'Report', 'Exceptional']"
+   ]
+  },
+  {
+   "document": "cas-PMC13291881.xml",
+   "evidence": [
+    "12 capitalised tokens in the title: ['X-linked', 'Hypophosphatemic', 'Rickets', 'Revealed']"
+   ]
+  },
+  {
+   "document": "cas-PMC13293644.xml",
+   "evidence": [
+    "7 capitalised tokens in the title: ['Pycnodysostosis', 'Revealed', 'Recurrent', 'Fractures']"
+   ]
+  },
+  {
+   "document": "cas-PMC13293645.xml",
+   "evidence": [
+    "7 capitalised tokens in the title: ['Non-Pharmacological', 'Approach', 'Hip', 'Osteoarthritis-Related']"
+   ]
+  },
+  {
+   "document": "cas-PMC13293647.xml",
+   "evidence": [
+    "11 capitalised tokens in the title: ['Successful', 'Minimally', 'Invasive', 'Mitral']"
+   ]
+  },
+  {
+   "document": "cas-PMC13293792.xml",
+   "evidence": [
+    "3 capitalised tokens in the title: ['Combined', 'Analogue', 'Lu-DOTATATE']"
+   ]
+  },
+  {
+   "document": "cas-PMC13293799.xml",
+   "evidence": [
+    "2 capitalised tokens in the title: ['Case', 'Report']"
+   ]
+  },
+  {
+   "document": "cas-PMC13293813.xml",
+   "evidence": [
+    "3 capitalised tokens in the title: ['Case', 'Report', 'Marjolin']"
+   ]
+  },
+  {
+   "document": "cas-PMC13293827.xml",
+   "evidence": [
+    "2 capitalised tokens in the title: ['Case', 'Report']"
+   ]
+  },
+  {
+   "document": "cas-PMC13293834.xml",
+   "evidence": [
+    "3 capitalised tokens in the title: ['Case', 'Report', 'Nocardia']"
+   ]
+  },
+  {
+   "document": "cas-PMC13293841.xml",
+   "evidence": [
+    "3 capitalised tokens in the title: ['Case', 'Report', 'Granular']"
+   ]
+  },
+  {
+   "document": "cas-PMC13293995.xml",
+   "evidence": [
+    "2 capitalised tokens in the title: ['Multiple', 'T-cell']"
+   ]
+  },
+  {
+   "document": "cas-PMC13294089.xml",
+   "evidence": [
+    "3 capitalised tokens in the title: ['Case', 'Report', 'Bartholin']"
+   ]
+  },
+  {
+   "document": "cas-PMC13294096.xml",
+   "evidence": [
+    "4 capitalised tokens in the title: ['Case', 'Report', 'HIT-related', 'LVAD']"
+   ]
+  },
+  {
+   "document": "cas-PMC13294155.xml",
+   "evidence": [
+    "4 capitalised tokens in the title: ['Case', 'Report', 'Genetically', 'HLH-like']"
+   ]
+  },
+  {
+   "document": "cas-PMC13294182.xml",
+   "evidence": [
+    "6 capitalised tokens in the title: ['Case', 'Report', 'Bilateral', 'B-cell']"
+   ]
+  },
+  {
+   "document": "cas-PMC13294481.xml",
+   "evidence": [
+    "12 capitalised tokens in the title: ['Prolonged', 'Neurological', 'Depression', 'Bradycardia']"
+   ]
+  },
+  {
+   "document": "cas-PMC13294629.xml",
+   "evidence": [
+    "15 capitalised tokens in the title: ['Don', 'Miss', 'Blind', 'Spots']"
+   ]
+  },
+  {
+   "document": "cas-PMC13294642.xml",
+   "evidence": [
+    "7 capitalised tokens in the title: ['Lepromatous', 'Leprosy', 'Presenting', 'Preserved']"
+   ]
+  },
+  {
+   "document": "cas-PMC13294698.xml",
+   "evidence": [
+    "2 capitalised tokens in the title: ['Contralateral', 'AUSS']"
+   ]
+  },
+  {
+   "document": "cas-PMC13294702.xml",
+   "evidence": [
+    "13 capitalised tokens in the title: ['Early', 'Metastatic', 'Relapse', 'Resected']"
+   ]
+  },
+  {
+   "document": "cas-PMC13294704.xml",
+   "evidence": [
+    "12 capitalised tokens in the title: ['Itraconazole-Associated', 'Fixed', 'Drug', 'Eruption']"
+   ]
+  },
+  {
+   "document": "cas-PMC13294705.xml",
+   "evidence": [
+    "12 capitalised tokens in the title: ['Anesthetic', 'Management', 'Carotid', 'Endarterectomy']"
+   ]
+  },
+  {
+   "document": "cas-PMC13300565.xml",
+   "evidence": [
+    "13 capitalised tokens in the title: ['Gallbladder', 'Adenocarcinoma', 'Diagnosed', 'Frozen']"
+   ]
+  },
+  {
+   "document": "cas-PMC13300836.xml",
+   "evidence": [
+    "9 capitalised tokens in the title: ['Low-Grade', 'Appendiceal', 'Mucinous', 'Neoplasm']"
+   ]
+  },
+  {
+   "document": "cas-PMC13301386.xml",
+   "evidence": [
+    "10 capitalised tokens in the title: ['Pedicled', 'Supraclavicular', 'Flap', 'Reconstruction']"
+   ]
+  },
+  {
+   "document": "essai-PMC13154027.xml",
+   "evidence": [
+    "6 capitalised tokens in the title: ['Mobile', 'Application', 'Digital', 'Therapeutic']"
+   ]
+  },
+  {
+   "document": "essai-PMC13169227.xml",
+   "evidence": [
+    "12 capitalised tokens in the title: ['Whole', 'Blood', 'Transcriptomic', 'Response']"
+   ]
+  },
+  {
+   "document": "essai-PMC13169472.xml",
+   "evidence": [
+    "15 capitalised tokens in the title: ['Efficacy', 'Active', 'Exercises', 'Improve']"
+   ]
+  },
+  {
+   "document": "essai-PMC13179527.xml",
+   "evidence": [
+    "20 capitalised tokens in the title: ['Short', 'Term', 'Daily', 'Oral']"
+   ]
+  },
+  {
+   "document": "essai-PMC13191455.xml",
+   "evidence": [
+    "4 capitalised tokens in the title: ['Interleukin', 'Treatment', 'Target', 'Depression']"
+   ]
+  },
+  {
+   "document": "essai-PMC13205709.xml",
+   "evidence": [
+    "14 capitalised tokens in the title: ['Understanding', 'Opportunity', 'Costs', 'Women']"
+   ]
+  },
+  {
+   "document": "essai-PMC13205731.xml",
+   "evidence": [
+    "13 capitalised tokens in the title: ['Combining', 'Treatment', 'Acute', 'Malnutrition']"
+   ]
+  },
+  {
+   "document": "essai-PMC13205876.xml",
+   "evidence": [
+    "10 capitalised tokens in the title: ['Effect', 'Small', 'Quantity', 'Lipid']"
+   ]
+  },
+  {
+   "document": "essai-PMC13213610.xml",
+   "evidence": [
+    "4 capitalised tokens in the title: ['Neurological', 'Teleconsultations', 'General', 'Practice']"
+   ]
+  },
+  {
+   "document": "essai-PMC13215628.xml",
+   "evidence": [
+    "12 capitalised tokens in the title: ['Fixed', 'Versus', 'Lottery', 'Incentives']"
+   ]
+  },
+  {
+   "document": "essai-PMC13238360.xml",
+   "evidence": [
+    "15 capitalised tokens in the title: ['Agreement', 'Between', 'Methods', 'Assessing']"
+   ]
+  },
+  {
+   "document": "essai-PMC13239719.xml",
+   "evidence": [
+    "10 capitalised tokens in the title: ['Effect', 'Gene', 'Polymorphisms', 'Caffeine']"
+   ]
+  },
+  {
+   "document": "essai-PMC13242068.xml",
+   "evidence": [
+    "23 capitalised tokens in the title: ['Acute', 'Effect', 'Percussive', 'Massage']"
+   ]
+  },
+  {
+   "document": "essai-PMC13242351.xml",
+   "evidence": [
+    "14 capitalised tokens in the title: ['Effects', 'Week', 'Multi', 'Exercise']"
+   ]
+  },
+  {
+   "document": "essai-PMC13245602.xml",
+   "evidence": [
+    "3 capitalised tokens in the title: ['Helping', 'Recipe', 'Success']"
+   ]
+  },
+  {
+   "document": "essai-PMC13254492.xml",
+   "evidence": [
+    "12 capitalised tokens in the title: ['Effects', 'Celecoxib', 'Etoricoxib', 'Pharmacokinetics']"
+   ]
+  },
+  {
+   "document": "essai-PMC13263161.xml",
+   "evidence": [
+    "12 capitalised tokens in the title: ['Physical', 'Adaptations', 'High', 'Intensity']"
+   ]
+  },
+  {
+   "document": "essai-PMC13264282.xml",
+   "evidence": [
+    "12 capitalised tokens in the title: ['Effectiveness', 'Transdiagnostic', 'Emotion', 'Focused']"
+   ]
+  },
+  {
+   "document": "essai-PMC13271868.xml",
+   "evidence": [
+    "16 capitalised tokens in the title: ['Single', 'Session', 'Slackline', 'Training']"
+   ]
+  },
+  {
+   "document": "essai-PMC13276020.xml",
+   "evidence": [
+    "17 capitalised tokens in the title: ['Effects', 'Selective', 'Sphingosine', 'Phosphate']"
+   ]
+  },
+  {
+   "document": "essai-PMC13280184.xml",
+   "evidence": [
+    "19 capitalised tokens in the title: ['Evaluation', 'Short', 'Videos', 'Supporting']"
+   ]
+  },
+  {
+   "document": "essai-PMC13280799.xml",
+   "evidence": [
+    "9 capitalised tokens in the title: ['Adolescent', 'Acceptability', 'School', 'Home']"
+   ]
+  },
+  {
+   "document": "essai-PMC13281132.xml",
+   "evidence": [
+    "16 capitalised tokens in the title: ['Glucagon', 'Like', 'Peptide', 'Agonist']"
+   ]
+  },
+  {
+   "document": "essai-PMC13282136.xml",
+   "evidence": [
+    "18 capitalised tokens in the title: ['Five', 'Weeks', 'Sprint', 'Interval']"
+   ]
+  },
+  {
+   "document": "essai-PMC13284529.xml",
+   "evidence": [
+    "10 capitalised tokens in the title: ['Verbal', 'Visuospatial', 'Working', 'Memory']"
+   ]
+  },
+  {
+   "document": "essai-PMC13291922.xml",
+   "evidence": [
+    "17 capitalised tokens in the title: ['Over', 'Dorsolateral', 'Prefrontal', 'Cortex']"
+   ]
+  },
+  {
+   "document": "essai-PMC13294787.xml",
+   "evidence": [
+    "15 capitalised tokens in the title: ['Precision', 'Medicine', 'Redefine', 'Insulin']"
+   ]
+  },
+  {
+   "document": "essai-PMC13294792.xml",
+   "evidence": [
+    "7 capitalised tokens in the title: ['Empagliflozin', 'MODY', 'Randomized', 'Double-Blind']"
+   ]
+  },
+  {
+   "document": "essai-PMC13296589.xml",
+   "evidence": [
+    "14 capitalised tokens in the title: ['Home', 'Based', 'Combined', 'Activity']"
+   ]
+  },
+  {
+   "document": "essai-PMC7619126.xml",
+   "evidence": [
+    "3 capitalised tokens in the title: ['Lessons', 'Implementing', 'Cambodia']"
+   ]
+  },
+  {
+   "document": "meta-PMC13071177.xml",
+   "evidence": [
+    "13 capitalised tokens in the title: ['Japanese', 'Cohort', 'Study', 'Identifies']"
+   ]
+  },
+  {
+   "document": "meta-PMC13226718.xml",
+   "evidence": [
+    "2 capitalised tokens in the title: ['Multi-ancestry', 'GWAS']"
+   ]
+  },
+  {
+   "document": "meta-PMC13240427.xml",
+   "evidence": [
+    "13 capitalised tokens in the title: ['Suicide', 'Risk', 'Among', 'Transgender']"
+   ]
+  },
+  {
+   "document": "meta-PMC13241412.xml",
+   "evidence": [
+    "18 capitalised tokens in the title: ['Efficacy', 'Fibrin', 'Sealants', 'Polyglycolic']"
+   ]
+  },
+  {
+   "document": "meta-PMC13250259.xml",
+   "evidence": [
+    "16 capitalised tokens in the title: ['Network', 'Level', 'Convergence', 'Adiposity']"
+   ]
+  },
+  {
+   "document": "meta-PMC13254819.xml",
+   "evidence": [
+    "6 capitalised tokens in the title: ['Association', 'APOE', 'Centiloids', 'Hispanic']"
+   ]
+  },
+  {
+   "document": "meta-PMC13260247.xml",
+   "evidence": [
+    "2 capitalised tokens in the title: ['Identification', 'IgA']"
+   ]
+  },
+  {
+   "document": "meta-PMC13263136.xml",
+   "evidence": [
+    "2 capitalised tokens in the title: ['Consensus', 'Alzheimer']"
+   ]
+  },
+  {
+   "document": "meta-PMC13269816.xml",
+   "evidence": [
+    "8 capitalised tokens in the title: ['Use', 'Mendelian', 'Randomization', 'Unveil']"
+   ]
+  },
+  {
+   "document": "meta-PMC13286426.xml",
+   "evidence": [
+    "3 capitalised tokens in the title: ['Causal', 'DNA', 'Mendelian']"
+   ]
+  },
+  {
+   "document": "meta-PMC13286481.xml",
+   "evidence": [
+    "2 capitalised tokens in the title: ['Safety', 'Evidence']"
+   ]
+  },
+  {
+   "document": "meta-PMC13292320.xml",
+   "evidence": [
+    "3 capitalised tokens in the title: ['APOE', 'Alzheimer', 'Japanese']"
+   ]
+  },
+  {
+   "document": "meta-PMC13297335.xml",
+   "evidence": [
+    "16 capitalised tokens in the title: ['Transcriptomic', 'Meta-Analysis', 'Functional', 'Validation']"
+   ]
+  },
+  {
+   "document": "meta-PMC13305250.xml",
+   "evidence": [
+    "2 capitalised tokens in the title: ['Modifiable', 'Mendelian']"
+   ]
+  },
+  {
+   "document": "moderne-PMC12900525.xml",
+   "evidence": [
+    "8 capitalised tokens in the title: ['Analysis', 'Bond', 'Strength', 'Bioceramic']"
+   ]
+  },
+  {
+   "document": "moderne-PMC12967033.xml",
+   "evidence": [
+    "2 capitalised tokens in the title: ['Short', 'Kernza']"
+   ]
+  },
+  {
+   "document": "moderne-PMC13177175.xml",
+   "evidence": [
+    "17 capitalised tokens in the title: ['Electrophysiological', 'Markers', 'Hypertrophic', 'Cardiomyopathy']"
+   ]
+  },
+  {
+   "document": "moderne-PMC13264966.xml",
+   "evidence": [
+    "14 capitalised tokens in the title: ['Toward', 'Metabolomics', 'Analyses', 'Combined']"
+   ]
+  },
+  {
+   "document": "moderne-PMC13264967.xml",
+   "evidence": [
+    "14 capitalised tokens in the title: ['New', 'Approach', 'Analysis', 'Dissolved']"
+   ]
+  },
+  {
+   "document": "moderne-PMC13274555.xml",
+   "evidence": [
+    "16 capitalised tokens in the title: ['Stable', 'Isotope', 'Composition', 'Skin']"
+   ]
+  },
+  {
+   "document": "moderne-PMC13282716.xml",
+   "evidence": [
+    "12 capitalised tokens in the title: ['Integrating', 'Lateral', 'Super', 'Resolution']"
+   ]
+  },
+  {
+   "document": "moderne-PMC13282721.xml",
+   "evidence": [
+    "8 capitalised tokens in the title: ['Quarter', 'Century', 'EHD', 'Protein']"
+   ]
+  },
+  {
+   "document": "moderne-PMC13291764.xml",
+   "evidence": [
+    "11 capitalised tokens in the title: ['Use', 'Prokinetic', 'Agents', 'Adult']"
+   ]
+  },
+  {
+   "document": "moderne-PMC13292010.xml",
+   "evidence": [
+    "17 capitalised tokens in the title: ['Response', 'LTE', 'Bridging', 'Gap']"
+   ]
+  },
+  {
+   "document": "moderne-PMC13292400.xml",
+   "evidence": [
+    "11 capitalised tokens in the title: ['Cementum', 'Attachment', 'Protein', 'Derived']"
+   ]
+  },
+  {
+   "document": "moderne-PMC13296834.xml",
+   "evidence": [
+    "8 capitalised tokens in the title: ['Advising', 'Antidepressant', 'Use', 'Pregnancy']"
+   ]
+  },
+  {
+   "document": "moderne-PMC13296839.xml",
+   "evidence": [
+    "13 capitalised tokens in the title: ['Plasma', 'Membrane', 'Remodeling', 'During']"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13127809.xml",
+   "evidence": [
+    "7 capitalised tokens in the title: ['PET', 'CT', 'Fatores', 'Risco']"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13128172.xml",
+   "evidence": [
+    "6 capitalised tokens in the title: ['Valores', 'Por', 'Brasil', 'Precisa']"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13128184.xml",
+   "evidence": [
+    "6 capitalised tokens in the title: ['Espessura', 'Engana', 'Papel', 'Imagem']"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13128185.xml",
+   "evidence": [
+    "2 capitalised tokens in the title: ['Histologia', 'Valvopatia']"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13128186.xml",
+   "evidence": [
+    "6 capitalised tokens in the title: ['Testagem', 'Cardiomiopatia', 'Ampliando', 'Representatividade']"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13128206.xml",
+   "evidence": [
+    "5 capitalised tokens in the title: ['Cardiopulmonar', 'Parada', 'Intra-Hospitalar', 'Centro']"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13128210.xml",
+   "evidence": [
+    "8 capitalised tokens in the title: ['Conectando', 'Chamados', 'Globais', 'Local']"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13128212.xml",
+   "evidence": [
+    "5 capitalised tokens in the title: ['Cardiopulmonar', 'Latina', 'Desafio', 'Vai']"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13128213.xml",
+   "evidence": [
+    "6 capitalised tokens in the title: ['Danon', 'Compreendendo', 'Papel', 'Variantes']"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13128215.xml",
+   "evidence": [
+    "6 capitalised tokens in the title: ['Nova', 'Fronteira', 'Ultrassom', 'Point-of-Care']"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13128216.xml",
+   "evidence": [
+    "8 capitalised tokens in the title: ['Hipercalemia', 'Contribuinte', 'Subnotificado', 'Piores']"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13142163.xml",
+   "evidence": [
+    "2 capitalised tokens in the title: ['Assessing', 'ASD']"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13148856.xml",
+   "evidence": [
+    "6 capitalised tokens in the title: ['Fibrose', 'Intersticial', 'Histologia', 'Valvopatia']"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13155791.xml",
+   "evidence": [
+    "4 capitalised tokens in the title: ['Para', 'Humor', 'Riso', 'Cardiovascular']"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13155792.xml",
+   "evidence": [
+    "5 capitalised tokens in the title: ['Troponina', 'Antecipando', 'Miocardite', 'Causada']"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13155793.xml",
+   "evidence": [
+    "4 capitalised tokens in the title: ['Papel', 'Causal', 'Tabagismo', 'Parada']"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13185730.xml",
+   "evidence": [
+    "3 capitalised tokens in the title: ['Risco', 'EpiFloripa', 'Idoso']"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13193188.xml",
+   "evidence": [
+    "7 capitalised tokens in the title: ['Validation', 'Central', 'Auditory', 'Processing']"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13193191.xml",
+   "evidence": [
+    "8 capitalised tokens in the title: ['Action', 'Speech', 'Therapy', 'Unified']"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13224953.xml",
+   "evidence": [
+    "2 capitalised tokens in the title: ['Entre', 'Yanomami']"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13224957.xml",
+   "evidence": [
+    "2 capitalised tokens in the title: ['Diabetes', 'ELSI-Brasil']"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13228121.xml",
+   "evidence": [
+    "4 capitalised tokens in the title: ['Renato', 'Kehl', 'Mendes', 'Correia']"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13264162.xml",
+   "evidence": [
+    "3 capitalised tokens in the title: ['Planes', 'Primaria', 'Castilla']"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13266122.xml",
+   "evidence": [
+    "2 capitalised tokens in the title: ['Recetar', 'Primaria']"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13267754.xml",
+   "evidence": [
+    "3 capitalised tokens in the title: ['Gobernanza', 'Latina', 'Caribe']"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13267755.xml",
+   "evidence": [
+    "2 capitalised tokens in the title: ['Alimentos', 'Argentina']"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13267757.xml",
+   "evidence": [
+    "2 capitalised tokens in the title: ['Panorama', 'Latina']"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13272511.xml",
+   "evidence": [
+    "4 capitalised tokens in the title: ['Prevalencia', 'Encuesta', 'Europea', 'Salud']"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13284469.xml",
+   "evidence": [
+    "2 capitalised tokens in the title: ['Santander', 'Colombia']"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13285344.xml",
+   "evidence": [
+    "3 capitalised tokens in the title: ['Manifestaciones', 'Anticipadas', 'Voluntad']"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13288443.xml",
+   "evidence": [
+    "2 capitalised tokens in the title: ['Linguistic-cognitive', 'Alzheimer']"
+   ]
+  },
+  {
+   "document": "phys-PMC13039343.xml",
+   "evidence": [
+    "2 capitalised tokens in the title: ['Combined', 'Aquila']"
+   ]
+  },
+  {
+   "document": "phys-PMC13082673.xml",
+   "evidence": [
+    "11 capitalised tokens in the title: ['Instrumentation', 'Digital', 'Twins', 'PET']"
+   ]
+  },
+  {
+   "document": "phys-PMC13099575.xml",
+   "evidence": [
+    "6 capitalised tokens in the title: ['Sparse', 'Koopman', 'Shallow', 'Recurrent']"
+   ]
+  },
+  {
+   "document": "phys-PMC13113438.xml",
+   "evidence": [
+    "13 capitalised tokens in the title: ['Bioinspired', 'Spatio-Temporal', 'Cooperative', 'Path']"
+   ]
+  },
+  {
+   "document": "phys-PMC13133660.xml",
+   "evidence": [
+    "2 capitalised tokens in the title: ['Hybridndiff-UQ', 'Uncertainty']"
+   ]
+  },
+  {
+   "document": "phys-PMC13154412.xml",
+   "evidence": [
+    "3 capitalised tokens in the title: ['Computational', 'II', 'MHC']"
+   ]
+  },
+  {
+   "document": "phys-PMC13158258.xml",
+   "evidence": [
+    "2 capitalised tokens in the title: ['IGANets', 'Isogeometric']"
+   ]
+  },
+  {
+   "document": "phys-PMC13181085.xml",
+   "evidence": [
+    "2 capitalised tokens in the title: ['Legendre', 'Sutterby']"
+   ]
+  },
+  {
+   "document": "phys-PMC13208799.xml",
+   "evidence": [
+    "5 capitalised tokens in the title: ['Advances', 'Metal', 'Microstructure', 'Simulation']"
+   ]
+  },
+  {
+   "document": "phys-PMC13210669.xml",
+   "evidence": [
+    "9 capitalised tokens in the title: ['Multi-Gradient-Descent-Integrated', 'Physics-Informed', 'Autoencoder', 'Sensor']"
+   ]
+  },
+  {
+   "document": "phys-PMC13246409.xml",
+   "evidence": [
+    "3 capitalised tokens in the title: ['Spatiotemporal', 'CNN-LSTM', 'CFD-Robotics']"
+   ]
+  },
+  {
+   "document": "phys-PMC13252849.xml",
+   "evidence": [
+    "5 capitalised tokens in the title: ['Heuristic', 'Masked', 'Protein', 'Language']"
+   ]
+  },
+  {
+   "document": "phys-PMC13257740.xml",
+   "evidence": [
+    "14 capitalised tokens in the title: ['Adaptive', 'Coupling', 'Edge-Based', 'Smoothed']"
+   ]
+  },
+  {
+   "document": "phys-PMC13259435.xml",
+   "evidence": [
+    "9 capitalised tokens in the title: ['Physics-Guided', 'Dual-Branch', 'Fusion', 'Model']"
+   ]
+  },
+  {
+   "document": "phys-PMC13259474.xml",
+   "evidence": [
+    "10 capitalised tokens in the title: ['Hybrid', 'Analytical', 'Simulation-Based', 'Approach']"
+   ]
+  },
+  {
+   "document": "phys-PMC13261600.xml",
+   "evidence": [
+    "13 capitalised tokens in the title: ['Physics-Informed', 'Neural', 'Network', 'Framework']"
+   ]
+  },
+  {
+   "document": "phys-PMC13272752.xml",
+   "evidence": [
+    "2 capitalised tokens in the title: ['Mechanistic', 'Ti-']"
+   ]
+  },
+  {
+   "document": "phys-PMC13285896.xml",
+   "evidence": [
+    "4 capitalised tokens in the title: ['Macro', 'Monte', 'Carlo', 'VHEE']"
+   ]
+  },
+  {
+   "document": "phys-PMC13289917.xml",
+   "evidence": [
+    "4 capitalised tokens in the title: ['Learning', 'Physics-Informed', 'Neural', 'Networks']"
+   ]
+  },
+  {
+   "document": "phys-PMC13296606.xml",
+   "evidence": [
+    "12 capitalised tokens in the title: ['Modified', 'Complex-Valued', 'Encoding', 'Greater']"
+   ]
+  },
+  {
+   "document": "phys-PMC13297141.xml",
+   "evidence": [
+    "11 capitalised tokens in the title: ['Novel', 'Bio-Inspired', 'Physics-Based', 'Learning']"
+   ]
+  },
+  {
+   "document": "phys-PMC13297618.xml",
+   "evidence": [
+    "11 capitalised tokens in the title: ['Blackcap', 'Optimization', 'Algorithm', 'BCOA']"
+   ]
+  },
+  {
+   "document": "phys-PMC13298103.xml",
+   "evidence": [
+    "5 capitalised tokens in the title: ['Sampling', 'Quantum', 'States', 'Inequality']"
+   ]
+  },
+  {
+   "document": "retract-PMC12920011.xml",
+   "evidence": [
+    "2 capitalised tokens in the title: ['Retracted', 'Matrix']"
+   ]
+  },
+  {
+   "document": "retract-PMC12937552.xml",
+   "evidence": [
+    "3 capitalised tokens in the title: ['Retraction', 'Note', 'Delayed']"
+   ]
+  },
+  {
+   "document": "retract-PMC12943135.xml",
+   "evidence": [
+    "13 capitalised tokens in the title: ['RETRACTED', 'Johnson', 'Effect', 'Education']"
+   ]
+  },
+  {
+   "document": "retract-PMC12945919.xml",
+   "evidence": [
+    "15 capitalised tokens in the title: ['RETRACTION', 'Correlation', 'Between', 'Acanthosis']"
+   ]
+  },
+  {
+   "document": "retract-PMC12951106.xml",
+   "evidence": [
+    "13 capitalised tokens in the title: ['RETRACTION', 'Regulates', 'Growth', 'Metastasis']"
+   ]
+  },
+  {
+   "document": "retract-PMC12983399.xml",
+   "evidence": [
+    "2 capitalised tokens in the title: ['Retraction', 'Regulated']"
+   ]
+  },
+  {
+   "document": "retract-PMC12985380.xml",
+   "evidence": [
+    "5 capitalised tokens in the title: ['Retraction', 'Post', 'PSS', 'Simple']"
+   ]
+  },
+  {
+   "document": "retract-PMC12989678.xml",
+   "evidence": [
+    "2 capitalised tokens in the title: ['Notice', 'Retraction']"
+   ]
+  },
+  {
+   "document": "retract-PMC12990951.xml",
+   "evidence": [
+    "3 capitalised tokens in the title: ['Retraction', 'Influence', 'Valsalva']"
+   ]
+  },
+  {
+   "document": "retract-PMC13034554.xml",
+   "evidence": [
+    "2 capitalised tokens in the title: ['Retracted', 'Inhibition']"
+   ]
+  },
+  {
+   "document": "retract-PMC13037014.xml",
+   "evidence": [
+    "3 capitalised tokens in the title: ['Retraction', 'Note', 'Psoralen']"
+   ]
+  },
+  {
+   "document": "retract-PMC13083641.xml",
+   "evidence": [
+    "2 capitalised tokens in the title: ['Mechanism', 'XI']"
+   ]
+  },
+  {
+   "document": "retract-PMC13100932.xml",
+   "evidence": [
+    "12 capitalised tokens in the title: ['RETRACTED', 'Osman', 'Lipolytic', 'Postbiotic']"
+   ]
+  },
+  {
+   "document": "retract-PMC13208113.xml",
+   "evidence": [
+    "12 capitalised tokens in the title: ['Retracted', 'Modeled', 'Behavioral', 'Evaluation']"
+   ]
+  },
+  {
+   "document": "retract-PMC13244562.xml",
+   "evidence": [
+    "11 capitalised tokens in the title: ['RETRACTION', 'Influence', 'Rosiglitazone', 'Expression']"
+   ]
+  },
+  {
+   "document": "retract-PMC13257949.xml",
+   "evidence": [
+    "2 capitalised tokens in the title: ['Retraction', 'IX']"
+   ]
+  },
+  {
+   "document": "retract-PMC13289858.xml",
+   "evidence": [
+    "2 capitalised tokens in the title: ['Retraction', 'Edge']"
+   ]
+  },
+  {
+   "document": "retract-PMC13291836.xml",
+   "evidence": [
+    "12 capitalised tokens in the title: ['Promotes', 'Cell', 'Growth', 'Resistance']"
+   ]
+  },
+  {
+   "document": "retract-PMC13292036.xml",
+   "evidence": [
+    "11 capitalised tokens in the title: ['Retraction', 'Plays', 'Promoting', 'Role']"
+   ]
+  },
+  {
+   "document": "retract-PMC13292042.xml",
+   "evidence": [
+    "12 capitalised tokens in the title: ['Retraction', 'Knockdown', 'Cyclin-Dependent', 'Kinase']"
+   ]
+  },
+  {
+   "document": "retract-PMC13292064.xml",
+   "evidence": [
+    "14 capitalised tokens in the title: ['Retraction', 'Long', 'Noncoding', 'RNA']"
+   ]
+  },
+  {
+   "document": "retract-PMC13292106.xml",
+   "evidence": [
+    "13 capitalised tokens in the title: ['RETRACTION', 'Hypoxia', 'Induced', 'Exerts']"
+   ]
+  },
+  {
+   "document": "retract-PMC13292606.xml",
+   "evidence": [
+    "19 capitalised tokens in the title: ['RETRACTED', 'Jeong', 'Protective', 'Effects']"
+   ]
+  },
+  {
+   "document": "retract-PMC13294332.xml",
+   "evidence": [
+    "5 capitalised tokens in the title: ['Retraction', 'Note', 'Carbon', 'P-selectin']"
+   ]
+  },
+  {
+   "document": "retract-PMC13294796.xml",
+   "evidence": [
+    "4 capitalised tokens in the title: ['Retracted', 'Long', 'RNA', 'Wnt']"
+   ]
+  },
+  {
+   "document": "retract-PMC13295435.xml",
+   "evidence": [
+    "19 capitalised tokens in the title: ['RETRACTED', 'Ferlazzo', 'Flavonoid-Rich', 'Extract']"
+   ]
+  },
+  {
+   "document": "retract-PMC13299186.xml",
+   "evidence": [
+    "2 capitalised tokens in the title: ['Retracted', 'Protection']"
+   ]
+  },
+  {
+   "document": "retract-PMC13306522.xml",
+   "evidence": [
+    "15 capitalised tokens in the title: ['RETRACTION', 'Evaluation', 'Genotoxic', 'Potential']"
+   ]
+  }
+ ]
+}

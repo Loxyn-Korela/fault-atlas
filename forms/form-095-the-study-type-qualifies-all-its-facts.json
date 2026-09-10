@@ -26,6 +26,15 @@
       "excerpt_en": "MEASURED on 2026-08-08 on the 272 JATS XML articles of the internal corpus: 90/272 abstracts (33 %) explicitly name their design (randomized, double-blind, placebo-controlled, retrospective, cohort, case-control, cross-sectional, meta-analysis, in vitro/in vivo) — a single line that qualifies the whole article. Also observed on 2026-08-08 on Gomersall & Stuart, J. Neurol. Neurosurg. Psychiatry 1973: \"a double-blind controlled clinical trial of crossover design was conducted in 26 volunteers\".",
       "organisation": "Loxyn SAS, Lyon",
       "corpus_id": "corpus-europe-pmc-jats-2023-2026"
+    },
+    {
+      "corpus": "Europe PMC JATS 2023-2026 (272 articles, the declared corpus)",
+      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+      "date": "2026-09-10",
+      "observer": "Fault Atlas maintainer (Loxyn), by probe, no model",
+      "excerpt": "MEASURED on 2026-09-10 by probes/2026-09-recovered/line-095.py, whose definition is in its docstring: 84/272 articles carry it, where the observation of 2026-08-08 counted 90 under a definition we could not recover. First carrier: bio-PMC12583535.xml — design named in the abstract: ['meta-analysis', 'systematic review']",
+      "lang": "en",
+      "probe": "probes/2026-09-recovered/line-095.py"
     }
   ],
   "specimens": {
@@ -64,5 +73,51 @@
     "value": "FAUX",
     "means": "a false fact: a value, a type or a link the source never asserted",
     "source": "the internal catalogue of 2026-08-09 (korela.db, table parametre), line 95; it is not derived from the damage and varies inside a damage class"
-  }
+  },
+  "probes": [
+    {
+      "file": "probes/2026-09-recovered/line-095.py",
+      "kind": "python",
+      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+      "written": "2026-09-10",
+      "run": "python3 tools/run_probe.py probes/2026-09-recovered/line-095.py <dir with the 272 .xml>",
+      "result": {
+        "date": "2026-09-10",
+        "count": 84,
+        "of": 272,
+        "strata": {
+          "essai": 29,
+          "meta": 27,
+          "bio": 22,
+          "nonEN": 3,
+          "moderne": 2,
+          "cas": 1
+        },
+        "examples": [
+          [
+            "bio-PMC12583535.xml",
+            [
+              "design named in the abstract: ['meta-analysis', 'systematic review']"
+            ]
+          ],
+          [
+            "bio-PMC12590050.xml",
+            [
+              "design named in the abstract: ['cross-sectional']"
+            ]
+          ],
+          [
+            "bio-PMC12857832.xml",
+            [
+              "design named in the abstract: ['meta-analysis', 'systematic review']"
+            ]
+          ]
+        ],
+        "by": "Fault Atlas maintainer (Loxyn), on the declared corpus",
+        "carriers_file": "probes/results/form-095-the-study-type-qualifies-all-its-facts.json"
+      },
+      "matches_excerpt": true,
+      "note": "reproduces the figure of the September reading it is attached to, 84/272. It does NOT reproduce the August figure of 90, whose definition we could not recover; that observation is left exactly as it stands, above, with no example under it."
+    }
+  ]
 }

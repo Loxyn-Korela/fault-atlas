@@ -1,0 +1,645 @@
+{
+ "probe": "probes/2026-09-recovered/line-026.py",
+ "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+ "date": "2026-09-10",
+ "count": 106,
+ "of": 272,
+ "carriers": [
+  {
+   "document": "bio-PMC12583535.xml",
+   "evidence": [
+    "8 shared surnames, e.g. Li borne by ['Aolin', 'H', 'J', 'N', 'S', 'Z']"
+   ]
+  },
+  {
+   "document": "bio-PMC12674831.xml",
+   "evidence": [
+    "152 shared surnames, e.g. Valério borne by ['CM', 'Cynthia Melissa']"
+   ]
+  },
+  {
+   "document": "bio-PMC12857832.xml",
+   "evidence": [
+    "17 shared surnames, e.g. Paulman borne by ['AA', 'PM']"
+   ]
+  },
+  {
+   "document": "bio-PMC12882215.xml",
+   "evidence": [
+    "18 shared surnames, e.g. Wang borne by ['C', 'D', 'J', 'K', 'M', 'Mengyao', 'P', 'R', 'X']"
+   ]
+  },
+  {
+   "document": "bio-PMC12909487.xml",
+   "evidence": [
+    "3 shared surnames, e.g. Martins borne by ['A', 'H']"
+   ]
+  },
+  {
+   "document": "bio-PMC12915353.xml",
+   "evidence": [
+    "12 shared surnames, e.g. Moslehi borne by ['N', 'Nazanin']"
+   ]
+  },
+  {
+   "document": "bio-PMC12927065.xml",
+   "evidence": [
+    "2 shared surnames, e.g. Getahun borne by ['Genanew Kassie', 'Olyad Kuma']"
+   ]
+  },
+  {
+   "document": "bio-PMC13155703.xml",
+   "evidence": [
+    "4 shared surnames, e.g. Patel borne by ['N', 'Tirath']"
+   ]
+  },
+  {
+   "document": "bio-PMC13162546.xml",
+   "evidence": [
+    "36 shared surnames, e.g. Yan borne by ['J', 'Ziqing']"
+   ]
+  },
+  {
+   "document": "bio-PMC13190511.xml",
+   "evidence": [
+    "1 shared surnames, e.g. Wang borne by ['Jingyu', 'Zhouluo']"
+   ]
+  },
+  {
+   "document": "bio-PMC13207820.xml",
+   "evidence": [
+    "9 shared surnames, e.g. Taylor borne by ['H.S.', 'R.N.']"
+   ]
+  },
+  {
+   "document": "bio-PMC13216383.xml",
+   "evidence": [
+    "4 shared surnames, e.g. de Vries borne by ['NM', 'Nienke M.']"
+   ]
+  },
+  {
+   "document": "bio-PMC13231534.xml",
+   "evidence": [
+    "1 shared surnames, e.g. Yang borne by ['Mubei', 'Qiaohong']"
+   ]
+  },
+  {
+   "document": "bio-PMC13236932.xml",
+   "evidence": [
+    "13 shared surnames, e.g. Liu borne by ['Y', 'YS', 'Ying']"
+   ]
+  },
+  {
+   "document": "bio-PMC13251069.xml",
+   "evidence": [
+    "26 shared surnames, e.g. Li borne by ['Jia', 'Jingxuan', 'N', 'SF', 'X']"
+   ]
+  },
+  {
+   "document": "cas-PMC13290446.xml",
+   "evidence": [
+    "3 shared surnames, e.g. Kim borne by ['GB', 'Hyun Ho', 'MK']"
+   ]
+  },
+  {
+   "document": "cas-PMC13293645.xml",
+   "evidence": [
+    "1 shared surnames, e.g. Murphy borne by ['LB', 'NJ']"
+   ]
+  },
+  {
+   "document": "cas-PMC13293792.xml",
+   "evidence": [
+    "12 shared surnames, e.g. Wang borne by ['JZ', 'Y']"
+   ]
+  },
+  {
+   "document": "cas-PMC13293813.xml",
+   "evidence": [
+    "2 shared surnames, e.g. Liu borne by ['Qi', 'YY']"
+   ]
+  },
+  {
+   "document": "cas-PMC13293827.xml",
+   "evidence": [
+    "4 shared surnames, e.g. Jiang borne by ['Xiaodong', 'Yanting', 'ZF']"
+   ]
+  },
+  {
+   "document": "cas-PMC13293834.xml",
+   "evidence": [
+    "2 shared surnames, e.g. Zhang borne by ['Qixiong', 'Y']"
+   ]
+  },
+  {
+   "document": "cas-PMC13293897.xml",
+   "evidence": [
+    "2 shared surnames, e.g. Frye borne by ['CW', 'Christopher W.']"
+   ]
+  },
+  {
+   "document": "cas-PMC13293901.xml",
+   "evidence": [
+    "4 shared surnames, e.g. Singh borne by ['A', 'H']"
+   ]
+  },
+  {
+   "document": "cas-PMC13294038.xml",
+   "evidence": [
+    "2 shared surnames, e.g. Wang borne by ['Ping', 'Yanqiu']"
+   ]
+  },
+  {
+   "document": "cas-PMC13294096.xml",
+   "evidence": [
+    "1 shared surnames, e.g. Kim borne by ['HJ', 'HR', 'JB', 'S', 'Y']"
+   ]
+  },
+  {
+   "document": "cas-PMC13294155.xml",
+   "evidence": [
+    "14 shared surnames, e.g. Chen borne by ['K', 'Y', 'YM']"
+   ]
+  },
+  {
+   "document": "cas-PMC13294182.xml",
+   "evidence": [
+    "4 shared surnames, e.g. Lin borne by ['CW', 'Y']"
+   ]
+  },
+  {
+   "document": "cas-PMC13294281.xml",
+   "evidence": [
+    "6 shared surnames, e.g. Liu borne by ['K', 'X', 'Yu']"
+   ]
+  },
+  {
+   "document": "cas-PMC13294340.xml",
+   "evidence": [
+    "1 shared surnames, e.g. Liu borne by ['Jiao', 'Zheng']"
+   ]
+  },
+  {
+   "document": "cas-PMC13294475.xml",
+   "evidence": [
+    "1 shared surnames, e.g. Li borne by ['Shuo', 'Yijun']"
+   ]
+  },
+  {
+   "document": "cas-PMC13294481.xml",
+   "evidence": [
+    "1 shared surnames, e.g. Adamidis borne by ['Nikos', 'Sotirios']"
+   ]
+  },
+  {
+   "document": "cas-PMC13294698.xml",
+   "evidence": [
+    "2 shared surnames, e.g. Gao borne by ['Baogui', 'Genping']"
+   ]
+  },
+  {
+   "document": "cas-PMC13294705.xml",
+   "evidence": [
+    "1 shared surnames, e.g. Samarasinghe borne by ['B', 'S']"
+   ]
+  },
+  {
+   "document": "cas-PMC13300565.xml",
+   "evidence": [
+    "5 shared surnames, e.g. Park borne by ['DH', 'TJ']"
+   ]
+  },
+  {
+   "document": "cas-PMC13300836.xml",
+   "evidence": [
+    "1 shared surnames, e.g. Wang borne by ['AS', 'D']"
+   ]
+  },
+  {
+   "document": "cas-PMC13301386.xml",
+   "evidence": [
+    "3 shared surnames, e.g. Kim borne by ['DH', 'SW']"
+   ]
+  },
+  {
+   "document": "essai-PMC13169472.xml",
+   "evidence": [
+    "1 shared surnames, e.g. Rasmussen borne by ['Julie', 'Torben']"
+   ]
+  },
+  {
+   "document": "essai-PMC13191455.xml",
+   "evidence": [
+    "4 shared surnames, e.g. Jones borne by ['Hannah J.', 'PB', 'Peter B.']"
+   ]
+  },
+  {
+   "document": "essai-PMC13215628.xml",
+   "evidence": [
+    "3 shared surnames, e.g. Hayashi borne by ['K', 'Kosuke']"
+   ]
+  },
+  {
+   "document": "essai-PMC13290998.xml",
+   "evidence": [
+    "17 shared surnames, e.g. Knoerl borne by ['R', 'Robert']"
+   ]
+  },
+  {
+   "document": "essai-PMC13291766.xml",
+   "evidence": [
+    "1 shared surnames, e.g. Hashimoto borne by ['Kaito', 'Takeshi']"
+   ]
+  },
+  {
+   "document": "essai-PMC13291922.xml",
+   "evidence": [
+    "1 shared surnames, e.g. Yang borne by ['Hui', 'Lei']"
+   ]
+  },
+  {
+   "document": "essai-PMC13293440.xml",
+   "evidence": [
+    "19 shared surnames, e.g. Li borne by ['GL', 'J', 'L', 'X', 'Y', 'YB', 'Yunjing', 'Z']"
+   ]
+  },
+  {
+   "document": "essai-PMC13294787.xml",
+   "evidence": [
+    "2 shared surnames, e.g. Fan borne by ['Baoqi', 'Yingnan']"
+   ]
+  },
+  {
+   "document": "meta-PMC13225629.xml",
+   "evidence": [
+    "11 shared surnames, e.g. Granito borne by ['A', 'Alessandro']"
+   ]
+  },
+  {
+   "document": "meta-PMC13231626.xml",
+   "evidence": [
+    "3 shared surnames, e.g. Walther borne by ['E', 'Eva']"
+   ]
+  },
+  {
+   "document": "meta-PMC13241412.xml",
+   "evidence": [
+    "13 shared surnames, e.g. Ismaiel borne by ['Abdulrahman', 'Mohamed']"
+   ]
+  },
+  {
+   "document": "meta-PMC13246130.xml",
+   "evidence": [
+    "18 shared surnames, e.g. Sun borne by ['G', 'L']"
+   ]
+  },
+  {
+   "document": "meta-PMC13250259.xml",
+   "evidence": [
+    "1 shared surnames, e.g. Zheng borne by ['Hongyi', 'Wenbin']"
+   ]
+  },
+  {
+   "document": "meta-PMC13256077.xml",
+   "evidence": [
+    "13 shared surnames, e.g. Kneizeh borne by ['K', 'Kinan']"
+   ]
+  },
+  {
+   "document": "meta-PMC13260247.xml",
+   "evidence": [
+    "10 shared surnames, e.g. Wang borne by ['Cong', 'Jing', 'Li', 'Q', 'Xiaoyuan']"
+   ]
+  },
+  {
+   "document": "meta-PMC13265330.xml",
+   "evidence": [
+    "7 shared surnames, e.g. Chen borne by ['EY', 'Jianhui', 'Kexin', 'Ling']"
+   ]
+  },
+  {
+   "document": "meta-PMC13268693.xml",
+   "evidence": [
+    "13 shared surnames, e.g. Raveendra borne by ['K', 'Keerthenan']"
+   ]
+  },
+  {
+   "document": "meta-PMC13269816.xml",
+   "evidence": [
+    "40 shared surnames, e.g. Kim borne by ['DS', 'Jeongseon', 'KM', 'SS', 'YI']"
+   ]
+  },
+  {
+   "document": "meta-PMC13271776.xml",
+   "evidence": [
+    "10 shared surnames, e.g. Gobeil borne by ['É', 'Émilie']"
+   ]
+  },
+  {
+   "document": "meta-PMC13286481.xml",
+   "evidence": [
+    "1 shared surnames, e.g. Colombel borne by ['J', 'JF']"
+   ]
+  },
+  {
+   "document": "meta-PMC13287149.xml",
+   "evidence": [
+    "1 shared surnames, e.g. Yang borne by ['Jing', 'Wanling']"
+   ]
+  },
+  {
+   "document": "meta-PMC13287277.xml",
+   "evidence": [
+    "11 shared surnames, e.g. Sudre borne by ['G', 'Gustavo']"
+   ]
+  },
+  {
+   "document": "meta-PMC13297335.xml",
+   "evidence": [
+    "47 shared surnames, e.g. Mansour borne by ['R.', 'Tamer A.']"
+   ]
+  },
+  {
+   "document": "meta-PMC13305250.xml",
+   "evidence": [
+    "6 shared surnames, e.g. Zheng borne by ['Keliang', 'Yingchun']"
+   ]
+  },
+  {
+   "document": "moderne-PMC13288728.xml",
+   "evidence": [
+    "7 shared surnames, e.g. Walther borne by ['T.', 'Tobias']"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13128186.xml",
+   "evidence": [
+    "1 shared surnames, e.g. Jacoby borne by ['D', 'DL']"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13128212.xml",
+   "evidence": [
+    "1 shared surnames, e.g. Chen borne by ['Y', 'YS']"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13128216.xml",
+   "evidence": [
+    "1 shared surnames, e.g. Pecoits-Filho borne by ['R', 'Roberto']"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13128218.xml",
+   "evidence": [
+    "1 shared surnames, e.g. Seyithanoğlu borne by ['M', 'Muhammed']"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13148856.xml",
+   "evidence": [
+    "8 shared surnames, e.g. Bello borne by ['JHSM', 'Juliana Hiromi Silva Matsumoto']"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13155792.xml",
+   "evidence": [
+    "2 shared surnames, e.g. Heinzerling borne by ['L', 'LM']"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13185728.xml",
+   "evidence": [
+    "3 shared surnames, e.g. da Silva borne by ['Felicialle Pereira', 'Raphael Alves']"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13193189.xml",
+   "evidence": [
+    "4 shared surnames, e.g. Silva borne by ['A', 'AP', 'RRD']"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13193190.xml",
+   "evidence": [
+    "5 shared surnames, e.g. Genilhú borne by ['PFL', 'Patrícia de Freitas Lopes']"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13193194.xml",
+   "evidence": [
+    "5 shared surnames, e.g. Pondé borne by ['MP', 'Milena']"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13193195.xml",
+   "evidence": [
+    "2 shared surnames, e.g. Patrick borne by ['D', 'DL']"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13224955.xml",
+   "evidence": [
+    "17 shared surnames, e.g. Lima-Silva borne by ['ML', 'Maria Luiza']"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13224957.xml",
+   "evidence": [
+    "1 shared surnames, e.g. Torres borne by ['Juliana Lustosa', 'Luciana Lustosa']"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13264058.xml",
+   "evidence": [
+    "8 shared surnames, e.g. Vallès-Peris borne by ['N.', 'Núria']"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13264178.xml",
+   "evidence": [
+    "5 shared surnames, e.g. Liu borne by ['X.', 'Z.']"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13266121.xml",
+   "evidence": [
+    "1 shared surnames, e.g. Scott borne by ['A.', 'C.']"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13267754.xml",
+   "evidence": [
+    "3 shared surnames, e.g. Shah borne by ['I', 'IH']"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13267757.xml",
+   "evidence": [
+    "21 shared surnames, e.g. Machado borne by ['CJ', 'L de C']"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13272511.xml",
+   "evidence": [
+    "5 shared surnames, e.g. Zhang borne by ['N.', 'Y.', 'Z.']"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13285635.xml",
+   "evidence": [
+    "10 shared surnames, e.g. Li borne by ['C.', 'S.', 'T.', 'Y.']"
+   ]
+  },
+  {
+   "document": "phys-PMC13082673.xml",
+   "evidence": [
+    "71 shared surnames, e.g. Azimi borne by ['MS', 'Mohammad Saber']"
+   ]
+  },
+  {
+   "document": "phys-PMC13154412.xml",
+   "evidence": [
+    "1 shared surnames, e.g. Li borne by ['Wenfei', 'Yuqing']"
+   ]
+  },
+  {
+   "document": "phys-PMC13158258.xml",
+   "evidence": [
+    "3 shared surnames, e.g. Reali borne by ['A', 'Alessandro']"
+   ]
+  },
+  {
+   "document": "phys-PMC13201561.xml",
+   "evidence": [
+    "7 shared surnames, e.g. Das borne by ['Debendra K', 'SK', 'Sarit Kumar']"
+   ]
+  },
+  {
+   "document": "phys-PMC13210669.xml",
+   "evidence": [
+    "22 shared surnames, e.g. Shen borne by ['B.', 'Xinyue']"
+   ]
+  },
+  {
+   "document": "phys-PMC13221960.xml",
+   "evidence": [
+    "6 shared surnames, e.g. Zhu borne by ['Xuhao', 'Zitian']"
+   ]
+  },
+  {
+   "document": "phys-PMC13234180.xml",
+   "evidence": [
+    "13 shared surnames, e.g. Truong borne by ['NS', 'TTH']"
+   ]
+  },
+  {
+   "document": "phys-PMC13246409.xml",
+   "evidence": [
+    "10 shared surnames, e.g. Zhang borne by ['Shujia', 'Yanru', 'Z.']"
+   ]
+  },
+  {
+   "document": "phys-PMC13252849.xml",
+   "evidence": [
+    "1 shared surnames, e.g. Wang borne by ['Lijuan', 'Yuze']"
+   ]
+  },
+  {
+   "document": "phys-PMC13261600.xml",
+   "evidence": [
+    "25 shared surnames, e.g. Huang borne by ['B. C.', 'He', 'Y.']"
+   ]
+  },
+  {
+   "document": "phys-PMC13272752.xml",
+   "evidence": [
+    "1 shared surnames, e.g. Lakshmaiya borne by ['N', 'Natrayan']"
+   ]
+  },
+  {
+   "document": "phys-PMC13276034.xml",
+   "evidence": [
+    "4 shared surnames, e.g. Saleh borne by ['A', 'Ahmed']"
+   ]
+  },
+  {
+   "document": "phys-PMC13296606.xml",
+   "evidence": [
+    "14 shared surnames, e.g. Xu borne by ['D.', 'Y.', 'Yubao']"
+   ]
+  },
+  {
+   "document": "phys-PMC13297141.xml",
+   "evidence": [
+    "1 shared surnames, e.g. Li borne by ['Guodong', 'Shuai', 'Zhibin']"
+   ]
+  },
+  {
+   "document": "retract-PMC12943135.xml",
+   "evidence": [
+    "4 shared surnames, e.g. Johnson borne by ['S.M.', 'Sabrina M.']"
+   ]
+  },
+  {
+   "document": "retract-PMC12951106.xml",
+   "evidence": [
+    "1 shared surnames, e.g. Wang borne by ['C.', 'L.']"
+   ]
+  },
+  {
+   "document": "retract-PMC13034554.xml",
+   "evidence": [
+    "1 shared surnames, e.g. Yang borne by ['Meng-Hua', 'Shi-Ming']"
+   ]
+  },
+  {
+   "document": "retract-PMC13037014.xml",
+   "evidence": [
+    "2 shared surnames, e.g. Yang borne by ['Lei', 'Shaofeng']"
+   ]
+  },
+  {
+   "document": "retract-PMC13064942.xml",
+   "evidence": [
+    "5 shared surnames, e.g. Yan borne by ['L', 'Lin-Hai']"
+   ]
+  },
+  {
+   "document": "retract-PMC13208113.xml",
+   "evidence": [
+    "1 shared surnames, e.g. Wang borne by ['Fuzhou', 'Xian']"
+   ]
+  },
+  {
+   "document": "retract-PMC13257949.xml",
+   "evidence": [
+    "1 shared surnames, e.g. Frost borne by ['Christopher\\xa0J.', 'Susan']"
+   ]
+  },
+  {
+   "document": "retract-PMC13292606.xml",
+   "evidence": [
+    "9 shared surnames, e.g. Jeong borne by ['J.-W.', 'Jin-Woo']"
+   ]
+  },
+  {
+   "document": "retract-PMC13294332.xml",
+   "evidence": [
+    "1 shared surnames, e.g. Zhang borne by ['Jie', 'Yuntian']"
+   ]
+  },
+  {
+   "document": "retract-PMC13294796.xml",
+   "evidence": [
+    "1 shared surnames, e.g. Li borne by ['Hao', 'Yun']"
+   ]
+  },
+  {
+   "document": "retract-PMC13295435.xml",
+   "evidence": [
+    "10 shared surnames, e.g. Ferlazzo borne by ['N.', 'Nadia']"
+   ]
+  }
+ ]
+}

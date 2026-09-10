@@ -1,0 +1,117 @@
+{
+ "probe": "probes/2026-09-recovered/line-034.py",
+ "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+ "date": "2026-09-10",
+ "count": 18,
+ "of": 272,
+ "carriers": [
+  {
+   "document": "bio-PMC13097615.xml",
+   "evidence": [
+    "both 'funded by' and 'supported by' in the same article"
+   ]
+  },
+  {
+   "document": "bio-PMC13103274.xml",
+   "evidence": [
+    "both 'funded by' and 'supported by' in the same article"
+   ]
+  },
+  {
+   "document": "bio-PMC13116881.xml",
+   "evidence": [
+    "both 'funded by' and 'supported by' in the same article"
+   ]
+  },
+  {
+   "document": "bio-PMC13236932.xml",
+   "evidence": [
+    "both 'funded by' and 'supported by' in the same article"
+   ]
+  },
+  {
+   "document": "bio-PMC13252842.xml",
+   "evidence": [
+    "both 'funded by' and 'supported by' in the same article"
+   ]
+  },
+  {
+   "document": "cas-PMC13290446.xml",
+   "evidence": [
+    "both 'funded by' and 'supported by' in the same article"
+   ]
+  },
+  {
+   "document": "essai-PMC13191455.xml",
+   "evidence": [
+    "both 'funded by' and 'supported by' in the same article"
+   ]
+  },
+  {
+   "document": "essai-PMC13242068.xml",
+   "evidence": [
+    "both 'funded by' and 'supported by' in the same article"
+   ]
+  },
+  {
+   "document": "essai-PMC13245602.xml",
+   "evidence": [
+    "both 'funded by' and 'supported by' in the same article"
+   ]
+  },
+  {
+   "document": "meta-PMC13157766.xml",
+   "evidence": [
+    "both 'funded by' and 'supported by' in the same article"
+   ]
+  },
+  {
+   "document": "meta-PMC13229315.xml",
+   "evidence": [
+    "both 'funded by' and 'supported by' in the same article"
+   ]
+  },
+  {
+   "document": "meta-PMC13254819.xml",
+   "evidence": [
+    "both 'funded by' and 'supported by' in the same article"
+   ]
+  },
+  {
+   "document": "meta-PMC13264275.xml",
+   "evidence": [
+    "both 'funded by' and 'supported by' in the same article"
+   ]
+  },
+  {
+   "document": "meta-PMC13264436.xml",
+   "evidence": [
+    "both 'funded by' and 'supported by' in the same article"
+   ]
+  },
+  {
+   "document": "meta-PMC13280693.xml",
+   "evidence": [
+    "both 'funded by' and 'supported by' in the same article"
+   ]
+  },
+  {
+   "document": "moderne-PMC13254229.xml",
+   "evidence": [
+    "both 'funded by' and 'supported by' in the same article"
+   ]
+  },
+  {
+   "document": "moderne-PMC13296834.xml",
+   "evidence": [
+    "both 'funded by' and 'supported by' in the same article"
+   ]
+  },
+  {
+   "document": "phys-PMC13039343.xml",
+   "evidence": [
+    "both 'funded by' and 'supported by' in the same article"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,543 @@
+{
+ "probe": "probes/2026-09-recovered/line-094.py",
+ "date": "2026-09-10",
+ "count": 89,
+ "of": 272,
+ "carriers": [
+  {
+   "document": "bio-PMC12583535.xml",
+   "evidence": [
+    "7 tagged keywords, e.g. KeywordsLipid metabolism"
+   ]
+  },
+  {
+   "document": "bio-PMC12857832.xml",
+   "evidence": [
+    "5 tagged keywords, e.g. KEY WORDS:Clinical predictors"
+   ]
+  },
+  {
+   "document": "bio-PMC12882215.xml",
+   "evidence": [
+    "3 tagged keywords, e.g. KeywordsGreen space exposure"
+   ]
+  },
+  {
+   "document": "bio-PMC12909487.xml",
+   "evidence": [
+    "5 tagged keywords, e.g. amateur athletes"
+   ]
+  },
+  {
+   "document": "bio-PMC12915353.xml",
+   "evidence": [
+    "5 tagged keywords, e.g. Dietary Approaches to Stop Hypertension"
+   ]
+  },
+  {
+   "document": "bio-PMC12927975.xml",
+   "evidence": [
+    "3 tagged keywords, e.g. artificial intelligence"
+   ]
+  },
+  {
+   "document": "bio-PMC13103274.xml",
+   "evidence": [
+    "4 tagged keywords, e.g. coronary artery bypass"
+   ]
+  },
+  {
+   "document": "bio-PMC13155703.xml",
+   "evidence": [
+    "6 tagged keywords, e.g. b-type natriuretic peptide (bnp)"
+   ]
+  },
+  {
+   "document": "bio-PMC13162546.xml",
+   "evidence": [
+    "6 tagged keywords, e.g. KeywordsAdministration routes"
+   ]
+  },
+  {
+   "document": "bio-PMC13181205.xml",
+   "evidence": [
+    "5 tagged keywords, e.g. atrial fibrillation"
+   ]
+  },
+  {
+   "document": "bio-PMC13207820.xml",
+   "evidence": [
+    "4 tagged keywords, e.g. endometriosis"
+   ]
+  },
+  {
+   "document": "bio-PMC13216383.xml",
+   "evidence": [
+    "5 tagged keywords, e.g. KeywordsFunctional capacity"
+   ]
+  },
+  {
+   "document": "bio-PMC13236932.xml",
+   "evidence": [
+    "5 tagged keywords, e.g. cardiovascular diseases"
+   ]
+  },
+  {
+   "document": "bio-PMC13251069.xml",
+   "evidence": [
+    "6 tagged keywords, e.g. KeywordsFrailty"
+   ]
+  },
+  {
+   "document": "cas-PMC13290446.xml",
+   "evidence": [
+    "8 tagged keywords, e.g. anti-arrhythmia agents"
+   ]
+  },
+  {
+   "document": "cas-PMC13291881.xml",
+   "evidence": [
+    "8 tagged keywords, e.g. exome sequencing"
+   ]
+  },
+  {
+   "document": "cas-PMC13293645.xml",
+   "evidence": [
+    "7 tagged keywords, e.g. acupuncture"
+   ]
+  },
+  {
+   "document": "cas-PMC13293792.xml",
+   "evidence": [
+    "5 tagged keywords, e.g. 177Lu-DOTATATE"
+   ]
+  },
+  {
+   "document": "cas-PMC13293813.xml",
+   "evidence": [
+    "5 tagged keywords, e.g. chronic trauma"
+   ]
+  },
+  {
+   "document": "cas-PMC13293827.xml",
+   "evidence": [
+    "5 tagged keywords, e.g. case report"
+   ]
+  },
+  {
+   "document": "cas-PMC13293834.xml",
+   "evidence": [
+    "5 tagged keywords, e.g. antimicrobial agents"
+   ]
+  },
+  {
+   "document": "cas-PMC13293841.xml",
+   "evidence": [
+    "8 tagged keywords, e.g. axillary tail"
+   ]
+  },
+  {
+   "document": "cas-PMC13293897.xml",
+   "evidence": [
+    "6 tagged keywords, e.g. canine"
+   ]
+  },
+  {
+   "document": "cas-PMC13293901.xml",
+   "evidence": [
+    "5 tagged keywords, e.g. case report"
+   ]
+  },
+  {
+   "document": "cas-PMC13294096.xml",
+   "evidence": [
+    "5 tagged keywords, e.g. anticoagulation therapy"
+   ]
+  },
+  {
+   "document": "cas-PMC13294155.xml",
+   "evidence": [
+    "7 tagged keywords, e.g. autosomal dominant"
+   ]
+  },
+  {
+   "document": "cas-PMC13294182.xml",
+   "evidence": [
+    "8 tagged keywords, e.g. CAR-T cell therapy"
+   ]
+  },
+  {
+   "document": "cas-PMC13294281.xml",
+   "evidence": [
+    "7 tagged keywords, e.g. abdominal pain"
+   ]
+  },
+  {
+   "document": "cas-PMC13294481.xml",
+   "evidence": [
+    "5 tagged keywords, e.g. cannabinoid intoxication"
+   ]
+  },
+  {
+   "document": "cas-PMC13294702.xml",
+   "evidence": [
+    "8 tagged keywords, e.g. early-stage cancer"
+   ]
+  },
+  {
+   "document": "cas-PMC13294705.xml",
+   "evidence": [
+    "5 tagged keywords, e.g. carotid endarterectomy"
+   ]
+  },
+  {
+   "document": "cas-PMC13300565.xml",
+   "evidence": [
+    "5 tagged keywords, e.g. allbladder adenocarcinoma"
+   ]
+  },
+  {
+   "document": "cas-PMC13300836.xml",
+   "evidence": [
+    "5 tagged keywords, e.g. appendiceal mucocele"
+   ]
+  },
+  {
+   "document": "cas-PMC13301386.xml",
+   "evidence": [
+    "10 tagged keywords, e.g. cervicofacial infection"
+   ]
+  },
+  {
+   "document": "essai-PMC13169472.xml",
+   "evidence": [
+    "4 tagged keywords, e.g. exercise"
+   ]
+  },
+  {
+   "document": "essai-PMC13205709.xml",
+   "evidence": [
+    "5 tagged keywords, e.g. Angola"
+   ]
+  },
+  {
+   "document": "essai-PMC13215628.xml",
+   "evidence": [
+    "6 tagged keywords, e.g. Keywordsnudge"
+   ]
+  },
+  {
+   "document": "essai-PMC13238360.xml",
+   "evidence": [
+    "3 tagged keywords, e.g. fluid therapy"
+   ]
+  },
+  {
+   "document": "essai-PMC13239719.xml",
+   "evidence": [
+    "5 tagged keywords, e.g. athlete"
+   ]
+  },
+  {
+   "document": "essai-PMC13242351.xml",
+   "evidence": [
+    "5 tagged keywords, e.g. ambulatory blood pressure"
+   ]
+  },
+  {
+   "document": "essai-PMC13280184.xml",
+   "evidence": [
+    "6 tagged keywords, e.g. early childhood"
+   ]
+  },
+  {
+   "document": "essai-PMC13290998.xml",
+   "evidence": [
+    "6 tagged keywords, e.g. KeywordsAdolescent"
+   ]
+  },
+  {
+   "document": "essai-PMC13291766.xml",
+   "evidence": [
+    "5 tagged keywords, e.g. cognitive function"
+   ]
+  },
+  {
+   "document": "meta-PMC13071177.xml",
+   "evidence": [
+    "3 tagged keywords, e.g. 5‐HTTLPR"
+   ]
+  },
+  {
+   "document": "meta-PMC13231626.xml",
+   "evidence": [
+    "5 tagged keywords, e.g. KeywordsAnger"
+   ]
+  },
+  {
+   "document": "meta-PMC13241412.xml",
+   "evidence": [
+    "4 tagged keywords, e.g. KeywordsFibrin glue"
+   ]
+  },
+  {
+   "document": "meta-PMC13246130.xml",
+   "evidence": [
+    "6 tagged keywords, e.g. artificial intelligence"
+   ]
+  },
+  {
+   "document": "meta-PMC13256077.xml",
+   "evidence": [
+    "8 tagged keywords, e.g. Mitral valve prolapse"
+   ]
+  },
+  {
+   "document": "meta-PMC13260247.xml",
+   "evidence": [
+    "5 tagged keywords, e.g. genome-wide association studies"
+   ]
+  },
+  {
+   "document": "meta-PMC13265330.xml",
+   "evidence": [
+    "6 tagged keywords, e.g. AlphaGenome"
+   ]
+  },
+  {
+   "document": "meta-PMC13268693.xml",
+   "evidence": [
+    "5 tagged keywords, e.g. Atrial fibrillation"
+   ]
+  },
+  {
+   "document": "meta-PMC13269816.xml",
+   "evidence": [
+    "3 tagged keywords, e.g. Helicobacter pylori"
+   ]
+  },
+  {
+   "document": "meta-PMC13271776.xml",
+   "evidence": [
+    "6 tagged keywords, e.g. metabolic dysfunction-associated steatot"
+   ]
+  },
+  {
+   "document": "meta-PMC13280693.xml",
+   "evidence": [
+    "6 tagged keywords, e.g. Keywordsanxiety"
+   ]
+  },
+  {
+   "document": "meta-PMC13286481.xml",
+   "evidence": [
+    "4 tagged keywords, e.g. etrasimod"
+   ]
+  },
+  {
+   "document": "meta-PMC13297335.xml",
+   "evidence": [
+    "7 tagged keywords, e.g. glioblastoma"
+   ]
+  },
+  {
+   "document": "meta-PMC13305250.xml",
+   "evidence": [
+    "6 tagged keywords, e.g. Mendelian randomization analysis"
+   ]
+  },
+  {
+   "document": "moderne-PMC13264967.xml",
+   "evidence": [
+    "4 tagged keywords, e.g. artificial tracers"
+   ]
+  },
+  {
+   "document": "moderne-PMC13282721.xml",
+   "evidence": [
+    "10 tagged keywords, e.g. ATPase"
+   ]
+  },
+  {
+   "document": "moderne-PMC13296839.xml",
+   "evidence": [
+    "7 tagged keywords, e.g. fatty acids"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13127809.xml",
+   "evidence": [
+    "8 tagged keywords, e.g. Palavras-chaveOncologia"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13128186.xml",
+   "evidence": [
+    "8 tagged keywords, e.g. Palavras-chaveVariantes Genéticas"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13128212.xml",
+   "evidence": [
+    "6 tagged keywords, e.g. Palavras-chaveReanimação Cardiopulmonar"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13128216.xml",
+   "evidence": [
+    "8 tagged keywords, e.g. Palavras-chaveInsuficiência Cardíaca"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13128218.xml",
+   "evidence": [
+    "10 tagged keywords, e.g. Palavras-chaveAterosclerose"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13148856.xml",
+   "evidence": [
+    "10 tagged keywords, e.g. Palavras-chave:Valvopatia Aórtica"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13155792.xml",
+   "evidence": [
+    "10 tagged keywords, e.g. Palavras-chaveInibidores de Checkpoint I"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13185728.xml",
+   "evidence": [
+    "9 tagged keywords, e.g. Palavras-chave:Transtorno do Espectro Au"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13193189.xml",
+   "evidence": [
+    "10 tagged keywords, e.g. Keywords: Voice"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13193190.xml",
+   "evidence": [
+    "10 tagged keywords, e.g. Keywords: Acoustics"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13193194.xml",
+   "evidence": [
+    "10 tagged keywords, e.g. Keywords: Language"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13193195.xml",
+   "evidence": [
+    "10 tagged keywords, e.g. Keywords: Swallowing"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13224955.xml",
+   "evidence": [
+    "12 tagged keywords, e.g. Palavras-chave:Imunossenescência"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13264058.xml",
+   "evidence": [
+    "8 tagged keywords, e.g. Palabras claveInteligencia artificial"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13264178.xml",
+   "evidence": [
+    "8 tagged keywords, e.g. Palabras claveÁcido úrico"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13267754.xml",
+   "evidence": [
+    "18 tagged keywords, e.g. Palabras clavePlanificación familiar"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13267757.xml",
+   "evidence": [
+    "15 tagged keywords, e.g. Palabras claveServicio de atención domic"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13272511.xml",
+   "evidence": [
+    "10 tagged keywords, e.g. Palabras claveDepresión"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13285635.xml",
+   "evidence": [
+    "12 tagged keywords, e.g. Palabras claveAsistencia integral"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13288443.xml",
+   "evidence": [
+    "10 tagged keywords, e.g. Keywords: Dementia"
+   ]
+  },
+  {
+   "document": "phys-PMC13158258.xml",
+   "evidence": [
+    "4 tagged keywords, e.g. KeywordsPhysics-informed machine learnin"
+   ]
+  },
+  {
+   "document": "phys-PMC13201561.xml",
+   "evidence": [
+    "8 tagged keywords, e.g. KeywordsNanofluid thermal conductivity"
+   ]
+  },
+  {
+   "document": "phys-PMC13210669.xml",
+   "evidence": [
+    "5 tagged keywords, e.g. data center"
+   ]
+  },
+  {
+   "document": "phys-PMC13234180.xml",
+   "evidence": [
+    "8 tagged keywords, e.g. KeywordsGenerative adversarial network"
+   ]
+  },
+  {
+   "document": "phys-PMC13246409.xml",
+   "evidence": [
+    "7 tagged keywords, e.g. airborne transmission"
+   ]
+  },
+  {
+   "document": "phys-PMC13272752.xml",
+   "evidence": [
+    "10 tagged keywords, e.g. KeywordsTi-6Al-4V MMC"
+   ]
+  },
+  {
+   "document": "phys-PMC13276034.xml",
+   "evidence": [
+    "11 tagged keywords, e.g. KeywordsArtificial intelligence (AI)"
+   ]
+  },
+  {
+   "document": "phys-PMC13296606.xml",
+   "evidence": [
+    "5 tagged keywords, e.g. greater cane rat algorithm"
+   ]
+  },
+  {
+   "document": "retract-PMC13257949.xml",
+   "evidence": [
+    "6 tagged keywords, e.g. breast cancers"
+   ]
+  }
+ ],
+ "corpus_id": "corpus-europe-pmc-jats-2023-2026"
+}

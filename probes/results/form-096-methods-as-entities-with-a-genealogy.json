@@ -1,0 +1,189 @@
+{
+ "probe": "probes/2026-09-recovered/line-096.py",
+ "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+ "date": "2026-09-10",
+ "count": 30,
+ "of": 272,
+ "carriers": [
+  {
+   "document": "bio-PMC12583535.xml",
+   "evidence": [
+    "2 methods named after a person, e.g. solid"
+   ]
+  },
+  {
+   "document": "bio-PMC12674831.xml",
+   "evidence": [
+    "2 methods named after a person, e.g. glycemia"
+   ]
+  },
+  {
+   "document": "bio-PMC12953170.xml",
+   "evidence": [
+    "1 methods named after a person, e.g. Repair"
+   ]
+  },
+  {
+   "document": "bio-PMC12959687.xml",
+   "evidence": [
+    "1 methods named after a person, e.g. conditions"
+   ]
+  },
+  {
+   "document": "bio-PMC13097615.xml",
+   "evidence": [
+    "1 methods named after a person, e.g. type"
+   ]
+  },
+  {
+   "document": "bio-PMC13103274.xml",
+   "evidence": [
+    "1 methods named after a person, e.g. CABG"
+   ]
+  },
+  {
+   "document": "bio-PMC13162546.xml",
+   "evidence": [
+    "1 methods named after a person, e.g. administration"
+   ]
+  },
+  {
+   "document": "bio-PMC13216383.xml",
+   "evidence": [
+    "1 methods named after a person, e.g. these"
+   ]
+  },
+  {
+   "document": "cas-PMC13294281.xml",
+   "evidence": [
+    "1 methods named after a person, e.g. Guillain-Barr"
+   ]
+  },
+  {
+   "document": "cas-PMC13294340.xml",
+   "evidence": [
+    "1 methods named after a person, e.g. preservation"
+   ]
+  },
+  {
+   "document": "essai-PMC13154027.xml",
+   "evidence": [
+    "1 methods named after a person, e.g. minimization"
+   ]
+  },
+  {
+   "document": "essai-PMC13179527.xml",
+   "evidence": [
+    "1 methods named after a person, e.g. Reducing"
+   ]
+  },
+  {
+   "document": "essai-PMC13239719.xml",
+   "evidence": [
+    "2 methods named after a person, e.g. caffeine"
+   ]
+  },
+  {
+   "document": "essai-PMC13242351.xml",
+   "evidence": [
+    "1 methods named after a person, e.g. intensity"
+   ]
+  },
+  {
+   "document": "essai-PMC13263161.xml",
+   "evidence": [
+    "1 methods named after a person, e.g. this"
+   ]
+  },
+  {
+   "document": "essai-PMC13280184.xml",
+   "evidence": [
+    "1 methods named after a person, e.g. dissemination"
+   ]
+  },
+  {
+   "document": "essai-PMC13281132.xml",
+   "evidence": [
+    "3 methods named after a person, e.g. the"
+   ]
+  },
+  {
+   "document": "essai-PMC13294792.xml",
+   "evidence": [
+    "1 methods named after a person, e.g. Benjamini"
+   ]
+  },
+  {
+   "document": "meta-PMC13071177.xml",
+   "evidence": [
+    "1 methods named after a person, e.g. controls"
+   ]
+  },
+  {
+   "document": "meta-PMC13250259.xml",
+   "evidence": [
+    "1 methods named after a person, e.g. Clinical"
+   ]
+  },
+  {
+   "document": "meta-PMC13288533.xml",
+   "evidence": [
+    "1 methods named after a person, e.g. the"
+   ]
+  },
+  {
+   "document": "moderne-PMC13288728.xml",
+   "evidence": [
+    "1 methods named after a person, e.g. traditional"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13193195.xml",
+   "evidence": [
+    "1 methods named after a person, e.g. professional"
+   ]
+  },
+  {
+   "document": "phys-PMC13099575.xml",
+   "evidence": [
+    "2 methods named after a person, e.g. separation"
+   ]
+  },
+  {
+   "document": "phys-PMC13171646.xml",
+   "evidence": [
+    "1 methods named after a person, e.g. qualitative"
+   ]
+  },
+  {
+   "document": "phys-PMC13208799.xml",
+   "evidence": [
+    "2 methods named after a person, e.g. combining"
+   ]
+  },
+  {
+   "document": "phys-PMC13222844.xml",
+   "evidence": [
+    "1 methods named after a person, e.g. physics-informed"
+   ]
+  },
+  {
+   "document": "phys-PMC13272752.xml",
+   "evidence": [
+    "1 methods named after a person, e.g. fulfilling"
+   ]
+  },
+  {
+   "document": "phys-PMC13297618.xml",
+   "evidence": [
+    "1 methods named after a person, e.g. the"
+   ]
+  },
+  {
+   "document": "phys-PMC13298103.xml",
+   "evidence": [
+    "1 methods named after a person, e.g. Equation"
+   ]
+  }
+ ]
+}

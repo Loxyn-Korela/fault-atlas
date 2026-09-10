@@ -26,6 +26,15 @@
       "excerpt_en": "MEASURED on 2026-08-08 on the internal corpus (272 JATS XML): 5/272 articles (2 %) carry named open peer-review furniture (peer review file, reviewer report, editor's evaluation, eLife assessment) and 6/272 (2 %) a <sub-article article-type=\"...review...\">; the neighbouring furniture of author declarations is at 203/272 (75 %). Observed on 2026-08-08 on 15 articles 2023-2026 (VERDICT old versus modern, N10) — absent from the 1957-1987 corpus.",
       "organisation": "Loxyn SAS, Lyon",
       "corpus_id": "corpus-europe-pmc-jats-2023-2026"
+    },
+    {
+      "corpus": "Europe PMC JATS 2023-2026 (272 articles, the declared corpus)",
+      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+      "date": "2026-09-10",
+      "observer": "Fault Atlas maintainer (Loxyn), by probe, no model",
+      "excerpt": "MEASURED on 2026-09-10 by probes/2026-09-recovered/line-116.py, whose definition is in its docstring: 2/272 articles carry it, where the observation of 2026-08-08 counted 5 under a definition we could not recover. First carrier: meta-PMC13226718.xml — 3 pieces of review furniture, e.g. Peer Review File",
+      "lang": "en",
+      "probe": "probes/2026-09-recovered/line-116.py"
     }
   ],
   "specimens": {
@@ -77,5 +86,40 @@
     "value": "MES",
     "means": "a property of the corpus or of the measuring apparatus, not a fault of a document",
     "source": "the internal catalogue of 2026-08-09 (korela.db, table parametre), line 116; it is not derived from the damage and varies inside a damage class"
-  }
+  },
+  "probes": [
+    {
+      "file": "probes/2026-09-recovered/line-116.py",
+      "kind": "python",
+      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+      "written": "2026-09-10",
+      "run": "python3 tools/run_probe.py probes/2026-09-recovered/line-116.py <dir with the 272 .xml>",
+      "result": {
+        "date": "2026-09-10",
+        "count": 2,
+        "of": 272,
+        "strata": {
+          "meta": 2
+        },
+        "examples": [
+          [
+            "meta-PMC13226718.xml",
+            [
+              "3 pieces of review furniture, e.g. Peer Review File"
+            ]
+          ],
+          [
+            "meta-PMC13263136.xml",
+            [
+              "3 pieces of review furniture, e.g. Peer Review File"
+            ]
+          ]
+        ],
+        "by": "Fault Atlas maintainer (Loxyn), on the declared corpus",
+        "carriers_file": "probes/results/form-116-open-peer-review-furniture.json"
+      },
+      "matches_excerpt": true,
+      "note": "reproduces the figure of the September reading it is attached to, 2/272. It does NOT reproduce the August figure of 5, whose definition we could not recover; that observation is left exactly as it stands, above, with no example under it."
+    }
+  ]
 }

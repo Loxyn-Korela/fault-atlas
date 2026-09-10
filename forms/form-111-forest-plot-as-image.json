@@ -78,5 +78,49 @@
     "value": "FAUX",
     "means": "a false fact: a value, a type or a link the source never asserted",
     "source": "the internal catalogue of 2026-08-09 (korela.db, table parametre), line 111; it is not derived from the damage and varies inside a damage class"
-  }
+  },
+  "probes": [
+    {
+      "file": "probes/2026-09-recovered/line-111.py",
+      "kind": "python",
+      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+      "written": "2026-09-10",
+      "run": "python3 tools/run_probe.py probes/2026-09-recovered/line-111.py <dir with the 272 .xml>",
+      "result": {
+        "date": "2026-09-10",
+        "count": 28,
+        "of": 272,
+        "strata": {
+          "meta": 17,
+          "bio": 8,
+          "nonEN": 2,
+          "essai": 1
+        },
+        "examples": [
+          [
+            "bio-PMC12583535.xml",
+            [
+              "forest plot named in 3 figure caption(s)"
+            ]
+          ],
+          [
+            "bio-PMC12857832.xml",
+            [
+              "forest plot named in 3 figure caption(s)"
+            ]
+          ],
+          [
+            "bio-PMC12882215.xml",
+            [
+              "forest plot named in 2 figure caption(s)"
+            ]
+          ]
+        ],
+        "by": "Fault Atlas maintainer (Loxyn), on the declared corpus",
+        "carriers_file": "probes/results/form-111-forest-plot-as-image.json"
+      },
+      "matches_excerpt": true,
+      "note": "re-runs the figure the August observation states"
+    }
+  ]
 }

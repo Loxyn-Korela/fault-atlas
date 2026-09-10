@@ -1,0 +1,189 @@
+{
+ "probe": "probes/2026-09-recovered/line-081.py",
+ "date": "2026-09-10",
+ "count": 30,
+ "of": 272,
+ "carriers": [
+  {
+   "document": "bio-PMC12590050.xml",
+   "evidence": [
+    "5 supplier mentions, e.g. (Microsoft® Corp., Redmond, WA)"
+   ]
+  },
+  {
+   "document": "bio-PMC12857832.xml",
+   "evidence": [
+    "1 supplier mentions, e.g. (LLC)"
+   ]
+  },
+  {
+   "document": "bio-PMC13099299.xml",
+   "evidence": [
+    "1 supplier mentions, e.g. (Stata Crop LLC, Texas, US)"
+   ]
+  },
+  {
+   "document": "bio-PMC13203479.xml",
+   "evidence": [
+    "17 supplier mentions, e.g. (ASE 300; Dionex Corp., Sunnyvale, CA, USA)"
+   ]
+  },
+  {
+   "document": "bio-PMC13207820.xml",
+   "evidence": [
+    "1 supplier mentions, e.g. (IBM Corp., Armonk, NY, USA)"
+   ]
+  },
+  {
+   "document": "cas-PMC13293647.xml",
+   "evidence": [
+    "4 supplier mentions, e.g. (Miotector; FUSO Pharmaceutical Industries, Ltd., Osaka, Japan)"
+   ]
+  },
+  {
+   "document": "cas-PMC13294038.xml",
+   "evidence": [
+    "1 supplier mentions, e.g. (AG)"
+   ]
+  },
+  {
+   "document": "essai-PMC13154027.xml",
+   "evidence": [
+    "1 supplier mentions, e.g. (iOS ≥14.0 [Apple Inc], Android ≥6.0 [Google Inc])"
+   ]
+  },
+  {
+   "document": "essai-PMC13169227.xml",
+   "evidence": [
+    "1 supplier mentions, e.g. (PreAnalytix GmbH; Feldbachstrasse; 8634 Hombrectikon; CH)"
+   ]
+  },
+  {
+   "document": "essai-PMC13169472.xml",
+   "evidence": [
+    "1 supplier mentions, e.g. (IBM Corp, Armonk, NY)"
+   ]
+  },
+  {
+   "document": "essai-PMC13179527.xml",
+   "evidence": [
+    "2 supplier mentions, e.g. (SL‐17, Kowa Ltd.)"
+   ]
+  },
+  {
+   "document": "essai-PMC13271868.xml",
+   "evidence": [
+    "6 supplier mentions, e.g. (Easycap GmbH, Germany)"
+   ]
+  },
+  {
+   "document": "essai-PMC13276020.xml",
+   "evidence": [
+    "1 supplier mentions, e.g. (version 9.4, SAS Institute Inc., Cary, NC)"
+   ]
+  },
+  {
+   "document": "essai-PMC13281132.xml",
+   "evidence": [
+    "2 supplier mentions, e.g. (NDD Medizintechnik AG Technoparkstrasse 1, CH‐8005 Zurich, Switzerland  https://nddmed.com)"
+   ]
+  },
+  {
+   "document": "essai-PMC13282136.xml",
+   "evidence": [
+    "1 supplier mentions, e.g. (IBM Corp., USA)"
+   ]
+  },
+  {
+   "document": "essai-PMC13291766.xml",
+   "evidence": [
+    "5 supplier mentions, e.g. (ESPURGE, Ito Ultrashortwave Co., Ltd., Saitama, Japan)"
+   ]
+  },
+  {
+   "document": "essai-PMC13293440.xml",
+   "evidence": [
+    "1 supplier mentions, e.g. (IBM Corp., Armonk, NY, USA)"
+   ]
+  },
+  {
+   "document": "essai-PMC13294792.xml",
+   "evidence": [
+    "1 supplier mentions, e.g. (a gift from Dexcom Inc., San Diego, CA)"
+   ]
+  },
+  {
+   "document": "meta-PMC13246130.xml",
+   "evidence": [
+    "1 supplier mentions, e.g. (StataCorp LLC)"
+   ]
+  },
+  {
+   "document": "meta-PMC13268477.xml",
+   "evidence": [
+    "1 supplier mentions, e.g. (stataCorp LLC)"
+   ]
+  },
+  {
+   "document": "meta-PMC13288533.xml",
+   "evidence": [
+    "1 supplier mentions, e.g. (Stata Corp, College Station, Texas)"
+   ]
+  },
+  {
+   "document": "moderne-PMC13177175.xml",
+   "evidence": [
+    "1 supplier mentions, e.g. (IBM Corp., Armonk, NY, USA)"
+   ]
+  },
+  {
+   "document": "moderne-PMC13262411.xml",
+   "evidence": [
+    "2 supplier mentions, e.g. (Dantec Dynamics GmbH)"
+   ]
+  },
+  {
+   "document": "moderne-PMC13282716.xml",
+   "evidence": [
+    "1 supplier mentions, e.g. (Nikon instruments Inc.)"
+   ]
+  },
+  {
+   "document": "moderne-PMC13288728.xml",
+   "evidence": [
+    "6 supplier mentions, e.g. (DOPC, Avanti Polar Lipids, Inc.)"
+   ]
+  },
+  {
+   "document": "moderne-PMC13292400.xml",
+   "evidence": [
+    "2 supplier mentions, e.g. (1.0 kDa, Spectrum Laboratories Inc., Rancho Dominguez, CA, USA)"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13148856.xml",
+   "evidence": [
+    "1 supplier mentions, e.g. (CVi42, versão 5.13.5; Circle Cardiovascular Imaging Inc., Calgary, Canadá)"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13272511.xml",
+   "evidence": [
+    "1 supplier mentions, e.g. (IBM Corp., Armonk, NY, Estados Unidos)"
+   ]
+  },
+  {
+   "document": "phys-PMC13193059.xml",
+   "evidence": [
+    "2 supplier mentions, e.g. (SIR-Spheres ® , Sirtex Medical Ltd, Woburn, MA, USA)"
+   ]
+  },
+  {
+   "document": "phys-PMC13259474.xml",
+   "evidence": [
+    "1 supplier mentions, e.g. (Unity Software Inc., San Francisco, CA, USA)"
+   ]
+  }
+ ],
+ "corpus_id": "corpus-europe-pmc-jats-2023-2026"
+}

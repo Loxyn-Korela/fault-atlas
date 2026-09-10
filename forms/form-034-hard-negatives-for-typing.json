@@ -26,6 +26,15 @@
       "excerpt_en": "MEASURED on 2026-08-08 on the 272 XML files: 19/272 (7 %) carry TWO neighbouring-type formulations for the same funding fact — \"funded by\" AND \"supported by\" in the same article; 100/272 (37 %) use at least one confusable contractual relation term (collaboration, contract, provider, supplier). The real corpus thus offers the vocabulary of the trap; none of our fabricated corpora sets it.",
       "organisation": "Loxyn SAS, Lyon",
       "corpus_id": "corpus-europe-pmc-jats-2023-2026"
+    },
+    {
+      "corpus": "Europe PMC JATS 2023-2026 (272 articles, the declared corpus)",
+      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+      "date": "2026-09-10",
+      "observer": "Fault Atlas maintainer (Loxyn), by probe, no model",
+      "excerpt": "MEASURED on 2026-09-10 by probes/2026-09-recovered/line-034.py, whose definition is in its docstring: 18/272 articles carry it, where the observation of 2026-08-08 counted 19 under a definition we could not recover. First carrier: bio-PMC13097615.xml — both 'funded by' and 'supported by' in the same article",
+      "lang": "en",
+      "probe": "probes/2026-09-recovered/line-034.py"
     }
   ],
   "specimens": {
@@ -59,5 +68,51 @@
     "value": "FAUX",
     "means": "a false fact: a value, a type or a link the source never asserted",
     "source": "the internal catalogue of 2026-08-09 (korela.db, table parametre), line 34; it is not derived from the damage and varies inside a damage class"
-  }
+  },
+  "probes": [
+    {
+      "file": "probes/2026-09-recovered/line-034.py",
+      "kind": "python",
+      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+      "written": "2026-09-10",
+      "run": "python3 tools/run_probe.py probes/2026-09-recovered/line-034.py <dir with the 272 .xml>",
+      "result": {
+        "date": "2026-09-10",
+        "count": 18,
+        "of": 272,
+        "strata": {
+          "meta": 6,
+          "bio": 5,
+          "essai": 3,
+          "moderne": 2,
+          "cas": 1,
+          "phys": 1
+        },
+        "examples": [
+          [
+            "bio-PMC13097615.xml",
+            [
+              "both 'funded by' and 'supported by' in the same article"
+            ]
+          ],
+          [
+            "bio-PMC13103274.xml",
+            [
+              "both 'funded by' and 'supported by' in the same article"
+            ]
+          ],
+          [
+            "bio-PMC13116881.xml",
+            [
+              "both 'funded by' and 'supported by' in the same article"
+            ]
+          ]
+        ],
+        "by": "Fault Atlas maintainer (Loxyn), on the declared corpus",
+        "carriers_file": "probes/results/form-034-hard-negatives-for-typing.json"
+      },
+      "matches_excerpt": true,
+      "note": "reproduces the figure of the September reading it is attached to, 18/272. It does NOT reproduce the August figure of 19, whose definition we could not recover; that observation is left exactly as it stands, above, with no example under it."
+    }
+  ]
 }

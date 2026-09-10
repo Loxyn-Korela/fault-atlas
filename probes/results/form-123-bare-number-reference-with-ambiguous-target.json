@@ -1,0 +1,915 @@
+{
+ "probe": "probes/2026-09-recovered/line-123.py",
+ "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+ "date": "2026-09-10",
+ "count": 151,
+ "of": 272,
+ "carriers": [
+  {
+   "document": "bio-PMC12590050.xml",
+   "evidence": [
+    "1 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "bio-PMC12857832.xml",
+   "evidence": [
+    "15 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "bio-PMC12882215.xml",
+   "evidence": [
+    "15 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "bio-PMC12915353.xml",
+   "evidence": [
+    "5 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "bio-PMC12927065.xml",
+   "evidence": [
+    "47 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "bio-PMC12953170.xml",
+   "evidence": [
+    "29 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "bio-PMC12959687.xml",
+   "evidence": [
+    "53 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "bio-PMC13057049.xml",
+   "evidence": [
+    "4 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "bio-PMC13088504.xml",
+   "evidence": [
+    "16 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "bio-PMC13097615.xml",
+   "evidence": [
+    "1 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "bio-PMC13099299.xml",
+   "evidence": [
+    "72 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "bio-PMC13116881.xml",
+   "evidence": [
+    "5 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "bio-PMC13168716.xml",
+   "evidence": [
+    "23 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "bio-PMC13170838.xml",
+   "evidence": [
+    "36 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "bio-PMC13181205.xml",
+   "evidence": [
+    "6 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "bio-PMC13182387.xml",
+   "evidence": [
+    "4 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "bio-PMC13190511.xml",
+   "evidence": [
+    "12 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "bio-PMC13203479.xml",
+   "evidence": [
+    "12 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "bio-PMC13216383.xml",
+   "evidence": [
+    "29 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "bio-PMC13218538.xml",
+   "evidence": [
+    "16 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "bio-PMC13231534.xml",
+   "evidence": [
+    "17 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "bio-PMC13236932.xml",
+   "evidence": [
+    "6 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "bio-PMC13251069.xml",
+   "evidence": [
+    "12 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "bio-PMC13252842.xml",
+   "evidence": [
+    "36 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "bio-PMC13274935.xml",
+   "evidence": [
+    "36 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "cas-PMC13291543.xml",
+   "evidence": [
+    "7 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "cas-PMC13293799.xml",
+   "evidence": [
+    "4 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "cas-PMC13293995.xml",
+   "evidence": [
+    "15 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "cas-PMC13294038.xml",
+   "evidence": [
+    "12 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "cas-PMC13294089.xml",
+   "evidence": [
+    "18 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "cas-PMC13294240.xml",
+   "evidence": [
+    "2 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "cas-PMC13294340.xml",
+   "evidence": [
+    "19 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "cas-PMC13294629.xml",
+   "evidence": [
+    "1 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "cas-PMC13294698.xml",
+   "evidence": [
+    "20 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "essai-PMC13154027.xml",
+   "evidence": [
+    "32 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "essai-PMC13169472.xml",
+   "evidence": [
+    "10 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "essai-PMC13205709.xml",
+   "evidence": [
+    "8 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "essai-PMC13205876.xml",
+   "evidence": [
+    "3 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "essai-PMC13213610.xml",
+   "evidence": [
+    "23 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "essai-PMC13215628.xml",
+   "evidence": [
+    "2 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "essai-PMC13238360.xml",
+   "evidence": [
+    "5 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "essai-PMC13242068.xml",
+   "evidence": [
+    "3 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "essai-PMC13242351.xml",
+   "evidence": [
+    "3 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "essai-PMC13245602.xml",
+   "evidence": [
+    "36 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "essai-PMC13254492.xml",
+   "evidence": [
+    "9 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "essai-PMC13264282.xml",
+   "evidence": [
+    "21 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "essai-PMC13271868.xml",
+   "evidence": [
+    "12 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "essai-PMC13276020.xml",
+   "evidence": [
+    "5 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "essai-PMC13280799.xml",
+   "evidence": [
+    "41 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "essai-PMC13281132.xml",
+   "evidence": [
+    "26 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "essai-PMC13282136.xml",
+   "evidence": [
+    "2 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "essai-PMC13284529.xml",
+   "evidence": [
+    "4 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "essai-PMC13290998.xml",
+   "evidence": [
+    "16 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "essai-PMC13291922.xml",
+   "evidence": [
+    "13 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "essai-PMC13293440.xml",
+   "evidence": [
+    "10 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "essai-PMC13294169.xml",
+   "evidence": [
+    "32 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "essai-PMC13294792.xml",
+   "evidence": [
+    "36 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "essai-PMC13296589.xml",
+   "evidence": [
+    "3 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "essai-PMC7619126.xml",
+   "evidence": [
+    "5 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "meta-PMC13071177.xml",
+   "evidence": [
+    "4 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "meta-PMC13157766.xml",
+   "evidence": [
+    "7 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "meta-PMC13179150.xml",
+   "evidence": [
+    "208 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "meta-PMC13221319.xml",
+   "evidence": [
+    "2 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "meta-PMC13225629.xml",
+   "evidence": [
+    "1 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "meta-PMC13229315.xml",
+   "evidence": [
+    "46 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "meta-PMC13231626.xml",
+   "evidence": [
+    "17 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "meta-PMC13241412.xml",
+   "evidence": [
+    "10 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "meta-PMC13250259.xml",
+   "evidence": [
+    "5 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "meta-PMC13253268.xml",
+   "evidence": [
+    "11 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "meta-PMC13254819.xml",
+   "evidence": [
+    "1 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "meta-PMC13263136.xml",
+   "evidence": [
+    "35 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "meta-PMC13264275.xml",
+   "evidence": [
+    "66 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "meta-PMC13264436.xml",
+   "evidence": [
+    "36 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "meta-PMC13286426.xml",
+   "evidence": [
+    "4 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "meta-PMC13287023.xml",
+   "evidence": [
+    "2 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "meta-PMC13287149.xml",
+   "evidence": [
+    "7 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "meta-PMC13287277.xml",
+   "evidence": [
+    "4 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "meta-PMC13288533.xml",
+   "evidence": [
+    "37 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "meta-PMC13292320.xml",
+   "evidence": [
+    "15 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "meta-PMC13297335.xml",
+   "evidence": [
+    "3 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "moderne-PMC12900525.xml",
+   "evidence": [
+    "29 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "moderne-PMC13177175.xml",
+   "evidence": [
+    "26 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "moderne-PMC13254229.xml",
+   "evidence": [
+    "115 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "moderne-PMC13262411.xml",
+   "evidence": [
+    "6 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "moderne-PMC13264966.xml",
+   "evidence": [
+    "3 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "moderne-PMC13264967.xml",
+   "evidence": [
+    "2 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "moderne-PMC13267778.xml",
+   "evidence": [
+    "3 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "moderne-PMC13282716.xml",
+   "evidence": [
+    "5 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "moderne-PMC13282721.xml",
+   "evidence": [
+    "8 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "moderne-PMC13288728.xml",
+   "evidence": [
+    "14 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "moderne-PMC13292400.xml",
+   "evidence": [
+    "4 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "moderne-PMC13296834.xml",
+   "evidence": [
+    "17 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "moderne-PMC13296839.xml",
+   "evidence": [
+    "2 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13128172.xml",
+   "evidence": [
+    "18 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13128184.xml",
+   "evidence": [
+    "22 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13128185.xml",
+   "evidence": [
+    "22 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13128206.xml",
+   "evidence": [
+    "58 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13128210.xml",
+   "evidence": [
+    "16 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13128213.xml",
+   "evidence": [
+    "87 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13128215.xml",
+   "evidence": [
+    "16 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13142163.xml",
+   "evidence": [
+    "26 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13148856.xml",
+   "evidence": [
+    "2 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13155791.xml",
+   "evidence": [
+    "46 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13155793.xml",
+   "evidence": [
+    "20 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13185730.xml",
+   "evidence": [
+    "2 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13193188.xml",
+   "evidence": [
+    "25 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13193191.xml",
+   "evidence": [
+    "19 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13224957.xml",
+   "evidence": [
+    "16 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13228121.xml",
+   "evidence": [
+    "3 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13267755.xml",
+   "evidence": [
+    "42 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13267756.xml",
+   "evidence": [
+    "62 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13267757.xml",
+   "evidence": [
+    "28 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13272511.xml",
+   "evidence": [
+    "2 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13272517.xml",
+   "evidence": [
+    "7 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13284469.xml",
+   "evidence": [
+    "1 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "phys-PMC13039343.xml",
+   "evidence": [
+    "27 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "phys-PMC13113438.xml",
+   "evidence": [
+    "44 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "phys-PMC13133660.xml",
+   "evidence": [
+    "31 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "phys-PMC13154412.xml",
+   "evidence": [
+    "9 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "phys-PMC13158258.xml",
+   "evidence": [
+    "15 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "phys-PMC13171646.xml",
+   "evidence": [
+    "34 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "phys-PMC13178570.xml",
+   "evidence": [
+    "39 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "phys-PMC13181085.xml",
+   "evidence": [
+    "16 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "phys-PMC13193059.xml",
+   "evidence": [
+    "8 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "phys-PMC13201561.xml",
+   "evidence": [
+    "3 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "phys-PMC13208799.xml",
+   "evidence": [
+    "46 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "phys-PMC13210669.xml",
+   "evidence": [
+    "45 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "phys-PMC13221960.xml",
+   "evidence": [
+    "2 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "phys-PMC13222844.xml",
+   "evidence": [
+    "7 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "phys-PMC13234180.xml",
+   "evidence": [
+    "3 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "phys-PMC13235518.xml",
+   "evidence": [
+    "31 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "phys-PMC13246409.xml",
+   "evidence": [
+    "22 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "phys-PMC13252849.xml",
+   "evidence": [
+    "43 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "phys-PMC13257740.xml",
+   "evidence": [
+    "101 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "phys-PMC13259435.xml",
+   "evidence": [
+    "11 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "phys-PMC13259474.xml",
+   "evidence": [
+    "43 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "phys-PMC13261600.xml",
+   "evidence": [
+    "5 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "phys-PMC13272752.xml",
+   "evidence": [
+    "2 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "phys-PMC13275013.xml",
+   "evidence": [
+    "8 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "phys-PMC13282397.xml",
+   "evidence": [
+    "22 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "phys-PMC13285896.xml",
+   "evidence": [
+    "26 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "phys-PMC13289917.xml",
+   "evidence": [
+    "15 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "phys-PMC13296606.xml",
+   "evidence": [
+    "206 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "phys-PMC13297141.xml",
+   "evidence": [
+    "27 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "phys-PMC13297618.xml",
+   "evidence": [
+    "27 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "phys-PMC13298103.xml",
+   "evidence": [
+    "13 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "retract-PMC12937552.xml",
+   "evidence": [
+    "1 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "retract-PMC12989678.xml",
+   "evidence": [
+    "1 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "retract-PMC13083641.xml",
+   "evidence": [
+    "8 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "retract-PMC13289858.xml",
+   "evidence": [
+    "1 bare (N) references with no lead-in"
+   ]
+  },
+  {
+   "document": "retract-PMC13298758.xml",
+   "evidence": [
+    "1 bare (N) references with no lead-in"
+   ]
+  }
+ ]
+}

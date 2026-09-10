@@ -26,6 +26,15 @@
       "excerpt_en": "MEASURED on 2026-08-08 on the 272 XML files (recent PMC): 6/272 (2 %) name a method by its author (\"method of …\", \"criteria of Guillain-Barré\"), 3/272 (1 %) in the canonical form \"using/according to the method of <Name>\", and 4/272 (1 %) carry an explicit lineage (\"adapted from Page\", \"adapted from MacDougall\"). By contrast, 55/272 (20 %) carry a citation \"Name (year)\" — TEN TIMES MORE decoys than targets, with the same surface form. Original observation 2026-08-08: Carpi & Virno, Brit. J. Pharmacol. 1957 (annex 96).",
       "organisation": "Loxyn SAS, Lyon",
       "corpus_id": "corpus-europe-pmc-jats-2023-2026"
+    },
+    {
+      "corpus": "Europe PMC JATS 2023-2026 (272 articles, the declared corpus)",
+      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+      "date": "2026-09-10",
+      "observer": "Fault Atlas maintainer (Loxyn), by probe, no model",
+      "excerpt": "MEASURED on 2026-09-10 by probes/2026-09-recovered/line-096.py, whose definition is in its docstring: 30/272 articles carry it, where the observation of 2026-08-08 counted 6 under a definition we could not recover. First carrier: bio-PMC12583535.xml — 2 methods named after a person, e.g. solid",
+      "lang": "en",
+      "probe": "probes/2026-09-recovered/line-096.py"
     }
   ],
   "specimens": {
@@ -71,5 +80,52 @@
     "value": "MANQ",
     "means": "a gap: the graph is incomplete where the reading did not reach, not wrong",
     "source": "the internal catalogue of 2026-08-09 (korela.db, table parametre), line 96; it is not derived from the damage and varies inside a damage class"
-  }
+  },
+  "probes": [
+    {
+      "file": "probes/2026-09-recovered/line-096.py",
+      "kind": "python",
+      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+      "written": "2026-09-10",
+      "run": "python3 tools/run_probe.py probes/2026-09-recovered/line-096.py <dir with the 272 .xml>",
+      "result": {
+        "date": "2026-09-10",
+        "count": 30,
+        "of": 272,
+        "strata": {
+          "bio": 8,
+          "essai": 8,
+          "phys": 7,
+          "meta": 3,
+          "cas": 2,
+          "moderne": 1,
+          "nonEN": 1
+        },
+        "examples": [
+          [
+            "bio-PMC12583535.xml",
+            [
+              "2 methods named after a person, e.g. solid"
+            ]
+          ],
+          [
+            "bio-PMC12674831.xml",
+            [
+              "2 methods named after a person, e.g. glycemia"
+            ]
+          ],
+          [
+            "bio-PMC12953170.xml",
+            [
+              "1 methods named after a person, e.g. Repair"
+            ]
+          ]
+        ],
+        "by": "Fault Atlas maintainer (Loxyn), on the declared corpus",
+        "carriers_file": "probes/results/form-096-methods-as-entities-with-a-genealogy.json"
+      },
+      "matches_excerpt": true,
+      "note": "reproduces the figure of the September reading it is attached to, 30/272. It does NOT reproduce the August figure of 6, whose definition we could not recover; that observation is left exactly as it stands, above, with no example under it."
+    }
+  ]
 }

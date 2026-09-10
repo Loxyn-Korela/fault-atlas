@@ -26,6 +26,15 @@
       "excerpt_en": "MEASURED on 2026-08-08 on the internal corpus (272 JATS XML): 233/272 articles (86 %) carry at least one non-assertion marker (may · might · could · suggests · appears to · likely · has been proposed); 4,518 occurrences in total, i.e. 19.4 per affected article.",
       "organisation": "Loxyn SAS, Lyon",
       "corpus_id": "corpus-europe-pmc-jats-2023-2026"
+    },
+    {
+      "corpus": "Europe PMC JATS 2023-2026 (272 articles, the declared corpus)",
+      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+      "date": "2026-09-10",
+      "observer": "Fault Atlas maintainer (Loxyn), by probe, no model",
+      "excerpt": "MEASURED on 2026-09-10 by probes/2026-09-recovered/line-031.py, whose definition is in its docstring: 206/272 articles carry it, where the observation of 2026-08-08 counted 233 under a definition we could not recover. First carrier: bio-PMC12583535.xml — 13 hedges, e.g. May",
+      "lang": "en",
+      "probe": "probes/2026-09-recovered/line-031.py"
     }
   ],
   "specimens": {
@@ -65,5 +74,53 @@
     "value": "FAUX",
     "means": "a false fact: a value, a type or a link the source never asserted",
     "source": "the internal catalogue of 2026-08-09 (korela.db, table parametre), line 31; it is not derived from the damage and varies inside a damage class"
-  }
+  },
+  "probes": [
+    {
+      "file": "probes/2026-09-recovered/line-031.py",
+      "kind": "python",
+      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+      "written": "2026-09-10",
+      "run": "python3 tools/run_probe.py probes/2026-09-recovered/line-031.py <dir with the 272 .xml>",
+      "result": {
+        "date": "2026-09-10",
+        "count": 206,
+        "of": 272,
+        "strata": {
+          "bio": 34,
+          "essai": 34,
+          "meta": 34,
+          "phys": 34,
+          "cas": 33,
+          "moderne": 17,
+          "retract": 12,
+          "nonEN": 8
+        },
+        "examples": [
+          [
+            "bio-PMC12583535.xml",
+            [
+              "13 hedges, e.g. May"
+            ]
+          ],
+          [
+            "bio-PMC12590050.xml",
+            [
+              "13 hedges, e.g. likely"
+            ]
+          ],
+          [
+            "bio-PMC12674831.xml",
+            [
+              "31 hedges, e.g. suggests"
+            ]
+          ]
+        ],
+        "by": "Fault Atlas maintainer (Loxyn), on the declared corpus",
+        "carriers_file": "probes/results/form-031-degree-of-assertion-of-a-link.json"
+      },
+      "matches_excerpt": true,
+      "note": "reproduces the figure of the September reading it is attached to, 206/272. It does NOT reproduce the August figure of 233, whose definition we could not recover; that observation is left exactly as it stands, above, with no example under it."
+    }
+  ]
 }

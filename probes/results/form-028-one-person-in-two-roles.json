@@ -1,0 +1,441 @@
+{
+ "probe": "probes/2026-09-recovered/line-028.py",
+ "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+ "date": "2026-09-10",
+ "count": 72,
+ "of": 272,
+ "carriers": [
+  {
+   "document": "bio-PMC12583535.xml",
+   "evidence": [
+    "3 surnames both signing and cited, e.g. han"
+   ]
+  },
+  {
+   "document": "bio-PMC12674831.xml",
+   "evidence": [
+    "20 surnames both signing and cited, e.g. albuquerque"
+   ]
+  },
+  {
+   "document": "bio-PMC12882215.xml",
+   "evidence": [
+    "3 surnames both signing and cited, e.g. wang"
+   ]
+  },
+  {
+   "document": "bio-PMC12915353.xml",
+   "evidence": [
+    "4 surnames both signing and cited, e.g. azizi"
+   ]
+  },
+  {
+   "document": "bio-PMC13155703.xml",
+   "evidence": [
+    "2 surnames both signing and cited, e.g. ibrahim"
+   ]
+  },
+  {
+   "document": "bio-PMC13162546.xml",
+   "evidence": [
+    "3 surnames both signing and cited, e.g. lin"
+   ]
+  },
+  {
+   "document": "bio-PMC13216383.xml",
+   "evidence": [
+    "2 surnames both signing and cited, e.g. bloem"
+   ]
+  },
+  {
+   "document": "bio-PMC13236932.xml",
+   "evidence": [
+    "2 surnames both signing and cited, e.g. liu"
+   ]
+  },
+  {
+   "document": "bio-PMC13251069.xml",
+   "evidence": [
+    "2 surnames both signing and cited, e.g. zhou"
+   ]
+  },
+  {
+   "document": "cas-PMC13290446.xml",
+   "evidence": [
+    "1 surnames both signing and cited, e.g. kim"
+   ]
+  },
+  {
+   "document": "cas-PMC13293813.xml",
+   "evidence": [
+    "1 surnames both signing and cited, e.g. liu"
+   ]
+  },
+  {
+   "document": "cas-PMC13293827.xml",
+   "evidence": [
+    "1 surnames both signing and cited, e.g. jiang"
+   ]
+  },
+  {
+   "document": "cas-PMC13293834.xml",
+   "evidence": [
+    "1 surnames both signing and cited, e.g. zhang"
+   ]
+  },
+  {
+   "document": "cas-PMC13293897.xml",
+   "evidence": [
+    "1 surnames both signing and cited, e.g. frye"
+   ]
+  },
+  {
+   "document": "cas-PMC13294281.xml",
+   "evidence": [
+    "1 surnames both signing and cited, e.g. liu"
+   ]
+  },
+  {
+   "document": "essai-PMC13169472.xml",
+   "evidence": [
+    "1 surnames both signing and cited, e.g. mogensen"
+   ]
+  },
+  {
+   "document": "essai-PMC13191455.xml",
+   "evidence": [
+    "4 surnames both signing and cited, e.g. jones"
+   ]
+  },
+  {
+   "document": "essai-PMC13205709.xml",
+   "evidence": [
+    "4 surnames both signing and cited, e.g. custodio"
+   ]
+  },
+  {
+   "document": "essai-PMC13215628.xml",
+   "evidence": [
+    "3 surnames both signing and cited, e.g. hayashi"
+   ]
+  },
+  {
+   "document": "essai-PMC13238360.xml",
+   "evidence": [
+    "3 surnames both signing and cited, e.g. bark"
+   ]
+  },
+  {
+   "document": "essai-PMC13239719.xml",
+   "evidence": [
+    "3 surnames both signing and cited, e.g. ali"
+   ]
+  },
+  {
+   "document": "essai-PMC13242351.xml",
+   "evidence": [
+    "4 surnames both signing and cited, e.g. antrobus"
+   ]
+  },
+  {
+   "document": "essai-PMC13280184.xml",
+   "evidence": [
+    "1 surnames both signing and cited, e.g. jones"
+   ]
+  },
+  {
+   "document": "essai-PMC13290998.xml",
+   "evidence": [
+    "5 surnames both signing and cited, e.g. fecher"
+   ]
+  },
+  {
+   "document": "essai-PMC13291766.xml",
+   "evidence": [
+    "4 surnames both signing and cited, e.g. dora"
+   ]
+  },
+  {
+   "document": "essai-PMC13293440.xml",
+   "evidence": [
+    "1 surnames both signing and cited, e.g. yang"
+   ]
+  },
+  {
+   "document": "meta-PMC13071177.xml",
+   "evidence": [
+    "2 surnames both signing and cited, e.g. okada"
+   ]
+  },
+  {
+   "document": "meta-PMC13225629.xml",
+   "evidence": [
+    "1 surnames both signing and cited, e.g. granito"
+   ]
+  },
+  {
+   "document": "meta-PMC13231626.xml",
+   "evidence": [
+    "1 surnames both signing and cited, e.g. walther"
+   ]
+  },
+  {
+   "document": "meta-PMC13256077.xml",
+   "evidence": [
+    "9 surnames both signing and cited, e.g. alqarawi"
+   ]
+  },
+  {
+   "document": "meta-PMC13260247.xml",
+   "evidence": [
+    "4 surnames both signing and cited, e.g. liu"
+   ]
+  },
+  {
+   "document": "meta-PMC13265330.xml",
+   "evidence": [
+    "3 surnames both signing and cited, e.g. chen"
+   ]
+  },
+  {
+   "document": "meta-PMC13268693.xml",
+   "evidence": [
+    "7 surnames both signing and cited, e.g. boriani"
+   ]
+  },
+  {
+   "document": "meta-PMC13269816.xml",
+   "evidence": [
+    "1 surnames both signing and cited, e.g. kim"
+   ]
+  },
+  {
+   "document": "meta-PMC13271776.xml",
+   "evidence": [
+    "4 surnames both signing and cited, e.g. bourgault"
+   ]
+  },
+  {
+   "document": "meta-PMC13280693.xml",
+   "evidence": [
+    "7 surnames both signing and cited, e.g. byrne"
+   ]
+  },
+  {
+   "document": "meta-PMC13287277.xml",
+   "evidence": [
+    "4 surnames both signing and cited, e.g. acosta"
+   ]
+  },
+  {
+   "document": "meta-PMC13297335.xml",
+   "evidence": [
+    "1 surnames both signing and cited, e.g. mansour"
+   ]
+  },
+  {
+   "document": "moderne-PMC13264967.xml",
+   "evidence": [
+    "3 surnames both signing and cited, e.g. barbecot"
+   ]
+  },
+  {
+   "document": "moderne-PMC13282721.xml",
+   "evidence": [
+    "3 surnames both signing and cited, e.g. caplan"
+   ]
+  },
+  {
+   "document": "moderne-PMC13288728.xml",
+   "evidence": [
+    "3 surnames both signing and cited, e.g. göpfrich"
+   ]
+  },
+  {
+   "document": "moderne-PMC13292010.xml",
+   "evidence": [
+    "3 surnames both signing and cited, e.g. collet"
+   ]
+  },
+  {
+   "document": "moderne-PMC13296839.xml",
+   "evidence": [
+    "3 surnames both signing and cited, e.g. narayan"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13127809.xml",
+   "evidence": [
+    "1 surnames both signing and cited, e.g. smanio"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13128186.xml",
+   "evidence": [
+    "1 surnames both signing and cited, e.g. giugni"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13128212.xml",
+   "evidence": [
+    "1 surnames both signing and cited, e.g. caneo"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13128216.xml",
+   "evidence": [
+    "8 surnames both signing and cited, e.g. longato"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13128218.xml",
+   "evidence": [
+    "1 surnames both signing and cited, e.g. seyithanoğlu"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13148856.xml",
+   "evidence": [
+    "11 surnames both signing and cited, e.g. aiello"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13155792.xml",
+   "evidence": [
+    "2 surnames both signing and cited, e.g. augusto"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13170112.xml",
+   "evidence": [
+    "1 surnames both signing and cited, e.g. spink"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13193189.xml",
+   "evidence": [
+    "5 surnames both signing and cited, e.g. berejuk"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13193190.xml",
+   "evidence": [
+    "5 surnames both signing and cited, e.g. bacelete"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13193194.xml",
+   "evidence": [
+    "3 surnames both signing and cited, e.g. benfica"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13193195.xml",
+   "evidence": [
+    "3 surnames both signing and cited, e.g. alves"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13224953.xml",
+   "evidence": [
+    "1 surnames both signing and cited, e.g. pellegrini"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13224955.xml",
+   "evidence": [
+    "7 surnames both signing and cited, e.g. lima-costa"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13264058.xml",
+   "evidence": [
+    "1 surnames both signing and cited, e.g. vallès-peris"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13288443.xml",
+   "evidence": [
+    "1 surnames both signing and cited, e.g. freitas"
+   ]
+  },
+  {
+   "document": "phys-PMC13082673.xml",
+   "evidence": [
+    "7 surnames both signing and cited, e.g. alavi"
+   ]
+  },
+  {
+   "document": "phys-PMC13158258.xml",
+   "evidence": [
+    "1 surnames both signing and cited, e.g. reali"
+   ]
+  },
+  {
+   "document": "phys-PMC13178570.xml",
+   "evidence": [
+    "4 surnames both signing and cited, e.g. ballarin"
+   ]
+  },
+  {
+   "document": "phys-PMC13210669.xml",
+   "evidence": [
+    "2 surnames both signing and cited, e.g. qiao"
+   ]
+  },
+  {
+   "document": "phys-PMC13246409.xml",
+   "evidence": [
+    "4 surnames both signing and cited, e.g. chen"
+   ]
+  },
+  {
+   "document": "phys-PMC13261600.xml",
+   "evidence": [
+    "4 surnames both signing and cited, e.g. ding"
+   ]
+  },
+  {
+   "document": "phys-PMC13272752.xml",
+   "evidence": [
+    "1 surnames both signing and cited, e.g. lakshmaiya"
+   ]
+  },
+  {
+   "document": "phys-PMC13276034.xml",
+   "evidence": [
+    "1 surnames both signing and cited, e.g. saleh"
+   ]
+  },
+  {
+   "document": "phys-PMC13296606.xml",
+   "evidence": [
+    "2 surnames both signing and cited, e.g. jia"
+   ]
+  },
+  {
+   "document": "retract-PMC12943135.xml",
+   "evidence": [
+    "4 surnames both signing and cited, e.g. johnson"
+   ]
+  },
+  {
+   "document": "retract-PMC13064942.xml",
+   "evidence": [
+    "3 surnames both signing and cited, e.g. chen"
+   ]
+  },
+  {
+   "document": "retract-PMC13292606.xml",
+   "evidence": [
+    "9 surnames both signing and cited, e.g. choi"
+   ]
+  },
+  {
+   "document": "retract-PMC13295435.xml",
+   "evidence": [
+    "10 surnames both signing and cited, e.g. cirmi"
+   ]
+  }
+ ]
+}

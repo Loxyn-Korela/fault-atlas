@@ -1,0 +1,321 @@
+{
+ "probe": "probes/2026-09-recovered/line-027.py",
+ "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+ "date": "2026-09-10",
+ "count": 52,
+ "of": 272,
+ "carriers": [
+  {
+   "document": "bio-PMC12583535.xml",
+   "evidence": [
+    "3 affiliations, e.g. 1 https://ror.org/02z1vqm45 grid.411472.5 0000 0004 1764 1621 Department of Urology, Pekin"
+   ]
+  },
+  {
+   "document": "bio-PMC12882215.xml",
+   "evidence": [
+    "4 affiliations, e.g. 1 https://ror.org/01p455v08 grid.13394.3c 0000 0004 1799 3993 School of Nursing, Xinjiang "
+   ]
+  },
+  {
+   "document": "bio-PMC13088504.xml",
+   "evidence": [
+    "1 affiliations, e.g. 2 Department of Surgery, Division of Surgical Oncology, Mersin University School of Medici"
+   ]
+  },
+  {
+   "document": "bio-PMC13116881.xml",
+   "evidence": [
+    "1 affiliations, e.g. 1 Department of Dermatology, Inselspital, Anna-Seiler-Allee 33, 3010 Bern, Switzerland"
+   ]
+  },
+  {
+   "document": "bio-PMC13203479.xml",
+   "evidence": [
+    "1 affiliations, e.g. 1 Department of Public Health and Pediatrics, University of Turin, 10126 Turin, Italy; hib"
+   ]
+  },
+  {
+   "document": "bio-PMC13207820.xml",
+   "evidence": [
+    "2 affiliations, e.g. 1 Department of Obstetrics and Gynecology, Faculty of Medicine, Ege University, Izmir 3510"
+   ]
+  },
+  {
+   "document": "bio-PMC13216383.xml",
+   "evidence": [
+    "3 affiliations, e.g. 1 https://ror.org/05wg1m734 grid.10417.33 0000 0004 0444 9382 Donders Institute for Brain,"
+   ]
+  },
+  {
+   "document": "bio-PMC13251069.xml",
+   "evidence": [
+    "2 affiliations, e.g. 1 https://ror.org/03kkjyb15 grid.440601.7 0000 0004 1798 0578 Center of Stomatology, Pekin"
+   ]
+  },
+  {
+   "document": "essai-PMC13290998.xml",
+   "evidence": [
+    "8 affiliations, e.g. 1 https://ror.org/00jmfr291 grid.214458.e 0000 0004 1936 7347 Department of Health Behavio"
+   ]
+  },
+  {
+   "document": "essai-PMC7619126.xml",
+   "evidence": [
+    "3 affiliations, e.g. c National Center for Parasitology, Entomology and Malaria Control, Phnom Penh, 12101, Cam"
+   ]
+  },
+  {
+   "document": "meta-PMC13221319.xml",
+   "evidence": [
+    "2 affiliations, e.g. 1 Comprehensive Cancer Center Central Germany, Partner Site Leipzig, 04103 Leipzig, German"
+   ]
+  },
+  {
+   "document": "meta-PMC13231626.xml",
+   "evidence": [
+    "1 affiliations, e.g. https://ror.org/02778hg05 grid.12391.38 0000 0001 2289 1527 Department of Psychology, Soci"
+   ]
+  },
+  {
+   "document": "meta-PMC13241412.xml",
+   "evidence": [
+    "12 affiliations, e.g. 1 https://ror.org/00cb9w016 grid.7269.a 0000 0004 0621 1570 Internal Medicine and Clinical"
+   ]
+  },
+  {
+   "document": "meta-PMC13263136.xml",
+   "evidence": [
+    "3 affiliations, e.g. 80 Inserm, Bordeaux Population Health Research Center, UMR 1219, ISPED, CIC 1401-EC, Univ."
+   ]
+  },
+  {
+   "document": "meta-PMC13264436.xml",
+   "evidence": [
+    "4 affiliations, e.g. 1 Department of Oncology, Odense University Hospital, 5000 Odense, Denmark"
+   ]
+  },
+  {
+   "document": "meta-PMC13287277.xml",
+   "evidence": [
+    "2 affiliations, e.g. 3 https://ror.org/0220mzb33 grid.13097.3c 0000 0001 2322 6764 King’s Maudsley Partnership,"
+   ]
+  },
+  {
+   "document": "meta-PMC13292320.xml",
+   "evidence": [
+    "1 affiliations, e.g. 1 Department of Molecular Genetics, Brain Research Institute, Niigata University, 1-757 As"
+   ]
+  },
+  {
+   "document": "meta-PMC13297335.xml",
+   "evidence": [
+    "7 affiliations, e.g. 1 Division of Neurology, Children’s National Hospital, Washington, DC 20010, USA; ss4996@g"
+   ]
+  },
+  {
+   "document": "meta-PMC13305250.xml",
+   "evidence": [
+    "2 affiliations, e.g. 1 Department of Otolaryngology, 477298 The Second Hospital of Sanming , China"
+   ]
+  },
+  {
+   "document": "moderne-PMC12967033.xml",
+   "evidence": [
+    "4 affiliations, e.g. 1 Department of Plant and Agroecosystem Sciences, University of Wisconsin-Madison, Madison"
+   ]
+  },
+  {
+   "document": "moderne-PMC13288728.xml",
+   "evidence": [
+    "1 affiliations, e.g. d Center for Molecular Biology of Heidelberg University (ZMBH), Heidelberg University 6912"
+   ]
+  },
+  {
+   "document": "phys-PMC13039343.xml",
+   "evidence": [
+    "2 affiliations, e.g. 2 Department of Information Engineering, Computer Science and Mathematics, University of L"
+   ]
+  },
+  {
+   "document": "phys-PMC13082673.xml",
+   "evidence": [
+    "1 affiliations, e.g. 8 Division of Nuclear Medicine &amp; Molecular Imaging , Geneva University Hospital , CH-1"
+   ]
+  },
+  {
+   "document": "phys-PMC13099575.xml",
+   "evidence": [
+    "4 affiliations, e.g. a Paul G. Allen School of Computer Science &amp; Engineering, University of Washington, Se"
+   ]
+  },
+  {
+   "document": "phys-PMC13113438.xml",
+   "evidence": [
+    "1 affiliations, e.g. 1 Department of Transportation, College of Civil Aviation, Nanjing University of Aeronauti"
+   ]
+  },
+  {
+   "document": "phys-PMC13154412.xml",
+   "evidence": [
+    "2 affiliations, e.g. 4 Zhejiang Key Laboratory of Petrochemical Environmental Pollution Control, National Engin"
+   ]
+  },
+  {
+   "document": "phys-PMC13158258.xml",
+   "evidence": [
+    "2 affiliations, e.g. 1 https://ror.org/02e2c7k09 grid.5292.c 0000 0001 2097 4740 Department of Applied Mathemat"
+   ]
+  },
+  {
+   "document": "phys-PMC13178570.xml",
+   "evidence": [
+    "1 affiliations, e.g. 1 Dipartimento di Fisica e Astronomia “G. Galilei” and Padua Quantum Technologies Research"
+   ]
+  },
+  {
+   "document": "phys-PMC13181085.xml",
+   "evidence": [
+    "2 affiliations, e.g. 1 Department of Mathematics, University of Management and Technology, Lahore, 54770 Pakist"
+   ]
+  },
+  {
+   "document": "phys-PMC13201561.xml",
+   "evidence": [
+    "2 affiliations, e.g. 1 https://ror.org/00cb9w016 grid.7269.a 0000 0004 0621 1570 Department of Mathematics, Fac"
+   ]
+  },
+  {
+   "document": "phys-PMC13208799.xml",
+   "evidence": [
+    "2 affiliations, e.g. 1 School of Mechanical and Power Engineering, Harbin University of Science and Technology,"
+   ]
+  },
+  {
+   "document": "phys-PMC13210669.xml",
+   "evidence": [
+    "1 affiliations, e.g. School of Urban Construction, Wuhan University of Science and Technology, Wuhan 430065, Ch"
+   ]
+  },
+  {
+   "document": "phys-PMC13221960.xml",
+   "evidence": [
+    "30 affiliations, e.g. 1 School of Physics, ZJU-Hangzhou Global Scientific and Technological Innovation Center, a"
+   ]
+  },
+  {
+   "document": "phys-PMC13235518.xml",
+   "evidence": [
+    "2 affiliations, e.g. a Department of Medical Physics, Memorial Sloan-Kettering, 321 East 61st Street, 10065, NY"
+   ]
+  },
+  {
+   "document": "phys-PMC13257740.xml",
+   "evidence": [
+    "1 affiliations, e.g. 1 School of Mechanical Engineering, Guangxi University, Nanning 530004, China; yhbm660@163"
+   ]
+  },
+  {
+   "document": "phys-PMC13259435.xml",
+   "evidence": [
+    "2 affiliations, e.g. 1 School of Defence Science and Technology, Xi’an Technological University, Xi’an 710021, "
+   ]
+  },
+  {
+   "document": "phys-PMC13261600.xml",
+   "evidence": [
+    "3 affiliations, e.g. 1 Key Laboratory of Energy Thermal Conversion and Control of Ministry of Education, School"
+   ]
+  },
+  {
+   "document": "phys-PMC13272752.xml",
+   "evidence": [
+    "6 affiliations, e.g. 1 https://ror.org/0034me914 grid.412431.1 0000 0004 0444 045X Department of Research and I"
+   ]
+  },
+  {
+   "document": "phys-PMC13276034.xml",
+   "evidence": [
+    "1 affiliations, e.g. 1 https://ror.org/00cb9w016 grid.7269.a 0000 0004 0621 1570 Faculty of Science, Mathematic"
+   ]
+  },
+  {
+   "document": "phys-PMC13282397.xml",
+   "evidence": [
+    "3 affiliations, e.g. 1 School of Physics, University of Chinese Academy of Sciences, Yuquan Road 19A, Beijing, "
+   ]
+  },
+  {
+   "document": "phys-PMC13296606.xml",
+   "evidence": [
+    "1 affiliations, e.g. School of Electrical and Photoelectronic Engineering, West Anhui University, Lu’an 237012,"
+   ]
+  },
+  {
+   "document": "phys-PMC13297141.xml",
+   "evidence": [
+    "3 affiliations, e.g. 1 College of Applied Mathematics, Chengdu University of Information Technology, Chengdu 61"
+   ]
+  },
+  {
+   "document": "phys-PMC13298103.xml",
+   "evidence": [
+    "3 affiliations, e.g. 3 School of Physics, Beijing Institute of Technology, Beijing 100081, China; jiangwei.shan"
+   ]
+  },
+  {
+   "document": "retract-PMC12943135.xml",
+   "evidence": [
+    "3 affiliations, e.g. 1 Drexel University College of Medicine, Philadelphia, PA 19104, USA"
+   ]
+  },
+  {
+   "document": "retract-PMC12990951.xml",
+   "evidence": [
+    "1 affiliations, e.g. 1) Department of Physical Therapy, Graduate School of Health Science, Takasaki University "
+   ]
+  },
+  {
+   "document": "retract-PMC13037014.xml",
+   "evidence": [
+    "1 affiliations, e.g. 1 Department of Spine, The First Affiliated Hospital of Hunan University of Traditional Ch"
+   ]
+  },
+  {
+   "document": "retract-PMC13064942.xml",
+   "evidence": [
+    "5 affiliations, e.g. 1 Department of Gastrointestinal Surgery, Affiliated Tumor Hospital of Guangxi Medical Uni"
+   ]
+  },
+  {
+   "document": "retract-PMC13100932.xml",
+   "evidence": [
+    "4 affiliations, e.g. 1 Biochemistry Department, Faculty of Agriculture, Zagazig University, Zagazig 44511, Egyp"
+   ]
+  },
+  {
+   "document": "retract-PMC13257949.xml",
+   "evidence": [
+    "1 affiliations, e.g. Department of Biochemistry and Molecular Biology, University of Florida, 1200 Newell Dr, G"
+   ]
+  },
+  {
+   "document": "retract-PMC13292606.xml",
+   "evidence": [
+    "8 affiliations, e.g. 2 Department of System Management, Korea Lift College, Geochang 50141, Republic of Korea; "
+   ]
+  },
+  {
+   "document": "retract-PMC13294332.xml",
+   "evidence": [
+    "5 affiliations, e.g. 1 Fischell Department of Bioengineering, University of Maryland, College Park, MD 20742 US"
+   ]
+  },
+  {
+   "document": "retract-PMC13295435.xml",
+   "evidence": [
+    "4 affiliations, e.g. 1 Department of Biomedical, Dental Sciences and Morphofunctional Imaging, University of Me"
+   ]
+  }
+ ]
+}

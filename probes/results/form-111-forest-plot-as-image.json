@@ -1,0 +1,177 @@
+{
+ "probe": "probes/2026-09-recovered/line-111.py",
+ "date": "2026-09-10",
+ "count": 28,
+ "of": 272,
+ "carriers": [
+  {
+   "document": "bio-PMC12583535.xml",
+   "evidence": [
+    "forest plot named in 3 figure caption(s)"
+   ]
+  },
+  {
+   "document": "bio-PMC12857832.xml",
+   "evidence": [
+    "forest plot named in 3 figure caption(s)"
+   ]
+  },
+  {
+   "document": "bio-PMC12882215.xml",
+   "evidence": [
+    "forest plot named in 2 figure caption(s)"
+   ]
+  },
+  {
+   "document": "bio-PMC12927065.xml",
+   "evidence": [
+    "forest plot named in 1 figure caption(s)"
+   ]
+  },
+  {
+   "document": "bio-PMC13099299.xml",
+   "evidence": [
+    "forest plot named in 1 figure caption(s)"
+   ]
+  },
+  {
+   "document": "bio-PMC13155703.xml",
+   "evidence": [
+    "forest plot named in 4 figure caption(s)"
+   ]
+  },
+  {
+   "document": "bio-PMC13251069.xml",
+   "evidence": [
+    "forest plot named in 2 figure caption(s)"
+   ]
+  },
+  {
+   "document": "bio-PMC13274935.xml",
+   "evidence": [
+    "forest plot named in 3 figure caption(s)"
+   ]
+  },
+  {
+   "document": "essai-PMC13281132.xml",
+   "evidence": [
+    "forest plot named in 1 figure caption(s)"
+   ]
+  },
+  {
+   "document": "meta-PMC13071177.xml",
+   "evidence": [
+    "forest plot named in 1 figure caption(s)"
+   ]
+  },
+  {
+   "document": "meta-PMC13157766.xml",
+   "evidence": [
+    "forest plot named in 4 figure caption(s)"
+   ]
+  },
+  {
+   "document": "meta-PMC13179150.xml",
+   "evidence": [
+    "forest plot named in 2 figure caption(s)"
+   ]
+  },
+  {
+   "document": "meta-PMC13221319.xml",
+   "evidence": [
+    "forest plot named in 3 figure caption(s)"
+   ]
+  },
+  {
+   "document": "meta-PMC13225629.xml",
+   "evidence": [
+    "forest plot named in 2 figure caption(s)"
+   ]
+  },
+  {
+   "document": "meta-PMC13226718.xml",
+   "evidence": [
+    "forest plot named in 1 figure caption(s)"
+   ]
+  },
+  {
+   "document": "meta-PMC13231626.xml",
+   "evidence": [
+    "forest plot named in 3 figure caption(s)"
+   ]
+  },
+  {
+   "document": "meta-PMC13240427.xml",
+   "evidence": [
+    "forest plot named in 7 figure caption(s)"
+   ]
+  },
+  {
+   "document": "meta-PMC13241412.xml",
+   "evidence": [
+    "forest plot named in 5 figure caption(s)"
+   ]
+  },
+  {
+   "document": "meta-PMC13246130.xml",
+   "evidence": [
+    "forest plot named in 1 figure caption(s)"
+   ]
+  },
+  {
+   "document": "meta-PMC13253268.xml",
+   "evidence": [
+    "forest plot named in 2 figure caption(s)"
+   ]
+  },
+  {
+   "document": "meta-PMC13256077.xml",
+   "evidence": [
+    "forest plot named in 1 figure caption(s)"
+   ]
+  },
+  {
+   "document": "meta-PMC13264275.xml",
+   "evidence": [
+    "forest plot named in 3 figure caption(s)"
+   ]
+  },
+  {
+   "document": "meta-PMC13280693.xml",
+   "evidence": [
+    "forest plot named in 2 figure caption(s)"
+   ]
+  },
+  {
+   "document": "meta-PMC13286481.xml",
+   "evidence": [
+    "forest plot named in 6 figure caption(s)"
+   ]
+  },
+  {
+   "document": "meta-PMC13292320.xml",
+   "evidence": [
+    "forest plot named in 3 figure caption(s)"
+   ]
+  },
+  {
+   "document": "meta-PMC13305250.xml",
+   "evidence": [
+    "forest plot named in 3 figure caption(s)"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13128216.xml",
+   "evidence": [
+    "forest plot named in 1 figure caption(s)"
+   ]
+  },
+  {
+   "document": "nonEN-PMC13264178.xml",
+   "evidence": [
+    "forest plot named in 1 figure caption(s)"
+   ]
+  }
+ ],
+ "corpus_id": "corpus-europe-pmc-jats-2023-2026"
+}

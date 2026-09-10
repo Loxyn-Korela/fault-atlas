@@ -1,0 +1,15 @@
+{
+ "probe": "probes/2026-09-recovered/line-138.py",
+ "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+ "date": "2026-09-10",
+ "count": 1,
+ "of": 272,
+ "carriers": [
+  {
+   "document": "essai-PMC13242351.xml",
+   "evidence": [
+    "2 lettered superscripts, e.g. PA^Mod"
+   ]
+  }
+ ]
+}

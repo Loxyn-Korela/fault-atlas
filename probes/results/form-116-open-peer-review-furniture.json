@@ -1,0 +1,21 @@
+{
+ "probe": "probes/2026-09-recovered/line-116.py",
+ "date": "2026-09-10",
+ "count": 2,
+ "of": 272,
+ "carriers": [
+  {
+   "document": "meta-PMC13226718.xml",
+   "evidence": [
+    "3 pieces of review furniture, e.g. Peer Review File"
+   ]
+  },
+  {
+   "document": "meta-PMC13263136.xml",
+   "evidence": [
+    "3 pieces of review furniture, e.g. Peer Review File"
+   ]
+  }
+ ],
+ "corpus_id": "corpus-europe-pmc-jats-2023-2026"
+}

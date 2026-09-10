@@ -7,6 +7,13 @@
 - Validator with house rules; proves itself on seven planted faults.
 - SQLite view builder for Datasette.
 
+## 0.8.0 — 2026-09-10
+- **Twenty-three forms gain a reproducible example, and the atlas goes from 47 to 70.** The corpus was never lost: the 272 JATS articles are on disk and 36 forms observed on them had simply never had a probe written. Twenty-two probes were written and run, in `probes/2026-09-recovered/`.
+- **Two reproduce the August figure exactly** (form-094, 89 of 272 tagged keyword blocks; form-111, 28 of 272 forest plots named inside a figure caption) and are recorded against that observation.
+- **Twenty carry a second reading.** Their probe returns a different figure from August's because its definition differs and we could not recover the original one. We did not tune a regex until it hit the target: each probe states its own definition in its docstring, a new dated observation carries its own figure, and the August observation is left exactly as it stands with no example under it. Both readings sit on the page, side by side.
+- **Two confirm an absence**: form-078 and form-127, 0 of 272 by an exact probe, as August said. An absence is a measurement, not a missing example.
+- `tools/record_probe.py` does the recording, so a probe can never be quietly credited with a figure it did not return.
+
 ## 0.7.1 — 2026-09-10
 - **The index table no longer scrolls sideways.** The column "Deletion repairs it (classified)" is gone: it repeated the damage column exactly, one value per damage, which is what 0.7.0 established. Class labels are shortened in the table and stay in full on the form page, the corpus cell carries its full text as a tooltip, and the seven columns are laid out on a fixed grid that sums to the width of the page.
 

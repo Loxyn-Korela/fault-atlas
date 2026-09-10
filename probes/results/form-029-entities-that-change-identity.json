@@ -1,0 +1,21 @@
+{
+ "probe": "probes/2026-09-recovered/line-029.py",
+ "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+ "date": "2026-09-10",
+ "count": 2,
+ "of": 272,
+ "carriers": [
+  {
+   "document": "essai-PMC13282136.xml",
+   "evidence": [
+    "1 identity-change phrases, e.g. acquired by"
+   ]
+  },
+  {
+   "document": "meta-PMC13271776.xml",
+   "evidence": [
+    "1 identity-change phrases, e.g. formerly known as"
+   ]
+  }
+ ]
+}

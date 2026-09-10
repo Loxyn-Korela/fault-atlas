@@ -77,5 +77,53 @@
     "value": "MES",
     "means": "a property of the corpus or of the measuring apparatus, not a fault of a document",
     "source": "the internal catalogue of 2026-08-09 (korela.db, table parametre), line 94; it is not derived from the damage and varies inside a damage class"
-  }
+  },
+  "probes": [
+    {
+      "file": "probes/2026-09-recovered/line-094.py",
+      "kind": "python",
+      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+      "written": "2026-09-10",
+      "run": "python3 tools/run_probe.py probes/2026-09-recovered/line-094.py <dir with the 272 .xml>",
+      "result": {
+        "date": "2026-09-10",
+        "count": 89,
+        "of": 272,
+        "strata": {
+          "cas": 20,
+          "nonEN": 20,
+          "bio": 14,
+          "meta": 14,
+          "essai": 9,
+          "phys": 8,
+          "moderne": 3,
+          "retract": 1
+        },
+        "examples": [
+          [
+            "bio-PMC12583535.xml",
+            [
+              "7 tagged keywords, e.g. KeywordsLipid metabolism"
+            ]
+          ],
+          [
+            "bio-PMC12857832.xml",
+            [
+              "5 tagged keywords, e.g. KEY WORDS:Clinical predictors"
+            ]
+          ],
+          [
+            "bio-PMC12882215.xml",
+            [
+              "3 tagged keywords, e.g. KeywordsGreen space exposure"
+            ]
+          ]
+        ],
+        "by": "Fault Atlas maintainer (Loxyn), on the declared corpus",
+        "carriers_file": "probes/results/form-094-editorial-metadata.json"
+      },
+      "matches_excerpt": true,
+      "note": "re-runs the figure the August observation states"
+    }
+  ]
 }

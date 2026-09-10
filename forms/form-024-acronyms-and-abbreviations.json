@@ -26,6 +26,15 @@
       "excerpt_en": "MEASURED on 2026-08-08 on the internal corpus (272 JATS XML): 224/272 articles (82 %) carry at least one gloss \"Full name (ACRONYM)\", 2,104 glosses in total, i.e. 9.4 per affected article.",
       "organisation": "Loxyn SAS, Lyon",
       "corpus_id": "corpus-europe-pmc-jats-2023-2026"
+    },
+    {
+      "corpus": "Europe PMC JATS 2023-2026 (272 articles, the declared corpus)",
+      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+      "date": "2026-09-10",
+      "observer": "Fault Atlas maintainer (Loxyn), by probe, no model",
+      "excerpt": "MEASURED on 2026-09-10 by probes/2026-09-recovered/line-024.py, whose definition is in its docstring: 160/272 articles carry it, where the observation of 2026-08-08 counted 224 under a definition we could not recover. First carrier: bio-PMC12583535.xml — 3 glosses, e.g. HMG-CoA reductase (HMGCR)",
+      "lang": "en",
+      "probe": "probes/2026-09-recovered/line-024.py"
     }
   ],
   "specimens": {
@@ -72,5 +81,53 @@
     "value": "PROP",
     "means": "identity: one thing appears under several forms, or several things under one — the error lands on a node and propagates to everything hanging from it",
     "source": "the internal catalogue of 2026-08-09 (korela.db, table parametre), line 24; it is not derived from the damage and varies inside a damage class"
-  }
+  },
+  "probes": [
+    {
+      "file": "probes/2026-09-recovered/line-024.py",
+      "kind": "python",
+      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+      "written": "2026-09-10",
+      "run": "python3 tools/run_probe.py probes/2026-09-recovered/line-024.py <dir with the 272 .xml>",
+      "result": {
+        "date": "2026-09-10",
+        "count": 160,
+        "of": 272,
+        "strata": {
+          "meta": 32,
+          "phys": 27,
+          "bio": 26,
+          "cas": 25,
+          "essai": 24,
+          "nonEN": 15,
+          "moderne": 10,
+          "retract": 1
+        },
+        "examples": [
+          [
+            "bio-PMC12583535.xml",
+            [
+              "3 glosses, e.g. HMG-CoA reductase (HMGCR)"
+            ]
+          ],
+          [
+            "bio-PMC12590050.xml",
+            [
+              "5 glosses, e.g. Thyroid hormone (TH)"
+            ]
+          ],
+          [
+            "bio-PMC12674831.xml",
+            [
+              "4 glosses, e.g. Metabolism Study (SBEM)"
+            ]
+          ]
+        ],
+        "by": "Fault Atlas maintainer (Loxyn), on the declared corpus",
+        "carriers_file": "probes/results/form-024-acronyms-and-abbreviations.json"
+      },
+      "matches_excerpt": true,
+      "note": "reproduces the figure of the September reading it is attached to, 160/272. It does NOT reproduce the August figure of 224, whose definition we could not recover; that observation is left exactly as it stands, above, with no example under it."
+    }
+  ]
 }

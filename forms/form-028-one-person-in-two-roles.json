@@ -26,6 +26,15 @@
       "excerpt_en": "MEASURED on 2026-08-08 on the 272 articles of the internal corpus: in 39/272 (14 %) an AUTHOR of the article is also an author of a cited reference — one person, two roles (signatory here, cited source there); e.g. bio-PMC12915353 (Azizi F., Golzarand M., Mirmiran P.). And 51/272 (19 %) carry a contributor declared under at least two distinct roles.",
       "organisation": "Loxyn SAS, Lyon",
       "corpus_id": "corpus-europe-pmc-jats-2023-2026"
+    },
+    {
+      "corpus": "Europe PMC JATS 2023-2026 (272 articles, the declared corpus)",
+      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+      "date": "2026-09-10",
+      "observer": "Fault Atlas maintainer (Loxyn), by probe, no model",
+      "excerpt": "MEASURED on 2026-09-10 by probes/2026-09-recovered/line-028.py, whose definition is in its docstring: 72/272 articles carry it, where the observation of 2026-08-08 counted 39 under a definition we could not recover. First carrier: bio-PMC12583535.xml — 3 surnames both signing and cited, e.g. han",
+      "lang": "en",
+      "probe": "probes/2026-09-recovered/line-028.py"
     }
   ],
   "specimens": {
@@ -72,5 +81,53 @@
     "value": "PROP",
     "means": "identity: one thing appears under several forms, or several things under one — the error lands on a node and propagates to everything hanging from it",
     "source": "the internal catalogue of 2026-08-09 (korela.db, table parametre), line 28; it is not derived from the damage and varies inside a damage class"
-  }
+  },
+  "probes": [
+    {
+      "file": "probes/2026-09-recovered/line-028.py",
+      "kind": "python",
+      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+      "written": "2026-09-10",
+      "run": "python3 tools/run_probe.py probes/2026-09-recovered/line-028.py <dir with the 272 .xml>",
+      "result": {
+        "date": "2026-09-10",
+        "count": 72,
+        "of": 272,
+        "strata": {
+          "nonEN": 16,
+          "meta": 12,
+          "essai": 11,
+          "bio": 9,
+          "phys": 9,
+          "cas": 6,
+          "moderne": 5,
+          "retract": 4
+        },
+        "examples": [
+          [
+            "bio-PMC12583535.xml",
+            [
+              "3 surnames both signing and cited, e.g. han"
+            ]
+          ],
+          [
+            "bio-PMC12674831.xml",
+            [
+              "20 surnames both signing and cited, e.g. albuquerque"
+            ]
+          ],
+          [
+            "bio-PMC12882215.xml",
+            [
+              "3 surnames both signing and cited, e.g. wang"
+            ]
+          ]
+        ],
+        "by": "Fault Atlas maintainer (Loxyn), on the declared corpus",
+        "carriers_file": "probes/results/form-028-one-person-in-two-roles.json"
+      },
+      "matches_excerpt": true,
+      "note": "reproduces the figure of the September reading it is attached to, 72/272. It does NOT reproduce the August figure of 39, whose definition we could not recover; that observation is left exactly as it stands, above, with no example under it."
+    }
+  ]
 }

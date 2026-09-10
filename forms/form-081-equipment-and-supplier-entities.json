@@ -26,6 +26,15 @@
       "excerpt_en": "MEASURED on 2026-08-08 on the internal corpus (272 JATS XML): 57/272 articles (21 %) carry in the body at least one parenthesised supplier mention of the form \"(… Ltd/Inc/GmbH/Corp/B.V./AG …)\"; 50/272 (18 %) additionally carry a catalogue reference (cat. no., Cat#, catalogue number).",
       "organisation": "Loxyn SAS, Lyon",
       "corpus_id": "corpus-europe-pmc-jats-2023-2026"
+    },
+    {
+      "corpus": "Europe PMC JATS 2023-2026 (272 articles, the declared corpus)",
+      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+      "date": "2026-09-10",
+      "observer": "Fault Atlas maintainer (Loxyn), by probe, no model",
+      "excerpt": "MEASURED on 2026-09-10 by probes/2026-09-recovered/line-081.py, whose definition is in its docstring: 30/272 articles carry it, where the observation of 2026-08-08 counted 57 under a definition we could not recover. First carrier: bio-PMC12590050.xml — 5 supplier mentions, e.g. (Microsoft® Corp., Redmond, WA)",
+      "lang": "en",
+      "probe": "probes/2026-09-recovered/line-081.py"
     }
   ],
   "specimens": {
@@ -75,5 +84,52 @@
     "value": "MES",
     "means": "a property of the corpus or of the measuring apparatus, not a fault of a document",
     "source": "the internal catalogue of 2026-08-09 (korela.db, table parametre), line 81; it is not derived from the damage and varies inside a damage class"
-  }
+  },
+  "probes": [
+    {
+      "file": "probes/2026-09-recovered/line-081.py",
+      "kind": "python",
+      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+      "written": "2026-09-10",
+      "run": "python3 tools/run_probe.py probes/2026-09-recovered/line-081.py <dir with the 272 .xml>",
+      "result": {
+        "date": "2026-09-10",
+        "count": 30,
+        "of": 272,
+        "strata": {
+          "essai": 11,
+          "bio": 5,
+          "moderne": 5,
+          "meta": 3,
+          "cas": 2,
+          "nonEN": 2,
+          "phys": 2
+        },
+        "examples": [
+          [
+            "bio-PMC12590050.xml",
+            [
+              "5 supplier mentions, e.g. (Microsoft® Corp., Redmond, WA)"
+            ]
+          ],
+          [
+            "bio-PMC12857832.xml",
+            [
+              "1 supplier mentions, e.g. (LLC)"
+            ]
+          ],
+          [
+            "bio-PMC13099299.xml",
+            [
+              "1 supplier mentions, e.g. (Stata Crop LLC, Texas, US)"
+            ]
+          ]
+        ],
+        "by": "Fault Atlas maintainer (Loxyn), on the declared corpus",
+        "carriers_file": "probes/results/form-081-equipment-and-supplier-entities.json"
+      },
+      "matches_excerpt": true,
+      "note": "reproduces the figure of the September reading it is attached to, 30/272. It does NOT reproduce the August figure of 57, whose definition we could not recover; that observation is left exactly as it stands, above, with no example under it."
+    }
+  ]
 }

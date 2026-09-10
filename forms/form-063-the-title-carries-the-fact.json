@@ -26,6 +26,15 @@
       "excerpt_en": "MEASURED on 2026-08-08 on the 272 JATS XML articles of the internal corpus: 263/272 titles (96.7 %) carry no conjugated verb — they are nominal; 197/272 (72 %) carry at least two capitalised tokens or acronyms, hence at least two candidate entities; median length 117 characters. And 59/272 (22 %) have no abstract: for those the title is the only source of the record.",
       "organisation": "Loxyn SAS, Lyon",
       "corpus_id": "corpus-europe-pmc-jats-2023-2026"
+    },
+    {
+      "corpus": "Europe PMC JATS 2023-2026 (272 articles, the declared corpus)",
+      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+      "date": "2026-09-10",
+      "observer": "Fault Atlas maintainer (Loxyn), by probe, no model",
+      "excerpt": "MEASURED on 2026-09-10 by probes/2026-09-recovered/line-063.py, whose definition is in its docstring: 188/272 articles carry it, where the observation of 2026-08-08 counted 197 under a definition we could not recover. First carrier: bio-PMC12590050.xml — 11 capitalised tokens in the title: ['Interplay', 'Between', 'Thyroid', 'Disorders']",
+      "lang": "en",
+      "probe": "probes/2026-09-recovered/line-063.py"
     }
   ],
   "specimens": {
@@ -71,5 +80,53 @@
     "value": "MANQ",
     "means": "a gap: the graph is incomplete where the reading did not reach, not wrong",
     "source": "the internal catalogue of 2026-08-09 (korela.db, table parametre), line 63; it is not derived from the damage and varies inside a damage class"
-  }
+  },
+  "probes": [
+    {
+      "file": "probes/2026-09-recovered/line-063.py",
+      "kind": "python",
+      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+      "written": "2026-09-10",
+      "run": "python3 tools/run_probe.py probes/2026-09-recovered/line-063.py <dir with the 272 .xml>",
+      "result": {
+        "date": "2026-09-10",
+        "count": 188,
+        "of": 272,
+        "strata": {
+          "nonEN": 31,
+          "essai": 30,
+          "retract": 28,
+          "cas": 27,
+          "phys": 23,
+          "bio": 22,
+          "meta": 14,
+          "moderne": 13
+        },
+        "examples": [
+          [
+            "bio-PMC12590050.xml",
+            [
+              "11 capitalised tokens in the title: ['Interplay', 'Between', 'Thyroid', 'Disorders']"
+            ]
+          ],
+          [
+            "bio-PMC12674831.xml",
+            [
+              "8 capitalised tokens in the title: ['Position', 'Statement', 'Cardiometabolic', 'Health']"
+            ]
+          ],
+          [
+            "bio-PMC12915353.xml",
+            [
+              "14 capitalised tokens in the title: ['Plant-Based', 'Diets', 'Cardiometabolic', 'Diseases']"
+            ]
+          ]
+        ],
+        "by": "Fault Atlas maintainer (Loxyn), on the declared corpus",
+        "carriers_file": "probes/results/form-063-the-title-carries-the-fact.json"
+      },
+      "matches_excerpt": true,
+      "note": "reproduces the figure of the September reading it is attached to, 188/272. It does NOT reproduce the August figure of 197, whose definition we could not recover; that observation is left exactly as it stands, above, with no example under it."
+    }
+  ]
 }

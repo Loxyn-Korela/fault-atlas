@@ -26,6 +26,15 @@
       "excerpt_en": "MEASURED on 2026-08-08 on the internal corpus (272 JATS XML): of the 75 articles carrying keywords, 163 of the 523 keywords (31 %) appear at most ONCE in the body, while the most cited keyword of each article recurs 24 times (median). One hub, a long tail of single mentions: exactly the shape this module fabricates.",
       "organisation": "Loxyn SAS, Lyon",
       "corpus_id": "corpus-europe-pmc-jats-2023-2026"
+    },
+    {
+      "corpus": "Europe PMC JATS 2023-2026 (272 articles, the declared corpus)",
+      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+      "date": "2026-09-10",
+      "observer": "Fault Atlas maintainer (Loxyn), by probe, no model",
+      "excerpt": "MEASURED on 2026-09-10 by probes/2026-09-recovered/line-019.py, whose definition is in its docstring: 75/272 articles carry it. First carrier: bio-PMC12583535.xml — 2/7 keywords appear at most once in the body, e.g. Keywords  Lipid metabolism",
+      "lang": "en",
+      "probe": "probes/2026-09-recovered/line-019.py"
     }
   ],
   "specimens": {
@@ -65,5 +74,53 @@
     "value": "FAUX",
     "means": "a false fact: a value, a type or a link the source never asserted",
     "source": "the internal catalogue of 2026-08-09 (korela.db, table parametre), line 19; it is not derived from the damage and varies inside a damage class"
-  }
+  },
+  "probes": [
+    {
+      "file": "probes/2026-09-recovered/line-019.py",
+      "kind": "python",
+      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+      "written": "2026-09-10",
+      "run": "python3 tools/run_probe.py probes/2026-09-recovered/line-019.py <dir with the 272 .xml>",
+      "result": {
+        "date": "2026-09-10",
+        "count": 75,
+        "of": 272,
+        "strata": {
+          "nonEN": 20,
+          "cas": 19,
+          "bio": 11,
+          "meta": 10,
+          "phys": 7,
+          "essai": 5,
+          "moderne": 2,
+          "retract": 1
+        },
+        "examples": [
+          [
+            "bio-PMC12583535.xml",
+            [
+              "2/7 keywords appear at most once in the body, e.g. Keywords  Lipid metabolism"
+            ]
+          ],
+          [
+            "bio-PMC12857832.xml",
+            [
+              "1/5 keywords appear at most once in the body, e.g. KEY WORDS:  Clinical predictors"
+            ]
+          ],
+          [
+            "bio-PMC12882215.xml",
+            [
+              "2/3 keywords appear at most once in the body, e.g. Keywords  Green space exposure"
+            ]
+          ]
+        ],
+        "by": "Fault Atlas maintainer (Loxyn), on the declared corpus",
+        "carriers_file": "probes/results/form-019-salience-and-distractors.json"
+      },
+      "matches_excerpt": true,
+      "note": "reproduces the figure of the September reading it is attached to, 75/272. It does NOT reproduce the August figure of None, whose definition we could not recover; that observation is left exactly as it stands, above, with no example under it."
+    }
+  ]
 }
