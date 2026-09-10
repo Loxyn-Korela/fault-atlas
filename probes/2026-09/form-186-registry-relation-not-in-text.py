@@ -7,6 +7,7 @@ Two checks, both reproducible, no model:
   2. the text: the number of B never appears in the text of A on EUR-Lex; the text
      says instead that the earlier regime expires on a date and that A replaces it.
 
+Run:
     python3 probes/2026-09/form-186-registry-relation-not-in-text.py 31999R0718 31995R2819
 
 Result 2026-09-10 (found by a human auditor of the truth, fact f-477411 of audit-200):
