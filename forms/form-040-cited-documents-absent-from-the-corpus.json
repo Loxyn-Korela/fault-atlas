@@ -97,5 +97,8 @@
     "value": "MANQ",
     "means": "a gap: the graph is incomplete where the reading did not reach, not wrong",
     "source": "the internal catalogue of 2026-08-09 (korela.db, table parametre), line 40; it is not derived from the damage and varies inside a damage class"
-  }
+  },
+  "observed_absent_in": [
+    "Europe PMC JATS 2023-2026 (272 articles): 0/272 by the internal probe of 2026-08-08 (atelier-filtres/sondes-lot-3.py, sonde 40: an xref with no target inside the document), re-run 2026-09-10"
+  ]
 }
