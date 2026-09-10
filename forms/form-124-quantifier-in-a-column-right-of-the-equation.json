@@ -26,7 +26,15 @@
   },
   "repair": {
     "reachable_by_deletion": "no",
-    "note": "deletion cannot restore this; derived from the damage class by the migration of 2026-09-09, not judged form by form and not measured — the bench can measure it"
+    "note": "deletion cannot restore this; derived from the damage class by the migration of 2026-09-09, not judged form by form and not measured — the bench can measure it",
+    "measured": {
+      "value": "no",
+      "reached": 0,
+      "injected": 2613,
+      "note": "0 of 2,613 reached",
+      "source": "measured 2026-09-10 by pgrepair (SciPyWeightedILP) on the frozen EUR-Lex truth, three identical runs, journal sha256 in measures/reachability-by-damage-2026-09-10.json. Per damage class, not per form: two forms of the same damage and the same visibility get the same answer.",
+      "date": "2026-09-10"
+    }
   },
   "judgeable_by": [
     "construction",

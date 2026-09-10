@@ -26,7 +26,16 @@
   },
   "repair": {
     "reachable_by_deletion": "yes",
-    "note": "the faulty edge can be deleted"
+    "note": "the faulty edge can be deleted",
+    "measured": {
+      "value": "depends_on_visibility",
+      "reached": 366,
+      "injected": 721,
+      "note": "360 of 360 when a law can see it, 6 of 361 when none can",
+      "source": "measured 2026-09-10 by pgrepair (SciPyWeightedILP) on the frozen EUR-Lex truth, three identical runs, journal sha256 in measures/reachability-by-damage-2026-09-10.json. Per damage class, not per form: two forms of the same damage and the same visibility get the same answer.",
+      "date": "2026-09-10",
+      "disagrees_with_the_judgment": "yes"
+    }
   },
   "judgeable_by": [
     "construction",

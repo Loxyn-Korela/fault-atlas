@@ -26,7 +26,15 @@
   },
   "repair": {
     "reachable_by_deletion": "partial",
-    "note": "an extra label can be deleted, a missing one cannot be added"
+    "note": "an extra label can be deleted, a missing one cannot be added",
+    "measured": {
+      "value": "yes_at_a_cost",
+      "reached": 3932,
+      "injected": 3932,
+      "note": "3,932 of 3,932 reached, and 12,591 true facts were lost with them: the repair deletes the nodes, not their labels",
+      "source": "measured 2026-09-10 by pgrepair (SciPyWeightedILP) on the frozen EUR-Lex truth, three identical runs, journal sha256 in measures/reachability-by-damage-2026-09-10.json. Per damage class, not per form: two forms of the same damage and the same visibility get the same answer.",
+      "date": "2026-09-10"
+    }
   },
   "judgeable_by": [
     "construction",

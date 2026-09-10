@@ -263,6 +263,21 @@
       ],
       "additionalProperties": false,
       "properties": {
+        "measured": {
+          "type": "object",
+          "description": "What a deletion-only repair actually reached for this damage class, measured on the bench rather than judged. It sits beside reachable_by_deletion and never replaces it: where the two disagree, the disagreement is the result. Per damage class, not per form.",
+          "required": ["value", "reached", "injected", "source", "date"],
+          "additionalProperties": false,
+          "properties": {
+            "value": {"type": "string", "enum": ["yes", "no", "partial", "yes_at_a_cost", "depends_on_visibility"]},
+            "reached": {"type": "integer", "minimum": 0},
+            "injected": {"type": "integer", "minimum": 0},
+            "note": {"type": "string"},
+            "source": {"type": "string"},
+            "date": {"type": "string", "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"},
+            "disagrees_with_the_judgment": {"type": "string"}
+          }
+        },
         "reachable_by_deletion": {
           "type": "string",
           "enum": [

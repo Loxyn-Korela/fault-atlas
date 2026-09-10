@@ -67,6 +67,15 @@ deletion-only repair could restore the truth. That second field was written by t
 nothing: every merge reads `no`, every spurious edge reads `yes`, without exception. The records now
 say that in place of the sentence they carried.
 
+**Since 2026-09-10 the field is measured as well as judged.** 154 forms carry what a deletion-only
+repair actually reached for their damage class, from three identical runs of pgrepair on the frozen
+EUR-Lex truth. The two are printed side by side and the judgment is never overwritten, because
+**they disagree on 28 forms**: the eight anachronism forms are judged *partial* and the bench
+reached 0 of 5,276; the twenty spurious-edge forms are judged a flat *yes* and the bench reached
+360 of 360 when a law can see the edge, 6 of 361 when none can. Merge, missing, split and wrong
+value are confirmed at 0. Wrong label is reached in full and costs 12,591 true facts, because the
+repair deletes the nodes rather than their labels.
+
 The judgment that does exist is `failure_mode`, recovered from the internal catalogue of 2026-08-09
 onto 113 forms. It varies inside a damage class, which is what makes it worth having:
 

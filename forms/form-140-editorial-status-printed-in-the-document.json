@@ -38,7 +38,16 @@
   },
   "repair": {
     "reachable_by_deletion": "partial",
-    "note": "deleting the anachronistic edge removes a fact that was true within its validity interval; the true repair bounds the validity, it does not delete (reading of Coralie Bagnol-Lebon, 2026-09-09)"
+    "note": "deleting the anachronistic edge removes a fact that was true within its validity interval; the true repair bounds the validity, it does not delete (reading of Coralie Bagnol-Lebon, 2026-09-09)",
+    "measured": {
+      "value": "no",
+      "reached": 0,
+      "injected": 5276,
+      "note": "0 of 5,276 reached, on three identical runs",
+      "source": "measured 2026-09-10 by pgrepair (SciPyWeightedILP) on the frozen EUR-Lex truth, three identical runs, journal sha256 in measures/reachability-by-damage-2026-09-10.json. Per damage class, not per form: two forms of the same damage and the same visibility get the same answer.",
+      "date": "2026-09-10",
+      "disagrees_with_the_judgment": "partial"
+    }
   },
   "judgeable_by": [
     "construction",

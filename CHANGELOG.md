@@ -7,6 +7,13 @@
 - Validator with house rules; proves itself on seven planted faults.
 - SQLite view builder for Datasette.
 
+## 0.9.0 — 2026-09-10
+- **Repairability is measured, not looked up.** 154 forms now carry, beside the judgment of 2026-09-09, what a deletion-only repair actually reached for their damage class: pgrepair on the frozen EUR-Lex truth, three identical runs, journal sha256 in `measures/reachability-by-damage-2026-09-10.json` of the companion repository.
+- **The measurement disagrees with the judgment on 28 forms, and the disagreement is the result.** The eight anachronism forms are judged *partial*; the bench reached 0 of 5,276. The twenty spurious-edge forms are judged a flat *yes*; the bench reached 360 of 360 when a law can see the edge and 6 of 361 when none can. Each of the 28 says so on its own page.
+- Confirmed by measurement: merge 0 of 2,532, missing 0 of 423, split 0 of 1,355 restored, wrong value 0 of 2,613. Wrong label is reached in full, 3,932 of 3,932, and costs 12,591 true facts because the repair deletes the nodes rather than their labels.
+- The judgment is never overwritten. Where the two differ, both are printed.
+- Reserve, stated on every form: the measurement is per damage class, not per form. Two forms of the same damage and the same visibility get the same answer.
+
 ## 0.8.0 — 2026-09-10
 - **Twenty-three forms gain a reproducible example, and the atlas goes from 47 to 70.** The corpus was never lost: the 272 JATS articles are on disk and 36 forms observed on them had simply never had a probe written. Twenty-two probes were written and run, in `probes/2026-09-recovered/`.
 - **Two reproduce the August figure exactly** (form-094, 89 of 272 tagged keyword blocks; form-111, 28 of 272 forest plots named inside a figure caption) and are recorded against that observation.
