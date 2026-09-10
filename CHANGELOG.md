@@ -7,6 +7,9 @@
 - Validator with house rules; proves itself on seven planted faults.
 - SQLite view builder for Datasette.
 
+## 0.6.2 — 2026-09-10
+- An era that was never measured is now **said** instead of left blank. The confrontation of 2026-08-08 examined forty-three catalogue lines; forty forms carry a measured era, and the other 122 now read *"Era not measured. Nothing here says it is alive today, and nothing says it is dead."* The index gains a filter for exactly those, so the gap can be worked through rather than guessed at.
+
 ## 0.6.1 — 2026-09-10
 - Four forms the August verdicts on scripts and on rare genres had found and the atlas had never carried. They are faults, not fields, so they enter as forms: **form-187** a retraction notice carries the title of the article it withdraws (25 of the 33 notices in the corpus, and 9 record a disagreement about their own conclusion — probed, reproducible); **form-188** no word boundary in the writing system, with the irreversible case of a name transliterated into katakana; **form-189** case does not exist, a sensor disappears, and its Latin-script mirror where the signal lies instead of missing; **form-190** reading direction inverts the template, a page range 112-129 displayed 129-112.
 - The last three carry a reserve: the documents of that wave were not kept by identifier, so they have no reproducible example.
