@@ -164,6 +164,10 @@
           "probe": {
             "type": "string",
             "description": "Path, in this repository, of the exact probe that produced the figures of this observation (see the form's probes list). One observation, one probe."
+          },
+          "reserve": {
+            "type": "string",
+            "description": "A stated limit of this observation (for example: the identifiers of the documents were not kept, so the observation is cited, not reproducible). Put on the observation itself, never only in the history."
           }
         }
       }

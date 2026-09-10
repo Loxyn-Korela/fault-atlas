@@ -25,7 +25,8 @@
       "lang": "fr",
       "excerpt_en": "MEASURED on 2026-08-08 on the 272 JATS XML articles of the internal corpus: 2,280 references of the form \"(N)\" in the body, spread over 140/272 articles (51 %); and 2,161 of them (94.8 %) have NO lead-in — neither \"Eq.\", nor \"Fig.\", nor \"Ref.\". Only 117 are announced by \"Eq./equation\" and 2 by \"Ref.\". ⇒ the bare number is the rule, the lead-in the exception. Line spotted on 2026-08-08 on 14 articles 2021-2026 outside biomedicine (arXiv, PLOS, Copernicus, HAL, Scientific Reports).",
       "organisation": "Loxyn SAS, Lyon",
-      "corpus_id": "corpus-europe-pmc-jats-2023-2026"
+      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+      "reserve": "Reserve (second reader, 2026-09-10): the identifiers of the 14 articles of 2021-2026 outside biomedicine (arXiv, PLOS, Copernicus, HAL, Scientific Reports) were not kept in August; the observation is cited, not reproducible, until those articles are found again."
     }
   ],
   "specimens": {
@@ -59,6 +60,11 @@
       "date": "2026-09-09",
       "event": "internal tool paths removed from observation notes before publication; wording otherwise unchanged",
       "by": "Fault Atlas"
+    },
+    {
+      "date": "2026-09-10",
+      "event": "reserve put on the observation itself: identifiers of the 14 non-biomedical articles not kept, observation cited, not reproducible",
+      "by": "Fault Atlas maintainer, at the second reader's request"
     }
   ]
 }

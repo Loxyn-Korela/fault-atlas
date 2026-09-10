@@ -25,7 +25,8 @@
       "lang": "fr",
       "excerpt_en": "MEASURED on 2026-08-08 on the 272 XML files: 48/272 (18 %) carry a tagged <sub> chemical index, 2/272 (1 %) a multiple citation call in <sup> (\"<sup>73,\", \"<sup>2–\"), and 74/272 (27 %) already contain, IN FLAT TEXT, a word ending in a digit glued to a decimal number (\"i6.2\", \"iid3.1\"). A single article (1/272) shows the full collision in flat text (\"S3.38-58\"): in JATS the markup still separates the three kinds — THE COLLISION IS BORN AT RENDERING, and rendering is what the reader is given. Original observation 2026-08-08, 14 articles 2021-2026 outside biomedicine (annex 137).",
       "organisation": "Loxyn SAS, Lyon",
-      "corpus_id": "corpus-europe-pmc-jats-2023-2026"
+      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+      "reserve": "Reserve (second reader, 2026-09-10): the identifiers of the 14 articles of 2021-2026 outside biomedicine (arXiv, PLOS, Copernicus, HAL, Scientific Reports) were not kept in August; the observation is cited, not reproducible, until those articles are found again."
     }
   ],
   "specimens": {
@@ -55,6 +56,11 @@
       "date": "2026-09-09",
       "event": "migrated; classified damage=WRONG_VALUE injection=ALTER (judgment, unreviewed by a second reader)",
       "by": "Fault Atlas migration"
+    },
+    {
+      "date": "2026-09-10",
+      "event": "reserve put on the observation itself: identifiers of the 14 non-biomedical articles not kept, observation cited, not reproducible",
+      "by": "Fault Atlas maintainer, at the second reader's request"
     }
   ]
 }

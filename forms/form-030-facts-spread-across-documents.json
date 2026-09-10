@@ -1,6 +1,6 @@
 {
   "id": "form-030",
-  "version": 1,
+  "version": 2,
   "legacy_line": 30,
   "name": "Facts spread across documents",
   "name_fr": "Faits répartis entre documents",
@@ -43,6 +43,11 @@
       "date": "2026-09-09",
       "event": "migrated; classified damage=MISSING injection=MOVE (judgment, unreviewed by a second reader)",
       "by": "Fault Atlas migration"
+    },
+    {
+      "date": "2026-09-10",
+      "event": "second reader: contested — no measurement located for the observation; contested by the second reader on 2026-09-10, to be settled when a specimen or a probe exists",
+      "by": "Coralie Bagnol-Lebon"
     }
   ]
 }

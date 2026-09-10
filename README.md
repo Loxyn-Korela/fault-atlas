@@ -43,19 +43,19 @@ The file is the truth. Software reads it; software never completes it from memor
 - **September 2026** — 40 forms reported by a second, independent observer from the construction of a 40-million-record PubMed substrate (PubTator3, MeSH history, author keywords) and from four other corpora: OpenAlex, OpenAIRE, Wikidata, FAERS. Each carries its measurement file and date.
 - **September 2026, EUR-Lex** — 4 forms measured by the collection session on the official Cellar registry and data dump (`corpora/observation-2026-09-eurlex.json`).
 
-| damage | all layers | graph layers only¹ |
+| damage | all layers | reaches the graph¹ |
 |---|---|---|
-| MISSING | 47 | 11 |
-| WRONG_VALUE | 25 | 13 |
-| SPURIOUS_EDGE | 19 | 3 |
+| MISSING | 48 | 28 |
+| WRONG_VALUE | 25 | 19 |
+| SPURIOUS_EDGE | 19 | 13 |
 | SPLIT | 22 | 17 |
-| MERGE | 14 | 12 |
-| WRONG_LABEL | 14 | 9 |
-| ANACHRONISM | 8 | 6 |
-| CORPUS_PARAMETER | 8 | 4 |
-| **total** | **157** | **75** |
+| MERGE | 14 | 14 |
+| WRONG_LABEL | 14 | 14 |
+| ANACHRONISM | 8 | 7 |
+| CORPUS_PARAMETER | 8 | 7 |
+| **total** | **158** | **119** |
 
-¹ Graph layers: resolution, schema, coherence, structure — where the phenomenon is itself a graph damage. The other layers (pixel, reading, utterance, extraction, anchoring) are reading failures whose effect reaches the graph downstream. The two counts are always given together. Deletion-only repair fully addresses one damage (spurious edge: 3 forms in graph layers); the identity damages (merge, split: 29) it never touches. All of this is classified by judgment, not measured, until a bench measures it.
+¹ Second reader's rule (Coralie Bagnol-Lebon, 2026-09-10): a form whose layer is pixel or reading — columns, drop caps, scanned pages — sits upstream of the graph and never reaches a repairer; every other layer (utterance, extraction, anchoring, resolution, schema, coherence, structure, retrieval) does. **No damage count is ever cited without its layer.** Said to Bonifati: identity damages (MERGE and MISSING) that reach the graph, 42, not 62. All of this is classified by judgment, not measured, until a bench measures it.
 
 The 272 Europe PMC articles of the August observation are listed by PMC identifier in `corpora/europe-pmc-jats-2023-2026-272.json`, with the selection queries, the sha256 of each file as read on 2026-08-08 and the licence found in it; a frozen copy of the 267 redistributable files is prepared for Zenodo. There is no corpus page and no probes page on the site: each form links the documents where the fault sits and, folded, the code that found them and the record behind them. Every August form has `status: migrated_unreviewed` and every September form `status: proposed`. A second reader validates or contests each one before it becomes `validated`. Where a September form overlaps an August one, the `related` field says so; the novel/variant decision is the reader's, not the machine's.
 
@@ -97,7 +97,7 @@ Met a form on your corpus? [Propose it](https://github.com/Loxyn-Korela/fault-at
 
 Records and documentation: CC BY-SA 4.0. Tools: Apache 2.0. See `CITATION.cff`.
 
-**One way to say the count**: 157 forms — 113 migrated from the August catalogue (`migrated_unreviewed`), 40 proposed by a second observer in September and 4 measured on EUR-Lex (`proposed`); 75 of them in graph layers. Validated: 0, until the second reader's decisions are recorded.
+**One way to say the count**: 158 forms — 113 migrated from the August catalogue (`migrated_unreviewed`), 40 proposed by a second observer in September, 4 measured on EUR-Lex and 1 found by the human audit of the truth (`proposed`); 119 of them reach the graph (layers beyond pixel and reading). Validated: 0; contested: 3 (form-030, form-041, form-164, second reader).
 
 Cite as: Gracia S., Bagnol-Lebon C., Comtet Y. (2026). *Fault Atlas: observed fault forms in knowledge graphs built from documents.* Loxyn SAS, Lyon. Zenodo. https://doi.org/10.5281/zenodo.22674547 — this concept DOI always resolves to the latest version; each release has its own DOI on Zenodo.
 

@@ -25,7 +25,8 @@
       "excerpt": "Observé le 08/08 sur 14 articles de 2021-2026 hors biomédecine : le résumé s'interrompt sur une inégalité pleine largeur ; le résumé cesse d'être du texte. Jamais observé en biomédical. Mesuré ensuite sur les 272 JATS : 6 articles ont une formule EN LIGNE dans le résumé, tous en physique — ce n'est pas la même ligne.",
       "excerpt_en": "Observed on 2026-08-08 on 14 articles 2021-2026 outside biomedicine: the abstract breaks off on a full-width inequality; the abstract stops being text. Never observed in biomedicine. Then measured on the 272 JATS: 6 articles have an INLINE formula in the abstract, all in physics — not the same line.",
       "lang": "fr",
-      "organisation": "Loxyn SAS, Lyon"
+      "organisation": "Loxyn SAS, Lyon",
+      "reserve": "Reserve (second reader, 2026-09-10): the identifiers of the 14 articles of 2021-2026 outside biomedicine (arXiv, PLOS, Copernicus, HAL, Scientific Reports) were not kept in August; the observation is cited, not reproducible, until those articles are found again."
     }
   ],
   "specimens": {
@@ -65,6 +66,11 @@
       "date": "2026-09-09",
       "event": "exact probe attached, measured absent on the 272 files: probes/2026-08/line-131.py, 0/272",
       "by": "Fault Atlas maintainer"
+    },
+    {
+      "date": "2026-09-10",
+      "event": "reserve put on the observation itself: identifiers of the 14 non-biomedical articles not kept, observation cited, not reproducible",
+      "by": "Fault Atlas maintainer, at the second reader's request"
     }
   ],
   "observed_absent_in": [

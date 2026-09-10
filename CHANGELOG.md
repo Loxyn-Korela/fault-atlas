@@ -7,6 +7,12 @@
 - Validator with house rules; proves itself on seven planted faults.
 - SQLite view builder for Datasette.
 
+## 0.4.7 — 2026-09-10
+- Second reader's rule applied (Coralie Bagnol-Lebon): the second count next to every damage is now "reaches the graph" = every layer beyond pixel and reading; MISSING and MERGE said to Bonifati as 42 of 62, not 62. No damage count is cited without its layer. README table generated from the records.
+- form-030, form-041, form-164 marked contested by the second reader.
+- Reserve field on observations: the 7 forms citing the 14 non-biomedical articles whose identifiers were not kept carry the reserve on the observation itself.
+- form-186: second observation (legal basis by competence, Article 307 never cited); probe covers the three relations.
+
 ## 0.4.5 — 2026-09-10
 - form-186, found by a human auditor of the EUR-Lex truth: the official register asserts "repeals" where the act's text states an expiry and a replacement, never the repeal. Three live checks in one probe (register says yes, text search finds nothing, text says "prend fin le 28 avril 1999"). First form born from the audit of the truth itself.
 

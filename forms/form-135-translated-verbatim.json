@@ -26,7 +26,8 @@
       "excerpt_en": "MEASURED on 2026-08-08 on the internal corpus (272 JATS XML): 1/272 article (0.4 %) carries a translation marker, against 11/272 (4 %) carrying a block quotation <disp-quote> (102 blocks) — the difficulty is NEARLY ABSENT from biomedicine, and that is the result: it was observed on 2026-08-08 on 14 articles 2021-2026 OUTSIDE biomedicine (arXiv, PLOS, Copernicus, HAL, Scientific Reports). It would never have been found without changing discipline.",
       "organisation": "Loxyn SAS, Lyon",
       "corpus_id": "corpus-europe-pmc-jats-2023-2026",
-      "probe": "probes/2026-08/line-135.py"
+      "probe": "probes/2026-08/line-135.py",
+      "reserve": "Reserve (second reader, 2026-09-10): the identifiers of the 14 articles of 2021-2026 outside biomedicine (arXiv, PLOS, Copernicus, HAL, Scientific Reports) were not kept in August; the observation is cited, not reproducible, until those articles are found again."
     }
   ],
   "specimens": {
@@ -66,6 +67,11 @@
       "date": "2026-09-09",
       "event": "exact probe attached to the 272-file observation: probes/2026-08/line-135.py (rewritten from the campaign's inline script), re-run 11/272",
       "by": "Fault Atlas maintainer"
+    },
+    {
+      "date": "2026-09-10",
+      "event": "reserve put on the observation itself: identifiers of the 14 non-biomedical articles not kept, observation cited, not reproducible",
+      "by": "Fault Atlas maintainer, at the second reader's request"
     }
   ],
   "probes": [

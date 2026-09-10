@@ -1,6 +1,6 @@
 {
   "id": "form-041",
-  "version": 1,
+  "version": 2,
   "legacy_line": 41,
   "name": "Truncated or unreadable documents",
   "name_fr": "Documents tronqués ou illisibles",
@@ -49,6 +49,11 @@
       "date": "2026-09-09",
       "event": "exact probe attached, measured absent on the 272 files: probes/2026-08/line-041.py, 0/272",
       "by": "Fault Atlas maintainer"
+    },
+    {
+      "date": "2026-09-10",
+      "event": "second reader: contested — no measurement located for the observation; contested by the second reader on 2026-09-10, to be settled when a specimen or a probe exists",
+      "by": "Coralie Bagnol-Lebon"
     }
   ],
   "observed_absent_in": [

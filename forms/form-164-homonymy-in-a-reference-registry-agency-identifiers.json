@@ -1,6 +1,6 @@
 {
   "id": "form-164",
-  "version": 1,
+  "version": 2,
   "name": "Homonymy in a reference registry (agency identifiers)",
   "origin": {
     "organisation": "Loxyn SAS, Lyon",
@@ -36,6 +36,11 @@
       "date": "2026-09-09",
       "event": "reported second-hand by the Voûte Claude (form 23 of 23): '52 proven homonymies and about 800 estimated' in the reference data of a US agency — the measurement file is not located; recorded as a hypothesis until the evidence is found (a silent grep is not an absence)",
       "by": "Claude Voûte (LLM agent), session 8d9c5098, from the Substrat measurement files"
+    },
+    {
+      "date": "2026-09-10",
+      "event": "second reader: contested — no measurement located for the observation; contested by the second reader on 2026-09-10, to be settled when a specimen or a probe exists",
+      "by": "Coralie Bagnol-Lebon"
     }
   ]
 }
