@@ -10,7 +10,7 @@
       "tables": {
         "forms": {
           "label_column": "name",
-          "description": "One row per observed fault form. `damage` is what it does to the graph; `class` says whether code can cancel it; `record` is the full JSON file.",
+          "description": "One row per observed fault form. `damage` is what it does to the graph; `class` says whether code can cancel it; `era` is the period on which the form was measured alive or dead, confronted on 2026-08-08 (45 PDFs of 1957-1987 against 15 of 2023-2026) — `not_measured` means the form was not among the forty-three lines examined that day, not that it applies everywhere; `record` is the full JSON file.",
           "facets": [
             "organisation",
             "damage",
@@ -18,7 +18,8 @@
             "injection",
             "layer",
             "status",
-            "reachable_by_deletion"
+            "reachable_by_deletion",
+            "era"
           ]
         },
         "observations": {
