@@ -69,5 +69,10 @@
       "event": "substitute probe withdrawn (it applied a different rule and found 2/272; the August 63/272 stays as the dated claim, to be shown when re-measured)",
       "by": "Fault Atlas maintainer"
     }
-  ]
+  ],
+  "failure_mode": {
+    "value": "FAUX",
+    "means": "a false fact: a value, a type or a link the source never asserted",
+    "source": "the internal catalogue of 2026-08-09 (korela.db, table parametre), line 14; it is not derived from the damage and varies inside a damage class"
+  }
 }

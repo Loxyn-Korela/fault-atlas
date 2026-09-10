@@ -19,7 +19,8 @@
             "layer",
             "status",
             "reachable_by_deletion",
-            "era"
+            "era",
+            "failure_mode"
           ]
         },
         "observations": {

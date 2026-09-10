@@ -7,6 +7,12 @@
 - Validator with house rules; proves itself on seven planted faults.
 - SQLite view builder for Datasette.
 
+## 0.7.0 — 2026-09-10
+- **A published sentence was false and is corrected.** 121 forms said their repairability was "classified by judgment on 2026-09-09, not measured". It was not judged form by form: the migration script wrote it from a lookup table on the damage class, `REACH[damage]`. Eight values copied 162 times. The field carried no information the damage did not already carry, and every form now says so.
+- **The per-form judgment was never lost, only unused.** The internal catalogue of 2026-08-09 (`korela.db`, table `parametre`) is intact, and its `mode_echec` column is a second axis, judged line by line, that **varies inside a damage class** where repairability does not: the twenty spurious-edge forms span three failure modes, the merges span two. Recovered onto 113 forms as `failure_mode`: PROP identity and it propagates (21) · FAUX a false fact (41) · MANQ a gap (39) · MES a property of the corpus (12). The 49 forms added in September do not carry it yet, and the site says so.
+- The mechanism column of that catalogue is deliberately **not** recovered: the atlas records the effect of a remedy, never its mechanism.
+- Failure mode is a filter on the index, a line on each form page, and a facet of the public database.
+
 ## 0.6.3 — 2026-09-10
 - **The count is a shelf, not a measurement**, and the site now says so where the count appears. Two readers, the same six articles, 2026-08-08, no contact: nine novelties and eleven, seven shared — 54 % agreement, and two phenomena both had seen were filed by one as a new form and by the other as a variant. The boundary between new and variant is not objective, so the number of forms is not a quantity; the list of phenomena with their proof is.
 - **The era is not the only axis.** Four forms said "born with the modern era" where the measurement of the same day says biomedical before modern: on 14 articles of physics, mathematics, computer science, economics and linguistics, zero structured abstract, zero pre-registration, zero ethics declaration. Structured abstract, pre-registration identifier, forest plot as image and open peer-review furniture now carry that reserve, so a corpus built from them measures a form and not a discipline.

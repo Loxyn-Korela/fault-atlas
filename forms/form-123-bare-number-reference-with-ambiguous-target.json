@@ -66,5 +66,10 @@
       "event": "reserve put on the observation itself: identifiers of the 14 non-biomedical articles not kept, observation cited, not reproducible",
       "by": "Fault Atlas maintainer, at the second reader's request"
     }
-  ]
+  ],
+  "failure_mode": {
+    "value": "FAUX",
+    "means": "a false fact: a value, a type or a link the source never asserted",
+    "source": "the internal catalogue of 2026-08-09 (korela.db, table parametre), line 123; it is not derived from the damage and varies inside a damage class"
+  }
 }

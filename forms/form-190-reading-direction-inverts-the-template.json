@@ -34,7 +34,7 @@
   },
   "repair": {
     "reachable_by_deletion": "no",
-    "note": "a reversed range is a wrong value, not a spurious edge; classified by judgment, not measured"
+    "note": "a reversed range is a wrong value, not a spurious edge; derived from the damage class by the migration of 2026-09-09, not judged form by form and not measured — the bench can measure it"
   },
   "judgeable_by": [
     "construction",

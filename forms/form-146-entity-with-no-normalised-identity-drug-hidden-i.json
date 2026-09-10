@@ -34,7 +34,7 @@
   },
   "repair": {
     "reachable_by_deletion": "no",
-    "note": "deletion cannot restore this; classified by judgment, not measured — the EUR-Lex loop will measure it"
+    "note": "deletion cannot restore this; derived from the damage class by the migration of 2026-09-09, not judged form by form and not measured — the bench can measure it"
   },
   "judgeable_by": [
     "curated"

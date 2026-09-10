@@ -84,7 +84,7 @@ def proof_of(f):
         if pr.get("matches_excerpt") and pr.get("result", {}).get("count", 0) > 0 and f["damage"] != "CORPUS_PARAMETER":
             return "docs", "example shown"
     return "none", "no example yet"
-rows = "".join(f"""<tr data-damage="{f['damage']}" data-class="{f['class']}" data-layer="{E(f['layer'])}" data-reach="{'no' if upstream(f) else 'yes'}" data-era="{f.get('era',{}).get('value','')}" data-proof="{proof_of(f)[0]}" data-src="{E(" ".join(corpora_of(f)).lower())}" data-text="{E((f['name']+' '+f.get('name_fr','')+' '+' '.join(corpora_of(f))).lower())}">
+rows = "".join(f"""<tr data-damage="{f['damage']}" data-class="{f['class']}" data-layer="{E(f['layer'])}" data-reach="{'no' if upstream(f) else 'yes'}" data-era="{f.get('era',{}).get('value','')}" data-mode="{f.get('failure_mode',{}).get('value','')}" data-proof="{proof_of(f)[0]}" data-src="{E(" ".join(corpora_of(f)).lower())}" data-text="{E((f['name']+' '+f.get('name_fr','')+' '+' '.join(corpora_of(f))).lower())}">
 <td><a href="forms/{f['id']}.html">{E(f['name'])}</a><br><span class="fr">{E(f.get('name_fr',''))}</span></td>
 <td><span class="pill" style="--c:{DAMAGE[f['damage']][2]}">{E(DAMAGE[f['damage']][0])}</span></td>
 <td class="date">{E(last_date(f) or '—')}</td><td>{E(CLASS[f['class']])}</td><td>{E(f['layer'])}</td><td class="src">{E(" · ".join(corpora_of(f)) or "—")}</td><td class="proof p-{proof_of(f)[0]}">{E(proof_of(f)[1])}</td><td>{E(REACH[f['repair']['reachable_by_deletion']])}</td></tr>""" for f in forms)
@@ -100,6 +100,7 @@ index = f"""
 <section id="forms"><div class="bar"><input id="q" type="search" placeholder="Search a form…" aria-label="Search">
 <select id="fd"><option value="">All damages</option>{''.join(f'<option value="{k}">{E(v[0])}</option>' for k,v in DAMAGE.items())}</select>
 <select id="fc"><option value="">All classes</option>{''.join(f'<option value="{k}">{E(v)}</option>' for k,v in CLASS.items())}</select>
+<select id="fm"><option value="">Any failure mode</option><option value="PROP">Identity, and it propagates</option><option value="FAUX">A false fact</option><option value="MANQ">A gap</option><option value="MES">A corpus property</option><option value="__none__">Failure mode not recovered</option></select>
 <select id="fe"><option value="">Any era</option><option value="ancient_only">Ancient documents only</option><option value="both">Both eras</option><option value="born_modern">Born with the modern</option><option value="not_settled">Era not settled</option><option value="__none__">Era not measured</option></select>
 <select id="fl"><option value="">All layers</option>{''.join(f'<option value="{E(l)}">{E(l)}</option>' for l in sorted({f["layer"] for f in forms}))}</select>
 <label class="chk"><input type="checkbox" id="fp"> Only forms with an example ({proof_counts['docs']})</label>
@@ -115,7 +116,7 @@ index = f"""
 <p>Met a form on your corpus? <a href="propose.html">Propose it</a> with its excerpt, corpus and date — no code, no account. Or, if you prefer, open an issue or a pull request on GitHub. A second reader reviews; a contested form stays recorded as contested; nothing enters unreviewed. Cite: Gracia S., Bagnol-Lebon C., Comtet Y. (2026). <em>Fault Atlas.</em> Loxyn SAS, Lyon. Zenodo. <a href="https://doi.org/{DOI}">doi:{DOI}</a>.</p></section>
 <script>
 const q=document.getElementById('q'),fd=document.getElementById('fd'),fc=document.getElementById('fc'),fl=document.getElementById('fl'),fe=document.getElementById('fe'),fp=document.getElementById('fp'),rows=[...document.querySelectorAll('#t tbody tr')],c=document.getElementById('count');
-function apply(){{const s=q.value.toLowerCase(),d=fd.value,k=fc.value,l=fl.value,er=fe.value,pf=fp.checked;let n=0;for(const r of rows){{const ok=(!d||r.dataset.damage===d)&&(!k||r.dataset.class===k)&&(!l||r.dataset.layer===l)&&(!er||(er==='__none__'?!r.dataset.era:r.dataset.era===er))&&(!pf||r.dataset.proof==='docs')&&(!s||r.dataset.text.includes(s));r.hidden=!ok;if(ok)n++;}}c.textContent=n+' of '+rows.length;}}
+function apply(){{const s=q.value.toLowerCase(),d=fd.value,k=fc.value,l=fl.value,er=fe.value,mo=fm.value,pf=fp.checked;let n=0;for(const r of rows){{const ok=(!d||r.dataset.damage===d)&&(!k||r.dataset.class===k)&&(!l||r.dataset.layer===l)&&(!er||(er==='__none__'?!r.dataset.era:r.dataset.era===er))&&(!mo||(mo==='__none__'?!r.dataset.mode:r.dataset.mode===mo))&&(!pf||r.dataset.proof==='docs')&&(!s||r.dataset.text.includes(s));r.hidden=!ok;if(ok)n++;}}c.textContent=n+' of '+rows.length;}}
 const tb=document.querySelector('#t tbody'),ths=[...document.querySelectorAll('#t th')];
 let sortCol=2,sortDir=-1;
 function key(r,i){{const c=r.children[i];return (c.dataset.k||c.textContent).trim().toLowerCase();}}
@@ -197,6 +198,7 @@ for f in forms:
 <div><h3>Can a deletion-only repair restore the truth? <span class="opt">classified, not measured</span></h3><p><strong>{E(REACH[rep['reachable_by_deletion']])}</strong>{(' — '+E(rep['note'])) if rep.get('note') else ''}.</p></div>
 <div><h3>Which truth can judge it</h3><p>{', '.join(E(JUDGE[j]) for j in f['judgeable_by']) or '<span class="muted">none known yet</span>'}.</p></div></div>
 {('<p class="muted small">Searched and not found in: '+E('; '.join(f['observed_absent_in']))+'.</p>') if f.get('observed_absent_in') else ''}
+{('<div class="facts"><div><h3>How it fails</h3><p><strong>'+E({"PROP":"Identity, and it propagates","FAUX":"A false fact","MANQ":"A gap, not a wrong answer","MES":"A property of the corpus, not a fault of a document","DEC":"A use made downstream"}[f["failure_mode"]["value"]])+'</strong>. '+E(f["failure_mode"]["means"])+'</p><p class="meta">'+E(f["failure_mode"]["source"])+'</p></div></div>') if f.get('failure_mode') else ''}
 {('<div class="facts"><div><h3>When it applies</h3><p><strong>'+E({"ancient_only":"Documents of the old era only","both":"Both eras, 1957 and 2026 alike","born_modern":"Born with the modern era","not_settled":"Era not settled"}[f["era"]["value"]])+'</strong>'+(' — and worse now than it was' if f["era"].get("aggravated_by_the_modern") else '')+('. '+E(f["era"]["note"]) if f["era"].get("note") else '')+'</p><p class="meta">'+E(f["era"]["source"])+'</p></div></div>') if f.get('era') else '<div class="facts"><div><h3>When it applies</h3><p><strong>Era not measured.</strong> This form was not among the forty-three catalogue lines confronted, old against modern, on 2026-08-08. Nothing here says it is alive today, and nothing says it is dead.</p></div></div>'}
 <h2>Where it was seen</h2>{seen}
 <h2>Specimens</h2>{spec}

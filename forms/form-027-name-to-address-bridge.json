@@ -37,7 +37,7 @@
   },
   "repair": {
     "reachable_by_deletion": "no",
-    "note": "deletion cannot restore this; classified by judgment on 2026-09-09, not measured — the EUR-Lex loop will measure it"
+    "note": "deletion cannot restore this; derived from the damage class by the migration of 2026-09-09, not judged form by form and not measured — the bench can measure it"
   },
   "judgeable_by": [
     "construction",
@@ -56,5 +56,10 @@
       "event": "migrated; classified damage=SPLIT injection=RENAME (judgment, unreviewed by a second reader)",
       "by": "Fault Atlas migration"
     }
-  ]
+  ],
+  "failure_mode": {
+    "value": "PROP",
+    "means": "identity: one thing appears under several forms, or several things under one — the error lands on a node and propagates to everything hanging from it",
+    "source": "the internal catalogue of 2026-08-09 (korela.db, table parametre), line 27; it is not derived from the damage and varies inside a damage class"
+  }
 }

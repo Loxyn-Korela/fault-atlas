@@ -173,5 +173,10 @@
     "measured": "2026-09-10",
     "source": "VERDICT — the old against the modern, 2026-08-08: 45 PDFs of 1957-1987 against 15 PDFs of 2023-2026, 174 pages, 9 publishers. Its own stated limits: 13 of the 15 modern are biomedical, 100 % English, 100 % open access — a channel that excludes scans, truncated and subscription articles by construction.",
     "note": "dead in that form, replaced by furniture added by the publisher (see form-117, the Crossmark badge)"
+  },
+  "failure_mode": {
+    "value": "FAUX",
+    "means": "a false fact: a value, a type or a link the source never asserted",
+    "source": "the internal catalogue of 2026-08-09 (korela.db, table parametre), line 93; it is not derived from the damage and varies inside a damage class"
   }
 }

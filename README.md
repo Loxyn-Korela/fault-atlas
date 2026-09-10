@@ -59,6 +59,29 @@ The file is the truth. Software reads it; software never completes it from memor
 
 The 272 Europe PMC articles of the August observation are listed by PMC identifier in `corpora/europe-pmc-jats-2023-2026-272.json`, with the selection queries, the sha256 of each file as read on 2026-08-08 and the licence found in it; a frozen copy of the 267 redistributable files is prepared for Zenodo. There is no corpus page and no probes page on the site: each form links the documents where the fault sits and, folded, the code that found them and the record behind them. Every August form has `status: migrated_unreviewed` and every September form `status: proposed`. A second reader validates or contests each one before it becomes `validated`. Where a September form overlaps an August one, the `related` field says so; the novel/variant decision is the reader's, not the machine's.
 
+## Two axes, and only one of them was ever judged
+
+Each form says what **damage** it does to the graph, one of seven. Each form also says whether a
+deletion-only repair could restore the truth. That second field was written by the migration of
+2026-09-09 from a lookup table on the damage, not judged form by form, and it therefore adds
+nothing: every merge reads `no`, every spurious edge reads `yes`, without exception. The records now
+say that in place of the sentence they carried.
+
+The judgment that does exist is `failure_mode`, recovered from the internal catalogue of 2026-08-09
+onto 113 forms. It varies inside a damage class, which is what makes it worth having:
+
+| | forms |
+|---|---|
+| **FAUX** — a false fact: a value, a type or a link the source never asserted | 41 |
+| **MANQ** — a gap: incomplete where the reading did not reach, not wrong | 39 |
+| **PROP** — identity: the error lands on a node and propagates to everything hanging from it | 21 |
+| **MES** — a property of the corpus or of the measuring apparatus, not a fault of a document | 12 |
+| not recovered — added after the migration | 49 |
+
+The twenty spurious-edge forms span three of these; the fourteen merges span two. The mechanism
+column of that catalogue is deliberately not recovered: the atlas records the effect of a remedy,
+never its mechanism.
+
 ## The count is a shelf, not a measurement
 
 Two readers were given the same six articles on 2026-08-08 and worked without contact. One found

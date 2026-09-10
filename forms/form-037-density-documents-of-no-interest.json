@@ -37,7 +37,7 @@
   },
   "repair": {
     "reachable_by_deletion": "no",
-    "note": "deletion cannot restore this; classified by judgment on 2026-09-09, not measured — the EUR-Lex loop will measure it"
+    "note": "deletion cannot restore this; derived from the damage class by the migration of 2026-09-09, not judged form by form and not measured — the bench can measure it"
   },
   "judgeable_by": [],
   "history": [
@@ -56,5 +56,10 @@
       "event": "internal tool paths removed from observation notes before publication; wording otherwise unchanged",
       "by": "Fault Atlas"
     }
-  ]
+  ],
+  "failure_mode": {
+    "value": "MES",
+    "means": "a property of the corpus or of the measuring apparatus, not a fault of a document",
+    "source": "the internal catalogue of 2026-08-09 (korela.db, table parametre), line 37; it is not derived from the damage and varies inside a damage class"
+  }
 }

@@ -134,5 +134,10 @@
       "matches_excerpt": false,
       "note": "The figure quoted in the excerpt was counted on 2026-08-08 by a finer, hand-run measurement whose code was not kept; this probe is the one that was kept, and its figure is the one that can be re-run. Both stand, dated."
     }
-  ]
+  ],
+  "failure_mode": {
+    "value": "FAUX",
+    "means": "a false fact: a value, a type or a link the source never asserted",
+    "source": "the internal catalogue of 2026-08-09 (korela.db, table parametre), line 140; it is not derived from the damage and varies inside a damage class"
+  }
 }

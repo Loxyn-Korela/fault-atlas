@@ -35,7 +35,7 @@
   },
   "repair": {
     "reachable_by_deletion": "yes",
-    "note": "the spurious edge can be deleted once the notice is recognised as a notice; classified by judgment, not measured"
+    "note": "the spurious edge can be deleted once the notice is recognised as a notice; derived from the damage class by the migration of 2026-09-09, not judged form by form and not measured — the bench can measure it"
   },
   "judgeable_by": [
     "registry",

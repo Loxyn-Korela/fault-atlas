@@ -10,7 +10,7 @@ db = sqlite3.connect(out)
 db.executescript("""
 create table forms(id text primary key, name text, damage text, class text, injection text, layer text, status text, organisation text, campaign text,
   cancellable_by_code int, reachable_by_deletion text, judgeable_by text, observations int, observed_absent_in text,
-  name_fr text, legacy_line int, version int, era text, era_worse_now int, era_note text, era_measured text, record json);
+  name_fr text, legacy_line int, version int, era text, era_worse_now int, era_note text, era_measured text, failure_mode text, record json);
 create table observations(id integer primary key, form_id text references forms(id), form_name text, corpus text, corpus_id text, document text, date text, observer text, excerpt_en text, excerpt_original text, lang text, probe text);
 create table probes(id integer primary key, form_id text references forms(id), form_name text, file text, kind text, corpus_id text, written text, run text, result_count int, result_of int, result_date text, matches_excerpt int, note text, code text);
 create table history(id integer primary key, form_id text references forms(id), form_name text, date text, event text, by text);
@@ -18,10 +18,11 @@ create table history(id integer primary key, form_id text references forms(id), 
 for f in sorted((ROOT/"forms").glob("*.json")):
     r = json.loads(f.read_text())
     e = r.get("era") or {}
-    db.execute("insert into forms values(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)", (r["id"], r["name"], r["damage"], r["class"], r.get("injection"), r["layer"], r["status"], r.get("origin",{}).get("organisation"), r.get("origin",{}).get("campaign"),
+    db.execute("insert into forms values(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)", (r["id"], r["name"], r["damage"], r["class"], r.get("injection"), r["layer"], r["status"], r.get("origin",{}).get("organisation"), r.get("origin",{}).get("campaign"),
         int(r["prevention"]["cancellable_by_code"]), r["repair"]["reachable_by_deletion"], ", ".join(r["judgeable_by"]), len(r["seen"]), ", ".join(r.get("observed_absent_in", [])),
         r.get("name_fr"), r.get("legacy_line"), r["version"],
         e.get("value", "not_measured"), int(bool(e.get("aggravated_by_the_modern"))), e.get("note"), e.get("measured"),
+        (r.get("failure_mode") or {}).get("value", "not_recovered"),
         json.dumps(r, ensure_ascii=False)))
     for s in r["seen"]:
         db.execute("insert into observations(form_id,form_name,corpus,corpus_id,document,date,observer,excerpt_en,excerpt_original,lang,probe) values(?,?,?,?,?,?,?,?,?,?,?)",

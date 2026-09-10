@@ -61,5 +61,10 @@
       "event": "repair.reachable_by_deletion changed from yes to partial: a deletion loses the fact's past validity; only a spurious edge is fully repaired by deletion",
       "by": "Coralie Bagnol-Lebon (second reader), applied by Fault Atlas"
     }
-  ]
+  ],
+  "failure_mode": {
+    "value": "FAUX",
+    "means": "a false fact: a value, a type or a link the source never asserted",
+    "source": "the internal catalogue of 2026-08-09 (korela.db, table parametre), line 32; it is not derived from the damage and varies inside a damage class"
+  }
 }
