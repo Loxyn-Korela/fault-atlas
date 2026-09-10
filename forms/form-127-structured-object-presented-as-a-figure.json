@@ -1,6 +1,6 @@
 {
   "id": "form-127",
-  "version": 1,
+  "version": 2,
   "legacy_line": 127,
   "name": "Structured object presented as a figure",
   "name_fr": "Objet structuré présenté comme figure",
@@ -15,7 +15,7 @@
   "injection": "MOVE",
   "legacy_severity": "G3",
   "legacy_mechanism": "M7",
-  "status": "migrated_unreviewed",
+  "status": "validated",
   "seen": [
     {
       "corpus": "observation 2026-08 (272 Europe PMC JATS articles)",
@@ -65,6 +65,12 @@
       "date": "2026-09-10",
       "event": "reserve put on the observation itself: identifiers of the 14 non-biomedical articles not kept, observation cited, not reproducible",
       "by": "Fault Atlas maintainer, at the second reader's request"
+    },
+    {
+      "date": "2026-09-10",
+      "event": "second reader: validated — correction of my own first pass: I had judged it on a truncated excerpt; the note ends with 'the ABSENCE is the measure' — its result is the absence",
+      "by": "Coralie Bagnol-Lebon"
     }
-  ]
+  ],
+  "observer_agreement": "2/2 — first reader (Loxyn, August/September classification) and second reader (Coralie Bagnol-Lebon, 2026-09-10)"
 }

@@ -1,6 +1,6 @@
 {
   "id": "form-170",
-  "version": 1,
+  "version": 2,
   "name": "Snapshot contains merged, retracted and paratext records (OpenAlex)",
   "origin": {
     "organisation": "Loxyn SAS, Lyon",
@@ -8,7 +8,7 @@
     "contact": "contact@loxyn.ai"
   },
   "damage": "MERGE",
-  "class": "UNCLASSIFIED",
+  "class": "DEFEATED",
   "layer": "⑨ structure",
   "injection": "DUPLICATE",
   "status": "proposed",
@@ -53,6 +53,11 @@
       "date": "2026-09-09",
       "event": "converted to a record; class, prevention and the novel/variant question left to the second reader",
       "by": "Fault Atlas"
+    },
+    {
+      "date": "2026-09-10",
+      "event": "class filled: UNCLASSIFIED → DEFEATED, with its prevention clause; classified by the first reader, awaiting the second reader's decision",
+      "by": "Fault Atlas maintainer (Loxyn)"
     }
   ]
 }

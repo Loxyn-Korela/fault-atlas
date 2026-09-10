@@ -1,6 +1,6 @@
 {
   "id": "form-062",
-  "version": 1,
+  "version": 2,
   "legacy_line": 62,
   "name": "Document reduced to its title",
   "name_fr": "Document réduit à son titre",
@@ -15,7 +15,7 @@
   "injection": "DELETE",
   "legacy_severity": "G3",
   "legacy_mechanism": "M11",
-  "status": "migrated_unreviewed",
+  "status": "validated",
   "seen": [
     {
       "corpus": "observation 2026-08 (272 Europe PMC JATS articles)",
@@ -53,6 +53,12 @@
       "date": "2026-09-09",
       "event": "migrated; classified damage=MISSING injection=DELETE (judgment, unreviewed by a second reader)",
       "by": "Fault Atlas migration"
+    },
+    {
+      "date": "2026-09-10",
+      "event": "second reader: validated — read in full with the record: a dated measurement, a named corpus, real forms",
+      "by": "Coralie Bagnol-Lebon"
     }
-  ]
+  ],
+  "observer_agreement": "2/2 — first reader (Loxyn, August/September classification) and second reader (Coralie Bagnol-Lebon, 2026-09-10)"
 }

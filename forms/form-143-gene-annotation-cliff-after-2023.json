@@ -1,6 +1,6 @@
 {
   "id": "form-143",
-  "version": 1,
+  "version": 2,
   "name": "Gene annotation cliff after 2023",
   "origin": {
     "organisation": "Loxyn SAS, Lyon",
@@ -8,7 +8,7 @@
     "contact": "contact@loxyn.ai"
   },
   "damage": "MISSING",
-  "class": "UNCLASSIFIED",
+  "class": "REFUSABLE",
   "layer": "⑨ structure",
   "injection": "DELETE",
   "status": "proposed",
@@ -29,8 +29,8 @@
     "counter_examples": []
   },
   "prevention": {
-    "cancellable_by_code": false,
-    "note": "not assessed by the observer; to be classified by the second reader"
+    "cancellable_by_code": true,
+    "refusal_clause": "count coverage per year AND per entity type; a type that collapses while the whole stays flat is declared, and no trend is asserted past the cliff"
   },
   "repair": {
     "reachable_by_deletion": "no",
@@ -50,6 +50,11 @@
       "date": "2026-09-09",
       "event": "converted to a record; class, prevention and the novel/variant question left to the second reader",
       "by": "Fault Atlas"
+    },
+    {
+      "date": "2026-09-10",
+      "event": "class filled: UNCLASSIFIED → REFUSABLE, with its prevention clause; classified by the first reader, awaiting the second reader's decision",
+      "by": "Fault Atlas maintainer (Loxyn)"
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
   "id": "form-024",
-  "version": 1,
+  "version": 2,
   "legacy_line": 24,
   "name": "Acronyms and abbreviations",
   "name_fr": "Sigles et abréviations",
@@ -15,7 +15,7 @@
   "injection": "RENAME",
   "legacy_severity": "G1",
   "legacy_mechanism": "M1",
-  "status": "migrated_unreviewed",
+  "status": "validated",
   "seen": [
     {
       "corpus": "observation 2026-08 (272 Europe PMC JATS articles)",
@@ -60,6 +60,12 @@
       "date": "2026-09-09",
       "event": "internal tool paths removed from observation notes before publication; wording otherwise unchanged",
       "by": "Fault Atlas"
+    },
+    {
+      "date": "2026-09-10",
+      "event": "second reader: validated — read in full with the record: a dated measurement, a named corpus, real forms",
+      "by": "Coralie Bagnol-Lebon"
     }
-  ]
+  ],
+  "observer_agreement": "2/2 — first reader (Loxyn, August/September classification) and second reader (Coralie Bagnol-Lebon, 2026-09-10)"
 }

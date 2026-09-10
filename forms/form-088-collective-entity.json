@@ -1,6 +1,6 @@
 {
   "id": "form-088",
-  "version": 1,
+  "version": 2,
   "legacy_line": 88,
   "name": "Collective entity",
   "name_fr": "Entité collective",
@@ -15,7 +15,7 @@
   "injection": "RENAME",
   "legacy_severity": "G1",
   "legacy_mechanism": "M2",
-  "status": "migrated_unreviewed",
+  "status": "validated",
   "seen": [
     {
       "corpus": "observation 2026-08 (272 Europe PMC JATS articles)",
@@ -61,6 +61,11 @@
       "date": "2026-09-09",
       "event": "exact probe attached to the 272-file observation: probes/2026-08/line-088.py, re-run 71/272 (excerpt figure differs, both kept)",
       "by": "Fault Atlas maintainer"
+    },
+    {
+      "date": "2026-09-10",
+      "event": "second reader: validated — read in full with the record: a dated measurement, a named corpus, real forms",
+      "by": "Coralie Bagnol-Lebon"
     }
   ],
   "probes": [
@@ -168,5 +173,6 @@
       "matches_excerpt": false,
       "note": "The figure quoted in the excerpt was counted on 2026-08-08 by a finer, hand-run measurement whose code was not kept; this probe is the one that was kept, and its figure is the one that can be re-run. Both stand, dated."
     }
-  ]
+  ],
+  "observer_agreement": "2/2 — first reader (Loxyn, August/September classification) and second reader (Coralie Bagnol-Lebon, 2026-09-10)"
 }

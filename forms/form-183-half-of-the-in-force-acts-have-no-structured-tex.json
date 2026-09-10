@@ -1,6 +1,6 @@
 {
   "id": "form-183",
-  "version": 1,
+  "version": 2,
   "name": "Half of the in-force acts have no structured text in the official dump",
   "origin": {
     "organisation": "Loxyn SAS, Lyon",
@@ -11,7 +11,7 @@
   "class": "SILENT_FALSE",
   "layer": "② reading",
   "injection": "DELETE",
-  "status": "proposed",
+  "status": "validated",
   "seen": [
     {
       "corpus": "EUR-Lex data dump of the Publications Office, 2026-09-06 (LEG_MTD 58,686 works; LEG_EN_FMX 123,983 files; LEG_FR_FMX 121,500 files), inventoried 2026-09-09",
@@ -59,6 +59,11 @@
       "date": "2026-09-09",
       "event": "exact probe attached and re-run: probes/2026-09/form-183-dump-coverage.py",
       "by": "Fault Atlas maintainer"
+    },
+    {
+      "date": "2026-09-10",
+      "event": "second reader: validated — read in full with the record: a dated measurement, a named corpus, real forms",
+      "by": "Coralie Bagnol-Lebon"
     }
   ],
   "probes": [
@@ -77,5 +82,6 @@
       "matches_excerpt": true,
       "note": "Re-run on the 2026-09-06 archives (stream read, nothing extracted): 58,686 works; 30,047 with EN Formex; 29,892 with FR; 27,792 without any (47 %); 22,293 .tif in the EN archive. Same figures."
     }
-  ]
+  ],
+  "observer_agreement": "2/2 — first reader (Loxyn, August/September classification) and second reader (Coralie Bagnol-Lebon, 2026-09-10)"
 }

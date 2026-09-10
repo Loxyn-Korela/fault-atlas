@@ -1,6 +1,6 @@
 {
   "id": "form-182",
-  "version": 1,
+  "version": 2,
   "name": "Legal basis encoded as an empty identifier URI",
   "origin": {
     "organisation": "Loxyn SAS, Lyon",
@@ -11,7 +11,7 @@
   "class": "REFUSABLE",
   "layer": "⑤ anchoring",
   "injection": "ALTER",
-  "status": "proposed",
+  "status": "validated",
   "seen": [
     {
       "corpus": "EUR-Lex / Cellar, lot A — the official relations graph frozen 2026-09-09 (abroge 14,411 · modifie 64,290 · se fonde sur 410,522; 489,223 triples)",
@@ -73,6 +73,11 @@
       "date": "2026-09-09",
       "event": "second observation: the same empty URI counted over the whole graph, live (8,164 triples, 14 predicates)",
       "by": "Fault Atlas maintainer"
+    },
+    {
+      "date": "2026-09-10",
+      "event": "second reader: validated — read in full with the record: a dated measurement, a named corpus, real forms",
+      "by": "Coralie Bagnol-Lebon"
     }
   ],
   "probes": [
@@ -166,5 +171,6 @@
       "matches_excerpt": true,
       "note": "Re-run live: 43 acts, the same list as the frozen lot A."
     }
-  ]
+  ],
+  "observer_agreement": "2/2 — first reader (Loxyn, August/September classification) and second reader (Coralie Bagnol-Lebon, 2026-09-10)"
 }

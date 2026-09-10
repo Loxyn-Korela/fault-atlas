@@ -7,6 +7,12 @@
 - Validator with house rules; proves itself on seven planted faults.
 - SQLite view builder for Datasette.
 
+## 0.5.0 — 2026-09-10
+- **First validated forms.** The second reader (Coralie Bagnol-Lebon) read the 62 identity forms (MISSING, MERGE) in full: 43 validated, 5 contested (030, 041, 160, 164, 165), 12 returned because their class was `UNCLASSIFIED`. Two of her own earlier calls reversed on the full text: form-127 and form-078 validated, form-078 linked to form-109 rather than folded into it.
+- Her layer rule corrected mine: a form sits upstream of the graph only if **every** one of its layers is pixel or reading. form-068 ("① pixel + ⑤ anchoring") reaches the graph. Of the 62 identity forms, 43 reach the graph, not 42 as I had counted.
+- The 12 returned forms now carry a class and a prevention clause, classified by the first reader and awaiting her decision: 167 and 170 DEFEATED (an empty column, records flagged by their own flags), 144 SILENT_FALSE (the bucket passes every legitimate filter), 176 IRREDUCIBLE (choosing between homographs needs the sense), the other 8 REFUSABLE.
+- README: the damage table and the review state are generated from the records.
+
 ## 0.4.7 — 2026-09-10
 - Second reader's rule applied (Coralie Bagnol-Lebon): the second count next to every damage is now "reaches the graph" = every layer beyond pixel and reading; MISSING and MERGE said to Bonifati as 42 of 62, not 62. No damage count is cited without its layer. README table generated from the records.
 - form-030, form-041, form-164 marked contested by the second reader.

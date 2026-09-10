@@ -1,6 +1,6 @@
 {
   "id": "form-165",
-  "version": 1,
+  "version": 2,
   "name": "Closed machine-assigned keyword vocabulary (OpenAlex)",
   "origin": {
     "organisation": "Loxyn SAS, Lyon",
@@ -52,6 +52,11 @@
       "date": "2026-09-09",
       "event": "converted to a record; class, prevention and the novel/variant question left to the second reader",
       "by": "Fault Atlas"
+    },
+    {
+      "date": "2026-09-10",
+      "event": "second reader: variant of form-163 — variant of form-163; parent to confirm",
+      "by": "Coralie Bagnol-Lebon"
     }
   ]
 }

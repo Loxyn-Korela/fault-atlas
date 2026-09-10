@@ -1,6 +1,6 @@
 {
   "id": "form-017",
-  "version": 1,
+  "version": 2,
   "legacy_line": 17,
   "name": "Diversity of document templates",
   "name_fr": "Diversité des gabarits",
@@ -15,7 +15,7 @@
   "injection": "FORMAT",
   "legacy_severity": "G3",
   "legacy_mechanism": "M8",
-  "status": "migrated_unreviewed",
+  "status": "validated",
   "seen": [
     {
       "corpus": "observation 2026-08 (Europe PMC JATS 2023-2026 and PubMed abstracts)",
@@ -76,6 +76,11 @@
       "date": "2026-09-09",
       "event": "probe narrowed after independent review: returns only the documents whose template is not declared (2), not every document's template",
       "by": "Fault Atlas maintainer"
+    },
+    {
+      "date": "2026-09-10",
+      "event": "second reader: validated — read in full with the record: a dated measurement, a named corpus, real forms",
+      "by": "Coralie Bagnol-Lebon"
     }
   ],
   "probes": [
@@ -112,5 +117,6 @@
       },
       "matches_excerpt": true
     }
-  ]
+  ],
+  "observer_agreement": "2/2 — first reader (Loxyn, August/September classification) and second reader (Coralie Bagnol-Lebon, 2026-09-10)"
 }

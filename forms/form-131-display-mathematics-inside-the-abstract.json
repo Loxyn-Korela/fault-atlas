@@ -1,6 +1,6 @@
 {
   "id": "form-131",
-  "version": 2,
+  "version": 3,
   "legacy_line": 131,
   "name": "Display mathematics inside the abstract",
   "name_fr": "Le résumé contient des mathématiques en display",
@@ -15,7 +15,7 @@
   "injection": "FORMAT",
   "legacy_severity": "G3",
   "legacy_mechanism": "M8",
-  "status": "migrated_unreviewed",
+  "status": "validated",
   "seen": [
     {
       "corpus": "14 articles 2021-2026 outside biomedicine (arXiv, PLOS, Copernicus, HAL, Scientific Reports), 'rare genres' wave",
@@ -71,6 +71,11 @@
       "date": "2026-09-10",
       "event": "reserve put on the observation itself: identifiers of the 14 non-biomedical articles not kept, observation cited, not reproducible",
       "by": "Fault Atlas maintainer, at the second reader's request"
+    },
+    {
+      "date": "2026-09-10",
+      "event": "second reader: validated — read in full with the record: a dated measurement, a named corpus, real forms",
+      "by": "Coralie Bagnol-Lebon"
     }
   ],
   "observed_absent_in": [
@@ -95,5 +100,6 @@
       "matches_excerpt": true,
       "note": "Measured absent: the probe finds no carrier among the 272 files. An absence is a result, dated."
     }
-  ]
+  ],
+  "observer_agreement": "2/2 — first reader (Loxyn, August/September classification) and second reader (Coralie Bagnol-Lebon, 2026-09-10)"
 }

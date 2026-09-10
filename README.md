@@ -45,17 +45,17 @@ The file is the truth. Software reads it; software never completes it from memor
 
 | damage | all layers | reaches the graph¹ |
 |---|---|---|
-| MISSING | 48 | 28 |
-| WRONG_VALUE | 25 | 19 |
+| MISSING | 48 | 29 |
+| WRONG_VALUE | 25 | 22 |
 | SPURIOUS_EDGE | 19 | 13 |
 | SPLIT | 22 | 17 |
 | MERGE | 14 | 14 |
 | WRONG_LABEL | 14 | 14 |
 | ANACHRONISM | 8 | 7 |
 | CORPUS_PARAMETER | 8 | 7 |
-| **total** | **158** | **119** |
+| **total** | **158** | **123** |
 
-¹ Second reader's rule (Coralie Bagnol-Lebon, 2026-09-10): a form whose layer is pixel or reading — columns, drop caps, scanned pages — sits upstream of the graph and never reaches a repairer; every other layer (utterance, extraction, anchoring, resolution, schema, coherence, structure, retrieval) does. **No damage count is ever cited without its layer.** Said to Bonifati: identity damages (MERGE and MISSING) that reach the graph, 42, not 62. All of this is classified by judgment, not measured, until a bench measures it.
+¹ Second reader's rule (Coralie Bagnol-Lebon, 2026-09-10): a form sits upstream of the graph only if **every** one of its layers is pixel or reading — columns, drop caps, scanned pages; one layer beyond them and it reaches a repairer. **No damage count is ever cited without its layer.** Said to Bonifati: of the 62 identity forms (MISSING and MERGE), 43 reach the graph, not 62. All of this is classified by judgment, not measured, until a bench measures it.
 
 The 272 Europe PMC articles of the August observation are listed by PMC identifier in `corpora/europe-pmc-jats-2023-2026-272.json`, with the selection queries, the sha256 of each file as read on 2026-08-08 and the licence found in it; a frozen copy of the 267 redistributable files is prepared for Zenodo. There is no corpus page and no probes page on the site: each form links the documents where the fault sits and, folded, the code that found them and the record behind them. Every August form has `status: migrated_unreviewed` and every September form `status: proposed`. A second reader validates or contests each one before it becomes `validated`. Where a September form overlaps an August one, the `related` field says so; the novel/variant decision is the reader's, not the machine's.
 
@@ -87,7 +87,18 @@ An observation says what was found and where; a probe says how to find it again.
 
 ## Review
 
-A second reader records a decision with `tools/review.py` (validated, variant, contested, refuted), dated and signed, in the form's history. See `REVIEWING.md`.
+A form enters as `migrated_unreviewed` (August catalogue) or `proposed` (September observers), and a second reader validates, contests or refutes it, in writing, with `tools/review.py`. Nothing is deleted: a contested form stays, marked contested, with the disagreement in its history.
+
+State on 2026-09-10, after the second reader (Coralie Bagnol-Lebon) read the 62 identity forms (MISSING and MERGE) in full:
+
+| | |
+|---|---|
+| validated | 43 |
+| contested | 5 (form-030, form-041, form-160, form-164, and form-165 as a variant of form-163) |
+| classified and returned for decision | 12 (form-143, 144, 150, 156, 157, 158, 163, 167, 170, 171, 173, 176: their `class` was `UNCLASSIFIED`; the first reader filled it with a prevention clause, the second reader has not yet decided) |
+| not yet reviewed | 103 |
+
+Two decisions the second reader reversed on her own second pass, both on truncated excerpts: form-127 (its result *is* the absence: "the ABSENCE is the measure") and form-078 (kept distinct from form-109, its modern form, because the atlas must separate the traps of the past from those of the present).
 
 ## Contribute
 
@@ -97,7 +108,7 @@ Met a form on your corpus? [Propose it](https://github.com/Loxyn-Korela/fault-at
 
 Records and documentation: CC BY-SA 4.0. Tools: Apache 2.0. See `CITATION.cff`.
 
-**One way to say the count**: 158 forms — 113 migrated from the August catalogue (`migrated_unreviewed`), 40 proposed by a second observer in September, 4 measured on EUR-Lex and 1 found by the human audit of the truth (`proposed`); 119 of them reach the graph (layers beyond pixel and reading). Validated: 0; contested: 3 (form-030, form-041, form-164, second reader).
+**One way to say the count**: 158 forms — 113 migrated from the August catalogue, 40 proposed by a second observer in September, 4 measured on EUR-Lex, 1 found by the human audit of the truth; 123 of them reach the graph. Second reader's decisions on the 62 identity forms (MISSING, MERGE), 2026-09-10: **43 validated**, 5 contested, 12 classified and sent back for decision.
 
 Cite as: Gracia S., Bagnol-Lebon C., Comtet Y. (2026). *Fault Atlas: observed fault forms in knowledge graphs built from documents.* Loxyn SAS, Lyon. Zenodo. https://doi.org/10.5281/zenodo.22674547 — this concept DOI always resolves to the latest version; each release has its own DOI on Zenodo.
 

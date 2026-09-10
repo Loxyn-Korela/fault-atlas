@@ -1,6 +1,6 @@
 {
   "id": "form-045",
-  "version": 2,
+  "version": 3,
   "legacy_line": 45,
   "name": "Genuinely scanned pages",
   "name_fr": "Vraies pages scannées",
@@ -59,6 +59,14 @@
       "date": "2026-09-09",
       "event": "observation transcribed from the August annex and the wave-1 journal, after the second reader noted the record had no excerpt",
       "by": "Fault Atlas"
+    },
+    {
+      "date": "2026-09-10",
+      "event": "second reader: variant of form-097 — variant of form-097 (the three PDF regimes)",
+      "by": "Coralie Bagnol-Lebon"
     }
+  ],
+  "related": [
+    "form-097"
   ]
 }

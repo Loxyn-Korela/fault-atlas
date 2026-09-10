@@ -1,6 +1,6 @@
 {
   "id": "form-144",
-  "version": 1,
+  "version": 2,
   "name": "Un-normalised chemical bucket",
   "origin": {
     "organisation": "Loxyn SAS, Lyon",
@@ -8,7 +8,7 @@
     "contact": "contact@loxyn.ai"
   },
   "damage": "MERGE",
-  "class": "UNCLASSIFIED",
+  "class": "SILENT_FALSE",
   "layer": "⑥ resolution",
   "injection": "RENAME",
   "status": "proposed",
@@ -30,7 +30,7 @@
   },
   "prevention": {
     "cancellable_by_code": false,
-    "note": "not assessed by the observer; to be classified by the second reader"
+    "note": "the bucket passes every legitimate filter — valid type, valid id, empty surface; nothing inside a record says it merges thousands of chemicals. Only an aggregate (one identifier carrying 29.6 % of the chemical annotations) betrays it, and that is a method alarm, not a detection"
   },
   "repair": {
     "reachable_by_deletion": "no",
@@ -50,6 +50,11 @@
       "date": "2026-09-09",
       "event": "converted to a record; class, prevention and the novel/variant question left to the second reader",
       "by": "Fault Atlas"
+    },
+    {
+      "date": "2026-09-10",
+      "event": "class filled: UNCLASSIFIED → SILENT_FALSE, with its prevention clause; classified by the first reader, awaiting the second reader's decision",
+      "by": "Fault Atlas maintainer (Loxyn)"
     }
   ]
 }

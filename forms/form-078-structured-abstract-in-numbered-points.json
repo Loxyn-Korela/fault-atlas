@@ -1,6 +1,6 @@
 {
   "id": "form-078",
-  "version": 1,
+  "version": 2,
   "legacy_line": 78,
   "name": "Structured abstract in numbered points",
   "name_fr": "Résumé structuré en points numérotés",
@@ -15,7 +15,7 @@
   "injection": "FORMAT",
   "legacy_severity": "G3",
   "legacy_mechanism": "M8",
-  "status": "migrated_unreviewed",
+  "status": "validated",
   "seen": [
     {
       "corpus": "observation 2026-08 (272 Europe PMC JATS articles)",
@@ -59,6 +59,15 @@
       "date": "2026-09-09",
       "event": "internal tool paths removed from observation notes before publication; wording otherwise unchanged",
       "by": "Fault Atlas"
+    },
+    {
+      "date": "2026-09-10",
+      "event": "second reader: validated — correction of my own first pass: kept distinct from form-109, its modern form, which the note names itself; the atlas must separate the traps of the past from those of the present",
+      "by": "Coralie Bagnol-Lebon"
     }
-  ]
+  ],
+  "related": [
+    "form-109"
+  ],
+  "observer_agreement": "2/2 — first reader (Loxyn, August/September classification) and second reader (Coralie Bagnol-Lebon, 2026-09-10)"
 }

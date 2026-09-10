@@ -1,6 +1,6 @@
 {
   "id": "form-075",
-  "version": 1,
+  "version": 2,
   "legacy_line": 75,
   "name": "Multiple citation conventions",
   "name_fr": "Conventions de citation multiples",
@@ -15,7 +15,7 @@
   "injection": "FORMAT",
   "legacy_severity": "G3",
   "legacy_mechanism": "M4",
-  "status": "migrated_unreviewed",
+  "status": "validated",
   "seen": [
     {
       "corpus": "observation 2026-08 (Europe PMC JATS 2023-2026 and PubMed abstracts)",
@@ -66,6 +66,11 @@
       "date": "2026-09-09",
       "event": "exact probe attached to the 272-file observation: probes/2026-08/line-075.py, re-run 13/272",
       "by": "Fault Atlas maintainer"
+    },
+    {
+      "date": "2026-09-10",
+      "event": "second reader: validated — read in full with the record: a dated measurement, a named corpus, real forms",
+      "by": "Coralie Bagnol-Lebon"
     }
   ],
   "probes": [
@@ -177,5 +182,6 @@
       },
       "matches_excerpt": true
     }
-  ]
+  ],
+  "observer_agreement": "2/2 — first reader (Loxyn, August/September classification) and second reader (Coralie Bagnol-Lebon, 2026-09-10)"
 }

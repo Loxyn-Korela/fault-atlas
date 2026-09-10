@@ -1,6 +1,6 @@
 {
   "id": "form-022",
-  "version": 1,
+  "version": 2,
   "legacy_line": 22,
   "name": "Pronominal references",
   "name_fr": "Reprises pronominales",
@@ -15,7 +15,7 @@
   "injection": "RENAME",
   "legacy_severity": "G1",
   "legacy_mechanism": "M2",
-  "status": "migrated_unreviewed",
+  "status": "validated",
   "seen": [
     {
       "corpus": "observation 2026-08 (272 Europe PMC JATS articles)",
@@ -61,6 +61,11 @@
       "date": "2026-09-09",
       "event": "exact probe attached to the 272-file observation: probes/2026-08/line-022.py (rewritten from the campaign's inline script), re-run 212/272",
       "by": "Fault Atlas maintainer"
+    },
+    {
+      "date": "2026-09-10",
+      "event": "second reader: validated — read in full with the record: a dated measurement, a named corpus, real forms",
+      "by": "Coralie Bagnol-Lebon"
     }
   ],
   "probes": [
@@ -167,5 +172,6 @@
       },
       "matches_excerpt": true
     }
-  ]
+  ],
+  "observer_agreement": "2/2 — first reader (Loxyn, August/September classification) and second reader (Coralie Bagnol-Lebon, 2026-09-10)"
 }

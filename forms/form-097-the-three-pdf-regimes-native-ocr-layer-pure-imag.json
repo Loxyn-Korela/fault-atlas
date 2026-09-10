@@ -1,6 +1,6 @@
 {
   "id": "form-097",
-  "version": 2,
+  "version": 3,
   "legacy_line": 97,
   "name": "The three PDF regimes (native, OCR layer, pure image)",
   "name_fr": "Les trois régimes de PDF (natif · OCR posé · image pure)",
@@ -15,7 +15,7 @@
   "injection": "IMAGE",
   "legacy_severity": "G3",
   "legacy_mechanism": "M7",
-  "status": "migrated_unreviewed",
+  "status": "validated",
   "seen": [
     {
       "corpus": "Biomedical PDFs 1957-1987 (migraine corpus, 45 PDFs), first observation wave",
@@ -65,6 +65,11 @@
       "date": "2026-09-09",
       "event": "exact probe attached, measured absent on the 272 files: probes/2026-08/line-097.py, 0/272",
       "by": "Fault Atlas maintainer"
+    },
+    {
+      "date": "2026-09-10",
+      "event": "second reader: validated — read in full with the record: a dated measurement, a named corpus, real forms",
+      "by": "Coralie Bagnol-Lebon"
     }
   ],
   "observed_absent_in": [
@@ -89,5 +94,6 @@
       "matches_excerpt": true,
       "note": "Measured absent: the probe finds no carrier among the 272 files. An absence is a result, dated."
     }
-  ]
+  ],
+  "observer_agreement": "2/2 — first reader (Loxyn, August/September classification) and second reader (Coralie Bagnol-Lebon, 2026-09-10)"
 }

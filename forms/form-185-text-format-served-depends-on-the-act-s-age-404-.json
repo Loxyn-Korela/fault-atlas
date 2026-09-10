@@ -1,6 +1,6 @@
 {
   "id": "form-185",
-  "version": 1,
+  "version": 2,
   "name": "Text format served depends on the act's age (404 in one format, 200 in another)",
   "origin": {
     "organisation": "Loxyn SAS, Lyon",
@@ -11,7 +11,7 @@
   "class": "REFUSABLE",
   "layer": "② reading",
   "injection": "FORMAT",
-  "status": "proposed",
+  "status": "validated",
   "seen": [
     {
       "corpus": "Cellar REST API, lot B (texts of repealed acts absent from the dump), 2026-09-09",
@@ -58,6 +58,11 @@
       "date": "2026-09-09",
       "event": "exact probe attached and re-run: probes/2026-09/form-185-format-by-era.sh",
       "by": "Fault Atlas maintainer"
+    },
+    {
+      "date": "2026-09-10",
+      "event": "second reader: validated — read in full with the record: a dated measurement, a named corpus, real forms",
+      "by": "Coralie Bagnol-Lebon"
     }
   ],
   "probes": [
@@ -97,5 +102,6 @@
       "matches_excerpt": true,
       "note": "Re-run live on three acts: 2026 act served in xhtml+xml only, 1985 act in text/html only, 1968 act in no text format at all."
     }
-  ]
+  ],
+  "observer_agreement": "2/2 — first reader (Loxyn, August/September classification) and second reader (Coralie Bagnol-Lebon, 2026-09-10)"
 }

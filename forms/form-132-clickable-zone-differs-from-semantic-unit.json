@@ -1,6 +1,6 @@
 {
   "id": "form-132",
-  "version": 1,
+  "version": 2,
   "legacy_line": 132,
   "name": "Clickable zone differs from semantic unit",
   "name_fr": "Zone cliquable ≠ unité sémantique",
@@ -15,7 +15,7 @@
   "injection": "FORMAT",
   "legacy_severity": "G3",
   "legacy_mechanism": "M4",
-  "status": "migrated_unreviewed",
+  "status": "validated",
   "seen": [
     {
       "corpus": "observation 2026-08 (Europe PMC JATS 2023-2026 and PubMed abstracts)",
@@ -76,6 +76,11 @@
       "date": "2026-09-09",
       "event": "exact probe attached (counter-form): probes/2026-08/line-132-counterform.py, re-run 16/272",
       "by": "Fault Atlas maintainer"
+    },
+    {
+      "date": "2026-09-10",
+      "event": "second reader: validated — read in full with the record: a dated measurement, a named corpus, real forms",
+      "by": "Coralie Bagnol-Lebon"
     }
   ],
   "probes": [
@@ -296,5 +301,6 @@
       "matches_excerpt": true,
       "note": "Counter-form of line 132: the clickable span carries the WHOLE citation, year included. 16/272, as quoted in the excerpt."
     }
-  ]
+  ],
+  "observer_agreement": "2/2 — first reader (Loxyn, August/September classification) and second reader (Coralie Bagnol-Lebon, 2026-09-10)"
 }

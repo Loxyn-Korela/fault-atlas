@@ -64,9 +64,13 @@ def layout(title, body, depth=0, desc=""):
 # ── index ──
 counts = Counter(f["damage"] for f in forms)
 GRAPH_LAYERS = {"⑥","⑦","⑧","⑨"}
-def is_graph_layer(layer):
-    L = set(re.findall(r"[①-⑬]", layer)); return bool(L & GRAPH_LAYERS) and not (L - GRAPH_LAYERS - {"⑩"})
-gcounts = Counter(f["damage"] for f in forms if f["layer"][0] not in "①②")   # second reader's rule: pixel and reading sit upstream of the graph
+def upstream(f):
+    """Second reader's rule (2026-09-10): a form sits upstream of the graph only if EVERY one of
+    its layers is pixel or reading. One layer beyond them (anchoring, resolution, …) and it reaches
+    a repairer. No damage count is cited without its layer."""
+    L = set(re.findall(r"[①-⑬]", f["layer"]))
+    return bool(L) and L <= {"①", "②"}
+gcounts = Counter(f["damage"] for f in forms if not upstream(f))
 cards = "".join(f"""<a class="card" href="#forms" data-damage="{k}" style="--c:{v[2]}"><span class="n">{counts.get(k,0)}<small> · {gcounts.get(k,0)} reach the graph</small></span><span class="t">{E(v[0])}</span><span class="d">{E(v[1])}</span></a>""" for k,v in DAMAGE.items())
 def proof_of(f):
     """example / none: does the form show at least one document where the fault sits?"""
@@ -74,7 +78,7 @@ def proof_of(f):
         if pr.get("matches_excerpt") and pr.get("result", {}).get("count", 0) > 0 and f["damage"] != "CORPUS_PARAMETER":
             return "docs", "example shown"
     return "none", "no example yet"
-rows = "".join(f"""<tr data-damage="{f['damage']}" data-class="{f['class']}" data-layer="{E(f['layer'])}" data-proof="{proof_of(f)[0]}" data-src="{E(" ".join(corpora_of(f)).lower())}" data-text="{E((f['name']+' '+f.get('name_fr','')+' '+' '.join(corpora_of(f))).lower())}">
+rows = "".join(f"""<tr data-damage="{f['damage']}" data-class="{f['class']}" data-layer="{E(f['layer'])}" data-reach="{'no' if upstream(f) else 'yes'}" data-proof="{proof_of(f)[0]}" data-src="{E(" ".join(corpora_of(f)).lower())}" data-text="{E((f['name']+' '+f.get('name_fr','')+' '+' '.join(corpora_of(f))).lower())}">
 <td><a href="forms/{f['id']}.html">{E(f['name'])}</a><br><span class="fr">{E(f.get('name_fr',''))}</span></td>
 <td><span class="pill" style="--c:{DAMAGE[f['damage']][2]}">{E(DAMAGE[f['damage']][0])}</span></td>
 <td>{E(CLASS[f['class']])}</td><td>{E(f['layer'])}</td><td class="src">{E(" · ".join(corpora_of(f)) or "—")}</td><td class="proof p-{proof_of(f)[0]}">{E(proof_of(f)[1])}</td><td>{E(REACH[f['repair']['reachable_by_deletion']])}</td></tr>""" for f in forms)

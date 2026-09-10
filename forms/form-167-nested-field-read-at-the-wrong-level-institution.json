@@ -1,6 +1,6 @@
 {
   "id": "form-167",
-  "version": 1,
+  "version": 2,
   "name": "Nested field read at the wrong level (institutions under authorships)",
   "origin": {
     "organisation": "Loxyn SAS, Lyon",
@@ -8,7 +8,7 @@
     "contact": "contact@loxyn.ai"
   },
   "damage": "MISSING",
-  "class": "UNCLASSIFIED",
+  "class": "DEFEATED",
   "layer": "② reading",
   "injection": "FORMAT",
   "status": "proposed",
@@ -30,7 +30,7 @@
   },
   "prevention": {
     "cancellable_by_code": true,
-    "refusal_clause": "a column written entirely empty is refused, never accepted as data"
+    "refusal_clause": "a column written entirely empty is refused, never accepted as data; the nested path is then read at the right level"
   },
   "repair": {
     "reachable_by_deletion": "no",
@@ -50,6 +50,11 @@
       "date": "2026-09-09",
       "event": "converted to a record; class, prevention and the novel/variant question left to the second reader",
       "by": "Fault Atlas"
+    },
+    {
+      "date": "2026-09-10",
+      "event": "class filled: UNCLASSIFIED → DEFEATED, with its prevention clause; classified by the first reader, awaiting the second reader's decision",
+      "by": "Fault Atlas maintainer (Loxyn)"
     }
   ]
 }

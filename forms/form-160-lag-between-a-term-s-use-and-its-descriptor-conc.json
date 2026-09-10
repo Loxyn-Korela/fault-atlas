@@ -1,6 +1,6 @@
 {
   "id": "form-160",
-  "version": 1,
+  "version": 2,
   "name": "Lag between a term's use and its descriptor (concept exists before its label)",
   "origin": {
     "organisation": "Loxyn SAS, Lyon",
@@ -50,6 +50,11 @@
       "date": "2026-09-09",
       "event": "converted to a record; class, prevention and the novel/variant question left to the second reader",
       "by": "Fault Atlas"
+    },
+    {
+      "date": "2026-09-10",
+      "event": "second reader: contested — the 3.7 figure is absent from v8",
+      "by": "Coralie Bagnol-Lebon"
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
   "id": "form-156",
-  "version": 1,
+  "version": 2,
   "name": "Citation targets outside the snapshot, and identifiers beyond 32 bits",
   "origin": {
     "organisation": "Loxyn SAS, Lyon",
@@ -8,7 +8,7 @@
     "contact": "contact@loxyn.ai"
   },
   "damage": "MISSING",
-  "class": "UNCLASSIFIED",
+  "class": "REFUSABLE",
   "layer": "⑨ structure",
   "injection": "DELETE",
   "status": "proposed",
@@ -30,7 +30,7 @@
   },
   "prevention": {
     "cancellable_by_code": true,
-    "refusal_clause": "a PMID beyond 32 bits is rejected, never guessed"
+    "refusal_clause": "a PMID beyond 32 bits is rejected, never guessed; a citation whose target is outside the snapshot is refused, not created blind"
   },
   "repair": {
     "reachable_by_deletion": "no",
@@ -52,6 +52,11 @@
       "date": "2026-09-09",
       "event": "converted to a record; class, prevention and the novel/variant question left to the second reader",
       "by": "Fault Atlas"
+    },
+    {
+      "date": "2026-09-10",
+      "event": "class filled: UNCLASSIFIED → REFUSABLE, with its prevention clause; classified by the first reader, awaiting the second reader's decision",
+      "by": "Fault Atlas maintainer (Loxyn)"
     }
   ]
 }
