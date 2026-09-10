@@ -7,6 +7,10 @@
 - Validator with house rules; proves itself on seven planted faults.
 - SQLite view builder for Datasette.
 
+## 0.6.1 — 2026-09-10
+- Four forms the August verdicts on scripts and on rare genres had found and the atlas had never carried. They are faults, not fields, so they enter as forms: **form-187** a retraction notice carries the title of the article it withdraws (25 of the 33 notices in the corpus, and 9 record a disagreement about their own conclusion — probed, reproducible); **form-188** no word boundary in the writing system, with the irreversible case of a name transliterated into katakana; **form-189** case does not exist, a sensor disappears, and its Latin-script mirror where the signal lies instead of missing; **form-190** reading direction inverts the template, a page range 112-129 displayed 129-112.
+- The last three carry a reserve: the documents of that wave were not kept by identifier, so they have no reproducible example.
+
 ## 0.6.0 — 2026-09-10
 - **Eras.** The August campaigns had measured when each difficulty applies — 45 PDFs of 1957-1987 against 15 of 2023-2026 — and the atlas had never carried it. 40 forms now declare their era with the measurement that settled it: 6 in old documents only, 19 in both (3 of them worse now), 14 born with the modern era, 1 not settled. New `era` field, a filter on the list, a section on each form page.
 - One classification refuted twice the same day is recorded as such: the non-standard decimal separator, declared dead on 15 modern PDFs, then found alive in a 2023 West African journal and a 2026 systematic review. Fifteen modern PDFs were not enough.

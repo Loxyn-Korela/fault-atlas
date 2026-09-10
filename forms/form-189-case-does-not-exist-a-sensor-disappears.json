@@ -1,0 +1,54 @@
+{
+  "id": "form-189",
+  "version": 1,
+  "name": "Case does not exist: a sensor disappears",
+  "name_fr": "La casse n'existe pas : un capteur disparaît",
+  "origin": {
+    "organisation": "Loxyn SAS, Lyon",
+    "campaign": "August 2026 — observation campaign, verdicts on scripts and on rare genres (2026-08-08)",
+    "contact": "contact@loxyn.ai"
+  },
+  "damage": "MISSING",
+  "class": "SILENT_FALSE",
+  "layer": "② reading",
+  "injection": "FORMAT",
+  "status": "proposed",
+  "seen": [
+    {
+      "corpus": "observation 2026-08 — 19 documents in 8 non-Latin scripts",
+      "date": "2026-08-08",
+      "observer": "house observer (LLM agent), August 2026 campaign",
+      "organisation": "Loxyn SAS, Lyon",
+      "lang": "fr",
+      "excerpt": "Devanagari, Thai, Arabic, Hangul, Han, Kana carry no case. Every rule that leans on a capital to mark a proper noun or the start of a sentence falls to zero. It is not an added difficulty: it is a sensor that disappears — and code that was measured on Latin script cannot see that it has lost it. The symmetric case, worse, is in Latin script: a Danish journal whose running head reads « d e r  v o l l k o MMe n e  c a Pe l l Me is Te r ». There the signal was missing; here it lies.",
+      "reserve": "observation cited from the August campaign; the documents of that wave were not kept by identifier, so this form has no reproducible example yet"
+    }
+  ],
+  "specimens": {
+    "cases": [],
+    "counter_examples": []
+  },
+  "prevention": {
+    "cancellable_by_code": true,
+    "refusal_clause": "declare the script of the document and disable every case-dependent rule outside the scripts that carry case, rather than letting it return nothing"
+  },
+  "repair": {
+    "reachable_by_deletion": "no",
+    "note": "nothing to delete: the graph is simply empty where the rule was blind; classified by judgment, not measured"
+  },
+  "judgeable_by": [
+    "construction",
+    "curated"
+  ],
+  "related": [
+    "form-023",
+    "form-064"
+  ],
+  "history": [
+    {
+      "date": "2026-09-10",
+      "event": "created from the August 2026 verdicts on scripts and on rare genres, which the atlas had never carried",
+      "by": "Fault Atlas maintainer"
+    }
+  ]
+}

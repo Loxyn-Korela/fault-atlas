@@ -1,0 +1,54 @@
+{
+  "id": "form-188",
+  "version": 1,
+  "name": "No word boundary in the writing system",
+  "name_fr": "La frontière de mot n'existe pas dans l'écriture",
+  "origin": {
+    "organisation": "Loxyn SAS, Lyon",
+    "campaign": "August 2026 — observation campaign, verdicts on scripts and on rare genres (2026-08-08)",
+    "contact": "contact@loxyn.ai"
+  },
+  "damage": "SPLIT",
+  "class": "IRREDUCIBLE",
+  "layer": "② reading",
+  "injection": "FORMAT",
+  "status": "proposed",
+  "seen": [
+    {
+      "corpus": "observation 2026-08 — 19 documents in 8 non-Latin scripts (Japanese, Korean, Arabic, Thai, Cyrillic, Devanagari, Han, polytonic Greek), 17 platforms outside the mainstream (J-STAGE, ThaiJO, journals of Mali, Algeria, Argentina, Brazil, North Macedonia)",
+      "date": "2026-08-08",
+      "observer": "house observer (LLM agent), August 2026 campaign",
+      "organisation": "Loxyn SAS, Lyon",
+      "lang": "fr",
+      "excerpt": "Japanese, Chinese, Thai: this is not « words that are harder to segment », the information was never written into the file. And the irreversible case, measured on 2026-08-08: a Western name transliterated into katakana, エルンストデイヴィットヘルプシュレブ = Ernst David Herbschleb — three words, sixteen characters, zero boundary. No treatment can restore the original name.",
+      "reserve": "observation cited from the August campaign; the documents of that wave were not kept by identifier, so this form has no reproducible example yet"
+    }
+  ],
+  "specimens": {
+    "cases": [],
+    "counter_examples": []
+  },
+  "prevention": {
+    "cancellable_by_code": false,
+    "note": "a boundary that was never written cannot be recovered by a rule; a dictionary can guess, and a guess is not a boundary"
+  },
+  "repair": {
+    "reachable_by_deletion": "no",
+    "note": "deletion cannot restore a boundary that was never there; classified by judgment, not measured"
+  },
+  "judgeable_by": [
+    "curated",
+    "closed_world"
+  ],
+  "related": [
+    "form-021",
+    "form-026"
+  ],
+  "history": [
+    {
+      "date": "2026-09-10",
+      "event": "created from the August 2026 verdicts on scripts and on rare genres, which the atlas had never carried",
+      "by": "Fault Atlas maintainer"
+    }
+  ]
+}

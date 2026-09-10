@@ -1,0 +1,54 @@
+{
+  "id": "form-190",
+  "version": 1,
+  "name": "Reading direction inverts the template",
+  "name_fr": "Le sens de lecture inverse le gabarit",
+  "origin": {
+    "organisation": "Loxyn SAS, Lyon",
+    "campaign": "August 2026 — observation campaign, verdicts on scripts and on rare genres (2026-08-08)",
+    "contact": "contact@loxyn.ai"
+  },
+  "damage": "WRONG_VALUE",
+  "class": "DEFEATED_IF_XML",
+  "layer": "① pixel + ② reading",
+  "injection": "FORMAT",
+  "status": "proposed",
+  "seen": [
+    {
+      "corpus": "observation 2026-08 — 19 documents in 8 non-Latin scripts",
+      "date": "2026-08-08",
+      "observer": "house observer (LLM agent), August 2026 campaign",
+      "organisation": "Loxyn SAS, Lyon",
+      "lang": "fr",
+      "excerpt": "In Arabic the page number changes corner, the order of the metadata fields is reversed, the asterisk moves in front of the name — and a page range 112-129 is displayed as 129-112. A sort by position on the page returns the reverse of the right order, silently, and the value that comes out is wrong rather than missing.",
+      "reserve": "observation cited from the August campaign; the documents of that wave were not kept by identifier, so this form has no reproducible example yet"
+    }
+  ],
+  "specimens": {
+    "cases": [],
+    "counter_examples": []
+  },
+  "prevention": {
+    "cancellable_by_code": true,
+    "refusal_clause": "read the direction declared by the document and never infer order from position on the page; in a structured source the order is in the markup, not in the coordinates"
+  },
+  "repair": {
+    "reachable_by_deletion": "no",
+    "note": "a reversed range is a wrong value, not a spurious edge; classified by judgment, not measured"
+  },
+  "judgeable_by": [
+    "construction",
+    "registry"
+  ],
+  "related": [
+    "form-077",
+    "form-082"
+  ],
+  "history": [
+    {
+      "date": "2026-09-10",
+      "event": "created from the August 2026 verdicts on scripts and on rare genres, which the atlas had never carried",
+      "by": "Fault Atlas maintainer"
+    }
+  ]
+}
