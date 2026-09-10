@@ -59,6 +59,28 @@ The file is the truth. Software reads it; software never completes it from memor
 
 The 272 Europe PMC articles of the August observation are listed by PMC identifier in `corpora/europe-pmc-jats-2023-2026-272.json`, with the selection queries, the sha256 of each file as read on 2026-08-08 and the licence found in it; a frozen copy of the 267 redistributable files is prepared for Zenodo. There is no corpus page and no probes page on the site: each form links the documents where the fault sits and, folded, the code that found them and the record behind them. Every August form has `status: migrated_unreviewed` and every September form `status: proposed`. A second reader validates or contests each one before it becomes `validated`. Where a September form overlaps an August one, the `related` field says so; the novel/variant decision is the reader's, not the machine's.
 
+## Eras
+
+A form has a period of validity, and a bench that ignores it measures the wrong thing. Measured on
+2026-08-08, 45 PDFs of 1957-1987 against 15 of 2023-2026, 174 pages, 9 publishers:
+
+| | forms |
+|---|---|
+| **ancient documents only** — the difficulty is gone from current publishing | 6 (drop cap, gathering signature, the dot inside a unit, scans, the three PDF regimes, content added by digitisation) |
+| **both eras** — behaves the same in 1957 and in 2026 | 19, and three of them are *worse* now: the fact in the figure, multiple dates, editorial metadata |
+| **born with the modern era** — no ancestor at all | 14 (several DOIs, partial ORCID, structured abstract, pre-registration, forest plot as image, colour scale, absent supplementary material, author declarations, licence on page 1, open peer-review furniture, Crossmark badge, Unicode traps in native PDF, coloured hyperlinks, dotted running head) |
+| **not settled** — the sample was too small | 1 |
+| not recorded yet | 118 |
+
+*A corpus built on the old would measure robustness to OCR — a skill current science never calls
+for. A corpus built only on the modern would never exercise the six that are dead.*
+
+One classification was **refuted, twice, on the same day**: the non-standard decimal separator was
+declared dead on the 15 modern PDFs, then found alive in a 2023 West African journal (a French
+abstract writing 10,6 % where its own English summary writes 10.6 %) and in a 2026 systematic
+review (-1,97 on one line, -1.97 on the next, in the same table). The lesson is on the form:
+fifteen modern PDFs were not enough to declare a convention dead.
+
 ## Rules
 
 1. A form enters with a verbatim excerpt from a named corpus, or it is a hypothesis, not an observation.
