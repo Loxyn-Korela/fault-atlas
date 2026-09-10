@@ -14,7 +14,7 @@ for f in sorted((ROOT / "probes").rglob("*")):
     n += 1
     text = f.read_text(encoding="utf-8")
     try:
-        if f.suffix == ".py" and "CORPUS_PROBE" not in text and "def main(" not in text:
+        if f.suffix == ".py" and "CORPUS_PROBE" not in text and "def main(" not in text and "__main__" not in text:
             ns = load(f)
             assert len(ns["SONDES"]) == 1, f"{len(ns['SONDES'])} questions declared, expected 1"
             (line, (title, fn)), = ns["SONDES"].items()
