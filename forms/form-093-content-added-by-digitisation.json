@@ -1,6 +1,6 @@
 {
   "id": "form-093",
-  "version": 1,
+  "version": 2,
   "legacy_line": 93,
   "name": "Content added by digitisation",
   "name_fr": "Contenu ajouté par la numérisation",
@@ -59,6 +59,11 @@
     {
       "date": "2026-09-09",
       "event": "exact probe attached to the 272-file observation: probes/2026-08/line-093.py (rewritten from the campaign's inline script), re-run 25/272 (excerpt figure differs, both kept)",
+      "by": "Fault Atlas maintainer"
+    },
+    {
+      "date": "2026-09-10",
+      "event": "era recorded: ancient_only — dead in that form, replaced by furniture added by the publisher (see form-117, the Crossmark badge) (from the August verdicts, which the atlas had not carried)",
       "by": "Fault Atlas maintainer"
     }
   ],
@@ -162,5 +167,11 @@
       "matches_excerpt": false,
       "note": "The regex matches 25 documents; the excerpt's 0/272 is a human reading of those matches (publisher lines and one physics sentence, not digitisation stamps). Raw matches and reviewed zero both kept."
     }
-  ]
+  ],
+  "era": {
+    "value": "ancient_only",
+    "measured": "2026-09-10",
+    "source": "VERDICT — the old against the modern, 2026-08-08: 45 PDFs of 1957-1987 against 15 PDFs of 2023-2026, 174 pages, 9 publishers. Its own stated limits: 13 of the 15 modern are biomedical, 100 % English, 100 % open access — a channel that excludes scans, truncated and subscription articles by construction.",
+    "note": "dead in that form, replaced by furniture added by the publisher (see form-117, the Crossmark badge)"
+  }
 }

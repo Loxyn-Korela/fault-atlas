@@ -1,6 +1,6 @@
 {
   "id": "form-068",
-  "version": 2,
+  "version": 3,
   "legacy_line": 68,
   "name": "The fact is in the figure",
   "name_fr": "Le fait est dans la figure",
@@ -70,6 +70,11 @@
       "date": "2026-09-10",
       "event": "second reader: validated — read in full with the record: a dated measurement, a named corpus, real forms",
       "by": "Coralie Bagnol-Lebon"
+    },
+    {
+      "date": "2026-09-10",
+      "event": "era recorded: both — the worst case measured that day: a meta-analysis page renders 302 characters of text — two captions — for two (from the August verdicts, which the atlas had not carried)",
+      "by": "Fault Atlas maintainer"
     }
   ],
   "probes": [
@@ -183,5 +188,12 @@
       "note": "The figure quoted in the excerpt was counted on 2026-08-08 by a finer, hand-run measurement whose code was not kept; this probe is the one that was kept, and its figure is the one that can be re-run. Both stand, dated."
     }
   ],
-  "observer_agreement": "2/2 — first reader (Loxyn, August/September classification) and second reader (Coralie Bagnol-Lebon, 2026-09-10)"
+  "observer_agreement": "2/2 — first reader (Loxyn, August/September classification) and second reader (Coralie Bagnol-Lebon, 2026-09-10)",
+  "era": {
+    "value": "both",
+    "measured": "2026-09-10",
+    "source": "VERDICT — the old against the modern, 2026-08-08: 45 PDFs of 1957-1987 against 15 PDFs of 2023-2026, 174 pages, 9 publishers. Its own stated limits: 13 of the 15 modern are biomedical, 100 % English, 100 % open access — a channel that excludes scans, truncated and subscription articles by construction.",
+    "note": "the worst case measured that day: a meta-analysis page renders 302 characters of text — two captions — for two images of 1947×1671 and 2598×2066 pixels; the 16 result lines of the forest plot are in the pixels",
+    "aggravated_by_the_modern": true
+  }
 }

@@ -1,6 +1,6 @@
 {
   "id": "form-108",
-  "version": 1,
+  "version": 2,
   "legacy_line": 108,
   "name": "Partial ORCID",
   "name_fr": "ORCID partiel",
@@ -64,6 +64,17 @@
       "date": "2026-09-09",
       "event": "probe-based observation withdrawn after independent review: probe returns complete ORCIDs, not partial ones",
       "by": "Fault Atlas maintainer"
+    },
+    {
+      "date": "2026-09-10",
+      "event": "era recorded: born_modern — one of the fourteen difficulties born with the modern era; it had no line in the catalogue before 2026-08-08 (from the August verdicts, which the atlas had not carried)",
+      "by": "Fault Atlas maintainer"
     }
-  ]
+  ],
+  "era": {
+    "value": "born_modern",
+    "measured": "2026-09-10",
+    "source": "VERDICT — the old against the modern, 2026-08-08: 45 PDFs of 1957-1987 against 15 PDFs of 2023-2026, 174 pages, 9 publishers. Its own stated limits: 13 of the 15 modern are biomedical, 100 % English, 100 % open access — a channel that excludes scans, truncated and subscription articles by construction.",
+    "note": "one of the fourteen difficulties born with the modern era; it had no line in the catalogue before 2026-08-08"
+  }
 }

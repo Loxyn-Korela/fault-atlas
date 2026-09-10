@@ -1,6 +1,6 @@
 {
   "id": "form-085",
-  "version": 1,
+  "version": 2,
   "legacy_line": 85,
   "name": "Non-standard decimal separator",
   "name_fr": "Séparateur décimal non standard",
@@ -73,6 +73,11 @@
     {
       "date": "2026-09-09",
       "event": "second observation added from the exact probe on the 272 files: probes/2026-08/line-085.py, 54/272",
+      "by": "Fault Atlas maintainer"
+    },
+    {
+      "date": "2026-09-10",
+      "event": "era recorded: both — declared DEAD on the 15 modern PDFs, then REFUTED twice the same day, independently: a 2023 West African journ (from the August verdicts, which the atlas had not carried)",
       "by": "Fault Atlas maintainer"
     }
   ],
@@ -187,5 +192,11 @@
       },
       "matches_excerpt": true
     }
-  ]
+  ],
+  "era": {
+    "value": "both",
+    "measured": "2026-09-10",
+    "source": "VERDICT — the old against the modern, 2026-08-08: 45 PDFs of 1957-1987 against 15 PDFs of 2023-2026, 174 pages, 9 publishers. Its own stated limits: 13 of the 15 modern are biomedical, 100 % English, 100 % open access — a channel that excludes scans, truncated and subscription articles by construction.",
+    "note": "declared DEAD on the 15 modern PDFs, then REFUTED twice the same day, independently: a 2023 West African journal carries « 10,6 % » in its French abstract and « 10.6 % » in its English summary, the same figure with two separators inside one document; and a 2026 systematic review carries -1,97 on one line and -1.97 on the next, in the same table. Lesson kept: fifteen modern PDFs were not enough to declare a convention dead."
+  }
 }

@@ -1,6 +1,6 @@
 {
   "id": "form-103",
-  "version": 1,
+  "version": 2,
   "legacy_line": 103,
   "name": "Significance marker with two meanings",
   "name_fr": "Marqueur de significativité à double sens",
@@ -58,6 +58,17 @@
       "date": "2026-09-09",
       "event": "internal tool paths removed from observation notes before publication; wording otherwise unchanged",
       "by": "Fault Atlas"
+    },
+    {
+      "date": "2026-09-10",
+      "event": "era recorded: both — the notation is dead (0 textual occurrence of + ++ +++), the parameter is alive: 105 ordinal values as coloure (from the August verdicts, which the atlas had not carried)",
+      "by": "Fault Atlas maintainer"
     }
-  ]
+  ],
+  "era": {
+    "value": "both",
+    "measured": "2026-09-10",
+    "source": "VERDICT — the old against the modern, 2026-08-08: 45 PDFs of 1957-1987 against 15 PDFs of 2023-2026, 174 pages, 9 publishers. Its own stated limits: 13 of the 15 modern are biomedical, 100 % English, 100 % open access — a channel that excludes scans, truncated and subscription articles by construction.",
+    "note": "the notation is dead (0 textual occurrence of + ++ +++), the parameter is alive: 105 ordinal values as coloured dots, none in text"
+  }
 }

@@ -1,6 +1,6 @@
 {
   "id": "form-106",
-  "version": 3,
+  "version": 4,
   "legacy_line": 106,
   "name": "Signature mark of a gathering",
   "name_fr": "Signature de cahier",
@@ -70,6 +70,11 @@
       "date": "2026-09-10",
       "event": "second reader: validated — read in full with the record: a dated measurement, a named corpus, real forms",
       "by": "Coralie Bagnol-Lebon"
+    },
+    {
+      "date": "2026-09-10",
+      "event": "era recorded: ancient_only — 0. There are no gatherings any more: PDF and print on demand (from the August verdicts, which the atlas had not carried)",
+      "by": "Fault Atlas maintainer"
     }
   ],
   "observed_absent_in": [
@@ -95,5 +100,11 @@
       "note": "Measured absent: the probe finds no carrier among the 272 files. An absence is a result, dated."
     }
   ],
-  "observer_agreement": "2/2 — first reader (Loxyn, August/September classification) and second reader (Coralie Bagnol-Lebon, 2026-09-10)"
+  "observer_agreement": "2/2 — first reader (Loxyn, August/September classification) and second reader (Coralie Bagnol-Lebon, 2026-09-10)",
+  "era": {
+    "value": "ancient_only",
+    "measured": "2026-09-10",
+    "source": "VERDICT — the old against the modern, 2026-08-08: 45 PDFs of 1957-1987 against 15 PDFs of 2023-2026, 174 pages, 9 publishers. Its own stated limits: 13 of the 15 modern are biomedical, 100 % English, 100 % open access — a channel that excludes scans, truncated and subscription articles by construction.",
+    "note": "0. There are no gatherings any more: PDF and print on demand"
+  }
 }

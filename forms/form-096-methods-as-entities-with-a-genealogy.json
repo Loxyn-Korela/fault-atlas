@@ -1,6 +1,6 @@
 {
   "id": "form-096",
-  "version": 1,
+  "version": 2,
   "legacy_line": 96,
   "name": "Methods as entities with a genealogy",
   "name_fr": "Les méthodes sont des entités avec généalogie",
@@ -55,6 +55,16 @@
       "date": "2026-09-09",
       "event": "migrated; classified damage=SPLIT injection=RENAME (judgment, unreviewed by a second reader)",
       "by": "Fault Atlas migration"
+    },
+    {
+      "date": "2026-09-10",
+      "event": "era recorded: both (from the August verdicts, which the atlas had not carried)",
+      "by": "Fault Atlas maintainer"
     }
-  ]
+  ],
+  "era": {
+    "value": "both",
+    "measured": "2026-09-10",
+    "source": "VERDICT — the old against the modern, 2026-08-08: 45 PDFs of 1957-1987 against 15 PDFs of 2023-2026, 174 pages, 9 publishers. Its own stated limits: 13 of the 15 modern are biomedical, 100 % English, 100 % open access — a channel that excludes scans, truncated and subscription articles by construction."
+  }
 }

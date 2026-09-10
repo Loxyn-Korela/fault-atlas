@@ -1,6 +1,6 @@
 {
   "id": "form-117",
-  "version": 2,
+  "version": 3,
   "legacy_line": 117,
   "name": "Crossmark badge (retraction status)",
   "name_fr": "Badge Crossmark",
@@ -78,6 +78,11 @@
     {
       "date": "2026-09-09",
       "event": "second observation added from the exact probe on the 272 files: probes/2026-08/line-117.py, 35/272",
+      "by": "Fault Atlas maintainer"
+    },
+    {
+      "date": "2026-09-10",
+      "event": "era recorded: born_modern — one of the fourteen difficulties born with the modern era; it had no line in the catalogue before 2026-08-08 (from the August verdicts, which the atlas had not carried)",
       "by": "Fault Atlas maintainer"
     }
   ],
@@ -181,5 +186,11 @@
       },
       "matches_excerpt": true
     }
-  ]
+  ],
+  "era": {
+    "value": "born_modern",
+    "measured": "2026-09-10",
+    "source": "VERDICT — the old against the modern, 2026-08-08: 45 PDFs of 1957-1987 against 15 PDFs of 2023-2026, 174 pages, 9 publishers. Its own stated limits: 13 of the 15 modern are biomedical, 100 % English, 100 % open access — a channel that excludes scans, truncated and subscription articles by construction.",
+    "note": "one of the fourteen difficulties born with the modern era; it had no line in the catalogue before 2026-08-08"
+  }
 }

@@ -440,6 +440,43 @@
           }
         }
       }
+    },
+    "era": {
+      "type": "object",
+      "description": "When the form applies. A dead difficulty is never thrown away: it takes the domain 'ancient' and serves whoever reads archives. Measured, never assumed.",
+      "required": [
+        "value",
+        "measured",
+        "source"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "type": "string",
+          "enum": [
+            "ancient_only",
+            "both",
+            "born_modern",
+            "not_settled"
+          ],
+          "description": "ancient_only: gone from current documents (a workshop convention that disappeared). both: behaves the same in 1957 and in 2026. born_modern: has no ancestor, it came with digital publishing. not_settled: the sample was too small to say."
+        },
+        "measured": {
+          "type": "string",
+          "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"
+        },
+        "source": {
+          "type": "string",
+          "description": "The campaign that settled it, with its corpus and its own stated limits."
+        },
+        "note": {
+          "type": "string"
+        },
+        "aggravated_by_the_modern": {
+          "type": "boolean",
+          "description": "Crosses both eras and is worse now than it was."
+        }
+      }
     }
   }
 }

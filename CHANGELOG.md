@@ -7,6 +7,10 @@
 - Validator with house rules; proves itself on seven planted faults.
 - SQLite view builder for Datasette.
 
+## 0.6.0 — 2026-09-10
+- **Eras.** The August campaigns had measured when each difficulty applies — 45 PDFs of 1957-1987 against 15 of 2023-2026 — and the atlas had never carried it. 40 forms now declare their era with the measurement that settled it: 6 in old documents only, 19 in both (3 of them worse now), 14 born with the modern era, 1 not settled. New `era` field, a filter on the list, a section on each form page.
+- One classification refuted twice the same day is recorded as such: the non-standard decimal separator, declared dead on 15 modern PDFs, then found alive in a 2023 West African journal and a 2026 systematic review. Fifteen modern PDFs were not enough.
+
 ## 0.5.1 — 2026-09-10
 - The list carries the date of the most recent observation, is sorted most recent first, and every column sorts on a click.
 

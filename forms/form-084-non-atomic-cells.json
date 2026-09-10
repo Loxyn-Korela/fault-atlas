@@ -1,6 +1,6 @@
 {
   "id": "form-084",
-  "version": 1,
+  "version": 2,
   "legacy_line": 84,
   "name": "Non-atomic cells",
   "name_fr": "Cellules non atomiques",
@@ -65,6 +65,11 @@
     {
       "date": "2026-09-09",
       "event": "exact probe attached to the 272-file observation: probes/2026-08/line-084.py, re-run 70/272 (excerpt figure differs, both kept)",
+      "by": "Fault Atlas maintainer"
+    },
+    {
+      "date": "2026-09-10",
+      "event": "era recorded: both (from the August verdicts, which the atlas had not carried)",
       "by": "Fault Atlas maintainer"
     }
   ],
@@ -180,5 +185,10 @@
       "matches_excerpt": false,
       "note": "The figure quoted in the excerpt was counted on 2026-08-08 by a finer, hand-run measurement whose code was not kept; this probe is the one that was kept, and its figure is the one that can be re-run. Both stand, dated."
     }
-  ]
+  ],
+  "era": {
+    "value": "both",
+    "measured": "2026-09-10",
+    "source": "VERDICT — the old against the modern, 2026-08-08: 45 PDFs of 1957-1987 against 15 PDFs of 2023-2026, 174 pages, 9 publishers. Its own stated limits: 13 of the 15 modern are biomedical, 100 % English, 100 % open access — a channel that excludes scans, truncated and subscription articles by construction."
+  }
 }
