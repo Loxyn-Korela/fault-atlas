@@ -70,7 +70,7 @@ A form has a period of validity, and a bench that ignores it measures the wrong 
 | **both eras** — behaves the same in 1957 and in 2026 | 19, and three of them are *worse* now: the fact in the figure, multiple dates, editorial metadata |
 | **born with the modern era** — no ancestor at all | 14 (several DOIs, partial ORCID, structured abstract, pre-registration, forest plot as image, colour scale, absent supplementary material, author declarations, licence on page 1, open peer-review furniture, Crossmark badge, Unicode traps in native PDF, coloured hyperlinks, dotted running head) |
 | **not settled** — the sample was too small | 1 |
-| not recorded yet | 118 |
+| **era not measured** — the form was not among the forty-three lines confronted that day | 122, and the site now says so on each of them instead of leaving the field blank |
 
 *A corpus built on the old would measure robustness to OCR — a skill current science never calls
 for. A corpus built only on the modern would never exercise the six that are dead.*
