@@ -30,7 +30,8 @@
   },
   "prevention": {
     "cancellable_by_code": true,
-    "refusal_clause": "the snapshot bound is known: no coverage claim is made past it, and annotations for records newer than the bound are counted apart, never read as a decline"
+    "refusal_clause": "the snapshot bound is known: no coverage claim is made past it, and annotations for records newer than the bound are counted apart, never read as a decline",
+    "refusal_clause_fr": "la borne de l'instantané est connue : aucune affirmation de couverture au-delà, et les annotations de fiches plus récentes que la borne sont comptées à part, jamais lues comme un déclin"
   },
   "repair": {
     "reachable_by_deletion": "no",

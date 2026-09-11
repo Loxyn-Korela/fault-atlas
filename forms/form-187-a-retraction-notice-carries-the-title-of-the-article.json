@@ -31,7 +31,8 @@
   },
   "prevention": {
     "cancellable_by_code": true,
-    "refusal_clause": "a document whose article-type is a retraction is never read as an assertion of its own title; the withdrawn article is reached through the typed link (Europe PMC exposes pubType 'Retracted Publication' and a typed 'Retraction in' link), never through the text"
+    "refusal_clause": "a document whose article-type is a retraction is never read as an assertion of its own title; the withdrawn article is reached through the typed link (Europe PMC exposes pubType 'Retracted Publication' and a typed 'Retraction in' link), never through the text",
+    "refusal_clause_fr": "un document dont le type est une rétractation n'est jamais lu comme affirmant son propre titre ; l'article retiré s'atteint par le lien typé (Europe PMC expose le pubType « Retracted Publication » et un lien typé « Retraction in »), jamais par le texte"
   },
   "repair": {
     "reachable_by_deletion": "yes",

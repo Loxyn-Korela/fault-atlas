@@ -30,7 +30,8 @@
   },
   "prevention": {
     "cancellable_by_code": true,
-    "refusal_clause": "read the direction declared by the document and never infer order from position on the page; in a structured source the order is in the markup, not in the coordinates"
+    "refusal_clause": "read the direction declared by the document and never infer order from position on the page; in a structured source the order is in the markup, not in the coordinates",
+    "refusal_clause_fr": "lire la direction déclarée par le document et ne jamais déduire l'ordre de la position sur la page ; dans une source structurée, l'ordre est dans le balisage, pas dans les coordonnées"
   },
   "repair": {
     "reachable_by_deletion": "no",

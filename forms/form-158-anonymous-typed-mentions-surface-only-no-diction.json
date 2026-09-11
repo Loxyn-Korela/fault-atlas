@@ -30,7 +30,8 @@
   },
   "prevention": {
     "cancellable_by_code": true,
-    "refusal_clause": "a typed mention without a dictionary entry is kept as a surface, never resolved to an entity by guess; the anonymous share is declared"
+    "refusal_clause": "a typed mention without a dictionary entry is kept as a surface, never resolved to an entity by guess; the anonymous share is declared",
+    "refusal_clause_fr": "une mention typée sans entrée au dictionnaire reste une surface, jamais résolue en entité par supposition ; la part anonyme est déclarée"
   },
   "repair": {
     "reachable_by_deletion": "no",

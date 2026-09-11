@@ -30,7 +30,8 @@
   },
   "prevention": {
     "cancellable_by_code": true,
-    "refusal_clause": "read surface.u8 first; a line with surface=1 is never an entity id"
+    "refusal_clause": "read surface.u8 first; a line with surface=1 is never an entity id",
+    "refusal_clause_fr": "lire surface.u8 d'abord ; une ligne à surface=1 n'est jamais un identifiant d'entité"
   },
   "repair": {
     "reachable_by_deletion": "partial",

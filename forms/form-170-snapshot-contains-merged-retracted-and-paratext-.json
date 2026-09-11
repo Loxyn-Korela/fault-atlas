@@ -30,7 +30,8 @@
   },
   "prevention": {
     "cancellable_by_code": true,
-    "refusal_clause": "records flagged merged, retracted or paratext are excluded by their own flags"
+    "refusal_clause": "records flagged merged, retracted or paratext are excluded by their own flags",
+    "refusal_clause_fr": "les fiches marquées fusionnées, rétractées ou paratexte sont écartées par leurs propres marqueurs"
   },
   "repair": {
     "reachable_by_deletion": "no",

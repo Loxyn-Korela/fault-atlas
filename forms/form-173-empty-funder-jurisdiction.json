@@ -30,7 +30,8 @@
   },
   "prevention": {
     "cancellable_by_code": true,
-    "refusal_clause": "an empty jurisdiction is refused as a value, never treated as a country"
+    "refusal_clause": "an empty jurisdiction is refused as a value, never treated as a country",
+    "refusal_clause_fr": "une juridiction vide est refusée comme valeur, jamais traitée comme un pays"
   },
   "repair": {
     "reachable_by_deletion": "no",

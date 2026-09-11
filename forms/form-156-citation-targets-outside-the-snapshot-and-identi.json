@@ -30,7 +30,8 @@
   },
   "prevention": {
     "cancellable_by_code": true,
-    "refusal_clause": "a PMID beyond 32 bits is rejected, never guessed; a citation whose target is outside the snapshot is refused, not created blind"
+    "refusal_clause": "a PMID beyond 32 bits is rejected, never guessed; a citation whose target is outside the snapshot is refused, not created blind",
+    "refusal_clause_fr": "un PMID au-delà de 32 bits est rejeté, jamais deviné ; une citation dont la cible est hors de l'instantané est refusée, pas créée à l'aveugle"
   },
   "repair": {
     "reachable_by_deletion": "no",

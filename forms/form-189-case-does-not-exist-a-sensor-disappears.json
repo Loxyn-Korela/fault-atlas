@@ -30,7 +30,8 @@
   },
   "prevention": {
     "cancellable_by_code": true,
-    "refusal_clause": "declare the script of the document and disable every case-dependent rule outside the scripts that carry case, rather than letting it return nothing"
+    "refusal_clause": "declare the script of the document and disable every case-dependent rule outside the scripts that carry case, rather than letting it return nothing",
+    "refusal_clause_fr": "déclarer l'écriture du document et désactiver toute règle qui dépend de la casse hors des écritures qui en portent une, plutôt que de la laisser ne rien rendre"
   },
   "repair": {
     "reachable_by_deletion": "no",

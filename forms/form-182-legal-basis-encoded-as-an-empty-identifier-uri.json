@@ -40,7 +40,8 @@
   },
   "prevention": {
     "cancellable_by_code": true,
-    "refusal_clause": "an identifier URI with an empty local part is refused, never resolved to a node"
+    "refusal_clause": "an identifier URI with an empty local part is refused, never resolved to a node",
+    "refusal_clause_fr": "une URI d'identifiant à partie locale vide est refusée, jamais résolue en nœud"
   },
   "repair": {
     "reachable_by_deletion": "no",

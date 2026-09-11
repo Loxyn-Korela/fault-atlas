@@ -30,7 +30,8 @@
   },
   "prevention": {
     "cancellable_by_code": true,
-    "refusal_clause": "qnum is never read as a date"
+    "refusal_clause": "qnum is never read as a date",
+    "refusal_clause_fr": "le numéro Q n'est jamais lu comme une date"
   },
   "repair": {
     "reachable_by_deletion": "no",

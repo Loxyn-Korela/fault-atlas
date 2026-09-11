@@ -31,7 +31,8 @@
   },
   "prevention": {
     "cancellable_by_code": true,
-    "refusal_clause": "try each textual format in turn and record the MIME type actually served; a non-textual answer is recorded as such, never as an absence of the act"
+    "refusal_clause": "try each textual format in turn and record the MIME type actually served; a non-textual answer is recorded as such, never as an absence of the act",
+    "refusal_clause_fr": "essayer chaque format textuel à son tour et consigner le type MIME réellement servi ; une réponse non textuelle est consignée comme telle, jamais comme une absence de l'acte"
   },
   "repair": {
     "reachable_by_deletion": "no",

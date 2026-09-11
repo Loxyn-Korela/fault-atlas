@@ -30,7 +30,8 @@
   },
   "prevention": {
     "cancellable_by_code": true,
-    "refusal_clause": "count the records that carry keywords against the records that carry a title; declare the coverage, never treat an absence as an empty list"
+    "refusal_clause": "count the records that carry keywords against the records that carry a title; declare the coverage, never treat an absence as an empty list",
+    "refusal_clause_fr": "compter les fiches qui portent des mots-clés contre celles qui portent un titre ; déclarer la couverture, ne jamais prendre une absence pour une liste vide"
   },
   "repair": {
     "reachable_by_deletion": "no",

@@ -227,6 +227,7 @@
         "cancellable_by_code": {
           "type": "boolean"
         },
+        "refusal_clause_fr": {"type": "string"},
         "refusal_clause": {
           "type": "string",
           "description": "When the code cannot conclude, what it returns instead of guessing."

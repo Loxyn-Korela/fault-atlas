@@ -30,7 +30,8 @@
   },
   "prevention": {
     "cancellable_by_code": true,
-    "refusal_clause": "read the vocabulary's own creation dates and declare its span; a subject absent from a closed list is not a subject that does not exist"
+    "refusal_clause": "read the vocabulary's own creation dates and declare its span; a subject absent from a closed list is not a subject that does not exist",
+    "refusal_clause_fr": "lire les dates de création du vocabulaire lui-même et déclarer son étendue ; un sujet absent d'une liste fermée n'est pas un sujet qui n'existe pas"
   },
   "repair": {
     "reachable_by_deletion": "no",

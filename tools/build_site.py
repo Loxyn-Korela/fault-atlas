@@ -48,7 +48,13 @@ T = {
  "fails": {"en": "How it fails", "fr": "Comment elle échoue"},
  "applies": {"en": "When it applies", "fr": "Quand elle s'applique"},
  "switch": {"en": "\U0001F1EB\U0001F1F7", "fr": "\U0001F1EC\U0001F1E7"},
-    "see_here": {"en": "See it here", "fr": "Voyez-la ici"},
+      "from": {"en": "from:", "fr": "de :"},
+ "frozen_copy": {"en": "frozen copy of the files as read:", "fr": "copie gelée des fichiers tels que lus :"},
+ "explorer_row": {"en": "row in the data explorer", "fr": "sa ligne dans l'explorateur de données"},
+ "yes": {"en": "Yes", "fr": "Oui"},
+ "no": {"en": "No", "fr": "Non"},
+ "refusal": {"en": "Refusal clause:", "fr": "Clause de refus :"},
+ "see_here": {"en": "See it here", "fr": "Voyez-la ici"},
  "how_found": {"en": "How it was found: the query, the corpus, the date", "fr": "Comment elle a été trouvée : la requête, le corpus, la date"},
  "run": {"en": "Run:", "fr": "Lancer :"},
  "written": {"en": "written", "fr": "écrite le"},
@@ -161,7 +167,6 @@ CLASS_SHORT = ({"DEFEATED": "Cancelled by code", "DEFEATED_IF_XML": "Cancelled i
                 "SILENT_FALSE": "Silent false", "IRREDUCIBLE": "Irreducible", "UNCLASSIFIED": "Unclassified"} if LANG == "en" else
                {"DEFEATED": "Annulée par du code", "DEFEATED_IF_XML": "Annulée si XML", "REFUSABLE": "Peut s'abstenir",
                 "SILENT_FALSE": "Faux silencieux", "IRREDUCIBLE": "Irréductible", "UNCLASSIFIED": "Non classée"})
-JUDGE = {"construction": "truth by construction", "registry": "an official registry", "curated": "a curated database", "dated_future": "the dated future", "closed_world": "a closed world"}
 
 forms = [json.loads(f.read_text()) for f in sorted((ROOT/"forms").glob("*.json"))]
 def corpus_short(text):
@@ -304,23 +309,6 @@ proof_counts_docs = proof_counts["docs"]; proof_counts_none = proof_counts["none
 TH = "".join(('<th data-sort="text" class="sorted-desc">' if i==2 else '<th data-sort="text">')+html.escape(h)+"</th>" for i,h in enumerate(t("th")))
 from collections import Counter as _PC
 proof_counts = _PC(proof_of(f)[0] for f in forms)
-ABOUT_EN = f"""<section id="about" class="about"><h2>What a record says</h2>
-<div class="cols"><div><h3>Seven damages</h3><p>What a fault does to the graph: merge, split, spurious edge, missing, wrong value, wrong label, anachronism. The 113 difficulties observed in August 2026, however different they look, each produce one of these. Verified line by line.</p></div>
-<div><h3>Two counts, always together</h3><p>Each damage card shows two numbers: all forms, and forms that reach the graph. A form whose layer is pixel or reading — columns, drop caps, scanned pages — sits upstream and never reaches a repairer; every other layer does. No damage count is cited without its layer.</p></div>
-<div><h3>Layers</h3><p>Where the form bites: the pixel, the reading, the utterance, the extraction, the anchoring, the resolution, the schema, the coherence, the structure. A layout fault is a reading failure whose downstream effect on the graph is a missing fact: the damage says what happens to the graph, the layer says where it starts.</p></div>
-<div><h3>Four classes</h3><p>Whether deterministic code cancels the form before it enters the graph, can abstain on it, cannot see it from inside, or whether it needs meaning. Half of what was observed is cancelled by code once; the other half is the real benchmark.</p></div>
-<div><h3>Provenance, not opinion</h3><p>A form enters with a verbatim excerpt from a named corpus, a date, an observer. Cases come with counter-examples. A refuted form stays, marked refuted. Nothing is deleted.</p></div>
-<div><h3>Why it matters</h3><p>Graph repair is evaluated against constraints the graph must satisfy, not against what is true. The atlas is half of an answer key: the map of forms by damage, with the kind of truth that can judge each. The other half, the truth itself, is built on it.</p></div></div>
-"""
-ABOUT_FR = f"""<section id="about" class="about"><h2>Ce que dit une fiche</h2>
-<div class="cols"><div><h3>Sept dégâts</h3><p>Ce qu'une faute fait au graphe : fusion, scission, arête fausse, manque, mauvaise valeur, mauvaise étiquette, anachronisme. Les 113 difficultés observées en août 2026, si différentes soient-elles, produisent chacune l'un de ces sept. Vérifié ligne par ligne.</p></div>
-<div><h3>Deux comptes, toujours ensemble</h3><p>Chaque carte de dégât porte deux nombres : toutes les formes, et celles qui atteignent le graphe. Une forme dont la couche est le pixel ou la lecture — colonnes, lettrines, pages scannées — se tient en amont et n'arrive jamais jusqu'à un réparateur ; toutes les autres couches y arrivent. Aucun compte de dégât n'est cité sans sa couche.</p></div>
-<div><h3>Couches</h3><p>Là où la forme mord : le pixel, la lecture, l'énoncé, l'extraction, l'ancrage, la résolution, le schéma, la cohérence, la structure. Une faute de mise en page est un échec de lecture dont l'effet en aval est un fait manquant : le dégât dit ce qui arrive au graphe, la couche dit où ça commence.</p></div>
-<div><h3>Quatre classes</h3><p>Si du code déterministe annule la forme avant qu'elle n'entre dans le graphe, s'il peut s'abstenir, s'il ne peut pas la voir de l'intérieur, ou s'il faut du sens. La moitié de ce qui a été observé s'annule une fois par du code ; l'autre moitié est le vrai banc d'essai.</p></div>
-<div><h3>Provenance, pas opinion</h3><p>Une forme entre avec un extrait verbatim d'un corpus nommé, une date, un observateur. Les cas viennent avec des contre-exemples. Une forme réfutée reste, marquée réfutée. Rien n'est supprimé.</p></div>
-<div><h3>Pourquoi ça compte</h3><p>La réparation de graphes est évaluée contre des contraintes que le graphe doit satisfaire, pas contre ce qui est vrai. L'atlas est la moitié d'un corrigé : la carte des formes par dégât, avec la sorte de vérité qui peut juger chacune. L'autre moitié, la vérité elle-même, se construit dessus.</p></div></div>
-"""
-ABOUT = ABOUT_EN if LANG == "en" else ABOUT_FR
 proof_counts_docs = proof_counts["docs"]; proof_counts_none = proof_counts["none"]
 index = f"""
 <section class="hero"><p class="eyebrow">{E(t("eyebrow"))}</p>
@@ -407,7 +395,7 @@ for f in forms:
 {docs}
 <details class="code" open><summary>{E(t("how_found"))}</summary>
 <p class="meta">{E(t("run"))} <code>{E(pr.get('run',''))}</code> · <a href="{REPO}/blob/main/{E(pr['file'])}">{E(pr['file'])}</a>{(' · '+E(t('written'))+' '+E(pr['written'])) if pr.get('written') else ''}{(' · '+E(r['by'])) if r.get('by') else ''}</p>
-<p class="meta">{E(t("searched_in"))} {E(CORPUS_NAMES.get(pr['corpus_id'], pr['corpus_id']).split(' — ')[0])}{(', '+E(t('read_on'))+' '+E(CORPUS_REC[pr['corpus_id']]['harvested'])) if CORPUS_REC.get(pr['corpus_id'],{}).get('harvested') else ''} · identifiers, sha256 as read and licences: <a href="{REPO}/blob/main/corpora/{E(CORPUS_FILE[pr['corpus_id']])}">record</a>{(' · frozen copy of the files as read: <a href="'+E(CORPUS_REC[pr['corpus_id']]['frozen_copy']['url'])+'">doi:'+E(CORPUS_REC[pr['corpus_id']]['frozen_copy']['doi'])+'</a>') if CORPUS_REC.get(pr['corpus_id'],{}).get('frozen_copy',{}).get('doi') else ''}</p>
+<p class="meta">{E(t("searched_in"))} {E(CORPUS_NAMES.get(pr['corpus_id'], pr['corpus_id']).split(' — ')[0])}{(', '+E(t('read_on'))+' '+E(CORPUS_REC[pr['corpus_id']]['harvested'])) if CORPUS_REC.get(pr['corpus_id'],{}).get('harvested') else ''} · identifiers, sha256 as read and licences: <a href="{REPO}/blob/main/corpora/{E(CORPUS_FILE[pr['corpus_id']])}">record</a>{(' · '+E(t('frozen_copy'))+' <a href="'+E(CORPUS_REC[pr['corpus_id']]['frozen_copy']['url'])+'">doi:'+E(CORPUS_REC[pr['corpus_id']]['frozen_copy']['doi'])+'</a>') if CORPUS_REC.get(pr['corpus_id'],{}).get('frozen_copy',{}).get('doi') else ''}</p>
 <pre><code>{E(code)}</code></pre></details></div>"""
     seen = "".join(f"""<article class="obs"><p class="meta"><strong>{E(corpus_short(s['corpus']))}</strong> · {E(s['corpus'])} · {E(s['date'])}{(' · '+E(s['observer'])) if s.get('observer') else ''}{(' · '+E(s['organisation'])) if s.get('organisation') else ''}</p>
 <p>{E(s['excerpt'] if LANG=='fr' else s.get('excerpt_en', s['excerpt']))}</p>{('<details><summary>'+('English' if LANG=='fr' else 'Original note ('+E(s.get('lang','fr'))+')')+'</summary><p class="fr">'+E(s.get('excerpt_en','') if LANG=='fr' else s['excerpt'])+'</p></details>') if s.get('excerpt_en') and s.get('excerpt_en')!=s['excerpt'] else ''}{('<p class="noprobe">'+E(s['reserve'])+'</p>') if s.get('reserve') else ''}{probe_block(s.get('probe')) if s.get('probe') else ('<p class="noprobe">'+E(t('no_example_note'))+'</p>' if s.get('corpus_id') else '')}</article>""" for s in f["seen"]) or "<p class='muted'>"+html.escape(t('no_obs'))+"</p>"
@@ -417,9 +405,9 @@ for f in forms:
     prev = f["prevention"]; rep = f["repair"]
     body = f"""<p class="crumb"><a href="../index.html">Fault Atlas</a> › {E(f['id'])}</p>
 <h1>{E(nom(f))}</h1><p class="fr big">{E(f['name'] if LANG=='fr' else f.get('name_fr',''))}</p><p class="found">{E(t("found_by"))} <strong>{E(f.get("origin",{}).get("organisation","—"))}</strong>{(" — "+E(f["origin"]["campaign"])) if f.get("origin",{}).get("campaign") else ""}{(" · "+E(t("first_seen"))+" "+E(f["seen"][0]["date"])) if f["seen"] else ""}</p><p class="found">{E(t("seen_on"))}<strong>{E(" · ".join(corpora_of(f)) or t("no_obs_short"))}</strong></p>
-<div class="badges">{('<span class="pill" style="--c:'+SEVERITY[f["legacy_severity"]][1]+'">'+E(SEVERITY[f["legacy_severity"]][0])+'</span>') if f.get("legacy_severity") in SEVERITY else ''}{('<span class="pill era">'+E({"ancient_only":"ancient documents only","both":"both eras","born_modern":"born with the modern","not_settled":"era not settled"}[f["era"]["value"]])+('  ·  worse now' if f["era"].get("aggravated_by_the_modern") else '')+'</span>') if f.get("era") else ''}<span class="pill" style="--c:{d[2]}">{E(d[0])}</span><span class="pill grey">from: {E(f.get("origin",{}).get("organisation","—"))}</span><span class="pill grey">{E(CLASS[f['class']])}</span><span class="pill grey">layer: {E(f['layer'])}</span><span class="pill grey">injection: {E(f.get('injection','—'))}</span><span class="pill warn">{E(f['status'].replace('_',' '))}</span></div>
+<div class="badges">{('<span class="pill" style="--c:'+SEVERITY[f["legacy_severity"]][1]+'">'+E(SEVERITY[f["legacy_severity"]][0])+'</span>') if f.get("legacy_severity") in SEVERITY else ''}{('<span class="pill era">'+E({"ancient_only":"ancient documents only","both":"both eras","born_modern":"born with the modern","not_settled":"era not settled"}[f["era"]["value"]])+('  ·  worse now' if f["era"].get("aggravated_by_the_modern") else '')+'</span>') if f.get("era") else ''}<span class="pill" style="--c:{d[2]}">{E(d[0])}</span><span class="pill grey">{E(t("from"))} {E(f.get("origin",{}).get("organisation","—"))}</span><span class="pill grey">{E(CLASS[f['class']])}</span><span class="pill grey">layer: {E(f['layer'])}</span><span class="pill grey">injection: {E(f.get('injection','—'))}</span><span class="pill warn">{E(f['status'].replace('_',' '))}</span></div>
 <div class="facts"><div><h3>{E(t("h_damage"))}</h3><p><strong>{E(d[0])}</strong> — {E(d[1])}.</p></div>
-<div><h3>{E(t("h_cancel"))}</h3><p>{'Yes' if prev['cancellable_by_code'] else 'No'}{('. Refusal clause: '+E(prev['refusal_clause'])) if prev.get('refusal_clause') else ''}{('. '+E(prev['note'])) if prev.get('note') else ''}.</p></div>
+<div><h3>{E(t("h_cancel"))}</h3><p>{E(t('yes')) if prev['cancellable_by_code'] else E(t('no'))}{('. '+E(t('refusal'))+' '+E(prev.get('refusal_clause_fr') if LANG=='fr' else prev['refusal_clause'])) if prev.get('refusal_clause') else ''}{('. '+E(prev['note'])) if prev.get('note') else ''}.</p></div>
 <div><h3>{E(t("h_restore"))}<span class="opt">{E(t("classified"))}</span></h3><p><strong>{E(REACH[rep['reachable_by_deletion']])}</strong> — {E(REPAIR_NOTE[LANG].get(rep['reachable_by_deletion'], ''))}{'; '+E(REPAIR_SRC[LANG]) if 'derived from the damage class' in (rep.get('note') or '') else ''}.</p></div>
 <div><h3>{E(t("h_judge"))}</h3><p>{', '.join(E(JUDGE[j]) for j in f['judgeable_by']) or '<span class="muted">none known yet</span>'}.</p></div></div>
 {('<p class="muted small">Searched and not found in: '+E('; '.join(f['observed_absent_in']))+'.</p>') if f.get('observed_absent_in') else ''}
@@ -428,12 +416,12 @@ for f in forms:
 {('<div class="facts"><div><h3>'+E(t("costs"))+'</h3><p><strong>'+E(SEVERITY[f["legacy_severity"]][0])+'.</strong> '+E(SEVERITY[f["legacy_severity"]][2])+'</p><p class="meta">'+E(t('sev_meta')).replace('§', E(f["legacy_severity"]))+'</p>') if f.get("legacy_severity") in SEVERITY else ''}
 {('<div class="facts"><div><h3>'+E(t("seen_years"))+'</h3><p><strong>'+E(" · ".join(f"{y} ({n})" for y, n in sorted(f["document_years"]["counts"].items())))+'</strong> {E(t("years_tail"))}</p><p class="meta">'+E(YEARS_SRC[LANG])+'</p></div></div>') if f.get("document_years") else ''}
 {('<div class="facts"><div><h3>'+E(t("repairs"))+'</h3><p><strong>'+E(t("judged"))+' '+E(REACH[f["repair"]["reachable_by_deletion"]])+'</strong> '+E(t("judged_how"))+' <strong>'+E(t("measured"))+' '+E(MEASURED_V[LANG][f["repair"]["measured"]["value"]])+'</strong>: '+E(MEASURED_NOTE[LANG].get(f["damage"],""))+'</p>'+('<p class="noprobe"><strong>'+E(t("disagree"))+'</strong> '+E(t("disagree_2"))+' '+E(f["repair"]["measured"]["disagrees_with_the_judgment"])+'.</p>' if f["repair"]["measured"].get("disagrees_with_the_judgment") else '')+'<p class="meta">'+E(MEASURED_SRC[LANG])+'</p></div></div>') if f.get("repair",{}).get("measured") else ''}
-{('<div class="facts"><div><h3>'+E(t("fails"))+'</h3><p><strong>'+E({"PROP":"Identity, and it propagates","FAUX":"A false fact","MANQ":"A gap, not a wrong answer","MES":"A property of the corpus, not a fault of a document","DEC":"A use made downstream"}[f["failure_mode"]["value"]])+'</strong>. '+E(MODE_MEANS[LANG][f["failure_mode"]["value"]])+'</p><p class="meta">'+E(MODE_SRC[LANG])+'</p></div></div>') if f.get('failure_mode') else ''}
+{('<div class="facts"><div><h3>'+E(t("fails"))+'</h3><p><strong>'+E(MODE_LABEL[f["failure_mode"]["value"]])+'</strong>. '+E(MODE_MEANS[LANG][f["failure_mode"]["value"]])+'</p><p class="meta">'+E(MODE_SRC[LANG])+'</p></div></div>') if f.get('failure_mode') else ''}
 {('<div class="facts"><div><h3>'+E(t("applies"))+'</h3><p><strong>'+E({"ancient_only":"Documents of the old era only","both":"Both eras, 1957 and 2026 alike","born_modern":"Born with the modern era","not_settled":"Era not settled"}[f["era"]["value"]])+'</strong>'+(' — and worse now than it was' if f["era"].get("aggravated_by_the_modern") else '')+('. '+E(f["era"]["note"]) if f["era"].get("note") else '')+'</p><p class="meta">'+E(f["era"]["source"])+'</p></div></div>') if f.get('era') else ''}
 <h2>{E(t("h_seen"))}</h2>{seen}
 <h2>{E(t("h_spec"))}</h2>{spec}
 <h2>{E(t("h_hist"))}</h2><ul class="hist">{hist}</ul>
-<p class="muted">Record: <a href="../atlas.json">atlas.json</a> · <a href="{REPO}/blob/main/forms/{E(src_name)}">source file on GitHub</a> · <a href="{E(f['id'])}.json">this record as JSON</a> · <a href="{DATA}/forms/{E(f['id'])}">row in the data explorer</a></p>"""
+<p class="muted">Record: <a href="../atlas.json">atlas.json</a> · <a href="{REPO}/blob/main/forms/{E(src_name)}">source file on GitHub</a> · <a href="{E(f['id'])}.json">this record as JSON</a> · <a href="{DATA}/forms/{E(f['id'])}">{E(t("explorer_row"))}</a></p>"""
     (SITE/"forms"/f"{f['id']}.html").write_text(layout(f"{nom(f)} — Fault Atlas", body, depth=1, desc=f"{nom(f)} : {d[0].lower()} — {d[1]}." if LANG=="fr" else f"{nom(f)}: {d[0].lower()} — {d[1]}."))
 
 

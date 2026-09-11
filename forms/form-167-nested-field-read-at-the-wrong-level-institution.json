@@ -30,7 +30,8 @@
   },
   "prevention": {
     "cancellable_by_code": true,
-    "refusal_clause": "a column written entirely empty is refused, never accepted as data; the nested path is then read at the right level"
+    "refusal_clause": "a column written entirely empty is refused, never accepted as data; the nested path is then read at the right level",
+    "refusal_clause_fr": "une colonne entièrement vide est refusée, jamais acceptée comme donnée ; le chemin imbriqué est alors lu au bon niveau"
   },
   "repair": {
     "reachable_by_deletion": "no",

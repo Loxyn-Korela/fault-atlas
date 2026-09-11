@@ -30,7 +30,8 @@
   },
   "prevention": {
     "cancellable_by_code": true,
-    "refusal_clause": "keep the last caseversion per caseid; never count versions as cases"
+    "refusal_clause": "keep the last caseversion per caseid; never count versions as cases",
+    "refusal_clause_fr": "garder la dernière version par identifiant d'affaire ; ne jamais compter les versions comme des affaires"
   },
   "repair": {
     "reachable_by_deletion": "no",

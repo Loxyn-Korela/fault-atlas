@@ -30,7 +30,8 @@
   },
   "prevention": {
     "cancellable_by_code": true,
-    "refusal_clause": "detect the encoding per file and convert to UTF-8 before reading; a file that fails detection is rejected, not guessed"
+    "refusal_clause": "detect the encoding per file and convert to UTF-8 before reading; a file that fails detection is rejected, not guessed",
+    "refusal_clause_fr": "détecter l'encodage fichier par fichier et convertir en UTF-8 avant lecture ; un fichier dont la détection échoue est rejeté, pas deviné"
   },
   "repair": {
     "reachable_by_deletion": "no",

@@ -34,7 +34,8 @@
   },
   "prevention": {
     "cancellable_by_code": true,
-    "refusal_clause": "handle, or abstain and declare — never guess"
+    "refusal_clause": "handle, or abstain and declare — never guess",
+    "refusal_clause_fr": "traiter, ou s'abstenir et le déclarer — ne jamais deviner"
   },
   "repair": {
     "reachable_by_deletion": "no",

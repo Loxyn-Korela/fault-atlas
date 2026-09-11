@@ -30,7 +30,8 @@
   },
   "prevention": {
     "cancellable_by_code": true,
-    "refusal_clause": "count coverage per year AND per entity type; a type that collapses while the whole stays flat is declared, and no trend is asserted past the cliff"
+    "refusal_clause": "count coverage per year AND per entity type; a type that collapses while the whole stays flat is declared, and no trend is asserted past the cliff",
+    "refusal_clause_fr": "compter la couverture par année ET par type d'entité ; un type qui s'effondre pendant que l'ensemble reste plat est déclaré, et aucune tendance n'est affirmée au-delà de la falaise"
   },
   "repair": {
     "reachable_by_deletion": "no",

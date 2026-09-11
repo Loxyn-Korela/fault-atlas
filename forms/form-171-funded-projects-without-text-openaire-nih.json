@@ -30,7 +30,8 @@
   },
   "prevention": {
     "cancellable_by_code": true,
-    "refusal_clause": "count the projects that carry a text; declare per funder, and never read a funder without abstracts as a funder without projects"
+    "refusal_clause": "count the projects that carry a text; declare per funder, and never read a funder without abstracts as a funder without projects",
+    "refusal_clause_fr": "compter les projets qui portent un texte ; déclarer par financeur, et ne jamais lire un financeur sans résumés comme un financeur sans projets"
   },
   "repair": {
     "reachable_by_deletion": "no",

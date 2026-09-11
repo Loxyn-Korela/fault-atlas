@@ -30,7 +30,8 @@
   },
   "prevention": {
     "cancellable_by_code": true,
-    "refusal_clause": "a start date before the funder's existence is rejected as placeholder, never used"
+    "refusal_clause": "a start date before the funder's existence is rejected as placeholder, never used",
+    "refusal_clause_fr": "une date de début antérieure à l'existence du financeur est rejetée comme valeur de remplissage, jamais utilisée"
   },
   "repair": {
     "reachable_by_deletion": "no",

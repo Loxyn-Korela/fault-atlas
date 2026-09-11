@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.16.0 — 2026-09-11
+- **The translation is finished.** The 46 refusal clauses, the failure-mode labels, the truths that can judge a form, the probe block down to "frozen copy of the files as read", the yes/no of "can code cancel it", the pills. A French page now reads as French.
+- Two duplicate definitions inside the generator were silently winning over the bilingual ones: the truths that judge, and the whole "what a record says" section. Both removed, which is why those two blocks stayed English however many times they were translated.
+- What stays English on a French page, and should: the corpus names, the file names and hashes, the probe source, the observation excerpts written in English, and the history of the form, which is an audit trail quoted as written. The English name sits under the French one, as the French sits under the English.
+
 ## 0.15.1 — 2026-09-11
 - **The French pages had English titles.** Every form page took its `<title>` and its `<h1>` from the English name, so the tab, the heading and the description were English on all 162 French pages. Fixed, along with everything else the generator still said in English on both sides: "found by", "first seen", the severity note, the whole probe block, the no-observation line.
 - The English name still appears under the French one, and the French under the English. That is deliberate: it is the same device as the excerpt, which shows the original and folds the translation away.

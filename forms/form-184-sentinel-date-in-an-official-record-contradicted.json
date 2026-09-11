@@ -40,7 +40,8 @@
   },
   "prevention": {
     "cancellable_by_code": true,
-    "refusal_clause": "a date before the institution's existence is refused; when the identifier carries the year, it prevails and the correction is logged"
+    "refusal_clause": "a date before the institution's existence is refused; when the identifier carries the year, it prevails and the correction is logged",
+    "refusal_clause_fr": "une date antérieure à l'existence de l'institution est refusée ; quand l'identifiant porte l'année, c'est lui qui l'emporte et la correction est consignée"
   },
   "repair": {
     "reachable_by_deletion": "no",
