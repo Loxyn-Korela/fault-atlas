@@ -1,5 +1,8 @@
 # Changelog
 
+## 0.13.3 — 2026-09-11
+- **The caveat under the count is a census now, not an extrapolation.** It read "two readers on the same six articles agreed on 54 %", which generalises from six documents to 162 forms — the very move this atlas exists to catch. Replaced by what is actually known about all 162: 43 validated by a second reader, 73 migrated and not yet reviewed, 46 proposed. The 54 % stays where its sample size can be stated, in the README.
+
 ## 0.13.2 — 2026-09-11
 - **Two paragraphs cut to one line each.** The opening explained how to sort a table and what a record contains, both of which the page shows. The second one taught a researcher what a sample is. Gone: the count and the example stand on their own, and the 54 % agreement is one clause instead of a lecture.
 - A flag replaces the language name in the navigation, with the destination in its title for anyone reading with a screen reader.

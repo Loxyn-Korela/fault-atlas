@@ -248,9 +248,12 @@ proof_counts_docs = proof_counts["docs"]; proof_counts_none = proof_counts["none
 LEAD = (f"{len(forms)} fault forms, observed on real corpora. {proof_counts_docs} carry an openable example: the document, the query that found it, the frozen copy."
         if LANG == "en" else
         f"{len(forms)} formes de fautes, observées sur des corpus réels. {proof_counts_docs} portent un exemple ouvrable : le document, la requête qui l'a trouvé, la copie gelée.")
-SHELF = ("The count is a shelf, not a measurement: two readers given the same six articles agreed on 54 % of what they found."
+_V = sum(1 for f in forms if f["status"] == "validated")
+_P = sum(1 for f in forms if f["status"] == "proposed")
+_U = sum(1 for f in forms if f["status"] == "migrated_unreviewed")
+SHELF = (f"{_V} are validated by a second reader, {_U} are migrated and not yet reviewed, {_P} are proposed. Each form carries its own status."
          if LANG == "en" else
-         "Ce nombre est une étagère, pas une mesure : deux lectrices ayant reçu les six mêmes articles s'accordent sur 54 % de ce qu'elles trouvent.")
+         f"{_V} sont validées par une seconde lectrice, {_U} sont migrées et pas encore relues, {_P} sont proposées. Chaque fiche porte son statut.")
 index = f"""
 <section class="hero"><p class="eyebrow">{E(t("eyebrow"))}</p>
 <h1>{E(t("h1"))}</h1>
