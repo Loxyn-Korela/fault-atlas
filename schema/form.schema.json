@@ -456,6 +456,32 @@
         }
       }
     },
+    "proposed_severity": {
+      "type": "object",
+      "description": "A first reading of what this form costs at the end of the chain, for forms added after the migration of 2026-09-09 and therefore absent from the severity column of the August catalogue. Proposed, never measured, and it says whether it adds anything to what the damage class already implies.",
+      "required": ["value", "reason", "proposed_by", "date"],
+      "additionalProperties": false,
+      "properties": {
+        "value": {"type": "string", "enum": ["G1", "G2", "G3", "G4"]},
+        "reason": {"type": "string"},
+        "proposed_by": {"type": "string"},
+        "date": {"type": "string", "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"},
+        "status": {"type": "string"},
+        "adds_to_the_damage_class": {"type": "boolean"},
+        "note": {"type": "string"}
+      }
+    },
+    "registry_scope": {
+      "type": "object",
+      "description": "For a fault of a registry or a base rather than of a document: the slice of the base it touches. A registry fault has no prevalence — it is a property of the source, so everything drawn from it carries the fault. Read from the form's own observation, never estimated.",
+      "required": ["extent", "source"],
+      "additionalProperties": false,
+      "properties": {
+        "extent": {"type": "string"},
+        "why_not_a_prevalence": {"type": "string"},
+        "source": {"type": "string"}
+      }
+    },
     "document_years": {
       "type": "object",
       "description": "The publication year of the documents where this form was actually seen, read from the files themselves. It replaces nothing and interprets nothing: the era says which period a form belongs to, the year says where it was found. Absent when no carrier document of this form is in a dated corpus.",

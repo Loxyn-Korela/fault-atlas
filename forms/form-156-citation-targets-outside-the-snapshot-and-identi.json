@@ -66,5 +66,19 @@
       "event": "class filled: UNCLASSIFIED → REFUSABLE, with its prevention clause; classified by the first reader, awaiting the second reader's decision",
       "by": "Fault Atlas maintainer (Loxyn)"
     }
-  ]
+  ],
+  "proposed_severity": {
+    "value": "G3",
+    "reason": "1,635 citation targets outside the snapshot: the link exists and its target cannot be found",
+    "proposed_by": "Fault Atlas maintainer (Loxyn), first reading",
+    "date": "2026-09-11",
+    "status": "proposed — a second reader confirms or contests, as for the 43 validated forms",
+    "adds_to_the_damage_class": false,
+    "note": "this reading agrees with how the August catalogue judges most MISSING forms (G3), so it adds little"
+  },
+  "registry_scope": {
+    "extent": "1,635 targets absent from the base and 145,487 corrections with no identifier, out of 397,591,740 citations",
+    "why_not_a_prevalence": "a fault of a registry has no prevalence: it is a property of the base, so everything drawn from that base carries it. What can be stated is the slice it touches.",
+    "source": "read from this form's own observation, 2026-09-11"
+  }
 }

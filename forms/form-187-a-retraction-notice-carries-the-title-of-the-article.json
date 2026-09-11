@@ -110,5 +110,14 @@
     },
     "carriers_dated": 3,
     "source": "corpora/index/document-years-europe-pmc-272.json, read 2026-09-11 from each file's earliest pub-date"
+  },
+  "proposed_severity": {
+    "value": "G2",
+    "reason": "25 retraction notices of 33 carry the withdrawn article's title: a naive extractor attributes that title to the notice, and nothing signals it",
+    "proposed_by": "Fault Atlas maintainer (Loxyn), first reading",
+    "date": "2026-09-11",
+    "status": "proposed — a second reader confirms or contests, as for the 43 validated forms",
+    "adds_to_the_damage_class": false,
+    "note": "this reading agrees with how the August catalogue judges most SPURIOUS_EDGE forms (G2), so it adds little"
   }
 }

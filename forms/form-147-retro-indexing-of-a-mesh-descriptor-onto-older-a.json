@@ -66,5 +66,19 @@
       "event": "repair.reachable_by_deletion changed from yes to partial: a deletion loses the fact's past validity; only a spurious edge is fully repaired by deletion",
       "by": "Coralie Bagnol-Lebon (second reader), applied by Fault Atlas"
     }
-  ]
+  ],
+  "proposed_severity": {
+    "value": "G2",
+    "reason": "a descriptor born in 2019 placed on articles from 2006: any date-based reasoning answers wrongly without warning",
+    "proposed_by": "Fault Atlas maintainer (Loxyn), first reading",
+    "date": "2026-09-11",
+    "status": "proposed — a second reader confirms or contests, as for the 43 validated forms",
+    "adds_to_the_damage_class": false,
+    "note": "this reading agrees with how the August catalogue judges most ANACHRONISM forms (G2), so it adds little"
+  },
+  "registry_scope": {
+    "extent": "931 records completed before 2018 carry a descriptor born in 2019; the 2019 NLM campaign weighs 21.22 %",
+    "why_not_a_prevalence": "a fault of a registry has no prevalence: it is a property of the base, so everything drawn from that base carries it. What can be stated is the slice it touches.",
+    "source": "read from this form's own observation, 2026-09-11"
+  }
 }

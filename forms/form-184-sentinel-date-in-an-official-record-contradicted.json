@@ -145,5 +145,19 @@
       "matches_excerpt": true,
       "note": "Re-run live, restricted to works taking part in repeals/amends/based_on: 7, the same seven CELEX."
     }
-  ]
+  ],
+  "proposed_severity": {
+    "value": "G2",
+    "reason": "seven acts dated 3 March 1003: the value computes like a real date and nothing in the record marks it as a sentinel",
+    "proposed_by": "Fault Atlas maintainer (Loxyn), first reading",
+    "date": "2026-09-11",
+    "status": "proposed — a second reader confirms or contests, as for the 43 validated forms",
+    "adds_to_the_damage_class": false,
+    "note": "this reading agrees with how the August catalogue judges most WRONG_VALUE forms (G2), so it adds little"
+  },
+  "registry_scope": {
+    "extent": "7 works carrying the sentinel date of 3 March 1003, for acts of 1966 to 1997",
+    "why_not_a_prevalence": "a fault of a registry has no prevalence: it is a property of the base, so everything drawn from that base carries it. What can be stated is the slice it touches.",
+    "source": "read from this form's own observation, 2026-09-11"
+  }
 }

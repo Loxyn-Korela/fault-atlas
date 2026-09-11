@@ -23,7 +23,7 @@ for f in sorted((ROOT/"forms").glob("*.json")):
         r.get("name_fr"), r.get("legacy_line"), r["version"],
         e.get("value", "not_measured"), int(bool(e.get("aggravated_by_the_modern"))), e.get("note"), e.get("measured"),
         (r.get("failure_mode") or {}).get("value", "not_recovered"),
-        {"G1":"contaminates","G2":"answers wrongly in silence","G3":"hides","G4":"stops before the graph"}.get(r.get("legacy_severity"), "not judged"),
+        {"G1":"contaminates","G2":"answers wrongly in silence","G3":"hides","G4":"stops before the graph"}.get(r.get("legacy_severity") or (r.get("proposed_severity") or {}).get("value"), "not judged"),
         json.dumps(r, ensure_ascii=False)))
     for s in r["seen"]:
         db.execute("insert into observations(form_id,form_name,corpus,corpus_id,document,date,observer,excerpt_en,excerpt_original,lang,probe) values(?,?,?,?,?,?,?,?,?,?,?)",

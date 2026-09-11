@@ -109,5 +109,14 @@
       "event": "second observation by the same auditor (fact f-185941): the form also appears on 'based on', a legal basis true by competence but never cited; probe generalised to the three relations",
       "by": "Fault Atlas maintainer"
     }
-  ]
+  ],
+  "proposed_severity": {
+    "value": "G3",
+    "reason": "the register asserts a relation the act's text never states: unfindable for anyone reading the document",
+    "proposed_by": "Fault Atlas maintainer (Loxyn), first reading",
+    "date": "2026-09-11",
+    "status": "proposed — a second reader confirms or contests, as for the 43 validated forms",
+    "adds_to_the_damage_class": false,
+    "note": "this reading agrees with how the August catalogue judges most MISSING forms (G3), so it adds little"
+  }
 }

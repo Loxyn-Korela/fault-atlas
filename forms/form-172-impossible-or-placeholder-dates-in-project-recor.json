@@ -61,5 +61,19 @@
       "event": "converted to a record; class, prevention and the novel/variant question left to the second reader",
       "by": "Fault Atlas"
     }
-  ]
+  ],
+  "proposed_severity": {
+    "value": "G2",
+    "reason": "a start date in the year 7, another on 1 January 1900: false values that compute like any other",
+    "proposed_by": "Fault Atlas maintainer (Loxyn), first reading",
+    "date": "2026-09-11",
+    "status": "proposed — a second reader confirms or contests, as for the 43 validated forms",
+    "adds_to_the_damage_class": false,
+    "note": "this reading agrees with how the August catalogue judges most WRONG_VALUE forms (G2), so it adds little"
+  },
+  "registry_scope": {
+    "extent": "every project record whose start date is a sentinel: year 7, 1900, and others",
+    "why_not_a_prevalence": "a fault of a registry has no prevalence: it is a property of the base, so everything drawn from that base carries it. What can be stated is the slice it touches.",
+    "source": "read from this form's own observation, 2026-09-11"
+  }
 }

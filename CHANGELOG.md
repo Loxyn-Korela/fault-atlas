@@ -7,6 +7,11 @@
 - Validator with house rules; proves itself on seven planted faults.
 - SQLite view builder for Datasette.
 
+## 0.12.0 — 2026-09-11
+- **The 49 forms with no severity have a first reading, and it says how much it is worth.** Each carries a proposed consequence with its reason, marked proposed and dated, for a second reader to confirm or contest as for the 43 already validated. **Only 11 of the 49 add anything to what the damage class already implies**, and the other 38 say so on their own page rather than pass a lookup off as a judgment.
+- **One disagreement with the August catalogue, stated rather than smoothed over.** August judges most splits *contaminates*; this reading judges most of them *hides*. The two are defensible and the field cannot mean both, so the divergence is printed and left for the second reader.
+- **Registry faults gain the field they were missing: how far they reach.** A fault of a base has no prevalence — it is a property of the source, so everything drawn from it carries the fault. 41 forms now state the slice touched, read from their own observation: every record after 2023, 21,292 projects with no jurisdiction, 0 records out of 1,305,653, the whole base. Ranking a systemic outage beside an isolated accident was the thing to avoid.
+
 ## 0.11.0 — 2026-09-11
 - **What the fault costs you, on every form that has it.** The severity judged line by line in the catalogue of 2026-08-09 was recovered on 2026-09-10 and sat unused. It is now on the page, written as a consequence rather than a code: *contaminates* (21), *answers wrongly in silence* (41), *hides* (39), *stops before the graph* (12). A filter on the index, a pill on each form, a facet of the public database.
 - **Because prevalence is not importance.** Nine forms are rare and silent at once — a mnemonic superscript read as a power, 1 of 272; a local and ambiguous date format, 4 of 272. Those are the dangerous ones, and a page that shows only how often a fault occurs invites exactly the wrong reading.

@@ -64,5 +64,19 @@
       "event": "class filled: UNCLASSIFIED → SILENT_FALSE, with its prevention clause; classified by the first reader, awaiting the second reader's decision",
       "by": "Fault Atlas maintainer (Loxyn)"
     }
-  ]
+  ],
+  "proposed_severity": {
+    "value": "G1",
+    "reason": "29.6 % of chemical annotations in one bucket: different compounds become one node and their facts mix",
+    "proposed_by": "Fault Atlas maintainer (Loxyn), first reading",
+    "date": "2026-09-11",
+    "status": "proposed — a second reader confirms or contests, as for the 43 validated forms",
+    "adds_to_the_damage_class": false,
+    "note": "this reading agrees with how the August catalogue judges most MERGE forms (G1), so it adds little"
+  },
+  "registry_scope": {
+    "extent": "224,554,246 lines, 8.71 % of the section corpus and 29.62 % of chemical annotations",
+    "why_not_a_prevalence": "a fault of a registry has no prevalence: it is a property of the base, so everything drawn from that base carries it. What can be stated is the slice it touches.",
+    "source": "read from this form's own observation, 2026-09-11"
+  }
 }

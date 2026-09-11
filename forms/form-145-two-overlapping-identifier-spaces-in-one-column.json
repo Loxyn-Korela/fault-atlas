@@ -59,5 +59,19 @@
       "event": "converted to a record; class, prevention and the novel/variant question left to the second reader",
       "by": "Fault Atlas"
     }
-  ]
+  ],
+  "proposed_severity": {
+    "value": "G1",
+    "reason": "two overlapping identifier spaces: without the discriminant an id names the wrong entity, and everything hanging from it follows",
+    "proposed_by": "Fault Atlas maintainer (Loxyn), first reading",
+    "date": "2026-09-11",
+    "status": "proposed — a second reader confirms or contests, as for the 43 validated forms",
+    "adds_to_the_damage_class": true,
+    "note": "the August catalogue judges most WRONG_LABEL forms G2; this reading says G1 and the reason is above"
+  },
+  "registry_scope": {
+    "extent": "104,443,196 lines with surface=1 and an identifier in the entity range",
+    "why_not_a_prevalence": "a fault of a registry has no prevalence: it is a property of the base, so everything drawn from that base carries it. What can be stated is the slice it touches.",
+    "source": "read from this form's own observation, 2026-09-11"
+  }
 }

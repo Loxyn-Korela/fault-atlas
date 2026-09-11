@@ -65,5 +65,14 @@
       "event": "repair.reachable_by_deletion changed from yes to partial: a deletion loses the fact's past validity; only a spurious edge is fully repaired by deletion",
       "by": "Coralie Bagnol-Lebon (second reader), applied by Fault Atlas"
     }
-  ]
+  ],
+  "proposed_severity": {
+    "value": "G2",
+    "reason": "a new word on an old science: you read a birth where there is only a renaming",
+    "proposed_by": "Fault Atlas maintainer (Loxyn), first reading",
+    "date": "2026-09-11",
+    "status": "proposed — a second reader confirms or contests, as for the 43 validated forms",
+    "adds_to_the_damage_class": false,
+    "note": "this reading agrees with how the August catalogue judges most ANACHRONISM forms (G2), so it adds little"
+  }
 }

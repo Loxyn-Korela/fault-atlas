@@ -64,5 +64,19 @@
       "event": "second reader: contested — the 3.7 figure is absent from v8",
       "by": "Coralie Bagnol-Lebon"
     }
-  ]
+  ],
+  "proposed_severity": {
+    "value": "G3",
+    "reason": "one to seven years between a term's use and its descriptor: searching by descriptor misses years of literature",
+    "proposed_by": "Fault Atlas maintainer (Loxyn), first reading",
+    "date": "2026-09-11",
+    "status": "proposed — a second reader confirms or contests, as for the 43 validated forms",
+    "adds_to_the_damage_class": false,
+    "note": "this reading agrees with how the August catalogue judges most MISSING forms (G3), so it adds little"
+  },
+  "registry_scope": {
+    "extent": "every term between its use and its descriptor: one to seven years, 3.7 years median",
+    "why_not_a_prevalence": "a fault of a registry has no prevalence: it is a property of the base, so everything drawn from that base carries it. What can be stated is the slice it touches.",
+    "source": "read from this form's own observation, 2026-09-11"
+  }
 }

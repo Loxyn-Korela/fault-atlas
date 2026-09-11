@@ -60,5 +60,19 @@
       "event": "converted to a record; class, prevention and the novel/variant question left to the second reader",
       "by": "Fault Atlas"
     }
-  ]
+  ],
+  "proposed_severity": {
+    "value": "G2",
+    "reason": "6.7 million inferred relations mixed with 3.3 million declared ones: an inference is taken for a fact",
+    "proposed_by": "Fault Atlas maintainer (Loxyn), first reading",
+    "date": "2026-09-11",
+    "status": "proposed — a second reader confirms or contests, as for the 43 validated forms",
+    "adds_to_the_damage_class": false,
+    "note": "this reading agrees with how the August catalogue judges most SPURIOUS_EDGE forms (G2), so it adds little"
+  },
+  "registry_scope": {
+    "extent": "6,721,902 inferred relations mixed with 3,308,996 harvested and 7,816 entered by a user",
+    "why_not_a_prevalence": "a fault of a registry has no prevalence: it is a property of the base, so everything drawn from that base carries it. What can be stated is the slice it touches.",
+    "source": "read from this form's own observation, 2026-09-11"
+  }
 }

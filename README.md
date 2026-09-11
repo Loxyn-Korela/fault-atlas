@@ -72,6 +72,13 @@ end of the chain, from the severity judged line by line in the catalogue of 2026
 | **stops before the graph** | 12 | costs work upstream, not answers downstream |
 | not judged | 49 | added after the migration |
 
+The 49 forms added after the migration carry a **proposed** consequence instead, dated and signed,
+with the honest note that only 11 of them add anything the damage class did not already imply.
+
+And a fault of a **registry** carries no prevalence at all, because it is a property of the source:
+41 forms state how far it reaches instead — every record after 2023, 21,292 projects with no
+jurisdiction, 0 records out of 1,305,653.
+
 **The two axes are independent, and the catalogue is sorted by neither.** Nine forms are rare *and*
 silent: a mnemonic superscript read as a power, 1 of 272; a dense relative chronology, 3; a local
 and ambiguous date format, 4. One and a half per cent sounds like nothing until the ambiguous date

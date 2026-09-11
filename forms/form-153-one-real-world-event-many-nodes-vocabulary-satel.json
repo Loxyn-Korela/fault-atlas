@@ -63,5 +63,19 @@
       "event": "converted to a record; class, prevention and the novel/variant question left to the second reader",
       "by": "Fault Atlas"
     }
-  ]
+  ],
+  "proposed_severity": {
+    "value": "G3",
+    "reason": "one real event split into nine satellites: the evidence is scattered and each piece incomplete",
+    "proposed_by": "Fault Atlas maintainer (Loxyn), first reading",
+    "date": "2026-09-11",
+    "status": "proposed — a second reader confirms or contests, as for the 43 validated forms",
+    "adds_to_the_damage_class": true,
+    "note": "the August catalogue judges most SPLIT forms G1; this reading says G3 and the reason is above"
+  },
+  "registry_scope": {
+    "extent": "the 9 satellites of one event, and every grouping that treats them as distinct",
+    "why_not_a_prevalence": "a fault of a registry has no prevalence: it is a property of the base, so everything drawn from that base carries it. What can be stated is the slice it touches.",
+    "source": "read from this form's own observation, 2026-09-11"
+  }
 }

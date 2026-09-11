@@ -111,5 +111,19 @@
       "note": "Re-run live on three acts: 2026 act served in xhtml+xml only, 1985 act in text/html only, 1968 act in no text format at all."
     }
   ],
-  "observer_agreement": "2/2 — first reader (Loxyn, August/September classification) and second reader (Coralie Bagnol-Lebon, 2026-09-10)"
+  "observer_agreement": "2/2 — first reader (Loxyn, August/September classification) and second reader (Coralie Bagnol-Lebon, 2026-09-10)",
+  "proposed_severity": {
+    "value": "G3",
+    "reason": "the format served depends on the act's age: asking for one format misses half the corpus",
+    "proposed_by": "Fault Atlas maintainer (Loxyn), first reading",
+    "date": "2026-09-11",
+    "status": "proposed — a second reader confirms or contests, as for the 43 validated forms",
+    "adds_to_the_damage_class": false,
+    "note": "this reading agrees with how the August catalogue judges most MISSING forms (G3), so it adds little"
+  },
+  "registry_scope": {
+    "extent": "the whole corpus: the format served is exclusive by the act's age",
+    "why_not_a_prevalence": "a fault of a registry has no prevalence: it is a property of the base, so everything drawn from that base carries it. What can be stated is the slice it touches.",
+    "source": "read from this form's own observation, 2026-09-11"
+  }
 }

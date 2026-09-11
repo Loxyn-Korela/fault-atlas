@@ -69,5 +69,19 @@
       "event": "repair.reachable_by_deletion changed from yes to partial: a deletion loses the fact's past validity; only a spurious edge is fully repaired by deletion",
       "by": "Coralie Bagnol-Lebon (second reader), applied by Fault Atlas"
     }
-  ]
+  ],
+  "proposed_severity": {
+    "value": "G2",
+    "reason": "696 retractions with no link to the withdrawn article: a retracted result is served as valid and nothing warns",
+    "proposed_by": "Fault Atlas maintainer (Loxyn), first reading",
+    "date": "2026-09-11",
+    "status": "proposed — a second reader confirms or contests, as for the 43 validated forms",
+    "adds_to_the_damage_class": false,
+    "note": "this reading agrees with how the August catalogue judges most ANACHRONISM forms (G2), so it adds little"
+  },
+  "registry_scope": {
+    "extent": "1,429 retraction notices, of which 696 without a D016440 link and 685 without a D016441 link",
+    "why_not_a_prevalence": "a fault of a registry has no prevalence: it is a property of the base, so everything drawn from that base carries it. What can be stated is the slice it touches.",
+    "source": "read from this form's own observation, 2026-09-11"
+  }
 }
