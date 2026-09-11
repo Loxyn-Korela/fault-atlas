@@ -47,7 +47,8 @@ T = {
  "repairs": {"en": "Can a deletion repair it?", "fr": "Une suppression peut-elle la réparer ?"},
  "fails": {"en": "How it fails", "fr": "Comment elle échoue"},
  "applies": {"en": "When it applies", "fr": "Quand elle s'applique"},
- "switch": {"en": "Français", "fr": "English"},
+ "switch": {"en": "\U0001F1EB\U0001F1F7", "fr": "\U0001F1EC\U0001F1E7"},
+ "switch_title": {"en": "Lire en français", "fr": "Read in English"},
  "sev": {"en": {"G1": ("Contaminates","The error lands on an entity, and every fact hanging from that entity inherits it. One wrong identity, and a whole neighbourhood of the graph answers wrongly."),
                 "G2": ("Answers wrongly, in silence","A single false fact, local, and nothing signals it. You get an answer, it looks like every other answer, and it is wrong. This is the one a low prevalence must not excuse."),
                 "G3": ("Hides","A hole. The graph is incomplete, not lying. What you are looking for is simply not there, and nothing tells you it should have been."),
@@ -166,7 +167,7 @@ def layout(title, body, depth=0, desc=""):
 <title>{E(title)}</title><meta name="description" content="{E(desc or 'Observed fault forms in knowledge graphs built from documents, with provenance, damage and the truth that judges them.')}">
 <link rel="icon" href="{p}favicon.svg" type="image/svg+xml"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fraunces:ital,opsz,wght,SOFT@1,9..144,300,0&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"><link rel="stylesheet" href="{p}style.css"></head><body>
 <header class="top"><a class="brand" href="{p}index.html"><img src="{p}favicon.svg" alt="" width="22" height="22"> Fault Atlas <span class="by">by Loxyn</span></a>
-<nav><a href="{p}index.html#forms">{E(t("nav_forms"))}</a><a href="{p}index.html#about">{E(t("nav_about"))}</a><a href="{DATA}">{E(t("nav_data"))}</a><a href="{REPO}">GitHub</a><a href="https://doi.org/{DOI}">DOI</a><a class="lang" href="{SWITCH[depth]}">{E(t("switch"))}</a></nav></header>
+<nav><a href="{p}index.html#forms">{E(t("nav_forms"))}</a><a href="{p}index.html#about">{E(t("nav_about"))}</a><a href="{DATA}">{E(t("nav_data"))}</a><a href="{REPO}">GitHub</a><a href="https://doi.org/{DOI}">DOI</a><a class="lang" href="{SWITCH[depth]}" title="{E(t("switch_title"))}" aria-label="{E(t("switch_title"))}">{t("switch")}</a></nav></header>
 <main>{body}</main>
 <footer><p><strong>Fault Atlas</strong> v{E(VERSION)} · built {BUILT} · Loxyn SAS, Lyon · Gracia S., Bagnol-Lebon C., Comtet Y. · records CC BY-SA 4.0, tools Apache 2.0 · <a href="https://doi.org/{DOI}">doi:{DOI}</a> · <a href="{REPO}">source</a> · <a href="mailto:contact@loxyn.ai">contact@loxyn.ai</a></p>
 <p class="muted">{E(t("foot_note"))}</p></footer>
@@ -223,25 +224,33 @@ ABOUT_FR = f"""<section id="about" class="about"><h2>Ce que dit une fiche</h2>
 """
 ABOUT = ABOUT_EN if LANG == "en" else ABOUT_FR
 proof_counts_docs = proof_counts["docs"]; proof_counts_none = proof_counts["none"]
-LEAD = ((f"{len(forms)} forms of fault observed on real corpora, most recent first — click any column to sort; "
-         f"{proof_counts_docs} of them come with a reproducible example — a document you can open, the query that found it, "
-         f"the frozen copy — and {proof_counts_none} do not yet. A form says what the fault does to the graph, whether code "
-         f"can cancel it, whether a deletion-only repair can restore the truth, and which kind of truth can judge it.")
+TH = "".join(('<th data-sort="text" class="sorted-desc">' if i==2 else '<th data-sort="text">')+html.escape(h)+"</th>" for i,h in enumerate(t("th")))
+from collections import Counter as _PC
+proof_counts = _PC(proof_of(f)[0] for f in forms)
+ABOUT_EN = f"""<section id="about" class="about"><h2>What a record says</h2>
+<div class="cols"><div><h3>Seven damages</h3><p>What a fault does to the graph: merge, split, spurious edge, missing, wrong value, wrong label, anachronism. The 113 difficulties observed in August 2026, however different they look, each produce one of these. Verified line by line.</p></div>
+<div><h3>Two counts, always together</h3><p>Each damage card shows two numbers: all forms, and forms that reach the graph. A form whose layer is pixel or reading — columns, drop caps, scanned pages — sits upstream and never reaches a repairer; every other layer does. No damage count is cited without its layer.</p></div>
+<div><h3>Layers</h3><p>Where the form bites: the pixel, the reading, the utterance, the extraction, the anchoring, the resolution, the schema, the coherence, the structure. A layout fault is a reading failure whose downstream effect on the graph is a missing fact: the damage says what happens to the graph, the layer says where it starts.</p></div>
+<div><h3>Four classes</h3><p>Whether deterministic code cancels the form before it enters the graph, can abstain on it, cannot see it from inside, or whether it needs meaning. Half of what was observed is cancelled by code once; the other half is the real benchmark.</p></div>
+<div><h3>Provenance, not opinion</h3><p>A form enters with a verbatim excerpt from a named corpus, a date, an observer. Cases come with counter-examples. A refuted form stays, marked refuted. Nothing is deleted.</p></div>
+<div><h3>Why it matters</h3><p>Graph repair is evaluated against constraints the graph must satisfy, not against what is true. The atlas is half of an answer key: the map of forms by damage, with the kind of truth that can judge each. The other half, the truth itself, is built on it.</p></div></div>
+"""
+ABOUT_FR = f"""<section id="about" class="about"><h2>Ce que dit une fiche</h2>
+<div class="cols"><div><h3>Sept dégâts</h3><p>Ce qu'une faute fait au graphe : fusion, scission, arête fausse, manque, mauvaise valeur, mauvaise étiquette, anachronisme. Les 113 difficultés observées en août 2026, si différentes soient-elles, produisent chacune l'un de ces sept. Vérifié ligne par ligne.</p></div>
+<div><h3>Deux comptes, toujours ensemble</h3><p>Chaque carte de dégât porte deux nombres : toutes les formes, et celles qui atteignent le graphe. Une forme dont la couche est le pixel ou la lecture — colonnes, lettrines, pages scannées — se tient en amont et n'arrive jamais jusqu'à un réparateur ; toutes les autres couches y arrivent. Aucun compte de dégât n'est cité sans sa couche.</p></div>
+<div><h3>Couches</h3><p>Là où la forme mord : le pixel, la lecture, l'énoncé, l'extraction, l'ancrage, la résolution, le schéma, la cohérence, la structure. Une faute de mise en page est un échec de lecture dont l'effet en aval est un fait manquant : le dégât dit ce qui arrive au graphe, la couche dit où ça commence.</p></div>
+<div><h3>Quatre classes</h3><p>Si du code déterministe annule la forme avant qu'elle n'entre dans le graphe, s'il peut s'abstenir, s'il ne peut pas la voir de l'intérieur, ou s'il faut du sens. La moitié de ce qui a été observé s'annule une fois par du code ; l'autre moitié est le vrai banc d'essai.</p></div>
+<div><h3>Provenance, pas opinion</h3><p>Une forme entre avec un extrait verbatim d'un corpus nommé, une date, un observateur. Les cas viennent avec des contre-exemples. Une forme réfutée reste, marquée réfutée. Rien n'est supprimé.</p></div>
+<div><h3>Pourquoi ça compte</h3><p>La réparation de graphes est évaluée contre des contraintes que le graphe doit satisfaire, pas contre ce qui est vrai. L'atlas est la moitié d'un corrigé : la carte des formes par dégât, avec la sorte de vérité qui peut juger chacune. L'autre moitié, la vérité elle-même, se construit dessus.</p></div></div>
+"""
+ABOUT = ABOUT_EN if LANG == "en" else ABOUT_FR
+proof_counts_docs = proof_counts["docs"]; proof_counts_none = proof_counts["none"]
+LEAD = (f"{len(forms)} fault forms, observed on real corpora. {proof_counts_docs} carry an openable example: the document, the query that found it, the frozen copy."
         if LANG == "en" else
-        (f"{len(forms)} formes de fautes observées sur des corpus réels, la plus récente en tête — cliquez une colonne pour trier ; "
-         f"{proof_counts_docs} portent un exemple reproductible, un document que vous pouvez ouvrir, la requête qui l'a trouvé et la copie gelée, "
-         f"et {proof_counts_none} n'en ont pas encore. Une fiche dit ce que la faute fait au graphe, si du code peut l'annuler, "
-         f"si une réparation par suppression seule rétablit la vérité, et quelle sorte de vérité peut la juger."))
-SHELF = ("Read the count as a shelf, not as a measurement. Two readers given the same six articles on 2026-08-08, working "
-         "without contact, found nine novelties and eleven, seven of them shared: 54&nbsp;% agreement, and two phenomena both "
-         "had seen were filed by one as a new form and by the other as a variant of an existing one. The boundary between new "
-         "and variant is not objective, so the number of forms is not a quantity. What is: the list of phenomena, each with its proof."
+        f"{len(forms)} formes de fautes, observées sur des corpus réels. {proof_counts_docs} portent un exemple ouvrable : le document, la requête qui l'a trouvé, la copie gelée.")
+SHELF = ("The count is a shelf, not a measurement: two readers given the same six articles agreed on 54 % of what they found."
          if LANG == "en" else
-         "Il faut lire ce nombre comme une étagère, non comme une mesure. Deux lectrices ayant reçu les six mêmes articles le "
-         "8 août 2026, sans se concerter, ont trouvé neuf nouveautés et onze, dont sept communes : 54&nbsp;% d'accord, et deux "
-         "phénomènes vus par les deux ont été classés par l'une comme une forme nouvelle et par l'autre comme la variante d'une "
-         "forme existante. La frontière entre nouveau et variante n'est pas objective, donc le nombre de formes n'est pas une "
-         "grandeur. Ce qui en est une : la liste des phénomènes, chacun avec sa preuve.")
+         "Ce nombre est une étagère, pas une mesure : deux lectrices ayant reçu les six mêmes articles s'accordent sur 54 % de ce qu'elles trouvent.")
 index = f"""
 <section class="hero"><p class="eyebrow">{E(t("eyebrow"))}</p>
 <h1>{E(t("h1"))}</h1>
@@ -430,7 +439,7 @@ h2{font-size:26px;letter-spacing:-.02em;margin:38px 0 12px;font-weight:600}h3{ma
 #t th.sorted-asc::after{content:" ▲";font-size:9px}#t th.sorted-desc::after{content:" ▼";font-size:9px}
 td.proof{font-size:13px}td.p-docs{color:#166534;font-weight:600}td.p-none{color:var(--muted)}label.chk{display:inline-flex;align-items:center;gap:6px;font-size:14px;color:var(--ink)}label.chk input{width:auto;min-width:0;flex:none}table.kv th{width:190px;text-transform:none;letter-spacing:0;font-size:14px;color:var(--ink);background:transparent;border-top:1px solid var(--line)}table.kv td code{font-size:12.5px;white-space:normal;word-break:break-all}td.mono{font-family:var(--mono);font-size:12px}
 .pill{display:inline-block;white-space:nowrap;padding:2px 10px;border-radius:999px;font-size:12.5px;font-weight:600;color:#fff;background:var(--c);letter-spacing:.01em}.pill.grey{background:var(--surface);color:var(--fg);font-weight:500}.pill.era{background:#f5f3ff;color:#5b21b6;border:1px solid #ddd6fe}
-.lang{font-weight:600}
+.lang{font-size:17px;line-height:1;padding:4px 2px;filter:saturate(.9)}.lang:hover{filter:none}
 .pill.warn{background:#fff3c4;color:#6b4c00;font-weight:500}
 .fr{color:var(--muted);font-size:13px;font-family:var(--serif);font-style:italic}.fr.big{font-size:17px;margin-top:-10px}.muted{color:var(--muted)}
 .about{margin-top:56px;border-top:1px solid var(--line);padding-top:32px}.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:24px}.cols p{margin:0;color:var(--luxe);font-size:15px}

@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.13.2 — 2026-09-11
+- **Two paragraphs cut to one line each.** The opening explained how to sort a table and what a record contains, both of which the page shows. The second one taught a researcher what a sample is. Gone: the count and the example stand on their own, and the 54 % agreement is one clause instead of a lecture.
+- A flag replaces the language name in the navigation, with the destination in its title for anyone reading with a screen reader.
+
 ## 0.13.1 — 2026-09-11
 - **The French pages were built and never served.** `site/` is not in git: the server rebuilds it with the documented command, which knew nothing of `--fr`. The plain run now builds both languages, so no command has to change anywhere.
 - The "what a record says" section is translated too. What stays English on both sides: the proposal page, and 44 forms with no French name, where the English one stands in and shows.
