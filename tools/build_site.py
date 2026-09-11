@@ -48,7 +48,25 @@ T = {
  "fails": {"en": "How it fails", "fr": "Comment elle échoue"},
  "applies": {"en": "When it applies", "fr": "Quand elle s'applique"},
  "switch": {"en": "\U0001F1EB\U0001F1F7", "fr": "\U0001F1EC\U0001F1E7"},
-  "judged": {"en": "Judged", "fr": "Jugé"},
+    "see_here": {"en": "See it here", "fr": "Voyez-la ici"},
+ "how_found": {"en": "How it was found: the query, the corpus, the date", "fr": "Comment elle a été trouvée : la requête, le corpus, la date"},
+ "run": {"en": "Run:", "fr": "Lancer :"},
+ "written": {"en": "written", "fr": "écrite le"},
+ "searched_in": {"en": "Searched in:", "fr": "Cherchée dans :"},
+ "read_on": {"en": "read on", "fr": "lu le"},
+ "by_stratum": {"en": "by stratum:", "fr": "par strate :"},
+ "years_tail": {"en": "— the publication year of the carrier files themselves, not the year of the observation.",
+                "fr": "— l'année de publication des fichiers porteurs eux-mêmes, pas l'année de l'observation."},
+ "found_by": {"en": "Found by", "fr": "Trouvée par"},
+ "first_seen": {"en": "first seen", "fr": "vue pour la première fois le"},
+ "no_obs_short": {"en": "no observation yet", "fr": "aucune observation pour l'instant"},
+ "no_obs": {"en": "No observation yet: this form is a hypothesis, not an observation.",
+            "fr": "Aucune observation pour l'instant : cette forme est une hypothèse, pas une observation."},
+ "no_example_note": {"en": "No reproducible example yet for this note.",
+                     "fr": "Pas encore d'exemple reproductible pour cette note."},
+ "sev_meta": {"en": "severity §, judged line by line in the internal catalogue of 2026-08-09. It is independent of how often the fault occurs: a rare fault that answers wrongly in silence is worse than a common one that leaves a hole.",
+              "fr": "gravité §, jugée ligne par ligne dans le catalogue interne du 9 août 2026. Elle est indépendante de la fréquence : une faute rare qui répond faux en silence est pire qu'une faute courante qui laisse un trou."},
+ "judged": {"en": "Judged", "fr": "Jugé"},
  "judged_how": {"en": "on 2026-09-09, from the damage class, not form by form.", "fr": "le 9 septembre 2026, depuis la classe de dégât, pas forme par forme."},
  "measured": {"en": "Measured", "fr": "Mesuré"},
  "disagree": {"en": "The measurement disagrees with the judgment.", "fr": "La mesure contredit le jugement."},
@@ -384,21 +402,21 @@ for f in forms:
             ev = (" — <span class='ev'>" + E(" | ".join(map(str, e)))[:260] + "</span>") if e else ""
             return f"<li>{doc_link(n, pr['corpus_id'])}{ev}</li>"
         docs = "<ul class='docs'>" + "".join(li(n, e) for n, e in carriers[:1]) + "</ul>"
-        strata = (" · by stratum: " + ", ".join(f"{E(k)} {v}" for k, v in r["strata"].items())) if r.get("strata") else ""
-        return f"""<div class="probe"><p class="probe-head"><strong>See it here</strong></p>
+        strata = ((" · "+t("by_stratum")+" ") + ", ".join(f"{E(k)} {v}" for k, v in r["strata"].items())) if r.get("strata") else ""
+        return f"""<div class="probe"><p class="probe-head"><strong>{E(t("see_here"))}</strong></p>
 {docs}
-<details class="code" open><summary>How it was found: the query, the corpus, the date</summary>
-<p class="meta">Run: <code>{E(pr.get('run',''))}</code> · <a href="{REPO}/blob/main/{E(pr['file'])}">{E(pr['file'])}</a>{(' · written '+E(pr['written'])) if pr.get('written') else ''}{(' · '+E(r['by'])) if r.get('by') else ''}</p>
-<p class="meta">Searched in: {E(CORPUS_NAMES.get(pr['corpus_id'], pr['corpus_id']).split(' — ')[0])}{(', read on '+E(CORPUS_REC[pr['corpus_id']]['harvested'])) if CORPUS_REC.get(pr['corpus_id'],{}).get('harvested') else ''} · identifiers, sha256 as read and licences: <a href="{REPO}/blob/main/corpora/{E(CORPUS_FILE[pr['corpus_id']])}">record</a>{(' · frozen copy of the files as read: <a href="'+E(CORPUS_REC[pr['corpus_id']]['frozen_copy']['url'])+'">doi:'+E(CORPUS_REC[pr['corpus_id']]['frozen_copy']['doi'])+'</a>') if CORPUS_REC.get(pr['corpus_id'],{}).get('frozen_copy',{}).get('doi') else ''}</p>
+<details class="code" open><summary>{E(t("how_found"))}</summary>
+<p class="meta">{E(t("run"))} <code>{E(pr.get('run',''))}</code> · <a href="{REPO}/blob/main/{E(pr['file'])}">{E(pr['file'])}</a>{(' · '+E(t('written'))+' '+E(pr['written'])) if pr.get('written') else ''}{(' · '+E(r['by'])) if r.get('by') else ''}</p>
+<p class="meta">{E(t("searched_in"))} {E(CORPUS_NAMES.get(pr['corpus_id'], pr['corpus_id']).split(' — ')[0])}{(', '+E(t('read_on'))+' '+E(CORPUS_REC[pr['corpus_id']]['harvested'])) if CORPUS_REC.get(pr['corpus_id'],{}).get('harvested') else ''} · identifiers, sha256 as read and licences: <a href="{REPO}/blob/main/corpora/{E(CORPUS_FILE[pr['corpus_id']])}">record</a>{(' · frozen copy of the files as read: <a href="'+E(CORPUS_REC[pr['corpus_id']]['frozen_copy']['url'])+'">doi:'+E(CORPUS_REC[pr['corpus_id']]['frozen_copy']['doi'])+'</a>') if CORPUS_REC.get(pr['corpus_id'],{}).get('frozen_copy',{}).get('doi') else ''}</p>
 <pre><code>{E(code)}</code></pre></details></div>"""
     seen = "".join(f"""<article class="obs"><p class="meta"><strong>{E(corpus_short(s['corpus']))}</strong> · {E(s['corpus'])} · {E(s['date'])}{(' · '+E(s['observer'])) if s.get('observer') else ''}{(' · '+E(s['organisation'])) if s.get('organisation') else ''}</p>
-<p>{E(s['excerpt'] if LANG=='fr' else s.get('excerpt_en', s['excerpt']))}</p>{('<details><summary>'+('English' if LANG=='fr' else 'Original note ('+E(s.get('lang','fr'))+')')+'</summary><p class="fr">'+E(s.get('excerpt_en','') if LANG=='fr' else s['excerpt'])+'</p></details>') if s.get('excerpt_en') and s.get('excerpt_en')!=s['excerpt'] else ''}{('<p class="noprobe">'+E(s['reserve'])+'</p>') if s.get('reserve') else ''}{probe_block(s.get('probe')) if s.get('probe') else ('<p class="noprobe">No reproducible example yet for this note.</p>' if s.get('corpus_id') else '')}</article>""" for s in f["seen"]) or "<p class='muted'>No observation yet: this form is a hypothesis, not an observation.</p>"
+<p>{E(s['excerpt'] if LANG=='fr' else s.get('excerpt_en', s['excerpt']))}</p>{('<details><summary>'+('English' if LANG=='fr' else 'Original note ('+E(s.get('lang','fr'))+')')+'</summary><p class="fr">'+E(s.get('excerpt_en','') if LANG=='fr' else s['excerpt'])+'</p></details>') if s.get('excerpt_en') and s.get('excerpt_en')!=s['excerpt'] else ''}{('<p class="noprobe">'+E(s['reserve'])+'</p>') if s.get('reserve') else ''}{probe_block(s.get('probe')) if s.get('probe') else ('<p class="noprobe">'+E(t('no_example_note'))+'</p>' if s.get('corpus_id') else '')}</article>""" for s in f["seen"]) or "<p class='muted'>"+html.escape(t('no_obs'))+"</p>"
     cases = f["specimens"]["cases"]; cex = f["specimens"]["counter_examples"]
     spec = (f"<p>{len(cases)} case(s), {len(cex)} counter-example(s).</p>" if cases or cex else "<p class='muted'>Specimens not yet transcribed into this record.</p>")
     hist = "".join(f"<li><span class='meta'>{E(h['date'])}</span> {E(h['event'])}{(' — '+E(h['by'])) if h.get('by') else ''}</li>" for h in f["history"])
     prev = f["prevention"]; rep = f["repair"]
     body = f"""<p class="crumb"><a href="../index.html">Fault Atlas</a> › {E(f['id'])}</p>
-<h1>{E(f['name'])}</h1><p class="fr big">{E(f.get('name_fr',''))}</p><p class="found">Found by <strong>{E(f.get("origin",{}).get("organisation","—"))}</strong>{(" — "+E(f["origin"]["campaign"])) if f.get("origin",{}).get("campaign") else ""}{(" · first seen "+E(f["seen"][0]["date"])) if f["seen"] else ""}</p><p class="found">{E(t("seen_on"))}<strong>{E(" · ".join(corpora_of(f)) or "no observation yet")}</strong></p>
+<h1>{E(nom(f))}</h1><p class="fr big">{E(f['name'] if LANG=='fr' else f.get('name_fr',''))}</p><p class="found">{E(t("found_by"))} <strong>{E(f.get("origin",{}).get("organisation","—"))}</strong>{(" — "+E(f["origin"]["campaign"])) if f.get("origin",{}).get("campaign") else ""}{(" · "+E(t("first_seen"))+" "+E(f["seen"][0]["date"])) if f["seen"] else ""}</p><p class="found">{E(t("seen_on"))}<strong>{E(" · ".join(corpora_of(f)) or t("no_obs_short"))}</strong></p>
 <div class="badges">{('<span class="pill" style="--c:'+SEVERITY[f["legacy_severity"]][1]+'">'+E(SEVERITY[f["legacy_severity"]][0])+'</span>') if f.get("legacy_severity") in SEVERITY else ''}{('<span class="pill era">'+E({"ancient_only":"ancient documents only","both":"both eras","born_modern":"born with the modern","not_settled":"era not settled"}[f["era"]["value"]])+('  ·  worse now' if f["era"].get("aggravated_by_the_modern") else '')+'</span>') if f.get("era") else ''}<span class="pill" style="--c:{d[2]}">{E(d[0])}</span><span class="pill grey">from: {E(f.get("origin",{}).get("organisation","—"))}</span><span class="pill grey">{E(CLASS[f['class']])}</span><span class="pill grey">layer: {E(f['layer'])}</span><span class="pill grey">injection: {E(f.get('injection','—'))}</span><span class="pill warn">{E(f['status'].replace('_',' '))}</span></div>
 <div class="facts"><div><h3>{E(t("h_damage"))}</h3><p><strong>{E(d[0])}</strong> — {E(d[1])}.</p></div>
 <div><h3>{E(t("h_cancel"))}</h3><p>{'Yes' if prev['cancellable_by_code'] else 'No'}{('. Refusal clause: '+E(prev['refusal_clause'])) if prev.get('refusal_clause') else ''}{('. '+E(prev['note'])) if prev.get('note') else ''}.</p></div>
@@ -407,8 +425,8 @@ for f in forms:
 {('<p class="muted small">Searched and not found in: '+E('; '.join(f['observed_absent_in']))+'.</p>') if f.get('observed_absent_in') else ''}
 {('<div class="facts"><div><h3>'+E(t("costs_prop"))+'</h3><p><strong>'+E(SEVERITY[f["proposed_severity"]["value"]][0])+'.</strong> '+E(f["proposed_severity"].get("reason_fr") if LANG=="fr" else f["proposed_severity"]["reason"])+'</p><p class="noprobe">'+E(prop_note(f))+'</p><p class="meta">First reading by '+E(f["proposed_severity"]["proposed_by"])+' on '+E(f["proposed_severity"]["date"])+'. '+E(PROP_STATUS[LANG])+'</p></div></div>') if f.get("proposed_severity") else ''}
 {('<div class="facts"><div><h3>'+E(t("reaches"))+'</h3><p><strong>'+E(f["registry_scope"].get("extent_fr") if LANG=="fr" else f["registry_scope"]["extent"])+'</strong></p><p class="meta">'+E(SCOPE_WHY[LANG])+'</p></div></div>') if f.get("registry_scope") else ''}
-{('<div class="facts"><div><h3>'+E(t("costs"))+'</h3><p><strong>'+E(SEVERITY[f["legacy_severity"]][0])+'.</strong> '+E(SEVERITY[f["legacy_severity"]][2])+'</p><p class="meta">severity '+E(f["legacy_severity"])+', judged line by line in the internal catalogue of 2026-08-09. It is independent of how often the fault occurs: a rare fault that answers wrongly in silence is worse than a common one that leaves a hole.</p></div></div>') if f.get("legacy_severity") in SEVERITY else ''}
-{('<div class="facts"><div><h3>'+E(t("seen_years"))+'</h3><p><strong>'+E(" · ".join(f"{y} ({n})" for y, n in sorted(f["document_years"]["counts"].items())))+'</strong> — the publication year of the carrier files themselves, not the year of the observation.</p><p class="meta">'+E(YEARS_SRC[LANG])+'</p></div></div>') if f.get("document_years") else ''}
+{('<div class="facts"><div><h3>'+E(t("costs"))+'</h3><p><strong>'+E(SEVERITY[f["legacy_severity"]][0])+'.</strong> '+E(SEVERITY[f["legacy_severity"]][2])+'</p><p class="meta">'+E(t('sev_meta')).replace('§', E(f["legacy_severity"]))+'</p>') if f.get("legacy_severity") in SEVERITY else ''}
+{('<div class="facts"><div><h3>'+E(t("seen_years"))+'</h3><p><strong>'+E(" · ".join(f"{y} ({n})" for y, n in sorted(f["document_years"]["counts"].items())))+'</strong> {E(t("years_tail"))}</p><p class="meta">'+E(YEARS_SRC[LANG])+'</p></div></div>') if f.get("document_years") else ''}
 {('<div class="facts"><div><h3>'+E(t("repairs"))+'</h3><p><strong>'+E(t("judged"))+' '+E(REACH[f["repair"]["reachable_by_deletion"]])+'</strong> '+E(t("judged_how"))+' <strong>'+E(t("measured"))+' '+E(MEASURED_V[LANG][f["repair"]["measured"]["value"]])+'</strong>: '+E(MEASURED_NOTE[LANG].get(f["damage"],""))+'</p>'+('<p class="noprobe"><strong>'+E(t("disagree"))+'</strong> '+E(t("disagree_2"))+' '+E(f["repair"]["measured"]["disagrees_with_the_judgment"])+'.</p>' if f["repair"]["measured"].get("disagrees_with_the_judgment") else '')+'<p class="meta">'+E(MEASURED_SRC[LANG])+'</p></div></div>') if f.get("repair",{}).get("measured") else ''}
 {('<div class="facts"><div><h3>'+E(t("fails"))+'</h3><p><strong>'+E({"PROP":"Identity, and it propagates","FAUX":"A false fact","MANQ":"A gap, not a wrong answer","MES":"A property of the corpus, not a fault of a document","DEC":"A use made downstream"}[f["failure_mode"]["value"]])+'</strong>. '+E(MODE_MEANS[LANG][f["failure_mode"]["value"]])+'</p><p class="meta">'+E(MODE_SRC[LANG])+'</p></div></div>') if f.get('failure_mode') else ''}
 {('<div class="facts"><div><h3>'+E(t("applies"))+'</h3><p><strong>'+E({"ancient_only":"Documents of the old era only","both":"Both eras, 1957 and 2026 alike","born_modern":"Born with the modern era","not_settled":"Era not settled"}[f["era"]["value"]])+'</strong>'+(' — and worse now than it was' if f["era"].get("aggravated_by_the_modern") else '')+('. '+E(f["era"]["note"]) if f["era"].get("note") else '')+'</p><p class="meta">'+E(f["era"]["source"])+'</p></div></div>') if f.get('era') else ''}
@@ -416,7 +434,7 @@ for f in forms:
 <h2>{E(t("h_spec"))}</h2>{spec}
 <h2>{E(t("h_hist"))}</h2><ul class="hist">{hist}</ul>
 <p class="muted">Record: <a href="../atlas.json">atlas.json</a> · <a href="{REPO}/blob/main/forms/{E(src_name)}">source file on GitHub</a> · <a href="{E(f['id'])}.json">this record as JSON</a> · <a href="{DATA}/forms/{E(f['id'])}">row in the data explorer</a></p>"""
-    (SITE/"forms"/f"{f['id']}.html").write_text(layout(f"{f['name']} — Fault Atlas", body, depth=1, desc=f"{f['name']}: {d[0].lower()} — {d[1]}."))
+    (SITE/"forms"/f"{f['id']}.html").write_text(layout(f"{nom(f)} — Fault Atlas", body, depth=1, desc=f"{nom(f)} : {d[0].lower()} — {d[1]}." if LANG=="fr" else f"{nom(f)}: {d[0].lower()} — {d[1]}."))
 
 
 # ── probes: no page. Each form shows its own documents and, folded, how they were found. ──

@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.15.1 — 2026-09-11
+- **The French pages had English titles.** Every form page took its `<title>` and its `<h1>` from the English name, so the tab, the heading and the description were English on all 162 French pages. Fixed, along with everything else the generator still said in English on both sides: "found by", "first seen", the severity note, the whole probe block, the no-observation line.
+- The English name still appears under the French one, and the French under the English. That is deliberate: it is the same device as the excerpt, which shows the original and folds the translation away.
+
 ## 0.15.0 — 2026-09-11
 - **Seven cards under a sentence that says seven.** The eighth, corpus parameter, is not a damage and said so in its own description; it now sits below the grid instead of inside it, where it made the headline wrong by one.
 - **The language switch is a glyph and a code, not a flag.** A flag is a country, and a country is not a language.
