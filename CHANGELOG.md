@@ -1,12 +1,5 @@
 # Changelog
 
-## 0.1.0 — 2026-09-09
-- Schema `form.schema.json` (record of truth: damage, class, seen, specimens, prevention, repair, judgeable_by, history).
-- 113 forms migrated from the internal catalogue of 2026-08-09 (`korela.db`), all `migrated_unreviewed`; 26 lines set out of scope.
-- Classification by damage and injection done line by line on 2026-09-09 (`docs/VERIFICATION-2026-09-09.md`); judgment, not measurement.
-- Validator with house rules; proves itself on seven planted faults.
-- SQLite view builder for Datasette.
-
 ## 0.12.0 — 2026-09-11
 - **The 49 forms with no severity have a first reading, and it says how much it is worth.** Each carries a proposed consequence with its reason, marked proposed and dated, for a second reader to confirm or contest as for the 43 already validated. **Only 11 of the 49 add anything to what the damage class already implies**, and the other 38 say so on their own page rather than pass a lookup off as a judgment.
 - **One disagreement with the August catalogue, stated rather than smoothed over.** August judges most splits *contaminates*; this reading judges most of them *hides*. The two are defensible and the field cannot mean both, so the divergence is printed and left for the second reader.
@@ -163,3 +156,10 @@
 - Layer labels and history events in English.
 - Internal script names removed from observation notes.
 - Datasette view: `observations` and `history` now carry the form name and a foreign key to `forms`; `datasette-metadata.json` added (label column, facets, descriptions).
+
+## 0.1.0 — 2026-09-09
+- Schema `form.schema.json` (record of truth: damage, class, seen, specimens, prevention, repair, judgeable_by, history).
+- 113 forms migrated from the internal catalogue of 2026-08-09 (`korela.db`), all `migrated_unreviewed`; 26 lines set out of scope.
+- Classification by damage and injection done line by line on 2026-09-09 (`docs/VERIFICATION-2026-09-09.md`); judgment, not measurement.
+- Validator with house rules; proves itself on seven planted faults.
+- SQLite view builder for Datasette.

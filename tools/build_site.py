@@ -12,6 +12,13 @@ import shutil; FAV = ROOT/"tools"/"favicon.svg"
 if FAV.exists(): shutil.copy(FAV, SITE/"favicon.svg")
 DOI = "10.5281/zenodo.22674547"; REPO = "https://github.com/Loxyn-Korela/fault-atlas"; DATA = "/data/fault-atlas"
 VERSION = re.search(r"^version: (.+)$", (ROOT/"CITATION.cff").read_text(), re.M).group(1)
+# The footer said v0.6.1 for six releases because this number lives in CITATION.cff and nobody
+# bumped it. It cannot drift again: the build refuses when it disagrees with the changelog.
+_LATEST = max(re.findall(r"^## (\d+\.\d+\.\d+)", (ROOT/"CHANGELOG.md").read_text(), re.M),
+              key=lambda v: [int(x) for x in v.split(".")])
+if VERSION != _LATEST:
+    raise SystemExit(f"CITATION.cff says {VERSION}, CHANGELOG.md's newest entry is {_LATEST}. "
+                     f"Bump CITATION.cff before building, or the site will publish a stale version.")
 import datetime
 BUILT = datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
 
