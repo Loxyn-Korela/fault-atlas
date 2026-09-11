@@ -74,11 +74,14 @@
     "date": "2026-09-11",
     "status": "proposed — a second reader confirms or contests, as for the 43 validated forms",
     "adds_to_the_damage_class": false,
-    "note": "this reading agrees with how the August catalogue judges most MERGE forms (G1), so it adds little"
+    "note": "this reading agrees with how the August catalogue judges most MERGE forms (G1), so it adds little",
+    "reason_fr": "plusieurs entités sous une même graphie, aucun sens choisi : leurs faits se posent sur un nœud commun"
   },
   "registry_scope": {
     "extent": "every writing carried by several Q items, flagged ambiguous and never settled",
     "why_not_a_prevalence": "a fault of a registry has no prevalence: it is a property of the base, so everything drawn from that base carries it. What can be stated is the slice it touches.",
-    "source": "read from this form's own observation, 2026-09-11"
-  }
+    "source": "read from this form's own observation, 2026-09-11",
+    "extent_fr": "toute graphie portée par plusieurs items Q, signalée ambiguë et jamais tranchée"
+  },
+  "name_fr": "Même graphie sur plusieurs entités, aucun sens choisi (Wikidata)"
 }

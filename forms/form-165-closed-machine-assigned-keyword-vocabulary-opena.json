@@ -74,11 +74,14 @@
     "date": "2026-09-11",
     "status": "proposed — a second reader confirms or contests, as for the 43 validated forms",
     "adds_to_the_damage_class": false,
-    "note": "this reading agrees with how the August catalogue judges most MISSING forms (G3), so it adds little"
+    "note": "this reading agrees with how the August catalogue judges most MISSING forms (G3), so it adds little",
+    "reason_fr": "une liste de référence fermée, assignée automatiquement : ce qu'elle ne nomme pas reste introuvable"
   },
   "registry_scope": {
     "extent": "the 65,004 entries of the closed list, assigned automatically, 7.9 per record on average",
     "why_not_a_prevalence": "a fault of a registry has no prevalence: it is a property of the base, so everything drawn from that base carries it. What can be stated is the slice it touches.",
-    "source": "read from this form's own observation, 2026-09-11"
-  }
+    "source": "read from this form's own observation, 2026-09-11",
+    "extent_fr": "les 65 004 entrées de la liste fermée, assignées automatiquement, 7,9 par fiche en moyenne"
+  },
+  "name_fr": "Vocabulaire de mots-clés fermé et assigné par machine (OpenAlex)"
 }

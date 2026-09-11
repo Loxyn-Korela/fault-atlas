@@ -67,11 +67,14 @@
     "date": "2026-09-11",
     "status": "proposed — a second reader confirms or contests, as for the 43 validated forms",
     "adds_to_the_damage_class": false,
-    "note": "this reading agrees with how the August catalogue judges most WRONG_LABEL forms (G2), so it adds little"
+    "note": "this reading agrees with how the August catalogue judges most WRONG_LABEL forms (G2), so it adds little",
+    "reason_fr": "l'indexation passe de l'humain à l'automate en 2022 : comparer de part et d'autre donne une tendance fausse que rien ne signale"
   },
   "registry_scope": {
     "extent": "the MTIX switch of mid-2022 splits the base into two indexing regimes",
     "why_not_a_prevalence": "a fault of a registry has no prevalence: it is a property of the base, so everything drawn from that base carries it. What can be stated is the slice it touches.",
-    "source": "read from this form's own observation, 2026-09-11"
-  }
+    "source": "read from this form's own observation, 2026-09-11",
+    "extent_fr": "la bascule MTIX de mi-2022 coupe la base en deux régimes d'indexation"
+  },
+  "name_fr": "Changement de source d'indexation (humaine vers automatique) dans un même champ"
 }

@@ -73,6 +73,8 @@
     "date": "2026-09-11",
     "status": "proposed — a second reader confirms or contests, as for the 43 validated forms",
     "adds_to_the_damage_class": false,
-    "note": "this reading agrees with how the August catalogue judges most ANACHRONISM forms (G2), so it adds little"
-  }
+    "note": "this reading agrees with how the August catalogue judges most ANACHRONISM forms (G2), so it adds little",
+    "reason_fr": "un mot neuf sur une science ancienne : on lit une naissance là où il n'y a qu'un renommage"
+  },
+  "name_fr": "Nouvelle étiquette MeSH sur une science ancienne"
 }

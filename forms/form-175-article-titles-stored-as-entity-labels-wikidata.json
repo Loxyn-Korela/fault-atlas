@@ -69,11 +69,14 @@
     "date": "2026-09-11",
     "status": "proposed — a second reader confirms or contests, as for the 43 validated forms",
     "adds_to_the_damage_class": true,
-    "note": "the August catalogue judges most WRONG_LABEL forms G2; this reading says G1 and the reason is above"
+    "note": "the August catalogue judges most WRONG_LABEL forms G2; this reading says G1 and the reason is above",
+    "reason_fr": "des titres d'articles stockés comme étiquettes d'entités : des dizaines de millions de faux nœuds qui attirent des faits"
   },
   "registry_scope": {
     "extent": "tens of millions of items out of the base's 121.5 million",
     "why_not_a_prevalence": "a fault of a registry has no prevalence: it is a property of the base, so everything drawn from that base carries it. What can be stated is the slice it touches.",
-    "source": "read from this form's own observation, 2026-09-11"
-  }
+    "source": "read from this form's own observation, 2026-09-11",
+    "extent_fr": "des dizaines de millions d'items sur les 121,5 millions de la base"
+  },
+  "name_fr": "Titres d'articles stockés comme étiquettes d'entités (Wikidata)"
 }

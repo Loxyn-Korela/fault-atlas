@@ -74,11 +74,14 @@
     "date": "2026-09-11",
     "status": "proposed — a second reader confirms or contests, as for the 43 validated forms",
     "adds_to_the_damage_class": false,
-    "note": "this reading agrees with how the August catalogue judges most ANACHRONISM forms (G2), so it adds little"
+    "note": "this reading agrees with how the August catalogue judges most ANACHRONISM forms (G2), so it adds little",
+    "reason_fr": "un descripteur né en 2019 posé sur des articles de 2006 : tout raisonnement par date répond faux sans prévenir"
   },
   "registry_scope": {
     "extent": "931 records completed before 2018 carry a descriptor born in 2019; the 2019 NLM campaign weighs 21.22 %",
     "why_not_a_prevalence": "a fault of a registry has no prevalence: it is a property of the base, so everything drawn from that base carries it. What can be stated is the slice it touches.",
-    "source": "read from this form's own observation, 2026-09-11"
-  }
+    "source": "read from this form's own observation, 2026-09-11",
+    "extent_fr": "931 fiches achevées avant 2018 portent un descripteur né en 2019 ; la campagne NLM de 2019 pèse 21,22 %"
+  },
+  "name_fr": "Rétro-indexation d'un descripteur MeSH sur des articles plus anciens"
 }

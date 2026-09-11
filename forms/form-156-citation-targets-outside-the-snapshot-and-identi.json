@@ -74,11 +74,14 @@
     "date": "2026-09-11",
     "status": "proposed — a second reader confirms or contests, as for the 43 validated forms",
     "adds_to_the_damage_class": false,
-    "note": "this reading agrees with how the August catalogue judges most MISSING forms (G3), so it adds little"
+    "note": "this reading agrees with how the August catalogue judges most MISSING forms (G3), so it adds little",
+    "reason_fr": "1 635 cibles de citation hors de l'instantané : le lien existe et sa cible est introuvable"
   },
   "registry_scope": {
     "extent": "1,635 targets absent from the base and 145,487 corrections with no identifier, out of 397,591,740 citations",
     "why_not_a_prevalence": "a fault of a registry has no prevalence: it is a property of the base, so everything drawn from that base carries it. What can be stated is the slice it touches.",
-    "source": "read from this form's own observation, 2026-09-11"
-  }
+    "source": "read from this form's own observation, 2026-09-11",
+    "extent_fr": "1 635 cibles absentes de la base et 145 487 corrections sans identifiant, sur 397 591 740 citations"
+  },
+  "name_fr": "Cibles de citation hors de l'instantané, et identifiants au-delà de 32 bits"
 }

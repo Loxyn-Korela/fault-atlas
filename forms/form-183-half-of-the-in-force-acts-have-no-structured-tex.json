@@ -99,11 +99,14 @@
     "date": "2026-09-11",
     "status": "proposed — a second reader confirms or contests, as for the 43 validated forms",
     "adds_to_the_damage_class": false,
-    "note": "this reading agrees with how the August catalogue judges most MISSING forms (G3), so it adds little"
+    "note": "this reading agrees with how the August catalogue judges most MISSING forms (G3), so it adds little",
+    "reason_fr": "la moitié des actes en vigueur sans texte structuré : ils sont au registre et illisibles"
   },
   "registry_scope": {
     "extent": "30,047 English texts for 58,686 works in the manifest: a little under half",
     "why_not_a_prevalence": "a fault of a registry has no prevalence: it is a property of the base, so everything drawn from that base carries it. What can be stated is the slice it touches.",
-    "source": "read from this form's own observation, 2026-09-11"
-  }
+    "source": "read from this form's own observation, 2026-09-11",
+    "extent_fr": "30 047 textes anglais pour 58 686 œuvres au manifeste : un peu moins de la moitié"
+  },
+  "name_fr": "La moitié des actes en vigueur sans texte structuré dans le dump officiel"
 }

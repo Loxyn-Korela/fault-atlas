@@ -70,11 +70,14 @@
     "date": "2026-09-11",
     "status": "proposed — a second reader confirms or contests, as for the 43 validated forms",
     "adds_to_the_damage_class": false,
-    "note": "this reading agrees with how the August catalogue judges most SPURIOUS_EDGE forms (G2), so it adds little"
+    "note": "this reading agrees with how the August catalogue judges most SPURIOUS_EDGE forms (G2), so it adds little",
+    "reason_fr": "9 269 signalements en douze mois portés par un contentieux : l'association est un artefact médiatique et se lit comme un signal"
   },
   "registry_scope": {
     "extent": "the identified waves: 9,269 reports in twelve months for a single product-effect pair",
     "why_not_a_prevalence": "a fault of a registry has no prevalence: it is a property of the base, so everything drawn from that base carries it. What can be stated is the slice it touches.",
-    "source": "read from this form's own observation, 2026-09-11"
-  }
+    "source": "read from this form's own observation, 2026-09-11",
+    "extent_fr": "les vagues repérées : 9 269 signalements en douze mois pour un seul couple produit-effet"
+  },
+  "name_fr": "Vagues de signalements portées par un contentieux ou les médias (FAERS)"
 }

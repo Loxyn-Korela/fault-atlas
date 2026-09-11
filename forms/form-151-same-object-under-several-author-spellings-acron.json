@@ -72,11 +72,14 @@
     "date": "2026-09-11",
     "status": "proposed — a second reader confirms or contests, as for the 43 validated forms",
     "adds_to_the_damage_class": true,
-    "note": "the August catalogue judges most SPLIT forms G1; this reading says G3 and the reason is above"
+    "note": "the August catalogue judges most SPLIT forms G1; this reading says G3 and the reason is above",
+    "reason_fr": "le même objet sous dix-sept graphies : on en trouve une et on manque les autres"
   },
   "registry_scope": {
     "extent": "the 17 diverging spellings between two lists of 63 and 64 names",
     "why_not_a_prevalence": "a fault of a registry has no prevalence: it is a property of the base, so everything drawn from that base carries it. What can be stated is the slice it touches.",
-    "source": "read from this form's own observation, 2026-09-11"
-  }
+    "source": "read from this form's own observation, 2026-09-11",
+    "extent_fr": "les 17 graphies divergentes entre deux listes de 63 et 64 noms"
+  },
+  "name_fr": "Même objet sous plusieurs graphies d'auteur (sigle, pluriel, sigle accolé)"
 }

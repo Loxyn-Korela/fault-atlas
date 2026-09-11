@@ -74,11 +74,14 @@
     "date": "2026-09-11",
     "status": "proposed — a second reader confirms or contests, as for the 43 validated forms",
     "adds_to_the_damage_class": false,
-    "note": "this reading agrees with how the August catalogue judges most MISSING forms (G3), so it adds little"
+    "note": "this reading agrees with how the August catalogue judges most MISSING forms (G3), so it adds little",
+    "reason_fr": "21 292 projets sans juridiction : impossibles à rattacher à un pays, ils disparaissent de tout regroupement"
   },
   "registry_scope": {
     "extent": "21,292 projects with no jurisdiction, of which 15,478 carry an amount",
     "why_not_a_prevalence": "a fault of a registry has no prevalence: it is a property of the base, so everything drawn from that base carries it. What can be stated is the slice it touches.",
-    "source": "read from this form's own observation, 2026-09-11"
-  }
+    "source": "read from this form's own observation, 2026-09-11",
+    "extent_fr": "21 292 projets sans juridiction, dont 15 478 portent un montant"
+  },
+  "name_fr": "Juridiction de financeur vide"
 }

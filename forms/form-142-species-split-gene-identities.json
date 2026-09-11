@@ -71,11 +71,14 @@
     "date": "2026-09-11",
     "status": "proposed — a second reader confirms or contests, as for the 43 validated forms",
     "adds_to_the_damage_class": true,
-    "note": "the August catalogue judges most SPLIT forms G1; this reading says G3 and the reason is above"
+    "note": "the August catalogue judges most SPLIT forms G1; this reading says G3 and the reason is above",
+    "reason_fr": "une même identité génique éclatée par espèce : on trouve la moitié humaine et on ignore que l'autre existe"
   },
   "registry_scope": {
     "extent": "every gene record whose ortholog exists in another species, out of 4,929,431 living genes",
     "why_not_a_prevalence": "a fault of a registry has no prevalence: it is a property of the base, so everything drawn from that base carries it. What can be stated is the slice it touches.",
-    "source": "read from this form's own observation, 2026-09-11"
-  }
+    "source": "read from this form's own observation, 2026-09-11",
+    "extent_fr": "toute fiche génique dont l'orthologue existe dans une autre espèce, sur 4 929 431 gènes vivants"
+  },
+  "name_fr": "Identités géniques éclatées par espèce"
 }

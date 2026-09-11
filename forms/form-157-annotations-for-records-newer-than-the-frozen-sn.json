@@ -72,11 +72,14 @@
     "date": "2026-09-11",
     "status": "proposed — a second reader confirms or contests, as for the 43 validated forms",
     "adds_to_the_damage_class": false,
-    "note": "this reading agrees with how the August catalogue judges most MISSING forms (G3), so it adds little"
+    "note": "this reading agrees with how the August catalogue judges most MISSING forms (G3), so it adds little",
+    "reason_fr": "278 093 identifiants rejetés parce que plus récents que la borne : absents, pas faux"
   },
   "registry_scope": {
     "extent": "1,238,995 rejected lines, 278,093 distinct identifiers, of which 270,047 beyond the bound",
     "why_not_a_prevalence": "a fault of a registry has no prevalence: it is a property of the base, so everything drawn from that base carries it. What can be stated is the slice it touches.",
-    "source": "read from this form's own observation, 2026-09-11"
-  }
+    "source": "read from this form's own observation, 2026-09-11",
+    "extent_fr": "1 238 995 lignes rejetées, 278 093 identifiants distincts, dont 270 047 au-delà de la borne"
+  },
+  "name_fr": "Annotations de fiches plus récentes que l'instantané gelé (faux déclin récent)"
 }

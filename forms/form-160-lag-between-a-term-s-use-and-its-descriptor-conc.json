@@ -72,11 +72,14 @@
     "date": "2026-09-11",
     "status": "proposed — a second reader confirms or contests, as for the 43 validated forms",
     "adds_to_the_damage_class": false,
-    "note": "this reading agrees with how the August catalogue judges most MISSING forms (G3), so it adds little"
+    "note": "this reading agrees with how the August catalogue judges most MISSING forms (G3), so it adds little",
+    "reason_fr": "un à sept ans entre l'usage d'un terme et son descripteur : chercher par descripteur manque des années de littérature"
   },
   "registry_scope": {
     "extent": "every term between its use and its descriptor: one to seven years, 3.7 years median",
     "why_not_a_prevalence": "a fault of a registry has no prevalence: it is a property of the base, so everything drawn from that base carries it. What can be stated is the slice it touches.",
-    "source": "read from this form's own observation, 2026-09-11"
-  }
+    "source": "read from this form's own observation, 2026-09-11",
+    "extent_fr": "tout terme entre son usage et son descripteur : un à sept ans, 3,7 ans en médiane"
+  },
+  "name_fr": "Décalage entre l'usage d'un terme et son descripteur (le concept précède son étiquette)"
 }

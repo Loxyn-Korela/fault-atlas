@@ -77,11 +77,14 @@
     "date": "2026-09-11",
     "status": "proposed — a second reader confirms or contests, as for the 43 validated forms",
     "adds_to_the_damage_class": false,
-    "note": "this reading agrees with how the August catalogue judges most ANACHRONISM forms (G2), so it adds little"
+    "note": "this reading agrees with how the August catalogue judges most ANACHRONISM forms (G2), so it adds little",
+    "reason_fr": "696 rétractations sans lien vers l'article retiré : un résultat rétracté est servi comme valide et rien n'avertit"
   },
   "registry_scope": {
     "extent": "1,429 retraction notices, of which 696 without a D016440 link and 685 without a D016441 link",
     "why_not_a_prevalence": "a fault of a registry has no prevalence: it is a property of the base, so everything drawn from that base carries it. What can be stated is the slice it touches.",
-    "source": "read from this form's own observation, 2026-09-11"
-  }
+    "source": "read from this form's own observation, 2026-09-11",
+    "extent_fr": "1 429 notices de rétractation, dont 696 sans lien D016440 et 685 sans lien D016441"
+  },
+  "name_fr": "Statut de rétractation non relié à la fiche rétractée"
 }

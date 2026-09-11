@@ -48,6 +48,12 @@ T = {
  "fails": {"en": "How it fails", "fr": "Comment elle échoue"},
  "applies": {"en": "When it applies", "fr": "Quand elle s'applique"},
  "switch": {"en": "\U0001F1EB\U0001F1F7", "fr": "\U0001F1EC\U0001F1E7"},
+  "judged": {"en": "Judged", "fr": "Jugé"},
+ "judged_how": {"en": "on 2026-09-09, from the damage class, not form by form.", "fr": "le 9 septembre 2026, depuis la classe de dégât, pas forme par forme."},
+ "measured": {"en": "Measured", "fr": "Mesuré"},
+ "disagree": {"en": "The measurement disagrees with the judgment.", "fr": "La mesure contredit le jugement."},
+ "disagree_2": {"en": "This form was classified", "fr": "Cette forme était classée"},
+ "classified": {"en": "classified, not measured", "fr": "classé, non mesuré"},
  "switch_title": {"en": "Lire en français", "fr": "Read in English"},
  "sev": {"en": {"G1": ("Contaminates","The error lands on an entity, and every fact hanging from that entity inherits it. One wrong identity, and a whole neighbourhood of the graph answers wrongly."),
                 "G2": ("Answers wrongly, in silence","A single false fact, local, and nothing signals it. You get an answer, it looks like every other answer, and it is wrong. This is the one a low prevalence must not excuse."),
@@ -167,7 +173,7 @@ def layout(title, body, depth=0, desc=""):
 <title>{E(title)}</title><meta name="description" content="{E(desc or 'Observed fault forms in knowledge graphs built from documents, with provenance, damage and the truth that judges them.')}">
 <link rel="icon" href="{p}favicon.svg" type="image/svg+xml"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fraunces:ital,opsz,wght,SOFT@1,9..144,300,0&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"><link rel="stylesheet" href="{p}style.css"></head><body>
 <header class="top"><a class="brand" href="{p}index.html"><img src="{p}favicon.svg" alt="" width="22" height="22"> Fault Atlas <span class="by">by Loxyn</span></a>
-<nav><a href="{p}index.html#forms">{E(t("nav_forms"))}</a><a href="{p}index.html#about">{E(t("nav_about"))}</a><a href="{DATA}">{E(t("nav_data"))}</a><a href="{REPO}">GitHub</a><a href="https://doi.org/{DOI}">DOI</a><a class="lang" href="{SWITCH[depth]}" title="{E(t("switch_title"))}" aria-label="{E(t("switch_title"))}">{t("switch")}</a></nav></header>
+<nav><a href="{p}index.html#forms">{E(t("nav_forms"))}</a><a href="{p}index.html#about">{E(t("nav_about"))}</a><a href="{DATA}">{E(t("nav_data"))}</a><a href="{REPO}">GitHub</a><a href="https://doi.org/{DOI}">DOI</a><a class="lang" href="{SWITCH[depth]}" title="{E(t("switch_title"))}" aria-label="{E(t("switch_title"))}"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 8 6 6"/><path d="m4 14 6-6 2-3"/><path d="M2 5h12"/><path d="M7 2h1"/><path d="m22 22-5-10-5 10"/><path d="M14 18h6"/></svg>{"FR" if LANG == "en" else "EN"}</a></nav></header>
 <main>{body}</main>
 <footer><p><strong>Fault Atlas</strong> v{E(VERSION)} · built {BUILT} · Loxyn SAS, Lyon · Gracia S., Bagnol-Lebon C., Comtet Y. · records CC BY-SA 4.0, tools Apache 2.0 · <a href="https://doi.org/{DOI}">doi:{DOI}</a> · <a href="{REPO}">source</a> · <a href="mailto:contact@loxyn.ai">contact@loxyn.ai</a></p>
 <p class="muted">{E(t("foot_note"))}</p></footer>
@@ -183,7 +189,9 @@ def upstream(f):
     L = set(re.findall(r"[①-⑬]", f["layer"]))
     return bool(L) and L <= {"①", "②"}
 gcounts = Counter(f["damage"] for f in forms if not upstream(f))
-cards = "".join(f"""<a class="card" href="#forms" data-damage="{k}" style="--c:{v[2]}"><span class="n">{counts.get(k,0)}<small> · {gcounts.get(k,0)}{E(t("reach"))}</small></span><span class="t">{E(v[0])}</span><span class="d">{E(v[1])}</span></a>""" for k,v in DAMAGE.items())
+cards = "".join(f"""<a class="card" href="#forms" data-damage="{k}" style="--c:{v[2]}"><span class="n">{counts.get(k,0)}<small> · {gcounts.get(k,0)}{E(t("reach"))}</small></span><span class="t">{E(v[0])}</span><span class="d">{E(v[1])}</span></a>""" for k,v in DAMAGE.items() if k != "CORPUS_PARAMETER")
+_cp = DAMAGE["CORPUS_PARAMETER"]
+aside = f"""<p class="aside"><a href="#forms" data-damage="CORPUS_PARAMETER">{counts.get("CORPUS_PARAMETER",0)} {E(_cp[0])}</a> — {E(_cp[1])}</p>"""
 def nom(f):
     """the form's name in the page's language; the French name is missing on 44 forms, and then the English one stands in"""
     return (f.get("name_fr") or f["name"]) if LANG == "fr" else f["name"]
@@ -203,6 +211,57 @@ rows = "".join(f"""<tr data-damage="{f['damage']}" data-class="{f['class']}" dat
 <td><a href="forms/{f['id']}.html">{E(nom(f))}</a><br><span class="fr">{E(f['name'] if LANG=='fr' else f.get('name_fr',''))}</span></td>
 <td><span class="pill" style="--c:{DAMAGE[f['damage']][2]}">{E(DAMAGE[f['damage']][0])}</span></td>
 <td class="date">{E(last_date(f) or '—')}</td><td>{E(CLASS_SHORT[f['class']])}</td><td>{E(f['layer'])}</td><td class="src" title="{E(" · ".join(corpora_of(f)) or "—")}">{E(" · ".join(corpora_of(f)) or "—")}</td><td class="proof p-{proof_of(f)[0]}">{E(proof_of(f)[1])}</td></tr>""" for f in forms)
+
+MODE_MEANS = {"en": {
+  "PROP": "identity: one thing appears under several forms, or several things under one — the error lands on a node and propagates to everything hanging from it",
+  "FAUX": "a false fact: a value, a type or a link the source never asserted",
+  "MANQ": "a gap: the graph is incomplete where the reading did not reach, not wrong",
+  "MES":  "a property of the corpus or of the measuring apparatus, not a fault of a document",
+  "DEC":  "a use made downstream of the graph, not a fault in building it"},
+ "fr": {
+  "PROP": "l'identité : une chose sous plusieurs formes, ou plusieurs choses sous une seule — l'erreur se pose sur un nœud et se propage à tout ce qui y pend",
+  "FAUX": "un fait faux : une valeur, un type ou un lien que la source n'a jamais affirmé",
+  "MANQ": "un trou : le graphe est incomplet là où la lecture n'est pas allée, pas menteur",
+  "MES":  "une propriété du corpus ou de l'appareil de mesure, pas une faute d'un document",
+  "DEC":  "un usage fait en aval du graphe, pas une faute de sa construction"}}
+MODE_SRC = {"en": "the internal catalogue of 2026-08-09: judged line by line, and it varies inside a damage class",
+            "fr": "le catalogue interne du 9 août 2026 : jugé ligne par ligne, et il varie à l'intérieur d'un même dégât"}
+MEASURED_V = {"en": {"yes":"yes","no":"no","partial":"partial","yes_at_a_cost":"yes, at a cost","depends_on_visibility":"only when a law can see it"},
+              "fr": {"yes":"oui","no":"non","partial":"partiel","yes_at_a_cost":"oui, à un prix","depends_on_visibility":"seulement quand une loi la voit"}}
+MEASURED_NOTE = {"en": {
+  "ANACHRONISM":"0 of 5,276 reached, on three identical runs","WRONG_VALUE":"0 of 2,613 reached",
+  "MERGE":"0 of 2,532 reached","MISSING":"0 of 423 reached",
+  "SPLIT":"0 of 1,355 restored; 24 twins deleted and the 1,674 true facts they took were not restored",
+  "WRONG_LABEL":"3,932 of 3,932 reached, and 12,591 true facts were lost with them: the repair deletes the nodes, not their labels",
+  "SPURIOUS_EDGE":"360 of 360 when a law can see it, 6 of 361 when none can"},
+ "fr": {
+  "ANACHRONISM":"0 atteint sur 5 276, sur trois exécutions identiques","WRONG_VALUE":"0 atteint sur 2 613",
+  "MERGE":"0 atteint sur 2 532","MISSING":"0 atteint sur 423",
+  "SPLIT":"0 rétabli sur 1 355 : 24 jumeaux supprimés, et les 1 674 faits vrais qu'ils avaient emportés ne reviennent pas",
+  "WRONG_LABEL":"3 932 atteints sur 3 932, et 12 591 faits vrais sont partis avec : la réparation supprime les nœuds, pas leurs étiquettes",
+  "SPURIOUS_EDGE":"360 sur 360 quand une loi la voit, 6 sur 361 quand aucune ne la voit"}}
+MEASURED_SRC = {"en": "measured 2026-09-10 by pgrepair on the frozen EUR-Lex truth, three identical runs. Per damage class, not per form.",
+                "fr": "mesuré le 10 septembre 2026 par pgrepair sur la vérité EUR-Lex gelée, trois exécutions identiques. Par classe de dégât, pas par forme."}
+YEARS_SRC = {"en": "the publication year of the carrier files themselves, read from each file",
+             "fr": "l'année de publication des fichiers porteurs eux-mêmes, lue dans chaque fichier"}
+PROP_STATUS = {"en": "First reading, proposed. A second reader confirms or contests, as for the 43 validated forms.",
+               "fr": "Première lecture, proposée. Une seconde lectrice confirme ou conteste, comme pour les 43 formes validées."}
+
+SCOPE_WHY = {"en": "a fault of a registry has no prevalence: it is a property of the base, so everything drawn from that base carries it. What can be stated is the slice it touches.",
+             "fr": "une faute de registre n'a pas de prévalence : elle est une propriété de la base, donc tout ce qu'on en tire la porte. Ce qui peut se dire, c'est la tranche qu'elle touche."}
+REPAIR_NOTE = {"en": {"no":"deletion cannot restore this","yes":"the faulty edge can be deleted","partial":"an extra label can be deleted, a missing one cannot be added"},
+               "fr": {"no":"une suppression ne peut pas rétablir ceci","yes":"l'arête fautive peut être supprimée","partial":"une étiquette en trop peut être supprimée, une manquante ne peut pas être ajoutée"}}
+REPAIR_SRC = {"en": "derived from the damage class by the migration of 2026-09-09, not judged form by form and not measured",
+              "fr": "dérivé de la classe de dégât par la migration du 9 septembre 2026, ni jugé forme par forme ni mesuré"}
+def prop_note(f):
+    v = f["proposed_severity"]
+    if v.get("adds_to_the_damage_class"):
+        return ("the August catalogue judges most %s forms otherwise; this reading says %s and the reason is above" % (f["damage"], v["value"])
+                if LANG == "en" else
+                "le catalogue d'août juge la plupart des formes %s autrement ; cette lecture dit %s, et la raison est ci-dessus" % (f["damage"], v["value"]))
+    return ("this reading agrees with how the August catalogue judges most %s forms, so it adds little" % f["damage"]
+            if LANG == "en" else
+            "cette lecture rejoint la façon dont le catalogue d'août juge la plupart des formes %s : elle n'ajoute donc pas grand-chose" % f["damage"])
 TH = "".join(('<th data-sort="text" class="sorted-desc">' if i==2 else '<th data-sort="text">')+html.escape(h)+"</th>" for i,h in enumerate(t("th")))
 from collections import Counter as _PC
 proof_counts = _PC(proof_of(f)[0] for f in forms)
@@ -250,6 +309,7 @@ index = f"""
 <h1>{E(t("h1"))}</h1>
 <p class="cta"><a class="btn" href="#forms">{E(t("browse"))}</a> <a class="btn ghost" href="{DATA}">{E(t("query"))}</a> <a class="btn ghost" href="propose.html">{E(t("propose"))}</a></p></section>
 <section class="grid" id="damages">{cards}</section>
+{aside}
 <section id="forms"><div class="bar"><input id="q" type="search" placeholder="{E(t("search"))}" aria-label="{E(t("search"))}">
 <select id="fd"><option value="">{E(t("all_damages"))}</option>{''.join(f'<option value="{k}">{E(v[0])}</option>' for k,v in DAMAGE.items())}</select>
 <select id="fc"><option value="">{E(t("all_classes"))}</option>{''.join(f'<option value="{k}">{E(v)}</option>' for k,v in CLASS.items())}</select>
@@ -342,15 +402,15 @@ for f in forms:
 <div class="badges">{('<span class="pill" style="--c:'+SEVERITY[f["legacy_severity"]][1]+'">'+E(SEVERITY[f["legacy_severity"]][0])+'</span>') if f.get("legacy_severity") in SEVERITY else ''}{('<span class="pill era">'+E({"ancient_only":"ancient documents only","both":"both eras","born_modern":"born with the modern","not_settled":"era not settled"}[f["era"]["value"]])+('  ·  worse now' if f["era"].get("aggravated_by_the_modern") else '')+'</span>') if f.get("era") else ''}<span class="pill" style="--c:{d[2]}">{E(d[0])}</span><span class="pill grey">from: {E(f.get("origin",{}).get("organisation","—"))}</span><span class="pill grey">{E(CLASS[f['class']])}</span><span class="pill grey">layer: {E(f['layer'])}</span><span class="pill grey">injection: {E(f.get('injection','—'))}</span><span class="pill warn">{E(f['status'].replace('_',' '))}</span></div>
 <div class="facts"><div><h3>{E(t("h_damage"))}</h3><p><strong>{E(d[0])}</strong> — {E(d[1])}.</p></div>
 <div><h3>{E(t("h_cancel"))}</h3><p>{'Yes' if prev['cancellable_by_code'] else 'No'}{('. Refusal clause: '+E(prev['refusal_clause'])) if prev.get('refusal_clause') else ''}{('. '+E(prev['note'])) if prev.get('note') else ''}.</p></div>
-<div><h3>{E(t("h_restore"))}<span class="opt">classified, not measured</span></h3><p><strong>{E(REACH[rep['reachable_by_deletion']])}</strong>{(' — '+E(rep['note'])) if rep.get('note') else ''}.</p></div>
+<div><h3>{E(t("h_restore"))}<span class="opt">{E(t("classified"))}</span></h3><p><strong>{E(REACH[rep['reachable_by_deletion']])}</strong> — {E(REPAIR_NOTE[LANG].get(rep['reachable_by_deletion'], ''))}{'; '+E(REPAIR_SRC[LANG]) if 'derived from the damage class' in (rep.get('note') or '') else ''}.</p></div>
 <div><h3>{E(t("h_judge"))}</h3><p>{', '.join(E(JUDGE[j]) for j in f['judgeable_by']) or '<span class="muted">none known yet</span>'}.</p></div></div>
 {('<p class="muted small">Searched and not found in: '+E('; '.join(f['observed_absent_in']))+'.</p>') if f.get('observed_absent_in') else ''}
-{('<div class="facts"><div><h3>'+E(t("costs_prop"))+'</h3><p><strong>'+E(SEVERITY[f["proposed_severity"]["value"]][0])+'.</strong> '+E(f["proposed_severity"]["reason"])+'</p><p class="noprobe">'+E(f["proposed_severity"]["note"])+'</p><p class="meta">First reading by '+E(f["proposed_severity"]["proposed_by"])+' on '+E(f["proposed_severity"]["date"])+'. '+E(f["proposed_severity"].get("status",""))+'</p></div></div>') if f.get("proposed_severity") else ''}
-{('<div class="facts"><div><h3>'+E(t("reaches"))+'</h3><p><strong>'+E(f["registry_scope"]["extent"])+'</strong></p><p class="meta">'+E(f["registry_scope"].get("why_not_a_prevalence",""))+'</p></div></div>') if f.get("registry_scope") else ''}
+{('<div class="facts"><div><h3>'+E(t("costs_prop"))+'</h3><p><strong>'+E(SEVERITY[f["proposed_severity"]["value"]][0])+'.</strong> '+E(f["proposed_severity"].get("reason_fr") if LANG=="fr" else f["proposed_severity"]["reason"])+'</p><p class="noprobe">'+E(prop_note(f))+'</p><p class="meta">First reading by '+E(f["proposed_severity"]["proposed_by"])+' on '+E(f["proposed_severity"]["date"])+'. '+E(PROP_STATUS[LANG])+'</p></div></div>') if f.get("proposed_severity") else ''}
+{('<div class="facts"><div><h3>'+E(t("reaches"))+'</h3><p><strong>'+E(f["registry_scope"].get("extent_fr") if LANG=="fr" else f["registry_scope"]["extent"])+'</strong></p><p class="meta">'+E(SCOPE_WHY[LANG])+'</p></div></div>') if f.get("registry_scope") else ''}
 {('<div class="facts"><div><h3>'+E(t("costs"))+'</h3><p><strong>'+E(SEVERITY[f["legacy_severity"]][0])+'.</strong> '+E(SEVERITY[f["legacy_severity"]][2])+'</p><p class="meta">severity '+E(f["legacy_severity"])+', judged line by line in the internal catalogue of 2026-08-09. It is independent of how often the fault occurs: a rare fault that answers wrongly in silence is worse than a common one that leaves a hole.</p></div></div>') if f.get("legacy_severity") in SEVERITY else ''}
-{('<div class="facts"><div><h3>'+E(t("seen_years"))+'</h3><p><strong>'+E(" · ".join(f"{y} ({n})" for y, n in sorted(f["document_years"]["counts"].items())))+'</strong> — the publication year of the carrier files themselves, not the year of the observation.</p><p class="meta">'+E(f["document_years"]["source"])+'</p></div></div>') if f.get("document_years") else ''}
-{('<div class="facts"><div><h3>'+E(t("repairs"))+'</h3><p><strong>Judged '+E(REACH[f["repair"]["reachable_by_deletion"]])+'</strong> on 2026-09-09, from the damage class, not form by form. <strong>Measured '+E({"yes":"yes","no":"no","partial":"partial","yes_at_a_cost":"yes, at a cost","depends_on_visibility":"only when a law can see it"}[f["repair"]["measured"]["value"]])+'</strong>: '+E(f["repair"]["measured"].get("note",""))+'</p>'+('<p class="noprobe"><strong>The measurement disagrees with the judgment.</strong> This form was classified '+E(f["repair"]["measured"]["disagrees_with_the_judgment"])+' and the bench says otherwise.</p>' if f["repair"]["measured"].get("disagrees_with_the_judgment") else '')+'<p class="meta">'+E(f["repair"]["measured"]["source"])+'</p></div></div>') if f.get("repair",{}).get("measured") else ''}
-{('<div class="facts"><div><h3>'+E(t("fails"))+'</h3><p><strong>'+E({"PROP":"Identity, and it propagates","FAUX":"A false fact","MANQ":"A gap, not a wrong answer","MES":"A property of the corpus, not a fault of a document","DEC":"A use made downstream"}[f["failure_mode"]["value"]])+'</strong>. '+E(f["failure_mode"]["means"])+'</p><p class="meta">'+E(f["failure_mode"]["source"])+'</p></div></div>') if f.get('failure_mode') else ''}
+{('<div class="facts"><div><h3>'+E(t("seen_years"))+'</h3><p><strong>'+E(" · ".join(f"{y} ({n})" for y, n in sorted(f["document_years"]["counts"].items())))+'</strong> — the publication year of the carrier files themselves, not the year of the observation.</p><p class="meta">'+E(YEARS_SRC[LANG])+'</p></div></div>') if f.get("document_years") else ''}
+{('<div class="facts"><div><h3>'+E(t("repairs"))+'</h3><p><strong>'+E(t("judged"))+' '+E(REACH[f["repair"]["reachable_by_deletion"]])+'</strong> '+E(t("judged_how"))+' <strong>'+E(t("measured"))+' '+E(MEASURED_V[LANG][f["repair"]["measured"]["value"]])+'</strong>: '+E(MEASURED_NOTE[LANG].get(f["damage"],""))+'</p>'+('<p class="noprobe"><strong>'+E(t("disagree"))+'</strong> '+E(t("disagree_2"))+' '+E(f["repair"]["measured"]["disagrees_with_the_judgment"])+'.</p>' if f["repair"]["measured"].get("disagrees_with_the_judgment") else '')+'<p class="meta">'+E(MEASURED_SRC[LANG])+'</p></div></div>') if f.get("repair",{}).get("measured") else ''}
+{('<div class="facts"><div><h3>'+E(t("fails"))+'</h3><p><strong>'+E({"PROP":"Identity, and it propagates","FAUX":"A false fact","MANQ":"A gap, not a wrong answer","MES":"A property of the corpus, not a fault of a document","DEC":"A use made downstream"}[f["failure_mode"]["value"]])+'</strong>. '+E(MODE_MEANS[LANG][f["failure_mode"]["value"]])+'</p><p class="meta">'+E(MODE_SRC[LANG])+'</p></div></div>') if f.get('failure_mode') else ''}
 {('<div class="facts"><div><h3>'+E(t("applies"))+'</h3><p><strong>'+E({"ancient_only":"Documents of the old era only","both":"Both eras, 1957 and 2026 alike","born_modern":"Born with the modern era","not_settled":"Era not settled"}[f["era"]["value"]])+'</strong>'+(' — and worse now than it was' if f["era"].get("aggravated_by_the_modern") else '')+('. '+E(f["era"]["note"]) if f["era"].get("note") else '')+'</p><p class="meta">'+E(f["era"]["source"])+'</p></div></div>') if f.get('era') else ''}
 <h2>{E(t("h_seen"))}</h2>{seen}
 <h2>{E(t("h_spec"))}</h2>{spec}
@@ -424,13 +484,14 @@ h2{font-size:26px;letter-spacing:-.02em;margin:38px 0 12px;font-weight:600}h3{ma
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin:30px 0 40px}
 .card{display:block;background:var(--bg-elev);border:1px solid var(--line);border-top:3px solid var(--c);border-radius:10px;padding:16px 18px;color:var(--fg);transition:border-color .15s}.card:hover{text-decoration:none;border-color:var(--c);background:#fff}
 .card .n{display:block;font-size:36px;font-weight:600;line-height:1;letter-spacing:-.03em;font-family:var(--mono)}.card .n small{display:block;font-size:12px;font-weight:500;color:var(--muted);font-family:var(--sans);letter-spacing:0;margin-top:4px}.card .t{display:block;font-weight:600;margin-top:8px}.card .d{display:block;font-size:13px;color:var(--muted);margin-top:4px;line-height:1.45}
+.aside{margin:14px 0 0;font-size:14px;color:var(--muted)}
 .bar{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin:0 0 12px}input,select,textarea{font:inherit;font-size:15px;padding:10px 12px;border:1px solid var(--line-strong);border-radius:8px;background:#fff;color:var(--fg)}.bar input{flex:1;min-width:220px}input:focus,select:focus{outline:2px solid var(--acc-soft);border-color:var(--acc)}
 .tablewrap{overflow-x:auto;border:1px solid var(--line);border-radius:10px;background:#fff}table{border-collapse:collapse;width:100%;table-layout:fixed}#t th:nth-child(1),#t td:nth-child(1){width:32%}#t th:nth-child(2),#t td:nth-child(2){width:12%}#t th:nth-child(3),#t td:nth-child(3){width:9%}#t th:nth-child(4),#t td:nth-child(4){width:12%}#t th:nth-child(5),#t td:nth-child(5){width:11%}#t th:nth-child(6),#t td:nth-child(6){width:14%}#t th:nth-child(7),#t td:nth-child(7){width:10%}#t td{overflow-wrap:anywhere}th,td{text-align:left;padding:11px 14px;border-top:1px solid var(--line);vertical-align:top}th{border-top:0;font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);font-weight:600;background:var(--bg-elev)}td.num{text-align:right;font-family:var(--mono);font-size:14px}td.src{font-size:13px;color:var(--luxe)}td.date{font-family:var(--mono);font-size:12.5px;white-space:nowrap;color:var(--muted)}
 #t th{cursor:pointer;user-select:none;position:relative}#t th:hover{color:var(--ink)}
 #t th.sorted-asc::after{content:" ▲";font-size:9px}#t th.sorted-desc::after{content:" ▼";font-size:9px}
 td.proof{font-size:13px}td.p-docs{color:#166534;font-weight:600}td.p-none{color:var(--muted)}label.chk{display:inline-flex;align-items:center;gap:6px;font-size:14px;color:var(--ink)}label.chk input{width:auto;min-width:0;flex:none}table.kv th{width:190px;text-transform:none;letter-spacing:0;font-size:14px;color:var(--ink);background:transparent;border-top:1px solid var(--line)}table.kv td code{font-size:12.5px;white-space:normal;word-break:break-all}td.mono{font-family:var(--mono);font-size:12px}
 .pill{display:inline-block;white-space:nowrap;padding:2px 10px;border-radius:999px;font-size:12.5px;font-weight:600;color:#fff;background:var(--c);letter-spacing:.01em}.pill.grey{background:var(--surface);color:var(--fg);font-weight:500}.pill.era{background:#f5f3ff;color:#5b21b6;border:1px solid #ddd6fe}
-.lang{font-size:17px;line-height:1;padding:4px 2px;filter:saturate(.9)}.lang:hover{filter:none}
+.lang{display:inline-flex;align-items:center;gap:5px;font-weight:600;font-size:13px;letter-spacing:.04em}.lang svg{opacity:.7}
 .pill.warn{background:#fff3c4;color:#6b4c00;font-weight:500}
 .fr{color:var(--muted);font-size:13px;font-family:var(--serif);font-style:italic}.fr.big{font-size:17px;margin-top:-10px}.muted{color:var(--muted)}
 .about{margin-top:56px;border-top:1px solid var(--line);padding-top:32px}.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:24px}.cols p{margin:0;color:var(--luxe);font-size:15px}

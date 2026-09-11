@@ -74,11 +74,14 @@
     "date": "2026-09-11",
     "status": "proposed — a second reader confirms or contests, as for the 43 validated forms",
     "adds_to_the_damage_class": false,
-    "note": "this reading agrees with how the August catalogue judges most MISSING forms (G3), so it adds little"
+    "note": "this reading agrees with how the August catalogue judges most MISSING forms (G3), so it adds little",
+    "reason_fr": "10,1 millions de fiches avec mots-clés d'auteur sur 17,0 : le reste est muet, pas menteur"
   },
   "registry_scope": {
     "extent": "10,154,266 records with author keywords out of 17,034,319: six and a half million without",
     "why_not_a_prevalence": "a fault of a registry has no prevalence: it is a property of the base, so everything drawn from that base carries it. What can be stated is the slice it touches.",
-    "source": "read from this form's own observation, 2026-09-11"
-  }
+    "source": "read from this form's own observation, 2026-09-11",
+    "extent_fr": "10 154 266 fiches avec mots-clés d'auteur sur 17 034 319 : six millions et demi sans"
+  },
+  "name_fr": "Mots-clés d'auteur absents sur la plupart des fiches"
 }

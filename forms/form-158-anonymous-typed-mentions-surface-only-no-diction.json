@@ -74,11 +74,14 @@
     "date": "2026-09-11",
     "status": "proposed — a second reader confirms or contests, as for the 43 validated forms",
     "adds_to_the_damage_class": false,
-    "note": "this reading agrees with how the August catalogue judges most MISSING forms (G3), so it adds little"
+    "note": "this reading agrees with how the August catalogue judges most MISSING forms (G3), so it adds little",
+    "reason_fr": "21,8 millions de mentions typées hors dictionnaire : reconnues comme entités, sans identité pour les rejoindre"
   },
   "registry_scope": {
     "extent": "0.85 % of section lines, that is 21.8 million anonymous typed mentions; 1.94 % for species",
     "why_not_a_prevalence": "a fault of a registry has no prevalence: it is a property of the base, so everything drawn from that base carries it. What can be stated is the slice it touches.",
-    "source": "read from this form's own observation, 2026-09-11"
-  }
+    "source": "read from this form's own observation, 2026-09-11",
+    "extent_fr": "0,85 % des lignes de section, soit 21,8 millions de mentions typées anonymes ; 1,94 % pour les espèces"
+  },
+  "name_fr": "Mentions typées anonymes (surface seule, sans entrée au dictionnaire)"
 }

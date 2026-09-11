@@ -70,11 +70,14 @@
     "date": "2026-09-11",
     "status": "proposed — a second reader confirms or contests, as for the 43 validated forms",
     "adds_to_the_damage_class": true,
-    "note": "the August catalogue judges most SPLIT forms G1; this reading says G2 and the reason is above"
+    "note": "the August catalogue judges most SPLIT forms G1; this reading says G2 and the reason is above",
+    "reason_fr": "une affaire présente en plusieurs versions : sans déduplication elle compte plusieurs fois, et le total paraît normal"
   },
   "registry_scope": {
     "extent": "17,465,106 cases after deduplication, out of a far larger total of lines",
     "why_not_a_prevalence": "a fault of a registry has no prevalence: it is a property of the base, so everything drawn from that base carries it. What can be stated is the slice it touches.",
-    "source": "read from this form's own observation, 2026-09-11"
-  }
+    "source": "read from this form's own observation, 2026-09-11",
+    "extent_fr": "17 465 106 affaires après déduplication, sur un total de lignes bien supérieur"
+  },
+  "name_fr": "Versions d'une affaire : une affaire, plusieurs fiches (FAERS)"
 }

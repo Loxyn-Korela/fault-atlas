@@ -70,6 +70,8 @@
     "date": "2026-09-11",
     "status": "proposed — a second reader confirms or contests, as for the 43 validated forms",
     "adds_to_the_damage_class": true,
-    "note": "the August catalogue judges most WRONG_LABEL forms G2; this reading says G1 and the reason is above"
-  }
+    "note": "the August catalogue judges most WRONG_LABEL forms G2; this reading says G1 and the reason is above",
+    "reason_fr": "un type de publication promu entité : « case report » devient un nœud qui attire des faits qui ne lui appartiennent pas"
+  },
+  "name_fr": "Type de publication ou étiquette d'établissement pris pour un mot-clé de sujet"
 }

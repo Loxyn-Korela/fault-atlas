@@ -72,11 +72,14 @@
     "date": "2026-09-11",
     "status": "proposed — a second reader confirms or contests, as for the 43 validated forms",
     "adds_to_the_damage_class": false,
-    "note": "this reading agrees with how the August catalogue judges most MISSING forms (G3), so it adds little"
+    "note": "this reading agrees with how the August catalogue judges most MISSING forms (G3), so it adds little",
+    "reason_fr": "tout ce qui est publié après 2023 est sous-annoté : le récent est absent, pas faux"
   },
   "registry_scope": {
     "extent": "every record after 2023: 1,273 k links in 2024 against 7,420 k in 2022",
     "why_not_a_prevalence": "a fault of a registry has no prevalence: it is a property of the base, so everything drawn from that base carries it. What can be stated is the slice it touches.",
-    "source": "read from this form's own observation, 2026-09-11"
-  }
+    "source": "read from this form's own observation, 2026-09-11",
+    "extent_fr": "toute fiche postérieure à 2023 : 1 273 k liens en 2024 contre 7 420 k en 2022"
+  },
+  "name_fr": "Falaise d'annotation génique après 2023"
 }

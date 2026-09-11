@@ -68,11 +68,14 @@
     "date": "2026-09-11",
     "status": "proposed — a second reader confirms or contests, as for the 43 validated forms",
     "adds_to_the_damage_class": false,
-    "note": "this reading agrees with how the August catalogue judges most WRONG_VALUE forms (G2), so it adds little"
+    "note": "this reading agrees with how the August catalogue judges most WRONG_VALUE forms (G2), so it adds little",
+    "reason_fr": "aucune horloge absolue : chaque mesure temporelle est une différence de deux bornes, et rien ne le dit"
   },
   "registry_scope": {
     "extent": "the whole base: no absolute clock anywhere, with an OLDMEDLINE break at 1966",
     "why_not_a_prevalence": "a fault of a registry has no prevalence: it is a property of the base, so everything drawn from that base carries it. What can be stated is the slice it touches.",
-    "source": "read from this form's own observation, 2026-09-11"
-  }
+    "source": "read from this form's own observation, 2026-09-11",
+    "extent_fr": "la base entière : aucune horloge absolue nulle part, avec une rupture OLDMEDLINE à 1966"
+  },
+  "name_fr": "Aucune horloge absolue dans la fiche (les dates sont des bornes de révision)"
 }

@@ -58,6 +58,8 @@
     "date": "2026-09-11",
     "status": "proposed — a second reader confirms or contests, as for the 43 validated forms",
     "adds_to_the_damage_class": false,
-    "note": "this reading agrees with how the August catalogue judges most MERGE forms (G1), so it adds little"
-  }
+    "note": "this reading agrees with how the August catalogue judges most MERGE forms (G1), so it adds little",
+    "reason_fr": "la même graphie pour plusieurs agences : les faits de deux organismes se posent sur un seul nœud"
+  },
+  "name_fr": "Homonymie dans un registre de référence (identifiants d'agence)"
 }

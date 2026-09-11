@@ -66,6 +66,7 @@
     "date": "2026-09-11",
     "status": "proposed — a second reader confirms or contests, as for the 43 validated forms",
     "adds_to_the_damage_class": false,
-    "note": "this reading agrees with how the August catalogue judges most SPLIT forms (G1), so it adds little"
+    "note": "this reading agrees with how the August catalogue judges most SPLIT forms (G1), so it adds little",
+    "reason_fr": "aucune frontière de mot dans l'écriture : la segmentation fabrique de fausses entités, qui reçoivent ensuite des faits"
   }
 }

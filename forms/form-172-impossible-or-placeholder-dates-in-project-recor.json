@@ -69,11 +69,14 @@
     "date": "2026-09-11",
     "status": "proposed — a second reader confirms or contests, as for the 43 validated forms",
     "adds_to_the_damage_class": false,
-    "note": "this reading agrees with how the August catalogue judges most WRONG_VALUE forms (G2), so it adds little"
+    "note": "this reading agrees with how the August catalogue judges most WRONG_VALUE forms (G2), so it adds little",
+    "reason_fr": "une date de début en l'an 7, une autre au 1er janvier 1900 : des valeurs fausses qui se calculent comme les autres"
   },
   "registry_scope": {
     "extent": "every project record whose start date is a sentinel: year 7, 1900, and others",
     "why_not_a_prevalence": "a fault of a registry has no prevalence: it is a property of the base, so everything drawn from that base carries it. What can be stated is the slice it touches.",
-    "source": "read from this form's own observation, 2026-09-11"
-  }
+    "source": "read from this form's own observation, 2026-09-11",
+    "extent_fr": "toute fiche de projet dont la date de début est une sentinelle : an 7, 1900, et d'autres"
+  },
+  "name_fr": "Dates impossibles ou de remplissage dans les fiches de projet (OpenAIRE)"
 }

@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.15.0 — 2026-09-11
+- **Seven cards under a sentence that says seven.** The eighth, corpus parameter, is not a damage and said so in its own description; it now sits below the grid instead of inside it, where it made the headline wrong by one.
+- **The language switch is a glyph and a code, not a flag.** A flag is a country, and a country is not a language.
+- **The 162 forms all carry a French name.** The last 44 were added.
+- **Real bilingual records, not a bilingual shell.** What was English-only in the records and is now in both: the reason under every proposed consequence (49), the extent of every registry fault (41). What left the records entirely, because it repeats from form to form and belongs in the generator: the failure-mode meanings, the measured repairability notes, the sources, the judged/measured line, the disagreement notice.
+- Still English on both sides, and deliberately: the corpus identifiers, the file names and hashes, and the history of each form, which is an audit trail and is quoted as it was written. Still English by omission: the 46 refusal clauses.
+
 ## 0.14.0 — 2026-09-11
 - **The two opening paragraphs are gone.** One explained how to sort a table and listed what a record contains; the other gave a review census the table itself carries, form by form. Neither told a reader anything the page was not already showing.
 - **The era filter is gone too**, and with it the "era not measured" block that sat on 122 forms saying nothing. The year the document was published replaces it where it is known, read from the files themselves, and the measured era stays on the 40 forms where it says something a year cannot: that the fault is dead on current publishing.

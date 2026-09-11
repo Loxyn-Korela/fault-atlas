@@ -74,11 +74,14 @@
     "date": "2026-09-11",
     "status": "proposed — a second reader confirms or contests, as for the 43 validated forms",
     "adds_to_the_damage_class": false,
-    "note": "this reading agrees with how the August catalogue judges most MISSING forms (G3), so it adds little"
+    "note": "this reading agrees with how the August catalogue judges most MISSING forms (G3), so it adds little",
+    "reason_fr": "2,3 millions de projets NIH sans un seul résumé : le financement est là, le contenu n'existe pas"
   },
   "registry_scope": {
     "extent": "2,343,783 NIH projects with no abstract and no keyword, of which 1,583,418 carry an amount",
     "why_not_a_prevalence": "a fault of a registry has no prevalence: it is a property of the base, so everything drawn from that base carries it. What can be stated is the slice it touches.",
-    "source": "read from this form's own observation, 2026-09-11"
-  }
+    "source": "read from this form's own observation, 2026-09-11",
+    "extent_fr": "2 343 783 projets NIH sans résumé ni mot-clé, dont 1 583 418 portent un montant"
+  },
+  "name_fr": "Projets financés sans texte (OpenAIRE, NIH)"
 }

@@ -69,11 +69,14 @@
     "date": "2026-09-11",
     "status": "proposed — a second reader confirms or contests, as for the 43 validated forms",
     "adds_to_the_damage_class": false,
-    "note": "this reading agrees with how the August catalogue judges most WRONG_VALUE forms (G2), so it adds little"
+    "note": "this reading agrees with how the August catalogue judges most WRONG_VALUE forms (G2), so it adds little",
+    "reason_fr": "un quart à près de la moitié des fiches portent un janvier fabriqué : toute analyse mensuelle répond faux sans prévenir"
   },
   "registry_scope": {
     "extent": "from 47.4 % of records in 2011 to 21.4 % in 2025 carry a default January",
     "why_not_a_prevalence": "a fault of a registry has no prevalence: it is a property of the base, so everything drawn from that base carries it. What can be stated is the slice it touches.",
-    "source": "read from this form's own observation, 2026-09-11"
-  }
+    "source": "read from this form's own observation, 2026-09-11",
+    "extent_fr": "de 47,4 % des fiches en 2011 à 21,4 % en 2025 portent un janvier par défaut"
+  },
+  "name_fr": "Mois de publication manquant remplacé par janvier (OpenAlex)"
 }
