@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.14.0 — 2026-09-11
+- **The two opening paragraphs are gone.** One explained how to sort a table and listed what a record contains; the other gave a review census the table itself carries, form by form. Neither told a reader anything the page was not already showing.
+- **The era filter is gone too**, and with it the "era not measured" block that sat on 122 forms saying nothing. The year the document was published replaces it where it is known, read from the files themselves, and the measured era stays on the 40 forms where it says something a year cannot: that the fault is dead on current publishing.
+
 ## 0.13.3 — 2026-09-11
 - **The caveat under the count is a census now, not an extrapolation.** It read "two readers on the same six articles agreed on 54 %", which generalises from six documents to 162 forms — the very move this atlas exists to catch. Replaced by what is actually known about all 162: 43 validated by a second reader, 73 migrated and not yet reviewed, 46 proposed. The 54 % stays where its sample size can be stated, in the README.
 

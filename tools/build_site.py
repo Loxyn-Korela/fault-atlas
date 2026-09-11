@@ -199,7 +199,7 @@ def proof_of(f):
         if pr.get("matches_excerpt") and pr.get("result", {}).get("count", 0) > 0 and f["damage"] != "CORPUS_PARAMETER":
             return "docs", t("ex_yes")
     return "none", t("ex_no")
-rows = "".join(f"""<tr data-damage="{f['damage']}" data-class="{f['class']}" data-layer="{E(f['layer'])}" data-reach="{'no' if upstream(f) else 'yes'}" data-era="{f.get('era',{}).get('value','')}" data-mode="{f.get('failure_mode',{}).get('value','')}" data-sev="{E(f.get('legacy_severity',''))}" data-proof="{proof_of(f)[0]}" data-src="{E(" ".join(corpora_of(f)).lower())}" data-text="{E((f['name']+' '+f.get('name_fr','')+' '+' '.join(corpora_of(f))).lower())}">
+rows = "".join(f"""<tr data-damage="{f['damage']}" data-class="{f['class']}" data-layer="{E(f['layer'])}" data-reach="{'no' if upstream(f) else 'yes'}" data-mode="{f.get('failure_mode',{}).get('value','')}" data-sev="{E(f.get('legacy_severity',''))}" data-proof="{proof_of(f)[0]}" data-src="{E(" ".join(corpora_of(f)).lower())}" data-text="{E((f['name']+' '+f.get('name_fr','')+' '+' '.join(corpora_of(f))).lower())}">
 <td><a href="forms/{f['id']}.html">{E(nom(f))}</a><br><span class="fr">{E(f['name'] if LANG=='fr' else f.get('name_fr',''))}</span></td>
 <td><span class="pill" style="--c:{DAMAGE[f['damage']][2]}">{E(DAMAGE[f['damage']][0])}</span></td>
 <td class="date">{E(last_date(f) or '—')}</td><td>{E(CLASS_SHORT[f['class']])}</td><td>{E(f['layer'])}</td><td class="src" title="{E(" · ".join(corpora_of(f)) or "—")}">{E(" · ".join(corpora_of(f)) or "—")}</td><td class="proof p-{proof_of(f)[0]}">{E(proof_of(f)[1])}</td></tr>""" for f in forms)
@@ -245,20 +245,9 @@ ABOUT_FR = f"""<section id="about" class="about"><h2>Ce que dit une fiche</h2>
 """
 ABOUT = ABOUT_EN if LANG == "en" else ABOUT_FR
 proof_counts_docs = proof_counts["docs"]; proof_counts_none = proof_counts["none"]
-LEAD = (f"{len(forms)} fault forms, observed on real corpora. {proof_counts_docs} carry an openable example: the document, the query that found it, the frozen copy."
-        if LANG == "en" else
-        f"{len(forms)} formes de fautes, observées sur des corpus réels. {proof_counts_docs} portent un exemple ouvrable : le document, la requête qui l'a trouvé, la copie gelée.")
-_V = sum(1 for f in forms if f["status"] == "validated")
-_P = sum(1 for f in forms if f["status"] == "proposed")
-_U = sum(1 for f in forms if f["status"] == "migrated_unreviewed")
-SHELF = (f"{_V} are validated by a second reader, {_U} are migrated and not yet reviewed, {_P} are proposed. Each form carries its own status."
-         if LANG == "en" else
-         f"{_V} sont validées par une seconde lectrice, {_U} sont migrées et pas encore relues, {_P} sont proposées. Chaque fiche porte son statut.")
 index = f"""
 <section class="hero"><p class="eyebrow">{E(t("eyebrow"))}</p>
 <h1>{E(t("h1"))}</h1>
-<p class="lead">{LEAD}</p>
-<p class="lead small">{SHELF}</p>
 <p class="cta"><a class="btn" href="#forms">{E(t("browse"))}</a> <a class="btn ghost" href="{DATA}">{E(t("query"))}</a> <a class="btn ghost" href="propose.html">{E(t("propose"))}</a></p></section>
 <section class="grid" id="damages">{cards}</section>
 <section id="forms"><div class="bar"><input id="q" type="search" placeholder="{E(t("search"))}" aria-label="{E(t("search"))}">
@@ -266,7 +255,6 @@ index = f"""
 <select id="fc"><option value="">{E(t("all_classes"))}</option>{''.join(f'<option value="{k}">{E(v)}</option>' for k,v in CLASS.items())}</select>
 <select id="fs"><option value="">{E(t("any_cons"))}</option>{"".join(f'<option value="{k}">{E(v[0])}</option>' for k,v in SEVERITY.items())}<option value="__none__">{E(t("cons_none"))}</option></select>
 <select id="fm"><option value="">{E(t("any_mode"))}</option>{"".join(f'<option value="{k}">{E(v)}</option>' for k,v in MODE_LABEL.items())}<option value="__none__">{E(t("mode_none"))}</option></select>
-<select id="fe"><option value="">{E(t("any_era"))}</option><option value="ancient_only">{E(t("era_anc"))}</option><option value="both">{E(t("era_both"))}</option><option value="born_modern">{E(t("era_mod"))}</option><option value="not_settled">{E(t("era_ns"))}</option><option value="__none__">{E(t("era_none"))}</option></select>
 <select id="fl"><option value="">{E(t("all_layers"))}</option>{''.join(f'<option value="{E(l)}">{E(l)}</option>' for l in sorted({f["layer"] for f in forms}))}</select>
 <label class="chk"><input type="checkbox" id="fp"> {E(t('only_ex'))} ({proof_counts['docs']})</label>
 <span id="count" class="muted"></span></div>
@@ -274,8 +262,8 @@ index = f"""
 {ABOUT}
 <p>Met a form on your corpus? <a href="propose.html">Propose it</a> with its excerpt, corpus and date — no code, no account. Or, if you prefer, open an issue or a pull request on GitHub. A second reader reviews; a contested form stays recorded as contested; nothing enters unreviewed. Cite: Gracia S., Bagnol-Lebon C., Comtet Y. (2026). <em>Fault Atlas.</em> Loxyn SAS, Lyon. Zenodo. <a href="https://doi.org/{DOI}">doi:{DOI}</a>.</p></section>
 <script>
-const q=document.getElementById('q'),fd=document.getElementById('fd'),fc=document.getElementById('fc'),fl=document.getElementById('fl'),fe=document.getElementById('fe'),fp=document.getElementById('fp'),rows=[...document.querySelectorAll('#t tbody tr')],c=document.getElementById('count');
-function apply(){{const s=q.value.toLowerCase(),d=fd.value,k=fc.value,l=fl.value,er=fe.value,mo=fm.value,sv=fs.value,pf=fp.checked;let n=0;for(const r of rows){{const ok=(!d||r.dataset.damage===d)&&(!k||r.dataset.class===k)&&(!l||r.dataset.layer===l)&&(!er||(er==='__none__'?!r.dataset.era:r.dataset.era===er))&&(!mo||(mo==='__none__'?!r.dataset.mode:r.dataset.mode===mo))&&(!sv||(sv==='__none__'?!r.dataset.sev:r.dataset.sev===sv))&&(!pf||r.dataset.proof==='docs')&&(!s||r.dataset.text.includes(s));r.hidden=!ok;if(ok)n++;}}c.textContent=n+' of '+rows.length;}}
+const q=document.getElementById('q'),fd=document.getElementById('fd'),fc=document.getElementById('fc'),fl=document.getElementById('fl'),fp=document.getElementById('fp'),rows=[...document.querySelectorAll('#t tbody tr')],c=document.getElementById('count');
+function apply(){{const s=q.value.toLowerCase(),d=fd.value,k=fc.value,l=fl.value,mo=fm.value,sv=fs.value,pf=fp.checked;let n=0;for(const r of rows){{const ok=(!d||r.dataset.damage===d)&&(!k||r.dataset.class===k)&&(!l||r.dataset.layer===l)&&(!mo||(mo==='__none__'?!r.dataset.mode:r.dataset.mode===mo))&&(!sv||(sv==='__none__'?!r.dataset.sev:r.dataset.sev===sv))&&(!pf||r.dataset.proof==='docs')&&(!s||r.dataset.text.includes(s));r.hidden=!ok;if(ok)n++;}}c.textContent=n+' of '+rows.length;}}
 const tb=document.querySelector('#t tbody'),ths=[...document.querySelectorAll('#t th')];
 let sortCol=2,sortDir=-1;
 function key(r,i){{const c=r.children[i];return (c.dataset.k||c.textContent).trim().toLowerCase();}}
@@ -363,7 +351,7 @@ for f in forms:
 {('<div class="facts"><div><h3>'+E(t("seen_years"))+'</h3><p><strong>'+E(" · ".join(f"{y} ({n})" for y, n in sorted(f["document_years"]["counts"].items())))+'</strong> — the publication year of the carrier files themselves, not the year of the observation.</p><p class="meta">'+E(f["document_years"]["source"])+'</p></div></div>') if f.get("document_years") else ''}
 {('<div class="facts"><div><h3>'+E(t("repairs"))+'</h3><p><strong>Judged '+E(REACH[f["repair"]["reachable_by_deletion"]])+'</strong> on 2026-09-09, from the damage class, not form by form. <strong>Measured '+E({"yes":"yes","no":"no","partial":"partial","yes_at_a_cost":"yes, at a cost","depends_on_visibility":"only when a law can see it"}[f["repair"]["measured"]["value"]])+'</strong>: '+E(f["repair"]["measured"].get("note",""))+'</p>'+('<p class="noprobe"><strong>The measurement disagrees with the judgment.</strong> This form was classified '+E(f["repair"]["measured"]["disagrees_with_the_judgment"])+' and the bench says otherwise.</p>' if f["repair"]["measured"].get("disagrees_with_the_judgment") else '')+'<p class="meta">'+E(f["repair"]["measured"]["source"])+'</p></div></div>') if f.get("repair",{}).get("measured") else ''}
 {('<div class="facts"><div><h3>'+E(t("fails"))+'</h3><p><strong>'+E({"PROP":"Identity, and it propagates","FAUX":"A false fact","MANQ":"A gap, not a wrong answer","MES":"A property of the corpus, not a fault of a document","DEC":"A use made downstream"}[f["failure_mode"]["value"]])+'</strong>. '+E(f["failure_mode"]["means"])+'</p><p class="meta">'+E(f["failure_mode"]["source"])+'</p></div></div>') if f.get('failure_mode') else ''}
-{('<div class="facts"><div><h3>'+E(t("applies"))+'</h3><p><strong>'+E({"ancient_only":"Documents of the old era only","both":"Both eras, 1957 and 2026 alike","born_modern":"Born with the modern era","not_settled":"Era not settled"}[f["era"]["value"]])+'</strong>'+(' — and worse now than it was' if f["era"].get("aggravated_by_the_modern") else '')+('. '+E(f["era"]["note"]) if f["era"].get("note") else '')+'</p><p class="meta">'+E(f["era"]["source"])+'</p></div></div>') if f.get('era') else '<div class="facts"><div><h3>'+E(t("applies"))+'</h3><p><strong>Era not measured.</strong> This form was not among the forty-three catalogue lines confronted, old against modern, on 2026-08-08. Nothing here says it is alive today, and nothing says it is dead.</p></div></div>'}
+{('<div class="facts"><div><h3>'+E(t("applies"))+'</h3><p><strong>'+E({"ancient_only":"Documents of the old era only","both":"Both eras, 1957 and 2026 alike","born_modern":"Born with the modern era","not_settled":"Era not settled"}[f["era"]["value"]])+'</strong>'+(' — and worse now than it was' if f["era"].get("aggravated_by_the_modern") else '')+('. '+E(f["era"]["note"]) if f["era"].get("note") else '')+'</p><p class="meta">'+E(f["era"]["source"])+'</p></div></div>') if f.get('era') else ''}
 <h2>{E(t("h_seen"))}</h2>{seen}
 <h2>{E(t("h_spec"))}</h2>{spec}
 <h2>{E(t("h_hist"))}</h2><ul class="hist">{hist}</ul>
