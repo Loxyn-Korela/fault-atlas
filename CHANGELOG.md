@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.13.0 — 2026-09-11
+- **The site is bilingual.** One generator, run twice: `python3 tools/build_site.py` writes the English site, `--fr` writes `site/fr/`. A link in the navigation switches between the two, from any page, at any depth.
+- The records already held most of it: 118 forms carry a French name, and the French original of every observation was already stored beside its English translation. In French the original is shown first and the translation folds away; in English the reverse. On the 44 forms with no French name, the English one stands in.
+- Translated in this pass: the damage and class labels, the four consequences, the failure modes, the filters, the table headers, the block titles on each form, and both opening paragraphs. The long "what a record says" section is still English on both sides.
+- Why bilingual rather than one or the other: an English-only catalogue keeps the audience it needs, and a French-only one loses it. But an instrument its own authors cannot read comfortably loses its best reviewer, which is the whole point of a catalogue whose every line must be checkable.
+
 ## 0.12.0 — 2026-09-11
 - **The 49 forms with no severity have a first reading, and it says how much it is worth.** Each carries a proposed consequence with its reason, marked proposed and dated, for a second reader to confirm or contest as for the 43 already validated. **Only 11 of the 49 add anything to what the damage class already implies**, and the other 38 say so on their own page rather than pass a lookup off as a judgment.
 - **One disagreement with the August catalogue, stated rather than smoothed over.** August judges most splits *contaminates*; this reading judges most of them *hides*. The two are defensible and the field cannot mean both, so the divergence is printed and left for the second reader.
