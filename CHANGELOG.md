@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.13.1 — 2026-09-11
+- **The French pages were built and never served.** `site/` is not in git: the server rebuilds it with the documented command, which knew nothing of `--fr`. The plain run now builds both languages, so no command has to change anywhere.
+- The "what a record says" section is translated too. What stays English on both sides: the proposal page, and 44 forms with no French name, where the English one stands in and shows.
+
 ## 0.13.0 — 2026-09-11
 - **The site is bilingual.** One generator, run twice: `python3 tools/build_site.py` writes the English site, `--fr` writes `site/fr/`. A link in the navigation switches between the two, from any page, at any depth.
 - The records already held most of it: 118 forms carry a French name, and the French original of every observation was already stored beside its English translation. In French the original is shown first and the translation folds away; in English the reverse. On the 44 forms with no French name, the English one stands in.
