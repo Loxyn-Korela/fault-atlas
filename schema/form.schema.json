@@ -456,6 +456,18 @@
         }
       }
     },
+    "document_years": {
+      "type": "object",
+      "description": "The publication year of the documents where this form was actually seen, read from the files themselves. It replaces nothing and interprets nothing: the era says which period a form belongs to, the year says where it was found. Absent when no carrier document of this form is in a dated corpus.",
+      "required": ["corpus_id", "counts", "source"],
+      "additionalProperties": false,
+      "properties": {
+        "corpus_id": {"type": "string"},
+        "counts": {"type": "object", "additionalProperties": {"type": "integer"}},
+        "carriers_dated": {"type": "integer", "minimum": 0},
+        "source": {"type": "string"}
+      }
+    },
     "failure_mode": {
       "type": "object",
       "description": "How the form fails, from the internal catalogue of 2026-08-09. This is a second axis, independent of the damage: it is judged line by line and it varies inside a damage class, where repair.reachable_by_deletion does not. Forms added after the migration do not carry it yet.",

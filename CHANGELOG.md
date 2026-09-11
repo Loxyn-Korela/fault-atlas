@@ -7,6 +7,10 @@
 - Validator with house rules; proves itself on seven planted faults.
 - SQLite view builder for Datasette.
 
+## 0.10.0 — 2026-09-11
+- **The year the document was published, read from the files, on 78 forms.** Not the year of the observation: the publication year of the very files where the form was seen, taken from each file's earliest `pub-date`. An era says which period a form belongs to; a year says where it was found, and it does not interpret.
+- **And the corpus is a year of publishing, not four.** Its name says 2023-2026 because that is the selection query's window (`FIRST_PDATE 2023-01-01 to 2026-12-31`). The harvest of 2026-08-08 returned **2025 for nine files and 2026 for the other 263**. Every prevalence measured on this corpus is a figure about 2025-2026 publishing, and the corpus record now says so in place of letting its own name imply a four-year spread. The per-file index is `corpora/index/document-years-europe-pmc-272.json`.
+
 ## 0.9.0 — 2026-09-10
 - **Repairability is measured, not looked up.** 154 forms now carry, beside the judgment of 2026-09-09, what a deletion-only repair actually reached for their damage class: pgrepair on the frozen EUR-Lex truth, three identical runs, journal sha256 in `measures/reachability-by-damage-2026-09-10.json` of the companion repository.
 - **The measurement disagrees with the judgment on 28 forms, and the disagreement is the result.** The eight anachronism forms are judged *partial*; the bench reached 0 of 5,276. The twenty spurious-edge forms are judged a flat *yes*; the bench reached 360 of 360 when a law can see the edge and 6 of 361 when none can. Each of the 28 says so on its own page.

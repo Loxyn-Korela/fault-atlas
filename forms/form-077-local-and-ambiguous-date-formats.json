@@ -135,5 +135,13 @@
     "value": "FAUX",
     "means": "a false fact: a value, a type or a link the source never asserted",
     "source": "the internal catalogue of 2026-08-09 (korela.db, table parametre), line 77; it is not derived from the damage and varies inside a damage class"
+  },
+  "document_years": {
+    "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+    "counts": {
+      "2026": 4
+    },
+    "carriers_dated": 4,
+    "source": "corpora/index/document-years-europe-pmc-272.json, read 2026-09-11 from each file's earliest pub-date"
   }
 }

@@ -130,5 +130,14 @@
       "matches_excerpt": true,
       "note": "re-runs the figure the August observation states"
     }
-  ]
+  ],
+  "document_years": {
+    "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+    "counts": {
+      "2025": 1,
+      "2026": 2
+    },
+    "carriers_dated": 3,
+    "source": "corpora/index/document-years-europe-pmc-272.json, read 2026-09-11 from each file's earliest pub-date"
+  }
 }

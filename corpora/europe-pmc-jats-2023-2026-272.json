@@ -1,1952 +1,1962 @@
 {
- "id": "corpus-europe-pmc-jats-2023-2026",
- "name": "Europe PMC, open access, full text in JATS XML — the 272 articles of the August 2026 observation",
- "source": "Europe PMC REST API (https://www.ebi.ac.uk/europepmc/webservices/rest/), full-text XML endpoint",
- "harvested": "2026-08-08",
- "selection": "eight strata drawn by query on the Europe PMC search API, open access with full text (OPEN_ACCESS:Y AND HAS_FT:Y), 34 per stratum where available; strata: bio, cas (case reports), essai (clinical trials), meta (meta-analyses and systematic reviews), moderne (2024-2026), nonEN (non-English), phys (physics/maths), retract (retraction notices)",
- "note": "The articles are public and open access; the list lets anyone re-download the same 272 files from Europe PMC by PMC identifier. The XML files themselves are not redistributed here.",
- "count": 272,
- "by_stratum": {
-  "bio": 34,
-  "cas": 34,
-  "essai": 34,
-  "meta": 34,
-  "moderne": 17,
-  "nonEN": 51,
-  "phys": 34,
-  "retract": 34
- },
- "articles": [
-  {
-   "pmcid": "PMC12583535",
-   "stratum": "bio",
-   "sha256": "724718dbb1d2c03428e6ccfc1322f4eb4617bd68e33613d5866d52fbae0db33e",
-   "bytes": 184870,
-   "licence": "CC BY-NC-ND 4.0"
-  },
-  {
-   "pmcid": "PMC12590050",
-   "stratum": "bio",
-   "sha256": "3054bad44ce63049105f3a1c78135dd94bc44867c0bf6aa54258d329d2b4ebc6",
-   "bytes": 111534,
-   "licence": "CC BY (stated in words)"
-  },
-  {
-   "pmcid": "PMC12674831",
-   "stratum": "bio",
-   "sha256": "4882e0eb1a6541c8893bdc946cc5bd1fda17c9c5a245b742e5379df393c4f533",
-   "bytes": 879063,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC12857832",
-   "stratum": "bio",
-   "sha256": "abdd68138f9851f8d23d1b781af679f8d7a2acbd1f6b8c0ce2a8faf664c80cf0",
-   "bytes": 157517,
-   "licence": "CC BY-NC-ND 4.0"
-  },
-  {
-   "pmcid": "PMC12882215",
-   "stratum": "bio",
-   "sha256": "09aba08f630009abd325551b4fc44e22833a5045b22f6b3975436c2b4de8b0cf",
-   "bytes": 262229,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC12909487",
-   "stratum": "bio",
-   "sha256": "a3d87ea386da1580e1dc0939dfa87136cf51da33de0395c61044d4ad5701b790",
-   "bytes": 86196,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC12915353",
-   "stratum": "bio",
-   "sha256": "b009d16f4c7250e1f5604f8d70dba807cb48ecedc93987e17989df60be76fd76",
-   "bytes": 131341,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC12927065",
-   "stratum": "bio",
-   "sha256": "4623b787fc63eb821bd30128fa834c05da4326fae790e3a7083d8ef5c7661a35",
-   "bytes": 130309,
-   "licence": "CC BY-NC 4.0"
-  },
-  {
-   "pmcid": "PMC12927975",
-   "stratum": "bio",
-   "sha256": "3915e99b56b5ab23a3d3f1294f294e48dd592e11f4f15d6f09691719d104a8b6",
-   "bytes": 67073,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC12953170",
-   "stratum": "bio",
-   "sha256": "b9de27f494bce718212ed449b7d61cdf0a26baaf8d0009946e2333b78abb7320",
-   "bytes": 75194,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC12959687",
-   "stratum": "bio",
-   "sha256": "4366f15d1dbc38309057da66e553abcab1718e11ef3154a8ff30e70dd0e2ab5c",
-   "bytes": 94993,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13057049",
-   "stratum": "bio",
-   "sha256": "82e2d6a1e2c0da890e1db075383c46478990fc4315741028194655ec5e415834",
-   "bytes": 167199,
-   "licence": "CC BY-NC-ND 4.0"
-  },
-  {
-   "pmcid": "PMC13088504",
-   "stratum": "bio",
-   "sha256": "98c5b43b92935bfca5fadc40f46a2540b8b04354dcb099e6e10ee129552318ae",
-   "bytes": 66604,
-   "licence": "CC BY-NC-ND 4.0"
-  },
-  {
-   "pmcid": "PMC13097615",
-   "stratum": "bio",
-   "sha256": "c7e77f20eb4f776808b10d7d7e651941103ce72210381516caf1eb8c8362b465",
-   "bytes": 93093,
-   "licence": "CC BY-NC 4.0"
-  },
-  {
-   "pmcid": "PMC13099299",
-   "stratum": "bio",
-   "sha256": "fc790592ddbb6b49e36c90a4f9f5f7ebc6252f8e4c20a7d73687ac0aaa1dbd2d",
-   "bytes": 174018,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13103274",
-   "stratum": "bio",
-   "sha256": "6eca4bed3cd55f88d276044603b7b6a3f9a7f2aa0e6624dcf5226030754f3e46",
-   "bytes": 152150,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13116881",
-   "stratum": "bio",
-   "sha256": "070b655fc284cc1ee6b7810e619aec5e3dca8592d56aae53c627910c5475ef85",
-   "bytes": 119725,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13155703",
-   "stratum": "bio",
-   "sha256": "52756772851c077122d2909d02b4a62eb201f2e10c8638d805cc40fcbd494185",
-   "bytes": 118354,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13162546",
-   "stratum": "bio",
-   "sha256": "3f99c649263187c1e422e7eaf4a8f48d72414168d131a9bc97e98fd277462673",
-   "bytes": 310835,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13168716",
-   "stratum": "bio",
-   "sha256": "ca17fac6e419c577d0a4087014ebe9d096da3969b4c84720ce4f0b4f71428291",
-   "bytes": 70738,
-   "licence": "CC BY-NC 4.0"
-  },
-  {
-   "pmcid": "PMC13170838",
-   "stratum": "bio",
-   "sha256": "957b44db019e2eeaa1fd0fce3350b20c2c20ec19718ece3762352b951bd2245f",
-   "bytes": 124763,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13181205",
-   "stratum": "bio",
-   "sha256": "a3d1c40048a2e9887faafc187daf0528b461df7d4f6029e5f9d95d8cf5d8ebbc",
-   "bytes": 159314,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13182387",
-   "stratum": "bio",
-   "sha256": "9743b3fd3904d4e5b0a686ad9c7bef45c827ea69017927cff86d6f2fd97c5432",
-   "bytes": 119284,
-   "licence": "CC BY-NC 4.0"
-  },
-  {
-   "pmcid": "PMC13190511",
-   "stratum": "bio",
-   "sha256": "d4aa129a9842d42504fa39f32b12dbd19207fe2ee450300fc7766075de2241c2",
-   "bytes": 195730,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13203479",
-   "stratum": "bio",
-   "sha256": "bf40c0b2f06d89d9872caa46ec6dd57ce9a01dfcbf290dbb8fe70119feae9574",
-   "bytes": 333390,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13207820",
-   "stratum": "bio",
-   "sha256": "82fdde160152751ec41a5e937a5d61145136bdd165eb9431d6c17ed52a73b160",
-   "bytes": 107122,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13216383",
-   "stratum": "bio",
-   "sha256": "0b2f00d3c6ed2030320e6c3b12f0245c9cd5cc91fba619bf7787aa86da0a6142",
-   "bytes": 177457,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13218538",
-   "stratum": "bio",
-   "sha256": "090df46074a7696753f34dd1d8fa4f32b5eebc9c29d1c8e3d23216499e8c5fda",
-   "bytes": 83021,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13231534",
-   "stratum": "bio",
-   "sha256": "4c4c7df279484a07934461ebf0125b8c5e6f1a667588b150bc49cff251a94070",
-   "bytes": 54750,
-   "licence": "CC BY-NC-ND 4.0"
-  },
-  {
-   "pmcid": "PMC13236932",
-   "stratum": "bio",
-   "sha256": "c965ce30e6616d4cf282cb5471495508811145c8491f6b64aa6a427bf3732c60",
-   "bytes": 114544,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13251069",
-   "stratum": "bio",
-   "sha256": "b51501f81bcf3f0b6414e9a9bed88d2938fa997769d1c3b13641bb78b48b992c",
-   "bytes": 112719,
-   "licence": "CC BY-NC-ND 4.0"
-  },
-  {
-   "pmcid": "PMC13252842",
-   "stratum": "bio",
-   "sha256": "2a4c423b2caf1268f644ba966a559b1f65dc9436cc4aa7a24cf15dd6b1616aa4",
-   "bytes": 222945,
-   "licence": "CC0 1.0"
-  },
-  {
-   "pmcid": "PMC13274935",
-   "stratum": "bio",
-   "sha256": "75d55a1187352a2be0edf16ab39c98fe15a35a2d3324964eeb8172bfd5021703",
-   "bytes": 110881,
-   "licence": "CC BY (stated in words)"
-  },
-  {
-   "pmcid": "PMC13289183",
-   "stratum": "bio",
-   "sha256": "bc5dac8f41f794bab9ee774c02dc7b67255605c1f0ba3f264314eb07bb883814",
-   "bytes": 50157,
-   "licence": "CC BY-NC 4.0"
-  },
-  {
-   "pmcid": "PMC13290446",
-   "stratum": "cas",
-   "sha256": "5364f61626ddff6c56a2fe10a285741a82b7536aaf8390a69ca4ad22f547a946",
-   "bytes": 58718,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13291543",
-   "stratum": "cas",
-   "sha256": "5597829490e33475489a79464a9eee681d7d993b93c962f6e6a8fffe183549d8",
-   "bytes": 73363,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13291881",
-   "stratum": "cas",
-   "sha256": "75aea5c28c6e63f338621a049fc983d521826c0d67f998761f480cae40f7d743",
-   "bytes": 46825,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13293644",
-   "stratum": "cas",
-   "sha256": "9ec03dc91cf1956cf5a1aad0b557d35410de462332601885b006ebce95189ee3",
-   "bytes": 41703,
-   "licence": "CC BY (stated in words)"
-  },
-  {
-   "pmcid": "PMC13293645",
-   "stratum": "cas",
-   "sha256": "c95127990acc5d596ff504c7eb65e4d05cbc3355ed2269a2fe7f028b0da47a03",
-   "bytes": 52344,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13293647",
-   "stratum": "cas",
-   "sha256": "4de1c86a8312c9d085de799b2b1cb635a830395ed8d21917dceec4c4e96e1879",
-   "bytes": 49997,
-   "licence": "CC BY (stated in words)"
-  },
-  {
-   "pmcid": "PMC13293792",
-   "stratum": "cas",
-   "sha256": "c391eb40e9f2968351e1b45f579a0ca6aa810c1878e0121a5ef3cc6d86dfa335",
-   "bytes": 135965,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13293799",
-   "stratum": "cas",
-   "sha256": "9301cb8e73ade3198e301338e09422bfd98a164ddf1e41aaee3ab0177884234a",
-   "bytes": 100185,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13293813",
-   "stratum": "cas",
-   "sha256": "11384c301240e261214aac84d4209ff6ff212152526b1a03c1f2f9a38fa233e9",
-   "bytes": 91979,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13293827",
-   "stratum": "cas",
-   "sha256": "ca359e411a1b4cbbe508567cdf9caed63fc83b026d79969d3980cea4c98108da",
-   "bytes": 64970,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13293834",
-   "stratum": "cas",
-   "sha256": "f22a897ad292c8ec53a1aa46346e152f1c88dcc40f74418c2c60e72136f7fbbf",
-   "bytes": 81276,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13293841",
-   "stratum": "cas",
-   "sha256": "8e4ca0edf64236f790aae7d4614e03d9a626e6df829555ad48f3633c91d6db31",
-   "bytes": 85099,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13293897",
-   "stratum": "cas",
-   "sha256": "a24936b91e516fa83b529323ca81067755ec34d19067a3f998a4ed52740ef4be",
-   "bytes": 71143,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13293901",
-   "stratum": "cas",
-   "sha256": "8371421df2c086bc471d331ca357a91c64a29db7fec0334e865e38f124d8bf6f",
-   "bytes": 73985,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13293995",
-   "stratum": "cas",
-   "sha256": "6bc174a7e01d3b306d419cc4b587f49972c9f56c5a5a38a1796168da2bce1b47",
-   "bytes": 50918,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13294038",
-   "stratum": "cas",
-   "sha256": "40e36691216170328c6adb4b5038b3a421c4e1c8e2b554d71c7873d3c50c8f96",
-   "bytes": 76090,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13294089",
-   "stratum": "cas",
-   "sha256": "e6dff724ca433989c0ea32e0def1c3eda94b158f84ed3f2ca366a2f97f956806",
-   "bytes": 47333,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13294096",
-   "stratum": "cas",
-   "sha256": "cb187f32ff7dfb3f2a92824c70a8ab4d7c4e84941b3336939fee7e7a4237edf8",
-   "bytes": 42346,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13294155",
-   "stratum": "cas",
-   "sha256": "3bbb2acc2723612e1b504154390a1c5f5f77b608cda823f7bc1210ad2a8c07d5",
-   "bytes": 113153,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13294182",
-   "stratum": "cas",
-   "sha256": "9d21954799608bc2cc9207f76a79111c6be11f911f635de286b0ff205191ae80",
-   "bytes": 69499,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13294240",
-   "stratum": "cas",
-   "sha256": "840c5a41136c0d263d8371363bd66ffcd6e505b2af5f949f1fe75a2fad5c7a31",
-   "bytes": 75426,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13294281",
-   "stratum": "cas",
-   "sha256": "12a3271742262ad08188cc6427ec8939705b443a528aa90aafc702ffdfc1926b",
-   "bytes": 72366,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13294340",
-   "stratum": "cas",
-   "sha256": "06a8406e1dd7a1045d9bb8d2cfd2bed4c0c1cb6be81a7b6e1192dd383deb5520",
-   "bytes": 49893,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13294475",
-   "stratum": "cas",
-   "sha256": "d56c845db3e23ded47f5d9388dd57c9ab39113c5faaa15696fe463b862058569",
-   "bytes": 45967,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13294481",
-   "stratum": "cas",
-   "sha256": "2107fee6f311098c0ba42e4eb5bc15c3341b9edb6f29c637848778f6647bdcd2",
-   "bytes": 65477,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13294629",
-   "stratum": "cas",
-   "sha256": "f78aedc9a03bd67c2de62d80743df0a89f77f8987424ce8aab15c60080d485e0",
-   "bytes": 32149,
-   "licence": "CC BY (stated in words)"
-  },
-  {
-   "pmcid": "PMC13294642",
-   "stratum": "cas",
-   "sha256": "d04eae31c281873354f3868f220baa82607cb450be75f86d8fd2387957a18c66",
-   "bytes": 69528,
-   "licence": "CC BY (stated in words)"
-  },
-  {
-   "pmcid": "PMC13294698",
-   "stratum": "cas",
-   "sha256": "77857755cb1e126822cbd1b598e36323a76a2a16bc35bc8014e64f9d6e91b8cb",
-   "bytes": 69361,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13294702",
-   "stratum": "cas",
-   "sha256": "3c33d6abbd96547776965d92cf92dafc3d73412a8acde3bb77220834caaf4c32",
-   "bytes": 25982,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13294704",
-   "stratum": "cas",
-   "sha256": "3f096fb8f009f723da64b49e82941ead66188921ceb016e66ecded1873f052c7",
-   "bytes": 57053,
-   "licence": "CC BY (stated in words)"
-  },
-  {
-   "pmcid": "PMC13294705",
-   "stratum": "cas",
-   "sha256": "2fff1701adba23a9858cecce4ec9086b8eca2294797a8d03a2d2b5161fba4b1c",
-   "bytes": 29951,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13300565",
-   "stratum": "cas",
-   "sha256": "6ecdc2d8b8b173ec8f37cc133d0cfc1a51c1f08c4f88bf7bfd447ebcf4f3cddb",
-   "bytes": 57488,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13300836",
-   "stratum": "cas",
-   "sha256": "1edb2c4ad2f7d271ebe6b5500a11a8da8ad39ea79fa633c1d9fb5462f45ce766",
-   "bytes": 52978,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13301386",
-   "stratum": "cas",
-   "sha256": "c440e51dd73059bdb8e4e615c0703e98d049c6c37a5b9bd7de8833d853e29423",
-   "bytes": 56254,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13154027",
-   "stratum": "essai",
-   "sha256": "e4603c1e3eb86287ba31f16beeb59121c4068622e380d2a5859782d64ce49ae3",
-   "bytes": 103190,
-   "licence": "CC BY-NC-ND (stated in words)"
-  },
-  {
-   "pmcid": "PMC13169227",
-   "stratum": "essai",
-   "sha256": "2445ab27587b43b9ae57b268921b7be23b738e28d0943fed3d68f175d7f1895a",
-   "bytes": 122811,
-   "licence": "CC BY-NC-ND 4.0"
-  },
-  {
-   "pmcid": "PMC13169472",
-   "stratum": "essai",
-   "sha256": "3b1118f46bd86bbaf3c70e1d31b9b53d61fedef43922b8b6d47ec924b31e4cf5",
-   "bytes": 105968,
-   "licence": "CC BY-NC-ND 4.0"
-  },
-  {
-   "pmcid": "PMC13179527",
-   "stratum": "essai",
-   "sha256": "90e61e1baa8d9cf2f8570151ec47c8129644cb2001f68a112ac4929dc16bde21",
-   "bytes": 93269,
-   "licence": "CC BY-NC-ND 4.0"
-  },
-  {
-   "pmcid": "PMC13191455",
-   "stratum": "essai",
-   "sha256": "1311b13fa19f9058db68653f6428adb28ed579742d41a5d525ee49745006c239",
-   "bytes": 60781,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13205709",
-   "stratum": "essai",
-   "sha256": "d1700dce6695df08b5af776ad18408407094fac0bb1c5dee9df9870d9f3aca27",
-   "bytes": 134476,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13205731",
-   "stratum": "essai",
-   "sha256": "844eb71b4a4e118855fa4b91a11590a565525d6ecd9844cf27929cdb12f15394",
-   "bytes": 150696,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13205876",
-   "stratum": "essai",
-   "sha256": "54966f2d1ee7fc0bd26c7f23ed263665c743a54f9e45269989d0f6abe1453d45",
-   "bytes": 122238,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13213610",
-   "stratum": "essai",
-   "sha256": "96abf08a49a5ae9c31ac045014fb2c25b09f8a6ad98cd805e7cf35635ddc8899",
-   "bytes": 74813,
-   "licence": "CC BY-NC-ND (stated in words)"
-  },
-  {
-   "pmcid": "PMC13215628",
-   "stratum": "essai",
-   "sha256": "2bfb20a94f416c532c1f403c8bc478186f9c7cf097dc79ae24cb7933ca7d5f1d",
-   "bytes": 28389,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13238360",
-   "stratum": "essai",
-   "sha256": "edabcc657b4c2d2c5f470ec2dcb5969124451c2f8a637708eb835bd42b41a996",
-   "bytes": 70758,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13239719",
-   "stratum": "essai",
-   "sha256": "50b1e00e6e9de0b961abf70191428d536742cb7d34f9c914ac05be782d386959",
-   "bytes": 135875,
-   "licence": "CC BY-NC-ND 4.0"
-  },
-  {
-   "pmcid": "PMC13242068",
-   "stratum": "essai",
-   "sha256": "6812217dc3b3b82a5da984ab25f74a2fe841f3b66c8ffa3f008217f06e22a4f7",
-   "bytes": 81968,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13242351",
-   "stratum": "essai",
-   "sha256": "43ffc7e98d56520fde52ce561a49c7fac5620d0f54898895c9a9dd1d04e3ccaa",
-   "bytes": 152288,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13245602",
-   "stratum": "essai",
-   "sha256": "447d1bed6211e044bff529edeacffd1c0bd0304fa65a764248db517a1282a569",
-   "bytes": 144596,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13254492",
-   "stratum": "essai",
-   "sha256": "e269e22dbd3799e83a82515b34143d1a428734feb412487dfcd5011830d32af7",
-   "bytes": 93654,
-   "licence": "CC BY-NC-ND 4.0"
-  },
-  {
-   "pmcid": "PMC13263161",
-   "stratum": "essai",
-   "sha256": "8bec5a31702660bab73fdb677bd909ae68138b413c6ef8f2b202b8d5ff6bf0a8",
-   "bytes": 177420,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13264282",
-   "stratum": "essai",
-   "sha256": "a39fefb903fd08ea99da414cc979a0218f1072bdf52273c8fcfd25f8f20caa69",
-   "bytes": 181315,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13271868",
-   "stratum": "essai",
-   "sha256": "a1f599511e6a78c566904652ed3e8763f0621a7e993b667719ddf2c9990be01a",
-   "bytes": 130188,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13276020",
-   "stratum": "essai",
-   "sha256": "dac4c647fdcad8b42fc5760a26a8dabe211ca0889830da4411dddd54fd27176b",
-   "bytes": 107222,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13280184",
-   "stratum": "essai",
-   "sha256": "0dff87306b2c5ddf345c0d7f94d2c8779008a89287dace4cdcb8b749ba441014",
-   "bytes": 125836,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13280799",
-   "stratum": "essai",
-   "sha256": "974d7e98647e92411a10ba76de13561b8afba403c26e436875c9c354bfcc59dd",
-   "bytes": 114567,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13281132",
-   "stratum": "essai",
-   "sha256": "9ab2ff6eb17d613fff9209a55f87c05b55b38f125389766cf39d4ecbdd8278d4",
-   "bytes": 96977,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13282136",
-   "stratum": "essai",
-   "sha256": "e5594dd1448d1f0d913cd527925c06dd7c3234b50d509be34414c677bbc353c6",
-   "bytes": 206457,
-   "licence": "CC BY-NC-ND 4.0"
-  },
-  {
-   "pmcid": "PMC13284529",
-   "stratum": "essai",
-   "sha256": "d123cc5f25af75ee7ce634b361de0868c04fdc33041392f3a4bc70664bde8df4",
-   "bytes": 120621,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13290998",
-   "stratum": "essai",
-   "sha256": "ea2f5a085eff221081d23f054e976d8f89879ffa1a26ca8e2f58a3c68861d5b9",
-   "bytes": 134940,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13291766",
-   "stratum": "essai",
-   "sha256": "37dfe15f82c3bc90b38329b28870b89bc36b4a99dd38becaa6b5d0be3bb55101",
-   "bytes": 169100,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13291922",
-   "stratum": "essai",
-   "sha256": "d5caaa6b6cbea6268d3e7d3a3b6a8321369e1d8f8af10eb64dd4cb8c7be3bd0f",
-   "bytes": 150919,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13293440",
-   "stratum": "essai",
-   "sha256": "a63a53cefa669776f58291363a58b8508d1891208149d26e79586aebb1d8e1a2",
-   "bytes": 140580,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13294169",
-   "stratum": "essai",
-   "sha256": "6a8e6f988ef334907fee3e05b023a81c446309b299eb573c4bdd90cb2727904b",
-   "bytes": 88914,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13294787",
-   "stratum": "essai",
-   "sha256": "75873e8d83c6aecf48c0fa2f37ccf556947a4ff8dc5d1920f078355c9cf595a8",
-   "bytes": 141498,
-   "licence": "publisher licence, non-commercial (not redistributed)"
-  },
-  {
-   "pmcid": "PMC13294792",
-   "stratum": "essai",
-   "sha256": "c94c9072ee0e33af7593cc22e202e1fe5b8187a24a5e7d6d61b6e9463397d69c",
-   "bytes": 112409,
-   "licence": "publisher licence, non-commercial (not redistributed)"
-  },
-  {
-   "pmcid": "PMC13296589",
-   "stratum": "essai",
-   "sha256": "d7c7992d36537d63f4b7514743f186bf7e0057cd663fc1fb24d4083083a57592",
-   "bytes": 147455,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC7619126",
-   "stratum": "essai",
-   "sha256": "9b90c99c17275f464289fbb7851fde2e28c73dd317cf7335f5df7f608aa38e77",
-   "bytes": 33183,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13071177",
-   "stratum": "meta",
-   "sha256": "fdd85157c3fc10c78b1f3c5246b6e81506601b463f881194106a06e9627c4f9b",
-   "bytes": 114307,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13157766",
-   "stratum": "meta",
-   "sha256": "4ceee4f09fc6d46c9db84bc828c9a0fc91c91eed1e87da843722d3e13519ec85",
-   "bytes": 110595,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13179150",
-   "stratum": "meta",
-   "sha256": "c213f6d84658874929df8be8feb99e9a101595b6ff6c7c4840734be371ee2850",
-   "bytes": 413158,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13221319",
-   "stratum": "meta",
-   "sha256": "3920d183a098352c81a022fce0fdc44f5c1d37de0b4171c747a6c29963136477",
-   "bytes": 88403,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13225629",
-   "stratum": "meta",
-   "sha256": "63ed78d16c37be9b47ff5f8f485896742aaf043c8431a110caad458ea20568ad",
-   "bytes": 150516,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13226718",
-   "stratum": "meta",
-   "sha256": "52834af2ec8a16c2908bf44f71786735f4622d6d880a90294acbab93a9869c38",
-   "bytes": 217677,
-   "licence": "CC BY-NC-ND 4.0"
-  },
-  {
-   "pmcid": "PMC13229315",
-   "stratum": "meta",
-   "sha256": "1684d3315d753c3d8528dc0ed483afd81e5877e4edf16a74128ffccebdd0c62d",
-   "bytes": 235283,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13231626",
-   "stratum": "meta",
-   "sha256": "f9319318f63bcc0a38ebb484ee8557936f04512e0077ca2b7ae47e64e84696e0",
-   "bytes": 165785,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13240427",
-   "stratum": "meta",
-   "sha256": "c4d1860b1b29137fd353379d5c1683ed5506ba6c640f6656b85084aea9f1ddf7",
-   "bytes": 144348,
-   "licence": "CC BY-NC-ND 4.0"
-  },
-  {
-   "pmcid": "PMC13241412",
-   "stratum": "meta",
-   "sha256": "d5b9e4df48c5480d3dfceb695849f63f76b591c9872586f33259e67945ece329",
-   "bytes": 122544,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13246130",
-   "stratum": "meta",
-   "sha256": "d2a57c9dae82f7bce4722507bd27a5c105ca15403904928b998f4a3dff981456",
-   "bytes": 163827,
-   "licence": "CC BY-NC 4.0"
-  },
-  {
-   "pmcid": "PMC13250259",
-   "stratum": "meta",
-   "sha256": "73059d5df44898a556e7bbad514189c054774d77e147fba6d522032165461432",
-   "bytes": 164131,
-   "licence": "CC BY-NC-ND 4.0"
-  },
-  {
-   "pmcid": "PMC13253268",
-   "stratum": "meta",
-   "sha256": "d9e512649ec4b87d38b7b4004d9265569087a45b5261363573c03fa1b46bd535",
-   "bytes": 90441,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13254819",
-   "stratum": "meta",
-   "sha256": "d5f885e47b984bd88c17240a4c5c4b243ed0a9573a1a332e5d1d9e6cdac9cccf",
-   "bytes": 155457,
-   "licence": "CC BY-NC-ND 4.0"
-  },
-  {
-   "pmcid": "PMC13256077",
-   "stratum": "meta",
-   "sha256": "3a425ebc09b27a5ef22d65cabbf0163e1c5b18ae13a48749e8c7824dedc33e18",
-   "bytes": 89944,
-   "licence": "CC BY-NC 4.0"
-  },
-  {
-   "pmcid": "PMC13260247",
-   "stratum": "meta",
-   "sha256": "477661cc05e90f96e26bd615f845072e48df7bcedb9de87117ff3167260047fa",
-   "bytes": 139104,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13263136",
-   "stratum": "meta",
-   "sha256": "2cc7ff6a6a4a99ef68691833a2c0d1e7a7c5628b5ba7a0bf2e71da497984a55a",
-   "bytes": 285964,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13264275",
-   "stratum": "meta",
-   "sha256": "de0dc0b2d6c67169bd98e6aaf0e891cc4bce1e0e7a2ae72d563089d23b453d51",
-   "bytes": 132814,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13264436",
-   "stratum": "meta",
-   "sha256": "6e18bf9aa1372177b6888dac899f130fd98a73b0b4e8e93b1f5c438eb66ff6a5",
-   "bytes": 138078,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13265330",
-   "stratum": "meta",
-   "sha256": "d69bd1c95fa3d785830f44a957bb033105a1e1c354d19ff25d83738dc41240db",
-   "bytes": 123973,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13268477",
-   "stratum": "meta",
-   "sha256": "f1212a3ca7f0b5a97b230bfcdbe89323969ad02497d4233b686598c6d01598a9",
-   "bytes": 115381,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13268693",
-   "stratum": "meta",
-   "sha256": "54345b153ea4bda3a38d46dcc2234db2c71178098b4bbc468c8d6915f5ccdfbf",
-   "bytes": 122239,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13269816",
-   "stratum": "meta",
-   "sha256": "458d252dacf65027e70101d9064cb40979fc230a29d402b57e3fb5e7f88891a0",
-   "bytes": 224417,
-   "licence": "CC BY-NC 4.0"
-  },
-  {
-   "pmcid": "PMC13271776",
-   "stratum": "meta",
-   "sha256": "d67950239c5120a488a03e5a167847510492602e7cb0a039d5b1786081315101",
-   "bytes": 132395,
-   "licence": "CC BY-NC-ND 4.0"
-  },
-  {
-   "pmcid": "PMC13280693",
-   "stratum": "meta",
-   "sha256": "771965a2f54ce0aee9b0a9682db5d9259b591d85c6f1dd6069b28a4d8229fa23",
-   "bytes": 169537,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13286426",
-   "stratum": "meta",
-   "sha256": "1b4b4a3b940c385d61880fe41e363513ec2e06fe7bdc9b2a976779a16901a4c7",
-   "bytes": 99880,
-   "licence": "CC BY-NC 4.0"
-  },
-  {
-   "pmcid": "PMC13286481",
-   "stratum": "meta",
-   "sha256": "98f84a70c3a3546c977e86bbb9cfd82218cc9f0816b7936dd7ea25b93eacb587",
-   "bytes": 87251,
-   "licence": "CC BY-NC 4.0"
-  },
-  {
-   "pmcid": "PMC13287023",
-   "stratum": "meta",
-   "sha256": "d4fdda342515f29d5151ea78bab5ea92e6e2cb55370980fbfe45803fe6a1b8d5",
-   "bytes": 158247,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13287149",
-   "stratum": "meta",
-   "sha256": "e1983be3b150b83bbacc8534ac20862916c8d24a7947a8a3de2206ae1dda13fc",
-   "bytes": 183217,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13287277",
-   "stratum": "meta",
-   "sha256": "491498553cb7da5a0e6cb6068e51507bdd07dc42c675aea1bcfe7cf71f382d4d",
-   "bytes": 179553,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13288533",
-   "stratum": "meta",
-   "sha256": "6769358cbc713c016ce6e6c03c483cbe1aa8d7cabb689dbfefd971eb9619f070",
-   "bytes": 104527,
-   "licence": "CC BY-NC 4.0"
-  },
-  {
-   "pmcid": "PMC13292320",
-   "stratum": "meta",
-   "sha256": "45c986884c3cfb705594c4dfcc44cfd0b2ebd823f6158446fc60c0c0da2002cf",
-   "bytes": 49069,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13297335",
-   "stratum": "meta",
-   "sha256": "cbe470a120c945dd9c5c986f4bb2ed3cc142a2cb702c73e8b50e589df76514ac",
-   "bytes": 220930,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13305250",
-   "stratum": "meta",
-   "sha256": "e0c7624d056d6e761aa416bcd0257ed5a75296795f25bc6323b03b3771587403",
-   "bytes": 71242,
-   "licence": "CC BY-NC 4.0"
-  },
-  {
-   "pmcid": "PMC12900525",
-   "stratum": "moderne",
-   "sha256": "7e81e1455501ffde54e3125739c0e358b20e00d11b4a6873d52fa8303cceb139",
-   "bytes": 164293,
-   "licence": "CC BY-NC-SA 4.0"
-  },
-  {
-   "pmcid": "PMC12967033",
-   "stratum": "moderne",
-   "sha256": "79460c189459a7b3bb4b6bf0da9f2da1ccebffbf98cebc3714b1aedad549a7f5",
-   "bytes": 68473,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13177175",
-   "stratum": "moderne",
-   "sha256": "c5f8bd5dad5245d2ba6a09085d295fab06e6e5ba45cab9c4508d7971bc3a17ec",
-   "bytes": 95620,
-   "licence": "CC BY-NC 4.0"
-  },
-  {
-   "pmcid": "PMC13254229",
-   "stratum": "moderne",
-   "sha256": "a5ba7c50953e1800fd1118113107d96cd4015c97abc2e3b2facf2506f1c8c50f",
-   "bytes": 181891,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13262411",
-   "stratum": "moderne",
-   "sha256": "ea23b5c571a8ae7c9109742f2b2800346a721ab71623ec8defb8a223ae9b3632",
-   "bytes": 149191,
-   "licence": "CC BY 3.0"
-  },
-  {
-   "pmcid": "PMC13264966",
-   "stratum": "moderne",
-   "sha256": "085724e41e33b499f0742b0182c65757a09acab070ce09532cbb2af7a090f986",
-   "bytes": 154372,
-   "licence": "CC BY-NC 4.0"
-  },
-  {
-   "pmcid": "PMC13264967",
-   "stratum": "moderne",
-   "sha256": "f3b7d646275fd0ac7e75c33dedbaae26c1b533dfc44f5ead0380a7a1515ca405",
-   "bytes": 73195,
-   "licence": "CC BY-NC-ND 4.0"
-  },
-  {
-   "pmcid": "PMC13267778",
-   "stratum": "moderne",
-   "sha256": "9e6040959bfff3109f59cb7efc09ec612105f28f05a92497aef2e43e5b20278b",
-   "bytes": 91520,
-   "licence": "CC BY 3.0"
-  },
-  {
-   "pmcid": "PMC13274555",
-   "stratum": "moderne",
-   "sha256": "11c395741df8d2fb5122e69a393bdb30a115cff1520e2caef83f5badb614e1d6",
-   "bytes": 83499,
-   "licence": "CC BY-NC-ND 4.0"
-  },
-  {
-   "pmcid": "PMC13282716",
-   "stratum": "moderne",
-   "sha256": "f4dc7dd6c3204046fc1cc421c63da8491819f3c6deaf492e062de69087e03a67",
-   "bytes": 115251,
-   "licence": "CC BY-NC-ND 4.0"
-  },
-  {
-   "pmcid": "PMC13282721",
-   "stratum": "moderne",
-   "sha256": "cb8e91d60528a6f108965f5ceec16aac363d196de4bd5dbf64558dccfc48373d",
-   "bytes": 513818,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13288728",
-   "stratum": "moderne",
-   "sha256": "cb2c09f2cff026b7e1705c1f3f81c4bcd52c0805b4fedc92d75370922cd4a10f",
-   "bytes": 184608,
-   "licence": "CC BY 3.0"
-  },
-  {
-   "pmcid": "PMC13291764",
-   "stratum": "moderne",
-   "sha256": "e2f2f55d9e4d95cecece6e755c36fa71a781f6d071f885ef390d818b6d3074a2",
-   "bytes": 142518,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13292010",
-   "stratum": "moderne",
-   "sha256": "d5fa1135d4a1f33f6ee6decc5da2ef04472b1f0fbd7d988e2137d45735919fe6",
-   "bytes": 22236,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13292400",
-   "stratum": "moderne",
-   "sha256": "3f5996ba4fe84c97a38f408f9aa8f02781f2889833dddfaa11542fd3cb10c5a5",
-   "bytes": 113953,
-   "licence": "CC BY-NC-ND 4.0"
-  },
-  {
-   "pmcid": "PMC13296834",
-   "stratum": "moderne",
-   "sha256": "88f5029095a3443e585251baa384ecd6047bd420f0728dd76072124249666195",
-   "bytes": 100183,
-   "licence": "CC BY-NC-ND 4.0"
-  },
-  {
-   "pmcid": "PMC13296839",
-   "stratum": "moderne",
-   "sha256": "5b98bf1914f6722d3c8c75eff6fd7bba55c58f592e3dde01136b46f96cc753ce",
-   "bytes": 154550,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13127809",
-   "stratum": "nonEN",
-   "sha256": "88b652c809f64fd6d55fc31dcf6d801488862c3f9b0d2cba9ed98cee2d220f2e",
-   "bytes": 45249,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13128172",
-   "stratum": "nonEN",
-   "sha256": "0635333f084caffb2fcd53690bf29c2492a2fe19457108fcbdfe14fe31bcf6cb",
-   "bytes": 37239,
-   "licence": "CC BY (stated in words)"
-  },
-  {
-   "pmcid": "PMC13128184",
-   "stratum": "nonEN",
-   "sha256": "0a8cf205cecc511b168161761585cbe498d7098613fd5cb8fb8185f9a317f842",
-   "bytes": 36812,
-   "licence": "CC BY (stated in words)"
-  },
-  {
-   "pmcid": "PMC13128185",
-   "stratum": "nonEN",
-   "sha256": "05008432afb9a9127779f83673f750ea3da116d284697faa0df2c0210e8a71ac",
-   "bytes": 40216,
-   "licence": "CC BY (stated in words)"
-  },
-  {
-   "pmcid": "PMC13128186",
-   "stratum": "nonEN",
-   "sha256": "02d648ba7e436bb6eeab9c7602c23b46245cd4a9314eeeb7845094c3182355ac",
-   "bytes": 38466,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13128206",
-   "stratum": "nonEN",
-   "sha256": "3fcb1b4dba23a692d3022713b9655abf0dfd0589982a3411cefafe98e2fc0047",
-   "bytes": 166099,
-   "licence": "CC BY (stated in words)"
-  },
-  {
-   "pmcid": "PMC13128210",
-   "stratum": "nonEN",
-   "sha256": "f50a077abe7833a80a4f3502e6daafbb81eb8e70926d49f8f44ca40828778918",
-   "bytes": 61755,
-   "licence": "CC BY (stated in words)"
-  },
-  {
-   "pmcid": "PMC13128212",
-   "stratum": "nonEN",
-   "sha256": "d1aabd37d411b0544e2389b2e4b65ad41b5cf4948a209b4c88852bbb20c54fc3",
-   "bytes": 37419,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13128213",
-   "stratum": "nonEN",
-   "sha256": "2f9bf21a8ead134e0d5c646afa927315fbaf3b1f9d8aae457b1c0e6662fae6a1",
-   "bytes": 177975,
-   "licence": "CC BY (stated in words)"
-  },
-  {
-   "pmcid": "PMC13128215",
-   "stratum": "nonEN",
-   "sha256": "a0521620660c9d80be594002b3694eaedf11d649c7d79db2bff12910e6d77cc5",
-   "bytes": 31348,
-   "licence": "CC BY (stated in words)"
-  },
-  {
-   "pmcid": "PMC13128216",
-   "stratum": "nonEN",
-   "sha256": "3fe93812bc6f9ac53f59df897c4b8b0f288dacdee74cd16c604e4166d4a8950f",
-   "bytes": 75806,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13128218",
-   "stratum": "nonEN",
-   "sha256": "01987a171882c1afa611daaf8aac7d3919be341b9be4ba3dde25337af56385cb",
-   "bytes": 19861,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13142163",
-   "stratum": "nonEN",
-   "sha256": "a15c9829266b8c7dae4848a1177fbfcd86ed887d6c1a69170dab64031a2fc492",
-   "bytes": 188649,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13143285",
-   "stratum": "nonEN",
-   "sha256": "2e2738def01f39419d2c14a7278278d9cfa5f5eada25c3026d7fa84fcfc66bee",
-   "bytes": 13632,
-   "licence": "open access, licence text without CC name"
-  },
-  {
-   "pmcid": "PMC13148856",
-   "stratum": "nonEN",
-   "sha256": "b69c510079697cab5dc874210b33ee172bba1dc4d397affec286234242d2c311",
-   "bytes": 166112,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13155791",
-   "stratum": "nonEN",
-   "sha256": "0a2c93fbef534433dd30439aeb17420c4b82e093a267c075b95bd5a4c9029d0a",
-   "bytes": 84993,
-   "licence": "CC BY (stated in words)"
-  },
-  {
-   "pmcid": "PMC13155792",
-   "stratum": "nonEN",
-   "sha256": "5d672dcdbe13c01e7b1f1a5bdecbb856b9eb08e65c40236ea53aa155cc0d837e",
-   "bytes": 44823,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13155793",
-   "stratum": "nonEN",
-   "sha256": "7604c4fa0286ac371d3515250a53289f14df2faf19779050c7c17a6491dc2d34",
-   "bytes": 43661,
-   "licence": "CC BY (stated in words)"
-  },
-  {
-   "pmcid": "PMC13170112",
-   "stratum": "nonEN",
-   "sha256": "7f0b76da0c536c92cceddeb248724383e8dbfa1d2c600ceb38322ee287f80801",
-   "bytes": 16733,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13185728",
-   "stratum": "nonEN",
-   "sha256": "4ebd00cf7d223558058a74a2e290ccf46dae24e391cd81998b8b743e8ef69b1c",
-   "bytes": 70640,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13185730",
-   "stratum": "nonEN",
-   "sha256": "59f655c12ac6149c2a3965cbc2321b75eee49b777f146f7348895695f15b9eb5",
-   "bytes": 121136,
-   "licence": "CC BY (stated in words)"
-  },
-  {
-   "pmcid": "PMC13193188",
-   "stratum": "nonEN",
-   "sha256": "23c00c523e5a090b9eed94f6acf977478e4973848c816023e0883a8ed7e3bfc4",
-   "bytes": 193417,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13193189",
-   "stratum": "nonEN",
-   "sha256": "591c046b978a9d18563f148289a917d56b6a39f13806d03440eb3399746cb0a8",
-   "bytes": 175729,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13193190",
-   "stratum": "nonEN",
-   "sha256": "a683405f6d758555d5ed1b391b2bfeeca1ce667d19f762a30fa833606521198e",
-   "bytes": 167010,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13193191",
-   "stratum": "nonEN",
-   "sha256": "341335645ffa0175acf36c99c90a1b2673575b2da8e11b6bfef45c4eaf68eca1",
-   "bytes": 85531,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13193194",
-   "stratum": "nonEN",
-   "sha256": "6478e38305cf5c9328a35af10e41dc8725ff019a67ed60a3095624649c9fb002",
-   "bytes": 127015,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13193195",
-   "stratum": "nonEN",
-   "sha256": "07944ccc0247bad3c9e6ee2d883effe8218c5ae08fad9847a8e50ce8806fe434",
-   "bytes": 216521,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13224953",
-   "stratum": "nonEN",
-   "sha256": "c74e51c8dd9a5c8ba59ce980874ad3e6eebbda71bfaaf314d7c4864ed8129716",
-   "bytes": 21778,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13224954",
-   "stratum": "nonEN",
-   "sha256": "adc42cf0549cd66dbb014334a4cebe0e6a49624ba339a083969742cfdaba15be",
-   "bytes": 17012,
-   "licence": "open access, licence text without CC name"
-  },
-  {
-   "pmcid": "PMC13224955",
-   "stratum": "nonEN",
-   "sha256": "ede246125f508ff5c7e73d5180a6fd886d42fd861474749957c52b8a08a94b61",
-   "bytes": 137206,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13224957",
-   "stratum": "nonEN",
-   "sha256": "5619be1c4c03c8df0ac31d5696a03aabf7bf8899a21b814b38aab58872d15d79",
-   "bytes": 130367,
-   "licence": "open access, licence text without CC name"
-  },
-  {
-   "pmcid": "PMC13228121",
-   "stratum": "nonEN",
-   "sha256": "432645018bb1a67b70b3d92fbe4894715e0ea89b1444323fc1d83d25885c6d15",
-   "bytes": 39612,
-   "licence": "CC BY (stated in words)"
-  },
-  {
-   "pmcid": "PMC13264032",
-   "stratum": "nonEN",
-   "sha256": "f1b9c5d7c5d739c17c0524b019a3633b322cb350b100509c88b1d20d174c5fe4",
-   "bytes": 9010,
-   "licence": "CC BY-NC-ND 4.0"
-  },
-  {
-   "pmcid": "PMC13264058",
-   "stratum": "nonEN",
-   "sha256": "f195d840445c32eff49dd24c0c5c8f2173f4b7e0b3017891f7aa7da77b3dafb4",
-   "bytes": 150079,
-   "licence": "CC BY-NC-ND 4.0"
-  },
-  {
-   "pmcid": "PMC13264162",
-   "stratum": "nonEN",
-   "sha256": "d07871f72474500a88d137e0e4bffe9e33870583ff05b6bb89e4eee519f95048",
-   "bytes": 16498,
-   "licence": "CC BY-NC-ND 4.0"
-  },
-  {
-   "pmcid": "PMC13264178",
-   "stratum": "nonEN",
-   "sha256": "658d2f16343bde27856867c3e0f3d58c965c3f24bc2f23fdf7aa1776d62ee15e",
-   "bytes": 54185,
-   "licence": "CC BY-NC-ND 4.0"
-  },
-  {
-   "pmcid": "PMC13266121",
-   "stratum": "nonEN",
-   "sha256": "999ccf0c51d731ac8c64fdbbddab4551346553cf21428e1af95006b5ae231e53",
-   "bytes": 24555,
-   "licence": "CC BY-NC-ND 4.0"
-  },
-  {
-   "pmcid": "PMC13266122",
-   "stratum": "nonEN",
-   "sha256": "21ebaba1061cd1293a2df97d36ed15939e92f8e27283da8d7a878807061d88a7",
-   "bytes": 14725,
-   "licence": "CC BY-NC-ND 4.0"
-  },
-  {
-   "pmcid": "PMC13267754",
-   "stratum": "nonEN",
-   "sha256": "013100a129f1daee5717f3b5b06f76c2cbd4c9ba4aba1b67b22a921f88162fe4",
-   "bytes": 111346,
-   "licence": "CC BY-NC-ND 3.0"
-  },
-  {
-   "pmcid": "PMC13267755",
-   "stratum": "nonEN",
-   "sha256": "7f11542af4bb7b9c7b53d50e45dbeb4f655286c9b1c87c41f4840a79f87ecedb",
-   "bytes": 154017,
-   "licence": "CC BY-NC-ND (stated in words)"
-  },
-  {
-   "pmcid": "PMC13267756",
-   "stratum": "nonEN",
-   "sha256": "33ebf2fd5aa666f1dc8b2558f6e9f89d964d16e7be6c8ce3646bb0f2cd1a5905",
-   "bytes": 118372,
-   "licence": "CC BY-NC-ND (stated in words)"
-  },
-  {
-   "pmcid": "PMC13267757",
-   "stratum": "nonEN",
-   "sha256": "0d0df3400aac65cea7150bd7b8e5c54b323ef098558ccc0f4da7a2724be8ea48",
-   "bytes": 202039,
-   "licence": "CC BY-NC-ND 3.0"
-  },
-  {
-   "pmcid": "PMC13272499",
-   "stratum": "nonEN",
-   "sha256": "47da0c8070c95377bd1fbb8c6afa43204e1b6abf1b1f1cda5a32765042461194",
-   "bytes": 10994,
-   "licence": "CC BY-NC-ND 4.0"
-  },
-  {
-   "pmcid": "PMC13272511",
-   "stratum": "nonEN",
-   "sha256": "462fcf30dfc859c2e7963ddb5cf8bd689a4477d6634dacfd0e03bc6ef84a7853",
-   "bytes": 90474,
-   "licence": "CC BY-NC-ND 4.0"
-  },
-  {
-   "pmcid": "PMC13272517",
-   "stratum": "nonEN",
-   "sha256": "5cc324cb133cfb364d62134a6586172d57d826967afc93a6a0f4d1cb27a1f128",
-   "bytes": 90483,
-   "licence": "CC BY-NC-ND 4.0"
-  },
-  {
-   "pmcid": "PMC13276738",
-   "stratum": "nonEN",
-   "sha256": "d1eeb4addd1686ff9d5adec1e7ebc0270d7742b795c259e24880afdfb1522525",
-   "bytes": 13879,
-   "licence": "CC BY-NC-ND 4.0"
-  },
-  {
-   "pmcid": "PMC13284468",
-   "stratum": "nonEN",
-   "sha256": "d632806e97c9e658ff825d9d97d19fd1029cb02660d5cfcf52f4d0e8afa0dd41",
-   "bytes": 48604,
-   "licence": "CC BY-NC-ND 4.0"
-  },
-  {
-   "pmcid": "PMC13284469",
-   "stratum": "nonEN",
-   "sha256": "b1da5732fd48b2c771fcf2b2d49af580320599df46a45b4f2f1aee604c943601",
-   "bytes": 27906,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13285344",
-   "stratum": "nonEN",
-   "sha256": "41835083d969b87bfde134ae9c923300d260f8794779e54d795c761775accc54",
-   "bytes": 11258,
-   "licence": "CC BY-NC-ND 4.0"
-  },
-  {
-   "pmcid": "PMC13285635",
-   "stratum": "nonEN",
-   "sha256": "57eabc17c804a3e947a1171d891dc068e8f8a0cba9ddffc0f43a56a39ac6fa6c",
-   "bytes": 127958,
-   "licence": "CC BY-NC 4.0"
-  },
-  {
-   "pmcid": "PMC13288443",
-   "stratum": "nonEN",
-   "sha256": "1f13cdd6bb97ef2d6a94f6db5d145038beb3b949fa6299c933d08eff04079bd5",
-   "bytes": 93348,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13039343",
-   "stratum": "phys",
-   "sha256": "c8d556fe5f51b9d859af3994b480e90e40588e4e358c4848cbf956292e55a0f2",
-   "bytes": 118968,
-   "licence": "CC BY-NC-ND 4.0"
-  },
-  {
-   "pmcid": "PMC13082673",
-   "stratum": "phys",
-   "sha256": "ada385cd8fd9df892c777bd2415414a4a6dc06edf5119e9d0b3313048cac3855",
-   "bytes": 370610,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13099575",
-   "stratum": "phys",
-   "sha256": "cdb73868ae048d208e0963e9e967e058b15b6e39fb93c550dcdf566453289439",
-   "bytes": 255804,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13113438",
-   "stratum": "phys",
-   "sha256": "d5afa26e150c4d2f40f831a5ec40ddf62892cfcee67095c1b5f2cfc592efc15e",
-   "bytes": 313132,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13133660",
-   "stratum": "phys",
-   "sha256": "ed1eab7c85379a0cd4fbea583834c885c13a9dba5b8b924df00fedc0c683bf06",
-   "bytes": 482399,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13154412",
-   "stratum": "phys",
-   "sha256": "5de3368e528d75cf1fcaa140b01249f9cadb279e848b1a94059c190945f1e158",
-   "bytes": 138204,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13158258",
-   "stratum": "phys",
-   "sha256": "a81b6120c56afa217e1957aacc25849362aa195726ace191b583b883f8b3cdc1",
-   "bytes": 278256,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13171646",
-   "stratum": "phys",
-   "sha256": "3abbefc314be6adf1e7b928a183cc580068a90d45372c390e6eee5f62d099f9c",
-   "bytes": 152584,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13178570",
-   "stratum": "phys",
-   "sha256": "3fac29c6236127298035dc3bac097c34eea3435431a3986c03171486a262ca60",
-   "bytes": 277539,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13181085",
-   "stratum": "phys",
-   "sha256": "9754c3a7703724ba9204ce5e008ae3793c8befea75215290d6bf5bbe1060268a",
-   "bytes": 162907,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13193059",
-   "stratum": "phys",
-   "sha256": "cb43bce3aba2aab943db1d0c8c883766dc73d6fe1296a51e577bfa62ed76131b",
-   "bytes": 185266,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13201561",
-   "stratum": "phys",
-   "sha256": "53a2c4bdf8d814223c6c1943ec542c8d1c971859c634b9df16af5794a0eaa38b",
-   "bytes": 306414,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13208799",
-   "stratum": "phys",
-   "sha256": "e3c40d41a44913ed3036e29de762ffe1531be7ed640d7ef6bad34da6d6390373",
-   "bytes": 274330,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13210669",
-   "stratum": "phys",
-   "sha256": "0dbed6c40a7ea2f8dcc645f7a3c67089938cfbf6fb586e7600172382a0dd6349",
-   "bytes": 192713,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13221960",
-   "stratum": "phys",
-   "sha256": "94ae500aea7cb5f9b204ecbfa3ea9205e5d6ab069e1f2686cde1a1536fcdccab",
-   "bytes": 114020,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13222844",
-   "stratum": "phys",
-   "sha256": "d9829dcb53a367a7174a3924e9e4edcc3b333592a351b9edd5112b3a15b91cac",
-   "bytes": 195987,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13234180",
-   "stratum": "phys",
-   "sha256": "5f2ef37eea3026ac599da2c5be45aa4aa5fca8a3bea769415e0771a62e814e16",
-   "bytes": 229685,
-   "licence": "CC BY-NC-ND 4.0"
-  },
-  {
-   "pmcid": "PMC13235518",
-   "stratum": "phys",
-   "sha256": "3741dd4f94756f4d7ef6ed9dc013ac0dd8d5396b2cbe769c0c5e4323333cf868",
-   "bytes": 160643,
-   "licence": "CC BY-NC-ND 4.0"
-  },
-  {
-   "pmcid": "PMC13246409",
-   "stratum": "phys",
-   "sha256": "7a68efa92a8224872791af51be8bc760aa34e8b9c00650c2e16abc406ed6b290",
-   "bytes": 236117,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13252849",
-   "stratum": "phys",
-   "sha256": "100d220cd80df66e2a02bd921296c3f6923e085e0469b9c5c14f7cccbad62b48",
-   "bytes": 285922,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13257740",
-   "stratum": "phys",
-   "sha256": "e4998d0868f9d32d2d4cef42aa16a3f639b651d2d923a110fb13cef597c87aa3",
-   "bytes": 321062,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13259435",
-   "stratum": "phys",
-   "sha256": "67b42ba1065ca35ad931a79468da5bde0cee1c44771109d0721375d5ef40beb1",
-   "bytes": 171499,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13259474",
-   "stratum": "phys",
-   "sha256": "5e756e4aeedfdbf693f14c6dff374ad018c5b9f6e1e5952a89fe68f198ab6bfb",
-   "bytes": 236103,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13261600",
-   "stratum": "phys",
-   "sha256": "bdb32947df7e1fa994d43397533232b5a77ecf9ed6d09aaed22c720dbc1a0ca4",
-   "bytes": 186458,
-   "licence": "CC BY-NC-ND 4.0"
-  },
-  {
-   "pmcid": "PMC13272752",
-   "stratum": "phys",
-   "sha256": "6e5f928c65e3939f7126208cf098b9f50a0a0bc7f29466cef85f9c0ebda5d2ba",
-   "bytes": 215737,
-   "licence": "CC BY-NC-ND 4.0"
-  },
-  {
-   "pmcid": "PMC13275013",
-   "stratum": "phys",
-   "sha256": "f75820c5c59f5941f1b13573bcfcb187d77f57af3f941c45f35259db04d7a425",
-   "bytes": 206669,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13276034",
-   "stratum": "phys",
-   "sha256": "4c1892e57ff51d9065470f45c44ef94b2c9a468cf347e6d2bd861198609aff1d",
-   "bytes": 315790,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13282397",
-   "stratum": "phys",
-   "sha256": "02923b1668024238659dc8f4607e894e12b0916b26deb83dd03c9c8538d1b50e",
-   "bytes": 169340,
-   "licence": "CC BY-NC-ND 4.0"
-  },
-  {
-   "pmcid": "PMC13285896",
-   "stratum": "phys",
-   "sha256": "93406f7c33d9457c187d608c1183d3648d1e8b15da0b98470f2abd2010ab7483",
-   "bytes": 88969,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13289917",
-   "stratum": "phys",
-   "sha256": "e444cb5f10e01b8643a4f6aea357722a1e5ca563dad61f318805541cbe2db84d",
-   "bytes": 163130,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13296606",
-   "stratum": "phys",
-   "sha256": "b4bee0bbbd83890b3133b674e732ac9f460bb216a3948504005180610a360ecf",
-   "bytes": 744715,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13297141",
-   "stratum": "phys",
-   "sha256": "fb8b3bd546af24b3ec03f5d7067728b952854382ce6a78924f226d34364aa975",
-   "bytes": 237618,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13297618",
-   "stratum": "phys",
-   "sha256": "68c5a2956280c74740be98e2a36fa8cfc7046ee96fe2d4f7fe62440ee404c012",
-   "bytes": 687256,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13298103",
-   "stratum": "phys",
-   "sha256": "14d35ac6dfad6ed78c05ccdc34cf7173d320df4f478f4d62e5184ea5091c6b44",
-   "bytes": 214989,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC12920011",
-   "stratum": "retract",
-   "sha256": "abd724f8760e3f04bbe9c9b0e7bfe7b19f47b0f5b51e1c4039382b78c776f76e",
-   "bytes": 6957,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC12937552",
-   "stratum": "retract",
-   "sha256": "a717821e0dcf1acd0e26faedfd077e8eba33accff2ea79e9a8090e98dba756dd",
-   "bytes": 7781,
-   "licence": "CC BY-NC-ND 4.0"
-  },
-  {
-   "pmcid": "PMC12943135",
-   "stratum": "retract",
-   "sha256": "8b786a38071483c7a649b0f3b84a4eacf7214b020ef583799874136972159de4",
-   "bytes": 10956,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC12945919",
-   "stratum": "retract",
-   "sha256": "76b09fed4fe6efb0d2b3c7a9e5633cc9ce62978f189c2b6d99029195a50572d7",
-   "bytes": 9554,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC12951106",
-   "stratum": "retract",
-   "sha256": "3f053c955e2ab802164669bb09cbfc5fa1c0442cdf68732abd1a7cf58734eee3",
-   "bytes": 11197,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC12983062",
-   "stratum": "retract",
-   "sha256": "56fa079cdb58e31815190b135e7e4615ba7b9ad4cde36da917f5a34a3b3aa626",
-   "bytes": 5090,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC12983399",
-   "stratum": "retract",
-   "sha256": "b6c559273b37a7ef1d12e1fd3bf26be76ab813eafd7a76aeef5a5d6fd1ea07ab",
-   "bytes": 8588,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC12985380",
-   "stratum": "retract",
-   "sha256": "61b36f9ab5f2e7e6472a282a13fce97fbbb2238b06511ab785b12ef2e89604f0",
-   "bytes": 6609,
-   "licence": "CC BY-NC-ND 4.0"
-  },
-  {
-   "pmcid": "PMC12989678",
-   "stratum": "retract",
-   "sha256": "17da062ae90606cb71bd9e187ccfec96a883e7fbdd21d8a4b3fc456adeaf8eed",
-   "bytes": 6971,
-   "licence": "CC BY-NC 4.0"
-  },
-  {
-   "pmcid": "PMC12990951",
-   "stratum": "retract",
-   "sha256": "3b32343ef8641cea80054356cbff0ea419c26db99b25671eaaf0042969f341ff",
-   "bytes": 4798,
-   "licence": "CC BY-NC-ND 4.0"
-  },
-  {
-   "pmcid": "PMC13034554",
-   "stratum": "retract",
-   "sha256": "4f8d9e464db900e702c1177b4551ed924def88d515ee4c149f58ebab8054c765",
-   "bytes": 5586,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13037014",
-   "stratum": "retract",
-   "sha256": "c3c4780de8a10462a53b418c807f225537bc13ccc7b083ac0bb5eb902d9b44d8",
-   "bytes": 7000,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13064942",
-   "stratum": "retract",
-   "sha256": "55f90f66293c4be98497e5405e473bc12da3d2768a190b8fcce142bc7c77beca",
-   "bytes": 15340,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13083641",
-   "stratum": "retract",
-   "sha256": "a13f4bfa67c33e43d80671c8eb34928e114e28738b766bac9743661255c3aa78",
-   "bytes": 29363,
-   "licence": "CC BY-NC-ND 4.0"
-  },
-  {
-   "pmcid": "PMC13100932",
-   "stratum": "retract",
-   "sha256": "f7bb15ebfa883cfeb089c219e0dbc61687544681e98c5d7338f9d138fc6313b5",
-   "bytes": 10088,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13184583",
-   "stratum": "retract",
-   "sha256": "551bbafb4bcb0c2d274b901fd251379d2119e7911dbdcea951d8420cb9f885f3",
-   "bytes": 7864,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13208113",
-   "stratum": "retract",
-   "sha256": "882cc6af0d74e8f09ab2cdde4b395d6b9ea2d92504dc381f61ac812f5b94f01d",
-   "bytes": 6188,
-   "licence": "CC BY-NC-ND 4.0"
-  },
-  {
-   "pmcid": "PMC13230493",
-   "stratum": "retract",
-   "sha256": "55d6b5955ecc50bb035649362f9919ab190e1c89f99d0a159671fb8cc0e6b6cc",
-   "bytes": 11159,
-   "licence": "CC BY-NC 4.0"
-  },
-  {
-   "pmcid": "PMC13244562",
-   "stratum": "retract",
-   "sha256": "8ec267d7415bbf29aeb4b7b5e134068004d220e9ebdd8949af7d7a8bd4adc98c",
-   "bytes": 11222,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13257949",
-   "stratum": "retract",
-   "sha256": "e462fc132c165d74b5f114a9b477ff0ac58f34cc33bf6ffc7b824182d364c1fc",
-   "bytes": 11064,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13257951",
-   "stratum": "retract",
-   "sha256": "17f21856e55e3cfe85f557f06fa36ce12b9c09d3db8a06975b39840fc453adf5",
-   "bytes": 6913,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13289858",
-   "stratum": "retract",
-   "sha256": "5f850d7df62d1cb8855d80e1129750af7dc66992396fecec9236b598a309aba2",
-   "bytes": 5131,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13291836",
-   "stratum": "retract",
-   "sha256": "31235c3e810ab810633be0ae0773d45a06e932a6505ba863d0d26d443c4a4395",
-   "bytes": 9311,
-   "licence": "CC BY-NC 4.0"
-  },
-  {
-   "pmcid": "PMC13292036",
-   "stratum": "retract",
-   "sha256": "8d65ed2e8af9c744550f7a3fde61e01d13f0f724dbf74643a24e9a995ee91ae0",
-   "bytes": 8397,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13292042",
-   "stratum": "retract",
-   "sha256": "2788519903d044f0366582921f224ae08c0b3985ee0a94e722fcd20b1e2f755e",
-   "bytes": 4964,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13292064",
-   "stratum": "retract",
-   "sha256": "3a98eb06d10fb941efd1d7248583c12472529bba983956f7eac6805a3fa35c79",
-   "bytes": 4905,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13292106",
-   "stratum": "retract",
-   "sha256": "97cb149b2eb11ec81fa8fe5561668c9eee0631a44357a6beec58edeb12241b06",
-   "bytes": 12310,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13292606",
-   "stratum": "retract",
-   "sha256": "5976fdf44178b40c0340367ffd475bc197fb3f802ed3bb9011ee9df5447fc119",
-   "bytes": 16754,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13294332",
-   "stratum": "retract",
-   "sha256": "706a15c0ce4a1361c155f0d9ca7e279a1b771654531ca2bce4d61a6292f98949",
-   "bytes": 8437,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13294796",
-   "stratum": "retract",
-   "sha256": "65da6334c0cc677d895bb6f1cf15850e26bc169669cc9bf88a96f92d6fb947da",
-   "bytes": 5752,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13295435",
-   "stratum": "retract",
-   "sha256": "4384c76bad9635ced5d98d1e3dca1c31fbd3537c768a94d0d083fdcb0450b7a1",
-   "bytes": 16396,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13298758",
-   "stratum": "retract",
-   "sha256": "dc36f979b10af6480273c1d4f357ee7fbcd2bee5a51e975a6f7cc11786696697",
-   "bytes": 8919,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13299186",
-   "stratum": "retract",
-   "sha256": "47001da970269fb993a752f011ad83818b517f54980f573851615eaacfcf8584",
-   "bytes": 5632,
-   "licence": "CC BY 4.0"
-  },
-  {
-   "pmcid": "PMC13306522",
-   "stratum": "retract",
-   "sha256": "2f1ab950c0850f5d780ec1d3a558687c412bda2bc033808de67cf89b381740bd",
-   "bytes": 8057,
-   "licence": "CC BY 4.0"
-  }
- ],
- "queries": {
-  "base": "OPEN_ACCESS:Y AND HAS_FT:Y AND FIRST_PDATE:[2023-01-01 TO 2026-12-31] (base; stratum filters below appended with AND)",
-  "bio": "(MESH:\"Neoplasms\" OR MESH:\"Cardiovascular Diseases\")",
-  "essai": "PUB_TYPE:\"Randomized Controlled Trial\"",
-  "meta": "PUB_TYPE:\"Meta-Analysis\"",
-  "retract": "(PUB_TYPE:\"Retracted Publication\" OR PUB_TYPE:\"Retraction of Publication\")",
-  "cas": "PUB_TYPE:\"Case Reports\"",
-  "nonEN": "(LANG:\"fre\" OR LANG:\"ger\" OR LANG:\"spa\" OR LANG:\"por\")",
-  "phys": "(\"physics\" OR \"algorithm\" OR \"computational\")",
-  "moderne": "OPEN_ACCESS:Y AND HAS_FT:Y AND FIRST_PDATE:[2024-01-01 TO 2026-12-31]"
- },
- "how_to_reproduce": "For each PMC id: GET https://www.ebi.ac.uk/europepmc/webservices/rest/<PMCID>/fullTextXML . Europe PMC may have updated a record since 2026-08-08; a re-download is a new snapshot, to be dated.",
- "download": "https://www.ebi.ac.uk/europepmc/webservices/rest/<PMCID>/fullTextXML (the JATS XML, exactly what the probes read) · human view: https://europepmc.org/article/PMC/<PMCID>",
- "frozen_copy": {
-  "status": "Zenodo 10.5281/zenodo.22680055, published 2026-09-09: 267 files as read on 2026-08-08, under a named Creative Commons licence, with this manifest (6.5 MB)",
-  "not_redistributed": [
-   "PMC13294787",
-   "PMC13294792",
-   "PMC13143285",
-   "PMC13224954",
-   "PMC13224957"
+  "id": "corpus-europe-pmc-jats-2023-2026",
+  "name": "Europe PMC, open access, full text in JATS XML — the 272 articles of the August 2026 observation",
+  "source": "Europe PMC REST API (https://www.ebi.ac.uk/europepmc/webservices/rest/), full-text XML endpoint",
+  "harvested": "2026-08-08",
+  "selection": "eight strata drawn by query on the Europe PMC search API, open access with full text (OPEN_ACCESS:Y AND HAS_FT:Y), 34 per stratum where available; strata: bio, cas (case reports), essai (clinical trials), meta (meta-analyses and systematic reviews), moderne (2024-2026), nonEN (non-English), phys (physics/maths), retract (retraction notices)",
+  "note": "The articles are public and open access; the list lets anyone re-download the same 272 files from Europe PMC by PMC identifier. The XML files themselves are not redistributed here.",
+  "count": 272,
+  "by_stratum": {
+    "bio": 34,
+    "cas": 34,
+    "essai": 34,
+    "meta": 34,
+    "moderne": 17,
+    "nonEN": 51,
+    "phys": 34,
+    "retract": 34
+  },
+  "articles": [
+    {
+      "pmcid": "PMC12583535",
+      "stratum": "bio",
+      "sha256": "724718dbb1d2c03428e6ccfc1322f4eb4617bd68e33613d5866d52fbae0db33e",
+      "bytes": 184870,
+      "licence": "CC BY-NC-ND 4.0"
+    },
+    {
+      "pmcid": "PMC12590050",
+      "stratum": "bio",
+      "sha256": "3054bad44ce63049105f3a1c78135dd94bc44867c0bf6aa54258d329d2b4ebc6",
+      "bytes": 111534,
+      "licence": "CC BY (stated in words)"
+    },
+    {
+      "pmcid": "PMC12674831",
+      "stratum": "bio",
+      "sha256": "4882e0eb1a6541c8893bdc946cc5bd1fda17c9c5a245b742e5379df393c4f533",
+      "bytes": 879063,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC12857832",
+      "stratum": "bio",
+      "sha256": "abdd68138f9851f8d23d1b781af679f8d7a2acbd1f6b8c0ce2a8faf664c80cf0",
+      "bytes": 157517,
+      "licence": "CC BY-NC-ND 4.0"
+    },
+    {
+      "pmcid": "PMC12882215",
+      "stratum": "bio",
+      "sha256": "09aba08f630009abd325551b4fc44e22833a5045b22f6b3975436c2b4de8b0cf",
+      "bytes": 262229,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC12909487",
+      "stratum": "bio",
+      "sha256": "a3d87ea386da1580e1dc0939dfa87136cf51da33de0395c61044d4ad5701b790",
+      "bytes": 86196,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC12915353",
+      "stratum": "bio",
+      "sha256": "b009d16f4c7250e1f5604f8d70dba807cb48ecedc93987e17989df60be76fd76",
+      "bytes": 131341,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC12927065",
+      "stratum": "bio",
+      "sha256": "4623b787fc63eb821bd30128fa834c05da4326fae790e3a7083d8ef5c7661a35",
+      "bytes": 130309,
+      "licence": "CC BY-NC 4.0"
+    },
+    {
+      "pmcid": "PMC12927975",
+      "stratum": "bio",
+      "sha256": "3915e99b56b5ab23a3d3f1294f294e48dd592e11f4f15d6f09691719d104a8b6",
+      "bytes": 67073,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC12953170",
+      "stratum": "bio",
+      "sha256": "b9de27f494bce718212ed449b7d61cdf0a26baaf8d0009946e2333b78abb7320",
+      "bytes": 75194,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC12959687",
+      "stratum": "bio",
+      "sha256": "4366f15d1dbc38309057da66e553abcab1718e11ef3154a8ff30e70dd0e2ab5c",
+      "bytes": 94993,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13057049",
+      "stratum": "bio",
+      "sha256": "82e2d6a1e2c0da890e1db075383c46478990fc4315741028194655ec5e415834",
+      "bytes": 167199,
+      "licence": "CC BY-NC-ND 4.0"
+    },
+    {
+      "pmcid": "PMC13088504",
+      "stratum": "bio",
+      "sha256": "98c5b43b92935bfca5fadc40f46a2540b8b04354dcb099e6e10ee129552318ae",
+      "bytes": 66604,
+      "licence": "CC BY-NC-ND 4.0"
+    },
+    {
+      "pmcid": "PMC13097615",
+      "stratum": "bio",
+      "sha256": "c7e77f20eb4f776808b10d7d7e651941103ce72210381516caf1eb8c8362b465",
+      "bytes": 93093,
+      "licence": "CC BY-NC 4.0"
+    },
+    {
+      "pmcid": "PMC13099299",
+      "stratum": "bio",
+      "sha256": "fc790592ddbb6b49e36c90a4f9f5f7ebc6252f8e4c20a7d73687ac0aaa1dbd2d",
+      "bytes": 174018,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13103274",
+      "stratum": "bio",
+      "sha256": "6eca4bed3cd55f88d276044603b7b6a3f9a7f2aa0e6624dcf5226030754f3e46",
+      "bytes": 152150,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13116881",
+      "stratum": "bio",
+      "sha256": "070b655fc284cc1ee6b7810e619aec5e3dca8592d56aae53c627910c5475ef85",
+      "bytes": 119725,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13155703",
+      "stratum": "bio",
+      "sha256": "52756772851c077122d2909d02b4a62eb201f2e10c8638d805cc40fcbd494185",
+      "bytes": 118354,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13162546",
+      "stratum": "bio",
+      "sha256": "3f99c649263187c1e422e7eaf4a8f48d72414168d131a9bc97e98fd277462673",
+      "bytes": 310835,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13168716",
+      "stratum": "bio",
+      "sha256": "ca17fac6e419c577d0a4087014ebe9d096da3969b4c84720ce4f0b4f71428291",
+      "bytes": 70738,
+      "licence": "CC BY-NC 4.0"
+    },
+    {
+      "pmcid": "PMC13170838",
+      "stratum": "bio",
+      "sha256": "957b44db019e2eeaa1fd0fce3350b20c2c20ec19718ece3762352b951bd2245f",
+      "bytes": 124763,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13181205",
+      "stratum": "bio",
+      "sha256": "a3d1c40048a2e9887faafc187daf0528b461df7d4f6029e5f9d95d8cf5d8ebbc",
+      "bytes": 159314,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13182387",
+      "stratum": "bio",
+      "sha256": "9743b3fd3904d4e5b0a686ad9c7bef45c827ea69017927cff86d6f2fd97c5432",
+      "bytes": 119284,
+      "licence": "CC BY-NC 4.0"
+    },
+    {
+      "pmcid": "PMC13190511",
+      "stratum": "bio",
+      "sha256": "d4aa129a9842d42504fa39f32b12dbd19207fe2ee450300fc7766075de2241c2",
+      "bytes": 195730,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13203479",
+      "stratum": "bio",
+      "sha256": "bf40c0b2f06d89d9872caa46ec6dd57ce9a01dfcbf290dbb8fe70119feae9574",
+      "bytes": 333390,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13207820",
+      "stratum": "bio",
+      "sha256": "82fdde160152751ec41a5e937a5d61145136bdd165eb9431d6c17ed52a73b160",
+      "bytes": 107122,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13216383",
+      "stratum": "bio",
+      "sha256": "0b2f00d3c6ed2030320e6c3b12f0245c9cd5cc91fba619bf7787aa86da0a6142",
+      "bytes": 177457,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13218538",
+      "stratum": "bio",
+      "sha256": "090df46074a7696753f34dd1d8fa4f32b5eebc9c29d1c8e3d23216499e8c5fda",
+      "bytes": 83021,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13231534",
+      "stratum": "bio",
+      "sha256": "4c4c7df279484a07934461ebf0125b8c5e6f1a667588b150bc49cff251a94070",
+      "bytes": 54750,
+      "licence": "CC BY-NC-ND 4.0"
+    },
+    {
+      "pmcid": "PMC13236932",
+      "stratum": "bio",
+      "sha256": "c965ce30e6616d4cf282cb5471495508811145c8491f6b64aa6a427bf3732c60",
+      "bytes": 114544,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13251069",
+      "stratum": "bio",
+      "sha256": "b51501f81bcf3f0b6414e9a9bed88d2938fa997769d1c3b13641bb78b48b992c",
+      "bytes": 112719,
+      "licence": "CC BY-NC-ND 4.0"
+    },
+    {
+      "pmcid": "PMC13252842",
+      "stratum": "bio",
+      "sha256": "2a4c423b2caf1268f644ba966a559b1f65dc9436cc4aa7a24cf15dd6b1616aa4",
+      "bytes": 222945,
+      "licence": "CC0 1.0"
+    },
+    {
+      "pmcid": "PMC13274935",
+      "stratum": "bio",
+      "sha256": "75d55a1187352a2be0edf16ab39c98fe15a35a2d3324964eeb8172bfd5021703",
+      "bytes": 110881,
+      "licence": "CC BY (stated in words)"
+    },
+    {
+      "pmcid": "PMC13289183",
+      "stratum": "bio",
+      "sha256": "bc5dac8f41f794bab9ee774c02dc7b67255605c1f0ba3f264314eb07bb883814",
+      "bytes": 50157,
+      "licence": "CC BY-NC 4.0"
+    },
+    {
+      "pmcid": "PMC13290446",
+      "stratum": "cas",
+      "sha256": "5364f61626ddff6c56a2fe10a285741a82b7536aaf8390a69ca4ad22f547a946",
+      "bytes": 58718,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13291543",
+      "stratum": "cas",
+      "sha256": "5597829490e33475489a79464a9eee681d7d993b93c962f6e6a8fffe183549d8",
+      "bytes": 73363,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13291881",
+      "stratum": "cas",
+      "sha256": "75aea5c28c6e63f338621a049fc983d521826c0d67f998761f480cae40f7d743",
+      "bytes": 46825,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13293644",
+      "stratum": "cas",
+      "sha256": "9ec03dc91cf1956cf5a1aad0b557d35410de462332601885b006ebce95189ee3",
+      "bytes": 41703,
+      "licence": "CC BY (stated in words)"
+    },
+    {
+      "pmcid": "PMC13293645",
+      "stratum": "cas",
+      "sha256": "c95127990acc5d596ff504c7eb65e4d05cbc3355ed2269a2fe7f028b0da47a03",
+      "bytes": 52344,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13293647",
+      "stratum": "cas",
+      "sha256": "4de1c86a8312c9d085de799b2b1cb635a830395ed8d21917dceec4c4e96e1879",
+      "bytes": 49997,
+      "licence": "CC BY (stated in words)"
+    },
+    {
+      "pmcid": "PMC13293792",
+      "stratum": "cas",
+      "sha256": "c391eb40e9f2968351e1b45f579a0ca6aa810c1878e0121a5ef3cc6d86dfa335",
+      "bytes": 135965,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13293799",
+      "stratum": "cas",
+      "sha256": "9301cb8e73ade3198e301338e09422bfd98a164ddf1e41aaee3ab0177884234a",
+      "bytes": 100185,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13293813",
+      "stratum": "cas",
+      "sha256": "11384c301240e261214aac84d4209ff6ff212152526b1a03c1f2f9a38fa233e9",
+      "bytes": 91979,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13293827",
+      "stratum": "cas",
+      "sha256": "ca359e411a1b4cbbe508567cdf9caed63fc83b026d79969d3980cea4c98108da",
+      "bytes": 64970,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13293834",
+      "stratum": "cas",
+      "sha256": "f22a897ad292c8ec53a1aa46346e152f1c88dcc40f74418c2c60e72136f7fbbf",
+      "bytes": 81276,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13293841",
+      "stratum": "cas",
+      "sha256": "8e4ca0edf64236f790aae7d4614e03d9a626e6df829555ad48f3633c91d6db31",
+      "bytes": 85099,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13293897",
+      "stratum": "cas",
+      "sha256": "a24936b91e516fa83b529323ca81067755ec34d19067a3f998a4ed52740ef4be",
+      "bytes": 71143,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13293901",
+      "stratum": "cas",
+      "sha256": "8371421df2c086bc471d331ca357a91c64a29db7fec0334e865e38f124d8bf6f",
+      "bytes": 73985,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13293995",
+      "stratum": "cas",
+      "sha256": "6bc174a7e01d3b306d419cc4b587f49972c9f56c5a5a38a1796168da2bce1b47",
+      "bytes": 50918,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13294038",
+      "stratum": "cas",
+      "sha256": "40e36691216170328c6adb4b5038b3a421c4e1c8e2b554d71c7873d3c50c8f96",
+      "bytes": 76090,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13294089",
+      "stratum": "cas",
+      "sha256": "e6dff724ca433989c0ea32e0def1c3eda94b158f84ed3f2ca366a2f97f956806",
+      "bytes": 47333,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13294096",
+      "stratum": "cas",
+      "sha256": "cb187f32ff7dfb3f2a92824c70a8ab4d7c4e84941b3336939fee7e7a4237edf8",
+      "bytes": 42346,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13294155",
+      "stratum": "cas",
+      "sha256": "3bbb2acc2723612e1b504154390a1c5f5f77b608cda823f7bc1210ad2a8c07d5",
+      "bytes": 113153,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13294182",
+      "stratum": "cas",
+      "sha256": "9d21954799608bc2cc9207f76a79111c6be11f911f635de286b0ff205191ae80",
+      "bytes": 69499,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13294240",
+      "stratum": "cas",
+      "sha256": "840c5a41136c0d263d8371363bd66ffcd6e505b2af5f949f1fe75a2fad5c7a31",
+      "bytes": 75426,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13294281",
+      "stratum": "cas",
+      "sha256": "12a3271742262ad08188cc6427ec8939705b443a528aa90aafc702ffdfc1926b",
+      "bytes": 72366,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13294340",
+      "stratum": "cas",
+      "sha256": "06a8406e1dd7a1045d9bb8d2cfd2bed4c0c1cb6be81a7b6e1192dd383deb5520",
+      "bytes": 49893,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13294475",
+      "stratum": "cas",
+      "sha256": "d56c845db3e23ded47f5d9388dd57c9ab39113c5faaa15696fe463b862058569",
+      "bytes": 45967,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13294481",
+      "stratum": "cas",
+      "sha256": "2107fee6f311098c0ba42e4eb5bc15c3341b9edb6f29c637848778f6647bdcd2",
+      "bytes": 65477,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13294629",
+      "stratum": "cas",
+      "sha256": "f78aedc9a03bd67c2de62d80743df0a89f77f8987424ce8aab15c60080d485e0",
+      "bytes": 32149,
+      "licence": "CC BY (stated in words)"
+    },
+    {
+      "pmcid": "PMC13294642",
+      "stratum": "cas",
+      "sha256": "d04eae31c281873354f3868f220baa82607cb450be75f86d8fd2387957a18c66",
+      "bytes": 69528,
+      "licence": "CC BY (stated in words)"
+    },
+    {
+      "pmcid": "PMC13294698",
+      "stratum": "cas",
+      "sha256": "77857755cb1e126822cbd1b598e36323a76a2a16bc35bc8014e64f9d6e91b8cb",
+      "bytes": 69361,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13294702",
+      "stratum": "cas",
+      "sha256": "3c33d6abbd96547776965d92cf92dafc3d73412a8acde3bb77220834caaf4c32",
+      "bytes": 25982,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13294704",
+      "stratum": "cas",
+      "sha256": "3f096fb8f009f723da64b49e82941ead66188921ceb016e66ecded1873f052c7",
+      "bytes": 57053,
+      "licence": "CC BY (stated in words)"
+    },
+    {
+      "pmcid": "PMC13294705",
+      "stratum": "cas",
+      "sha256": "2fff1701adba23a9858cecce4ec9086b8eca2294797a8d03a2d2b5161fba4b1c",
+      "bytes": 29951,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13300565",
+      "stratum": "cas",
+      "sha256": "6ecdc2d8b8b173ec8f37cc133d0cfc1a51c1f08c4f88bf7bfd447ebcf4f3cddb",
+      "bytes": 57488,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13300836",
+      "stratum": "cas",
+      "sha256": "1edb2c4ad2f7d271ebe6b5500a11a8da8ad39ea79fa633c1d9fb5462f45ce766",
+      "bytes": 52978,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13301386",
+      "stratum": "cas",
+      "sha256": "c440e51dd73059bdb8e4e615c0703e98d049c6c37a5b9bd7de8833d853e29423",
+      "bytes": 56254,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13154027",
+      "stratum": "essai",
+      "sha256": "e4603c1e3eb86287ba31f16beeb59121c4068622e380d2a5859782d64ce49ae3",
+      "bytes": 103190,
+      "licence": "CC BY-NC-ND (stated in words)"
+    },
+    {
+      "pmcid": "PMC13169227",
+      "stratum": "essai",
+      "sha256": "2445ab27587b43b9ae57b268921b7be23b738e28d0943fed3d68f175d7f1895a",
+      "bytes": 122811,
+      "licence": "CC BY-NC-ND 4.0"
+    },
+    {
+      "pmcid": "PMC13169472",
+      "stratum": "essai",
+      "sha256": "3b1118f46bd86bbaf3c70e1d31b9b53d61fedef43922b8b6d47ec924b31e4cf5",
+      "bytes": 105968,
+      "licence": "CC BY-NC-ND 4.0"
+    },
+    {
+      "pmcid": "PMC13179527",
+      "stratum": "essai",
+      "sha256": "90e61e1baa8d9cf2f8570151ec47c8129644cb2001f68a112ac4929dc16bde21",
+      "bytes": 93269,
+      "licence": "CC BY-NC-ND 4.0"
+    },
+    {
+      "pmcid": "PMC13191455",
+      "stratum": "essai",
+      "sha256": "1311b13fa19f9058db68653f6428adb28ed579742d41a5d525ee49745006c239",
+      "bytes": 60781,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13205709",
+      "stratum": "essai",
+      "sha256": "d1700dce6695df08b5af776ad18408407094fac0bb1c5dee9df9870d9f3aca27",
+      "bytes": 134476,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13205731",
+      "stratum": "essai",
+      "sha256": "844eb71b4a4e118855fa4b91a11590a565525d6ecd9844cf27929cdb12f15394",
+      "bytes": 150696,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13205876",
+      "stratum": "essai",
+      "sha256": "54966f2d1ee7fc0bd26c7f23ed263665c743a54f9e45269989d0f6abe1453d45",
+      "bytes": 122238,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13213610",
+      "stratum": "essai",
+      "sha256": "96abf08a49a5ae9c31ac045014fb2c25b09f8a6ad98cd805e7cf35635ddc8899",
+      "bytes": 74813,
+      "licence": "CC BY-NC-ND (stated in words)"
+    },
+    {
+      "pmcid": "PMC13215628",
+      "stratum": "essai",
+      "sha256": "2bfb20a94f416c532c1f403c8bc478186f9c7cf097dc79ae24cb7933ca7d5f1d",
+      "bytes": 28389,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13238360",
+      "stratum": "essai",
+      "sha256": "edabcc657b4c2d2c5f470ec2dcb5969124451c2f8a637708eb835bd42b41a996",
+      "bytes": 70758,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13239719",
+      "stratum": "essai",
+      "sha256": "50b1e00e6e9de0b961abf70191428d536742cb7d34f9c914ac05be782d386959",
+      "bytes": 135875,
+      "licence": "CC BY-NC-ND 4.0"
+    },
+    {
+      "pmcid": "PMC13242068",
+      "stratum": "essai",
+      "sha256": "6812217dc3b3b82a5da984ab25f74a2fe841f3b66c8ffa3f008217f06e22a4f7",
+      "bytes": 81968,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13242351",
+      "stratum": "essai",
+      "sha256": "43ffc7e98d56520fde52ce561a49c7fac5620d0f54898895c9a9dd1d04e3ccaa",
+      "bytes": 152288,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13245602",
+      "stratum": "essai",
+      "sha256": "447d1bed6211e044bff529edeacffd1c0bd0304fa65a764248db517a1282a569",
+      "bytes": 144596,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13254492",
+      "stratum": "essai",
+      "sha256": "e269e22dbd3799e83a82515b34143d1a428734feb412487dfcd5011830d32af7",
+      "bytes": 93654,
+      "licence": "CC BY-NC-ND 4.0"
+    },
+    {
+      "pmcid": "PMC13263161",
+      "stratum": "essai",
+      "sha256": "8bec5a31702660bab73fdb677bd909ae68138b413c6ef8f2b202b8d5ff6bf0a8",
+      "bytes": 177420,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13264282",
+      "stratum": "essai",
+      "sha256": "a39fefb903fd08ea99da414cc979a0218f1072bdf52273c8fcfd25f8f20caa69",
+      "bytes": 181315,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13271868",
+      "stratum": "essai",
+      "sha256": "a1f599511e6a78c566904652ed3e8763f0621a7e993b667719ddf2c9990be01a",
+      "bytes": 130188,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13276020",
+      "stratum": "essai",
+      "sha256": "dac4c647fdcad8b42fc5760a26a8dabe211ca0889830da4411dddd54fd27176b",
+      "bytes": 107222,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13280184",
+      "stratum": "essai",
+      "sha256": "0dff87306b2c5ddf345c0d7f94d2c8779008a89287dace4cdcb8b749ba441014",
+      "bytes": 125836,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13280799",
+      "stratum": "essai",
+      "sha256": "974d7e98647e92411a10ba76de13561b8afba403c26e436875c9c354bfcc59dd",
+      "bytes": 114567,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13281132",
+      "stratum": "essai",
+      "sha256": "9ab2ff6eb17d613fff9209a55f87c05b55b38f125389766cf39d4ecbdd8278d4",
+      "bytes": 96977,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13282136",
+      "stratum": "essai",
+      "sha256": "e5594dd1448d1f0d913cd527925c06dd7c3234b50d509be34414c677bbc353c6",
+      "bytes": 206457,
+      "licence": "CC BY-NC-ND 4.0"
+    },
+    {
+      "pmcid": "PMC13284529",
+      "stratum": "essai",
+      "sha256": "d123cc5f25af75ee7ce634b361de0868c04fdc33041392f3a4bc70664bde8df4",
+      "bytes": 120621,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13290998",
+      "stratum": "essai",
+      "sha256": "ea2f5a085eff221081d23f054e976d8f89879ffa1a26ca8e2f58a3c68861d5b9",
+      "bytes": 134940,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13291766",
+      "stratum": "essai",
+      "sha256": "37dfe15f82c3bc90b38329b28870b89bc36b4a99dd38becaa6b5d0be3bb55101",
+      "bytes": 169100,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13291922",
+      "stratum": "essai",
+      "sha256": "d5caaa6b6cbea6268d3e7d3a3b6a8321369e1d8f8af10eb64dd4cb8c7be3bd0f",
+      "bytes": 150919,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13293440",
+      "stratum": "essai",
+      "sha256": "a63a53cefa669776f58291363a58b8508d1891208149d26e79586aebb1d8e1a2",
+      "bytes": 140580,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13294169",
+      "stratum": "essai",
+      "sha256": "6a8e6f988ef334907fee3e05b023a81c446309b299eb573c4bdd90cb2727904b",
+      "bytes": 88914,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13294787",
+      "stratum": "essai",
+      "sha256": "75873e8d83c6aecf48c0fa2f37ccf556947a4ff8dc5d1920f078355c9cf595a8",
+      "bytes": 141498,
+      "licence": "publisher licence, non-commercial (not redistributed)"
+    },
+    {
+      "pmcid": "PMC13294792",
+      "stratum": "essai",
+      "sha256": "c94c9072ee0e33af7593cc22e202e1fe5b8187a24a5e7d6d61b6e9463397d69c",
+      "bytes": 112409,
+      "licence": "publisher licence, non-commercial (not redistributed)"
+    },
+    {
+      "pmcid": "PMC13296589",
+      "stratum": "essai",
+      "sha256": "d7c7992d36537d63f4b7514743f186bf7e0057cd663fc1fb24d4083083a57592",
+      "bytes": 147455,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC7619126",
+      "stratum": "essai",
+      "sha256": "9b90c99c17275f464289fbb7851fde2e28c73dd317cf7335f5df7f608aa38e77",
+      "bytes": 33183,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13071177",
+      "stratum": "meta",
+      "sha256": "fdd85157c3fc10c78b1f3c5246b6e81506601b463f881194106a06e9627c4f9b",
+      "bytes": 114307,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13157766",
+      "stratum": "meta",
+      "sha256": "4ceee4f09fc6d46c9db84bc828c9a0fc91c91eed1e87da843722d3e13519ec85",
+      "bytes": 110595,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13179150",
+      "stratum": "meta",
+      "sha256": "c213f6d84658874929df8be8feb99e9a101595b6ff6c7c4840734be371ee2850",
+      "bytes": 413158,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13221319",
+      "stratum": "meta",
+      "sha256": "3920d183a098352c81a022fce0fdc44f5c1d37de0b4171c747a6c29963136477",
+      "bytes": 88403,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13225629",
+      "stratum": "meta",
+      "sha256": "63ed78d16c37be9b47ff5f8f485896742aaf043c8431a110caad458ea20568ad",
+      "bytes": 150516,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13226718",
+      "stratum": "meta",
+      "sha256": "52834af2ec8a16c2908bf44f71786735f4622d6d880a90294acbab93a9869c38",
+      "bytes": 217677,
+      "licence": "CC BY-NC-ND 4.0"
+    },
+    {
+      "pmcid": "PMC13229315",
+      "stratum": "meta",
+      "sha256": "1684d3315d753c3d8528dc0ed483afd81e5877e4edf16a74128ffccebdd0c62d",
+      "bytes": 235283,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13231626",
+      "stratum": "meta",
+      "sha256": "f9319318f63bcc0a38ebb484ee8557936f04512e0077ca2b7ae47e64e84696e0",
+      "bytes": 165785,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13240427",
+      "stratum": "meta",
+      "sha256": "c4d1860b1b29137fd353379d5c1683ed5506ba6c640f6656b85084aea9f1ddf7",
+      "bytes": 144348,
+      "licence": "CC BY-NC-ND 4.0"
+    },
+    {
+      "pmcid": "PMC13241412",
+      "stratum": "meta",
+      "sha256": "d5b9e4df48c5480d3dfceb695849f63f76b591c9872586f33259e67945ece329",
+      "bytes": 122544,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13246130",
+      "stratum": "meta",
+      "sha256": "d2a57c9dae82f7bce4722507bd27a5c105ca15403904928b998f4a3dff981456",
+      "bytes": 163827,
+      "licence": "CC BY-NC 4.0"
+    },
+    {
+      "pmcid": "PMC13250259",
+      "stratum": "meta",
+      "sha256": "73059d5df44898a556e7bbad514189c054774d77e147fba6d522032165461432",
+      "bytes": 164131,
+      "licence": "CC BY-NC-ND 4.0"
+    },
+    {
+      "pmcid": "PMC13253268",
+      "stratum": "meta",
+      "sha256": "d9e512649ec4b87d38b7b4004d9265569087a45b5261363573c03fa1b46bd535",
+      "bytes": 90441,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13254819",
+      "stratum": "meta",
+      "sha256": "d5f885e47b984bd88c17240a4c5c4b243ed0a9573a1a332e5d1d9e6cdac9cccf",
+      "bytes": 155457,
+      "licence": "CC BY-NC-ND 4.0"
+    },
+    {
+      "pmcid": "PMC13256077",
+      "stratum": "meta",
+      "sha256": "3a425ebc09b27a5ef22d65cabbf0163e1c5b18ae13a48749e8c7824dedc33e18",
+      "bytes": 89944,
+      "licence": "CC BY-NC 4.0"
+    },
+    {
+      "pmcid": "PMC13260247",
+      "stratum": "meta",
+      "sha256": "477661cc05e90f96e26bd615f845072e48df7bcedb9de87117ff3167260047fa",
+      "bytes": 139104,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13263136",
+      "stratum": "meta",
+      "sha256": "2cc7ff6a6a4a99ef68691833a2c0d1e7a7c5628b5ba7a0bf2e71da497984a55a",
+      "bytes": 285964,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13264275",
+      "stratum": "meta",
+      "sha256": "de0dc0b2d6c67169bd98e6aaf0e891cc4bce1e0e7a2ae72d563089d23b453d51",
+      "bytes": 132814,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13264436",
+      "stratum": "meta",
+      "sha256": "6e18bf9aa1372177b6888dac899f130fd98a73b0b4e8e93b1f5c438eb66ff6a5",
+      "bytes": 138078,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13265330",
+      "stratum": "meta",
+      "sha256": "d69bd1c95fa3d785830f44a957bb033105a1e1c354d19ff25d83738dc41240db",
+      "bytes": 123973,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13268477",
+      "stratum": "meta",
+      "sha256": "f1212a3ca7f0b5a97b230bfcdbe89323969ad02497d4233b686598c6d01598a9",
+      "bytes": 115381,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13268693",
+      "stratum": "meta",
+      "sha256": "54345b153ea4bda3a38d46dcc2234db2c71178098b4bbc468c8d6915f5ccdfbf",
+      "bytes": 122239,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13269816",
+      "stratum": "meta",
+      "sha256": "458d252dacf65027e70101d9064cb40979fc230a29d402b57e3fb5e7f88891a0",
+      "bytes": 224417,
+      "licence": "CC BY-NC 4.0"
+    },
+    {
+      "pmcid": "PMC13271776",
+      "stratum": "meta",
+      "sha256": "d67950239c5120a488a03e5a167847510492602e7cb0a039d5b1786081315101",
+      "bytes": 132395,
+      "licence": "CC BY-NC-ND 4.0"
+    },
+    {
+      "pmcid": "PMC13280693",
+      "stratum": "meta",
+      "sha256": "771965a2f54ce0aee9b0a9682db5d9259b591d85c6f1dd6069b28a4d8229fa23",
+      "bytes": 169537,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13286426",
+      "stratum": "meta",
+      "sha256": "1b4b4a3b940c385d61880fe41e363513ec2e06fe7bdc9b2a976779a16901a4c7",
+      "bytes": 99880,
+      "licence": "CC BY-NC 4.0"
+    },
+    {
+      "pmcid": "PMC13286481",
+      "stratum": "meta",
+      "sha256": "98f84a70c3a3546c977e86bbb9cfd82218cc9f0816b7936dd7ea25b93eacb587",
+      "bytes": 87251,
+      "licence": "CC BY-NC 4.0"
+    },
+    {
+      "pmcid": "PMC13287023",
+      "stratum": "meta",
+      "sha256": "d4fdda342515f29d5151ea78bab5ea92e6e2cb55370980fbfe45803fe6a1b8d5",
+      "bytes": 158247,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13287149",
+      "stratum": "meta",
+      "sha256": "e1983be3b150b83bbacc8534ac20862916c8d24a7947a8a3de2206ae1dda13fc",
+      "bytes": 183217,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13287277",
+      "stratum": "meta",
+      "sha256": "491498553cb7da5a0e6cb6068e51507bdd07dc42c675aea1bcfe7cf71f382d4d",
+      "bytes": 179553,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13288533",
+      "stratum": "meta",
+      "sha256": "6769358cbc713c016ce6e6c03c483cbe1aa8d7cabb689dbfefd971eb9619f070",
+      "bytes": 104527,
+      "licence": "CC BY-NC 4.0"
+    },
+    {
+      "pmcid": "PMC13292320",
+      "stratum": "meta",
+      "sha256": "45c986884c3cfb705594c4dfcc44cfd0b2ebd823f6158446fc60c0c0da2002cf",
+      "bytes": 49069,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13297335",
+      "stratum": "meta",
+      "sha256": "cbe470a120c945dd9c5c986f4bb2ed3cc142a2cb702c73e8b50e589df76514ac",
+      "bytes": 220930,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13305250",
+      "stratum": "meta",
+      "sha256": "e0c7624d056d6e761aa416bcd0257ed5a75296795f25bc6323b03b3771587403",
+      "bytes": 71242,
+      "licence": "CC BY-NC 4.0"
+    },
+    {
+      "pmcid": "PMC12900525",
+      "stratum": "moderne",
+      "sha256": "7e81e1455501ffde54e3125739c0e358b20e00d11b4a6873d52fa8303cceb139",
+      "bytes": 164293,
+      "licence": "CC BY-NC-SA 4.0"
+    },
+    {
+      "pmcid": "PMC12967033",
+      "stratum": "moderne",
+      "sha256": "79460c189459a7b3bb4b6bf0da9f2da1ccebffbf98cebc3714b1aedad549a7f5",
+      "bytes": 68473,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13177175",
+      "stratum": "moderne",
+      "sha256": "c5f8bd5dad5245d2ba6a09085d295fab06e6e5ba45cab9c4508d7971bc3a17ec",
+      "bytes": 95620,
+      "licence": "CC BY-NC 4.0"
+    },
+    {
+      "pmcid": "PMC13254229",
+      "stratum": "moderne",
+      "sha256": "a5ba7c50953e1800fd1118113107d96cd4015c97abc2e3b2facf2506f1c8c50f",
+      "bytes": 181891,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13262411",
+      "stratum": "moderne",
+      "sha256": "ea23b5c571a8ae7c9109742f2b2800346a721ab71623ec8defb8a223ae9b3632",
+      "bytes": 149191,
+      "licence": "CC BY 3.0"
+    },
+    {
+      "pmcid": "PMC13264966",
+      "stratum": "moderne",
+      "sha256": "085724e41e33b499f0742b0182c65757a09acab070ce09532cbb2af7a090f986",
+      "bytes": 154372,
+      "licence": "CC BY-NC 4.0"
+    },
+    {
+      "pmcid": "PMC13264967",
+      "stratum": "moderne",
+      "sha256": "f3b7d646275fd0ac7e75c33dedbaae26c1b533dfc44f5ead0380a7a1515ca405",
+      "bytes": 73195,
+      "licence": "CC BY-NC-ND 4.0"
+    },
+    {
+      "pmcid": "PMC13267778",
+      "stratum": "moderne",
+      "sha256": "9e6040959bfff3109f59cb7efc09ec612105f28f05a92497aef2e43e5b20278b",
+      "bytes": 91520,
+      "licence": "CC BY 3.0"
+    },
+    {
+      "pmcid": "PMC13274555",
+      "stratum": "moderne",
+      "sha256": "11c395741df8d2fb5122e69a393bdb30a115cff1520e2caef83f5badb614e1d6",
+      "bytes": 83499,
+      "licence": "CC BY-NC-ND 4.0"
+    },
+    {
+      "pmcid": "PMC13282716",
+      "stratum": "moderne",
+      "sha256": "f4dc7dd6c3204046fc1cc421c63da8491819f3c6deaf492e062de69087e03a67",
+      "bytes": 115251,
+      "licence": "CC BY-NC-ND 4.0"
+    },
+    {
+      "pmcid": "PMC13282721",
+      "stratum": "moderne",
+      "sha256": "cb8e91d60528a6f108965f5ceec16aac363d196de4bd5dbf64558dccfc48373d",
+      "bytes": 513818,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13288728",
+      "stratum": "moderne",
+      "sha256": "cb2c09f2cff026b7e1705c1f3f81c4bcd52c0805b4fedc92d75370922cd4a10f",
+      "bytes": 184608,
+      "licence": "CC BY 3.0"
+    },
+    {
+      "pmcid": "PMC13291764",
+      "stratum": "moderne",
+      "sha256": "e2f2f55d9e4d95cecece6e755c36fa71a781f6d071f885ef390d818b6d3074a2",
+      "bytes": 142518,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13292010",
+      "stratum": "moderne",
+      "sha256": "d5fa1135d4a1f33f6ee6decc5da2ef04472b1f0fbd7d988e2137d45735919fe6",
+      "bytes": 22236,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13292400",
+      "stratum": "moderne",
+      "sha256": "3f5996ba4fe84c97a38f408f9aa8f02781f2889833dddfaa11542fd3cb10c5a5",
+      "bytes": 113953,
+      "licence": "CC BY-NC-ND 4.0"
+    },
+    {
+      "pmcid": "PMC13296834",
+      "stratum": "moderne",
+      "sha256": "88f5029095a3443e585251baa384ecd6047bd420f0728dd76072124249666195",
+      "bytes": 100183,
+      "licence": "CC BY-NC-ND 4.0"
+    },
+    {
+      "pmcid": "PMC13296839",
+      "stratum": "moderne",
+      "sha256": "5b98bf1914f6722d3c8c75eff6fd7bba55c58f592e3dde01136b46f96cc753ce",
+      "bytes": 154550,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13127809",
+      "stratum": "nonEN",
+      "sha256": "88b652c809f64fd6d55fc31dcf6d801488862c3f9b0d2cba9ed98cee2d220f2e",
+      "bytes": 45249,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13128172",
+      "stratum": "nonEN",
+      "sha256": "0635333f084caffb2fcd53690bf29c2492a2fe19457108fcbdfe14fe31bcf6cb",
+      "bytes": 37239,
+      "licence": "CC BY (stated in words)"
+    },
+    {
+      "pmcid": "PMC13128184",
+      "stratum": "nonEN",
+      "sha256": "0a8cf205cecc511b168161761585cbe498d7098613fd5cb8fb8185f9a317f842",
+      "bytes": 36812,
+      "licence": "CC BY (stated in words)"
+    },
+    {
+      "pmcid": "PMC13128185",
+      "stratum": "nonEN",
+      "sha256": "05008432afb9a9127779f83673f750ea3da116d284697faa0df2c0210e8a71ac",
+      "bytes": 40216,
+      "licence": "CC BY (stated in words)"
+    },
+    {
+      "pmcid": "PMC13128186",
+      "stratum": "nonEN",
+      "sha256": "02d648ba7e436bb6eeab9c7602c23b46245cd4a9314eeeb7845094c3182355ac",
+      "bytes": 38466,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13128206",
+      "stratum": "nonEN",
+      "sha256": "3fcb1b4dba23a692d3022713b9655abf0dfd0589982a3411cefafe98e2fc0047",
+      "bytes": 166099,
+      "licence": "CC BY (stated in words)"
+    },
+    {
+      "pmcid": "PMC13128210",
+      "stratum": "nonEN",
+      "sha256": "f50a077abe7833a80a4f3502e6daafbb81eb8e70926d49f8f44ca40828778918",
+      "bytes": 61755,
+      "licence": "CC BY (stated in words)"
+    },
+    {
+      "pmcid": "PMC13128212",
+      "stratum": "nonEN",
+      "sha256": "d1aabd37d411b0544e2389b2e4b65ad41b5cf4948a209b4c88852bbb20c54fc3",
+      "bytes": 37419,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13128213",
+      "stratum": "nonEN",
+      "sha256": "2f9bf21a8ead134e0d5c646afa927315fbaf3b1f9d8aae457b1c0e6662fae6a1",
+      "bytes": 177975,
+      "licence": "CC BY (stated in words)"
+    },
+    {
+      "pmcid": "PMC13128215",
+      "stratum": "nonEN",
+      "sha256": "a0521620660c9d80be594002b3694eaedf11d649c7d79db2bff12910e6d77cc5",
+      "bytes": 31348,
+      "licence": "CC BY (stated in words)"
+    },
+    {
+      "pmcid": "PMC13128216",
+      "stratum": "nonEN",
+      "sha256": "3fe93812bc6f9ac53f59df897c4b8b0f288dacdee74cd16c604e4166d4a8950f",
+      "bytes": 75806,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13128218",
+      "stratum": "nonEN",
+      "sha256": "01987a171882c1afa611daaf8aac7d3919be341b9be4ba3dde25337af56385cb",
+      "bytes": 19861,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13142163",
+      "stratum": "nonEN",
+      "sha256": "a15c9829266b8c7dae4848a1177fbfcd86ed887d6c1a69170dab64031a2fc492",
+      "bytes": 188649,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13143285",
+      "stratum": "nonEN",
+      "sha256": "2e2738def01f39419d2c14a7278278d9cfa5f5eada25c3026d7fa84fcfc66bee",
+      "bytes": 13632,
+      "licence": "open access, licence text without CC name"
+    },
+    {
+      "pmcid": "PMC13148856",
+      "stratum": "nonEN",
+      "sha256": "b69c510079697cab5dc874210b33ee172bba1dc4d397affec286234242d2c311",
+      "bytes": 166112,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13155791",
+      "stratum": "nonEN",
+      "sha256": "0a2c93fbef534433dd30439aeb17420c4b82e093a267c075b95bd5a4c9029d0a",
+      "bytes": 84993,
+      "licence": "CC BY (stated in words)"
+    },
+    {
+      "pmcid": "PMC13155792",
+      "stratum": "nonEN",
+      "sha256": "5d672dcdbe13c01e7b1f1a5bdecbb856b9eb08e65c40236ea53aa155cc0d837e",
+      "bytes": 44823,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13155793",
+      "stratum": "nonEN",
+      "sha256": "7604c4fa0286ac371d3515250a53289f14df2faf19779050c7c17a6491dc2d34",
+      "bytes": 43661,
+      "licence": "CC BY (stated in words)"
+    },
+    {
+      "pmcid": "PMC13170112",
+      "stratum": "nonEN",
+      "sha256": "7f0b76da0c536c92cceddeb248724383e8dbfa1d2c600ceb38322ee287f80801",
+      "bytes": 16733,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13185728",
+      "stratum": "nonEN",
+      "sha256": "4ebd00cf7d223558058a74a2e290ccf46dae24e391cd81998b8b743e8ef69b1c",
+      "bytes": 70640,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13185730",
+      "stratum": "nonEN",
+      "sha256": "59f655c12ac6149c2a3965cbc2321b75eee49b777f146f7348895695f15b9eb5",
+      "bytes": 121136,
+      "licence": "CC BY (stated in words)"
+    },
+    {
+      "pmcid": "PMC13193188",
+      "stratum": "nonEN",
+      "sha256": "23c00c523e5a090b9eed94f6acf977478e4973848c816023e0883a8ed7e3bfc4",
+      "bytes": 193417,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13193189",
+      "stratum": "nonEN",
+      "sha256": "591c046b978a9d18563f148289a917d56b6a39f13806d03440eb3399746cb0a8",
+      "bytes": 175729,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13193190",
+      "stratum": "nonEN",
+      "sha256": "a683405f6d758555d5ed1b391b2bfeeca1ce667d19f762a30fa833606521198e",
+      "bytes": 167010,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13193191",
+      "stratum": "nonEN",
+      "sha256": "341335645ffa0175acf36c99c90a1b2673575b2da8e11b6bfef45c4eaf68eca1",
+      "bytes": 85531,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13193194",
+      "stratum": "nonEN",
+      "sha256": "6478e38305cf5c9328a35af10e41dc8725ff019a67ed60a3095624649c9fb002",
+      "bytes": 127015,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13193195",
+      "stratum": "nonEN",
+      "sha256": "07944ccc0247bad3c9e6ee2d883effe8218c5ae08fad9847a8e50ce8806fe434",
+      "bytes": 216521,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13224953",
+      "stratum": "nonEN",
+      "sha256": "c74e51c8dd9a5c8ba59ce980874ad3e6eebbda71bfaaf314d7c4864ed8129716",
+      "bytes": 21778,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13224954",
+      "stratum": "nonEN",
+      "sha256": "adc42cf0549cd66dbb014334a4cebe0e6a49624ba339a083969742cfdaba15be",
+      "bytes": 17012,
+      "licence": "open access, licence text without CC name"
+    },
+    {
+      "pmcid": "PMC13224955",
+      "stratum": "nonEN",
+      "sha256": "ede246125f508ff5c7e73d5180a6fd886d42fd861474749957c52b8a08a94b61",
+      "bytes": 137206,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13224957",
+      "stratum": "nonEN",
+      "sha256": "5619be1c4c03c8df0ac31d5696a03aabf7bf8899a21b814b38aab58872d15d79",
+      "bytes": 130367,
+      "licence": "open access, licence text without CC name"
+    },
+    {
+      "pmcid": "PMC13228121",
+      "stratum": "nonEN",
+      "sha256": "432645018bb1a67b70b3d92fbe4894715e0ea89b1444323fc1d83d25885c6d15",
+      "bytes": 39612,
+      "licence": "CC BY (stated in words)"
+    },
+    {
+      "pmcid": "PMC13264032",
+      "stratum": "nonEN",
+      "sha256": "f1b9c5d7c5d739c17c0524b019a3633b322cb350b100509c88b1d20d174c5fe4",
+      "bytes": 9010,
+      "licence": "CC BY-NC-ND 4.0"
+    },
+    {
+      "pmcid": "PMC13264058",
+      "stratum": "nonEN",
+      "sha256": "f195d840445c32eff49dd24c0c5c8f2173f4b7e0b3017891f7aa7da77b3dafb4",
+      "bytes": 150079,
+      "licence": "CC BY-NC-ND 4.0"
+    },
+    {
+      "pmcid": "PMC13264162",
+      "stratum": "nonEN",
+      "sha256": "d07871f72474500a88d137e0e4bffe9e33870583ff05b6bb89e4eee519f95048",
+      "bytes": 16498,
+      "licence": "CC BY-NC-ND 4.0"
+    },
+    {
+      "pmcid": "PMC13264178",
+      "stratum": "nonEN",
+      "sha256": "658d2f16343bde27856867c3e0f3d58c965c3f24bc2f23fdf7aa1776d62ee15e",
+      "bytes": 54185,
+      "licence": "CC BY-NC-ND 4.0"
+    },
+    {
+      "pmcid": "PMC13266121",
+      "stratum": "nonEN",
+      "sha256": "999ccf0c51d731ac8c64fdbbddab4551346553cf21428e1af95006b5ae231e53",
+      "bytes": 24555,
+      "licence": "CC BY-NC-ND 4.0"
+    },
+    {
+      "pmcid": "PMC13266122",
+      "stratum": "nonEN",
+      "sha256": "21ebaba1061cd1293a2df97d36ed15939e92f8e27283da8d7a878807061d88a7",
+      "bytes": 14725,
+      "licence": "CC BY-NC-ND 4.0"
+    },
+    {
+      "pmcid": "PMC13267754",
+      "stratum": "nonEN",
+      "sha256": "013100a129f1daee5717f3b5b06f76c2cbd4c9ba4aba1b67b22a921f88162fe4",
+      "bytes": 111346,
+      "licence": "CC BY-NC-ND 3.0"
+    },
+    {
+      "pmcid": "PMC13267755",
+      "stratum": "nonEN",
+      "sha256": "7f11542af4bb7b9c7b53d50e45dbeb4f655286c9b1c87c41f4840a79f87ecedb",
+      "bytes": 154017,
+      "licence": "CC BY-NC-ND (stated in words)"
+    },
+    {
+      "pmcid": "PMC13267756",
+      "stratum": "nonEN",
+      "sha256": "33ebf2fd5aa666f1dc8b2558f6e9f89d964d16e7be6c8ce3646bb0f2cd1a5905",
+      "bytes": 118372,
+      "licence": "CC BY-NC-ND (stated in words)"
+    },
+    {
+      "pmcid": "PMC13267757",
+      "stratum": "nonEN",
+      "sha256": "0d0df3400aac65cea7150bd7b8e5c54b323ef098558ccc0f4da7a2724be8ea48",
+      "bytes": 202039,
+      "licence": "CC BY-NC-ND 3.0"
+    },
+    {
+      "pmcid": "PMC13272499",
+      "stratum": "nonEN",
+      "sha256": "47da0c8070c95377bd1fbb8c6afa43204e1b6abf1b1f1cda5a32765042461194",
+      "bytes": 10994,
+      "licence": "CC BY-NC-ND 4.0"
+    },
+    {
+      "pmcid": "PMC13272511",
+      "stratum": "nonEN",
+      "sha256": "462fcf30dfc859c2e7963ddb5cf8bd689a4477d6634dacfd0e03bc6ef84a7853",
+      "bytes": 90474,
+      "licence": "CC BY-NC-ND 4.0"
+    },
+    {
+      "pmcid": "PMC13272517",
+      "stratum": "nonEN",
+      "sha256": "5cc324cb133cfb364d62134a6586172d57d826967afc93a6a0f4d1cb27a1f128",
+      "bytes": 90483,
+      "licence": "CC BY-NC-ND 4.0"
+    },
+    {
+      "pmcid": "PMC13276738",
+      "stratum": "nonEN",
+      "sha256": "d1eeb4addd1686ff9d5adec1e7ebc0270d7742b795c259e24880afdfb1522525",
+      "bytes": 13879,
+      "licence": "CC BY-NC-ND 4.0"
+    },
+    {
+      "pmcid": "PMC13284468",
+      "stratum": "nonEN",
+      "sha256": "d632806e97c9e658ff825d9d97d19fd1029cb02660d5cfcf52f4d0e8afa0dd41",
+      "bytes": 48604,
+      "licence": "CC BY-NC-ND 4.0"
+    },
+    {
+      "pmcid": "PMC13284469",
+      "stratum": "nonEN",
+      "sha256": "b1da5732fd48b2c771fcf2b2d49af580320599df46a45b4f2f1aee604c943601",
+      "bytes": 27906,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13285344",
+      "stratum": "nonEN",
+      "sha256": "41835083d969b87bfde134ae9c923300d260f8794779e54d795c761775accc54",
+      "bytes": 11258,
+      "licence": "CC BY-NC-ND 4.0"
+    },
+    {
+      "pmcid": "PMC13285635",
+      "stratum": "nonEN",
+      "sha256": "57eabc17c804a3e947a1171d891dc068e8f8a0cba9ddffc0f43a56a39ac6fa6c",
+      "bytes": 127958,
+      "licence": "CC BY-NC 4.0"
+    },
+    {
+      "pmcid": "PMC13288443",
+      "stratum": "nonEN",
+      "sha256": "1f13cdd6bb97ef2d6a94f6db5d145038beb3b949fa6299c933d08eff04079bd5",
+      "bytes": 93348,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13039343",
+      "stratum": "phys",
+      "sha256": "c8d556fe5f51b9d859af3994b480e90e40588e4e358c4848cbf956292e55a0f2",
+      "bytes": 118968,
+      "licence": "CC BY-NC-ND 4.0"
+    },
+    {
+      "pmcid": "PMC13082673",
+      "stratum": "phys",
+      "sha256": "ada385cd8fd9df892c777bd2415414a4a6dc06edf5119e9d0b3313048cac3855",
+      "bytes": 370610,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13099575",
+      "stratum": "phys",
+      "sha256": "cdb73868ae048d208e0963e9e967e058b15b6e39fb93c550dcdf566453289439",
+      "bytes": 255804,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13113438",
+      "stratum": "phys",
+      "sha256": "d5afa26e150c4d2f40f831a5ec40ddf62892cfcee67095c1b5f2cfc592efc15e",
+      "bytes": 313132,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13133660",
+      "stratum": "phys",
+      "sha256": "ed1eab7c85379a0cd4fbea583834c885c13a9dba5b8b924df00fedc0c683bf06",
+      "bytes": 482399,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13154412",
+      "stratum": "phys",
+      "sha256": "5de3368e528d75cf1fcaa140b01249f9cadb279e848b1a94059c190945f1e158",
+      "bytes": 138204,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13158258",
+      "stratum": "phys",
+      "sha256": "a81b6120c56afa217e1957aacc25849362aa195726ace191b583b883f8b3cdc1",
+      "bytes": 278256,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13171646",
+      "stratum": "phys",
+      "sha256": "3abbefc314be6adf1e7b928a183cc580068a90d45372c390e6eee5f62d099f9c",
+      "bytes": 152584,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13178570",
+      "stratum": "phys",
+      "sha256": "3fac29c6236127298035dc3bac097c34eea3435431a3986c03171486a262ca60",
+      "bytes": 277539,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13181085",
+      "stratum": "phys",
+      "sha256": "9754c3a7703724ba9204ce5e008ae3793c8befea75215290d6bf5bbe1060268a",
+      "bytes": 162907,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13193059",
+      "stratum": "phys",
+      "sha256": "cb43bce3aba2aab943db1d0c8c883766dc73d6fe1296a51e577bfa62ed76131b",
+      "bytes": 185266,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13201561",
+      "stratum": "phys",
+      "sha256": "53a2c4bdf8d814223c6c1943ec542c8d1c971859c634b9df16af5794a0eaa38b",
+      "bytes": 306414,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13208799",
+      "stratum": "phys",
+      "sha256": "e3c40d41a44913ed3036e29de762ffe1531be7ed640d7ef6bad34da6d6390373",
+      "bytes": 274330,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13210669",
+      "stratum": "phys",
+      "sha256": "0dbed6c40a7ea2f8dcc645f7a3c67089938cfbf6fb586e7600172382a0dd6349",
+      "bytes": 192713,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13221960",
+      "stratum": "phys",
+      "sha256": "94ae500aea7cb5f9b204ecbfa3ea9205e5d6ab069e1f2686cde1a1536fcdccab",
+      "bytes": 114020,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13222844",
+      "stratum": "phys",
+      "sha256": "d9829dcb53a367a7174a3924e9e4edcc3b333592a351b9edd5112b3a15b91cac",
+      "bytes": 195987,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13234180",
+      "stratum": "phys",
+      "sha256": "5f2ef37eea3026ac599da2c5be45aa4aa5fca8a3bea769415e0771a62e814e16",
+      "bytes": 229685,
+      "licence": "CC BY-NC-ND 4.0"
+    },
+    {
+      "pmcid": "PMC13235518",
+      "stratum": "phys",
+      "sha256": "3741dd4f94756f4d7ef6ed9dc013ac0dd8d5396b2cbe769c0c5e4323333cf868",
+      "bytes": 160643,
+      "licence": "CC BY-NC-ND 4.0"
+    },
+    {
+      "pmcid": "PMC13246409",
+      "stratum": "phys",
+      "sha256": "7a68efa92a8224872791af51be8bc760aa34e8b9c00650c2e16abc406ed6b290",
+      "bytes": 236117,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13252849",
+      "stratum": "phys",
+      "sha256": "100d220cd80df66e2a02bd921296c3f6923e085e0469b9c5c14f7cccbad62b48",
+      "bytes": 285922,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13257740",
+      "stratum": "phys",
+      "sha256": "e4998d0868f9d32d2d4cef42aa16a3f639b651d2d923a110fb13cef597c87aa3",
+      "bytes": 321062,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13259435",
+      "stratum": "phys",
+      "sha256": "67b42ba1065ca35ad931a79468da5bde0cee1c44771109d0721375d5ef40beb1",
+      "bytes": 171499,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13259474",
+      "stratum": "phys",
+      "sha256": "5e756e4aeedfdbf693f14c6dff374ad018c5b9f6e1e5952a89fe68f198ab6bfb",
+      "bytes": 236103,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13261600",
+      "stratum": "phys",
+      "sha256": "bdb32947df7e1fa994d43397533232b5a77ecf9ed6d09aaed22c720dbc1a0ca4",
+      "bytes": 186458,
+      "licence": "CC BY-NC-ND 4.0"
+    },
+    {
+      "pmcid": "PMC13272752",
+      "stratum": "phys",
+      "sha256": "6e5f928c65e3939f7126208cf098b9f50a0a0bc7f29466cef85f9c0ebda5d2ba",
+      "bytes": 215737,
+      "licence": "CC BY-NC-ND 4.0"
+    },
+    {
+      "pmcid": "PMC13275013",
+      "stratum": "phys",
+      "sha256": "f75820c5c59f5941f1b13573bcfcb187d77f57af3f941c45f35259db04d7a425",
+      "bytes": 206669,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13276034",
+      "stratum": "phys",
+      "sha256": "4c1892e57ff51d9065470f45c44ef94b2c9a468cf347e6d2bd861198609aff1d",
+      "bytes": 315790,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13282397",
+      "stratum": "phys",
+      "sha256": "02923b1668024238659dc8f4607e894e12b0916b26deb83dd03c9c8538d1b50e",
+      "bytes": 169340,
+      "licence": "CC BY-NC-ND 4.0"
+    },
+    {
+      "pmcid": "PMC13285896",
+      "stratum": "phys",
+      "sha256": "93406f7c33d9457c187d608c1183d3648d1e8b15da0b98470f2abd2010ab7483",
+      "bytes": 88969,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13289917",
+      "stratum": "phys",
+      "sha256": "e444cb5f10e01b8643a4f6aea357722a1e5ca563dad61f318805541cbe2db84d",
+      "bytes": 163130,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13296606",
+      "stratum": "phys",
+      "sha256": "b4bee0bbbd83890b3133b674e732ac9f460bb216a3948504005180610a360ecf",
+      "bytes": 744715,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13297141",
+      "stratum": "phys",
+      "sha256": "fb8b3bd546af24b3ec03f5d7067728b952854382ce6a78924f226d34364aa975",
+      "bytes": 237618,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13297618",
+      "stratum": "phys",
+      "sha256": "68c5a2956280c74740be98e2a36fa8cfc7046ee96fe2d4f7fe62440ee404c012",
+      "bytes": 687256,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13298103",
+      "stratum": "phys",
+      "sha256": "14d35ac6dfad6ed78c05ccdc34cf7173d320df4f478f4d62e5184ea5091c6b44",
+      "bytes": 214989,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC12920011",
+      "stratum": "retract",
+      "sha256": "abd724f8760e3f04bbe9c9b0e7bfe7b19f47b0f5b51e1c4039382b78c776f76e",
+      "bytes": 6957,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC12937552",
+      "stratum": "retract",
+      "sha256": "a717821e0dcf1acd0e26faedfd077e8eba33accff2ea79e9a8090e98dba756dd",
+      "bytes": 7781,
+      "licence": "CC BY-NC-ND 4.0"
+    },
+    {
+      "pmcid": "PMC12943135",
+      "stratum": "retract",
+      "sha256": "8b786a38071483c7a649b0f3b84a4eacf7214b020ef583799874136972159de4",
+      "bytes": 10956,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC12945919",
+      "stratum": "retract",
+      "sha256": "76b09fed4fe6efb0d2b3c7a9e5633cc9ce62978f189c2b6d99029195a50572d7",
+      "bytes": 9554,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC12951106",
+      "stratum": "retract",
+      "sha256": "3f053c955e2ab802164669bb09cbfc5fa1c0442cdf68732abd1a7cf58734eee3",
+      "bytes": 11197,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC12983062",
+      "stratum": "retract",
+      "sha256": "56fa079cdb58e31815190b135e7e4615ba7b9ad4cde36da917f5a34a3b3aa626",
+      "bytes": 5090,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC12983399",
+      "stratum": "retract",
+      "sha256": "b6c559273b37a7ef1d12e1fd3bf26be76ab813eafd7a76aeef5a5d6fd1ea07ab",
+      "bytes": 8588,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC12985380",
+      "stratum": "retract",
+      "sha256": "61b36f9ab5f2e7e6472a282a13fce97fbbb2238b06511ab785b12ef2e89604f0",
+      "bytes": 6609,
+      "licence": "CC BY-NC-ND 4.0"
+    },
+    {
+      "pmcid": "PMC12989678",
+      "stratum": "retract",
+      "sha256": "17da062ae90606cb71bd9e187ccfec96a883e7fbdd21d8a4b3fc456adeaf8eed",
+      "bytes": 6971,
+      "licence": "CC BY-NC 4.0"
+    },
+    {
+      "pmcid": "PMC12990951",
+      "stratum": "retract",
+      "sha256": "3b32343ef8641cea80054356cbff0ea419c26db99b25671eaaf0042969f341ff",
+      "bytes": 4798,
+      "licence": "CC BY-NC-ND 4.0"
+    },
+    {
+      "pmcid": "PMC13034554",
+      "stratum": "retract",
+      "sha256": "4f8d9e464db900e702c1177b4551ed924def88d515ee4c149f58ebab8054c765",
+      "bytes": 5586,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13037014",
+      "stratum": "retract",
+      "sha256": "c3c4780de8a10462a53b418c807f225537bc13ccc7b083ac0bb5eb902d9b44d8",
+      "bytes": 7000,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13064942",
+      "stratum": "retract",
+      "sha256": "55f90f66293c4be98497e5405e473bc12da3d2768a190b8fcce142bc7c77beca",
+      "bytes": 15340,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13083641",
+      "stratum": "retract",
+      "sha256": "a13f4bfa67c33e43d80671c8eb34928e114e28738b766bac9743661255c3aa78",
+      "bytes": 29363,
+      "licence": "CC BY-NC-ND 4.0"
+    },
+    {
+      "pmcid": "PMC13100932",
+      "stratum": "retract",
+      "sha256": "f7bb15ebfa883cfeb089c219e0dbc61687544681e98c5d7338f9d138fc6313b5",
+      "bytes": 10088,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13184583",
+      "stratum": "retract",
+      "sha256": "551bbafb4bcb0c2d274b901fd251379d2119e7911dbdcea951d8420cb9f885f3",
+      "bytes": 7864,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13208113",
+      "stratum": "retract",
+      "sha256": "882cc6af0d74e8f09ab2cdde4b395d6b9ea2d92504dc381f61ac812f5b94f01d",
+      "bytes": 6188,
+      "licence": "CC BY-NC-ND 4.0"
+    },
+    {
+      "pmcid": "PMC13230493",
+      "stratum": "retract",
+      "sha256": "55d6b5955ecc50bb035649362f9919ab190e1c89f99d0a159671fb8cc0e6b6cc",
+      "bytes": 11159,
+      "licence": "CC BY-NC 4.0"
+    },
+    {
+      "pmcid": "PMC13244562",
+      "stratum": "retract",
+      "sha256": "8ec267d7415bbf29aeb4b7b5e134068004d220e9ebdd8949af7d7a8bd4adc98c",
+      "bytes": 11222,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13257949",
+      "stratum": "retract",
+      "sha256": "e462fc132c165d74b5f114a9b477ff0ac58f34cc33bf6ffc7b824182d364c1fc",
+      "bytes": 11064,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13257951",
+      "stratum": "retract",
+      "sha256": "17f21856e55e3cfe85f557f06fa36ce12b9c09d3db8a06975b39840fc453adf5",
+      "bytes": 6913,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13289858",
+      "stratum": "retract",
+      "sha256": "5f850d7df62d1cb8855d80e1129750af7dc66992396fecec9236b598a309aba2",
+      "bytes": 5131,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13291836",
+      "stratum": "retract",
+      "sha256": "31235c3e810ab810633be0ae0773d45a06e932a6505ba863d0d26d443c4a4395",
+      "bytes": 9311,
+      "licence": "CC BY-NC 4.0"
+    },
+    {
+      "pmcid": "PMC13292036",
+      "stratum": "retract",
+      "sha256": "8d65ed2e8af9c744550f7a3fde61e01d13f0f724dbf74643a24e9a995ee91ae0",
+      "bytes": 8397,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13292042",
+      "stratum": "retract",
+      "sha256": "2788519903d044f0366582921f224ae08c0b3985ee0a94e722fcd20b1e2f755e",
+      "bytes": 4964,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13292064",
+      "stratum": "retract",
+      "sha256": "3a98eb06d10fb941efd1d7248583c12472529bba983956f7eac6805a3fa35c79",
+      "bytes": 4905,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13292106",
+      "stratum": "retract",
+      "sha256": "97cb149b2eb11ec81fa8fe5561668c9eee0631a44357a6beec58edeb12241b06",
+      "bytes": 12310,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13292606",
+      "stratum": "retract",
+      "sha256": "5976fdf44178b40c0340367ffd475bc197fb3f802ed3bb9011ee9df5447fc119",
+      "bytes": 16754,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13294332",
+      "stratum": "retract",
+      "sha256": "706a15c0ce4a1361c155f0d9ca7e279a1b771654531ca2bce4d61a6292f98949",
+      "bytes": 8437,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13294796",
+      "stratum": "retract",
+      "sha256": "65da6334c0cc677d895bb6f1cf15850e26bc169669cc9bf88a96f92d6fb947da",
+      "bytes": 5752,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13295435",
+      "stratum": "retract",
+      "sha256": "4384c76bad9635ced5d98d1e3dca1c31fbd3537c768a94d0d083fdcb0450b7a1",
+      "bytes": 16396,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13298758",
+      "stratum": "retract",
+      "sha256": "dc36f979b10af6480273c1d4f357ee7fbcd2bee5a51e975a6f7cc11786696697",
+      "bytes": 8919,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13299186",
+      "stratum": "retract",
+      "sha256": "47001da970269fb993a752f011ad83818b517f54980f573851615eaacfcf8584",
+      "bytes": 5632,
+      "licence": "CC BY 4.0"
+    },
+    {
+      "pmcid": "PMC13306522",
+      "stratum": "retract",
+      "sha256": "2f1ab950c0850f5d780ec1d3a558687c412bda2bc033808de67cf89b381740bd",
+      "bytes": 8057,
+      "licence": "CC BY 4.0"
+    }
   ],
-  "why": "two under a publisher licence forbidding redistribution, three saying only 'Creative Commons' without the type",
-  "how_to_check": "sha256 of each file as read on 2026-08-08 is in this record; a re-download whose hash differs is a new version of the article",
-  "doi": "10.5281/zenodo.22680055",
-  "url": "https://doi.org/10.5281/zenodo.22680055"
- }
+  "queries": {
+    "base": "OPEN_ACCESS:Y AND HAS_FT:Y AND FIRST_PDATE:[2023-01-01 TO 2026-12-31] (base; stratum filters below appended with AND)",
+    "bio": "(MESH:\"Neoplasms\" OR MESH:\"Cardiovascular Diseases\")",
+    "essai": "PUB_TYPE:\"Randomized Controlled Trial\"",
+    "meta": "PUB_TYPE:\"Meta-Analysis\"",
+    "retract": "(PUB_TYPE:\"Retracted Publication\" OR PUB_TYPE:\"Retraction of Publication\")",
+    "cas": "PUB_TYPE:\"Case Reports\"",
+    "nonEN": "(LANG:\"fre\" OR LANG:\"ger\" OR LANG:\"spa\" OR LANG:\"por\")",
+    "phys": "(\"physics\" OR \"algorithm\" OR \"computational\")",
+    "moderne": "OPEN_ACCESS:Y AND HAS_FT:Y AND FIRST_PDATE:[2024-01-01 TO 2026-12-31]"
+  },
+  "how_to_reproduce": "For each PMC id: GET https://www.ebi.ac.uk/europepmc/webservices/rest/<PMCID>/fullTextXML . Europe PMC may have updated a record since 2026-08-08; a re-download is a new snapshot, to be dated.",
+  "download": "https://www.ebi.ac.uk/europepmc/webservices/rest/<PMCID>/fullTextXML (the JATS XML, exactly what the probes read) · human view: https://europepmc.org/article/PMC/<PMCID>",
+  "frozen_copy": {
+    "status": "Zenodo 10.5281/zenodo.22680055, published 2026-09-09: 267 files as read on 2026-08-08, under a named Creative Commons licence, with this manifest (6.5 MB)",
+    "not_redistributed": [
+      "PMC13294787",
+      "PMC13294792",
+      "PMC13143285",
+      "PMC13224954",
+      "PMC13224957"
+    ],
+    "why": "two under a publisher licence forbidding redistribution, three saying only 'Creative Commons' without the type",
+    "how_to_check": "sha256 of each file as read on 2026-08-08 is in this record; a re-download whose hash differs is a new version of the article",
+    "doi": "10.5281/zenodo.22680055",
+    "url": "https://doi.org/10.5281/zenodo.22680055"
+  },
+  "document_years": {
+    "measured": "2026-09-11",
+    "counts": {
+      "2025": 9,
+      "2026": 263
+    },
+    "query_window": "FIRST_PDATE 2023-01-01 to 2026-12-31",
+    "reading": "the name says 2023-2026 because that is the query window. The harvest returned 2025 and 2026 only. Read every prevalence measured here as a figure about 2025-2026 publishing.",
+    "file": "corpora/index/document-years-europe-pmc-272.json"
+  }
 }

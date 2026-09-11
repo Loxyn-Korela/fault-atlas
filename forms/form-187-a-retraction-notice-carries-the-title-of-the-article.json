@@ -102,5 +102,13 @@
       },
       "matches_excerpt": true
     }
-  ]
+  ],
+  "document_years": {
+    "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+    "counts": {
+      "2026": 3
+    },
+    "carriers_dated": 3,
+    "source": "corpora/index/document-years-europe-pmc-272.json, read 2026-09-11 from each file's earliest pub-date"
+  }
 }
