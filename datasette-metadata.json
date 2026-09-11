@@ -20,7 +20,8 @@
             "status",
             "reachable_by_deletion",
             "era",
-            "failure_mode"
+            "failure_mode",
+            "consequence"
           ]
         },
         "observations": {

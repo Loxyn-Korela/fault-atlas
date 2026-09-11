@@ -7,6 +7,10 @@
 - Validator with house rules; proves itself on seven planted faults.
 - SQLite view builder for Datasette.
 
+## 0.11.0 — 2026-09-11
+- **What the fault costs you, on every form that has it.** The severity judged line by line in the catalogue of 2026-08-09 was recovered on 2026-09-10 and sat unused. It is now on the page, written as a consequence rather than a code: *contaminates* (21), *answers wrongly in silence* (41), *hides* (39), *stops before the graph* (12). A filter on the index, a pill on each form, a facet of the public database.
+- **Because prevalence is not importance.** Nine forms are rare and silent at once — a mnemonic superscript read as a power, 1 of 272; a local and ambiguous date format, 4 of 272. Those are the dangerous ones, and a page that shows only how often a fault occurs invites exactly the wrong reading.
+
 ## 0.10.0 — 2026-09-11
 - **The year the document was published, read from the files, on 78 forms.** Not the year of the observation: the publication year of the very files where the form was seen, taken from each file's earliest `pub-date`. An era says which period a form belongs to; a year says where it was found, and it does not interpret.
 - **And the corpus is a year of publishing, not four.** Its name says 2023-2026 because that is the selection query's window (`FIRST_PDATE 2023-01-01 to 2026-12-31`). The harvest of 2026-08-08 returned **2025 for nine files and 2026 for the other 263**. Every prevalence measured on this corpus is a figure about 2025-2026 publishing, and the corpus record now says so in place of letting its own name imply a four-year spread. The per-file index is `corpora/index/document-years-europe-pmc-272.json`.

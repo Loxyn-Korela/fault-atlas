@@ -59,6 +59,25 @@ The file is the truth. Software reads it; software never completes it from memor
 
 The 272 Europe PMC articles of the August observation are listed by PMC identifier in `corpora/europe-pmc-jats-2023-2026-272.json`, with the selection queries, the sha256 of each file as read on 2026-08-08 and the licence found in it; a frozen copy of the 267 redistributable files is prepared for Zenodo. There is no corpus page and no probes page on the site: each form links the documents where the fault sits and, folded, the code that found them and the record behind them. Every August form has `status: migrated_unreviewed` and every September form `status: proposed`. A second reader validates or contests each one before it becomes `validated`. Where a September form overlaps an August one, the `related` field says so; the novel/variant decision is the reader's, not the machine's.
 
+## What a fault costs you, which is not how often it happens
+
+Every form carries how often it was found. Since 2026-09-11 it also carries what it costs at the
+end of the chain, from the severity judged line by line in the catalogue of 2026-08-09:
+
+| | forms | what it means for someone searching |
+|---|---|---|
+| **contaminates** | 21 | the error lands on an entity and every fact hanging from it inherits it |
+| **answers wrongly, in silence** | 41 | one false fact, local, and nothing signals it |
+| **hides** | 39 | a hole: what you look for is not there, and nothing says it should have been |
+| **stops before the graph** | 12 | costs work upstream, not answers downstream |
+| not judged | 49 | added after the migration |
+
+**The two axes are independent, and the catalogue is sorted by neither.** Nine forms are rare *and*
+silent: a mnemonic superscript read as a power, 1 of 272; a dense relative chronology, 3; a local
+and ambiguous date format, 4. One and a half per cent sounds like nothing until the ambiguous date
+is on the only ruling that set your deadline, and the graph answers without a warning. A low
+prevalence is not a mild fault, and the site no longer lets the figure imply otherwise.
+
 ## Two axes, and only one of them was ever judged
 
 Each form says what **damage** it does to the graph, one of seven. Each form also says whether a
