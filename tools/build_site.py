@@ -123,6 +123,18 @@ ROOT = Path(__file__).resolve().parent.parent
 SITE = ROOT/"site" if LANG == "en" else ROOT/"site"/"fr"; (SITE/"forms").mkdir(parents=True, exist_ok=True)
 import shutil; FAV = ROOT/"tools"/"favicon.svg"
 if FAV.exists(): shutil.copy(FAV, SITE/"favicon.svg")
+# A JSON-LD context that is not served at the URL it declares is a broken promise: a reader that
+# resolves it gets a 404 and the document stops being self-describing. Both languages carry it.
+_NS = ROOT/"ns"
+if _NS.is_dir():
+    (SITE/"ns").mkdir(parents=True, exist_ok=True)
+    for _f in _NS.glob("*"):
+        if _f.is_file(): shutil.copy(_f, SITE/"ns"/_f.name)
+_SCHEMA = ROOT/"schema"
+if _SCHEMA.is_dir():
+    (SITE/"schema").mkdir(parents=True, exist_ok=True)
+    for _f in _SCHEMA.glob("*.json"):
+        shutil.copy(_f, SITE/"schema"/_f.name)
 DOI = "10.5281/zenodo.22674547"; REPO = "https://github.com/Loxyn-Korela/fault-atlas"; DATA = "/data/fault-atlas"
 VERSION = re.search(r"^version: (.+)$", (ROOT/"CITATION.cff").read_text(), re.M).group(1)
 

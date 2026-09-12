@@ -1,0 +1,72 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://faultatlas.loxyn.ai/schema/mark.schema.json",
+  "title": "A mark: one observed fault, on one target",
+  "description": "A W3C Web Annotation (Recommendation, 23 February 2017) whose body names a form of the Fault Atlas. It says: this fault, of this form, is present on this target, and the observer is this sure of it. It says nothing about what a graph should do with it — that is the reader's judgement, not the mark's. Marks are written one per line, NDJSON, sharded by target: 396 bytes each raw and 13 gzipped, so 117 million of them fit in 1.5 GB. A single JSON array of the same records would have to be parsed whole to read one line, and could not be appended to.",
+  "type": "object",
+  "required": ["@context", "type", "body", "target"],
+  "properties": {
+    "@context": {
+      "description": "The Web Annotation context, extended with the five terms this atlas adds. Dereferenceable.",
+      "const": "https://faultatlas.loxyn.ai/ns/context.jsonld"
+    },
+    "id": { "type": "string", "description": "A URI for this mark. Stable across re-runs of the same probe on the same target." },
+    "type": { "const": "Annotation" },
+    "created": { "type": "string", "format": "date-time" },
+    "creator": {
+      "type": "object",
+      "description": "What observed it: a probe, a filter, a person. A mark with no creator cannot be argued with.",
+      "required": ["id"],
+      "properties": {
+        "id": { "type": "string" },
+        "type": { "enum": ["Software", "Person", "Organization"] },
+        "name": { "type": "string" }
+      }
+    },
+    "body": {
+      "type": "object",
+      "required": ["form", "confidence"],
+      "properties": {
+        "type": { "const": "TextualBody" },
+        "purpose": { "const": "assessing" },
+        "value": { "type": "string", "description": "The fault in the observer's own words, free text." },
+        "form": {
+          "type": "string",
+          "description": "The Fault Atlas form this fault is an instance of. This is what makes the mark mean the same thing to two readers: the form carries the dated observation, the damage, the layer and the consequence.",
+          "pattern": "^https://faultatlas\\.loxyn\\.ai/forms/form-[0-9]{3}(\\.html)?$"
+        },
+        "damage": {
+          "description": "Copied from the form, so that a reader who does not resolve the form still knows what this does to a graph.",
+          "enum": ["MERGE", "SPLIT", "SPURIOUS_EDGE", "MISSING", "WRONG_VALUE", "WRONG_LABEL", "ANACHRONISM", "CORPUS_PARAMETER"]
+        },
+        "confidence": {
+          "type": "number", "minimum": 0, "maximum": 1,
+          "description": "How sure the observer is that THIS FAULT IS PRESENT at this target. Nothing else. It is not a severity — how much the fault costs is a property of the form, not of the sighting. It is not a weight for a repairer either: a weight is computed from this, from the form's consequence, and from whether the fact at hand depends on the affected aspect. Conflating the three is the mistake this field exists to prevent."
+        },
+        "probe": { "type": "string", "description": "The program that found it, if one did." }
+      }
+    },
+    "target": {
+      "type": "object",
+      "required": ["source"],
+      "description": "What carries the fault. A document for a fault of a document; a corpus for a fault of a registry — a registry fault has no prevalence, it is a property of the base, so it is marked once against the base and not once per document drawn from it.",
+      "properties": {
+        "source": { "type": "string" },
+        "extent": { "type": "string", "description": "For a target that is a corpus: the slice of it touched, in the observation's own words and figures." },
+        "selector": {
+          "description": "Where in the document. Absent when the fault is a property of the whole document — most are.",
+          "type": "object",
+          "required": ["type"],
+          "properties": {
+            "type": { "enum": ["TextPositionSelector", "TextQuoteSelector"] },
+            "start": { "type": "integer", "minimum": 0 },
+            "end": { "type": "integer", "minimum": 0 },
+            "exact": { "type": "string" },
+            "prefix": { "type": "string" },
+            "suffix": { "type": "string" }
+          }
+        }
+      }
+    }
+  }
+}

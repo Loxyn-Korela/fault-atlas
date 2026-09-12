@@ -1,0 +1,15 @@
+{
+  "@context": [
+    "http://www.w3.org/ns/anno.jsonld",
+    {
+      "fa": "https://faultatlas.loxyn.ai/ns#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+
+      "form": { "@id": "fa:form", "@type": "@id" },
+      "damage": { "@id": "fa:damage" },
+      "confidence": { "@id": "fa:confidence", "@type": "xsd:decimal" },
+      "extent": { "@id": "fa:extent" },
+      "probe": { "@id": "fa:probe", "@type": "@id" }
+    }
+  ]
+}
