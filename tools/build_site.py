@@ -102,6 +102,13 @@ T = {
  "h_prov": {"en": "Provenance, not opinion", "fr": "Provenance, pas opinion"},
  "h_why": {"en": "Why it matters", "fr": "Pourquoi ça compte"},
  "seen_on": {"en": "Seen on: ", "fr": "Vue sur : "},
+ "h_rel": {"en": "Related forms", "fr": "Formes liées"},
+ "rel_out": {"en": "This form points to", "fr": "Cette fiche renvoie vers"},
+ "rel_in": {"en": "Pointed to by", "fr": "Fiches qui renvoient vers elle"},
+ "rel_why": {"en": "A link says the two forms were compared when this one entered; it does not say one replaces the other. The decision, when there is one, is in the history below.",
+             "fr": "Un lien dit que les deux formes ont été comparées à l'entrée de celle-ci ; il ne dit pas que l'une remplace l'autre. La décision, quand il y en a une, est dans l'histoire ci-dessous."},
+ "rel_oos": {"en": "not published: the August catalogue ruled this line an instrument or metric property, not a fault",
+             "fr": "non publiée : le catalogue d'août a jugé cette ligne propriété d'instrument ou de métrique, pas une forme de faute"},
  "nav_forms": {"en": "Forms", "fr": "Formes"},
  "nav_about": {"en": "About", "fr": "À propos"},
  "nav_data": {"en": "Data &amp; API", "fr": "Données et API"},
@@ -118,6 +125,10 @@ import shutil; FAV = ROOT/"tools"/"favicon.svg"
 if FAV.exists(): shutil.copy(FAV, SITE/"favicon.svg")
 DOI = "10.5281/zenodo.22674547"; REPO = "https://github.com/Loxyn-Korela/fault-atlas"; DATA = "/data/fault-atlas"
 VERSION = re.search(r"^version: (.+)$", (ROOT/"CITATION.cff").read_text(), re.M).group(1)
+
+# Catalogue lines examined in August and ruled out of scope. A `related` pointing at one of them is
+# not a dead link: the number exists, the form does not, and the record says why.
+OUT_OF_SCOPE = {"form-%03d" % x["legacy_line"]: x for x in json.loads((ROOT/"docs"/"out-of-scope-2026-08.json").read_text())}
 # The footer said v0.6.1 for six releases because this number lives in CITATION.cff and nobody
 # bumped it. It cannot drift again: the build refuses when it disagrees with the changelog.
 _LATEST = max(re.findall(r"^## (\d+\.\d+\.\d+)", (ROOT/"CHANGELOG.md").read_text(), re.M),
@@ -169,6 +180,31 @@ CLASS_SHORT = ({"DEFEATED": "Cancelled by code", "DEFEATED_IF_XML": "Cancelled i
                 "SILENT_FALSE": "Faux silencieux", "IRREDUCIBLE": "Irréductible", "UNCLASSIFIED": "Non classée"})
 
 forms = [json.loads(f.read_text()) for f in sorted((ROOT/"forms").glob("*.json"))]
+NAME_OF = {f["id"]: (f.get("name_fr") or f["name"]) if LANG == "fr" else f["name"] for f in forms}
+BACKLINKS = defaultdict(list)
+for _f in forms:
+    for _r in _f.get("related") or []:
+        BACKLINKS[_r].append(_f["id"])
+
+def related_block(f):
+    """The `related` field, both ways. 37 forms carry it and the site showed none of it."""
+    out, back = f.get("related") or [], sorted(BACKLINKS.get(f["id"], []))
+    if not out and not back:
+        return ""
+    def li(fid):
+        if fid in NAME_OF:
+            return f'<li><a href="{E(fid)}.html">{E(fid)}</a> — {E(NAME_OF[fid])}</li>'
+        if fid in OUT_OF_SCOPE:
+            o = OUT_OF_SCOPE[fid]
+            return (f'<li><span class="muted">{E(fid)}</span> — {E(o["name_fr"])} '
+                    f'<span class="muted">({E(t("rel_oos"))}, '
+                    f'<a href="{REPO}/blob/main/docs/out-of-scope-2026-08.json">record</a>)</span></li>')
+        return f'<li><span class="muted">{E(fid)} — unknown</span></li>'
+    parts = []
+    if out:  parts.append(f'<p class="meta">{E(t("rel_out"))}</p><ul class="docs">' + "".join(li(x) for x in out) + "</ul>")
+    if back: parts.append(f'<p class="meta">{E(t("rel_in"))}</p><ul class="docs">' + "".join(li(x) for x in back) + "</ul>")
+    return f'<h2>{E(t("h_rel"))}</h2>' + "".join(parts) + f'<p class="meta">{E(t("rel_why"))}</p>'
+
 def corpus_short(text):
     t = text.lower()
     for key, label in [("eur-lex","EUR-Lex / Cellar"),("cellar","EUR-Lex / Cellar"),("openalex","OpenAlex"),("openaire","OpenAIRE"),("wikidata","Wikidata"),("faers","FDA FAERS"),
@@ -328,7 +364,7 @@ index = f"""
 {ABOUT}
 <p>Met a form on your corpus? <a href="propose.html">Propose it</a> with its excerpt, corpus and date — no code, no account. Or, if you prefer, open an issue or a pull request on GitHub. A second reader reviews; a contested form stays recorded as contested; nothing enters unreviewed. Cite: Gracia S., Bagnol-Lebon C., Comtet Y. (2026). <em>Fault Atlas.</em> Loxyn SAS, Lyon. Zenodo. <a href="https://doi.org/{DOI}">doi:{DOI}</a>.</p></section>
 <script>
-const q=document.getElementById('q'),fd=document.getElementById('fd'),fc=document.getElementById('fc'),fl=document.getElementById('fl'),fp=document.getElementById('fp'),rows=[...document.querySelectorAll('#t tbody tr')],c=document.getElementById('count');
+const q=document.getElementById('q'),fd=document.getElementById('fd'),fc=document.getElementById('fc'),fl=document.getElementById('fl'),fs=document.getElementById('fs'),fm=document.getElementById('fm'),fp=document.getElementById('fp'),rows=[...document.querySelectorAll('#t tbody tr')],c=document.getElementById('count');
 function apply(){{const s=q.value.toLowerCase(),d=fd.value,k=fc.value,l=fl.value,mo=fm.value,sv=fs.value,pf=fp.checked;let n=0;for(const r of rows){{const ok=(!d||r.dataset.damage===d)&&(!k||r.dataset.class===k)&&(!l||r.dataset.layer===l)&&(!mo||(mo==='__none__'?!r.dataset.mode:r.dataset.mode===mo))&&(!sv||(sv==='__none__'?!r.dataset.sev:r.dataset.sev===sv))&&(!pf||r.dataset.proof==='docs')&&(!s||r.dataset.text.includes(s));r.hidden=!ok;if(ok)n++;}}c.textContent=n+' of '+rows.length;}}
 const tb=document.querySelector('#t tbody'),ths=[...document.querySelectorAll('#t th')];
 let sortCol=2,sortDir=-1;
@@ -344,12 +380,32 @@ function sortBy(i,dir){{
   sortCol=i;sortDir=dir;}}
 ths.forEach((t,i)=>t.addEventListener('click',()=>sortBy(i,i===sortCol?-sortDir:(i===2?-1:1))));
 sortBy(2,-1);
-[q,fd,fc,fl,fe,fp].forEach(e=>e.addEventListener('input',apply));document.querySelectorAll('.card').forEach(a=>a.addEventListener('click',()=>{{fd.value=a.dataset.damage;apply();}}));apply();
+[q,fd,fc,fs,fm,fl,fp].forEach(e=>e.addEventListener('input',apply));document.querySelectorAll('.card').forEach(a=>a.addEventListener('click',()=>{{fd.value=a.dataset.damage;apply();}}));apply();
 </script>"""
 CORPUS_NAMES = {json.loads(cf.read_text())["id"]: json.loads(cf.read_text())["name"] for cf in (ROOT/"corpora").glob("*.json")}
 CORPUS_REC = {json.loads(cf.read_text())["id"]: json.loads(cf.read_text()) for cf in (ROOT/"corpora").glob("*.json")}
 CORPUS_FILE = {json.loads(cf.read_text())["id"]: cf.name for cf in (ROOT/"corpora").glob("*.json")}
 (SITE/"index.html").write_text(layout("Fault Atlas", index))
+
+# The index filters were dead for every visitor because the listener array named `fe`, an element
+# that does not exist: one ReferenceError, and no listener was ever attached. Nothing caught it,
+# so the build now checks its own script against its own markup before writing anything else.
+def check_index_script(page):
+    ids = set(re.findall(r'id="([A-Za-z0-9_-]+)"', page))
+    for blk in re.findall(r"<script>(.*?)</script>", page, re.S):
+        if "apply" not in blk: continue
+        for name in re.findall(r"getElementById\('([^']+)'\)", blk):
+            if name not in ids:
+                raise SystemExit(f"build: the index script reads #{name}, which the page does not contain")
+        declared = set(re.findall(r"(?:const|let|var)\s+([A-Za-z_$][\w$]*)\s*=", blk))
+        declared |= set(re.findall(r",\s*([A-Za-z_$][\w$]*)\s*=", blk))
+        declared |= {"document", "window", "location", "URL", "Math"}
+        for arr in re.findall(r"\[([a-zA-Z0-9_,$\s]+)\]\s*\.forEach\s*\(\s*[a-z]\s*=>\s*\1?[a-z]*\.addEventListener", blk) or \
+                   re.findall(r"\[([a-zA-Z0-9_,$\s]+)\]\.forEach\(e=>e\.addEventListener", blk):
+            for name in (x.strip() for x in arr.split(",")):
+                if name and name not in declared:
+                    raise SystemExit(f"build: the index script binds a listener on `{name}`, which is never declared")
+check_index_script((SITE/"index.html").read_text())
 
 # ── form pages ──
 for f in forms:
@@ -420,6 +476,7 @@ for f in forms:
 {('<div class="facts"><div><h3>'+E(t("applies"))+'</h3><p><strong>'+E({"ancient_only":"Documents of the old era only","both":"Both eras, 1957 and 2026 alike","born_modern":"Born with the modern era","not_settled":"Era not settled"}[f["era"]["value"]])+'</strong>'+(' — and worse now than it was' if f["era"].get("aggravated_by_the_modern") else '')+('. '+E(f["era"]["note"]) if f["era"].get("note") else '')+'</p><p class="meta">'+E(f["era"]["source"])+'</p></div></div>') if f.get('era') else ''}
 <h2>{E(t("h_seen"))}</h2>{seen}
 <h2>{E(t("h_spec"))}</h2>{spec}
+{related_block(f)}
 <h2>{E(t("h_hist"))}</h2><ul class="hist">{hist}</ul>
 <p class="muted">Record: <a href="../atlas.json">atlas.json</a> · <a href="{REPO}/blob/main/forms/{E(src_name)}">source file on GitHub</a> · <a href="{E(f['id'])}.json">this record as JSON</a> · <a href="{DATA}/forms/{E(f['id'])}">{E(t("explorer_row"))}</a></p>"""
     (SITE/"forms"/f"{f['id']}.html").write_text(layout(f"{nom(f)} — Fault Atlas", body, depth=1, desc=f"{nom(f)} : {d[0].lower()} — {d[1]}." if LANG=="fr" else f"{nom(f)}: {d[0].lower()} — {d[1]}."))

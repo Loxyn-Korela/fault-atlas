@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.16.1 — 2026-09-12
+- **The search box and all five filters did nothing.** The index script bound its listeners over `[q,fd,fc,fl,fe,fp]`, and no element carries the id `fe`: the line threw a ReferenceError before a single listener was attached, which also killed the click-to-filter on the damage cards and the "N of 162" count. Two of the filters it did list, severity and failure mode, were never declared either and worked only by the accident that a browser exposes elements by id. Declared and bound properly. This was live for every visitor since the filters were added.
+- **The links between forms existed in the data and nowhere on the site.** 37 forms carry a `related` field and not one of them was rendered. Each form page now shows both directions — the forms it points to, and the forms that point to it — so form-163 finally says that form-165 exists, which is the whole record of the second reader's variant call of 9 September. The wording says what a link is and is not: the two forms were compared when the newer one entered; the decision, when there is one, is in the history.
+- One of those links pointed at `form-003`, which is not a form: catalogue line 3 was ruled an instrument property in August. It renders as what it is, with its reason and a link to the record, instead of a dead link.
+- **Rule 7: a form number is permanent**, never reused, never renumbered. Written down because the numbering is not a counter — `form-042` is line 42 of the August catalogue — and because a catalogue's identifier is a citation handle, not a database key.
+
 ## 0.16.0 — 2026-09-11
 - **The translation is finished.** The 46 refusal clauses, the failure-mode labels, the truths that can judge a form, the probe block down to "frozen copy of the files as read", the yes/no of "can code cancel it", the pills. A French page now reads as French.
 - Two duplicate definitions inside the generator were silently winning over the bilingual ones: the truths that judge, and the whole "what a record says" section. Both removed, which is why those two blocks stayed English however many times they were translated.

@@ -156,6 +156,9 @@ fifteen modern PDFs were not enough to declare a convention dead.
 4. The atlas records the **effect** of a remedy, never its mechanism. No implementation of any filter, guard or repair is published here.
 5. No client document, no personal data. Specimens are forms and excerpts from public corpora.
 6. The number of forms is not a quantity: two competent readers disagree on the novel/variant boundary. What is objective is the list of phenomena with their proof.
+7. **A form number is permanent.** It is never reused, never renumbered, and it is not a counter: `form-042` means line 42 of the August 2026 catalogue, and the record carries that origin in its history. The 28 numbers absent from the sequence are the catalogue lines examined and ruled out of scope; they are listed with their reason in `docs/out-of-scope-2026-08.json` and stay absent forever. A form that is withdrawn or folded into another keeps its number and its page, and says which form supersedes it — the URL a reader cited last year must never lead somewhere else.
+
+Rule 7 exists because the identifier is a citation handle, not a database key: it has to be sayable out loud and writable in a paper, like the identifiers of every corpus this atlas documents — PMID 16198559, Gene 9966, MeSH D000077203, Wikidata Q42, a CELEX number. Its stability is what a random or timestamped identifier would buy, and a written rule buys it without making the handle unreadable. What such an identifier would genuinely solve — who allocates the next number when someone outside Loxyn proposes a form — is answered by the reviewer allocating it at acceptance, and by nothing being numbered before it is accepted.
 
 ## Use
 
