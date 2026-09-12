@@ -1,0 +1,61 @@
+{
+ "id": "form-193",
+ "version": 1,
+ "name": "Documents truncated in the source itself",
+ "name_fr": "Documents tronqués dans la source elle-même",
+ "origin": {
+  "organisation": "Loxyn SAS, Lyon",
+  "campaign": "September 2026 — cleaning journal of the PubMed substrate (Voûte, 17-20 August 2026)",
+  "contact": "contact@loxyn.ai"
+ },
+ "damage": "MISSING",
+ "class": "REFUSABLE",
+ "layer": "② reading",
+ "injection": "DELETE",
+ "status": "proposed",
+ "seen": [
+  {
+   "corpus": "PubTator3 BioCXML, archives frozen 2026-08-18 (archives 0, 4 and 5)",
+   "document": "archive 0: 4,152,900 opening <document> tags for 4,152,896 closing ones",
+   "date": "2026-08-20",
+   "observer": "Claude Voûte (LLM agent), from 'JOURNAL — comment le corpus est devenu propre', 17-20 August 2026",
+   "lang": "fr",
+   "organisation": "Loxyn SAS, Lyon",
+   "excerpt": "4 152 900 balises `<document>` ouvrantes pour 4 152 896 fermantes dans l'archive 0. Le flux XML est coupé net en plein contenu, et un nouveau `<document>` démarre par-dessus : `ion offset=\"44804\" length=\"1 </collection> <?xml version='1.0'...`. Coupé au milieu d'un attribut. Ce sont des documents tronqués dans la source elle-même. Notre extracteur les écartait — comportement correct — mais sans le dire.",
+   "excerpt_en": "4,152,900 opening `<document>` tags for 4,152,896 closing ones in archive 0. The XML stream is cut clean in mid-content, and a new `<document>` starts over it: `ion offset=\"44804\" length=\"1 </collection> <?xml version='1.0'...`. Cut in the middle of an attribute. These are documents truncated in the source itself. Our extractor discarded them — correct behaviour — but without saying so."
+  }
+ ],
+ "specimens": {
+  "cases": [],
+  "counter_examples": []
+ },
+ "prevention": {
+  "cancellable_by_code": true,
+  "note": "counting opening against closing tags detects it deterministically; what code cannot do is repair the document, only declare it and count it per archive"
+ },
+ "repair": {
+  "reachable_by_deletion": "no",
+  "note": "the document never entered the graph; a deletion has nothing to act on"
+ },
+ "judgeable_by": [
+  "construction",
+  "closed_world"
+ ],
+ "related": [
+  "form-191"
+ ],
+ "proposed_severity": {
+  "value": "G3",
+  "reason": "Discarding an unreadable document is the right thing to do; discarding it silently is not. The count that leaves the pipeline is then smaller than the count that entered, and nothing in the record says which documents are gone or that any are. The fault is small here — four, two and one across three archives — and it is the reporting, not the loss, that costs.",
+  "reason_fr": "Écarter un document illisible est le bon geste ; l'écarter en silence ne l'est pas. Le compte qui sort du pipeline est alors plus petit que celui qui y est entré, et rien dans la trace ne dit quels documents manquent, ni même qu'il en manque. La faute est petite ici — quatre, deux et un sur trois archives — et ce qui coûte, c'est la déclaration, pas la perte.",
+  "proposed_by": "Claude Banc à vérité connue (LLM agent)",
+  "date": "2026-09-12",
+  "adds_to_the_damage_class": true
+ },
+ "history": [
+  {
+   "date": "2026-09-12",
+   "event": "entered 2026-09-12 from the August 2026 cleaning journal of the PubMed substrate, a register kept while the corpus was built and whose entries are the faults it met; the figure quoted is the journal's own, re-read verbatim in the source document, not re-measured here"
+  }
+ ]
+}

@@ -1,0 +1,67 @@
+{
+ "id": "form-191",
+ "version": 1,
+ "name": "Two identifier families in the same document-id field",
+ "name_fr": "Deux familles d'identifiants dans le même champ d'identifiant de document",
+ "origin": {
+  "organisation": "Loxyn SAS, Lyon",
+  "campaign": "September 2026 — cleaning journal of the PubMed substrate (Voûte, 17-20 August 2026)",
+  "contact": "contact@loxyn.ai"
+ },
+ "damage": "MISSING",
+ "class": "DEFEATED",
+ "layer": "④ extraction",
+ "injection": "DELETE",
+ "status": "proposed",
+ "seen": [
+  {
+   "corpus": "PubTator3 BioCXML, archives frozen 2026-08-18, document id field",
+   "document": "PMC12342537 (and 472,882 documents like it, of 41,525,437)",
+   "date": "2026-08-20",
+   "observer": "Claude Voûte (LLM agent), from 'JOURNAL — comment le corpus est devenu propre', 17-20 August 2026",
+   "lang": "fr",
+   "organisation": "Loxyn SAS, Lyon",
+   "excerpt": "La cause, identifiée par sonde : 472 882 documents portent un PMCID — `PMC12342537` — et non un PMID. Ma regex `<id>(\\d+)</id>` échoue sur une chaîne commençant par `PMC`, et le document est sauté en silence. Et le biais n'est pas quelconque : ces documents portent 86,8 annotations chacun contre 63 en moyenne — ils sont à texte intégral par construction, puisqu'ils sont dans PMC.",
+   "excerpt_en": "The cause, found by probe: 472,882 documents carry a PMCID — `PMC12342537` — and not a PMID. My regex `<id>(\\d+)</id>` fails on a string beginning with `PMC`, and the document is skipped in silence. And the bias is not arbitrary: these documents carry 86.8 annotations each against 63 on average — they are full text by construction, since they are in PMC."
+  }
+ ],
+ "specimens": {
+  "cases": [],
+  "counter_examples": []
+ },
+ "prevention": {
+  "cancellable_by_code": true,
+  "note": "a reader that accepts both shapes of identifier cancels it entirely; what code cannot do is notice, from inside, that it was ever losing them"
+ },
+ "repair": {
+  "reachable_by_deletion": "no",
+  "note": "the documents were never read, so there is nothing in the graph to delete; only a second pass on the source recovers them"
+ },
+ "judgeable_by": [
+  "construction",
+  "closed_world"
+ ],
+ "related": [
+  "form-145",
+  "form-157"
+ ],
+ "proposed_severity": {
+  "value": "G3",
+  "reason": "The documents lost are not a random 1.14 %: they carry 86.8 annotations against 63 on average, because being in PMC means being full text. The graph is not merely smaller, it is poorer in exactly the documents that carry the most. And no internal witness sees it — batch seals and twin slices were all green, because a pipeline's own counters cannot see what the pipeline never reads.",
+  "reason_fr": "Les documents perdus ne sont pas 1,14 % pris au hasard : ils portent 86,8 annotations contre 63 en moyenne, parce qu'être dans PMC veut dire être en texte intégral. Le graphe n'est pas seulement plus petit, il est plus pauvre exactement là où il y avait le plus à prendre. Et aucun témoin interne ne le voit : les sceaux de lots et les tranches jumelles étaient tous verts, parce que les compteurs d'un pipeline ne voient pas ce que le pipeline ne lit jamais.",
+  "proposed_by": "Claude Banc à vérité connue (LLM agent)",
+  "date": "2026-09-12",
+  "adds_to_the_damage_class": true
+ },
+ "history": [
+  {
+   "date": "2026-09-12",
+   "event": "entered 2026-09-12 from the August 2026 cleaning journal of the PubMed substrate, a register kept while the corpus was built and whose entries are the faults it met; the figure quoted is the journal's own, re-read verbatim in the source document, not re-measured here"
+  }
+ ],
+ "registry_scope": {
+  "extent": "472,882 documents of 41,525,437 read, 1.14 %, and 41,037,587 annotations of 2,617,808,903, 1.57 % — every document of the base whose identifier is a PMCID",
+  "extent_fr": "472 882 documents sur 41 525 437 lus, soit 1,14 %, et 41 037 587 annotations sur 2 617 808 903, soit 1,57 % — tout document de la base dont l'identifiant est un PMCID",
+  "source": "counted 2026-08-20 by an independent counter on a distinct code path, against the batch seals; cleaning journal of the PubMed substrate"
+ }
+}

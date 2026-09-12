@@ -37,11 +37,13 @@ The file is the truth. Software reads it; software never completes it from memor
 
 ## Current content
 
-157 forms from three observation campaigns:
+166 forms from five observation campaigns. The counts below are the `origin.campaign` field of the records themselves, not a tally kept by hand:
 
 - **August 2026** — 113 forms on business documents, old PubMed abstracts and 272 Europe PMC JATS articles, two independent observers (agreement on the novel/variant boundary: 54 %). 26 catalogue lines were instrument or metric properties, not fault forms: `docs/out-of-scope-2026-08.json`.
+- **August 2026, scripts and rare genres** — 4 forms the verdicts of 2026-08-08 had found and the atlas had never carried.
 - **September 2026** — 40 forms reported by a second, independent observer from the construction of a 40-million-record PubMed substrate (PubTator3, MeSH history, author keywords) and from four other corpora: OpenAlex, OpenAIRE, Wikidata, FAERS. Each carries its measurement file and date.
-- **September 2026, EUR-Lex** — 4 forms measured by the collection session on the official Cellar registry and data dump (`corpora/observation-2026-09-eurlex.json`).
+- **September 2026, cleaning journal** — 4 forms from the journal kept while that substrate was built, a register whose entries are the faults met in the building. They are the ones the finished corpus no longer shows: an identifier family that makes a reader skip 1.14 % of documents in silence, and skip the richest ones; a DOI containing the character used to split it; documents truncated in the source; and two reference registries carrying the same wrong name, so that asking both reveals nothing.
+- **September 2026, EUR-Lex** — 4 forms measured by the collection session on the official Cellar registry and data dump (`corpora/observation-2026-09-eurlex.json`), plus 1 from the human audit of the frozen truth.
 
 | damage | all layers | reaches the graph¹ |
 |---|---|---|

@@ -1,0 +1,62 @@
+{
+ "id": "form-192",
+ "version": 1,
+ "name": "An identifier that contains the separator used to split it",
+ "name_fr": "Un identifiant qui contient le séparateur servant à le découper",
+ "origin": {
+  "organisation": "Loxyn SAS, Lyon",
+  "campaign": "September 2026 — cleaning journal of the PubMed substrate (Voûte, 17-20 August 2026)",
+  "contact": "contact@loxyn.ai"
+ },
+ "damage": "WRONG_VALUE",
+ "class": "DEFEATED",
+ "layer": "④ extraction",
+ "injection": "FORMAT",
+ "status": "proposed",
+ "seen": [
+  {
+   "corpus": "PubMed baseline frozen 2026-08-18, DOIs written by the NLM in RefSource strings",
+   "document": "10.1590/1984-0462/;2018;36;4;00019erratum",
+   "date": "2026-08-19",
+   "observer": "Claude Voûte (LLM agent), from 'JOURNAL — comment le corpus est devenu propre', 17-20 August 2026",
+   "lang": "fr",
+   "organisation": "Loxyn SAS, Lyon",
+   "excerpt": "`10\\.\\d{4,9}/[^\\s;,]+` partout — ce qu'elle ratait : les DOI contenant des `;` — `10.1590/1984-0462/;2018;36;4;00019erratum` — verdicts changés : 473 sur 1 429. Ce n'étaient pas trois erreurs indépendantes : c'était une seule hypothèse jamais énoncée — « la NLM écrit les DOI d'une seule façon » — qui s'est manifestée trois fois.",
+   "excerpt_en": "`10\\.\\d{4,9}/[^\\s;,]+` everywhere — what it missed: DOIs containing `;` — `10.1590/1984-0462/;2018;36;4;00019erratum` — verdicts changed: 473 of 1,429. These were not three independent errors: it was one assumption never stated — \"the NLM writes DOIs one way\" — showing itself three times."
+  }
+ ],
+ "specimens": {
+  "cases": [],
+  "counter_examples": []
+ },
+ "prevention": {
+  "cancellable_by_code": true,
+  "note": "the DOI grammar admits the characters this pattern excluded; a reader built on the registered syntax rather than on a guessed one cancels the form"
+ },
+ "repair": {
+  "reachable_by_deletion": "no",
+  "note": "the value is wrong, not extra: deleting the edge removes a true link, it does not restore the right identifier"
+ },
+ "judgeable_by": [
+  "registry",
+  "curated"
+ ],
+ "related": [
+  "form-107",
+  "form-155"
+ ],
+ "proposed_severity": {
+  "value": "G2",
+  "reason": "The identifier is not lost, it is truncated, and a truncated DOI still looks like a DOI. It resolves to nothing or, worse, to another record. Here it flipped the verdict on 473 of 1,429 retraction links: each one is an assertion about whether an article was withdrawn, made wrongly, with nothing to signal it.",
+  "reason_fr": "L'identifiant n'est pas perdu, il est tronqué, et un DOI tronqué ressemble encore à un DOI. Il ne résout rien — ou pire, il résout vers une autre notice. Ici il a renversé le verdict sur 473 liens de rétractation sur 1 429 : chacun est une affirmation sur le retrait d'un article, portée à tort, sans que rien ne le signale.",
+  "proposed_by": "Claude Banc à vérité connue (LLM agent)",
+  "date": "2026-09-12",
+  "adds_to_the_damage_class": true
+ },
+ "history": [
+  {
+   "date": "2026-09-12",
+   "event": "entered 2026-09-12 from the August 2026 cleaning journal of the PubMed substrate, a register kept while the corpus was built and whose entries are the faults it met; the figure quoted is the journal's own, re-read verbatim in the source document, not re-measured here"
+  }
+ ]
+}

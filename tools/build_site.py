@@ -112,8 +112,8 @@ T = {
  "nav_forms": {"en": "Forms", "fr": "Formes"},
  "nav_about": {"en": "About", "fr": "À propos"},
  "nav_data": {"en": "Data &amp; API", "fr": "Données et API"},
- "foot_note": {"en": "The JSON file is the record of truth; this site is a view rebuilt at each release. 43 forms of 162 are validated by a second reader; the rest carries its status on its own page.",
-               "fr": "Le fichier JSON fait foi ; ce site en est une vue, reconstruite à chaque version. 43 formes sur 162 sont validées par une seconde lectrice, les autres portent leur statut sur leur fiche."},
+ "foot_note": {"en": "The JSON file is the record of truth; this site is a view rebuilt at each release. %d forms of %d are validated by a second reader; the rest carries its status on its own page.",
+               "fr": "Le fichier JSON fait foi ; ce site en est une vue, reconstruite à chaque version. %d formes sur %d sont validées par une seconde lectrice, les autres portent leur statut sur leur fiche."},
 }
 
 def t(k):
@@ -180,6 +180,7 @@ CLASS_SHORT = ({"DEFEATED": "Cancelled by code", "DEFEATED_IF_XML": "Cancelled i
                 "SILENT_FALSE": "Faux silencieux", "IRREDUCIBLE": "Irréductible", "UNCLASSIFIED": "Non classée"})
 
 forms = [json.loads(f.read_text()) for f in sorted((ROOT/"forms").glob("*.json"))]
+VALIDATED = sum(1 for f in forms if f["status"] == "validated")
 NAME_OF = {f["id"]: (f.get("name_fr") or f["name"]) if LANG == "fr" else f["name"] for f in forms}
 BACKLINKS = defaultdict(list)
 for _f in forms:
@@ -235,7 +236,7 @@ def layout(title, body, depth=0, desc=""):
 <nav><a href="{p}index.html#forms">{E(t("nav_forms"))}</a><a href="{p}index.html#about">{E(t("nav_about"))}</a><a href="{DATA}">{E(t("nav_data"))}</a><a href="{REPO}">GitHub</a><a href="https://doi.org/{DOI}">DOI</a><a class="lang" href="{SWITCH[depth]}" title="{E(t("switch_title"))}" aria-label="{E(t("switch_title"))}"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 8 6 6"/><path d="m4 14 6-6 2-3"/><path d="M2 5h12"/><path d="M7 2h1"/><path d="m22 22-5-10-5 10"/><path d="M14 18h6"/></svg>{"FR" if LANG == "en" else "EN"}</a></nav></header>
 <main>{body}</main>
 <footer><p><strong>Fault Atlas</strong> v{E(VERSION)} · built {BUILT} · Loxyn SAS, Lyon · Gracia S., Bagnol-Lebon C., Comtet Y. · records CC BY-SA 4.0, tools Apache 2.0 · <a href="https://doi.org/{DOI}">doi:{DOI}</a> · <a href="{REPO}">source</a> · <a href="mailto:contact@loxyn.ai">contact@loxyn.ai</a></p>
-<p class="muted">{E(t("foot_note"))}</p></footer>
+<p class="muted">{E(t("foot_note") % (VALIDATED, len(forms)))}</p></footer>
 </body></html>"""
 
 # ── index ──

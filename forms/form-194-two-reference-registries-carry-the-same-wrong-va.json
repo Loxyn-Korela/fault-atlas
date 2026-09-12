@@ -1,0 +1,65 @@
+{
+ "id": "form-194",
+ "version": 1,
+ "name": "Two reference registries carry the same wrong value, with no disagreement to reveal it",
+ "name_fr": "Deux registres de référence portent la même valeur fausse, sans désaccord pour la révéler",
+ "origin": {
+  "organisation": "Loxyn SAS, Lyon",
+  "campaign": "September 2026 — cleaning journal of the PubMed substrate (Voûte, 17-20 August 2026)",
+  "contact": "contact@loxyn.ai"
+ },
+ "damage": "WRONG_VALUE",
+ "class": "SILENT_FALSE",
+ "layer": "⑥ resolution",
+ "injection": "RENAME",
+ "status": "proposed",
+ "seen": [
+  {
+   "corpus": "Crossref and OpenAlex, queried by DOI, August 2026",
+   "document": "Hummon & Doreian 1989 — both registries return the author name \"Dereian\"",
+   "date": "2026-08-17",
+   "observer": "Claude Voûte (LLM agent), from 'JOURNAL — comment le corpus est devenu propre', 17-20 August 2026",
+   "lang": "fr",
+   "organisation": "Loxyn SAS, Lyon",
+   "excerpt": "Trois références sur cinq citées de mémoire étaient fausses […] Révélé par la vérification au DOI. Et Crossref et OpenAlex donnent tous deux un faux nom d'auteur pour Hummon & Doreian 1989 — « Dereian » — sans aucun signal d'erreur. Règle née ici : jamais de référence de mémoire. DOI en main — et même les agrégateurs se trompent.",
+   "excerpt_en": "Three references in five cited from memory were wrong […] Revealed by checking against the DOI. And Crossref and OpenAlex both give a wrong author name for Hummon & Doreian 1989 — \"Dereian\" — with no error signal whatsoever. Rule born here: never a reference from memory. DOI in hand — and even the aggregators get it wrong."
+  }
+ ],
+ "specimens": {
+  "cases": [],
+  "counter_examples": []
+ },
+ "prevention": {
+  "cancellable_by_code": false,
+  "note": "code can compare two registries and it will find them agreeing; nothing inside the data distinguishes a shared error from a shared truth"
+ },
+ "repair": {
+  "reachable_by_deletion": "no",
+  "note": "the identity is wrong, not extra; deleting it removes the person rather than correcting the name"
+ },
+ "judgeable_by": [
+  "curated"
+ ],
+ "related": [
+  "form-025"
+ ],
+ "proposed_severity": {
+  "value": "G1",
+  "reason": "The defence against a wrong registry value is to ask a second registry. Here both answer the same wrong name, so the disagreement that would have raised the alarm never occurs, and a graph that resolves authors against either one creates a person who does not exist. Every work, co-authorship and citation hanging off that identity inherits the error.",
+  "reason_fr": "La défense contre une valeur fausse dans un registre, c'est d'interroger un second registre. Ici les deux rendent le même nom faux : le désaccord qui aurait donné l'alerte ne se produit pas, et un graphe qui résout ses auteurs contre l'un ou l'autre fabrique une personne qui n'existe pas. Toute œuvre, toute co-signature, toute citation qui pend à cette identité en hérite.",
+  "proposed_by": "Claude Banc à vérité connue (LLM agent)",
+  "date": "2026-09-12",
+  "adds_to_the_damage_class": true
+ },
+ "history": [
+  {
+   "date": "2026-09-12",
+   "event": "entered 2026-09-12 from the August 2026 cleaning journal of the PubMed substrate, a register kept while the corpus was built and whose entries are the faults it met; the figure quoted is the journal's own, re-read verbatim in the source document, not re-measured here"
+  }
+ ],
+ "registry_scope": {
+  "extent": "unknown: one case proven on one DOI, in both registries at once. The journal does not say how many names are affected, and this record does not estimate it.",
+  "extent_fr": "inconnue : un cas prouvé sur un DOI, dans les deux registres à la fois. Le journal ne dit pas combien de noms sont touchés, et cette fiche ne l'estime pas.",
+  "source": "cleaning journal of the PubMed substrate, 17 August 2026, checked against the DOI"
+ }
+}
