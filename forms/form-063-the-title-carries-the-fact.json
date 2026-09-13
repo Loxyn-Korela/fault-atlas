@@ -1,148 +1,155 @@
 {
-  "id": "form-063",
-  "version": 2,
-  "legacy_line": 63,
-  "name": "The title carries the fact",
-  "name_fr": "Le titre porte le fait",
-  "origin": {
-    "organisation": "Loxyn SAS, Lyon",
-    "campaign": "August 2026 — observation campaign (Korela For Science)",
-    "contact": "contact@loxyn.ai"
+ "id": "form-063",
+ "version": 2,
+ "legacy_line": 63,
+ "name": "The title carries the fact",
+ "name_fr": "Le titre porte le fait",
+ "origin": {
+  "organisation": "Loxyn SAS, Lyon",
+  "campaign": "August 2026 — observation campaign (Korela For Science)",
+  "contact": "contact@loxyn.ai"
+ },
+ "damage": "MISSING",
+ "class": "IRREDUCIBLE",
+ "layer": "② reading",
+ "injection": "MOVE",
+ "legacy_severity": "G3",
+ "legacy_mechanism": "M11",
+ "status": "validated",
+ "seen": [
+  {
+   "corpus": "observation 2026-08 (272 Europe PMC JATS articles)",
+   "date": "2026-08-08",
+   "observer": "house observer (LLM agent), see report",
+   "excerpt": "MESURÉ le 08/08/2026 sur les 272 articles XML JATS de (internal corpus of 272 JATS articles) : 263/272 titres (96,7 %) ne portent aucun verbe conjugué — ils sont nominaux ; 197/272 (72 %) portent au moins deux tokens capitalisés ou sigles, donc au moins deux entités candidates ; longueur médiane 117 caractères. Et 59/272 (22 %) n'ont aucun résumé : sur ceux-là le titre est la seule source de la notice.",
+   "lang": "fr",
+   "excerpt_en": "MEASURED on 2026-08-08 on the 272 JATS XML articles of the internal corpus: 263/272 titles (96.7 %) carry no conjugated verb — they are nominal; 197/272 (72 %) carry at least two capitalised tokens or acronyms, hence at least two candidate entities; median length 117 characters. And 59/272 (22 %) have no abstract: for those the title is the only source of the record.",
+   "organisation": "Loxyn SAS, Lyon",
+   "corpus_id": "corpus-europe-pmc-jats-2023-2026"
   },
-  "damage": "MISSING",
-  "class": "IRREDUCIBLE",
-  "layer": "② reading",
-  "injection": "MOVE",
-  "legacy_severity": "G3",
-  "legacy_mechanism": "M11",
-  "status": "validated",
-  "seen": [
-    {
-      "corpus": "observation 2026-08 (272 Europe PMC JATS articles)",
-      "date": "2026-08-08",
-      "observer": "house observer (LLM agent), see report",
-      "excerpt": "MESURÉ le 08/08/2026 sur les 272 articles XML JATS de (internal corpus of 272 JATS articles) : 263/272 titres (96,7 %) ne portent aucun verbe conjugué — ils sont nominaux ; 197/272 (72 %) portent au moins deux tokens capitalisés ou sigles, donc au moins deux entités candidates ; longueur médiane 117 caractères. Et 59/272 (22 %) n'ont aucun résumé : sur ceux-là le titre est la seule source de la notice.",
-      "lang": "fr",
-      "excerpt_en": "MEASURED on 2026-08-08 on the 272 JATS XML articles of the internal corpus: 263/272 titles (96.7 %) carry no conjugated verb — they are nominal; 197/272 (72 %) carry at least two capitalised tokens or acronyms, hence at least two candidate entities; median length 117 characters. And 59/272 (22 %) have no abstract: for those the title is the only source of the record.",
-      "organisation": "Loxyn SAS, Lyon",
-      "corpus_id": "corpus-europe-pmc-jats-2023-2026"
-    },
-    {
-      "corpus": "Europe PMC JATS 2023-2026 (272 articles, the declared corpus)",
-      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
-      "date": "2026-09-10",
-      "observer": "Fault Atlas maintainer (Loxyn), by probe, no model",
-      "excerpt": "MEASURED on 2026-09-10 by probes/2026-09-recovered/line-063.py, whose definition is in its docstring: 188/272 articles carry it, where the observation of 2026-08-08 counted 197 under a definition we could not recover. First carrier: bio-PMC12590050.xml — 11 capitalised tokens in the title: ['Interplay', 'Between', 'Thyroid', 'Disorders']",
-      "lang": "en",
-      "probe": "probes/2026-09-recovered/line-063.py"
-    }
-  ],
-  "specimens": {
-    "cases": [],
-    "counter_examples": []
-  },
-  "prevention": {
-    "cancellable_by_code": false
-  },
-  "repair": {
-    "reachable_by_deletion": "no",
-    "note": "deletion cannot restore this; derived from the damage class by the migration of 2026-09-09, not judged form by form and not measured — the bench can measure it",
-    "measured": {
-      "value": "no",
-      "reached": 0,
-      "injected": 423,
-      "note": "0 of 423 reached",
-      "source": "measured 2026-09-10 by pgrepair (SciPyWeightedILP) on the frozen EUR-Lex truth, three identical runs, journal sha256 in measures/reachability-by-damage-2026-09-10.json. Per damage class, not per form: two forms of the same damage and the same visibility get the same answer.",
-      "date": "2026-09-10"
-    }
-  },
-  "judgeable_by": [
-    "construction",
-    "curated",
-    "closed_world"
-  ],
-  "history": [
-    {
-      "date": "2026-08-09",
-      "event": "catalogue line 63 — GOLDEN (kept for the benchmark): irreducible or silent false",
-      "by": "Korela For Science"
-    },
-    {
-      "date": "2026-09-09",
-      "event": "migrated; classified damage=MISSING injection=MOVE (judgment, unreviewed by a second reader)",
-      "by": "Fault Atlas migration"
-    },
-    {
-      "date": "2026-09-09",
-      "event": "internal tool paths removed from observation notes before publication; wording otherwise unchanged",
-      "by": "Fault Atlas"
-    },
-    {
-      "date": "2026-09-10",
-      "event": "second reader: validated — read in full with the record: a dated measurement, a named corpus, real forms",
-      "by": "Coralie Bagnol-Lebon"
-    }
-  ],
-  "observer_agreement": "2/2 — first reader (Loxyn, August/September classification) and second reader (Coralie Bagnol-Lebon, 2026-09-10)",
-  "failure_mode": {
-    "value": "MANQ",
-    "means": "a gap: the graph is incomplete where the reading did not reach, not wrong",
-    "source": "the internal catalogue of 2026-08-09 (korela.db, table parametre), line 63; it is not derived from the damage and varies inside a damage class"
-  },
-  "probes": [
-    {
-      "file": "probes/2026-09-recovered/line-063.py",
-      "kind": "python",
-      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
-      "written": "2026-09-10",
-      "run": "python3 tools/run_probe.py probes/2026-09-recovered/line-063.py <dir with the 272 .xml>",
-      "result": {
-        "date": "2026-09-10",
-        "count": 188,
-        "of": 272,
-        "strata": {
-          "nonEN": 31,
-          "essai": 30,
-          "retract": 28,
-          "cas": 27,
-          "phys": 23,
-          "bio": 22,
-          "meta": 14,
-          "moderne": 13
-        },
-        "examples": [
-          [
-            "bio-PMC12590050.xml",
-            [
-              "11 capitalised tokens in the title: ['Interplay', 'Between', 'Thyroid', 'Disorders']"
-            ]
-          ],
-          [
-            "bio-PMC12674831.xml",
-            [
-              "8 capitalised tokens in the title: ['Position', 'Statement', 'Cardiometabolic', 'Health']"
-            ]
-          ],
-          [
-            "bio-PMC12915353.xml",
-            [
-              "14 capitalised tokens in the title: ['Plant-Based', 'Diets', 'Cardiometabolic', 'Diseases']"
-            ]
-          ]
-        ],
-        "by": "Fault Atlas maintainer (Loxyn), on the declared corpus",
-        "carriers_file": "probes/results/form-063-the-title-carries-the-fact.json"
-      },
-      "matches_excerpt": true,
-      "note": "reproduces the figure of the September reading it is attached to, 188/272. It does NOT reproduce the August figure of 197, whose definition we could not recover; that observation is left exactly as it stands, above, with no example under it."
-    }
-  ],
-  "document_years": {
-    "corpus_id": "corpus-europe-pmc-jats-2023-2026",
-    "counts": {
-      "2025": 3
-    },
-    "carriers_dated": 3,
-    "source": "corpora/index/document-years-europe-pmc-272.json, read 2026-09-11 from each file's earliest pub-date"
+  {
+   "corpus": "Europe PMC JATS 2023-2026 (272 articles, the declared corpus)",
+   "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+   "date": "2026-09-10",
+   "observer": "Fault Atlas maintainer (Loxyn), by probe, no model",
+   "excerpt": "MEASURED on 2026-09-10 by probes/2026-09-recovered/line-063.py, whose definition is in its docstring: 188/272 articles carry it, where the observation of 2026-08-08 counted 197 under a definition we could not recover. First carrier: bio-PMC12590050.xml — 11 capitalised tokens in the title: ['Interplay', 'Between', 'Thyroid', 'Disorders']",
+   "lang": "en",
+   "probe": "probes/2026-09-recovered/line-063.py"
   }
+ ],
+ "specimens": {
+  "cases": [],
+  "counter_examples": []
+ },
+ "prevention": {
+  "cancellable_by_code": false
+ },
+ "repair": {
+  "reachable_by_deletion": "no",
+  "note": "deletion cannot restore this; derived from the damage class by the migration of 2026-09-09, not judged form by form and not measured — the bench can measure it",
+  "measured": {
+   "value": "no",
+   "reached": 0,
+   "injected": 423,
+   "note": "0 of 423 reached",
+   "source": "measured 2026-09-10 by pgrepair (SciPyWeightedILP) on the frozen EUR-Lex truth, three identical runs, journal sha256 in measures/reachability-by-damage-2026-09-10.json. Per damage class, not per form: two forms of the same damage and the same visibility get the same answer.",
+   "date": "2026-09-10"
+  },
+  "obstacle": {
+   "value": "the operation",
+   "reason": "Restoring a gap means ADDING, and a deletion-only repair has no such gesture. Its solution is a set of elements to delete; there is no insertion anywhere in it. No weight and no information change that answer.",
+   "reason_fr": "Réparer un manque veut dire AJOUTER, et une réparation par suppression n'a pas ce geste. Sa solution est un ensemble d'éléments à retirer ; il n'y a d'insertion nulle part. Aucun poids et aucune information n'y changent quoi que ce soit.",
+   "source": "derived from what a deletion-only repair can express, read in the repairer's own code — its solution is a set of elements to delete and carries no insertion — together with the measurement of 2026-09-10. Per damage class, not per form.",
+   "date": "2026-09-13"
+  }
+ },
+ "judgeable_by": [
+  "construction",
+  "curated",
+  "closed_world"
+ ],
+ "history": [
+  {
+   "date": "2026-08-09",
+   "event": "catalogue line 63 — GOLDEN (kept for the benchmark): irreducible or silent false",
+   "by": "Korela For Science"
+  },
+  {
+   "date": "2026-09-09",
+   "event": "migrated; classified damage=MISSING injection=MOVE (judgment, unreviewed by a second reader)",
+   "by": "Fault Atlas migration"
+  },
+  {
+   "date": "2026-09-09",
+   "event": "internal tool paths removed from observation notes before publication; wording otherwise unchanged",
+   "by": "Fault Atlas"
+  },
+  {
+   "date": "2026-09-10",
+   "event": "second reader: validated — read in full with the record: a dated measurement, a named corpus, real forms",
+   "by": "Coralie Bagnol-Lebon"
+  }
+ ],
+ "observer_agreement": "2/2 — first reader (Loxyn, August/September classification) and second reader (Coralie Bagnol-Lebon, 2026-09-10)",
+ "failure_mode": {
+  "value": "MANQ",
+  "means": "a gap: the graph is incomplete where the reading did not reach, not wrong",
+  "source": "the internal catalogue of 2026-08-09 (korela.db, table parametre), line 63; it is not derived from the damage and varies inside a damage class"
+ },
+ "probes": [
+  {
+   "file": "probes/2026-09-recovered/line-063.py",
+   "kind": "python",
+   "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+   "written": "2026-09-10",
+   "run": "python3 tools/run_probe.py probes/2026-09-recovered/line-063.py <dir with the 272 .xml>",
+   "result": {
+    "date": "2026-09-10",
+    "count": 188,
+    "of": 272,
+    "strata": {
+     "nonEN": 31,
+     "essai": 30,
+     "retract": 28,
+     "cas": 27,
+     "phys": 23,
+     "bio": 22,
+     "meta": 14,
+     "moderne": 13
+    },
+    "examples": [
+     [
+      "bio-PMC12590050.xml",
+      [
+       "11 capitalised tokens in the title: ['Interplay', 'Between', 'Thyroid', 'Disorders']"
+      ]
+     ],
+     [
+      "bio-PMC12674831.xml",
+      [
+       "8 capitalised tokens in the title: ['Position', 'Statement', 'Cardiometabolic', 'Health']"
+      ]
+     ],
+     [
+      "bio-PMC12915353.xml",
+      [
+       "14 capitalised tokens in the title: ['Plant-Based', 'Diets', 'Cardiometabolic', 'Diseases']"
+      ]
+     ]
+    ],
+    "by": "Fault Atlas maintainer (Loxyn), on the declared corpus",
+    "carriers_file": "probes/results/form-063-the-title-carries-the-fact.json"
+   },
+   "matches_excerpt": true,
+   "note": "reproduces the figure of the September reading it is attached to, 188/272. It does NOT reproduce the August figure of 197, whose definition we could not recover; that observation is left exactly as it stands, above, with no example under it."
+  }
+ ],
+ "document_years": {
+  "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+  "counts": {
+   "2025": 3
+  },
+  "carriers_dated": 3,
+  "source": "corpora/index/document-years-europe-pmc-272.json, read 2026-09-11 from each file's earliest pub-date"
+ }
 }

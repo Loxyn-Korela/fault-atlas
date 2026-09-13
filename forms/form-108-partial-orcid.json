@@ -1,93 +1,100 @@
 {
-  "id": "form-108",
-  "version": 2,
-  "legacy_line": 108,
-  "name": "Partial ORCID",
-  "name_fr": "ORCID partiel",
-  "origin": {
-    "organisation": "Loxyn SAS, Lyon",
-    "campaign": "August 2026 — observation campaign (Korela For Science)",
-    "contact": "contact@loxyn.ai"
-  },
-  "damage": "SPLIT",
-  "class": "DEFEATED",
-  "layer": "⑥ resolution",
-  "injection": "ALTER",
-  "legacy_severity": "G1",
-  "legacy_mechanism": "M1",
-  "status": "migrated_unreviewed",
-  "seen": [
-    {
-      "corpus": "observation 2026-08 (Europe PMC JATS 2023-2026 and PubMed abstracts)",
-      "date": "2026-08-08",
-      "observer": "house observer (LLM agent), see report",
-      "excerpt": "ORCID tronqués ou mal recopiés dans les blocs auteurs d'articles modernes (vague hors-bio, 08/08/2026)",
-      "lang": "fr",
-      "excerpt_en": "Truncated or miscopied ORCIDs in the author blocks of modern articles (non-bio wave, 2026-08-08)",
-      "organisation": "Loxyn SAS, Lyon"
-    }
-  ],
-  "specimens": {
-    "cases": [],
-    "counter_examples": []
-  },
-  "prevention": {
-    "cancellable_by_code": true
-  },
-  "repair": {
-    "reachable_by_deletion": "no",
-    "note": "deletion cannot restore this; derived from the damage class by the migration of 2026-09-09, not judged form by form and not measured — the bench can measure it",
-    "measured": {
-      "value": "no",
-      "reached": 0,
-      "injected": 1355,
-      "note": "0 of 1,355 restored; 24 twins deleted and the 1,674 true facts they took were not restored",
-      "source": "measured 2026-09-10 by pgrepair (SciPyWeightedILP) on the frozen EUR-Lex truth, three identical runs, journal sha256 in measures/reachability-by-damage-2026-09-10.json. Per damage class, not per form: two forms of the same damage and the same visibility get the same answer.",
-      "date": "2026-09-10"
-    }
-  },
-  "judgeable_by": [
-    "construction",
-    "registry",
-    "curated",
-    "closed_world"
-  ],
-  "history": [
-    {
-      "date": "2026-08-08",
-      "event": "the internal catalogue records a house filter with 4 cases and 1 counter-example(s); not published in this record",
-      "by": "Korela For Science"
-    },
-    {
-      "date": "2026-08-09",
-      "event": "catalogue line 108 — DEFEATED (cancelled by code): filter written and green on the bench",
-      "by": "Korela For Science"
-    },
-    {
-      "date": "2026-09-09",
-      "event": "migrated; classified damage=SPLIT injection=ALTER (judgment, unreviewed by a second reader)",
-      "by": "Fault Atlas migration"
-    },
-    {
-      "date": "2026-09-09",
-      "event": "probe-based observation withdrawn after independent review: probe returns complete ORCIDs, not partial ones",
-      "by": "Fault Atlas maintainer"
-    },
-    {
-      "date": "2026-09-10",
-      "event": "era recorded: born_modern — one of the fourteen difficulties born with the modern era; it had no line in the catalogue before 2026-08-08 (from the August verdicts, which the atlas had not carried)",
-      "by": "Fault Atlas maintainer"
-    }
-  ],
-  "era": {
-    "value": "born_modern",
-    "measured": "2026-09-10",
-    "source": "VERDICT — the old against the modern, 2026-08-08: 45 PDFs of 1957-1987 against 15 PDFs of 2023-2026, 174 pages, 9 publishers. Its own stated limits: 13 of the 15 modern are biomedical, 100 % English, 100 % open access — a channel that excludes scans, truncated and subscription articles by construction.",
-    "note": "one of the fourteen difficulties born with the modern era; it had no line in the catalogue before 2026-08-08"
-  },
-  "failure_mode": {
-    "value": "PROP",
-    "means": "identity: one thing appears under several forms, or several things under one — the error lands on a node and propagates to everything hanging from it",
-    "source": "the internal catalogue of 2026-08-09 (korela.db, table parametre), line 108; it is not derived from the damage and varies inside a damage class"
+ "id": "form-108",
+ "version": 2,
+ "legacy_line": 108,
+ "name": "Partial ORCID",
+ "name_fr": "ORCID partiel",
+ "origin": {
+  "organisation": "Loxyn SAS, Lyon",
+  "campaign": "August 2026 — observation campaign (Korela For Science)",
+  "contact": "contact@loxyn.ai"
+ },
+ "damage": "SPLIT",
+ "class": "DEFEATED",
+ "layer": "⑥ resolution",
+ "injection": "ALTER",
+ "legacy_severity": "G1",
+ "legacy_mechanism": "M1",
+ "status": "migrated_unreviewed",
+ "seen": [
+  {
+   "corpus": "observation 2026-08 (Europe PMC JATS 2023-2026 and PubMed abstracts)",
+   "date": "2026-08-08",
+   "observer": "house observer (LLM agent), see report",
+   "excerpt": "ORCID tronqués ou mal recopiés dans les blocs auteurs d'articles modernes (vague hors-bio, 08/08/2026)",
+   "lang": "fr",
+   "excerpt_en": "Truncated or miscopied ORCIDs in the author blocks of modern articles (non-bio wave, 2026-08-08)",
+   "organisation": "Loxyn SAS, Lyon"
   }
+ ],
+ "specimens": {
+  "cases": [],
+  "counter_examples": []
+ },
+ "prevention": {
+  "cancellable_by_code": true
+ },
+ "repair": {
+  "reachable_by_deletion": "no",
+  "note": "deletion cannot restore this; derived from the damage class by the migration of 2026-09-09, not judged form by form and not measured — the bench can measure it",
+  "measured": {
+   "value": "no",
+   "reached": 0,
+   "injected": 1355,
+   "note": "0 of 1,355 restored; 24 twins deleted and the 1,674 true facts they took were not restored",
+   "source": "measured 2026-09-10 by pgrepair (SciPyWeightedILP) on the frozen EUR-Lex truth, three identical runs, journal sha256 in measures/reachability-by-damage-2026-09-10.json. Per damage class, not per form: two forms of the same damage and the same visibility get the same answer.",
+   "date": "2026-09-10"
+  },
+  "obstacle": {
+   "value": "the operation",
+   "reason": "One entity written as two is repaired by MERGING them. Deleting the twin removes the false node and does not give back the facts it took: measured, 24 twins deleted of 1,355 and 1,674 true facts not restored.",
+   "reason_fr": "Une entité écrite en deux se répare en les FUSIONNANT. Supprimer le jumeau retire le faux nœud et ne rend pas les faits qu'il avait emportés : mesuré, 24 jumeaux sur 1 355 et 1 674 faits vrais non rétablis.",
+   "source": "derived from what a deletion-only repair can express, read in the repairer's own code — its solution is a set of elements to delete and carries no insertion — together with the measurement of 2026-09-10. Per damage class, not per form.",
+   "date": "2026-09-13"
+  }
+ },
+ "judgeable_by": [
+  "construction",
+  "registry",
+  "curated",
+  "closed_world"
+ ],
+ "history": [
+  {
+   "date": "2026-08-08",
+   "event": "the internal catalogue records a house filter with 4 cases and 1 counter-example(s); not published in this record",
+   "by": "Korela For Science"
+  },
+  {
+   "date": "2026-08-09",
+   "event": "catalogue line 108 — DEFEATED (cancelled by code): filter written and green on the bench",
+   "by": "Korela For Science"
+  },
+  {
+   "date": "2026-09-09",
+   "event": "migrated; classified damage=SPLIT injection=ALTER (judgment, unreviewed by a second reader)",
+   "by": "Fault Atlas migration"
+  },
+  {
+   "date": "2026-09-09",
+   "event": "probe-based observation withdrawn after independent review: probe returns complete ORCIDs, not partial ones",
+   "by": "Fault Atlas maintainer"
+  },
+  {
+   "date": "2026-09-10",
+   "event": "era recorded: born_modern — one of the fourteen difficulties born with the modern era; it had no line in the catalogue before 2026-08-08 (from the August verdicts, which the atlas had not carried)",
+   "by": "Fault Atlas maintainer"
+  }
+ ],
+ "era": {
+  "value": "born_modern",
+  "measured": "2026-09-10",
+  "source": "VERDICT — the old against the modern, 2026-08-08: 45 PDFs of 1957-1987 against 15 PDFs of 2023-2026, 174 pages, 9 publishers. Its own stated limits: 13 of the 15 modern are biomedical, 100 % English, 100 % open access — a channel that excludes scans, truncated and subscription articles by construction.",
+  "note": "one of the fourteen difficulties born with the modern era; it had no line in the catalogue before 2026-08-08"
+ },
+ "failure_mode": {
+  "value": "PROP",
+  "means": "identity: one thing appears under several forms, or several things under one — the error lands on a node and propagates to everything hanging from it",
+  "source": "the internal catalogue of 2026-08-09 (korela.db, table parametre), line 108; it is not derived from the damage and varies inside a damage class"
+ }
 }

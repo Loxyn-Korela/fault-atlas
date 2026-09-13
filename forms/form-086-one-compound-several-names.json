@@ -1,203 +1,210 @@
 {
-  "id": "form-086",
-  "version": 2,
-  "legacy_line": 86,
-  "name": "One compound, several names",
-  "name_fr": "Un composé, plusieurs noms",
-  "origin": {
-    "organisation": "Loxyn SAS, Lyon",
-    "campaign": "August 2026 — observation campaign (Korela For Science)",
-    "contact": "contact@loxyn.ai"
-  },
-  "damage": "SPLIT",
-  "class": "IRREDUCIBLE",
-  "layer": "⑥ resolution",
-  "injection": "RENAME",
-  "legacy_severity": "G1",
-  "legacy_mechanism": "M1",
-  "status": "migrated_unreviewed",
-  "seen": [
-    {
-      "corpus": "observation 2026-08 (272 Europe PMC JATS articles)",
-      "date": "2026-08-08",
-      "observer": "house observer (LLM agent), see report",
-      "excerpt": "MESURÉ le 08/08/2026 sur les 272 articles XML JATS de (internal corpus of 272 JATS articles) : 224/272 articles (82 %) introduisent au moins une abréviation par glose parenthétique « nom développé (SIGLE) », 2 463 gloses au total, soit 9 par article en moyenne — la parenthèse est le SEUL pont entre le nom long et le sigle. Observé le 08/08/2026 sur Cumings & Hilton, Br. J. Pharmac. 1971 : quatre natures de nom pour une substance, et 5-HT (1976) contre 5HT (1971).",
-      "lang": "fr",
-      "excerpt_en": "MEASURED on 2026-08-08 on the 272 JATS XML articles of the internal corpus: 224/272 articles (82 %) introduce at least one abbreviation by parenthetical gloss \"expanded name (ACRONYM)\", 2,463 glosses in total, i.e. 9 per article on average — the parenthesis is the ONLY bridge between the long name and the acronym. Observed on 2026-08-08 on Cumings & Hilton, Br. J. Pharmac. 1971: four kinds of name for one substance, and 5-HT (1976) versus 5HT (1971).",
-      "organisation": "Loxyn SAS, Lyon",
-      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
-      "probe": "probes/2026-08/line-086.py"
-    }
-  ],
-  "specimens": {
-    "cases": [],
-    "counter_examples": []
-  },
-  "prevention": {
-    "cancellable_by_code": false
-  },
-  "repair": {
-    "reachable_by_deletion": "no",
-    "note": "deletion cannot restore this; derived from the damage class by the migration of 2026-09-09, not judged form by form and not measured — the bench can measure it",
-    "measured": {
-      "value": "no",
-      "reached": 0,
-      "injected": 1355,
-      "note": "0 of 1,355 restored; 24 twins deleted and the 1,674 true facts they took were not restored",
-      "source": "measured 2026-09-10 by pgrepair (SciPyWeightedILP) on the frozen EUR-Lex truth, three identical runs, journal sha256 in measures/reachability-by-damage-2026-09-10.json. Per damage class, not per form: two forms of the same damage and the same visibility get the same answer.",
-      "date": "2026-09-10"
-    }
-  },
-  "judgeable_by": [
-    "construction",
-    "registry",
-    "curated",
-    "closed_world"
-  ],
-  "history": [
-    {
-      "date": "2026-08-09",
-      "event": "catalogue line 86 — GOLDEN (kept for the benchmark): irreducible or silent false",
-      "by": "Korela For Science"
-    },
-    {
-      "date": "2026-09-09",
-      "event": "migrated; classified damage=SPLIT injection=RENAME (judgment, unreviewed by a second reader)",
-      "by": "Fault Atlas migration"
-    },
-    {
-      "date": "2026-09-09",
-      "event": "internal tool paths removed from observation notes before publication; wording otherwise unchanged",
-      "by": "Fault Atlas"
-    },
-    {
-      "date": "2026-09-09",
-      "event": "exact probe attached to the 272-file observation: probes/2026-08/line-086.py, re-run 20/272 (excerpt figure differs, both kept)",
-      "by": "Fault Atlas maintainer"
-    },
-    {
-      "date": "2026-09-10",
-      "event": "era recorded: both (from the August verdicts, which the atlas had not carried)",
-      "by": "Fault Atlas maintainer"
-    }
-  ],
-  "probes": [
-    {
-      "file": "probes/2026-08/line-086.py",
-      "kind": "python",
-      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
-      "written": "2026-08-08",
-      "run": "python3 tools/run_probe.py probes/2026-08/line-086.py <dir with the 272 .xml>",
-      "result": {
-        "date": "2026-09-09",
-        "count": 20,
-        "of": 272,
-        "strata": {
-          "meta": 7,
-          "bio": 4,
-          "essai": 4,
-          "moderne": 2,
-          "phys": 2,
-          "nonEN": 1
-        },
-        "examples": [
-          [
-            "bio-PMC13162546.xml",
-            [
-              "factor-15 (GDF15)"
-            ]
-          ],
-          [
-            "bio-PMC13190511.xml",
-            [
-              "Revision (ICD-10)"
-            ]
-          ],
-          [
-            "bio-PMC13207820.xml",
-            [
-              "antigen-125 (CA-125)"
-            ]
-          ],
-          [
-            "bio-PMC13252842.xml",
-            [
-              "Institute (TUR-004367)"
-            ]
-          ],
-          [
-            "essai-PMC13169227.xml",
-            [
-              "types (LM22)"
-            ]
-          ],
-          [
-            "essai-PMC13191455.xml",
-            [
-              "Revision (ICD-10)"
-            ]
-          ],
-          [
-            "essai-PMC13205876.xml",
-            [
-              "Foundation (OPP49817)",
-              "mill (MM400)"
-            ]
-          ],
-          [
-            "essai-PMC13213610.xml",
-            [
-              "Revision (ICD-10)"
-            ]
-          ],
-          [
-            "meta-PMC13157766.xml",
-            [
-              "loracarbef (LY163892)"
-            ]
-          ],
-          [
-            "meta-PMC13226718.xml",
-            [
-              "Trust (WT220390)"
-            ]
-          ],
-          [
-            "meta-PMC13254819.xml",
-            [
-              "grant (AG067418)"
-            ]
-          ],
-          [
-            "meta-PMC13264436.xml",
-            [
-              "tipiracil (TAS-102)"
-            ]
-          ]
-        ],
-        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files",
-        "carriers_file": "probes/results/line-086.json"
-      },
-      "matches_excerpt": false,
-      "note": "The figure quoted in the excerpt was counted on 2026-08-08 by a finer, hand-run measurement whose code was not kept; this probe is the one that was kept, and its figure is the one that can be re-run. Both stand, dated."
-    }
-  ],
-  "era": {
-    "value": "both",
-    "measured": "2026-09-10",
-    "source": "VERDICT — the old against the modern, 2026-08-08: 45 PDFs of 1957-1987 against 15 PDFs of 2023-2026, 174 pages, 9 publishers. Its own stated limits: 13 of the 15 modern are biomedical, 100 % English, 100 % open access — a channel that excludes scans, truncated and subscription articles by construction."
-  },
-  "failure_mode": {
-    "value": "PROP",
-    "means": "identity: one thing appears under several forms, or several things under one — the error lands on a node and propagates to everything hanging from it",
-    "source": "the internal catalogue of 2026-08-09 (korela.db, table parametre), line 86; it is not derived from the damage and varies inside a damage class"
-  },
-  "document_years": {
-    "corpus_id": "corpus-europe-pmc-jats-2023-2026",
-    "counts": {
-      "2026": 12
-    },
-    "carriers_dated": 12,
-    "source": "corpora/index/document-years-europe-pmc-272.json, read 2026-09-11 from each file's earliest pub-date"
+ "id": "form-086",
+ "version": 2,
+ "legacy_line": 86,
+ "name": "One compound, several names",
+ "name_fr": "Un composé, plusieurs noms",
+ "origin": {
+  "organisation": "Loxyn SAS, Lyon",
+  "campaign": "August 2026 — observation campaign (Korela For Science)",
+  "contact": "contact@loxyn.ai"
+ },
+ "damage": "SPLIT",
+ "class": "IRREDUCIBLE",
+ "layer": "⑥ resolution",
+ "injection": "RENAME",
+ "legacy_severity": "G1",
+ "legacy_mechanism": "M1",
+ "status": "migrated_unreviewed",
+ "seen": [
+  {
+   "corpus": "observation 2026-08 (272 Europe PMC JATS articles)",
+   "date": "2026-08-08",
+   "observer": "house observer (LLM agent), see report",
+   "excerpt": "MESURÉ le 08/08/2026 sur les 272 articles XML JATS de (internal corpus of 272 JATS articles) : 224/272 articles (82 %) introduisent au moins une abréviation par glose parenthétique « nom développé (SIGLE) », 2 463 gloses au total, soit 9 par article en moyenne — la parenthèse est le SEUL pont entre le nom long et le sigle. Observé le 08/08/2026 sur Cumings & Hilton, Br. J. Pharmac. 1971 : quatre natures de nom pour une substance, et 5-HT (1976) contre 5HT (1971).",
+   "lang": "fr",
+   "excerpt_en": "MEASURED on 2026-08-08 on the 272 JATS XML articles of the internal corpus: 224/272 articles (82 %) introduce at least one abbreviation by parenthetical gloss \"expanded name (ACRONYM)\", 2,463 glosses in total, i.e. 9 per article on average — the parenthesis is the ONLY bridge between the long name and the acronym. Observed on 2026-08-08 on Cumings & Hilton, Br. J. Pharmac. 1971: four kinds of name for one substance, and 5-HT (1976) versus 5HT (1971).",
+   "organisation": "Loxyn SAS, Lyon",
+   "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+   "probe": "probes/2026-08/line-086.py"
   }
+ ],
+ "specimens": {
+  "cases": [],
+  "counter_examples": []
+ },
+ "prevention": {
+  "cancellable_by_code": false
+ },
+ "repair": {
+  "reachable_by_deletion": "no",
+  "note": "deletion cannot restore this; derived from the damage class by the migration of 2026-09-09, not judged form by form and not measured — the bench can measure it",
+  "measured": {
+   "value": "no",
+   "reached": 0,
+   "injected": 1355,
+   "note": "0 of 1,355 restored; 24 twins deleted and the 1,674 true facts they took were not restored",
+   "source": "measured 2026-09-10 by pgrepair (SciPyWeightedILP) on the frozen EUR-Lex truth, three identical runs, journal sha256 in measures/reachability-by-damage-2026-09-10.json. Per damage class, not per form: two forms of the same damage and the same visibility get the same answer.",
+   "date": "2026-09-10"
+  },
+  "obstacle": {
+   "value": "the operation",
+   "reason": "One entity written as two is repaired by MERGING them. Deleting the twin removes the false node and does not give back the facts it took: measured, 24 twins deleted of 1,355 and 1,674 true facts not restored.",
+   "reason_fr": "Une entité écrite en deux se répare en les FUSIONNANT. Supprimer le jumeau retire le faux nœud et ne rend pas les faits qu'il avait emportés : mesuré, 24 jumeaux sur 1 355 et 1 674 faits vrais non rétablis.",
+   "source": "derived from what a deletion-only repair can express, read in the repairer's own code — its solution is a set of elements to delete and carries no insertion — together with the measurement of 2026-09-10. Per damage class, not per form.",
+   "date": "2026-09-13"
+  }
+ },
+ "judgeable_by": [
+  "construction",
+  "registry",
+  "curated",
+  "closed_world"
+ ],
+ "history": [
+  {
+   "date": "2026-08-09",
+   "event": "catalogue line 86 — GOLDEN (kept for the benchmark): irreducible or silent false",
+   "by": "Korela For Science"
+  },
+  {
+   "date": "2026-09-09",
+   "event": "migrated; classified damage=SPLIT injection=RENAME (judgment, unreviewed by a second reader)",
+   "by": "Fault Atlas migration"
+  },
+  {
+   "date": "2026-09-09",
+   "event": "internal tool paths removed from observation notes before publication; wording otherwise unchanged",
+   "by": "Fault Atlas"
+  },
+  {
+   "date": "2026-09-09",
+   "event": "exact probe attached to the 272-file observation: probes/2026-08/line-086.py, re-run 20/272 (excerpt figure differs, both kept)",
+   "by": "Fault Atlas maintainer"
+  },
+  {
+   "date": "2026-09-10",
+   "event": "era recorded: both (from the August verdicts, which the atlas had not carried)",
+   "by": "Fault Atlas maintainer"
+  }
+ ],
+ "probes": [
+  {
+   "file": "probes/2026-08/line-086.py",
+   "kind": "python",
+   "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+   "written": "2026-08-08",
+   "run": "python3 tools/run_probe.py probes/2026-08/line-086.py <dir with the 272 .xml>",
+   "result": {
+    "date": "2026-09-09",
+    "count": 20,
+    "of": 272,
+    "strata": {
+     "meta": 7,
+     "bio": 4,
+     "essai": 4,
+     "moderne": 2,
+     "phys": 2,
+     "nonEN": 1
+    },
+    "examples": [
+     [
+      "bio-PMC13162546.xml",
+      [
+       "factor-15 (GDF15)"
+      ]
+     ],
+     [
+      "bio-PMC13190511.xml",
+      [
+       "Revision (ICD-10)"
+      ]
+     ],
+     [
+      "bio-PMC13207820.xml",
+      [
+       "antigen-125 (CA-125)"
+      ]
+     ],
+     [
+      "bio-PMC13252842.xml",
+      [
+       "Institute (TUR-004367)"
+      ]
+     ],
+     [
+      "essai-PMC13169227.xml",
+      [
+       "types (LM22)"
+      ]
+     ],
+     [
+      "essai-PMC13191455.xml",
+      [
+       "Revision (ICD-10)"
+      ]
+     ],
+     [
+      "essai-PMC13205876.xml",
+      [
+       "Foundation (OPP49817)",
+       "mill (MM400)"
+      ]
+     ],
+     [
+      "essai-PMC13213610.xml",
+      [
+       "Revision (ICD-10)"
+      ]
+     ],
+     [
+      "meta-PMC13157766.xml",
+      [
+       "loracarbef (LY163892)"
+      ]
+     ],
+     [
+      "meta-PMC13226718.xml",
+      [
+       "Trust (WT220390)"
+      ]
+     ],
+     [
+      "meta-PMC13254819.xml",
+      [
+       "grant (AG067418)"
+      ]
+     ],
+     [
+      "meta-PMC13264436.xml",
+      [
+       "tipiracil (TAS-102)"
+      ]
+     ]
+    ],
+    "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files",
+    "carriers_file": "probes/results/line-086.json"
+   },
+   "matches_excerpt": false,
+   "note": "The figure quoted in the excerpt was counted on 2026-08-08 by a finer, hand-run measurement whose code was not kept; this probe is the one that was kept, and its figure is the one that can be re-run. Both stand, dated."
+  }
+ ],
+ "era": {
+  "value": "both",
+  "measured": "2026-09-10",
+  "source": "VERDICT — the old against the modern, 2026-08-08: 45 PDFs of 1957-1987 against 15 PDFs of 2023-2026, 174 pages, 9 publishers. Its own stated limits: 13 of the 15 modern are biomedical, 100 % English, 100 % open access — a channel that excludes scans, truncated and subscription articles by construction."
+ },
+ "failure_mode": {
+  "value": "PROP",
+  "means": "identity: one thing appears under several forms, or several things under one — the error lands on a node and propagates to everything hanging from it",
+  "source": "the internal catalogue of 2026-08-09 (korela.db, table parametre), line 86; it is not derived from the damage and varies inside a damage class"
+ },
+ "document_years": {
+  "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+  "counts": {
+   "2026": 12
+  },
+  "carriers_dated": 12,
+  "source": "corpora/index/document-years-europe-pmc-272.json, read 2026-09-11 from each file's earliest pub-date"
+ }
 }

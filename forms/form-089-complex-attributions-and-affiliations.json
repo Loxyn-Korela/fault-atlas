@@ -1,205 +1,212 @@
 {
-  "id": "form-089",
-  "version": 2,
-  "legacy_line": 89,
-  "name": "Complex attributions and affiliations",
-  "name_fr": "Attributions et affiliations complexes",
-  "origin": {
-    "organisation": "Loxyn SAS, Lyon",
-    "campaign": "August 2026 — observation campaign (Korela For Science)",
-    "contact": "contact@loxyn.ai"
-  },
-  "damage": "SPURIOUS_EDGE",
-  "class": "IRREDUCIBLE",
-  "layer": "④ extraction",
-  "injection": "FORMAT",
-  "legacy_severity": "G2",
-  "legacy_mechanism": "M4",
-  "status": "migrated_unreviewed",
-  "seen": [
-    {
-      "corpus": "observation 2026-08 (272 Europe PMC JATS articles)",
-      "date": "2026-08-08",
-      "observer": "house observer (LLM agent), see report",
-      "excerpt": "MESURÉ le 08/08/2026 sur les 272 articles de (internal corpus of 272 JATS articles) : 106/272 (39 %) déclarent au moins deux <aff> ET au moins un auteur rattaché à deux affiliations par renvoi de note — bio-PMC12674831 en porte 57 affiliations pour 11 auteurs multi-affiliés, bio-PMC12882215 en a 4 pour 4 auteurs. Le lien auteur→institution passe par le symbole, jamais par une phrase. L'observation qui fonde la ligne est datée du 08/08/2026 sur Duncker et al., Br. J. Pharmac. 1986.",
-      "lang": "fr",
-      "excerpt_en": "MEASURED on 2026-08-08 on the 272 articles of the internal corpus: 106/272 (39 %) declare at least two <aff> AND at least one author attached to two affiliations by footnote reference — bio-PMC12674831 carries 57 affiliations for 11 multi-affiliated authors, bio-PMC12882215 has 4 for 4 authors. The author→institution link goes through the symbol, never through a sentence. The observation founding the line is dated 2026-08-08 on Duncker et al., Br. J. Pharmac. 1986.",
-      "organisation": "Loxyn SAS, Lyon",
-      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
-      "probe": "probes/2026-08/line-089.py"
-    }
-  ],
-  "specimens": {
-    "cases": [],
-    "counter_examples": []
-  },
-  "prevention": {
-    "cancellable_by_code": false
-  },
-  "repair": {
-    "reachable_by_deletion": "yes",
-    "note": "the faulty edge can be deleted",
-    "measured": {
-      "value": "depends_on_visibility",
-      "reached": 366,
-      "injected": 721,
-      "note": "360 of 360 when a law can see it, 6 of 361 when none can",
-      "source": "measured 2026-09-10 by pgrepair (SciPyWeightedILP) on the frozen EUR-Lex truth, three identical runs, journal sha256 in measures/reachability-by-damage-2026-09-10.json. Per damage class, not per form: two forms of the same damage and the same visibility get the same answer.",
-      "date": "2026-09-10",
-      "disagrees_with_the_judgment": "yes"
-    }
-  },
-  "judgeable_by": [
-    "construction",
-    "curated",
-    "closed_world"
-  ],
-  "history": [
-    {
-      "date": "2026-08-09",
-      "event": "catalogue line 89 — GOLDEN (kept for the benchmark): irreducible or silent false",
-      "by": "Korela For Science"
-    },
-    {
-      "date": "2026-09-09",
-      "event": "migrated; classified damage=SPURIOUS_EDGE injection=FORMAT (judgment, unreviewed by a second reader)",
-      "by": "Fault Atlas migration"
-    },
-    {
-      "date": "2026-09-09",
-      "event": "internal tool paths removed from observation notes before publication; wording otherwise unchanged",
-      "by": "Fault Atlas"
-    },
-    {
-      "date": "2026-09-09",
-      "event": "exact probe attached to the 272-file observation: probes/2026-08/line-089.py, re-run 119/272 (excerpt figure differs, both kept)",
-      "by": "Fault Atlas maintainer"
-    },
-    {
-      "date": "2026-09-10",
-      "event": "era recorded: both (from the August verdicts, which the atlas had not carried)",
-      "by": "Fault Atlas maintainer"
-    }
-  ],
-  "probes": [
-    {
-      "file": "probes/2026-08/line-089.py",
-      "kind": "python",
-      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
-      "written": "2026-08-08",
-      "run": "python3 tools/run_probe.py probes/2026-08/line-089.py <dir with the 272 .xml>",
-      "result": {
-        "date": "2026-09-09",
-        "count": 119,
-        "of": 272,
-        "strata": {
-          "essai": 24,
-          "nonEN": 23,
-          "meta": 20,
-          "bio": 18,
-          "phys": 13,
-          "moderne": 9,
-          "cas": 7,
-          "retract": 5
-        },
-        "examples": [
-          [
-            "bio-PMC12583535.xml",
-            [
-              "8 auteurs · 5 affiliations"
-            ]
-          ],
-          [
-            "bio-PMC12674831.xml",
-            [
-              "115 auteurs · 57 affiliations"
-            ]
-          ],
-          [
-            "bio-PMC12882215.xml",
-            [
-              "7 auteurs · 4 affiliations"
-            ]
-          ],
-          [
-            "bio-PMC12909487.xml",
-            [
-              "6 auteurs · 4 affiliations"
-            ]
-          ],
-          [
-            "bio-PMC12927065.xml",
-            [
-              "23 auteurs · 18 affiliations"
-            ]
-          ],
-          [
-            "bio-PMC12927975.xml",
-            [
-              "8 auteurs · 4 affiliations"
-            ]
-          ],
-          [
-            "bio-PMC12959687.xml",
-            [
-              "8 auteurs · 6 affiliations"
-            ]
-          ],
-          [
-            "bio-PMC13097615.xml",
-            [
-              "9 auteurs · 7 affiliations"
-            ]
-          ],
-          [
-            "bio-PMC13099299.xml",
-            [
-              "13 auteurs · 4 affiliations"
-            ]
-          ],
-          [
-            "bio-PMC13155703.xml",
-            [
-              "18 auteurs · 6 affiliations"
-            ]
-          ],
-          [
-            "bio-PMC13162546.xml",
-            [
-              "11 auteurs · 5 affiliations"
-            ]
-          ],
-          [
-            "bio-PMC13168716.xml",
-            [
-              "8 auteurs · 5 affiliations"
-            ]
-          ]
-        ],
-        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files",
-        "carriers_file": "probes/results/line-089.json"
-      },
-      "matches_excerpt": false,
-      "note": "The figure quoted in the excerpt was counted on 2026-08-08 by a finer, hand-run measurement whose code was not kept; this probe is the one that was kept, and its figure is the one that can be re-run. Both stand, dated."
-    }
-  ],
-  "era": {
-    "value": "both",
-    "measured": "2026-09-10",
-    "source": "VERDICT — the old against the modern, 2026-08-08: 45 PDFs of 1957-1987 against 15 PDFs of 2023-2026, 174 pages, 9 publishers. Its own stated limits: 13 of the 15 modern are biomedical, 100 % English, 100 % open access — a channel that excludes scans, truncated and subscription articles by construction."
-  },
-  "failure_mode": {
-    "value": "FAUX",
-    "means": "a false fact: a value, a type or a link the source never asserted",
-    "source": "the internal catalogue of 2026-08-09 (korela.db, table parametre), line 89; it is not derived from the damage and varies inside a damage class"
-  },
-  "document_years": {
-    "corpus_id": "corpus-europe-pmc-jats-2023-2026",
-    "counts": {
-      "2025": 2,
-      "2026": 10
-    },
-    "carriers_dated": 12,
-    "source": "corpora/index/document-years-europe-pmc-272.json, read 2026-09-11 from each file's earliest pub-date"
+ "id": "form-089",
+ "version": 2,
+ "legacy_line": 89,
+ "name": "Complex attributions and affiliations",
+ "name_fr": "Attributions et affiliations complexes",
+ "origin": {
+  "organisation": "Loxyn SAS, Lyon",
+  "campaign": "August 2026 — observation campaign (Korela For Science)",
+  "contact": "contact@loxyn.ai"
+ },
+ "damage": "SPURIOUS_EDGE",
+ "class": "IRREDUCIBLE",
+ "layer": "④ extraction",
+ "injection": "FORMAT",
+ "legacy_severity": "G2",
+ "legacy_mechanism": "M4",
+ "status": "migrated_unreviewed",
+ "seen": [
+  {
+   "corpus": "observation 2026-08 (272 Europe PMC JATS articles)",
+   "date": "2026-08-08",
+   "observer": "house observer (LLM agent), see report",
+   "excerpt": "MESURÉ le 08/08/2026 sur les 272 articles de (internal corpus of 272 JATS articles) : 106/272 (39 %) déclarent au moins deux <aff> ET au moins un auteur rattaché à deux affiliations par renvoi de note — bio-PMC12674831 en porte 57 affiliations pour 11 auteurs multi-affiliés, bio-PMC12882215 en a 4 pour 4 auteurs. Le lien auteur→institution passe par le symbole, jamais par une phrase. L'observation qui fonde la ligne est datée du 08/08/2026 sur Duncker et al., Br. J. Pharmac. 1986.",
+   "lang": "fr",
+   "excerpt_en": "MEASURED on 2026-08-08 on the 272 articles of the internal corpus: 106/272 (39 %) declare at least two <aff> AND at least one author attached to two affiliations by footnote reference — bio-PMC12674831 carries 57 affiliations for 11 multi-affiliated authors, bio-PMC12882215 has 4 for 4 authors. The author→institution link goes through the symbol, never through a sentence. The observation founding the line is dated 2026-08-08 on Duncker et al., Br. J. Pharmac. 1986.",
+   "organisation": "Loxyn SAS, Lyon",
+   "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+   "probe": "probes/2026-08/line-089.py"
   }
+ ],
+ "specimens": {
+  "cases": [],
+  "counter_examples": []
+ },
+ "prevention": {
+  "cancellable_by_code": false
+ },
+ "repair": {
+  "reachable_by_deletion": "yes",
+  "note": "the faulty edge can be deleted",
+  "measured": {
+   "value": "depends_on_visibility",
+   "reached": 366,
+   "injected": 721,
+   "note": "360 of 360 when a law can see it, 6 of 361 when none can",
+   "source": "measured 2026-09-10 by pgrepair (SciPyWeightedILP) on the frozen EUR-Lex truth, three identical runs, journal sha256 in measures/reachability-by-damage-2026-09-10.json. Per damage class, not per form: two forms of the same damage and the same visibility get the same answer.",
+   "date": "2026-09-10",
+   "disagrees_with_the_judgment": "yes"
+  },
+  "obstacle": {
+   "value": "the information",
+   "reason": "Deletion is the right gesture here: the false edge has to go. What is missing is what tells it from the true one when no constraint separates them. Measured: with a weight carried from the document, a repairer goes from 65 of 130 — a coin — to 130 of 130, stable on three runs.",
+   "reason_fr": "La suppression est ici le bon geste : la fausse arête doit partir. Ce qui manque, c'est de quoi la distinguer de la vraie quand aucune contrainte ne les sépare. Mesuré : avec un poids porté depuis le document, un réparateur passe de 65 sur 130 — une pièce — à 130 sur 130, stable.",
+   "source": "derived from what a deletion-only repair can express, read in the repairer's own code — its solution is a set of elements to delete and carries no insertion — together with the measurement of 2026-09-10. Per damage class, not per form.",
+   "date": "2026-09-13"
+  }
+ },
+ "judgeable_by": [
+  "construction",
+  "curated",
+  "closed_world"
+ ],
+ "history": [
+  {
+   "date": "2026-08-09",
+   "event": "catalogue line 89 — GOLDEN (kept for the benchmark): irreducible or silent false",
+   "by": "Korela For Science"
+  },
+  {
+   "date": "2026-09-09",
+   "event": "migrated; classified damage=SPURIOUS_EDGE injection=FORMAT (judgment, unreviewed by a second reader)",
+   "by": "Fault Atlas migration"
+  },
+  {
+   "date": "2026-09-09",
+   "event": "internal tool paths removed from observation notes before publication; wording otherwise unchanged",
+   "by": "Fault Atlas"
+  },
+  {
+   "date": "2026-09-09",
+   "event": "exact probe attached to the 272-file observation: probes/2026-08/line-089.py, re-run 119/272 (excerpt figure differs, both kept)",
+   "by": "Fault Atlas maintainer"
+  },
+  {
+   "date": "2026-09-10",
+   "event": "era recorded: both (from the August verdicts, which the atlas had not carried)",
+   "by": "Fault Atlas maintainer"
+  }
+ ],
+ "probes": [
+  {
+   "file": "probes/2026-08/line-089.py",
+   "kind": "python",
+   "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+   "written": "2026-08-08",
+   "run": "python3 tools/run_probe.py probes/2026-08/line-089.py <dir with the 272 .xml>",
+   "result": {
+    "date": "2026-09-09",
+    "count": 119,
+    "of": 272,
+    "strata": {
+     "essai": 24,
+     "nonEN": 23,
+     "meta": 20,
+     "bio": 18,
+     "phys": 13,
+     "moderne": 9,
+     "cas": 7,
+     "retract": 5
+    },
+    "examples": [
+     [
+      "bio-PMC12583535.xml",
+      [
+       "8 auteurs · 5 affiliations"
+      ]
+     ],
+     [
+      "bio-PMC12674831.xml",
+      [
+       "115 auteurs · 57 affiliations"
+      ]
+     ],
+     [
+      "bio-PMC12882215.xml",
+      [
+       "7 auteurs · 4 affiliations"
+      ]
+     ],
+     [
+      "bio-PMC12909487.xml",
+      [
+       "6 auteurs · 4 affiliations"
+      ]
+     ],
+     [
+      "bio-PMC12927065.xml",
+      [
+       "23 auteurs · 18 affiliations"
+      ]
+     ],
+     [
+      "bio-PMC12927975.xml",
+      [
+       "8 auteurs · 4 affiliations"
+      ]
+     ],
+     [
+      "bio-PMC12959687.xml",
+      [
+       "8 auteurs · 6 affiliations"
+      ]
+     ],
+     [
+      "bio-PMC13097615.xml",
+      [
+       "9 auteurs · 7 affiliations"
+      ]
+     ],
+     [
+      "bio-PMC13099299.xml",
+      [
+       "13 auteurs · 4 affiliations"
+      ]
+     ],
+     [
+      "bio-PMC13155703.xml",
+      [
+       "18 auteurs · 6 affiliations"
+      ]
+     ],
+     [
+      "bio-PMC13162546.xml",
+      [
+       "11 auteurs · 5 affiliations"
+      ]
+     ],
+     [
+      "bio-PMC13168716.xml",
+      [
+       "8 auteurs · 5 affiliations"
+      ]
+     ]
+    ],
+    "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files",
+    "carriers_file": "probes/results/line-089.json"
+   },
+   "matches_excerpt": false,
+   "note": "The figure quoted in the excerpt was counted on 2026-08-08 by a finer, hand-run measurement whose code was not kept; this probe is the one that was kept, and its figure is the one that can be re-run. Both stand, dated."
+  }
+ ],
+ "era": {
+  "value": "both",
+  "measured": "2026-09-10",
+  "source": "VERDICT — the old against the modern, 2026-08-08: 45 PDFs of 1957-1987 against 15 PDFs of 2023-2026, 174 pages, 9 publishers. Its own stated limits: 13 of the 15 modern are biomedical, 100 % English, 100 % open access — a channel that excludes scans, truncated and subscription articles by construction."
+ },
+ "failure_mode": {
+  "value": "FAUX",
+  "means": "a false fact: a value, a type or a link the source never asserted",
+  "source": "the internal catalogue of 2026-08-09 (korela.db, table parametre), line 89; it is not derived from the damage and varies inside a damage class"
+ },
+ "document_years": {
+  "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+  "counts": {
+   "2025": 2,
+   "2026": 10
+  },
+  "carriers_dated": 12,
+  "source": "corpora/index/document-years-europe-pmc-272.json, read 2026-09-11 from each file's earliest pub-date"
+ }
 }

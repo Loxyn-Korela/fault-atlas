@@ -1,208 +1,215 @@
 {
-  "id": "form-083",
-  "version": 3,
-  "legacy_line": 83,
-  "name": "The table carries its own definitions",
-  "name_fr": "Le tableau porte ses propres définitions",
-  "origin": {
-    "organisation": "Loxyn SAS, Lyon",
-    "campaign": "August 2026 — observation campaign (Korela For Science)",
-    "contact": "contact@loxyn.ai"
-  },
-  "damage": "MISSING",
-  "class": "IRREDUCIBLE",
-  "layer": "⑥ resolution",
-  "injection": "MOVE",
-  "legacy_severity": "G3",
-  "legacy_mechanism": "M8",
-  "status": "validated",
-  "seen": [
-    {
-      "corpus": "observation 2026-08 (272 Europe PMC JATS articles)",
-      "date": "2026-08-08",
-      "observer": "house observer (LLM agent), see report",
-      "excerpt": "MESURÉ le 08/08/2026 sur 272 articles XML JATS : 180/272 (66 %) portent au moins un tableau, 128/272 (47 %) un pied de tableau, et 47/272 (17 %) y définissent leurs sigles — relevé « ST: title screening; SR: abstract screening; LC: full-text review; SF: studies finally included » (bio-PMC12909487) et « LC, drug loading content; EE, encapsulation efficiency » (bio-PMC12583535). 351 pieds de tableau au total.",
-      "lang": "fr",
-      "excerpt_en": "MEASURED on 2026-08-08 on 272 JATS XML articles: 180/272 (66 %) carry at least one table, 128/272 (47 %) a table footer, and 47/272 (17 %) define their acronyms there — recorded \"ST: title screening; SR: abstract screening; LC: full-text review; SF: studies finally included\" (bio-PMC12909487) and \"LC, drug loading content; EE, encapsulation efficiency\" (bio-PMC12583535). 351 table footers in total.",
-      "organisation": "Loxyn SAS, Lyon",
-      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
-      "probe": "probes/2026-08/line-083.py"
-    }
-  ],
-  "specimens": {
-    "cases": [],
-    "counter_examples": []
-  },
-  "prevention": {
-    "cancellable_by_code": false
-  },
-  "repair": {
-    "reachable_by_deletion": "no",
-    "note": "deletion cannot restore this; derived from the damage class by the migration of 2026-09-09, not judged form by form and not measured — the bench can measure it",
-    "measured": {
-      "value": "no",
-      "reached": 0,
-      "injected": 423,
-      "note": "0 of 423 reached",
-      "source": "measured 2026-09-10 by pgrepair (SciPyWeightedILP) on the frozen EUR-Lex truth, three identical runs, journal sha256 in measures/reachability-by-damage-2026-09-10.json. Per damage class, not per form: two forms of the same damage and the same visibility get the same answer.",
-      "date": "2026-09-10"
-    }
-  },
-  "judgeable_by": [
-    "construction",
-    "curated",
-    "closed_world"
-  ],
-  "history": [
-    {
-      "date": "2026-08-09",
-      "event": "catalogue line 83 — GOLDEN (kept for the benchmark): irreducible or silent false",
-      "by": "Korela For Science"
-    },
-    {
-      "date": "2026-09-09",
-      "event": "migrated; classified damage=MISSING injection=MOVE (judgment, unreviewed by a second reader)",
-      "by": "Fault Atlas migration"
-    },
-    {
-      "date": "2026-09-09",
-      "event": "exact probe attached to the 272-file observation: probes/2026-08/line-083.py (rewritten from the campaign's inline script), re-run 47/272",
-      "by": "Fault Atlas maintainer"
-    },
-    {
-      "date": "2026-09-10",
-      "event": "second reader: validated — read in full with the record: a dated measurement, a named corpus, real forms",
-      "by": "Coralie Bagnol-Lebon"
-    },
-    {
-      "date": "2026-09-10",
-      "event": "era recorded: both — idem (from the August verdicts, which the atlas had not carried)",
-      "by": "Fault Atlas maintainer"
-    }
-  ],
-  "probes": [
-    {
-      "file": "probes/2026-08/line-083.py",
-      "kind": "python",
-      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
-      "written": "2026-08-08",
-      "run": "python3 tools/run_probe.py probes/2026-08/line-083.py <dir with the 272 .xml>",
-      "result": {
-        "date": "2026-09-09",
-        "count": 47,
-        "of": 272,
-        "strata": {
-          "nonEN": 16,
-          "bio": 11,
-          "meta": 10,
-          "essai": 6,
-          "moderne": 3,
-          "phys": 1
-        },
-        "examples": [
-          [
-            "bio-PMC12583535.xml",
-            [
-              "cles; PEG-EV : poly ethylene glycol-coated extracellular vesicles; MOF"
-            ]
-          ],
-          [
-            "bio-PMC12674831.xml",
-            [
-              "BMI: body mass index.",
-              "BMI: body mass index; IOM: Institute of Medicine."
-            ]
-          ],
-          [
-            "bio-PMC12857832.xml",
-            [
-              "POP: postoperative pneumonia; nPOP: non-postoperative pneumo",
-              "ADC: adenocarcinoma; BMI: body mass index; COPD: chronic obs"
-            ]
-          ],
-          [
-            "bio-PMC12909487.xml",
-            [
-              "ST: title screening; SR: abstract screening; LC: full-text r"
-            ]
-          ],
-          [
-            "bio-PMC12927065.xml",
-            [
-              "CI: Confidence interval; DF: degree of freedom."
-            ]
-          ],
-          [
-            "bio-PMC13099299.xml",
-            [
-              "PC: Prospective cohort; RC: Retrospective cohort; PAF: Parox"
-            ]
-          ],
-          [
-            "bio-PMC13116881.xml",
-            [
-              "ds ratio, AMI: acute myocardial infarction, BDI: Beck’s Depression Ind"
-            ]
-          ],
-          [
-            "bio-PMC13162546.xml",
-            [
-              "EPR: Enhanced permeability and retention.",
-              "ADCC: antibody-dependent cell-mediated cytotoxicity; CDC: co"
-            ]
-          ],
-          [
-            "bio-PMC13203479.xml",
-            [
-              "vailable, ED: emergency departments.",
-              "or less, PNC: Particle number concentration, CO: carbon monoxide, PAH"
-            ]
-          ],
-          [
-            "bio-PMC13207820.xml",
-            [
-              "analysis. BMI: body mass index; CA-125: cancer antigen 125.",
-              "ariables. BMI: body mass index; CA-125: cancer antigen 125; U/mL: unit"
-            ]
-          ],
-          [
-            "bio-PMC13218538.xml",
-            [
-              "entheses. TC: Total cholesterol; LDL - C: Low-density lipoprotein chol"
-            ]
-          ],
-          [
-            "essai-PMC13205709.xml",
-            [
-              "eviation: FGD: focus group discussion."
-            ]
-          ]
-        ],
-        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files",
-        "carriers_file": "probes/results/line-083.json"
-      },
-      "matches_excerpt": true
-    }
-  ],
-  "observer_agreement": "2/2 — first reader (Loxyn, August/September classification) and second reader (Coralie Bagnol-Lebon, 2026-09-10)",
-  "era": {
-    "value": "both",
-    "measured": "2026-09-10",
-    "source": "VERDICT — the old against the modern, 2026-08-08: 45 PDFs of 1957-1987 against 15 PDFs of 2023-2026, 174 pages, 9 publishers. Its own stated limits: 13 of the 15 modern are biomedical, 100 % English, 100 % open access — a channel that excludes scans, truncated and subscription articles by construction.",
-    "note": "idem"
-  },
-  "failure_mode": {
-    "value": "MANQ",
-    "means": "a gap: the graph is incomplete where the reading did not reach, not wrong",
-    "source": "the internal catalogue of 2026-08-09 (korela.db, table parametre), line 83; it is not derived from the damage and varies inside a damage class"
-  },
-  "document_years": {
-    "corpus_id": "corpus-europe-pmc-jats-2023-2026",
-    "counts": {
-      "2025": 2,
-      "2026": 10
-    },
-    "carriers_dated": 12,
-    "source": "corpora/index/document-years-europe-pmc-272.json, read 2026-09-11 from each file's earliest pub-date"
+ "id": "form-083",
+ "version": 3,
+ "legacy_line": 83,
+ "name": "The table carries its own definitions",
+ "name_fr": "Le tableau porte ses propres définitions",
+ "origin": {
+  "organisation": "Loxyn SAS, Lyon",
+  "campaign": "August 2026 — observation campaign (Korela For Science)",
+  "contact": "contact@loxyn.ai"
+ },
+ "damage": "MISSING",
+ "class": "IRREDUCIBLE",
+ "layer": "⑥ resolution",
+ "injection": "MOVE",
+ "legacy_severity": "G3",
+ "legacy_mechanism": "M8",
+ "status": "validated",
+ "seen": [
+  {
+   "corpus": "observation 2026-08 (272 Europe PMC JATS articles)",
+   "date": "2026-08-08",
+   "observer": "house observer (LLM agent), see report",
+   "excerpt": "MESURÉ le 08/08/2026 sur 272 articles XML JATS : 180/272 (66 %) portent au moins un tableau, 128/272 (47 %) un pied de tableau, et 47/272 (17 %) y définissent leurs sigles — relevé « ST: title screening; SR: abstract screening; LC: full-text review; SF: studies finally included » (bio-PMC12909487) et « LC, drug loading content; EE, encapsulation efficiency » (bio-PMC12583535). 351 pieds de tableau au total.",
+   "lang": "fr",
+   "excerpt_en": "MEASURED on 2026-08-08 on 272 JATS XML articles: 180/272 (66 %) carry at least one table, 128/272 (47 %) a table footer, and 47/272 (17 %) define their acronyms there — recorded \"ST: title screening; SR: abstract screening; LC: full-text review; SF: studies finally included\" (bio-PMC12909487) and \"LC, drug loading content; EE, encapsulation efficiency\" (bio-PMC12583535). 351 table footers in total.",
+   "organisation": "Loxyn SAS, Lyon",
+   "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+   "probe": "probes/2026-08/line-083.py"
   }
+ ],
+ "specimens": {
+  "cases": [],
+  "counter_examples": []
+ },
+ "prevention": {
+  "cancellable_by_code": false
+ },
+ "repair": {
+  "reachable_by_deletion": "no",
+  "note": "deletion cannot restore this; derived from the damage class by the migration of 2026-09-09, not judged form by form and not measured — the bench can measure it",
+  "measured": {
+   "value": "no",
+   "reached": 0,
+   "injected": 423,
+   "note": "0 of 423 reached",
+   "source": "measured 2026-09-10 by pgrepair (SciPyWeightedILP) on the frozen EUR-Lex truth, three identical runs, journal sha256 in measures/reachability-by-damage-2026-09-10.json. Per damage class, not per form: two forms of the same damage and the same visibility get the same answer.",
+   "date": "2026-09-10"
+  },
+  "obstacle": {
+   "value": "the operation",
+   "reason": "Restoring a gap means ADDING, and a deletion-only repair has no such gesture. Its solution is a set of elements to delete; there is no insertion anywhere in it. No weight and no information change that answer.",
+   "reason_fr": "Réparer un manque veut dire AJOUTER, et une réparation par suppression n'a pas ce geste. Sa solution est un ensemble d'éléments à retirer ; il n'y a d'insertion nulle part. Aucun poids et aucune information n'y changent quoi que ce soit.",
+   "source": "derived from what a deletion-only repair can express, read in the repairer's own code — its solution is a set of elements to delete and carries no insertion — together with the measurement of 2026-09-10. Per damage class, not per form.",
+   "date": "2026-09-13"
+  }
+ },
+ "judgeable_by": [
+  "construction",
+  "curated",
+  "closed_world"
+ ],
+ "history": [
+  {
+   "date": "2026-08-09",
+   "event": "catalogue line 83 — GOLDEN (kept for the benchmark): irreducible or silent false",
+   "by": "Korela For Science"
+  },
+  {
+   "date": "2026-09-09",
+   "event": "migrated; classified damage=MISSING injection=MOVE (judgment, unreviewed by a second reader)",
+   "by": "Fault Atlas migration"
+  },
+  {
+   "date": "2026-09-09",
+   "event": "exact probe attached to the 272-file observation: probes/2026-08/line-083.py (rewritten from the campaign's inline script), re-run 47/272",
+   "by": "Fault Atlas maintainer"
+  },
+  {
+   "date": "2026-09-10",
+   "event": "second reader: validated — read in full with the record: a dated measurement, a named corpus, real forms",
+   "by": "Coralie Bagnol-Lebon"
+  },
+  {
+   "date": "2026-09-10",
+   "event": "era recorded: both — idem (from the August verdicts, which the atlas had not carried)",
+   "by": "Fault Atlas maintainer"
+  }
+ ],
+ "probes": [
+  {
+   "file": "probes/2026-08/line-083.py",
+   "kind": "python",
+   "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+   "written": "2026-08-08",
+   "run": "python3 tools/run_probe.py probes/2026-08/line-083.py <dir with the 272 .xml>",
+   "result": {
+    "date": "2026-09-09",
+    "count": 47,
+    "of": 272,
+    "strata": {
+     "nonEN": 16,
+     "bio": 11,
+     "meta": 10,
+     "essai": 6,
+     "moderne": 3,
+     "phys": 1
+    },
+    "examples": [
+     [
+      "bio-PMC12583535.xml",
+      [
+       "cles; PEG-EV : poly ethylene glycol-coated extracellular vesicles; MOF"
+      ]
+     ],
+     [
+      "bio-PMC12674831.xml",
+      [
+       "BMI: body mass index.",
+       "BMI: body mass index; IOM: Institute of Medicine."
+      ]
+     ],
+     [
+      "bio-PMC12857832.xml",
+      [
+       "POP: postoperative pneumonia; nPOP: non-postoperative pneumo",
+       "ADC: adenocarcinoma; BMI: body mass index; COPD: chronic obs"
+      ]
+     ],
+     [
+      "bio-PMC12909487.xml",
+      [
+       "ST: title screening; SR: abstract screening; LC: full-text r"
+      ]
+     ],
+     [
+      "bio-PMC12927065.xml",
+      [
+       "CI: Confidence interval; DF: degree of freedom."
+      ]
+     ],
+     [
+      "bio-PMC13099299.xml",
+      [
+       "PC: Prospective cohort; RC: Retrospective cohort; PAF: Parox"
+      ]
+     ],
+     [
+      "bio-PMC13116881.xml",
+      [
+       "ds ratio, AMI: acute myocardial infarction, BDI: Beck’s Depression Ind"
+      ]
+     ],
+     [
+      "bio-PMC13162546.xml",
+      [
+       "EPR: Enhanced permeability and retention.",
+       "ADCC: antibody-dependent cell-mediated cytotoxicity; CDC: co"
+      ]
+     ],
+     [
+      "bio-PMC13203479.xml",
+      [
+       "vailable, ED: emergency departments.",
+       "or less, PNC: Particle number concentration, CO: carbon monoxide, PAH"
+      ]
+     ],
+     [
+      "bio-PMC13207820.xml",
+      [
+       "analysis. BMI: body mass index; CA-125: cancer antigen 125.",
+       "ariables. BMI: body mass index; CA-125: cancer antigen 125; U/mL: unit"
+      ]
+     ],
+     [
+      "bio-PMC13218538.xml",
+      [
+       "entheses. TC: Total cholesterol; LDL - C: Low-density lipoprotein chol"
+      ]
+     ],
+     [
+      "essai-PMC13205709.xml",
+      [
+       "eviation: FGD: focus group discussion."
+      ]
+     ]
+    ],
+    "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files",
+    "carriers_file": "probes/results/line-083.json"
+   },
+   "matches_excerpt": true
+  }
+ ],
+ "observer_agreement": "2/2 — first reader (Loxyn, August/September classification) and second reader (Coralie Bagnol-Lebon, 2026-09-10)",
+ "era": {
+  "value": "both",
+  "measured": "2026-09-10",
+  "source": "VERDICT — the old against the modern, 2026-08-08: 45 PDFs of 1957-1987 against 15 PDFs of 2023-2026, 174 pages, 9 publishers. Its own stated limits: 13 of the 15 modern are biomedical, 100 % English, 100 % open access — a channel that excludes scans, truncated and subscription articles by construction.",
+  "note": "idem"
+ },
+ "failure_mode": {
+  "value": "MANQ",
+  "means": "a gap: the graph is incomplete where the reading did not reach, not wrong",
+  "source": "the internal catalogue of 2026-08-09 (korela.db, table parametre), line 83; it is not derived from the damage and varies inside a damage class"
+ },
+ "document_years": {
+  "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+  "counts": {
+   "2025": 2,
+   "2026": 10
+  },
+  "carriers_dated": 12,
+  "source": "corpora/index/document-years-europe-pmc-272.json, read 2026-09-11 from each file's earliest pub-date"
+ }
 }

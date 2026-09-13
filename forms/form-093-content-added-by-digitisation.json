@@ -1,199 +1,206 @@
 {
-  "id": "form-093",
-  "version": 2,
-  "legacy_line": 93,
-  "name": "Content added by digitisation",
-  "name_fr": "Contenu ajouté par la numérisation",
-  "origin": {
-    "organisation": "Loxyn SAS, Lyon",
-    "campaign": "August 2026 — observation campaign (Korela For Science)",
-    "contact": "contact@loxyn.ai"
-  },
-  "damage": "SPURIOUS_EDGE",
-  "class": "SILENT_FALSE",
-  "layer": "② reading",
-  "injection": "INSERT",
-  "legacy_severity": "G2",
-  "legacy_mechanism": "M10",
-  "status": "migrated_unreviewed",
-  "seen": [
-    {
-      "corpus": "observation 2026-08 (272 Europe PMC JATS articles)",
-      "date": "2026-08-08",
-      "observer": "house observer (LLM agent), see report",
-      "excerpt": "MESURÉ le 08/08/2026 sur 272 articles XML JATS : 0/272 portent un tampon de chaîne de numérisation (le seul appariement, « scanned by the bare plate », phys-PMC13257740, est un faux positif). ⇒ la mesure CONFIRME le domaine « ancien seulement » du catalogue. L'observation qui fonde la ligne est celle du 08/08/2026 sur Imaizumi et al., Japanese Circulation Journal 1987 : « NII-Electronic Library Service » en pied de CHAQUE page (annexe 93).",
-      "lang": "fr",
-      "excerpt_en": "MEASURED on 2026-08-08 on 272 JATS XML articles: 0/272 carry a digitisation-chain stamp (the only match, \"scanned by the bare plate\", phys-PMC13257740, is a false positive). ⇒ the measurement CONFIRMS the \"old only\" domain of the catalogue. The observation founding the line is the one of 2026-08-08 on Imaizumi et al., Japanese Circulation Journal 1987: \"NII-Electronic Library Service\" at the foot of EVERY page (annex 93).",
-      "organisation": "Loxyn SAS, Lyon",
-      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
-      "probe": "probes/2026-08/line-093.py"
-    }
-  ],
-  "specimens": {
-    "cases": [],
-    "counter_examples": []
-  },
-  "prevention": {
-    "cancellable_by_code": false
-  },
-  "repair": {
-    "reachable_by_deletion": "yes",
-    "note": "the faulty edge can be deleted",
-    "measured": {
-      "value": "depends_on_visibility",
-      "reached": 366,
-      "injected": 721,
-      "note": "360 of 360 when a law can see it, 6 of 361 when none can",
-      "source": "measured 2026-09-10 by pgrepair (SciPyWeightedILP) on the frozen EUR-Lex truth, three identical runs, journal sha256 in measures/reachability-by-damage-2026-09-10.json. Per damage class, not per form: two forms of the same damage and the same visibility get the same answer.",
-      "date": "2026-09-10",
-      "disagrees_with_the_judgment": "yes"
-    }
-  },
-  "judgeable_by": [
-    "construction",
-    "curated",
-    "closed_world"
-  ],
-  "history": [
-    {
-      "date": "2026-08-09",
-      "event": "catalogue line 93 — GOLDEN (kept for the benchmark): irreducible or silent false",
-      "by": "Korela For Science"
-    },
-    {
-      "date": "2026-09-09",
-      "event": "migrated; classified damage=SPURIOUS_EDGE injection=INSERT (judgment, unreviewed by a second reader)",
-      "by": "Fault Atlas migration"
-    },
-    {
-      "date": "2026-09-09",
-      "event": "exact probe attached to the 272-file observation: probes/2026-08/line-093.py (rewritten from the campaign's inline script), re-run 25/272 (excerpt figure differs, both kept)",
-      "by": "Fault Atlas maintainer"
-    },
-    {
-      "date": "2026-09-10",
-      "event": "era recorded: ancient_only — dead in that form, replaced by furniture added by the publisher (see form-117, the Crossmark badge) (from the August verdicts, which the atlas had not carried)",
-      "by": "Fault Atlas maintainer"
-    }
-  ],
-  "probes": [
-    {
-      "file": "probes/2026-08/line-093.py",
-      "kind": "python",
-      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
-      "written": "2026-08-08",
-      "run": "python3 tools/run_probe.py probes/2026-08/line-093.py <dir with the 272 .xml>",
-      "result": {
-        "date": "2026-09-09",
-        "count": 25,
-        "of": 272,
-        "strata": {
-          "phys": 8,
-          "essai": 4,
-          "meta": 4,
-          "moderne": 3,
-          "bio": 2,
-          "cas": 2,
-          "nonEN": 2
-        },
-        "examples": [
-          [
-            "bio-PMC13182387.xml",
-            [
-              "provided by the M"
-            ]
-          ],
-          [
-            "bio-PMC13252842.xml",
-            [
-              "provided by the l"
-            ]
-          ],
-          [
-            "cas-PMC13293792.xml",
-            [
-              "provided by the U"
-            ]
-          ],
-          [
-            "cas-PMC13293799.xml",
-            [
-              "provided by the D"
-            ]
-          ],
-          [
-            "essai-PMC13238360.xml",
-            [
-              "provided by the S"
-            ]
-          ],
-          [
-            "essai-PMC13281132.xml",
-            [
-              "provided by The B"
-            ]
-          ],
-          [
-            "essai-PMC13290998.xml",
-            [
-              "provided by the U"
-            ]
-          ],
-          [
-            "essai-PMC13291766.xml",
-            [
-              "provided by the G"
-            ]
-          ],
-          [
-            "meta-PMC13226718.xml",
-            [
-              "provided by the o"
-            ]
-          ],
-          [
-            "meta-PMC13241412.xml",
-            [
-              "provided by the I"
-            ]
-          ],
-          [
-            "meta-PMC13260247.xml",
-            [
-              "provided by the p"
-            ]
-          ],
-          [
-            "meta-PMC13287149.xml",
-            [
-              "provided by the o"
-            ]
-          ]
-        ],
-        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files",
-        "carriers_file": "probes/results/line-093.json"
-      },
-      "matches_excerpt": false,
-      "note": "The regex matches 25 documents; the excerpt's 0/272 is a human reading of those matches (publisher lines and one physics sentence, not digitisation stamps). Raw matches and reviewed zero both kept."
-    }
-  ],
-  "era": {
-    "value": "ancient_only",
-    "measured": "2026-09-10",
-    "source": "VERDICT — the old against the modern, 2026-08-08: 45 PDFs of 1957-1987 against 15 PDFs of 2023-2026, 174 pages, 9 publishers. Its own stated limits: 13 of the 15 modern are biomedical, 100 % English, 100 % open access — a channel that excludes scans, truncated and subscription articles by construction.",
-    "note": "dead in that form, replaced by furniture added by the publisher (see form-117, the Crossmark badge)"
-  },
-  "failure_mode": {
-    "value": "FAUX",
-    "means": "a false fact: a value, a type or a link the source never asserted",
-    "source": "the internal catalogue of 2026-08-09 (korela.db, table parametre), line 93; it is not derived from the damage and varies inside a damage class"
-  },
-  "document_years": {
-    "corpus_id": "corpus-europe-pmc-jats-2023-2026",
-    "counts": {
-      "2026": 12
-    },
-    "carriers_dated": 12,
-    "source": "corpora/index/document-years-europe-pmc-272.json, read 2026-09-11 from each file's earliest pub-date"
+ "id": "form-093",
+ "version": 2,
+ "legacy_line": 93,
+ "name": "Content added by digitisation",
+ "name_fr": "Contenu ajouté par la numérisation",
+ "origin": {
+  "organisation": "Loxyn SAS, Lyon",
+  "campaign": "August 2026 — observation campaign (Korela For Science)",
+  "contact": "contact@loxyn.ai"
+ },
+ "damage": "SPURIOUS_EDGE",
+ "class": "SILENT_FALSE",
+ "layer": "② reading",
+ "injection": "INSERT",
+ "legacy_severity": "G2",
+ "legacy_mechanism": "M10",
+ "status": "migrated_unreviewed",
+ "seen": [
+  {
+   "corpus": "observation 2026-08 (272 Europe PMC JATS articles)",
+   "date": "2026-08-08",
+   "observer": "house observer (LLM agent), see report",
+   "excerpt": "MESURÉ le 08/08/2026 sur 272 articles XML JATS : 0/272 portent un tampon de chaîne de numérisation (le seul appariement, « scanned by the bare plate », phys-PMC13257740, est un faux positif). ⇒ la mesure CONFIRME le domaine « ancien seulement » du catalogue. L'observation qui fonde la ligne est celle du 08/08/2026 sur Imaizumi et al., Japanese Circulation Journal 1987 : « NII-Electronic Library Service » en pied de CHAQUE page (annexe 93).",
+   "lang": "fr",
+   "excerpt_en": "MEASURED on 2026-08-08 on 272 JATS XML articles: 0/272 carry a digitisation-chain stamp (the only match, \"scanned by the bare plate\", phys-PMC13257740, is a false positive). ⇒ the measurement CONFIRMS the \"old only\" domain of the catalogue. The observation founding the line is the one of 2026-08-08 on Imaizumi et al., Japanese Circulation Journal 1987: \"NII-Electronic Library Service\" at the foot of EVERY page (annex 93).",
+   "organisation": "Loxyn SAS, Lyon",
+   "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+   "probe": "probes/2026-08/line-093.py"
   }
+ ],
+ "specimens": {
+  "cases": [],
+  "counter_examples": []
+ },
+ "prevention": {
+  "cancellable_by_code": false
+ },
+ "repair": {
+  "reachable_by_deletion": "yes",
+  "note": "the faulty edge can be deleted",
+  "measured": {
+   "value": "depends_on_visibility",
+   "reached": 366,
+   "injected": 721,
+   "note": "360 of 360 when a law can see it, 6 of 361 when none can",
+   "source": "measured 2026-09-10 by pgrepair (SciPyWeightedILP) on the frozen EUR-Lex truth, three identical runs, journal sha256 in measures/reachability-by-damage-2026-09-10.json. Per damage class, not per form: two forms of the same damage and the same visibility get the same answer.",
+   "date": "2026-09-10",
+   "disagrees_with_the_judgment": "yes"
+  },
+  "obstacle": {
+   "value": "the information",
+   "reason": "Deletion is the right gesture here: the false edge has to go. What is missing is what tells it from the true one when no constraint separates them. Measured: with a weight carried from the document, a repairer goes from 65 of 130 — a coin — to 130 of 130, stable on three runs.",
+   "reason_fr": "La suppression est ici le bon geste : la fausse arête doit partir. Ce qui manque, c'est de quoi la distinguer de la vraie quand aucune contrainte ne les sépare. Mesuré : avec un poids porté depuis le document, un réparateur passe de 65 sur 130 — une pièce — à 130 sur 130, stable.",
+   "source": "derived from what a deletion-only repair can express, read in the repairer's own code — its solution is a set of elements to delete and carries no insertion — together with the measurement of 2026-09-10. Per damage class, not per form.",
+   "date": "2026-09-13"
+  }
+ },
+ "judgeable_by": [
+  "construction",
+  "curated",
+  "closed_world"
+ ],
+ "history": [
+  {
+   "date": "2026-08-09",
+   "event": "catalogue line 93 — GOLDEN (kept for the benchmark): irreducible or silent false",
+   "by": "Korela For Science"
+  },
+  {
+   "date": "2026-09-09",
+   "event": "migrated; classified damage=SPURIOUS_EDGE injection=INSERT (judgment, unreviewed by a second reader)",
+   "by": "Fault Atlas migration"
+  },
+  {
+   "date": "2026-09-09",
+   "event": "exact probe attached to the 272-file observation: probes/2026-08/line-093.py (rewritten from the campaign's inline script), re-run 25/272 (excerpt figure differs, both kept)",
+   "by": "Fault Atlas maintainer"
+  },
+  {
+   "date": "2026-09-10",
+   "event": "era recorded: ancient_only — dead in that form, replaced by furniture added by the publisher (see form-117, the Crossmark badge) (from the August verdicts, which the atlas had not carried)",
+   "by": "Fault Atlas maintainer"
+  }
+ ],
+ "probes": [
+  {
+   "file": "probes/2026-08/line-093.py",
+   "kind": "python",
+   "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+   "written": "2026-08-08",
+   "run": "python3 tools/run_probe.py probes/2026-08/line-093.py <dir with the 272 .xml>",
+   "result": {
+    "date": "2026-09-09",
+    "count": 25,
+    "of": 272,
+    "strata": {
+     "phys": 8,
+     "essai": 4,
+     "meta": 4,
+     "moderne": 3,
+     "bio": 2,
+     "cas": 2,
+     "nonEN": 2
+    },
+    "examples": [
+     [
+      "bio-PMC13182387.xml",
+      [
+       "provided by the M"
+      ]
+     ],
+     [
+      "bio-PMC13252842.xml",
+      [
+       "provided by the l"
+      ]
+     ],
+     [
+      "cas-PMC13293792.xml",
+      [
+       "provided by the U"
+      ]
+     ],
+     [
+      "cas-PMC13293799.xml",
+      [
+       "provided by the D"
+      ]
+     ],
+     [
+      "essai-PMC13238360.xml",
+      [
+       "provided by the S"
+      ]
+     ],
+     [
+      "essai-PMC13281132.xml",
+      [
+       "provided by The B"
+      ]
+     ],
+     [
+      "essai-PMC13290998.xml",
+      [
+       "provided by the U"
+      ]
+     ],
+     [
+      "essai-PMC13291766.xml",
+      [
+       "provided by the G"
+      ]
+     ],
+     [
+      "meta-PMC13226718.xml",
+      [
+       "provided by the o"
+      ]
+     ],
+     [
+      "meta-PMC13241412.xml",
+      [
+       "provided by the I"
+      ]
+     ],
+     [
+      "meta-PMC13260247.xml",
+      [
+       "provided by the p"
+      ]
+     ],
+     [
+      "meta-PMC13287149.xml",
+      [
+       "provided by the o"
+      ]
+     ]
+    ],
+    "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files",
+    "carriers_file": "probes/results/line-093.json"
+   },
+   "matches_excerpt": false,
+   "note": "The regex matches 25 documents; the excerpt's 0/272 is a human reading of those matches (publisher lines and one physics sentence, not digitisation stamps). Raw matches and reviewed zero both kept."
+  }
+ ],
+ "era": {
+  "value": "ancient_only",
+  "measured": "2026-09-10",
+  "source": "VERDICT — the old against the modern, 2026-08-08: 45 PDFs of 1957-1987 against 15 PDFs of 2023-2026, 174 pages, 9 publishers. Its own stated limits: 13 of the 15 modern are biomedical, 100 % English, 100 % open access — a channel that excludes scans, truncated and subscription articles by construction.",
+  "note": "dead in that form, replaced by furniture added by the publisher (see form-117, the Crossmark badge)"
+ },
+ "failure_mode": {
+  "value": "FAUX",
+  "means": "a false fact: a value, a type or a link the source never asserted",
+  "source": "the internal catalogue of 2026-08-09 (korela.db, table parametre), line 93; it is not derived from the damage and varies inside a damage class"
+ },
+ "document_years": {
+  "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+  "counts": {
+   "2026": 12
+  },
+  "carriers_dated": 12,
+  "source": "corpora/index/document-years-europe-pmc-272.json, read 2026-09-11 from each file's earliest pub-date"
+ }
 }

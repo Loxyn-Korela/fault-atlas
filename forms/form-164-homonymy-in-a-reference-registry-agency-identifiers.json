@@ -1,65 +1,72 @@
 {
-  "id": "form-164",
-  "version": 2,
-  "name": "Homonymy in a reference registry (agency identifiers)",
-  "origin": {
-    "organisation": "Loxyn SAS, Lyon",
-    "campaign": "September 2026 — PubMed substrate and other corpora (Voûte)",
-    "contact": "contact@loxyn.ai"
+ "id": "form-164",
+ "version": 2,
+ "name": "Homonymy in a reference registry (agency identifiers)",
+ "origin": {
+  "organisation": "Loxyn SAS, Lyon",
+  "campaign": "September 2026 — PubMed substrate and other corpora (Voûte)",
+  "contact": "contact@loxyn.ai"
+ },
+ "damage": "MERGE",
+ "class": "UNCLASSIFIED",
+ "layer": "⑥ resolution",
+ "injection": "ALTER",
+ "status": "proposed",
+ "seen": [],
+ "specimens": {
+  "cases": [],
+  "counter_examples": []
+ },
+ "prevention": {
+  "cancellable_by_code": false,
+  "note": "not assessed"
+ },
+ "repair": {
+  "reachable_by_deletion": "no",
+  "note": "deletion cannot restore this; derived from the damage class by the migration of 2026-09-09, not judged form by form and not measured — the bench can measure it",
+  "measured": {
+   "value": "no",
+   "reached": 0,
+   "injected": 2532,
+   "note": "0 of 2,532 reached",
+   "source": "measured 2026-09-10 by pgrepair (SciPyWeightedILP) on the frozen EUR-Lex truth, three identical runs, journal sha256 in measures/reachability-by-damage-2026-09-10.json. Per damage class, not per form: two forms of the same damage and the same visibility get the same answer.",
+   "date": "2026-09-10"
   },
-  "damage": "MERGE",
-  "class": "UNCLASSIFIED",
-  "layer": "⑥ resolution",
-  "injection": "ALTER",
-  "status": "proposed",
-  "seen": [],
-  "specimens": {
-    "cases": [],
-    "counter_examples": []
+  "obstacle": {
+   "value": "the operation",
+   "reason": "Two entities fused into one are separated by SPLITTING, which means deciding which fact belongs to whom. Deletion can only remove the fused node and everything hanging from it.",
+   "reason_fr": "Deux entités fondues en une se séparent en les SCINDANT, ce qui veut dire décider quel fait appartient à qui. La suppression ne peut que retirer le nœud fondu et tout ce qui y pend.",
+   "source": "derived from what a deletion-only repair can express, read in the repairer's own code — its solution is a set of elements to delete and carries no insertion — together with the measurement of 2026-09-10. Per damage class, not per form.",
+   "date": "2026-09-13"
+  }
+ },
+ "judgeable_by": [
+  "registry"
+ ],
+ "related": [
+  "form-026"
+ ],
+ "history": [
+  {
+   "date": "2026-09-09",
+   "event": "reported second-hand by the Voûte Claude (form 23 of 23): '52 proven homonymies and about 800 estimated' in the reference data of a US agency — the measurement file is not located; recorded as a hypothesis until the evidence is found (a silent grep is not an absence)",
+   "by": "Claude Voûte (LLM agent), session 8d9c5098, from the Substrat measurement files"
   },
-  "prevention": {
-    "cancellable_by_code": false,
-    "note": "not assessed"
-  },
-  "repair": {
-    "reachable_by_deletion": "no",
-    "note": "deletion cannot restore this; derived from the damage class by the migration of 2026-09-09, not judged form by form and not measured — the bench can measure it",
-    "measured": {
-      "value": "no",
-      "reached": 0,
-      "injected": 2532,
-      "note": "0 of 2,532 reached",
-      "source": "measured 2026-09-10 by pgrepair (SciPyWeightedILP) on the frozen EUR-Lex truth, three identical runs, journal sha256 in measures/reachability-by-damage-2026-09-10.json. Per damage class, not per form: two forms of the same damage and the same visibility get the same answer.",
-      "date": "2026-09-10"
-    }
-  },
-  "judgeable_by": [
-    "registry"
-  ],
-  "related": [
-    "form-026"
-  ],
-  "history": [
-    {
-      "date": "2026-09-09",
-      "event": "reported second-hand by the Voûte Claude (form 23 of 23): '52 proven homonymies and about 800 estimated' in the reference data of a US agency — the measurement file is not located; recorded as a hypothesis until the evidence is found (a silent grep is not an absence)",
-      "by": "Claude Voûte (LLM agent), session 8d9c5098, from the Substrat measurement files"
-    },
-    {
-      "date": "2026-09-10",
-      "event": "second reader: contested — no measurement located for the observation; contested by the second reader on 2026-09-10, to be settled when a specimen or a probe exists",
-      "by": "Coralie Bagnol-Lebon"
-    }
-  ],
-  "proposed_severity": {
-    "value": "G1",
-    "reason": "the same writing for several agencies: the facts of two bodies land on one node",
-    "proposed_by": "Fault Atlas maintainer (Loxyn), first reading",
-    "date": "2026-09-11",
-    "status": "proposed — a second reader confirms or contests, as for the 43 validated forms",
-    "adds_to_the_damage_class": false,
-    "note": "this reading agrees with how the August catalogue judges most MERGE forms (G1), so it adds little",
-    "reason_fr": "la même graphie pour plusieurs agences : les faits de deux organismes se posent sur un seul nœud"
-  },
-  "name_fr": "Homonymie dans un registre de référence (identifiants d'agence)"
+  {
+   "date": "2026-09-10",
+   "event": "second reader: contested — no measurement located for the observation; contested by the second reader on 2026-09-10, to be settled when a specimen or a probe exists",
+   "by": "Coralie Bagnol-Lebon"
+  }
+ ],
+ "proposed_severity": {
+  "value": "G1",
+  "reason": "the same writing for several agencies: the facts of two bodies land on one node",
+  "proposed_by": "Fault Atlas maintainer (Loxyn), first reading",
+  "date": "2026-09-11",
+  "status": "proposed — a second reader confirms or contests, as for the 43 validated forms",
+  "adds_to_the_damage_class": false,
+  "note": "this reading agrees with how the August catalogue judges most MERGE forms (G1), so it adds little",
+  "reason_fr": "la même graphie pour plusieurs agences : les faits de deux organismes se posent sur un seul nœud"
+ },
+ "name_fr": "Homonymie dans un registre de référence (identifiants d'agence)"
 }

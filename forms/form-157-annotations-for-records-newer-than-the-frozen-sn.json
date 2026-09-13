@@ -1,86 +1,93 @@
 {
-  "id": "form-157",
-  "version": 2,
-  "name": "Annotations for records newer than the frozen snapshot (false recent decline)",
-  "origin": {
-    "organisation": "Loxyn SAS, Lyon",
-    "campaign": "September 2026 — PubMed substrate and other corpora (Voûte)",
-    "contact": "contact@loxyn.ai"
+ "id": "form-157",
+ "version": 2,
+ "name": "Annotations for records newer than the frozen snapshot (false recent decline)",
+ "origin": {
+  "organisation": "Loxyn SAS, Lyon",
+  "campaign": "September 2026 — PubMed substrate and other corpora (Voûte)",
+  "contact": "contact@loxyn.ai"
+ },
+ "damage": "MISSING",
+ "class": "REFUSABLE",
+ "layer": "⑨ structure",
+ "injection": "DELETE",
+ "status": "proposed",
+ "seen": [
+  {
+   "corpus": "PubTator3 frozen 2026-08-18 18:08 (bioconcepts2pubtator3.gz, sha256 856353fb…) against PubMed/MEDLINE baseline frozen 2026-08-18 (39,994,988 records) (max PMID 41,610,285)",
+   "document": "REJETS-hors-instantane-par-annee.json (2026-08-19)",
+   "date": "2026-08-19",
+   "observer": "Claude Voûte (LLM agent), session 8d9c5098, from the Substrat measurement files",
+   "excerpt": "REJETS-hors-instantane-par-annee.json (19-08-2026) : relations « lignes rejetées 1 238 995 · PMID distincts 278 093 · au-delà de la borne 270 047 » ; entités « lignes rejetées 6 741 580 · PMID distincts 855 858 · au-delà de la borne 843 713 » ; « 97,1 % des PMID rejetés des relations et 98,6 % de ceux des entités sont au-delà de la borne haute de l'instantané ; le reste — 8 046 pour les relations, 12 145 pour les entités — constitue le vrai manque ».",
+   "excerpt_en": "REJETS-hors-instantane-par-annee.json (2026-08-19): relations \"rejected lines 1,238,995 · distinct PMIDs 278,093 · beyond the bound 270,047\"; entities \"rejected lines 6,741,580 · distinct PMIDs 855,858 · beyond the bound 843,713\"; \"97.1 % of rejected PMIDs for relations and 98.6 % for entities are beyond the upper bound of the snapshot; the rest — 8,046 for relations, 12,145 for entities — is the true gap\".",
+   "lang": "fr",
+   "organisation": "Loxyn SAS, Lyon"
+  }
+ ],
+ "specimens": {
+  "cases": [],
+  "counter_examples": []
+ },
+ "prevention": {
+  "cancellable_by_code": true,
+  "refusal_clause": "the snapshot bound is known: no coverage claim is made past it, and annotations for records newer than the bound are counted apart, never read as a decline",
+  "refusal_clause_fr": "la borne de l'instantané est connue : aucune affirmation de couverture au-delà, et les annotations de fiches plus récentes que la borne sont comptées à part, jamais lues comme un déclin"
+ },
+ "repair": {
+  "reachable_by_deletion": "no",
+  "note": "deletion cannot restore this; derived from the damage class by the migration of 2026-09-09, not judged form by form and not measured — the bench can measure it",
+  "measured": {
+   "value": "no",
+   "reached": 0,
+   "injected": 423,
+   "note": "0 of 423 reached",
+   "source": "measured 2026-09-10 by pgrepair (SciPyWeightedILP) on the frozen EUR-Lex truth, three identical runs, journal sha256 in measures/reachability-by-damage-2026-09-10.json. Per damage class, not per form: two forms of the same damage and the same visibility get the same answer.",
+   "date": "2026-09-10"
   },
-  "damage": "MISSING",
-  "class": "REFUSABLE",
-  "layer": "⑨ structure",
-  "injection": "DELETE",
-  "status": "proposed",
-  "seen": [
-    {
-      "corpus": "PubTator3 frozen 2026-08-18 18:08 (bioconcepts2pubtator3.gz, sha256 856353fb…) against PubMed/MEDLINE baseline frozen 2026-08-18 (39,994,988 records) (max PMID 41,610,285)",
-      "document": "REJETS-hors-instantane-par-annee.json (2026-08-19)",
-      "date": "2026-08-19",
-      "observer": "Claude Voûte (LLM agent), session 8d9c5098, from the Substrat measurement files",
-      "excerpt": "REJETS-hors-instantane-par-annee.json (19-08-2026) : relations « lignes rejetées 1 238 995 · PMID distincts 278 093 · au-delà de la borne 270 047 » ; entités « lignes rejetées 6 741 580 · PMID distincts 855 858 · au-delà de la borne 843 713 » ; « 97,1 % des PMID rejetés des relations et 98,6 % de ceux des entités sont au-delà de la borne haute de l'instantané ; le reste — 8 046 pour les relations, 12 145 pour les entités — constitue le vrai manque ».",
-      "excerpt_en": "REJETS-hors-instantane-par-annee.json (2026-08-19): relations \"rejected lines 1,238,995 · distinct PMIDs 278,093 · beyond the bound 270,047\"; entities \"rejected lines 6,741,580 · distinct PMIDs 855,858 · beyond the bound 843,713\"; \"97.1 % of rejected PMIDs for relations and 98.6 % for entities are beyond the upper bound of the snapshot; the rest — 8,046 for relations, 12,145 for entities — is the true gap\".",
-      "lang": "fr",
-      "organisation": "Loxyn SAS, Lyon"
-    }
-  ],
-  "specimens": {
-    "cases": [],
-    "counter_examples": []
+  "obstacle": {
+   "value": "the operation",
+   "reason": "Restoring a gap means ADDING, and a deletion-only repair has no such gesture. Its solution is a set of elements to delete; there is no insertion anywhere in it. No weight and no information change that answer.",
+   "reason_fr": "Réparer un manque veut dire AJOUTER, et une réparation par suppression n'a pas ce geste. Sa solution est un ensemble d'éléments à retirer ; il n'y a d'insertion nulle part. Aucun poids et aucune information n'y changent quoi que ce soit.",
+   "source": "derived from what a deletion-only repair can express, read in the repairer's own code — its solution is a set of elements to delete and carries no insertion — together with the measurement of 2026-09-10. Per damage class, not per form.",
+   "date": "2026-09-13"
+  }
+ },
+ "judgeable_by": [
+  "registry"
+ ],
+ "related": [],
+ "history": [
+  {
+   "date": "2026-09-09",
+   "event": "proposed by the Voûte Claude in 'FORMES-PUBMED-pour-Fault-Atlas (09-09-2026)' (part 1; final file sha256 51a338add43cd071…), form 16 of 23; effect on a graph: Two sources frozen at different moments leave a recent edge that seems to decline; 8,046 and 12,145 PMIDs annotated but absent from the baseline are true holes. Prevalence: measured, above.",
+   "by": "Claude Voûte (LLM agent), session 8d9c5098, from the Substrat measurement files"
   },
-  "prevention": {
-    "cancellable_by_code": true,
-    "refusal_clause": "the snapshot bound is known: no coverage claim is made past it, and annotations for records newer than the bound are counted apart, never read as a decline",
-    "refusal_clause_fr": "la borne de l'instantané est connue : aucune affirmation de couverture au-delà, et les annotations de fiches plus récentes que la borne sont comptées à part, jamais lues comme un déclin"
+  {
+   "date": "2026-09-09",
+   "event": "converted to a record; class, prevention and the novel/variant question left to the second reader",
+   "by": "Fault Atlas"
   },
-  "repair": {
-    "reachable_by_deletion": "no",
-    "note": "deletion cannot restore this; derived from the damage class by the migration of 2026-09-09, not judged form by form and not measured — the bench can measure it",
-    "measured": {
-      "value": "no",
-      "reached": 0,
-      "injected": 423,
-      "note": "0 of 423 reached",
-      "source": "measured 2026-09-10 by pgrepair (SciPyWeightedILP) on the frozen EUR-Lex truth, three identical runs, journal sha256 in measures/reachability-by-damage-2026-09-10.json. Per damage class, not per form: two forms of the same damage and the same visibility get the same answer.",
-      "date": "2026-09-10"
-    }
-  },
-  "judgeable_by": [
-    "registry"
-  ],
-  "related": [],
-  "history": [
-    {
-      "date": "2026-09-09",
-      "event": "proposed by the Voûte Claude in 'FORMES-PUBMED-pour-Fault-Atlas (09-09-2026)' (part 1; final file sha256 51a338add43cd071…), form 16 of 23; effect on a graph: Two sources frozen at different moments leave a recent edge that seems to decline; 8,046 and 12,145 PMIDs annotated but absent from the baseline are true holes. Prevalence: measured, above.",
-      "by": "Claude Voûte (LLM agent), session 8d9c5098, from the Substrat measurement files"
-    },
-    {
-      "date": "2026-09-09",
-      "event": "converted to a record; class, prevention and the novel/variant question left to the second reader",
-      "by": "Fault Atlas"
-    },
-    {
-      "date": "2026-09-10",
-      "event": "class filled: UNCLASSIFIED → REFUSABLE, with its prevention clause; classified by the first reader, awaiting the second reader's decision",
-      "by": "Fault Atlas maintainer (Loxyn)"
-    }
-  ],
-  "proposed_severity": {
-    "value": "G3",
-    "reason": "278,093 identifiers rejected for being newer than the bound: absent, not wrong",
-    "proposed_by": "Fault Atlas maintainer (Loxyn), first reading",
-    "date": "2026-09-11",
-    "status": "proposed — a second reader confirms or contests, as for the 43 validated forms",
-    "adds_to_the_damage_class": false,
-    "note": "this reading agrees with how the August catalogue judges most MISSING forms (G3), so it adds little",
-    "reason_fr": "278 093 identifiants rejetés parce que plus récents que la borne : absents, pas faux"
-  },
-  "registry_scope": {
-    "extent": "1,238,995 rejected lines, 278,093 distinct identifiers, of which 270,047 beyond the bound",
-    "why_not_a_prevalence": "a fault of a registry has no prevalence: it is a property of the base, so everything drawn from that base carries it. What can be stated is the slice it touches.",
-    "source": "read from this form's own observation, 2026-09-11",
-    "extent_fr": "1 238 995 lignes rejetées, 278 093 identifiants distincts, dont 270 047 au-delà de la borne"
-  },
-  "name_fr": "Annotations de fiches plus récentes que l'instantané gelé (faux déclin récent)"
+  {
+   "date": "2026-09-10",
+   "event": "class filled: UNCLASSIFIED → REFUSABLE, with its prevention clause; classified by the first reader, awaiting the second reader's decision",
+   "by": "Fault Atlas maintainer (Loxyn)"
+  }
+ ],
+ "proposed_severity": {
+  "value": "G3",
+  "reason": "278,093 identifiers rejected for being newer than the bound: absent, not wrong",
+  "proposed_by": "Fault Atlas maintainer (Loxyn), first reading",
+  "date": "2026-09-11",
+  "status": "proposed — a second reader confirms or contests, as for the 43 validated forms",
+  "adds_to_the_damage_class": false,
+  "note": "this reading agrees with how the August catalogue judges most MISSING forms (G3), so it adds little",
+  "reason_fr": "278 093 identifiants rejetés parce que plus récents que la borne : absents, pas faux"
+ },
+ "registry_scope": {
+  "extent": "1,238,995 rejected lines, 278,093 distinct identifiers, of which 270,047 beyond the bound",
+  "why_not_a_prevalence": "a fault of a registry has no prevalence: it is a property of the base, so everything drawn from that base carries it. What can be stated is the slice it touches.",
+  "source": "read from this form's own observation, 2026-09-11",
+  "extent_fr": "1 238 995 lignes rejetées, 278 093 identifiants distincts, dont 270 047 au-delà de la borne"
+ },
+ "name_fr": "Annotations de fiches plus récentes que l'instantané gelé (faux déclin récent)"
 }

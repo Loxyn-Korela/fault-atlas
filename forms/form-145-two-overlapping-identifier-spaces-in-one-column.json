@@ -1,81 +1,88 @@
 {
-  "id": "form-145",
-  "version": 1,
-  "name": "Two overlapping identifier spaces in one column",
-  "origin": {
-    "organisation": "Loxyn SAS, Lyon",
-    "campaign": "September 2026 — PubMed substrate and other corpora (Voûte)",
-    "contact": "contact@loxyn.ai"
+ "id": "form-145",
+ "version": 1,
+ "name": "Two overlapping identifier spaces in one column",
+ "origin": {
+  "organisation": "Loxyn SAS, Lyon",
+  "campaign": "September 2026 — PubMed substrate and other corpora (Voûte)",
+  "contact": "contact@loxyn.ai"
+ },
+ "damage": "WRONG_LABEL",
+ "class": "UNCLASSIFIED",
+ "layer": "⑦ schema",
+ "injection": "ALTER",
+ "status": "proposed",
+ "seen": [
+  {
+   "corpus": "PubTator3 BioCXML section layer, column ent.u32, flag surface.u8",
+   "document": "lines with surface=1 (126,255,447), of which 21.8 M outside the dictionary",
+   "date": "2026-08-21",
+   "observer": "Claude Voûte (LLM agent), session 8d9c5098, from the Substrat measurement files",
+   "excerpt": "21-08-2026 : « ent.u32 = DEUX espaces d'ids chevauchants, surface.u8 seul discriminant » ; « 104 443 196 lignes surface=1 avec ent dans la plage des entités → 95,25 % de types DISCORDANTS (pièces : lignes Species → entités DNAMutation) ».",
+   "excerpt_en": "2026-08-21: \"ent.u32 = TWO overlapping id spaces, surface.u8 the only discriminant\"; \"104,443,196 lines with surface=1 and ent in the entity range → 95.25 % DISCORDANT types (evidence: Species lines → DNAMutation entities)\".",
+   "lang": "fr",
+   "organisation": "Loxyn SAS, Lyon"
+  }
+ ],
+ "specimens": {
+  "cases": [],
+  "counter_examples": []
+ },
+ "prevention": {
+  "cancellable_by_code": true,
+  "refusal_clause": "read surface.u8 first; a line with surface=1 is never an entity id",
+  "refusal_clause_fr": "lire surface.u8 d'abord ; une ligne à surface=1 n'est jamais un identifiant d'entité"
+ },
+ "repair": {
+  "reachable_by_deletion": "partial",
+  "note": "an extra label can be deleted, a missing one cannot be added",
+  "measured": {
+   "value": "yes_at_a_cost",
+   "reached": 3932,
+   "injected": 3932,
+   "note": "3,932 of 3,932 reached, and 12,591 true facts were lost with them: the repair deletes the nodes, not their labels",
+   "source": "measured 2026-09-10 by pgrepair (SciPyWeightedILP) on the frozen EUR-Lex truth, three identical runs, journal sha256 in measures/reachability-by-damage-2026-09-10.json. Per damage class, not per form: two forms of the same damage and the same visibility get the same answer.",
+   "date": "2026-09-10"
   },
-  "damage": "WRONG_LABEL",
-  "class": "UNCLASSIFIED",
-  "layer": "⑦ schema",
-  "injection": "ALTER",
-  "status": "proposed",
-  "seen": [
-    {
-      "corpus": "PubTator3 BioCXML section layer, column ent.u32, flag surface.u8",
-      "document": "lines with surface=1 (126,255,447), of which 21.8 M outside the dictionary",
-      "date": "2026-08-21",
-      "observer": "Claude Voûte (LLM agent), session 8d9c5098, from the Substrat measurement files",
-      "excerpt": "21-08-2026 : « ent.u32 = DEUX espaces d'ids chevauchants, surface.u8 seul discriminant » ; « 104 443 196 lignes surface=1 avec ent dans la plage des entités → 95,25 % de types DISCORDANTS (pièces : lignes Species → entités DNAMutation) ».",
-      "excerpt_en": "2026-08-21: \"ent.u32 = TWO overlapping id spaces, surface.u8 the only discriminant\"; \"104,443,196 lines with surface=1 and ent in the entity range → 95.25 % DISCORDANT types (evidence: Species lines → DNAMutation entities)\".",
-      "lang": "fr",
-      "organisation": "Loxyn SAS, Lyon"
-    }
-  ],
-  "specimens": {
-    "cases": [],
-    "counter_examples": []
+  "obstacle": {
+   "value": "none",
+   "reason": "Reached in full, and at a cost: the repair deletes the nodes rather than their labels. The information that would put the label right is in the node itself — the identifier says the type — and one statement of the graph's own query language sets it back with nothing destroyed.",
+   "reason_fr": "Atteinte en entier, et à un prix : la réparation supprime les nœuds plutôt que leurs étiquettes. L'information qui remettrait l'étiquette droite est dans le nœud lui-même — l'identifiant dit le type — et une instruction du langage de requête du graphe la repose sans rien détruire.",
+   "source": "derived from what a deletion-only repair can express, read in the repairer's own code — its solution is a set of elements to delete and carries no insertion — together with the measurement of 2026-09-10. Per damage class, not per form.",
+   "date": "2026-09-13"
+  }
+ },
+ "judgeable_by": [
+  "curated"
+ ],
+ "related": [],
+ "history": [
+  {
+   "date": "2026-09-09",
+   "event": "proposed by the Voûte Claude in 'FORMES-PUBMED-pour-Fault-Atlas (09-09-2026)' (part 1; final file sha256 51a338add43cd071…), form 4 of 23; effect on a graph: A surface-mention identifier read as a normalised-entity identifier yields a node of the wrong type in 95 % of cases. Prevalence: measured, above.",
+   "by": "Claude Voûte (LLM agent), session 8d9c5098, from the Substrat measurement files"
   },
-  "prevention": {
-    "cancellable_by_code": true,
-    "refusal_clause": "read surface.u8 first; a line with surface=1 is never an entity id",
-    "refusal_clause_fr": "lire surface.u8 d'abord ; une ligne à surface=1 n'est jamais un identifiant d'entité"
-  },
-  "repair": {
-    "reachable_by_deletion": "partial",
-    "note": "an extra label can be deleted, a missing one cannot be added",
-    "measured": {
-      "value": "yes_at_a_cost",
-      "reached": 3932,
-      "injected": 3932,
-      "note": "3,932 of 3,932 reached, and 12,591 true facts were lost with them: the repair deletes the nodes, not their labels",
-      "source": "measured 2026-09-10 by pgrepair (SciPyWeightedILP) on the frozen EUR-Lex truth, three identical runs, journal sha256 in measures/reachability-by-damage-2026-09-10.json. Per damage class, not per form: two forms of the same damage and the same visibility get the same answer.",
-      "date": "2026-09-10"
-    }
-  },
-  "judgeable_by": [
-    "curated"
-  ],
-  "related": [],
-  "history": [
-    {
-      "date": "2026-09-09",
-      "event": "proposed by the Voûte Claude in 'FORMES-PUBMED-pour-Fault-Atlas (09-09-2026)' (part 1; final file sha256 51a338add43cd071…), form 4 of 23; effect on a graph: A surface-mention identifier read as a normalised-entity identifier yields a node of the wrong type in 95 % of cases. Prevalence: measured, above.",
-      "by": "Claude Voûte (LLM agent), session 8d9c5098, from the Substrat measurement files"
-    },
-    {
-      "date": "2026-09-09",
-      "event": "converted to a record; class, prevention and the novel/variant question left to the second reader",
-      "by": "Fault Atlas"
-    }
-  ],
-  "proposed_severity": {
-    "value": "G1",
-    "reason": "two overlapping identifier spaces: without the discriminant an id names the wrong entity, and everything hanging from it follows",
-    "proposed_by": "Fault Atlas maintainer (Loxyn), first reading",
-    "date": "2026-09-11",
-    "status": "proposed — a second reader confirms or contests, as for the 43 validated forms",
-    "adds_to_the_damage_class": true,
-    "note": "the August catalogue judges most WRONG_LABEL forms G2; this reading says G1 and the reason is above",
-    "reason_fr": "deux espaces d'identifiants qui se recouvrent : sans le discriminant, un identifiant nomme la mauvaise entité, et tout ce qui y pend suit"
-  },
-  "registry_scope": {
-    "extent": "104,443,196 lines with surface=1 and an identifier in the entity range",
-    "why_not_a_prevalence": "a fault of a registry has no prevalence: it is a property of the base, so everything drawn from that base carries it. What can be stated is the slice it touches.",
-    "source": "read from this form's own observation, 2026-09-11",
-    "extent_fr": "104 443 196 lignes portant surface=1 avec un identifiant dans la plage des entités"
-  },
-  "name_fr": "Deux espaces d'identifiants qui se recouvrent dans une colonne"
+  {
+   "date": "2026-09-09",
+   "event": "converted to a record; class, prevention and the novel/variant question left to the second reader",
+   "by": "Fault Atlas"
+  }
+ ],
+ "proposed_severity": {
+  "value": "G1",
+  "reason": "two overlapping identifier spaces: without the discriminant an id names the wrong entity, and everything hanging from it follows",
+  "proposed_by": "Fault Atlas maintainer (Loxyn), first reading",
+  "date": "2026-09-11",
+  "status": "proposed — a second reader confirms or contests, as for the 43 validated forms",
+  "adds_to_the_damage_class": true,
+  "note": "the August catalogue judges most WRONG_LABEL forms G2; this reading says G1 and the reason is above",
+  "reason_fr": "deux espaces d'identifiants qui se recouvrent : sans le discriminant, un identifiant nomme la mauvaise entité, et tout ce qui y pend suit"
+ },
+ "registry_scope": {
+  "extent": "104,443,196 lines with surface=1 and an identifier in the entity range",
+  "why_not_a_prevalence": "a fault of a registry has no prevalence: it is a property of the base, so everything drawn from that base carries it. What can be stated is the slice it touches.",
+  "source": "read from this form's own observation, 2026-09-11",
+  "extent_fr": "104 443 196 lignes portant surface=1 avec un identifiant dans la plage des entités"
+ },
+ "name_fr": "Deux espaces d'identifiants qui se recouvrent dans une colonne"
 }

@@ -1,123 +1,130 @@
 {
-  "id": "form-082",
-  "version": 4,
-  "legacy_line": 82,
-  "name": "Landscape-oriented table",
-  "name_fr": "Tableau en orientation paysage",
-  "origin": {
-    "organisation": "Loxyn SAS, Lyon",
-    "campaign": "August 2026 — observation campaign (Korela For Science)",
-    "contact": "contact@loxyn.ai"
-  },
-  "damage": "MISSING",
-  "class": "DEFEATED_IF_XML",
-  "layer": "① pixel + ② reading",
-  "injection": "IMAGE",
-  "legacy_severity": "G3",
-  "legacy_mechanism": "M7",
-  "status": "validated",
-  "seen": [
-    {
-      "corpus": "Biomedical PDFs 1957-1987 (migraine corpus), first observation wave",
-      "document": "Slater, Benign recurrent vertigo, J. Neurol. Neurosurg. Psychiatry 1979 (PDF 565 KB), sixth PDF opened",
-      "date": "2026-08-08",
-      "observer": "house observer (LLM agent), first wave of August 2026, biomedical PDFs 1957-1987 (migraine corpus)",
-      "excerpt": "Observé le 08/08 — Slater, *Benign recurrent vertigo*, J. Neurol. Neurosurg. Psychiatry 1979. Le tableau occupe une page entière, tourné à 90 degrés. Dix-sept colonnes, une ligne par patient. L'ordre du texte extrait n'a plus aucun rapport avec l'ordre de lecture ; le tableau pivoté contient la totalité des sept cas de l'étude.",
-      "excerpt_en": "Observed on 2026-08-08 — Slater, *Benign recurrent vertigo*, J. Neurol. Neurosurg. Psychiatry 1979. The table fills a whole page, rotated 90 degrees. Seventeen columns, one row per patient. The order of the extracted text no longer bears any relation to the reading order; the rotated table holds all seven cases of the study.",
-      "lang": "fr",
-      "organisation": "Loxyn SAS, Lyon"
-    }
-  ],
-  "specimens": {
-    "cases": [],
-    "counter_examples": []
-  },
-  "prevention": {
-    "cancellable_by_code": true,
-    "note": "cancelled only when the source is structured (XML/HTML); not on composed PDF"
-  },
-  "repair": {
-    "reachable_by_deletion": "no",
-    "note": "deletion cannot restore this; derived from the damage class by the migration of 2026-09-09, not judged form by form and not measured — the bench can measure it",
-    "measured": {
-      "value": "no",
-      "reached": 0,
-      "injected": 423,
-      "note": "0 of 423 reached",
-      "source": "measured 2026-09-10 by pgrepair (SciPyWeightedILP) on the frozen EUR-Lex truth, three identical runs, journal sha256 in measures/reachability-by-damage-2026-09-10.json. Per damage class, not per form: two forms of the same damage and the same visibility get the same answer.",
-      "date": "2026-09-10"
-    }
-  },
-  "judgeable_by": [
-    "construction",
-    "curated",
-    "closed_world"
-  ],
-  "history": [
-    {
-      "date": "2026-08-09",
-      "event": "catalogue line 82 — ACCEPTED (measured absent from the modern XML corpus): measured ABSENT from the modern XML corpus",
-      "by": "Korela For Science"
-    },
-    {
-      "date": "2026-09-09",
-      "event": "migrated; classified damage=MISSING injection=IMAGE (judgment, unreviewed by a second reader)",
-      "by": "Fault Atlas migration"
-    },
-    {
-      "date": "2026-09-09",
-      "event": "observation transcribed from the August annex and the wave-1 journal, after the second reader noted the record had no excerpt",
-      "by": "Fault Atlas"
-    },
-    {
-      "date": "2026-09-09",
-      "event": "exact probe attached, measured absent on the 272 files: probes/2026-08/line-082.py, 0/272",
-      "by": "Fault Atlas maintainer"
-    },
-    {
-      "date": "2026-09-10",
-      "event": "second reader: validated — read in full with the record: a dated measurement, a named corpus, real forms",
-      "by": "Coralie Bagnol-Lebon"
-    },
-    {
-      "date": "2026-09-10",
-      "event": "era recorded: not_settled — 174 pages are not enough, and large tables have moved to supplementary material, outside the PDF (from the August verdicts, which the atlas had not carried)",
-      "by": "Fault Atlas maintainer"
-    }
-  ],
-  "observed_absent_in": [
-    "Europe PMC JATS 2023-2026 (272 articles): 0/272 by the exact probe probes/2026-08/line-082.py, written 2026-08-08, re-run 2026-09-09"
-  ],
-  "probes": [
-    {
-      "file": "probes/2026-08/line-082.py",
-      "kind": "python",
-      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
-      "written": "2026-08-08",
-      "run": "python3 tools/run_probe.py probes/2026-08/line-082.py <dir with the 272 .xml>",
-      "result": {
-        "date": "2026-09-09",
-        "count": 0,
-        "of": 272,
-        "strata": {},
-        "examples": [],
-        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files",
-        "carriers_file": "probes/results/line-082.json"
-      },
-      "matches_excerpt": true,
-      "note": "Measured absent: the probe finds no carrier among the 272 files. An absence is a result, dated."
-    }
-  ],
-  "observer_agreement": "2/2 — first reader (Loxyn, August/September classification) and second reader (Coralie Bagnol-Lebon, 2026-09-10)",
-  "era": {
-    "value": "not_settled",
-    "measured": "2026-09-10",
-    "source": "VERDICT — the old against the modern, 2026-08-08: 45 PDFs of 1957-1987 against 15 PDFs of 2023-2026, 174 pages, 9 publishers. Its own stated limits: 13 of the 15 modern are biomedical, 100 % English, 100 % open access — a channel that excludes scans, truncated and subscription articles by construction.",
-    "note": "174 pages are not enough, and large tables have moved to supplementary material, outside the PDF"
-  },
-  "failure_mode": {
-    "value": "MANQ",
-    "means": "a gap: the graph is incomplete where the reading did not reach, not wrong",
-    "source": "the internal catalogue of 2026-08-09 (korela.db, table parametre), line 82; it is not derived from the damage and varies inside a damage class"
+ "id": "form-082",
+ "version": 4,
+ "legacy_line": 82,
+ "name": "Landscape-oriented table",
+ "name_fr": "Tableau en orientation paysage",
+ "origin": {
+  "organisation": "Loxyn SAS, Lyon",
+  "campaign": "August 2026 — observation campaign (Korela For Science)",
+  "contact": "contact@loxyn.ai"
+ },
+ "damage": "MISSING",
+ "class": "DEFEATED_IF_XML",
+ "layer": "① pixel + ② reading",
+ "injection": "IMAGE",
+ "legacy_severity": "G3",
+ "legacy_mechanism": "M7",
+ "status": "validated",
+ "seen": [
+  {
+   "corpus": "Biomedical PDFs 1957-1987 (migraine corpus), first observation wave",
+   "document": "Slater, Benign recurrent vertigo, J. Neurol. Neurosurg. Psychiatry 1979 (PDF 565 KB), sixth PDF opened",
+   "date": "2026-08-08",
+   "observer": "house observer (LLM agent), first wave of August 2026, biomedical PDFs 1957-1987 (migraine corpus)",
+   "excerpt": "Observé le 08/08 — Slater, *Benign recurrent vertigo*, J. Neurol. Neurosurg. Psychiatry 1979. Le tableau occupe une page entière, tourné à 90 degrés. Dix-sept colonnes, une ligne par patient. L'ordre du texte extrait n'a plus aucun rapport avec l'ordre de lecture ; le tableau pivoté contient la totalité des sept cas de l'étude.",
+   "excerpt_en": "Observed on 2026-08-08 — Slater, *Benign recurrent vertigo*, J. Neurol. Neurosurg. Psychiatry 1979. The table fills a whole page, rotated 90 degrees. Seventeen columns, one row per patient. The order of the extracted text no longer bears any relation to the reading order; the rotated table holds all seven cases of the study.",
+   "lang": "fr",
+   "organisation": "Loxyn SAS, Lyon"
   }
+ ],
+ "specimens": {
+  "cases": [],
+  "counter_examples": []
+ },
+ "prevention": {
+  "cancellable_by_code": true,
+  "note": "cancelled only when the source is structured (XML/HTML); not on composed PDF"
+ },
+ "repair": {
+  "reachable_by_deletion": "no",
+  "note": "deletion cannot restore this; derived from the damage class by the migration of 2026-09-09, not judged form by form and not measured — the bench can measure it",
+  "measured": {
+   "value": "no",
+   "reached": 0,
+   "injected": 423,
+   "note": "0 of 423 reached",
+   "source": "measured 2026-09-10 by pgrepair (SciPyWeightedILP) on the frozen EUR-Lex truth, three identical runs, journal sha256 in measures/reachability-by-damage-2026-09-10.json. Per damage class, not per form: two forms of the same damage and the same visibility get the same answer.",
+   "date": "2026-09-10"
+  },
+  "obstacle": {
+   "value": "the operation",
+   "reason": "Restoring a gap means ADDING, and a deletion-only repair has no such gesture. Its solution is a set of elements to delete; there is no insertion anywhere in it. No weight and no information change that answer.",
+   "reason_fr": "Réparer un manque veut dire AJOUTER, et une réparation par suppression n'a pas ce geste. Sa solution est un ensemble d'éléments à retirer ; il n'y a d'insertion nulle part. Aucun poids et aucune information n'y changent quoi que ce soit.",
+   "source": "derived from what a deletion-only repair can express, read in the repairer's own code — its solution is a set of elements to delete and carries no insertion — together with the measurement of 2026-09-10. Per damage class, not per form.",
+   "date": "2026-09-13"
+  }
+ },
+ "judgeable_by": [
+  "construction",
+  "curated",
+  "closed_world"
+ ],
+ "history": [
+  {
+   "date": "2026-08-09",
+   "event": "catalogue line 82 — ACCEPTED (measured absent from the modern XML corpus): measured ABSENT from the modern XML corpus",
+   "by": "Korela For Science"
+  },
+  {
+   "date": "2026-09-09",
+   "event": "migrated; classified damage=MISSING injection=IMAGE (judgment, unreviewed by a second reader)",
+   "by": "Fault Atlas migration"
+  },
+  {
+   "date": "2026-09-09",
+   "event": "observation transcribed from the August annex and the wave-1 journal, after the second reader noted the record had no excerpt",
+   "by": "Fault Atlas"
+  },
+  {
+   "date": "2026-09-09",
+   "event": "exact probe attached, measured absent on the 272 files: probes/2026-08/line-082.py, 0/272",
+   "by": "Fault Atlas maintainer"
+  },
+  {
+   "date": "2026-09-10",
+   "event": "second reader: validated — read in full with the record: a dated measurement, a named corpus, real forms",
+   "by": "Coralie Bagnol-Lebon"
+  },
+  {
+   "date": "2026-09-10",
+   "event": "era recorded: not_settled — 174 pages are not enough, and large tables have moved to supplementary material, outside the PDF (from the August verdicts, which the atlas had not carried)",
+   "by": "Fault Atlas maintainer"
+  }
+ ],
+ "observed_absent_in": [
+  "Europe PMC JATS 2023-2026 (272 articles): 0/272 by the exact probe probes/2026-08/line-082.py, written 2026-08-08, re-run 2026-09-09"
+ ],
+ "probes": [
+  {
+   "file": "probes/2026-08/line-082.py",
+   "kind": "python",
+   "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+   "written": "2026-08-08",
+   "run": "python3 tools/run_probe.py probes/2026-08/line-082.py <dir with the 272 .xml>",
+   "result": {
+    "date": "2026-09-09",
+    "count": 0,
+    "of": 272,
+    "strata": {},
+    "examples": [],
+    "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files",
+    "carriers_file": "probes/results/line-082.json"
+   },
+   "matches_excerpt": true,
+   "note": "Measured absent: the probe finds no carrier among the 272 files. An absence is a result, dated."
+  }
+ ],
+ "observer_agreement": "2/2 — first reader (Loxyn, August/September classification) and second reader (Coralie Bagnol-Lebon, 2026-09-10)",
+ "era": {
+  "value": "not_settled",
+  "measured": "2026-09-10",
+  "source": "VERDICT — the old against the modern, 2026-08-08: 45 PDFs of 1957-1987 against 15 PDFs of 2023-2026, 174 pages, 9 publishers. Its own stated limits: 13 of the 15 modern are biomedical, 100 % English, 100 % open access — a channel that excludes scans, truncated and subscription articles by construction.",
+  "note": "174 pages are not enough, and large tables have moved to supplementary material, outside the PDF"
+ },
+ "failure_mode": {
+  "value": "MANQ",
+  "means": "a gap: the graph is incomplete where the reading did not reach, not wrong",
+  "source": "the internal catalogue of 2026-08-09 (korela.db, table parametre), line 82; it is not derived from the damage and varies inside a damage class"
+ }
 }

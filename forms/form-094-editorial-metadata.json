@@ -1,147 +1,154 @@
 {
-  "id": "form-094",
-  "version": 2,
-  "legacy_line": 94,
-  "name": "Editorial metadata",
-  "name_fr": "Métadonnées éditoriales",
-  "origin": {
-    "organisation": "Loxyn SAS, Lyon",
-    "campaign": "August 2026 — observation campaign (Korela For Science)",
-    "contact": "contact@loxyn.ai"
-  },
-  "damage": "SPURIOUS_EDGE",
-  "class": "SILENT_FALSE",
-  "layer": "④ extraction",
-  "injection": "INSERT",
-  "legacy_severity": "G4",
-  "legacy_mechanism": "",
-  "status": "migrated_unreviewed",
-  "seen": [
-    {
-      "corpus": "observation 2026-08 (272 Europe PMC JATS articles)",
-      "date": "2026-08-08",
-      "observer": "house observer (LLM agent), see report",
-      "excerpt": "MESURÉ le 08/08/2026 sur (internal corpus of 272 JATS articles) (272 XML JATS) : 89/272 articles (33 %) portent un bloc de mots-clés balisé <kwd> ; 98/272 (36 %) une phrase de financement (« was supported by », « funded by », « grant from »), dont 59 (22 %) dans une balise <funding-statement> ou <funding-group> dédiée.",
-      "lang": "fr",
-      "excerpt_en": "MEASURED on 2026-08-08 on the internal corpus (272 JATS XML): 89/272 articles (33 %) carry a tagged <kwd> keyword block; 98/272 (36 %) a funding sentence (\"was supported by\", \"funded by\", \"grant from\"), of which 59 (22 %) in a dedicated <funding-statement> or <funding-group> tag.",
-      "organisation": "Loxyn SAS, Lyon",
-      "corpus_id": "corpus-europe-pmc-jats-2023-2026"
-    }
-  ],
-  "specimens": {
-    "cases": [],
-    "counter_examples": []
-  },
-  "prevention": {
-    "cancellable_by_code": false
-  },
-  "repair": {
-    "reachable_by_deletion": "yes",
-    "note": "the faulty edge can be deleted",
-    "measured": {
-      "value": "depends_on_visibility",
-      "reached": 366,
-      "injected": 721,
-      "note": "360 of 360 when a law can see it, 6 of 361 when none can",
-      "source": "measured 2026-09-10 by pgrepair (SciPyWeightedILP) on the frozen EUR-Lex truth, three identical runs, journal sha256 in measures/reachability-by-damage-2026-09-10.json. Per damage class, not per form: two forms of the same damage and the same visibility get the same answer.",
-      "date": "2026-09-10",
-      "disagrees_with_the_judgment": "yes"
-    }
-  },
-  "judgeable_by": [
-    "construction",
-    "curated",
-    "closed_world"
-  ],
-  "history": [
-    {
-      "date": "2026-08-09",
-      "event": "catalogue line 94 — GOLDEN (kept for the benchmark): irreducible or silent false",
-      "by": "Korela For Science"
-    },
-    {
-      "date": "2026-09-09",
-      "event": "migrated; classified damage=SPURIOUS_EDGE injection=INSERT (judgment, unreviewed by a second reader)",
-      "by": "Fault Atlas migration"
-    },
-    {
-      "date": "2026-09-09",
-      "event": "internal tool paths removed from observation notes before publication; wording otherwise unchanged",
-      "by": "Fault Atlas"
-    },
-    {
-      "date": "2026-09-10",
-      "event": "era recorded: both — same in both, and worse in the modern: a modern first page carries type, publication date, DOI, chief editor,  (from the August verdicts, which the atlas had not carried)",
-      "by": "Fault Atlas maintainer"
-    }
-  ],
-  "era": {
-    "value": "both",
-    "measured": "2026-09-10",
-    "source": "VERDICT — the old against the modern, 2026-08-08: 45 PDFs of 1957-1987 against 15 PDFs of 2023-2026, 174 pages, 9 publishers. Its own stated limits: 13 of the 15 modern are biomedical, 100 % English, 100 % open access — a channel that excludes scans, truncated and subscription articles by construction.",
-    "note": "same in both, and worse in the modern: a modern first page carries type, publication date, DOI, chief editor, two reviewers with affiliation, four dates, full citation, copyright",
-    "aggravated_by_the_modern": true
-  },
-  "failure_mode": {
-    "value": "MES",
-    "means": "a property of the corpus or of the measuring apparatus, not a fault of a document",
-    "source": "the internal catalogue of 2026-08-09 (korela.db, table parametre), line 94; it is not derived from the damage and varies inside a damage class"
-  },
-  "probes": [
-    {
-      "file": "probes/2026-09-recovered/line-094.py",
-      "kind": "python",
-      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
-      "written": "2026-09-10",
-      "run": "python3 tools/run_probe.py probes/2026-09-recovered/line-094.py <dir with the 272 .xml>",
-      "result": {
-        "date": "2026-09-10",
-        "count": 89,
-        "of": 272,
-        "strata": {
-          "cas": 20,
-          "nonEN": 20,
-          "bio": 14,
-          "meta": 14,
-          "essai": 9,
-          "phys": 8,
-          "moderne": 3,
-          "retract": 1
-        },
-        "examples": [
-          [
-            "bio-PMC12583535.xml",
-            [
-              "7 tagged keywords, e.g. KeywordsLipid metabolism"
-            ]
-          ],
-          [
-            "bio-PMC12857832.xml",
-            [
-              "5 tagged keywords, e.g. KEY WORDS:Clinical predictors"
-            ]
-          ],
-          [
-            "bio-PMC12882215.xml",
-            [
-              "3 tagged keywords, e.g. KeywordsGreen space exposure"
-            ]
-          ]
-        ],
-        "by": "Fault Atlas maintainer (Loxyn), on the declared corpus",
-        "carriers_file": "probes/results/form-094-editorial-metadata.json"
-      },
-      "matches_excerpt": true,
-      "note": "re-runs the figure the August observation states"
-    }
-  ],
-  "document_years": {
-    "corpus_id": "corpus-europe-pmc-jats-2023-2026",
-    "counts": {
-      "2025": 1,
-      "2026": 2
-    },
-    "carriers_dated": 3,
-    "source": "corpora/index/document-years-europe-pmc-272.json, read 2026-09-11 from each file's earliest pub-date"
+ "id": "form-094",
+ "version": 2,
+ "legacy_line": 94,
+ "name": "Editorial metadata",
+ "name_fr": "Métadonnées éditoriales",
+ "origin": {
+  "organisation": "Loxyn SAS, Lyon",
+  "campaign": "August 2026 — observation campaign (Korela For Science)",
+  "contact": "contact@loxyn.ai"
+ },
+ "damage": "SPURIOUS_EDGE",
+ "class": "SILENT_FALSE",
+ "layer": "④ extraction",
+ "injection": "INSERT",
+ "legacy_severity": "G4",
+ "legacy_mechanism": "",
+ "status": "migrated_unreviewed",
+ "seen": [
+  {
+   "corpus": "observation 2026-08 (272 Europe PMC JATS articles)",
+   "date": "2026-08-08",
+   "observer": "house observer (LLM agent), see report",
+   "excerpt": "MESURÉ le 08/08/2026 sur (internal corpus of 272 JATS articles) (272 XML JATS) : 89/272 articles (33 %) portent un bloc de mots-clés balisé <kwd> ; 98/272 (36 %) une phrase de financement (« was supported by », « funded by », « grant from »), dont 59 (22 %) dans une balise <funding-statement> ou <funding-group> dédiée.",
+   "lang": "fr",
+   "excerpt_en": "MEASURED on 2026-08-08 on the internal corpus (272 JATS XML): 89/272 articles (33 %) carry a tagged <kwd> keyword block; 98/272 (36 %) a funding sentence (\"was supported by\", \"funded by\", \"grant from\"), of which 59 (22 %) in a dedicated <funding-statement> or <funding-group> tag.",
+   "organisation": "Loxyn SAS, Lyon",
+   "corpus_id": "corpus-europe-pmc-jats-2023-2026"
   }
+ ],
+ "specimens": {
+  "cases": [],
+  "counter_examples": []
+ },
+ "prevention": {
+  "cancellable_by_code": false
+ },
+ "repair": {
+  "reachable_by_deletion": "yes",
+  "note": "the faulty edge can be deleted",
+  "measured": {
+   "value": "depends_on_visibility",
+   "reached": 366,
+   "injected": 721,
+   "note": "360 of 360 when a law can see it, 6 of 361 when none can",
+   "source": "measured 2026-09-10 by pgrepair (SciPyWeightedILP) on the frozen EUR-Lex truth, three identical runs, journal sha256 in measures/reachability-by-damage-2026-09-10.json. Per damage class, not per form: two forms of the same damage and the same visibility get the same answer.",
+   "date": "2026-09-10",
+   "disagrees_with_the_judgment": "yes"
+  },
+  "obstacle": {
+   "value": "the information",
+   "reason": "Deletion is the right gesture here: the false edge has to go. What is missing is what tells it from the true one when no constraint separates them. Measured: with a weight carried from the document, a repairer goes from 65 of 130 — a coin — to 130 of 130, stable on three runs.",
+   "reason_fr": "La suppression est ici le bon geste : la fausse arête doit partir. Ce qui manque, c'est de quoi la distinguer de la vraie quand aucune contrainte ne les sépare. Mesuré : avec un poids porté depuis le document, un réparateur passe de 65 sur 130 — une pièce — à 130 sur 130, stable.",
+   "source": "derived from what a deletion-only repair can express, read in the repairer's own code — its solution is a set of elements to delete and carries no insertion — together with the measurement of 2026-09-10. Per damage class, not per form.",
+   "date": "2026-09-13"
+  }
+ },
+ "judgeable_by": [
+  "construction",
+  "curated",
+  "closed_world"
+ ],
+ "history": [
+  {
+   "date": "2026-08-09",
+   "event": "catalogue line 94 — GOLDEN (kept for the benchmark): irreducible or silent false",
+   "by": "Korela For Science"
+  },
+  {
+   "date": "2026-09-09",
+   "event": "migrated; classified damage=SPURIOUS_EDGE injection=INSERT (judgment, unreviewed by a second reader)",
+   "by": "Fault Atlas migration"
+  },
+  {
+   "date": "2026-09-09",
+   "event": "internal tool paths removed from observation notes before publication; wording otherwise unchanged",
+   "by": "Fault Atlas"
+  },
+  {
+   "date": "2026-09-10",
+   "event": "era recorded: both — same in both, and worse in the modern: a modern first page carries type, publication date, DOI, chief editor,  (from the August verdicts, which the atlas had not carried)",
+   "by": "Fault Atlas maintainer"
+  }
+ ],
+ "era": {
+  "value": "both",
+  "measured": "2026-09-10",
+  "source": "VERDICT — the old against the modern, 2026-08-08: 45 PDFs of 1957-1987 against 15 PDFs of 2023-2026, 174 pages, 9 publishers. Its own stated limits: 13 of the 15 modern are biomedical, 100 % English, 100 % open access — a channel that excludes scans, truncated and subscription articles by construction.",
+  "note": "same in both, and worse in the modern: a modern first page carries type, publication date, DOI, chief editor, two reviewers with affiliation, four dates, full citation, copyright",
+  "aggravated_by_the_modern": true
+ },
+ "failure_mode": {
+  "value": "MES",
+  "means": "a property of the corpus or of the measuring apparatus, not a fault of a document",
+  "source": "the internal catalogue of 2026-08-09 (korela.db, table parametre), line 94; it is not derived from the damage and varies inside a damage class"
+ },
+ "probes": [
+  {
+   "file": "probes/2026-09-recovered/line-094.py",
+   "kind": "python",
+   "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+   "written": "2026-09-10",
+   "run": "python3 tools/run_probe.py probes/2026-09-recovered/line-094.py <dir with the 272 .xml>",
+   "result": {
+    "date": "2026-09-10",
+    "count": 89,
+    "of": 272,
+    "strata": {
+     "cas": 20,
+     "nonEN": 20,
+     "bio": 14,
+     "meta": 14,
+     "essai": 9,
+     "phys": 8,
+     "moderne": 3,
+     "retract": 1
+    },
+    "examples": [
+     [
+      "bio-PMC12583535.xml",
+      [
+       "7 tagged keywords, e.g. KeywordsLipid metabolism"
+      ]
+     ],
+     [
+      "bio-PMC12857832.xml",
+      [
+       "5 tagged keywords, e.g. KEY WORDS:Clinical predictors"
+      ]
+     ],
+     [
+      "bio-PMC12882215.xml",
+      [
+       "3 tagged keywords, e.g. KeywordsGreen space exposure"
+      ]
+     ]
+    ],
+    "by": "Fault Atlas maintainer (Loxyn), on the declared corpus",
+    "carriers_file": "probes/results/form-094-editorial-metadata.json"
+   },
+   "matches_excerpt": true,
+   "note": "re-runs the figure the August observation states"
+  }
+ ],
+ "document_years": {
+  "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+  "counts": {
+   "2025": 1,
+   "2026": 2
+  },
+  "carriers_dated": 3,
+  "source": "corpora/index/document-years-europe-pmc-272.json, read 2026-09-11 from each file's earliest pub-date"
+ }
 }

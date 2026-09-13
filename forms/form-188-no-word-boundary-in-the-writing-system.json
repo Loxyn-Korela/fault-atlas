@@ -1,72 +1,79 @@
 {
-  "id": "form-188",
-  "version": 1,
-  "name": "No word boundary in the writing system",
-  "name_fr": "La frontière de mot n'existe pas dans l'écriture",
-  "origin": {
-    "organisation": "Loxyn SAS, Lyon",
-    "campaign": "August 2026 — observation campaign, verdicts on scripts and on rare genres (2026-08-08)",
-    "contact": "contact@loxyn.ai"
-  },
-  "damage": "SPLIT",
-  "class": "IRREDUCIBLE",
-  "layer": "② reading",
-  "injection": "FORMAT",
-  "status": "proposed",
-  "seen": [
-    {
-      "corpus": "observation 2026-08 — 19 documents in 8 non-Latin scripts (Japanese, Korean, Arabic, Thai, Cyrillic, Devanagari, Han, polytonic Greek), 17 platforms outside the mainstream (J-STAGE, ThaiJO, journals of Mali, Algeria, Argentina, Brazil, North Macedonia)",
-      "date": "2026-08-08",
-      "observer": "house observer (LLM agent), August 2026 campaign",
-      "organisation": "Loxyn SAS, Lyon",
-      "lang": "fr",
-      "excerpt": "Japanese, Chinese, Thai: this is not « words that are harder to segment », the information was never written into the file. And the irreversible case, measured on 2026-08-08: a Western name transliterated into katakana, エルンストデイヴィットヘルプシュレブ = Ernst David Herbschleb — three words, sixteen characters, zero boundary. No treatment can restore the original name.",
-      "reserve": "observation cited from the August campaign; the documents of that wave were not kept by identifier, so this form has no reproducible example yet"
-    }
-  ],
-  "specimens": {
-    "cases": [],
-    "counter_examples": []
-  },
-  "prevention": {
-    "cancellable_by_code": false,
-    "note": "a boundary that was never written cannot be recovered by a rule; a dictionary can guess, and a guess is not a boundary"
-  },
-  "repair": {
-    "reachable_by_deletion": "no",
-    "note": "deletion cannot restore a boundary that was never there; derived from the damage class by the migration of 2026-09-09, not judged form by form and not measured — the bench can measure it",
-    "measured": {
-      "value": "no",
-      "reached": 0,
-      "injected": 1355,
-      "note": "0 of 1,355 restored; 24 twins deleted and the 1,674 true facts they took were not restored",
-      "source": "measured 2026-09-10 by pgrepair (SciPyWeightedILP) on the frozen EUR-Lex truth, three identical runs, journal sha256 in measures/reachability-by-damage-2026-09-10.json. Per damage class, not per form: two forms of the same damage and the same visibility get the same answer.",
-      "date": "2026-09-10"
-    }
-  },
-  "judgeable_by": [
-    "curated",
-    "closed_world"
-  ],
-  "related": [
-    "form-021",
-    "form-026"
-  ],
-  "history": [
-    {
-      "date": "2026-09-10",
-      "event": "created from the August 2026 verdicts on scripts and on rare genres, which the atlas had never carried",
-      "by": "Fault Atlas maintainer"
-    }
-  ],
-  "proposed_severity": {
-    "value": "G1",
-    "reason": "no word boundary in the writing system: segmentation manufactures false entities, which then receive facts",
-    "proposed_by": "Fault Atlas maintainer (Loxyn), first reading",
-    "date": "2026-09-11",
-    "status": "proposed — a second reader confirms or contests, as for the 43 validated forms",
-    "adds_to_the_damage_class": false,
-    "note": "this reading agrees with how the August catalogue judges most SPLIT forms (G1), so it adds little",
-    "reason_fr": "aucune frontière de mot dans l'écriture : la segmentation fabrique de fausses entités, qui reçoivent ensuite des faits"
+ "id": "form-188",
+ "version": 1,
+ "name": "No word boundary in the writing system",
+ "name_fr": "La frontière de mot n'existe pas dans l'écriture",
+ "origin": {
+  "organisation": "Loxyn SAS, Lyon",
+  "campaign": "August 2026 — observation campaign, verdicts on scripts and on rare genres (2026-08-08)",
+  "contact": "contact@loxyn.ai"
+ },
+ "damage": "SPLIT",
+ "class": "IRREDUCIBLE",
+ "layer": "② reading",
+ "injection": "FORMAT",
+ "status": "proposed",
+ "seen": [
+  {
+   "corpus": "observation 2026-08 — 19 documents in 8 non-Latin scripts (Japanese, Korean, Arabic, Thai, Cyrillic, Devanagari, Han, polytonic Greek), 17 platforms outside the mainstream (J-STAGE, ThaiJO, journals of Mali, Algeria, Argentina, Brazil, North Macedonia)",
+   "date": "2026-08-08",
+   "observer": "house observer (LLM agent), August 2026 campaign",
+   "organisation": "Loxyn SAS, Lyon",
+   "lang": "fr",
+   "excerpt": "Japanese, Chinese, Thai: this is not « words that are harder to segment », the information was never written into the file. And the irreversible case, measured on 2026-08-08: a Western name transliterated into katakana, エルンストデイヴィットヘルプシュレブ = Ernst David Herbschleb — three words, sixteen characters, zero boundary. No treatment can restore the original name.",
+   "reserve": "observation cited from the August campaign; the documents of that wave were not kept by identifier, so this form has no reproducible example yet"
   }
+ ],
+ "specimens": {
+  "cases": [],
+  "counter_examples": []
+ },
+ "prevention": {
+  "cancellable_by_code": false,
+  "note": "a boundary that was never written cannot be recovered by a rule; a dictionary can guess, and a guess is not a boundary"
+ },
+ "repair": {
+  "reachable_by_deletion": "no",
+  "note": "deletion cannot restore a boundary that was never there; derived from the damage class by the migration of 2026-09-09, not judged form by form and not measured — the bench can measure it",
+  "measured": {
+   "value": "no",
+   "reached": 0,
+   "injected": 1355,
+   "note": "0 of 1,355 restored; 24 twins deleted and the 1,674 true facts they took were not restored",
+   "source": "measured 2026-09-10 by pgrepair (SciPyWeightedILP) on the frozen EUR-Lex truth, three identical runs, journal sha256 in measures/reachability-by-damage-2026-09-10.json. Per damage class, not per form: two forms of the same damage and the same visibility get the same answer.",
+   "date": "2026-09-10"
+  },
+  "obstacle": {
+   "value": "the operation",
+   "reason": "One entity written as two is repaired by MERGING them. Deleting the twin removes the false node and does not give back the facts it took: measured, 24 twins deleted of 1,355 and 1,674 true facts not restored.",
+   "reason_fr": "Une entité écrite en deux se répare en les FUSIONNANT. Supprimer le jumeau retire le faux nœud et ne rend pas les faits qu'il avait emportés : mesuré, 24 jumeaux sur 1 355 et 1 674 faits vrais non rétablis.",
+   "source": "derived from what a deletion-only repair can express, read in the repairer's own code — its solution is a set of elements to delete and carries no insertion — together with the measurement of 2026-09-10. Per damage class, not per form.",
+   "date": "2026-09-13"
+  }
+ },
+ "judgeable_by": [
+  "curated",
+  "closed_world"
+ ],
+ "related": [
+  "form-021",
+  "form-026"
+ ],
+ "history": [
+  {
+   "date": "2026-09-10",
+   "event": "created from the August 2026 verdicts on scripts and on rare genres, which the atlas had never carried",
+   "by": "Fault Atlas maintainer"
+  }
+ ],
+ "proposed_severity": {
+  "value": "G1",
+  "reason": "no word boundary in the writing system: segmentation manufactures false entities, which then receive facts",
+  "proposed_by": "Fault Atlas maintainer (Loxyn), first reading",
+  "date": "2026-09-11",
+  "status": "proposed — a second reader confirms or contests, as for the 43 validated forms",
+  "adds_to_the_damage_class": false,
+  "note": "this reading agrees with how the August catalogue judges most SPLIT forms (G1), so it adds little",
+  "reason_fr": "aucune frontière de mot dans l'écriture : la segmentation fabrique de fausses entités, qui reçoivent ensuite des faits"
+ }
 }

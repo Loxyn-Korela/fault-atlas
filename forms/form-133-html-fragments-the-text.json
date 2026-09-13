@@ -1,209 +1,216 @@
 {
-  "id": "form-133",
-  "version": 2,
-  "legacy_line": 133,
-  "name": "HTML fragments the text",
-  "name_fr": "Le format html fragmente le texte",
-  "origin": {
-    "organisation": "Loxyn SAS, Lyon",
-    "campaign": "August 2026 — observation campaign (Korela For Science)",
-    "contact": "contact@loxyn.ai"
-  },
-  "damage": "MISSING",
-  "class": "DEFEATED_IF_XML",
-  "layer": "② reading",
-  "injection": "FORMAT",
-  "legacy_severity": "G2",
-  "legacy_mechanism": "M8",
-  "status": "validated",
-  "seen": [
-    {
-      "corpus": "observation 2026-08 (Europe PMC JATS 2023-2026 and PubMed abstracts)",
-      "date": "2026-08-08",
-      "observer": "house observer (LLM agent), see report",
-      "excerpt": "MESURÉ le 08/08/2026 sur 272 articles Europe PMC accès libre 2023-2026 (internal corpus of 272 JATS articles) : présent dans 38 articles (13 %), dont 23 sur 34 du lot physique/maths. Formes réelles, lecture naïve contre lecture assemblée : bio-PMC13252842 → 274 octets, « M H F N » au lieu de « MHFN » ; essai-PMC13263161 → « V ˙ » au lieu de « V˙ » ; essai-PMC13238360 → 1 032 octets, « PV t = PV bl × 1 + Hct bl Hct t − » au lieu de « PVt=PVbl×1+HctblHctt−11−Hctbl » — et la version naïve est en plus TRONQUÉE.",
-      "lang": "fr",
-      "excerpt_en": "MEASURED on 2026-08-08 on 272 open-access Europe PMC articles 2023-2026 (internal corpus): present in 38 articles (13 %), of which 23 of the 34 in the physics/maths batch. Real forms, naive reading versus assembled reading: bio-PMC13252842 → 274 bytes, \"M H F N\" instead of \"MHFN\"; trial-PMC13263161 → \"V ˙\" instead of \"V˙\"; trial-PMC13238360 → 1,032 bytes, \"PV t = PV bl × 1 + Hct bl Hct t −\" instead of \"PVt=PVbl×1+HctblHctt−11−Hctbl\" — and the naive version is moreover TRUNCATED.",
-      "organisation": "Loxyn SAS, Lyon",
-      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
-      "probe": "probes/2026-08/line-133.py"
-    }
-  ],
-  "specimens": {
-    "cases": [],
-    "counter_examples": []
-  },
-  "prevention": {
-    "cancellable_by_code": true,
-    "note": "cancelled only when the source is structured (XML/HTML); not on composed PDF"
-  },
-  "repair": {
-    "reachable_by_deletion": "no",
-    "note": "deletion cannot restore this; derived from the damage class by the migration of 2026-09-09, not judged form by form and not measured — the bench can measure it",
-    "measured": {
-      "value": "no",
-      "reached": 0,
-      "injected": 423,
-      "note": "0 of 423 reached",
-      "source": "measured 2026-09-10 by pgrepair (SciPyWeightedILP) on the frozen EUR-Lex truth, three identical runs, journal sha256 in measures/reachability-by-damage-2026-09-10.json. Per damage class, not per form: two forms of the same damage and the same visibility get the same answer.",
-      "date": "2026-09-10"
-    }
-  },
-  "judgeable_by": [
-    "construction",
-    "curated",
-    "closed_world"
-  ],
-  "history": [
-    {
-      "date": "2026-08-08",
-      "event": "the internal catalogue records a house filter with 4 cases and 2 counter-example(s); not published in this record",
-      "by": "Korela For Science"
-    },
-    {
-      "date": "2026-08-09",
-      "event": "catalogue line 133 — DEFEATED (cancelled by code): filter written and green on the bench",
-      "by": "Korela For Science"
-    },
-    {
-      "date": "2026-09-09",
-      "event": "migrated; classified damage=MISSING injection=FORMAT (judgment, unreviewed by a second reader)",
-      "by": "Fault Atlas migration"
-    },
-    {
-      "date": "2026-09-09",
-      "event": "internal tool paths removed from observation notes before publication; wording otherwise unchanged",
-      "by": "Fault Atlas"
-    },
-    {
-      "date": "2026-09-09",
-      "event": "exact probe attached to the 272-file observation: probes/2026-08/line-133.py, re-run 38/272",
-      "by": "Fault Atlas maintainer"
-    },
-    {
-      "date": "2026-09-10",
-      "event": "second reader: validated — read in full with the record: a dated measurement, a named corpus, real forms",
-      "by": "Coralie Bagnol-Lebon"
-    }
-  ],
-  "probes": [
-    {
-      "file": "probes/2026-08/line-133.py",
-      "kind": "python",
-      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
-      "written": "2026-08-08",
-      "run": "python3 tools/run_probe.py probes/2026-08/line-133.py <dir with the 272 .xml>",
-      "result": {
-        "date": "2026-09-09",
-        "count": 38,
-        "of": 272,
-        "strata": {
-          "phys": 23,
-          "essai": 5,
-          "meta": 5,
-          "moderne": 3,
-          "bio": 1,
-          "nonEN": 1
-        },
-        "examples": [
-          [
-            "bio-PMC13252842.xml",
-            [
-              "274o : naïf 'M H F N' ≠ assemblé 'MHFN'",
-              "274o : naïf 'M H F W' ≠ assemblé 'MHFW'"
-            ]
-          ],
-          [
-            "essai-PMC13238360.xml",
-            [
-              "1032o : naïf 'PV t = PV bl × 1 + Hct bl Hct t − ' ≠ assemblé 'PVt=PVbl×1+HctblHctt−11−Hctbl'",
-              "549o : naïf 'BV bl = a × h 3 + b × w + c' ≠ assemblé 'BVbl=a×h3+b×w+c'"
-            ]
-          ],
-          [
-            "essai-PMC13263161.xml",
-            [
-              "238o : naïf 'V ˙' ≠ assemblé 'V˙'",
-              "238o : naïf 'V ˙' ≠ assemblé 'V˙'"
-            ]
-          ],
-          [
-            "essai-PMC13282136.xml",
-            [
-              "238o : naïf 'V ˙' ≠ assemblé 'V˙'",
-              "238o : naïf 'V ˙' ≠ assemblé 'V˙'"
-            ]
-          ],
-          [
-            "essai-PMC13284529.xml",
-            [
-              "2142o : naïf 'P r o c e s s i n g E f f i c i e ' ≠ assemblé 'ProcessingEfficiency=(WMPerformace'"
-            ]
-          ],
-          [
-            "essai-PMC13291922.xml",
-            [
-              "488o : naïf 'CRR = number of correct responses ' ≠ assemblé '=÷'"
-            ]
-          ],
-          [
-            "meta-PMC13179150.xml",
-            [
-              "283o : naïf 'ρ &gt; 39' ≠ assemblé 'ρ&gt;39'",
-              "283o : naïf 'ρ &lt; 39' ≠ assemblé 'ρ&lt;39'"
-            ]
-          ],
-          [
-            "meta-PMC13263136.xml",
-            [
-              "822o : naïf 'PGS = n ∑ i = 1 n log OR i × ∑ i =' ≠ assemblé '=n∑i=1nlogi×∑i=1nlogi×di'"
-            ]
-          ],
-          [
-            "meta-PMC13264275.xml",
-            [
-              "233o : naïf 'X ¯' ≠ assemblé 'X¯'"
-            ]
-          ],
-          [
-            "meta-PMC13264436.xml",
-            [
-              "232o : naïf 'I 2' ≠ assemblé 'I2'",
-              "232o : naïf 'I 2' ≠ assemblé 'I2'"
-            ]
-          ],
-          [
-            "meta-PMC13286426.xml",
-            [
-              "999o : naïf 'F = R 2 × ( N − 1 − K ) / [ ( 1 − ' ≠ assemblé 'F=R2×(N−1−K)/[(1−R2)×K],'"
-            ]
-          ],
-          [
-            "moderne-PMC12967033.xml",
-            [
-              "650o : naïf 'Y ij = μ + Trt i + e ij ,' ≠ assemblé '=μ++,'"
-            ]
-          ]
-        ],
-        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files",
-        "carriers_file": "probes/results/line-133.json"
-      },
-      "matches_excerpt": true
-    }
-  ],
-  "observer_agreement": "2/2 — first reader (Loxyn, August/September classification) and second reader (Coralie Bagnol-Lebon, 2026-09-10)",
-  "failure_mode": {
-    "value": "FAUX",
-    "means": "a false fact: a value, a type or a link the source never asserted",
-    "source": "the internal catalogue of 2026-08-09 (korela.db, table parametre), line 133; it is not derived from the damage and varies inside a damage class"
-  },
-  "document_years": {
-    "corpus_id": "corpus-europe-pmc-jats-2023-2026",
-    "counts": {
-      "2025": 1,
-      "2026": 11
-    },
-    "carriers_dated": 12,
-    "source": "corpora/index/document-years-europe-pmc-272.json, read 2026-09-11 from each file's earliest pub-date"
+ "id": "form-133",
+ "version": 2,
+ "legacy_line": 133,
+ "name": "HTML fragments the text",
+ "name_fr": "Le format html fragmente le texte",
+ "origin": {
+  "organisation": "Loxyn SAS, Lyon",
+  "campaign": "August 2026 — observation campaign (Korela For Science)",
+  "contact": "contact@loxyn.ai"
+ },
+ "damage": "MISSING",
+ "class": "DEFEATED_IF_XML",
+ "layer": "② reading",
+ "injection": "FORMAT",
+ "legacy_severity": "G2",
+ "legacy_mechanism": "M8",
+ "status": "validated",
+ "seen": [
+  {
+   "corpus": "observation 2026-08 (Europe PMC JATS 2023-2026 and PubMed abstracts)",
+   "date": "2026-08-08",
+   "observer": "house observer (LLM agent), see report",
+   "excerpt": "MESURÉ le 08/08/2026 sur 272 articles Europe PMC accès libre 2023-2026 (internal corpus of 272 JATS articles) : présent dans 38 articles (13 %), dont 23 sur 34 du lot physique/maths. Formes réelles, lecture naïve contre lecture assemblée : bio-PMC13252842 → 274 octets, « M H F N » au lieu de « MHFN » ; essai-PMC13263161 → « V ˙ » au lieu de « V˙ » ; essai-PMC13238360 → 1 032 octets, « PV t = PV bl × 1 + Hct bl Hct t − » au lieu de « PVt=PVbl×1+HctblHctt−11−Hctbl » — et la version naïve est en plus TRONQUÉE.",
+   "lang": "fr",
+   "excerpt_en": "MEASURED on 2026-08-08 on 272 open-access Europe PMC articles 2023-2026 (internal corpus): present in 38 articles (13 %), of which 23 of the 34 in the physics/maths batch. Real forms, naive reading versus assembled reading: bio-PMC13252842 → 274 bytes, \"M H F N\" instead of \"MHFN\"; trial-PMC13263161 → \"V ˙\" instead of \"V˙\"; trial-PMC13238360 → 1,032 bytes, \"PV t = PV bl × 1 + Hct bl Hct t −\" instead of \"PVt=PVbl×1+HctblHctt−11−Hctbl\" — and the naive version is moreover TRUNCATED.",
+   "organisation": "Loxyn SAS, Lyon",
+   "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+   "probe": "probes/2026-08/line-133.py"
   }
+ ],
+ "specimens": {
+  "cases": [],
+  "counter_examples": []
+ },
+ "prevention": {
+  "cancellable_by_code": true,
+  "note": "cancelled only when the source is structured (XML/HTML); not on composed PDF"
+ },
+ "repair": {
+  "reachable_by_deletion": "no",
+  "note": "deletion cannot restore this; derived from the damage class by the migration of 2026-09-09, not judged form by form and not measured — the bench can measure it",
+  "measured": {
+   "value": "no",
+   "reached": 0,
+   "injected": 423,
+   "note": "0 of 423 reached",
+   "source": "measured 2026-09-10 by pgrepair (SciPyWeightedILP) on the frozen EUR-Lex truth, three identical runs, journal sha256 in measures/reachability-by-damage-2026-09-10.json. Per damage class, not per form: two forms of the same damage and the same visibility get the same answer.",
+   "date": "2026-09-10"
+  },
+  "obstacle": {
+   "value": "the operation",
+   "reason": "Restoring a gap means ADDING, and a deletion-only repair has no such gesture. Its solution is a set of elements to delete; there is no insertion anywhere in it. No weight and no information change that answer.",
+   "reason_fr": "Réparer un manque veut dire AJOUTER, et une réparation par suppression n'a pas ce geste. Sa solution est un ensemble d'éléments à retirer ; il n'y a d'insertion nulle part. Aucun poids et aucune information n'y changent quoi que ce soit.",
+   "source": "derived from what a deletion-only repair can express, read in the repairer's own code — its solution is a set of elements to delete and carries no insertion — together with the measurement of 2026-09-10. Per damage class, not per form.",
+   "date": "2026-09-13"
+  }
+ },
+ "judgeable_by": [
+  "construction",
+  "curated",
+  "closed_world"
+ ],
+ "history": [
+  {
+   "date": "2026-08-08",
+   "event": "the internal catalogue records a house filter with 4 cases and 2 counter-example(s); not published in this record",
+   "by": "Korela For Science"
+  },
+  {
+   "date": "2026-08-09",
+   "event": "catalogue line 133 — DEFEATED (cancelled by code): filter written and green on the bench",
+   "by": "Korela For Science"
+  },
+  {
+   "date": "2026-09-09",
+   "event": "migrated; classified damage=MISSING injection=FORMAT (judgment, unreviewed by a second reader)",
+   "by": "Fault Atlas migration"
+  },
+  {
+   "date": "2026-09-09",
+   "event": "internal tool paths removed from observation notes before publication; wording otherwise unchanged",
+   "by": "Fault Atlas"
+  },
+  {
+   "date": "2026-09-09",
+   "event": "exact probe attached to the 272-file observation: probes/2026-08/line-133.py, re-run 38/272",
+   "by": "Fault Atlas maintainer"
+  },
+  {
+   "date": "2026-09-10",
+   "event": "second reader: validated — read in full with the record: a dated measurement, a named corpus, real forms",
+   "by": "Coralie Bagnol-Lebon"
+  }
+ ],
+ "probes": [
+  {
+   "file": "probes/2026-08/line-133.py",
+   "kind": "python",
+   "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+   "written": "2026-08-08",
+   "run": "python3 tools/run_probe.py probes/2026-08/line-133.py <dir with the 272 .xml>",
+   "result": {
+    "date": "2026-09-09",
+    "count": 38,
+    "of": 272,
+    "strata": {
+     "phys": 23,
+     "essai": 5,
+     "meta": 5,
+     "moderne": 3,
+     "bio": 1,
+     "nonEN": 1
+    },
+    "examples": [
+     [
+      "bio-PMC13252842.xml",
+      [
+       "274o : naïf 'M H F N' ≠ assemblé 'MHFN'",
+       "274o : naïf 'M H F W' ≠ assemblé 'MHFW'"
+      ]
+     ],
+     [
+      "essai-PMC13238360.xml",
+      [
+       "1032o : naïf 'PV t = PV bl × 1 + Hct bl Hct t − ' ≠ assemblé 'PVt=PVbl×1+HctblHctt−11−Hctbl'",
+       "549o : naïf 'BV bl = a × h 3 + b × w + c' ≠ assemblé 'BVbl=a×h3+b×w+c'"
+      ]
+     ],
+     [
+      "essai-PMC13263161.xml",
+      [
+       "238o : naïf 'V ˙' ≠ assemblé 'V˙'",
+       "238o : naïf 'V ˙' ≠ assemblé 'V˙'"
+      ]
+     ],
+     [
+      "essai-PMC13282136.xml",
+      [
+       "238o : naïf 'V ˙' ≠ assemblé 'V˙'",
+       "238o : naïf 'V ˙' ≠ assemblé 'V˙'"
+      ]
+     ],
+     [
+      "essai-PMC13284529.xml",
+      [
+       "2142o : naïf 'P r o c e s s i n g E f f i c i e ' ≠ assemblé 'ProcessingEfficiency=(WMPerformace'"
+      ]
+     ],
+     [
+      "essai-PMC13291922.xml",
+      [
+       "488o : naïf 'CRR = number of correct responses ' ≠ assemblé '=÷'"
+      ]
+     ],
+     [
+      "meta-PMC13179150.xml",
+      [
+       "283o : naïf 'ρ &gt; 39' ≠ assemblé 'ρ&gt;39'",
+       "283o : naïf 'ρ &lt; 39' ≠ assemblé 'ρ&lt;39'"
+      ]
+     ],
+     [
+      "meta-PMC13263136.xml",
+      [
+       "822o : naïf 'PGS = n ∑ i = 1 n log OR i × ∑ i =' ≠ assemblé '=n∑i=1nlogi×∑i=1nlogi×di'"
+      ]
+     ],
+     [
+      "meta-PMC13264275.xml",
+      [
+       "233o : naïf 'X ¯' ≠ assemblé 'X¯'"
+      ]
+     ],
+     [
+      "meta-PMC13264436.xml",
+      [
+       "232o : naïf 'I 2' ≠ assemblé 'I2'",
+       "232o : naïf 'I 2' ≠ assemblé 'I2'"
+      ]
+     ],
+     [
+      "meta-PMC13286426.xml",
+      [
+       "999o : naïf 'F = R 2 × ( N − 1 − K ) / [ ( 1 − ' ≠ assemblé 'F=R2×(N−1−K)/[(1−R2)×K],'"
+      ]
+     ],
+     [
+      "moderne-PMC12967033.xml",
+      [
+       "650o : naïf 'Y ij = μ + Trt i + e ij ,' ≠ assemblé '=μ++,'"
+      ]
+     ]
+    ],
+    "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files",
+    "carriers_file": "probes/results/line-133.json"
+   },
+   "matches_excerpt": true
+  }
+ ],
+ "observer_agreement": "2/2 — first reader (Loxyn, August/September classification) and second reader (Coralie Bagnol-Lebon, 2026-09-10)",
+ "failure_mode": {
+  "value": "FAUX",
+  "means": "a false fact: a value, a type or a link the source never asserted",
+  "source": "the internal catalogue of 2026-08-09 (korela.db, table parametre), line 133; it is not derived from the damage and varies inside a damage class"
+ },
+ "document_years": {
+  "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+  "counts": {
+   "2025": 1,
+   "2026": 11
+  },
+  "carriers_dated": 12,
+  "source": "corpora/index/document-years-europe-pmc-272.json, read 2026-09-11 from each file's earliest pub-date"
+ }
 }

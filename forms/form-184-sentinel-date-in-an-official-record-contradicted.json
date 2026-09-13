@@ -1,167 +1,174 @@
 {
-  "id": "form-184",
-  "version": 1,
-  "name": "Sentinel date in an official record, contradicted by the identifier's own year",
-  "origin": {
-    "organisation": "Loxyn SAS, Lyon",
-    "campaign": "September 2026 — EUR-Lex collection for the Answer Key (Alexandrie)",
-    "contact": "contact@loxyn.ai"
+ "id": "form-184",
+ "version": 1,
+ "name": "Sentinel date in an official record, contradicted by the identifier's own year",
+ "origin": {
+  "organisation": "Loxyn SAS, Lyon",
+  "campaign": "September 2026 — EUR-Lex collection for the Answer Key (Alexandrie)",
+  "contact": "contact@loxyn.ai"
+ },
+ "damage": "WRONG_VALUE",
+ "class": "REFUSABLE",
+ "layer": "⑧ coherence",
+ "injection": "ALTER",
+ "status": "proposed",
+ "seen": [
+  {
+   "corpus": "EUR-Lex / Cellar, lot A — the official relations graph frozen 2026-09-09 (abroge 14,411 · modifie 64,290 · se fonde sur 410,522; 489,223 triples)",
+   "document": "7 works with work_date_document = 1003-03-03, acts of 1966-1997; e.g. CELEX 51966FC0402 → year 1966 readable in the identifier",
+   "date": "2026-09-09",
+   "observer": "Alexandrie (LLM agent, collection session), from the EUR-Lex collection manifest",
+   "organisation": "Loxyn SAS, Lyon",
+   "excerpt": "Mesuré sur le lot A, 09-09-2026 : 7 œuvres portent toutes work_date_document = 1003-03-03, pour des actes de 1966 à 1997 — une sentinelle. L'année réelle reste lisible dans le CELEX du même enregistrement (51966FC0402 → 1966) : deux champs du même acte se contredisent, et l'un corrige l'autre. Mise en garde : 16 931 désaccords entre l'année du CELEX et la date de document ont été mesurés, et ce ne sont PAS 16 931 fautes — 12 689 ont un écart d'un an (signature contre publication), 739 des 749 gros écarts sont en secteur 1 où la date est celle de la version consolidée. La faute certaine se limite aux 7. Ne jamais citer le 16 931 seul.",
+   "excerpt_en": "Measured on lot A, 2026-09-09: 7 works all carry work_date_document = 1003-03-03, for acts of 1966 to 1997 — a sentinel. The real year stays readable in the CELEX of the same record (51966FC0402 → 1966): two fields of the same act contradict each other, and one corrects the other. Caution: 16,931 disagreements between the CELEX year and the document date were measured, and they are NOT 16,931 faults — 12,689 differ by one year (signature vs publication), 739 of the 749 large gaps are in sector 1 where the date is that of the consolidated version. The certain fault is limited to the 7. Never cite 16,931 alone.",
+   "lang": "fr",
+   "probe": "probes/2026-09/form-184-sentinel-date.sparql"
   },
-  "damage": "WRONG_VALUE",
-  "class": "REFUSABLE",
-  "layer": "⑧ coherence",
-  "injection": "ALTER",
-  "status": "proposed",
-  "seen": [
-    {
-      "corpus": "EUR-Lex / Cellar, lot A — the official relations graph frozen 2026-09-09 (abroge 14,411 · modifie 64,290 · se fonde sur 410,522; 489,223 triples)",
-      "document": "7 works with work_date_document = 1003-03-03, acts of 1966-1997; e.g. CELEX 51966FC0402 → year 1966 readable in the identifier",
-      "date": "2026-09-09",
-      "observer": "Alexandrie (LLM agent, collection session), from the EUR-Lex collection manifest",
-      "organisation": "Loxyn SAS, Lyon",
-      "excerpt": "Mesuré sur le lot A, 09-09-2026 : 7 œuvres portent toutes work_date_document = 1003-03-03, pour des actes de 1966 à 1997 — une sentinelle. L'année réelle reste lisible dans le CELEX du même enregistrement (51966FC0402 → 1966) : deux champs du même acte se contredisent, et l'un corrige l'autre. Mise en garde : 16 931 désaccords entre l'année du CELEX et la date de document ont été mesurés, et ce ne sont PAS 16 931 fautes — 12 689 ont un écart d'un an (signature contre publication), 739 des 749 gros écarts sont en secteur 1 où la date est celle de la version consolidée. La faute certaine se limite aux 7. Ne jamais citer le 16 931 seul.",
-      "excerpt_en": "Measured on lot A, 2026-09-09: 7 works all carry work_date_document = 1003-03-03, for acts of 1966 to 1997 — a sentinel. The real year stays readable in the CELEX of the same record (51966FC0402 → 1966): two fields of the same act contradict each other, and one corrects the other. Caution: 16,931 disagreements between the CELEX year and the document date were measured, and they are NOT 16,931 faults — 12,689 differ by one year (signature vs publication), 739 of the 749 large gaps are in sector 1 where the date is that of the consolidated version. The certain fault is limited to the 7. Never cite 16,931 alone.",
-      "lang": "fr",
-      "probe": "probes/2026-09/form-184-sentinel-date.sparql"
-    },
-    {
-      "corpus": "Cellar SPARQL endpoint, whole graph as served live on 2026-09-09",
-      "date": "2026-09-09",
-      "observer": "Fault Atlas maintainer (Loxyn), live on the public endpoint",
-      "organisation": "Loxyn SAS, Lyon",
-      "lang": "en",
-      "probe": "probes/2026-09/form-184-sentinel-date.sparql",
-      "excerpt": "351 works carry work_date_document = 1003-03-03 in the whole graph; 80 of them have a CELEX, and most of those are corrigenda (CELEX ending in R(01), R(02)) of the 1990s and 2000s, plus the seven preparatory acts of lot A (51966FC0402 … 51997EC0936) and 31968R5759. The sentinel is a registry-wide convention, not seven isolated slips; the CELEX year contradicts it every time."
-    }
-  ],
-  "specimens": {
-    "cases": [],
-    "counter_examples": []
+  {
+   "corpus": "Cellar SPARQL endpoint, whole graph as served live on 2026-09-09",
+   "date": "2026-09-09",
+   "observer": "Fault Atlas maintainer (Loxyn), live on the public endpoint",
+   "organisation": "Loxyn SAS, Lyon",
+   "lang": "en",
+   "probe": "probes/2026-09/form-184-sentinel-date.sparql",
+   "excerpt": "351 works carry work_date_document = 1003-03-03 in the whole graph; 80 of them have a CELEX, and most of those are corrigenda (CELEX ending in R(01), R(02)) of the 1990s and 2000s, plus the seven preparatory acts of lot A (51966FC0402 … 51997EC0936) and 31968R5759. The sentinel is a registry-wide convention, not seven isolated slips; the CELEX year contradicts it every time."
+  }
+ ],
+ "specimens": {
+  "cases": [],
+  "counter_examples": []
+ },
+ "prevention": {
+  "cancellable_by_code": true,
+  "refusal_clause": "a date before the institution's existence is refused; when the identifier carries the year, it prevails and the correction is logged",
+  "refusal_clause_fr": "une date antérieure à l'existence de l'institution est refusée ; quand l'identifiant porte l'année, c'est lui qui l'emporte et la correction est consignée"
+ },
+ "repair": {
+  "reachable_by_deletion": "no",
+  "note": "deletion cannot restore this; derived from the damage class by the migration of 2026-09-09, not judged form by form and not measured — the bench can measure it",
+  "measured": {
+   "value": "no",
+   "reached": 0,
+   "injected": 2613,
+   "note": "0 of 2,613 reached",
+   "source": "measured 2026-09-10 by pgrepair (SciPyWeightedILP) on the frozen EUR-Lex truth, three identical runs, journal sha256 in measures/reachability-by-damage-2026-09-10.json. Per damage class, not per form: two forms of the same damage and the same visibility get the same answer.",
+   "date": "2026-09-10"
   },
-  "prevention": {
-    "cancellable_by_code": true,
-    "refusal_clause": "a date before the institution's existence is refused; when the identifier carries the year, it prevails and the correction is logged",
-    "refusal_clause_fr": "une date antérieure à l'existence de l'institution est refusée ; quand l'identifiant porte l'année, c'est lui qui l'emporte et la correction est consignée"
+  "obstacle": {
+   "value": "the operation",
+   "reason": "Deleting a wrong value removes the fact without restoring the right one. The gesture needed is to SET, and deletion cannot express it.",
+   "reason_fr": "Supprimer une valeur fausse retire le fait sans rétablir le bon. Le geste qu'il faudrait est d'ÉCRIRE, et la suppression ne sait pas l'exprimer.",
+   "source": "derived from what a deletion-only repair can express, read in the repairer's own code — its solution is a set of elements to delete and carries no insertion — together with the measurement of 2026-09-10. Per damage class, not per form.",
+   "date": "2026-09-13"
+  }
+ },
+ "judgeable_by": [
+  "registry",
+  "closed_world"
+ ],
+ "related": [
+  "form-149",
+  "form-160"
+ ],
+ "history": [
+  {
+   "date": "2026-09-09",
+   "event": "proposed from the EUR-Lex collection reports of 2026-09-09; effect on a graph: A placeholder date taken for a true date puts seven acts in the eleventh century; the fault is detectable without any external source, and its repair is verifiable from the record itself. Prevalence: measured: 7 certain faults; 16,931 disagreements of which most are not faults.",
+   "by": "Alexandrie (LLM agent, collection session), from the EUR-Lex collection manifest"
   },
-  "repair": {
-    "reachable_by_deletion": "no",
-    "note": "deletion cannot restore this; derived from the damage class by the migration of 2026-09-09, not judged form by form and not measured — the bench can measure it",
-    "measured": {
-      "value": "no",
-      "reached": 0,
-      "injected": 2613,
-      "note": "0 of 2,613 reached",
-      "source": "measured 2026-09-10 by pgrepair (SciPyWeightedILP) on the frozen EUR-Lex truth, three identical runs, journal sha256 in measures/reachability-by-damage-2026-09-10.json. Per damage class, not per form: two forms of the same damage and the same visibility get the same answer.",
-      "date": "2026-09-10"
-    }
+  {
+   "date": "2026-09-09",
+   "event": "converted to a record; class set from the collector's own refusal clause where one exists; to be reviewed by a second reader",
+   "by": "Fault Atlas"
   },
-  "judgeable_by": [
-    "registry",
-    "closed_world"
-  ],
-  "related": [
-    "form-149",
-    "form-160"
-  ],
-  "history": [
-    {
-      "date": "2026-09-09",
-      "event": "proposed from the EUR-Lex collection reports of 2026-09-09; effect on a graph: A placeholder date taken for a true date puts seven acts in the eleventh century; the fault is detectable without any external source, and its repair is verifiable from the record itself. Prevalence: measured: 7 certain faults; 16,931 disagreements of which most are not faults.",
-      "by": "Alexandrie (LLM agent, collection session), from the EUR-Lex collection manifest"
-    },
-    {
-      "date": "2026-09-09",
-      "event": "converted to a record; class set from the collector's own refusal clause where one exists; to be reviewed by a second reader",
-      "by": "Fault Atlas"
-    },
-    {
-      "date": "2026-09-09",
-      "event": "exact probe attached and re-run: probes/2026-09/form-184-sentinel-date.sparql",
-      "by": "Fault Atlas maintainer"
-    },
-    {
-      "date": "2026-09-09",
-      "event": "second observation: the sentinel counted over the whole graph, live (351 works, 80 with CELEX)",
-      "by": "Fault Atlas maintainer"
-    }
-  ],
-  "probes": [
-    {
-      "file": "probes/2026-09/form-184-sentinel-date.sparql",
-      "kind": "sparql",
-      "corpus_id": "corpus-2026-09-eurlex",
-      "written": "2026-09-09",
-      "run": "curl -G https://publications.europa.eu/webapi/rdf/sparql -H 'Accept: text/csv' --data-urlencode query@probes/2026-09/form-184-sentinel-date.sparql",
-      "result": {
-        "date": "2026-09-09",
-        "count": 7,
-        "of": null,
-        "by": "Fault Atlas maintainer (Loxyn), live on the public endpoint",
-        "examples": [
-          [
-            "51966FC0402",
-            [
-              "work_date_document = 1003-03-03 · http://publications.europa.eu/resource/cellar/7ec5cf48-1eb6-42a2-95e1-94b0c278003b"
-            ]
-          ],
-          [
-            "51984PC0606",
-            [
-              "work_date_document = 1003-03-03 · http://publications.europa.eu/resource/cellar/45cd24a2-d3e8-4e2f-aea6-24125ed1b763"
-            ]
-          ],
-          [
-            "51988EC1677",
-            [
-              "work_date_document = 1003-03-03 · http://publications.europa.eu/resource/cellar/3eec9c70-0f34-4c06-b194-d97ae264bb2c"
-            ]
-          ],
-          [
-            "51993EC1858",
-            [
-              "work_date_document = 1003-03-03 · http://publications.europa.eu/resource/cellar/18d2d3dc-0cf8-46c0-9526-6da3e4cf5c13"
-            ]
-          ],
-          [
-            "51995EC1429",
-            [
-              "work_date_document = 1003-03-03 · http://publications.europa.eu/resource/cellar/41459999-dc4f-4534-8d37-5822489a7f42"
-            ]
-          ],
-          [
-            "51995EC1591",
-            [
-              "work_date_document = 1003-03-03 · http://publications.europa.eu/resource/cellar/f67bbafc-f51f-4245-918a-94340319ca25"
-            ]
-          ],
-          [
-            "51997EC0936",
-            [
-              "work_date_document = 1003-03-03 · http://publications.europa.eu/resource/cellar/05cf144d-77fa-4062-822e-2f5be443a291"
-            ]
-          ]
-        ],
-        "carriers_file": "probes/results/form-184-sentinel-date.json"
-      },
-      "matches_excerpt": true,
-      "note": "Re-run live, restricted to works taking part in repeals/amends/based_on: 7, the same seven CELEX."
-    }
-  ],
-  "proposed_severity": {
-    "value": "G2",
-    "reason": "seven acts dated 3 March 1003: the value computes like a real date and nothing in the record marks it as a sentinel",
-    "proposed_by": "Fault Atlas maintainer (Loxyn), first reading",
-    "date": "2026-09-11",
-    "status": "proposed — a second reader confirms or contests, as for the 43 validated forms",
-    "adds_to_the_damage_class": false,
-    "note": "this reading agrees with how the August catalogue judges most WRONG_VALUE forms (G2), so it adds little",
-    "reason_fr": "sept actes datés du 3 mars 1003 : la valeur se calcule comme une vraie date et rien dans la fiche ne la marque comme sentinelle"
+  {
+   "date": "2026-09-09",
+   "event": "exact probe attached and re-run: probes/2026-09/form-184-sentinel-date.sparql",
+   "by": "Fault Atlas maintainer"
   },
-  "registry_scope": {
-    "extent": "7 works carrying the sentinel date of 3 March 1003, for acts of 1966 to 1997",
-    "why_not_a_prevalence": "a fault of a registry has no prevalence: it is a property of the base, so everything drawn from that base carries it. What can be stated is the slice it touches.",
-    "source": "read from this form's own observation, 2026-09-11",
-    "extent_fr": "7 œuvres portant la date sentinelle du 3 mars 1003, pour des actes de 1966 à 1997"
-  },
-  "name_fr": "Date sentinelle dans une fiche officielle, contredite par l'année de son propre identifiant"
+  {
+   "date": "2026-09-09",
+   "event": "second observation: the sentinel counted over the whole graph, live (351 works, 80 with CELEX)",
+   "by": "Fault Atlas maintainer"
+  }
+ ],
+ "probes": [
+  {
+   "file": "probes/2026-09/form-184-sentinel-date.sparql",
+   "kind": "sparql",
+   "corpus_id": "corpus-2026-09-eurlex",
+   "written": "2026-09-09",
+   "run": "curl -G https://publications.europa.eu/webapi/rdf/sparql -H 'Accept: text/csv' --data-urlencode query@probes/2026-09/form-184-sentinel-date.sparql",
+   "result": {
+    "date": "2026-09-09",
+    "count": 7,
+    "of": null,
+    "by": "Fault Atlas maintainer (Loxyn), live on the public endpoint",
+    "examples": [
+     [
+      "51966FC0402",
+      [
+       "work_date_document = 1003-03-03 · http://publications.europa.eu/resource/cellar/7ec5cf48-1eb6-42a2-95e1-94b0c278003b"
+      ]
+     ],
+     [
+      "51984PC0606",
+      [
+       "work_date_document = 1003-03-03 · http://publications.europa.eu/resource/cellar/45cd24a2-d3e8-4e2f-aea6-24125ed1b763"
+      ]
+     ],
+     [
+      "51988EC1677",
+      [
+       "work_date_document = 1003-03-03 · http://publications.europa.eu/resource/cellar/3eec9c70-0f34-4c06-b194-d97ae264bb2c"
+      ]
+     ],
+     [
+      "51993EC1858",
+      [
+       "work_date_document = 1003-03-03 · http://publications.europa.eu/resource/cellar/18d2d3dc-0cf8-46c0-9526-6da3e4cf5c13"
+      ]
+     ],
+     [
+      "51995EC1429",
+      [
+       "work_date_document = 1003-03-03 · http://publications.europa.eu/resource/cellar/41459999-dc4f-4534-8d37-5822489a7f42"
+      ]
+     ],
+     [
+      "51995EC1591",
+      [
+       "work_date_document = 1003-03-03 · http://publications.europa.eu/resource/cellar/f67bbafc-f51f-4245-918a-94340319ca25"
+      ]
+     ],
+     [
+      "51997EC0936",
+      [
+       "work_date_document = 1003-03-03 · http://publications.europa.eu/resource/cellar/05cf144d-77fa-4062-822e-2f5be443a291"
+      ]
+     ]
+    ],
+    "carriers_file": "probes/results/form-184-sentinel-date.json"
+   },
+   "matches_excerpt": true,
+   "note": "Re-run live, restricted to works taking part in repeals/amends/based_on: 7, the same seven CELEX."
+  }
+ ],
+ "proposed_severity": {
+  "value": "G2",
+  "reason": "seven acts dated 3 March 1003: the value computes like a real date and nothing in the record marks it as a sentinel",
+  "proposed_by": "Fault Atlas maintainer (Loxyn), first reading",
+  "date": "2026-09-11",
+  "status": "proposed — a second reader confirms or contests, as for the 43 validated forms",
+  "adds_to_the_damage_class": false,
+  "note": "this reading agrees with how the August catalogue judges most WRONG_VALUE forms (G2), so it adds little",
+  "reason_fr": "sept actes datés du 3 mars 1003 : la valeur se calcule comme une vraie date et rien dans la fiche ne la marque comme sentinelle"
+ },
+ "registry_scope": {
+  "extent": "7 works carrying the sentinel date of 3 March 1003, for acts of 1966 to 1997",
+  "why_not_a_prevalence": "a fault of a registry has no prevalence: it is a property of the base, so everything drawn from that base carries it. What can be stated is the slice it touches.",
+  "source": "read from this form's own observation, 2026-09-11",
+  "extent_fr": "7 œuvres portant la date sentinelle du 3 mars 1003, pour des actes de 1966 à 1997"
+ },
+ "name_fr": "Date sentinelle dans une fiche officielle, contredite par l'année de son propre identifiant"
 }

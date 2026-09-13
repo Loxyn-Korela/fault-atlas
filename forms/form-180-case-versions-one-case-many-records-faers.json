@@ -1,84 +1,91 @@
 {
-  "id": "form-180",
-  "version": 1,
-  "name": "Case versions: one case, many records (FAERS)",
-  "origin": {
-    "organisation": "Loxyn SAS, Lyon",
-    "campaign": "September 2026 — PubMed substrate and other corpora (Voûte)",
-    "contact": "contact@loxyn.ai"
+ "id": "form-180",
+ "version": 1,
+ "name": "Case versions: one case, many records (FAERS)",
+ "origin": {
+  "organisation": "Loxyn SAS, Lyon",
+  "campaign": "September 2026 — PubMed substrate and other corpora (Voûte)",
+  "contact": "contact@loxyn.ai"
+ },
+ "damage": "SPLIT",
+ "class": "UNCLASSIFIED",
+ "layer": "⑨ structure",
+ "injection": "DUPLICATE",
+ "status": "proposed",
+ "seen": [
+  {
+   "corpus": "FDA FAERS quarterly files 2013Q1-2026Q2, probe of 2026-09-09, DEMO (caseid, caseversion, primaryid)",
+   "document": "17,465,106 deduplicated cases (last caseversion); 14,567,407 cumulative DEMO lines at end 2022 for ~11 M distinct cases",
+   "date": "2026-09-09",
+   "observer": "Claude Voûte (LLM agent), session 8d9c5098, from the night reports of 2026-09-06/09",
+   "excerpt": "09-09-2026 : 17 465 106 cas dédupliqués (dernière caseversion) sur un total de lignes DEMO bien supérieur (14 567 407 lignes cumulées à fin 2022 pour ~11 M de cas distincts à cette date).",
+   "excerpt_en": "2026-09-09: 17,465,106 deduplicated cases (last caseversion) out of a much larger total of DEMO lines (14,567,407 cumulative lines at end 2022 for ~11 M distinct cases at that date).",
+   "lang": "fr",
+   "organisation": "Loxyn SAS, Lyon"
+  }
+ ],
+ "specimens": {
+  "cases": [],
+  "counter_examples": []
+ },
+ "prevention": {
+  "cancellable_by_code": true,
+  "refusal_clause": "keep the last caseversion per caseid; never count versions as cases",
+  "refusal_clause_fr": "garder la dernière version par identifiant d'affaire ; ne jamais compter les versions comme des affaires"
+ },
+ "repair": {
+  "reachable_by_deletion": "no",
+  "note": "deletion cannot restore this; derived from the damage class by the migration of 2026-09-09, not judged form by form and not measured — the bench can measure it",
+  "measured": {
+   "value": "no",
+   "reached": 0,
+   "injected": 1355,
+   "note": "0 of 1,355 restored; 24 twins deleted and the 1,674 true facts they took were not restored",
+   "source": "measured 2026-09-10 by pgrepair (SciPyWeightedILP) on the frozen EUR-Lex truth, three identical runs, journal sha256 in measures/reachability-by-damage-2026-09-10.json. Per damage class, not per form: two forms of the same damage and the same visibility get the same answer.",
+   "date": "2026-09-10"
   },
-  "damage": "SPLIT",
-  "class": "UNCLASSIFIED",
-  "layer": "⑨ structure",
-  "injection": "DUPLICATE",
-  "status": "proposed",
-  "seen": [
-    {
-      "corpus": "FDA FAERS quarterly files 2013Q1-2026Q2, probe of 2026-09-09, DEMO (caseid, caseversion, primaryid)",
-      "document": "17,465,106 deduplicated cases (last caseversion); 14,567,407 cumulative DEMO lines at end 2022 for ~11 M distinct cases",
-      "date": "2026-09-09",
-      "observer": "Claude Voûte (LLM agent), session 8d9c5098, from the night reports of 2026-09-06/09",
-      "excerpt": "09-09-2026 : 17 465 106 cas dédupliqués (dernière caseversion) sur un total de lignes DEMO bien supérieur (14 567 407 lignes cumulées à fin 2022 pour ~11 M de cas distincts à cette date).",
-      "excerpt_en": "2026-09-09: 17,465,106 deduplicated cases (last caseversion) out of a much larger total of DEMO lines (14,567,407 cumulative lines at end 2022 for ~11 M distinct cases at that date).",
-      "lang": "fr",
-      "organisation": "Loxyn SAS, Lyon"
-    }
-  ],
-  "specimens": {
-    "cases": [],
-    "counter_examples": []
+  "obstacle": {
+   "value": "the operation",
+   "reason": "One entity written as two is repaired by MERGING them. Deleting the twin removes the false node and does not give back the facts it took: measured, 24 twins deleted of 1,355 and 1,674 true facts not restored.",
+   "reason_fr": "Une entité écrite en deux se répare en les FUSIONNANT. Supprimer le jumeau retire le faux nœud et ne rend pas les faits qu'il avait emportés : mesuré, 24 jumeaux sur 1 355 et 1 674 faits vrais non rétablis.",
+   "source": "derived from what a deletion-only repair can express, read in the repairer's own code — its solution is a set of elements to delete and carries no insertion — together with the measurement of 2026-09-10. Per damage class, not per form.",
+   "date": "2026-09-13"
+  }
+ },
+ "judgeable_by": [
+  "registry"
+ ],
+ "related": [
+  "form-038",
+  "form-039"
+ ],
+ "history": [
+  {
+   "date": "2026-09-09",
+   "event": "proposed by the Voûte Claude in 'FORMES-PUBMED-pour-Fault-Atlas (09-09-2026)' part 2 (sha256 51a338add43cd071…), form 39 of 40; effect on a graph: Without deduplication, every update of a case is a new 'case' node; pair-month counts are inflated. Prevalence: seen; lines/cases ratio not precisely recorded.",
+   "by": "Claude Voûte (LLM agent), session 8d9c5098, from the night reports of 2026-09-06/09"
   },
-  "prevention": {
-    "cancellable_by_code": true,
-    "refusal_clause": "keep the last caseversion per caseid; never count versions as cases",
-    "refusal_clause_fr": "garder la dernière version par identifiant d'affaire ; ne jamais compter les versions comme des affaires"
-  },
-  "repair": {
-    "reachable_by_deletion": "no",
-    "note": "deletion cannot restore this; derived from the damage class by the migration of 2026-09-09, not judged form by form and not measured — the bench can measure it",
-    "measured": {
-      "value": "no",
-      "reached": 0,
-      "injected": 1355,
-      "note": "0 of 1,355 restored; 24 twins deleted and the 1,674 true facts they took were not restored",
-      "source": "measured 2026-09-10 by pgrepair (SciPyWeightedILP) on the frozen EUR-Lex truth, three identical runs, journal sha256 in measures/reachability-by-damage-2026-09-10.json. Per damage class, not per form: two forms of the same damage and the same visibility get the same answer.",
-      "date": "2026-09-10"
-    }
-  },
-  "judgeable_by": [
-    "registry"
-  ],
-  "related": [
-    "form-038",
-    "form-039"
-  ],
-  "history": [
-    {
-      "date": "2026-09-09",
-      "event": "proposed by the Voûte Claude in 'FORMES-PUBMED-pour-Fault-Atlas (09-09-2026)' part 2 (sha256 51a338add43cd071…), form 39 of 40; effect on a graph: Without deduplication, every update of a case is a new 'case' node; pair-month counts are inflated. Prevalence: seen; lines/cases ratio not precisely recorded.",
-      "by": "Claude Voûte (LLM agent), session 8d9c5098, from the night reports of 2026-09-06/09"
-    },
-    {
-      "date": "2026-09-09",
-      "event": "converted to a record; class, prevention and the novel/variant question left to the second reader",
-      "by": "Fault Atlas"
-    }
-  ],
-  "proposed_severity": {
-    "value": "G2",
-    "reason": "one case present as several versions: without deduplication it counts several times, and the total looks normal",
-    "proposed_by": "Fault Atlas maintainer (Loxyn), first reading",
-    "date": "2026-09-11",
-    "status": "proposed — a second reader confirms or contests, as for the 43 validated forms",
-    "adds_to_the_damage_class": true,
-    "note": "the August catalogue judges most SPLIT forms G1; this reading says G2 and the reason is above",
-    "reason_fr": "une affaire présente en plusieurs versions : sans déduplication elle compte plusieurs fois, et le total paraît normal"
-  },
-  "registry_scope": {
-    "extent": "17,465,106 cases after deduplication, out of a far larger total of lines",
-    "why_not_a_prevalence": "a fault of a registry has no prevalence: it is a property of the base, so everything drawn from that base carries it. What can be stated is the slice it touches.",
-    "source": "read from this form's own observation, 2026-09-11",
-    "extent_fr": "17 465 106 affaires après déduplication, sur un total de lignes bien supérieur"
-  },
-  "name_fr": "Versions d'une affaire : une affaire, plusieurs fiches (FAERS)"
+  {
+   "date": "2026-09-09",
+   "event": "converted to a record; class, prevention and the novel/variant question left to the second reader",
+   "by": "Fault Atlas"
+  }
+ ],
+ "proposed_severity": {
+  "value": "G2",
+  "reason": "one case present as several versions: without deduplication it counts several times, and the total looks normal",
+  "proposed_by": "Fault Atlas maintainer (Loxyn), first reading",
+  "date": "2026-09-11",
+  "status": "proposed — a second reader confirms or contests, as for the 43 validated forms",
+  "adds_to_the_damage_class": true,
+  "note": "the August catalogue judges most SPLIT forms G1; this reading says G2 and the reason is above",
+  "reason_fr": "une affaire présente en plusieurs versions : sans déduplication elle compte plusieurs fois, et le total paraît normal"
+ },
+ "registry_scope": {
+  "extent": "17,465,106 cases after deduplication, out of a far larger total of lines",
+  "why_not_a_prevalence": "a fault of a registry has no prevalence: it is a property of the base, so everything drawn from that base carries it. What can be stated is the slice it touches.",
+  "source": "read from this form's own observation, 2026-09-11",
+  "extent_fr": "17 465 106 affaires après déduplication, sur un total de lignes bien supérieur"
+ },
+ "name_fr": "Versions d'une affaire : une affaire, plusieurs fiches (FAERS)"
 }

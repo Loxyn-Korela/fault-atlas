@@ -1,96 +1,103 @@
 {
-  "id": "form-045",
-  "version": 4,
-  "legacy_line": 45,
-  "name": "Genuinely scanned pages",
-  "name_fr": "Vraies pages scannées",
-  "origin": {
-    "organisation": "Loxyn SAS, Lyon",
-    "campaign": "August 2026 — observation campaign (Korela For Science)",
-    "contact": "contact@loxyn.ai"
-  },
-  "damage": "MISSING",
-  "class": "SILENT_FALSE",
-  "layer": "① pixel",
-  "injection": "IMAGE",
-  "legacy_severity": "G3",
-  "legacy_mechanism": "M7",
-  "status": "migrated_unreviewed",
-  "seen": [
-    {
-      "corpus": "Biomedical PDFs 1957-1987 (migraine corpus, 45 PDFs), first observation wave",
-      "document": "Malcolm 1973, The avian egg and the retina (published conference, 2.9 MB, scanned PDF); régime measured on the 45 PDFs",
-      "date": "2026-08-08",
-      "observer": "house observer (LLM agent), first wave of August 2026, biomedical PDFs 1957-1987 (migraine corpus)",
-      "excerpt": "Malcolm 1973, *The avian egg and the retina* (2,9 Mo) — conférence publiée, PDF SCANNÉ. Mesuré le 08/08 sur les 45 PDF du corpus migraine : natif numérique 8/45 (17 %) · scan + couche OCR 36/45 (80 %) · image pure 1/45 (2 %). Vu à l'œil : « IN 1948, WHIII I was working » pour « WHILE I ».",
-      "excerpt_en": "Malcolm 1973, *The avian egg and the retina* (2.9 MB) — published conference, SCANNED PDF. Measured on 2026-08-08 on the 45 PDFs of the migraine corpus: native digital 8/45 (17 %) · scan + OCR layer 36/45 (80 %) · pure image 1/45 (2 %). Seen by eye: \"IN 1948, WHIII I was working\" for \"WHILE I\".",
-      "lang": "fr",
-      "organisation": "Loxyn SAS, Lyon"
-    }
-  ],
-  "specimens": {
-    "cases": [],
-    "counter_examples": []
-  },
-  "prevention": {
-    "cancellable_by_code": false
-  },
-  "repair": {
-    "reachable_by_deletion": "no",
-    "note": "deletion cannot restore this; derived from the damage class by the migration of 2026-09-09, not judged form by form and not measured — the bench can measure it",
-    "measured": {
-      "value": "no",
-      "reached": 0,
-      "injected": 423,
-      "note": "0 of 423 reached",
-      "source": "measured 2026-09-10 by pgrepair (SciPyWeightedILP) on the frozen EUR-Lex truth, three identical runs, journal sha256 in measures/reachability-by-damage-2026-09-10.json. Per damage class, not per form: two forms of the same damage and the same visibility get the same answer.",
-      "date": "2026-09-10"
-    }
-  },
-  "judgeable_by": [
-    "construction",
-    "curated",
-    "closed_world"
-  ],
-  "history": [
-    {
-      "date": "2026-08-09",
-      "event": "catalogue line 45 — GOLDEN (kept for the benchmark): irreducible or silent false",
-      "by": "Korela For Science"
-    },
-    {
-      "date": "2026-09-09",
-      "event": "migrated; classified damage=MISSING injection=IMAGE (judgment, unreviewed by a second reader)",
-      "by": "Fault Atlas migration"
-    },
-    {
-      "date": "2026-09-09",
-      "event": "observation transcribed from the August annex and the wave-1 journal, after the second reader noted the record had no excerpt",
-      "by": "Fault Atlas"
-    },
-    {
-      "date": "2026-09-10",
-      "event": "second reader: variant of form-097 — variant of form-097 (the three PDF regimes)",
-      "by": "Coralie Bagnol-Lebon"
-    },
-    {
-      "date": "2026-09-10",
-      "event": "era recorded: ancient_only — 0 of 15 modern documents are scans; 80 % of the old corpus were (from the August verdicts, which the atlas had not carried)",
-      "by": "Fault Atlas maintainer"
-    }
-  ],
-  "related": [
-    "form-097"
-  ],
-  "era": {
-    "value": "ancient_only",
-    "measured": "2026-09-10",
-    "source": "VERDICT — the old against the modern, 2026-08-08: 45 PDFs of 1957-1987 against 15 PDFs of 2023-2026, 174 pages, 9 publishers. Its own stated limits: 13 of the 15 modern are biomedical, 100 % English, 100 % open access — a channel that excludes scans, truncated and subscription articles by construction.",
-    "note": "0 of 15 modern documents are scans; 80 % of the old corpus were"
-  },
-  "failure_mode": {
-    "value": "MANQ",
-    "means": "a gap: the graph is incomplete where the reading did not reach, not wrong",
-    "source": "the internal catalogue of 2026-08-09 (korela.db, table parametre), line 45; it is not derived from the damage and varies inside a damage class"
+ "id": "form-045",
+ "version": 4,
+ "legacy_line": 45,
+ "name": "Genuinely scanned pages",
+ "name_fr": "Vraies pages scannées",
+ "origin": {
+  "organisation": "Loxyn SAS, Lyon",
+  "campaign": "August 2026 — observation campaign (Korela For Science)",
+  "contact": "contact@loxyn.ai"
+ },
+ "damage": "MISSING",
+ "class": "SILENT_FALSE",
+ "layer": "① pixel",
+ "injection": "IMAGE",
+ "legacy_severity": "G3",
+ "legacy_mechanism": "M7",
+ "status": "migrated_unreviewed",
+ "seen": [
+  {
+   "corpus": "Biomedical PDFs 1957-1987 (migraine corpus, 45 PDFs), first observation wave",
+   "document": "Malcolm 1973, The avian egg and the retina (published conference, 2.9 MB, scanned PDF); régime measured on the 45 PDFs",
+   "date": "2026-08-08",
+   "observer": "house observer (LLM agent), first wave of August 2026, biomedical PDFs 1957-1987 (migraine corpus)",
+   "excerpt": "Malcolm 1973, *The avian egg and the retina* (2,9 Mo) — conférence publiée, PDF SCANNÉ. Mesuré le 08/08 sur les 45 PDF du corpus migraine : natif numérique 8/45 (17 %) · scan + couche OCR 36/45 (80 %) · image pure 1/45 (2 %). Vu à l'œil : « IN 1948, WHIII I was working » pour « WHILE I ».",
+   "excerpt_en": "Malcolm 1973, *The avian egg and the retina* (2.9 MB) — published conference, SCANNED PDF. Measured on 2026-08-08 on the 45 PDFs of the migraine corpus: native digital 8/45 (17 %) · scan + OCR layer 36/45 (80 %) · pure image 1/45 (2 %). Seen by eye: \"IN 1948, WHIII I was working\" for \"WHILE I\".",
+   "lang": "fr",
+   "organisation": "Loxyn SAS, Lyon"
   }
+ ],
+ "specimens": {
+  "cases": [],
+  "counter_examples": []
+ },
+ "prevention": {
+  "cancellable_by_code": false
+ },
+ "repair": {
+  "reachable_by_deletion": "no",
+  "note": "deletion cannot restore this; derived from the damage class by the migration of 2026-09-09, not judged form by form and not measured — the bench can measure it",
+  "measured": {
+   "value": "no",
+   "reached": 0,
+   "injected": 423,
+   "note": "0 of 423 reached",
+   "source": "measured 2026-09-10 by pgrepair (SciPyWeightedILP) on the frozen EUR-Lex truth, three identical runs, journal sha256 in measures/reachability-by-damage-2026-09-10.json. Per damage class, not per form: two forms of the same damage and the same visibility get the same answer.",
+   "date": "2026-09-10"
+  },
+  "obstacle": {
+   "value": "the operation",
+   "reason": "Restoring a gap means ADDING, and a deletion-only repair has no such gesture. Its solution is a set of elements to delete; there is no insertion anywhere in it. No weight and no information change that answer.",
+   "reason_fr": "Réparer un manque veut dire AJOUTER, et une réparation par suppression n'a pas ce geste. Sa solution est un ensemble d'éléments à retirer ; il n'y a d'insertion nulle part. Aucun poids et aucune information n'y changent quoi que ce soit.",
+   "source": "derived from what a deletion-only repair can express, read in the repairer's own code — its solution is a set of elements to delete and carries no insertion — together with the measurement of 2026-09-10. Per damage class, not per form.",
+   "date": "2026-09-13"
+  }
+ },
+ "judgeable_by": [
+  "construction",
+  "curated",
+  "closed_world"
+ ],
+ "history": [
+  {
+   "date": "2026-08-09",
+   "event": "catalogue line 45 — GOLDEN (kept for the benchmark): irreducible or silent false",
+   "by": "Korela For Science"
+  },
+  {
+   "date": "2026-09-09",
+   "event": "migrated; classified damage=MISSING injection=IMAGE (judgment, unreviewed by a second reader)",
+   "by": "Fault Atlas migration"
+  },
+  {
+   "date": "2026-09-09",
+   "event": "observation transcribed from the August annex and the wave-1 journal, after the second reader noted the record had no excerpt",
+   "by": "Fault Atlas"
+  },
+  {
+   "date": "2026-09-10",
+   "event": "second reader: variant of form-097 — variant of form-097 (the three PDF regimes)",
+   "by": "Coralie Bagnol-Lebon"
+  },
+  {
+   "date": "2026-09-10",
+   "event": "era recorded: ancient_only — 0 of 15 modern documents are scans; 80 % of the old corpus were (from the August verdicts, which the atlas had not carried)",
+   "by": "Fault Atlas maintainer"
+  }
+ ],
+ "related": [
+  "form-097"
+ ],
+ "era": {
+  "value": "ancient_only",
+  "measured": "2026-09-10",
+  "source": "VERDICT — the old against the modern, 2026-08-08: 45 PDFs of 1957-1987 against 15 PDFs of 2023-2026, 174 pages, 9 publishers. Its own stated limits: 13 of the 15 modern are biomedical, 100 % English, 100 % open access — a channel that excludes scans, truncated and subscription articles by construction.",
+  "note": "0 of 15 modern documents are scans; 80 % of the old corpus were"
+ },
+ "failure_mode": {
+  "value": "MANQ",
+  "means": "a gap: the graph is incomplete where the reading did not reach, not wrong",
+  "source": "the internal catalogue of 2026-08-09 (korela.db, table parametre), line 45; it is not derived from the damage and varies inside a damage class"
+ }
 }

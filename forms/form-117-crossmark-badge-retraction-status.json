@@ -1,219 +1,226 @@
 {
-  "id": "form-117",
-  "version": 3,
-  "legacy_line": 117,
-  "name": "Crossmark badge (retraction status)",
-  "name_fr": "Badge Crossmark",
-  "origin": {
-    "organisation": "Loxyn SAS, Lyon",
-    "campaign": "August 2026 — observation campaign (Korela For Science)",
-    "contact": "contact@loxyn.ai"
+ "id": "form-117",
+ "version": 3,
+ "legacy_line": 117,
+ "name": "Crossmark badge (retraction status)",
+ "name_fr": "Badge Crossmark",
+ "origin": {
+  "organisation": "Loxyn SAS, Lyon",
+  "campaign": "August 2026 — observation campaign (Korela For Science)",
+  "contact": "contact@loxyn.ai"
+ },
+ "damage": "ANACHRONISM",
+ "class": "DEFEATED",
+ "layer": "② reading",
+ "injection": "ALTER",
+ "legacy_severity": "G2",
+ "legacy_mechanism": "M6",
+ "status": "migrated_unreviewed",
+ "seen": [
+  {
+   "corpus": "observation 2026-08 (Europe PMC JATS 2023-2026 and PubMed abstracts)",
+   "date": "2026-08-08",
+   "observer": "house observer (LLM agent), see report",
+   "excerpt": "badge Crossmark relevé sur des articles 2025-2026 ; et un document de la vague « genres rares » dont un article cité AVAIT ÉTÉ ANNULÉ (observé le 08/08/2026)",
+   "lang": "fr",
+   "excerpt_en": "Crossmark badge recorded on 2025-2026 articles; and a document of the \"rare genres\" wave in which a cited article HAD BEEN RETRACTED (observed 2026-08-08)",
+   "organisation": "Loxyn SAS, Lyon"
   },
-  "damage": "ANACHRONISM",
-  "class": "DEFEATED",
-  "layer": "② reading",
-  "injection": "ALTER",
-  "legacy_severity": "G2",
-  "legacy_mechanism": "M6",
-  "status": "migrated_unreviewed",
-  "seen": [
-    {
-      "corpus": "observation 2026-08 (Europe PMC JATS 2023-2026 and PubMed abstracts)",
-      "date": "2026-08-08",
-      "observer": "house observer (LLM agent), see report",
-      "excerpt": "badge Crossmark relevé sur des articles 2025-2026 ; et un document de la vague « genres rares » dont un article cité AVAIT ÉTÉ ANNULÉ (observé le 08/08/2026)",
-      "lang": "fr",
-      "excerpt_en": "Crossmark badge recorded on 2025-2026 articles; and a document of the \"rare genres\" wave in which a cited article HAD BEEN RETRACTED (observed 2026-08-08)",
-      "organisation": "Loxyn SAS, Lyon"
-    },
-    {
-      "corpus": "observation 2026-08 (272 Europe PMC JATS articles)",
-      "date": "2026-09-09",
-      "observer": "house probe (regex, no model), written 2026-08-08, re-run by the Fault Atlas maintainer",
-      "organisation": "Loxyn SAS, Lyon",
-      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
-      "lang": "en",
-      "probe": "probes/2026-08/line-117.py",
-      "excerpt": "Probe re-run on the 272 JATS files: 35/272 carriers (retract 33, moderne 1, nonEN 1). Examples — moderne-PMC13296839.xml: retraction of · nonEN-PMC13193195.xml: retraction of · retract-PMC12920011.xml: <related-article xmlns:xlink=\"http://www.w3.org/1999/xlink\" related-article-type=\"retracted-article\" id=\"RA1\" vol=\"32\" p"
-    }
-  ],
-  "specimens": {
-    "cases": [],
-    "counter_examples": []
-  },
-  "prevention": {
-    "cancellable_by_code": true
-  },
-  "repair": {
-    "reachable_by_deletion": "partial",
-    "note": "deleting the anachronistic edge removes a fact that was true within its validity interval; the true repair bounds the validity, it does not delete (reading of Coralie Bagnol-Lebon, 2026-09-09)",
-    "measured": {
-      "value": "no",
-      "reached": 0,
-      "injected": 5276,
-      "note": "0 of 5,276 reached, on three identical runs",
-      "source": "measured 2026-09-10 by pgrepair (SciPyWeightedILP) on the frozen EUR-Lex truth, three identical runs, journal sha256 in measures/reachability-by-damage-2026-09-10.json. Per damage class, not per form: two forms of the same damage and the same visibility get the same answer.",
-      "date": "2026-09-10",
-      "disagrees_with_the_judgment": "partial"
-    }
-  },
-  "judgeable_by": [
-    "construction",
-    "registry",
-    "dated_future",
-    "closed_world"
-  ],
-  "history": [
-    {
-      "date": "2026-08-08",
-      "event": "the internal catalogue records a house filter with 4 cases and 1 counter-example(s); not published in this record",
-      "by": "Korela For Science"
-    },
-    {
-      "date": "2026-08-09",
-      "event": "catalogue line 117 — DEFEATED (cancelled by code): filter written and green on the bench",
-      "by": "Korela For Science"
-    },
-    {
-      "date": "2026-09-09",
-      "event": "migrated; classified damage=ANACHRONISM injection=ALTER (judgment, unreviewed by a second reader)",
-      "by": "Fault Atlas migration"
-    },
-    {
-      "date": "2026-09-09",
-      "event": "repair.reachable_by_deletion changed from yes to partial: a deletion loses the fact's past validity; only a spurious edge is fully repaired by deletion",
-      "by": "Coralie Bagnol-Lebon (second reader), applied by Fault Atlas"
-    },
-    {
-      "date": "2026-09-09",
-      "event": "second observation added from the exact probe on the 272 files: probes/2026-08/line-117.py, 35/272",
-      "by": "Fault Atlas maintainer"
-    },
-    {
-      "date": "2026-09-10",
-      "event": "era recorded: born_modern — one of the fourteen difficulties born with the modern era; it had no line in the catalogue before 2026-08-08 (from the August verdicts, which the atlas had not carried)",
-      "by": "Fault Atlas maintainer"
-    }
-  ],
-  "probes": [
-    {
-      "file": "probes/2026-08/line-117.py",
-      "kind": "python",
-      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
-      "written": "2026-08-08",
-      "run": "python3 tools/run_probe.py probes/2026-08/line-117.py <dir with the 272 .xml>",
-      "result": {
-        "date": "2026-09-09",
-        "count": 35,
-        "of": 272,
-        "strata": {
-          "retract": 33,
-          "moderne": 1,
-          "nonEN": 1
-        },
-        "examples": [
-          [
-            "moderne-PMC13296839.xml",
-            [
-              "retraction of"
-            ]
-          ],
-          [
-            "nonEN-PMC13193195.xml",
-            [
-              "retraction of"
-            ]
-          ],
-          [
-            "retract-PMC12920011.xml",
-            [
-              "<related-article xmlns:xlink=\"http://www.w3.org/1999/xlink\" related-article-type=\"retracted-article\" id=\"RA1\" vol=\"32\" page=\"757\" ext-link-type=\"doi\" xlink:href=\"10.3892/ijo.32.4.757\">",
-              "<related-article xmlns:xlink=\"http://www.w3.org/1999/xlink\" related-article-type=\"retracted-article\" vol=\"32\" page=\"757\" ext-link-type=\"doi\" xlink:href=\"10.3892/ijo.32.4.757\">"
-            ]
-          ],
-          [
-            "retract-PMC12937552.xml",
-            [
-              "<related-article related-article-type=\"retracted-article\">"
-            ]
-          ],
-          [
-            "retract-PMC12943135.xml",
-            [
-              "<related-article xmlns:xlink=\"http://www.w3.org/1999/xlink\" related-article-type=\"retracted-article\" xml:lang=\"en\" xlink:title=\"research-article\" vol=\"60\" elocation-id=\"1055\" journal-id=\"Medicina (Kaunas)\" journal-id-type=\"nlm-ta\" ext-link-type=\"pmc\" xlink:href=\"PMC11279236\">",
-              "retraction of"
-            ]
-          ],
-          [
-            "retract-PMC12945919.xml",
-            [
-              "<related-article xmlns:xlink=\"http://www.w3.org/1999/xlink\" related-article-type=\"retracted-article\" xml:lang=\"en\" xlink:title=\"research-article\" journal-id=\"Skin Res Technol\" journal-id-type=\"nlm-ta\" ext-link-type=\"pmc\" xlink:href=\"PMC10387586\">"
-            ]
-          ],
-          [
-            "retract-PMC12951106.xml",
-            [
-              "<related-article xmlns:xlink=\"http://www.w3.org/1999/xlink\" related-article-type=\"retracted-article\" xml:lang=\"en\" xlink:title=\"research-article\" journal-id=\"Cancer Med\" journal-id-type=\"nlm-ta\" ext-link-type=\"pmc\" xlink:href=\"PMC6718591\">"
-            ]
-          ],
-          [
-            "retract-PMC12983062.xml",
-            [
-              "<related-article related-article-type=\"retracted-article\">"
-            ]
-          ],
-          [
-            "retract-PMC12983399.xml",
-            [
-              "<related-article xmlns:xlink=\"http://www.w3.org/1999/xlink\" related-article-type=\"retracted-article\" xml:lang=\"en\" xlink:title=\"review-article\" journal-id=\"Front Immunol\" journal-id-type=\"nlm-ta\" ext-link-type=\"pmc\" xlink:href=\"PMC12325065\">"
-            ]
-          ],
-          [
-            "retract-PMC12985380.xml",
-            [
-              "<related-article related-article-type=\"retracted-article\">",
-              "This article has been retracted"
-            ]
-          ],
-          [
-            "retract-PMC12989678.xml",
-            [
-              "<related-article xmlns:xlink=\"http://www.w3.org/1999/xlink\" related-article-type=\"retracted-article\" xml:lang=\"en\" xlink:title=\"research-article\" vol=\"10\" page=\"604\" journal-id=\"Gut Liver\" journal-id-type=\"nlm-ta\" ext-link-type=\"pmc\" xlink:href=\"PMC4933422\">",
-              "this article has been retracted"
-            ]
-          ],
-          [
-            "retract-PMC12990951.xml",
-            [
-              "<related-article related-article-type=\"retracted-article\">",
-              "This article has been retracted"
-            ]
-          ]
-        ],
-        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files",
-        "carriers_file": "probes/results/line-117.json"
-      },
-      "matches_excerpt": true
-    }
-  ],
-  "era": {
-    "value": "born_modern",
-    "measured": "2026-09-10",
-    "source": "VERDICT — the old against the modern, 2026-08-08: 45 PDFs of 1957-1987 against 15 PDFs of 2023-2026, 174 pages, 9 publishers. Its own stated limits: 13 of the 15 modern are biomedical, 100 % English, 100 % open access — a channel that excludes scans, truncated and subscription articles by construction.",
-    "note": "one of the fourteen difficulties born with the modern era; it had no line in the catalogue before 2026-08-08"
-  },
-  "failure_mode": {
-    "value": "FAUX",
-    "means": "a false fact: a value, a type or a link the source never asserted",
-    "source": "the internal catalogue of 2026-08-09 (korela.db, table parametre), line 117; it is not derived from the damage and varies inside a damage class"
-  },
-  "document_years": {
-    "corpus_id": "corpus-europe-pmc-jats-2023-2026",
-    "counts": {
-      "2025": 1,
-      "2026": 11
-    },
-    "carriers_dated": 12,
-    "source": "corpora/index/document-years-europe-pmc-272.json, read 2026-09-11 from each file's earliest pub-date"
+  {
+   "corpus": "observation 2026-08 (272 Europe PMC JATS articles)",
+   "date": "2026-09-09",
+   "observer": "house probe (regex, no model), written 2026-08-08, re-run by the Fault Atlas maintainer",
+   "organisation": "Loxyn SAS, Lyon",
+   "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+   "lang": "en",
+   "probe": "probes/2026-08/line-117.py",
+   "excerpt": "Probe re-run on the 272 JATS files: 35/272 carriers (retract 33, moderne 1, nonEN 1). Examples — moderne-PMC13296839.xml: retraction of · nonEN-PMC13193195.xml: retraction of · retract-PMC12920011.xml: <related-article xmlns:xlink=\"http://www.w3.org/1999/xlink\" related-article-type=\"retracted-article\" id=\"RA1\" vol=\"32\" p"
   }
+ ],
+ "specimens": {
+  "cases": [],
+  "counter_examples": []
+ },
+ "prevention": {
+  "cancellable_by_code": true
+ },
+ "repair": {
+  "reachable_by_deletion": "partial",
+  "note": "deleting the anachronistic edge removes a fact that was true within its validity interval; the true repair bounds the validity, it does not delete (reading of Coralie Bagnol-Lebon, 2026-09-09)",
+  "measured": {
+   "value": "no",
+   "reached": 0,
+   "injected": 5276,
+   "note": "0 of 5,276 reached, on three identical runs",
+   "source": "measured 2026-09-10 by pgrepair (SciPyWeightedILP) on the frozen EUR-Lex truth, three identical runs, journal sha256 in measures/reachability-by-damage-2026-09-10.json. Per damage class, not per form: two forms of the same damage and the same visibility get the same answer.",
+   "date": "2026-09-10",
+   "disagrees_with_the_judgment": "partial"
+  },
+  "obstacle": {
+   "value": "the operation",
+   "reason": "The fact is true within its own validity interval; the date is what is wrong. Repairing it means bounding or setting a date, not deleting an edge.",
+   "reason_fr": "Le fait est vrai dans son propre intervalle de validité ; c'est la date qui est fausse. Le réparer veut dire borner ou poser une date, pas supprimer une arête.",
+   "source": "derived from what a deletion-only repair can express, read in the repairer's own code — its solution is a set of elements to delete and carries no insertion — together with the measurement of 2026-09-10. Per damage class, not per form.",
+   "date": "2026-09-13"
+  }
+ },
+ "judgeable_by": [
+  "construction",
+  "registry",
+  "dated_future",
+  "closed_world"
+ ],
+ "history": [
+  {
+   "date": "2026-08-08",
+   "event": "the internal catalogue records a house filter with 4 cases and 1 counter-example(s); not published in this record",
+   "by": "Korela For Science"
+  },
+  {
+   "date": "2026-08-09",
+   "event": "catalogue line 117 — DEFEATED (cancelled by code): filter written and green on the bench",
+   "by": "Korela For Science"
+  },
+  {
+   "date": "2026-09-09",
+   "event": "migrated; classified damage=ANACHRONISM injection=ALTER (judgment, unreviewed by a second reader)",
+   "by": "Fault Atlas migration"
+  },
+  {
+   "date": "2026-09-09",
+   "event": "repair.reachable_by_deletion changed from yes to partial: a deletion loses the fact's past validity; only a spurious edge is fully repaired by deletion",
+   "by": "Coralie Bagnol-Lebon (second reader), applied by Fault Atlas"
+  },
+  {
+   "date": "2026-09-09",
+   "event": "second observation added from the exact probe on the 272 files: probes/2026-08/line-117.py, 35/272",
+   "by": "Fault Atlas maintainer"
+  },
+  {
+   "date": "2026-09-10",
+   "event": "era recorded: born_modern — one of the fourteen difficulties born with the modern era; it had no line in the catalogue before 2026-08-08 (from the August verdicts, which the atlas had not carried)",
+   "by": "Fault Atlas maintainer"
+  }
+ ],
+ "probes": [
+  {
+   "file": "probes/2026-08/line-117.py",
+   "kind": "python",
+   "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+   "written": "2026-08-08",
+   "run": "python3 tools/run_probe.py probes/2026-08/line-117.py <dir with the 272 .xml>",
+   "result": {
+    "date": "2026-09-09",
+    "count": 35,
+    "of": 272,
+    "strata": {
+     "retract": 33,
+     "moderne": 1,
+     "nonEN": 1
+    },
+    "examples": [
+     [
+      "moderne-PMC13296839.xml",
+      [
+       "retraction of"
+      ]
+     ],
+     [
+      "nonEN-PMC13193195.xml",
+      [
+       "retraction of"
+      ]
+     ],
+     [
+      "retract-PMC12920011.xml",
+      [
+       "<related-article xmlns:xlink=\"http://www.w3.org/1999/xlink\" related-article-type=\"retracted-article\" id=\"RA1\" vol=\"32\" page=\"757\" ext-link-type=\"doi\" xlink:href=\"10.3892/ijo.32.4.757\">",
+       "<related-article xmlns:xlink=\"http://www.w3.org/1999/xlink\" related-article-type=\"retracted-article\" vol=\"32\" page=\"757\" ext-link-type=\"doi\" xlink:href=\"10.3892/ijo.32.4.757\">"
+      ]
+     ],
+     [
+      "retract-PMC12937552.xml",
+      [
+       "<related-article related-article-type=\"retracted-article\">"
+      ]
+     ],
+     [
+      "retract-PMC12943135.xml",
+      [
+       "<related-article xmlns:xlink=\"http://www.w3.org/1999/xlink\" related-article-type=\"retracted-article\" xml:lang=\"en\" xlink:title=\"research-article\" vol=\"60\" elocation-id=\"1055\" journal-id=\"Medicina (Kaunas)\" journal-id-type=\"nlm-ta\" ext-link-type=\"pmc\" xlink:href=\"PMC11279236\">",
+       "retraction of"
+      ]
+     ],
+     [
+      "retract-PMC12945919.xml",
+      [
+       "<related-article xmlns:xlink=\"http://www.w3.org/1999/xlink\" related-article-type=\"retracted-article\" xml:lang=\"en\" xlink:title=\"research-article\" journal-id=\"Skin Res Technol\" journal-id-type=\"nlm-ta\" ext-link-type=\"pmc\" xlink:href=\"PMC10387586\">"
+      ]
+     ],
+     [
+      "retract-PMC12951106.xml",
+      [
+       "<related-article xmlns:xlink=\"http://www.w3.org/1999/xlink\" related-article-type=\"retracted-article\" xml:lang=\"en\" xlink:title=\"research-article\" journal-id=\"Cancer Med\" journal-id-type=\"nlm-ta\" ext-link-type=\"pmc\" xlink:href=\"PMC6718591\">"
+      ]
+     ],
+     [
+      "retract-PMC12983062.xml",
+      [
+       "<related-article related-article-type=\"retracted-article\">"
+      ]
+     ],
+     [
+      "retract-PMC12983399.xml",
+      [
+       "<related-article xmlns:xlink=\"http://www.w3.org/1999/xlink\" related-article-type=\"retracted-article\" xml:lang=\"en\" xlink:title=\"review-article\" journal-id=\"Front Immunol\" journal-id-type=\"nlm-ta\" ext-link-type=\"pmc\" xlink:href=\"PMC12325065\">"
+      ]
+     ],
+     [
+      "retract-PMC12985380.xml",
+      [
+       "<related-article related-article-type=\"retracted-article\">",
+       "This article has been retracted"
+      ]
+     ],
+     [
+      "retract-PMC12989678.xml",
+      [
+       "<related-article xmlns:xlink=\"http://www.w3.org/1999/xlink\" related-article-type=\"retracted-article\" xml:lang=\"en\" xlink:title=\"research-article\" vol=\"10\" page=\"604\" journal-id=\"Gut Liver\" journal-id-type=\"nlm-ta\" ext-link-type=\"pmc\" xlink:href=\"PMC4933422\">",
+       "this article has been retracted"
+      ]
+     ],
+     [
+      "retract-PMC12990951.xml",
+      [
+       "<related-article related-article-type=\"retracted-article\">",
+       "This article has been retracted"
+      ]
+     ]
+    ],
+    "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files",
+    "carriers_file": "probes/results/line-117.json"
+   },
+   "matches_excerpt": true
+  }
+ ],
+ "era": {
+  "value": "born_modern",
+  "measured": "2026-09-10",
+  "source": "VERDICT — the old against the modern, 2026-08-08: 45 PDFs of 1957-1987 against 15 PDFs of 2023-2026, 174 pages, 9 publishers. Its own stated limits: 13 of the 15 modern are biomedical, 100 % English, 100 % open access — a channel that excludes scans, truncated and subscription articles by construction.",
+  "note": "one of the fourteen difficulties born with the modern era; it had no line in the catalogue before 2026-08-08"
+ },
+ "failure_mode": {
+  "value": "FAUX",
+  "means": "a false fact: a value, a type or a link the source never asserted",
+  "source": "the internal catalogue of 2026-08-09 (korela.db, table parametre), line 117; it is not derived from the damage and varies inside a damage class"
+ },
+ "document_years": {
+  "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+  "counts": {
+   "2025": 1,
+   "2026": 11
+  },
+  "carriers_dated": 12,
+  "source": "corpora/index/document-years-europe-pmc-272.json, read 2026-09-11 from each file's earliest pub-date"
+ }
 }

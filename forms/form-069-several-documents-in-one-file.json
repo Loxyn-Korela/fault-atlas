@@ -1,213 +1,220 @@
 {
-  "id": "form-069",
-  "version": 2,
-  "legacy_line": 69,
-  "name": "Several documents in one file",
-  "name_fr": "Plusieurs documents dans un fichier",
-  "origin": {
-    "organisation": "Loxyn SAS, Lyon",
-    "campaign": "August 2026 — observation campaign (Korela For Science)",
-    "contact": "contact@loxyn.ai"
-  },
-  "damage": "MERGE",
-  "class": "DEFEATED_IF_XML",
-  "layer": "⑨ structure",
-  "injection": "DUPLICATE",
-  "legacy_severity": "G1",
-  "legacy_mechanism": "M4",
-  "status": "validated",
-  "seen": [
-    {
-      "corpus": "observation 2026-08 (Europe PMC JATS 2023-2026 and PubMed abstracts)",
-      "date": "2026-08-08",
-      "observer": "house observer (LLM agent), see report",
-      "excerpt": "MESURÉ le 08/08/2026 sur les 272 articles XML JATS d'(internal corpus of 272 JATS articles) : présent dans 30 (11 %). Concentration : nonEN 24, bio 3, meta 2, phys 1. Formes réelles, par article-type de <sub-article> : translation 24, associated-data 9, aggregated-review-documents 6, author-comment 3, editor-report 3. Exemple : bio-PMC13252842.xml porte 5 <sub-article> (aggregated-review-documents, associated-data, author-comment, editor-report) dans un seul fichier.",
-      "lang": "fr",
-      "excerpt_en": "MEASURED on 2026-08-08 on the 272 JATS XML articles of the internal corpus: present in 30 (11 %). Concentration: nonEN 24, bio 3, meta 2, phys 1. Real forms, by <sub-article> article-type: translation 24, associated-data 9, aggregated-review-documents 6, author-comment 3, editor-report 3. Example: bio-PMC13252842.xml carries 5 <sub-article> (aggregated-review-documents, associated-data, author-comment, editor-report) in a single file.",
-      "organisation": "Loxyn SAS, Lyon",
-      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
-      "probe": "probes/2026-08/line-069.py"
-    }
-  ],
-  "specimens": {
-    "cases": [],
-    "counter_examples": []
-  },
-  "prevention": {
-    "cancellable_by_code": true,
-    "note": "cancelled only when the source is structured (XML/HTML); not on composed PDF"
-  },
-  "repair": {
-    "reachable_by_deletion": "no",
-    "note": "deletion cannot restore this; derived from the damage class by the migration of 2026-09-09, not judged form by form and not measured — the bench can measure it",
-    "measured": {
-      "value": "no",
-      "reached": 0,
-      "injected": 2532,
-      "note": "0 of 2,532 reached",
-      "source": "measured 2026-09-10 by pgrepair (SciPyWeightedILP) on the frozen EUR-Lex truth, three identical runs, journal sha256 in measures/reachability-by-damage-2026-09-10.json. Per damage class, not per form: two forms of the same damage and the same visibility get the same answer.",
-      "date": "2026-09-10"
-    }
-  },
-  "judgeable_by": [
-    "construction",
-    "registry",
-    "curated",
-    "closed_world"
-  ],
-  "history": [
-    {
-      "date": "2026-08-08",
-      "event": "the internal catalogue records a house filter with 6 cases and 1 counter-example(s); not published in this record",
-      "by": "Korela For Science"
-    },
-    {
-      "date": "2026-08-09",
-      "event": "catalogue line 69 — DEFEATED (cancelled by code): filter written and green on the bench",
-      "by": "Korela For Science"
-    },
-    {
-      "date": "2026-09-09",
-      "event": "migrated; classified damage=MERGE injection=DUPLICATE (judgment, unreviewed by a second reader)",
-      "by": "Fault Atlas migration"
-    },
-    {
-      "date": "2026-09-09",
-      "event": "internal tool paths removed from observation notes before publication; wording otherwise unchanged",
-      "by": "Fault Atlas"
-    },
-    {
-      "date": "2026-09-09",
-      "event": "exact probe attached to the 272-file observation: probes/2026-08/line-069.py, re-run 30/272",
-      "by": "Fault Atlas maintainer"
-    },
-    {
-      "date": "2026-09-10",
-      "event": "second reader: validated — read in full with the record: a dated measurement, a named corpus, real forms",
-      "by": "Coralie Bagnol-Lebon"
-    }
-  ],
-  "probes": [
-    {
-      "file": "probes/2026-08/line-069.py",
-      "kind": "python",
-      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
-      "written": "2026-08-08",
-      "run": "python3 tools/run_probe.py probes/2026-08/line-069.py <dir with the 272 .xml>",
-      "result": {
-        "date": "2026-09-09",
-        "count": 30,
-        "of": 272,
-        "strata": {
-          "nonEN": 24,
-          "bio": 3,
-          "meta": 2,
-          "phys": 1
-        },
-        "examples": [
-          [
-            "bio-PMC13182387.xml",
-            [
-              "sub-article ×2 response ×0",
-              "types=aggregated-review-documents,associated-data"
-            ]
-          ],
-          [
-            "bio-PMC13252842.xml",
-            [
-              "sub-article ×5 response ×0",
-              "types=aggregated-review-documents,associated-data,author-comment,editor-report"
-            ]
-          ],
-          [
-            "bio-PMC13289183.xml",
-            [
-              "sub-article ×2 response ×0",
-              "types=aggregated-review-documents,associated-data"
-            ]
-          ],
-          [
-            "meta-PMC13157766.xml",
-            [
-              "sub-article ×2 response ×0",
-              "types=aggregated-review-documents,associated-data"
-            ]
-          ],
-          [
-            "meta-PMC13229315.xml",
-            [
-              "sub-article ×8 response ×0",
-              "types=aggregated-review-documents,associated-data,author-comment,editor-report"
-            ]
-          ],
-          [
-            "nonEN-PMC13127809.xml",
-            [
-              "sub-article ×1 response ×0",
-              "types=translation"
-            ]
-          ],
-          [
-            "nonEN-PMC13128172.xml",
-            [
-              "sub-article ×1 response ×0",
-              "types=translation"
-            ]
-          ],
-          [
-            "nonEN-PMC13128184.xml",
-            [
-              "sub-article ×1 response ×0",
-              "types=translation"
-            ]
-          ],
-          [
-            "nonEN-PMC13128185.xml",
-            [
-              "sub-article ×1 response ×0",
-              "types=translation"
-            ]
-          ],
-          [
-            "nonEN-PMC13128186.xml",
-            [
-              "sub-article ×1 response ×0",
-              "types=translation"
-            ]
-          ],
-          [
-            "nonEN-PMC13128206.xml",
-            [
-              "sub-article ×2 response ×0",
-              "types=associated-data,translation"
-            ]
-          ],
-          [
-            "nonEN-PMC13128210.xml",
-            [
-              "sub-article ×1 response ×0",
-              "types=translation"
-            ]
-          ]
-        ],
-        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files",
-        "carriers_file": "probes/results/line-069.json"
-      },
-      "matches_excerpt": true
-    }
-  ],
-  "observer_agreement": "2/2 — first reader (Loxyn, August/September classification) and second reader (Coralie Bagnol-Lebon, 2026-09-10)",
-  "failure_mode": {
-    "value": "PROP",
-    "means": "identity: one thing appears under several forms, or several things under one — the error lands on a node and propagates to everything hanging from it",
-    "source": "the internal catalogue of 2026-08-09 (korela.db, table parametre), line 69; it is not derived from the damage and varies inside a damage class"
-  },
-  "document_years": {
-    "corpus_id": "corpus-europe-pmc-jats-2023-2026",
-    "counts": {
-      "2026": 12
-    },
-    "carriers_dated": 12,
-    "source": "corpora/index/document-years-europe-pmc-272.json, read 2026-09-11 from each file's earliest pub-date"
+ "id": "form-069",
+ "version": 2,
+ "legacy_line": 69,
+ "name": "Several documents in one file",
+ "name_fr": "Plusieurs documents dans un fichier",
+ "origin": {
+  "organisation": "Loxyn SAS, Lyon",
+  "campaign": "August 2026 — observation campaign (Korela For Science)",
+  "contact": "contact@loxyn.ai"
+ },
+ "damage": "MERGE",
+ "class": "DEFEATED_IF_XML",
+ "layer": "⑨ structure",
+ "injection": "DUPLICATE",
+ "legacy_severity": "G1",
+ "legacy_mechanism": "M4",
+ "status": "validated",
+ "seen": [
+  {
+   "corpus": "observation 2026-08 (Europe PMC JATS 2023-2026 and PubMed abstracts)",
+   "date": "2026-08-08",
+   "observer": "house observer (LLM agent), see report",
+   "excerpt": "MESURÉ le 08/08/2026 sur les 272 articles XML JATS d'(internal corpus of 272 JATS articles) : présent dans 30 (11 %). Concentration : nonEN 24, bio 3, meta 2, phys 1. Formes réelles, par article-type de <sub-article> : translation 24, associated-data 9, aggregated-review-documents 6, author-comment 3, editor-report 3. Exemple : bio-PMC13252842.xml porte 5 <sub-article> (aggregated-review-documents, associated-data, author-comment, editor-report) dans un seul fichier.",
+   "lang": "fr",
+   "excerpt_en": "MEASURED on 2026-08-08 on the 272 JATS XML articles of the internal corpus: present in 30 (11 %). Concentration: nonEN 24, bio 3, meta 2, phys 1. Real forms, by <sub-article> article-type: translation 24, associated-data 9, aggregated-review-documents 6, author-comment 3, editor-report 3. Example: bio-PMC13252842.xml carries 5 <sub-article> (aggregated-review-documents, associated-data, author-comment, editor-report) in a single file.",
+   "organisation": "Loxyn SAS, Lyon",
+   "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+   "probe": "probes/2026-08/line-069.py"
   }
+ ],
+ "specimens": {
+  "cases": [],
+  "counter_examples": []
+ },
+ "prevention": {
+  "cancellable_by_code": true,
+  "note": "cancelled only when the source is structured (XML/HTML); not on composed PDF"
+ },
+ "repair": {
+  "reachable_by_deletion": "no",
+  "note": "deletion cannot restore this; derived from the damage class by the migration of 2026-09-09, not judged form by form and not measured — the bench can measure it",
+  "measured": {
+   "value": "no",
+   "reached": 0,
+   "injected": 2532,
+   "note": "0 of 2,532 reached",
+   "source": "measured 2026-09-10 by pgrepair (SciPyWeightedILP) on the frozen EUR-Lex truth, three identical runs, journal sha256 in measures/reachability-by-damage-2026-09-10.json. Per damage class, not per form: two forms of the same damage and the same visibility get the same answer.",
+   "date": "2026-09-10"
+  },
+  "obstacle": {
+   "value": "the operation",
+   "reason": "Two entities fused into one are separated by SPLITTING, which means deciding which fact belongs to whom. Deletion can only remove the fused node and everything hanging from it.",
+   "reason_fr": "Deux entités fondues en une se séparent en les SCINDANT, ce qui veut dire décider quel fait appartient à qui. La suppression ne peut que retirer le nœud fondu et tout ce qui y pend.",
+   "source": "derived from what a deletion-only repair can express, read in the repairer's own code — its solution is a set of elements to delete and carries no insertion — together with the measurement of 2026-09-10. Per damage class, not per form.",
+   "date": "2026-09-13"
+  }
+ },
+ "judgeable_by": [
+  "construction",
+  "registry",
+  "curated",
+  "closed_world"
+ ],
+ "history": [
+  {
+   "date": "2026-08-08",
+   "event": "the internal catalogue records a house filter with 6 cases and 1 counter-example(s); not published in this record",
+   "by": "Korela For Science"
+  },
+  {
+   "date": "2026-08-09",
+   "event": "catalogue line 69 — DEFEATED (cancelled by code): filter written and green on the bench",
+   "by": "Korela For Science"
+  },
+  {
+   "date": "2026-09-09",
+   "event": "migrated; classified damage=MERGE injection=DUPLICATE (judgment, unreviewed by a second reader)",
+   "by": "Fault Atlas migration"
+  },
+  {
+   "date": "2026-09-09",
+   "event": "internal tool paths removed from observation notes before publication; wording otherwise unchanged",
+   "by": "Fault Atlas"
+  },
+  {
+   "date": "2026-09-09",
+   "event": "exact probe attached to the 272-file observation: probes/2026-08/line-069.py, re-run 30/272",
+   "by": "Fault Atlas maintainer"
+  },
+  {
+   "date": "2026-09-10",
+   "event": "second reader: validated — read in full with the record: a dated measurement, a named corpus, real forms",
+   "by": "Coralie Bagnol-Lebon"
+  }
+ ],
+ "probes": [
+  {
+   "file": "probes/2026-08/line-069.py",
+   "kind": "python",
+   "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+   "written": "2026-08-08",
+   "run": "python3 tools/run_probe.py probes/2026-08/line-069.py <dir with the 272 .xml>",
+   "result": {
+    "date": "2026-09-09",
+    "count": 30,
+    "of": 272,
+    "strata": {
+     "nonEN": 24,
+     "bio": 3,
+     "meta": 2,
+     "phys": 1
+    },
+    "examples": [
+     [
+      "bio-PMC13182387.xml",
+      [
+       "sub-article ×2 response ×0",
+       "types=aggregated-review-documents,associated-data"
+      ]
+     ],
+     [
+      "bio-PMC13252842.xml",
+      [
+       "sub-article ×5 response ×0",
+       "types=aggregated-review-documents,associated-data,author-comment,editor-report"
+      ]
+     ],
+     [
+      "bio-PMC13289183.xml",
+      [
+       "sub-article ×2 response ×0",
+       "types=aggregated-review-documents,associated-data"
+      ]
+     ],
+     [
+      "meta-PMC13157766.xml",
+      [
+       "sub-article ×2 response ×0",
+       "types=aggregated-review-documents,associated-data"
+      ]
+     ],
+     [
+      "meta-PMC13229315.xml",
+      [
+       "sub-article ×8 response ×0",
+       "types=aggregated-review-documents,associated-data,author-comment,editor-report"
+      ]
+     ],
+     [
+      "nonEN-PMC13127809.xml",
+      [
+       "sub-article ×1 response ×0",
+       "types=translation"
+      ]
+     ],
+     [
+      "nonEN-PMC13128172.xml",
+      [
+       "sub-article ×1 response ×0",
+       "types=translation"
+      ]
+     ],
+     [
+      "nonEN-PMC13128184.xml",
+      [
+       "sub-article ×1 response ×0",
+       "types=translation"
+      ]
+     ],
+     [
+      "nonEN-PMC13128185.xml",
+      [
+       "sub-article ×1 response ×0",
+       "types=translation"
+      ]
+     ],
+     [
+      "nonEN-PMC13128186.xml",
+      [
+       "sub-article ×1 response ×0",
+       "types=translation"
+      ]
+     ],
+     [
+      "nonEN-PMC13128206.xml",
+      [
+       "sub-article ×2 response ×0",
+       "types=associated-data,translation"
+      ]
+     ],
+     [
+      "nonEN-PMC13128210.xml",
+      [
+       "sub-article ×1 response ×0",
+       "types=translation"
+      ]
+     ]
+    ],
+    "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files",
+    "carriers_file": "probes/results/line-069.json"
+   },
+   "matches_excerpt": true
+  }
+ ],
+ "observer_agreement": "2/2 — first reader (Loxyn, August/September classification) and second reader (Coralie Bagnol-Lebon, 2026-09-10)",
+ "failure_mode": {
+  "value": "PROP",
+  "means": "identity: one thing appears under several forms, or several things under one — the error lands on a node and propagates to everything hanging from it",
+  "source": "the internal catalogue of 2026-08-09 (korela.db, table parametre), line 69; it is not derived from the damage and varies inside a damage class"
+ },
+ "document_years": {
+  "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+  "counts": {
+   "2026": 12
+  },
+  "carriers_dated": 12,
+  "source": "corpora/index/document-years-europe-pmc-272.json, read 2026-09-11 from each file's earliest pub-date"
+ }
 }

@@ -1,82 +1,89 @@
 {
-  "id": "form-175",
-  "version": 1,
-  "name": "Article titles stored as entity labels (Wikidata)",
-  "origin": {
-    "organisation": "Loxyn SAS, Lyon",
-    "campaign": "September 2026 — PubMed substrate and other corpora (Voûte)",
-    "contact": "contact@loxyn.ai"
+ "id": "form-175",
+ "version": 1,
+ "name": "Article titles stored as entity labels (Wikidata)",
+ "origin": {
+  "organisation": "Loxyn SAS, Lyon",
+  "campaign": "September 2026 — PubMed substrate and other corpora (Voûte)",
+  "contact": "contact@loxyn.ai"
+ },
+ "damage": "WRONG_LABEL",
+ "class": "UNCLASSIFIED",
+ "layer": "⑥ resolution",
+ "injection": "INSERT",
+ "status": "proposed",
+ "seen": [
+  {
+   "corpus": "Wikidata dump 2026-08-31 (121.5 M items), Almageste Wikidata edition, read 2026-09-06",
+   "document": "tens of millions of scholarly-article items whose label_en is a full title",
+   "date": "2026-09-06",
+   "observer": "Claude Voûte (LLM agent), session 8d9c5098, from the night reports of 2026-09-06/09",
+   "excerpt": "06-09-2026, NUIT A : « les 121,5 M d'éléments contiennent des dizaines de millions d'articles scientifiques dont le label_en est un titre entier. Aucun filtre par type n'a été appliqué ».",
+   "excerpt_en": "2026-09-06, night A: \"the 121.5 M items contain tens of millions of scientific articles whose label_en is a full title. No filter by type was applied\".",
+   "lang": "fr",
+   "organisation": "Loxyn SAS, Lyon"
+  }
+ ],
+ "specimens": {
+  "cases": [],
+  "counter_examples": []
+ },
+ "prevention": {
+  "cancellable_by_code": false,
+  "note": "not assessed by the observer; to be classified by the second reader"
+ },
+ "repair": {
+  "reachable_by_deletion": "partial",
+  "note": "an extra label can be deleted, a missing one cannot be added",
+  "measured": {
+   "value": "yes_at_a_cost",
+   "reached": 3932,
+   "injected": 3932,
+   "note": "3,932 of 3,932 reached, and 12,591 true facts were lost with them: the repair deletes the nodes, not their labels",
+   "source": "measured 2026-09-10 by pgrepair (SciPyWeightedILP) on the frozen EUR-Lex truth, three identical runs, journal sha256 in measures/reachability-by-damage-2026-09-10.json. Per damage class, not per form: two forms of the same damage and the same visibility get the same answer.",
+   "date": "2026-09-10"
   },
-  "damage": "WRONG_LABEL",
-  "class": "UNCLASSIFIED",
-  "layer": "⑥ resolution",
-  "injection": "INSERT",
-  "status": "proposed",
-  "seen": [
-    {
-      "corpus": "Wikidata dump 2026-08-31 (121.5 M items), Almageste Wikidata edition, read 2026-09-06",
-      "document": "tens of millions of scholarly-article items whose label_en is a full title",
-      "date": "2026-09-06",
-      "observer": "Claude Voûte (LLM agent), session 8d9c5098, from the night reports of 2026-09-06/09",
-      "excerpt": "06-09-2026, NUIT A : « les 121,5 M d'éléments contiennent des dizaines de millions d'articles scientifiques dont le label_en est un titre entier. Aucun filtre par type n'a été appliqué ».",
-      "excerpt_en": "2026-09-06, night A: \"the 121.5 M items contain tens of millions of scientific articles whose label_en is a full title. No filter by type was applied\".",
-      "lang": "fr",
-      "organisation": "Loxyn SAS, Lyon"
-    }
-  ],
-  "specimens": {
-    "cases": [],
-    "counter_examples": []
+  "obstacle": {
+   "value": "none",
+   "reason": "Reached in full, and at a cost: the repair deletes the nodes rather than their labels. The information that would put the label right is in the node itself — the identifier says the type — and one statement of the graph's own query language sets it back with nothing destroyed.",
+   "reason_fr": "Atteinte en entier, et à un prix : la réparation supprime les nœuds plutôt que leurs étiquettes. L'information qui remettrait l'étiquette droite est dans le nœud lui-même — l'identifiant dit le type — et une instruction du langage de requête du graphe la repose sans rien détruire.",
+   "source": "derived from what a deletion-only repair can express, read in the repairer's own code — its solution is a set of elements to delete and carries no insertion — together with the measurement of 2026-09-10. Per damage class, not per form.",
+   "date": "2026-09-13"
+  }
+ },
+ "judgeable_by": [
+  "curated"
+ ],
+ "related": [
+  "form-063"
+ ],
+ "history": [
+  {
+   "date": "2026-09-09",
+   "event": "proposed by the Voûte Claude in 'FORMES-PUBMED-pour-Fault-Atlas (09-09-2026)' part 2 (sha256 51a338add43cd071…), form 34 of 40; effect on a graph: An exact match on labels links writings to article titles; a concept is confused with a publication (MERGE by matching). Prevalence: seen; 'tens of millions', not counted.",
+   "by": "Claude Voûte (LLM agent), session 8d9c5098, from the night reports of 2026-09-06/09"
   },
-  "prevention": {
-    "cancellable_by_code": false,
-    "note": "not assessed by the observer; to be classified by the second reader"
-  },
-  "repair": {
-    "reachable_by_deletion": "partial",
-    "note": "an extra label can be deleted, a missing one cannot be added",
-    "measured": {
-      "value": "yes_at_a_cost",
-      "reached": 3932,
-      "injected": 3932,
-      "note": "3,932 of 3,932 reached, and 12,591 true facts were lost with them: the repair deletes the nodes, not their labels",
-      "source": "measured 2026-09-10 by pgrepair (SciPyWeightedILP) on the frozen EUR-Lex truth, three identical runs, journal sha256 in measures/reachability-by-damage-2026-09-10.json. Per damage class, not per form: two forms of the same damage and the same visibility get the same answer.",
-      "date": "2026-09-10"
-    }
-  },
-  "judgeable_by": [
-    "curated"
-  ],
-  "related": [
-    "form-063"
-  ],
-  "history": [
-    {
-      "date": "2026-09-09",
-      "event": "proposed by the Voûte Claude in 'FORMES-PUBMED-pour-Fault-Atlas (09-09-2026)' part 2 (sha256 51a338add43cd071…), form 34 of 40; effect on a graph: An exact match on labels links writings to article titles; a concept is confused with a publication (MERGE by matching). Prevalence: seen; 'tens of millions', not counted.",
-      "by": "Claude Voûte (LLM agent), session 8d9c5098, from the night reports of 2026-09-06/09"
-    },
-    {
-      "date": "2026-09-09",
-      "event": "converted to a record; class, prevention and the novel/variant question left to the second reader",
-      "by": "Fault Atlas"
-    }
-  ],
-  "proposed_severity": {
-    "value": "G1",
-    "reason": "article titles stored as entity labels: tens of millions of false nodes that attract facts",
-    "proposed_by": "Fault Atlas maintainer (Loxyn), first reading",
-    "date": "2026-09-11",
-    "status": "proposed — a second reader confirms or contests, as for the 43 validated forms",
-    "adds_to_the_damage_class": true,
-    "note": "the August catalogue judges most WRONG_LABEL forms G2; this reading says G1 and the reason is above",
-    "reason_fr": "des titres d'articles stockés comme étiquettes d'entités : des dizaines de millions de faux nœuds qui attirent des faits"
-  },
-  "registry_scope": {
-    "extent": "tens of millions of items out of the base's 121.5 million",
-    "why_not_a_prevalence": "a fault of a registry has no prevalence: it is a property of the base, so everything drawn from that base carries it. What can be stated is the slice it touches.",
-    "source": "read from this form's own observation, 2026-09-11",
-    "extent_fr": "des dizaines de millions d'items sur les 121,5 millions de la base"
-  },
-  "name_fr": "Titres d'articles stockés comme étiquettes d'entités (Wikidata)"
+  {
+   "date": "2026-09-09",
+   "event": "converted to a record; class, prevention and the novel/variant question left to the second reader",
+   "by": "Fault Atlas"
+  }
+ ],
+ "proposed_severity": {
+  "value": "G1",
+  "reason": "article titles stored as entity labels: tens of millions of false nodes that attract facts",
+  "proposed_by": "Fault Atlas maintainer (Loxyn), first reading",
+  "date": "2026-09-11",
+  "status": "proposed — a second reader confirms or contests, as for the 43 validated forms",
+  "adds_to_the_damage_class": true,
+  "note": "the August catalogue judges most WRONG_LABEL forms G2; this reading says G1 and the reason is above",
+  "reason_fr": "des titres d'articles stockés comme étiquettes d'entités : des dizaines de millions de faux nœuds qui attirent des faits"
+ },
+ "registry_scope": {
+  "extent": "tens of millions of items out of the base's 121.5 million",
+  "why_not_a_prevalence": "a fault of a registry has no prevalence: it is a property of the base, so everything drawn from that base carries it. What can be stated is the slice it touches.",
+  "source": "read from this form's own observation, 2026-09-11",
+  "extent_fr": "des dizaines de millions d'items sur les 121,5 millions de la base"
+ },
+ "name_fr": "Titres d'articles stockés comme étiquettes d'entités (Wikidata)"
 }

@@ -1,125 +1,132 @@
 {
-  "id": "form-187",
-  "version": 1,
-  "name": "A retraction notice carries the title of the article it withdraws",
-  "name_fr": "La notice de rétractation porte le titre de l'article qu'elle annule",
-  "origin": {
-    "organisation": "Loxyn SAS, Lyon",
-    "campaign": "August 2026 — observation campaign, verdicts on scripts and on rare genres (2026-08-08)",
-    "contact": "contact@loxyn.ai"
-  },
-  "damage": "SPURIOUS_EDGE",
-  "class": "SILENT_FALSE",
-  "layer": "③ utterance",
-  "injection": "DUPLICATE",
-  "status": "proposed",
-  "seen": [
-    {
-      "corpus": "observation 2026-08 (272 Europe PMC JATS articles)",
-      "date": "2026-09-10",
-      "observer": "house probe (regex, no model), written and run 2026-09-10",
-      "organisation": "Loxyn SAS, Lyon",
-      "lang": "fr",
-      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
-      "probe": "probes/2026-08/line-187-retraction-carries-what-it-withdraws.py",
-      "excerpt": "MEASURED on 2026-09-10 on the 33 retraction notices of the corpus: 25 carry the withdrawn article's title inside their own — « Retraction Note: Delayed administration of pyroglutamate helix B surface peptide… » — and 9 record a disagreement about their own conclusion (« … do not agree with this retraction »). The notice never says WHICH facts fall; it says who no longer trusts them (« The Editor-in-Chief therefore no longer has confidence in the presented data »). An extractor reading the notice therefore produces exactly the fact being withdrawn, with the authors of the withdrawn article under that title."
-    }
-  ],
-  "specimens": {
-    "cases": [],
-    "counter_examples": []
-  },
-  "prevention": {
-    "cancellable_by_code": true,
-    "refusal_clause": "a document whose article-type is a retraction is never read as an assertion of its own title; the withdrawn article is reached through the typed link (Europe PMC exposes pubType 'Retracted Publication' and a typed 'Retraction in' link), never through the text",
-    "refusal_clause_fr": "un document dont le type est une rétractation n'est jamais lu comme affirmant son propre titre ; l'article retiré s'atteint par le lien typé (Europe PMC expose le pubType « Retracted Publication » et un lien typé « Retraction in »), jamais par le texte"
-  },
-  "repair": {
-    "reachable_by_deletion": "yes",
-    "note": "the spurious edge can be deleted once the notice is recognised as a notice; derived from the damage class by the migration of 2026-09-09, not judged form by form and not measured — the bench can measure it",
-    "measured": {
-      "value": "depends_on_visibility",
-      "reached": 366,
-      "injected": 721,
-      "note": "360 of 360 when a law can see it, 6 of 361 when none can",
-      "source": "measured 2026-09-10 by pgrepair (SciPyWeightedILP) on the frozen EUR-Lex truth, three identical runs, journal sha256 in measures/reachability-by-damage-2026-09-10.json. Per damage class, not per form: two forms of the same damage and the same visibility get the same answer.",
-      "date": "2026-09-10",
-      "disagrees_with_the_judgment": "yes"
-    }
-  },
-  "judgeable_by": [
-    "registry",
-    "curated"
-  ],
-  "related": [
-    "form-039",
-    "form-117",
-    "form-140"
-  ],
-  "history": [
-    {
-      "date": "2026-09-10",
-      "event": "created from the August 2026 verdicts on scripts and on rare genres, which the atlas had never carried",
-      "by": "Fault Atlas maintainer"
-    }
-  ],
-  "probes": [
-    {
-      "file": "probes/2026-08/line-187-retraction-carries-what-it-withdraws.py",
-      "kind": "python",
-      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
-      "written": "2026-09-10",
-      "run": "python3 tools/run_probe.py probes/2026-08/line-187-retraction-carries-what-it-withdraws.py <dir with the 272 .xml>",
-      "result": {
-        "date": "2026-09-10",
-        "count": 25,
-        "of": 272,
-        "strata": {
-          "retract": 25
-        },
-        "examples": [
-          [
-            "retract-PMC12937552.xml",
-            [
-              "the notice's title repeats the withdrawn title: Retraction Note: Delayed administration of pyroglutamate helix B surface peptide (pHBSP), a novel nonerythropoietic analog of erythropoietin, attenuates acute kidney injury",
-              "and it records a disagreement about its own conclusion"
-            ]
-          ],
-          [
-            "retract-PMC12943135.xml",
-            [
-              "the notice's title repeats the withdrawn title: RETRACTED: Johnson et al. Effect of Education on Adherence to Recommended Prenatal Practices Among Indigenous Ngäbe–Buglé Communities of Panama. Medicina 2024, 60 , 1055"
-            ]
-          ],
-          [
-            "retract-PMC12945919.xml",
-            [
-              "the notice's title repeats the withdrawn title: RETRACTION: Correlation Between Acanthosis Nigricans Scoring Chart (ANSC) and Narrowband Reflectance Spectrophotometer in Assessing Severity of Acanthosis Nigricans",
-              "and it records a disagreement about its own conclusion"
-            ]
-          ]
-        ],
-        "by": "Fault Atlas maintainer (Loxyn)"
-      },
-      "matches_excerpt": true
-    }
-  ],
-  "document_years": {
-    "corpus_id": "corpus-europe-pmc-jats-2023-2026",
-    "counts": {
-      "2026": 3
-    },
-    "carriers_dated": 3,
-    "source": "corpora/index/document-years-europe-pmc-272.json, read 2026-09-11 from each file's earliest pub-date"
-  },
-  "proposed_severity": {
-    "value": "G2",
-    "reason": "25 retraction notices of 33 carry the withdrawn article's title: a naive extractor attributes that title to the notice, and nothing signals it",
-    "proposed_by": "Fault Atlas maintainer (Loxyn), first reading",
-    "date": "2026-09-11",
-    "status": "proposed — a second reader confirms or contests, as for the 43 validated forms",
-    "adds_to_the_damage_class": false,
-    "note": "this reading agrees with how the August catalogue judges most SPURIOUS_EDGE forms (G2), so it adds little",
-    "reason_fr": "25 avis de rétractation sur 33 portent le titre de l'article retiré : un extracteur naïf attribue ce titre à l'avis, et rien ne le signale"
+ "id": "form-187",
+ "version": 1,
+ "name": "A retraction notice carries the title of the article it withdraws",
+ "name_fr": "La notice de rétractation porte le titre de l'article qu'elle annule",
+ "origin": {
+  "organisation": "Loxyn SAS, Lyon",
+  "campaign": "August 2026 — observation campaign, verdicts on scripts and on rare genres (2026-08-08)",
+  "contact": "contact@loxyn.ai"
+ },
+ "damage": "SPURIOUS_EDGE",
+ "class": "SILENT_FALSE",
+ "layer": "③ utterance",
+ "injection": "DUPLICATE",
+ "status": "proposed",
+ "seen": [
+  {
+   "corpus": "observation 2026-08 (272 Europe PMC JATS articles)",
+   "date": "2026-09-10",
+   "observer": "house probe (regex, no model), written and run 2026-09-10",
+   "organisation": "Loxyn SAS, Lyon",
+   "lang": "fr",
+   "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+   "probe": "probes/2026-08/line-187-retraction-carries-what-it-withdraws.py",
+   "excerpt": "MEASURED on 2026-09-10 on the 33 retraction notices of the corpus: 25 carry the withdrawn article's title inside their own — « Retraction Note: Delayed administration of pyroglutamate helix B surface peptide… » — and 9 record a disagreement about their own conclusion (« … do not agree with this retraction »). The notice never says WHICH facts fall; it says who no longer trusts them (« The Editor-in-Chief therefore no longer has confidence in the presented data »). An extractor reading the notice therefore produces exactly the fact being withdrawn, with the authors of the withdrawn article under that title."
   }
+ ],
+ "specimens": {
+  "cases": [],
+  "counter_examples": []
+ },
+ "prevention": {
+  "cancellable_by_code": true,
+  "refusal_clause": "a document whose article-type is a retraction is never read as an assertion of its own title; the withdrawn article is reached through the typed link (Europe PMC exposes pubType 'Retracted Publication' and a typed 'Retraction in' link), never through the text",
+  "refusal_clause_fr": "un document dont le type est une rétractation n'est jamais lu comme affirmant son propre titre ; l'article retiré s'atteint par le lien typé (Europe PMC expose le pubType « Retracted Publication » et un lien typé « Retraction in »), jamais par le texte"
+ },
+ "repair": {
+  "reachable_by_deletion": "yes",
+  "note": "the spurious edge can be deleted once the notice is recognised as a notice; derived from the damage class by the migration of 2026-09-09, not judged form by form and not measured — the bench can measure it",
+  "measured": {
+   "value": "depends_on_visibility",
+   "reached": 366,
+   "injected": 721,
+   "note": "360 of 360 when a law can see it, 6 of 361 when none can",
+   "source": "measured 2026-09-10 by pgrepair (SciPyWeightedILP) on the frozen EUR-Lex truth, three identical runs, journal sha256 in measures/reachability-by-damage-2026-09-10.json. Per damage class, not per form: two forms of the same damage and the same visibility get the same answer.",
+   "date": "2026-09-10",
+   "disagrees_with_the_judgment": "yes"
+  },
+  "obstacle": {
+   "value": "the information",
+   "reason": "Deletion is the right gesture here: the false edge has to go. What is missing is what tells it from the true one when no constraint separates them. Measured: with a weight carried from the document, a repairer goes from 65 of 130 — a coin — to 130 of 130, stable on three runs.",
+   "reason_fr": "La suppression est ici le bon geste : la fausse arête doit partir. Ce qui manque, c'est de quoi la distinguer de la vraie quand aucune contrainte ne les sépare. Mesuré : avec un poids porté depuis le document, un réparateur passe de 65 sur 130 — une pièce — à 130 sur 130, stable.",
+   "source": "derived from what a deletion-only repair can express, read in the repairer's own code — its solution is a set of elements to delete and carries no insertion — together with the measurement of 2026-09-10. Per damage class, not per form.",
+   "date": "2026-09-13"
+  }
+ },
+ "judgeable_by": [
+  "registry",
+  "curated"
+ ],
+ "related": [
+  "form-039",
+  "form-117",
+  "form-140"
+ ],
+ "history": [
+  {
+   "date": "2026-09-10",
+   "event": "created from the August 2026 verdicts on scripts and on rare genres, which the atlas had never carried",
+   "by": "Fault Atlas maintainer"
+  }
+ ],
+ "probes": [
+  {
+   "file": "probes/2026-08/line-187-retraction-carries-what-it-withdraws.py",
+   "kind": "python",
+   "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+   "written": "2026-09-10",
+   "run": "python3 tools/run_probe.py probes/2026-08/line-187-retraction-carries-what-it-withdraws.py <dir with the 272 .xml>",
+   "result": {
+    "date": "2026-09-10",
+    "count": 25,
+    "of": 272,
+    "strata": {
+     "retract": 25
+    },
+    "examples": [
+     [
+      "retract-PMC12937552.xml",
+      [
+       "the notice's title repeats the withdrawn title: Retraction Note: Delayed administration of pyroglutamate helix B surface peptide (pHBSP), a novel nonerythropoietic analog of erythropoietin, attenuates acute kidney injury",
+       "and it records a disagreement about its own conclusion"
+      ]
+     ],
+     [
+      "retract-PMC12943135.xml",
+      [
+       "the notice's title repeats the withdrawn title: RETRACTED: Johnson et al. Effect of Education on Adherence to Recommended Prenatal Practices Among Indigenous Ngäbe–Buglé Communities of Panama. Medicina 2024, 60 , 1055"
+      ]
+     ],
+     [
+      "retract-PMC12945919.xml",
+      [
+       "the notice's title repeats the withdrawn title: RETRACTION: Correlation Between Acanthosis Nigricans Scoring Chart (ANSC) and Narrowband Reflectance Spectrophotometer in Assessing Severity of Acanthosis Nigricans",
+       "and it records a disagreement about its own conclusion"
+      ]
+     ]
+    ],
+    "by": "Fault Atlas maintainer (Loxyn)"
+   },
+   "matches_excerpt": true
+  }
+ ],
+ "document_years": {
+  "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+  "counts": {
+   "2026": 3
+  },
+  "carriers_dated": 3,
+  "source": "corpora/index/document-years-europe-pmc-272.json, read 2026-09-11 from each file's earliest pub-date"
+ },
+ "proposed_severity": {
+  "value": "G2",
+  "reason": "25 retraction notices of 33 carry the withdrawn article's title: a naive extractor attributes that title to the notice, and nothing signals it",
+  "proposed_by": "Fault Atlas maintainer (Loxyn), first reading",
+  "date": "2026-09-11",
+  "status": "proposed — a second reader confirms or contests, as for the 43 validated forms",
+  "adds_to_the_damage_class": false,
+  "note": "this reading agrees with how the August catalogue judges most SPURIOUS_EDGE forms (G2), so it adds little",
+  "reason_fr": "25 avis de rétractation sur 33 portent le titre de l'article retiré : un extracteur naïf attribue ce titre à l'avis, et rien ne le signale"
+ }
 }

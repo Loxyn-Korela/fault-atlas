@@ -1,111 +1,118 @@
 {
-  "id": "form-127",
-  "version": 2,
-  "legacy_line": 127,
-  "name": "Structured object presented as a figure",
-  "name_fr": "Objet structuré présenté comme figure",
-  "origin": {
-    "organisation": "Loxyn SAS, Lyon",
-    "campaign": "August 2026 — observation campaign (Korela For Science)",
-    "contact": "contact@loxyn.ai"
+ "id": "form-127",
+ "version": 2,
+ "legacy_line": 127,
+ "name": "Structured object presented as a figure",
+ "name_fr": "Objet structuré présenté comme figure",
+ "origin": {
+  "organisation": "Loxyn SAS, Lyon",
+  "campaign": "August 2026 — observation campaign (Korela For Science)",
+  "contact": "contact@loxyn.ai"
+ },
+ "damage": "MISSING",
+ "class": "IRREDUCIBLE",
+ "layer": "② reading",
+ "injection": "MOVE",
+ "legacy_severity": "G3",
+ "legacy_mechanism": "M7",
+ "status": "validated",
+ "seen": [
+  {
+   "corpus": "observation 2026-08 (272 Europe PMC JATS articles)",
+   "date": "2026-08-08",
+   "observer": "house observer (LLM agent), see report",
+   "excerpt": "MESURÉ le 08/08/2026 sur (internal corpus of 272 JATS articles) (272 XML JATS) : ZÉRO bloc <code> ou <preformat> sur les 272 articles, et les 5 légendes contenant des accolades sont du LaTeX mathématique, pas des objets structurés. ⇒ L'ABSENCE est la mesure : ce corpus est PMC (biomédical + physique) et la difficulté n'y existe pas. Elle confirme l'annexe 127, observée le 08/08/2026 sur 14 articles 2021-2026 hors biomédecine (arXiv, HAL, Copernicus) : elle n'aurait jamais été trouvée sans changer de discipline.",
+   "lang": "fr",
+   "excerpt_en": "MEASURED on 2026-08-08 on the internal corpus (272 JATS XML): ZERO <code> or <preformat> blocks across the 272 articles, and the 5 captions containing braces are mathematical LaTeX, not structured objects. ⇒ The ABSENCE is the measurement: this corpus is PMC (biomedical + physics) and the difficulty does not exist there. It confirms annex 127, observed on 2026-08-08 on 14 articles 2021-2026 outside biomedicine (arXiv, HAL, Copernicus): it would never have been found without changing discipline.",
+   "organisation": "Loxyn SAS, Lyon",
+   "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+   "reserve": "Reserve (second reader, 2026-09-10): the identifiers of the 14 articles of 2021-2026 outside biomedicine (arXiv, PLOS, Copernicus, HAL, Scientific Reports) were not kept in August; the observation is cited, not reproducible, until those articles are found again."
+  }
+ ],
+ "specimens": {
+  "cases": [],
+  "counter_examples": []
+ },
+ "prevention": {
+  "cancellable_by_code": false
+ },
+ "repair": {
+  "reachable_by_deletion": "no",
+  "note": "deletion cannot restore this; derived from the damage class by the migration of 2026-09-09, not judged form by form and not measured — the bench can measure it",
+  "measured": {
+   "value": "no",
+   "reached": 0,
+   "injected": 423,
+   "note": "0 of 423 reached",
+   "source": "measured 2026-09-10 by pgrepair (SciPyWeightedILP) on the frozen EUR-Lex truth, three identical runs, journal sha256 in measures/reachability-by-damage-2026-09-10.json. Per damage class, not per form: two forms of the same damage and the same visibility get the same answer.",
+   "date": "2026-09-10"
   },
-  "damage": "MISSING",
-  "class": "IRREDUCIBLE",
-  "layer": "② reading",
-  "injection": "MOVE",
-  "legacy_severity": "G3",
-  "legacy_mechanism": "M7",
-  "status": "validated",
-  "seen": [
-    {
-      "corpus": "observation 2026-08 (272 Europe PMC JATS articles)",
-      "date": "2026-08-08",
-      "observer": "house observer (LLM agent), see report",
-      "excerpt": "MESURÉ le 08/08/2026 sur (internal corpus of 272 JATS articles) (272 XML JATS) : ZÉRO bloc <code> ou <preformat> sur les 272 articles, et les 5 légendes contenant des accolades sont du LaTeX mathématique, pas des objets structurés. ⇒ L'ABSENCE est la mesure : ce corpus est PMC (biomédical + physique) et la difficulté n'y existe pas. Elle confirme l'annexe 127, observée le 08/08/2026 sur 14 articles 2021-2026 hors biomédecine (arXiv, HAL, Copernicus) : elle n'aurait jamais été trouvée sans changer de discipline.",
-      "lang": "fr",
-      "excerpt_en": "MEASURED on 2026-08-08 on the internal corpus (272 JATS XML): ZERO <code> or <preformat> blocks across the 272 articles, and the 5 captions containing braces are mathematical LaTeX, not structured objects. ⇒ The ABSENCE is the measurement: this corpus is PMC (biomedical + physics) and the difficulty does not exist there. It confirms annex 127, observed on 2026-08-08 on 14 articles 2021-2026 outside biomedicine (arXiv, HAL, Copernicus): it would never have been found without changing discipline.",
-      "organisation": "Loxyn SAS, Lyon",
-      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
-      "reserve": "Reserve (second reader, 2026-09-10): the identifiers of the 14 articles of 2021-2026 outside biomedicine (arXiv, PLOS, Copernicus, HAL, Scientific Reports) were not kept in August; the observation is cited, not reproducible, until those articles are found again."
-    }
-  ],
-  "specimens": {
-    "cases": [],
-    "counter_examples": []
+  "obstacle": {
+   "value": "the operation",
+   "reason": "Restoring a gap means ADDING, and a deletion-only repair has no such gesture. Its solution is a set of elements to delete; there is no insertion anywhere in it. No weight and no information change that answer.",
+   "reason_fr": "Réparer un manque veut dire AJOUTER, et une réparation par suppression n'a pas ce geste. Sa solution est un ensemble d'éléments à retirer ; il n'y a d'insertion nulle part. Aucun poids et aucune information n'y changent quoi que ce soit.",
+   "source": "derived from what a deletion-only repair can express, read in the repairer's own code — its solution is a set of elements to delete and carries no insertion — together with the measurement of 2026-09-10. Per damage class, not per form.",
+   "date": "2026-09-13"
+  }
+ },
+ "judgeable_by": [
+  "construction",
+  "curated",
+  "closed_world"
+ ],
+ "history": [
+  {
+   "date": "2026-08-09",
+   "event": "catalogue line 127 — GOLDEN (kept for the benchmark): irreducible or silent false",
+   "by": "Korela For Science"
   },
-  "prevention": {
-    "cancellable_by_code": false
+  {
+   "date": "2026-09-09",
+   "event": "migrated; classified damage=MISSING injection=MOVE (judgment, unreviewed by a second reader)",
+   "by": "Fault Atlas migration"
   },
-  "repair": {
-    "reachable_by_deletion": "no",
-    "note": "deletion cannot restore this; derived from the damage class by the migration of 2026-09-09, not judged form by form and not measured — the bench can measure it",
-    "measured": {
-      "value": "no",
-      "reached": 0,
-      "injected": 423,
-      "note": "0 of 423 reached",
-      "source": "measured 2026-09-10 by pgrepair (SciPyWeightedILP) on the frozen EUR-Lex truth, three identical runs, journal sha256 in measures/reachability-by-damage-2026-09-10.json. Per damage class, not per form: two forms of the same damage and the same visibility get the same answer.",
-      "date": "2026-09-10"
-    }
+  {
+   "date": "2026-09-09",
+   "event": "internal tool paths removed from observation notes before publication; wording otherwise unchanged",
+   "by": "Fault Atlas"
   },
-  "judgeable_by": [
-    "construction",
-    "curated",
-    "closed_world"
-  ],
-  "history": [
-    {
-      "date": "2026-08-09",
-      "event": "catalogue line 127 — GOLDEN (kept for the benchmark): irreducible or silent false",
-      "by": "Korela For Science"
-    },
-    {
-      "date": "2026-09-09",
-      "event": "migrated; classified damage=MISSING injection=MOVE (judgment, unreviewed by a second reader)",
-      "by": "Fault Atlas migration"
-    },
-    {
-      "date": "2026-09-09",
-      "event": "internal tool paths removed from observation notes before publication; wording otherwise unchanged",
-      "by": "Fault Atlas"
-    },
-    {
-      "date": "2026-09-10",
-      "event": "reserve put on the observation itself: identifiers of the 14 non-biomedical articles not kept, observation cited, not reproducible",
-      "by": "Fault Atlas maintainer, at the second reader's request"
-    },
-    {
-      "date": "2026-09-10",
-      "event": "second reader: validated — correction of my own first pass: I had judged it on a truncated excerpt; the note ends with 'the ABSENCE is the measure' — its result is the absence",
-      "by": "Coralie Bagnol-Lebon"
-    }
-  ],
-  "observer_agreement": "2/2 — first reader (Loxyn, August/September classification) and second reader (Coralie Bagnol-Lebon, 2026-09-10)",
-  "failure_mode": {
-    "value": "MANQ",
-    "means": "a gap: the graph is incomplete where the reading did not reach, not wrong",
-    "source": "the internal catalogue of 2026-08-09 (korela.db, table parametre), line 127; it is not derived from the damage and varies inside a damage class"
+  {
+   "date": "2026-09-10",
+   "event": "reserve put on the observation itself: identifiers of the 14 non-biomedical articles not kept, observation cited, not reproducible",
+   "by": "Fault Atlas maintainer, at the second reader's request"
   },
-  "probes": [
-    {
-      "file": "probes/2026-09-recovered/line-127.py",
-      "kind": "python",
-      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
-      "written": "2026-09-10",
-      "run": "python3 tools/run_probe.py probes/2026-09-recovered/line-127.py <dir with the 272 .xml>",
-      "result": {
-        "date": "2026-09-10",
-        "count": 0,
-        "of": 272,
-        "strata": {},
-        "examples": [],
-        "by": "Fault Atlas maintainer (Loxyn), on the declared corpus"
-      },
-      "matches_excerpt": true,
-      "note": "confirms the absence the August observation states: 0 of 272, by an exact probe. An absence is a measurement, not a missing example."
-    }
-  ],
-  "observed_absent_in": [
-    "Europe PMC JATS 2023-2026 (272 articles): 0/272 by the exact probe probes/2026-09-recovered/line-127.py, written and run 2026-09-10 — a code or preformat block carrying a structured object"
-  ]
+  {
+   "date": "2026-09-10",
+   "event": "second reader: validated — correction of my own first pass: I had judged it on a truncated excerpt; the note ends with 'the ABSENCE is the measure' — its result is the absence",
+   "by": "Coralie Bagnol-Lebon"
+  }
+ ],
+ "observer_agreement": "2/2 — first reader (Loxyn, August/September classification) and second reader (Coralie Bagnol-Lebon, 2026-09-10)",
+ "failure_mode": {
+  "value": "MANQ",
+  "means": "a gap: the graph is incomplete where the reading did not reach, not wrong",
+  "source": "the internal catalogue of 2026-08-09 (korela.db, table parametre), line 127; it is not derived from the damage and varies inside a damage class"
+ },
+ "probes": [
+  {
+   "file": "probes/2026-09-recovered/line-127.py",
+   "kind": "python",
+   "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+   "written": "2026-09-10",
+   "run": "python3 tools/run_probe.py probes/2026-09-recovered/line-127.py <dir with the 272 .xml>",
+   "result": {
+    "date": "2026-09-10",
+    "count": 0,
+    "of": 272,
+    "strata": {},
+    "examples": [],
+    "by": "Fault Atlas maintainer (Loxyn), on the declared corpus"
+   },
+   "matches_excerpt": true,
+   "note": "confirms the absence the August observation states: 0 of 272, by an exact probe. An absence is a measurement, not a missing example."
+  }
+ ],
+ "observed_absent_in": [
+  "Europe PMC JATS 2023-2026 (272 articles): 0/272 by the exact probe probes/2026-09-recovered/line-127.py, written and run 2026-09-10 — a code or preformat block carrying a structured object"
+ ]
 }

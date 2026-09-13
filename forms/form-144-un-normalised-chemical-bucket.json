@@ -1,85 +1,92 @@
 {
-  "id": "form-144",
-  "version": 2,
-  "name": "Un-normalised chemical bucket",
-  "origin": {
-    "organisation": "Loxyn SAS, Lyon",
-    "campaign": "September 2026 — PubMed substrate and other corpora (Voûte)",
-    "contact": "contact@loxyn.ai"
+ "id": "form-144",
+ "version": 2,
+ "name": "Un-normalised chemical bucket",
+ "origin": {
+  "organisation": "Loxyn SAS, Lyon",
+  "campaign": "September 2026 — PubMed substrate and other corpora (Voûte)",
+  "contact": "contact@loxyn.ai"
+ },
+ "damage": "MERGE",
+ "class": "SILENT_FALSE",
+ "layer": "⑥ resolution",
+ "injection": "RENAME",
+ "status": "proposed",
+ "seen": [
+  {
+   "corpus": "PubTator3 BioCXML section layer (2,576,783,200 annotations), Chemical layer, frozen 2026-08-18",
+   "document": "entity id 4306059, key '-'",
+   "date": "2026-08-21",
+   "observer": "Claude Voûte (LLM agent), session 8d9c5098, from the Substrat measurement files",
+   "excerpt": "21-08-2026 : « 224 554 246 lignes = 8,71 % du corpus section, 29,62 % des annotations Chemical (758 078 274) — confirmé à l'unité par pointage architecte indépendant (98 s) » ; « le seau franchit tous les filtres légitimes (surface=0, type et id valides) ».",
+   "excerpt_en": "2026-08-21: \"224,554,246 lines = 8.71 % of the section corpus, 29.62 % of Chemical annotations (758,078,274) — confirmed to the unit by an independent architect check (98 s)\"; \"the bucket passes every legitimate filter (surface=0, valid type and id)\".",
+   "lang": "fr",
+   "organisation": "Loxyn SAS, Lyon"
+  }
+ ],
+ "specimens": {
+  "cases": [],
+  "counter_examples": []
+ },
+ "prevention": {
+  "cancellable_by_code": false,
+  "note": "the bucket passes every legitimate filter — valid type, valid id, empty surface; nothing inside a record says it merges thousands of chemicals. Only an aggregate (one identifier carrying 29.6 % of the chemical annotations) betrays it, and that is a method alarm, not a detection"
+ },
+ "repair": {
+  "reachable_by_deletion": "no",
+  "note": "deletion cannot restore this; derived from the damage class by the migration of 2026-09-09, not judged form by form and not measured — the bench can measure it",
+  "measured": {
+   "value": "no",
+   "reached": 0,
+   "injected": 2532,
+   "note": "0 of 2,532 reached",
+   "source": "measured 2026-09-10 by pgrepair (SciPyWeightedILP) on the frozen EUR-Lex truth, three identical runs, journal sha256 in measures/reachability-by-damage-2026-09-10.json. Per damage class, not per form: two forms of the same damage and the same visibility get the same answer.",
+   "date": "2026-09-10"
   },
-  "damage": "MERGE",
-  "class": "SILENT_FALSE",
-  "layer": "⑥ resolution",
-  "injection": "RENAME",
-  "status": "proposed",
-  "seen": [
-    {
-      "corpus": "PubTator3 BioCXML section layer (2,576,783,200 annotations), Chemical layer, frozen 2026-08-18",
-      "document": "entity id 4306059, key '-'",
-      "date": "2026-08-21",
-      "observer": "Claude Voûte (LLM agent), session 8d9c5098, from the Substrat measurement files",
-      "excerpt": "21-08-2026 : « 224 554 246 lignes = 8,71 % du corpus section, 29,62 % des annotations Chemical (758 078 274) — confirmé à l'unité par pointage architecte indépendant (98 s) » ; « le seau franchit tous les filtres légitimes (surface=0, type et id valides) ».",
-      "excerpt_en": "2026-08-21: \"224,554,246 lines = 8.71 % of the section corpus, 29.62 % of Chemical annotations (758,078,274) — confirmed to the unit by an independent architect check (98 s)\"; \"the bucket passes every legitimate filter (surface=0, valid type and id)\".",
-      "lang": "fr",
-      "organisation": "Loxyn SAS, Lyon"
-    }
-  ],
-  "specimens": {
-    "cases": [],
-    "counter_examples": []
+  "obstacle": {
+   "value": "the operation",
+   "reason": "Two entities fused into one are separated by SPLITTING, which means deciding which fact belongs to whom. Deletion can only remove the fused node and everything hanging from it.",
+   "reason_fr": "Deux entités fondues en une se séparent en les SCINDANT, ce qui veut dire décider quel fait appartient à qui. La suppression ne peut que retirer le nœud fondu et tout ce qui y pend.",
+   "source": "derived from what a deletion-only repair can express, read in the repairer's own code — its solution is a set of elements to delete and carries no insertion — together with the measurement of 2026-09-10. Per damage class, not per form.",
+   "date": "2026-09-13"
+  }
+ },
+ "judgeable_by": [
+  "curated"
+ ],
+ "related": [],
+ "history": [
+  {
+   "date": "2026-09-09",
+   "event": "proposed by the Voûte Claude in 'FORMES-PUBMED-pour-Fault-Atlas (09-09-2026)' (part 1; final file sha256 51a338add43cd071…), form 3 of 23; effect on a graph: Nearly a third of molecule mentions point to a single node, which becomes the largest chemical node of the graph, linked to everything. Prevalence: measured, above.",
+   "by": "Claude Voûte (LLM agent), session 8d9c5098, from the Substrat measurement files"
   },
-  "prevention": {
-    "cancellable_by_code": false,
-    "note": "the bucket passes every legitimate filter — valid type, valid id, empty surface; nothing inside a record says it merges thousands of chemicals. Only an aggregate (one identifier carrying 29.6 % of the chemical annotations) betrays it, and that is a method alarm, not a detection"
+  {
+   "date": "2026-09-09",
+   "event": "converted to a record; class, prevention and the novel/variant question left to the second reader",
+   "by": "Fault Atlas"
   },
-  "repair": {
-    "reachable_by_deletion": "no",
-    "note": "deletion cannot restore this; derived from the damage class by the migration of 2026-09-09, not judged form by form and not measured — the bench can measure it",
-    "measured": {
-      "value": "no",
-      "reached": 0,
-      "injected": 2532,
-      "note": "0 of 2,532 reached",
-      "source": "measured 2026-09-10 by pgrepair (SciPyWeightedILP) on the frozen EUR-Lex truth, three identical runs, journal sha256 in measures/reachability-by-damage-2026-09-10.json. Per damage class, not per form: two forms of the same damage and the same visibility get the same answer.",
-      "date": "2026-09-10"
-    }
-  },
-  "judgeable_by": [
-    "curated"
-  ],
-  "related": [],
-  "history": [
-    {
-      "date": "2026-09-09",
-      "event": "proposed by the Voûte Claude in 'FORMES-PUBMED-pour-Fault-Atlas (09-09-2026)' (part 1; final file sha256 51a338add43cd071…), form 3 of 23; effect on a graph: Nearly a third of molecule mentions point to a single node, which becomes the largest chemical node of the graph, linked to everything. Prevalence: measured, above.",
-      "by": "Claude Voûte (LLM agent), session 8d9c5098, from the Substrat measurement files"
-    },
-    {
-      "date": "2026-09-09",
-      "event": "converted to a record; class, prevention and the novel/variant question left to the second reader",
-      "by": "Fault Atlas"
-    },
-    {
-      "date": "2026-09-10",
-      "event": "class filled: UNCLASSIFIED → SILENT_FALSE, with its prevention clause; classified by the first reader, awaiting the second reader's decision",
-      "by": "Fault Atlas maintainer (Loxyn)"
-    }
-  ],
-  "proposed_severity": {
-    "value": "G1",
-    "reason": "29.6 % of chemical annotations in one bucket: different compounds become one node and their facts mix",
-    "proposed_by": "Fault Atlas maintainer (Loxyn), first reading",
-    "date": "2026-09-11",
-    "status": "proposed — a second reader confirms or contests, as for the 43 validated forms",
-    "adds_to_the_damage_class": false,
-    "note": "this reading agrees with how the August catalogue judges most MERGE forms (G1), so it adds little",
-    "reason_fr": "29,6 % des annotations chimiques dans un seul seau : des composés différents deviennent un nœud et leurs faits se mélangent"
-  },
-  "registry_scope": {
-    "extent": "224,554,246 lines, 8.71 % of the section corpus and 29.62 % of chemical annotations",
-    "why_not_a_prevalence": "a fault of a registry has no prevalence: it is a property of the base, so everything drawn from that base carries it. What can be stated is the slice it touches.",
-    "source": "read from this form's own observation, 2026-09-11",
-    "extent_fr": "224 554 246 lignes, 8,71 % du corpus de sections et 29,62 % des annotations chimiques"
-  },
-  "name_fr": "Seau chimique non normalisé"
+  {
+   "date": "2026-09-10",
+   "event": "class filled: UNCLASSIFIED → SILENT_FALSE, with its prevention clause; classified by the first reader, awaiting the second reader's decision",
+   "by": "Fault Atlas maintainer (Loxyn)"
+  }
+ ],
+ "proposed_severity": {
+  "value": "G1",
+  "reason": "29.6 % of chemical annotations in one bucket: different compounds become one node and their facts mix",
+  "proposed_by": "Fault Atlas maintainer (Loxyn), first reading",
+  "date": "2026-09-11",
+  "status": "proposed — a second reader confirms or contests, as for the 43 validated forms",
+  "adds_to_the_damage_class": false,
+  "note": "this reading agrees with how the August catalogue judges most MERGE forms (G1), so it adds little",
+  "reason_fr": "29,6 % des annotations chimiques dans un seul seau : des composés différents deviennent un nœud et leurs faits se mélangent"
+ },
+ "registry_scope": {
+  "extent": "224,554,246 lines, 8.71 % of the section corpus and 29.62 % of chemical annotations",
+  "why_not_a_prevalence": "a fault of a registry has no prevalence: it is a property of the base, so everything drawn from that base carries it. What can be stated is the slice it touches.",
+  "source": "read from this form's own observation, 2026-09-11",
+  "extent_fr": "224 554 246 lignes, 8,71 % du corpus de sections et 29,62 % des annotations chimiques"
+ },
+ "name_fr": "Seau chimique non normalisé"
 }

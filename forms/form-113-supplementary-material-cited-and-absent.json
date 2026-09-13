@@ -1,144 +1,151 @@
 {
-  "id": "form-113",
-  "version": 3,
-  "legacy_line": 113,
-  "name": "Supplementary material cited and absent",
-  "name_fr": "Matériel supplémentaire cité et absent",
-  "origin": {
-    "organisation": "Loxyn SAS, Lyon",
-    "campaign": "August 2026 — observation campaign (Korela For Science)",
-    "contact": "contact@loxyn.ai"
-  },
-  "damage": "MISSING",
-  "class": "REFUSABLE",
-  "layer": "⑩ retrieval",
-  "injection": "DELETE",
-  "legacy_severity": "G3",
-  "legacy_mechanism": "M11",
-  "status": "validated",
-  "seen": [
-    {
-      "corpus": "observation 2026-08 (Europe PMC JATS 2023-2026 and PubMed abstracts)",
-      "date": "2026-08-08",
-      "observer": "house observer (LLM agent), see report",
-      "excerpt": "MESURÉ le 08/08/2026 sur 272 articles XML JATS Europe PMC accès libre (internal corpus of 272 JATS articles) : objet supplémentaire NOMMÉ cité SANS aucun fichier attaché dans 1 article (0,4 %) — meta-PMC13271776, qui appelle « Supplementary Fig. S1 », « Supplementary Fig. S2 », « Supplementary Fig. S3 » sans un seul <supplementary-material> ni <media> ; cité ET attaché dans 81 (30 %) : bio 18, cas 4, essai 14, meta 31, moderne 9, phys 5. ⚠️ Prévalence FAIBLE, dite telle quelle : 1/272. Les deux versions antérieures de la sonde donnaient 115 puis 21 porteurs, tous du bruit — c'est la mesure qui a été corrigée, pas le chiffre choisi.",
-      "lang": "fr",
-      "excerpt_en": "MEASURED on 2026-08-08 on 272 open-access Europe PMC JATS XML articles (internal corpus): NAMED supplementary object cited WITHOUT any attached file in 1 article (0.4 %) — meta-PMC13271776, which calls \"Supplementary Fig. S1\", \"Supplementary Fig. S2\", \"Supplementary Fig. S3\" without a single <supplementary-material> or <media>; cited AND attached in 81 (30 %): bio 18, case 4, trial 14, meta 31, modern 9, phys 5. ⚠️ LOW prevalence, stated as such: 1/272. The two earlier versions of the probe gave 115 then 21 carriers, all noise — it is the measurement that was corrected, not the figure that was chosen.",
-      "organisation": "Loxyn SAS, Lyon",
-      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
-      "probe": "probes/2026-08/line-113.py"
-    }
-  ],
-  "specimens": {
-    "cases": [],
-    "counter_examples": []
-  },
-  "prevention": {
-    "cancellable_by_code": true,
-    "refusal_clause": "handle, or abstain and declare — never guess",
-    "refusal_clause_fr": "traiter, ou s'abstenir et le déclarer — ne jamais deviner"
-  },
-  "repair": {
-    "reachable_by_deletion": "no",
-    "note": "deletion cannot restore this; derived from the damage class by the migration of 2026-09-09, not judged form by form and not measured — the bench can measure it",
-    "measured": {
-      "value": "no",
-      "reached": 0,
-      "injected": 423,
-      "note": "0 of 423 reached",
-      "source": "measured 2026-09-10 by pgrepair (SciPyWeightedILP) on the frozen EUR-Lex truth, three identical runs, journal sha256 in measures/reachability-by-damage-2026-09-10.json. Per damage class, not per form: two forms of the same damage and the same visibility get the same answer.",
-      "date": "2026-09-10"
-    }
-  },
-  "judgeable_by": [
-    "construction",
-    "curated",
-    "closed_world"
-  ],
-  "history": [
-    {
-      "date": "2026-08-08",
-      "event": "the internal catalogue records a house filter with 4 cases and 2 counter-example(s); not published in this record",
-      "by": "Korela For Science"
-    },
-    {
-      "date": "2026-08-09",
-      "event": "catalogue line 113 — DEFEATED (cancelled by code): filter written and green on the bench",
-      "by": "Korela For Science"
-    },
-    {
-      "date": "2026-09-09",
-      "event": "migrated; classified damage=MISSING injection=DELETE (judgment, unreviewed by a second reader)",
-      "by": "Fault Atlas migration"
-    },
-    {
-      "date": "2026-09-09",
-      "event": "internal tool paths removed from observation notes before publication; wording otherwise unchanged",
-      "by": "Fault Atlas"
-    },
-    {
-      "date": "2026-09-09",
-      "event": "exact probe attached to the 272-file observation: probes/2026-08/line-113.py, re-run 1/272",
-      "by": "Fault Atlas maintainer"
-    },
-    {
-      "date": "2026-09-10",
-      "event": "second reader: validated — read in full with the record: a dated measurement, a named corpus, real forms",
-      "by": "Coralie Bagnol-Lebon"
-    },
-    {
-      "date": "2026-09-10",
-      "event": "era recorded: born_modern — one of the fourteen difficulties born with the modern era; it had no line in the catalogue before 2026-08-08 (from the August verdicts, which the atlas had not carried)",
-      "by": "Fault Atlas maintainer"
-    }
-  ],
-  "probes": [
-    {
-      "file": "probes/2026-08/line-113.py",
-      "kind": "python",
-      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
-      "written": "2026-08-08",
-      "run": "python3 tools/run_probe.py probes/2026-08/line-113.py <dir with the 272 .xml>",
-      "result": {
-        "date": "2026-09-09",
-        "count": 1,
-        "of": 272,
-        "strata": {
-          "meta": 1
-        },
-        "examples": [
-          [
-            "meta-PMC13271776.xml",
-            [
-              "Supplementary Fig. S1",
-              "Supplementary Fig. S2"
-            ]
-          ]
-        ],
-        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files",
-        "carriers_file": "probes/results/line-113.json"
-      },
-      "matches_excerpt": true
-    }
-  ],
-  "observer_agreement": "2/2 — first reader (Loxyn, August/September classification) and second reader (Coralie Bagnol-Lebon, 2026-09-10)",
-  "era": {
-    "value": "born_modern",
-    "measured": "2026-09-10",
-    "source": "VERDICT — the old against the modern, 2026-08-08: 45 PDFs of 1957-1987 against 15 PDFs of 2023-2026, 174 pages, 9 publishers. Its own stated limits: 13 of the 15 modern are biomedical, 100 % English, 100 % open access — a channel that excludes scans, truncated and subscription articles by construction.",
-    "note": "one of the fourteen difficulties born with the modern era; it had no line in the catalogue before 2026-08-08"
-  },
-  "failure_mode": {
-    "value": "MANQ",
-    "means": "a gap: the graph is incomplete where the reading did not reach, not wrong",
-    "source": "the internal catalogue of 2026-08-09 (korela.db, table parametre), line 113; it is not derived from the damage and varies inside a damage class"
-  },
-  "document_years": {
-    "corpus_id": "corpus-europe-pmc-jats-2023-2026",
-    "counts": {
-      "2026": 1
-    },
-    "carriers_dated": 1,
-    "source": "corpora/index/document-years-europe-pmc-272.json, read 2026-09-11 from each file's earliest pub-date"
+ "id": "form-113",
+ "version": 3,
+ "legacy_line": 113,
+ "name": "Supplementary material cited and absent",
+ "name_fr": "Matériel supplémentaire cité et absent",
+ "origin": {
+  "organisation": "Loxyn SAS, Lyon",
+  "campaign": "August 2026 — observation campaign (Korela For Science)",
+  "contact": "contact@loxyn.ai"
+ },
+ "damage": "MISSING",
+ "class": "REFUSABLE",
+ "layer": "⑩ retrieval",
+ "injection": "DELETE",
+ "legacy_severity": "G3",
+ "legacy_mechanism": "M11",
+ "status": "validated",
+ "seen": [
+  {
+   "corpus": "observation 2026-08 (Europe PMC JATS 2023-2026 and PubMed abstracts)",
+   "date": "2026-08-08",
+   "observer": "house observer (LLM agent), see report",
+   "excerpt": "MESURÉ le 08/08/2026 sur 272 articles XML JATS Europe PMC accès libre (internal corpus of 272 JATS articles) : objet supplémentaire NOMMÉ cité SANS aucun fichier attaché dans 1 article (0,4 %) — meta-PMC13271776, qui appelle « Supplementary Fig. S1 », « Supplementary Fig. S2 », « Supplementary Fig. S3 » sans un seul <supplementary-material> ni <media> ; cité ET attaché dans 81 (30 %) : bio 18, cas 4, essai 14, meta 31, moderne 9, phys 5. ⚠️ Prévalence FAIBLE, dite telle quelle : 1/272. Les deux versions antérieures de la sonde donnaient 115 puis 21 porteurs, tous du bruit — c'est la mesure qui a été corrigée, pas le chiffre choisi.",
+   "lang": "fr",
+   "excerpt_en": "MEASURED on 2026-08-08 on 272 open-access Europe PMC JATS XML articles (internal corpus): NAMED supplementary object cited WITHOUT any attached file in 1 article (0.4 %) — meta-PMC13271776, which calls \"Supplementary Fig. S1\", \"Supplementary Fig. S2\", \"Supplementary Fig. S3\" without a single <supplementary-material> or <media>; cited AND attached in 81 (30 %): bio 18, case 4, trial 14, meta 31, modern 9, phys 5. ⚠️ LOW prevalence, stated as such: 1/272. The two earlier versions of the probe gave 115 then 21 carriers, all noise — it is the measurement that was corrected, not the figure that was chosen.",
+   "organisation": "Loxyn SAS, Lyon",
+   "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+   "probe": "probes/2026-08/line-113.py"
   }
+ ],
+ "specimens": {
+  "cases": [],
+  "counter_examples": []
+ },
+ "prevention": {
+  "cancellable_by_code": true,
+  "refusal_clause": "handle, or abstain and declare — never guess",
+  "refusal_clause_fr": "traiter, ou s'abstenir et le déclarer — ne jamais deviner"
+ },
+ "repair": {
+  "reachable_by_deletion": "no",
+  "note": "deletion cannot restore this; derived from the damage class by the migration of 2026-09-09, not judged form by form and not measured — the bench can measure it",
+  "measured": {
+   "value": "no",
+   "reached": 0,
+   "injected": 423,
+   "note": "0 of 423 reached",
+   "source": "measured 2026-09-10 by pgrepair (SciPyWeightedILP) on the frozen EUR-Lex truth, three identical runs, journal sha256 in measures/reachability-by-damage-2026-09-10.json. Per damage class, not per form: two forms of the same damage and the same visibility get the same answer.",
+   "date": "2026-09-10"
+  },
+  "obstacle": {
+   "value": "the operation",
+   "reason": "Restoring a gap means ADDING, and a deletion-only repair has no such gesture. Its solution is a set of elements to delete; there is no insertion anywhere in it. No weight and no information change that answer.",
+   "reason_fr": "Réparer un manque veut dire AJOUTER, et une réparation par suppression n'a pas ce geste. Sa solution est un ensemble d'éléments à retirer ; il n'y a d'insertion nulle part. Aucun poids et aucune information n'y changent quoi que ce soit.",
+   "source": "derived from what a deletion-only repair can express, read in the repairer's own code — its solution is a set of elements to delete and carries no insertion — together with the measurement of 2026-09-10. Per damage class, not per form.",
+   "date": "2026-09-13"
+  }
+ },
+ "judgeable_by": [
+  "construction",
+  "curated",
+  "closed_world"
+ ],
+ "history": [
+  {
+   "date": "2026-08-08",
+   "event": "the internal catalogue records a house filter with 4 cases and 2 counter-example(s); not published in this record",
+   "by": "Korela For Science"
+  },
+  {
+   "date": "2026-08-09",
+   "event": "catalogue line 113 — DEFEATED (cancelled by code): filter written and green on the bench",
+   "by": "Korela For Science"
+  },
+  {
+   "date": "2026-09-09",
+   "event": "migrated; classified damage=MISSING injection=DELETE (judgment, unreviewed by a second reader)",
+   "by": "Fault Atlas migration"
+  },
+  {
+   "date": "2026-09-09",
+   "event": "internal tool paths removed from observation notes before publication; wording otherwise unchanged",
+   "by": "Fault Atlas"
+  },
+  {
+   "date": "2026-09-09",
+   "event": "exact probe attached to the 272-file observation: probes/2026-08/line-113.py, re-run 1/272",
+   "by": "Fault Atlas maintainer"
+  },
+  {
+   "date": "2026-09-10",
+   "event": "second reader: validated — read in full with the record: a dated measurement, a named corpus, real forms",
+   "by": "Coralie Bagnol-Lebon"
+  },
+  {
+   "date": "2026-09-10",
+   "event": "era recorded: born_modern — one of the fourteen difficulties born with the modern era; it had no line in the catalogue before 2026-08-08 (from the August verdicts, which the atlas had not carried)",
+   "by": "Fault Atlas maintainer"
+  }
+ ],
+ "probes": [
+  {
+   "file": "probes/2026-08/line-113.py",
+   "kind": "python",
+   "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+   "written": "2026-08-08",
+   "run": "python3 tools/run_probe.py probes/2026-08/line-113.py <dir with the 272 .xml>",
+   "result": {
+    "date": "2026-09-09",
+    "count": 1,
+    "of": 272,
+    "strata": {
+     "meta": 1
+    },
+    "examples": [
+     [
+      "meta-PMC13271776.xml",
+      [
+       "Supplementary Fig. S1",
+       "Supplementary Fig. S2"
+      ]
+     ]
+    ],
+    "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files",
+    "carriers_file": "probes/results/line-113.json"
+   },
+   "matches_excerpt": true
+  }
+ ],
+ "observer_agreement": "2/2 — first reader (Loxyn, August/September classification) and second reader (Coralie Bagnol-Lebon, 2026-09-10)",
+ "era": {
+  "value": "born_modern",
+  "measured": "2026-09-10",
+  "source": "VERDICT — the old against the modern, 2026-08-08: 45 PDFs of 1957-1987 against 15 PDFs of 2023-2026, 174 pages, 9 publishers. Its own stated limits: 13 of the 15 modern are biomedical, 100 % English, 100 % open access — a channel that excludes scans, truncated and subscription articles by construction.",
+  "note": "one of the fourteen difficulties born with the modern era; it had no line in the catalogue before 2026-08-08"
+ },
+ "failure_mode": {
+  "value": "MANQ",
+  "means": "a gap: the graph is incomplete where the reading did not reach, not wrong",
+  "source": "the internal catalogue of 2026-08-09 (korela.db, table parametre), line 113; it is not derived from the damage and varies inside a damage class"
+ },
+ "document_years": {
+  "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+  "counts": {
+   "2026": 1
+  },
+  "carriers_dated": 1,
+  "source": "corpora/index/document-years-europe-pmc-272.json, read 2026-09-11 from each file's earliest pub-date"
+ }
 }

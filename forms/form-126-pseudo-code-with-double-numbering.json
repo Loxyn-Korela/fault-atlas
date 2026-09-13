@@ -1,98 +1,105 @@
 {
-  "id": "form-126",
-  "version": 3,
-  "legacy_line": 126,
-  "name": "Pseudo-code with double numbering",
-  "name_fr": "Pseudo-code à double numérotation",
-  "origin": {
-    "organisation": "Loxyn SAS, Lyon",
-    "campaign": "August 2026 — observation campaign (Korela For Science)",
-    "contact": "contact@loxyn.ai"
-  },
-  "damage": "MISSING",
-  "class": "DEFEATED_IF_XML",
-  "layer": "② reading",
-  "injection": "FORMAT",
-  "legacy_severity": "G3",
-  "legacy_mechanism": "M8",
-  "status": "validated",
-  "seen": [
-    {
-      "corpus": "14 articles 2021-2026 outside biomedicine (arXiv, PLOS, Copernicus, HAL, Scientific Reports), 'rare genres' wave",
-      "document": "document identifiers not kept by the observer (lesson of 2026-08-08: 81 documents observed, no specimen archived)",
-      "date": "2026-08-08",
-      "observer": "house observer (LLM agent), 'rare genres' wave of August 2026",
-      "excerpt": "Observé le 08/08 sur 14 articles de 2021-2026 hors biomédecine — physique, maths, informatique, économie, linguistique — sur arXiv, PLOS, Copernicus, HAL, Scientific Reports : chaque ligne du pseudo-code porte DEUX compteurs décalés d'un cran, celui du composeur et celui de l'algorithme. Aucune ligne du catalogue ne la couvrait ; elle n'aurait jamais été trouvée sans changer de discipline. Mesurée ensuite ABSENTE des 272 articles JATS : 11 blocs « Algorithm N », aucune double numérotation.",
-      "excerpt_en": "Observed on 2026-08-08 on 14 articles 2021-2026 outside biomedicine — physics, maths, computer science, economics, linguistics — on arXiv, PLOS, Copernicus, HAL, Scientific Reports: each pseudo-code line carries TWO counters offset by one, the typesetter's and the algorithm's. No catalogue line covered it; it would never have been found without changing discipline. Then measured ABSENT from the 272 JATS articles: 11 'Algorithm N' blocks, no double numbering.",
-      "lang": "fr",
-      "organisation": "Loxyn SAS, Lyon",
-      "reserve": "Reserve (second reader, 2026-09-10): the identifiers of the 14 articles of 2021-2026 outside biomedicine (arXiv, PLOS, Copernicus, HAL, Scientific Reports) were not kept in August; the observation is cited, not reproducible, until those articles are found again."
-    }
-  ],
-  "specimens": {
-    "cases": [],
-    "counter_examples": []
-  },
-  "prevention": {
-    "cancellable_by_code": true,
-    "note": "cancelled only when the source is structured (XML/HTML); not on composed PDF"
-  },
-  "repair": {
-    "reachable_by_deletion": "no",
-    "note": "deletion cannot restore this; derived from the damage class by the migration of 2026-09-09, not judged form by form and not measured — the bench can measure it",
-    "measured": {
-      "value": "no",
-      "reached": 0,
-      "injected": 423,
-      "note": "0 of 423 reached",
-      "source": "measured 2026-09-10 by pgrepair (SciPyWeightedILP) on the frozen EUR-Lex truth, three identical runs, journal sha256 in measures/reachability-by-damage-2026-09-10.json. Per damage class, not per form: two forms of the same damage and the same visibility get the same answer.",
-      "date": "2026-09-10"
-    }
-  },
-  "judgeable_by": [
-    "construction",
-    "curated",
-    "closed_world"
-  ],
-  "history": [
-    {
-      "date": "2026-08-09",
-      "event": "catalogue line 126 — ACCEPTED (measured absent from the modern XML corpus): measured ABSENT from the modern XML corpus",
-      "by": "Korela For Science"
-    },
-    {
-      "date": "2026-09-09",
-      "event": "migrated; classified damage=MISSING injection=FORMAT (judgment, unreviewed by a second reader)",
-      "by": "Fault Atlas migration"
-    },
-    {
-      "date": "2026-09-09",
-      "event": "observation transcribed from the August annex and the wave-1 journal, after the second reader noted the record had no excerpt",
-      "by": "Fault Atlas"
-    },
-    {
-      "date": "2026-09-09",
-      "event": "probe-based observation withdrawn after independent review: probe finds algorithm blocks, not double numbering; the August verdict is absent",
-      "by": "Fault Atlas maintainer"
-    },
-    {
-      "date": "2026-09-10",
-      "event": "reserve put on the observation itself: identifiers of the 14 non-biomedical articles not kept, observation cited, not reproducible",
-      "by": "Fault Atlas maintainer, at the second reader's request"
-    },
-    {
-      "date": "2026-09-10",
-      "event": "second reader: validated — read in full with the record: a dated measurement, a named corpus, real forms",
-      "by": "Coralie Bagnol-Lebon"
-    }
-  ],
-  "observed_absent_in": [
-    "Europe PMC JATS 2023-2026 (272 articles, measured 2026-08-08)"
-  ],
-  "observer_agreement": "2/2 — first reader (Loxyn, August/September classification) and second reader (Coralie Bagnol-Lebon, 2026-09-10)",
-  "failure_mode": {
-    "value": "MANQ",
-    "means": "a gap: the graph is incomplete where the reading did not reach, not wrong",
-    "source": "the internal catalogue of 2026-08-09 (korela.db, table parametre), line 126; it is not derived from the damage and varies inside a damage class"
+ "id": "form-126",
+ "version": 3,
+ "legacy_line": 126,
+ "name": "Pseudo-code with double numbering",
+ "name_fr": "Pseudo-code à double numérotation",
+ "origin": {
+  "organisation": "Loxyn SAS, Lyon",
+  "campaign": "August 2026 — observation campaign (Korela For Science)",
+  "contact": "contact@loxyn.ai"
+ },
+ "damage": "MISSING",
+ "class": "DEFEATED_IF_XML",
+ "layer": "② reading",
+ "injection": "FORMAT",
+ "legacy_severity": "G3",
+ "legacy_mechanism": "M8",
+ "status": "validated",
+ "seen": [
+  {
+   "corpus": "14 articles 2021-2026 outside biomedicine (arXiv, PLOS, Copernicus, HAL, Scientific Reports), 'rare genres' wave",
+   "document": "document identifiers not kept by the observer (lesson of 2026-08-08: 81 documents observed, no specimen archived)",
+   "date": "2026-08-08",
+   "observer": "house observer (LLM agent), 'rare genres' wave of August 2026",
+   "excerpt": "Observé le 08/08 sur 14 articles de 2021-2026 hors biomédecine — physique, maths, informatique, économie, linguistique — sur arXiv, PLOS, Copernicus, HAL, Scientific Reports : chaque ligne du pseudo-code porte DEUX compteurs décalés d'un cran, celui du composeur et celui de l'algorithme. Aucune ligne du catalogue ne la couvrait ; elle n'aurait jamais été trouvée sans changer de discipline. Mesurée ensuite ABSENTE des 272 articles JATS : 11 blocs « Algorithm N », aucune double numérotation.",
+   "excerpt_en": "Observed on 2026-08-08 on 14 articles 2021-2026 outside biomedicine — physics, maths, computer science, economics, linguistics — on arXiv, PLOS, Copernicus, HAL, Scientific Reports: each pseudo-code line carries TWO counters offset by one, the typesetter's and the algorithm's. No catalogue line covered it; it would never have been found without changing discipline. Then measured ABSENT from the 272 JATS articles: 11 'Algorithm N' blocks, no double numbering.",
+   "lang": "fr",
+   "organisation": "Loxyn SAS, Lyon",
+   "reserve": "Reserve (second reader, 2026-09-10): the identifiers of the 14 articles of 2021-2026 outside biomedicine (arXiv, PLOS, Copernicus, HAL, Scientific Reports) were not kept in August; the observation is cited, not reproducible, until those articles are found again."
   }
+ ],
+ "specimens": {
+  "cases": [],
+  "counter_examples": []
+ },
+ "prevention": {
+  "cancellable_by_code": true,
+  "note": "cancelled only when the source is structured (XML/HTML); not on composed PDF"
+ },
+ "repair": {
+  "reachable_by_deletion": "no",
+  "note": "deletion cannot restore this; derived from the damage class by the migration of 2026-09-09, not judged form by form and not measured — the bench can measure it",
+  "measured": {
+   "value": "no",
+   "reached": 0,
+   "injected": 423,
+   "note": "0 of 423 reached",
+   "source": "measured 2026-09-10 by pgrepair (SciPyWeightedILP) on the frozen EUR-Lex truth, three identical runs, journal sha256 in measures/reachability-by-damage-2026-09-10.json. Per damage class, not per form: two forms of the same damage and the same visibility get the same answer.",
+   "date": "2026-09-10"
+  },
+  "obstacle": {
+   "value": "the operation",
+   "reason": "Restoring a gap means ADDING, and a deletion-only repair has no such gesture. Its solution is a set of elements to delete; there is no insertion anywhere in it. No weight and no information change that answer.",
+   "reason_fr": "Réparer un manque veut dire AJOUTER, et une réparation par suppression n'a pas ce geste. Sa solution est un ensemble d'éléments à retirer ; il n'y a d'insertion nulle part. Aucun poids et aucune information n'y changent quoi que ce soit.",
+   "source": "derived from what a deletion-only repair can express, read in the repairer's own code — its solution is a set of elements to delete and carries no insertion — together with the measurement of 2026-09-10. Per damage class, not per form.",
+   "date": "2026-09-13"
+  }
+ },
+ "judgeable_by": [
+  "construction",
+  "curated",
+  "closed_world"
+ ],
+ "history": [
+  {
+   "date": "2026-08-09",
+   "event": "catalogue line 126 — ACCEPTED (measured absent from the modern XML corpus): measured ABSENT from the modern XML corpus",
+   "by": "Korela For Science"
+  },
+  {
+   "date": "2026-09-09",
+   "event": "migrated; classified damage=MISSING injection=FORMAT (judgment, unreviewed by a second reader)",
+   "by": "Fault Atlas migration"
+  },
+  {
+   "date": "2026-09-09",
+   "event": "observation transcribed from the August annex and the wave-1 journal, after the second reader noted the record had no excerpt",
+   "by": "Fault Atlas"
+  },
+  {
+   "date": "2026-09-09",
+   "event": "probe-based observation withdrawn after independent review: probe finds algorithm blocks, not double numbering; the August verdict is absent",
+   "by": "Fault Atlas maintainer"
+  },
+  {
+   "date": "2026-09-10",
+   "event": "reserve put on the observation itself: identifiers of the 14 non-biomedical articles not kept, observation cited, not reproducible",
+   "by": "Fault Atlas maintainer, at the second reader's request"
+  },
+  {
+   "date": "2026-09-10",
+   "event": "second reader: validated — read in full with the record: a dated measurement, a named corpus, real forms",
+   "by": "Coralie Bagnol-Lebon"
+  }
+ ],
+ "observed_absent_in": [
+  "Europe PMC JATS 2023-2026 (272 articles, measured 2026-08-08)"
+ ],
+ "observer_agreement": "2/2 — first reader (Loxyn, August/September classification) and second reader (Coralie Bagnol-Lebon, 2026-09-10)",
+ "failure_mode": {
+  "value": "MANQ",
+  "means": "a gap: the graph is incomplete where the reading did not reach, not wrong",
+  "source": "the internal catalogue of 2026-08-09 (korela.db, table parametre), line 126; it is not derived from the damage and varies inside a damage class"
+ }
 }

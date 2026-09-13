@@ -1,219 +1,226 @@
 {
-  "id": "form-075",
-  "version": 3,
-  "legacy_line": 75,
-  "name": "Multiple citation conventions",
-  "name_fr": "Conventions de citation multiples",
-  "origin": {
-    "organisation": "Loxyn SAS, Lyon",
-    "campaign": "August 2026 — observation campaign (Korela For Science)",
-    "contact": "contact@loxyn.ai"
-  },
-  "damage": "MISSING",
-  "class": "REFUSABLE",
-  "layer": "④ extraction",
-  "injection": "FORMAT",
-  "legacy_severity": "G3",
-  "legacy_mechanism": "M4",
-  "status": "validated",
-  "seen": [
-    {
-      "corpus": "observation 2026-08 (Europe PMC JATS 2023-2026 and PubMed abstracts)",
-      "date": "2026-08-08",
-      "observer": "house observer (LLM agent), see report",
-      "excerpt": "MESURÉ le 08/08/2026 sur 272 articles XML JATS Europe PMC (2023-2026) : les deux conventions coexistent bien dans le même fonds — 207/272 en appel numérique (76 %), 13/272 en auteur-année (5 %), 25 sans appel, 0 mélangé dans un même article. La forme DANGEREUSE est mesurée à part : dans 37/272 articles (14 %) un appel numérique colle directement à une lettre — bio-PMC12583535 donne, une fois les balises retirées, « s1 », « e2 », « y4 », « n10 ». Forme auteur-année réelle : nonEN-PMC13228121 — « Bauman, 1999 », « Carvalho, 2022 ».",
-      "lang": "fr",
-      "excerpt_en": "MEASURED on 2026-08-08 on 272 Europe PMC JATS XML articles (2023-2026): the two conventions do coexist in the same corpus — 207/272 with numeric calls (76 %), 13/272 author-year (5 %), 25 without calls, 0 mixed within one article. The DANGEROUS form is measured separately: in 37/272 articles (14 %) a numeric call sticks directly to a letter — bio-PMC12583535 gives, once the tags are removed, \"s1\", \"e2\", \"y4\", \"n10\". Real author-year form: nonEN-PMC13228121 — \"Bauman, 1999\", \"Carvalho, 2022\".",
-      "organisation": "Loxyn SAS, Lyon",
-      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
-      "probe": "probes/2026-08/line-075.py"
-    }
-  ],
-  "specimens": {
-    "cases": [],
-    "counter_examples": []
-  },
-  "prevention": {
-    "cancellable_by_code": true,
-    "refusal_clause": "handle, or abstain and declare — never guess",
-    "refusal_clause_fr": "traiter, ou s'abstenir et le déclarer — ne jamais deviner"
-  },
-  "repair": {
-    "reachable_by_deletion": "no",
-    "note": "deletion cannot restore this; derived from the damage class by the migration of 2026-09-09, not judged form by form and not measured — the bench can measure it",
-    "measured": {
-      "value": "no",
-      "reached": 0,
-      "injected": 423,
-      "note": "0 of 423 reached",
-      "source": "measured 2026-09-10 by pgrepair (SciPyWeightedILP) on the frozen EUR-Lex truth, three identical runs, journal sha256 in measures/reachability-by-damage-2026-09-10.json. Per damage class, not per form: two forms of the same damage and the same visibility get the same answer.",
-      "date": "2026-09-10"
-    }
-  },
-  "judgeable_by": [
-    "construction",
-    "curated",
-    "closed_world"
-  ],
-  "history": [
-    {
-      "date": "2026-08-08",
-      "event": "the internal catalogue records a house filter with 4 cases and 1 counter-example(s); not published in this record",
-      "by": "Korela For Science"
-    },
-    {
-      "date": "2026-08-09",
-      "event": "catalogue line 75 — DEFEATED (cancelled by code): filter written and green on the bench",
-      "by": "Korela For Science"
-    },
-    {
-      "date": "2026-09-09",
-      "event": "migrated; classified damage=MISSING injection=FORMAT (judgment, unreviewed by a second reader)",
-      "by": "Fault Atlas migration"
-    },
-    {
-      "date": "2026-09-09",
-      "event": "exact probe attached to the 272-file observation: probes/2026-08/line-075.py, re-run 13/272",
-      "by": "Fault Atlas maintainer"
-    },
-    {
-      "date": "2026-09-10",
-      "event": "second reader: validated — read in full with the record: a dated measurement, a named corpus, real forms",
-      "by": "Coralie Bagnol-Lebon"
-    },
-    {
-      "date": "2026-09-10",
-      "event": "era recorded: both (from the August verdicts, which the atlas had not carried)",
-      "by": "Fault Atlas maintainer"
-    }
-  ],
-  "probes": [
-    {
-      "file": "probes/2026-08/line-075.py",
-      "kind": "python",
-      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
-      "written": "2026-08-08",
-      "run": "python3 tools/run_probe.py probes/2026-08/line-075.py <dir with the 272 .xml>",
-      "result": {
-        "date": "2026-09-09",
-        "count": 13,
-        "of": 272,
-        "strata": {
-          "meta": 4,
-          "bio": 3,
-          "phys": 3,
-          "nonEN": 2,
-          "moderne": 1
-        },
-        "examples": [
-          [
-            "bio-PMC12927065.xml",
-            [
-              "numérique×18",
-              "exposant×11"
-            ]
-          ],
-          [
-            "bio-PMC13097615.xml",
-            [
-              "auteur-année×14",
-              "exposant×7"
-            ]
-          ],
-          [
-            "bio-PMC13252842.xml",
-            [
-              "numérique×3",
-              "exposant×5"
-            ]
-          ],
-          [
-            "meta-PMC13246130.xml",
-            [
-              "numérique×56",
-              "exposant×51"
-            ]
-          ],
-          [
-            "meta-PMC13268477.xml",
-            [
-              "numérique×36",
-              "exposant×13"
-            ]
-          ],
-          [
-            "meta-PMC13286426.xml",
-            [
-              "numérique×47",
-              "exposant×5"
-            ]
-          ],
-          [
-            "meta-PMC13286481.xml",
-            [
-              "numérique×21",
-              "exposant×14"
-            ]
-          ],
-          [
-            "moderne-PMC13274555.xml",
-            [
-              "auteur-année×3",
-              "exposant×99"
-            ]
-          ],
-          [
-            "nonEN-PMC13264178.xml",
-            [
-              "numérique×12",
-              "exposant×7"
-            ]
-          ],
-          [
-            "nonEN-PMC13267756.xml",
-            [
-              "numérique×15",
-              "exposant×7"
-            ]
-          ],
-          [
-            "phys-PMC13099575.xml",
-            [
-              "auteur-année×4",
-              "numérique×11"
-            ]
-          ],
-          [
-            "phys-PMC13133660.xml",
-            [
-              "numérique×58",
-              "exposant×6"
-            ]
-          ]
-        ],
-        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files",
-        "carriers_file": "probes/results/line-075.json"
-      },
-      "matches_excerpt": true
-    }
-  ],
-  "observer_agreement": "2/2 — first reader (Loxyn, August/September classification) and second reader (Coralie Bagnol-Lebon, 2026-09-10)",
-  "era": {
-    "value": "both",
-    "measured": "2026-09-10",
-    "source": "VERDICT — the old against the modern, 2026-08-08: 45 PDFs of 1957-1987 against 15 PDFs of 2023-2026, 174 pages, 9 publishers. Its own stated limits: 13 of the 15 modern are biomedical, 100 % English, 100 % open access — a channel that excludes scans, truncated and subscription articles by construction."
-  },
-  "failure_mode": {
-    "value": "MANQ",
-    "means": "a gap: the graph is incomplete where the reading did not reach, not wrong",
-    "source": "the internal catalogue of 2026-08-09 (korela.db, table parametre), line 75; it is not derived from the damage and varies inside a damage class"
-  },
-  "document_years": {
-    "corpus_id": "corpus-europe-pmc-jats-2023-2026",
-    "counts": {
-      "2026": 12
-    },
-    "carriers_dated": 12,
-    "source": "corpora/index/document-years-europe-pmc-272.json, read 2026-09-11 from each file's earliest pub-date"
+ "id": "form-075",
+ "version": 3,
+ "legacy_line": 75,
+ "name": "Multiple citation conventions",
+ "name_fr": "Conventions de citation multiples",
+ "origin": {
+  "organisation": "Loxyn SAS, Lyon",
+  "campaign": "August 2026 — observation campaign (Korela For Science)",
+  "contact": "contact@loxyn.ai"
+ },
+ "damage": "MISSING",
+ "class": "REFUSABLE",
+ "layer": "④ extraction",
+ "injection": "FORMAT",
+ "legacy_severity": "G3",
+ "legacy_mechanism": "M4",
+ "status": "validated",
+ "seen": [
+  {
+   "corpus": "observation 2026-08 (Europe PMC JATS 2023-2026 and PubMed abstracts)",
+   "date": "2026-08-08",
+   "observer": "house observer (LLM agent), see report",
+   "excerpt": "MESURÉ le 08/08/2026 sur 272 articles XML JATS Europe PMC (2023-2026) : les deux conventions coexistent bien dans le même fonds — 207/272 en appel numérique (76 %), 13/272 en auteur-année (5 %), 25 sans appel, 0 mélangé dans un même article. La forme DANGEREUSE est mesurée à part : dans 37/272 articles (14 %) un appel numérique colle directement à une lettre — bio-PMC12583535 donne, une fois les balises retirées, « s1 », « e2 », « y4 », « n10 ». Forme auteur-année réelle : nonEN-PMC13228121 — « Bauman, 1999 », « Carvalho, 2022 ».",
+   "lang": "fr",
+   "excerpt_en": "MEASURED on 2026-08-08 on 272 Europe PMC JATS XML articles (2023-2026): the two conventions do coexist in the same corpus — 207/272 with numeric calls (76 %), 13/272 author-year (5 %), 25 without calls, 0 mixed within one article. The DANGEROUS form is measured separately: in 37/272 articles (14 %) a numeric call sticks directly to a letter — bio-PMC12583535 gives, once the tags are removed, \"s1\", \"e2\", \"y4\", \"n10\". Real author-year form: nonEN-PMC13228121 — \"Bauman, 1999\", \"Carvalho, 2022\".",
+   "organisation": "Loxyn SAS, Lyon",
+   "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+   "probe": "probes/2026-08/line-075.py"
   }
+ ],
+ "specimens": {
+  "cases": [],
+  "counter_examples": []
+ },
+ "prevention": {
+  "cancellable_by_code": true,
+  "refusal_clause": "handle, or abstain and declare — never guess",
+  "refusal_clause_fr": "traiter, ou s'abstenir et le déclarer — ne jamais deviner"
+ },
+ "repair": {
+  "reachable_by_deletion": "no",
+  "note": "deletion cannot restore this; derived from the damage class by the migration of 2026-09-09, not judged form by form and not measured — the bench can measure it",
+  "measured": {
+   "value": "no",
+   "reached": 0,
+   "injected": 423,
+   "note": "0 of 423 reached",
+   "source": "measured 2026-09-10 by pgrepair (SciPyWeightedILP) on the frozen EUR-Lex truth, three identical runs, journal sha256 in measures/reachability-by-damage-2026-09-10.json. Per damage class, not per form: two forms of the same damage and the same visibility get the same answer.",
+   "date": "2026-09-10"
+  },
+  "obstacle": {
+   "value": "the operation",
+   "reason": "Restoring a gap means ADDING, and a deletion-only repair has no such gesture. Its solution is a set of elements to delete; there is no insertion anywhere in it. No weight and no information change that answer.",
+   "reason_fr": "Réparer un manque veut dire AJOUTER, et une réparation par suppression n'a pas ce geste. Sa solution est un ensemble d'éléments à retirer ; il n'y a d'insertion nulle part. Aucun poids et aucune information n'y changent quoi que ce soit.",
+   "source": "derived from what a deletion-only repair can express, read in the repairer's own code — its solution is a set of elements to delete and carries no insertion — together with the measurement of 2026-09-10. Per damage class, not per form.",
+   "date": "2026-09-13"
+  }
+ },
+ "judgeable_by": [
+  "construction",
+  "curated",
+  "closed_world"
+ ],
+ "history": [
+  {
+   "date": "2026-08-08",
+   "event": "the internal catalogue records a house filter with 4 cases and 1 counter-example(s); not published in this record",
+   "by": "Korela For Science"
+  },
+  {
+   "date": "2026-08-09",
+   "event": "catalogue line 75 — DEFEATED (cancelled by code): filter written and green on the bench",
+   "by": "Korela For Science"
+  },
+  {
+   "date": "2026-09-09",
+   "event": "migrated; classified damage=MISSING injection=FORMAT (judgment, unreviewed by a second reader)",
+   "by": "Fault Atlas migration"
+  },
+  {
+   "date": "2026-09-09",
+   "event": "exact probe attached to the 272-file observation: probes/2026-08/line-075.py, re-run 13/272",
+   "by": "Fault Atlas maintainer"
+  },
+  {
+   "date": "2026-09-10",
+   "event": "second reader: validated — read in full with the record: a dated measurement, a named corpus, real forms",
+   "by": "Coralie Bagnol-Lebon"
+  },
+  {
+   "date": "2026-09-10",
+   "event": "era recorded: both (from the August verdicts, which the atlas had not carried)",
+   "by": "Fault Atlas maintainer"
+  }
+ ],
+ "probes": [
+  {
+   "file": "probes/2026-08/line-075.py",
+   "kind": "python",
+   "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+   "written": "2026-08-08",
+   "run": "python3 tools/run_probe.py probes/2026-08/line-075.py <dir with the 272 .xml>",
+   "result": {
+    "date": "2026-09-09",
+    "count": 13,
+    "of": 272,
+    "strata": {
+     "meta": 4,
+     "bio": 3,
+     "phys": 3,
+     "nonEN": 2,
+     "moderne": 1
+    },
+    "examples": [
+     [
+      "bio-PMC12927065.xml",
+      [
+       "numérique×18",
+       "exposant×11"
+      ]
+     ],
+     [
+      "bio-PMC13097615.xml",
+      [
+       "auteur-année×14",
+       "exposant×7"
+      ]
+     ],
+     [
+      "bio-PMC13252842.xml",
+      [
+       "numérique×3",
+       "exposant×5"
+      ]
+     ],
+     [
+      "meta-PMC13246130.xml",
+      [
+       "numérique×56",
+       "exposant×51"
+      ]
+     ],
+     [
+      "meta-PMC13268477.xml",
+      [
+       "numérique×36",
+       "exposant×13"
+      ]
+     ],
+     [
+      "meta-PMC13286426.xml",
+      [
+       "numérique×47",
+       "exposant×5"
+      ]
+     ],
+     [
+      "meta-PMC13286481.xml",
+      [
+       "numérique×21",
+       "exposant×14"
+      ]
+     ],
+     [
+      "moderne-PMC13274555.xml",
+      [
+       "auteur-année×3",
+       "exposant×99"
+      ]
+     ],
+     [
+      "nonEN-PMC13264178.xml",
+      [
+       "numérique×12",
+       "exposant×7"
+      ]
+     ],
+     [
+      "nonEN-PMC13267756.xml",
+      [
+       "numérique×15",
+       "exposant×7"
+      ]
+     ],
+     [
+      "phys-PMC13099575.xml",
+      [
+       "auteur-année×4",
+       "numérique×11"
+      ]
+     ],
+     [
+      "phys-PMC13133660.xml",
+      [
+       "numérique×58",
+       "exposant×6"
+      ]
+     ]
+    ],
+    "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files",
+    "carriers_file": "probes/results/line-075.json"
+   },
+   "matches_excerpt": true
+  }
+ ],
+ "observer_agreement": "2/2 — first reader (Loxyn, August/September classification) and second reader (Coralie Bagnol-Lebon, 2026-09-10)",
+ "era": {
+  "value": "both",
+  "measured": "2026-09-10",
+  "source": "VERDICT — the old against the modern, 2026-08-08: 45 PDFs of 1957-1987 against 15 PDFs of 2023-2026, 174 pages, 9 publishers. Its own stated limits: 13 of the 15 modern are biomedical, 100 % English, 100 % open access — a channel that excludes scans, truncated and subscription articles by construction."
+ },
+ "failure_mode": {
+  "value": "MANQ",
+  "means": "a gap: the graph is incomplete where the reading did not reach, not wrong",
+  "source": "the internal catalogue of 2026-08-09 (korela.db, table parametre), line 75; it is not derived from the damage and varies inside a damage class"
+ },
+ "document_years": {
+  "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+  "counts": {
+   "2026": 12
+  },
+  "carriers_dated": 12,
+  "source": "corpora/index/document-years-europe-pmc-272.json, read 2026-09-11 from each file's earliest pub-date"
+ }
 }

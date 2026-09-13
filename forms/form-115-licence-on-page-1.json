@@ -1,81 +1,88 @@
 {
-  "id": "form-115",
-  "version": 2,
-  "legacy_line": 115,
-  "name": "Licence on page 1",
-  "name_fr": "Licence en page 1",
-  "origin": {
-    "organisation": "Loxyn SAS, Lyon",
-    "campaign": "August 2026 — observation campaign (Korela For Science)",
-    "contact": "contact@loxyn.ai"
+ "id": "form-115",
+ "version": 2,
+ "legacy_line": 115,
+ "name": "Licence on page 1",
+ "name_fr": "Licence en page 1",
+ "origin": {
+  "organisation": "Loxyn SAS, Lyon",
+  "campaign": "August 2026 — observation campaign (Korela For Science)",
+  "contact": "contact@loxyn.ai"
+ },
+ "damage": "SPURIOUS_EDGE",
+ "class": "DEFEATED",
+ "layer": "② reading",
+ "injection": "INSERT",
+ "legacy_severity": "G4",
+ "legacy_mechanism": "",
+ "status": "migrated_unreviewed",
+ "seen": [],
+ "specimens": {
+  "cases": [],
+  "counter_examples": []
+ },
+ "prevention": {
+  "cancellable_by_code": true
+ },
+ "repair": {
+  "reachable_by_deletion": "yes",
+  "note": "the faulty edge can be deleted",
+  "measured": {
+   "value": "depends_on_visibility",
+   "reached": 366,
+   "injected": 721,
+   "note": "360 of 360 when a law can see it, 6 of 361 when none can",
+   "source": "measured 2026-09-10 by pgrepair (SciPyWeightedILP) on the frozen EUR-Lex truth, three identical runs, journal sha256 in measures/reachability-by-damage-2026-09-10.json. Per damage class, not per form: two forms of the same damage and the same visibility get the same answer.",
+   "date": "2026-09-10",
+   "disagrees_with_the_judgment": "yes"
   },
-  "damage": "SPURIOUS_EDGE",
-  "class": "DEFEATED",
-  "layer": "② reading",
-  "injection": "INSERT",
-  "legacy_severity": "G4",
-  "legacy_mechanism": "",
-  "status": "migrated_unreviewed",
-  "seen": [],
-  "specimens": {
-    "cases": [],
-    "counter_examples": []
-  },
-  "prevention": {
-    "cancellable_by_code": true
-  },
-  "repair": {
-    "reachable_by_deletion": "yes",
-    "note": "the faulty edge can be deleted",
-    "measured": {
-      "value": "depends_on_visibility",
-      "reached": 366,
-      "injected": 721,
-      "note": "360 of 360 when a law can see it, 6 of 361 when none can",
-      "source": "measured 2026-09-10 by pgrepair (SciPyWeightedILP) on the frozen EUR-Lex truth, three identical runs, journal sha256 in measures/reachability-by-damage-2026-09-10.json. Per damage class, not per form: two forms of the same damage and the same visibility get the same answer.",
-      "date": "2026-09-10",
-      "disagrees_with_the_judgment": "yes"
-    }
-  },
-  "judgeable_by": [
-    "construction",
-    "curated",
-    "closed_world"
-  ],
-  "history": [
-    {
-      "date": "2026-08-09",
-      "event": "catalogue line 115 — ACCEPTED (measured absent from the modern XML corpus): measured ABSENT from the modern XML corpus",
-      "by": "Korela For Science"
-    },
-    {
-      "date": "2026-09-09",
-      "event": "migrated; classified damage=SPURIOUS_EDGE injection=INSERT (judgment, unreviewed by a second reader)",
-      "by": "Fault Atlas migration"
-    },
-    {
-      "date": "2026-09-09",
-      "event": "probe-based observation withdrawn after independent review: probe reports where the licence sits (permissions block, 272/272); the August verdict is that the fault is absent from JATS",
-      "by": "Fault Atlas maintainer"
-    },
-    {
-      "date": "2026-09-10",
-      "event": "era recorded: born_modern — one of the fourteen difficulties born with the modern era; it had no line in the catalogue before 2026-08-08 (from the August verdicts, which the atlas had not carried)",
-      "by": "Fault Atlas maintainer"
-    }
-  ],
-  "observed_absent_in": [
-    "Europe PMC JATS 2023-2026 (272 articles, measured 2026-08-08)"
-  ],
-  "era": {
-    "value": "born_modern",
-    "measured": "2026-09-10",
-    "source": "VERDICT — the old against the modern, 2026-08-08: 45 PDFs of 1957-1987 against 15 PDFs of 2023-2026, 174 pages, 9 publishers. Its own stated limits: 13 of the 15 modern are biomedical, 100 % English, 100 % open access — a channel that excludes scans, truncated and subscription articles by construction.",
-    "note": "one of the fourteen difficulties born with the modern era; it had no line in the catalogue before 2026-08-08"
-  },
-  "failure_mode": {
-    "value": "MES",
-    "means": "a property of the corpus or of the measuring apparatus, not a fault of a document",
-    "source": "the internal catalogue of 2026-08-09 (korela.db, table parametre), line 115; it is not derived from the damage and varies inside a damage class"
+  "obstacle": {
+   "value": "the information",
+   "reason": "Deletion is the right gesture here: the false edge has to go. What is missing is what tells it from the true one when no constraint separates them. Measured: with a weight carried from the document, a repairer goes from 65 of 130 — a coin — to 130 of 130, stable on three runs.",
+   "reason_fr": "La suppression est ici le bon geste : la fausse arête doit partir. Ce qui manque, c'est de quoi la distinguer de la vraie quand aucune contrainte ne les sépare. Mesuré : avec un poids porté depuis le document, un réparateur passe de 65 sur 130 — une pièce — à 130 sur 130, stable.",
+   "source": "derived from what a deletion-only repair can express, read in the repairer's own code — its solution is a set of elements to delete and carries no insertion — together with the measurement of 2026-09-10. Per damage class, not per form.",
+   "date": "2026-09-13"
   }
+ },
+ "judgeable_by": [
+  "construction",
+  "curated",
+  "closed_world"
+ ],
+ "history": [
+  {
+   "date": "2026-08-09",
+   "event": "catalogue line 115 — ACCEPTED (measured absent from the modern XML corpus): measured ABSENT from the modern XML corpus",
+   "by": "Korela For Science"
+  },
+  {
+   "date": "2026-09-09",
+   "event": "migrated; classified damage=SPURIOUS_EDGE injection=INSERT (judgment, unreviewed by a second reader)",
+   "by": "Fault Atlas migration"
+  },
+  {
+   "date": "2026-09-09",
+   "event": "probe-based observation withdrawn after independent review: probe reports where the licence sits (permissions block, 272/272); the August verdict is that the fault is absent from JATS",
+   "by": "Fault Atlas maintainer"
+  },
+  {
+   "date": "2026-09-10",
+   "event": "era recorded: born_modern — one of the fourteen difficulties born with the modern era; it had no line in the catalogue before 2026-08-08 (from the August verdicts, which the atlas had not carried)",
+   "by": "Fault Atlas maintainer"
+  }
+ ],
+ "observed_absent_in": [
+  "Europe PMC JATS 2023-2026 (272 articles, measured 2026-08-08)"
+ ],
+ "era": {
+  "value": "born_modern",
+  "measured": "2026-09-10",
+  "source": "VERDICT — the old against the modern, 2026-08-08: 45 PDFs of 1957-1987 against 15 PDFs of 2023-2026, 174 pages, 9 publishers. Its own stated limits: 13 of the 15 modern are biomedical, 100 % English, 100 % open access — a channel that excludes scans, truncated and subscription articles by construction.",
+  "note": "one of the fourteen difficulties born with the modern era; it had no line in the catalogue before 2026-08-08"
+ },
+ "failure_mode": {
+  "value": "MES",
+  "means": "a property of the corpus or of the measuring apparatus, not a fault of a document",
+  "source": "the internal catalogue of 2026-08-09 (korela.db, table parametre), line 115; it is not derived from the damage and varies inside a damage class"
+ }
 }

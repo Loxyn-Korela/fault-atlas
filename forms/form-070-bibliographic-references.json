@@ -1,201 +1,208 @@
 {
-  "id": "form-070",
-  "version": 1,
-  "legacy_line": 70,
-  "name": "Bibliographic references",
-  "name_fr": "Références bibliographiques",
-  "origin": {
-    "organisation": "Loxyn SAS, Lyon",
-    "campaign": "August 2026 — observation campaign (Korela For Science)",
-    "contact": "contact@loxyn.ai"
-  },
-  "damage": "SPURIOUS_EDGE",
-  "class": "SILENT_FALSE",
-  "layer": "④ extraction",
-  "injection": "MOVE",
-  "legacy_severity": "G2",
-  "legacy_mechanism": "M4",
-  "status": "migrated_unreviewed",
-  "seen": [
-    {
-      "corpus": "observation 2026-08 (272 Europe PMC JATS articles)",
-      "date": "2026-08-08",
-      "observer": "house observer (LLM agent), see report",
-      "excerpt": "MESURÉ le 08/08/2026 sur 272 articles XML JATS : 251/272 (92 %) portent un bloc de références final — 10 912 références au total, médiane 36 par article, maximum 450 — et 247/272 (91 %) portent des appels de citation dans le corps (17 210 appels).",
-      "lang": "fr",
-      "excerpt_en": "MEASURED on 2026-08-08 on 272 JATS XML articles: 251/272 (92 %) carry a final reference block — 10,912 references in total, median 36 per article, maximum 450 — and 247/272 (91 %) carry citation calls in the body (17,210 calls).",
-      "organisation": "Loxyn SAS, Lyon",
-      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
-      "probe": "probes/2026-08/line-070.py"
-    }
-  ],
-  "specimens": {
-    "cases": [],
-    "counter_examples": []
-  },
-  "prevention": {
-    "cancellable_by_code": false
-  },
-  "repair": {
-    "reachable_by_deletion": "yes",
-    "note": "the faulty edge can be deleted",
-    "measured": {
-      "value": "depends_on_visibility",
-      "reached": 366,
-      "injected": 721,
-      "note": "360 of 360 when a law can see it, 6 of 361 when none can",
-      "source": "measured 2026-09-10 by pgrepair (SciPyWeightedILP) on the frozen EUR-Lex truth, three identical runs, journal sha256 in measures/reachability-by-damage-2026-09-10.json. Per damage class, not per form: two forms of the same damage and the same visibility get the same answer.",
-      "date": "2026-09-10",
-      "disagrees_with_the_judgment": "yes"
-    }
-  },
-  "judgeable_by": [
-    "construction",
-    "curated",
-    "closed_world"
-  ],
-  "history": [
-    {
-      "date": "2026-08-09",
-      "event": "catalogue line 70 — GOLDEN (kept for the benchmark): irreducible or silent false",
-      "by": "Korela For Science"
-    },
-    {
-      "date": "2026-09-09",
-      "event": "migrated; classified damage=SPURIOUS_EDGE injection=MOVE (judgment, unreviewed by a second reader)",
-      "by": "Fault Atlas migration"
-    },
-    {
-      "date": "2026-09-09",
-      "event": "exact probe attached to the 272-file observation: probes/2026-08/line-070.py (rewritten from the campaign's inline script), re-run 251/272",
-      "by": "Fault Atlas maintainer"
-    }
-  ],
-  "probes": [
-    {
-      "file": "probes/2026-08/line-070.py",
-      "kind": "python",
-      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
-      "written": "2026-08-08",
-      "run": "python3 tools/run_probe.py probes/2026-08/line-070.py <dir with the 272 .xml>",
-      "result": {
-        "date": "2026-09-09",
-        "count": 251,
-        "of": 272,
-        "strata": {
-          "nonEN": 50,
-          "bio": 34,
-          "cas": 34,
-          "essai": 34,
-          "meta": 34,
-          "phys": 34,
-          "moderne": 17,
-          "retract": 14
-        },
-        "examples": [
-          [
-            "bio-PMC12583535.xml",
-            [
-              "ref x74",
-              "xref bibr x127"
-            ]
-          ],
-          [
-            "bio-PMC12590050.xml",
-            [
-              "ref x59",
-              "xref bibr x85"
-            ]
-          ],
-          [
-            "bio-PMC12674831.xml",
-            [
-              "ref x450",
-              "xref bibr x765"
-            ]
-          ],
-          [
-            "bio-PMC12857832.xml",
-            [
-              "ref x41",
-              "xref bibr x58"
-            ]
-          ],
-          [
-            "bio-PMC12882215.xml",
-            [
-              "ref x98",
-              "xref bibr x229"
-            ]
-          ],
-          [
-            "bio-PMC12909487.xml",
-            [
-              "ref x27",
-              "xref bibr x74"
-            ]
-          ],
-          [
-            "bio-PMC12915353.xml",
-            [
-              "ref x57",
-              "xref bibr x132"
-            ]
-          ],
-          [
-            "bio-PMC12927065.xml",
-            [
-              "ref x52",
-              "xref bibr x55"
-            ]
-          ],
-          [
-            "bio-PMC12927975.xml",
-            [
-              "ref x33",
-              "xref bibr x72"
-            ]
-          ],
-          [
-            "bio-PMC12953170.xml",
-            [
-              "ref x35",
-              "xref bibr x53"
-            ]
-          ],
-          [
-            "bio-PMC12959687.xml",
-            [
-              "ref x47",
-              "xref bibr x56"
-            ]
-          ],
-          [
-            "bio-PMC13057049.xml",
-            [
-              "ref x70",
-              "xref bibr x289"
-            ]
-          ]
-        ],
-        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files",
-        "carriers_file": "probes/results/line-070.json"
-      },
-      "matches_excerpt": true
-    }
-  ],
-  "failure_mode": {
-    "value": "FAUX",
-    "means": "a false fact: a value, a type or a link the source never asserted",
-    "source": "the internal catalogue of 2026-08-09 (korela.db, table parametre), line 70; it is not derived from the damage and varies inside a damage class"
-  },
-  "document_years": {
-    "corpus_id": "corpus-europe-pmc-jats-2023-2026",
-    "counts": {
-      "2025": 4,
-      "2026": 8
-    },
-    "carriers_dated": 12,
-    "source": "corpora/index/document-years-europe-pmc-272.json, read 2026-09-11 from each file's earliest pub-date"
+ "id": "form-070",
+ "version": 1,
+ "legacy_line": 70,
+ "name": "Bibliographic references",
+ "name_fr": "Références bibliographiques",
+ "origin": {
+  "organisation": "Loxyn SAS, Lyon",
+  "campaign": "August 2026 — observation campaign (Korela For Science)",
+  "contact": "contact@loxyn.ai"
+ },
+ "damage": "SPURIOUS_EDGE",
+ "class": "SILENT_FALSE",
+ "layer": "④ extraction",
+ "injection": "MOVE",
+ "legacy_severity": "G2",
+ "legacy_mechanism": "M4",
+ "status": "migrated_unreviewed",
+ "seen": [
+  {
+   "corpus": "observation 2026-08 (272 Europe PMC JATS articles)",
+   "date": "2026-08-08",
+   "observer": "house observer (LLM agent), see report",
+   "excerpt": "MESURÉ le 08/08/2026 sur 272 articles XML JATS : 251/272 (92 %) portent un bloc de références final — 10 912 références au total, médiane 36 par article, maximum 450 — et 247/272 (91 %) portent des appels de citation dans le corps (17 210 appels).",
+   "lang": "fr",
+   "excerpt_en": "MEASURED on 2026-08-08 on 272 JATS XML articles: 251/272 (92 %) carry a final reference block — 10,912 references in total, median 36 per article, maximum 450 — and 247/272 (91 %) carry citation calls in the body (17,210 calls).",
+   "organisation": "Loxyn SAS, Lyon",
+   "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+   "probe": "probes/2026-08/line-070.py"
   }
+ ],
+ "specimens": {
+  "cases": [],
+  "counter_examples": []
+ },
+ "prevention": {
+  "cancellable_by_code": false
+ },
+ "repair": {
+  "reachable_by_deletion": "yes",
+  "note": "the faulty edge can be deleted",
+  "measured": {
+   "value": "depends_on_visibility",
+   "reached": 366,
+   "injected": 721,
+   "note": "360 of 360 when a law can see it, 6 of 361 when none can",
+   "source": "measured 2026-09-10 by pgrepair (SciPyWeightedILP) on the frozen EUR-Lex truth, three identical runs, journal sha256 in measures/reachability-by-damage-2026-09-10.json. Per damage class, not per form: two forms of the same damage and the same visibility get the same answer.",
+   "date": "2026-09-10",
+   "disagrees_with_the_judgment": "yes"
+  },
+  "obstacle": {
+   "value": "the information",
+   "reason": "Deletion is the right gesture here: the false edge has to go. What is missing is what tells it from the true one when no constraint separates them. Measured: with a weight carried from the document, a repairer goes from 65 of 130 — a coin — to 130 of 130, stable on three runs.",
+   "reason_fr": "La suppression est ici le bon geste : la fausse arête doit partir. Ce qui manque, c'est de quoi la distinguer de la vraie quand aucune contrainte ne les sépare. Mesuré : avec un poids porté depuis le document, un réparateur passe de 65 sur 130 — une pièce — à 130 sur 130, stable.",
+   "source": "derived from what a deletion-only repair can express, read in the repairer's own code — its solution is a set of elements to delete and carries no insertion — together with the measurement of 2026-09-10. Per damage class, not per form.",
+   "date": "2026-09-13"
+  }
+ },
+ "judgeable_by": [
+  "construction",
+  "curated",
+  "closed_world"
+ ],
+ "history": [
+  {
+   "date": "2026-08-09",
+   "event": "catalogue line 70 — GOLDEN (kept for the benchmark): irreducible or silent false",
+   "by": "Korela For Science"
+  },
+  {
+   "date": "2026-09-09",
+   "event": "migrated; classified damage=SPURIOUS_EDGE injection=MOVE (judgment, unreviewed by a second reader)",
+   "by": "Fault Atlas migration"
+  },
+  {
+   "date": "2026-09-09",
+   "event": "exact probe attached to the 272-file observation: probes/2026-08/line-070.py (rewritten from the campaign's inline script), re-run 251/272",
+   "by": "Fault Atlas maintainer"
+  }
+ ],
+ "probes": [
+  {
+   "file": "probes/2026-08/line-070.py",
+   "kind": "python",
+   "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+   "written": "2026-08-08",
+   "run": "python3 tools/run_probe.py probes/2026-08/line-070.py <dir with the 272 .xml>",
+   "result": {
+    "date": "2026-09-09",
+    "count": 251,
+    "of": 272,
+    "strata": {
+     "nonEN": 50,
+     "bio": 34,
+     "cas": 34,
+     "essai": 34,
+     "meta": 34,
+     "phys": 34,
+     "moderne": 17,
+     "retract": 14
+    },
+    "examples": [
+     [
+      "bio-PMC12583535.xml",
+      [
+       "ref x74",
+       "xref bibr x127"
+      ]
+     ],
+     [
+      "bio-PMC12590050.xml",
+      [
+       "ref x59",
+       "xref bibr x85"
+      ]
+     ],
+     [
+      "bio-PMC12674831.xml",
+      [
+       "ref x450",
+       "xref bibr x765"
+      ]
+     ],
+     [
+      "bio-PMC12857832.xml",
+      [
+       "ref x41",
+       "xref bibr x58"
+      ]
+     ],
+     [
+      "bio-PMC12882215.xml",
+      [
+       "ref x98",
+       "xref bibr x229"
+      ]
+     ],
+     [
+      "bio-PMC12909487.xml",
+      [
+       "ref x27",
+       "xref bibr x74"
+      ]
+     ],
+     [
+      "bio-PMC12915353.xml",
+      [
+       "ref x57",
+       "xref bibr x132"
+      ]
+     ],
+     [
+      "bio-PMC12927065.xml",
+      [
+       "ref x52",
+       "xref bibr x55"
+      ]
+     ],
+     [
+      "bio-PMC12927975.xml",
+      [
+       "ref x33",
+       "xref bibr x72"
+      ]
+     ],
+     [
+      "bio-PMC12953170.xml",
+      [
+       "ref x35",
+       "xref bibr x53"
+      ]
+     ],
+     [
+      "bio-PMC12959687.xml",
+      [
+       "ref x47",
+       "xref bibr x56"
+      ]
+     ],
+     [
+      "bio-PMC13057049.xml",
+      [
+       "ref x70",
+       "xref bibr x289"
+      ]
+     ]
+    ],
+    "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files",
+    "carriers_file": "probes/results/line-070.json"
+   },
+   "matches_excerpt": true
+  }
+ ],
+ "failure_mode": {
+  "value": "FAUX",
+  "means": "a false fact: a value, a type or a link the source never asserted",
+  "source": "the internal catalogue of 2026-08-09 (korela.db, table parametre), line 70; it is not derived from the damage and varies inside a damage class"
+ },
+ "document_years": {
+  "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+  "counts": {
+   "2025": 4,
+   "2026": 8
+  },
+  "carriers_dated": 12,
+  "source": "corpora/index/document-years-europe-pmc-272.json, read 2026-09-11 from each file's earliest pub-date"
+ }
 }

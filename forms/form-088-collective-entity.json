@@ -1,210 +1,217 @@
 {
-  "id": "form-088",
-  "version": 3,
-  "legacy_line": 88,
-  "name": "Collective entity",
-  "name_fr": "Entité collective",
-  "origin": {
-    "organisation": "Loxyn SAS, Lyon",
-    "campaign": "August 2026 — observation campaign (Korela For Science)",
-    "contact": "contact@loxyn.ai"
-  },
-  "damage": "MERGE",
-  "class": "IRREDUCIBLE",
-  "layer": "⑥ resolution",
-  "injection": "RENAME",
-  "legacy_severity": "G1",
-  "legacy_mechanism": "M2",
-  "status": "validated",
-  "seen": [
-    {
-      "corpus": "observation 2026-08 (272 Europe PMC JATS articles)",
-      "date": "2026-08-08",
-      "observer": "house observer (LLM agent), see report",
-      "excerpt": "MESURÉ le 08/08/2026 sur les 272 XML : 101/272 (37 %) ouvrent sur un effectif suivi d'un nom de groupe (« 127 animals », « 910 participants »), 96/272 (35 %) portent un « n = … », et 87/272 (32 %) associent l'effectif à une dispersion (moyenne, SD, ±). Le sujet collectif est donc la forme MAJORITAIRE ; aucun de nos corpus fabriqués n'en contient un. Observation d'origine 08/08/2026 : Duncker et al., Br. J. Pharmac. 1986 (annexe 88).",
-      "lang": "fr",
-      "excerpt_en": "MEASURED on 2026-08-08 on the 272 XML files: 101/272 (37 %) open with a headcount followed by a group noun (\"127 animals\", \"910 participants\"), 96/272 (35 %) carry an \"n = …\", and 87/272 (32 %) associate the headcount with a dispersion (mean, SD, ±). The collective subject is therefore the MAJORITY form; none of our fabricated corpora contains one. Original observation 2026-08-08: Duncker et al., Br. J. Pharmac. 1986 (annex 88).",
-      "organisation": "Loxyn SAS, Lyon",
-      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
-      "probe": "probes/2026-08/line-088.py"
-    }
-  ],
-  "specimens": {
-    "cases": [],
-    "counter_examples": []
-  },
-  "prevention": {
-    "cancellable_by_code": false
-  },
-  "repair": {
-    "reachable_by_deletion": "no",
-    "note": "deletion cannot restore this; derived from the damage class by the migration of 2026-09-09, not judged form by form and not measured — the bench can measure it",
-    "measured": {
-      "value": "no",
-      "reached": 0,
-      "injected": 2532,
-      "note": "0 of 2,532 reached",
-      "source": "measured 2026-09-10 by pgrepair (SciPyWeightedILP) on the frozen EUR-Lex truth, three identical runs, journal sha256 in measures/reachability-by-damage-2026-09-10.json. Per damage class, not per form: two forms of the same damage and the same visibility get the same answer.",
-      "date": "2026-09-10"
-    }
-  },
-  "judgeable_by": [
-    "construction",
-    "registry",
-    "curated",
-    "closed_world"
-  ],
-  "history": [
-    {
-      "date": "2026-08-09",
-      "event": "catalogue line 88 — GOLDEN (kept for the benchmark): irreducible or silent false",
-      "by": "Korela For Science"
-    },
-    {
-      "date": "2026-09-09",
-      "event": "migrated; classified damage=MERGE injection=RENAME (judgment, unreviewed by a second reader)",
-      "by": "Fault Atlas migration"
-    },
-    {
-      "date": "2026-09-09",
-      "event": "exact probe attached to the 272-file observation: probes/2026-08/line-088.py, re-run 71/272 (excerpt figure differs, both kept)",
-      "by": "Fault Atlas maintainer"
-    },
-    {
-      "date": "2026-09-10",
-      "event": "second reader: validated — read in full with the record: a dated measurement, a named corpus, real forms",
-      "by": "Coralie Bagnol-Lebon"
-    },
-    {
-      "date": "2026-09-10",
-      "event": "era recorded: both (from the August verdicts, which the atlas had not carried)",
-      "by": "Fault Atlas maintainer"
-    }
-  ],
-  "probes": [
-    {
-      "file": "probes/2026-08/line-088.py",
-      "kind": "python",
-      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
-      "written": "2026-08-08",
-      "run": "python3 tools/run_probe.py probes/2026-08/line-088.py <dir with the 272 .xml>",
-      "result": {
-        "date": "2026-09-09",
-        "count": 71,
-        "of": 272,
-        "strata": {
-          "meta": 26,
-          "essai": 14,
-          "bio": 11,
-          "nonEN": 11,
-          "phys": 3,
-          "retract": 3,
-          "cas": 2,
-          "moderne": 1
-        },
-        "examples": [
-          [
-            "bio-PMC12674831.xml",
-            [
-              "American Diabetes Association",
-              "American Diabetes Association Professional Practice Committee"
-            ]
-          ],
-          [
-            "bio-PMC12882215.xml",
-            [
-              "Cochrane Collaboration"
-            ]
-          ],
-          [
-            "bio-PMC12909487.xml",
-            [
-              "Institute TJB"
-            ]
-          ],
-          [
-            "bio-PMC12915353.xml",
-            [
-              "G. B. D. Causes of Death Collaborators",
-              "G. B. D. Diabetes Collaborators"
-            ]
-          ],
-          [
-            "bio-PMC12927975.xml",
-            [
-              "World Health Organization"
-            ]
-          ],
-          [
-            "bio-PMC13088504.xml",
-            [
-              "Hernia Trialists Collaboration"
-            ]
-          ],
-          [
-            "bio-PMC13162546.xml",
-            [
-              "Beijing Inno Medicine Co"
-            ]
-          ],
-          [
-            "bio-PMC13181205.xml",
-            [
-              "ASCEND Study Collaborative Group",
-              "Cochrane Collaboration"
-            ]
-          ],
-          [
-            "bio-PMC13216383.xml",
-            [
-              "[Anonymous]"
-            ]
-          ],
-          [
-            "bio-PMC13236932.xml",
-            [
-              "Organization WH"
-            ]
-          ],
-          [
-            "bio-PMC13274935.xml",
-            [
-              "The Cochrane Collaboration"
-            ]
-          ],
-          [
-            "cas-PMC13293792.xml",
-            [
-              "American Brain Tumor Consortium",
-              "National Comprehensive Cancer Network"
-            ]
-          ]
-        ],
-        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files",
-        "carriers_file": "probes/results/line-088.json"
-      },
-      "matches_excerpt": false,
-      "note": "The figure quoted in the excerpt was counted on 2026-08-08 by a finer, hand-run measurement whose code was not kept; this probe is the one that was kept, and its figure is the one that can be re-run. Both stand, dated."
-    }
-  ],
-  "observer_agreement": "2/2 — first reader (Loxyn, August/September classification) and second reader (Coralie Bagnol-Lebon, 2026-09-10)",
-  "era": {
-    "value": "both",
-    "measured": "2026-09-10",
-    "source": "VERDICT — the old against the modern, 2026-08-08: 45 PDFs of 1957-1987 against 15 PDFs of 2023-2026, 174 pages, 9 publishers. Its own stated limits: 13 of the 15 modern are biomedical, 100 % English, 100 % open access — a channel that excludes scans, truncated and subscription articles by construction."
-  },
-  "failure_mode": {
-    "value": "PROP",
-    "means": "identity: one thing appears under several forms, or several things under one — the error lands on a node and propagates to everything hanging from it",
-    "source": "the internal catalogue of 2026-08-09 (korela.db, table parametre), line 88; it is not derived from the damage and varies inside a damage class"
-  },
-  "document_years": {
-    "corpus_id": "corpus-europe-pmc-jats-2023-2026",
-    "counts": {
-      "2025": 2,
-      "2026": 10
-    },
-    "carriers_dated": 12,
-    "source": "corpora/index/document-years-europe-pmc-272.json, read 2026-09-11 from each file's earliest pub-date"
+ "id": "form-088",
+ "version": 3,
+ "legacy_line": 88,
+ "name": "Collective entity",
+ "name_fr": "Entité collective",
+ "origin": {
+  "organisation": "Loxyn SAS, Lyon",
+  "campaign": "August 2026 — observation campaign (Korela For Science)",
+  "contact": "contact@loxyn.ai"
+ },
+ "damage": "MERGE",
+ "class": "IRREDUCIBLE",
+ "layer": "⑥ resolution",
+ "injection": "RENAME",
+ "legacy_severity": "G1",
+ "legacy_mechanism": "M2",
+ "status": "validated",
+ "seen": [
+  {
+   "corpus": "observation 2026-08 (272 Europe PMC JATS articles)",
+   "date": "2026-08-08",
+   "observer": "house observer (LLM agent), see report",
+   "excerpt": "MESURÉ le 08/08/2026 sur les 272 XML : 101/272 (37 %) ouvrent sur un effectif suivi d'un nom de groupe (« 127 animals », « 910 participants »), 96/272 (35 %) portent un « n = … », et 87/272 (32 %) associent l'effectif à une dispersion (moyenne, SD, ±). Le sujet collectif est donc la forme MAJORITAIRE ; aucun de nos corpus fabriqués n'en contient un. Observation d'origine 08/08/2026 : Duncker et al., Br. J. Pharmac. 1986 (annexe 88).",
+   "lang": "fr",
+   "excerpt_en": "MEASURED on 2026-08-08 on the 272 XML files: 101/272 (37 %) open with a headcount followed by a group noun (\"127 animals\", \"910 participants\"), 96/272 (35 %) carry an \"n = …\", and 87/272 (32 %) associate the headcount with a dispersion (mean, SD, ±). The collective subject is therefore the MAJORITY form; none of our fabricated corpora contains one. Original observation 2026-08-08: Duncker et al., Br. J. Pharmac. 1986 (annex 88).",
+   "organisation": "Loxyn SAS, Lyon",
+   "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+   "probe": "probes/2026-08/line-088.py"
   }
+ ],
+ "specimens": {
+  "cases": [],
+  "counter_examples": []
+ },
+ "prevention": {
+  "cancellable_by_code": false
+ },
+ "repair": {
+  "reachable_by_deletion": "no",
+  "note": "deletion cannot restore this; derived from the damage class by the migration of 2026-09-09, not judged form by form and not measured — the bench can measure it",
+  "measured": {
+   "value": "no",
+   "reached": 0,
+   "injected": 2532,
+   "note": "0 of 2,532 reached",
+   "source": "measured 2026-09-10 by pgrepair (SciPyWeightedILP) on the frozen EUR-Lex truth, three identical runs, journal sha256 in measures/reachability-by-damage-2026-09-10.json. Per damage class, not per form: two forms of the same damage and the same visibility get the same answer.",
+   "date": "2026-09-10"
+  },
+  "obstacle": {
+   "value": "the operation",
+   "reason": "Two entities fused into one are separated by SPLITTING, which means deciding which fact belongs to whom. Deletion can only remove the fused node and everything hanging from it.",
+   "reason_fr": "Deux entités fondues en une se séparent en les SCINDANT, ce qui veut dire décider quel fait appartient à qui. La suppression ne peut que retirer le nœud fondu et tout ce qui y pend.",
+   "source": "derived from what a deletion-only repair can express, read in the repairer's own code — its solution is a set of elements to delete and carries no insertion — together with the measurement of 2026-09-10. Per damage class, not per form.",
+   "date": "2026-09-13"
+  }
+ },
+ "judgeable_by": [
+  "construction",
+  "registry",
+  "curated",
+  "closed_world"
+ ],
+ "history": [
+  {
+   "date": "2026-08-09",
+   "event": "catalogue line 88 — GOLDEN (kept for the benchmark): irreducible or silent false",
+   "by": "Korela For Science"
+  },
+  {
+   "date": "2026-09-09",
+   "event": "migrated; classified damage=MERGE injection=RENAME (judgment, unreviewed by a second reader)",
+   "by": "Fault Atlas migration"
+  },
+  {
+   "date": "2026-09-09",
+   "event": "exact probe attached to the 272-file observation: probes/2026-08/line-088.py, re-run 71/272 (excerpt figure differs, both kept)",
+   "by": "Fault Atlas maintainer"
+  },
+  {
+   "date": "2026-09-10",
+   "event": "second reader: validated — read in full with the record: a dated measurement, a named corpus, real forms",
+   "by": "Coralie Bagnol-Lebon"
+  },
+  {
+   "date": "2026-09-10",
+   "event": "era recorded: both (from the August verdicts, which the atlas had not carried)",
+   "by": "Fault Atlas maintainer"
+  }
+ ],
+ "probes": [
+  {
+   "file": "probes/2026-08/line-088.py",
+   "kind": "python",
+   "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+   "written": "2026-08-08",
+   "run": "python3 tools/run_probe.py probes/2026-08/line-088.py <dir with the 272 .xml>",
+   "result": {
+    "date": "2026-09-09",
+    "count": 71,
+    "of": 272,
+    "strata": {
+     "meta": 26,
+     "essai": 14,
+     "bio": 11,
+     "nonEN": 11,
+     "phys": 3,
+     "retract": 3,
+     "cas": 2,
+     "moderne": 1
+    },
+    "examples": [
+     [
+      "bio-PMC12674831.xml",
+      [
+       "American Diabetes Association",
+       "American Diabetes Association Professional Practice Committee"
+      ]
+     ],
+     [
+      "bio-PMC12882215.xml",
+      [
+       "Cochrane Collaboration"
+      ]
+     ],
+     [
+      "bio-PMC12909487.xml",
+      [
+       "Institute TJB"
+      ]
+     ],
+     [
+      "bio-PMC12915353.xml",
+      [
+       "G. B. D. Causes of Death Collaborators",
+       "G. B. D. Diabetes Collaborators"
+      ]
+     ],
+     [
+      "bio-PMC12927975.xml",
+      [
+       "World Health Organization"
+      ]
+     ],
+     [
+      "bio-PMC13088504.xml",
+      [
+       "Hernia Trialists Collaboration"
+      ]
+     ],
+     [
+      "bio-PMC13162546.xml",
+      [
+       "Beijing Inno Medicine Co"
+      ]
+     ],
+     [
+      "bio-PMC13181205.xml",
+      [
+       "ASCEND Study Collaborative Group",
+       "Cochrane Collaboration"
+      ]
+     ],
+     [
+      "bio-PMC13216383.xml",
+      [
+       "[Anonymous]"
+      ]
+     ],
+     [
+      "bio-PMC13236932.xml",
+      [
+       "Organization WH"
+      ]
+     ],
+     [
+      "bio-PMC13274935.xml",
+      [
+       "The Cochrane Collaboration"
+      ]
+     ],
+     [
+      "cas-PMC13293792.xml",
+      [
+       "American Brain Tumor Consortium",
+       "National Comprehensive Cancer Network"
+      ]
+     ]
+    ],
+    "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files",
+    "carriers_file": "probes/results/line-088.json"
+   },
+   "matches_excerpt": false,
+   "note": "The figure quoted in the excerpt was counted on 2026-08-08 by a finer, hand-run measurement whose code was not kept; this probe is the one that was kept, and its figure is the one that can be re-run. Both stand, dated."
+  }
+ ],
+ "observer_agreement": "2/2 — first reader (Loxyn, August/September classification) and second reader (Coralie Bagnol-Lebon, 2026-09-10)",
+ "era": {
+  "value": "both",
+  "measured": "2026-09-10",
+  "source": "VERDICT — the old against the modern, 2026-08-08: 45 PDFs of 1957-1987 against 15 PDFs of 2023-2026, 174 pages, 9 publishers. Its own stated limits: 13 of the 15 modern are biomedical, 100 % English, 100 % open access — a channel that excludes scans, truncated and subscription articles by construction."
+ },
+ "failure_mode": {
+  "value": "PROP",
+  "means": "identity: one thing appears under several forms, or several things under one — the error lands on a node and propagates to everything hanging from it",
+  "source": "the internal catalogue of 2026-08-09 (korela.db, table parametre), line 88; it is not derived from the damage and varies inside a damage class"
+ },
+ "document_years": {
+  "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+  "counts": {
+   "2025": 2,
+   "2026": 10
+  },
+  "carriers_dated": 12,
+  "source": "corpora/index/document-years-europe-pmc-272.json, read 2026-09-11 from each file's earliest pub-date"
+ }
 }

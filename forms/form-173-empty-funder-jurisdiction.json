@@ -1,88 +1,95 @@
 {
-  "id": "form-173",
-  "version": 2,
-  "name": "Empty funder jurisdiction",
-  "origin": {
-    "organisation": "Loxyn SAS, Lyon",
-    "campaign": "September 2026 — PubMed substrate and other corpora (Voûte)",
-    "contact": "contact@loxyn.ai"
+ "id": "form-173",
+ "version": 2,
+ "name": "Empty funder jurisdiction",
+ "origin": {
+  "organisation": "Loxyn SAS, Lyon",
+  "campaign": "September 2026 — PubMed substrate and other corpora (Voûte)",
+  "contact": "contact@loxyn.ai"
+ },
+ "damage": "MISSING",
+ "class": "REFUSABLE",
+ "layer": "④ extraction",
+ "injection": "DELETE",
+ "status": "proposed",
+ "seen": [
+  {
+   "corpus": "OpenAIRE Graph 11.1.1 (Zenodo 20428976), read 2026-09-08, project.fundings[].jurisdiction",
+   "document": "21,292 projects",
+   "date": "2026-09-08",
+   "observer": "Claude Voûte (LLM agent), session 8d9c5098, from the night reports of 2026-09-06/09",
+   "excerpt": "08-09-2026 : « ('', 21 292 projets, 15 478 avec montant) ».",
+   "excerpt_en": "2026-09-08: \"('', 21,292 projects, 15,478 with an amount)\".",
+   "lang": "fr",
+   "organisation": "Loxyn SAS, Lyon"
+  }
+ ],
+ "specimens": {
+  "cases": [],
+  "counter_examples": []
+ },
+ "prevention": {
+  "cancellable_by_code": true,
+  "refusal_clause": "an empty jurisdiction is refused as a value, never treated as a country",
+  "refusal_clause_fr": "une juridiction vide est refusée comme valeur, jamais traitée comme un pays"
+ },
+ "repair": {
+  "reachable_by_deletion": "no",
+  "note": "deletion cannot restore this; derived from the damage class by the migration of 2026-09-09, not judged form by form and not measured — the bench can measure it",
+  "measured": {
+   "value": "no",
+   "reached": 0,
+   "injected": 423,
+   "note": "0 of 423 reached",
+   "source": "measured 2026-09-10 by pgrepair (SciPyWeightedILP) on the frozen EUR-Lex truth, three identical runs, journal sha256 in measures/reachability-by-damage-2026-09-10.json. Per damage class, not per form: two forms of the same damage and the same visibility get the same answer.",
+   "date": "2026-09-10"
   },
-  "damage": "MISSING",
-  "class": "REFUSABLE",
-  "layer": "④ extraction",
-  "injection": "DELETE",
-  "status": "proposed",
-  "seen": [
-    {
-      "corpus": "OpenAIRE Graph 11.1.1 (Zenodo 20428976), read 2026-09-08, project.fundings[].jurisdiction",
-      "document": "21,292 projects",
-      "date": "2026-09-08",
-      "observer": "Claude Voûte (LLM agent), session 8d9c5098, from the night reports of 2026-09-06/09",
-      "excerpt": "08-09-2026 : « ('', 21 292 projets, 15 478 avec montant) ».",
-      "excerpt_en": "2026-09-08: \"('', 21,292 projects, 15,478 with an amount)\".",
-      "lang": "fr",
-      "organisation": "Loxyn SAS, Lyon"
-    }
-  ],
-  "specimens": {
-    "cases": [],
-    "counter_examples": []
+  "obstacle": {
+   "value": "the operation",
+   "reason": "Restoring a gap means ADDING, and a deletion-only repair has no such gesture. Its solution is a set of elements to delete; there is no insertion anywhere in it. No weight and no information change that answer.",
+   "reason_fr": "Réparer un manque veut dire AJOUTER, et une réparation par suppression n'a pas ce geste. Sa solution est un ensemble d'éléments à retirer ; il n'y a d'insertion nulle part. Aucun poids et aucune information n'y changent quoi que ce soit.",
+   "source": "derived from what a deletion-only repair can express, read in the repairer's own code — its solution is a set of elements to delete and carries no insertion — together with the measurement of 2026-09-10. Per damage class, not per form.",
+   "date": "2026-09-13"
+  }
+ },
+ "judgeable_by": [
+  "registry"
+ ],
+ "related": [
+  "form-161"
+ ],
+ "history": [
+  {
+   "date": "2026-09-09",
+   "event": "proposed by the Voûte Claude in 'FORMES-PUBMED-pour-Fault-Atlas (09-09-2026)' part 2 (sha256 51a338add43cd071…), form 32 of 40; effect on a graph: 21,292 projects without a funder country. Prevalence: measured: 21,292 out of 3,909,902.",
+   "by": "Claude Voûte (LLM agent), session 8d9c5098, from the night reports of 2026-09-06/09"
   },
-  "prevention": {
-    "cancellable_by_code": true,
-    "refusal_clause": "an empty jurisdiction is refused as a value, never treated as a country",
-    "refusal_clause_fr": "une juridiction vide est refusée comme valeur, jamais traitée comme un pays"
+  {
+   "date": "2026-09-09",
+   "event": "converted to a record; class, prevention and the novel/variant question left to the second reader",
+   "by": "Fault Atlas"
   },
-  "repair": {
-    "reachable_by_deletion": "no",
-    "note": "deletion cannot restore this; derived from the damage class by the migration of 2026-09-09, not judged form by form and not measured — the bench can measure it",
-    "measured": {
-      "value": "no",
-      "reached": 0,
-      "injected": 423,
-      "note": "0 of 423 reached",
-      "source": "measured 2026-09-10 by pgrepair (SciPyWeightedILP) on the frozen EUR-Lex truth, three identical runs, journal sha256 in measures/reachability-by-damage-2026-09-10.json. Per damage class, not per form: two forms of the same damage and the same visibility get the same answer.",
-      "date": "2026-09-10"
-    }
-  },
-  "judgeable_by": [
-    "registry"
-  ],
-  "related": [
-    "form-161"
-  ],
-  "history": [
-    {
-      "date": "2026-09-09",
-      "event": "proposed by the Voûte Claude in 'FORMES-PUBMED-pour-Fault-Atlas (09-09-2026)' part 2 (sha256 51a338add43cd071…), form 32 of 40; effect on a graph: 21,292 projects without a funder country. Prevalence: measured: 21,292 out of 3,909,902.",
-      "by": "Claude Voûte (LLM agent), session 8d9c5098, from the night reports of 2026-09-06/09"
-    },
-    {
-      "date": "2026-09-09",
-      "event": "converted to a record; class, prevention and the novel/variant question left to the second reader",
-      "by": "Fault Atlas"
-    },
-    {
-      "date": "2026-09-10",
-      "event": "class filled: UNCLASSIFIED → REFUSABLE, with its prevention clause; classified by the first reader, awaiting the second reader's decision",
-      "by": "Fault Atlas maintainer (Loxyn)"
-    }
-  ],
-  "proposed_severity": {
-    "value": "G3",
-    "reason": "21,292 projects with no jurisdiction: they cannot be attached to a country and vanish from every grouping",
-    "proposed_by": "Fault Atlas maintainer (Loxyn), first reading",
-    "date": "2026-09-11",
-    "status": "proposed — a second reader confirms or contests, as for the 43 validated forms",
-    "adds_to_the_damage_class": false,
-    "note": "this reading agrees with how the August catalogue judges most MISSING forms (G3), so it adds little",
-    "reason_fr": "21 292 projets sans juridiction : impossibles à rattacher à un pays, ils disparaissent de tout regroupement"
-  },
-  "registry_scope": {
-    "extent": "21,292 projects with no jurisdiction, of which 15,478 carry an amount",
-    "why_not_a_prevalence": "a fault of a registry has no prevalence: it is a property of the base, so everything drawn from that base carries it. What can be stated is the slice it touches.",
-    "source": "read from this form's own observation, 2026-09-11",
-    "extent_fr": "21 292 projets sans juridiction, dont 15 478 portent un montant"
-  },
-  "name_fr": "Juridiction de financeur vide"
+  {
+   "date": "2026-09-10",
+   "event": "class filled: UNCLASSIFIED → REFUSABLE, with its prevention clause; classified by the first reader, awaiting the second reader's decision",
+   "by": "Fault Atlas maintainer (Loxyn)"
+  }
+ ],
+ "proposed_severity": {
+  "value": "G3",
+  "reason": "21,292 projects with no jurisdiction: they cannot be attached to a country and vanish from every grouping",
+  "proposed_by": "Fault Atlas maintainer (Loxyn), first reading",
+  "date": "2026-09-11",
+  "status": "proposed — a second reader confirms or contests, as for the 43 validated forms",
+  "adds_to_the_damage_class": false,
+  "note": "this reading agrees with how the August catalogue judges most MISSING forms (G3), so it adds little",
+  "reason_fr": "21 292 projets sans juridiction : impossibles à rattacher à un pays, ils disparaissent de tout regroupement"
+ },
+ "registry_scope": {
+  "extent": "21,292 projects with no jurisdiction, of which 15,478 carry an amount",
+  "why_not_a_prevalence": "a fault of a registry has no prevalence: it is a property of the base, so everything drawn from that base carries it. What can be stated is the slice it touches.",
+  "source": "read from this form's own observation, 2026-09-11",
+  "extent_fr": "21 292 projets sans juridiction, dont 15 478 portent un montant"
+ },
+ "name_fr": "Juridiction de financeur vide"
 }

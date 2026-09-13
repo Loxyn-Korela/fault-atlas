@@ -1,202 +1,209 @@
 {
-  "id": "form-182",
-  "version": 2,
-  "name": "Legal basis encoded as an empty identifier URI",
-  "origin": {
-    "organisation": "Loxyn SAS, Lyon",
-    "campaign": "September 2026 — EUR-Lex collection for the Answer Key (Alexandrie)",
-    "contact": "contact@loxyn.ai"
+ "id": "form-182",
+ "version": 2,
+ "name": "Legal basis encoded as an empty identifier URI",
+ "origin": {
+  "organisation": "Loxyn SAS, Lyon",
+  "campaign": "September 2026 — EUR-Lex collection for the Answer Key (Alexandrie)",
+  "contact": "contact@loxyn.ai"
+ },
+ "damage": "MISSING",
+ "class": "REFUSABLE",
+ "layer": "⑤ anchoring",
+ "injection": "ALTER",
+ "status": "validated",
+ "seen": [
+  {
+   "corpus": "EUR-Lex / Cellar, lot A — the official relations graph frozen 2026-09-09 (abroge 14,411 · modifie 64,290 · se fonde sur 410,522; 489,223 triples)",
+   "document": "http://publications.europa.eu/resource/celex/ (empty CELEX URI), object of 43 'based_on' triples, 43 distinct subjects",
+   "date": "2026-09-09",
+   "observer": "Alexandrie (LLM agent, collection session), from the EUR-Lex collection manifest",
+   "organisation": "Loxyn SAS, Lyon",
+   "excerpt": "Mesuré depuis le brut, lot A gelé le 09-09-2026 : l'URI « http://publications.europa.eu/resource/celex/ », un CELEX vide, apparaît 43 fois, toutes dans « se fonde sur », toutes en position objet, portées par 43 sujets distincts — un acte, une occurrence. Aucune dans « abroge » ni « modifie ». Anomalie du registre officiel, pas de la collecte.",
+   "excerpt_en": "Measured from the raw data, lot A frozen 2026-09-09: the URI \"http://publications.europa.eu/resource/celex/\", an empty CELEX, appears 43 times, all in 'based_on', all in object position, carried by 43 distinct subjects — one act, one occurrence. None in 'repeals' nor 'amends'. An anomaly of the official registry, not of the collection.",
+   "lang": "fr",
+   "probe": "probes/2026-09/form-182-empty-celex-uri.sparql"
   },
-  "damage": "MISSING",
-  "class": "REFUSABLE",
-  "layer": "⑤ anchoring",
-  "injection": "ALTER",
-  "status": "validated",
-  "seen": [
-    {
-      "corpus": "EUR-Lex / Cellar, lot A — the official relations graph frozen 2026-09-09 (abroge 14,411 · modifie 64,290 · se fonde sur 410,522; 489,223 triples)",
-      "document": "http://publications.europa.eu/resource/celex/ (empty CELEX URI), object of 43 'based_on' triples, 43 distinct subjects",
-      "date": "2026-09-09",
-      "observer": "Alexandrie (LLM agent, collection session), from the EUR-Lex collection manifest",
-      "organisation": "Loxyn SAS, Lyon",
-      "excerpt": "Mesuré depuis le brut, lot A gelé le 09-09-2026 : l'URI « http://publications.europa.eu/resource/celex/ », un CELEX vide, apparaît 43 fois, toutes dans « se fonde sur », toutes en position objet, portées par 43 sujets distincts — un acte, une occurrence. Aucune dans « abroge » ni « modifie ». Anomalie du registre officiel, pas de la collecte.",
-      "excerpt_en": "Measured from the raw data, lot A frozen 2026-09-09: the URI \"http://publications.europa.eu/resource/celex/\", an empty CELEX, appears 43 times, all in 'based_on', all in object position, carried by 43 distinct subjects — one act, one occurrence. None in 'repeals' nor 'amends'. An anomaly of the official registry, not of the collection.",
-      "lang": "fr",
-      "probe": "probes/2026-09/form-182-empty-celex-uri.sparql"
-    },
-    {
-      "corpus": "Cellar SPARQL endpoint, whole graph as served live on 2026-09-09",
-      "date": "2026-09-09",
-      "observer": "Fault Atlas maintainer (Loxyn), live on the public endpoint",
-      "organisation": "Loxyn SAS, Lyon",
-      "lang": "en",
-      "probe": "probes/2026-09/form-182-empty-celex-uri.sparql",
-      "excerpt": "The empty CELEX URI <http://publications.europa.eu/resource/celex/> is the object of 8,164 triples under 14 predicates in the whole graph, not only of the 43 'based on' triples of lot A: annotatedTarget 7,507; act_consolidated_consolidates_resource_legal 324; work_is_logical_successor_of_work 225; resource_legal_based_on_resource_legal 43; case-law_referred_to_for_preliminary_ruling_case-law 19; work_cites_work 14; case-law_national_based_on_resource_legal 10; and seven others under 6. Same form, wider reach; the 43 of lot A are the part that sits in the three official relations."
-    }
-  ],
-  "specimens": {
-    "cases": [],
-    "counter_examples": []
+  {
+   "corpus": "Cellar SPARQL endpoint, whole graph as served live on 2026-09-09",
+   "date": "2026-09-09",
+   "observer": "Fault Atlas maintainer (Loxyn), live on the public endpoint",
+   "organisation": "Loxyn SAS, Lyon",
+   "lang": "en",
+   "probe": "probes/2026-09/form-182-empty-celex-uri.sparql",
+   "excerpt": "The empty CELEX URI <http://publications.europa.eu/resource/celex/> is the object of 8,164 triples under 14 predicates in the whole graph, not only of the 43 'based on' triples of lot A: annotatedTarget 7,507; act_consolidated_consolidates_resource_legal 324; work_is_logical_successor_of_work 225; resource_legal_based_on_resource_legal 43; case-law_referred_to_for_preliminary_ruling_case-law 19; work_cites_work 14; case-law_national_based_on_resource_legal 10; and seven others under 6. Same form, wider reach; the 43 of lot A are the part that sits in the three official relations."
+  }
+ ],
+ "specimens": {
+  "cases": [],
+  "counter_examples": []
+ },
+ "prevention": {
+  "cancellable_by_code": true,
+  "refusal_clause": "an identifier URI with an empty local part is refused, never resolved to a node",
+  "refusal_clause_fr": "une URI d'identifiant à partie locale vide est refusée, jamais résolue en nœud"
+ },
+ "repair": {
+  "reachable_by_deletion": "no",
+  "note": "deletion cannot restore this; derived from the damage class by the migration of 2026-09-09, not judged form by form and not measured — the bench can measure it",
+  "measured": {
+   "value": "no",
+   "reached": 0,
+   "injected": 423,
+   "note": "0 of 423 reached",
+   "source": "measured 2026-09-10 by pgrepair (SciPyWeightedILP) on the frozen EUR-Lex truth, three identical runs, journal sha256 in measures/reachability-by-damage-2026-09-10.json. Per damage class, not per form: two forms of the same damage and the same visibility get the same answer.",
+   "date": "2026-09-10"
   },
-  "prevention": {
-    "cancellable_by_code": true,
-    "refusal_clause": "an identifier URI with an empty local part is refused, never resolved to a node",
-    "refusal_clause_fr": "une URI d'identifiant à partie locale vide est refusée, jamais résolue en nœud"
+  "obstacle": {
+   "value": "the operation",
+   "reason": "Restoring a gap means ADDING, and a deletion-only repair has no such gesture. Its solution is a set of elements to delete; there is no insertion anywhere in it. No weight and no information change that answer.",
+   "reason_fr": "Réparer un manque veut dire AJOUTER, et une réparation par suppression n'a pas ce geste. Sa solution est un ensemble d'éléments à retirer ; il n'y a d'insertion nulle part. Aucun poids et aucune information n'y changent quoi que ce soit.",
+   "source": "derived from what a deletion-only repair can express, read in the repairer's own code — its solution is a set of elements to delete and carries no insertion — together with the measurement of 2026-09-10. Per damage class, not per form.",
+   "date": "2026-09-13"
+  }
+ },
+ "judgeable_by": [
+  "registry"
+ ],
+ "related": [
+  "form-040",
+  "form-155"
+ ],
+ "history": [
+  {
+   "date": "2026-09-09",
+   "event": "proposed from the EUR-Lex collection reports of 2026-09-09; effect on a graph: Forty-three acts declare a legal basis that points to nothing: the edge exists, its target is a void. A graph reader either drops the edge (a missing legal basis) or creates a phantom node shared by 43 acts. Prevalence: measured: 43 of 410,522 based_on triples.",
+   "by": "Alexandrie (LLM agent, collection session), from the EUR-Lex collection manifest"
   },
-  "repair": {
-    "reachable_by_deletion": "no",
-    "note": "deletion cannot restore this; derived from the damage class by the migration of 2026-09-09, not judged form by form and not measured — the bench can measure it",
-    "measured": {
-      "value": "no",
-      "reached": 0,
-      "injected": 423,
-      "note": "0 of 423 reached",
-      "source": "measured 2026-09-10 by pgrepair (SciPyWeightedILP) on the frozen EUR-Lex truth, three identical runs, journal sha256 in measures/reachability-by-damage-2026-09-10.json. Per damage class, not per form: two forms of the same damage and the same visibility get the same answer.",
-      "date": "2026-09-10"
-    }
+  {
+   "date": "2026-09-09",
+   "event": "converted to a record; class set from the collector's own refusal clause where one exists; to be reviewed by a second reader",
+   "by": "Fault Atlas"
   },
-  "judgeable_by": [
-    "registry"
-  ],
-  "related": [
-    "form-040",
-    "form-155"
-  ],
-  "history": [
-    {
-      "date": "2026-09-09",
-      "event": "proposed from the EUR-Lex collection reports of 2026-09-09; effect on a graph: Forty-three acts declare a legal basis that points to nothing: the edge exists, its target is a void. A graph reader either drops the edge (a missing legal basis) or creates a phantom node shared by 43 acts. Prevalence: measured: 43 of 410,522 based_on triples.",
-      "by": "Alexandrie (LLM agent, collection session), from the EUR-Lex collection manifest"
-    },
-    {
-      "date": "2026-09-09",
-      "event": "converted to a record; class set from the collector's own refusal clause where one exists; to be reviewed by a second reader",
-      "by": "Fault Atlas"
-    },
-    {
-      "date": "2026-09-09",
-      "event": "exact probe attached and re-run: probes/2026-09/form-182-empty-celex-uri.sparql",
-      "by": "Fault Atlas maintainer"
-    },
-    {
-      "date": "2026-09-09",
-      "event": "second observation: the same empty URI counted over the whole graph, live (8,164 triples, 14 predicates)",
-      "by": "Fault Atlas maintainer"
-    },
-    {
-      "date": "2026-09-10",
-      "event": "second reader: validated — read in full with the record: a dated measurement, a named corpus, real forms",
-      "by": "Coralie Bagnol-Lebon"
-    }
-  ],
-  "probes": [
-    {
-      "file": "probes/2026-09/form-182-empty-celex-uri.sparql",
-      "kind": "sparql",
-      "corpus_id": "corpus-2026-09-eurlex",
-      "written": "2026-09-09",
-      "run": "curl -G https://publications.europa.eu/webapi/rdf/sparql -H 'Accept: text/csv' --data-urlencode query@probes/2026-09/form-182-empty-celex-uri.sparql",
-      "result": {
-        "date": "2026-09-09",
-        "count": 43,
-        "of": null,
-        "by": "Fault Atlas maintainer (Loxyn), live on the public endpoint",
-        "examples": [
-          [
-            "http://publications.europa.eu/resource/cellar/08e4b419-7be2-4f4c-b7eb-458a1e9f3dc4",
-            [
-              "based on <http://publications.europa.eu/resource/celex/> (empty CELEX)"
-            ]
-          ],
-          [
-            "http://publications.europa.eu/resource/cellar/0d0064af-b91a-4fe6-a0b7-fa5d11adb253",
-            [
-              "based on <http://publications.europa.eu/resource/celex/> (empty CELEX)"
-            ]
-          ],
-          [
-            "http://publications.europa.eu/resource/cellar/0f258fe0-09a8-4a8b-9148-4961f405998d",
-            [
-              "based on <http://publications.europa.eu/resource/celex/> (empty CELEX)"
-            ]
-          ],
-          [
-            "http://publications.europa.eu/resource/cellar/1301aef1-442f-40ec-9eb8-84516cba2407",
-            [
-              "based on <http://publications.europa.eu/resource/celex/> (empty CELEX)"
-            ]
-          ],
-          [
-            "http://publications.europa.eu/resource/cellar/174671f5-d58d-413e-90af-75f837e87b75",
-            [
-              "based on <http://publications.europa.eu/resource/celex/> (empty CELEX)"
-            ]
-          ],
-          [
-            "http://publications.europa.eu/resource/cellar/1b0b8701-d0c9-42e3-b898-75dc4c782419",
-            [
-              "based on <http://publications.europa.eu/resource/celex/> (empty CELEX)"
-            ]
-          ],
-          [
-            "http://publications.europa.eu/resource/cellar/1d4b7178-1506-4067-816d-e08b742517cf",
-            [
-              "based on <http://publications.europa.eu/resource/celex/> (empty CELEX)"
-            ]
-          ],
-          [
-            "http://publications.europa.eu/resource/cellar/1e64a3d7-6708-48fa-9378-36aa9a0c7a1e",
-            [
-              "based on <http://publications.europa.eu/resource/celex/> (empty CELEX)"
-            ]
-          ],
-          [
-            "http://publications.europa.eu/resource/cellar/2d0c56f3-167c-4284-9c69-6bdee6d8ebc2",
-            [
-              "based on <http://publications.europa.eu/resource/celex/> (empty CELEX)"
-            ]
-          ],
-          [
-            "http://publications.europa.eu/resource/cellar/2df55aaa-bbd7-4033-8c38-2fe47e4bf3b3",
-            [
-              "based on <http://publications.europa.eu/resource/celex/> (empty CELEX)"
-            ]
-          ],
-          [
-            "http://publications.europa.eu/resource/cellar/2ff10552-bdb0-4d43-ba79-73cd4d6ab7d4",
-            [
-              "based on <http://publications.europa.eu/resource/celex/> (empty CELEX)"
-            ]
-          ],
-          [
-            "http://publications.europa.eu/resource/cellar/35e1ff9f-b36c-4cce-9020-750c2d70e3e0",
-            [
-              "based on <http://publications.europa.eu/resource/celex/> (empty CELEX)"
-            ]
-          ]
-        ],
-        "carriers_file": "probes/results/form-182-empty-celex-uri.json"
-      },
-      "matches_excerpt": true,
-      "note": "Re-run live: 43 acts, the same list as the frozen lot A."
-    }
-  ],
-  "observer_agreement": "2/2 — first reader (Loxyn, August/September classification) and second reader (Coralie Bagnol-Lebon, 2026-09-10)",
-  "proposed_severity": {
-    "value": "G3",
-    "reason": "43 legal bases with an empty identifier: the link is asserted and its target does not exist",
-    "proposed_by": "Fault Atlas maintainer (Loxyn), first reading",
-    "date": "2026-09-11",
-    "status": "proposed — a second reader confirms or contests, as for the 43 validated forms",
-    "adds_to_the_damage_class": false,
-    "note": "this reading agrees with how the August catalogue judges most MISSING forms (G3), so it adds little",
-    "reason_fr": "43 bases légales à identifiant vide : le lien est affirmé et sa cible n'existe pas"
+  {
+   "date": "2026-09-09",
+   "event": "exact probe attached and re-run: probes/2026-09/form-182-empty-celex-uri.sparql",
+   "by": "Fault Atlas maintainer"
   },
-  "registry_scope": {
-    "extent": "43 occurrences of the empty-CELEX URI in the frozen lot",
-    "why_not_a_prevalence": "a fault of a registry has no prevalence: it is a property of the base, so everything drawn from that base carries it. What can be stated is the slice it touches.",
-    "source": "read from this form's own observation, 2026-09-11",
-    "extent_fr": "43 occurrences de l'URI à CELEX vide dans le lot gelé"
+  {
+   "date": "2026-09-09",
+   "event": "second observation: the same empty URI counted over the whole graph, live (8,164 triples, 14 predicates)",
+   "by": "Fault Atlas maintainer"
   },
-  "name_fr": "Base légale encodée en URI d'identifiant vide"
+  {
+   "date": "2026-09-10",
+   "event": "second reader: validated — read in full with the record: a dated measurement, a named corpus, real forms",
+   "by": "Coralie Bagnol-Lebon"
+  }
+ ],
+ "probes": [
+  {
+   "file": "probes/2026-09/form-182-empty-celex-uri.sparql",
+   "kind": "sparql",
+   "corpus_id": "corpus-2026-09-eurlex",
+   "written": "2026-09-09",
+   "run": "curl -G https://publications.europa.eu/webapi/rdf/sparql -H 'Accept: text/csv' --data-urlencode query@probes/2026-09/form-182-empty-celex-uri.sparql",
+   "result": {
+    "date": "2026-09-09",
+    "count": 43,
+    "of": null,
+    "by": "Fault Atlas maintainer (Loxyn), live on the public endpoint",
+    "examples": [
+     [
+      "http://publications.europa.eu/resource/cellar/08e4b419-7be2-4f4c-b7eb-458a1e9f3dc4",
+      [
+       "based on <http://publications.europa.eu/resource/celex/> (empty CELEX)"
+      ]
+     ],
+     [
+      "http://publications.europa.eu/resource/cellar/0d0064af-b91a-4fe6-a0b7-fa5d11adb253",
+      [
+       "based on <http://publications.europa.eu/resource/celex/> (empty CELEX)"
+      ]
+     ],
+     [
+      "http://publications.europa.eu/resource/cellar/0f258fe0-09a8-4a8b-9148-4961f405998d",
+      [
+       "based on <http://publications.europa.eu/resource/celex/> (empty CELEX)"
+      ]
+     ],
+     [
+      "http://publications.europa.eu/resource/cellar/1301aef1-442f-40ec-9eb8-84516cba2407",
+      [
+       "based on <http://publications.europa.eu/resource/celex/> (empty CELEX)"
+      ]
+     ],
+     [
+      "http://publications.europa.eu/resource/cellar/174671f5-d58d-413e-90af-75f837e87b75",
+      [
+       "based on <http://publications.europa.eu/resource/celex/> (empty CELEX)"
+      ]
+     ],
+     [
+      "http://publications.europa.eu/resource/cellar/1b0b8701-d0c9-42e3-b898-75dc4c782419",
+      [
+       "based on <http://publications.europa.eu/resource/celex/> (empty CELEX)"
+      ]
+     ],
+     [
+      "http://publications.europa.eu/resource/cellar/1d4b7178-1506-4067-816d-e08b742517cf",
+      [
+       "based on <http://publications.europa.eu/resource/celex/> (empty CELEX)"
+      ]
+     ],
+     [
+      "http://publications.europa.eu/resource/cellar/1e64a3d7-6708-48fa-9378-36aa9a0c7a1e",
+      [
+       "based on <http://publications.europa.eu/resource/celex/> (empty CELEX)"
+      ]
+     ],
+     [
+      "http://publications.europa.eu/resource/cellar/2d0c56f3-167c-4284-9c69-6bdee6d8ebc2",
+      [
+       "based on <http://publications.europa.eu/resource/celex/> (empty CELEX)"
+      ]
+     ],
+     [
+      "http://publications.europa.eu/resource/cellar/2df55aaa-bbd7-4033-8c38-2fe47e4bf3b3",
+      [
+       "based on <http://publications.europa.eu/resource/celex/> (empty CELEX)"
+      ]
+     ],
+     [
+      "http://publications.europa.eu/resource/cellar/2ff10552-bdb0-4d43-ba79-73cd4d6ab7d4",
+      [
+       "based on <http://publications.europa.eu/resource/celex/> (empty CELEX)"
+      ]
+     ],
+     [
+      "http://publications.europa.eu/resource/cellar/35e1ff9f-b36c-4cce-9020-750c2d70e3e0",
+      [
+       "based on <http://publications.europa.eu/resource/celex/> (empty CELEX)"
+      ]
+     ]
+    ],
+    "carriers_file": "probes/results/form-182-empty-celex-uri.json"
+   },
+   "matches_excerpt": true,
+   "note": "Re-run live: 43 acts, the same list as the frozen lot A."
+  }
+ ],
+ "observer_agreement": "2/2 — first reader (Loxyn, August/September classification) and second reader (Coralie Bagnol-Lebon, 2026-09-10)",
+ "proposed_severity": {
+  "value": "G3",
+  "reason": "43 legal bases with an empty identifier: the link is asserted and its target does not exist",
+  "proposed_by": "Fault Atlas maintainer (Loxyn), first reading",
+  "date": "2026-09-11",
+  "status": "proposed — a second reader confirms or contests, as for the 43 validated forms",
+  "adds_to_the_damage_class": false,
+  "note": "this reading agrees with how the August catalogue judges most MISSING forms (G3), so it adds little",
+  "reason_fr": "43 bases légales à identifiant vide : le lien est affirmé et sa cible n'existe pas"
+ },
+ "registry_scope": {
+  "extent": "43 occurrences of the empty-CELEX URI in the frozen lot",
+  "why_not_a_prevalence": "a fault of a registry has no prevalence: it is a property of the base, so everything drawn from that base carries it. What can be stated is the slice it touches.",
+  "source": "read from this form's own observation, 2026-09-11",
+  "extent_fr": "43 occurrences de l'URI à CELEX vide dans le lot gelé"
+ },
+ "name_fr": "Base légale encodée en URI d'identifiant vide"
 }

@@ -1,328 +1,335 @@
 {
-  "id": "form-132",
-  "version": 2,
-  "legacy_line": 132,
-  "name": "Clickable zone differs from semantic unit",
-  "name_fr": "Zone cliquable ≠ unité sémantique",
-  "origin": {
-    "organisation": "Loxyn SAS, Lyon",
-    "campaign": "August 2026 — observation campaign (Korela For Science)",
-    "contact": "contact@loxyn.ai"
-  },
-  "damage": "MISSING",
-  "class": "DEFEATED_IF_XML",
-  "layer": "⑤ anchoring",
-  "injection": "FORMAT",
-  "legacy_severity": "G3",
-  "legacy_mechanism": "M4",
-  "status": "validated",
-  "seen": [
-    {
-      "corpus": "observation 2026-08 (Europe PMC JATS 2023-2026 and PubMed abstracts)",
-      "date": "2026-08-08",
-      "observer": "house observer (LLM agent), see report",
-      "excerpt": "MESURÉ le 08/08/2026 sur 272 articles XML JATS Europe PMC accès libre (internal corpus of 272 JATS articles) : citation COUPÉE par la zone cliquable dans 21 articles (7,7 %) — essai 15, meta 4, moderne 2 ; contre-forme (le lien porte la citation ENTIÈRE) dans 16 autres. Formes réelles : « Steinmetz et al. <xref>2023</xref> » (essai-PMC13169472) · « Victora et al. <xref>2008</xref> » (essai-PMC13205709) · « UNICEF. WHO. World_Bank. <xref>2025</xref> » (essai-PMC13205731). ⚠️ Le sens décrit dans l'annexe — lien sur le nom, année dehors — est à 0/272 : cherché sous 3 motifs, jamais trouvé.",
-      "lang": "fr",
-      "excerpt_en": "MEASURED on 2026-08-08 on 272 open-access Europe PMC JATS XML articles (internal corpus): citation CUT by the clickable zone in 21 articles (7.7 %) — trial 15, meta 4, modern 2; counter-form (the link carries the WHOLE citation) in 16 others. Real forms: \"Steinmetz et al. <xref>2023</xref>\" (trial-PMC13169472) · \"Victora et al. <xref>2008</xref>\" (trial-PMC13205709) · \"UNICEF. WHO. World_Bank. <xref>2025</xref>\" (trial-PMC13205731). ⚠️ The direction described in the annex — link on the name, year outside — is at 0/272: searched under 3 patterns, never found.",
-      "organisation": "Loxyn SAS, Lyon",
-      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
-      "probe": "probes/2026-08/line-132.py"
-    }
-  ],
-  "specimens": {
-    "cases": [],
-    "counter_examples": []
-  },
-  "prevention": {
-    "cancellable_by_code": true,
-    "note": "cancelled only when the source is structured (XML/HTML); not on composed PDF"
-  },
-  "repair": {
-    "reachable_by_deletion": "no",
-    "note": "deletion cannot restore this; derived from the damage class by the migration of 2026-09-09, not judged form by form and not measured — the bench can measure it",
-    "measured": {
-      "value": "no",
-      "reached": 0,
-      "injected": 423,
-      "note": "0 of 423 reached",
-      "source": "measured 2026-09-10 by pgrepair (SciPyWeightedILP) on the frozen EUR-Lex truth, three identical runs, journal sha256 in measures/reachability-by-damage-2026-09-10.json. Per damage class, not per form: two forms of the same damage and the same visibility get the same answer.",
-      "date": "2026-09-10"
-    }
-  },
-  "judgeable_by": [
-    "construction",
-    "curated",
-    "closed_world"
-  ],
-  "history": [
-    {
-      "date": "2026-08-08",
-      "event": "the internal catalogue records a house filter with 5 cases and 3 counter-example(s); not published in this record",
-      "by": "Korela For Science"
-    },
-    {
-      "date": "2026-08-09",
-      "event": "catalogue line 132 — DEFEATED (cancelled by code): filter written and green on the bench",
-      "by": "Korela For Science"
-    },
-    {
-      "date": "2026-09-09",
-      "event": "migrated; classified damage=MISSING injection=FORMAT (judgment, unreviewed by a second reader)",
-      "by": "Fault Atlas migration"
-    },
-    {
-      "date": "2026-09-09",
-      "event": "internal tool paths removed from observation notes before publication; wording otherwise unchanged",
-      "by": "Fault Atlas"
-    },
-    {
-      "date": "2026-09-09",
-      "event": "exact probe attached to the 272-file observation: probes/2026-08/line-132.py, re-run 21/272",
-      "by": "Fault Atlas maintainer"
-    },
-    {
-      "date": "2026-09-09",
-      "event": "exact probe attached (counter-form): probes/2026-08/line-132-counterform.py, re-run 16/272",
-      "by": "Fault Atlas maintainer"
-    },
-    {
-      "date": "2026-09-10",
-      "event": "second reader: validated — read in full with the record: a dated measurement, a named corpus, real forms",
-      "by": "Coralie Bagnol-Lebon"
-    }
-  ],
-  "probes": [
-    {
-      "file": "probes/2026-08/line-132.py",
-      "kind": "python",
-      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
-      "written": "2026-08-08",
-      "run": "python3 tools/run_probe.py probes/2026-08/line-132.py <dir with the 272 .xml>",
-      "result": {
-        "date": "2026-09-09",
-        "count": 21,
-        "of": 272,
-        "strata": {
-          "essai": 15,
-          "meta": 4,
-          "moderne": 2
-        },
-        "examples": [
-          [
-            "essai-PMC13169472.xml",
-            [
-              "« Steinmetz et al. » DEHORS + <xref>2023</xref>",
-              "« World Health Organization » DEHORS + <xref>2023</xref>"
-            ]
-          ],
-          [
-            "essai-PMC13205709.xml",
-            [
-              "« Victora et al. » DEHORS + <xref>2008</xref>",
-              "« FAO et al. » DEHORS + <xref>2025</xref>"
-            ]
-          ],
-          [
-            "essai-PMC13205731.xml",
-            [
-              "« UNICEF. WHO. World_Bank. » DEHORS + <xref>2025</xref>",
-              "« Haseeb and Ali » DEHORS + <xref>2026</xref>"
-            ]
-          ],
-          [
-            "essai-PMC13205876.xml",
-            [
-              "« Cusick and Georgieff » DEHORS + <xref>2022</xref>",
-              "« Prado and Dewey » DEHORS + <xref>2014</xref>"
-            ]
-          ],
-          [
-            "essai-PMC13239719.xml",
-            [
-              "« Grgic et al. » DEHORS + <xref>2018</xref>",
-              "« Southward et al. » DEHORS + <xref>2018</xref>"
-            ]
-          ],
-          [
-            "essai-PMC13242068.xml",
-            [
-              "« Bonfim et al. » DEHORS + <xref>2010</xref>",
-              "« Carvalho et al. » DEHORS + <xref>2021</xref>"
-            ]
-          ],
-          [
-            "essai-PMC13242351.xml",
-            [
-              "« Zhou et al. » DEHORS + <xref>2021</xref>",
-              "« Abbafati et al. » DEHORS + <xref>2020</xref>"
-            ]
-          ],
-          [
-            "essai-PMC13263161.xml",
-            [
-              "« Warburton and Bredin » DEHORS + <xref>2017</xref>",
-              "« Penedo and Dahn » DEHORS + <xref>2005</xref>"
-            ]
-          ],
-          [
-            "essai-PMC13264282.xml",
-            [
-              "« Asmundson and Katz » DEHORS + <xref>2009</xref>",
-              "« Bair et al. » DEHORS + <xref>2003</xref>"
-            ]
-          ],
-          [
-            "essai-PMC13271868.xml",
-            [
-              "« Sherrington et al. » DEHORS + <xref>2017</xref>",
-              "« Donath et al. » DEHORS + <xref>2017</xref>"
-            ]
-          ],
-          [
-            "essai-PMC13276020.xml",
-            [
-              "« Zhu et al. » DEHORS + <xref>2025</xref>",
-              "« Busse et al. » DEHORS + <xref>2018</xref>"
-            ]
-          ],
-          [
-            "essai-PMC13280799.xml",
-            [
-              "« Canavan and Fawzi » DEHORS + <xref>2019</xref>",
-              "« Cooke et al. » DEHORS + <xref>2017</xref>"
-            ]
-          ]
-        ],
-        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files",
-        "carriers_file": "probes/results/line-132.json"
-      },
-      "matches_excerpt": true
-    },
-    {
-      "file": "probes/2026-08/line-132-counterform.py",
-      "kind": "python",
-      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
-      "written": "2026-08-08",
-      "run": "python3 tools/run_probe.py probes/2026-08/line-132-counterform.py <dir with the 272 .xml>",
-      "result": {
-        "date": "2026-09-09",
-        "count": 16,
-        "of": 272,
-        "strata": {
-          "cas": 4,
-          "meta": 3,
-          "phys": 3,
-          "essai": 2,
-          "moderne": 2,
-          "nonEN": 1,
-          "retract": 1
-        },
-        "examples": [
-          [
-            "cas-PMC13291543.xml",
-            [
-              "<xref>Cui et al., 2018</xref>",
-              "<xref>Stochholm et al., 2006</xref>"
-            ]
-          ],
-          [
-            "cas-PMC13293799.xml",
-            [
-              "<xref>McCarthy et al., 2018</xref>",
-              "<xref>Maniwa et al., 2018</xref>"
-            ]
-          ],
-          [
-            "cas-PMC13294340.xml",
-            [
-              "<xref>Reddy et al., 2006</xref>",
-              "<xref>Boyko et al., 2018</xref>"
-            ]
-          ],
-          [
-            "cas-PMC13294475.xml",
-            [
-              "<xref>Gorman et al., 2016</xref>",
-              "<xref>Gorman et al., 2016</xref>"
-            ]
-          ],
-          [
-            "essai-PMC13245602.xml",
-            [
-              "<xref>1979</xref>",
-              "<xref>2016</xref>"
-            ]
-          ],
-          [
-            "essai-PMC13291766.xml",
-            [
-              "<xref>2018</xref>",
-              "<xref>2020</xref>"
-            ]
-          ],
-          [
-            "meta-PMC13179150.xml",
-            [
-              "<xref>2000</xref>",
-              "<xref>1995</xref>"
-            ]
-          ],
-          [
-            "meta-PMC13264275.xml",
-            [
-              "<xref>Hallal et al., 2006</xref>",
-              "<xref>Moore et al., 2012</xref>"
-            ]
-          ],
-          [
-            "meta-PMC13280693.xml",
-            [
-              "<xref>2022</xref>",
-              "<xref>2017</xref>"
-            ]
-          ],
-          [
-            "moderne-PMC12967033.xml",
-            [
-              "<xref>Stewart et al. 2005</xref>",
-              "<xref>Tilman et al. 2002</xref>"
-            ]
-          ],
-          [
-            "moderne-PMC13254229.xml",
-            [
-              "<xref>2021</xref>",
-              "<xref>2015</xref>"
-            ]
-          ],
-          [
-            "nonEN-PMC13228121.xml",
-            [
-              "<xref>Bauman, 1999</xref>",
-              "<xref>Carvalho, 2022</xref>"
-            ]
-          ]
-        ],
-        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files",
-        "carriers_file": "probes/results/line-132-counterform.json"
-      },
-      "matches_excerpt": true,
-      "note": "Counter-form of line 132: the clickable span carries the WHOLE citation, year included. 16/272, as quoted in the excerpt."
-    }
-  ],
-  "observer_agreement": "2/2 — first reader (Loxyn, August/September classification) and second reader (Coralie Bagnol-Lebon, 2026-09-10)",
-  "failure_mode": {
-    "value": "MANQ",
-    "means": "a gap: the graph is incomplete where the reading did not reach, not wrong",
-    "source": "the internal catalogue of 2026-08-09 (korela.db, table parametre), line 132; it is not derived from the damage and varies inside a damage class"
-  },
-  "document_years": {
-    "corpus_id": "corpus-europe-pmc-jats-2023-2026",
-    "counts": {
-      "2025": 1,
-      "2026": 23
-    },
-    "carriers_dated": 24,
-    "source": "corpora/index/document-years-europe-pmc-272.json, read 2026-09-11 from each file's earliest pub-date"
+ "id": "form-132",
+ "version": 2,
+ "legacy_line": 132,
+ "name": "Clickable zone differs from semantic unit",
+ "name_fr": "Zone cliquable ≠ unité sémantique",
+ "origin": {
+  "organisation": "Loxyn SAS, Lyon",
+  "campaign": "August 2026 — observation campaign (Korela For Science)",
+  "contact": "contact@loxyn.ai"
+ },
+ "damage": "MISSING",
+ "class": "DEFEATED_IF_XML",
+ "layer": "⑤ anchoring",
+ "injection": "FORMAT",
+ "legacy_severity": "G3",
+ "legacy_mechanism": "M4",
+ "status": "validated",
+ "seen": [
+  {
+   "corpus": "observation 2026-08 (Europe PMC JATS 2023-2026 and PubMed abstracts)",
+   "date": "2026-08-08",
+   "observer": "house observer (LLM agent), see report",
+   "excerpt": "MESURÉ le 08/08/2026 sur 272 articles XML JATS Europe PMC accès libre (internal corpus of 272 JATS articles) : citation COUPÉE par la zone cliquable dans 21 articles (7,7 %) — essai 15, meta 4, moderne 2 ; contre-forme (le lien porte la citation ENTIÈRE) dans 16 autres. Formes réelles : « Steinmetz et al. <xref>2023</xref> » (essai-PMC13169472) · « Victora et al. <xref>2008</xref> » (essai-PMC13205709) · « UNICEF. WHO. World_Bank. <xref>2025</xref> » (essai-PMC13205731). ⚠️ Le sens décrit dans l'annexe — lien sur le nom, année dehors — est à 0/272 : cherché sous 3 motifs, jamais trouvé.",
+   "lang": "fr",
+   "excerpt_en": "MEASURED on 2026-08-08 on 272 open-access Europe PMC JATS XML articles (internal corpus): citation CUT by the clickable zone in 21 articles (7.7 %) — trial 15, meta 4, modern 2; counter-form (the link carries the WHOLE citation) in 16 others. Real forms: \"Steinmetz et al. <xref>2023</xref>\" (trial-PMC13169472) · \"Victora et al. <xref>2008</xref>\" (trial-PMC13205709) · \"UNICEF. WHO. World_Bank. <xref>2025</xref>\" (trial-PMC13205731). ⚠️ The direction described in the annex — link on the name, year outside — is at 0/272: searched under 3 patterns, never found.",
+   "organisation": "Loxyn SAS, Lyon",
+   "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+   "probe": "probes/2026-08/line-132.py"
   }
+ ],
+ "specimens": {
+  "cases": [],
+  "counter_examples": []
+ },
+ "prevention": {
+  "cancellable_by_code": true,
+  "note": "cancelled only when the source is structured (XML/HTML); not on composed PDF"
+ },
+ "repair": {
+  "reachable_by_deletion": "no",
+  "note": "deletion cannot restore this; derived from the damage class by the migration of 2026-09-09, not judged form by form and not measured — the bench can measure it",
+  "measured": {
+   "value": "no",
+   "reached": 0,
+   "injected": 423,
+   "note": "0 of 423 reached",
+   "source": "measured 2026-09-10 by pgrepair (SciPyWeightedILP) on the frozen EUR-Lex truth, three identical runs, journal sha256 in measures/reachability-by-damage-2026-09-10.json. Per damage class, not per form: two forms of the same damage and the same visibility get the same answer.",
+   "date": "2026-09-10"
+  },
+  "obstacle": {
+   "value": "the operation",
+   "reason": "Restoring a gap means ADDING, and a deletion-only repair has no such gesture. Its solution is a set of elements to delete; there is no insertion anywhere in it. No weight and no information change that answer.",
+   "reason_fr": "Réparer un manque veut dire AJOUTER, et une réparation par suppression n'a pas ce geste. Sa solution est un ensemble d'éléments à retirer ; il n'y a d'insertion nulle part. Aucun poids et aucune information n'y changent quoi que ce soit.",
+   "source": "derived from what a deletion-only repair can express, read in the repairer's own code — its solution is a set of elements to delete and carries no insertion — together with the measurement of 2026-09-10. Per damage class, not per form.",
+   "date": "2026-09-13"
+  }
+ },
+ "judgeable_by": [
+  "construction",
+  "curated",
+  "closed_world"
+ ],
+ "history": [
+  {
+   "date": "2026-08-08",
+   "event": "the internal catalogue records a house filter with 5 cases and 3 counter-example(s); not published in this record",
+   "by": "Korela For Science"
+  },
+  {
+   "date": "2026-08-09",
+   "event": "catalogue line 132 — DEFEATED (cancelled by code): filter written and green on the bench",
+   "by": "Korela For Science"
+  },
+  {
+   "date": "2026-09-09",
+   "event": "migrated; classified damage=MISSING injection=FORMAT (judgment, unreviewed by a second reader)",
+   "by": "Fault Atlas migration"
+  },
+  {
+   "date": "2026-09-09",
+   "event": "internal tool paths removed from observation notes before publication; wording otherwise unchanged",
+   "by": "Fault Atlas"
+  },
+  {
+   "date": "2026-09-09",
+   "event": "exact probe attached to the 272-file observation: probes/2026-08/line-132.py, re-run 21/272",
+   "by": "Fault Atlas maintainer"
+  },
+  {
+   "date": "2026-09-09",
+   "event": "exact probe attached (counter-form): probes/2026-08/line-132-counterform.py, re-run 16/272",
+   "by": "Fault Atlas maintainer"
+  },
+  {
+   "date": "2026-09-10",
+   "event": "second reader: validated — read in full with the record: a dated measurement, a named corpus, real forms",
+   "by": "Coralie Bagnol-Lebon"
+  }
+ ],
+ "probes": [
+  {
+   "file": "probes/2026-08/line-132.py",
+   "kind": "python",
+   "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+   "written": "2026-08-08",
+   "run": "python3 tools/run_probe.py probes/2026-08/line-132.py <dir with the 272 .xml>",
+   "result": {
+    "date": "2026-09-09",
+    "count": 21,
+    "of": 272,
+    "strata": {
+     "essai": 15,
+     "meta": 4,
+     "moderne": 2
+    },
+    "examples": [
+     [
+      "essai-PMC13169472.xml",
+      [
+       "« Steinmetz et al. » DEHORS + <xref>2023</xref>",
+       "« World Health Organization » DEHORS + <xref>2023</xref>"
+      ]
+     ],
+     [
+      "essai-PMC13205709.xml",
+      [
+       "« Victora et al. » DEHORS + <xref>2008</xref>",
+       "« FAO et al. » DEHORS + <xref>2025</xref>"
+      ]
+     ],
+     [
+      "essai-PMC13205731.xml",
+      [
+       "« UNICEF. WHO. World_Bank. » DEHORS + <xref>2025</xref>",
+       "« Haseeb and Ali » DEHORS + <xref>2026</xref>"
+      ]
+     ],
+     [
+      "essai-PMC13205876.xml",
+      [
+       "« Cusick and Georgieff » DEHORS + <xref>2022</xref>",
+       "« Prado and Dewey » DEHORS + <xref>2014</xref>"
+      ]
+     ],
+     [
+      "essai-PMC13239719.xml",
+      [
+       "« Grgic et al. » DEHORS + <xref>2018</xref>",
+       "« Southward et al. » DEHORS + <xref>2018</xref>"
+      ]
+     ],
+     [
+      "essai-PMC13242068.xml",
+      [
+       "« Bonfim et al. » DEHORS + <xref>2010</xref>",
+       "« Carvalho et al. » DEHORS + <xref>2021</xref>"
+      ]
+     ],
+     [
+      "essai-PMC13242351.xml",
+      [
+       "« Zhou et al. » DEHORS + <xref>2021</xref>",
+       "« Abbafati et al. » DEHORS + <xref>2020</xref>"
+      ]
+     ],
+     [
+      "essai-PMC13263161.xml",
+      [
+       "« Warburton and Bredin » DEHORS + <xref>2017</xref>",
+       "« Penedo and Dahn » DEHORS + <xref>2005</xref>"
+      ]
+     ],
+     [
+      "essai-PMC13264282.xml",
+      [
+       "« Asmundson and Katz » DEHORS + <xref>2009</xref>",
+       "« Bair et al. » DEHORS + <xref>2003</xref>"
+      ]
+     ],
+     [
+      "essai-PMC13271868.xml",
+      [
+       "« Sherrington et al. » DEHORS + <xref>2017</xref>",
+       "« Donath et al. » DEHORS + <xref>2017</xref>"
+      ]
+     ],
+     [
+      "essai-PMC13276020.xml",
+      [
+       "« Zhu et al. » DEHORS + <xref>2025</xref>",
+       "« Busse et al. » DEHORS + <xref>2018</xref>"
+      ]
+     ],
+     [
+      "essai-PMC13280799.xml",
+      [
+       "« Canavan and Fawzi » DEHORS + <xref>2019</xref>",
+       "« Cooke et al. » DEHORS + <xref>2017</xref>"
+      ]
+     ]
+    ],
+    "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files",
+    "carriers_file": "probes/results/line-132.json"
+   },
+   "matches_excerpt": true
+  },
+  {
+   "file": "probes/2026-08/line-132-counterform.py",
+   "kind": "python",
+   "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+   "written": "2026-08-08",
+   "run": "python3 tools/run_probe.py probes/2026-08/line-132-counterform.py <dir with the 272 .xml>",
+   "result": {
+    "date": "2026-09-09",
+    "count": 16,
+    "of": 272,
+    "strata": {
+     "cas": 4,
+     "meta": 3,
+     "phys": 3,
+     "essai": 2,
+     "moderne": 2,
+     "nonEN": 1,
+     "retract": 1
+    },
+    "examples": [
+     [
+      "cas-PMC13291543.xml",
+      [
+       "<xref>Cui et al., 2018</xref>",
+       "<xref>Stochholm et al., 2006</xref>"
+      ]
+     ],
+     [
+      "cas-PMC13293799.xml",
+      [
+       "<xref>McCarthy et al., 2018</xref>",
+       "<xref>Maniwa et al., 2018</xref>"
+      ]
+     ],
+     [
+      "cas-PMC13294340.xml",
+      [
+       "<xref>Reddy et al., 2006</xref>",
+       "<xref>Boyko et al., 2018</xref>"
+      ]
+     ],
+     [
+      "cas-PMC13294475.xml",
+      [
+       "<xref>Gorman et al., 2016</xref>",
+       "<xref>Gorman et al., 2016</xref>"
+      ]
+     ],
+     [
+      "essai-PMC13245602.xml",
+      [
+       "<xref>1979</xref>",
+       "<xref>2016</xref>"
+      ]
+     ],
+     [
+      "essai-PMC13291766.xml",
+      [
+       "<xref>2018</xref>",
+       "<xref>2020</xref>"
+      ]
+     ],
+     [
+      "meta-PMC13179150.xml",
+      [
+       "<xref>2000</xref>",
+       "<xref>1995</xref>"
+      ]
+     ],
+     [
+      "meta-PMC13264275.xml",
+      [
+       "<xref>Hallal et al., 2006</xref>",
+       "<xref>Moore et al., 2012</xref>"
+      ]
+     ],
+     [
+      "meta-PMC13280693.xml",
+      [
+       "<xref>2022</xref>",
+       "<xref>2017</xref>"
+      ]
+     ],
+     [
+      "moderne-PMC12967033.xml",
+      [
+       "<xref>Stewart et al. 2005</xref>",
+       "<xref>Tilman et al. 2002</xref>"
+      ]
+     ],
+     [
+      "moderne-PMC13254229.xml",
+      [
+       "<xref>2021</xref>",
+       "<xref>2015</xref>"
+      ]
+     ],
+     [
+      "nonEN-PMC13228121.xml",
+      [
+       "<xref>Bauman, 1999</xref>",
+       "<xref>Carvalho, 2022</xref>"
+      ]
+     ]
+    ],
+    "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files",
+    "carriers_file": "probes/results/line-132-counterform.json"
+   },
+   "matches_excerpt": true,
+   "note": "Counter-form of line 132: the clickable span carries the WHOLE citation, year included. 16/272, as quoted in the excerpt."
+  }
+ ],
+ "observer_agreement": "2/2 — first reader (Loxyn, August/September classification) and second reader (Coralie Bagnol-Lebon, 2026-09-10)",
+ "failure_mode": {
+  "value": "MANQ",
+  "means": "a gap: the graph is incomplete where the reading did not reach, not wrong",
+  "source": "the internal catalogue of 2026-08-09 (korela.db, table parametre), line 132; it is not derived from the damage and varies inside a damage class"
+ },
+ "document_years": {
+  "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+  "counts": {
+   "2025": 1,
+   "2026": 23
+  },
+  "carriers_dated": 24,
+  "source": "corpora/index/document-years-europe-pmc-272.json, read 2026-09-11 from each file's earliest pub-date"
+ }
 }

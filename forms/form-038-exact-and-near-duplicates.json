@@ -1,105 +1,112 @@
 {
-  "id": "form-038",
-  "version": 1,
-  "legacy_line": 38,
-  "name": "Exact and near duplicates",
-  "name_fr": "Doublons exacts et quasi-doublons",
-  "origin": {
-    "organisation": "Loxyn SAS, Lyon",
-    "campaign": "August 2026 — observation campaign (Korela For Science)",
-    "contact": "contact@loxyn.ai"
-  },
-  "damage": "SPURIOUS_EDGE",
-  "class": "DEFEATED",
-  "layer": "⑨ structure",
-  "injection": "DUPLICATE",
-  "legacy_severity": "G1",
-  "legacy_mechanism": "M9",
-  "status": "migrated_unreviewed",
-  "seen": [
-    {
-      "corpus": "observation 2026-08 (Europe PMC JATS 2023-2026 and PubMed abstracts)",
-      "date": "2026-08-08",
-      "observer": "house observer (LLM agent), see report",
-      "excerpt": "deux copies du même article comptées comme deux témoins indépendants — faux double accord (analyse de gravité, 08/08/2026)",
-      "lang": "fr",
-      "excerpt_en": "two copies of the same article counted as two independent witnesses — a false double agreement (severity analysis, 2026-08-08)",
-      "organisation": "Loxyn SAS, Lyon"
-    }
-  ],
-  "specimens": {
-    "cases": [],
-    "counter_examples": []
-  },
-  "prevention": {
-    "cancellable_by_code": true
-  },
-  "repair": {
-    "reachable_by_deletion": "yes",
-    "note": "the faulty edge can be deleted",
-    "measured": {
-      "value": "depends_on_visibility",
-      "reached": 366,
-      "injected": 721,
-      "note": "360 of 360 when a law can see it, 6 of 361 when none can",
-      "source": "measured 2026-09-10 by pgrepair (SciPyWeightedILP) on the frozen EUR-Lex truth, three identical runs, journal sha256 in measures/reachability-by-damage-2026-09-10.json. Per damage class, not per form: two forms of the same damage and the same visibility get the same answer.",
-      "date": "2026-09-10",
-      "disagrees_with_the_judgment": "yes"
-    }
-  },
-  "judgeable_by": [
-    "construction",
-    "curated",
-    "closed_world"
-  ],
-  "history": [
-    {
-      "date": "2026-08-08",
-      "event": "the internal catalogue records a house filter with 2 cases and 1 counter-example(s); not published in this record",
-      "by": "Korela For Science"
-    },
-    {
-      "date": "2026-08-09",
-      "event": "catalogue line 38 — DEFEATED (cancelled by code): filter written and green on the bench",
-      "by": "Korela For Science"
-    },
-    {
-      "date": "2026-09-09",
-      "event": "migrated; classified damage=SPURIOUS_EDGE injection=DUPLICATE (judgment, unreviewed by a second reader)",
-      "by": "Fault Atlas migration"
-    },
-    {
-      "date": "2026-09-09",
-      "event": "exact probe attached, measured absent on the 272 files: probes/2026-08/line-038.py, 0/272",
-      "by": "Fault Atlas maintainer"
-    }
-  ],
-  "observed_absent_in": [
-    "Europe PMC JATS 2023-2026 (272 articles): 0/272 by the exact probe probes/2026-08/line-038.py, written 2026-08-08, re-run 2026-09-09"
-  ],
-  "probes": [
-    {
-      "file": "probes/2026-08/line-038.py",
-      "kind": "python",
-      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
-      "written": "2026-08-08",
-      "run": "python3 tools/run_probe.py probes/2026-08/line-038.py <dir with the 272 .xml>",
-      "result": {
-        "date": "2026-09-09",
-        "count": 0,
-        "of": 272,
-        "strata": {},
-        "examples": [],
-        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files",
-        "carriers_file": "probes/results/line-038.json"
-      },
-      "matches_excerpt": true,
-      "note": "Measured absent: the probe finds no carrier among the 272 files. An absence is a result, dated."
-    }
-  ],
-  "failure_mode": {
-    "value": "PROP",
-    "means": "identity: one thing appears under several forms, or several things under one — the error lands on a node and propagates to everything hanging from it",
-    "source": "the internal catalogue of 2026-08-09 (korela.db, table parametre), line 38; it is not derived from the damage and varies inside a damage class"
+ "id": "form-038",
+ "version": 1,
+ "legacy_line": 38,
+ "name": "Exact and near duplicates",
+ "name_fr": "Doublons exacts et quasi-doublons",
+ "origin": {
+  "organisation": "Loxyn SAS, Lyon",
+  "campaign": "August 2026 — observation campaign (Korela For Science)",
+  "contact": "contact@loxyn.ai"
+ },
+ "damage": "SPURIOUS_EDGE",
+ "class": "DEFEATED",
+ "layer": "⑨ structure",
+ "injection": "DUPLICATE",
+ "legacy_severity": "G1",
+ "legacy_mechanism": "M9",
+ "status": "migrated_unreviewed",
+ "seen": [
+  {
+   "corpus": "observation 2026-08 (Europe PMC JATS 2023-2026 and PubMed abstracts)",
+   "date": "2026-08-08",
+   "observer": "house observer (LLM agent), see report",
+   "excerpt": "deux copies du même article comptées comme deux témoins indépendants — faux double accord (analyse de gravité, 08/08/2026)",
+   "lang": "fr",
+   "excerpt_en": "two copies of the same article counted as two independent witnesses — a false double agreement (severity analysis, 2026-08-08)",
+   "organisation": "Loxyn SAS, Lyon"
   }
+ ],
+ "specimens": {
+  "cases": [],
+  "counter_examples": []
+ },
+ "prevention": {
+  "cancellable_by_code": true
+ },
+ "repair": {
+  "reachable_by_deletion": "yes",
+  "note": "the faulty edge can be deleted",
+  "measured": {
+   "value": "depends_on_visibility",
+   "reached": 366,
+   "injected": 721,
+   "note": "360 of 360 when a law can see it, 6 of 361 when none can",
+   "source": "measured 2026-09-10 by pgrepair (SciPyWeightedILP) on the frozen EUR-Lex truth, three identical runs, journal sha256 in measures/reachability-by-damage-2026-09-10.json. Per damage class, not per form: two forms of the same damage and the same visibility get the same answer.",
+   "date": "2026-09-10",
+   "disagrees_with_the_judgment": "yes"
+  },
+  "obstacle": {
+   "value": "the information",
+   "reason": "Deletion is the right gesture here: the false edge has to go. What is missing is what tells it from the true one when no constraint separates them. Measured: with a weight carried from the document, a repairer goes from 65 of 130 — a coin — to 130 of 130, stable on three runs.",
+   "reason_fr": "La suppression est ici le bon geste : la fausse arête doit partir. Ce qui manque, c'est de quoi la distinguer de la vraie quand aucune contrainte ne les sépare. Mesuré : avec un poids porté depuis le document, un réparateur passe de 65 sur 130 — une pièce — à 130 sur 130, stable.",
+   "source": "derived from what a deletion-only repair can express, read in the repairer's own code — its solution is a set of elements to delete and carries no insertion — together with the measurement of 2026-09-10. Per damage class, not per form.",
+   "date": "2026-09-13"
+  }
+ },
+ "judgeable_by": [
+  "construction",
+  "curated",
+  "closed_world"
+ ],
+ "history": [
+  {
+   "date": "2026-08-08",
+   "event": "the internal catalogue records a house filter with 2 cases and 1 counter-example(s); not published in this record",
+   "by": "Korela For Science"
+  },
+  {
+   "date": "2026-08-09",
+   "event": "catalogue line 38 — DEFEATED (cancelled by code): filter written and green on the bench",
+   "by": "Korela For Science"
+  },
+  {
+   "date": "2026-09-09",
+   "event": "migrated; classified damage=SPURIOUS_EDGE injection=DUPLICATE (judgment, unreviewed by a second reader)",
+   "by": "Fault Atlas migration"
+  },
+  {
+   "date": "2026-09-09",
+   "event": "exact probe attached, measured absent on the 272 files: probes/2026-08/line-038.py, 0/272",
+   "by": "Fault Atlas maintainer"
+  }
+ ],
+ "observed_absent_in": [
+  "Europe PMC JATS 2023-2026 (272 articles): 0/272 by the exact probe probes/2026-08/line-038.py, written 2026-08-08, re-run 2026-09-09"
+ ],
+ "probes": [
+  {
+   "file": "probes/2026-08/line-038.py",
+   "kind": "python",
+   "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+   "written": "2026-08-08",
+   "run": "python3 tools/run_probe.py probes/2026-08/line-038.py <dir with the 272 .xml>",
+   "result": {
+    "date": "2026-09-09",
+    "count": 0,
+    "of": 272,
+    "strata": {},
+    "examples": [],
+    "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files",
+    "carriers_file": "probes/results/line-038.json"
+   },
+   "matches_excerpt": true,
+   "note": "Measured absent: the probe finds no carrier among the 272 files. An absence is a result, dated."
+  }
+ ],
+ "failure_mode": {
+  "value": "PROP",
+  "means": "identity: one thing appears under several forms, or several things under one — the error lands on a node and propagates to everything hanging from it",
+  "source": "the internal catalogue of 2026-08-09 (korela.db, table parametre), line 38; it is not derived from the damage and varies inside a damage class"
+ }
 }

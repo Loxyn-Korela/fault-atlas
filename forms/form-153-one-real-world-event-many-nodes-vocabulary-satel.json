@@ -1,84 +1,91 @@
 {
-  "id": "form-153",
-  "version": 1,
-  "name": "One real-world event, many nodes (vocabulary satellites)",
-  "origin": {
-    "organisation": "Loxyn SAS, Lyon",
-    "campaign": "September 2026 — PubMed substrate and other corpora (Voûte)",
-    "contact": "contact@loxyn.ai"
+ "id": "form-153",
+ "version": 1,
+ "name": "One real-world event, many nodes (vocabulary satellites)",
+ "origin": {
+  "organisation": "Loxyn SAS, Lyon",
+  "campaign": "September 2026 — PubMed substrate and other corpora (Voûte)",
+  "contact": "contact@loxyn.ai"
+ },
+ "damage": "SPLIT",
+ "class": "UNCLASSIFIED",
+ "layer": "⑥ resolution",
+ "injection": "RENAME",
+ "status": "proposed",
+ "seen": [
+  {
+   "corpus": "Author keywords of the baseline frozen 2026-08-18 (English, articles and reviews, 2011-2025) and MeSH history 2026, on the baseline frozen 2026-08-18",
+   "document": "'covid', 'covid 19', 'coronavirus disease 19', 'sars cov 2', 'covid 19 vaccine', 'covid 19 pneumonia', 'suspected covid-19'; MeSH D000086382 (born 2019) vs PubTator 2697049 (115 pre-pivot articles)",
+   "date": "2026-08-21",
+   "observer": "Claude Voûte (LLM agent), session 8d9c5098, from the Substrat measurement files",
+   "excerpt": "21-08-2026 : « COVID = 9 satellites du même événement (fond à compter en ÉVÉNEMENTS) » ; « témoin = (identifiant, couche) — D000086382 MeSH naît 2019 mais 2697049 PubTator a 115 articles pré-pivot ».",
+   "excerpt_en": "2026-08-21: \"COVID = 9 satellites of the same event (background to be counted in EVENTS)\"; \"witness = (identifier, layer) — MeSH D000086382 is born 2019 but PubTator 2697049 has 115 pre-pivot articles\".",
+   "lang": "fr",
+   "organisation": "Loxyn SAS, Lyon"
+  }
+ ],
+ "specimens": {
+  "cases": [],
+  "counter_examples": []
+ },
+ "prevention": {
+  "cancellable_by_code": false,
+  "note": "not assessed by the observer; to be classified by the second reader"
+ },
+ "repair": {
+  "reachable_by_deletion": "no",
+  "note": "deletion cannot restore this; derived from the damage class by the migration of 2026-09-09, not judged form by form and not measured — the bench can measure it",
+  "measured": {
+   "value": "no",
+   "reached": 0,
+   "injected": 1355,
+   "note": "0 of 1,355 restored; 24 twins deleted and the 1,674 true facts they took were not restored",
+   "source": "measured 2026-09-10 by pgrepair (SciPyWeightedILP) on the frozen EUR-Lex truth, three identical runs, journal sha256 in measures/reachability-by-damage-2026-09-10.json. Per damage class, not per form: two forms of the same damage and the same visibility get the same answer.",
+   "date": "2026-09-10"
   },
-  "damage": "SPLIT",
-  "class": "UNCLASSIFIED",
-  "layer": "⑥ resolution",
-  "injection": "RENAME",
-  "status": "proposed",
-  "seen": [
-    {
-      "corpus": "Author keywords of the baseline frozen 2026-08-18 (English, articles and reviews, 2011-2025) and MeSH history 2026, on the baseline frozen 2026-08-18",
-      "document": "'covid', 'covid 19', 'coronavirus disease 19', 'sars cov 2', 'covid 19 vaccine', 'covid 19 pneumonia', 'suspected covid-19'; MeSH D000086382 (born 2019) vs PubTator 2697049 (115 pre-pivot articles)",
-      "date": "2026-08-21",
-      "observer": "Claude Voûte (LLM agent), session 8d9c5098, from the Substrat measurement files",
-      "excerpt": "21-08-2026 : « COVID = 9 satellites du même événement (fond à compter en ÉVÉNEMENTS) » ; « témoin = (identifiant, couche) — D000086382 MeSH naît 2019 mais 2697049 PubTator a 115 articles pré-pivot ».",
-      "excerpt_en": "2026-08-21: \"COVID = 9 satellites of the same event (background to be counted in EVENTS)\"; \"witness = (identifier, layer) — MeSH D000086382 is born 2019 but PubTator 2697049 has 115 pre-pivot articles\".",
-      "lang": "fr",
-      "organisation": "Loxyn SAS, Lyon"
-    }
-  ],
-  "specimens": {
-    "cases": [],
-    "counter_examples": []
+  "obstacle": {
+   "value": "the operation",
+   "reason": "One entity written as two is repaired by MERGING them. Deleting the twin removes the false node and does not give back the facts it took: measured, 24 twins deleted of 1,355 and 1,674 true facts not restored.",
+   "reason_fr": "Une entité écrite en deux se répare en les FUSIONNANT. Supprimer le jumeau retire le faux nœud et ne rend pas les faits qu'il avait emportés : mesuré, 24 jumeaux sur 1 355 et 1 674 faits vrais non rétablis.",
+   "source": "derived from what a deletion-only repair can express, read in the repairer's own code — its solution is a set of elements to delete and carries no insertion — together with the measurement of 2026-09-10. Per damage class, not per form.",
+   "date": "2026-09-13"
+  }
+ },
+ "judgeable_by": [
+  "curated",
+  "dated_future"
+ ],
+ "related": [
+  "form-021",
+  "form-086"
+ ],
+ "history": [
+  {
+   "date": "2026-09-09",
+   "event": "proposed by the Voûte Claude in 'FORMES-PUBMED-pour-Fault-Atlas (09-09-2026)' (part 1; final file sha256 51a338add43cd071…), form 12 of 23; effect on a graph: A single event becomes nine neighbouring nodes; novelty measures count nine births; two layers date the same thing differently. Prevalence: measured on one event (9 spellings); not counted elsewhere.",
+   "by": "Claude Voûte (LLM agent), session 8d9c5098, from the Substrat measurement files"
   },
-  "prevention": {
-    "cancellable_by_code": false,
-    "note": "not assessed by the observer; to be classified by the second reader"
-  },
-  "repair": {
-    "reachable_by_deletion": "no",
-    "note": "deletion cannot restore this; derived from the damage class by the migration of 2026-09-09, not judged form by form and not measured — the bench can measure it",
-    "measured": {
-      "value": "no",
-      "reached": 0,
-      "injected": 1355,
-      "note": "0 of 1,355 restored; 24 twins deleted and the 1,674 true facts they took were not restored",
-      "source": "measured 2026-09-10 by pgrepair (SciPyWeightedILP) on the frozen EUR-Lex truth, three identical runs, journal sha256 in measures/reachability-by-damage-2026-09-10.json. Per damage class, not per form: two forms of the same damage and the same visibility get the same answer.",
-      "date": "2026-09-10"
-    }
-  },
-  "judgeable_by": [
-    "curated",
-    "dated_future"
-  ],
-  "related": [
-    "form-021",
-    "form-086"
-  ],
-  "history": [
-    {
-      "date": "2026-09-09",
-      "event": "proposed by the Voûte Claude in 'FORMES-PUBMED-pour-Fault-Atlas (09-09-2026)' (part 1; final file sha256 51a338add43cd071…), form 12 of 23; effect on a graph: A single event becomes nine neighbouring nodes; novelty measures count nine births; two layers date the same thing differently. Prevalence: measured on one event (9 spellings); not counted elsewhere.",
-      "by": "Claude Voûte (LLM agent), session 8d9c5098, from the Substrat measurement files"
-    },
-    {
-      "date": "2026-09-09",
-      "event": "converted to a record; class, prevention and the novel/variant question left to the second reader",
-      "by": "Fault Atlas"
-    }
-  ],
-  "proposed_severity": {
-    "value": "G3",
-    "reason": "one real event split into nine satellites: the evidence is scattered and each piece incomplete",
-    "proposed_by": "Fault Atlas maintainer (Loxyn), first reading",
-    "date": "2026-09-11",
-    "status": "proposed — a second reader confirms or contests, as for the 43 validated forms",
-    "adds_to_the_damage_class": true,
-    "note": "the August catalogue judges most SPLIT forms G1; this reading says G3 and the reason is above",
-    "reason_fr": "un événement réel éclaté en neuf satellites : les preuves sont dispersées et chacune incomplète"
-  },
-  "registry_scope": {
-    "extent": "the 9 satellites of one event, and every grouping that treats them as distinct",
-    "why_not_a_prevalence": "a fault of a registry has no prevalence: it is a property of the base, so everything drawn from that base carries it. What can be stated is the slice it touches.",
-    "source": "read from this form's own observation, 2026-09-11",
-    "extent_fr": "les 9 satellites d'un même événement, et tout regroupement qui les traite comme distincts"
-  },
-  "name_fr": "Un événement réel, plusieurs nœuds (satellites de vocabulaire)"
+  {
+   "date": "2026-09-09",
+   "event": "converted to a record; class, prevention and the novel/variant question left to the second reader",
+   "by": "Fault Atlas"
+  }
+ ],
+ "proposed_severity": {
+  "value": "G3",
+  "reason": "one real event split into nine satellites: the evidence is scattered and each piece incomplete",
+  "proposed_by": "Fault Atlas maintainer (Loxyn), first reading",
+  "date": "2026-09-11",
+  "status": "proposed — a second reader confirms or contests, as for the 43 validated forms",
+  "adds_to_the_damage_class": true,
+  "note": "the August catalogue judges most SPLIT forms G1; this reading says G3 and the reason is above",
+  "reason_fr": "un événement réel éclaté en neuf satellites : les preuves sont dispersées et chacune incomplète"
+ },
+ "registry_scope": {
+  "extent": "the 9 satellites of one event, and every grouping that treats them as distinct",
+  "why_not_a_prevalence": "a fault of a registry has no prevalence: it is a property of the base, so everything drawn from that base carries it. What can be stated is the slice it touches.",
+  "source": "read from this form's own observation, 2026-09-11",
+  "extent_fr": "les 9 satellites d'un même événement, et tout regroupement qui les traite comme distincts"
+ },
+ "name_fr": "Un événement réel, plusieurs nœuds (satellites de vocabulaire)"
 }

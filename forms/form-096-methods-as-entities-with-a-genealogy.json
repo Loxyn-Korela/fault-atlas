@@ -1,148 +1,155 @@
 {
-  "id": "form-096",
-  "version": 2,
-  "legacy_line": 96,
-  "name": "Methods as entities with a genealogy",
-  "name_fr": "Les méthodes sont des entités avec généalogie",
-  "origin": {
-    "organisation": "Loxyn SAS, Lyon",
-    "campaign": "August 2026 — observation campaign (Korela For Science)",
-    "contact": "contact@loxyn.ai"
+ "id": "form-096",
+ "version": 2,
+ "legacy_line": 96,
+ "name": "Methods as entities with a genealogy",
+ "name_fr": "Les méthodes sont des entités avec généalogie",
+ "origin": {
+  "organisation": "Loxyn SAS, Lyon",
+  "campaign": "August 2026 — observation campaign (Korela For Science)",
+  "contact": "contact@loxyn.ai"
+ },
+ "damage": "SPLIT",
+ "class": "SILENT_FALSE",
+ "layer": "⑥ resolution",
+ "injection": "RENAME",
+ "legacy_severity": "G3",
+ "legacy_mechanism": "M1",
+ "status": "migrated_unreviewed",
+ "seen": [
+  {
+   "corpus": "observation 2026-08 (272 Europe PMC JATS articles)",
+   "date": "2026-08-08",
+   "observer": "house observer (LLM agent), see report",
+   "excerpt": "MESURÉ le 08/08/2026 sur les 272 XML (PMC récents) : 6/272 (2 %) nomment une méthode par son auteur (« method of … », « criteria of Guillain-Barré »), 3/272 (1 %) sous la forme canonique « using/according to the method of <Nom> », et 4/272 (1 %) portent une filiation explicite (« adapted from Page », « adapted from MacDougall »). En regard, 55/272 (20 %) portent un « Nom (année) » de citation — soit DIX FOIS PLUS de leurres que de cibles, avec la même forme de surface. Observation d'origine 08/08/2026 : Carpi & Virno, Brit. J. Pharmacol. 1957 (annexe 96).",
+   "lang": "fr",
+   "excerpt_en": "MEASURED on 2026-08-08 on the 272 XML files (recent PMC): 6/272 (2 %) name a method by its author (\"method of …\", \"criteria of Guillain-Barré\"), 3/272 (1 %) in the canonical form \"using/according to the method of <Name>\", and 4/272 (1 %) carry an explicit lineage (\"adapted from Page\", \"adapted from MacDougall\"). By contrast, 55/272 (20 %) carry a citation \"Name (year)\" — TEN TIMES MORE decoys than targets, with the same surface form. Original observation 2026-08-08: Carpi & Virno, Brit. J. Pharmacol. 1957 (annex 96).",
+   "organisation": "Loxyn SAS, Lyon",
+   "corpus_id": "corpus-europe-pmc-jats-2023-2026"
   },
-  "damage": "SPLIT",
-  "class": "SILENT_FALSE",
-  "layer": "⑥ resolution",
-  "injection": "RENAME",
-  "legacy_severity": "G3",
-  "legacy_mechanism": "M1",
-  "status": "migrated_unreviewed",
-  "seen": [
-    {
-      "corpus": "observation 2026-08 (272 Europe PMC JATS articles)",
-      "date": "2026-08-08",
-      "observer": "house observer (LLM agent), see report",
-      "excerpt": "MESURÉ le 08/08/2026 sur les 272 XML (PMC récents) : 6/272 (2 %) nomment une méthode par son auteur (« method of … », « criteria of Guillain-Barré »), 3/272 (1 %) sous la forme canonique « using/according to the method of <Nom> », et 4/272 (1 %) portent une filiation explicite (« adapted from Page », « adapted from MacDougall »). En regard, 55/272 (20 %) portent un « Nom (année) » de citation — soit DIX FOIS PLUS de leurres que de cibles, avec la même forme de surface. Observation d'origine 08/08/2026 : Carpi & Virno, Brit. J. Pharmacol. 1957 (annexe 96).",
-      "lang": "fr",
-      "excerpt_en": "MEASURED on 2026-08-08 on the 272 XML files (recent PMC): 6/272 (2 %) name a method by its author (\"method of …\", \"criteria of Guillain-Barré\"), 3/272 (1 %) in the canonical form \"using/according to the method of <Name>\", and 4/272 (1 %) carry an explicit lineage (\"adapted from Page\", \"adapted from MacDougall\"). By contrast, 55/272 (20 %) carry a citation \"Name (year)\" — TEN TIMES MORE decoys than targets, with the same surface form. Original observation 2026-08-08: Carpi & Virno, Brit. J. Pharmacol. 1957 (annex 96).",
-      "organisation": "Loxyn SAS, Lyon",
-      "corpus_id": "corpus-europe-pmc-jats-2023-2026"
-    },
-    {
-      "corpus": "Europe PMC JATS 2023-2026 (272 articles, the declared corpus)",
-      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
-      "date": "2026-09-10",
-      "observer": "Fault Atlas maintainer (Loxyn), by probe, no model",
-      "excerpt": "MEASURED on 2026-09-10 by probes/2026-09-recovered/line-096.py, whose definition is in its docstring: 30/272 articles carry it, where the observation of 2026-08-08 counted 6 under a definition we could not recover. First carrier: bio-PMC12583535.xml — 2 methods named after a person, e.g. solid",
-      "lang": "en",
-      "probe": "probes/2026-09-recovered/line-096.py"
-    }
-  ],
-  "specimens": {
-    "cases": [],
-    "counter_examples": []
-  },
-  "prevention": {
-    "cancellable_by_code": false
-  },
-  "repair": {
-    "reachable_by_deletion": "no",
-    "note": "deletion cannot restore this; derived from the damage class by the migration of 2026-09-09, not judged form by form and not measured — the bench can measure it",
-    "measured": {
-      "value": "no",
-      "reached": 0,
-      "injected": 1355,
-      "note": "0 of 1,355 restored; 24 twins deleted and the 1,674 true facts they took were not restored",
-      "source": "measured 2026-09-10 by pgrepair (SciPyWeightedILP) on the frozen EUR-Lex truth, three identical runs, journal sha256 in measures/reachability-by-damage-2026-09-10.json. Per damage class, not per form: two forms of the same damage and the same visibility get the same answer.",
-      "date": "2026-09-10"
-    }
-  },
-  "judgeable_by": [
-    "construction",
-    "registry",
-    "curated",
-    "closed_world"
-  ],
-  "history": [
-    {
-      "date": "2026-08-09",
-      "event": "catalogue line 96 — GOLDEN (kept for the benchmark): irreducible or silent false",
-      "by": "Korela For Science"
-    },
-    {
-      "date": "2026-09-09",
-      "event": "migrated; classified damage=SPLIT injection=RENAME (judgment, unreviewed by a second reader)",
-      "by": "Fault Atlas migration"
-    },
-    {
-      "date": "2026-09-10",
-      "event": "era recorded: both (from the August verdicts, which the atlas had not carried)",
-      "by": "Fault Atlas maintainer"
-    }
-  ],
-  "era": {
-    "value": "both",
-    "measured": "2026-09-10",
-    "source": "VERDICT — the old against the modern, 2026-08-08: 45 PDFs of 1957-1987 against 15 PDFs of 2023-2026, 174 pages, 9 publishers. Its own stated limits: 13 of the 15 modern are biomedical, 100 % English, 100 % open access — a channel that excludes scans, truncated and subscription articles by construction."
-  },
-  "failure_mode": {
-    "value": "MANQ",
-    "means": "a gap: the graph is incomplete where the reading did not reach, not wrong",
-    "source": "the internal catalogue of 2026-08-09 (korela.db, table parametre), line 96; it is not derived from the damage and varies inside a damage class"
-  },
-  "probes": [
-    {
-      "file": "probes/2026-09-recovered/line-096.py",
-      "kind": "python",
-      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
-      "written": "2026-09-10",
-      "run": "python3 tools/run_probe.py probes/2026-09-recovered/line-096.py <dir with the 272 .xml>",
-      "result": {
-        "date": "2026-09-10",
-        "count": 30,
-        "of": 272,
-        "strata": {
-          "bio": 8,
-          "essai": 8,
-          "phys": 7,
-          "meta": 3,
-          "cas": 2,
-          "moderne": 1,
-          "nonEN": 1
-        },
-        "examples": [
-          [
-            "bio-PMC12583535.xml",
-            [
-              "2 methods named after a person, e.g. solid"
-            ]
-          ],
-          [
-            "bio-PMC12674831.xml",
-            [
-              "2 methods named after a person, e.g. glycemia"
-            ]
-          ],
-          [
-            "bio-PMC12953170.xml",
-            [
-              "1 methods named after a person, e.g. Repair"
-            ]
-          ]
-        ],
-        "by": "Fault Atlas maintainer (Loxyn), on the declared corpus",
-        "carriers_file": "probes/results/form-096-methods-as-entities-with-a-genealogy.json"
-      },
-      "matches_excerpt": true,
-      "note": "reproduces the figure of the September reading it is attached to, 30/272. It does NOT reproduce the August figure of 6, whose definition we could not recover; that observation is left exactly as it stands, above, with no example under it."
-    }
-  ],
-  "document_years": {
-    "corpus_id": "corpus-europe-pmc-jats-2023-2026",
-    "counts": {
-      "2025": 2,
-      "2026": 1
-    },
-    "carriers_dated": 3,
-    "source": "corpora/index/document-years-europe-pmc-272.json, read 2026-09-11 from each file's earliest pub-date"
+  {
+   "corpus": "Europe PMC JATS 2023-2026 (272 articles, the declared corpus)",
+   "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+   "date": "2026-09-10",
+   "observer": "Fault Atlas maintainer (Loxyn), by probe, no model",
+   "excerpt": "MEASURED on 2026-09-10 by probes/2026-09-recovered/line-096.py, whose definition is in its docstring: 30/272 articles carry it, where the observation of 2026-08-08 counted 6 under a definition we could not recover. First carrier: bio-PMC12583535.xml — 2 methods named after a person, e.g. solid",
+   "lang": "en",
+   "probe": "probes/2026-09-recovered/line-096.py"
   }
+ ],
+ "specimens": {
+  "cases": [],
+  "counter_examples": []
+ },
+ "prevention": {
+  "cancellable_by_code": false
+ },
+ "repair": {
+  "reachable_by_deletion": "no",
+  "note": "deletion cannot restore this; derived from the damage class by the migration of 2026-09-09, not judged form by form and not measured — the bench can measure it",
+  "measured": {
+   "value": "no",
+   "reached": 0,
+   "injected": 1355,
+   "note": "0 of 1,355 restored; 24 twins deleted and the 1,674 true facts they took were not restored",
+   "source": "measured 2026-09-10 by pgrepair (SciPyWeightedILP) on the frozen EUR-Lex truth, three identical runs, journal sha256 in measures/reachability-by-damage-2026-09-10.json. Per damage class, not per form: two forms of the same damage and the same visibility get the same answer.",
+   "date": "2026-09-10"
+  },
+  "obstacle": {
+   "value": "the operation",
+   "reason": "One entity written as two is repaired by MERGING them. Deleting the twin removes the false node and does not give back the facts it took: measured, 24 twins deleted of 1,355 and 1,674 true facts not restored.",
+   "reason_fr": "Une entité écrite en deux se répare en les FUSIONNANT. Supprimer le jumeau retire le faux nœud et ne rend pas les faits qu'il avait emportés : mesuré, 24 jumeaux sur 1 355 et 1 674 faits vrais non rétablis.",
+   "source": "derived from what a deletion-only repair can express, read in the repairer's own code — its solution is a set of elements to delete and carries no insertion — together with the measurement of 2026-09-10. Per damage class, not per form.",
+   "date": "2026-09-13"
+  }
+ },
+ "judgeable_by": [
+  "construction",
+  "registry",
+  "curated",
+  "closed_world"
+ ],
+ "history": [
+  {
+   "date": "2026-08-09",
+   "event": "catalogue line 96 — GOLDEN (kept for the benchmark): irreducible or silent false",
+   "by": "Korela For Science"
+  },
+  {
+   "date": "2026-09-09",
+   "event": "migrated; classified damage=SPLIT injection=RENAME (judgment, unreviewed by a second reader)",
+   "by": "Fault Atlas migration"
+  },
+  {
+   "date": "2026-09-10",
+   "event": "era recorded: both (from the August verdicts, which the atlas had not carried)",
+   "by": "Fault Atlas maintainer"
+  }
+ ],
+ "era": {
+  "value": "both",
+  "measured": "2026-09-10",
+  "source": "VERDICT — the old against the modern, 2026-08-08: 45 PDFs of 1957-1987 against 15 PDFs of 2023-2026, 174 pages, 9 publishers. Its own stated limits: 13 of the 15 modern are biomedical, 100 % English, 100 % open access — a channel that excludes scans, truncated and subscription articles by construction."
+ },
+ "failure_mode": {
+  "value": "MANQ",
+  "means": "a gap: the graph is incomplete where the reading did not reach, not wrong",
+  "source": "the internal catalogue of 2026-08-09 (korela.db, table parametre), line 96; it is not derived from the damage and varies inside a damage class"
+ },
+ "probes": [
+  {
+   "file": "probes/2026-09-recovered/line-096.py",
+   "kind": "python",
+   "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+   "written": "2026-09-10",
+   "run": "python3 tools/run_probe.py probes/2026-09-recovered/line-096.py <dir with the 272 .xml>",
+   "result": {
+    "date": "2026-09-10",
+    "count": 30,
+    "of": 272,
+    "strata": {
+     "bio": 8,
+     "essai": 8,
+     "phys": 7,
+     "meta": 3,
+     "cas": 2,
+     "moderne": 1,
+     "nonEN": 1
+    },
+    "examples": [
+     [
+      "bio-PMC12583535.xml",
+      [
+       "2 methods named after a person, e.g. solid"
+      ]
+     ],
+     [
+      "bio-PMC12674831.xml",
+      [
+       "2 methods named after a person, e.g. glycemia"
+      ]
+     ],
+     [
+      "bio-PMC12953170.xml",
+      [
+       "1 methods named after a person, e.g. Repair"
+      ]
+     ]
+    ],
+    "by": "Fault Atlas maintainer (Loxyn), on the declared corpus",
+    "carriers_file": "probes/results/form-096-methods-as-entities-with-a-genealogy.json"
+   },
+   "matches_excerpt": true,
+   "note": "reproduces the figure of the September reading it is attached to, 30/272. It does NOT reproduce the August figure of 6, whose definition we could not recover; that observation is left exactly as it stands, above, with no example under it."
+  }
+ ],
+ "document_years": {
+  "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+  "counts": {
+   "2025": 2,
+   "2026": 1
+  },
+  "carriers_dated": 3,
+  "source": "corpora/index/document-years-europe-pmc-272.json, read 2026-09-11 from each file's earliest pub-date"
+ }
 }

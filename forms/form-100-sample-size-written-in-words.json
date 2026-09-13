@@ -1,200 +1,207 @@
 {
-  "id": "form-100",
-  "version": 1,
-  "legacy_line": 100,
-  "name": "Sample size written in words",
-  "name_fr": "L'effectif est écrit en toutes lettres",
-  "origin": {
-    "organisation": "Loxyn SAS, Lyon",
-    "campaign": "August 2026 — observation campaign (Korela For Science)",
-    "contact": "contact@loxyn.ai"
-  },
-  "damage": "WRONG_VALUE",
-  "class": "REFUSABLE",
-  "layer": "④ extraction",
-  "injection": "ALTER",
-  "legacy_severity": "G3",
-  "legacy_mechanism": "M3",
-  "status": "migrated_unreviewed",
-  "seen": [
-    {
-      "corpus": "observation 2026-08 (Europe PMC JATS 2023-2026 and PubMed abstracts)",
-      "date": "2026-08-08",
-      "observer": "house observer (LLM agent), see report",
-      "excerpt": "MESURÉ le 08/08/2026 sur 272 articles Europe PMC accès libre 2023-2026 : présent dans 80 (29 %). Concentration : essai 24, bio 13, phys 13. Formes réelles : two | five | three",
-      "lang": "fr",
-      "excerpt_en": "MEASURED on 2026-08-08 on 272 open-access Europe PMC articles 2023-2026: present in 80 (29 %). Concentration: trial 24, bio 13, phys 13. Real forms: two | five | three",
-      "organisation": "Loxyn SAS, Lyon",
-      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
-      "probe": "probes/2026-08/line-100.py"
-    }
-  ],
-  "specimens": {
-    "cases": [],
-    "counter_examples": []
-  },
-  "prevention": {
-    "cancellable_by_code": true,
-    "refusal_clause": "handle, or abstain and declare — never guess",
-    "refusal_clause_fr": "traiter, ou s'abstenir et le déclarer — ne jamais deviner"
-  },
-  "repair": {
-    "reachable_by_deletion": "no",
-    "note": "deletion cannot restore this; derived from the damage class by the migration of 2026-09-09, not judged form by form and not measured — the bench can measure it",
-    "measured": {
-      "value": "no",
-      "reached": 0,
-      "injected": 2613,
-      "note": "0 of 2,613 reached",
-      "source": "measured 2026-09-10 by pgrepair (SciPyWeightedILP) on the frozen EUR-Lex truth, three identical runs, journal sha256 in measures/reachability-by-damage-2026-09-10.json. Per damage class, not per form: two forms of the same damage and the same visibility get the same answer.",
-      "date": "2026-09-10"
-    }
-  },
-  "judgeable_by": [
-    "construction",
-    "registry",
-    "dated_future",
-    "closed_world"
-  ],
-  "history": [
-    {
-      "date": "2026-08-08",
-      "event": "the internal catalogue records a house filter with 4 cases and 1 counter-example(s); not published in this record",
-      "by": "Korela For Science"
-    },
-    {
-      "date": "2026-08-09",
-      "event": "catalogue line 100 — DEFEATED (cancelled by code): filter written and green on the bench",
-      "by": "Korela For Science"
-    },
-    {
-      "date": "2026-09-09",
-      "event": "migrated; classified damage=WRONG_VALUE injection=ALTER (judgment, unreviewed by a second reader)",
-      "by": "Fault Atlas migration"
-    },
-    {
-      "date": "2026-09-09",
-      "event": "exact probe attached to the 272-file observation: probes/2026-08/line-100.py, re-run 80/272",
-      "by": "Fault Atlas maintainer"
-    }
-  ],
-  "probes": [
-    {
-      "file": "probes/2026-08/line-100.py",
-      "kind": "python",
-      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
-      "written": "2026-08-08",
-      "run": "python3 tools/run_probe.py probes/2026-08/line-100.py <dir with the 272 .xml>",
-      "result": {
-        "date": "2026-09-09",
-        "count": 80,
-        "of": 272,
-        "strata": {
-          "essai": 24,
-          "bio": 13,
-          "phys": 13,
-          "cas": 10,
-          "meta": 9,
-          "moderne": 8,
-          "nonEN": 2,
-          "retract": 1
-        },
-        "examples": [
-          [
-            "bio-PMC12583535.xml",
-            [
-              "two"
-            ]
-          ],
-          [
-            "bio-PMC12590050.xml",
-            [
-              "five"
-            ]
-          ],
-          [
-            "bio-PMC12674831.xml",
-            [
-              "three"
-            ]
-          ],
-          [
-            "bio-PMC12915353.xml",
-            [
-              "Two",
-              "one"
-            ]
-          ],
-          [
-            "bio-PMC12927065.xml",
-            [
-              "four"
-            ]
-          ],
-          [
-            "bio-PMC12953170.xml",
-            [
-              "Eight",
-              "Five"
-            ]
-          ],
-          [
-            "bio-PMC13057049.xml",
-            [
-              "four"
-            ]
-          ],
-          [
-            "bio-PMC13116881.xml",
-            [
-              "One",
-              "seven"
-            ]
-          ],
-          [
-            "bio-PMC13170838.xml",
-            [
-              "Eight"
-            ]
-          ],
-          [
-            "bio-PMC13182387.xml",
-            [
-              "One"
-            ]
-          ],
-          [
-            "bio-PMC13190511.xml",
-            [
-              "five"
-            ]
-          ],
-          [
-            "bio-PMC13207820.xml",
-            [
-              "one",
-              "two"
-            ]
-          ]
-        ],
-        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files",
-        "carriers_file": "probes/results/line-100.json"
-      },
-      "matches_excerpt": true
-    }
-  ],
-  "failure_mode": {
-    "value": "MANQ",
-    "means": "a gap: the graph is incomplete where the reading did not reach, not wrong",
-    "source": "the internal catalogue of 2026-08-09 (korela.db, table parametre), line 100; it is not derived from the damage and varies inside a damage class"
-  },
-  "document_years": {
-    "corpus_id": "corpus-europe-pmc-jats-2023-2026",
-    "counts": {
-      "2025": 4,
-      "2026": 8
-    },
-    "carriers_dated": 12,
-    "source": "corpora/index/document-years-europe-pmc-272.json, read 2026-09-11 from each file's earliest pub-date"
+ "id": "form-100",
+ "version": 1,
+ "legacy_line": 100,
+ "name": "Sample size written in words",
+ "name_fr": "L'effectif est écrit en toutes lettres",
+ "origin": {
+  "organisation": "Loxyn SAS, Lyon",
+  "campaign": "August 2026 — observation campaign (Korela For Science)",
+  "contact": "contact@loxyn.ai"
+ },
+ "damage": "WRONG_VALUE",
+ "class": "REFUSABLE",
+ "layer": "④ extraction",
+ "injection": "ALTER",
+ "legacy_severity": "G3",
+ "legacy_mechanism": "M3",
+ "status": "migrated_unreviewed",
+ "seen": [
+  {
+   "corpus": "observation 2026-08 (Europe PMC JATS 2023-2026 and PubMed abstracts)",
+   "date": "2026-08-08",
+   "observer": "house observer (LLM agent), see report",
+   "excerpt": "MESURÉ le 08/08/2026 sur 272 articles Europe PMC accès libre 2023-2026 : présent dans 80 (29 %). Concentration : essai 24, bio 13, phys 13. Formes réelles : two | five | three",
+   "lang": "fr",
+   "excerpt_en": "MEASURED on 2026-08-08 on 272 open-access Europe PMC articles 2023-2026: present in 80 (29 %). Concentration: trial 24, bio 13, phys 13. Real forms: two | five | three",
+   "organisation": "Loxyn SAS, Lyon",
+   "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+   "probe": "probes/2026-08/line-100.py"
   }
+ ],
+ "specimens": {
+  "cases": [],
+  "counter_examples": []
+ },
+ "prevention": {
+  "cancellable_by_code": true,
+  "refusal_clause": "handle, or abstain and declare — never guess",
+  "refusal_clause_fr": "traiter, ou s'abstenir et le déclarer — ne jamais deviner"
+ },
+ "repair": {
+  "reachable_by_deletion": "no",
+  "note": "deletion cannot restore this; derived from the damage class by the migration of 2026-09-09, not judged form by form and not measured — the bench can measure it",
+  "measured": {
+   "value": "no",
+   "reached": 0,
+   "injected": 2613,
+   "note": "0 of 2,613 reached",
+   "source": "measured 2026-09-10 by pgrepair (SciPyWeightedILP) on the frozen EUR-Lex truth, three identical runs, journal sha256 in measures/reachability-by-damage-2026-09-10.json. Per damage class, not per form: two forms of the same damage and the same visibility get the same answer.",
+   "date": "2026-09-10"
+  },
+  "obstacle": {
+   "value": "the operation",
+   "reason": "Deleting a wrong value removes the fact without restoring the right one. The gesture needed is to SET, and deletion cannot express it.",
+   "reason_fr": "Supprimer une valeur fausse retire le fait sans rétablir le bon. Le geste qu'il faudrait est d'ÉCRIRE, et la suppression ne sait pas l'exprimer.",
+   "source": "derived from what a deletion-only repair can express, read in the repairer's own code — its solution is a set of elements to delete and carries no insertion — together with the measurement of 2026-09-10. Per damage class, not per form.",
+   "date": "2026-09-13"
+  }
+ },
+ "judgeable_by": [
+  "construction",
+  "registry",
+  "dated_future",
+  "closed_world"
+ ],
+ "history": [
+  {
+   "date": "2026-08-08",
+   "event": "the internal catalogue records a house filter with 4 cases and 1 counter-example(s); not published in this record",
+   "by": "Korela For Science"
+  },
+  {
+   "date": "2026-08-09",
+   "event": "catalogue line 100 — DEFEATED (cancelled by code): filter written and green on the bench",
+   "by": "Korela For Science"
+  },
+  {
+   "date": "2026-09-09",
+   "event": "migrated; classified damage=WRONG_VALUE injection=ALTER (judgment, unreviewed by a second reader)",
+   "by": "Fault Atlas migration"
+  },
+  {
+   "date": "2026-09-09",
+   "event": "exact probe attached to the 272-file observation: probes/2026-08/line-100.py, re-run 80/272",
+   "by": "Fault Atlas maintainer"
+  }
+ ],
+ "probes": [
+  {
+   "file": "probes/2026-08/line-100.py",
+   "kind": "python",
+   "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+   "written": "2026-08-08",
+   "run": "python3 tools/run_probe.py probes/2026-08/line-100.py <dir with the 272 .xml>",
+   "result": {
+    "date": "2026-09-09",
+    "count": 80,
+    "of": 272,
+    "strata": {
+     "essai": 24,
+     "bio": 13,
+     "phys": 13,
+     "cas": 10,
+     "meta": 9,
+     "moderne": 8,
+     "nonEN": 2,
+     "retract": 1
+    },
+    "examples": [
+     [
+      "bio-PMC12583535.xml",
+      [
+       "two"
+      ]
+     ],
+     [
+      "bio-PMC12590050.xml",
+      [
+       "five"
+      ]
+     ],
+     [
+      "bio-PMC12674831.xml",
+      [
+       "three"
+      ]
+     ],
+     [
+      "bio-PMC12915353.xml",
+      [
+       "Two",
+       "one"
+      ]
+     ],
+     [
+      "bio-PMC12927065.xml",
+      [
+       "four"
+      ]
+     ],
+     [
+      "bio-PMC12953170.xml",
+      [
+       "Eight",
+       "Five"
+      ]
+     ],
+     [
+      "bio-PMC13057049.xml",
+      [
+       "four"
+      ]
+     ],
+     [
+      "bio-PMC13116881.xml",
+      [
+       "One",
+       "seven"
+      ]
+     ],
+     [
+      "bio-PMC13170838.xml",
+      [
+       "Eight"
+      ]
+     ],
+     [
+      "bio-PMC13182387.xml",
+      [
+       "One"
+      ]
+     ],
+     [
+      "bio-PMC13190511.xml",
+      [
+       "five"
+      ]
+     ],
+     [
+      "bio-PMC13207820.xml",
+      [
+       "one",
+       "two"
+      ]
+     ]
+    ],
+    "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files",
+    "carriers_file": "probes/results/line-100.json"
+   },
+   "matches_excerpt": true
+  }
+ ],
+ "failure_mode": {
+  "value": "MANQ",
+  "means": "a gap: the graph is incomplete where the reading did not reach, not wrong",
+  "source": "the internal catalogue of 2026-08-09 (korela.db, table parametre), line 100; it is not derived from the damage and varies inside a damage class"
+ },
+ "document_years": {
+  "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+  "counts": {
+   "2025": 4,
+   "2026": 8
+  },
+  "carriers_dated": 12,
+  "source": "corpora/index/document-years-europe-pmc-272.json, read 2026-09-11 from each file's earliest pub-date"
+ }
 }

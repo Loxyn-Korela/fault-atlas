@@ -1,149 +1,156 @@
 {
-  "id": "form-014",
-  "version": 1,
-  "legacy_line": 14,
-  "name": "Entity typing",
-  "name_fr": "Typage des entités",
-  "origin": {
-    "organisation": "Loxyn SAS, Lyon",
-    "campaign": "August 2026 — observation campaign (Korela For Science)",
-    "contact": "contact@loxyn.ai"
+ "id": "form-014",
+ "version": 1,
+ "legacy_line": 14,
+ "name": "Entity typing",
+ "name_fr": "Typage des entités",
+ "origin": {
+  "organisation": "Loxyn SAS, Lyon",
+  "campaign": "August 2026 — observation campaign (Korela For Science)",
+  "contact": "contact@loxyn.ai"
+ },
+ "damage": "WRONG_LABEL",
+ "class": "IRREDUCIBLE",
+ "layer": "⑦ schema",
+ "injection": "DESIGN",
+ "legacy_severity": "G2",
+ "legacy_mechanism": "M12",
+ "status": "migrated_unreviewed",
+ "seen": [
+  {
+   "corpus": "observation 2026-08 (272 Europe PMC JATS articles)",
+   "date": "2026-08-08",
+   "observer": "house observer (LLM agent), see report",
+   "excerpt": "MESURÉ le 08/08/2026 sur les 272 XML de (internal corpus of 272 JATS articles) : 63/272 (23 %) font voisiner une organisation balisée <institution> et une étude/cohorte NOMMÉE (« the Fremantle Diabetes Study », « the Brazilian Longitudinal Study ») — deux types confusables dans la même phrase. Seuls 9/272 (3 %) portent l'apposition qui tranche (« , a multicenter … »). Rappel du palier P6 (annexe 14) : 920/925 entités sont Organization ou Person — le typage n'est aujourd'hui AUCUNE difficulté.",
+   "lang": "fr",
+   "excerpt_en": "MEASURED on 2026-08-08 on the 272 XML files of the internal corpus: 63/272 (23 %) place a tagged <institution> organisation next to a NAMED study/cohort (\"the Fremantle Diabetes Study\", \"the Brazilian Longitudinal Study\") — two confusable types in the same sentence. Only 9/272 (3 %) carry the apposition that settles it (\", a multicenter …\"). Reminder from tier P6 (annex 14): 920/925 entities are Organization or Person — typing is currently NO difficulty at all.",
+   "organisation": "Loxyn SAS, Lyon",
+   "corpus_id": "corpus-europe-pmc-jats-2023-2026"
   },
-  "damage": "WRONG_LABEL",
-  "class": "IRREDUCIBLE",
-  "layer": "⑦ schema",
-  "injection": "DESIGN",
-  "legacy_severity": "G2",
-  "legacy_mechanism": "M12",
-  "status": "migrated_unreviewed",
-  "seen": [
-    {
-      "corpus": "observation 2026-08 (272 Europe PMC JATS articles)",
-      "date": "2026-08-08",
-      "observer": "house observer (LLM agent), see report",
-      "excerpt": "MESURÉ le 08/08/2026 sur les 272 XML de (internal corpus of 272 JATS articles) : 63/272 (23 %) font voisiner une organisation balisée <institution> et une étude/cohorte NOMMÉE (« the Fremantle Diabetes Study », « the Brazilian Longitudinal Study ») — deux types confusables dans la même phrase. Seuls 9/272 (3 %) portent l'apposition qui tranche (« , a multicenter … »). Rappel du palier P6 (annexe 14) : 920/925 entités sont Organization ou Person — le typage n'est aujourd'hui AUCUNE difficulté.",
-      "lang": "fr",
-      "excerpt_en": "MEASURED on 2026-08-08 on the 272 XML files of the internal corpus: 63/272 (23 %) place a tagged <institution> organisation next to a NAMED study/cohort (\"the Fremantle Diabetes Study\", \"the Brazilian Longitudinal Study\") — two confusable types in the same sentence. Only 9/272 (3 %) carry the apposition that settles it (\", a multicenter …\"). Reminder from tier P6 (annex 14): 920/925 entities are Organization or Person — typing is currently NO difficulty at all.",
-      "organisation": "Loxyn SAS, Lyon",
-      "corpus_id": "corpus-europe-pmc-jats-2023-2026"
-    },
-    {
-      "corpus": "Europe PMC JATS 2023-2026 (272 articles, the declared corpus)",
-      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
-      "date": "2026-09-10",
-      "observer": "Fault Atlas maintainer (Loxyn), by probe, no model",
-      "excerpt": "MEASURED on 2026-09-10 by probes/2026-09-recovered/line-014.py, whose definition is in its docstring: 14/272 articles carry it, where the observation of 2026-08-08 counted 63 under a definition we could not recover. First carrier: bio-PMC12674831.xml — institution tagged, and 17 named studies in the body, e.g. Brazilian Longitudinal Study",
-      "lang": "en",
-      "probe": "probes/2026-09-recovered/line-014.py"
-    }
-  ],
-  "specimens": {
-    "cases": [],
-    "counter_examples": []
-  },
-  "prevention": {
-    "cancellable_by_code": false
-  },
-  "repair": {
-    "reachable_by_deletion": "partial",
-    "note": "an extra label can be deleted, a missing one cannot be added",
-    "measured": {
-      "value": "yes_at_a_cost",
-      "reached": 3932,
-      "injected": 3932,
-      "note": "3,932 of 3,932 reached, and 12,591 true facts were lost with them: the repair deletes the nodes, not their labels",
-      "source": "measured 2026-09-10 by pgrepair (SciPyWeightedILP) on the frozen EUR-Lex truth, three identical runs, journal sha256 in measures/reachability-by-damage-2026-09-10.json. Per damage class, not per form: two forms of the same damage and the same visibility get the same answer.",
-      "date": "2026-09-10"
-    }
-  },
-  "judgeable_by": [
-    "construction",
-    "curated"
-  ],
-  "history": [
-    {
-      "date": "2026-08-09",
-      "event": "catalogue line 14 — GOLDEN (kept for the benchmark): irreducible or silent false",
-      "by": "Korela For Science"
-    },
-    {
-      "date": "2026-09-09",
-      "event": "migrated; classified damage=WRONG_LABEL injection=DESIGN (judgment, unreviewed by a second reader)",
-      "by": "Fault Atlas migration"
-    },
-    {
-      "date": "2026-09-09",
-      "event": "internal tool paths removed from observation notes before publication; wording otherwise unchanged",
-      "by": "Fault Atlas"
-    },
-    {
-      "date": "2026-09-09",
-      "event": "exact probe written from the excerpt's literal definition: probes/2026-08/line-014.py, 2/272 shown with sentences; the August 63/272 is not recoverable and is flagged",
-      "by": "Fault Atlas maintainer"
-    },
-    {
-      "date": "2026-09-09",
-      "event": "substitute probe withdrawn (it applied a different rule and found 2/272; the August 63/272 stays as the dated claim, to be shown when re-measured)",
-      "by": "Fault Atlas maintainer"
-    }
-  ],
-  "failure_mode": {
-    "value": "FAUX",
-    "means": "a false fact: a value, a type or a link the source never asserted",
-    "source": "the internal catalogue of 2026-08-09 (korela.db, table parametre), line 14; it is not derived from the damage and varies inside a damage class"
-  },
-  "probes": [
-    {
-      "file": "probes/2026-09-recovered/line-014.py",
-      "kind": "python",
-      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
-      "written": "2026-09-10",
-      "run": "python3 tools/run_probe.py probes/2026-09-recovered/line-014.py <dir with the 272 .xml>",
-      "result": {
-        "date": "2026-09-10",
-        "count": 14,
-        "of": 272,
-        "strata": {
-          "essai": 5,
-          "meta": 4,
-          "bio": 3,
-          "cas": 1,
-          "phys": 1
-        },
-        "examples": [
-          [
-            "bio-PMC12674831.xml",
-            [
-              "institution tagged, and 17 named studies in the body, e.g. Brazilian Longitudinal Study"
-            ]
-          ],
-          [
-            "bio-PMC12882215.xml",
-            [
-              "institution tagged, and 2 named studies in the body, e.g. Cardiovascular Health Study"
-            ]
-          ],
-          [
-            "bio-PMC13216383.xml",
-            [
-              "institution tagged, and 3 named studies in the body, e.g. OR PT Clinical Trial"
-            ]
-          ]
-        ],
-        "by": "Fault Atlas maintainer (Loxyn), on the declared corpus",
-        "carriers_file": "probes/results/form-014-entity-typing.json"
-      },
-      "matches_excerpt": true,
-      "note": "reproduces the figure of the September reading it is attached to, 14/272. It does NOT reproduce the August figure of 63, whose definition we could not recover; that observation is left exactly as it stands, above, with no example under it."
-    }
-  ],
-  "document_years": {
-    "corpus_id": "corpus-europe-pmc-jats-2023-2026",
-    "counts": {
-      "2025": 1,
-      "2026": 2
-    },
-    "carriers_dated": 3,
-    "source": "corpora/index/document-years-europe-pmc-272.json, read 2026-09-11 from each file's earliest pub-date"
+  {
+   "corpus": "Europe PMC JATS 2023-2026 (272 articles, the declared corpus)",
+   "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+   "date": "2026-09-10",
+   "observer": "Fault Atlas maintainer (Loxyn), by probe, no model",
+   "excerpt": "MEASURED on 2026-09-10 by probes/2026-09-recovered/line-014.py, whose definition is in its docstring: 14/272 articles carry it, where the observation of 2026-08-08 counted 63 under a definition we could not recover. First carrier: bio-PMC12674831.xml — institution tagged, and 17 named studies in the body, e.g. Brazilian Longitudinal Study",
+   "lang": "en",
+   "probe": "probes/2026-09-recovered/line-014.py"
   }
+ ],
+ "specimens": {
+  "cases": [],
+  "counter_examples": []
+ },
+ "prevention": {
+  "cancellable_by_code": false
+ },
+ "repair": {
+  "reachable_by_deletion": "partial",
+  "note": "an extra label can be deleted, a missing one cannot be added",
+  "measured": {
+   "value": "yes_at_a_cost",
+   "reached": 3932,
+   "injected": 3932,
+   "note": "3,932 of 3,932 reached, and 12,591 true facts were lost with them: the repair deletes the nodes, not their labels",
+   "source": "measured 2026-09-10 by pgrepair (SciPyWeightedILP) on the frozen EUR-Lex truth, three identical runs, journal sha256 in measures/reachability-by-damage-2026-09-10.json. Per damage class, not per form: two forms of the same damage and the same visibility get the same answer.",
+   "date": "2026-09-10"
+  },
+  "obstacle": {
+   "value": "none",
+   "reason": "Reached in full, and at a cost: the repair deletes the nodes rather than their labels. The information that would put the label right is in the node itself — the identifier says the type — and one statement of the graph's own query language sets it back with nothing destroyed.",
+   "reason_fr": "Atteinte en entier, et à un prix : la réparation supprime les nœuds plutôt que leurs étiquettes. L'information qui remettrait l'étiquette droite est dans le nœud lui-même — l'identifiant dit le type — et une instruction du langage de requête du graphe la repose sans rien détruire.",
+   "source": "derived from what a deletion-only repair can express, read in the repairer's own code — its solution is a set of elements to delete and carries no insertion — together with the measurement of 2026-09-10. Per damage class, not per form.",
+   "date": "2026-09-13"
+  }
+ },
+ "judgeable_by": [
+  "construction",
+  "curated"
+ ],
+ "history": [
+  {
+   "date": "2026-08-09",
+   "event": "catalogue line 14 — GOLDEN (kept for the benchmark): irreducible or silent false",
+   "by": "Korela For Science"
+  },
+  {
+   "date": "2026-09-09",
+   "event": "migrated; classified damage=WRONG_LABEL injection=DESIGN (judgment, unreviewed by a second reader)",
+   "by": "Fault Atlas migration"
+  },
+  {
+   "date": "2026-09-09",
+   "event": "internal tool paths removed from observation notes before publication; wording otherwise unchanged",
+   "by": "Fault Atlas"
+  },
+  {
+   "date": "2026-09-09",
+   "event": "exact probe written from the excerpt's literal definition: probes/2026-08/line-014.py, 2/272 shown with sentences; the August 63/272 is not recoverable and is flagged",
+   "by": "Fault Atlas maintainer"
+  },
+  {
+   "date": "2026-09-09",
+   "event": "substitute probe withdrawn (it applied a different rule and found 2/272; the August 63/272 stays as the dated claim, to be shown when re-measured)",
+   "by": "Fault Atlas maintainer"
+  }
+ ],
+ "failure_mode": {
+  "value": "FAUX",
+  "means": "a false fact: a value, a type or a link the source never asserted",
+  "source": "the internal catalogue of 2026-08-09 (korela.db, table parametre), line 14; it is not derived from the damage and varies inside a damage class"
+ },
+ "probes": [
+  {
+   "file": "probes/2026-09-recovered/line-014.py",
+   "kind": "python",
+   "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+   "written": "2026-09-10",
+   "run": "python3 tools/run_probe.py probes/2026-09-recovered/line-014.py <dir with the 272 .xml>",
+   "result": {
+    "date": "2026-09-10",
+    "count": 14,
+    "of": 272,
+    "strata": {
+     "essai": 5,
+     "meta": 4,
+     "bio": 3,
+     "cas": 1,
+     "phys": 1
+    },
+    "examples": [
+     [
+      "bio-PMC12674831.xml",
+      [
+       "institution tagged, and 17 named studies in the body, e.g. Brazilian Longitudinal Study"
+      ]
+     ],
+     [
+      "bio-PMC12882215.xml",
+      [
+       "institution tagged, and 2 named studies in the body, e.g. Cardiovascular Health Study"
+      ]
+     ],
+     [
+      "bio-PMC13216383.xml",
+      [
+       "institution tagged, and 3 named studies in the body, e.g. OR PT Clinical Trial"
+      ]
+     ]
+    ],
+    "by": "Fault Atlas maintainer (Loxyn), on the declared corpus",
+    "carriers_file": "probes/results/form-014-entity-typing.json"
+   },
+   "matches_excerpt": true,
+   "note": "reproduces the figure of the September reading it is attached to, 14/272. It does NOT reproduce the August figure of 63, whose definition we could not recover; that observation is left exactly as it stands, above, with no example under it."
+  }
+ ],
+ "document_years": {
+  "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+  "counts": {
+   "2025": 1,
+   "2026": 2
+  },
+  "carriers_dated": 3,
+  "source": "corpora/index/document-years-europe-pmc-272.json, read 2026-09-11 from each file's earliest pub-date"
+ }
 }

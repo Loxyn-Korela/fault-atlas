@@ -1,134 +1,141 @@
 {
-  "id": "form-034",
-  "version": 1,
-  "legacy_line": 34,
-  "name": "Hard negatives for typing",
-  "name_fr": "Négatifs durs de typage",
-  "origin": {
-    "organisation": "Loxyn SAS, Lyon",
-    "campaign": "August 2026 — observation campaign (Korela For Science)",
-    "contact": "contact@loxyn.ai"
+ "id": "form-034",
+ "version": 1,
+ "legacy_line": 34,
+ "name": "Hard negatives for typing",
+ "name_fr": "Négatifs durs de typage",
+ "origin": {
+  "organisation": "Loxyn SAS, Lyon",
+  "campaign": "August 2026 — observation campaign (Korela For Science)",
+  "contact": "contact@loxyn.ai"
+ },
+ "damage": "WRONG_LABEL",
+ "class": "IRREDUCIBLE",
+ "layer": "④ extraction",
+ "injection": "INSERT",
+ "legacy_severity": "G2",
+ "legacy_mechanism": "M12",
+ "status": "migrated_unreviewed",
+ "seen": [
+  {
+   "corpus": "observation 2026-08 (272 Europe PMC JATS articles)",
+   "date": "2026-08-08",
+   "observer": "house observer (LLM agent), see report",
+   "excerpt": "MESURÉ le 08/08/2026 sur les 272 XML : 19/272 (7 %) portent DEUX formulations de types voisins pour le même fait de financement — « funded by » ET « supported by » dans le même article ; 100/272 (37 %) emploient au moins un terme de relation contractuelle confusable (collaboration, contrat, prestataire, fournisseur). Le corpus réel offre donc le vocabulaire du piège ; aucun de nos corpus fabriqués ne le pose.",
+   "lang": "fr",
+   "excerpt_en": "MEASURED on 2026-08-08 on the 272 XML files: 19/272 (7 %) carry TWO neighbouring-type formulations for the same funding fact — \"funded by\" AND \"supported by\" in the same article; 100/272 (37 %) use at least one confusable contractual relation term (collaboration, contract, provider, supplier). The real corpus thus offers the vocabulary of the trap; none of our fabricated corpora sets it.",
+   "organisation": "Loxyn SAS, Lyon",
+   "corpus_id": "corpus-europe-pmc-jats-2023-2026"
   },
-  "damage": "WRONG_LABEL",
-  "class": "IRREDUCIBLE",
-  "layer": "④ extraction",
-  "injection": "INSERT",
-  "legacy_severity": "G2",
-  "legacy_mechanism": "M12",
-  "status": "migrated_unreviewed",
-  "seen": [
-    {
-      "corpus": "observation 2026-08 (272 Europe PMC JATS articles)",
-      "date": "2026-08-08",
-      "observer": "house observer (LLM agent), see report",
-      "excerpt": "MESURÉ le 08/08/2026 sur les 272 XML : 19/272 (7 %) portent DEUX formulations de types voisins pour le même fait de financement — « funded by » ET « supported by » dans le même article ; 100/272 (37 %) emploient au moins un terme de relation contractuelle confusable (collaboration, contrat, prestataire, fournisseur). Le corpus réel offre donc le vocabulaire du piège ; aucun de nos corpus fabriqués ne le pose.",
-      "lang": "fr",
-      "excerpt_en": "MEASURED on 2026-08-08 on the 272 XML files: 19/272 (7 %) carry TWO neighbouring-type formulations for the same funding fact — \"funded by\" AND \"supported by\" in the same article; 100/272 (37 %) use at least one confusable contractual relation term (collaboration, contract, provider, supplier). The real corpus thus offers the vocabulary of the trap; none of our fabricated corpora sets it.",
-      "organisation": "Loxyn SAS, Lyon",
-      "corpus_id": "corpus-europe-pmc-jats-2023-2026"
-    },
-    {
-      "corpus": "Europe PMC JATS 2023-2026 (272 articles, the declared corpus)",
-      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
-      "date": "2026-09-10",
-      "observer": "Fault Atlas maintainer (Loxyn), by probe, no model",
-      "excerpt": "MEASURED on 2026-09-10 by probes/2026-09-recovered/line-034.py, whose definition is in its docstring: 18/272 articles carry it, where the observation of 2026-08-08 counted 19 under a definition we could not recover. First carrier: bio-PMC13097615.xml — both 'funded by' and 'supported by' in the same article",
-      "lang": "en",
-      "probe": "probes/2026-09-recovered/line-034.py"
-    }
-  ],
-  "specimens": {
-    "cases": [],
-    "counter_examples": []
-  },
-  "prevention": {
-    "cancellable_by_code": false
-  },
-  "repair": {
-    "reachable_by_deletion": "partial",
-    "note": "an extra label can be deleted, a missing one cannot be added",
-    "measured": {
-      "value": "yes_at_a_cost",
-      "reached": 3932,
-      "injected": 3932,
-      "note": "3,932 of 3,932 reached, and 12,591 true facts were lost with them: the repair deletes the nodes, not their labels",
-      "source": "measured 2026-09-10 by pgrepair (SciPyWeightedILP) on the frozen EUR-Lex truth, three identical runs, journal sha256 in measures/reachability-by-damage-2026-09-10.json. Per damage class, not per form: two forms of the same damage and the same visibility get the same answer.",
-      "date": "2026-09-10"
-    }
-  },
-  "judgeable_by": [
-    "construction",
-    "curated"
-  ],
-  "history": [
-    {
-      "date": "2026-08-09",
-      "event": "catalogue line 34 — GOLDEN (kept for the benchmark): irreducible or silent false",
-      "by": "Korela For Science"
-    },
-    {
-      "date": "2026-09-09",
-      "event": "migrated; classified damage=WRONG_LABEL injection=INSERT (judgment, unreviewed by a second reader)",
-      "by": "Fault Atlas migration"
-    }
-  ],
-  "failure_mode": {
-    "value": "FAUX",
-    "means": "a false fact: a value, a type or a link the source never asserted",
-    "source": "the internal catalogue of 2026-08-09 (korela.db, table parametre), line 34; it is not derived from the damage and varies inside a damage class"
-  },
-  "probes": [
-    {
-      "file": "probes/2026-09-recovered/line-034.py",
-      "kind": "python",
-      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
-      "written": "2026-09-10",
-      "run": "python3 tools/run_probe.py probes/2026-09-recovered/line-034.py <dir with the 272 .xml>",
-      "result": {
-        "date": "2026-09-10",
-        "count": 18,
-        "of": 272,
-        "strata": {
-          "meta": 6,
-          "bio": 5,
-          "essai": 3,
-          "moderne": 2,
-          "cas": 1,
-          "phys": 1
-        },
-        "examples": [
-          [
-            "bio-PMC13097615.xml",
-            [
-              "both 'funded by' and 'supported by' in the same article"
-            ]
-          ],
-          [
-            "bio-PMC13103274.xml",
-            [
-              "both 'funded by' and 'supported by' in the same article"
-            ]
-          ],
-          [
-            "bio-PMC13116881.xml",
-            [
-              "both 'funded by' and 'supported by' in the same article"
-            ]
-          ]
-        ],
-        "by": "Fault Atlas maintainer (Loxyn), on the declared corpus",
-        "carriers_file": "probes/results/form-034-hard-negatives-for-typing.json"
-      },
-      "matches_excerpt": true,
-      "note": "reproduces the figure of the September reading it is attached to, 18/272. It does NOT reproduce the August figure of 19, whose definition we could not recover; that observation is left exactly as it stands, above, with no example under it."
-    }
-  ],
-  "document_years": {
-    "corpus_id": "corpus-europe-pmc-jats-2023-2026",
-    "counts": {
-      "2026": 3
-    },
-    "carriers_dated": 3,
-    "source": "corpora/index/document-years-europe-pmc-272.json, read 2026-09-11 from each file's earliest pub-date"
+  {
+   "corpus": "Europe PMC JATS 2023-2026 (272 articles, the declared corpus)",
+   "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+   "date": "2026-09-10",
+   "observer": "Fault Atlas maintainer (Loxyn), by probe, no model",
+   "excerpt": "MEASURED on 2026-09-10 by probes/2026-09-recovered/line-034.py, whose definition is in its docstring: 18/272 articles carry it, where the observation of 2026-08-08 counted 19 under a definition we could not recover. First carrier: bio-PMC13097615.xml — both 'funded by' and 'supported by' in the same article",
+   "lang": "en",
+   "probe": "probes/2026-09-recovered/line-034.py"
   }
+ ],
+ "specimens": {
+  "cases": [],
+  "counter_examples": []
+ },
+ "prevention": {
+  "cancellable_by_code": false
+ },
+ "repair": {
+  "reachable_by_deletion": "partial",
+  "note": "an extra label can be deleted, a missing one cannot be added",
+  "measured": {
+   "value": "yes_at_a_cost",
+   "reached": 3932,
+   "injected": 3932,
+   "note": "3,932 of 3,932 reached, and 12,591 true facts were lost with them: the repair deletes the nodes, not their labels",
+   "source": "measured 2026-09-10 by pgrepair (SciPyWeightedILP) on the frozen EUR-Lex truth, three identical runs, journal sha256 in measures/reachability-by-damage-2026-09-10.json. Per damage class, not per form: two forms of the same damage and the same visibility get the same answer.",
+   "date": "2026-09-10"
+  },
+  "obstacle": {
+   "value": "none",
+   "reason": "Reached in full, and at a cost: the repair deletes the nodes rather than their labels. The information that would put the label right is in the node itself — the identifier says the type — and one statement of the graph's own query language sets it back with nothing destroyed.",
+   "reason_fr": "Atteinte en entier, et à un prix : la réparation supprime les nœuds plutôt que leurs étiquettes. L'information qui remettrait l'étiquette droite est dans le nœud lui-même — l'identifiant dit le type — et une instruction du langage de requête du graphe la repose sans rien détruire.",
+   "source": "derived from what a deletion-only repair can express, read in the repairer's own code — its solution is a set of elements to delete and carries no insertion — together with the measurement of 2026-09-10. Per damage class, not per form.",
+   "date": "2026-09-13"
+  }
+ },
+ "judgeable_by": [
+  "construction",
+  "curated"
+ ],
+ "history": [
+  {
+   "date": "2026-08-09",
+   "event": "catalogue line 34 — GOLDEN (kept for the benchmark): irreducible or silent false",
+   "by": "Korela For Science"
+  },
+  {
+   "date": "2026-09-09",
+   "event": "migrated; classified damage=WRONG_LABEL injection=INSERT (judgment, unreviewed by a second reader)",
+   "by": "Fault Atlas migration"
+  }
+ ],
+ "failure_mode": {
+  "value": "FAUX",
+  "means": "a false fact: a value, a type or a link the source never asserted",
+  "source": "the internal catalogue of 2026-08-09 (korela.db, table parametre), line 34; it is not derived from the damage and varies inside a damage class"
+ },
+ "probes": [
+  {
+   "file": "probes/2026-09-recovered/line-034.py",
+   "kind": "python",
+   "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+   "written": "2026-09-10",
+   "run": "python3 tools/run_probe.py probes/2026-09-recovered/line-034.py <dir with the 272 .xml>",
+   "result": {
+    "date": "2026-09-10",
+    "count": 18,
+    "of": 272,
+    "strata": {
+     "meta": 6,
+     "bio": 5,
+     "essai": 3,
+     "moderne": 2,
+     "cas": 1,
+     "phys": 1
+    },
+    "examples": [
+     [
+      "bio-PMC13097615.xml",
+      [
+       "both 'funded by' and 'supported by' in the same article"
+      ]
+     ],
+     [
+      "bio-PMC13103274.xml",
+      [
+       "both 'funded by' and 'supported by' in the same article"
+      ]
+     ],
+     [
+      "bio-PMC13116881.xml",
+      [
+       "both 'funded by' and 'supported by' in the same article"
+      ]
+     ]
+    ],
+    "by": "Fault Atlas maintainer (Loxyn), on the declared corpus",
+    "carriers_file": "probes/results/form-034-hard-negatives-for-typing.json"
+   },
+   "matches_excerpt": true,
+   "note": "reproduces the figure of the September reading it is attached to, 18/272. It does NOT reproduce the August figure of 19, whose definition we could not recover; that observation is left exactly as it stands, above, with no example under it."
+  }
+ ],
+ "document_years": {
+  "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+  "counts": {
+   "2026": 3
+  },
+  "carriers_dated": 3,
+  "source": "corpora/index/document-years-europe-pmc-272.json, read 2026-09-11 from each file's earliest pub-date"
+ }
 }

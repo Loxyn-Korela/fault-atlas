@@ -1,137 +1,144 @@
 {
-  "id": "form-027",
-  "version": 1,
-  "legacy_line": 27,
-  "name": "Name-to-address bridge",
-  "name_fr": "Pont nom ↔ adresse",
-  "origin": {
-    "organisation": "Loxyn SAS, Lyon",
-    "campaign": "August 2026 — observation campaign (Korela For Science)",
-    "contact": "contact@loxyn.ai"
+ "id": "form-027",
+ "version": 1,
+ "legacy_line": 27,
+ "name": "Name-to-address bridge",
+ "name_fr": "Pont nom ↔ adresse",
+ "origin": {
+  "organisation": "Loxyn SAS, Lyon",
+  "campaign": "August 2026 — observation campaign (Korela For Science)",
+  "contact": "contact@loxyn.ai"
+ },
+ "damage": "SPLIT",
+ "class": "IRREDUCIBLE",
+ "layer": "⑥ resolution",
+ "injection": "RENAME",
+ "legacy_severity": "G1",
+ "legacy_mechanism": "M2",
+ "status": "migrated_unreviewed",
+ "seen": [
+  {
+   "corpus": "observation 2026-08 (272 Europe PMC JATS articles)",
+   "date": "2026-08-08",
+   "observer": "house observer (LLM agent), see report",
+   "excerpt": "MESURÉ le 08/08/2026 sur les 272 XML : 54/272 (20 %) portent, DANS LA MÊME balise <aff>, le nom de l'établissement ET son adresse postale (code postal ou numéro de rue) — « Department of Urology, Peking University … 100034 Beijing ». 5/272 (2 %) donnent un numéro de rue explicite (« 140 Huguenot Street », « 654 Cherry Street »), et 60/272 (22 %) un couple code postal + ville. La matière du pont existe ; ce qui manque au corpus fabriqué, c'est sa RÉPARTITION sur plusieurs documents.",
+   "lang": "fr",
+   "excerpt_en": "MEASURED on 2026-08-08 on the 272 XML files: 54/272 (20 %) carry, IN THE SAME <aff> tag, the name of the institution AND its postal address (postcode or street number) — \"Department of Urology, Peking University … 100034 Beijing\". 5/272 (2 %) give an explicit street number (\"140 Huguenot Street\", \"654 Cherry Street\"), and 60/272 (22 %) a postcode + city pair. The material for the bridge exists; what the fabricated corpus lacks is its DISTRIBUTION across several documents.",
+   "organisation": "Loxyn SAS, Lyon",
+   "corpus_id": "corpus-europe-pmc-jats-2023-2026"
   },
-  "damage": "SPLIT",
-  "class": "IRREDUCIBLE",
-  "layer": "⑥ resolution",
-  "injection": "RENAME",
-  "legacy_severity": "G1",
-  "legacy_mechanism": "M2",
-  "status": "migrated_unreviewed",
-  "seen": [
-    {
-      "corpus": "observation 2026-08 (272 Europe PMC JATS articles)",
-      "date": "2026-08-08",
-      "observer": "house observer (LLM agent), see report",
-      "excerpt": "MESURÉ le 08/08/2026 sur les 272 XML : 54/272 (20 %) portent, DANS LA MÊME balise <aff>, le nom de l'établissement ET son adresse postale (code postal ou numéro de rue) — « Department of Urology, Peking University … 100034 Beijing ». 5/272 (2 %) donnent un numéro de rue explicite (« 140 Huguenot Street », « 654 Cherry Street »), et 60/272 (22 %) un couple code postal + ville. La matière du pont existe ; ce qui manque au corpus fabriqué, c'est sa RÉPARTITION sur plusieurs documents.",
-      "lang": "fr",
-      "excerpt_en": "MEASURED on 2026-08-08 on the 272 XML files: 54/272 (20 %) carry, IN THE SAME <aff> tag, the name of the institution AND its postal address (postcode or street number) — \"Department of Urology, Peking University … 100034 Beijing\". 5/272 (2 %) give an explicit street number (\"140 Huguenot Street\", \"654 Cherry Street\"), and 60/272 (22 %) a postcode + city pair. The material for the bridge exists; what the fabricated corpus lacks is its DISTRIBUTION across several documents.",
-      "organisation": "Loxyn SAS, Lyon",
-      "corpus_id": "corpus-europe-pmc-jats-2023-2026"
-    },
-    {
-      "corpus": "Europe PMC JATS 2023-2026 (272 articles, the declared corpus)",
-      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
-      "date": "2026-09-10",
-      "observer": "Fault Atlas maintainer (Loxyn), by probe, no model",
-      "excerpt": "MEASURED on 2026-09-10 by probes/2026-09-recovered/line-027.py, whose definition is in its docstring: 52/272 articles carry it, where the observation of 2026-08-08 counted 54 under a definition we could not recover. First carrier: bio-PMC12583535.xml — 3 affiliations, e.g. 1 https://ror.org/02z1vqm45 grid.411472.5 0000 0004 1764 1621 Department of Urology, Pekin",
-      "lang": "en",
-      "probe": "probes/2026-09-recovered/line-027.py"
-    }
-  ],
-  "specimens": {
-    "cases": [],
-    "counter_examples": []
-  },
-  "prevention": {
-    "cancellable_by_code": false
-  },
-  "repair": {
-    "reachable_by_deletion": "no",
-    "note": "deletion cannot restore this; derived from the damage class by the migration of 2026-09-09, not judged form by form and not measured — the bench can measure it",
-    "measured": {
-      "value": "no",
-      "reached": 0,
-      "injected": 1355,
-      "note": "0 of 1,355 restored; 24 twins deleted and the 1,674 true facts they took were not restored",
-      "source": "measured 2026-09-10 by pgrepair (SciPyWeightedILP) on the frozen EUR-Lex truth, three identical runs, journal sha256 in measures/reachability-by-damage-2026-09-10.json. Per damage class, not per form: two forms of the same damage and the same visibility get the same answer.",
-      "date": "2026-09-10"
-    }
-  },
-  "judgeable_by": [
-    "construction",
-    "registry",
-    "curated",
-    "closed_world"
-  ],
-  "history": [
-    {
-      "date": "2026-08-09",
-      "event": "catalogue line 27 — GOLDEN (kept for the benchmark): irreducible or silent false",
-      "by": "Korela For Science"
-    },
-    {
-      "date": "2026-09-09",
-      "event": "migrated; classified damage=SPLIT injection=RENAME (judgment, unreviewed by a second reader)",
-      "by": "Fault Atlas migration"
-    }
-  ],
-  "failure_mode": {
-    "value": "PROP",
-    "means": "identity: one thing appears under several forms, or several things under one — the error lands on a node and propagates to everything hanging from it",
-    "source": "the internal catalogue of 2026-08-09 (korela.db, table parametre), line 27; it is not derived from the damage and varies inside a damage class"
-  },
-  "probes": [
-    {
-      "file": "probes/2026-09-recovered/line-027.py",
-      "kind": "python",
-      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
-      "written": "2026-09-10",
-      "run": "python3 tools/run_probe.py probes/2026-09-recovered/line-027.py <dir with the 272 .xml>",
-      "result": {
-        "date": "2026-09-10",
-        "count": 52,
-        "of": 272,
-        "strata": {
-          "phys": 22,
-          "meta": 9,
-          "retract": 9,
-          "bio": 8,
-          "essai": 2,
-          "moderne": 2
-        },
-        "examples": [
-          [
-            "bio-PMC12583535.xml",
-            [
-              "3 affiliations, e.g. 1 https://ror.org/02z1vqm45 grid.411472.5 0000 0004 1764 1621 Department of Urology, Pekin"
-            ]
-          ],
-          [
-            "bio-PMC12882215.xml",
-            [
-              "4 affiliations, e.g. 1 https://ror.org/01p455v08 grid.13394.3c 0000 0004 1799 3993 School of Nursing, Xinjiang "
-            ]
-          ],
-          [
-            "bio-PMC13088504.xml",
-            [
-              "1 affiliations, e.g. 2 Department of Surgery, Division of Surgical Oncology, Mersin University School of Medici"
-            ]
-          ]
-        ],
-        "by": "Fault Atlas maintainer (Loxyn), on the declared corpus",
-        "carriers_file": "probes/results/form-027-name-to-address-bridge.json"
-      },
-      "matches_excerpt": true,
-      "note": "reproduces the figure of the September reading it is attached to, 52/272. It does NOT reproduce the August figure of 54, whose definition we could not recover; that observation is left exactly as it stands, above, with no example under it."
-    }
-  ],
-  "document_years": {
-    "corpus_id": "corpus-europe-pmc-jats-2023-2026",
-    "counts": {
-      "2025": 1,
-      "2026": 2
-    },
-    "carriers_dated": 3,
-    "source": "corpora/index/document-years-europe-pmc-272.json, read 2026-09-11 from each file's earliest pub-date"
+  {
+   "corpus": "Europe PMC JATS 2023-2026 (272 articles, the declared corpus)",
+   "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+   "date": "2026-09-10",
+   "observer": "Fault Atlas maintainer (Loxyn), by probe, no model",
+   "excerpt": "MEASURED on 2026-09-10 by probes/2026-09-recovered/line-027.py, whose definition is in its docstring: 52/272 articles carry it, where the observation of 2026-08-08 counted 54 under a definition we could not recover. First carrier: bio-PMC12583535.xml — 3 affiliations, e.g. 1 https://ror.org/02z1vqm45 grid.411472.5 0000 0004 1764 1621 Department of Urology, Pekin",
+   "lang": "en",
+   "probe": "probes/2026-09-recovered/line-027.py"
   }
+ ],
+ "specimens": {
+  "cases": [],
+  "counter_examples": []
+ },
+ "prevention": {
+  "cancellable_by_code": false
+ },
+ "repair": {
+  "reachable_by_deletion": "no",
+  "note": "deletion cannot restore this; derived from the damage class by the migration of 2026-09-09, not judged form by form and not measured — the bench can measure it",
+  "measured": {
+   "value": "no",
+   "reached": 0,
+   "injected": 1355,
+   "note": "0 of 1,355 restored; 24 twins deleted and the 1,674 true facts they took were not restored",
+   "source": "measured 2026-09-10 by pgrepair (SciPyWeightedILP) on the frozen EUR-Lex truth, three identical runs, journal sha256 in measures/reachability-by-damage-2026-09-10.json. Per damage class, not per form: two forms of the same damage and the same visibility get the same answer.",
+   "date": "2026-09-10"
+  },
+  "obstacle": {
+   "value": "the operation",
+   "reason": "One entity written as two is repaired by MERGING them. Deleting the twin removes the false node and does not give back the facts it took: measured, 24 twins deleted of 1,355 and 1,674 true facts not restored.",
+   "reason_fr": "Une entité écrite en deux se répare en les FUSIONNANT. Supprimer le jumeau retire le faux nœud et ne rend pas les faits qu'il avait emportés : mesuré, 24 jumeaux sur 1 355 et 1 674 faits vrais non rétablis.",
+   "source": "derived from what a deletion-only repair can express, read in the repairer's own code — its solution is a set of elements to delete and carries no insertion — together with the measurement of 2026-09-10. Per damage class, not per form.",
+   "date": "2026-09-13"
+  }
+ },
+ "judgeable_by": [
+  "construction",
+  "registry",
+  "curated",
+  "closed_world"
+ ],
+ "history": [
+  {
+   "date": "2026-08-09",
+   "event": "catalogue line 27 — GOLDEN (kept for the benchmark): irreducible or silent false",
+   "by": "Korela For Science"
+  },
+  {
+   "date": "2026-09-09",
+   "event": "migrated; classified damage=SPLIT injection=RENAME (judgment, unreviewed by a second reader)",
+   "by": "Fault Atlas migration"
+  }
+ ],
+ "failure_mode": {
+  "value": "PROP",
+  "means": "identity: one thing appears under several forms, or several things under one — the error lands on a node and propagates to everything hanging from it",
+  "source": "the internal catalogue of 2026-08-09 (korela.db, table parametre), line 27; it is not derived from the damage and varies inside a damage class"
+ },
+ "probes": [
+  {
+   "file": "probes/2026-09-recovered/line-027.py",
+   "kind": "python",
+   "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+   "written": "2026-09-10",
+   "run": "python3 tools/run_probe.py probes/2026-09-recovered/line-027.py <dir with the 272 .xml>",
+   "result": {
+    "date": "2026-09-10",
+    "count": 52,
+    "of": 272,
+    "strata": {
+     "phys": 22,
+     "meta": 9,
+     "retract": 9,
+     "bio": 8,
+     "essai": 2,
+     "moderne": 2
+    },
+    "examples": [
+     [
+      "bio-PMC12583535.xml",
+      [
+       "3 affiliations, e.g. 1 https://ror.org/02z1vqm45 grid.411472.5 0000 0004 1764 1621 Department of Urology, Pekin"
+      ]
+     ],
+     [
+      "bio-PMC12882215.xml",
+      [
+       "4 affiliations, e.g. 1 https://ror.org/01p455v08 grid.13394.3c 0000 0004 1799 3993 School of Nursing, Xinjiang "
+      ]
+     ],
+     [
+      "bio-PMC13088504.xml",
+      [
+       "1 affiliations, e.g. 2 Department of Surgery, Division of Surgical Oncology, Mersin University School of Medici"
+      ]
+     ]
+    ],
+    "by": "Fault Atlas maintainer (Loxyn), on the declared corpus",
+    "carriers_file": "probes/results/form-027-name-to-address-bridge.json"
+   },
+   "matches_excerpt": true,
+   "note": "reproduces the figure of the September reading it is attached to, 52/272. It does NOT reproduce the August figure of 54, whose definition we could not recover; that observation is left exactly as it stands, above, with no example under it."
+  }
+ ],
+ "document_years": {
+  "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+  "counts": {
+   "2025": 1,
+   "2026": 2
+  },
+  "carriers_dated": 3,
+  "source": "corpora/index/document-years-europe-pmc-272.json, read 2026-09-11 from each file's earliest pub-date"
+ }
 }

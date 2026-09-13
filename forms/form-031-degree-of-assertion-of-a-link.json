@@ -1,143 +1,150 @@
 {
-  "id": "form-031",
-  "version": 1,
-  "legacy_line": 31,
-  "name": "Degree of assertion of a link",
-  "name_fr": "Degré d'affirmation du lien",
-  "origin": {
-    "organisation": "Loxyn SAS, Lyon",
-    "campaign": "August 2026 — observation campaign (Korela For Science)",
-    "contact": "contact@loxyn.ai"
+ "id": "form-031",
+ "version": 1,
+ "legacy_line": 31,
+ "name": "Degree of assertion of a link",
+ "name_fr": "Degré d'affirmation du lien",
+ "origin": {
+  "organisation": "Loxyn SAS, Lyon",
+  "campaign": "August 2026 — observation campaign (Korela For Science)",
+  "contact": "contact@loxyn.ai"
+ },
+ "damage": "SPURIOUS_EDGE",
+ "class": "IRREDUCIBLE",
+ "layer": "④ extraction",
+ "injection": "ALTER",
+ "legacy_severity": "G2",
+ "legacy_mechanism": "M5",
+ "status": "migrated_unreviewed",
+ "seen": [
+  {
+   "corpus": "observation 2026-08 (272 Europe PMC JATS articles)",
+   "date": "2026-08-08",
+   "observer": "house observer (LLM agent), see report",
+   "excerpt": "MESURÉ le 08/08/2026 sur (internal corpus of 272 JATS articles) (272 XML JATS) : 233/272 articles (86 %) portent au moins un marqueur de non-affirmation (may · might · could · suggests · appears to · likely · has been proposed) ; 4 518 occurrences au total, soit 19,4 par article concerné.",
+   "lang": "fr",
+   "excerpt_en": "MEASURED on 2026-08-08 on the internal corpus (272 JATS XML): 233/272 articles (86 %) carry at least one non-assertion marker (may · might · could · suggests · appears to · likely · has been proposed); 4,518 occurrences in total, i.e. 19.4 per affected article.",
+   "organisation": "Loxyn SAS, Lyon",
+   "corpus_id": "corpus-europe-pmc-jats-2023-2026"
   },
-  "damage": "SPURIOUS_EDGE",
-  "class": "IRREDUCIBLE",
-  "layer": "④ extraction",
-  "injection": "ALTER",
-  "legacy_severity": "G2",
-  "legacy_mechanism": "M5",
-  "status": "migrated_unreviewed",
-  "seen": [
-    {
-      "corpus": "observation 2026-08 (272 Europe PMC JATS articles)",
-      "date": "2026-08-08",
-      "observer": "house observer (LLM agent), see report",
-      "excerpt": "MESURÉ le 08/08/2026 sur (internal corpus of 272 JATS articles) (272 XML JATS) : 233/272 articles (86 %) portent au moins un marqueur de non-affirmation (may · might · could · suggests · appears to · likely · has been proposed) ; 4 518 occurrences au total, soit 19,4 par article concerné.",
-      "lang": "fr",
-      "excerpt_en": "MEASURED on 2026-08-08 on the internal corpus (272 JATS XML): 233/272 articles (86 %) carry at least one non-assertion marker (may · might · could · suggests · appears to · likely · has been proposed); 4,518 occurrences in total, i.e. 19.4 per affected article.",
-      "organisation": "Loxyn SAS, Lyon",
-      "corpus_id": "corpus-europe-pmc-jats-2023-2026"
-    },
-    {
-      "corpus": "Europe PMC JATS 2023-2026 (272 articles, the declared corpus)",
-      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
-      "date": "2026-09-10",
-      "observer": "Fault Atlas maintainer (Loxyn), by probe, no model",
-      "excerpt": "MEASURED on 2026-09-10 by probes/2026-09-recovered/line-031.py, whose definition is in its docstring: 206/272 articles carry it, where the observation of 2026-08-08 counted 233 under a definition we could not recover. First carrier: bio-PMC12583535.xml — 13 hedges, e.g. May",
-      "lang": "en",
-      "probe": "probes/2026-09-recovered/line-031.py"
-    }
-  ],
-  "specimens": {
-    "cases": [],
-    "counter_examples": []
-  },
-  "prevention": {
-    "cancellable_by_code": false
-  },
-  "repair": {
-    "reachable_by_deletion": "yes",
-    "note": "the faulty edge can be deleted",
-    "measured": {
-      "value": "depends_on_visibility",
-      "reached": 366,
-      "injected": 721,
-      "note": "360 of 360 when a law can see it, 6 of 361 when none can",
-      "source": "measured 2026-09-10 by pgrepair (SciPyWeightedILP) on the frozen EUR-Lex truth, three identical runs, journal sha256 in measures/reachability-by-damage-2026-09-10.json. Per damage class, not per form: two forms of the same damage and the same visibility get the same answer.",
-      "date": "2026-09-10",
-      "disagrees_with_the_judgment": "yes"
-    }
-  },
-  "judgeable_by": [
-    "construction",
-    "curated",
-    "closed_world"
-  ],
-  "history": [
-    {
-      "date": "2026-08-09",
-      "event": "catalogue line 31 — GOLDEN (kept for the benchmark): irreducible or silent false",
-      "by": "Korela For Science"
-    },
-    {
-      "date": "2026-09-09",
-      "event": "migrated; classified damage=SPURIOUS_EDGE injection=ALTER (judgment, unreviewed by a second reader)",
-      "by": "Fault Atlas migration"
-    },
-    {
-      "date": "2026-09-09",
-      "event": "internal tool paths removed from observation notes before publication; wording otherwise unchanged",
-      "by": "Fault Atlas"
-    }
-  ],
-  "failure_mode": {
-    "value": "FAUX",
-    "means": "a false fact: a value, a type or a link the source never asserted",
-    "source": "the internal catalogue of 2026-08-09 (korela.db, table parametre), line 31; it is not derived from the damage and varies inside a damage class"
-  },
-  "probes": [
-    {
-      "file": "probes/2026-09-recovered/line-031.py",
-      "kind": "python",
-      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
-      "written": "2026-09-10",
-      "run": "python3 tools/run_probe.py probes/2026-09-recovered/line-031.py <dir with the 272 .xml>",
-      "result": {
-        "date": "2026-09-10",
-        "count": 206,
-        "of": 272,
-        "strata": {
-          "bio": 34,
-          "essai": 34,
-          "meta": 34,
-          "phys": 34,
-          "cas": 33,
-          "moderne": 17,
-          "retract": 12,
-          "nonEN": 8
-        },
-        "examples": [
-          [
-            "bio-PMC12583535.xml",
-            [
-              "13 hedges, e.g. May"
-            ]
-          ],
-          [
-            "bio-PMC12590050.xml",
-            [
-              "13 hedges, e.g. likely"
-            ]
-          ],
-          [
-            "bio-PMC12674831.xml",
-            [
-              "31 hedges, e.g. suggests"
-            ]
-          ]
-        ],
-        "by": "Fault Atlas maintainer (Loxyn), on the declared corpus",
-        "carriers_file": "probes/results/form-031-degree-of-assertion-of-a-link.json"
-      },
-      "matches_excerpt": true,
-      "note": "reproduces the figure of the September reading it is attached to, 206/272. It does NOT reproduce the August figure of 233, whose definition we could not recover; that observation is left exactly as it stands, above, with no example under it."
-    }
-  ],
-  "document_years": {
-    "corpus_id": "corpus-europe-pmc-jats-2023-2026",
-    "counts": {
-      "2025": 3
-    },
-    "carriers_dated": 3,
-    "source": "corpora/index/document-years-europe-pmc-272.json, read 2026-09-11 from each file's earliest pub-date"
+  {
+   "corpus": "Europe PMC JATS 2023-2026 (272 articles, the declared corpus)",
+   "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+   "date": "2026-09-10",
+   "observer": "Fault Atlas maintainer (Loxyn), by probe, no model",
+   "excerpt": "MEASURED on 2026-09-10 by probes/2026-09-recovered/line-031.py, whose definition is in its docstring: 206/272 articles carry it, where the observation of 2026-08-08 counted 233 under a definition we could not recover. First carrier: bio-PMC12583535.xml — 13 hedges, e.g. May",
+   "lang": "en",
+   "probe": "probes/2026-09-recovered/line-031.py"
   }
+ ],
+ "specimens": {
+  "cases": [],
+  "counter_examples": []
+ },
+ "prevention": {
+  "cancellable_by_code": false
+ },
+ "repair": {
+  "reachable_by_deletion": "yes",
+  "note": "the faulty edge can be deleted",
+  "measured": {
+   "value": "depends_on_visibility",
+   "reached": 366,
+   "injected": 721,
+   "note": "360 of 360 when a law can see it, 6 of 361 when none can",
+   "source": "measured 2026-09-10 by pgrepair (SciPyWeightedILP) on the frozen EUR-Lex truth, three identical runs, journal sha256 in measures/reachability-by-damage-2026-09-10.json. Per damage class, not per form: two forms of the same damage and the same visibility get the same answer.",
+   "date": "2026-09-10",
+   "disagrees_with_the_judgment": "yes"
+  },
+  "obstacle": {
+   "value": "the information",
+   "reason": "Deletion is the right gesture here: the false edge has to go. What is missing is what tells it from the true one when no constraint separates them. Measured: with a weight carried from the document, a repairer goes from 65 of 130 — a coin — to 130 of 130, stable on three runs.",
+   "reason_fr": "La suppression est ici le bon geste : la fausse arête doit partir. Ce qui manque, c'est de quoi la distinguer de la vraie quand aucune contrainte ne les sépare. Mesuré : avec un poids porté depuis le document, un réparateur passe de 65 sur 130 — une pièce — à 130 sur 130, stable.",
+   "source": "derived from what a deletion-only repair can express, read in the repairer's own code — its solution is a set of elements to delete and carries no insertion — together with the measurement of 2026-09-10. Per damage class, not per form.",
+   "date": "2026-09-13"
+  }
+ },
+ "judgeable_by": [
+  "construction",
+  "curated",
+  "closed_world"
+ ],
+ "history": [
+  {
+   "date": "2026-08-09",
+   "event": "catalogue line 31 — GOLDEN (kept for the benchmark): irreducible or silent false",
+   "by": "Korela For Science"
+  },
+  {
+   "date": "2026-09-09",
+   "event": "migrated; classified damage=SPURIOUS_EDGE injection=ALTER (judgment, unreviewed by a second reader)",
+   "by": "Fault Atlas migration"
+  },
+  {
+   "date": "2026-09-09",
+   "event": "internal tool paths removed from observation notes before publication; wording otherwise unchanged",
+   "by": "Fault Atlas"
+  }
+ ],
+ "failure_mode": {
+  "value": "FAUX",
+  "means": "a false fact: a value, a type or a link the source never asserted",
+  "source": "the internal catalogue of 2026-08-09 (korela.db, table parametre), line 31; it is not derived from the damage and varies inside a damage class"
+ },
+ "probes": [
+  {
+   "file": "probes/2026-09-recovered/line-031.py",
+   "kind": "python",
+   "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+   "written": "2026-09-10",
+   "run": "python3 tools/run_probe.py probes/2026-09-recovered/line-031.py <dir with the 272 .xml>",
+   "result": {
+    "date": "2026-09-10",
+    "count": 206,
+    "of": 272,
+    "strata": {
+     "bio": 34,
+     "essai": 34,
+     "meta": 34,
+     "phys": 34,
+     "cas": 33,
+     "moderne": 17,
+     "retract": 12,
+     "nonEN": 8
+    },
+    "examples": [
+     [
+      "bio-PMC12583535.xml",
+      [
+       "13 hedges, e.g. May"
+      ]
+     ],
+     [
+      "bio-PMC12590050.xml",
+      [
+       "13 hedges, e.g. likely"
+      ]
+     ],
+     [
+      "bio-PMC12674831.xml",
+      [
+       "31 hedges, e.g. suggests"
+      ]
+     ]
+    ],
+    "by": "Fault Atlas maintainer (Loxyn), on the declared corpus",
+    "carriers_file": "probes/results/form-031-degree-of-assertion-of-a-link.json"
+   },
+   "matches_excerpt": true,
+   "note": "reproduces the figure of the September reading it is attached to, 206/272. It does NOT reproduce the August figure of 233, whose definition we could not recover; that observation is left exactly as it stands, above, with no example under it."
+  }
+ ],
+ "document_years": {
+  "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+  "counts": {
+   "2025": 3
+  },
+  "carriers_dated": 3,
+  "source": "corpora/index/document-years-europe-pmc-272.json, read 2026-09-11 from each file's earliest pub-date"
+ }
 }

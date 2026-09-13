@@ -1,70 +1,77 @@
 {
-  "id": "form-033",
-  "version": 1,
-  "legacy_line": 33,
-  "name": "Confusable relation types",
-  "name_fr": "Confusabilité des types de relation",
-  "origin": {
-    "organisation": "Loxyn SAS, Lyon",
-    "campaign": "August 2026 — observation campaign (Korela For Science)",
-    "contact": "contact@loxyn.ai"
-  },
-  "damage": "WRONG_LABEL",
-  "class": "IRREDUCIBLE",
-  "layer": "⑦ schema",
-  "injection": "RENAME",
-  "legacy_severity": "G2",
-  "legacy_mechanism": "M12",
-  "status": "migrated_unreviewed",
-  "seen": [
-    {
-      "corpus": "observation 2026-08 (272 Europe PMC JATS articles)",
-      "date": "2026-08-08",
-      "observer": "house observer (LLM agent), see report",
-      "excerpt": "MESURÉ, relevé au catalogue le 08/08/2026 : F1 82,8 % quand on ignore le type, F1 30,1 % quand on le compte — on relie les bonnes entités et on se trompe de lien trois fois sur quatre. Et vérifié dans le code le même jour : le vocabulaire est annoncé fermé à 26 types, la table des inverses en accepte 31.",
-      "lang": "fr",
-      "excerpt_en": "MEASURED, recorded in the catalogue on 2026-08-08: F1 82.8 % when the type is ignored, F1 30.1 % when it is counted — the right entities are linked and the link is wrong three times out of four. And verified in the code the same day: the vocabulary is announced closed at 26 types, the inverse table accepts 31.",
-      "organisation": "Loxyn SAS, Lyon"
-    }
-  ],
-  "specimens": {
-    "cases": [],
-    "counter_examples": []
-  },
-  "prevention": {
-    "cancellable_by_code": false
-  },
-  "repair": {
-    "reachable_by_deletion": "partial",
-    "note": "an extra label can be deleted, a missing one cannot be added",
-    "measured": {
-      "value": "yes_at_a_cost",
-      "reached": 3932,
-      "injected": 3932,
-      "note": "3,932 of 3,932 reached, and 12,591 true facts were lost with them: the repair deletes the nodes, not their labels",
-      "source": "measured 2026-09-10 by pgrepair (SciPyWeightedILP) on the frozen EUR-Lex truth, three identical runs, journal sha256 in measures/reachability-by-damage-2026-09-10.json. Per damage class, not per form: two forms of the same damage and the same visibility get the same answer.",
-      "date": "2026-09-10"
-    }
-  },
-  "judgeable_by": [
-    "construction",
-    "curated"
-  ],
-  "history": [
-    {
-      "date": "2026-08-09",
-      "event": "catalogue line 33 — GOLDEN (kept for the benchmark): irreducible or silent false",
-      "by": "Korela For Science"
-    },
-    {
-      "date": "2026-09-09",
-      "event": "migrated; classified damage=WRONG_LABEL injection=RENAME (judgment, unreviewed by a second reader)",
-      "by": "Fault Atlas migration"
-    }
-  ],
-  "failure_mode": {
-    "value": "FAUX",
-    "means": "a false fact: a value, a type or a link the source never asserted",
-    "source": "the internal catalogue of 2026-08-09 (korela.db, table parametre), line 33; it is not derived from the damage and varies inside a damage class"
+ "id": "form-033",
+ "version": 1,
+ "legacy_line": 33,
+ "name": "Confusable relation types",
+ "name_fr": "Confusabilité des types de relation",
+ "origin": {
+  "organisation": "Loxyn SAS, Lyon",
+  "campaign": "August 2026 — observation campaign (Korela For Science)",
+  "contact": "contact@loxyn.ai"
+ },
+ "damage": "WRONG_LABEL",
+ "class": "IRREDUCIBLE",
+ "layer": "⑦ schema",
+ "injection": "RENAME",
+ "legacy_severity": "G2",
+ "legacy_mechanism": "M12",
+ "status": "migrated_unreviewed",
+ "seen": [
+  {
+   "corpus": "observation 2026-08 (272 Europe PMC JATS articles)",
+   "date": "2026-08-08",
+   "observer": "house observer (LLM agent), see report",
+   "excerpt": "MESURÉ, relevé au catalogue le 08/08/2026 : F1 82,8 % quand on ignore le type, F1 30,1 % quand on le compte — on relie les bonnes entités et on se trompe de lien trois fois sur quatre. Et vérifié dans le code le même jour : le vocabulaire est annoncé fermé à 26 types, la table des inverses en accepte 31.",
+   "lang": "fr",
+   "excerpt_en": "MEASURED, recorded in the catalogue on 2026-08-08: F1 82.8 % when the type is ignored, F1 30.1 % when it is counted — the right entities are linked and the link is wrong three times out of four. And verified in the code the same day: the vocabulary is announced closed at 26 types, the inverse table accepts 31.",
+   "organisation": "Loxyn SAS, Lyon"
   }
+ ],
+ "specimens": {
+  "cases": [],
+  "counter_examples": []
+ },
+ "prevention": {
+  "cancellable_by_code": false
+ },
+ "repair": {
+  "reachable_by_deletion": "partial",
+  "note": "an extra label can be deleted, a missing one cannot be added",
+  "measured": {
+   "value": "yes_at_a_cost",
+   "reached": 3932,
+   "injected": 3932,
+   "note": "3,932 of 3,932 reached, and 12,591 true facts were lost with them: the repair deletes the nodes, not their labels",
+   "source": "measured 2026-09-10 by pgrepair (SciPyWeightedILP) on the frozen EUR-Lex truth, three identical runs, journal sha256 in measures/reachability-by-damage-2026-09-10.json. Per damage class, not per form: two forms of the same damage and the same visibility get the same answer.",
+   "date": "2026-09-10"
+  },
+  "obstacle": {
+   "value": "none",
+   "reason": "Reached in full, and at a cost: the repair deletes the nodes rather than their labels. The information that would put the label right is in the node itself — the identifier says the type — and one statement of the graph's own query language sets it back with nothing destroyed.",
+   "reason_fr": "Atteinte en entier, et à un prix : la réparation supprime les nœuds plutôt que leurs étiquettes. L'information qui remettrait l'étiquette droite est dans le nœud lui-même — l'identifiant dit le type — et une instruction du langage de requête du graphe la repose sans rien détruire.",
+   "source": "derived from what a deletion-only repair can express, read in the repairer's own code — its solution is a set of elements to delete and carries no insertion — together with the measurement of 2026-09-10. Per damage class, not per form.",
+   "date": "2026-09-13"
+  }
+ },
+ "judgeable_by": [
+  "construction",
+  "curated"
+ ],
+ "history": [
+  {
+   "date": "2026-08-09",
+   "event": "catalogue line 33 — GOLDEN (kept for the benchmark): irreducible or silent false",
+   "by": "Korela For Science"
+  },
+  {
+   "date": "2026-09-09",
+   "event": "migrated; classified damage=WRONG_LABEL injection=RENAME (judgment, unreviewed by a second reader)",
+   "by": "Fault Atlas migration"
+  }
+ ],
+ "failure_mode": {
+  "value": "FAUX",
+  "means": "a false fact: a value, a type or a link the source never asserted",
+  "source": "the internal catalogue of 2026-08-09 (korela.db, table parametre), line 33; it is not derived from the damage and varies inside a damage class"
+ }
 }

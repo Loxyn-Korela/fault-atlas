@@ -1,73 +1,80 @@
 {
-  "id": "form-190",
-  "version": 1,
-  "name": "Reading direction inverts the template",
-  "name_fr": "Le sens de lecture inverse le gabarit",
-  "origin": {
-    "organisation": "Loxyn SAS, Lyon",
-    "campaign": "August 2026 — observation campaign, verdicts on scripts and on rare genres (2026-08-08)",
-    "contact": "contact@loxyn.ai"
-  },
-  "damage": "WRONG_VALUE",
-  "class": "DEFEATED_IF_XML",
-  "layer": "① pixel + ② reading",
-  "injection": "FORMAT",
-  "status": "proposed",
-  "seen": [
-    {
-      "corpus": "observation 2026-08 — 19 documents in 8 non-Latin scripts",
-      "date": "2026-08-08",
-      "observer": "house observer (LLM agent), August 2026 campaign",
-      "organisation": "Loxyn SAS, Lyon",
-      "lang": "fr",
-      "excerpt": "In Arabic the page number changes corner, the order of the metadata fields is reversed, the asterisk moves in front of the name — and a page range 112-129 is displayed as 129-112. A sort by position on the page returns the reverse of the right order, silently, and the value that comes out is wrong rather than missing.",
-      "reserve": "observation cited from the August campaign; the documents of that wave were not kept by identifier, so this form has no reproducible example yet"
-    }
-  ],
-  "specimens": {
-    "cases": [],
-    "counter_examples": []
-  },
-  "prevention": {
-    "cancellable_by_code": true,
-    "refusal_clause": "read the direction declared by the document and never infer order from position on the page; in a structured source the order is in the markup, not in the coordinates",
-    "refusal_clause_fr": "lire la direction déclarée par le document et ne jamais déduire l'ordre de la position sur la page ; dans une source structurée, l'ordre est dans le balisage, pas dans les coordonnées"
-  },
-  "repair": {
-    "reachable_by_deletion": "no",
-    "note": "a reversed range is a wrong value, not a spurious edge; derived from the damage class by the migration of 2026-09-09, not judged form by form and not measured — the bench can measure it",
-    "measured": {
-      "value": "no",
-      "reached": 0,
-      "injected": 2613,
-      "note": "0 of 2,613 reached",
-      "source": "measured 2026-09-10 by pgrepair (SciPyWeightedILP) on the frozen EUR-Lex truth, three identical runs, journal sha256 in measures/reachability-by-damage-2026-09-10.json. Per damage class, not per form: two forms of the same damage and the same visibility get the same answer.",
-      "date": "2026-09-10"
-    }
-  },
-  "judgeable_by": [
-    "construction",
-    "registry"
-  ],
-  "related": [
-    "form-077",
-    "form-082"
-  ],
-  "history": [
-    {
-      "date": "2026-09-10",
-      "event": "created from the August 2026 verdicts on scripts and on rare genres, which the atlas had never carried",
-      "by": "Fault Atlas maintainer"
-    }
-  ],
-  "proposed_severity": {
-    "value": "G2",
-    "reason": "the reading direction inverts the template: a value is read into the wrong field, and it looks normal",
-    "proposed_by": "Fault Atlas maintainer (Loxyn), first reading",
-    "date": "2026-09-11",
-    "status": "proposed — a second reader confirms or contests, as for the 43 validated forms",
-    "adds_to_the_damage_class": false,
-    "note": "this reading agrees with how the August catalogue judges most WRONG_VALUE forms (G2), so it adds little",
-    "reason_fr": "la direction de lecture inverse le gabarit : une valeur est lue dans le mauvais champ, et elle a l'air normale"
+ "id": "form-190",
+ "version": 1,
+ "name": "Reading direction inverts the template",
+ "name_fr": "Le sens de lecture inverse le gabarit",
+ "origin": {
+  "organisation": "Loxyn SAS, Lyon",
+  "campaign": "August 2026 — observation campaign, verdicts on scripts and on rare genres (2026-08-08)",
+  "contact": "contact@loxyn.ai"
+ },
+ "damage": "WRONG_VALUE",
+ "class": "DEFEATED_IF_XML",
+ "layer": "① pixel + ② reading",
+ "injection": "FORMAT",
+ "status": "proposed",
+ "seen": [
+  {
+   "corpus": "observation 2026-08 — 19 documents in 8 non-Latin scripts",
+   "date": "2026-08-08",
+   "observer": "house observer (LLM agent), August 2026 campaign",
+   "organisation": "Loxyn SAS, Lyon",
+   "lang": "fr",
+   "excerpt": "In Arabic the page number changes corner, the order of the metadata fields is reversed, the asterisk moves in front of the name — and a page range 112-129 is displayed as 129-112. A sort by position on the page returns the reverse of the right order, silently, and the value that comes out is wrong rather than missing.",
+   "reserve": "observation cited from the August campaign; the documents of that wave were not kept by identifier, so this form has no reproducible example yet"
   }
+ ],
+ "specimens": {
+  "cases": [],
+  "counter_examples": []
+ },
+ "prevention": {
+  "cancellable_by_code": true,
+  "refusal_clause": "read the direction declared by the document and never infer order from position on the page; in a structured source the order is in the markup, not in the coordinates",
+  "refusal_clause_fr": "lire la direction déclarée par le document et ne jamais déduire l'ordre de la position sur la page ; dans une source structurée, l'ordre est dans le balisage, pas dans les coordonnées"
+ },
+ "repair": {
+  "reachable_by_deletion": "no",
+  "note": "a reversed range is a wrong value, not a spurious edge; derived from the damage class by the migration of 2026-09-09, not judged form by form and not measured — the bench can measure it",
+  "measured": {
+   "value": "no",
+   "reached": 0,
+   "injected": 2613,
+   "note": "0 of 2,613 reached",
+   "source": "measured 2026-09-10 by pgrepair (SciPyWeightedILP) on the frozen EUR-Lex truth, three identical runs, journal sha256 in measures/reachability-by-damage-2026-09-10.json. Per damage class, not per form: two forms of the same damage and the same visibility get the same answer.",
+   "date": "2026-09-10"
+  },
+  "obstacle": {
+   "value": "the operation",
+   "reason": "Deleting a wrong value removes the fact without restoring the right one. The gesture needed is to SET, and deletion cannot express it.",
+   "reason_fr": "Supprimer une valeur fausse retire le fait sans rétablir le bon. Le geste qu'il faudrait est d'ÉCRIRE, et la suppression ne sait pas l'exprimer.",
+   "source": "derived from what a deletion-only repair can express, read in the repairer's own code — its solution is a set of elements to delete and carries no insertion — together with the measurement of 2026-09-10. Per damage class, not per form.",
+   "date": "2026-09-13"
+  }
+ },
+ "judgeable_by": [
+  "construction",
+  "registry"
+ ],
+ "related": [
+  "form-077",
+  "form-082"
+ ],
+ "history": [
+  {
+   "date": "2026-09-10",
+   "event": "created from the August 2026 verdicts on scripts and on rare genres, which the atlas had never carried",
+   "by": "Fault Atlas maintainer"
+  }
+ ],
+ "proposed_severity": {
+  "value": "G2",
+  "reason": "the reading direction inverts the template: a value is read into the wrong field, and it looks normal",
+  "proposed_by": "Fault Atlas maintainer (Loxyn), first reading",
+  "date": "2026-09-11",
+  "status": "proposed — a second reader confirms or contests, as for the 43 validated forms",
+  "adds_to_the_damage_class": false,
+  "note": "this reading agrees with how the August catalogue judges most WRONG_VALUE forms (G2), so it adds little",
+  "reason_fr": "la direction de lecture inverse le gabarit : une valeur est lue dans le mauvais champ, et elle a l'air normale"
+ }
 }

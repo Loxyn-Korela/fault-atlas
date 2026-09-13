@@ -1,145 +1,152 @@
 {
-  "id": "form-137",
-  "version": 1,
-  "legacy_line": 137,
-  "name": "Three kinds of number in one string",
-  "name_fr": "Trois natures de nombre dans une chaîne",
-  "origin": {
-    "organisation": "Loxyn SAS, Lyon",
-    "campaign": "August 2026 — observation campaign (Korela For Science)",
-    "contact": "contact@loxyn.ai"
+ "id": "form-137",
+ "version": 1,
+ "legacy_line": 137,
+ "name": "Three kinds of number in one string",
+ "name_fr": "Trois natures de nombre dans une chaîne",
+ "origin": {
+  "organisation": "Loxyn SAS, Lyon",
+  "campaign": "August 2026 — observation campaign (Korela For Science)",
+  "contact": "contact@loxyn.ai"
+ },
+ "damage": "WRONG_VALUE",
+ "class": "SILENT_FALSE",
+ "layer": "④ extraction",
+ "injection": "ALTER",
+ "legacy_severity": "G2",
+ "legacy_mechanism": "M3",
+ "status": "migrated_unreviewed",
+ "seen": [
+  {
+   "corpus": "observation 2026-08 (272 Europe PMC JATS articles)",
+   "date": "2026-08-08",
+   "observer": "house observer (LLM agent), see report",
+   "excerpt": "MESURÉ le 08/08/2026 sur les 272 XML : 48/272 (18 %) portent un indice chimique balisé <sub>, 2/272 (1 %) un appel de citation multiple en <sup> (« <sup>73, », « <sup>2– »), et 74/272 (27 %) contiennent déjà, EN TEXTE PLAT, un mot terminé par un chiffre collé à un nombre décimal (« i6.2 », « iid3.1 »). Un seul article (1/272) montre la collision complète en texte plat (« S3.38-58 ») : en JATS le balisage sépare encore les trois natures — LA COLLISION NAÎT AU RENDU, et c'est le rendu qu'on donne au lecteur. Observation d'origine 08/08/2026, 14 articles 2021-2026 hors biomédecine (annexe 137).",
+   "lang": "fr",
+   "excerpt_en": "MEASURED on 2026-08-08 on the 272 XML files: 48/272 (18 %) carry a tagged <sub> chemical index, 2/272 (1 %) a multiple citation call in <sup> (\"<sup>73,\", \"<sup>2–\"), and 74/272 (27 %) already contain, IN FLAT TEXT, a word ending in a digit glued to a decimal number (\"i6.2\", \"iid3.1\"). A single article (1/272) shows the full collision in flat text (\"S3.38-58\"): in JATS the markup still separates the three kinds — THE COLLISION IS BORN AT RENDERING, and rendering is what the reader is given. Original observation 2026-08-08, 14 articles 2021-2026 outside biomedicine (annex 137).",
+   "organisation": "Loxyn SAS, Lyon",
+   "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+   "reserve": "Reserve (second reader, 2026-09-10): the identifiers of the 14 articles of 2021-2026 outside biomedicine (arXiv, PLOS, Copernicus, HAL, Scientific Reports) were not kept in August; the observation is cited, not reproducible, until those articles are found again."
   },
-  "damage": "WRONG_VALUE",
-  "class": "SILENT_FALSE",
-  "layer": "④ extraction",
-  "injection": "ALTER",
-  "legacy_severity": "G2",
-  "legacy_mechanism": "M3",
-  "status": "migrated_unreviewed",
-  "seen": [
-    {
-      "corpus": "observation 2026-08 (272 Europe PMC JATS articles)",
-      "date": "2026-08-08",
-      "observer": "house observer (LLM agent), see report",
-      "excerpt": "MESURÉ le 08/08/2026 sur les 272 XML : 48/272 (18 %) portent un indice chimique balisé <sub>, 2/272 (1 %) un appel de citation multiple en <sup> (« <sup>73, », « <sup>2– »), et 74/272 (27 %) contiennent déjà, EN TEXTE PLAT, un mot terminé par un chiffre collé à un nombre décimal (« i6.2 », « iid3.1 »). Un seul article (1/272) montre la collision complète en texte plat (« S3.38-58 ») : en JATS le balisage sépare encore les trois natures — LA COLLISION NAÎT AU RENDU, et c'est le rendu qu'on donne au lecteur. Observation d'origine 08/08/2026, 14 articles 2021-2026 hors biomédecine (annexe 137).",
-      "lang": "fr",
-      "excerpt_en": "MEASURED on 2026-08-08 on the 272 XML files: 48/272 (18 %) carry a tagged <sub> chemical index, 2/272 (1 %) a multiple citation call in <sup> (\"<sup>73,\", \"<sup>2–\"), and 74/272 (27 %) already contain, IN FLAT TEXT, a word ending in a digit glued to a decimal number (\"i6.2\", \"iid3.1\"). A single article (1/272) shows the full collision in flat text (\"S3.38-58\"): in JATS the markup still separates the three kinds — THE COLLISION IS BORN AT RENDERING, and rendering is what the reader is given. Original observation 2026-08-08, 14 articles 2021-2026 outside biomedicine (annex 137).",
-      "organisation": "Loxyn SAS, Lyon",
-      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
-      "reserve": "Reserve (second reader, 2026-09-10): the identifiers of the 14 articles of 2021-2026 outside biomedicine (arXiv, PLOS, Copernicus, HAL, Scientific Reports) were not kept in August; the observation is cited, not reproducible, until those articles are found again."
-    },
-    {
-      "corpus": "Europe PMC JATS 2023-2026 (272 articles, the declared corpus)",
-      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
-      "date": "2026-09-10",
-      "observer": "Fault Atlas maintainer (Loxyn), by probe, no model",
-      "excerpt": "MEASURED on 2026-09-10 by probes/2026-09-recovered/line-137.py, whose definition is in its docstring: 34/272 articles carry it, where the observation of 2026-08-08 counted 48 under a definition we could not recover. First carrier: bio-PMC12583535.xml — 2 subscript indices, e.g. Fe3",
-      "lang": "en",
-      "probe": "probes/2026-09-recovered/line-137.py"
-    }
-  ],
-  "specimens": {
-    "cases": [],
-    "counter_examples": []
-  },
-  "prevention": {
-    "cancellable_by_code": false
-  },
-  "repair": {
-    "reachable_by_deletion": "no",
-    "note": "deletion cannot restore this; derived from the damage class by the migration of 2026-09-09, not judged form by form and not measured — the bench can measure it",
-    "measured": {
-      "value": "no",
-      "reached": 0,
-      "injected": 2613,
-      "note": "0 of 2,613 reached",
-      "source": "measured 2026-09-10 by pgrepair (SciPyWeightedILP) on the frozen EUR-Lex truth, three identical runs, journal sha256 in measures/reachability-by-damage-2026-09-10.json. Per damage class, not per form: two forms of the same damage and the same visibility get the same answer.",
-      "date": "2026-09-10"
-    }
-  },
-  "judgeable_by": [
-    "construction",
-    "registry",
-    "dated_future",
-    "closed_world"
-  ],
-  "history": [
-    {
-      "date": "2026-08-09",
-      "event": "catalogue line 137 — GOLDEN (kept for the benchmark): irreducible or silent false",
-      "by": "Korela For Science"
-    },
-    {
-      "date": "2026-09-09",
-      "event": "migrated; classified damage=WRONG_VALUE injection=ALTER (judgment, unreviewed by a second reader)",
-      "by": "Fault Atlas migration"
-    },
-    {
-      "date": "2026-09-10",
-      "event": "reserve put on the observation itself: identifiers of the 14 non-biomedical articles not kept, observation cited, not reproducible",
-      "by": "Fault Atlas maintainer, at the second reader's request"
-    }
-  ],
-  "failure_mode": {
-    "value": "FAUX",
-    "means": "a false fact: a value, a type or a link the source never asserted",
-    "source": "the internal catalogue of 2026-08-09 (korela.db, table parametre), line 137; it is not derived from the damage and varies inside a damage class"
-  },
-  "probes": [
-    {
-      "file": "probes/2026-09-recovered/line-137.py",
-      "kind": "python",
-      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
-      "written": "2026-09-10",
-      "run": "python3 tools/run_probe.py probes/2026-09-recovered/line-137.py <dir with the 272 .xml>",
-      "result": {
-        "date": "2026-09-10",
-        "count": 34,
-        "of": 272,
-        "strata": {
-          "essai": 7,
-          "moderne": 7,
-          "phys": 5,
-          "bio": 4,
-          "nonEN": 4,
-          "cas": 3,
-          "meta": 3,
-          "retract": 1
-        },
-        "examples": [
-          [
-            "bio-PMC12583535.xml",
-            [
-              "2 subscript indices, e.g. Fe3"
-            ]
-          ],
-          [
-            "bio-PMC13162546.xml",
-            [
-              "5 subscript indices, e.g. O2"
-            ]
-          ],
-          [
-            "bio-PMC13203479.xml",
-            [
-              "213 subscript indices, e.g. O3"
-            ]
-          ]
-        ],
-        "by": "Fault Atlas maintainer (Loxyn), on the declared corpus",
-        "carriers_file": "probes/results/form-137-three-kinds-of-number-in-one-string.json"
-      },
-      "matches_excerpt": true,
-      "note": "reproduces the figure of the September reading it is attached to, 34/272. It does NOT reproduce the August figure of 48, whose definition we could not recover; that observation is left exactly as it stands, above, with no example under it."
-    }
-  ],
-  "document_years": {
-    "corpus_id": "corpus-europe-pmc-jats-2023-2026",
-    "counts": {
-      "2025": 1,
-      "2026": 2
-    },
-    "carriers_dated": 3,
-    "source": "corpora/index/document-years-europe-pmc-272.json, read 2026-09-11 from each file's earliest pub-date"
+  {
+   "corpus": "Europe PMC JATS 2023-2026 (272 articles, the declared corpus)",
+   "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+   "date": "2026-09-10",
+   "observer": "Fault Atlas maintainer (Loxyn), by probe, no model",
+   "excerpt": "MEASURED on 2026-09-10 by probes/2026-09-recovered/line-137.py, whose definition is in its docstring: 34/272 articles carry it, where the observation of 2026-08-08 counted 48 under a definition we could not recover. First carrier: bio-PMC12583535.xml — 2 subscript indices, e.g. Fe3",
+   "lang": "en",
+   "probe": "probes/2026-09-recovered/line-137.py"
   }
+ ],
+ "specimens": {
+  "cases": [],
+  "counter_examples": []
+ },
+ "prevention": {
+  "cancellable_by_code": false
+ },
+ "repair": {
+  "reachable_by_deletion": "no",
+  "note": "deletion cannot restore this; derived from the damage class by the migration of 2026-09-09, not judged form by form and not measured — the bench can measure it",
+  "measured": {
+   "value": "no",
+   "reached": 0,
+   "injected": 2613,
+   "note": "0 of 2,613 reached",
+   "source": "measured 2026-09-10 by pgrepair (SciPyWeightedILP) on the frozen EUR-Lex truth, three identical runs, journal sha256 in measures/reachability-by-damage-2026-09-10.json. Per damage class, not per form: two forms of the same damage and the same visibility get the same answer.",
+   "date": "2026-09-10"
+  },
+  "obstacle": {
+   "value": "the operation",
+   "reason": "Deleting a wrong value removes the fact without restoring the right one. The gesture needed is to SET, and deletion cannot express it.",
+   "reason_fr": "Supprimer une valeur fausse retire le fait sans rétablir le bon. Le geste qu'il faudrait est d'ÉCRIRE, et la suppression ne sait pas l'exprimer.",
+   "source": "derived from what a deletion-only repair can express, read in the repairer's own code — its solution is a set of elements to delete and carries no insertion — together with the measurement of 2026-09-10. Per damage class, not per form.",
+   "date": "2026-09-13"
+  }
+ },
+ "judgeable_by": [
+  "construction",
+  "registry",
+  "dated_future",
+  "closed_world"
+ ],
+ "history": [
+  {
+   "date": "2026-08-09",
+   "event": "catalogue line 137 — GOLDEN (kept for the benchmark): irreducible or silent false",
+   "by": "Korela For Science"
+  },
+  {
+   "date": "2026-09-09",
+   "event": "migrated; classified damage=WRONG_VALUE injection=ALTER (judgment, unreviewed by a second reader)",
+   "by": "Fault Atlas migration"
+  },
+  {
+   "date": "2026-09-10",
+   "event": "reserve put on the observation itself: identifiers of the 14 non-biomedical articles not kept, observation cited, not reproducible",
+   "by": "Fault Atlas maintainer, at the second reader's request"
+  }
+ ],
+ "failure_mode": {
+  "value": "FAUX",
+  "means": "a false fact: a value, a type or a link the source never asserted",
+  "source": "the internal catalogue of 2026-08-09 (korela.db, table parametre), line 137; it is not derived from the damage and varies inside a damage class"
+ },
+ "probes": [
+  {
+   "file": "probes/2026-09-recovered/line-137.py",
+   "kind": "python",
+   "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+   "written": "2026-09-10",
+   "run": "python3 tools/run_probe.py probes/2026-09-recovered/line-137.py <dir with the 272 .xml>",
+   "result": {
+    "date": "2026-09-10",
+    "count": 34,
+    "of": 272,
+    "strata": {
+     "essai": 7,
+     "moderne": 7,
+     "phys": 5,
+     "bio": 4,
+     "nonEN": 4,
+     "cas": 3,
+     "meta": 3,
+     "retract": 1
+    },
+    "examples": [
+     [
+      "bio-PMC12583535.xml",
+      [
+       "2 subscript indices, e.g. Fe3"
+      ]
+     ],
+     [
+      "bio-PMC13162546.xml",
+      [
+       "5 subscript indices, e.g. O2"
+      ]
+     ],
+     [
+      "bio-PMC13203479.xml",
+      [
+       "213 subscript indices, e.g. O3"
+      ]
+     ]
+    ],
+    "by": "Fault Atlas maintainer (Loxyn), on the declared corpus",
+    "carriers_file": "probes/results/form-137-three-kinds-of-number-in-one-string.json"
+   },
+   "matches_excerpt": true,
+   "note": "reproduces the figure of the September reading it is attached to, 34/272. It does NOT reproduce the August figure of 48, whose definition we could not recover; that observation is left exactly as it stands, above, with no example under it."
+  }
+ ],
+ "document_years": {
+  "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+  "counts": {
+   "2025": 1,
+   "2026": 2
+  },
+  "carriers_dated": 3,
+  "source": "corpora/index/document-years-europe-pmc-272.json, read 2026-09-11 from each file's earliest pub-date"
+ }
 }

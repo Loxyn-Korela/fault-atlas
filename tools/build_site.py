@@ -102,6 +102,15 @@ T = {
  "h_prov": {"en": "Provenance, not opinion", "fr": "Provenance, pas opinion"},
  "h_why": {"en": "Why it matters", "fr": "Pourquoi ça compte"},
  "seen_on": {"en": "Seen on: ", "fr": "Vue sur : "},
+ "h_obst": {"en": "What is in the way", "fr": "Ce qui fait obstacle"},
+ "obst_v": {"en": {"the information": "The information, not the gesture",
+                   "the operation": "The gesture itself does not exist",
+                   "none": "Nothing: it is reached"},
+            "fr": {"the information": "L'information, pas le geste",
+                   "the operation": "Le geste lui-même n'existe pas",
+                   "none": "Rien : elle est atteinte"}},
+ "obst_why": {"en": "A single \u201cnot reachable\u201d hides two obstacles that call for opposite work: feeding a repair that exists, or building one that does not.",
+              "fr": "Un simple \u00ab non atteinte \u00bb cache deux obstacles qui appellent des travaux opposés : alimenter une réparation qui existe, ou en construire une qui n'existe pas."},
  "h_rel": {"en": "Related forms", "fr": "Formes liées"},
  "rel_out": {"en": "This form points to", "fr": "Cette fiche renvoie vers"},
  "rel_in": {"en": "Pointed to by", "fr": "Fiches qui renvoient vers elle"},
@@ -491,6 +500,11 @@ for f in forms:
 {('<div class="facts"><div><h3>'+E(t("applies"))+'</h3><p><strong>'+E({"ancient_only":"Documents of the old era only","both":"Both eras, 1957 and 2026 alike","born_modern":"Born with the modern era","not_settled":"Era not settled"}[f["era"]["value"]])+'</strong>'+(' — and worse now than it was' if f["era"].get("aggravated_by_the_modern") else '')+('. '+E(f["era"]["note"]) if f["era"].get("note") else '')+'</p><p class="meta">'+E(f["era"]["source"])+'</p></div></div>') if f.get('era') else ''}
 <h2>{E(t("h_seen"))}</h2>{seen}
 <h2>{E(t("h_spec"))}</h2>{spec}
+{('<div class="facts"><div><h3>'+E(t("h_obst"))+'</h3><p><strong>'
+   +E(t("obst_v")[f["repair"]["obstacle"]["value"]])+'</strong> — '
+   +E(f["repair"]["obstacle"].get("reason_fr") if LANG=="fr" else f["repair"]["obstacle"]["reason"])
+   +'</p><p class="meta">'+E(t("obst_why"))+' '+E(f["repair"]["obstacle"]["source"])+'</p></div></div>')
+   if f.get("repair",{}).get("obstacle") else ''}
 {related_block(f)}
 <h2>{E(t("h_hist"))}</h2><ul class="hist">{hist}</ul>
 <p class="muted">Record: <a href="../atlas.json">atlas.json</a> · <a href="{REPO}/blob/main/forms/{E(src_name)}">source file on GitHub</a> · <a href="{E(f['id'])}.json">this record as JSON</a> · <a href="{DATA}/forms/{E(f['id'])}">{E(t("explorer_row"))}</a></p>"""

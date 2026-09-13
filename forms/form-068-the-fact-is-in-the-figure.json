@@ -1,221 +1,228 @@
 {
-  "id": "form-068",
-  "version": 3,
-  "legacy_line": 68,
-  "name": "The fact is in the figure",
-  "name_fr": "Le fait est dans la figure",
-  "origin": {
-    "organisation": "Loxyn SAS, Lyon",
-    "campaign": "August 2026 — observation campaign (Korela For Science)",
-    "contact": "contact@loxyn.ai"
-  },
-  "damage": "MISSING",
-  "class": "IRREDUCIBLE",
-  "layer": "① pixel + ⑤ anchoring",
-  "injection": "IMAGE",
-  "legacy_severity": "G3",
-  "legacy_mechanism": "M7",
-  "status": "validated",
-  "seen": [
-    {
-      "corpus": "observation 2026-08 (272 Europe PMC JATS articles)",
-      "date": "2026-08-08",
-      "observer": "house observer (LLM agent), see report",
-      "excerpt": "MESURÉ le 08/08/2026 sur (internal corpus of 272 JATS articles) (272 XML JATS) : 215/272 articles (79 %) portent au moins une figure — 1 059 figures au total — et 138/272 (51 %) contiennent au moins un renvoi de la forme « (Fig. N) » dans le corps ; 1 791 renvois <xref ref-type=\"fig\"> pour 1 059 figures, soit 1,7 renvoi par figure. Le texte pointe l'image bien plus souvent qu'il ne la redit.",
-      "lang": "fr",
-      "excerpt_en": "MEASURED on 2026-08-08 on the internal corpus (272 JATS XML): 215/272 articles (79 %) carry at least one figure — 1,059 figures in total — and 138/272 (51 %) contain at least one reference of the form \"(Fig. N)\" in the body; 1,791 <xref ref-type=\"fig\"> references for 1,059 figures, i.e. 1.7 references per figure. The text points to the image far more often than it restates it.",
-      "organisation": "Loxyn SAS, Lyon",
-      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
-      "probe": "probes/2026-08/line-068.py"
-    }
-  ],
-  "specimens": {
-    "cases": [],
-    "counter_examples": []
-  },
-  "prevention": {
-    "cancellable_by_code": false
-  },
-  "repair": {
-    "reachable_by_deletion": "no",
-    "note": "deletion cannot restore this; derived from the damage class by the migration of 2026-09-09, not judged form by form and not measured — the bench can measure it",
-    "measured": {
-      "value": "no",
-      "reached": 0,
-      "injected": 423,
-      "note": "0 of 423 reached",
-      "source": "measured 2026-09-10 by pgrepair (SciPyWeightedILP) on the frozen EUR-Lex truth, three identical runs, journal sha256 in measures/reachability-by-damage-2026-09-10.json. Per damage class, not per form: two forms of the same damage and the same visibility get the same answer.",
-      "date": "2026-09-10"
-    }
-  },
-  "judgeable_by": [
-    "construction",
-    "curated",
-    "closed_world"
-  ],
-  "history": [
-    {
-      "date": "2026-08-09",
-      "event": "catalogue line 68 — GOLDEN (kept for the benchmark): irreducible or silent false",
-      "by": "Korela For Science"
-    },
-    {
-      "date": "2026-09-09",
-      "event": "migrated; classified damage=MISSING injection=IMAGE (judgment, unreviewed by a second reader)",
-      "by": "Fault Atlas migration"
-    },
-    {
-      "date": "2026-09-09",
-      "event": "internal tool paths removed from observation notes before publication; wording otherwise unchanged",
-      "by": "Fault Atlas"
-    },
-    {
-      "date": "2026-09-09",
-      "event": "exact probe attached to the 272-file observation: probes/2026-08/line-068.py, re-run 198/272 (excerpt figure differs, both kept)",
-      "by": "Fault Atlas maintainer"
-    },
-    {
-      "date": "2026-09-10",
-      "event": "second reader: validated — read in full with the record: a dated measurement, a named corpus, real forms",
-      "by": "Coralie Bagnol-Lebon"
-    },
-    {
-      "date": "2026-09-10",
-      "event": "era recorded: both — the worst case measured that day: a meta-analysis page renders 302 characters of text — two captions — for two (from the August verdicts, which the atlas had not carried)",
-      "by": "Fault Atlas maintainer"
-    }
-  ],
-  "probes": [
-    {
-      "file": "probes/2026-08/line-068.py",
-      "kind": "python",
-      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
-      "written": "2026-08-08",
-      "run": "python3 tools/run_probe.py probes/2026-08/line-068.py <dir with the 272 .xml>",
-      "result": {
-        "date": "2026-09-09",
-        "count": 198,
-        "of": 272,
-        "strata": {
-          "meta": 34,
-          "phys": 34,
-          "essai": 33,
-          "cas": 32,
-          "bio": 28,
-          "nonEN": 23,
-          "moderne": 14
-        },
-        "examples": [
-          [
-            "bio-PMC12583535.xml",
-            [
-              "41598_2025_22302_Fig1_HTML.jpg",
-              "41598_2025_22302_Fig2_HTML.jpg"
-            ]
-          ],
-          [
-            "bio-PMC12590050.xml",
-            [
-              "cureus-0017-00000093945-i01.jpg",
-              "cureus-0017-00000093945-i01.gif"
-            ]
-          ],
-          [
-            "bio-PMC12674831.xml",
-            [
-              "1806-9339-rbgo-47-e-rbgo200-gf01.jpg",
-              "1806-9339-rbgo-47-e-rbgo200-gf02.jpg"
-            ]
-          ],
-          [
-            "bio-PMC12857832.xml",
-            [
-              "LI-43-67-g001.jpg",
-              "LI-43-67-g002.jpg"
-            ]
-          ],
-          [
-            "bio-PMC12882215.xml",
-            [
-              "12889_2025_26137_Fig1_HTML.jpg",
-              "12889_2025_26137_Fig2_HTML.jpg"
-            ]
-          ],
-          [
-            "bio-PMC12909487.xml",
-            [
-              "fpubh-14-1770168-g001.jpg"
-            ]
-          ],
-          [
-            "bio-PMC12915353.xml",
-            [
-              "ijem-23-4-167232-i001.jpg"
-            ]
-          ],
-          [
-            "bio-PMC12927065.xml",
-            [
-              "gr1.jpg",
-              "gr1.gif"
-            ]
-          ],
-          [
-            "bio-PMC12927975.xml",
-            [
-              "PUH2-5-e70198-g001.jpg",
-              "PUH2-5-e70198-g002.jpg"
-            ]
-          ],
-          [
-            "bio-PMC12953170.xml",
-            [
-              "jaws-05-15899-g001.jpg",
-              "jaws-05-15899-g001.gif"
-            ]
-          ],
-          [
-            "bio-PMC12959687.xml",
-            [
-              "pone.0343166.g001.jpg",
-              "pone.0343166.g001.gif"
-            ]
-          ],
-          [
-            "bio-PMC13057049.xml",
-            [
-              "44197_2026_542_Fig1_HTML.jpg",
-              "44197_2026_542_Fig1_HTML.gif"
-            ]
-          ]
-        ],
-        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files",
-        "carriers_file": "probes/results/line-068.json"
-      },
-      "matches_excerpt": false,
-      "note": "The figure quoted in the excerpt was counted on 2026-08-08 by a finer, hand-run measurement whose code was not kept; this probe is the one that was kept, and its figure is the one that can be re-run. Both stand, dated."
-    }
-  ],
-  "observer_agreement": "2/2 — first reader (Loxyn, August/September classification) and second reader (Coralie Bagnol-Lebon, 2026-09-10)",
-  "era": {
-    "value": "both",
-    "measured": "2026-09-10",
-    "source": "VERDICT — the old against the modern, 2026-08-08: 45 PDFs of 1957-1987 against 15 PDFs of 2023-2026, 174 pages, 9 publishers. Its own stated limits: 13 of the 15 modern are biomedical, 100 % English, 100 % open access — a channel that excludes scans, truncated and subscription articles by construction.",
-    "note": "the worst case measured that day: a meta-analysis page renders 302 characters of text — two captions — for two images of 1947×1671 and 2598×2066 pixels; the 16 result lines of the forest plot are in the pixels",
-    "aggravated_by_the_modern": true
-  },
-  "failure_mode": {
-    "value": "MANQ",
-    "means": "a gap: the graph is incomplete where the reading did not reach, not wrong",
-    "source": "the internal catalogue of 2026-08-09 (korela.db, table parametre), line 68; it is not derived from the damage and varies inside a damage class"
-  },
-  "document_years": {
-    "corpus_id": "corpus-europe-pmc-jats-2023-2026",
-    "counts": {
-      "2025": 4,
-      "2026": 8
-    },
-    "carriers_dated": 12,
-    "source": "corpora/index/document-years-europe-pmc-272.json, read 2026-09-11 from each file's earliest pub-date"
+ "id": "form-068",
+ "version": 3,
+ "legacy_line": 68,
+ "name": "The fact is in the figure",
+ "name_fr": "Le fait est dans la figure",
+ "origin": {
+  "organisation": "Loxyn SAS, Lyon",
+  "campaign": "August 2026 — observation campaign (Korela For Science)",
+  "contact": "contact@loxyn.ai"
+ },
+ "damage": "MISSING",
+ "class": "IRREDUCIBLE",
+ "layer": "① pixel + ⑤ anchoring",
+ "injection": "IMAGE",
+ "legacy_severity": "G3",
+ "legacy_mechanism": "M7",
+ "status": "validated",
+ "seen": [
+  {
+   "corpus": "observation 2026-08 (272 Europe PMC JATS articles)",
+   "date": "2026-08-08",
+   "observer": "house observer (LLM agent), see report",
+   "excerpt": "MESURÉ le 08/08/2026 sur (internal corpus of 272 JATS articles) (272 XML JATS) : 215/272 articles (79 %) portent au moins une figure — 1 059 figures au total — et 138/272 (51 %) contiennent au moins un renvoi de la forme « (Fig. N) » dans le corps ; 1 791 renvois <xref ref-type=\"fig\"> pour 1 059 figures, soit 1,7 renvoi par figure. Le texte pointe l'image bien plus souvent qu'il ne la redit.",
+   "lang": "fr",
+   "excerpt_en": "MEASURED on 2026-08-08 on the internal corpus (272 JATS XML): 215/272 articles (79 %) carry at least one figure — 1,059 figures in total — and 138/272 (51 %) contain at least one reference of the form \"(Fig. N)\" in the body; 1,791 <xref ref-type=\"fig\"> references for 1,059 figures, i.e. 1.7 references per figure. The text points to the image far more often than it restates it.",
+   "organisation": "Loxyn SAS, Lyon",
+   "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+   "probe": "probes/2026-08/line-068.py"
   }
+ ],
+ "specimens": {
+  "cases": [],
+  "counter_examples": []
+ },
+ "prevention": {
+  "cancellable_by_code": false
+ },
+ "repair": {
+  "reachable_by_deletion": "no",
+  "note": "deletion cannot restore this; derived from the damage class by the migration of 2026-09-09, not judged form by form and not measured — the bench can measure it",
+  "measured": {
+   "value": "no",
+   "reached": 0,
+   "injected": 423,
+   "note": "0 of 423 reached",
+   "source": "measured 2026-09-10 by pgrepair (SciPyWeightedILP) on the frozen EUR-Lex truth, three identical runs, journal sha256 in measures/reachability-by-damage-2026-09-10.json. Per damage class, not per form: two forms of the same damage and the same visibility get the same answer.",
+   "date": "2026-09-10"
+  },
+  "obstacle": {
+   "value": "the operation",
+   "reason": "Restoring a gap means ADDING, and a deletion-only repair has no such gesture. Its solution is a set of elements to delete; there is no insertion anywhere in it. No weight and no information change that answer.",
+   "reason_fr": "Réparer un manque veut dire AJOUTER, et une réparation par suppression n'a pas ce geste. Sa solution est un ensemble d'éléments à retirer ; il n'y a d'insertion nulle part. Aucun poids et aucune information n'y changent quoi que ce soit.",
+   "source": "derived from what a deletion-only repair can express, read in the repairer's own code — its solution is a set of elements to delete and carries no insertion — together with the measurement of 2026-09-10. Per damage class, not per form.",
+   "date": "2026-09-13"
+  }
+ },
+ "judgeable_by": [
+  "construction",
+  "curated",
+  "closed_world"
+ ],
+ "history": [
+  {
+   "date": "2026-08-09",
+   "event": "catalogue line 68 — GOLDEN (kept for the benchmark): irreducible or silent false",
+   "by": "Korela For Science"
+  },
+  {
+   "date": "2026-09-09",
+   "event": "migrated; classified damage=MISSING injection=IMAGE (judgment, unreviewed by a second reader)",
+   "by": "Fault Atlas migration"
+  },
+  {
+   "date": "2026-09-09",
+   "event": "internal tool paths removed from observation notes before publication; wording otherwise unchanged",
+   "by": "Fault Atlas"
+  },
+  {
+   "date": "2026-09-09",
+   "event": "exact probe attached to the 272-file observation: probes/2026-08/line-068.py, re-run 198/272 (excerpt figure differs, both kept)",
+   "by": "Fault Atlas maintainer"
+  },
+  {
+   "date": "2026-09-10",
+   "event": "second reader: validated — read in full with the record: a dated measurement, a named corpus, real forms",
+   "by": "Coralie Bagnol-Lebon"
+  },
+  {
+   "date": "2026-09-10",
+   "event": "era recorded: both — the worst case measured that day: a meta-analysis page renders 302 characters of text — two captions — for two (from the August verdicts, which the atlas had not carried)",
+   "by": "Fault Atlas maintainer"
+  }
+ ],
+ "probes": [
+  {
+   "file": "probes/2026-08/line-068.py",
+   "kind": "python",
+   "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+   "written": "2026-08-08",
+   "run": "python3 tools/run_probe.py probes/2026-08/line-068.py <dir with the 272 .xml>",
+   "result": {
+    "date": "2026-09-09",
+    "count": 198,
+    "of": 272,
+    "strata": {
+     "meta": 34,
+     "phys": 34,
+     "essai": 33,
+     "cas": 32,
+     "bio": 28,
+     "nonEN": 23,
+     "moderne": 14
+    },
+    "examples": [
+     [
+      "bio-PMC12583535.xml",
+      [
+       "41598_2025_22302_Fig1_HTML.jpg",
+       "41598_2025_22302_Fig2_HTML.jpg"
+      ]
+     ],
+     [
+      "bio-PMC12590050.xml",
+      [
+       "cureus-0017-00000093945-i01.jpg",
+       "cureus-0017-00000093945-i01.gif"
+      ]
+     ],
+     [
+      "bio-PMC12674831.xml",
+      [
+       "1806-9339-rbgo-47-e-rbgo200-gf01.jpg",
+       "1806-9339-rbgo-47-e-rbgo200-gf02.jpg"
+      ]
+     ],
+     [
+      "bio-PMC12857832.xml",
+      [
+       "LI-43-67-g001.jpg",
+       "LI-43-67-g002.jpg"
+      ]
+     ],
+     [
+      "bio-PMC12882215.xml",
+      [
+       "12889_2025_26137_Fig1_HTML.jpg",
+       "12889_2025_26137_Fig2_HTML.jpg"
+      ]
+     ],
+     [
+      "bio-PMC12909487.xml",
+      [
+       "fpubh-14-1770168-g001.jpg"
+      ]
+     ],
+     [
+      "bio-PMC12915353.xml",
+      [
+       "ijem-23-4-167232-i001.jpg"
+      ]
+     ],
+     [
+      "bio-PMC12927065.xml",
+      [
+       "gr1.jpg",
+       "gr1.gif"
+      ]
+     ],
+     [
+      "bio-PMC12927975.xml",
+      [
+       "PUH2-5-e70198-g001.jpg",
+       "PUH2-5-e70198-g002.jpg"
+      ]
+     ],
+     [
+      "bio-PMC12953170.xml",
+      [
+       "jaws-05-15899-g001.jpg",
+       "jaws-05-15899-g001.gif"
+      ]
+     ],
+     [
+      "bio-PMC12959687.xml",
+      [
+       "pone.0343166.g001.jpg",
+       "pone.0343166.g001.gif"
+      ]
+     ],
+     [
+      "bio-PMC13057049.xml",
+      [
+       "44197_2026_542_Fig1_HTML.jpg",
+       "44197_2026_542_Fig1_HTML.gif"
+      ]
+     ]
+    ],
+    "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files",
+    "carriers_file": "probes/results/line-068.json"
+   },
+   "matches_excerpt": false,
+   "note": "The figure quoted in the excerpt was counted on 2026-08-08 by a finer, hand-run measurement whose code was not kept; this probe is the one that was kept, and its figure is the one that can be re-run. Both stand, dated."
+  }
+ ],
+ "observer_agreement": "2/2 — first reader (Loxyn, August/September classification) and second reader (Coralie Bagnol-Lebon, 2026-09-10)",
+ "era": {
+  "value": "both",
+  "measured": "2026-09-10",
+  "source": "VERDICT — the old against the modern, 2026-08-08: 45 PDFs of 1957-1987 against 15 PDFs of 2023-2026, 174 pages, 9 publishers. Its own stated limits: 13 of the 15 modern are biomedical, 100 % English, 100 % open access — a channel that excludes scans, truncated and subscription articles by construction.",
+  "note": "the worst case measured that day: a meta-analysis page renders 302 characters of text — two captions — for two images of 1947×1671 and 2598×2066 pixels; the 16 result lines of the forest plot are in the pixels",
+  "aggravated_by_the_modern": true
+ },
+ "failure_mode": {
+  "value": "MANQ",
+  "means": "a gap: the graph is incomplete where the reading did not reach, not wrong",
+  "source": "the internal catalogue of 2026-08-09 (korela.db, table parametre), line 68; it is not derived from the damage and varies inside a damage class"
+ },
+ "document_years": {
+  "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+  "counts": {
+   "2025": 4,
+   "2026": 8
+  },
+  "carriers_dated": 12,
+  "source": "corpora/index/document-years-europe-pmc-272.json, read 2026-09-11 from each file's earliest pub-date"
+ }
 }

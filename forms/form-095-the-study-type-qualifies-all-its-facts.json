@@ -1,140 +1,147 @@
 {
-  "id": "form-095",
-  "version": 1,
-  "legacy_line": 95,
-  "name": "The study type qualifies all its facts",
-  "name_fr": "Le type d'étude qualifie tous ses faits",
-  "origin": {
-    "organisation": "Loxyn SAS, Lyon",
-    "campaign": "August 2026 — observation campaign (Korela For Science)",
-    "contact": "contact@loxyn.ai"
+ "id": "form-095",
+ "version": 1,
+ "legacy_line": 95,
+ "name": "The study type qualifies all its facts",
+ "name_fr": "Le type d'étude qualifie tous ses faits",
+ "origin": {
+  "organisation": "Loxyn SAS, Lyon",
+  "campaign": "August 2026 — observation campaign (Korela For Science)",
+  "contact": "contact@loxyn.ai"
+ },
+ "damage": "WRONG_LABEL",
+ "class": "IRREDUCIBLE",
+ "layer": "⑦ schema",
+ "injection": "ALTER",
+ "legacy_severity": "G2",
+ "legacy_mechanism": "M12",
+ "status": "migrated_unreviewed",
+ "seen": [
+  {
+   "corpus": "observation 2026-08 (272 Europe PMC JATS articles)",
+   "date": "2026-08-08",
+   "observer": "house observer (LLM agent), see report",
+   "excerpt": "MESURÉ le 08/08/2026 sur les 272 articles XML JATS de (internal corpus of 272 JATS articles) : 90/272 résumés (33 %) nomment explicitement leur dispositif (randomized, double-blind, placebo-controlled, retrospective, cohort, case-control, cross-sectional, meta-analysis, in vitro/in vivo) — une seule ligne qui qualifie tout l'article. Observé aussi le 08/08/2026 sur Gomersall & Stuart, J. Neurol. Neurosurg. Psychiatry 1973 : « a double-blind controlled clinical trial of crossover design was conducted in 26 volunteers ».",
+   "lang": "fr",
+   "excerpt_en": "MEASURED on 2026-08-08 on the 272 JATS XML articles of the internal corpus: 90/272 abstracts (33 %) explicitly name their design (randomized, double-blind, placebo-controlled, retrospective, cohort, case-control, cross-sectional, meta-analysis, in vitro/in vivo) — a single line that qualifies the whole article. Also observed on 2026-08-08 on Gomersall & Stuart, J. Neurol. Neurosurg. Psychiatry 1973: \"a double-blind controlled clinical trial of crossover design was conducted in 26 volunteers\".",
+   "organisation": "Loxyn SAS, Lyon",
+   "corpus_id": "corpus-europe-pmc-jats-2023-2026"
   },
-  "damage": "WRONG_LABEL",
-  "class": "IRREDUCIBLE",
-  "layer": "⑦ schema",
-  "injection": "ALTER",
-  "legacy_severity": "G2",
-  "legacy_mechanism": "M12",
-  "status": "migrated_unreviewed",
-  "seen": [
-    {
-      "corpus": "observation 2026-08 (272 Europe PMC JATS articles)",
-      "date": "2026-08-08",
-      "observer": "house observer (LLM agent), see report",
-      "excerpt": "MESURÉ le 08/08/2026 sur les 272 articles XML JATS de (internal corpus of 272 JATS articles) : 90/272 résumés (33 %) nomment explicitement leur dispositif (randomized, double-blind, placebo-controlled, retrospective, cohort, case-control, cross-sectional, meta-analysis, in vitro/in vivo) — une seule ligne qui qualifie tout l'article. Observé aussi le 08/08/2026 sur Gomersall & Stuart, J. Neurol. Neurosurg. Psychiatry 1973 : « a double-blind controlled clinical trial of crossover design was conducted in 26 volunteers ».",
-      "lang": "fr",
-      "excerpt_en": "MEASURED on 2026-08-08 on the 272 JATS XML articles of the internal corpus: 90/272 abstracts (33 %) explicitly name their design (randomized, double-blind, placebo-controlled, retrospective, cohort, case-control, cross-sectional, meta-analysis, in vitro/in vivo) — a single line that qualifies the whole article. Also observed on 2026-08-08 on Gomersall & Stuart, J. Neurol. Neurosurg. Psychiatry 1973: \"a double-blind controlled clinical trial of crossover design was conducted in 26 volunteers\".",
-      "organisation": "Loxyn SAS, Lyon",
-      "corpus_id": "corpus-europe-pmc-jats-2023-2026"
-    },
-    {
-      "corpus": "Europe PMC JATS 2023-2026 (272 articles, the declared corpus)",
-      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
-      "date": "2026-09-10",
-      "observer": "Fault Atlas maintainer (Loxyn), by probe, no model",
-      "excerpt": "MEASURED on 2026-09-10 by probes/2026-09-recovered/line-095.py, whose definition is in its docstring: 84/272 articles carry it, where the observation of 2026-08-08 counted 90 under a definition we could not recover. First carrier: bio-PMC12583535.xml — design named in the abstract: ['meta-analysis', 'systematic review']",
-      "lang": "en",
-      "probe": "probes/2026-09-recovered/line-095.py"
-    }
-  ],
-  "specimens": {
-    "cases": [],
-    "counter_examples": []
-  },
-  "prevention": {
-    "cancellable_by_code": false
-  },
-  "repair": {
-    "reachable_by_deletion": "partial",
-    "note": "an extra label can be deleted, a missing one cannot be added",
-    "measured": {
-      "value": "yes_at_a_cost",
-      "reached": 3932,
-      "injected": 3932,
-      "note": "3,932 of 3,932 reached, and 12,591 true facts were lost with them: the repair deletes the nodes, not their labels",
-      "source": "measured 2026-09-10 by pgrepair (SciPyWeightedILP) on the frozen EUR-Lex truth, three identical runs, journal sha256 in measures/reachability-by-damage-2026-09-10.json. Per damage class, not per form: two forms of the same damage and the same visibility get the same answer.",
-      "date": "2026-09-10"
-    }
-  },
-  "judgeable_by": [
-    "construction",
-    "curated"
-  ],
-  "history": [
-    {
-      "date": "2026-08-09",
-      "event": "catalogue line 95 — GOLDEN (kept for the benchmark): irreducible or silent false",
-      "by": "Korela For Science"
-    },
-    {
-      "date": "2026-09-09",
-      "event": "migrated; classified damage=WRONG_LABEL injection=ALTER (judgment, unreviewed by a second reader)",
-      "by": "Fault Atlas migration"
-    },
-    {
-      "date": "2026-09-09",
-      "event": "internal tool paths removed from observation notes before publication; wording otherwise unchanged",
-      "by": "Fault Atlas"
-    }
-  ],
-  "failure_mode": {
-    "value": "FAUX",
-    "means": "a false fact: a value, a type or a link the source never asserted",
-    "source": "the internal catalogue of 2026-08-09 (korela.db, table parametre), line 95; it is not derived from the damage and varies inside a damage class"
-  },
-  "probes": [
-    {
-      "file": "probes/2026-09-recovered/line-095.py",
-      "kind": "python",
-      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
-      "written": "2026-09-10",
-      "run": "python3 tools/run_probe.py probes/2026-09-recovered/line-095.py <dir with the 272 .xml>",
-      "result": {
-        "date": "2026-09-10",
-        "count": 84,
-        "of": 272,
-        "strata": {
-          "essai": 29,
-          "meta": 27,
-          "bio": 22,
-          "nonEN": 3,
-          "moderne": 2,
-          "cas": 1
-        },
-        "examples": [
-          [
-            "bio-PMC12583535.xml",
-            [
-              "design named in the abstract: ['meta-analysis', 'systematic review']"
-            ]
-          ],
-          [
-            "bio-PMC12590050.xml",
-            [
-              "design named in the abstract: ['cross-sectional']"
-            ]
-          ],
-          [
-            "bio-PMC12857832.xml",
-            [
-              "design named in the abstract: ['meta-analysis', 'systematic review']"
-            ]
-          ]
-        ],
-        "by": "Fault Atlas maintainer (Loxyn), on the declared corpus",
-        "carriers_file": "probes/results/form-095-the-study-type-qualifies-all-its-facts.json"
-      },
-      "matches_excerpt": true,
-      "note": "reproduces the figure of the September reading it is attached to, 84/272. It does NOT reproduce the August figure of 90, whose definition we could not recover; that observation is left exactly as it stands, above, with no example under it."
-    }
-  ],
-  "document_years": {
-    "corpus_id": "corpus-europe-pmc-jats-2023-2026",
-    "counts": {
-      "2025": 2,
-      "2026": 1
-    },
-    "carriers_dated": 3,
-    "source": "corpora/index/document-years-europe-pmc-272.json, read 2026-09-11 from each file's earliest pub-date"
+  {
+   "corpus": "Europe PMC JATS 2023-2026 (272 articles, the declared corpus)",
+   "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+   "date": "2026-09-10",
+   "observer": "Fault Atlas maintainer (Loxyn), by probe, no model",
+   "excerpt": "MEASURED on 2026-09-10 by probes/2026-09-recovered/line-095.py, whose definition is in its docstring: 84/272 articles carry it, where the observation of 2026-08-08 counted 90 under a definition we could not recover. First carrier: bio-PMC12583535.xml — design named in the abstract: ['meta-analysis', 'systematic review']",
+   "lang": "en",
+   "probe": "probes/2026-09-recovered/line-095.py"
   }
+ ],
+ "specimens": {
+  "cases": [],
+  "counter_examples": []
+ },
+ "prevention": {
+  "cancellable_by_code": false
+ },
+ "repair": {
+  "reachable_by_deletion": "partial",
+  "note": "an extra label can be deleted, a missing one cannot be added",
+  "measured": {
+   "value": "yes_at_a_cost",
+   "reached": 3932,
+   "injected": 3932,
+   "note": "3,932 of 3,932 reached, and 12,591 true facts were lost with them: the repair deletes the nodes, not their labels",
+   "source": "measured 2026-09-10 by pgrepair (SciPyWeightedILP) on the frozen EUR-Lex truth, three identical runs, journal sha256 in measures/reachability-by-damage-2026-09-10.json. Per damage class, not per form: two forms of the same damage and the same visibility get the same answer.",
+   "date": "2026-09-10"
+  },
+  "obstacle": {
+   "value": "none",
+   "reason": "Reached in full, and at a cost: the repair deletes the nodes rather than their labels. The information that would put the label right is in the node itself — the identifier says the type — and one statement of the graph's own query language sets it back with nothing destroyed.",
+   "reason_fr": "Atteinte en entier, et à un prix : la réparation supprime les nœuds plutôt que leurs étiquettes. L'information qui remettrait l'étiquette droite est dans le nœud lui-même — l'identifiant dit le type — et une instruction du langage de requête du graphe la repose sans rien détruire.",
+   "source": "derived from what a deletion-only repair can express, read in the repairer's own code — its solution is a set of elements to delete and carries no insertion — together with the measurement of 2026-09-10. Per damage class, not per form.",
+   "date": "2026-09-13"
+  }
+ },
+ "judgeable_by": [
+  "construction",
+  "curated"
+ ],
+ "history": [
+  {
+   "date": "2026-08-09",
+   "event": "catalogue line 95 — GOLDEN (kept for the benchmark): irreducible or silent false",
+   "by": "Korela For Science"
+  },
+  {
+   "date": "2026-09-09",
+   "event": "migrated; classified damage=WRONG_LABEL injection=ALTER (judgment, unreviewed by a second reader)",
+   "by": "Fault Atlas migration"
+  },
+  {
+   "date": "2026-09-09",
+   "event": "internal tool paths removed from observation notes before publication; wording otherwise unchanged",
+   "by": "Fault Atlas"
+  }
+ ],
+ "failure_mode": {
+  "value": "FAUX",
+  "means": "a false fact: a value, a type or a link the source never asserted",
+  "source": "the internal catalogue of 2026-08-09 (korela.db, table parametre), line 95; it is not derived from the damage and varies inside a damage class"
+ },
+ "probes": [
+  {
+   "file": "probes/2026-09-recovered/line-095.py",
+   "kind": "python",
+   "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+   "written": "2026-09-10",
+   "run": "python3 tools/run_probe.py probes/2026-09-recovered/line-095.py <dir with the 272 .xml>",
+   "result": {
+    "date": "2026-09-10",
+    "count": 84,
+    "of": 272,
+    "strata": {
+     "essai": 29,
+     "meta": 27,
+     "bio": 22,
+     "nonEN": 3,
+     "moderne": 2,
+     "cas": 1
+    },
+    "examples": [
+     [
+      "bio-PMC12583535.xml",
+      [
+       "design named in the abstract: ['meta-analysis', 'systematic review']"
+      ]
+     ],
+     [
+      "bio-PMC12590050.xml",
+      [
+       "design named in the abstract: ['cross-sectional']"
+      ]
+     ],
+     [
+      "bio-PMC12857832.xml",
+      [
+       "design named in the abstract: ['meta-analysis', 'systematic review']"
+      ]
+     ]
+    ],
+    "by": "Fault Atlas maintainer (Loxyn), on the declared corpus",
+    "carriers_file": "probes/results/form-095-the-study-type-qualifies-all-its-facts.json"
+   },
+   "matches_excerpt": true,
+   "note": "reproduces the figure of the September reading it is attached to, 84/272. It does NOT reproduce the August figure of 90, whose definition we could not recover; that observation is left exactly as it stands, above, with no example under it."
+  }
+ ],
+ "document_years": {
+  "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+  "counts": {
+   "2025": 2,
+   "2026": 1
+  },
+  "carriers_dated": 3,
+  "source": "corpora/index/document-years-europe-pmc-272.json, read 2026-09-11 from each file's earliest pub-date"
+ }
 }

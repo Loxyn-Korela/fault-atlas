@@ -1,224 +1,231 @@
 {
-  "id": "form-085",
-  "version": 2,
-  "legacy_line": 85,
-  "name": "Non-standard decimal separator",
-  "name_fr": "Séparateur décimal non standard",
-  "origin": {
-    "organisation": "Loxyn SAS, Lyon",
-    "campaign": "August 2026 — observation campaign (Korela For Science)",
-    "contact": "contact@loxyn.ai"
+ "id": "form-085",
+ "version": 2,
+ "legacy_line": 85,
+ "name": "Non-standard decimal separator",
+ "name_fr": "Séparateur décimal non standard",
+ "origin": {
+  "organisation": "Loxyn SAS, Lyon",
+  "campaign": "August 2026 — observation campaign (Korela For Science)",
+  "contact": "contact@loxyn.ai"
+ },
+ "damage": "WRONG_VALUE",
+ "class": "IRREDUCIBLE",
+ "layer": "② reading",
+ "injection": "ALTER",
+ "legacy_severity": "G2",
+ "legacy_mechanism": "M3",
+ "status": "migrated_unreviewed",
+ "seen": [
+  {
+   "corpus": "observation 2026-08 (Europe PMC JATS 2023-2026 and PubMed abstracts)",
+   "date": "2026-08-08",
+   "observer": "house observer (LLM agent), see report",
+   "excerpt": "MESURÉ le 08/08/2026 : les DEUX conventions coexistent dans 16 articles sur 34 (47 %) d'un corpus Europe PMC en accès libre 2024-2026. Formes réelles relevées : « 2,8 » et « 1,3 » côtoyant des décimaux à point dans le même texte. Confirmé par deux observations indépendantes du même jour : un tableau 2026 mêlant les deux, et un article 2023 écrivant « 10,6 % » en résumé français et « 10.6 % » en résumé anglais — MÊME DOCUMENT.",
+   "lang": "fr",
+   "excerpt_en": "MEASURED on 2026-08-08: BOTH conventions coexist in 16 articles out of 34 (47 %) of an open-access Europe PMC corpus 2024-2026. Real forms recorded: \"2,8\" and \"1,3\" next to point-decimals in the same text. Confirmed by two independent observations the same day: a 2026 table mixing both, and a 2023 article writing \"10,6 %\" in the French abstract and \"10.6 %\" in the English abstract — SAME DOCUMENT.",
+   "organisation": "Loxyn SAS, Lyon"
   },
-  "damage": "WRONG_VALUE",
-  "class": "IRREDUCIBLE",
-  "layer": "② reading",
-  "injection": "ALTER",
-  "legacy_severity": "G2",
-  "legacy_mechanism": "M3",
-  "status": "migrated_unreviewed",
-  "seen": [
-    {
-      "corpus": "observation 2026-08 (Europe PMC JATS 2023-2026 and PubMed abstracts)",
-      "date": "2026-08-08",
-      "observer": "house observer (LLM agent), see report",
-      "excerpt": "MESURÉ le 08/08/2026 : les DEUX conventions coexistent dans 16 articles sur 34 (47 %) d'un corpus Europe PMC en accès libre 2024-2026. Formes réelles relevées : « 2,8 » et « 1,3 » côtoyant des décimaux à point dans le même texte. Confirmé par deux observations indépendantes du même jour : un tableau 2026 mêlant les deux, et un article 2023 écrivant « 10,6 % » en résumé français et « 10.6 % » en résumé anglais — MÊME DOCUMENT.",
-      "lang": "fr",
-      "excerpt_en": "MEASURED on 2026-08-08: BOTH conventions coexist in 16 articles out of 34 (47 %) of an open-access Europe PMC corpus 2024-2026. Real forms recorded: \"2,8\" and \"1,3\" next to point-decimals in the same text. Confirmed by two independent observations the same day: a 2026 table mixing both, and a 2023 article writing \"10,6 %\" in the French abstract and \"10.6 %\" in the English abstract — SAME DOCUMENT.",
-      "organisation": "Loxyn SAS, Lyon"
-    },
-    {
-      "corpus": "observation 2026-08 (272 Europe PMC JATS articles)",
-      "date": "2026-09-09",
-      "observer": "house probe (regex, no model), written 2026-08-08, re-run by the Fault Atlas maintainer",
-      "organisation": "Loxyn SAS, Lyon",
-      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
-      "lang": "en",
-      "probe": "probes/2026-08/line-085.py",
-      "excerpt": "Probe re-run on the 272 JATS files: 54/272 carriers (nonEN 28, phys 10, moderne 6, bio 4, meta 3, essai 2, cas 1). Examples — bio-PMC12674831.xml: virgule: ['11,5', '14,1', '22,7'] | point: ['4.0', '1.1', '1.1'] · bio-PMC12915353.xml: virgule: ['20,0', '44,1', '87,1'] | point: ['4.0', '4.0', '4.0'] · bio-PMC12953170.xml: virgule: ['34,9'] | point: ['63.5', '3.3', '63.5']"
-    }
-  ],
-  "specimens": {
-    "cases": [],
-    "counter_examples": []
-  },
-  "prevention": {
-    "cancellable_by_code": false
-  },
-  "repair": {
-    "reachable_by_deletion": "no",
-    "note": "deletion cannot restore this; derived from the damage class by the migration of 2026-09-09, not judged form by form and not measured — the bench can measure it",
-    "measured": {
-      "value": "no",
-      "reached": 0,
-      "injected": 2613,
-      "note": "0 of 2,613 reached",
-      "source": "measured 2026-09-10 by pgrepair (SciPyWeightedILP) on the frozen EUR-Lex truth, three identical runs, journal sha256 in measures/reachability-by-damage-2026-09-10.json. Per damage class, not per form: two forms of the same damage and the same visibility get the same answer.",
-      "date": "2026-09-10"
-    }
-  },
-  "judgeable_by": [
-    "construction",
-    "registry",
-    "dated_future",
-    "closed_world"
-  ],
-  "history": [
-    {
-      "date": "2026-08-08",
-      "event": "the internal catalogue records a house filter with 5 cases and 3 counter-example(s); not published in this record",
-      "by": "Korela For Science"
-    },
-    {
-      "date": "2026-08-09",
-      "event": "catalogue line 85 — DEFEATED (cancelled by code): filter written and green on the bench",
-      "by": "Korela For Science"
-    },
-    {
-      "date": "2026-09-09",
-      "event": "migrated; classified damage=WRONG_VALUE injection=ALTER (judgment, unreviewed by a second reader)",
-      "by": "Fault Atlas migration"
-    },
-    {
-      "date": "2026-09-09",
-      "event": "second observation added from the exact probe on the 272 files: probes/2026-08/line-085.py, 54/272",
-      "by": "Fault Atlas maintainer"
-    },
-    {
-      "date": "2026-09-10",
-      "event": "era recorded: both — declared DEAD on the 15 modern PDFs, then REFUTED twice the same day, independently: a 2023 West African journ (from the August verdicts, which the atlas had not carried)",
-      "by": "Fault Atlas maintainer"
-    }
-  ],
-  "probes": [
-    {
-      "file": "probes/2026-08/line-085.py",
-      "kind": "python",
-      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
-      "written": "2026-08-08",
-      "run": "python3 tools/run_probe.py probes/2026-08/line-085.py <dir with the 272 .xml>",
-      "result": {
-        "date": "2026-09-09",
-        "count": 54,
-        "of": 272,
-        "strata": {
-          "nonEN": 28,
-          "phys": 10,
-          "moderne": 6,
-          "bio": 4,
-          "meta": 3,
-          "essai": 2,
-          "cas": 1
-        },
-        "examples": [
-          [
-            "bio-PMC12674831.xml",
-            [
-              "virgule: ['11,5', '14,1', '22,7']",
-              "point: ['4.0', '1.1', '1.1']"
-            ]
-          ],
-          [
-            "bio-PMC12915353.xml",
-            [
-              "virgule: ['20,0', '44,1', '87,1']",
-              "point: ['4.0', '4.0', '4.0']"
-            ]
-          ],
-          [
-            "bio-PMC12953170.xml",
-            [
-              "virgule: ['34,9']",
-              "point: ['63.5', '3.3', '63.5']"
-            ]
-          ],
-          [
-            "bio-PMC13181205.xml",
-            [
-              "virgule: ['4,7', '4,7', '5,8']",
-              "point: ['4.0', '4.0', '1.5']"
-            ]
-          ],
-          [
-            "cas-PMC13294704.xml",
-            [
-              "virgule: ['1,2']",
-              "point: ['4.0', '16.7', '16.7']"
-            ]
-          ],
-          [
-            "essai-PMC13282136.xml",
-            [
-              "virgule: ['4,1', '4,1', '4,1']",
-              "point: ['4.0', '11.0', '0.7']"
-            ]
-          ],
-          [
-            "essai-PMC13291922.xml",
-            [
-              "virgule: ['2,1', '3,1', '2,1']",
-              "point: ['4.0', '59.2', '7.9']"
-            ]
-          ],
-          [
-            "meta-PMC13229315.xml",
-            [
-              "virgule: ['76,8', '85,2', '87,0']",
-              "point: ['5.2', '9.4', '50.7']"
-            ]
-          ],
-          [
-            "meta-PMC13286481.xml",
-            [
-              "virgule: ['1,4']",
-              "point: ['4.0', '4.0', '2.1']"
-            ]
-          ],
-          [
-            "meta-PMC13288533.xml",
-            [
-              "virgule: ['157,1', '104,1', '169,2']",
-              "point: ['4.0', '94.6', '0.1']"
-            ]
-          ],
-          [
-            "moderne-PMC13262411.xml",
-            [
-              "virgule: ['2,8', '1,3']",
-              "point: ['3.0', '2.1', '42.5']"
-            ]
-          ],
-          [
-            "moderne-PMC13267778.xml",
-            [
-              "virgule: ['1,2', '4,5', '1,4']",
-              "point: ['3.0', '12.5', '0.2']"
-            ]
-          ]
-        ],
-        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files",
-        "carriers_file": "probes/results/line-085.json"
-      },
-      "matches_excerpt": true
-    }
-  ],
-  "era": {
-    "value": "both",
-    "measured": "2026-09-10",
-    "source": "VERDICT — the old against the modern, 2026-08-08: 45 PDFs of 1957-1987 against 15 PDFs of 2023-2026, 174 pages, 9 publishers. Its own stated limits: 13 of the 15 modern are biomedical, 100 % English, 100 % open access — a channel that excludes scans, truncated and subscription articles by construction.",
-    "note": "declared DEAD on the 15 modern PDFs, then REFUTED twice the same day, independently: a 2023 West African journal carries « 10,6 % » in its French abstract and « 10.6 % » in its English summary, the same figure with two separators inside one document; and a 2026 systematic review carries -1,97 on one line and -1.97 on the next, in the same table. Lesson kept: fifteen modern PDFs were not enough to declare a convention dead."
-  },
-  "failure_mode": {
-    "value": "FAUX",
-    "means": "a false fact: a value, a type or a link the source never asserted",
-    "source": "the internal catalogue of 2026-08-09 (korela.db, table parametre), line 85; it is not derived from the damage and varies inside a damage class"
-  },
-  "document_years": {
-    "corpus_id": "corpus-europe-pmc-jats-2023-2026",
-    "counts": {
-      "2025": 2,
-      "2026": 10
-    },
-    "carriers_dated": 12,
-    "source": "corpora/index/document-years-europe-pmc-272.json, read 2026-09-11 from each file's earliest pub-date"
+  {
+   "corpus": "observation 2026-08 (272 Europe PMC JATS articles)",
+   "date": "2026-09-09",
+   "observer": "house probe (regex, no model), written 2026-08-08, re-run by the Fault Atlas maintainer",
+   "organisation": "Loxyn SAS, Lyon",
+   "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+   "lang": "en",
+   "probe": "probes/2026-08/line-085.py",
+   "excerpt": "Probe re-run on the 272 JATS files: 54/272 carriers (nonEN 28, phys 10, moderne 6, bio 4, meta 3, essai 2, cas 1). Examples — bio-PMC12674831.xml: virgule: ['11,5', '14,1', '22,7'] | point: ['4.0', '1.1', '1.1'] · bio-PMC12915353.xml: virgule: ['20,0', '44,1', '87,1'] | point: ['4.0', '4.0', '4.0'] · bio-PMC12953170.xml: virgule: ['34,9'] | point: ['63.5', '3.3', '63.5']"
   }
+ ],
+ "specimens": {
+  "cases": [],
+  "counter_examples": []
+ },
+ "prevention": {
+  "cancellable_by_code": false
+ },
+ "repair": {
+  "reachable_by_deletion": "no",
+  "note": "deletion cannot restore this; derived from the damage class by the migration of 2026-09-09, not judged form by form and not measured — the bench can measure it",
+  "measured": {
+   "value": "no",
+   "reached": 0,
+   "injected": 2613,
+   "note": "0 of 2,613 reached",
+   "source": "measured 2026-09-10 by pgrepair (SciPyWeightedILP) on the frozen EUR-Lex truth, three identical runs, journal sha256 in measures/reachability-by-damage-2026-09-10.json. Per damage class, not per form: two forms of the same damage and the same visibility get the same answer.",
+   "date": "2026-09-10"
+  },
+  "obstacle": {
+   "value": "the operation",
+   "reason": "Deleting a wrong value removes the fact without restoring the right one. The gesture needed is to SET, and deletion cannot express it.",
+   "reason_fr": "Supprimer une valeur fausse retire le fait sans rétablir le bon. Le geste qu'il faudrait est d'ÉCRIRE, et la suppression ne sait pas l'exprimer.",
+   "source": "derived from what a deletion-only repair can express, read in the repairer's own code — its solution is a set of elements to delete and carries no insertion — together with the measurement of 2026-09-10. Per damage class, not per form.",
+   "date": "2026-09-13"
+  }
+ },
+ "judgeable_by": [
+  "construction",
+  "registry",
+  "dated_future",
+  "closed_world"
+ ],
+ "history": [
+  {
+   "date": "2026-08-08",
+   "event": "the internal catalogue records a house filter with 5 cases and 3 counter-example(s); not published in this record",
+   "by": "Korela For Science"
+  },
+  {
+   "date": "2026-08-09",
+   "event": "catalogue line 85 — DEFEATED (cancelled by code): filter written and green on the bench",
+   "by": "Korela For Science"
+  },
+  {
+   "date": "2026-09-09",
+   "event": "migrated; classified damage=WRONG_VALUE injection=ALTER (judgment, unreviewed by a second reader)",
+   "by": "Fault Atlas migration"
+  },
+  {
+   "date": "2026-09-09",
+   "event": "second observation added from the exact probe on the 272 files: probes/2026-08/line-085.py, 54/272",
+   "by": "Fault Atlas maintainer"
+  },
+  {
+   "date": "2026-09-10",
+   "event": "era recorded: both — declared DEAD on the 15 modern PDFs, then REFUTED twice the same day, independently: a 2023 West African journ (from the August verdicts, which the atlas had not carried)",
+   "by": "Fault Atlas maintainer"
+  }
+ ],
+ "probes": [
+  {
+   "file": "probes/2026-08/line-085.py",
+   "kind": "python",
+   "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+   "written": "2026-08-08",
+   "run": "python3 tools/run_probe.py probes/2026-08/line-085.py <dir with the 272 .xml>",
+   "result": {
+    "date": "2026-09-09",
+    "count": 54,
+    "of": 272,
+    "strata": {
+     "nonEN": 28,
+     "phys": 10,
+     "moderne": 6,
+     "bio": 4,
+     "meta": 3,
+     "essai": 2,
+     "cas": 1
+    },
+    "examples": [
+     [
+      "bio-PMC12674831.xml",
+      [
+       "virgule: ['11,5', '14,1', '22,7']",
+       "point: ['4.0', '1.1', '1.1']"
+      ]
+     ],
+     [
+      "bio-PMC12915353.xml",
+      [
+       "virgule: ['20,0', '44,1', '87,1']",
+       "point: ['4.0', '4.0', '4.0']"
+      ]
+     ],
+     [
+      "bio-PMC12953170.xml",
+      [
+       "virgule: ['34,9']",
+       "point: ['63.5', '3.3', '63.5']"
+      ]
+     ],
+     [
+      "bio-PMC13181205.xml",
+      [
+       "virgule: ['4,7', '4,7', '5,8']",
+       "point: ['4.0', '4.0', '1.5']"
+      ]
+     ],
+     [
+      "cas-PMC13294704.xml",
+      [
+       "virgule: ['1,2']",
+       "point: ['4.0', '16.7', '16.7']"
+      ]
+     ],
+     [
+      "essai-PMC13282136.xml",
+      [
+       "virgule: ['4,1', '4,1', '4,1']",
+       "point: ['4.0', '11.0', '0.7']"
+      ]
+     ],
+     [
+      "essai-PMC13291922.xml",
+      [
+       "virgule: ['2,1', '3,1', '2,1']",
+       "point: ['4.0', '59.2', '7.9']"
+      ]
+     ],
+     [
+      "meta-PMC13229315.xml",
+      [
+       "virgule: ['76,8', '85,2', '87,0']",
+       "point: ['5.2', '9.4', '50.7']"
+      ]
+     ],
+     [
+      "meta-PMC13286481.xml",
+      [
+       "virgule: ['1,4']",
+       "point: ['4.0', '4.0', '2.1']"
+      ]
+     ],
+     [
+      "meta-PMC13288533.xml",
+      [
+       "virgule: ['157,1', '104,1', '169,2']",
+       "point: ['4.0', '94.6', '0.1']"
+      ]
+     ],
+     [
+      "moderne-PMC13262411.xml",
+      [
+       "virgule: ['2,8', '1,3']",
+       "point: ['3.0', '2.1', '42.5']"
+      ]
+     ],
+     [
+      "moderne-PMC13267778.xml",
+      [
+       "virgule: ['1,2', '4,5', '1,4']",
+       "point: ['3.0', '12.5', '0.2']"
+      ]
+     ]
+    ],
+    "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files",
+    "carriers_file": "probes/results/line-085.json"
+   },
+   "matches_excerpt": true
+  }
+ ],
+ "era": {
+  "value": "both",
+  "measured": "2026-09-10",
+  "source": "VERDICT — the old against the modern, 2026-08-08: 45 PDFs of 1957-1987 against 15 PDFs of 2023-2026, 174 pages, 9 publishers. Its own stated limits: 13 of the 15 modern are biomedical, 100 % English, 100 % open access — a channel that excludes scans, truncated and subscription articles by construction.",
+  "note": "declared DEAD on the 15 modern PDFs, then REFUTED twice the same day, independently: a 2023 West African journal carries « 10,6 % » in its French abstract and « 10.6 % » in its English summary, the same figure with two separators inside one document; and a 2026 systematic review carries -1,97 on one line and -1.97 on the next, in the same table. Lesson kept: fifteen modern PDFs were not enough to declare a convention dead."
+ },
+ "failure_mode": {
+  "value": "FAUX",
+  "means": "a false fact: a value, a type or a link the source never asserted",
+  "source": "the internal catalogue of 2026-08-09 (korela.db, table parametre), line 85; it is not derived from the damage and varies inside a damage class"
+ },
+ "document_years": {
+  "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+  "counts": {
+   "2025": 2,
+   "2026": 10
+  },
+  "carriers_dated": 12,
+  "source": "corpora/index/document-years-europe-pmc-272.json, read 2026-09-11 from each file's earliest pub-date"
+ }
 }

@@ -1,86 +1,93 @@
 {
-  "id": "form-143",
-  "version": 2,
-  "name": "Gene annotation cliff after 2023",
-  "origin": {
-    "organisation": "Loxyn SAS, Lyon",
-    "campaign": "September 2026 — PubMed substrate and other corpora (Voûte)",
-    "contact": "contact@loxyn.ai"
+ "id": "form-143",
+ "version": 2,
+ "name": "Gene annotation cliff after 2023",
+ "origin": {
+  "organisation": "Loxyn SAS, Lyon",
+  "campaign": "September 2026 — PubMed substrate and other corpora (Voûte)",
+  "contact": "contact@loxyn.ai"
+ },
+ "damage": "MISSING",
+ "class": "REFUSABLE",
+ "layer": "⑨ structure",
+ "injection": "DELETE",
+ "status": "proposed",
+ "seen": [
+  {
+   "corpus": "PubTator3 frozen 2026-08-18 18:08 (bioconcepts2pubtator3.gz, sha256 856353fb…) joined to baseline dates",
+   "document": "all genes; example TNFSF15 (9966)",
+   "date": "2026-09-08",
+   "observer": "Claude Voûte (LLM agent), session 8d9c5098, from the Substrat measurement files",
+   "excerpt": "08-09-2026 : « liens gène-notice par an : 2022 : 7 420 k · 2023 : 6 369 k · 2024 : 1 273 k · 2025 : 1 272 k » ; « gènes cités par an : 2023 : 741 k · 2024 : 79 k » ; alors que le monde annoté toutes entités reste à « 2024 : 1 438 k · 2025 : 1 649 k » notices. TNFSF15 : « 2022 342 · 2023 250 · 2024 51 ».",
+   "excerpt_en": "2026-09-08: \"gene-record links per year: 2022: 7,420 k · 2023: 6,369 k · 2024: 1,273 k · 2025: 1,272 k\"; \"genes cited per year: 2023: 741 k · 2024: 79 k\"; while the all-entity annotated world stays at \"2024: 1,438 k · 2025: 1,649 k\" records. TNFSF15: \"2022 342 · 2023 250 · 2024 51\".",
+   "lang": "fr",
+   "organisation": "Loxyn SAS, Lyon"
+  }
+ ],
+ "specimens": {
+  "cases": [],
+  "counter_examples": []
+ },
+ "prevention": {
+  "cancellable_by_code": true,
+  "refusal_clause": "count coverage per year AND per entity type; a type that collapses while the whole stays flat is declared, and no trend is asserted past the cliff",
+  "refusal_clause_fr": "compter la couverture par année ET par type d'entité ; un type qui s'effondre pendant que l'ensemble reste plat est déclaré, et aucune tendance n'est affirmée au-delà de la falaise"
+ },
+ "repair": {
+  "reachable_by_deletion": "no",
+  "note": "deletion cannot restore this; derived from the damage class by the migration of 2026-09-09, not judged form by form and not measured — the bench can measure it",
+  "measured": {
+   "value": "no",
+   "reached": 0,
+   "injected": 423,
+   "note": "0 of 423 reached",
+   "source": "measured 2026-09-10 by pgrepair (SciPyWeightedILP) on the frozen EUR-Lex truth, three identical runs, journal sha256 in measures/reachability-by-damage-2026-09-10.json. Per damage class, not per form: two forms of the same damage and the same visibility get the same answer.",
+   "date": "2026-09-10"
   },
-  "damage": "MISSING",
-  "class": "REFUSABLE",
-  "layer": "⑨ structure",
-  "injection": "DELETE",
-  "status": "proposed",
-  "seen": [
-    {
-      "corpus": "PubTator3 frozen 2026-08-18 18:08 (bioconcepts2pubtator3.gz, sha256 856353fb…) joined to baseline dates",
-      "document": "all genes; example TNFSF15 (9966)",
-      "date": "2026-09-08",
-      "observer": "Claude Voûte (LLM agent), session 8d9c5098, from the Substrat measurement files",
-      "excerpt": "08-09-2026 : « liens gène-notice par an : 2022 : 7 420 k · 2023 : 6 369 k · 2024 : 1 273 k · 2025 : 1 272 k » ; « gènes cités par an : 2023 : 741 k · 2024 : 79 k » ; alors que le monde annoté toutes entités reste à « 2024 : 1 438 k · 2025 : 1 649 k » notices. TNFSF15 : « 2022 342 · 2023 250 · 2024 51 ».",
-      "excerpt_en": "2026-09-08: \"gene-record links per year: 2022: 7,420 k · 2023: 6,369 k · 2024: 1,273 k · 2025: 1,272 k\"; \"genes cited per year: 2023: 741 k · 2024: 79 k\"; while the all-entity annotated world stays at \"2024: 1,438 k · 2025: 1,649 k\" records. TNFSF15: \"2022 342 · 2023 250 · 2024 51\".",
-      "lang": "fr",
-      "organisation": "Loxyn SAS, Lyon"
-    }
-  ],
-  "specimens": {
-    "cases": [],
-    "counter_examples": []
+  "obstacle": {
+   "value": "the operation",
+   "reason": "Restoring a gap means ADDING, and a deletion-only repair has no such gesture. Its solution is a set of elements to delete; there is no insertion anywhere in it. No weight and no information change that answer.",
+   "reason_fr": "Réparer un manque veut dire AJOUTER, et une réparation par suppression n'a pas ce geste. Sa solution est un ensemble d'éléments à retirer ; il n'y a d'insertion nulle part. Aucun poids et aucune information n'y changent quoi que ce soit.",
+   "source": "derived from what a deletion-only repair can express, read in the repairer's own code — its solution is a set of elements to delete and carries no insertion — together with the measurement of 2026-09-10. Per damage class, not per form.",
+   "date": "2026-09-13"
+  }
+ },
+ "judgeable_by": [
+  "dated_future"
+ ],
+ "related": [],
+ "history": [
+  {
+   "date": "2026-09-09",
+   "event": "proposed by the Voûte Claude in 'FORMES-PUBMED-pour-Fault-Atlas (09-09-2026)' (part 1; final file sha256 51a338add43cd071…), form 2 of 23; effect on a graph: Every gene-record edge after 2023 is missing; a per-gene time series collapses by 80 % while the literature did not move; a three-year judge set in 2021 reads a death. Prevalence: measured: −83 % gene links in 2024 vs 2022, on 40 M records.",
+   "by": "Claude Voûte (LLM agent), session 8d9c5098, from the Substrat measurement files"
   },
-  "prevention": {
-    "cancellable_by_code": true,
-    "refusal_clause": "count coverage per year AND per entity type; a type that collapses while the whole stays flat is declared, and no trend is asserted past the cliff",
-    "refusal_clause_fr": "compter la couverture par année ET par type d'entité ; un type qui s'effondre pendant que l'ensemble reste plat est déclaré, et aucune tendance n'est affirmée au-delà de la falaise"
+  {
+   "date": "2026-09-09",
+   "event": "converted to a record; class, prevention and the novel/variant question left to the second reader",
+   "by": "Fault Atlas"
   },
-  "repair": {
-    "reachable_by_deletion": "no",
-    "note": "deletion cannot restore this; derived from the damage class by the migration of 2026-09-09, not judged form by form and not measured — the bench can measure it",
-    "measured": {
-      "value": "no",
-      "reached": 0,
-      "injected": 423,
-      "note": "0 of 423 reached",
-      "source": "measured 2026-09-10 by pgrepair (SciPyWeightedILP) on the frozen EUR-Lex truth, three identical runs, journal sha256 in measures/reachability-by-damage-2026-09-10.json. Per damage class, not per form: two forms of the same damage and the same visibility get the same answer.",
-      "date": "2026-09-10"
-    }
-  },
-  "judgeable_by": [
-    "dated_future"
-  ],
-  "related": [],
-  "history": [
-    {
-      "date": "2026-09-09",
-      "event": "proposed by the Voûte Claude in 'FORMES-PUBMED-pour-Fault-Atlas (09-09-2026)' (part 1; final file sha256 51a338add43cd071…), form 2 of 23; effect on a graph: Every gene-record edge after 2023 is missing; a per-gene time series collapses by 80 % while the literature did not move; a three-year judge set in 2021 reads a death. Prevalence: measured: −83 % gene links in 2024 vs 2022, on 40 M records.",
-      "by": "Claude Voûte (LLM agent), session 8d9c5098, from the Substrat measurement files"
-    },
-    {
-      "date": "2026-09-09",
-      "event": "converted to a record; class, prevention and the novel/variant question left to the second reader",
-      "by": "Fault Atlas"
-    },
-    {
-      "date": "2026-09-10",
-      "event": "class filled: UNCLASSIFIED → REFUSABLE, with its prevention clause; classified by the first reader, awaiting the second reader's decision",
-      "by": "Fault Atlas maintainer (Loxyn)"
-    }
-  ],
-  "proposed_severity": {
-    "value": "G3",
-    "reason": "everything published after 2023 is under-annotated: the recent is absent, not wrong",
-    "proposed_by": "Fault Atlas maintainer (Loxyn), first reading",
-    "date": "2026-09-11",
-    "status": "proposed — a second reader confirms or contests, as for the 43 validated forms",
-    "adds_to_the_damage_class": false,
-    "note": "this reading agrees with how the August catalogue judges most MISSING forms (G3), so it adds little",
-    "reason_fr": "tout ce qui est publié après 2023 est sous-annoté : le récent est absent, pas faux"
-  },
-  "registry_scope": {
-    "extent": "every record after 2023: 1,273 k links in 2024 against 7,420 k in 2022",
-    "why_not_a_prevalence": "a fault of a registry has no prevalence: it is a property of the base, so everything drawn from that base carries it. What can be stated is the slice it touches.",
-    "source": "read from this form's own observation, 2026-09-11",
-    "extent_fr": "toute fiche postérieure à 2023 : 1 273 k liens en 2024 contre 7 420 k en 2022"
-  },
-  "name_fr": "Falaise d'annotation génique après 2023"
+  {
+   "date": "2026-09-10",
+   "event": "class filled: UNCLASSIFIED → REFUSABLE, with its prevention clause; classified by the first reader, awaiting the second reader's decision",
+   "by": "Fault Atlas maintainer (Loxyn)"
+  }
+ ],
+ "proposed_severity": {
+  "value": "G3",
+  "reason": "everything published after 2023 is under-annotated: the recent is absent, not wrong",
+  "proposed_by": "Fault Atlas maintainer (Loxyn), first reading",
+  "date": "2026-09-11",
+  "status": "proposed — a second reader confirms or contests, as for the 43 validated forms",
+  "adds_to_the_damage_class": false,
+  "note": "this reading agrees with how the August catalogue judges most MISSING forms (G3), so it adds little",
+  "reason_fr": "tout ce qui est publié après 2023 est sous-annoté : le récent est absent, pas faux"
+ },
+ "registry_scope": {
+  "extent": "every record after 2023: 1,273 k links in 2024 against 7,420 k in 2022",
+  "why_not_a_prevalence": "a fault of a registry has no prevalence: it is a property of the base, so everything drawn from that base carries it. What can be stated is the slice it touches.",
+  "source": "read from this form's own observation, 2026-09-11",
+  "extent_fr": "toute fiche postérieure à 2023 : 1 273 k liens en 2024 contre 7 420 k en 2022"
+ },
+ "name_fr": "Falaise d'annotation génique après 2023"
 }

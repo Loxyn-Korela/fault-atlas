@@ -1,150 +1,157 @@
 {
-  "id": "form-026",
-  "version": 2,
-  "legacy_line": 26,
-  "name": "Strict homonyms",
-  "name_fr": "Homonymes stricts",
-  "origin": {
-    "organisation": "Loxyn SAS, Lyon",
-    "campaign": "August 2026 — observation campaign (Korela For Science)",
-    "contact": "contact@loxyn.ai"
+ "id": "form-026",
+ "version": 2,
+ "legacy_line": 26,
+ "name": "Strict homonyms",
+ "name_fr": "Homonymes stricts",
+ "origin": {
+  "organisation": "Loxyn SAS, Lyon",
+  "campaign": "August 2026 — observation campaign (Korela For Science)",
+  "contact": "contact@loxyn.ai"
+ },
+ "damage": "MERGE",
+ "class": "IRREDUCIBLE",
+ "layer": "⑥ resolution",
+ "injection": "RENAME",
+ "legacy_severity": "G1",
+ "legacy_mechanism": "M2",
+ "status": "validated",
+ "seen": [
+  {
+   "corpus": "observation 2026-08 (272 Europe PMC JATS articles)",
+   "date": "2026-08-08",
+   "observer": "house observer (LLM agent), see report",
+   "excerpt": "MESURÉ le 08/08/2026 sur les 272 articles XML JATS de (internal corpus of 272 JATS articles) : 1 215 patronymes sur 9 160 (13,3 %) sont portés par au moins deux prénoms différents — « Wang » par 95, « Li » par 92, « Chen » par 88 ; et 461 noms complets identiques (nom + prénoms) apparaissent dans au moins deux articles aux affiliations DISJOINTES (Zhang W, Li S, Singh S…). Faute vérifiée le 08/08/2026 par ailleurs : le contrôle d'atteignabilité ne regarde pas les assertions `distinct` — un corpus en portant 27 affichait « 0 piège » et passait au vert.",
+   "lang": "fr",
+   "excerpt_en": "MEASURED on 2026-08-08 on the 272 JATS XML articles of the internal corpus: 1,215 surnames out of 9,160 (13.3 %) are borne by at least two different given names — \"Wang\" by 95, \"Li\" by 92, \"Chen\" by 88; and 461 identical full names (surname + given names) appear in at least two articles with DISJOINT affiliations (Zhang W, Li S, Singh S…). Fault verified the same day elsewhere: the reachability check does not look at `distinct` assertions — a corpus carrying 27 of them displayed \"0 traps\" and passed green.",
+   "organisation": "Loxyn SAS, Lyon",
+   "corpus_id": "corpus-europe-pmc-jats-2023-2026"
   },
-  "damage": "MERGE",
-  "class": "IRREDUCIBLE",
-  "layer": "⑥ resolution",
-  "injection": "RENAME",
-  "legacy_severity": "G1",
-  "legacy_mechanism": "M2",
-  "status": "validated",
-  "seen": [
-    {
-      "corpus": "observation 2026-08 (272 Europe PMC JATS articles)",
-      "date": "2026-08-08",
-      "observer": "house observer (LLM agent), see report",
-      "excerpt": "MESURÉ le 08/08/2026 sur les 272 articles XML JATS de (internal corpus of 272 JATS articles) : 1 215 patronymes sur 9 160 (13,3 %) sont portés par au moins deux prénoms différents — « Wang » par 95, « Li » par 92, « Chen » par 88 ; et 461 noms complets identiques (nom + prénoms) apparaissent dans au moins deux articles aux affiliations DISJOINTES (Zhang W, Li S, Singh S…). Faute vérifiée le 08/08/2026 par ailleurs : le contrôle d'atteignabilité ne regarde pas les assertions `distinct` — un corpus en portant 27 affichait « 0 piège » et passait au vert.",
-      "lang": "fr",
-      "excerpt_en": "MEASURED on 2026-08-08 on the 272 JATS XML articles of the internal corpus: 1,215 surnames out of 9,160 (13.3 %) are borne by at least two different given names — \"Wang\" by 95, \"Li\" by 92, \"Chen\" by 88; and 461 identical full names (surname + given names) appear in at least two articles with DISJOINT affiliations (Zhang W, Li S, Singh S…). Fault verified the same day elsewhere: the reachability check does not look at `distinct` assertions — a corpus carrying 27 of them displayed \"0 traps\" and passed green.",
-      "organisation": "Loxyn SAS, Lyon",
-      "corpus_id": "corpus-europe-pmc-jats-2023-2026"
-    },
-    {
-      "corpus": "Europe PMC JATS 2023-2026 (272 articles, the declared corpus)",
-      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
-      "date": "2026-09-10",
-      "observer": "Fault Atlas maintainer (Loxyn), by probe, no model",
-      "excerpt": "MEASURED on 2026-09-10 by probes/2026-09-recovered/line-026.py, whose definition is in its docstring: 106/272 articles carry it. First carrier: bio-PMC12583535.xml — 8 shared surnames, e.g. Li borne by ['Aolin', 'H', 'J', 'N', 'S', 'Z']",
-      "lang": "en",
-      "probe": "probes/2026-09-recovered/line-026.py"
-    }
-  ],
-  "specimens": {
-    "cases": [],
-    "counter_examples": []
-  },
-  "prevention": {
-    "cancellable_by_code": false
-  },
-  "repair": {
-    "reachable_by_deletion": "no",
-    "note": "deletion cannot restore this; derived from the damage class by the migration of 2026-09-09, not judged form by form and not measured — the bench can measure it",
-    "measured": {
-      "value": "no",
-      "reached": 0,
-      "injected": 2532,
-      "note": "0 of 2,532 reached",
-      "source": "measured 2026-09-10 by pgrepair (SciPyWeightedILP) on the frozen EUR-Lex truth, three identical runs, journal sha256 in measures/reachability-by-damage-2026-09-10.json. Per damage class, not per form: two forms of the same damage and the same visibility get the same answer.",
-      "date": "2026-09-10"
-    }
-  },
-  "judgeable_by": [
-    "construction",
-    "registry",
-    "curated",
-    "closed_world"
-  ],
-  "history": [
-    {
-      "date": "2026-08-09",
-      "event": "catalogue line 26 — GOLDEN (kept for the benchmark): irreducible or silent false",
-      "by": "Korela For Science"
-    },
-    {
-      "date": "2026-09-09",
-      "event": "migrated; classified damage=MERGE injection=RENAME (judgment, unreviewed by a second reader)",
-      "by": "Fault Atlas migration"
-    },
-    {
-      "date": "2026-09-09",
-      "event": "internal tool paths removed from observation notes before publication; wording otherwise unchanged",
-      "by": "Fault Atlas"
-    },
-    {
-      "date": "2026-09-10",
-      "event": "second reader: validated — read in full with the record: a dated measurement, a named corpus, real forms",
-      "by": "Coralie Bagnol-Lebon"
-    }
-  ],
-  "observer_agreement": "2/2 — first reader (Loxyn, August/September classification) and second reader (Coralie Bagnol-Lebon, 2026-09-10)",
-  "failure_mode": {
-    "value": "PROP",
-    "means": "identity: one thing appears under several forms, or several things under one — the error lands on a node and propagates to everything hanging from it",
-    "source": "the internal catalogue of 2026-08-09 (korela.db, table parametre), line 26; it is not derived from the damage and varies inside a damage class"
-  },
-  "probes": [
-    {
-      "file": "probes/2026-09-recovered/line-026.py",
-      "kind": "python",
-      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
-      "written": "2026-09-10",
-      "run": "python3 tools/run_probe.py probes/2026-09-recovered/line-026.py <dir with the 272 .xml>",
-      "result": {
-        "date": "2026-09-10",
-        "count": 106,
-        "of": 272,
-        "strata": {
-          "cas": 21,
-          "nonEN": 20,
-          "meta": 16,
-          "bio": 15,
-          "phys": 14,
-          "retract": 11,
-          "essai": 8,
-          "moderne": 1
-        },
-        "examples": [
-          [
-            "bio-PMC12583535.xml",
-            [
-              "8 shared surnames, e.g. Li borne by ['Aolin', 'H', 'J', 'N', 'S', 'Z']"
-            ]
-          ],
-          [
-            "bio-PMC12674831.xml",
-            [
-              "152 shared surnames, e.g. Valério borne by ['CM', 'Cynthia Melissa']"
-            ]
-          ],
-          [
-            "bio-PMC12857832.xml",
-            [
-              "17 shared surnames, e.g. Paulman borne by ['AA', 'PM']"
-            ]
-          ]
-        ],
-        "by": "Fault Atlas maintainer (Loxyn), on the declared corpus",
-        "carriers_file": "probes/results/form-026-strict-homonyms.json"
-      },
-      "matches_excerpt": true,
-      "note": "reproduces the figure of the September reading it is attached to, 106/272. It does NOT reproduce the August figure of None, whose definition we could not recover; that observation is left exactly as it stands, above, with no example under it."
-    }
-  ],
-  "document_years": {
-    "corpus_id": "corpus-europe-pmc-jats-2023-2026",
-    "counts": {
-      "2025": 2,
-      "2026": 1
-    },
-    "carriers_dated": 3,
-    "source": "corpora/index/document-years-europe-pmc-272.json, read 2026-09-11 from each file's earliest pub-date"
+  {
+   "corpus": "Europe PMC JATS 2023-2026 (272 articles, the declared corpus)",
+   "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+   "date": "2026-09-10",
+   "observer": "Fault Atlas maintainer (Loxyn), by probe, no model",
+   "excerpt": "MEASURED on 2026-09-10 by probes/2026-09-recovered/line-026.py, whose definition is in its docstring: 106/272 articles carry it. First carrier: bio-PMC12583535.xml — 8 shared surnames, e.g. Li borne by ['Aolin', 'H', 'J', 'N', 'S', 'Z']",
+   "lang": "en",
+   "probe": "probes/2026-09-recovered/line-026.py"
   }
+ ],
+ "specimens": {
+  "cases": [],
+  "counter_examples": []
+ },
+ "prevention": {
+  "cancellable_by_code": false
+ },
+ "repair": {
+  "reachable_by_deletion": "no",
+  "note": "deletion cannot restore this; derived from the damage class by the migration of 2026-09-09, not judged form by form and not measured — the bench can measure it",
+  "measured": {
+   "value": "no",
+   "reached": 0,
+   "injected": 2532,
+   "note": "0 of 2,532 reached",
+   "source": "measured 2026-09-10 by pgrepair (SciPyWeightedILP) on the frozen EUR-Lex truth, three identical runs, journal sha256 in measures/reachability-by-damage-2026-09-10.json. Per damage class, not per form: two forms of the same damage and the same visibility get the same answer.",
+   "date": "2026-09-10"
+  },
+  "obstacle": {
+   "value": "the operation",
+   "reason": "Two entities fused into one are separated by SPLITTING, which means deciding which fact belongs to whom. Deletion can only remove the fused node and everything hanging from it.",
+   "reason_fr": "Deux entités fondues en une se séparent en les SCINDANT, ce qui veut dire décider quel fait appartient à qui. La suppression ne peut que retirer le nœud fondu et tout ce qui y pend.",
+   "source": "derived from what a deletion-only repair can express, read in the repairer's own code — its solution is a set of elements to delete and carries no insertion — together with the measurement of 2026-09-10. Per damage class, not per form.",
+   "date": "2026-09-13"
+  }
+ },
+ "judgeable_by": [
+  "construction",
+  "registry",
+  "curated",
+  "closed_world"
+ ],
+ "history": [
+  {
+   "date": "2026-08-09",
+   "event": "catalogue line 26 — GOLDEN (kept for the benchmark): irreducible or silent false",
+   "by": "Korela For Science"
+  },
+  {
+   "date": "2026-09-09",
+   "event": "migrated; classified damage=MERGE injection=RENAME (judgment, unreviewed by a second reader)",
+   "by": "Fault Atlas migration"
+  },
+  {
+   "date": "2026-09-09",
+   "event": "internal tool paths removed from observation notes before publication; wording otherwise unchanged",
+   "by": "Fault Atlas"
+  },
+  {
+   "date": "2026-09-10",
+   "event": "second reader: validated — read in full with the record: a dated measurement, a named corpus, real forms",
+   "by": "Coralie Bagnol-Lebon"
+  }
+ ],
+ "observer_agreement": "2/2 — first reader (Loxyn, August/September classification) and second reader (Coralie Bagnol-Lebon, 2026-09-10)",
+ "failure_mode": {
+  "value": "PROP",
+  "means": "identity: one thing appears under several forms, or several things under one — the error lands on a node and propagates to everything hanging from it",
+  "source": "the internal catalogue of 2026-08-09 (korela.db, table parametre), line 26; it is not derived from the damage and varies inside a damage class"
+ },
+ "probes": [
+  {
+   "file": "probes/2026-09-recovered/line-026.py",
+   "kind": "python",
+   "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+   "written": "2026-09-10",
+   "run": "python3 tools/run_probe.py probes/2026-09-recovered/line-026.py <dir with the 272 .xml>",
+   "result": {
+    "date": "2026-09-10",
+    "count": 106,
+    "of": 272,
+    "strata": {
+     "cas": 21,
+     "nonEN": 20,
+     "meta": 16,
+     "bio": 15,
+     "phys": 14,
+     "retract": 11,
+     "essai": 8,
+     "moderne": 1
+    },
+    "examples": [
+     [
+      "bio-PMC12583535.xml",
+      [
+       "8 shared surnames, e.g. Li borne by ['Aolin', 'H', 'J', 'N', 'S', 'Z']"
+      ]
+     ],
+     [
+      "bio-PMC12674831.xml",
+      [
+       "152 shared surnames, e.g. Valério borne by ['CM', 'Cynthia Melissa']"
+      ]
+     ],
+     [
+      "bio-PMC12857832.xml",
+      [
+       "17 shared surnames, e.g. Paulman borne by ['AA', 'PM']"
+      ]
+     ]
+    ],
+    "by": "Fault Atlas maintainer (Loxyn), on the declared corpus",
+    "carriers_file": "probes/results/form-026-strict-homonyms.json"
+   },
+   "matches_excerpt": true,
+   "note": "reproduces the figure of the September reading it is attached to, 106/272. It does NOT reproduce the August figure of None, whose definition we could not recover; that observation is left exactly as it stands, above, with no example under it."
+  }
+ ],
+ "document_years": {
+  "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+  "counts": {
+   "2025": 2,
+   "2026": 1
+  },
+  "carriers_dated": 3,
+  "source": "corpora/index/document-years-europe-pmc-272.json, read 2026-09-11 from each file's earliest pub-date"
+ }
 }

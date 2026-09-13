@@ -1,112 +1,119 @@
 {
-  "id": "form-183",
-  "version": 2,
-  "name": "Half of the in-force acts have no structured text in the official dump",
-  "origin": {
-    "organisation": "Loxyn SAS, Lyon",
-    "campaign": "September 2026 — EUR-Lex collection for the Answer Key (Alexandrie)",
-    "contact": "contact@loxyn.ai"
+ "id": "form-183",
+ "version": 2,
+ "name": "Half of the in-force acts have no structured text in the official dump",
+ "origin": {
+  "organisation": "Loxyn SAS, Lyon",
+  "campaign": "September 2026 — EUR-Lex collection for the Answer Key (Alexandrie)",
+  "contact": "contact@loxyn.ai"
+ },
+ "damage": "MISSING",
+ "class": "SILENT_FALSE",
+ "layer": "② reading",
+ "injection": "DELETE",
+ "status": "validated",
+ "seen": [
+  {
+   "corpus": "EUR-Lex data dump of the Publications Office, 2026-09-06 (LEG_MTD 58,686 works; LEG_EN_FMX 123,983 files; LEG_FR_FMX 121,500 files), inventoried 2026-09-09",
+   "document": "27,792 of 58,686 works without any Formex file; 22,293 .tif files on the EN side",
+   "date": "2026-09-09",
+   "observer": "Alexandrie (LLM agent, collection session), from the EUR-Lex collection manifest",
+   "organisation": "Loxyn SAS, Lyon",
+   "excerpt": "Inventaire du dump du 06-09-2026, mesuré le 09-09-2026 en lecture de flux : 58 686 œuvres au MTD, 30 047 avec un texte Formex EN, 29 892 avec un texte FR ; 27 792 œuvres (47 %) sans aucun Formex — côté EN, 22 293 fichiers .tif, des actes anciens scannés jamais passés en XML. Un dump de métadonnées complet et un dump de textes à moitié.",
+   "excerpt_en": "Inventory of the 2026-09-06 dump, measured 2026-09-09 by streaming the archives: 58,686 works in the MTD, 30,047 with an EN Formex text, 29,892 with FR; 27,792 works (47 %) without any Formex — on the EN side, 22,293 .tif files, old scanned acts never converted to XML. A complete metadata dump and a half text dump.",
+   "lang": "fr",
+   "probe": "probes/2026-09/form-183-dump-coverage.py"
+  }
+ ],
+ "specimens": {
+  "cases": [],
+  "counter_examples": []
+ },
+ "prevention": {
+  "cancellable_by_code": false,
+  "note": "a missing text cannot be produced by code; it can be declared"
+ },
+ "repair": {
+  "reachable_by_deletion": "no",
+  "note": "deletion cannot restore this; derived from the damage class by the migration of 2026-09-09, not judged form by form and not measured — the bench can measure it",
+  "measured": {
+   "value": "no",
+   "reached": 0,
+   "injected": 423,
+   "note": "0 of 423 reached",
+   "source": "measured 2026-09-10 by pgrepair (SciPyWeightedILP) on the frozen EUR-Lex truth, three identical runs, journal sha256 in measures/reachability-by-damage-2026-09-10.json. Per damage class, not per form: two forms of the same damage and the same visibility get the same answer.",
+   "date": "2026-09-10"
   },
-  "damage": "MISSING",
-  "class": "SILENT_FALSE",
-  "layer": "② reading",
-  "injection": "DELETE",
-  "status": "validated",
-  "seen": [
-    {
-      "corpus": "EUR-Lex data dump of the Publications Office, 2026-09-06 (LEG_MTD 58,686 works; LEG_EN_FMX 123,983 files; LEG_FR_FMX 121,500 files), inventoried 2026-09-09",
-      "document": "27,792 of 58,686 works without any Formex file; 22,293 .tif files on the EN side",
-      "date": "2026-09-09",
-      "observer": "Alexandrie (LLM agent, collection session), from the EUR-Lex collection manifest",
-      "organisation": "Loxyn SAS, Lyon",
-      "excerpt": "Inventaire du dump du 06-09-2026, mesuré le 09-09-2026 en lecture de flux : 58 686 œuvres au MTD, 30 047 avec un texte Formex EN, 29 892 avec un texte FR ; 27 792 œuvres (47 %) sans aucun Formex — côté EN, 22 293 fichiers .tif, des actes anciens scannés jamais passés en XML. Un dump de métadonnées complet et un dump de textes à moitié.",
-      "excerpt_en": "Inventory of the 2026-09-06 dump, measured 2026-09-09 by streaming the archives: 58,686 works in the MTD, 30,047 with an EN Formex text, 29,892 with FR; 27,792 works (47 %) without any Formex — on the EN side, 22,293 .tif files, old scanned acts never converted to XML. A complete metadata dump and a half text dump.",
-      "lang": "fr",
-      "probe": "probes/2026-09/form-183-dump-coverage.py"
-    }
-  ],
-  "specimens": {
-    "cases": [],
-    "counter_examples": []
+  "obstacle": {
+   "value": "the operation",
+   "reason": "Restoring a gap means ADDING, and a deletion-only repair has no such gesture. Its solution is a set of elements to delete; there is no insertion anywhere in it. No weight and no information change that answer.",
+   "reason_fr": "Réparer un manque veut dire AJOUTER, et une réparation par suppression n'a pas ce geste. Sa solution est un ensemble d'éléments à retirer ; il n'y a d'insertion nulle part. Aucun poids et aucune information n'y changent quoi que ce soit.",
+   "source": "derived from what a deletion-only repair can express, read in the repairer's own code — its solution is a set of elements to delete and carries no insertion — together with the measurement of 2026-09-10. Per damage class, not per form.",
+   "date": "2026-09-13"
+  }
+ },
+ "judgeable_by": [
+  "registry"
+ ],
+ "related": [
+  "form-045",
+  "form-097"
+ ],
+ "history": [
+  {
+   "date": "2026-09-09",
+   "event": "proposed from the EUR-Lex collection reports of 2026-09-09; effect on a graph: A graph built from the dump's texts covers half of the acts in force and silently lacks the other half; the metadata says an act exists, no text says what it contains. Same family as scanned pages, observed here on an official registry. Prevalence: measured: 27,792 / 58,686 (47 %).",
+   "by": "Alexandrie (LLM agent, collection session), from the EUR-Lex collection manifest"
   },
-  "prevention": {
-    "cancellable_by_code": false,
-    "note": "a missing text cannot be produced by code; it can be declared"
+  {
+   "date": "2026-09-09",
+   "event": "converted to a record; class set from the collector's own refusal clause where one exists; to be reviewed by a second reader",
+   "by": "Fault Atlas"
   },
-  "repair": {
-    "reachable_by_deletion": "no",
-    "note": "deletion cannot restore this; derived from the damage class by the migration of 2026-09-09, not judged form by form and not measured — the bench can measure it",
-    "measured": {
-      "value": "no",
-      "reached": 0,
-      "injected": 423,
-      "note": "0 of 423 reached",
-      "source": "measured 2026-09-10 by pgrepair (SciPyWeightedILP) on the frozen EUR-Lex truth, three identical runs, journal sha256 in measures/reachability-by-damage-2026-09-10.json. Per damage class, not per form: two forms of the same damage and the same visibility get the same answer.",
-      "date": "2026-09-10"
-    }
+  {
+   "date": "2026-09-09",
+   "event": "exact probe attached and re-run: probes/2026-09/form-183-dump-coverage.py",
+   "by": "Fault Atlas maintainer"
   },
-  "judgeable_by": [
-    "registry"
-  ],
-  "related": [
-    "form-045",
-    "form-097"
-  ],
-  "history": [
-    {
-      "date": "2026-09-09",
-      "event": "proposed from the EUR-Lex collection reports of 2026-09-09; effect on a graph: A graph built from the dump's texts covers half of the acts in force and silently lacks the other half; the metadata says an act exists, no text says what it contains. Same family as scanned pages, observed here on an official registry. Prevalence: measured: 27,792 / 58,686 (47 %).",
-      "by": "Alexandrie (LLM agent, collection session), from the EUR-Lex collection manifest"
-    },
-    {
-      "date": "2026-09-09",
-      "event": "converted to a record; class set from the collector's own refusal clause where one exists; to be reviewed by a second reader",
-      "by": "Fault Atlas"
-    },
-    {
-      "date": "2026-09-09",
-      "event": "exact probe attached and re-run: probes/2026-09/form-183-dump-coverage.py",
-      "by": "Fault Atlas maintainer"
-    },
-    {
-      "date": "2026-09-10",
-      "event": "second reader: validated — read in full with the record: a dated measurement, a named corpus, real forms",
-      "by": "Coralie Bagnol-Lebon"
-    }
-  ],
-  "probes": [
-    {
-      "file": "probes/2026-09/form-183-dump-coverage.py",
-      "kind": "python",
-      "corpus_id": "corpus-2026-09-eurlex",
-      "written": "2026-09-09",
-      "run": "python3 probes/2026-09/form-183-dump-coverage.py <dir holding the three dump .zip>",
-      "result": {
-        "date": "2026-09-09",
-        "count": 27792,
-        "of": 58686,
-        "by": "Fault Atlas maintainer (Loxyn), on the SSD copy of the dump"
-      },
-      "matches_excerpt": true,
-      "note": "Re-run on the 2026-09-06 archives (stream read, nothing extracted): 58,686 works; 30,047 with EN Formex; 29,892 with FR; 27,792 without any (47 %); 22,293 .tif in the EN archive. Same figures."
-    }
-  ],
-  "observer_agreement": "2/2 — first reader (Loxyn, August/September classification) and second reader (Coralie Bagnol-Lebon, 2026-09-10)",
-  "proposed_severity": {
-    "value": "G3",
-    "reason": "half the acts in force with no structured text: they are in the register and unreadable",
-    "proposed_by": "Fault Atlas maintainer (Loxyn), first reading",
-    "date": "2026-09-11",
-    "status": "proposed — a second reader confirms or contests, as for the 43 validated forms",
-    "adds_to_the_damage_class": false,
-    "note": "this reading agrees with how the August catalogue judges most MISSING forms (G3), so it adds little",
-    "reason_fr": "la moitié des actes en vigueur sans texte structuré : ils sont au registre et illisibles"
-  },
-  "registry_scope": {
-    "extent": "30,047 English texts for 58,686 works in the manifest: a little under half",
-    "why_not_a_prevalence": "a fault of a registry has no prevalence: it is a property of the base, so everything drawn from that base carries it. What can be stated is the slice it touches.",
-    "source": "read from this form's own observation, 2026-09-11",
-    "extent_fr": "30 047 textes anglais pour 58 686 œuvres au manifeste : un peu moins de la moitié"
-  },
-  "name_fr": "La moitié des actes en vigueur sans texte structuré dans le dump officiel"
+  {
+   "date": "2026-09-10",
+   "event": "second reader: validated — read in full with the record: a dated measurement, a named corpus, real forms",
+   "by": "Coralie Bagnol-Lebon"
+  }
+ ],
+ "probes": [
+  {
+   "file": "probes/2026-09/form-183-dump-coverage.py",
+   "kind": "python",
+   "corpus_id": "corpus-2026-09-eurlex",
+   "written": "2026-09-09",
+   "run": "python3 probes/2026-09/form-183-dump-coverage.py <dir holding the three dump .zip>",
+   "result": {
+    "date": "2026-09-09",
+    "count": 27792,
+    "of": 58686,
+    "by": "Fault Atlas maintainer (Loxyn), on the SSD copy of the dump"
+   },
+   "matches_excerpt": true,
+   "note": "Re-run on the 2026-09-06 archives (stream read, nothing extracted): 58,686 works; 30,047 with EN Formex; 29,892 with FR; 27,792 without any (47 %); 22,293 .tif in the EN archive. Same figures."
+  }
+ ],
+ "observer_agreement": "2/2 — first reader (Loxyn, August/September classification) and second reader (Coralie Bagnol-Lebon, 2026-09-10)",
+ "proposed_severity": {
+  "value": "G3",
+  "reason": "half the acts in force with no structured text: they are in the register and unreadable",
+  "proposed_by": "Fault Atlas maintainer (Loxyn), first reading",
+  "date": "2026-09-11",
+  "status": "proposed — a second reader confirms or contests, as for the 43 validated forms",
+  "adds_to_the_damage_class": false,
+  "note": "this reading agrees with how the August catalogue judges most MISSING forms (G3), so it adds little",
+  "reason_fr": "la moitié des actes en vigueur sans texte structuré : ils sont au registre et illisibles"
+ },
+ "registry_scope": {
+  "extent": "30,047 English texts for 58,686 works in the manifest: a little under half",
+  "why_not_a_prevalence": "a fault of a registry has no prevalence: it is a property of the base, so everything drawn from that base carries it. What can be stated is the slice it touches.",
+  "source": "read from this form's own observation, 2026-09-11",
+  "extent_fr": "30 047 textes anglais pour 58 686 œuvres au manifeste : un peu moins de la moitié"
+ },
+ "name_fr": "La moitié des actes en vigueur sans texte structuré dans le dump officiel"
 }

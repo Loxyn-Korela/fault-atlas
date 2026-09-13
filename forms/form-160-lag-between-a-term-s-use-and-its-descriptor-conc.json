@@ -1,85 +1,92 @@
 {
-  "id": "form-160",
-  "version": 2,
-  "name": "Lag between a term's use and its descriptor (concept exists before its label)",
-  "origin": {
-    "organisation": "Loxyn SAS, Lyon",
-    "campaign": "September 2026 — PubMed substrate and other corpora (Voûte)",
-    "contact": "contact@loxyn.ai"
+ "id": "form-160",
+ "version": 2,
+ "name": "Lag between a term's use and its descriptor (concept exists before its label)",
+ "origin": {
+  "organisation": "Loxyn SAS, Lyon",
+  "campaign": "September 2026 — PubMed substrate and other corpora (Voûte)",
+  "contact": "contact@loxyn.ai"
+ },
+ "damage": "MISSING",
+ "class": "UNCLASSIFIED",
+ "layer": "⑧ coherence",
+ "injection": "DELETE",
+ "status": "proposed",
+ "seen": [
+  {
+   "corpus": "Author keywords of the baseline frozen 2026-08-18 (English, articles and reviews, 2011-2025) against MeSH history 2026, on the baseline frozen 2026-08-18",
+   "document": "federated learning (dated 2020-09, descriptor 2025-01); graph neural networks (2020-12 → 2025-01); spatial transcriptomics (2018-12 → 2026-01); tirzepatide (2020-12 → 2025-01); long covid (2022-01 → 2023-01) — public proof dossier v8 §8",
+   "date": "2026-09-02",
+   "observer": "Claude Voûte (LLM agent), session 8d9c5098, from the Substrat measurement files",
+   "excerpt": "Dossier v8 : « un à sept ans » entre la datation et le descripteur ; « 3,7 ans avant MeSH en médiane » ; « signalement environ un an avant le descripteur officiel ».",
+   "excerpt_en": "Dossier v8: \"one to seven years\" between the dating and the descriptor; \"3.7 years before MeSH in median\"; \"signalling about a year before the official descriptor\".",
+   "lang": "fr",
+   "organisation": "Loxyn SAS, Lyon"
+  }
+ ],
+ "specimens": {
+  "cases": [],
+  "counter_examples": []
+ },
+ "prevention": {
+  "cancellable_by_code": false,
+  "note": "not assessed by the observer; to be classified by the second reader"
+ },
+ "repair": {
+  "reachable_by_deletion": "no",
+  "note": "deletion cannot restore this; derived from the damage class by the migration of 2026-09-09, not judged form by form and not measured — the bench can measure it",
+  "measured": {
+   "value": "no",
+   "reached": 0,
+   "injected": 423,
+   "note": "0 of 423 reached",
+   "source": "measured 2026-09-10 by pgrepair (SciPyWeightedILP) on the frozen EUR-Lex truth, three identical runs, journal sha256 in measures/reachability-by-damage-2026-09-10.json. Per damage class, not per form: two forms of the same damage and the same visibility get the same answer.",
+   "date": "2026-09-10"
   },
-  "damage": "MISSING",
-  "class": "UNCLASSIFIED",
-  "layer": "⑧ coherence",
-  "injection": "DELETE",
-  "status": "proposed",
-  "seen": [
-    {
-      "corpus": "Author keywords of the baseline frozen 2026-08-18 (English, articles and reviews, 2011-2025) against MeSH history 2026, on the baseline frozen 2026-08-18",
-      "document": "federated learning (dated 2020-09, descriptor 2025-01); graph neural networks (2020-12 → 2025-01); spatial transcriptomics (2018-12 → 2026-01); tirzepatide (2020-12 → 2025-01); long covid (2022-01 → 2023-01) — public proof dossier v8 §8",
-      "date": "2026-09-02",
-      "observer": "Claude Voûte (LLM agent), session 8d9c5098, from the Substrat measurement files",
-      "excerpt": "Dossier v8 : « un à sept ans » entre la datation et le descripteur ; « 3,7 ans avant MeSH en médiane » ; « signalement environ un an avant le descripteur officiel ».",
-      "excerpt_en": "Dossier v8: \"one to seven years\" between the dating and the descriptor; \"3.7 years before MeSH in median\"; \"signalling about a year before the official descriptor\".",
-      "lang": "fr",
-      "organisation": "Loxyn SAS, Lyon"
-    }
-  ],
-  "specimens": {
-    "cases": [],
-    "counter_examples": []
+  "obstacle": {
+   "value": "the operation",
+   "reason": "Restoring a gap means ADDING, and a deletion-only repair has no such gesture. Its solution is a set of elements to delete; there is no insertion anywhere in it. No weight and no information change that answer.",
+   "reason_fr": "Réparer un manque veut dire AJOUTER, et une réparation par suppression n'a pas ce geste. Sa solution est un ensemble d'éléments à retirer ; il n'y a d'insertion nulle part. Aucun poids et aucune information n'y changent quoi que ce soit.",
+   "source": "derived from what a deletion-only repair can express, read in the repairer's own code — its solution is a set of elements to delete and carries no insertion — together with the measurement of 2026-09-10. Per damage class, not per form.",
+   "date": "2026-09-13"
+  }
+ },
+ "judgeable_by": [
+  "dated_future"
+ ],
+ "related": [],
+ "history": [
+  {
+   "date": "2026-09-09",
+   "event": "proposed by the Voûte Claude in 'FORMES-PUBMED-pour-Fault-Atlas (09-09-2026)' (part 1; final file sha256 51a338add43cd071…), form 19 of 23; effect on a graph: For years, thousands of articles carry an object the authority vocabulary does not know; at its creation the descriptor is retro-applied (see retro-indexing form). Prevalence: measured on five revealed positions; median 3.7 years over all positions.",
+   "by": "Claude Voûte (LLM agent), session 8d9c5098, from the Substrat measurement files"
   },
-  "prevention": {
-    "cancellable_by_code": false,
-    "note": "not assessed by the observer; to be classified by the second reader"
+  {
+   "date": "2026-09-09",
+   "event": "converted to a record; class, prevention and the novel/variant question left to the second reader",
+   "by": "Fault Atlas"
   },
-  "repair": {
-    "reachable_by_deletion": "no",
-    "note": "deletion cannot restore this; derived from the damage class by the migration of 2026-09-09, not judged form by form and not measured — the bench can measure it",
-    "measured": {
-      "value": "no",
-      "reached": 0,
-      "injected": 423,
-      "note": "0 of 423 reached",
-      "source": "measured 2026-09-10 by pgrepair (SciPyWeightedILP) on the frozen EUR-Lex truth, three identical runs, journal sha256 in measures/reachability-by-damage-2026-09-10.json. Per damage class, not per form: two forms of the same damage and the same visibility get the same answer.",
-      "date": "2026-09-10"
-    }
-  },
-  "judgeable_by": [
-    "dated_future"
-  ],
-  "related": [],
-  "history": [
-    {
-      "date": "2026-09-09",
-      "event": "proposed by the Voûte Claude in 'FORMES-PUBMED-pour-Fault-Atlas (09-09-2026)' (part 1; final file sha256 51a338add43cd071…), form 19 of 23; effect on a graph: For years, thousands of articles carry an object the authority vocabulary does not know; at its creation the descriptor is retro-applied (see retro-indexing form). Prevalence: measured on five revealed positions; median 3.7 years over all positions.",
-      "by": "Claude Voûte (LLM agent), session 8d9c5098, from the Substrat measurement files"
-    },
-    {
-      "date": "2026-09-09",
-      "event": "converted to a record; class, prevention and the novel/variant question left to the second reader",
-      "by": "Fault Atlas"
-    },
-    {
-      "date": "2026-09-10",
-      "event": "second reader: contested — the 3.7 figure is absent from v8",
-      "by": "Coralie Bagnol-Lebon"
-    }
-  ],
-  "proposed_severity": {
-    "value": "G3",
-    "reason": "one to seven years between a term's use and its descriptor: searching by descriptor misses years of literature",
-    "proposed_by": "Fault Atlas maintainer (Loxyn), first reading",
-    "date": "2026-09-11",
-    "status": "proposed — a second reader confirms or contests, as for the 43 validated forms",
-    "adds_to_the_damage_class": false,
-    "note": "this reading agrees with how the August catalogue judges most MISSING forms (G3), so it adds little",
-    "reason_fr": "un à sept ans entre l'usage d'un terme et son descripteur : chercher par descripteur manque des années de littérature"
-  },
-  "registry_scope": {
-    "extent": "every term between its use and its descriptor: one to seven years, 3.7 years median",
-    "why_not_a_prevalence": "a fault of a registry has no prevalence: it is a property of the base, so everything drawn from that base carries it. What can be stated is the slice it touches.",
-    "source": "read from this form's own observation, 2026-09-11",
-    "extent_fr": "tout terme entre son usage et son descripteur : un à sept ans, 3,7 ans en médiane"
-  },
-  "name_fr": "Décalage entre l'usage d'un terme et son descripteur (le concept précède son étiquette)"
+  {
+   "date": "2026-09-10",
+   "event": "second reader: contested — the 3.7 figure is absent from v8",
+   "by": "Coralie Bagnol-Lebon"
+  }
+ ],
+ "proposed_severity": {
+  "value": "G3",
+  "reason": "one to seven years between a term's use and its descriptor: searching by descriptor misses years of literature",
+  "proposed_by": "Fault Atlas maintainer (Loxyn), first reading",
+  "date": "2026-09-11",
+  "status": "proposed — a second reader confirms or contests, as for the 43 validated forms",
+  "adds_to_the_damage_class": false,
+  "note": "this reading agrees with how the August catalogue judges most MISSING forms (G3), so it adds little",
+  "reason_fr": "un à sept ans entre l'usage d'un terme et son descripteur : chercher par descripteur manque des années de littérature"
+ },
+ "registry_scope": {
+  "extent": "every term between its use and its descriptor: one to seven years, 3.7 years median",
+  "why_not_a_prevalence": "a fault of a registry has no prevalence: it is a property of the base, so everything drawn from that base carries it. What can be stated is the slice it touches.",
+  "source": "read from this form's own observation, 2026-09-11",
+  "extent_fr": "tout terme entre son usage et son descripteur : un à sept ans, 3,7 ans en médiane"
+ },
+ "name_fr": "Décalage entre l'usage d'un terme et son descripteur (le concept précède son étiquette)"
 }

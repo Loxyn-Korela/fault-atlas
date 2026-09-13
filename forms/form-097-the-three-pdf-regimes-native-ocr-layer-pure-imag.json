@@ -1,124 +1,131 @@
 {
-  "id": "form-097",
-  "version": 4,
-  "legacy_line": 97,
-  "name": "The three PDF regimes (native, OCR layer, pure image)",
-  "name_fr": "Les trois régimes de PDF (natif · OCR posé · image pure)",
-  "origin": {
-    "organisation": "Loxyn SAS, Lyon",
-    "campaign": "August 2026 — observation campaign (Korela For Science)",
-    "contact": "contact@loxyn.ai"
-  },
-  "damage": "MISSING",
-  "class": "REFUSABLE",
-  "layer": "① pixel + ② reading",
-  "injection": "IMAGE",
-  "legacy_severity": "G3",
-  "legacy_mechanism": "M7",
-  "status": "validated",
-  "seen": [
-    {
-      "corpus": "Biomedical PDFs 1957-1987 (migraine corpus, 45 PDFs), first observation wave",
-      "document": "the 45 PDFs of the migraine corpus",
-      "date": "2026-08-08",
-      "observer": "house observer (LLM agent), first wave of August 2026, biomedical PDFs 1957-1987 (migraine corpus)",
-      "excerpt": "Mesuré le 08/08 sur les 45 PDF du corpus migraine : natif numérique (plusieurs polices déclarées) 8/45, 17 % · scan + couche OCR (une seule police, beaucoup de texte) 36/45, 80 % · image pure (aucun opérateur de texte) 1/45, 2 %. Ligne née d'un doute déclaré par un observateur : « aucun des six n'a été testé pour savoir s'il porte une couche de texte ». Le doute se lève par une mesure de trente secondes : compter les polices déclarées et les opérateurs de texte.",
-      "excerpt_en": "Measured on 2026-08-08 on the 45 PDFs of the migraine corpus: native digital (several declared fonts) 8/45, 17 % · scan + OCR layer (a single font, much text) 36/45, 80 % · pure image (no text operator) 1/45, 2 %. Line born from a doubt declared by an observer: \"none of the six was tested for a text layer\". The doubt is lifted by a thirty-second measurement: count declared fonts and text operators.",
-      "lang": "fr",
-      "organisation": "Loxyn SAS, Lyon"
-    }
-  ],
-  "specimens": {
-    "cases": [],
-    "counter_examples": []
-  },
-  "prevention": {
-    "cancellable_by_code": true,
-    "refusal_clause": "handle, or abstain and declare — never guess",
-    "refusal_clause_fr": "traiter, ou s'abstenir et le déclarer — ne jamais deviner"
-  },
-  "repair": {
-    "reachable_by_deletion": "no",
-    "note": "deletion cannot restore this; derived from the damage class by the migration of 2026-09-09, not judged form by form and not measured — the bench can measure it",
-    "measured": {
-      "value": "no",
-      "reached": 0,
-      "injected": 423,
-      "note": "0 of 423 reached",
-      "source": "measured 2026-09-10 by pgrepair (SciPyWeightedILP) on the frozen EUR-Lex truth, three identical runs, journal sha256 in measures/reachability-by-damage-2026-09-10.json. Per damage class, not per form: two forms of the same damage and the same visibility get the same answer.",
-      "date": "2026-09-10"
-    }
-  },
-  "judgeable_by": [
-    "construction",
-    "curated",
-    "closed_world"
-  ],
-  "history": [
-    {
-      "date": "2026-08-09",
-      "event": "catalogue line 97 — ACCEPTED (measured absent from the modern XML corpus): measured ABSENT from the modern XML corpus",
-      "by": "Korela For Science"
-    },
-    {
-      "date": "2026-09-09",
-      "event": "migrated; classified damage=MISSING injection=IMAGE (judgment, unreviewed by a second reader)",
-      "by": "Fault Atlas migration"
-    },
-    {
-      "date": "2026-09-09",
-      "event": "observation transcribed from the August annex and the wave-1 journal, after the second reader noted the record had no excerpt",
-      "by": "Fault Atlas"
-    },
-    {
-      "date": "2026-09-09",
-      "event": "exact probe attached, measured absent on the 272 files: probes/2026-08/line-097.py, 0/272",
-      "by": "Fault Atlas maintainer"
-    },
-    {
-      "date": "2026-09-10",
-      "event": "second reader: validated — read in full with the record: a dated measurement, a named corpus, real forms",
-      "by": "Coralie Bagnol-Lebon"
-    },
-    {
-      "date": "2026-09-10",
-      "event": "era recorded: ancient_only — native PDF 17 % old / 100 % modern; scan with an OCR layer 80 % / 0 %; pure image 2 % / 0 % (from the August verdicts, which the atlas had not carried)",
-      "by": "Fault Atlas maintainer"
-    }
-  ],
-  "observed_absent_in": [
-    "Europe PMC JATS 2023-2026 (272 articles): 0/272 by the exact probe probes/2026-08/line-097.py, written 2026-08-08, re-run 2026-09-09"
-  ],
-  "probes": [
-    {
-      "file": "probes/2026-08/line-097.py",
-      "kind": "python",
-      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
-      "written": "2026-08-08",
-      "run": "python3 tools/run_probe.py probes/2026-08/line-097.py <dir with the 272 .xml>",
-      "result": {
-        "date": "2026-09-09",
-        "count": 0,
-        "of": 272,
-        "strata": {},
-        "examples": [],
-        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files",
-        "carriers_file": "probes/results/line-097.json"
-      },
-      "matches_excerpt": true,
-      "note": "Measured absent: the probe finds no carrier among the 272 files. An absence is a result, dated."
-    }
-  ],
-  "observer_agreement": "2/2 — first reader (Loxyn, August/September classification) and second reader (Coralie Bagnol-Lebon, 2026-09-10)",
-  "era": {
-    "value": "ancient_only",
-    "measured": "2026-09-10",
-    "source": "VERDICT — the old against the modern, 2026-08-08: 45 PDFs of 1957-1987 against 15 PDFs of 2023-2026, 174 pages, 9 publishers. Its own stated limits: 13 of the 15 modern are biomedical, 100 % English, 100 % open access — a channel that excludes scans, truncated and subscription articles by construction.",
-    "note": "native PDF 17 % old / 100 % modern; scan with an OCR layer 80 % / 0 %; pure image 2 % / 0 %"
-  },
-  "failure_mode": {
-    "value": "MANQ",
-    "means": "a gap: the graph is incomplete where the reading did not reach, not wrong",
-    "source": "the internal catalogue of 2026-08-09 (korela.db, table parametre), line 97; it is not derived from the damage and varies inside a damage class"
+ "id": "form-097",
+ "version": 4,
+ "legacy_line": 97,
+ "name": "The three PDF regimes (native, OCR layer, pure image)",
+ "name_fr": "Les trois régimes de PDF (natif · OCR posé · image pure)",
+ "origin": {
+  "organisation": "Loxyn SAS, Lyon",
+  "campaign": "August 2026 — observation campaign (Korela For Science)",
+  "contact": "contact@loxyn.ai"
+ },
+ "damage": "MISSING",
+ "class": "REFUSABLE",
+ "layer": "① pixel + ② reading",
+ "injection": "IMAGE",
+ "legacy_severity": "G3",
+ "legacy_mechanism": "M7",
+ "status": "validated",
+ "seen": [
+  {
+   "corpus": "Biomedical PDFs 1957-1987 (migraine corpus, 45 PDFs), first observation wave",
+   "document": "the 45 PDFs of the migraine corpus",
+   "date": "2026-08-08",
+   "observer": "house observer (LLM agent), first wave of August 2026, biomedical PDFs 1957-1987 (migraine corpus)",
+   "excerpt": "Mesuré le 08/08 sur les 45 PDF du corpus migraine : natif numérique (plusieurs polices déclarées) 8/45, 17 % · scan + couche OCR (une seule police, beaucoup de texte) 36/45, 80 % · image pure (aucun opérateur de texte) 1/45, 2 %. Ligne née d'un doute déclaré par un observateur : « aucun des six n'a été testé pour savoir s'il porte une couche de texte ». Le doute se lève par une mesure de trente secondes : compter les polices déclarées et les opérateurs de texte.",
+   "excerpt_en": "Measured on 2026-08-08 on the 45 PDFs of the migraine corpus: native digital (several declared fonts) 8/45, 17 % · scan + OCR layer (a single font, much text) 36/45, 80 % · pure image (no text operator) 1/45, 2 %. Line born from a doubt declared by an observer: \"none of the six was tested for a text layer\". The doubt is lifted by a thirty-second measurement: count declared fonts and text operators.",
+   "lang": "fr",
+   "organisation": "Loxyn SAS, Lyon"
   }
+ ],
+ "specimens": {
+  "cases": [],
+  "counter_examples": []
+ },
+ "prevention": {
+  "cancellable_by_code": true,
+  "refusal_clause": "handle, or abstain and declare — never guess",
+  "refusal_clause_fr": "traiter, ou s'abstenir et le déclarer — ne jamais deviner"
+ },
+ "repair": {
+  "reachable_by_deletion": "no",
+  "note": "deletion cannot restore this; derived from the damage class by the migration of 2026-09-09, not judged form by form and not measured — the bench can measure it",
+  "measured": {
+   "value": "no",
+   "reached": 0,
+   "injected": 423,
+   "note": "0 of 423 reached",
+   "source": "measured 2026-09-10 by pgrepair (SciPyWeightedILP) on the frozen EUR-Lex truth, three identical runs, journal sha256 in measures/reachability-by-damage-2026-09-10.json. Per damage class, not per form: two forms of the same damage and the same visibility get the same answer.",
+   "date": "2026-09-10"
+  },
+  "obstacle": {
+   "value": "the operation",
+   "reason": "Restoring a gap means ADDING, and a deletion-only repair has no such gesture. Its solution is a set of elements to delete; there is no insertion anywhere in it. No weight and no information change that answer.",
+   "reason_fr": "Réparer un manque veut dire AJOUTER, et une réparation par suppression n'a pas ce geste. Sa solution est un ensemble d'éléments à retirer ; il n'y a d'insertion nulle part. Aucun poids et aucune information n'y changent quoi que ce soit.",
+   "source": "derived from what a deletion-only repair can express, read in the repairer's own code — its solution is a set of elements to delete and carries no insertion — together with the measurement of 2026-09-10. Per damage class, not per form.",
+   "date": "2026-09-13"
+  }
+ },
+ "judgeable_by": [
+  "construction",
+  "curated",
+  "closed_world"
+ ],
+ "history": [
+  {
+   "date": "2026-08-09",
+   "event": "catalogue line 97 — ACCEPTED (measured absent from the modern XML corpus): measured ABSENT from the modern XML corpus",
+   "by": "Korela For Science"
+  },
+  {
+   "date": "2026-09-09",
+   "event": "migrated; classified damage=MISSING injection=IMAGE (judgment, unreviewed by a second reader)",
+   "by": "Fault Atlas migration"
+  },
+  {
+   "date": "2026-09-09",
+   "event": "observation transcribed from the August annex and the wave-1 journal, after the second reader noted the record had no excerpt",
+   "by": "Fault Atlas"
+  },
+  {
+   "date": "2026-09-09",
+   "event": "exact probe attached, measured absent on the 272 files: probes/2026-08/line-097.py, 0/272",
+   "by": "Fault Atlas maintainer"
+  },
+  {
+   "date": "2026-09-10",
+   "event": "second reader: validated — read in full with the record: a dated measurement, a named corpus, real forms",
+   "by": "Coralie Bagnol-Lebon"
+  },
+  {
+   "date": "2026-09-10",
+   "event": "era recorded: ancient_only — native PDF 17 % old / 100 % modern; scan with an OCR layer 80 % / 0 %; pure image 2 % / 0 % (from the August verdicts, which the atlas had not carried)",
+   "by": "Fault Atlas maintainer"
+  }
+ ],
+ "observed_absent_in": [
+  "Europe PMC JATS 2023-2026 (272 articles): 0/272 by the exact probe probes/2026-08/line-097.py, written 2026-08-08, re-run 2026-09-09"
+ ],
+ "probes": [
+  {
+   "file": "probes/2026-08/line-097.py",
+   "kind": "python",
+   "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+   "written": "2026-08-08",
+   "run": "python3 tools/run_probe.py probes/2026-08/line-097.py <dir with the 272 .xml>",
+   "result": {
+    "date": "2026-09-09",
+    "count": 0,
+    "of": 272,
+    "strata": {},
+    "examples": [],
+    "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files",
+    "carriers_file": "probes/results/line-097.json"
+   },
+   "matches_excerpt": true,
+   "note": "Measured absent: the probe finds no carrier among the 272 files. An absence is a result, dated."
+  }
+ ],
+ "observer_agreement": "2/2 — first reader (Loxyn, August/September classification) and second reader (Coralie Bagnol-Lebon, 2026-09-10)",
+ "era": {
+  "value": "ancient_only",
+  "measured": "2026-09-10",
+  "source": "VERDICT — the old against the modern, 2026-08-08: 45 PDFs of 1957-1987 against 15 PDFs of 2023-2026, 174 pages, 9 publishers. Its own stated limits: 13 of the 15 modern are biomedical, 100 % English, 100 % open access — a channel that excludes scans, truncated and subscription articles by construction.",
+  "note": "native PDF 17 % old / 100 % modern; scan with an OCR layer 80 % / 0 %; pure image 2 % / 0 %"
+ },
+ "failure_mode": {
+  "value": "MANQ",
+  "means": "a gap: the graph is incomplete where the reading did not reach, not wrong",
+  "source": "the internal catalogue of 2026-08-09 (korela.db, table parametre), line 97; it is not derived from the damage and varies inside a damage class"
+ }
 }

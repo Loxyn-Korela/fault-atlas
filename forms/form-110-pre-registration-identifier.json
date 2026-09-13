@@ -1,209 +1,216 @@
 {
-  "id": "form-110",
-  "version": 2,
-  "legacy_line": 110,
-  "name": "Pre-registration identifier",
-  "name_fr": "Préenregistrement (identifiant de registre)",
-  "origin": {
-    "organisation": "Loxyn SAS, Lyon",
-    "campaign": "August 2026 — observation campaign (Korela For Science)",
-    "contact": "contact@loxyn.ai"
+ "id": "form-110",
+ "version": 2,
+ "legacy_line": 110,
+ "name": "Pre-registration identifier",
+ "name_fr": "Préenregistrement (identifiant de registre)",
+ "origin": {
+  "organisation": "Loxyn SAS, Lyon",
+  "campaign": "August 2026 — observation campaign (Korela For Science)",
+  "contact": "contact@loxyn.ai"
+ },
+ "damage": "WRONG_LABEL",
+ "class": "DEFEATED",
+ "layer": "⑩ retrieval",
+ "injection": "INSERT",
+ "legacy_severity": "G3",
+ "legacy_mechanism": "M6",
+ "status": "migrated_unreviewed",
+ "seen": [
+  {
+   "corpus": "observation 2026-08 (Europe PMC JATS 2023-2026 and PubMed abstracts)",
+   "date": "2026-08-08",
+   "observer": "house observer (LLM agent), see report",
+   "excerpt": "identifiants de registre en fin de résumé, articles biomédicaux 2024-2026 (vague moderne, 08/08/2026)",
+   "lang": "fr",
+   "excerpt_en": "registry identifiers at the end of the abstract, biomedical articles 2024-2026 (modern wave, 2026-08-08)",
+   "organisation": "Loxyn SAS, Lyon"
   },
-  "damage": "WRONG_LABEL",
-  "class": "DEFEATED",
-  "layer": "⑩ retrieval",
-  "injection": "INSERT",
-  "legacy_severity": "G3",
-  "legacy_mechanism": "M6",
-  "status": "migrated_unreviewed",
-  "seen": [
-    {
-      "corpus": "observation 2026-08 (Europe PMC JATS 2023-2026 and PubMed abstracts)",
-      "date": "2026-08-08",
-      "observer": "house observer (LLM agent), see report",
-      "excerpt": "identifiants de registre en fin de résumé, articles biomédicaux 2024-2026 (vague moderne, 08/08/2026)",
-      "lang": "fr",
-      "excerpt_en": "registry identifiers at the end of the abstract, biomedical articles 2024-2026 (modern wave, 2026-08-08)",
-      "organisation": "Loxyn SAS, Lyon"
-    },
-    {
-      "corpus": "observation 2026-08 (272 Europe PMC JATS articles)",
-      "date": "2026-09-09",
-      "observer": "house probe (regex, no model), written 2026-08-08, re-run by the Fault Atlas maintainer",
-      "organisation": "Loxyn SAS, Lyon",
-      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
-      "lang": "en",
-      "probe": "probes/2026-08/line-110.py",
-      "excerpt": "Probe re-run on the 272 JATS files: 19/272 carriers (essai 15, bio 1, cas 1, meta 1, nonEN 1). Examples — bio-PMC13162546.xml: NCT06048588 · cas-PMC13293792.xml: NCT06326190 | NCT06955169 · essai-PMC13169227.xml: NCT03506789"
-    }
-  ],
-  "specimens": {
-    "cases": [],
-    "counter_examples": []
-  },
-  "prevention": {
-    "cancellable_by_code": true
-  },
-  "repair": {
-    "reachable_by_deletion": "partial",
-    "note": "an extra label can be deleted, a missing one cannot be added",
-    "measured": {
-      "value": "yes_at_a_cost",
-      "reached": 3932,
-      "injected": 3932,
-      "note": "3,932 of 3,932 reached, and 12,591 true facts were lost with them: the repair deletes the nodes, not their labels",
-      "source": "measured 2026-09-10 by pgrepair (SciPyWeightedILP) on the frozen EUR-Lex truth, three identical runs, journal sha256 in measures/reachability-by-damage-2026-09-10.json. Per damage class, not per form: two forms of the same damage and the same visibility get the same answer.",
-      "date": "2026-09-10"
-    }
-  },
-  "judgeable_by": [
-    "construction",
-    "curated"
-  ],
-  "history": [
-    {
-      "date": "2026-08-08",
-      "event": "the internal catalogue records a house filter with 3 cases and 1 counter-example(s); not published in this record",
-      "by": "Korela For Science"
-    },
-    {
-      "date": "2026-08-09",
-      "event": "catalogue line 110 — DEFEATED (cancelled by code): filter written and green on the bench",
-      "by": "Korela For Science"
-    },
-    {
-      "date": "2026-09-09",
-      "event": "migrated; classified damage=WRONG_LABEL injection=INSERT (judgment, unreviewed by a second reader)",
-      "by": "Fault Atlas migration"
-    },
-    {
-      "date": "2026-09-09",
-      "event": "second observation added from the exact probe on the 272 files: probes/2026-08/line-110.py, 19/272",
-      "by": "Fault Atlas maintainer"
-    },
-    {
-      "date": "2026-09-10",
-      "event": "era recorded: born_modern — one of the fourteen difficulties born with the modern era; it had no line in the catalogue before 2026-08-08 (from the August verdicts, which the atlas had not carried)",
-      "by": "Fault Atlas maintainer"
-    }
-  ],
-  "probes": [
-    {
-      "file": "probes/2026-08/line-110.py",
-      "kind": "python",
-      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
-      "written": "2026-08-08",
-      "run": "python3 tools/run_probe.py probes/2026-08/line-110.py <dir with the 272 .xml>",
-      "result": {
-        "date": "2026-09-09",
-        "count": 19,
-        "of": 272,
-        "strata": {
-          "essai": 15,
-          "bio": 1,
-          "cas": 1,
-          "meta": 1,
-          "nonEN": 1
-        },
-        "examples": [
-          [
-            "bio-PMC13162546.xml",
-            [
-              "NCT06048588"
-            ]
-          ],
-          [
-            "cas-PMC13293792.xml",
-            [
-              "NCT06326190",
-              "NCT06955169"
-            ]
-          ],
-          [
-            "essai-PMC13169227.xml",
-            [
-              "NCT03506789"
-            ]
-          ],
-          [
-            "essai-PMC13169472.xml",
-            [
-              "NCT06188091"
-            ]
-          ],
-          [
-            "essai-PMC13191455.xml",
-            [
-              "ISRCTN16942542"
-            ]
-          ],
-          [
-            "essai-PMC13205709.xml",
-            [
-              "NCT05571280"
-            ]
-          ],
-          [
-            "essai-PMC13205731.xml",
-            [
-              "ISRCTN31437934"
-            ]
-          ],
-          [
-            "essai-PMC13205876.xml",
-            [
-              "NCT00970866"
-            ]
-          ],
-          [
-            "essai-PMC13245602.xml",
-            [
-              "NCT03958214"
-            ]
-          ],
-          [
-            "essai-PMC13254492.xml",
-            [
-              "NCT01304069"
-            ]
-          ],
-          [
-            "essai-PMC13264282.xml",
-            [
-              "NCT05082922"
-            ]
-          ],
-          [
-            "essai-PMC13280799.xml",
-            [
-              "NCT06815315"
-            ]
-          ]
-        ],
-        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files",
-        "carriers_file": "probes/results/line-110.json"
-      },
-      "matches_excerpt": true
-    }
-  ],
-  "era": {
-    "value": "born_modern",
-    "measured": "2026-09-10",
-    "source": "VERDICT — the old against the modern, 2026-08-08: 45 PDFs of 1957-1987 against 15 PDFs of 2023-2026, 174 pages, 9 publishers. Its own stated limits: 13 of the 15 modern are biomedical, 100 % English, 100 % open access — a channel that excludes scans, truncated and subscription articles by construction.",
-    "note": "one of the fourteen difficulties born with the modern era; it had no line in the catalogue before 2026-08-08. Discipline reserve, measured the same day: on 14 articles of physics, mathematics, computer science, economics and linguistics, zero structured abstract, zero pre-registration and zero ethics declaration. This form is biomedical before it is modern, and a corpus that takes it as a generic property of the modern article measures a discipline, not a form.",
-    "discipline_reserve": "biomedical"
-  },
-  "failure_mode": {
-    "value": "MANQ",
-    "means": "a gap: the graph is incomplete where the reading did not reach, not wrong",
-    "source": "the internal catalogue of 2026-08-09 (korela.db, table parametre), line 110; it is not derived from the damage and varies inside a damage class"
-  },
-  "document_years": {
-    "corpus_id": "corpus-europe-pmc-jats-2023-2026",
-    "counts": {
-      "2026": 12
-    },
-    "carriers_dated": 12,
-    "source": "corpora/index/document-years-europe-pmc-272.json, read 2026-09-11 from each file's earliest pub-date"
+  {
+   "corpus": "observation 2026-08 (272 Europe PMC JATS articles)",
+   "date": "2026-09-09",
+   "observer": "house probe (regex, no model), written 2026-08-08, re-run by the Fault Atlas maintainer",
+   "organisation": "Loxyn SAS, Lyon",
+   "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+   "lang": "en",
+   "probe": "probes/2026-08/line-110.py",
+   "excerpt": "Probe re-run on the 272 JATS files: 19/272 carriers (essai 15, bio 1, cas 1, meta 1, nonEN 1). Examples — bio-PMC13162546.xml: NCT06048588 · cas-PMC13293792.xml: NCT06326190 | NCT06955169 · essai-PMC13169227.xml: NCT03506789"
   }
+ ],
+ "specimens": {
+  "cases": [],
+  "counter_examples": []
+ },
+ "prevention": {
+  "cancellable_by_code": true
+ },
+ "repair": {
+  "reachable_by_deletion": "partial",
+  "note": "an extra label can be deleted, a missing one cannot be added",
+  "measured": {
+   "value": "yes_at_a_cost",
+   "reached": 3932,
+   "injected": 3932,
+   "note": "3,932 of 3,932 reached, and 12,591 true facts were lost with them: the repair deletes the nodes, not their labels",
+   "source": "measured 2026-09-10 by pgrepair (SciPyWeightedILP) on the frozen EUR-Lex truth, three identical runs, journal sha256 in measures/reachability-by-damage-2026-09-10.json. Per damage class, not per form: two forms of the same damage and the same visibility get the same answer.",
+   "date": "2026-09-10"
+  },
+  "obstacle": {
+   "value": "none",
+   "reason": "Reached in full, and at a cost: the repair deletes the nodes rather than their labels. The information that would put the label right is in the node itself — the identifier says the type — and one statement of the graph's own query language sets it back with nothing destroyed.",
+   "reason_fr": "Atteinte en entier, et à un prix : la réparation supprime les nœuds plutôt que leurs étiquettes. L'information qui remettrait l'étiquette droite est dans le nœud lui-même — l'identifiant dit le type — et une instruction du langage de requête du graphe la repose sans rien détruire.",
+   "source": "derived from what a deletion-only repair can express, read in the repairer's own code — its solution is a set of elements to delete and carries no insertion — together with the measurement of 2026-09-10. Per damage class, not per form.",
+   "date": "2026-09-13"
+  }
+ },
+ "judgeable_by": [
+  "construction",
+  "curated"
+ ],
+ "history": [
+  {
+   "date": "2026-08-08",
+   "event": "the internal catalogue records a house filter with 3 cases and 1 counter-example(s); not published in this record",
+   "by": "Korela For Science"
+  },
+  {
+   "date": "2026-08-09",
+   "event": "catalogue line 110 — DEFEATED (cancelled by code): filter written and green on the bench",
+   "by": "Korela For Science"
+  },
+  {
+   "date": "2026-09-09",
+   "event": "migrated; classified damage=WRONG_LABEL injection=INSERT (judgment, unreviewed by a second reader)",
+   "by": "Fault Atlas migration"
+  },
+  {
+   "date": "2026-09-09",
+   "event": "second observation added from the exact probe on the 272 files: probes/2026-08/line-110.py, 19/272",
+   "by": "Fault Atlas maintainer"
+  },
+  {
+   "date": "2026-09-10",
+   "event": "era recorded: born_modern — one of the fourteen difficulties born with the modern era; it had no line in the catalogue before 2026-08-08 (from the August verdicts, which the atlas had not carried)",
+   "by": "Fault Atlas maintainer"
+  }
+ ],
+ "probes": [
+  {
+   "file": "probes/2026-08/line-110.py",
+   "kind": "python",
+   "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+   "written": "2026-08-08",
+   "run": "python3 tools/run_probe.py probes/2026-08/line-110.py <dir with the 272 .xml>",
+   "result": {
+    "date": "2026-09-09",
+    "count": 19,
+    "of": 272,
+    "strata": {
+     "essai": 15,
+     "bio": 1,
+     "cas": 1,
+     "meta": 1,
+     "nonEN": 1
+    },
+    "examples": [
+     [
+      "bio-PMC13162546.xml",
+      [
+       "NCT06048588"
+      ]
+     ],
+     [
+      "cas-PMC13293792.xml",
+      [
+       "NCT06326190",
+       "NCT06955169"
+      ]
+     ],
+     [
+      "essai-PMC13169227.xml",
+      [
+       "NCT03506789"
+      ]
+     ],
+     [
+      "essai-PMC13169472.xml",
+      [
+       "NCT06188091"
+      ]
+     ],
+     [
+      "essai-PMC13191455.xml",
+      [
+       "ISRCTN16942542"
+      ]
+     ],
+     [
+      "essai-PMC13205709.xml",
+      [
+       "NCT05571280"
+      ]
+     ],
+     [
+      "essai-PMC13205731.xml",
+      [
+       "ISRCTN31437934"
+      ]
+     ],
+     [
+      "essai-PMC13205876.xml",
+      [
+       "NCT00970866"
+      ]
+     ],
+     [
+      "essai-PMC13245602.xml",
+      [
+       "NCT03958214"
+      ]
+     ],
+     [
+      "essai-PMC13254492.xml",
+      [
+       "NCT01304069"
+      ]
+     ],
+     [
+      "essai-PMC13264282.xml",
+      [
+       "NCT05082922"
+      ]
+     ],
+     [
+      "essai-PMC13280799.xml",
+      [
+       "NCT06815315"
+      ]
+     ]
+    ],
+    "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files",
+    "carriers_file": "probes/results/line-110.json"
+   },
+   "matches_excerpt": true
+  }
+ ],
+ "era": {
+  "value": "born_modern",
+  "measured": "2026-09-10",
+  "source": "VERDICT — the old against the modern, 2026-08-08: 45 PDFs of 1957-1987 against 15 PDFs of 2023-2026, 174 pages, 9 publishers. Its own stated limits: 13 of the 15 modern are biomedical, 100 % English, 100 % open access — a channel that excludes scans, truncated and subscription articles by construction.",
+  "note": "one of the fourteen difficulties born with the modern era; it had no line in the catalogue before 2026-08-08. Discipline reserve, measured the same day: on 14 articles of physics, mathematics, computer science, economics and linguistics, zero structured abstract, zero pre-registration and zero ethics declaration. This form is biomedical before it is modern, and a corpus that takes it as a generic property of the modern article measures a discipline, not a form.",
+  "discipline_reserve": "biomedical"
+ },
+ "failure_mode": {
+  "value": "MANQ",
+  "means": "a gap: the graph is incomplete where the reading did not reach, not wrong",
+  "source": "the internal catalogue of 2026-08-09 (korela.db, table parametre), line 110; it is not derived from the damage and varies inside a damage class"
+ },
+ "document_years": {
+  "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+  "counts": {
+   "2026": 12
+  },
+  "carriers_dated": 12,
+  "source": "corpora/index/document-years-europe-pmc-272.json, read 2026-09-11 from each file's earliest pub-date"
+ }
 }

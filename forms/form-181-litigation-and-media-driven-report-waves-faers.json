@@ -1,83 +1,90 @@
 {
-  "id": "form-181",
-  "version": 1,
-  "name": "Litigation- and media-driven report waves (FAERS)",
-  "origin": {
-    "organisation": "Loxyn SAS, Lyon",
-    "campaign": "September 2026 — PubMed substrate and other corpora (Voûte)",
-    "contact": "contact@loxyn.ai"
+ "id": "form-181",
+ "version": 1,
+ "name": "Litigation- and media-driven report waves (FAERS)",
+ "origin": {
+  "organisation": "Loxyn SAS, Lyon",
+  "campaign": "September 2026 — PubMed substrate and other corpora (Voûte)",
+  "contact": "contact@loxyn.ai"
+ },
+ "damage": "SPURIOUS_EDGE",
+ "class": "UNCLASSIFIED",
+ "layer": "⑨ structure",
+ "injection": "INSERT",
+ "status": "proposed",
+ "seen": [
+  {
+   "corpus": "FDA FAERS quarterly files 2013Q1-2026Q2, probe of 2026-09-09, 2019 and 2021",
+   "document": "'avobenzone\\octisalate\\octocrylene × skin burning sensation' 9,269 reports in twelve months (2019); 'ranitidine hydrochloride × prostate cancer' 15,565 (2021)",
+   "date": "2026-09-09",
+   "observer": "Claude Voûte (LLM agent), session 8d9c5098, from the night reports of 2026-09-06/09",
+   "excerpt": "09-09-2026 : « avobenzone\\octisalate\\octocrylene × skin burning sensation 9 269 déclarations en douze mois » (2019) ; « ranitidine hydrochloride × prostate cancer 15 565 » (2021) ; couples de la liste 2021 : 18 sur 20 morts au juge à trois ans. Ce n'est pas une faute de données mais une population.",
+   "excerpt_en": "2026-09-09: \"'avobenzone\\octisalate\\octocrylene × skin burning sensation' 9,269 reports in twelve months\" (2019); \"'ranitidine hydrochloride × prostate cancer' 15,565\" (2021); pairs of the 2021 list: 18 of 20 dead at the three-year judge. Not a data fault but a population.",
+   "lang": "fr",
+   "organisation": "Loxyn SAS, Lyon"
+  }
+ ],
+ "specimens": {
+  "cases": [],
+  "counter_examples": []
+ },
+ "prevention": {
+  "cancellable_by_code": false,
+  "note": "not assessed by the observer; to be classified by the second reader"
+ },
+ "repair": {
+  "reachable_by_deletion": "yes",
+  "note": "the faulty edge can be deleted",
+  "measured": {
+   "value": "depends_on_visibility",
+   "reached": 366,
+   "injected": 721,
+   "note": "360 of 360 when a law can see it, 6 of 361 when none can",
+   "source": "measured 2026-09-10 by pgrepair (SciPyWeightedILP) on the frozen EUR-Lex truth, three identical runs, journal sha256 in measures/reachability-by-damage-2026-09-10.json. Per damage class, not per form: two forms of the same damage and the same visibility get the same answer.",
+   "date": "2026-09-10",
+   "disagrees_with_the_judgment": "yes"
   },
-  "damage": "SPURIOUS_EDGE",
-  "class": "UNCLASSIFIED",
-  "layer": "⑨ structure",
-  "injection": "INSERT",
-  "status": "proposed",
-  "seen": [
-    {
-      "corpus": "FDA FAERS quarterly files 2013Q1-2026Q2, probe of 2026-09-09, 2019 and 2021",
-      "document": "'avobenzone\\octisalate\\octocrylene × skin burning sensation' 9,269 reports in twelve months (2019); 'ranitidine hydrochloride × prostate cancer' 15,565 (2021)",
-      "date": "2026-09-09",
-      "observer": "Claude Voûte (LLM agent), session 8d9c5098, from the night reports of 2026-09-06/09",
-      "excerpt": "09-09-2026 : « avobenzone\\octisalate\\octocrylene × skin burning sensation 9 269 déclarations en douze mois » (2019) ; « ranitidine hydrochloride × prostate cancer 15 565 » (2021) ; couples de la liste 2021 : 18 sur 20 morts au juge à trois ans. Ce n'est pas une faute de données mais une population.",
-      "excerpt_en": "2026-09-09: \"'avobenzone\\octisalate\\octocrylene × skin burning sensation' 9,269 reports in twelve months\" (2019); \"'ranitidine hydrochloride × prostate cancer' 15,565\" (2021); pairs of the 2021 list: 18 of 20 dead at the three-year judge. Not a data fault but a population.",
-      "lang": "fr",
-      "organisation": "Loxyn SAS, Lyon"
-    }
-  ],
-  "specimens": {
-    "cases": [],
-    "counter_examples": []
+  "obstacle": {
+   "value": "the information",
+   "reason": "Deletion is the right gesture here: the false edge has to go. What is missing is what tells it from the true one when no constraint separates them. Measured: with a weight carried from the document, a repairer goes from 65 of 130 — a coin — to 130 of 130, stable on three runs.",
+   "reason_fr": "La suppression est ici le bon geste : la fausse arête doit partir. Ce qui manque, c'est de quoi la distinguer de la vraie quand aucune contrainte ne les sépare. Mesuré : avec un poids porté depuis le document, un réparateur passe de 65 sur 130 — une pièce — à 130 sur 130, stable.",
+   "source": "derived from what a deletion-only repair can express, read in the repairer's own code — its solution is a set of elements to delete and carries no insertion — together with the measurement of 2026-09-10. Per damage class, not per form.",
+   "date": "2026-09-13"
+  }
+ },
+ "judgeable_by": [
+  "dated_future"
+ ],
+ "related": [
+  "form-016"
+ ],
+ "history": [
+  {
+   "date": "2026-09-09",
+   "event": "proposed by the Voûte Claude in 'FORMES-PUBMED-pour-Fault-Atlas (09-09-2026)' part 2 (sha256 51a338add43cd071…), form 40 of 40; effect on a graph: A drug-effect edge becomes massive within months through a campaign, then vanishes; without reading the reporter one cannot tell the medical signal from the campaign. Prevalence: measured on two years: 15 of the 20 places of 2019 and 18 of the 20 of 2021 are waves.",
+   "by": "Claude Voûte (LLM agent), session 8d9c5098, from the night reports of 2026-09-06/09"
   },
-  "prevention": {
-    "cancellable_by_code": false,
-    "note": "not assessed by the observer; to be classified by the second reader"
-  },
-  "repair": {
-    "reachable_by_deletion": "yes",
-    "note": "the faulty edge can be deleted",
-    "measured": {
-      "value": "depends_on_visibility",
-      "reached": 366,
-      "injected": 721,
-      "note": "360 of 360 when a law can see it, 6 of 361 when none can",
-      "source": "measured 2026-09-10 by pgrepair (SciPyWeightedILP) on the frozen EUR-Lex truth, three identical runs, journal sha256 in measures/reachability-by-damage-2026-09-10.json. Per damage class, not per form: two forms of the same damage and the same visibility get the same answer.",
-      "date": "2026-09-10",
-      "disagrees_with_the_judgment": "yes"
-    }
-  },
-  "judgeable_by": [
-    "dated_future"
-  ],
-  "related": [
-    "form-016"
-  ],
-  "history": [
-    {
-      "date": "2026-09-09",
-      "event": "proposed by the Voûte Claude in 'FORMES-PUBMED-pour-Fault-Atlas (09-09-2026)' part 2 (sha256 51a338add43cd071…), form 40 of 40; effect on a graph: A drug-effect edge becomes massive within months through a campaign, then vanishes; without reading the reporter one cannot tell the medical signal from the campaign. Prevalence: measured on two years: 15 of the 20 places of 2019 and 18 of the 20 of 2021 are waves.",
-      "by": "Claude Voûte (LLM agent), session 8d9c5098, from the night reports of 2026-09-06/09"
-    },
-    {
-      "date": "2026-09-09",
-      "event": "converted to a record; class, prevention and the novel/variant question left to the second reader",
-      "by": "Fault Atlas"
-    }
-  ],
-  "proposed_severity": {
-    "value": "G2",
-    "reason": "9,269 reports in twelve months driven by litigation: the association is a media artefact and reads as a signal",
-    "proposed_by": "Fault Atlas maintainer (Loxyn), first reading",
-    "date": "2026-09-11",
-    "status": "proposed — a second reader confirms or contests, as for the 43 validated forms",
-    "adds_to_the_damage_class": false,
-    "note": "this reading agrees with how the August catalogue judges most SPURIOUS_EDGE forms (G2), so it adds little",
-    "reason_fr": "9 269 signalements en douze mois portés par un contentieux : l'association est un artefact médiatique et se lit comme un signal"
-  },
-  "registry_scope": {
-    "extent": "the identified waves: 9,269 reports in twelve months for a single product-effect pair",
-    "why_not_a_prevalence": "a fault of a registry has no prevalence: it is a property of the base, so everything drawn from that base carries it. What can be stated is the slice it touches.",
-    "source": "read from this form's own observation, 2026-09-11",
-    "extent_fr": "les vagues repérées : 9 269 signalements en douze mois pour un seul couple produit-effet"
-  },
-  "name_fr": "Vagues de signalements portées par un contentieux ou les médias (FAERS)"
+  {
+   "date": "2026-09-09",
+   "event": "converted to a record; class, prevention and the novel/variant question left to the second reader",
+   "by": "Fault Atlas"
+  }
+ ],
+ "proposed_severity": {
+  "value": "G2",
+  "reason": "9,269 reports in twelve months driven by litigation: the association is a media artefact and reads as a signal",
+  "proposed_by": "Fault Atlas maintainer (Loxyn), first reading",
+  "date": "2026-09-11",
+  "status": "proposed — a second reader confirms or contests, as for the 43 validated forms",
+  "adds_to_the_damage_class": false,
+  "note": "this reading agrees with how the August catalogue judges most SPURIOUS_EDGE forms (G2), so it adds little",
+  "reason_fr": "9 269 signalements en douze mois portés par un contentieux : l'association est un artefact médiatique et se lit comme un signal"
+ },
+ "registry_scope": {
+  "extent": "the identified waves: 9,269 reports in twelve months for a single product-effect pair",
+  "why_not_a_prevalence": "a fault of a registry has no prevalence: it is a property of the base, so everything drawn from that base carries it. What can be stated is the slice it touches.",
+  "source": "read from this form's own observation, 2026-09-11",
+  "extent_fr": "les vagues repérées : 9 269 signalements en douze mois pour un seul couple produit-effet"
+ },
+ "name_fr": "Vagues de signalements portées par un contentieux ou les médias (FAERS)"
 }

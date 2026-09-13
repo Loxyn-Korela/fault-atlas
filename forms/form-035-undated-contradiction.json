@@ -1,143 +1,150 @@
 {
-  "id": "form-035",
-  "version": 1,
-  "legacy_line": 35,
-  "name": "Undated contradiction",
-  "name_fr": "Contradiction sans date",
-  "origin": {
-    "organisation": "Loxyn SAS, Lyon",
-    "campaign": "August 2026 — observation campaign (Korela For Science)",
-    "contact": "contact@loxyn.ai"
+ "id": "form-035",
+ "version": 1,
+ "legacy_line": 35,
+ "name": "Undated contradiction",
+ "name_fr": "Contradiction sans date",
+ "origin": {
+  "organisation": "Loxyn SAS, Lyon",
+  "campaign": "August 2026 — observation campaign (Korela For Science)",
+  "contact": "contact@loxyn.ai"
+ },
+ "damage": "WRONG_VALUE",
+ "class": "IRREDUCIBLE",
+ "layer": "⑧ coherence",
+ "injection": "ALTER",
+ "legacy_severity": "G2",
+ "legacy_mechanism": "M5",
+ "status": "migrated_unreviewed",
+ "seen": [
+  {
+   "corpus": "observation 2026-08 (272 Europe PMC JATS articles)",
+   "date": "2026-08-08",
+   "observer": "house observer (LLM agent), see report",
+   "excerpt": "MESURÉ le 08/08/2026 sur les 272 articles de (internal corpus of 272 JATS articles) : 15 049 des 16 411 paragraphes de corps (92 %) ne contiennent AUCUNE année. L'affirmation non datée est donc la norme, pas l'exception — et deux affirmations non datées ne peuvent pas être départagées par la date. (Sonde : comptage des <p> du <body> portant un jeton d'année 19xx/20xx.)",
+   "lang": "fr",
+   "excerpt_en": "MEASURED on 2026-08-08 on the 272 articles of the internal corpus: 15,049 of the 16,411 body paragraphs (92 %) contain NO year. The undated statement is therefore the norm, not the exception — and two undated statements cannot be separated by date. (Probe: count of <p> in <body> carrying a 19xx/20xx year token.)",
+   "organisation": "Loxyn SAS, Lyon",
+   "corpus_id": "corpus-europe-pmc-jats-2023-2026"
   },
-  "damage": "WRONG_VALUE",
-  "class": "IRREDUCIBLE",
-  "layer": "⑧ coherence",
-  "injection": "ALTER",
-  "legacy_severity": "G2",
-  "legacy_mechanism": "M5",
-  "status": "migrated_unreviewed",
-  "seen": [
-    {
-      "corpus": "observation 2026-08 (272 Europe PMC JATS articles)",
-      "date": "2026-08-08",
-      "observer": "house observer (LLM agent), see report",
-      "excerpt": "MESURÉ le 08/08/2026 sur les 272 articles de (internal corpus of 272 JATS articles) : 15 049 des 16 411 paragraphes de corps (92 %) ne contiennent AUCUNE année. L'affirmation non datée est donc la norme, pas l'exception — et deux affirmations non datées ne peuvent pas être départagées par la date. (Sonde : comptage des <p> du <body> portant un jeton d'année 19xx/20xx.)",
-      "lang": "fr",
-      "excerpt_en": "MEASURED on 2026-08-08 on the 272 articles of the internal corpus: 15,049 of the 16,411 body paragraphs (92 %) contain NO year. The undated statement is therefore the norm, not the exception — and two undated statements cannot be separated by date. (Probe: count of <p> in <body> carrying a 19xx/20xx year token.)",
-      "organisation": "Loxyn SAS, Lyon",
-      "corpus_id": "corpus-europe-pmc-jats-2023-2026"
-    },
-    {
-      "corpus": "Europe PMC JATS 2023-2026 (272 articles, the declared corpus)",
-      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
-      "date": "2026-09-10",
-      "observer": "Fault Atlas maintainer (Loxyn), by probe, no model",
-      "excerpt": "MEASURED on 2026-09-10 by probes/2026-09-recovered/line-035.py, whose definition is in its docstring: 261/272 articles carry it. First carrier: bio-PMC12583535.xml — 42/43 body paragraphs with no year",
-      "lang": "en",
-      "probe": "probes/2026-09-recovered/line-035.py"
-    }
-  ],
-  "specimens": {
-    "cases": [],
-    "counter_examples": []
-  },
-  "prevention": {
-    "cancellable_by_code": false
-  },
-  "repair": {
-    "reachable_by_deletion": "no",
-    "note": "deletion cannot restore this; derived from the damage class by the migration of 2026-09-09, not judged form by form and not measured — the bench can measure it",
-    "measured": {
-      "value": "no",
-      "reached": 0,
-      "injected": 2613,
-      "note": "0 of 2,613 reached",
-      "source": "measured 2026-09-10 by pgrepair (SciPyWeightedILP) on the frozen EUR-Lex truth, three identical runs, journal sha256 in measures/reachability-by-damage-2026-09-10.json. Per damage class, not per form: two forms of the same damage and the same visibility get the same answer.",
-      "date": "2026-09-10"
-    }
-  },
-  "judgeable_by": [
-    "construction",
-    "registry",
-    "dated_future",
-    "closed_world"
-  ],
-  "history": [
-    {
-      "date": "2026-08-09",
-      "event": "catalogue line 35 — GOLDEN (kept for the benchmark): irreducible or silent false",
-      "by": "Korela For Science"
-    },
-    {
-      "date": "2026-09-09",
-      "event": "migrated; classified damage=WRONG_VALUE injection=ALTER (judgment, unreviewed by a second reader)",
-      "by": "Fault Atlas migration"
-    },
-    {
-      "date": "2026-09-09",
-      "event": "internal tool paths removed from observation notes before publication; wording otherwise unchanged",
-      "by": "Fault Atlas"
-    }
-  ],
-  "failure_mode": {
-    "value": "FAUX",
-    "means": "a false fact: a value, a type or a link the source never asserted",
-    "source": "the internal catalogue of 2026-08-09 (korela.db, table parametre), line 35; it is not derived from the damage and varies inside a damage class"
-  },
-  "probes": [
-    {
-      "file": "probes/2026-09-recovered/line-035.py",
-      "kind": "python",
-      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
-      "written": "2026-09-10",
-      "run": "python3 tools/run_probe.py probes/2026-09-recovered/line-035.py <dir with the 272 .xml>",
-      "result": {
-        "date": "2026-09-10",
-        "count": 261,
-        "of": 272,
-        "strata": {
-          "nonEN": 50,
-          "bio": 34,
-          "cas": 34,
-          "essai": 34,
-          "phys": 34,
-          "meta": 33,
-          "retract": 27,
-          "moderne": 15
-        },
-        "examples": [
-          [
-            "bio-PMC12583535.xml",
-            [
-              "42/43 body paragraphs with no year"
-            ]
-          ],
-          [
-            "bio-PMC12590050.xml",
-            [
-              "58/62 body paragraphs with no year"
-            ]
-          ],
-          [
-            "bio-PMC12674831.xml",
-            [
-              "455/469 body paragraphs with no year"
-            ]
-          ]
-        ],
-        "by": "Fault Atlas maintainer (Loxyn), on the declared corpus",
-        "carriers_file": "probes/results/form-035-undated-contradiction.json"
-      },
-      "matches_excerpt": true,
-      "note": "reproduces the figure of the September reading it is attached to, 261/272. It does NOT reproduce the August figure of None, whose definition we could not recover; that observation is left exactly as it stands, above, with no example under it."
-    }
-  ],
-  "document_years": {
-    "corpus_id": "corpus-europe-pmc-jats-2023-2026",
-    "counts": {
-      "2025": 3
-    },
-    "carriers_dated": 3,
-    "source": "corpora/index/document-years-europe-pmc-272.json, read 2026-09-11 from each file's earliest pub-date"
+  {
+   "corpus": "Europe PMC JATS 2023-2026 (272 articles, the declared corpus)",
+   "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+   "date": "2026-09-10",
+   "observer": "Fault Atlas maintainer (Loxyn), by probe, no model",
+   "excerpt": "MEASURED on 2026-09-10 by probes/2026-09-recovered/line-035.py, whose definition is in its docstring: 261/272 articles carry it. First carrier: bio-PMC12583535.xml — 42/43 body paragraphs with no year",
+   "lang": "en",
+   "probe": "probes/2026-09-recovered/line-035.py"
   }
+ ],
+ "specimens": {
+  "cases": [],
+  "counter_examples": []
+ },
+ "prevention": {
+  "cancellable_by_code": false
+ },
+ "repair": {
+  "reachable_by_deletion": "no",
+  "note": "deletion cannot restore this; derived from the damage class by the migration of 2026-09-09, not judged form by form and not measured — the bench can measure it",
+  "measured": {
+   "value": "no",
+   "reached": 0,
+   "injected": 2613,
+   "note": "0 of 2,613 reached",
+   "source": "measured 2026-09-10 by pgrepair (SciPyWeightedILP) on the frozen EUR-Lex truth, three identical runs, journal sha256 in measures/reachability-by-damage-2026-09-10.json. Per damage class, not per form: two forms of the same damage and the same visibility get the same answer.",
+   "date": "2026-09-10"
+  },
+  "obstacle": {
+   "value": "the operation",
+   "reason": "Deleting a wrong value removes the fact without restoring the right one. The gesture needed is to SET, and deletion cannot express it.",
+   "reason_fr": "Supprimer une valeur fausse retire le fait sans rétablir le bon. Le geste qu'il faudrait est d'ÉCRIRE, et la suppression ne sait pas l'exprimer.",
+   "source": "derived from what a deletion-only repair can express, read in the repairer's own code — its solution is a set of elements to delete and carries no insertion — together with the measurement of 2026-09-10. Per damage class, not per form.",
+   "date": "2026-09-13"
+  }
+ },
+ "judgeable_by": [
+  "construction",
+  "registry",
+  "dated_future",
+  "closed_world"
+ ],
+ "history": [
+  {
+   "date": "2026-08-09",
+   "event": "catalogue line 35 — GOLDEN (kept for the benchmark): irreducible or silent false",
+   "by": "Korela For Science"
+  },
+  {
+   "date": "2026-09-09",
+   "event": "migrated; classified damage=WRONG_VALUE injection=ALTER (judgment, unreviewed by a second reader)",
+   "by": "Fault Atlas migration"
+  },
+  {
+   "date": "2026-09-09",
+   "event": "internal tool paths removed from observation notes before publication; wording otherwise unchanged",
+   "by": "Fault Atlas"
+  }
+ ],
+ "failure_mode": {
+  "value": "FAUX",
+  "means": "a false fact: a value, a type or a link the source never asserted",
+  "source": "the internal catalogue of 2026-08-09 (korela.db, table parametre), line 35; it is not derived from the damage and varies inside a damage class"
+ },
+ "probes": [
+  {
+   "file": "probes/2026-09-recovered/line-035.py",
+   "kind": "python",
+   "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+   "written": "2026-09-10",
+   "run": "python3 tools/run_probe.py probes/2026-09-recovered/line-035.py <dir with the 272 .xml>",
+   "result": {
+    "date": "2026-09-10",
+    "count": 261,
+    "of": 272,
+    "strata": {
+     "nonEN": 50,
+     "bio": 34,
+     "cas": 34,
+     "essai": 34,
+     "phys": 34,
+     "meta": 33,
+     "retract": 27,
+     "moderne": 15
+    },
+    "examples": [
+     [
+      "bio-PMC12583535.xml",
+      [
+       "42/43 body paragraphs with no year"
+      ]
+     ],
+     [
+      "bio-PMC12590050.xml",
+      [
+       "58/62 body paragraphs with no year"
+      ]
+     ],
+     [
+      "bio-PMC12674831.xml",
+      [
+       "455/469 body paragraphs with no year"
+      ]
+     ]
+    ],
+    "by": "Fault Atlas maintainer (Loxyn), on the declared corpus",
+    "carriers_file": "probes/results/form-035-undated-contradiction.json"
+   },
+   "matches_excerpt": true,
+   "note": "reproduces the figure of the September reading it is attached to, 261/272. It does NOT reproduce the August figure of None, whose definition we could not recover; that observation is left exactly as it stands, above, with no example under it."
+  }
+ ],
+ "document_years": {
+  "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+  "counts": {
+   "2025": 3
+  },
+  "carriers_dated": 3,
+  "source": "corpora/index/document-years-europe-pmc-272.json, read 2026-09-11 from each file's earliest pub-date"
+ }
 }

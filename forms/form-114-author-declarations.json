@@ -1,221 +1,228 @@
 {
-  "id": "form-114",
-  "version": 2,
-  "legacy_line": 114,
-  "name": "Author declarations",
-  "name_fr": "Déclarations sur les auteurs",
-  "origin": {
-    "organisation": "Loxyn SAS, Lyon",
-    "campaign": "August 2026 — observation campaign (Korela For Science)",
-    "contact": "contact@loxyn.ai"
-  },
-  "damage": "SPURIOUS_EDGE",
-  "class": "DEFEATED",
-  "layer": "④ extraction",
-  "injection": "INSERT",
-  "legacy_severity": "G4",
-  "legacy_mechanism": "",
-  "status": "migrated_unreviewed",
-  "seen": [
-    {
-      "corpus": "observation 2026-08 (Europe PMC JATS 2023-2026 and PubMed abstracts)",
-      "date": "2026-08-08",
-      "observer": "house observer (LLM agent), see report",
-      "excerpt": "MESURÉ le 08/08/2026 sur 272 articles Europe PMC accès libre 2023-2026 (internal corpus of 272 JATS articles) : présent dans 190 articles (69 %) — le défaut le plus répandu de la série. Concentration : cas 34/34, meta 34/34, phys 31/34, bio 30/34, essai 28/34, moderne 15/17, nonEN 17/51, retract 1/34. Formes réelles : titres « Author contributions », « Competing interests », « Data availability », et fn-type COI-statement ×30, financial-disclosure ×12, con ×4 — contre fn-type=\"other\" ×127, qui ne dit rien et fonde la clause de refus.",
-      "lang": "fr",
-      "excerpt_en": "MEASURED on 2026-08-08 on 272 open-access Europe PMC articles 2023-2026 (internal corpus): present in 190 articles (69 %) — the most widespread item of the series. Concentration: case 34/34, meta 34/34, phys 31/34, bio 30/34, trial 28/34, modern 15/17, nonEN 17/51, retract 1/34. Real forms: headings \"Author contributions\", \"Competing interests\", \"Data availability\", and fn-type COI-statement ×30, financial-disclosure ×12, con ×4 — against fn-type=\"other\" ×127, which says nothing and founds the refusal clause.",
-      "organisation": "Loxyn SAS, Lyon",
-      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
-      "probe": "probes/2026-08/line-114.py"
-    }
-  ],
-  "specimens": {
-    "cases": [],
-    "counter_examples": []
-  },
-  "prevention": {
-    "cancellable_by_code": true
-  },
-  "repair": {
-    "reachable_by_deletion": "yes",
-    "note": "the faulty edge can be deleted",
-    "measured": {
-      "value": "depends_on_visibility",
-      "reached": 366,
-      "injected": 721,
-      "note": "360 of 360 when a law can see it, 6 of 361 when none can",
-      "source": "measured 2026-09-10 by pgrepair (SciPyWeightedILP) on the frozen EUR-Lex truth, three identical runs, journal sha256 in measures/reachability-by-damage-2026-09-10.json. Per damage class, not per form: two forms of the same damage and the same visibility get the same answer.",
-      "date": "2026-09-10",
-      "disagrees_with_the_judgment": "yes"
-    }
-  },
-  "judgeable_by": [
-    "construction",
-    "curated",
-    "closed_world"
-  ],
-  "history": [
-    {
-      "date": "2026-08-08",
-      "event": "the internal catalogue records a house filter with 5 cases and 1 counter-example(s); not published in this record",
-      "by": "Korela For Science"
-    },
-    {
-      "date": "2026-08-09",
-      "event": "catalogue line 114 — DEFEATED (cancelled by code): filter written and green on the bench",
-      "by": "Korela For Science"
-    },
-    {
-      "date": "2026-09-09",
-      "event": "migrated; classified damage=SPURIOUS_EDGE injection=INSERT (judgment, unreviewed by a second reader)",
-      "by": "Fault Atlas migration"
-    },
-    {
-      "date": "2026-09-09",
-      "event": "internal tool paths removed from observation notes before publication; wording otherwise unchanged",
-      "by": "Fault Atlas"
-    },
-    {
-      "date": "2026-09-09",
-      "event": "exact probe attached to the 272-file observation: probes/2026-08/line-114.py, re-run 190/272",
-      "by": "Fault Atlas maintainer"
-    },
-    {
-      "date": "2026-09-10",
-      "event": "era recorded: born_modern — one of the fourteen difficulties born with the modern era; it had no line in the catalogue before 2026-08-08 (from the August verdicts, which the atlas had not carried)",
-      "by": "Fault Atlas maintainer"
-    }
-  ],
-  "probes": [
-    {
-      "file": "probes/2026-08/line-114.py",
-      "kind": "python",
-      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
-      "written": "2026-08-08",
-      "run": "python3 tools/run_probe.py probes/2026-08/line-114.py <dir with the 272 .xml>",
-      "result": {
-        "date": "2026-09-09",
-        "count": 190,
-        "of": 272,
-        "strata": {
-          "cas": 34,
-          "meta": 34,
-          "phys": 31,
-          "bio": 30,
-          "essai": 28,
-          "nonEN": 17,
-          "moderne": 15,
-          "retract": 1
-        },
-        "examples": [
-          [
-            "bio-PMC12583535.xml",
-            [
-              "Author contributions",
-              "Competing interests"
-            ]
-          ],
-          [
-            "bio-PMC12590050.xml",
-            [
-              "Author Contributions"
-            ]
-          ],
-          [
-            "bio-PMC12857832.xml",
-            [
-              "Author contributions",
-              "Conflicts of interest"
-            ]
-          ],
-          [
-            "bio-PMC12882215.xml",
-            [
-              "Authors’ contributions",
-              "Competing interests"
-            ]
-          ],
-          [
-            "bio-PMC12909487.xml",
-            [
-              "Author contributions",
-              "Conceptualization"
-            ]
-          ],
-          [
-            "bio-PMC12927065.xml",
-            [
-              "CRediT authorship contribution statement",
-              "Conflicts of interest"
-            ]
-          ],
-          [
-            "bio-PMC12927975.xml",
-            [
-              "Author Contributions",
-              "Conflicts of Interest"
-            ]
-          ],
-          [
-            "bio-PMC12953170.xml",
-            [
-              "Author Contributions",
-              "Conflict of Interest"
-            ]
-          ],
-          [
-            "bio-PMC12959687.xml",
-            [
-              "Data Availability",
-              "Data Availability Statement"
-            ]
-          ],
-          [
-            "bio-PMC13057049.xml",
-            [
-              "Authors’ Contributions",
-              "Competing Interests"
-            ]
-          ],
-          [
-            "bio-PMC13088504.xml",
-            [
-              "Authors’ contributions",
-              "Competing interests"
-            ]
-          ],
-          [
-            "bio-PMC13097615.xml",
-            [
-              "Author Contributions",
-              "Conflicts of Interest"
-            ]
-          ]
-        ],
-        "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files",
-        "carriers_file": "probes/results/line-114.json"
-      },
-      "matches_excerpt": true
-    }
-  ],
-  "era": {
-    "value": "born_modern",
-    "measured": "2026-09-10",
-    "source": "VERDICT — the old against the modern, 2026-08-08: 45 PDFs of 1957-1987 against 15 PDFs of 2023-2026, 174 pages, 9 publishers. Its own stated limits: 13 of the 15 modern are biomedical, 100 % English, 100 % open access — a channel that excludes scans, truncated and subscription articles by construction.",
-    "note": "one of the fourteen difficulties born with the modern era; it had no line in the catalogue before 2026-08-08"
-  },
-  "failure_mode": {
-    "value": "MES",
-    "means": "a property of the corpus or of the measuring apparatus, not a fault of a document",
-    "source": "the internal catalogue of 2026-08-09 (korela.db, table parametre), line 114; it is not derived from the damage and varies inside a damage class"
-  },
-  "document_years": {
-    "corpus_id": "corpus-europe-pmc-jats-2023-2026",
-    "counts": {
-      "2025": 2,
-      "2026": 10
-    },
-    "carriers_dated": 12,
-    "source": "corpora/index/document-years-europe-pmc-272.json, read 2026-09-11 from each file's earliest pub-date"
+ "id": "form-114",
+ "version": 2,
+ "legacy_line": 114,
+ "name": "Author declarations",
+ "name_fr": "Déclarations sur les auteurs",
+ "origin": {
+  "organisation": "Loxyn SAS, Lyon",
+  "campaign": "August 2026 — observation campaign (Korela For Science)",
+  "contact": "contact@loxyn.ai"
+ },
+ "damage": "SPURIOUS_EDGE",
+ "class": "DEFEATED",
+ "layer": "④ extraction",
+ "injection": "INSERT",
+ "legacy_severity": "G4",
+ "legacy_mechanism": "",
+ "status": "migrated_unreviewed",
+ "seen": [
+  {
+   "corpus": "observation 2026-08 (Europe PMC JATS 2023-2026 and PubMed abstracts)",
+   "date": "2026-08-08",
+   "observer": "house observer (LLM agent), see report",
+   "excerpt": "MESURÉ le 08/08/2026 sur 272 articles Europe PMC accès libre 2023-2026 (internal corpus of 272 JATS articles) : présent dans 190 articles (69 %) — le défaut le plus répandu de la série. Concentration : cas 34/34, meta 34/34, phys 31/34, bio 30/34, essai 28/34, moderne 15/17, nonEN 17/51, retract 1/34. Formes réelles : titres « Author contributions », « Competing interests », « Data availability », et fn-type COI-statement ×30, financial-disclosure ×12, con ×4 — contre fn-type=\"other\" ×127, qui ne dit rien et fonde la clause de refus.",
+   "lang": "fr",
+   "excerpt_en": "MEASURED on 2026-08-08 on 272 open-access Europe PMC articles 2023-2026 (internal corpus): present in 190 articles (69 %) — the most widespread item of the series. Concentration: case 34/34, meta 34/34, phys 31/34, bio 30/34, trial 28/34, modern 15/17, nonEN 17/51, retract 1/34. Real forms: headings \"Author contributions\", \"Competing interests\", \"Data availability\", and fn-type COI-statement ×30, financial-disclosure ×12, con ×4 — against fn-type=\"other\" ×127, which says nothing and founds the refusal clause.",
+   "organisation": "Loxyn SAS, Lyon",
+   "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+   "probe": "probes/2026-08/line-114.py"
   }
+ ],
+ "specimens": {
+  "cases": [],
+  "counter_examples": []
+ },
+ "prevention": {
+  "cancellable_by_code": true
+ },
+ "repair": {
+  "reachable_by_deletion": "yes",
+  "note": "the faulty edge can be deleted",
+  "measured": {
+   "value": "depends_on_visibility",
+   "reached": 366,
+   "injected": 721,
+   "note": "360 of 360 when a law can see it, 6 of 361 when none can",
+   "source": "measured 2026-09-10 by pgrepair (SciPyWeightedILP) on the frozen EUR-Lex truth, three identical runs, journal sha256 in measures/reachability-by-damage-2026-09-10.json. Per damage class, not per form: two forms of the same damage and the same visibility get the same answer.",
+   "date": "2026-09-10",
+   "disagrees_with_the_judgment": "yes"
+  },
+  "obstacle": {
+   "value": "the information",
+   "reason": "Deletion is the right gesture here: the false edge has to go. What is missing is what tells it from the true one when no constraint separates them. Measured: with a weight carried from the document, a repairer goes from 65 of 130 — a coin — to 130 of 130, stable on three runs.",
+   "reason_fr": "La suppression est ici le bon geste : la fausse arête doit partir. Ce qui manque, c'est de quoi la distinguer de la vraie quand aucune contrainte ne les sépare. Mesuré : avec un poids porté depuis le document, un réparateur passe de 65 sur 130 — une pièce — à 130 sur 130, stable.",
+   "source": "derived from what a deletion-only repair can express, read in the repairer's own code — its solution is a set of elements to delete and carries no insertion — together with the measurement of 2026-09-10. Per damage class, not per form.",
+   "date": "2026-09-13"
+  }
+ },
+ "judgeable_by": [
+  "construction",
+  "curated",
+  "closed_world"
+ ],
+ "history": [
+  {
+   "date": "2026-08-08",
+   "event": "the internal catalogue records a house filter with 5 cases and 1 counter-example(s); not published in this record",
+   "by": "Korela For Science"
+  },
+  {
+   "date": "2026-08-09",
+   "event": "catalogue line 114 — DEFEATED (cancelled by code): filter written and green on the bench",
+   "by": "Korela For Science"
+  },
+  {
+   "date": "2026-09-09",
+   "event": "migrated; classified damage=SPURIOUS_EDGE injection=INSERT (judgment, unreviewed by a second reader)",
+   "by": "Fault Atlas migration"
+  },
+  {
+   "date": "2026-09-09",
+   "event": "internal tool paths removed from observation notes before publication; wording otherwise unchanged",
+   "by": "Fault Atlas"
+  },
+  {
+   "date": "2026-09-09",
+   "event": "exact probe attached to the 272-file observation: probes/2026-08/line-114.py, re-run 190/272",
+   "by": "Fault Atlas maintainer"
+  },
+  {
+   "date": "2026-09-10",
+   "event": "era recorded: born_modern — one of the fourteen difficulties born with the modern era; it had no line in the catalogue before 2026-08-08 (from the August verdicts, which the atlas had not carried)",
+   "by": "Fault Atlas maintainer"
+  }
+ ],
+ "probes": [
+  {
+   "file": "probes/2026-08/line-114.py",
+   "kind": "python",
+   "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+   "written": "2026-08-08",
+   "run": "python3 tools/run_probe.py probes/2026-08/line-114.py <dir with the 272 .xml>",
+   "result": {
+    "date": "2026-09-09",
+    "count": 190,
+    "of": 272,
+    "strata": {
+     "cas": 34,
+     "meta": 34,
+     "phys": 31,
+     "bio": 30,
+     "essai": 28,
+     "nonEN": 17,
+     "moderne": 15,
+     "retract": 1
+    },
+    "examples": [
+     [
+      "bio-PMC12583535.xml",
+      [
+       "Author contributions",
+       "Competing interests"
+      ]
+     ],
+     [
+      "bio-PMC12590050.xml",
+      [
+       "Author Contributions"
+      ]
+     ],
+     [
+      "bio-PMC12857832.xml",
+      [
+       "Author contributions",
+       "Conflicts of interest"
+      ]
+     ],
+     [
+      "bio-PMC12882215.xml",
+      [
+       "Authors’ contributions",
+       "Competing interests"
+      ]
+     ],
+     [
+      "bio-PMC12909487.xml",
+      [
+       "Author contributions",
+       "Conceptualization"
+      ]
+     ],
+     [
+      "bio-PMC12927065.xml",
+      [
+       "CRediT authorship contribution statement",
+       "Conflicts of interest"
+      ]
+     ],
+     [
+      "bio-PMC12927975.xml",
+      [
+       "Author Contributions",
+       "Conflicts of Interest"
+      ]
+     ],
+     [
+      "bio-PMC12953170.xml",
+      [
+       "Author Contributions",
+       "Conflict of Interest"
+      ]
+     ],
+     [
+      "bio-PMC12959687.xml",
+      [
+       "Data Availability",
+       "Data Availability Statement"
+      ]
+     ],
+     [
+      "bio-PMC13057049.xml",
+      [
+       "Authors’ Contributions",
+       "Competing Interests"
+      ]
+     ],
+     [
+      "bio-PMC13088504.xml",
+      [
+       "Authors’ contributions",
+       "Competing interests"
+      ]
+     ],
+     [
+      "bio-PMC13097615.xml",
+      [
+       "Author Contributions",
+       "Conflicts of Interest"
+      ]
+     ]
+    ],
+    "by": "Fault Atlas maintainer (Loxyn), re-run on the same 272 files",
+    "carriers_file": "probes/results/line-114.json"
+   },
+   "matches_excerpt": true
+  }
+ ],
+ "era": {
+  "value": "born_modern",
+  "measured": "2026-09-10",
+  "source": "VERDICT — the old against the modern, 2026-08-08: 45 PDFs of 1957-1987 against 15 PDFs of 2023-2026, 174 pages, 9 publishers. Its own stated limits: 13 of the 15 modern are biomedical, 100 % English, 100 % open access — a channel that excludes scans, truncated and subscription articles by construction.",
+  "note": "one of the fourteen difficulties born with the modern era; it had no line in the catalogue before 2026-08-08"
+ },
+ "failure_mode": {
+  "value": "MES",
+  "means": "a property of the corpus or of the measuring apparatus, not a fault of a document",
+  "source": "the internal catalogue of 2026-08-09 (korela.db, table parametre), line 114; it is not derived from the damage and varies inside a damage class"
+ },
+ "document_years": {
+  "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+  "counts": {
+   "2025": 2,
+   "2026": 10
+  },
+  "carriers_dated": 12,
+  "source": "corpora/index/document-years-europe-pmc-272.json, read 2026-09-11 from each file's earliest pub-date"
+ }
 }

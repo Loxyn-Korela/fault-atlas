@@ -1,73 +1,80 @@
 {
-  "id": "form-189",
-  "version": 1,
-  "name": "Case does not exist: a sensor disappears",
-  "name_fr": "La casse n'existe pas : un capteur disparaît",
-  "origin": {
-    "organisation": "Loxyn SAS, Lyon",
-    "campaign": "August 2026 — observation campaign, verdicts on scripts and on rare genres (2026-08-08)",
-    "contact": "contact@loxyn.ai"
-  },
-  "damage": "MISSING",
-  "class": "SILENT_FALSE",
-  "layer": "② reading",
-  "injection": "FORMAT",
-  "status": "proposed",
-  "seen": [
-    {
-      "corpus": "observation 2026-08 — 19 documents in 8 non-Latin scripts",
-      "date": "2026-08-08",
-      "observer": "house observer (LLM agent), August 2026 campaign",
-      "organisation": "Loxyn SAS, Lyon",
-      "lang": "fr",
-      "excerpt": "Devanagari, Thai, Arabic, Hangul, Han, Kana carry no case. Every rule that leans on a capital to mark a proper noun or the start of a sentence falls to zero. It is not an added difficulty: it is a sensor that disappears — and code that was measured on Latin script cannot see that it has lost it. The symmetric case, worse, is in Latin script: a Danish journal whose running head reads « d e r  v o l l k o MMe n e  c a Pe l l Me is Te r ». There the signal was missing; here it lies.",
-      "reserve": "observation cited from the August campaign; the documents of that wave were not kept by identifier, so this form has no reproducible example yet"
-    }
-  ],
-  "specimens": {
-    "cases": [],
-    "counter_examples": []
-  },
-  "prevention": {
-    "cancellable_by_code": true,
-    "refusal_clause": "declare the script of the document and disable every case-dependent rule outside the scripts that carry case, rather than letting it return nothing",
-    "refusal_clause_fr": "déclarer l'écriture du document et désactiver toute règle qui dépend de la casse hors des écritures qui en portent une, plutôt que de la laisser ne rien rendre"
-  },
-  "repair": {
-    "reachable_by_deletion": "no",
-    "note": "nothing to delete: the graph is simply empty where the rule was blind; derived from the damage class by the migration of 2026-09-09, not judged form by form and not measured — the bench can measure it",
-    "measured": {
-      "value": "no",
-      "reached": 0,
-      "injected": 423,
-      "note": "0 of 423 reached",
-      "source": "measured 2026-09-10 by pgrepair (SciPyWeightedILP) on the frozen EUR-Lex truth, three identical runs, journal sha256 in measures/reachability-by-damage-2026-09-10.json. Per damage class, not per form: two forms of the same damage and the same visibility get the same answer.",
-      "date": "2026-09-10"
-    }
-  },
-  "judgeable_by": [
-    "construction",
-    "curated"
-  ],
-  "related": [
-    "form-023",
-    "form-064"
-  ],
-  "history": [
-    {
-      "date": "2026-09-10",
-      "event": "created from the August 2026 verdicts on scripts and on rare genres, which the atlas had never carried",
-      "by": "Fault Atlas maintainer"
-    }
-  ],
-  "proposed_severity": {
-    "value": "G3",
-    "reason": "no case in the writing system: every rule leaning on a capital goes blind and lets proper nouns through",
-    "proposed_by": "Fault Atlas maintainer (Loxyn), first reading",
-    "date": "2026-09-11",
-    "status": "proposed — a second reader confirms or contests, as for the 43 validated forms",
-    "adds_to_the_damage_class": false,
-    "note": "this reading agrees with how the August catalogue judges most MISSING forms (G3), so it adds little",
-    "reason_fr": "aucune casse dans l'écriture : toute règle appuyée sur la majuscule devient aveugle et laisse passer les noms propres"
+ "id": "form-189",
+ "version": 1,
+ "name": "Case does not exist: a sensor disappears",
+ "name_fr": "La casse n'existe pas : un capteur disparaît",
+ "origin": {
+  "organisation": "Loxyn SAS, Lyon",
+  "campaign": "August 2026 — observation campaign, verdicts on scripts and on rare genres (2026-08-08)",
+  "contact": "contact@loxyn.ai"
+ },
+ "damage": "MISSING",
+ "class": "SILENT_FALSE",
+ "layer": "② reading",
+ "injection": "FORMAT",
+ "status": "proposed",
+ "seen": [
+  {
+   "corpus": "observation 2026-08 — 19 documents in 8 non-Latin scripts",
+   "date": "2026-08-08",
+   "observer": "house observer (LLM agent), August 2026 campaign",
+   "organisation": "Loxyn SAS, Lyon",
+   "lang": "fr",
+   "excerpt": "Devanagari, Thai, Arabic, Hangul, Han, Kana carry no case. Every rule that leans on a capital to mark a proper noun or the start of a sentence falls to zero. It is not an added difficulty: it is a sensor that disappears — and code that was measured on Latin script cannot see that it has lost it. The symmetric case, worse, is in Latin script: a Danish journal whose running head reads « d e r  v o l l k o MMe n e  c a Pe l l Me is Te r ». There the signal was missing; here it lies.",
+   "reserve": "observation cited from the August campaign; the documents of that wave were not kept by identifier, so this form has no reproducible example yet"
   }
+ ],
+ "specimens": {
+  "cases": [],
+  "counter_examples": []
+ },
+ "prevention": {
+  "cancellable_by_code": true,
+  "refusal_clause": "declare the script of the document and disable every case-dependent rule outside the scripts that carry case, rather than letting it return nothing",
+  "refusal_clause_fr": "déclarer l'écriture du document et désactiver toute règle qui dépend de la casse hors des écritures qui en portent une, plutôt que de la laisser ne rien rendre"
+ },
+ "repair": {
+  "reachable_by_deletion": "no",
+  "note": "nothing to delete: the graph is simply empty where the rule was blind; derived from the damage class by the migration of 2026-09-09, not judged form by form and not measured — the bench can measure it",
+  "measured": {
+   "value": "no",
+   "reached": 0,
+   "injected": 423,
+   "note": "0 of 423 reached",
+   "source": "measured 2026-09-10 by pgrepair (SciPyWeightedILP) on the frozen EUR-Lex truth, three identical runs, journal sha256 in measures/reachability-by-damage-2026-09-10.json. Per damage class, not per form: two forms of the same damage and the same visibility get the same answer.",
+   "date": "2026-09-10"
+  },
+  "obstacle": {
+   "value": "the operation",
+   "reason": "Restoring a gap means ADDING, and a deletion-only repair has no such gesture. Its solution is a set of elements to delete; there is no insertion anywhere in it. No weight and no information change that answer.",
+   "reason_fr": "Réparer un manque veut dire AJOUTER, et une réparation par suppression n'a pas ce geste. Sa solution est un ensemble d'éléments à retirer ; il n'y a d'insertion nulle part. Aucun poids et aucune information n'y changent quoi que ce soit.",
+   "source": "derived from what a deletion-only repair can express, read in the repairer's own code — its solution is a set of elements to delete and carries no insertion — together with the measurement of 2026-09-10. Per damage class, not per form.",
+   "date": "2026-09-13"
+  }
+ },
+ "judgeable_by": [
+  "construction",
+  "curated"
+ ],
+ "related": [
+  "form-023",
+  "form-064"
+ ],
+ "history": [
+  {
+   "date": "2026-09-10",
+   "event": "created from the August 2026 verdicts on scripts and on rare genres, which the atlas had never carried",
+   "by": "Fault Atlas maintainer"
+  }
+ ],
+ "proposed_severity": {
+  "value": "G3",
+  "reason": "no case in the writing system: every rule leaning on a capital goes blind and lets proper nouns through",
+  "proposed_by": "Fault Atlas maintainer (Loxyn), first reading",
+  "date": "2026-09-11",
+  "status": "proposed — a second reader confirms or contests, as for the 43 validated forms",
+  "adds_to_the_damage_class": false,
+  "note": "this reading agrees with how the August catalogue judges most MISSING forms (G3), so it adds little",
+  "reason_fr": "aucune casse dans l'écriture : toute règle appuyée sur la majuscule devient aveugle et laisse passer les noms propres"
+ }
 }

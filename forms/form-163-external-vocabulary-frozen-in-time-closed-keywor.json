@@ -1,86 +1,93 @@
 {
-  "id": "form-163",
-  "version": 2,
-  "name": "External vocabulary frozen in time (closed keyword list)",
-  "origin": {
-    "organisation": "Loxyn SAS, Lyon",
-    "campaign": "September 2026 — PubMed substrate and other corpora (Voûte)",
-    "contact": "contact@loxyn.ai"
+ "id": "form-163",
+ "version": 2,
+ "name": "External vocabulary frozen in time (closed keyword list)",
+ "origin": {
+  "organisation": "Loxyn SAS, Lyon",
+  "campaign": "September 2026 — PubMed substrate and other corpora (Voûte)",
+  "contact": "contact@loxyn.ai"
+ },
+ "damage": "MISSING",
+ "class": "REFUSABLE",
+ "layer": "⑦ schema",
+ "injection": "PARAMETER",
+ "status": "proposed",
+ "seen": [
+  {
+   "corpus": "OpenAlex keywords, snapshot 2026 (outside PubMed, for comparison)",
+   "document": "65,004 keywords, 99 % created in 2011",
+   "date": "2026-09-06",
+   "observer": "Claude Voûte (LLM agent), session 8d9c5098, from the Substrat measurement files",
+   "excerpt": "06-09-2026 (NUIT B) : « vocabulaire fermé (65 004 mots-clés, 99 % créés en 2011) → 106 sujets, 6 champions ».",
+   "excerpt_en": "2026-09-06 (night B): \"closed vocabulary (65,004 keywords, 99 % created in 2011) → 106 subjects, 6 champions\".",
+   "lang": "fr",
+   "organisation": "Loxyn SAS, Lyon"
+  }
+ ],
+ "specimens": {
+  "cases": [],
+  "counter_examples": []
+ },
+ "prevention": {
+  "cancellable_by_code": true,
+  "refusal_clause": "read the vocabulary's own creation dates and declare its span; a subject absent from a closed list is not a subject that does not exist",
+  "refusal_clause_fr": "lire les dates de création du vocabulaire lui-même et déclarer son étendue ; un sujet absent d'une liste fermée n'est pas un sujet qui n'existe pas"
+ },
+ "repair": {
+  "reachable_by_deletion": "no",
+  "note": "deletion cannot restore this; derived from the damage class by the migration of 2026-09-09, not judged form by form and not measured — the bench can measure it",
+  "measured": {
+   "value": "no",
+   "reached": 0,
+   "injected": 423,
+   "note": "0 of 423 reached",
+   "source": "measured 2026-09-10 by pgrepair (SciPyWeightedILP) on the frozen EUR-Lex truth, three identical runs, journal sha256 in measures/reachability-by-damage-2026-09-10.json. Per damage class, not per form: two forms of the same damage and the same visibility get the same answer.",
+   "date": "2026-09-10"
   },
-  "damage": "MISSING",
-  "class": "REFUSABLE",
-  "layer": "⑦ schema",
-  "injection": "PARAMETER",
-  "status": "proposed",
-  "seen": [
-    {
-      "corpus": "OpenAlex keywords, snapshot 2026 (outside PubMed, for comparison)",
-      "document": "65,004 keywords, 99 % created in 2011",
-      "date": "2026-09-06",
-      "observer": "Claude Voûte (LLM agent), session 8d9c5098, from the Substrat measurement files",
-      "excerpt": "06-09-2026 (NUIT B) : « vocabulaire fermé (65 004 mots-clés, 99 % créés en 2011) → 106 sujets, 6 champions ».",
-      "excerpt_en": "2026-09-06 (night B): \"closed vocabulary (65,004 keywords, 99 % created in 2011) → 106 subjects, 6 champions\".",
-      "lang": "fr",
-      "organisation": "Loxyn SAS, Lyon"
-    }
-  ],
-  "specimens": {
-    "cases": [],
-    "counter_examples": []
+  "obstacle": {
+   "value": "the operation",
+   "reason": "Restoring a gap means ADDING, and a deletion-only repair has no such gesture. Its solution is a set of elements to delete; there is no insertion anywhere in it. No weight and no information change that answer.",
+   "reason_fr": "Réparer un manque veut dire AJOUTER, et une réparation par suppression n'a pas ce geste. Sa solution est un ensemble d'éléments à retirer ; il n'y a d'insertion nulle part. Aucun poids et aucune information n'y changent quoi que ce soit.",
+   "source": "derived from what a deletion-only repair can express, read in the repairer's own code — its solution is a set of elements to delete and carries no insertion — together with the measurement of 2026-09-10. Per damage class, not per form.",
+   "date": "2026-09-13"
+  }
+ },
+ "judgeable_by": [
+  "dated_future"
+ ],
+ "related": [],
+ "history": [
+  {
+   "date": "2026-09-09",
+   "event": "proposed by the Voûte Claude in 'FORMES-PUBMED-pour-Fault-Atlas (09-09-2026)' (part 1; final file sha256 51a338add43cd071…), form 22 of 23; effect on a graph: A subject graph that cannot grow; any emergence after 2011 is invisible. Prevalence: measured: 99 % of keywords dated 2011.",
+   "by": "Claude Voûte (LLM agent), session 8d9c5098, from the Substrat measurement files"
   },
-  "prevention": {
-    "cancellable_by_code": true,
-    "refusal_clause": "read the vocabulary's own creation dates and declare its span; a subject absent from a closed list is not a subject that does not exist",
-    "refusal_clause_fr": "lire les dates de création du vocabulaire lui-même et déclarer son étendue ; un sujet absent d'une liste fermée n'est pas un sujet qui n'existe pas"
+  {
+   "date": "2026-09-09",
+   "event": "converted to a record; class, prevention and the novel/variant question left to the second reader",
+   "by": "Fault Atlas"
   },
-  "repair": {
-    "reachable_by_deletion": "no",
-    "note": "deletion cannot restore this; derived from the damage class by the migration of 2026-09-09, not judged form by form and not measured — the bench can measure it",
-    "measured": {
-      "value": "no",
-      "reached": 0,
-      "injected": 423,
-      "note": "0 of 423 reached",
-      "source": "measured 2026-09-10 by pgrepair (SciPyWeightedILP) on the frozen EUR-Lex truth, three identical runs, journal sha256 in measures/reachability-by-damage-2026-09-10.json. Per damage class, not per form: two forms of the same damage and the same visibility get the same answer.",
-      "date": "2026-09-10"
-    }
-  },
-  "judgeable_by": [
-    "dated_future"
-  ],
-  "related": [],
-  "history": [
-    {
-      "date": "2026-09-09",
-      "event": "proposed by the Voûte Claude in 'FORMES-PUBMED-pour-Fault-Atlas (09-09-2026)' (part 1; final file sha256 51a338add43cd071…), form 22 of 23; effect on a graph: A subject graph that cannot grow; any emergence after 2011 is invisible. Prevalence: measured: 99 % of keywords dated 2011.",
-      "by": "Claude Voûte (LLM agent), session 8d9c5098, from the Substrat measurement files"
-    },
-    {
-      "date": "2026-09-09",
-      "event": "converted to a record; class, prevention and the novel/variant question left to the second reader",
-      "by": "Fault Atlas"
-    },
-    {
-      "date": "2026-09-10",
-      "event": "class filled: UNCLASSIFIED → REFUSABLE, with its prevention clause; classified by the first reader, awaiting the second reader's decision",
-      "by": "Fault Atlas maintainer (Loxyn)"
-    }
-  ],
-  "proposed_severity": {
-    "value": "G3",
-    "reason": "a closed vocabulary created 99 % in 2011: anything born since has no word to be found by",
-    "proposed_by": "Fault Atlas maintainer (Loxyn), first reading",
-    "date": "2026-09-11",
-    "status": "proposed — a second reader confirms or contests, as for the 43 validated forms",
-    "adds_to_the_damage_class": false,
-    "note": "this reading agrees with how the August catalogue judges most MISSING forms (G3), so it adds little",
-    "reason_fr": "un vocabulaire clos créé à 99 % en 2011 : ce qui est né depuis n'a pas de mot pour être trouvé"
-  },
-  "registry_scope": {
-    "extent": "65,004 keywords created 99 % in 2011: any subject born since has no word",
-    "why_not_a_prevalence": "a fault of a registry has no prevalence: it is a property of the base, so everything drawn from that base carries it. What can be stated is the slice it touches.",
-    "source": "read from this form's own observation, 2026-09-11",
-    "extent_fr": "65 004 mots-clés créés à 99 % en 2011 : tout sujet né depuis n'a pas de mot"
-  },
-  "name_fr": "Vocabulaire externe gelé dans le temps (liste de mots-clés fermée)"
+  {
+   "date": "2026-09-10",
+   "event": "class filled: UNCLASSIFIED → REFUSABLE, with its prevention clause; classified by the first reader, awaiting the second reader's decision",
+   "by": "Fault Atlas maintainer (Loxyn)"
+  }
+ ],
+ "proposed_severity": {
+  "value": "G3",
+  "reason": "a closed vocabulary created 99 % in 2011: anything born since has no word to be found by",
+  "proposed_by": "Fault Atlas maintainer (Loxyn), first reading",
+  "date": "2026-09-11",
+  "status": "proposed — a second reader confirms or contests, as for the 43 validated forms",
+  "adds_to_the_damage_class": false,
+  "note": "this reading agrees with how the August catalogue judges most MISSING forms (G3), so it adds little",
+  "reason_fr": "un vocabulaire clos créé à 99 % en 2011 : ce qui est né depuis n'a pas de mot pour être trouvé"
+ },
+ "registry_scope": {
+  "extent": "65,004 keywords created 99 % in 2011: any subject born since has no word",
+  "why_not_a_prevalence": "a fault of a registry has no prevalence: it is a property of the base, so everything drawn from that base carries it. What can be stated is the slice it touches.",
+  "source": "read from this form's own observation, 2026-09-11",
+  "extent_fr": "65 004 mots-clés créés à 99 % en 2011 : tout sujet né depuis n'a pas de mot"
+ },
+ "name_fr": "Vocabulaire externe gelé dans le temps (liste de mots-clés fermée)"
 }

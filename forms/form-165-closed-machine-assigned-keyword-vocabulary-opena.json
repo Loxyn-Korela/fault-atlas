@@ -1,87 +1,94 @@
 {
-  "id": "form-165",
-  "version": 2,
-  "name": "Closed machine-assigned keyword vocabulary (OpenAlex)",
-  "origin": {
-    "organisation": "Loxyn SAS, Lyon",
-    "campaign": "September 2026 — PubMed substrate and other corpora (Voûte)",
-    "contact": "contact@loxyn.ai"
+ "id": "form-165",
+ "version": 2,
+ "name": "Closed machine-assigned keyword vocabulary (OpenAlex)",
+ "origin": {
+  "organisation": "Loxyn SAS, Lyon",
+  "campaign": "September 2026 — PubMed substrate and other corpora (Voûte)",
+  "contact": "contact@loxyn.ai"
+ },
+ "damage": "MISSING",
+ "class": "UNCLASSIFIED",
+ "layer": "⑦ schema",
+ "injection": "PARAMETER",
+ "status": "proposed",
+ "seen": [
+  {
+   "corpus": "OpenAlex snapshot 2026 (works parquet), read 2026-09-06, works.keywords and entities/keywords",
+   "document": "65,004 keyword entries",
+   "date": "2026-09-06",
+   "observer": "Claude Voûte (LLM agent), session 8d9c5098, from the night reports of 2026-09-06/09",
+   "excerpt": "06-09-2026 : « référentiel de 65 004 entrées, attribué automatiquement, en moyenne 7,9 par notice » ; « 99,14 % du vocabulaire existe déjà en 2011 » ; résultat : « 106 sujets, 6 champions » là où PubMed en donne 85 sur 120.",
+   "excerpt_en": "2026-09-06: \"reference list of 65,004 entries, assigned automatically, 7.9 per record on average\"; \"99.14 % of the vocabulary already exists in 2011\"; result: \"106 subjects, 6 champions\" where PubMed gives 85 out of 120.",
+   "lang": "fr",
+   "organisation": "Loxyn SAS, Lyon"
+  }
+ ],
+ "specimens": {
+  "cases": [],
+  "counter_examples": []
+ },
+ "prevention": {
+  "cancellable_by_code": false,
+  "note": "not assessed by the observer; to be classified by the second reader"
+ },
+ "repair": {
+  "reachable_by_deletion": "no",
+  "note": "deletion cannot restore this; derived from the damage class by the migration of 2026-09-09, not judged form by form and not measured — the bench can measure it",
+  "measured": {
+   "value": "no",
+   "reached": 0,
+   "injected": 423,
+   "note": "0 of 423 reached",
+   "source": "measured 2026-09-10 by pgrepair (SciPyWeightedILP) on the frozen EUR-Lex truth, three identical runs, journal sha256 in measures/reachability-by-damage-2026-09-10.json. Per damage class, not per form: two forms of the same damage and the same visibility get the same answer.",
+   "date": "2026-09-10"
   },
-  "damage": "MISSING",
-  "class": "UNCLASSIFIED",
-  "layer": "⑦ schema",
-  "injection": "PARAMETER",
-  "status": "proposed",
-  "seen": [
-    {
-      "corpus": "OpenAlex snapshot 2026 (works parquet), read 2026-09-06, works.keywords and entities/keywords",
-      "document": "65,004 keyword entries",
-      "date": "2026-09-06",
-      "observer": "Claude Voûte (LLM agent), session 8d9c5098, from the night reports of 2026-09-06/09",
-      "excerpt": "06-09-2026 : « référentiel de 65 004 entrées, attribué automatiquement, en moyenne 7,9 par notice » ; « 99,14 % du vocabulaire existe déjà en 2011 » ; résultat : « 106 sujets, 6 champions » là où PubMed en donne 85 sur 120.",
-      "excerpt_en": "2026-09-06: \"reference list of 65,004 entries, assigned automatically, 7.9 per record on average\"; \"99.14 % of the vocabulary already exists in 2011\"; result: \"106 subjects, 6 champions\" where PubMed gives 85 out of 120.",
-      "lang": "fr",
-      "organisation": "Loxyn SAS, Lyon"
-    }
-  ],
-  "specimens": {
-    "cases": [],
-    "counter_examples": []
+  "obstacle": {
+   "value": "the operation",
+   "reason": "Restoring a gap means ADDING, and a deletion-only repair has no such gesture. Its solution is a set of elements to delete; there is no insertion anywhere in it. No weight and no information change that answer.",
+   "reason_fr": "Réparer un manque veut dire AJOUTER, et une réparation par suppression n'a pas ce geste. Sa solution est un ensemble d'éléments à retirer ; il n'y a d'insertion nulle part. Aucun poids et aucune information n'y changent quoi que ce soit.",
+   "source": "derived from what a deletion-only repair can express, read in the repairer's own code — its solution is a set of elements to delete and carries no insertion — together with the measurement of 2026-09-10. Per damage class, not per form.",
+   "date": "2026-09-13"
+  }
+ },
+ "judgeable_by": [
+  "dated_future"
+ ],
+ "related": [
+  "form-163"
+ ],
+ "history": [
+  {
+   "date": "2026-09-09",
+   "event": "proposed by the Voûte Claude in 'FORMES-PUBMED-pour-Fault-Atlas (09-09-2026)' part 2 (sha256 51a338add43cd071…), form 24 of 40; effect on a graph: A frozen subject graph: any emergence after 2011 is invisible, and the record-subject link is an algorithm's decision, not an author's declaration (also WRONG_LABEL: machine keyword taken for author keyword). Prevalence: measured, above.",
+   "by": "Claude Voûte (LLM agent), session 8d9c5098, from the night reports of 2026-09-06/09"
   },
-  "prevention": {
-    "cancellable_by_code": false,
-    "note": "not assessed by the observer; to be classified by the second reader"
+  {
+   "date": "2026-09-09",
+   "event": "converted to a record; class, prevention and the novel/variant question left to the second reader",
+   "by": "Fault Atlas"
   },
-  "repair": {
-    "reachable_by_deletion": "no",
-    "note": "deletion cannot restore this; derived from the damage class by the migration of 2026-09-09, not judged form by form and not measured — the bench can measure it",
-    "measured": {
-      "value": "no",
-      "reached": 0,
-      "injected": 423,
-      "note": "0 of 423 reached",
-      "source": "measured 2026-09-10 by pgrepair (SciPyWeightedILP) on the frozen EUR-Lex truth, three identical runs, journal sha256 in measures/reachability-by-damage-2026-09-10.json. Per damage class, not per form: two forms of the same damage and the same visibility get the same answer.",
-      "date": "2026-09-10"
-    }
-  },
-  "judgeable_by": [
-    "dated_future"
-  ],
-  "related": [
-    "form-163"
-  ],
-  "history": [
-    {
-      "date": "2026-09-09",
-      "event": "proposed by the Voûte Claude in 'FORMES-PUBMED-pour-Fault-Atlas (09-09-2026)' part 2 (sha256 51a338add43cd071…), form 24 of 40; effect on a graph: A frozen subject graph: any emergence after 2011 is invisible, and the record-subject link is an algorithm's decision, not an author's declaration (also WRONG_LABEL: machine keyword taken for author keyword). Prevalence: measured, above.",
-      "by": "Claude Voûte (LLM agent), session 8d9c5098, from the night reports of 2026-09-06/09"
-    },
-    {
-      "date": "2026-09-09",
-      "event": "converted to a record; class, prevention and the novel/variant question left to the second reader",
-      "by": "Fault Atlas"
-    },
-    {
-      "date": "2026-09-10",
-      "event": "second reader: variant of form-163 — variant of form-163; parent to confirm",
-      "by": "Coralie Bagnol-Lebon"
-    }
-  ],
-  "proposed_severity": {
-    "value": "G3",
-    "reason": "a closed reference list assigned automatically: what it does not name stays unfindable",
-    "proposed_by": "Fault Atlas maintainer (Loxyn), first reading",
-    "date": "2026-09-11",
-    "status": "proposed — a second reader confirms or contests, as for the 43 validated forms",
-    "adds_to_the_damage_class": false,
-    "note": "this reading agrees with how the August catalogue judges most MISSING forms (G3), so it adds little",
-    "reason_fr": "une liste de référence fermée, assignée automatiquement : ce qu'elle ne nomme pas reste introuvable"
-  },
-  "registry_scope": {
-    "extent": "the 65,004 entries of the closed list, assigned automatically, 7.9 per record on average",
-    "why_not_a_prevalence": "a fault of a registry has no prevalence: it is a property of the base, so everything drawn from that base carries it. What can be stated is the slice it touches.",
-    "source": "read from this form's own observation, 2026-09-11",
-    "extent_fr": "les 65 004 entrées de la liste fermée, assignées automatiquement, 7,9 par fiche en moyenne"
-  },
-  "name_fr": "Vocabulaire de mots-clés fermé et assigné par machine (OpenAlex)"
+  {
+   "date": "2026-09-10",
+   "event": "second reader: variant of form-163 — variant of form-163; parent to confirm",
+   "by": "Coralie Bagnol-Lebon"
+  }
+ ],
+ "proposed_severity": {
+  "value": "G3",
+  "reason": "a closed reference list assigned automatically: what it does not name stays unfindable",
+  "proposed_by": "Fault Atlas maintainer (Loxyn), first reading",
+  "date": "2026-09-11",
+  "status": "proposed — a second reader confirms or contests, as for the 43 validated forms",
+  "adds_to_the_damage_class": false,
+  "note": "this reading agrees with how the August catalogue judges most MISSING forms (G3), so it adds little",
+  "reason_fr": "une liste de référence fermée, assignée automatiquement : ce qu'elle ne nomme pas reste introuvable"
+ },
+ "registry_scope": {
+  "extent": "the 65,004 entries of the closed list, assigned automatically, 7.9 per record on average",
+  "why_not_a_prevalence": "a fault of a registry has no prevalence: it is a property of the base, so everything drawn from that base carries it. What can be stated is the slice it touches.",
+  "source": "read from this form's own observation, 2026-09-11",
+  "extent_fr": "les 65 004 entrées de la liste fermée, assignées automatiquement, 7,9 par fiche en moyenne"
+ },
+ "name_fr": "Vocabulaire de mots-clés fermé et assigné par machine (OpenAlex)"
 }
