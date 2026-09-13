@@ -1,0 +1,28 @@
+[
+ {
+  "candidate": "an HTTP error page written into the file as if it were data",
+  "source": "cleaning journal of the PubMed substrate, 20 August 2026",
+  "figure": "12 chunks of 12 poisoned, ~45 GB downloaded for nothing; the signature is `<?xml … <!DOCTYPE html` at the head of a chunk",
+  "reason": "no named object: neither the archive nor the request is named, only the signature and the volume. It is also a fault of a transfer, not of a corpus: the file at the producer is sound.",
+  "would_enter_if": "one poisoned chunk is named, or the fault is reframed as what a builder must check — an archive that passes a size check and fails a CRC check"
+ },
+ {
+  "candidate": "a type leaking into the section field, and the reverse leak",
+  "source": "cleaning journal of the PubMed substrate, 20 August 2026",
+  "figure": "3 passages of 1,062,710,536 carry neither a section_type nor a type of their own, and hold 7 annotations; the reverse leak is one occurrence in 2.6 billion",
+  "reason": "counts only, no named object at any scale. And the figures are the measure of a closure, not of a fault: they are what is left when everything else is accounted for."
+ },
+ {
+  "candidate": "labels declared in the dictionary that nothing uses",
+  "source": "cleaning journal of the PubMed substrate, 20 August 2026",
+  "figure": "`abstract_title_1` on 63 passages, `title_5` on 1, `table_caption_title` on 2 — all three carrying zero annotations",
+  "reason": "the objects are named and the counts are exact, and it is still not a fault: the journal's own decision was to keep them, `la fidélité garde les vocabulaires déclarés non employés`. A fault would be committed by someone who prunes them, and that is a property of a builder, not of the corpus.",
+  "would_enter_if": "a corpus is found where pruning an unused declared label silently changed a schema downstream"
+ },
+ {
+  "candidate": "a query pattern that misses the vocabulary's official name",
+  "source": "cleaning journal of the PubMed substrate, 17 August 2026",
+  "figure": "a pattern searching `sodium-glucose transporter 2` without the `co`, which is the MeSH name",
+  "reason": "a fault of our own instrument and not of the corpus, in the same class as the 26 catalogue lines ruled out of scope in August: it describes a property of a query, and the atlas records faults a corpus carries."
+ }
+]

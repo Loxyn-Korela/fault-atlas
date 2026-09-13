@@ -1,0 +1,64 @@
+{
+ "id": "form-197",
+ "version": 1,
+ "name": "The producer's own documentation under-declares its vocabulary",
+ "name_fr": "La documentation du producteur sous-déclare son propre vocabulaire",
+ "origin": {
+  "organisation": "Loxyn SAS, Lyon",
+  "campaign": "September 2026 — cleaning journal of the PubMed substrate (Voûte, 17-20 August 2026)",
+  "contact": "contact@loxyn.ai"
+ },
+ "damage": "MISSING",
+ "class": "DEFEATED",
+ "layer": "⑦ schema",
+ "injection": "DELETE",
+ "status": "proposed",
+ "seen": [
+  {
+   "corpus": "PubTator3, frozen 2026-08-18; the delivered dictionary and the README",
+   "document": "the dictionary declares 18 RefTypes, the README 8 relation types; the data hold 20 and 12",
+   "date": "2026-08-20",
+   "observer": "Claude Voûte (LLM agent), from 'JOURNAL — comment le corpus est devenu propre', 17-20 August 2026",
+   "lang": "fr",
+   "organisation": "Loxyn SAS, Lyon",
+   "excerpt": "Le vocabulaire a grandi jusqu'au dernier moment — et c'est la cinquième vérification de la même règle sur ce chantier : RefTypes, 18 au dictionnaire, 20 trouvés ; types de relation, 8 au README, 12 trouvés ; sections, 20 au pilote, 35 sur l'archive 0 puis 39 sur cinq puis 41 sur dix ; types d'annotation, 12 au pilote, 14 sur cinq puis 17 sur dix. Un vocabulaire s'inventorie, il ne se suppose pas.",
+   "excerpt_en": "The vocabulary kept growing to the last moment — and this is the fifth check of the same rule on this build: RefTypes, 18 in the dictionary, 20 found; relation types, 8 in the README, 12 found; sections, 20 in the pilot, 35 on archive 0 then 39 on five then 41 on ten; annotation types, 12 in the pilot, 14 on five then 17 on ten. A vocabulary is inventoried, it is not assumed."
+  }
+ ],
+ "specimens": {
+  "cases": [],
+  "counter_examples": []
+ },
+ "prevention": {
+  "cancellable_by_code": true,
+  "note": "inventorying the values actually present, on the whole base and not on a sample, cancels it: four of these five counts rose again between five archives and ten"
+ },
+ "repair": {
+  "reachable_by_deletion": "no",
+  "note": "the values were never read, so there is nothing in the graph to delete"
+ },
+ "judgeable_by": [
+  "construction",
+  "closed_world"
+ ],
+ "related": [],
+ "registry_scope": {
+  "extent": "the whole base: four vocabularies of the delivery are under-declared, by 2, 4, 21 and 5 values respectively",
+  "extent_fr": "toute la base : quatre vocabulaires de la livraison sont sous-déclarés, de 2, 4, 21 et 5 valeurs respectivement",
+  "source": "inventoried 2026-08-20 on ten archives of the frozen base; cleaning journal of the PubMed substrate"
+ },
+ "proposed_severity": {
+  "value": "G3",
+  "reason": "A builder that trusts the documentation writes a schema with the declared values and drops the rest, or fails on them. Either way the records carrying an undeclared value are lost, and the loss is not random: an undeclared value is usually a recent one, so what disappears is the newest part of the base. Nothing signals it, because the documentation is not contradicted by anything the builder reads.",
+  "reason_fr": "Un constructeur qui fait confiance à la documentation écrit un schéma avec les valeurs déclarées et jette le reste, ou échoue dessus. Dans les deux cas les enregistrements portant une valeur non déclarée sont perdus, et la perte n'est pas quelconque : une valeur non déclarée est le plus souvent récente, donc ce qui disparaît est la partie la plus neuve de la base. Rien ne le signale, puisque rien de ce que le constructeur lit ne contredit la documentation.",
+  "proposed_by": "Claude Banc à vérité connue (LLM agent)",
+  "date": "2026-09-13",
+  "adds_to_the_damage_class": true
+ },
+ "history": [
+  {
+   "date": "2026-09-13",
+   "event": "entered 2026-09-13 from the August 2026 cleaning journal of the PubMed substrate. The named object is a file or a declared convention of the PRODUCER — a dictionary, a README, two delivery files, a way of writing a date — and not a record of the corpus: that is what makes it a fault of the registry, with an extent rather than a prevalence. The figure quoted is the journal's own, re-read verbatim."
+  }
+ ]
+}

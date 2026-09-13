@@ -1,0 +1,66 @@
+{
+ "id": "form-195",
+ "version": 1,
+ "name": "A field missing on most records because the base has two encodings, not because it is missing",
+ "name_fr": "Un champ absent de la plupart des enregistrements parce que la base a deux encodages, non parce qu'il manque",
+ "origin": {
+  "organisation": "Loxyn SAS, Lyon",
+  "campaign": "September 2026 — cleaning journal of the PubMed substrate (Voûte, 17-20 August 2026)",
+  "contact": "contact@loxyn.ai"
+ },
+ "damage": "MISSING",
+ "class": "DEFEATED",
+ "layer": "⑦ schema",
+ "injection": "DELETE",
+ "status": "proposed",
+ "seen": [
+  {
+   "corpus": "PubTator3 BioCXML, archives frozen 2026-08-18, the section_type field of a passage",
+   "document": "the signature is a pair of rigorously equal counts: 214,982 first infons of type `title` and 214,982 of type `abstract`, on 323,671 documents read, with zero mixed document",
+   "date": "2026-08-19",
+   "observer": "Claude Voûte (LLM agent), from 'JOURNAL — comment le corpus est devenu propre', 17-20 August 2026",
+   "lang": "fr",
+   "organisation": "Loxyn SAS, Lyon",
+   "excerpt": "57,4 % des passages ne portent aucun `section_type` — le champ même pour lequel on télécharge 200 Go. Le réflexe raisonnable aurait été de les écarter. Il aurait gardé 1,1 % des documents — uniquement les articles à texte intégral, c'est-à-dire libres d'accès, récents, thématiquement biaisés. Sans qu'aucun compte ne le signale. Révélé par la lecture, et non le comptage : leur premier `infon` de type se répartit en deux moitiés rigoureusement égales — 214 982 `title` et 214 982 `abstract`. Il n'y a pas de section manquante. Il y a deux encodages selon que le document a un texte intégral ou non. Populations strictement disjointes : zéro document mixte sur 323 671 lus.",
+   "excerpt_en": "57.4 % of passages carry no `section_type` — the very field the 200 GB are downloaded for. The reasonable reflex would have been to discard them. It would have kept 1.1 % of the documents — only the full-text articles, that is, open access, recent, thematically biased. With no count signalling it. Revealed by reading, not by counting: their first type `infon` splits into two rigorously equal halves — 214,982 `title` and 214,982 `abstract`. There is no missing section. There are two encodings, according to whether the document has full text. Strictly disjoint populations: zero mixed document in 323,671 read."
+  }
+ ],
+ "specimens": {
+  "cases": [],
+  "counter_examples": []
+ },
+ "prevention": {
+  "cancellable_by_code": true,
+  "note": "a reader that falls back on the passage's own type instead of discarding cancels it entirely: `section = section_type otherwise type`, plus a per-document flag saying which encoding it used"
+ },
+ "repair": {
+  "reachable_by_deletion": "no",
+  "note": "the records were never read, so there is nothing in the graph to delete"
+ },
+ "judgeable_by": [
+  "construction",
+  "closed_world"
+ ],
+ "related": [
+  "form-191"
+ ],
+ "registry_scope": {
+  "extent": "57.4 % of the passages of the base; a naive filter on the field keeps 1.1 % of the documents",
+  "extent_fr": "57,4 % des passages de la base ; un filtre naïf sur le champ garde 1,1 % des documents",
+  "source": "read 2026-08-19 on ten archives of the frozen base; cleaning journal of the PubMed substrate"
+ },
+ "proposed_severity": {
+  "value": "G3",
+  "reason": "This is the shape of the most dangerous fault in corpus work, and the only one that leaves no trace: a filter that looks purely technical and in fact selects on the subject of the research. Discarding the records whose field is empty is the obvious, defensible move, and here it keeps 1.1 % of the corpus — open access, recent, thematically biased. Nothing goes red: no error, no missing count, no failing witness. The result is clean and it is computed on a population nobody chose.",
+  "reason_fr": "C'est la forme de la faute la plus dangereuse d'un travail de corpus, et la seule qui ne laisse aucune trace : un filtre qui paraît purement technique et qui sélectionne en réalité sur le sujet de la recherche. Écarter les enregistrements dont le champ est vide est le geste évident et défendable, et ici il garde 1,1 % du corpus — libre accès, récent, thématiquement biaisé. Rien ne passe au rouge : ni erreur, ni compte manquant, ni témoin en défaut. Le résultat est propre, et il est calculé sur une population que personne n'a choisie.",
+  "proposed_by": "Claude Banc à vérité connue (LLM agent)",
+  "date": "2026-09-13",
+  "adds_to_the_damage_class": true
+ },
+ "history": [
+  {
+   "date": "2026-09-13",
+   "event": "entered 2026-09-13 from the August 2026 cleaning journal of the PubMed substrate. The named object is a file or a declared convention of the PRODUCER — a dictionary, a README, two delivery files, a way of writing a date — and not a record of the corpus: that is what makes it a fault of the registry, with an extent rather than a prevalence. The figure quoted is the journal's own, re-read verbatim."
+  }
+ ]
+}

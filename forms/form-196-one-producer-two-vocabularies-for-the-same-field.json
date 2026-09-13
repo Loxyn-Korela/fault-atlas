@@ -1,0 +1,66 @@
+{
+ "id": "form-196",
+ "version": 1,
+ "name": "One producer, two vocabularies for the same field across two delivery files",
+ "name_fr": "Un producteur, deux vocabulaires pour le même champ dans deux fichiers de livraison",
+ "origin": {
+  "organisation": "Loxyn SAS, Lyon",
+  "campaign": "September 2026 — cleaning journal of the PubMed substrate (Voûte, 17-20 August 2026)",
+  "contact": "contact@loxyn.ai"
+ },
+ "damage": "WRONG_LABEL",
+ "class": "REFUSABLE",
+ "layer": "⑥ resolution",
+ "injection": "RENAME",
+ "status": "proposed",
+ "seen": [
+  {
+   "corpus": "PubTator3, frozen 2026-08-18, the type label of an entity",
+   "document": "mutation2pubtator3.gz and relation2pubtator3.gz, two files of the same delivery",
+   "date": "2026-08-19",
+   "observer": "Claude Voûte (LLM agent), from 'JOURNAL — comment le corpus est devenu propre', 17-20 August 2026",
+   "lang": "fr",
+   "organisation": "Loxyn SAS, Lyon",
+   "excerpt": "1 114 670 entités « absentes » d'un ensemble qui en contient 615 298 […] l'unité n'était pas l'entité mais l'OCCURRENCE — 1,43 % de 77 710 776. 363 749 distinctes. Et la cause racine du second : `mutation2pubtator3.gz` n'écrit que `Mutation` ; `relation2pubtator3.gz` écrit quatre libellés. Deux vocabulaires du même producteur. Décision : on transcrit le vocabulaire de la source qu'on lit, on ne l'harmonise pas ; toute vue qui joint deux familles publie sa table de correspondance et ses pertes.",
+   "excerpt_en": "1,114,670 entities \"absent\" from a set that contains 615,298 […] the unit was not the entity but the OCCURRENCE — 1.43 % of 77,710,776. 363,749 distinct. And the root cause of the second: `mutation2pubtator3.gz` writes only `Mutation`; `relation2pubtator3.gz` writes four labels. Two vocabularies from the same producer. Decision: transcribe the vocabulary of the source you read, do not harmonise it; any view joining two families publishes its correspondence table and its losses."
+  }
+ ],
+ "specimens": {
+  "cases": [],
+  "counter_examples": []
+ },
+ "prevention": {
+  "cancellable_by_code": false,
+  "note": "code can see that two files disagree; it cannot decide which label is the right one, nor whether two labels name one thing. The correspondence table is a judgement and it belongs to whoever publishes the joined view"
+ },
+ "repair": {
+  "reachable_by_deletion": "no",
+  "note": "the label is wrong, not extra: deleting removes a true entity rather than renaming it"
+ },
+ "judgeable_by": [
+  "registry",
+  "curated"
+ ],
+ "related": [
+  "form-145"
+ ],
+ "registry_scope": {
+  "extent": "the whole base: every entity read from one of the two files carries that file's vocabulary, and the two do not agree",
+  "extent_fr": "toute la base : chaque entité lue dans l'un des deux fichiers porte le vocabulaire de ce fichier, et les deux ne s'accordent pas",
+  "source": "read 2026-08-19 on the frozen delivery; cleaning journal of the PubMed substrate"
+ },
+ "proposed_severity": {
+  "value": "G1",
+  "reason": "Two files of one delivery name the same kind of thing differently, and nothing in either says so. A builder that joins them either fuses two labels that are not the same, or splits one that is — and the error lands on the identity of the entity, so every fact hanging from it inherits it. Here it made 363,749 distinct entities look absent from a set they were in.",
+  "reason_fr": "Deux fichiers d'une même livraison nomment différemment la même sorte de chose, et rien dans l'un ni dans l'autre ne le dit. Un constructeur qui les joint soit fusionne deux libellés qui n'en sont pas un, soit scinde celui qui en est un — et l'erreur se pose sur l'identité de l'entité, donc tout fait qui y pend en hérite. Ici, 363 749 entités distinctes ont paru absentes d'un ensemble où elles étaient.",
+  "proposed_by": "Claude Banc à vérité connue (LLM agent)",
+  "date": "2026-09-13",
+  "adds_to_the_damage_class": true
+ },
+ "history": [
+  {
+   "date": "2026-09-13",
+   "event": "entered 2026-09-13 from the August 2026 cleaning journal of the PubMed substrate. The named object is a file or a declared convention of the PRODUCER — a dictionary, a README, two delivery files, a way of writing a date — and not a record of the corpus: that is what makes it a fault of the registry, with an extent rather than a prevalence. The figure quoted is the journal's own, re-read verbatim."
+  }
+ ]
+}

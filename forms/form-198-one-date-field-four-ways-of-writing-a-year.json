@@ -1,0 +1,67 @@
+{
+ "id": "form-198",
+ "version": 1,
+ "name": "One date field, four ways of writing a year",
+ "name_fr": "Un champ de date, quatre façons d'écrire une année",
+ "origin": {
+  "organisation": "Loxyn SAS, Lyon",
+  "campaign": "September 2026 — cleaning journal of the PubMed substrate (Voûte, 17-20 August 2026)",
+  "contact": "contact@loxyn.ai"
+ },
+ "damage": "WRONG_VALUE",
+ "class": "DEFEATED",
+ "layer": "④ extraction",
+ "injection": "FORMAT",
+ "status": "proposed",
+ "seen": [
+  {
+   "corpus": "PubMed baseline frozen 2026-08-18, the publication year as the NLM writes it",
+   "document": "four shapes in one field: `(AAAA)`, `(AA)`, a bare year, and an interval",
+   "date": "2026-08-17",
+   "observer": "Claude Voûte (LLM agent), from 'JOURNAL — comment le corpus est devenu propre', 17-20 August 2026",
+   "lang": "fr",
+   "organisation": "Loxyn SAS, Lyon",
+   "excerpt": "L'extracteur de millésimes trouvait 12,5 % au lieu de 100 % : il n'acceptait que `(AAAA)`, la NLM écrit aussi `(AA)`, des années nues, des intervalles. Révélé par le taux lui-même, absurde.",
+   "excerpt_en": "The year extractor found 12.5 % instead of 100 %: it accepted only `(AAAA)`, and the NLM also writes `(AA)`, bare years, and intervals. Revealed by the rate itself, which was absurd."
+  }
+ ],
+ "specimens": {
+  "cases": [],
+  "counter_examples": []
+ },
+ "prevention": {
+  "cancellable_by_code": true,
+  "note": "a reader that accepts the shapes the producer actually writes cancels it; what code cannot do is know it is losing them, since a year it cannot read looks the same as a record with no year"
+ },
+ "repair": {
+  "reachable_by_deletion": "no",
+  "note": "the value was never read, so there is nothing in the graph to delete"
+ },
+ "judgeable_by": [
+  "registry",
+  "closed_world"
+ ],
+ "related": [
+  "form-192",
+  "form-149"
+ ],
+ "registry_scope": {
+  "extent": "the whole base: the field carries at least four shapes, and a reader built for one of them found 12.5 % of the years",
+  "extent_fr": "toute la base : le champ porte au moins quatre formes, et un lecteur bâti pour l'une d'elles a trouvé 12,5 % des années",
+  "source": "read 2026-08-17 on the frozen baseline; cleaning journal of the PubMed substrate"
+ },
+ "proposed_severity": {
+  "value": "G3",
+  "reason": "A reader built for one shape finds the years it knows and is silent about the rest, so the dating of the corpus is complete on a subset and empty elsewhere — and which subset depends on a writing convention, not on the science. Here it cost seven records in eight. It was caught only because a rate of 12.5 % is absurd on its face; a shape covering 90 % would have passed.",
+  "reason_fr": "Un lecteur bâti pour une seule forme trouve les années qu'il connaît et se tait sur les autres : la datation du corpus est complète sur un sous-ensemble et vide ailleurs — et quel sous-ensemble dépend d'une convention d'écriture, pas de la science. Ici, sept notices sur huit. Ce n'est passé que parce qu'un taux de 12,5 % est absurde à l'œil ; une forme couvrant 90 % serait passée sans bruit.",
+  "proposed_by": "Claude Banc à vérité connue (LLM agent)",
+  "date": "2026-09-13",
+  "adds_to_the_damage_class": true
+ },
+ "history": [
+  {
+   "date": "2026-09-13",
+   "event": "entered 2026-09-13 from the August 2026 cleaning journal of the PubMed substrate. The named object is a file or a declared convention of the PRODUCER — a dictionary, a README, two delivery files, a way of writing a date — and not a record of the corpus: that is what makes it a fault of the registry, with an extent rather than a prevalence. The figure quoted is the journal's own, re-read verbatim."
+  }
+ ]
+}
