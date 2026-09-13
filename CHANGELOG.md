@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.23.3 — 2026-09-13
+- **The language switch is the Lucide `languages` glyph, alone.** On the 24 grid, 2px stroke, `currentColor`, no fill, no text beside it; which language it takes you to is carried by the title and the aria-label.
+- The colour flags of 0.23.2 are withdrawn. They were the literal request and the wrong answer: eight flat colours beside six monochrome line glyphs break the system the rest of the page follows, and a Union flag drawn at 21 pixels reads as an X because its diagonals are offset and mine were not. The standard asked for was Lucide's, not a flag.
+
 ## 0.23.2 — 2026-09-13
 - **The language switch shows the flag of the language it takes you to**, drawn inline: the tricolore on the English pages, the Union flag on the French ones. No text beside it.
 - Asked for three times, and got a generic pennant twice. Lucide has no national flags — it is a generic icon set — and the honest answer the first time was to say so and offer the options, not to substitute a glyph that designates no language. The flags are eight rectangles and four strokes of SVG; there was never a reason not to draw them.
