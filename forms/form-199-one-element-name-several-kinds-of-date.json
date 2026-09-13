@@ -1,0 +1,62 @@
+{
+ "id": "form-199",
+ "version": 1,
+ "name": "One element name, several kinds of date",
+ "name_fr": "Un seul nom d'élément, plusieurs sortes de dates",
+ "origin": {
+  "organisation": "Loxyn SAS, Lyon",
+  "campaign": "September 2026 — document damage generator, first run",
+  "contact": "contact@loxyn.ai"
+ },
+ "damage": "WRONG_VALUE",
+ "class": "DEFEATED",
+ "layer": "④ extraction",
+ "injection": "FORMAT",
+ "status": "proposed",
+ "seen": [
+  {
+   "corpus": "Europe PMC JATS, 200 open-access articles held locally, read 2026-09-13",
+   "document": "PMC10001006: the publication year is <pub-date><year>, the reception year is <history><date date-type=\"received\"><year>, and both are the element <year>",
+   "date": "2026-09-13",
+   "observer": "Claude Banc à vérité connue (LLM agent), by the document damage generator (corrige/paper.py)",
+   "lang": "fr",
+   "organisation": "Loxyn SAS, Lyon",
+   "excerpt": "Les deux <pub-date> du document portent 2023 et ont été abîmés tous les deux ; le lecteur relit quand même 2023, attrapé à 8 952 caractères sur 106 654, dans <history><date date-type=\"received\"><year>2023</year>. Il rapporte la date de RÉCEPTION du manuscrit comme date de PUBLICATION, et ça passe inaperçu parce que les deux partagent le plus souvent l'année. Mesuré : 118 documents sur 200.",
+   "excerpt_en": "Both <pub-date> elements of the document carry 2023 and both were damaged; the reader still reads 2023 back, caught at character 8,952 of 106,654, inside <history><date date-type=\"received\"><year>2023</year>. It reports the date the manuscript was RECEIVED as the date it was PUBLISHED, and it goes unnoticed because the two usually share a year. Measured: 118 documents of 200."
+  }
+ ],
+ "specimens": {
+  "cases": [],
+  "counter_examples": []
+ },
+ "prevention": {
+  "cancellable_by_code": true,
+  "note": "bounding the pattern to its own element cancels it entirely. What code cannot do is notice the substitution while it is happening: the value it returns is a well-formed year of the right magnitude, and it is usually the right one"
+ },
+ "repair": {
+  "reachable_by_deletion": "no",
+  "note": "the value is wrong, not extra: deleting the date removes a true fact rather than correcting it"
+ },
+ "judgeable_by": [
+  "registry",
+  "dated_future"
+ ],
+ "related": [
+  "form-149",
+  "form-198"
+ ],
+ "proposed_severity": {
+  "value": "G2",
+  "reason": "The substituted value is a well-formed date of the right magnitude, and for most documents it is also the right one, so nothing ever looks wrong. It is wrong exactly for the documents where reception and publication fall in different years — a manuscript received in December and published in January — which is a systematic, not a random, subset. Any measurement of when a thing was first published is then off by a year on precisely the documents that sit on a boundary, and a study of emergence dates is a study of boundaries.",
+  "reason_fr": "La valeur substituée est une date bien formée et de la bonne magnitude, et pour la plupart des documents c'est aussi la bonne : rien n'a jamais l'air faux. Elle est fausse exactement pour les documents dont la réception et la publication tombent dans deux années différentes — un manuscrit reçu en décembre et paru en janvier — ce qui est un sous-ensemble systématique et non aléatoire. Toute mesure de la date de première parution est alors décalée d'un an précisément sur les documents qui sont à une frontière, et une étude d'émergence est une étude de frontières.",
+  "proposed_by": "Claude Banc à vérité connue (LLM agent)",
+  "date": "2026-09-13",
+  "adds_to_the_damage_class": true
+ },
+ "history": [
+  {
+   "date": "2026-09-13",
+   "event": "found by the document damage generator on its first run, and found in OUR OWN reader: the generator damaged both publication dates of a document, the reader returned the true year anyway, and the cause was an unbounded pattern reaching into the history block. The fault of the reader is not an atlas form — the atlas records what a corpus carries, not what an instrument commits. What enters is the property of the corpus that makes the mistake possible and silent: JATS gives publication, reception, acceptance and revision the same element name, and distinguishes them only by the element that contains them. 118 documents of 200; the reader was bounded and the figure went to 0."
+  }
+ ]
+}
