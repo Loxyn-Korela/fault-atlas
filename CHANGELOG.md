@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.23.2 — 2026-09-13
+- **The language switch shows the flag of the language it takes you to**, drawn inline: the tricolore on the English pages, the Union flag on the French ones. No text beside it.
+- Asked for three times, and got a generic pennant twice. Lucide has no national flags — it is a generic icon set — and the honest answer the first time was to say so and offer the options, not to substitute a glyph that designates no language. The flags are eight rectangles and four strokes of SVG; there was never a reason not to draw them.
+
 ## 0.23.1 — 2026-09-13
 - **The home page was still saying the thing 0.22.0 corrected on every form.** It read "none of that is in the graph, so no deletion-only repair reaches it" — attributing all six unreached classes to missing information. Five of them are beyond the **gesture**: mending a gap means adding, and a repair whose solution is a set of elements to delete carries no insertion anywhere, so no weight and no information change the answer. One is beyond the information alone, and there a weight takes it from a coin to 130 of 130. Both languages now say which, and point at the per-form field that says it case by case.
 - The language switch is a flag and nothing else: the Lucide glyph, no "FR"/"EN" beside it, the language carried by the title and the aria-label.
