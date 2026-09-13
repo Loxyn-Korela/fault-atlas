@@ -235,6 +235,11 @@ Two decisions the second reader reversed on her own second pass, both on truncat
 
 Met a form on your corpus? [Propose it](https://github.com/Loxyn-Korela/fault-atlas/issues/new?template=propose-form.yml) with its excerpt, corpus and date — no code needed. Or scaffold the record with `tools/new_form.py` and send it by pull request (see `CONTRIBUTING.md`). A second reader reviews. Disagreement is recorded, not erased. Nothing enters unreviewed.
 
+## Third-party assets
+
+The language switch uses the French and British flags of **circle-flags** (HatScripts), MIT licence,
+inlined. Everything else on the site is written here.
+
 ## Citation and licence
 
 Records and documentation: CC BY-SA 4.0. Tools: Apache 2.0. See `CITATION.cff`.

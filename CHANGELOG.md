@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.24.0 — 2026-09-13
+- **The language switch is the flag of the language it takes you to**, from `circle-flags` (HatScripts, MIT): the tricolore on the English pages, the Union flag on the French ones, circular, inlined, no text beside them. Credited in the README.
+- Four tries for one icon, and the first three were mine. Lucide has no national flags, which was true and useless; the answer was that **flag-icons and circle-flags do, both MIT**, and to use one instead of hand-drawing. The Union flag drawn by hand in 0.23.2 had symmetric diagonals where the real one has them offset, so at 21 pixels it read as an X. A library that has done the work is better than a glyph one draws oneself, and saying "the library you named cannot" without naming the one that can is not an answer.
+
 ## 0.23.3 — 2026-09-13
 - **The language switch is the Lucide `languages` glyph, alone.** On the 24 grid, 2px stroke, `currentColor`, no fill, no text beside it; which language it takes you to is carried by the title and the aria-label.
 - The colour flags of 0.23.2 are withdrawn. They were the literal request and the wrong answer: eight flat colours beside six monochrome line glyphs break the system the rest of the page follows, and a Union flag drawn at 21 pixels reads as an X because its diagonals are offset and mine were not. The standard asked for was Lucide's, not a flag.
