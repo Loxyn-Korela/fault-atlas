@@ -150,6 +150,43 @@ abstract writing 10,6 % where its own English summary writes 10.6 %) and in a 20
 review (-1,97 on one line, -1.97 on the next, in the same table). The lesson is on the form:
 fifteen modern PDFs were not enough to declare a convention dead.
 
+## What this owes to others, said before anyone asks
+
+The atlas carried 171 forms and credited its own organisation on every one of them. That was not a
+claim; it was an omission, and a prior-art sweep of 2026-09-13 corrected it. Eight forms now credit
+their finders (200-207), and four pieces of the framework itself have antecedents worth naming.
+
+**Merge and split are not our idea; they are two defined operations.** Menestrina, Whang and
+Garcia-Molina give them a formal semantics — *"a split is an operation c → c₁, c₂ where c₁ ∩ c₂ = ∅,
+c₁ ∪ c₂ = c"* — and add what we had not thought to: *"we may want to penalize splits more than
+merges, or vice versa. Further, the 'badness' of a split or merge may depend on the sizes of the
+clusters."* A configurable cost model, which this atlas does not have.
+*Evaluating Entity Resolution Results*, PVLDB 3(1):208-219, 2010.
+
+**Weighting a fault by its downstream consequence was published in 2011.** Clausner, Pletschacher
+and Antonacopoulos flag a segmentation error *allowable* or *non-allowable*: merging two paragraphs
+of one column barely affects the OCR result, merging across columns scrambles the text. Same gesture
+as this atlas's consequence axis, fourteen years earlier, stored per instance.
+*Scenario Driven In-Depth Performance Evaluation of Document Layout Analysis Methods*, ICDAR 2011.
+
+**Abstention as a first-class outcome is Fellegi-Sunter.** Our `REFUSABLE` class — code may decline
+to conclude — is the *no-decision region*: *"If Tλ ≤ R ≤ Tμ, then designate pair as a possible match
+and hold for clerical review."* With, unlike ours, the a-priori error bounds that fix both thresholds.
+Winkler, *Overview of Record Linkage and Current Research Directions*, U.S. Census Bureau, 2006.
+
+**And two outcomes our seven damages cannot express.** The MUC scoring categories carry *partial* —
+partial credit — and *noncommittal*, where key and response are both intentionally blank. Neither has
+a place in a scheme that asks what a fault does to a graph.
+Chinchor, *MUC-4 Evaluation Metrics*, MUC-4, 1992.
+
+**What the sweep did not find**, and it is the reason this atlas exists: no published catalogue
+classifies faults of **documents** by the effect they have on a **graph**. Six bodies of work hold
+half of that ground each — Suriadi et al. 2017 (event logs to process models, same method), Clausner
+2011 (same substrate, downstream axis, five entries, and the downstream is text), LED 2025 (same
+substrate, eight types, the downstream is a layout prediction), Bhadauria 2026 (35 types, relational),
+Menestrina 2010 (the semantics without a catalogue), and Zaveri 2016 / Färber 2018 / Paulheim 2017
+(the substrate is already the graph, and they never go back to the document). None holds both.
+
 ## Rules
 
 1. A form enters with a verbatim excerpt from a named corpus, or it is a hypothesis, not an observation.

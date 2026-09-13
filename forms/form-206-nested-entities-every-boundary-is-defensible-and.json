@@ -1,0 +1,59 @@
+{
+ "id": "form-206",
+ "version": 1,
+ "name": "Nested entities: every boundary is defensible and they exclude each other",
+ "name_fr": "Entités imbriquées : toute frontière se défend, et elles s'excluent",
+ "origin": {
+  "organisation": "van Erp, Mendes, Paulheim, Ilievski, Plu, Rizzo, Waitelonis",
+  "campaign": "Evaluating Entity Linking: An Analysis of Current Benchmark Datasets and a Roadmap for Doing a Better Job, LREC 2016"
+ },
+ "damage": "SPLIT",
+ "class": "IRREDUCIBLE",
+ "layer": "④ extraction",
+ "injection": "FORMAT",
+ "status": "proposed",
+ "seen": [
+  {
+   "corpus": "entity-linking benchmark datasets, compared for their annotation conventions",
+   "document": "'The President of the United States of America' — one entity, two, or three?",
+   "date": "2016-05-01",
+   "observer": "van Erp, Mendes, Paulheim, Ilievski, Plu, Rizzo, Waitelonis",
+   "lang": "en",
+   "organisation": "van Erp, Mendes, Paulheim, Ilievski, Plu, Rizzo, Waitelonis",
+   "excerpt": "Nested entities — does the annotation allow for annotation of multiple entity layers e.g. is 'The President of the United States of America' one entity in its entirety, two entity mentions ('President' and 'United States of America') or three…? — And, in the same list, Mention boundaries: inclusion of determiners ('the pope' vs 'pope'), annotation of inner or outer entities ('New York's airport JFK' vs 'JFK'), tokenization decisions, sentence-splitting heuristics."
+  }
+ ],
+ "specimens": {
+  "cases": [],
+  "counter_examples": []
+ },
+ "prevention": {
+  "cancellable_by_code": false,
+  "note": "no rule settles it: the convention has to be declared, and two declared conventions give two different graphs from one document"
+ },
+ "repair": {
+  "reachable_by_deletion": "no",
+  "note": "the identity is a choice, not an excess: deletion removes one reading without establishing the other"
+ },
+ "judgeable_by": [
+  "curated"
+ ],
+ "related": [
+  "form-132",
+  "form-024"
+ ],
+ "proposed_severity": {
+  "value": "G1",
+  "reason": "There is no right boundary. The outer entity, the inner one and both are each defensible and mutually incompatible, so two honest pipelines produce two different identity sets from the same sentence, and neither is wrong. It lands on identity, so everything hanging from it inherits the choice. This is one of the rare cases where the ground truth itself is under-determined, and a form that says so is worth more than a rule that hides it.",
+  "reason_fr": "Il n'y a pas de bonne frontière. L'entité englobante, l'incluse et les deux sont chacune défendables et mutuellement incompatibles : deux chaînes honnêtes tirent deux jeux d'identités différents de la même phrase, et aucune n'a tort. Ça se pose sur l'identité, donc tout ce qui y pend hérite du choix. C'est un des rares cas où la vérité de référence elle-même est sous-déterminée, et une fiche qui le dit vaut mieux qu'une règle qui le cache.",
+  "proposed_by": "Claude Banc à vérité connue (LLM agent)",
+  "date": "2026-09-13",
+  "adds_to_the_damage_class": true
+ },
+ "history": [
+  {
+   "date": "2026-09-13",
+   "event": "entered 2026-09-13 from published work, not from our own observation. The atlas had carried 171 forms and credited its own organisation on every one of them; this is the first entry whose finder is someone else. The excerpt is the authors' own definition, quoted verbatim. The damage and the layer are OUR reading of their fault and were not stated by them. Nearest form already here: form-132 has a technical boundary differing from a semantic one; here no boundary is the right one."
+  }
+ ]
+}

@@ -1,0 +1,60 @@
+{
+ "id": "form-205",
+ "version": 1,
+ "name": "The document determines no reading order, and one is invented",
+ "name_fr": "Le document ne détermine aucun ordre de lecture, et on lui en invente un",
+ "origin": {
+  "organisation": "Clausner, Pletschacher, Antonacopoulos (PRImA Lab, University of Salford)",
+  "campaign": "The Significance of Reading Order in Document Recognition and its Evaluation, ICDAR 2013"
+ },
+ "damage": "MISSING",
+ "class": "REFUSABLE",
+ "layer": "② reading",
+ "injection": "MOVE",
+ "status": "proposed",
+ "seen": [
+  {
+   "corpus": "document images with ground-truth reading-order trees, PRImA dataset",
+   "document": "regions in an unordered group, or outside the reading-order tree altogether",
+   "date": "2013-08-01",
+   "observer": "Clausner, Pletschacher, Antonacopoulos (PRImA Lab, University of Salford)",
+   "lang": "en",
+   "organisation": "Clausner, Pletschacher, Antonacopoulos (PRImA Lab, University of Salford)",
+   "excerpt": "Reading order relation types include: Fully unordered relation (e.g. both in same unordered group) · Somewhere before (but unordered group involved) · Somewhere after (but unordered group involved) · Relation not defined (one or both regions not in reading order tree). — There is no one-to-one relation between the elements of both layouts. This is due to ambiguous interpretations or errors in segmentation."
+  }
+ ],
+ "specimens": {
+  "cases": [],
+  "counter_examples": []
+ },
+ "prevention": {
+  "cancellable_by_code": true,
+  "note": "a region outside the reading-order tree is declared as such in the source when the source declares one; what code cannot do is order what the document left unordered"
+ },
+ "repair": {
+  "reachable_by_deletion": "no",
+  "note": "the order was never in the graph; nothing to delete"
+ },
+ "judgeable_by": [
+  "construction"
+ ],
+ "related": [
+  "form-066",
+  "form-082",
+  "form-190"
+ ],
+ "proposed_severity": {
+  "value": "G2",
+  "reason": "A reader that must produce an order produces one, and the order it invents carries chronology and scope: which caption belongs to which figure, which note qualifies which clause, what came before what. The correct answer here is an abstention on the order, not an order. Floating boxes, marginal notes, poster panels and anything outside the reading tree are in this case.",
+  "reason_fr": "Un lecteur qui doit produire un ordre en produit un, et l'ordre qu'il invente porte la chronologie et la portée : quelle légende va à quelle figure, quelle note qualifie quelle clause, ce qui vient avant quoi. La bonne réponse ici est une abstention sur l'ordre, pas un ordre. Encadrés flottants, notes marginales, panneaux d'affiche et tout ce qui est hors de l'arbre de lecture sont dans ce cas.",
+  "proposed_by": "Claude Banc à vérité connue (LLM agent)",
+  "date": "2026-09-13",
+  "adds_to_the_damage_class": true
+ },
+ "history": [
+  {
+   "date": "2026-09-13",
+   "event": "entered 2026-09-13 from published work, not from our own observation. The atlas had carried 171 forms and credited its own organisation on every one of them; this is the first entry whose finder is someone else. The excerpt is the authors' own definition, quoted verbatim. The damage and the layer are OUR reading of their fault and were not stated by them. Nearest form already here: form-066, form-082 and form-190 all describe an order that exists and is misread; here no order exists."
+  }
+ ]
+}

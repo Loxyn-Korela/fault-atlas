@@ -1,0 +1,61 @@
+{
+ "id": "form-204",
+ "version": 1,
+ "name": "One logical column split in two for alignment",
+ "name_fr": "Une colonne logique scindée en deux pour l'alignement",
+ "origin": {
+  "organisation": "Smock, Pesala, Abraham (Microsoft)",
+  "campaign": "Aligning benchmark datasets for table structure recognition, ICDAR 2023"
+ },
+ "damage": "WRONG_VALUE",
+ "class": "DEFEATED_IF_XML",
+ "layer": "② reading",
+ "injection": "FORMAT",
+ "status": "proposed",
+ "seen": [
+  {
+   "corpus": "financial and scientific tables of the ICDAR-2013 and PubTables benchmarks",
+   "document": "a currency symbol placed in its own column so the figures align on the right",
+   "date": "2023-08-01",
+   "observer": "Smock, Pesala, Abraham (Microsoft)",
+   "lang": "en",
+   "organisation": "Smock, Pesala, Abraham (Microsoft)",
+   "excerpt": "it is common in these tables for a logical column that contains a monetary symbol, such as a $, to be split into two columns, possibly for numerical alignment purposes. […] Tables annotated this way are done so for presentation purposes but are inconsistent with their logical interpretation, which should group the dollar sign and numerical value into the same cell."
+  }
+ ],
+ "specimens": {
+  "cases": [],
+  "counter_examples": []
+ },
+ "prevention": {
+  "cancellable_by_code": true,
+  "note": "a column whose cells are all one non-numeric character, adjacent to a numeric column, is detectable; deciding that they are one logical column is the judgement"
+ },
+ "repair": {
+  "reachable_by_deletion": "no",
+  "note": "the value is incomplete, not extra: deleting removes the quantity rather than restoring its unit"
+ },
+ "judgeable_by": [
+  "construction",
+  "curated"
+ ],
+ "related": [
+  "form-136",
+  "form-084",
+  "form-087"
+ ],
+ "proposed_severity": {
+  "value": "G2",
+  "reason": "The value keeps its digits and loses its unit, and a number without its unit is not wrong-looking — it is simply a number. It enters the graph as a quantity of nothing, comparable with quantities of something else. It generalises past currency to any right-aligned marker: a sign, a percentage, an SI unit.",
+  "reason_fr": "La valeur garde ses chiffres et perd son unité, et un nombre sans unité n'a pas l'air faux — c'est juste un nombre. Il entre dans le graphe comme une quantité de rien, comparable à des quantités d'autre chose. Ça se généralise au-delà de la monnaie : un signe, un pourcentage, une unité SI alignés à droite.",
+  "proposed_by": "Claude Banc à vérité connue (LLM agent)",
+  "date": "2026-09-13",
+  "adds_to_the_damage_class": true
+ },
+ "history": [
+  {
+   "date": "2026-09-13",
+   "event": "entered 2026-09-13 from published work, not from our own observation. The atlas had carried 171 forms and credited its own organisation on every one of them; this is the first entry whose finder is someone else. The excerpt is the authors' own definition, quoted verbatim. The damage and the layer are OUR reading of their fault and were not stated by them. Nearest form already here: form-136 has two columns of different natures and form-084 a cell holding several; this is the inverse of both."
+  }
+ ]
+}

@@ -1,0 +1,58 @@
+{
+ "id": "form-207",
+ "version": 1,
+ "name": "Annotating the first mention only, and what it does to a weighted graph",
+ "name_fr": "N'annoter que la première mention, et ce que ça fait à un graphe pondéré",
+ "origin": {
+  "organisation": "van Erp, Mendes, Paulheim, Ilievski, Plu, Rizzo, Waitelonis",
+  "campaign": "Evaluating Entity Linking: An Analysis of Current Benchmark Datasets and a Roadmap for Doing a Better Job, LREC 2016"
+ },
+ "damage": "CORPUS_PARAMETER",
+ "class": "REFUSABLE",
+ "layer": "⑤ anchoring",
+ "injection": "PARAMETER",
+ "status": "proposed",
+ "seen": [
+  {
+   "corpus": "entity-linking benchmark datasets, compared for their annotation conventions",
+   "document": "the convention itself, which the datasets do not agree on",
+   "date": "2016-05-01",
+   "observer": "van Erp, Mendes, Paulheim, Ilievski, Plu, Rizzo, Waitelonis",
+   "lang": "en",
+   "organisation": "van Erp, Mendes, Paulheim, Ilievski, Plu, Rizzo, Waitelonis",
+   "excerpt": "Handling redundancy — annotating only the first vs. annotating all occurrences of an entity. — And, in the same list: Offset calculation — using 0 vs. using 1 as the initial identifier."
+  }
+ ],
+ "specimens": {
+  "cases": [],
+  "counter_examples": []
+ },
+ "prevention": {
+  "cancellable_by_code": true,
+  "note": "the convention can be declared and checked; what code cannot do is recover the count from a corpus annotated the other way"
+ },
+ "repair": {
+  "reachable_by_deletion": "no",
+  "note": "not a fault of the graph: a property of the corpus, which is why it is CORPUS_PARAMETER"
+ },
+ "judgeable_by": [
+  "construction"
+ ],
+ "related": [
+  "form-016"
+ ],
+ "proposed_severity": {
+  "value": "G2",
+  "reason": "No fact disappears, so nothing looks wrong. What changes is the count of mentions, and any edge weighted by that count is divided by however many times the entity recurred. A graph whose weights come from mention counts is therefore built on a convention nobody wrote down, and two corpora annotated differently are not comparable. It is the exact shape of a silent decision that skews a weighted graph.",
+  "reason_fr": "Aucun fait ne disparaît, donc rien n'a l'air faux. Ce qui change, c'est le compte de mentions, et toute arête pondérée par ce compte est divisée par le nombre de fois où l'entité revenait. Un graphe dont les poids viennent de comptes de mentions repose alors sur une convention que personne n'a écrite, et deux corpus annotés différemment ne sont pas comparables. C'est la forme même de la décision silencieuse qui fausse un graphe pondéré.",
+  "proposed_by": "Claude Banc à vérité connue (LLM agent)",
+  "date": "2026-09-13",
+  "adds_to_the_damage_class": true
+ },
+ "history": [
+  {
+   "date": "2026-09-13",
+   "event": "entered 2026-09-13 from published work, not from our own observation. The atlas had carried 171 forms and credited its own organisation on every one of them; this is the first entry whose finder is someone else. The excerpt is the authors' own definition, quoted verbatim. The damage and the layer are OUR reading of their fault and were not stated by them. Nearest form already here: form-016 measures redundancy BETWEEN documents; this is the convention inside one."
+  }
+ ]
+}

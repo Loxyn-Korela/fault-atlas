@@ -1,0 +1,60 @@
+{
+ "id": "form-203",
+ "version": 1,
+ "name": "A merged cell destroyed in the markup, and nothing shows on screen",
+ "name_fr": "Une cellule fusionnée détruite dans le balisage, et rien ne se voit à l'écran",
+ "origin": {
+  "organisation": "Smock, Pesala, Abraham (Microsoft)",
+  "campaign": "PubTables-1M: Towards comprehensive table extraction from unstructured documents, CVPR 2022"
+ },
+ "damage": "MISSING",
+ "class": "DEFEATED_IF_XML",
+ "layer": "② reading",
+ "injection": "FORMAT",
+ "status": "proposed",
+ "seen": [
+  {
+   "corpus": "PubTables-1M, tables extracted from PMCOA scientific articles",
+   "document": "a header cell spanning five columns annotated as five separate grid cells",
+   "date": "2022-06-01",
+   "observer": "Smock, Pesala, Abraham (Microsoft)",
+   "lang": "en",
+   "organisation": "Smock, Pesala, Abraham (Microsoft)",
+   "excerpt": "Oversegmentation occurs in a structure annotation when a spanning cell in a header is split into multiple grid cells. […] Oversegmentation in markup usually has no effect on how a table appears due to borders between cells being invisible, leaving a presentation table's implicit logical structure and interpretation unaffected. However, oversegmentation can lead to significant issues when used as ground truth […] oversegmenting a cell annotation may indicate that its text applies to only one row when its presentation form suggests its text is meant to apply to several rows."
+  }
+ ],
+ "specimens": {
+  "cases": [],
+  "counter_examples": []
+ },
+ "prevention": {
+  "cancellable_by_code": true,
+  "note": "comparing the declared span of a header against the rendered table detects it; where the source is XML the span is declared and the check is exact"
+ },
+ "repair": {
+  "reachable_by_deletion": "no",
+  "note": "the qualifier was never read, so there is nothing in the graph to delete"
+ },
+ "judgeable_by": [
+  "construction",
+  "closed_world"
+ ],
+ "related": [
+  "form-043",
+  "form-084"
+ ],
+ "proposed_severity": {
+  "value": "G3",
+  "reason": "The header that covered five columns now covers one, so four columns lose the qualifier that gave their numbers meaning, and every fact drawn from them is orphaned of its scope. The authors state the property that makes it dangerous: it changes nothing on screen, because the borders between cells are invisible. It is caught only by a reader that compares the markup with the rendering.",
+  "reason_fr": "L'en-tête qui couvrait cinq colonnes n'en couvre plus qu'une : quatre colonnes perdent le qualificatif qui donnait un sens à leurs nombres, et tout fait qu'on en tire est orphelin de sa portée. Les auteurs énoncent la propriété qui la rend dangereuse : ça ne change rien à l'écran, les bordures entre cellules étant invisibles. Seul un lecteur qui compare le balisage au rendu l'attrape.",
+  "proposed_by": "Claude Banc à vérité connue (LLM agent)",
+  "date": "2026-09-13",
+  "adds_to_the_damage_class": true
+ },
+ "history": [
+  {
+   "date": "2026-09-13",
+   "event": "entered 2026-09-13 from published work, not from our own observation. The atlas had carried 171 forms and credited its own organisation on every one of them; this is the first entry whose finder is someone else. The excerpt is the authors' own definition, quoted verbatim. The damage and the layer are OUR reading of their fault and were not stated by them. Nearest form already here: form-043 counts the merged cells that ARE present; this is the opposite — the merge destroyed in the markup."
+  }
+ ]
+}

@@ -1,0 +1,58 @@
+{
+ "id": "form-201",
+ "version": 1,
+ "name": "Real-word error: a valid word, and the wrong one",
+ "name_fr": "Faute en mot valide : un mot du dictionnaire, et le mauvais",
+ "origin": {
+  "organisation": "Nguyen, Jatowt, Coustaty, Nguyen, Doucet",
+  "campaign": "Deep Statistical Analysis of OCR Errors for Effective Post-OCR Processing, JCDL 2019"
+ },
+ "damage": "WRONG_VALUE",
+ "class": "SILENT_FALSE",
+ "layer": "② reading",
+ "injection": "FORMAT",
+ "status": "proposed",
+ "seen": [
+  {
+   "corpus": "historical newspapers and books, OCR output analysed against ground truth",
+   "document": "'hear' read as 'bear' — valid in the dictionary, wrong in context",
+   "date": "2019-06-01",
+   "observer": "Nguyen, Jatowt, Coustaty, Nguyen, Doucet",
+   "lang": "en",
+   "organisation": "Nguyen, Jatowt, Coustaty, Nguyen, Doucet",
+   "excerpt": "Real-word errors are valid in dictionary but incorrect in context (e.g. 'hear' vs. 'bear'). […] non-word errors are invalid in dictionary (e.g. 'hear' vs. 'hcar'). It is obvious that non-word errors are easier to be detected and corrected than real-word errors. — Measured: real-word errors account for about 59.21 % of OCR errors."
+  }
+ ],
+ "specimens": {
+  "cases": [],
+  "counter_examples": []
+ },
+ "prevention": {
+  "cancellable_by_code": false,
+  "note": "no dictionary sees it; only the context does, and that is not a deterministic check"
+ },
+ "repair": {
+  "reachable_by_deletion": "no",
+  "note": "the value is wrong, not extra: deleting removes a true fact rather than correcting the word"
+ },
+ "judgeable_by": [
+  "curated"
+ ],
+ "related": [
+  "form-023"
+ ],
+ "proposed_severity": {
+  "value": "G2",
+  "reason": "It passes every lexical check because it is a word. Nothing signals it: the sentence reads, the value looks sound, and the fact drawn from it is false. And it is the majority case at 59.21 %, not the margin — which reverses the risk profile a catalogue of visible OCR confusions leaves a reader with.",
+  "reason_fr": "Elle passe tout contrôle lexical, puisque c'est un mot. Rien ne la signale : la phrase se lit, la valeur a l'air saine, et le fait qu'on en tire est faux. Et c'est le cas majoritaire à 59,21 %, pas la marge — ce qui renverse le profil de risque que laisse croire un catalogue de confusions OCR visibles.",
+  "proposed_by": "Claude Banc à vérité connue (LLM agent)",
+  "date": "2026-09-13",
+  "adds_to_the_damage_class": true
+ },
+ "history": [
+  {
+   "date": "2026-09-13",
+   "event": "entered 2026-09-13 from published work, not from our own observation. The atlas had carried 171 forms and credited its own organisation on every one of them; this is the first entry whose finder is someone else. The excerpt is the authors' own definition, quoted verbatim. The damage and the layer are OUR reading of their fault and were not stated by them. Nearest form already here: form-023 (typos and OCR confusions) shows only non-word errors, which a dictionary catches."
+  }
+ ]
+}

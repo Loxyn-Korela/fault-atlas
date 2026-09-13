@@ -1,0 +1,61 @@
+{
+ "id": "form-200",
+ "version": 1,
+ "name": "Run-on: a space the writing had and the reading lost",
+ "name_fr": "Mot-valise : une espace que l'écriture portait et que la lecture a perdue",
+ "origin": {
+  "organisation": "Nguyen, Jatowt, Coustaty, Nguyen, Doucet",
+  "campaign": "Deep Statistical Analysis of OCR Errors for Effective Post-OCR Processing, JCDL 2019"
+ },
+ "damage": "MERGE",
+ "class": "REFUSABLE",
+ "layer": "② reading",
+ "injection": "FORMAT",
+ "status": "proposed",
+ "seen": [
+  {
+   "corpus": "historical newspapers and books, OCR output analysed against ground truth",
+   "document": "the pair 'is said' read as 'issaid'; under-segmentation in Hamdi et al.'s terms",
+   "date": "2019-06-01",
+   "observer": "Nguyen, Jatowt, Coustaty, Nguyen, Doucet",
+   "lang": "en",
+   "organisation": "Nguyen, Jatowt, Coustaty, Nguyen, Doucet",
+   "excerpt": "Incorrectly putting two or more words together creates a run-on error which is often not in the lexicon. In other words, most of run-on errors are non-word errors, and they are easy to be detected. Correcting such errors is more complicated because it easily leads to a combinatorial explosion of the number of possible word combinations. — And: wrongly deleting/inserting white spaces results in incorrect split errors (e.g. 'depend' vs. 'de pend') and run-on errors (e.g. 'is said' vs. 'issaid'). Hamdi et al. (2022) measure the consequence: only 19.25 % of named entities affected by a segmentation error are correctly recognised."
+  }
+ ],
+ "specimens": {
+  "cases": [],
+  "counter_examples": []
+ },
+ "prevention": {
+  "cancellable_by_code": false,
+  "note": "a lexicon catches most of them because the result is usually not a word; what code cannot do is choose where the space belonged among the combinations"
+ },
+ "repair": {
+  "reachable_by_deletion": "no",
+  "note": "the fused token is wrong, not extra: deleting removes both entities rather than parting them"
+ },
+ "judgeable_by": [
+  "construction",
+  "curated"
+ ],
+ "related": [
+  "form-188",
+  "form-092",
+  "form-023"
+ ],
+ "proposed_severity": {
+  "value": "G1",
+  "reason": "Two neighbouring entities fuse into one token, so the identity itself is wrong and every fact hanging from it inherits the error. The authors measure that only 19.25 % of named entities touched by a segmentation error survive recognition. And the direction is counter-intuitive: incorrect splits are 2.36 times commoner than run-ons in OCR, the exact opposite of human typing.",
+  "reason_fr": "Deux entités voisines fondent en un seul jeton : l'identité elle-même est fausse, et tout fait qui y pend en hérite. Les auteurs mesurent que 19,25 % seulement des entités nommées touchées par une faute de segmentation survivent à la reconnaissance. Et le sens surprend : les scissions sont 2,36 fois plus fréquentes que les mots-valises en OCR, l'exact inverse de la frappe humaine.",
+  "proposed_by": "Claude Banc à vérité connue (LLM agent)",
+  "date": "2026-09-13",
+  "adds_to_the_damage_class": true
+ },
+ "history": [
+  {
+   "date": "2026-09-13",
+   "event": "entered 2026-09-13 from published work, not from our own observation. The atlas had carried 171 forms and credited its own organisation on every one of them; this is the first entry whose finder is someone else. The excerpt is the authors' own definition, quoted verbatim. The damage and the layer are OUR reading of their fault and were not stated by them. Nearest form already here: form-188 (no word boundary in the writing system) describes an absence from the start; here the space existed and was lost."
+  }
+ ]
+}

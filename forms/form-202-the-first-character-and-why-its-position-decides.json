@@ -1,0 +1,60 @@
+{
+ "id": "form-202",
+ "version": 1,
+ "name": "The first character, and why its position decides",
+ "name_fr": "Le premier caractère, et pourquoi sa position décide",
+ "origin": {
+  "organisation": "Hamdi, Jean-Caurant, Sidère, Coustaty, Doucet",
+  "campaign": "In-Depth Analysis of the Impact of OCR Errors on Named Entity Recognition and Linking, Natural Language Engineering 2022"
+ },
+ "damage": "SPLIT",
+ "class": "SILENT_FALSE",
+ "layer": "⑥ resolution",
+ "injection": "FORMAT",
+ "status": "proposed",
+ "seen": [
+  {
+   "corpus": "historical documents, NER and entity-linking measured against ground truth under controlled OCR degradation",
+   "document": "'Iowa' read as 'lowa' — a lower-case l for a capital I in position one",
+   "date": "2022-03-01",
+   "observer": "Hamdi, Jean-Caurant, Sidère, Coustaty, Doucet",
+   "lang": "en",
+   "organisation": "Hamdi, Jean-Caurant, Sidère, Coustaty, Doucet",
+   "excerpt": "Only 30.41 % of the NEs are correctly recognised in spite of errors at the first character. […] the common substitution of a small case 'l' instead of large case 'I', as in 'Iowa' and 'lowa'. In this case, the mention 'lowa' does not exist in the probability table and, consequently, the NEL approach cannot link this mention to the KB. — Together with first character errors, segmentation errors have the highest impact on NER performance, and a similar yet weaker impact on NEL."
+  }
+ ],
+ "specimens": {
+  "cases": [],
+  "counter_examples": []
+ },
+ "prevention": {
+  "cancellable_by_code": false,
+  "note": "code can flag a token whose first character is a known confusion pair; it cannot decide which of the two was written"
+ },
+ "repair": {
+  "reachable_by_deletion": "no",
+  "note": "the identity is wrong, not extra: deleting removes the entity rather than reuniting it"
+ },
+ "judgeable_by": [
+  "curated",
+  "registry"
+ ],
+ "related": [
+  "form-023",
+  "form-189"
+ ],
+ "proposed_severity": {
+  "value": "G1",
+  "reason": "The same substitution is benign in the middle of a token and fatal in position one, because position one carries indexing, capitalisation and every probability table a linker uses. Measured: 30.41 % of entities survive an error there, against 79.5 % for a deletion elsewhere. The entity becomes a second, unlinkable identity, and the facts split between the two.",
+  "reason_fr": "La même substitution est bénigne au milieu d'un jeton et fatale en position 1, parce que la position 1 porte l'indexation, la capitale et toute table de probabilité d'un lieur. Mesuré : 30,41 % des entités survivent à une faute là, contre 79,5 % pour une suppression ailleurs. L'entité devient une seconde identité non liable, et les faits se partagent entre les deux.",
+  "proposed_by": "Claude Banc à vérité connue (LLM agent)",
+  "date": "2026-09-13",
+  "adds_to_the_damage_class": true
+ },
+ "history": [
+  {
+   "date": "2026-09-13",
+   "event": "entered 2026-09-13 from published work, not from our own observation. The atlas had carried 171 forms and credited its own organisation on every one of them; this is the first entry whose finder is someone else. The excerpt is the authors' own definition, quoted verbatim. The damage and the layer are OUR reading of their fault and were not stated by them. Nearest form already here: form-023 distinguishes no position; form-189 is about a writing system without case, where the signal is absent rather than corrupted."
+  }
+ ]
+}
