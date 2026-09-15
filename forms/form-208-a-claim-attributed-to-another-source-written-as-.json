@@ -1,0 +1,104 @@
+{
+  "id": "form-208",
+  "version": 1,
+  "name": "A claim attributed to another source, written as a fact",
+  "origin": {
+    "organisation": "Loxyn SAS, Lyon",
+    "campaign": "September 2026 — third observation wave (Loxyn)",
+    "contact": "contact@loxyn.ai"
+  },
+  "damage": "SPURIOUS_EDGE",
+  "class": "UNCLASSIFIED",
+  "layer": "③ utterance",
+  "injection": "INSERT",
+  "status": "proposed",
+  "seen": [
+    {
+      "corpus": "Europe PMC JATS 2023-2026 (272 articles, the declared corpus)",
+      "date": "2026-09-15",
+      "excerpt": "MEASURED on 2026-09-15 by probes/2026-09/form-208-reported-claim.py, whose definition is in its docstring: 60/272 articles carry, in their body, a claim attributed to another source and written as a fact — « et al. also found that a greater proportion of visible green space in the community was associated with better cardiovascular health in older adults [CIT] » (bio-PMC12882215) — and in 7 of the 60 the next sentence denies or qualifies it (« et al. found that caffeine improved exercise performance in athletes with AA and AC polymorphisms though performance decreased in CC allele carriers », essai-PMC13239719). A reader that keeps the reported fact and drops its attribution asserts an edge the article never asserted; in the 7, one it denies. The strata: bio 16, essai 10, phys 9, meta 8, cas 7, moderne 6, nonEN 4.",
+      "lang": "en",
+      "organisation": "Loxyn SAS, Lyon",
+      "document": "bio-PMC12882215.xml",
+      "observer": "Fault Atlas maintainer (Loxyn), by probe, no model",
+      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+      "probe": "probes/2026-09/form-208-reported-claim.py"
+    }
+  ],
+  "specimens": {
+    "cases": [],
+    "counter_examples": []
+  },
+  "prevention": {
+    "cancellable_by_code": false,
+    "note": "the attribution marker is detectable by rule (this probe: « et al. » or a citation, a reporting verb, « that »); whether code alone can re-anchor the claim to its source, or must abstain, is not assessed by the observer — to be classified by the second reader. Denial and reported speech were being fabricated in our test corpora with no observed form behind them; this is the form."
+  },
+  "repair": {
+    "reachable_by_deletion": "yes",
+    "note": "a spurious edge is fully repaired by deletion once it is found; finding it needs the text, not the graph — the graph holds a well-formed edge with no mark of who asserted it"
+  },
+  "judgeable_by": [
+    "construction"
+  ],
+  "history": [
+    {
+      "date": "2026-09-15",
+      "event": "proposed from Europe PMC JATS 2023-2026 (272 articles, the declared corpus)",
+      "by": "Fault Atlas maintainer (Loxyn), by probe, no model"
+    },
+    {
+      "date": "2026-09-15",
+      "event": "created at Sébastien Gracia's request: denial and reported speech were fabricated in our test corpora without an observed form behind them; form-074 covers content reused from elsewhere, not a claim attributed in the text",
+      "by": "Fault Atlas maintainer (Loxyn)"
+    }
+  ],
+  "name_fr": "Un propos rapporté, écrit comme un fait",
+  "probes": [
+    {
+      "file": "probes/2026-09/form-208-reported-claim.py",
+      "kind": "python",
+      "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+      "written": "2026-09-15",
+      "run": "python3 tools/run_probe.py probes/2026-09/form-208-reported-claim.py <dir with the 272 .xml>",
+      "result": {
+        "date": "2026-09-15",
+        "count": 60,
+        "of": 272,
+        "strata": {
+          "bio": 16,
+          "essai": 10,
+          "phys": 9,
+          "meta": 8,
+          "cas": 7,
+          "moderne": 6,
+          "nonEN": 4
+        },
+        "examples": [
+          [
+            "bio-PMC12583535.xml",
+            [
+              "et al.’s study demonstrated that simvastatin significantly reduced TV and cell proliferation, but simvastatin-NP did not show better efficacy compared to simvastatin alone."
+            ]
+          ],
+          [
+            "bio-PMC12590050.xml",
+            [
+              "[CIT] ] found that SCH patients had higher HbA1c levels than controls, but they did not conduct a detailed examination of insulin dynamics or beta-cell activity."
+            ]
+          ],
+          [
+            "bio-PMC12674831.xml",
+            [
+              "[CIT] The results showed that women had lower cardiovascular mortality (8.",
+              "[CIT] The study showed that women had a higher prevalence of diastolic dysfunction (52."
+            ]
+          ]
+        ],
+        "by": "Fault Atlas maintainer (Loxyn), on the declared corpus",
+        "carriers_file": "probes/results/form-208-a-claim-attributed-to-another-source-written-as-.json"
+      },
+      "matches_excerpt": true,
+      "note": "the probe this observation was written from; same day, same figure"
+    }
+  ]
+}

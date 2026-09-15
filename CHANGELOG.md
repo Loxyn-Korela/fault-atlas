@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.25.0 — 2026-09-15
+- **A form for the reported claim, `form-208`** — *A claim attributed to another source, written as a fact*. Probe `probes/2026-09/form-208-reported-claim.py` on the 272 Europe PMC articles: 60 carry one, and in 7 the next sentence denies or qualifies it. Denial and reported speech were being fabricated in our test corpora without a form behind them; `form-074` covers content reused from elsewhere, not a claim attributed in the text. Layer ③ utterance, damage SPURIOUS_EDGE, class left to the second reader.
+- **`form-042` has its specimen.** *Names damaged by scanning* was one of the 13 declared hypotheses. `probes/2026-09/form-042-names-damaged-by-scanning.py` on the OCR layer of the 45 migraine PDFs (new corpus record `corpora/migraine-pdf-1957-1987-45.json`, identifiers only): five author names damaged in three documents — SKINH0J, NORR1S, HACHINSK1 (PMID 597797), WIDER0E (4604977), MCNA1JGHTON (14084702). The Scandinavian ø comes out as 0. 168 forms observed, 12 hypotheses.
+- **The table lesson written down before it is lost.** On composed PDF, mechanical table extraction misread tables and an image pass was needed (mechanism M7 of the August catalogue). Recorded in `prevention.note` of `form-043`, `form-082` and `form-097` as an observation, dated, and explicitly not measured — the probe to run is named there.
+
 ## 0.24.1 — 2026-09-15
 - **The English navigation showed `Data &amp; API` as text.** The label was stored already escaped in the generator and escaped again at render, so every English page carried `&amp;amp;`. The label is now plain text, escaped once, like the other four. French pages were not affected: "Données et API" has no ampersand.
 

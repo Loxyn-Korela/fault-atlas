@@ -1,0 +1,397 @@
+{
+ "probe": "probes/2026-09/form-208-reported-claim.py",
+ "corpus_id": "corpus-europe-pmc-jats-2023-2026",
+ "date": "2026-09-15",
+ "count": 60,
+ "of": 272,
+ "carriers": [
+  {
+   "document": "bio-PMC12583535.xml",
+   "evidence": [
+    "et al.’s study demonstrated that simvastatin significantly reduced TV and cell proliferation, but simvastatin-NP did not show better efficacy compared to simvastatin alone."
+   ]
+  },
+  {
+   "document": "bio-PMC12590050.xml",
+   "evidence": [
+    "[CIT] ] found that SCH patients had higher HbA1c levels than controls, but they did not conduct a detailed examination of insulin dynamics or beta-cell activity."
+   ]
+  },
+  {
+   "document": "bio-PMC12674831.xml",
+   "evidence": [
+    "[CIT] The results showed that women had lower cardiovascular mortality (8.",
+    "[CIT] The study showed that women had a higher prevalence of diastolic dysfunction (52."
+   ]
+  },
+  {
+   "document": "bio-PMC12882215.xml",
+   "evidence": [
+    "et al. also found that a greater proportion of visible green space in the community was associated with better cardiovascular health in older adults [ [CIT] ].",
+    "et al. showed that younger older adults (age: 65–74 years) living in greener communities had a reduced risk of developing AD and reported better overall health [ [CIT] ]."
+   ]
+  },
+  {
+   "document": "bio-PMC12927975.xml",
+   "evidence": [
+    "et al. [ [CIT] ] showed that AI could reduce epidemic detection times by 30%–50%.",
+    "et al. [ [CIT] ] showed that AI‐clinician collaboration on chest radiographs significantly improved accuracy and reduced diagnostic errors."
+   ]
+  },
+  {
+   "document": "bio-PMC12953170.xml",
+   "evidence": [
+    "et al. in 2024: The authors hypothesized that injection into the transversus abdominis muscle, which functions as an accessory respiratory muscle, may have contributed to the issue and recommend cardi"
+   ]
+  },
+  {
+   "document": "bio-PMC13057049.xml",
+   "evidence": [
+    "it has been reported that around 80% of CVD deaths occur in LMIC, with Africa accounting for the highest proportion, and death rate disproportionately high in Sub-Saharan Africa (SSA) [ [CIT] ].",
+    "et al. [ [CIT] ] found that HF is not only highly prevalent in SSA but also presents earlier in life, often with poorer outcomes and is driven by different primary etiologies compared to developed cou"
+   ]
+  },
+  {
+   "document": "bio-PMC13097615.xml",
+   "evidence": [
+    "according to recommendations from the JBI [ [CIT] ] and Lely et al."
+   ]
+  },
+  {
+   "document": "bio-PMC13099299.xml",
+   "evidence": [
+    "et al. found that for every 5-units increase in BMI, the recurrence risk of AF post ablation rises by 13% ( [CIT] ).",
+    "et al. reported that weight loss is significantly associated with reduced AF burden."
+   ]
+  },
+  {
+   "document": "bio-PMC13170838.xml",
+   "evidence": [
+    "denied: et al. found that time and resource allocation for PRIMROSE-A was a common staff concern, especially regarding long-term integration into practice outside the trial setting [ [CIT] ].",
+    "et al. found that financially incentivised care plan use was associated with a reduction in daily tobacco smoking rates and excess body weight compared to lack of care plan use [ [CIT] ].",
+    "et al. reported that 46% of patients attended 6 or more appointments out of 12, Lee et al."
+   ]
+  },
+  {
+   "document": "bio-PMC13181205.xml",
+   "evidence": [
+    "et al. 5 RCTs totaling 27 415 patients reported that when combined with statins, EPA could reduce the risk of MACE by 18%, suggesting a mean odds ratio of 78%, which was found to be statistically sign"
+   ]
+  },
+  {
+   "document": "bio-PMC13203479.xml",
+   "evidence": [
+    "denied: et al. (2012) [ [CIT] ] reported that reductions in air pollution during the 2008 Beijing Olympic control period were associated with decreases in FeNO and oxidative stress biomarkers, indicating redu",
+    "According to the World Health Organization (WHO) [ [CIT] ], the main pathway of exposure to air pollution is through the respiratory tract.",
+    "et al. (2022) [ [CIT] ] found that long-term exposure to air pollutants, particularly PM 2."
+   ]
+  },
+  {
+   "document": "bio-PMC13216383.xml",
+   "evidence": [
+    "et al. also examined usability and found that their smartphone-based [ [CIT] ] and videoconferencing [ [CIT] ] approaches were usable for all users.",
+    "et al. reported that 42% of participants preferred in-clinic testing, 18% preferred remote testing, and 40% expressed no preference in a population with chronic respiratory disease [ [CIT] ]."
+   ]
+  },
+  {
+   "document": "bio-PMC13231534.xml",
+   "evidence": [
+    "[CIT] ] conducted a randomized controlled trial (RCT) and found that aerobic exercise improved cardiovascular hemodynamics, including cardiac output, systemic vascular resistance, mean arterial pressu"
+   ]
+  },
+  {
+   "document": "bio-PMC13252842.xml",
+   "evidence": [
+    "[CIT] ] demonstrated that control models reproduced expected sex-specific chamber sizes, serving as an anatomical fidelity check for our reconstruction pipeline."
+   ]
+  },
+  {
+   "document": "bio-PMC13274935.xml",
+   "evidence": [
+    "According to the American College of Sports Medicine (ACSM) [ [CIT] ] , proper exercise prescription should individually define the type of exercise, intensity, frequency, duration, form of progressio"
+   ]
+  },
+  {
+   "document": "cas-PMC13293799.xml",
+   "evidence": [
+    "et al. demonstrated that in anterior STEMI patients with LVT, prophylactic vitamin K antagonist (VKA) use failed to reduce ischemic events but was associated with significantly higher bleeding complic"
+   ]
+  },
+  {
+   "document": "cas-PMC13293897.xml",
+   "evidence": [
+    "it has been shown that MVI is sensitive enough to identify subclinical synovitis ( [CIT] )."
+   ]
+  },
+  {
+   "document": "cas-PMC13293901.xml",
+   "evidence": [
+    "et al. ( [CIT] ) noted that some TB lesions might extrude caseous fluid upon biopsy, such specific signs are rarely observable when a malignant mass dominates the endoscopic field."
+   ]
+  },
+  {
+   "document": "cas-PMC13294155.xml",
+   "evidence": [
+    "et al. (2021) noted that while most patients with SAVI are symptomatic from infancy, late-onset in adulthood can occur ( [CIT] ).",
+    "et al. (2016) demonstrated that STING is essential for the initial detection of CMV and for the first wave of interferon production, which controls early viral replication ( [CIT] )."
+   ]
+  },
+  {
+   "document": "cas-PMC13294340.xml",
+   "evidence": [
+    "[CIT] showed that PRP-mediated angiogenesis was eliminated after pretreatment of PRP with the antiplatelet drug acetylsalicylic acid, suggesting that antiplatelet medications may negatively affect PRP"
+   ]
+  },
+  {
+   "document": "cas-PMC13294481.xml",
+   "evidence": [
+    "et al. showed that heart-rate responses after acute cannabis exposure are variable and that bradycardia, although less common than tachycardia, may occur in clinically significant cannabis toxicity [ "
+   ]
+  },
+  {
+   "document": "cas-PMC13294698.xml",
+   "evidence": [
+    "denied: et al. ( [CIT] ) retrospectively found that both AUSS and UBE achieved good clinical outcomes for LSS, but AUSS offered better maneuverability."
+   ]
+  },
+  {
+   "document": "essai-PMC13169227.xml",
+   "evidence": [
+    "[CIT] ], we hypothesised that perioperative dexamethasone would alter the immune responses on the first postoperative day (POD1) after TKA."
+   ]
+  },
+  {
+   "document": "essai-PMC13169472.xml",
+   "evidence": [
+    "[CIT] ) did not explicitly report an MCID value, their findings suggested that changes of ≥ 3° may be clinically relevant when monitoring postoperative recovery."
+   ]
+  },
+  {
+   "document": "essai-PMC13239719.xml",
+   "evidence": [
+    "denied: et al. ( [CIT] ) found that caffeine improved exercise performance in athletes with AA and AC polymorphisms though performance decreased in CC allele carriers.",
+    "et al. ( [CIT] ) found that caffeine plasma concentrations peaked 30‐min post ingestion in individuals consuming anhydrous caffeine."
+   ]
+  },
+  {
+   "document": "essai-PMC13242068.xml",
+   "evidence": [
+    "et al. ( [CIT] ) showed that the muscle cross‐sectional area exhibits an immediate increase followed by muscle fatigue.",
+    "It was hypothesized that acute percussive massage in men would attenuate increases in muscle cross‐sectional area and promote superior recovery of strength and perceived pain at 24 and 48 h compared t"
+   ]
+  },
+  {
+   "document": "essai-PMC13242351.xml",
+   "evidence": [
+    "It was hypothesised that the ITB protocol would elicit significant BP and AmBP reductions when compared to a volume‐matched IHG protocol following a 4‐week intervention.",
+    "et al. ( [CIT] ) demonstrated that when examining complete ITB bouts, in which exercise order was randomised, cardiovascular responses remained modest and safe regardless of exercise sequence."
+   ]
+  },
+  {
+   "document": "essai-PMC13271868.xml",
+   "evidence": [
+    "et al. ( [CIT] ) reported that a single unilateral balance training session improved ipsilateral and contralateral balance performance in healthy young adults, independent of the specific practice con",
+    "et al. ( [CIT] ) observed that unipedal standing performance improved after a single session of balance training, with only modest additional benefits across further sessions."
+   ]
+  },
+  {
+   "document": "essai-PMC13282136.xml",
+   "evidence": [
+    "et al. ( [CIT] ), reported that small variations in power output, achieved by modifying both absolute workload and exercise intensity domains (i.",
+    "et al. [CIT] ), which demonstrated that despite the observed enhancements in biomolecular glycolytic metabolic markers after SIT (e."
+   ]
+  },
+  {
+   "document": "essai-PMC13291766.xml",
+   "evidence": [
+    "et al., [CIT] ), which suggested that learning effects were minimized.",
+    "it has been proposed that EMS may enhance cognitive function through its effects on arousal (Descollonges et al."
+   ]
+  },
+  {
+   "document": "essai-PMC13291922.xml",
+   "evidence": [
+    "et al. demonstrated that 8 weeks of DT exercise reduced DT interference during forward walking (combined with verbal fluency or with serial‐3‐subtractions) and timed‐up‐and‐go test (combined with verb",
+    "et al. demonstrated that a 6‐week DT treadmill gait training induced greater reduction of DT interference in all gait parameters measured (e."
+   ]
+  },
+  {
+   "document": "essai-PMC13294169.xml",
+   "evidence": [
+    "et al. found that mixed cancer populations engaging in a cognitive rehabilitation program described a renewed sense of belonging, relief at being understood and a reconnection with their capabilities."
+   ]
+  },
+  {
+   "document": "meta-PMC13254819.xml",
+   "evidence": [
+    "[CIT] , [CIT] it has been suggested that Hispanic participants with APOE ε4 may have lower amyloid load compared to NHW participants with APOE ε4.",
+    "[CIT] A HABS‐HD analysis reported that the Aβ42/40 ratio from plasma was associated with amyloid PET in NHW participants but not in Hispanic participants."
+   ]
+  },
+  {
+   "document": "meta-PMC13260247.xml",
+   "evidence": [
+    "[CIT] – [CIT] ), we found that three of the eight pSSNS risk loci identified in the GWAS have also been reported in IgAN, including CD28 , TNFSF15 , and the MHC region ( [CIT] )."
+   ]
+  },
+  {
+   "document": "meta-PMC13263136.xml",
+   "evidence": [
+    "according to Variant Effect Predictor (VEP) (release 109) [CIT] and considering only transcripts with the GENCODE basic tag."
+   ]
+  },
+  {
+   "document": "meta-PMC13264275.xml",
+   "evidence": [
+    "[CIT] found that pathological gambling is linked to DD but not to subjective future-focus measures.",
+    "[CIT] suggested that DD may better predict aggregated health behaviors rather than individual ones."
+   ]
+  },
+  {
+   "document": "meta-PMC13271776.xml",
+   "evidence": [
+    "according to the protocol of Brunt et al ( [CIT] ) by pathologists who were blind to the objectives of the study."
+   ]
+  },
+  {
+   "document": "meta-PMC13280693.xml",
+   "evidence": [
+    "et al., [CIT] ), whereas an epidemiological study of young adults found that higher perceived stress was linked to lower BMI in men (Suglia, Pamplin, Forde, &amp; Shelton, [CIT] )."
+   ]
+  },
+  {
+   "document": "meta-PMC13287149.xml",
+   "evidence": [
+    "it has been suggested that a failure in switched memory B cells may contribute to both IgAD and autoimmunity (Aghamohammadi et al."
+   ]
+  },
+  {
+   "document": "meta-PMC13297335.xml",
+   "evidence": [
+    "denied: et al. (2017) demonstrated that inoculation of a mouse-adapted ZIKV strain into xenografted GBM tumors significantly inhibited tumor growth and improved survival in mice [ [CIT] ]."
+   ]
+  },
+  {
+   "document": "moderne-PMC12900525.xml",
+   "evidence": [
+    "denied: et al. [ [CIT] ] reported that AH-Plus bond strength was unaffected by the type of irrigant, in agreement with our findings."
+   ]
+  },
+  {
+   "document": "moderne-PMC13177175.xml",
+   "evidence": [
+    "[CIT] Indeed, the current study, in line with prior evidence, demonstrated that conventional electrocardiographic indices have only limited predictive value.",
+    "It has been reported that patients with enhancement may exhibit substantially wider QRS-T angles, and a frontal QRS-T angle ≥90° may predict the presence of fibrosis."
+   ]
+  },
+  {
+   "document": "moderne-PMC13274555.xml",
+   "evidence": [
+    "et al. [ [CIT] ] reported that δ 15 N values in the muscle tissues of Baird's beaked whales harvested in Hokkaido placed the species among the highest trophic‐level odontocetes in the region.",
+    "et al. [ [CIT] ] reported that δ 13 C values in muscle tissues of stranded Sato's beaked whales were lower than those of Baird's beaked whales, supporting ecological separation between the two species"
+   ]
+  },
+  {
+   "document": "moderne-PMC13282721.xml",
+   "evidence": [
+    "it has been hypothesized that EHD2 increases the diameter of the caveolar neck to prevent lipid phase separation or the assembly of proteins required for protein‐mediated scission [ [CIT] , [CIT] , [C",
+    "It has been proposed that EHD2 modulates caveolae stability by regulating the diffusion of these lipids into caveolae [ [CIT] , [CIT] , [CIT] , [CIT] , [CIT] ]."
+   ]
+  },
+  {
+   "document": "moderne-PMC13291764.xml",
+   "evidence": [
+    "according to a pre‐published protocol [ [CIT] ] and overseen by a management committee (Tables S1 and S2 )."
+   ]
+  },
+  {
+   "document": "moderne-PMC13292400.xml",
+   "evidence": [
+    "et al. [ [CIT] ], who demonstrated that OPN‐derived phosphopeptides preferentially adsorbed to the {100} and {121} faces of COM crystals whereas showing little to no interaction with the {010} face."
+   ]
+  },
+  {
+   "document": "nonEN-PMC13193190.xml",
+   "evidence": [
+    "[CIT] ) showed that male singers have phonatory efficiency, with significantly higher Psub when singing at high frequencies, with optimized vocal technique ( [CIT] ) ."
+   ]
+  },
+  {
+   "document": "nonEN-PMC13193191.xml",
+   "evidence": [
+    "according to age range, based on specialized literature ( [CIT] ) (C – childhood: birth to 11 years, A – adolescence: 11 to 20 years, YM - young/middle-aged adults: 20 to 65 years, OA – older adults: "
+   ]
+  },
+  {
+   "document": "nonEN-PMC13193194.xml",
+   "evidence": [
+    "according to CARS ( [CIT] ) and the Labirinto Scale ( [CIT] ) .",
+    "according to DSM ( [CIT] ) and indicated that children with LD present greater social interest, more consolidated joint attention skills, and greater affective reciprocity."
+   ]
+  },
+  {
+   "document": "nonEN-PMC13193195.xml",
+   "evidence": [
+    "according to methodological recommendations for ClinRO instruments ( [CIT] - [CIT] ) .",
+    "according to the good methodological practices recommended by ISPOR ( [CIT] - [CIT] ) ."
+   ]
+  },
+  {
+   "document": "phys-PMC13082673.xml",
+   "evidence": [
+    "[CIT] ] demonstrated that the conjugate gradient-based xSPECT reconstruction algorithm enables more reliable activity concentration quantification, while Miyaji et al.",
+    "et al. [ [CIT] ] showed that synthetic data can enhance PET signal-to-noise ratio in short-FOV systems, offering image quality comparable to total-body scanners."
+   ]
+  },
+  {
+   "document": "phys-PMC13171646.xml",
+   "evidence": [
+    "according to some industry stakeholders, worsening [ [CIT] ]—lack of disciplinary diversity in the talent pool.",
+    "according to Schmitt’s criteria [ [CIT] ]) related to quantum computing concepts, then copied these passages verbatim to a repository document, assigning each an alphanumeric code for ease of discussi"
+   ]
+  },
+  {
+   "document": "phys-PMC13193059.xml",
+   "evidence": [
+    "[CIT] ], while a subsequent editorial concluded that treatment efficacy is decreased if the microsphere concentration is too high, or if the microsphere specific activity is too low [ [CIT] ]."
+   ]
+  },
+  {
+   "document": "phys-PMC13221960.xml",
+   "evidence": [
+    "according to [ [CIT] ], and strategically replaces quantum circuit segments with classical local-search routines."
+   ]
+  },
+  {
+   "document": "phys-PMC13246409.xml",
+   "evidence": [
+    "et al. ( [CIT] ), who reported that cough-generated droplet nuclei can persist in indoor environments for over 70 min."
+   ]
+  },
+  {
+   "document": "phys-PMC13259474.xml",
+   "evidence": [
+    "et al. [ [CIT] ] noted that Gazebo, Webots, and CoppeliaSim are inherently coupled to the dynamics time step, which limits their ability to perform isolated collision queries without overhead.",
+    "et al. [ [CIT] ] further demonstrated that Unity provides higher step rates than Gazebo in pick-and-place tasks requiring repeated collision checks."
+   ]
+  },
+  {
+   "document": "phys-PMC13282397.xml",
+   "evidence": [
+    "[CIT] , who demonstrated that Bell inequalities can be recast as machine-learning state classifiers, establishing a data-driven paradigm for entanglement detection."
+   ]
+  },
+  {
+   "document": "phys-PMC13285896.xml",
+   "evidence": [
+    "et al. demonstrated that adaptive step sizing can substantially improve MMC efficiency for proton dose calculations while maintaining high accuracy."
+   ]
+  },
+  {
+   "document": "phys-PMC13297618.xml",
+   "evidence": [
+    "denied: [CIT] ] reported that hybrid offspring of populations with different migration directions tend to orient in an intermediate direction, which indicates inherited orientation tendencies."
+   ]
+  }
+ ]
+}
