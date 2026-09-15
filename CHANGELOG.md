@@ -1,5 +1,8 @@
 # Changelog
 
+## 0.25.1 — 2026-09-15
+- **The index table says what matters about a form, not when and where it was seen.** The *Date* and *Corpus* columns are gone — both are on the form's page, with the excerpt. In their place: **Reaches the graph** (the second reader's rule: no, when every layer is pixel or reading; yes otherwise) and **Status** (validated, proposed, unreviewed, refuted). Seven narrower columns; the table no longer overflows on a laptop. Default order is by form number, not by latest date. Asked by Sébastien Gracia.
+
 ## 0.25.0 — 2026-09-15
 - **A form for the reported claim, `form-208`** — *A claim attributed to another source, written as a fact*. Probe `probes/2026-09/form-208-reported-claim.py` on the 272 Europe PMC articles: 60 carry one, and in 7 the next sentence denies or qualifies it. Denial and reported speech were being fabricated in our test corpora without a form behind them; `form-074` covers content reused from elsewhere, not a claim attributed in the text. Layer ③ utterance, damage SPURIOUS_EDGE, class left to the second reader.
 - **`form-042` has its specimen.** *Names damaged by scanning* was one of the 13 declared hypotheses. `probes/2026-09/form-042-names-damaged-by-scanning.py` on the OCR layer of the 45 migraine PDFs (new corpus record `corpora/migraine-pdf-1957-1987-45.json`, identifiers only): five author names damaged in three documents — SKINH0J, NORR1S, HACHINSK1 (PMID 597797), WIDER0E (4604977), MCNA1JGHTON (14084702). The Scandinavian ø comes out as 0. 168 forms observed, 12 hypotheses.
