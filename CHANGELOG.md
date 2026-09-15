@@ -1,5 +1,8 @@
 # Changelog
 
+## 0.24.1 — 2026-09-15
+- **The English navigation showed `Data &amp; API` as text.** The label was stored already escaped in the generator and escaped again at render, so every English page carried `&amp;amp;`. The label is now plain text, escaped once, like the other four. French pages were not affected: "Données et API" has no ampersand.
+
 ## 0.24.0 — 2026-09-13
 - **The language switch is the flag of the language it takes you to**, from `circle-flags` (HatScripts, MIT): the tricolore on the English pages, the Union flag on the French ones, circular, inlined, no text beside them. Credited in the README.
 - Four tries for one icon, and the first three were mine. Lucide has no national flags, which was true and useless; the answer was that **flag-icons and circle-flags do, both MIT**, and to use one instead of hand-drawing. The Union flag drawn by hand in 0.23.2 had symmetric diagonals where the real one has them offset, so at 21 pixels it read as an X. A library that has done the work is better than a glyph one draws oneself, and saying "the library you named cannot" without naming the one that can is not an answer.

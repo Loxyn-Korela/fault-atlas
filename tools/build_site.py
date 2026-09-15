@@ -120,7 +120,7 @@ T = {
              "fr": "non publiée : le catalogue d'août a jugé cette ligne propriété d'instrument ou de métrique, pas une forme de faute"},
  "nav_forms": {"en": "Forms", "fr": "Formes"},
  "nav_about": {"en": "About", "fr": "À propos"},
- "nav_data": {"en": "Data &amp; API", "fr": "Données et API"},
+ "nav_data": {"en": "Data & API", "fr": "Données et API"},
  "foot_note": {"en": "The JSON file is the record of truth; this site is a view rebuilt at each release. %d forms of %d are validated by a second reader; the rest carries its status on its own page.",
                "fr": "Le fichier JSON fait foi ; ce site en est une vue, reconstruite à chaque version. %d formes sur %d sont validées par une seconde lectrice, les autres portent leur statut sur leur fiche."},
 }
